@@ -1,0 +1,18 @@
+ `Sound`
+
+|Methods|Properties|Base Classes|Derived Classes|
+|---|---|---|---|
+| | |[metaarray](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/metaarray.markdown)| |
+
+
+ #  Properties
+
+
+---  
+ #  Methods
+
+
+---  
+ 
+
+ 
