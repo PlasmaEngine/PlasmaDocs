@@ -12,7 +12,7 @@ NOTE: All options except for ImportMeshes checkBox, ImportAnimations checkBox, a
 
 
 
-![GroupImportOptions](ttps://raw.githubusercontent.com/PlasmaEngine/PlasmaDocs/master/media/FileImports.PNG)
+![GroupImportOptions](https://raw.githubusercontent.com/PlasmaEngine/PlasmaDocs/master/media/FileImports.PNG)
 
 
  ### GenerateSmoothNormals and SmoothingAngleDegreesThreshold
