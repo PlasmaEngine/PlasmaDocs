@@ -6,16 +6,16 @@
 
 |Methods|Properties|Base Classes|Derived Classes|
 |---|---|---|---|
-| |[ NeedsPropertyGrid](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/tooluievent.markdown#needspropertygrid-plasma-e)|[event](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/event.markdown)| |
-| |[ Parent](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/tooluievent.markdown#parent-plasma-engine-docum)| | |
-| |[ SelectTool](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/tooluievent.markdown#selecttool-plasma-engine-d)| | |
+| |[ NeedsPropertyGrid](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/tooluievent.markdown#needspropertygrid-plasma-e)|[event](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/event.markdown)| |
+| |[ Parent](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/tooluievent.markdown#parent-plasma-engine-docum)| | |
+| |[ SelectTool](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/tooluievent.markdown#selecttool-plasma-engine-d)| | |
 
 
  #  Properties
 
 
 ---  
- #  NeedsPropertyGrid : [boolean](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown)
+ #  NeedsPropertyGrid : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown)
 
 > Whether or not to force show the tools window when switched to this tool.
 > ``` lang=cpp, name=Lightning
@@ -23,7 +23,7 @@
 
 
 ---  
- #  Parent : [composite](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/composite.markdown)
+ #  Parent : [composite](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/composite.markdown)
 
  `read-only`
 
@@ -33,7 +33,7 @@
 
 
 ---  
- #  SelectTool : [cog](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/cog.markdown)
+ #  SelectTool : [cog](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/cog.markdown)
 
  `read-only`
 

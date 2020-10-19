@@ -2,22 +2,22 @@
 
 |Methods|Properties|Base Classes|Derived Classes|
 |---|---|---|---|
-|[ Add](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/metaselection.markdown#add-void)|[ All](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/metaselection.markdown#all-plasma-engine-document)|[referencecountedeventobject](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/referencecountedeventobject.markdown)| |
-|[ Clear](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/metaselection.markdown#clear-void)|[ Primary](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/metaselection.markdown#primary-plasma-engine-docu)| | |
-|[ Contains](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/metaselection.markdown#contains-plasma-engine-doc)| | | |
-|[ Count](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/metaselection.markdown#count-plasma-engine-docume)| | | |
-|[ Empty](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/metaselection.markdown#empty-plasma-engine-docume)| | | |
-|[ FinalSelectionChanged](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/metaselection.markdown#finalselectionchanged-vo)| | | |
-|[ Remove](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/metaselection.markdown#remove-void)| | | |
-|[ Replace](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/metaselection.markdown#replace-void)| | | |
-|[ SelectOnly](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/metaselection.markdown#selectonly-void)| | | |
+|[ Add](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/metaselection.markdown#add-void)|[ All](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/metaselection.markdown#all-plasma-engine-document)|[referencecountedeventobject](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/referencecountedeventobject.markdown)| |
+|[ Clear](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/metaselection.markdown#clear-void)|[ Primary](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/metaselection.markdown#primary-plasma-engine-docu)| | |
+|[ Contains](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/metaselection.markdown#contains-plasma-engine-doc)| | | |
+|[ Count](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/metaselection.markdown#count-plasma-engine-docume)| | | |
+|[ Empty](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/metaselection.markdown#empty-plasma-engine-docume)| | | |
+|[ FinalSelectionChanged](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/metaselection.markdown#finalselectionchanged-vo)| | | |
+|[ Remove](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/metaselection.markdown#remove-void)| | | |
+|[ Replace](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/metaselection.markdown#replace-void)| | | |
+|[ SelectOnly](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/metaselection.markdown#selectonly-void)| | | |
 
 
  #  Properties
 
 
 ---  
- #  All : [metaselectionrange](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/metaselectionrange.markdown)
+ #  All : [metaselectionrange](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/metaselectionrange.markdown)
 
  `read-only`
 
@@ -27,7 +27,7 @@
 
 
 ---  
- #  Primary : [anyhandle](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/lightning_base_types/anyhandle.markdown)
+ #  Primary : [anyhandle](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/anyhandle.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -44,7 +44,7 @@
 > 
 > |Name|Type|Description|
 > |---|---|---|
-> |p0|[anyhandle](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/lightning_base_types/anyhandle.markdown)| |
+> |p0|[anyhandle](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/anyhandle.markdown)| |
 > ``` lang=cpp, name=Lightning
 > function Add(p0 : AnyHandle)
 > ``` 
@@ -62,19 +62,19 @@
 
 
 ---  
- #  Contains : [boolean](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown)
+ #  Contains : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown)
 
 > 
 > |Name|Type|Description|
 > |---|---|---|
-> |p0|[anyhandle](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/lightning_base_types/anyhandle.markdown)| |
+> |p0|[anyhandle](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/anyhandle.markdown)| |
 > ``` lang=cpp, name=Lightning
 > function Contains(p0 : AnyHandle) : Boolean
 > ``` 
 
 
 ---  
- #  Count : [integer](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/lightning_base_types/integer.markdown)
+ #  Count : [integer](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/integer.markdown)
 
 > 
 > |Name|Type|Description|
@@ -85,7 +85,7 @@
 
 
 ---  
- #  Empty : [boolean](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown)
+ #  Empty : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown)
 
 > 
 > |Name|Type|Description|
@@ -112,7 +112,7 @@
 > 
 > |Name|Type|Description|
 > |---|---|---|
-> |p0|[anyhandle](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/lightning_base_types/anyhandle.markdown)| |
+> |p0|[anyhandle](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/anyhandle.markdown)| |
 > ``` lang=cpp, name=Lightning
 > function Remove(p0 : AnyHandle)
 > ``` 
@@ -124,8 +124,8 @@
 > 
 > |Name|Type|Description|
 > |---|---|---|
-> |p0|[anyhandle](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/lightning_base_types/anyhandle.markdown)| |
-> |p1|[anyhandle](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/lightning_base_types/anyhandle.markdown)| |
+> |p0|[anyhandle](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/anyhandle.markdown)| |
+> |p1|[anyhandle](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/anyhandle.markdown)| |
 > ``` lang=cpp, name=Lightning
 > function Replace(p0 : AnyHandle, p1 : AnyHandle)
 > ``` 
@@ -137,7 +137,7 @@
 > 
 > |Name|Type|Description|
 > |---|---|---|
-> |p0|[anyhandle](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/lightning_base_types/anyhandle.markdown)| |
+> |p0|[anyhandle](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/anyhandle.markdown)| |
 > ``` lang=cpp, name=Lightning
 > function SelectOnly(p0 : AnyHandle)
 > ``` 

@@ -2,31 +2,31 @@
 
 |Methods|Properties|Base Classes|Derived Classes|
 |---|---|---|---|
-| |[ ChangeBasis](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/geometryoptions.markdown#changebasis-plasma-engine)|Object| |
-| |[ CollapsePivots](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/geometryoptions.markdown#collapsepivots-plasma-engi)| | |
-| |[ CreateArchetype](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/geometryoptions.markdown#createarchetype-plasma-eng)| | |
-| |[ FlipWindingOrder](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/geometryoptions.markdown#flipwindingorder-plasma-en)| | |
-| |[ GenerateSmoothNormals](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/geometryoptions.markdown#generatesmoothnormals-ze)| | |
-| |[ GenerateTangentSpace](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/geometryoptions.markdown#generatetangentspace-zer)| | |
-| |[ ImportAnimations](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/geometryoptions.markdown#importanimations-plasma-en)| | |
-| |[ ImportMeshes](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/geometryoptions.markdown#importmeshes-plasma-engine)| | |
-| |[ ImportTextures](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/geometryoptions.markdown#importtextures-plasma-engi)| | |
-| |[ InvertUvYAxis](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/geometryoptions.markdown#invertuvyaxis-plasma-engin)| | |
-| |[ OriginOffset](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/geometryoptions.markdown#originoffset-plasma-engine)| | |
-| |[ PhysicsImport](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/geometryoptions.markdown#physicsimport-plasma-engin)| | |
-| |[ ScaleConversion](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/geometryoptions.markdown#scaleconversion-plasma-eng)| | |
-| |[ ScaleFactor](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/geometryoptions.markdown#scalefactor-plasma-engine)| | |
-| |[ SmoothingAngleDegreesThreshold](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/geometryoptions.markdown#smoothingangledegreesthr)| | |
-| |[ XBasisTo](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/geometryoptions.markdown#xbasisto-plasma-engine-doc)| | |
-| |[ YBasisTo](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/geometryoptions.markdown#ybasisto-plasma-engine-doc)| | |
-| |[ ZBasisTo](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/geometryoptions.markdown#zbasisto-plasma-engine-doc)| | |
+| |[ ChangeBasis](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/geometryoptions.markdown#changebasis-plasma-engine)|Object| |
+| |[ CollapsePivots](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/geometryoptions.markdown#collapsepivots-plasma-engi)| | |
+| |[ CreateArchetype](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/geometryoptions.markdown#createarchetype-plasma-eng)| | |
+| |[ FlipWindingOrder](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/geometryoptions.markdown#flipwindingorder-plasma-en)| | |
+| |[ GenerateSmoothNormals](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/geometryoptions.markdown#generatesmoothnormals-ze)| | |
+| |[ GenerateTangentSpace](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/geometryoptions.markdown#generatetangentspace-zer)| | |
+| |[ ImportAnimations](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/geometryoptions.markdown#importanimations-plasma-en)| | |
+| |[ ImportMeshes](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/geometryoptions.markdown#importmeshes-plasma-engine)| | |
+| |[ ImportTextures](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/geometryoptions.markdown#importtextures-plasma-engi)| | |
+| |[ InvertUvYAxis](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/geometryoptions.markdown#invertuvyaxis-plasma-engin)| | |
+| |[ OriginOffset](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/geometryoptions.markdown#originoffset-plasma-engine)| | |
+| |[ PhysicsImport](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/geometryoptions.markdown#physicsimport-plasma-engin)| | |
+| |[ ScaleConversion](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/geometryoptions.markdown#scaleconversion-plasma-eng)| | |
+| |[ ScaleFactor](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/geometryoptions.markdown#scalefactor-plasma-engine)| | |
+| |[ SmoothingAngleDegreesThreshold](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/geometryoptions.markdown#smoothingangledegreesthr)| | |
+| |[ XBasisTo](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/geometryoptions.markdown#xbasisto-plasma-engine-doc)| | |
+| |[ YBasisTo](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/geometryoptions.markdown#ybasisto-plasma-engine-doc)| | |
+| |[ ZBasisTo](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/geometryoptions.markdown#zbasisto-plasma-engine-doc)| | |
 
 
  #  Properties
 
 
 ---  
- #  ChangeBasis : [boolean](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown)
+ #  ChangeBasis : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -34,7 +34,7 @@
 
 
 ---  
- #  CollapsePivots : [boolean](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown)
+ #  CollapsePivots : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -42,7 +42,7 @@
 
 
 ---  
- #  CreateArchetype : [boolean](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown)
+ #  CreateArchetype : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -50,7 +50,7 @@
 
 
 ---  
- #  FlipWindingOrder : [boolean](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown)
+ #  FlipWindingOrder : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -58,7 +58,7 @@
 
 
 ---  
- #  GenerateSmoothNormals : [boolean](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown)
+ #  GenerateSmoothNormals : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -66,7 +66,7 @@
 
 
 ---  
- #  GenerateTangentSpace : [boolean](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown)
+ #  GenerateTangentSpace : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -74,7 +74,7 @@
 
 
 ---  
- #  ImportAnimations : [boolean](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown)
+ #  ImportAnimations : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -82,7 +82,7 @@
 
 
 ---  
- #  ImportMeshes : [boolean](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown)
+ #  ImportMeshes : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -90,7 +90,7 @@
 
 
 ---  
- #  ImportTextures : [boolean](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown)
+ #  ImportTextures : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -98,7 +98,7 @@
 
 
 ---  
- #  InvertUvYAxis : [boolean](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown)
+ #  InvertUvYAxis : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -106,7 +106,7 @@
 
 
 ---  
- #  OriginOffset : [real3](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/lightning_base_types/real3.markdown)
+ #  OriginOffset : [real3](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real3.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -114,7 +114,7 @@
 
 
 ---  
- #  PhysicsImport : [PhysicsImport](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#physicsimport)
+ #  PhysicsImport : [PhysicsImport](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#physicsimport)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -122,7 +122,7 @@
 
 
 ---  
- #  ScaleConversion : [ScaleConversion](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#scaleconversion)
+ #  ScaleConversion : [ScaleConversion](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#scaleconversion)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -130,7 +130,7 @@
 
 
 ---  
- #  ScaleFactor : [real](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown)
+ #  ScaleFactor : [real](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -138,7 +138,7 @@
 
 
 ---  
- #  SmoothingAngleDegreesThreshold : [real](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown)
+ #  SmoothingAngleDegreesThreshold : [real](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -146,7 +146,7 @@
 
 
 ---  
- #  XBasisTo : [BasisType](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#basistype)
+ #  XBasisTo : [BasisType](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#basistype)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -154,7 +154,7 @@
 
 
 ---  
- #  YBasisTo : [BasisType](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#basistype)
+ #  YBasisTo : [BasisType](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#basistype)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -162,7 +162,7 @@
 
 
 ---  
- #  ZBasisTo : [BasisType](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#basistype)
+ #  ZBasisTo : [BasisType](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#basistype)
 
 > 
 > ``` lang=cpp, name=Lightning

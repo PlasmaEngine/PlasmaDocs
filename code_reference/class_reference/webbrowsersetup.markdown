@@ -2,18 +2,18 @@
 
 |Methods|Properties|Base Classes|Derived Classes|
 |---|---|---|---|
-|[ Constructor](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/webbrowsersetup.markdown#webbrowsersetup-void)|[ BackgroundColor](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/webbrowsersetup.markdown#backgroundcolor-plasma-eng)|Object| |
-| |[ ScrollSpeed](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/webbrowsersetup.markdown#scrollspeed-plasma-engine)| | |
-| |[ Size](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/webbrowsersetup.markdown#size-plasma-engine-documen)| | |
-| |[ Transparent](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/webbrowsersetup.markdown#transparent-plasma-engine)| | |
-| |[ Url](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/webbrowsersetup.markdown#url-plasma-engine-document)| | |
+|[ Constructor](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/webbrowsersetup.markdown#webbrowsersetup-void)|[ BackgroundColor](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/webbrowsersetup.markdown#backgroundcolor-plasma-eng)|Object| |
+| |[ ScrollSpeed](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/webbrowsersetup.markdown#scrollspeed-plasma-engine)| | |
+| |[ Size](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/webbrowsersetup.markdown#size-plasma-engine-documen)| | |
+| |[ Transparent](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/webbrowsersetup.markdown#transparent-plasma-engine)| | |
+| |[ Url](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/webbrowsersetup.markdown#url-plasma-engine-document)| | |
 
 
  #  Properties
 
 
 ---  
- #  BackgroundColor : [real4](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/lightning_base_types/real4.markdown)
+ #  BackgroundColor : [real4](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real4.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -21,7 +21,7 @@
 
 
 ---  
- #  ScrollSpeed : [real2](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/lightning_base_types/real2.markdown)
+ #  ScrollSpeed : [real2](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real2.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -29,7 +29,7 @@
 
 
 ---  
- #  Size : [integer2](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/lightning_base_types/integer2.markdown)
+ #  Size : [integer2](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/integer2.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -37,7 +37,7 @@
 
 
 ---  
- #  Transparent : [boolean](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown)
+ #  Transparent : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -45,7 +45,7 @@
 
 
 ---  
- #  Url : [string](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown)
+ #  Url : [string](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning

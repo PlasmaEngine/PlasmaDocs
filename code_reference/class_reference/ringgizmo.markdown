@@ -4,23 +4,23 @@
 
 |Methods|Properties|Base Classes|Derived Classes|
 |---|---|---|---|
-|[ Constructor](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/ringgizmo.markdown#ringgizmo-void)|[ BackShade](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/ringgizmo.markdown#backshade-plasma-engine-do)|[simplegizmobase](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/simplegizmobase.markdown)| |
-| |[ DragRadiansPerPixel](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/ringgizmo.markdown#dragradiansperpixel-plasma)| | |
-| |[ GrabArrowColor](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/ringgizmo.markdown#grabarrowcolor-plasma-engi)| | |
-| |[ GrabArrowHeadSize](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/ringgizmo.markdown#grabarrowheadsize-plasma-e)| | |
-| |[ GrabArrowLength](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/ringgizmo.markdown#grabarrowlength-plasma-eng)| | |
-| |[ GrabArrowOnTop](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/ringgizmo.markdown#grabarrowontop-plasma-engi)| | |
-| |[ GrabArrowViewScaled](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/ringgizmo.markdown#grabarrowviewscaled-plasma)| | |
-| |[ Radius](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/ringgizmo.markdown#radius-plasma-engine-docum)| | |
-| |[ SelectRadius](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/ringgizmo.markdown#selectradius-plasma-engine)| | |
-| |[ ViewAligned](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/ringgizmo.markdown#viewaligned-plasma-engine)| | |
+|[ Constructor](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/ringgizmo.markdown#ringgizmo-void)|[ BackShade](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/ringgizmo.markdown#backshade-plasma-engine-do)|[simplegizmobase](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/simplegizmobase.markdown)| |
+| |[ DragRadiansPerPixel](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/ringgizmo.markdown#dragradiansperpixel-plasma)| | |
+| |[ GrabArrowColor](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/ringgizmo.markdown#grabarrowcolor-plasma-engi)| | |
+| |[ GrabArrowHeadSize](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/ringgizmo.markdown#grabarrowheadsize-plasma-e)| | |
+| |[ GrabArrowLength](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/ringgizmo.markdown#grabarrowlength-plasma-eng)| | |
+| |[ GrabArrowOnTop](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/ringgizmo.markdown#grabarrowontop-plasma-engi)| | |
+| |[ GrabArrowViewScaled](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/ringgizmo.markdown#grabarrowviewscaled-plasma)| | |
+| |[ Radius](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/ringgizmo.markdown#radius-plasma-engine-docum)| | |
+| |[ SelectRadius](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/ringgizmo.markdown#selectradius-plasma-engine)| | |
+| |[ ViewAligned](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/ringgizmo.markdown#viewaligned-plasma-engine)| | |
 
 
  #  Properties
 
 
 ---  
- #  BackShade : [boolean](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown)
+ #  BackShade : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -28,7 +28,7 @@
 
 
 ---  
- #  DragRadiansPerPixel : [real](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown)
+ #  DragRadiansPerPixel : [real](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -36,7 +36,7 @@
 
 
 ---  
- #  GrabArrowColor : [real4](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/lightning_base_types/real4.markdown)
+ #  GrabArrowColor : [real4](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real4.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -44,7 +44,7 @@
 
 
 ---  
- #  GrabArrowHeadSize : [real](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown)
+ #  GrabArrowHeadSize : [real](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -52,7 +52,7 @@
 
 
 ---  
- #  GrabArrowLength : [real](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown)
+ #  GrabArrowLength : [real](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -60,7 +60,7 @@
 
 
 ---  
- #  GrabArrowOnTop : [boolean](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown)
+ #  GrabArrowOnTop : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -68,7 +68,7 @@
 
 
 ---  
- #  GrabArrowViewScaled : [boolean](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown)
+ #  GrabArrowViewScaled : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -76,7 +76,7 @@
 
 
 ---  
- #  Radius : [real](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown)
+ #  Radius : [real](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -84,7 +84,7 @@
 
 
 ---  
- #  SelectRadius : [real](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown)
+ #  SelectRadius : [real](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -92,7 +92,7 @@
 
 
 ---  
- #  ViewAligned : [boolean](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown)
+ #  ViewAligned : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning

@@ -6,17 +6,17 @@
 
 |Methods|Properties|Base Classes|Derived Classes|
 |---|---|---|---|
-| |[ Host](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/nethostupdate.markdown#host-plasma-engine-documen)|[event](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/event.markdown)| |
-| |[ Network](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/nethostupdate.markdown#network-plasma-engine-docu)| | |
-| |[ RefreshResult](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/nethostupdate.markdown#refreshresult-plasma-engin)| | |
-| |[ ResponseTime](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/nethostupdate.markdown#responsetime-plasma-engine)| | |
+| |[ Host](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/nethostupdate.markdown#host-plasma-engine-documen)|[event](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/event.markdown)| |
+| |[ Network](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/nethostupdate.markdown#network-plasma-engine-docu)| | |
+| |[ RefreshResult](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/nethostupdate.markdown#refreshresult-plasma-engin)| | |
+| |[ ResponseTime](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/nethostupdate.markdown#responsetime-plasma-engine)| | |
 
 
  #  Properties
 
 
 ---  
- #  Host : [nethost](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/nethost.markdown)
+ #  Host : [nethost](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/nethost.markdown)
 
  `read-only`
 
@@ -26,7 +26,7 @@
 
 
 ---  
- #  Network : [Network](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#network)
+ #  Network : [Network](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#network)
 
  `read-only`
 
@@ -36,7 +36,7 @@
 
 
 ---  
- #  RefreshResult : [NetRefreshResult](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#netrefreshresult)
+ #  RefreshResult : [NetRefreshResult](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#netrefreshresult)
 
  `read-only`
 
@@ -46,7 +46,7 @@
 
 
 ---  
- #  ResponseTime : [real](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown)
+ #  ResponseTime : [real](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown)
 
  `read-only`
 

@@ -4,15 +4,15 @@
 
 |Methods|Properties|Base Classes|Derived Classes|
 |---|---|---|---|
-|[ Constructor](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/rotategizmo.markdown#rotategizmo-void)|[ SnapAngle](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/rotategizmo.markdown#snapangle-plasma-engine-do)|[component](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/component.markdown)| |
-| |[ Snapping](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/rotategizmo.markdown#snapping-plasma-engine-doc)| | |
+|[ Constructor](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/rotategizmo.markdown#rotategizmo-void)|[ SnapAngle](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/rotategizmo.markdown#snapangle-plasma-engine-do)|[component](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/component.markdown)| |
+| |[ Snapping](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/rotategizmo.markdown#snapping-plasma-engine-doc)| | |
 
 
  #  Properties
 
 
 ---  
- #  SnapAngle : [real](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown)
+ #  SnapAngle : [real](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -20,7 +20,7 @@
 
 
 ---  
- #  Snapping : [boolean](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown)
+ #  Snapping : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown)
 
 > Snapping.
 > ``` lang=cpp, name=Lightning

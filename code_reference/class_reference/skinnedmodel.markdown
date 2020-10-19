@@ -6,15 +6,15 @@
 
 |Methods|Properties|Base Classes|Derived Classes|
 |---|---|---|---|
-|[ Constructor](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/skinnedmodel.markdown#skinnedmodel-void)|[ Mesh](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/skinnedmodel.markdown#mesh-plasma-engine-documen)|[graphical](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/graphical.markdown)| |
-| |[ SkeletonPath](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/skinnedmodel.markdown#skeletonpath-plasma-engine)| | |
+|[ Constructor](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/skinnedmodel.markdown#skinnedmodel-void)|[ Mesh](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/skinnedmodel.markdown#mesh-plasma-engine-documen)|[graphical](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/graphical.markdown)| |
+| |[ SkeletonPath](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/skinnedmodel.markdown#skeletonpath-plasma-engine)| | |
 
 
  #  Properties
 
 
 ---  
- #  Mesh : [mesh](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/mesh.markdown)
+ #  Mesh : [mesh](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/mesh.markdown)
 
 > Mesh that the graphical will render.
 > ``` lang=cpp, name=Lightning
@@ -22,7 +22,7 @@
 
 
 ---  
- #  SkeletonPath : [cogpath](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/cogpath.markdown)
+ #  SkeletonPath : [cogpath](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/cogpath.markdown)
 
 > Path to an object with a Skeleton component that will be used for skinning.
 > ``` lang=cpp, name=Lightning

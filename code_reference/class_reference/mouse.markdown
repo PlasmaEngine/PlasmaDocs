@@ -4,18 +4,18 @@
 
 |Methods|Properties|Base Classes|Derived Classes|
 |---|---|---|---|
-|[ IsButtonDown](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/mouse.markdown#isbuttondown-plasma-engine)|[ ClientPosition](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/mouse.markdown#clientposition-plasma-engi)|[eventobject](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/eventobject.markdown)| |
-|[ ToggleTrapped](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/mouse.markdown#toggletrapped-void)|[ Cursor](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/mouse.markdown#cursor-plasma-engine-docum)| | |
-| |[ CursorMovement](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/mouse.markdown#cursormovement-plasma-engi)| | |
-| |[ RawMovement](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/mouse.markdown#rawmovement-plasma-engine)| | |
-| |[ Trapped](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/mouse.markdown#trapped-plasma-engine-docu)| | |
+|[ IsButtonDown](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/mouse.markdown#isbuttondown-plasma-engine)|[ ClientPosition](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/mouse.markdown#clientposition-plasma-engi)|[eventobject](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/eventobject.markdown)| |
+|[ ToggleTrapped](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/mouse.markdown#toggletrapped-void)|[ Cursor](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/mouse.markdown#cursor-plasma-engine-docum)| | |
+| |[ CursorMovement](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/mouse.markdown#cursormovement-plasma-engi)| | |
+| |[ RawMovement](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/mouse.markdown#rawmovement-plasma-engine)| | |
+| |[ Trapped](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/mouse.markdown#trapped-plasma-engine-docu)| | |
 
 
  #  Properties
 
 
 ---  
- #  ClientPosition : [real2](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/lightning_base_types/real2.markdown)
+ #  ClientPosition : [real2](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real2.markdown)
 
  `read-only`
 
@@ -25,7 +25,7 @@
 
 
 ---  
- #  Cursor : [Cursor](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#cursor)
+ #  Cursor : [Cursor](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#cursor)
 
 > Set the cursor of the mouse.
 > ``` lang=cpp, name=Lightning
@@ -33,7 +33,7 @@
 
 
 ---  
- #  CursorMovement : [real2](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/lightning_base_types/real2.markdown)
+ #  CursorMovement : [real2](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real2.markdown)
 
  `read-only`
 
@@ -43,7 +43,7 @@
 
 
 ---  
- #  RawMovement : [real2](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/lightning_base_types/real2.markdown)
+ #  RawMovement : [real2](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real2.markdown)
 
 > High precision raw movement of the mouse.
 > ``` lang=cpp, name=Lightning
@@ -51,7 +51,7 @@
 
 
 ---  
- #  Trapped : [boolean](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown)
+ #  Trapped : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown)
 
 > Trap the mouse preventing it from moving.
 > ``` lang=cpp, name=Lightning
@@ -63,12 +63,12 @@
 
 
 ---  
- #  IsButtonDown : [boolean](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown)
+ #  IsButtonDown : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown)
 
 > Is a mouse button currently down?
 > |Name|Type|Description|
 > |---|---|---|
-> |button|[MouseButtons](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#mousebuttons)| |
+> |button|[MouseButtons](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#mousebuttons)| |
 > ``` lang=cpp, name=Lightning
 > function IsButtonDown(button : MouseButtons) : Boolean
 > ``` 

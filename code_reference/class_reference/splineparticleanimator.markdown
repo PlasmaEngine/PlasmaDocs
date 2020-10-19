@@ -4,22 +4,22 @@
 
 |Methods|Properties|Base Classes|Derived Classes|
 |---|---|---|---|
-|[ Constructor](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/splineparticleanimator.markdown#splineparticleanimator-v)|[ AutoCalculateLifetime](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/splineparticleanimator.markdown#autocalculatelifetime-ze)|[particleanimator](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/particleanimator.markdown)| |
-| |[ Helix](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/splineparticleanimator.markdown#helix-plasma-engine-docume)| | |
-| |[ HelixOffset](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/splineparticleanimator.markdown#helixoffset-plasma-engine)| | |
-| |[ HelixRadius](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/splineparticleanimator.markdown#helixradius-plasma-engine)| | |
-| |[ HelixWaveLength](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/splineparticleanimator.markdown#helixwavelength-plasma-eng)| | |
-| |[ Mode](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/splineparticleanimator.markdown#mode-plasma-engine-documen)| | |
-| |[ Speed](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/splineparticleanimator.markdown#speed-plasma-engine-docume)| | |
-| |[ SpringDampingRatio](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/splineparticleanimator.markdown#springdampingratio-plasma)| | |
-| |[ SpringFrequencyHz](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/splineparticleanimator.markdown#springfrequencyhz-plasma-e)| | |
+|[ Constructor](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/splineparticleanimator.markdown#splineparticleanimator-v)|[ AutoCalculateLifetime](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/splineparticleanimator.markdown#autocalculatelifetime-ze)|[particleanimator](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/particleanimator.markdown)| |
+| |[ Helix](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/splineparticleanimator.markdown#helix-plasma-engine-docume)| | |
+| |[ HelixOffset](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/splineparticleanimator.markdown#helixoffset-plasma-engine)| | |
+| |[ HelixRadius](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/splineparticleanimator.markdown#helixradius-plasma-engine)| | |
+| |[ HelixWaveLength](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/splineparticleanimator.markdown#helixwavelength-plasma-eng)| | |
+| |[ Mode](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/splineparticleanimator.markdown#mode-plasma-engine-documen)| | |
+| |[ Speed](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/splineparticleanimator.markdown#speed-plasma-engine-docume)| | |
+| |[ SpringDampingRatio](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/splineparticleanimator.markdown#springdampingratio-plasma)| | |
+| |[ SpringFrequencyHz](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/splineparticleanimator.markdown#springfrequencyhz-plasma-e)| | |
 
 
  #  Properties
 
 
 ---  
- #  AutoCalculateLifetime : [boolean](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown)
+ #  AutoCalculateLifetime : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown)
 
 > If checked, the lifetime on the SplineParticleEmitter will be updated to the time it would take to travel the entire path at the current speed.
 > ``` lang=cpp, name=Lightning
@@ -27,7 +27,7 @@
 
 
 ---  
- #  Helix : [boolean](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown)
+ #  Helix : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -35,7 +35,7 @@
 
 
 ---  
- #  HelixOffset : [real](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown)
+ #  HelixOffset : [real](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown)
 
 > Offset in radians for where the helix starts.
 > ``` lang=cpp, name=Lightning
@@ -43,7 +43,7 @@
 
 
 ---  
- #  HelixRadius : [real](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown)
+ #  HelixRadius : [real](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown)
 
 > The radius of the helix.
 > ``` lang=cpp, name=Lightning
@@ -51,7 +51,7 @@
 
 
 ---  
- #  HelixWaveLength : [real](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown)
+ #  HelixWaveLength : [real](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown)
 
 > How fast the helix rotates in radians / second.
 > ``` lang=cpp, name=Lightning
@@ -59,7 +59,7 @@
 
 
 ---  
- #  Mode : [SplineAnimatorMode](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#splineanimatormode)
+ #  Mode : [SplineAnimatorMode](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#splineanimatormode)
 
 > The current animate mode.
 > ``` lang=cpp, name=Lightning
@@ -67,7 +67,7 @@
 
 
 ---  
- #  Speed : [real](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown)
+ #  Speed : [real](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown)
 
 > The speed at which the particles move in meters / second.
 > ``` lang=cpp, name=Lightning
@@ -75,7 +75,7 @@
 
 
 ---  
- #  SpringDampingRatio : [real](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown)
+ #  SpringDampingRatio : [real](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -83,7 +83,7 @@
 
 
 ---  
- #  SpringFrequencyHz : [real](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown)
+ #  SpringFrequencyHz : [real](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown)
 
 > Spring properties.
 > ``` lang=cpp, name=Lightning

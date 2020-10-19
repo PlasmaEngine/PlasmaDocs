@@ -6,19 +6,19 @@
 
 |Methods|Properties|Base Classes|Derived Classes|
 |---|---|---|---|
-|[ Constructor](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/gearjoint.markdown#gearjoint-void)|[ Constant](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/gearjoint.markdown#constant-plasma-engine-doc)|[joint](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/joint.markdown)| |
-| |[ JointA](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/gearjoint.markdown#jointa-plasma-engine-docum)| | |
-| |[ JointAPath](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/gearjoint.markdown#jointapath-plasma-engine-d)| | |
-| |[ JointB](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/gearjoint.markdown#jointb-plasma-engine-docum)| | |
-| |[ JointBPath](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/gearjoint.markdown#jointbpath-plasma-engine-d)| | |
-| |[ Ratio](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/gearjoint.markdown#ratio-plasma-engine-docume)| | |
+|[ Constructor](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/gearjoint.markdown#gearjoint-void)|[ Constant](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/gearjoint.markdown#constant-plasma-engine-doc)|[joint](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/joint.markdown)| |
+| |[ JointA](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/gearjoint.markdown#jointa-plasma-engine-docum)| | |
+| |[ JointAPath](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/gearjoint.markdown#jointapath-plasma-engine-d)| | |
+| |[ JointB](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/gearjoint.markdown#jointb-plasma-engine-docum)| | |
+| |[ JointBPath](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/gearjoint.markdown#jointbpath-plasma-engine-d)| | |
+| |[ Ratio](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/gearjoint.markdown#ratio-plasma-engine-docume)| | |
 
 
  #  Properties
 
 
 ---  
- #  Constant : [real](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown)
+ #  Constant : [real](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown)
 
 > The initial offset of the gear ratio.
 > ``` lang=cpp, name=Lightning
@@ -26,7 +26,7 @@
 
 
 ---  
- #  JointA : [cog](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/cog.markdown)
+ #  JointA : [cog](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/cog.markdown)
 
 > The joint connected to ObjectA that the gear operates on.
 > ``` lang=cpp, name=Lightning
@@ -34,7 +34,7 @@
 
 
 ---  
- #  JointAPath : [cogpath](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/cogpath.markdown)
+ #  JointAPath : [cogpath](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/cogpath.markdown)
 
 > The joint connected to ObjectA that the gear operates on.
 > ``` lang=cpp, name=Lightning
@@ -42,7 +42,7 @@
 
 
 ---  
- #  JointB : [cog](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/cog.markdown)
+ #  JointB : [cog](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/cog.markdown)
 
 > The joint connected to ObjectB that the gear operates on.
 > ``` lang=cpp, name=Lightning
@@ -50,7 +50,7 @@
 
 
 ---  
- #  JointBPath : [cogpath](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/cogpath.markdown)
+ #  JointBPath : [cogpath](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/cogpath.markdown)
 
 > The joint connected to ObjectB that the gear operates on.
 > ``` lang=cpp, name=Lightning
@@ -58,7 +58,7 @@
 
 
 ---  
- #  Ratio : [real](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown)
+ #  Ratio : [real](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown)
 
 > The gear ratio that the two constraints are bound with.
 > ``` lang=cpp, name=Lightning

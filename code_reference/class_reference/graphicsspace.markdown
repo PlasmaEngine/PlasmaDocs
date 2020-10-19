@@ -6,16 +6,16 @@
 
 |Methods|Properties|Base Classes|Derived Classes|
 |---|---|---|---|
-|[ Constructor](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/graphicsspace.markdown#graphicsspace-void)|[ Active](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/graphicsspace.markdown#active-plasma-engine-docum)|[component](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/component.markdown)| |
-| |[ RandomSeed](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/graphicsspace.markdown#randomseed-plasma-engine-d)| | |
-| |[ Seed](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/graphicsspace.markdown#seed-plasma-engine-documen)| | |
+|[ Constructor](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/graphicsspace.markdown#graphicsspace-void)|[ Active](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/graphicsspace.markdown#active-plasma-engine-docum)|[component](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/component.markdown)| |
+| |[ RandomSeed](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/graphicsspace.markdown#randomseed-plasma-engine-d)| | |
+| |[ Seed](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/graphicsspace.markdown#seed-plasma-engine-documen)| | |
 
 
  #  Properties
 
 
 ---  
- #  Active : [boolean](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown)
+ #  Active : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown)
 
 > If graphics for this Space should be running.
 > ``` lang=cpp, name=Lightning
@@ -23,7 +23,7 @@
 
 
 ---  
- #  RandomSeed : [boolean](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown)
+ #  RandomSeed : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown)
 
 > If the random number generator used by graphics objects should be seeded randomly.
 > ``` lang=cpp, name=Lightning
@@ -31,7 +31,7 @@
 
 
 ---  
- #  Seed : [integer](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/lightning_base_types/integer.markdown)
+ #  Seed : [integer](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/integer.markdown)
 
 > Value to seed the random number generator with.
 > ``` lang=cpp, name=Lightning

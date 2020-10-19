@@ -2,17 +2,17 @@
 
 |Methods|Properties|Base Classes|Derived Classes|
 |---|---|---|---|
-|[ Constructor](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/jointrange.markdown#jointrange-void)|[ All](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/jointrange.markdown#all-plasma-engine-document)| | |
-|[ MoveNext](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/jointrange.markdown#movenext-void)|[ Current](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/jointrange.markdown#current-plasma-engine-docu)| | |
-| |[ IsEmpty](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/jointrange.markdown#isempty-plasma-engine-docu)| | |
-| |[ IsNotEmpty](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/jointrange.markdown#isnotempty-plasma-engine-d)| | |
+|[ Constructor](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/jointrange.markdown#jointrange-void)|[ All](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/jointrange.markdown#all-plasma-engine-document)| | |
+|[ MoveNext](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/jointrange.markdown#movenext-void)|[ Current](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/jointrange.markdown#current-plasma-engine-docu)| | |
+| |[ IsEmpty](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/jointrange.markdown#isempty-plasma-engine-docu)| | |
+| |[ IsNotEmpty](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/jointrange.markdown#isnotempty-plasma-engine-d)| | |
 
 
  #  Properties
 
 
 ---  
- #  All : [jointrange](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/jointrange.markdown)
+ #  All : [jointrange](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/jointrange.markdown)
 
  `read-only`
 
@@ -22,7 +22,7 @@
 
 
 ---  
- #  Current : [jointgraphedge](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/jointgraphedge.markdown)
+ #  Current : [jointgraphedge](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/jointgraphedge.markdown)
 
  `read-only`
 
@@ -32,7 +32,7 @@
 
 
 ---  
- #  IsEmpty : [boolean](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown)
+ #  IsEmpty : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown)
 
  `read-only`
 
@@ -42,7 +42,7 @@
 
 
 ---  
- #  IsNotEmpty : [boolean](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown)
+ #  IsNotEmpty : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown)
 
  `read-only`
 
@@ -76,7 +76,7 @@
 > 
 > |Name|Type|Description|
 > |---|---|---|
-> |p0|[jointrange](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/jointrange.markdown)| |
+> |p0|[jointrange](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/jointrange.markdown)| |
 > ``` lang=cpp, name=Lightning
 > function JointRange(p0 : JointRange)
 > ``` 

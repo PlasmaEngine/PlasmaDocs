@@ -4,20 +4,20 @@
 
 |Methods|Properties|Base Classes|Derived Classes|
 |---|---|---|---|
-|[ Constructor](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/sweepresult.markdown#sweepresult-void)|[ OtherCollider](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/sweepresult.markdown#othercollider-plasma-engin)| | |
-| |[ OtherObject](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/sweepresult.markdown#otherobject-plasma-engine)| | |
-| |[ Penetration](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/sweepresult.markdown#penetration-plasma-engine)| | |
-| |[ Time](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/sweepresult.markdown#time-plasma-engine-documen)| | |
-| |[ WorldNormalTowardsOther](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/sweepresult.markdown#worldnormaltowardsother)| | |
-| |[ WorldNormalTowardsSelf](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/sweepresult.markdown#worldnormaltowardsself-z)| | |
-| |[ WorldPoint](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/sweepresult.markdown#worldpoint-plasma-engine-d)| | |
+|[ Constructor](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/sweepresult.markdown#sweepresult-void)|[ OtherCollider](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/sweepresult.markdown#othercollider-plasma-engin)| | |
+| |[ OtherObject](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/sweepresult.markdown#otherobject-plasma-engine)| | |
+| |[ Penetration](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/sweepresult.markdown#penetration-plasma-engine)| | |
+| |[ Time](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/sweepresult.markdown#time-plasma-engine-documen)| | |
+| |[ WorldNormalTowardsOther](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/sweepresult.markdown#worldnormaltowardsother)| | |
+| |[ WorldNormalTowardsSelf](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/sweepresult.markdown#worldnormaltowardsself-z)| | |
+| |[ WorldPoint](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/sweepresult.markdown#worldpoint-plasma-engine-d)| | |
 
 
  #  Properties
 
 
 ---  
- #  OtherCollider : [collider](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/collider.markdown)
+ #  OtherCollider : [collider](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/collider.markdown)
 
  `read-only`
 
@@ -27,7 +27,7 @@
 
 
 ---  
- #  OtherObject : [cog](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/cog.markdown)
+ #  OtherObject : [cog](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/cog.markdown)
 
  `read-only`
 
@@ -37,7 +37,7 @@
 
 
 ---  
- #  Penetration : [real](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown)
+ #  Penetration : [real](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown)
 
  `read-only`
 
@@ -47,7 +47,7 @@
 
 
 ---  
- #  Time : [real](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown)
+ #  Time : [real](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown)
 
  `read-only`
 
@@ -57,7 +57,7 @@
 
 
 ---  
- #  WorldNormalTowardsOther : [real3](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/lightning_base_types/real3.markdown)
+ #  WorldNormalTowardsOther : [real3](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real3.markdown)
 
  `read-only`
 
@@ -67,7 +67,7 @@
 
 
 ---  
- #  WorldNormalTowardsSelf : [real3](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/lightning_base_types/real3.markdown)
+ #  WorldNormalTowardsSelf : [real3](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real3.markdown)
 
  `read-only`
 
@@ -77,7 +77,7 @@
 
 
 ---  
- #  WorldPoint : [real3](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/lightning_base_types/real3.markdown)
+ #  WorldPoint : [real3](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real3.markdown)
 
  `read-only`
 
@@ -111,7 +111,7 @@
 > 
 > |Name|Type|Description|
 > |---|---|---|
-> ||[sweepresult](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/sweepresult.markdown)| |
+> ||[sweepresult](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/sweepresult.markdown)| |
 > ``` lang=cpp, name=Lightning
 > function SweepResult( : SweepResult)
 > ``` 

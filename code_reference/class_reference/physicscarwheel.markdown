@@ -359,7 +359,7 @@
 
 
 ---  
- #  SteerFactor : [real](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown)
+ #  SteerFactor : [real](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown)
 
 > How much this wheel steers. [0, 1] where 1 is the max steering of the car.
 > ``` lang=cpp, name=Lightning
@@ -367,7 +367,7 @@
 
 
 ---  
- #  WheelLocalStartPosition : [real3](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/lightning_base_types/real3.markdown)
+ #  WheelLocalStartPosition : [real3](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real3.markdown)
 
 > The local position on the car body that the wheel starts at (raycasts from).
 > ``` lang=cpp, name=Lightning
@@ -375,7 +375,7 @@
 
 
 ---  
- #  WorldAngularVelocity : [real3](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/lightning_base_types/real3.markdown)
+ #  WorldAngularVelocity : [real3](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real3.markdown)
 
  `read-only`
 
@@ -385,7 +385,7 @@
 
 
 ---  
- #  WorldAxleAxis : [real3](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/lightning_base_types/real3.markdown)
+ #  WorldAxleAxis : [real3](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real3.markdown)
 
  `read-only`
 
@@ -395,7 +395,7 @@
 
 
 ---  
- #  WorldForwardAxis : [real3](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/lightning_base_types/real3.markdown)
+ #  WorldForwardAxis : [real3](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real3.markdown)
 
  `read-only`
 
@@ -405,7 +405,7 @@
 
 
 ---  
- #  WorldLinearVelocity : [real3](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/lightning_base_types/real3.markdown)
+ #  WorldLinearVelocity : [real3](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real3.markdown)
 
  `read-only`
 
@@ -415,7 +415,7 @@
 
 
 ---  
- #  WorldSpringAxis : [real3](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/lightning_base_types/real3.markdown)
+ #  WorldSpringAxis : [real3](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real3.markdown)
 
  `read-only`
 
@@ -425,7 +425,7 @@
 
 
 ---  
- #  WorldWheelBasis : [quaternion](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/lightning_base_types/quaternion.markdown)
+ #  WorldWheelBasis : [quaternion](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/quaternion.markdown)
 
 > Determines what directions the forward, axle, and spring are on the wheel. The forward direction is taken from the x-axis of the basis. Likewise the axle is from the y-axis and the spring is from the z-axis. Use ToQuaternion to construct this.
 > ``` lang=cpp, name=Lightning

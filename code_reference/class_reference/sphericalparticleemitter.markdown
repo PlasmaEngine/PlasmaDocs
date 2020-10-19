@@ -6,7 +6,7 @@
 
 |Methods|Properties|Base Classes|Derived Classes|
 |---|---|---|---|
-|[ Constructor](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/sphericalparticleemitter.markdown#sphericalparticleemitter)| |[particleemittershared](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/particleemittershared.markdown)| |
+|[ Constructor](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/sphericalparticleemitter.markdown#sphericalparticleemitter)| |[particleemittershared](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/particleemittershared.markdown)| |
 
 
  #  Properties

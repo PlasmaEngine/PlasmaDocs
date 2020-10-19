@@ -6,19 +6,19 @@
 
 |Methods|Properties|Base Classes|Derived Classes|
 |---|---|---|---|
-|[ Constructor](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/jointconfigoverride.markdown#jointconfigoverride-void)|[ AngularBaumgarte](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/jointconfigoverride.markdown#angularbaumgarte-plasma-en)|[component](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/component.markdown)| |
-| |[ AngularErrorCorrection](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/jointconfigoverride.markdown#angularerrorcorrection-z)| | |
-| |[ LinearBaumgarte](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/jointconfigoverride.markdown#linearbaumgarte-plasma-eng)| | |
-| |[ LinearErrorCorrection](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/jointconfigoverride.markdown#linearerrorcorrection-ze)| | |
-| |[ PositionCorrectionType](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/jointconfigoverride.markdown#positioncorrectiontype-z)| | |
-| |[ Slop](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/jointconfigoverride.markdown#slop-plasma-engine-documen)| | |
+|[ Constructor](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/jointconfigoverride.markdown#jointconfigoverride-void)|[ AngularBaumgarte](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/jointconfigoverride.markdown#angularbaumgarte-plasma-en)|[component](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/component.markdown)| |
+| |[ AngularErrorCorrection](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/jointconfigoverride.markdown#angularerrorcorrection-z)| | |
+| |[ LinearBaumgarte](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/jointconfigoverride.markdown#linearbaumgarte-plasma-eng)| | |
+| |[ LinearErrorCorrection](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/jointconfigoverride.markdown#linearerrorcorrection-ze)| | |
+| |[ PositionCorrectionType](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/jointconfigoverride.markdown#positioncorrectiontype-z)| | |
+| |[ Slop](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/jointconfigoverride.markdown#slop-plasma-engine-documen)| | |
 
 
  #  Properties
 
 
 ---  
- #  AngularBaumgarte : [real](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown)
+ #  AngularBaumgarte : [real](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown)
 
 > The exponential constant for correcting angular error with a penalty impulse.
 > ``` lang=cpp, name=Lightning
@@ -26,7 +26,7 @@
 
 
 ---  
- #  AngularErrorCorrection : [real](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown)
+ #  AngularErrorCorrection : [real](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown)
 
 > The max amount of error that can be corrected by the angular portion of any constraint in one frame (only for PostStabilization).
 > ``` lang=cpp, name=Lightning
@@ -34,7 +34,7 @@
 
 
 ---  
- #  LinearBaumgarte : [real](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown)
+ #  LinearBaumgarte : [real](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown)
 
 > The exponential constant for correcting linear error with a penalty impulse.
 > ``` lang=cpp, name=Lightning
@@ -42,7 +42,7 @@
 
 
 ---  
- #  LinearErrorCorrection : [real](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown)
+ #  LinearErrorCorrection : [real](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown)
 
 > The max amount of error that can be corrected by the linear portion of any constraint in one frame (only for PostStabilization).
 > ``` lang=cpp, name=Lightning
@@ -50,7 +50,7 @@
 
 
 ---  
- #  PositionCorrectionType : [ConstraintPositionCorrection](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#constraintpositioncorrection)
+ #  PositionCorrectionType : [ConstraintPositionCorrection](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#constraintpositioncorrection)
 
 > The kind of position correction that this joint should use.
 > ``` lang=cpp, name=Lightning
@@ -58,7 +58,7 @@
 
 
 ---  
- #  Slop : [real](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown)
+ #  Slop : [real](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown)
 
 > The amount of error allowed before position correction takes effect.
 > ``` lang=cpp, name=Lightning

@@ -6,17 +6,17 @@
 
 |Methods|Properties|Base Classes|Derived Classes|
 |---|---|---|---|
-|[ Constructor](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/thrusteffect.markdown#thrusteffect-void)|[ ForceDirection](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/thrusteffect.markdown#forcedirection-plasma-engi)|[physicseffect](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/physicseffect.markdown)| |
-| |[ ForceStrength](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/thrusteffect.markdown#forcestrength-plasma-engin)| | |
-| |[ LocalSpaceDirection](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/thrusteffect.markdown#localspacedirection-plasma)| | |
-| |[ WorldForceDirection](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/thrusteffect.markdown#worldforcedirection-plasma)| | |
+|[ Constructor](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/thrusteffect.markdown#thrusteffect-void)|[ ForceDirection](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/thrusteffect.markdown#forcedirection-plasma-engi)|[physicseffect](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/physicseffect.markdown)| |
+| |[ ForceStrength](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/thrusteffect.markdown#forcestrength-plasma-engin)| | |
+| |[ LocalSpaceDirection](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/thrusteffect.markdown#localspacedirection-plasma)| | |
+| |[ WorldForceDirection](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/thrusteffect.markdown#worldforcedirection-plasma)| | |
 
 
  #  Properties
 
 
 ---  
- #  ForceDirection : [real3](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/lightning_base_types/real3.markdown)
+ #  ForceDirection : [real3](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real3.markdown)
 
 > The direction that the force should be applied.
 > ``` lang=cpp, name=Lightning
@@ -24,7 +24,7 @@
 
 
 ---  
- #  ForceStrength : [real](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown)
+ #  ForceStrength : [real](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown)
 
 > The strength of the force being applied in the force direction.
 > ``` lang=cpp, name=Lightning
@@ -32,7 +32,7 @@
 
 
 ---  
- #  LocalSpaceDirection : [boolean](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown)
+ #  LocalSpaceDirection : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown)
 
 > Determines if this force is to be applied in local or world space.
 > ``` lang=cpp, name=Lightning
@@ -40,7 +40,7 @@
 
 
 ---  
- #  WorldForceDirection : [real3](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/lightning_base_types/real3.markdown)
+ #  WorldForceDirection : [real3](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real3.markdown)
 
  `read-only`
 

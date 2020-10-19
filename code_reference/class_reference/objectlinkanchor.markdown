@@ -6,14 +6,14 @@
 
 |Methods|Properties|Base Classes|Derived Classes|
 |---|---|---|---|
-|[ Constructor](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/objectlinkanchor.markdown#objectlinkanchor-void)|[ ObjectLinks](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/objectlinkanchor.markdown#objectlinks-plasma-engine)|[component](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/component.markdown)| |
+|[ Constructor](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/objectlinkanchor.markdown#objectlinkanchor-void)|[ ObjectLinks](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/objectlinkanchor.markdown#objectlinks-plasma-engine)|[component](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/component.markdown)| |
 
 
  #  Properties
 
 
 ---  
- #  ObjectLinks : [objectlinkrange](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/objectlinkrange.markdown)
+ #  ObjectLinks : [objectlinkrange](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/objectlinkrange.markdown)
 
  `read-only`
 

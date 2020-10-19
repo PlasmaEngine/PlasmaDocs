@@ -6,16 +6,16 @@
 
 |Methods|Properties|Base Classes|Derived Classes|
 |---|---|---|---|
-|[ Constructor](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/mainconfig.markdown#mainconfig-void)|[ ApplicationName](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/mainconfig.markdown#applicationname-plasma-eng)|[component](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/component.markdown)| |
-| |[ BuildDate](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/mainconfig.markdown#builddate-plasma-engine-do)| | |
-| |[ BuildVersion](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/mainconfig.markdown#buildversion-plasma-engine)| | |
+|[ Constructor](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/mainconfig.markdown#mainconfig-void)|[ ApplicationName](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/mainconfig.markdown#applicationname-plasma-eng)|[component](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/component.markdown)| |
+| |[ BuildDate](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/mainconfig.markdown#builddate-plasma-engine-do)| | |
+| |[ BuildVersion](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/mainconfig.markdown#buildversion-plasma-engine)| | |
 
 
  #  Properties
 
 
 ---  
- #  ApplicationName : [string](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown)
+ #  ApplicationName : [string](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown)
 
  `read-only`
 
@@ -25,7 +25,7 @@
 
 
 ---  
- #  BuildDate : [string](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown)
+ #  BuildDate : [string](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown)
 
  `read-only`
 
@@ -35,7 +35,7 @@
 
 
 ---  
- #  BuildVersion : [string](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown)
+ #  BuildVersion : [string](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown)
 
  `read-only`
 

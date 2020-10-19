@@ -6,15 +6,15 @@
 
 |Methods|Properties|Base Classes|Derived Classes|
 |---|---|---|---|
-|[ ClearCachedEdgeAdjacency](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/heightmapcollider.markdown#clearcachededgeadjacency)|[ Thickness](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/heightmapcollider.markdown#thickness-plasma-engine-do)|[collider](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/collider.markdown)| |
-|[ Constructor](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/heightmapcollider.markdown#heightmapcollider-void)| | | |
+|[ ClearCachedEdgeAdjacency](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/heightmapcollider.markdown#clearcachededgeadjacency)|[ Thickness](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/heightmapcollider.markdown#thickness-plasma-engine-do)|[collider](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/collider.markdown)| |
+|[ Constructor](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/heightmapcollider.markdown#heightmapcollider-void)| | | |
 
 
  #  Properties
 
 
 ---  
- #  Thickness : [real](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown)
+ #  Thickness : [real](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown)
 
 > How thick the surface of the height map is. Used to avoid tunneling problems.
 > ``` lang=cpp, name=Lightning

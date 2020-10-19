@@ -6,14 +6,14 @@
 
 |Methods|Properties|Base Classes|Derived Classes|
 |---|---|---|---|
-|[ Constructor](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/model.markdown#model-void)|[ Mesh](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/model.markdown#mesh-plasma-engine-documen)|[graphical](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/graphical.markdown)| |
+|[ Constructor](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/model.markdown#model-void)|[ Mesh](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/model.markdown#mesh-plasma-engine-documen)|[graphical](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/graphical.markdown)| |
 
 
  #  Properties
 
 
 ---  
- #  Mesh : [mesh](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/mesh.markdown)
+ #  Mesh : [mesh](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/mesh.markdown)
 
 > Mesh that the graphical will render.
 > ``` lang=cpp, name=Lightning

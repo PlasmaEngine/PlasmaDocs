@@ -2,17 +2,17 @@
 
 |Methods|Properties|Base Classes|Derived Classes|
 |---|---|---|---|
-|[ MoveNext](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/resourcetableentryrange.markdown#movenext-void)|[ All](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/resourcetableentryrange.markdown#all-plasma-engine-document)| | |
-|[ Constructor](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/resourcetableentryrange.markdown#resourcetableentryrange)|[ Current](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/resourcetableentryrange.markdown#current-plasma-engine-docu)| | |
-| |[ IsEmpty](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/resourcetableentryrange.markdown#isempty-plasma-engine-docu)| | |
-| |[ IsNotEmpty](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/resourcetableentryrange.markdown#isnotempty-plasma-engine-d)| | |
+|[ MoveNext](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/resourcetableentryrange.markdown#movenext-void)|[ All](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/resourcetableentryrange.markdown#all-plasma-engine-document)| | |
+|[ Constructor](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/resourcetableentryrange.markdown#resourcetableentryrange)|[ Current](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/resourcetableentryrange.markdown#current-plasma-engine-docu)| | |
+| |[ IsEmpty](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/resourcetableentryrange.markdown#isempty-plasma-engine-docu)| | |
+| |[ IsNotEmpty](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/resourcetableentryrange.markdown#isnotempty-plasma-engine-d)| | |
 
 
  #  Properties
 
 
 ---  
- #  All : [resourcetableentryrange](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/resourcetableentryrange.markdown)
+ #  All : [resourcetableentryrange](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/resourcetableentryrange.markdown)
 
  `read-only`
 
@@ -22,7 +22,7 @@
 
 
 ---  
- #  Current : [resourcetableentry](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/resourcetableentry.markdown)
+ #  Current : [resourcetableentry](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/resourcetableentry.markdown)
 
  `read-only`
 
@@ -32,7 +32,7 @@
 
 
 ---  
- #  IsEmpty : [boolean](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown)
+ #  IsEmpty : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown)
 
  `read-only`
 
@@ -42,7 +42,7 @@
 
 
 ---  
- #  IsNotEmpty : [boolean](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown)
+ #  IsNotEmpty : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown)
 
  `read-only`
 
@@ -87,7 +87,7 @@
 > 
 > |Name|Type|Description|
 > |---|---|---|
-> |p0|[resourcetableentryrange](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/resourcetableentryrange.markdown)| |
+> |p0|[resourcetableentryrange](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/resourcetableentryrange.markdown)| |
 > ``` lang=cpp, name=Lightning
 > function ResourceTableEntryRange(p0 : ResourceTableEntryRange)
 > ``` 

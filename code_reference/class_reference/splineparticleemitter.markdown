@@ -4,19 +4,19 @@
 
 |Methods|Properties|Base Classes|Derived Classes|
 |---|---|---|---|
-|[ Constructor](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/splineparticleemitter.markdown#splineparticleemitter-vo)|[ ClampT](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/splineparticleemitter.markdown#clampt-plasma-engine-docum)|[particleemittershared](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/particleemittershared.markdown)| |
-| |[ EmitRadius](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/splineparticleemitter.markdown#emitradius-plasma-engine-d)| | |
-| |[ SpawnT](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/splineparticleemitter.markdown#spawnt-plasma-engine-docum)| | |
-| |[ SpawnTVariance](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/splineparticleemitter.markdown#spawntvariance-plasma-engi)| | |
-| |[ Spline](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/splineparticleemitter.markdown#spline-plasma-engine-docum)| | |
-| |[ TargetSplineCog](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/splineparticleemitter.markdown#targetsplinecog-plasma-eng)| | |
+|[ Constructor](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/splineparticleemitter.markdown#splineparticleemitter-vo)|[ ClampT](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/splineparticleemitter.markdown#clampt-plasma-engine-docum)|[particleemittershared](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/particleemittershared.markdown)| |
+| |[ EmitRadius](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/splineparticleemitter.markdown#emitradius-plasma-engine-d)| | |
+| |[ SpawnT](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/splineparticleemitter.markdown#spawnt-plasma-engine-docum)| | |
+| |[ SpawnTVariance](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/splineparticleemitter.markdown#spawntvariance-plasma-engi)| | |
+| |[ Spline](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/splineparticleemitter.markdown#spline-plasma-engine-docum)| | |
+| |[ TargetSplineCog](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/splineparticleemitter.markdown#targetsplinecog-plasma-eng)| | |
 
 
  #  Properties
 
 
 ---  
- #  ClampT : [boolean](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown)
+ #  ClampT : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -24,7 +24,7 @@
 
 
 ---  
- #  EmitRadius : [real](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown)
+ #  EmitRadius : [real](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -32,7 +32,7 @@
 
 
 ---  
- #  SpawnT : [real](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown)
+ #  SpawnT : [real](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -40,7 +40,7 @@
 
 
 ---  
- #  SpawnTVariance : [real](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown)
+ #  SpawnTVariance : [real](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -48,7 +48,7 @@
 
 
 ---  
- #  Spline : [spline](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/spline.markdown)
+ #  Spline : [spline](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/spline.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -56,7 +56,7 @@
 
 
 ---  
- #  TargetSplineCog : [cogpath](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/cogpath.markdown)
+ #  TargetSplineCog : [cogpath](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/cogpath.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning

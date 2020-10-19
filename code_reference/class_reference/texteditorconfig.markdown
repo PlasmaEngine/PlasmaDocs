@@ -4,25 +4,25 @@
 
 |Methods|Properties|Base Classes|Derived Classes|
 |---|---|---|---|
-|[ Constructor](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/texteditorconfig.markdown#texteditorconfig-void)|[ AutoCompleteOnEnter](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/texteditorconfig.markdown#autocompleteonenter-plasma)|[component](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/component.markdown)| |
-| |[ CodeFolding](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/texteditorconfig.markdown#codefolding-plasma-engine)| | |
-| |[ ColorScheme](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/texteditorconfig.markdown#colorscheme-plasma-engine)| | |
-| |[ ConfidentAutoCompleteOnSymbols](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/texteditorconfig.markdown#confidentautocompleteons)| | |
-| |[ FontSize](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/texteditorconfig.markdown#fontsize-plasma-engine-doc)| | |
-| |[ HighlightPartialTextMatch](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/texteditorconfig.markdown#highlightpartialtextmatc)| | |
-| |[ KeywordAndTypeCompletion](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/texteditorconfig.markdown#keywordandtypecompletion)| | |
-| |[ LineNumbers](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/texteditorconfig.markdown#linenumbers-plasma-engine)| | |
-| |[ LocalWordCompletion](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/texteditorconfig.markdown#localwordcompletion-plasma)| | |
-| |[ ShowWhiteSpace](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/texteditorconfig.markdown#showwhitespace-plasma-engi)| | |
-| |[ TabWidth](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/texteditorconfig.markdown#tabwidth-plasma-engine-doc)| | |
-| |[ TextMatchHighlighting](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/texteditorconfig.markdown#textmatchhighlighting-ze)| | |
+|[ Constructor](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/texteditorconfig.markdown#texteditorconfig-void)|[ AutoCompleteOnEnter](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/texteditorconfig.markdown#autocompleteonenter-plasma)|[component](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/component.markdown)| |
+| |[ CodeFolding](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/texteditorconfig.markdown#codefolding-plasma-engine)| | |
+| |[ ColorScheme](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/texteditorconfig.markdown#colorscheme-plasma-engine)| | |
+| |[ ConfidentAutoCompleteOnSymbols](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/texteditorconfig.markdown#confidentautocompleteons)| | |
+| |[ FontSize](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/texteditorconfig.markdown#fontsize-plasma-engine-doc)| | |
+| |[ HighlightPartialTextMatch](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/texteditorconfig.markdown#highlightpartialtextmatc)| | |
+| |[ KeywordAndTypeCompletion](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/texteditorconfig.markdown#keywordandtypecompletion)| | |
+| |[ LineNumbers](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/texteditorconfig.markdown#linenumbers-plasma-engine)| | |
+| |[ LocalWordCompletion](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/texteditorconfig.markdown#localwordcompletion-plasma)| | |
+| |[ ShowWhiteSpace](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/texteditorconfig.markdown#showwhitespace-plasma-engi)| | |
+| |[ TabWidth](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/texteditorconfig.markdown#tabwidth-plasma-engine-doc)| | |
+| |[ TextMatchHighlighting](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/texteditorconfig.markdown#textmatchhighlighting-ze)| | |
 
 
  #  Properties
 
 
 ---  
- #  AutoCompleteOnEnter : [boolean](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown)
+ #  AutoCompleteOnEnter : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -30,7 +30,7 @@
 
 
 ---  
- #  CodeFolding : [boolean](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown)
+ #  CodeFolding : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -38,7 +38,7 @@
 
 
 ---  
- #  ColorScheme : [string](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown)
+ #  ColorScheme : [string](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -46,7 +46,7 @@
 
 
 ---  
- #  ConfidentAutoCompleteOnSymbols : [boolean](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown)
+ #  ConfidentAutoCompleteOnSymbols : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -54,7 +54,7 @@
 
 
 ---  
- #  FontSize : [integer](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/lightning_base_types/integer.markdown)
+ #  FontSize : [integer](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/integer.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -62,7 +62,7 @@
 
 
 ---  
- #  HighlightPartialTextMatch : [boolean](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown)
+ #  HighlightPartialTextMatch : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -70,7 +70,7 @@
 
 
 ---  
- #  KeywordAndTypeCompletion : [boolean](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown)
+ #  KeywordAndTypeCompletion : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -78,7 +78,7 @@
 
 
 ---  
- #  LineNumbers : [boolean](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown)
+ #  LineNumbers : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -86,7 +86,7 @@
 
 
 ---  
- #  LocalWordCompletion : [boolean](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown)
+ #  LocalWordCompletion : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -94,7 +94,7 @@
 
 
 ---  
- #  ShowWhiteSpace : [boolean](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown)
+ #  ShowWhiteSpace : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -102,7 +102,7 @@
 
 
 ---  
- #  TabWidth : [TabWidth](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#tabwidth)
+ #  TabWidth : [TabWidth](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#tabwidth)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -110,7 +110,7 @@
 
 
 ---  
- #  TextMatchHighlighting : [boolean](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown)
+ #  TextMatchHighlighting : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning

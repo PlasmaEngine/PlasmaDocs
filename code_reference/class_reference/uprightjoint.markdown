@@ -6,16 +6,16 @@
 
 |Methods|Properties|Base Classes|Derived Classes|
 |---|---|---|---|
-|[ Constructor](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/uprightjoint.markdown#uprightjoint-void)|[ LocalAxisA](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/uprightjoint.markdown#localaxisa-plasma-engine-d)|[joint](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/joint.markdown)| |
-| |[ LocalAxisB](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/uprightjoint.markdown#localaxisb-plasma-engine-d)| | |
-| |[ WorldAxis](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/uprightjoint.markdown#worldaxis-plasma-engine-do)| | |
+|[ Constructor](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/uprightjoint.markdown#uprightjoint-void)|[ LocalAxisA](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/uprightjoint.markdown#localaxisa-plasma-engine-d)|[joint](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/joint.markdown)| |
+| |[ LocalAxisB](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/uprightjoint.markdown#localaxisb-plasma-engine-d)| | |
+| |[ WorldAxis](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/uprightjoint.markdown#worldaxis-plasma-engine-do)| | |
 
 
  #  Properties
 
 
 ---  
- #  LocalAxisA : [real3](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/lightning_base_types/real3.markdown)
+ #  LocalAxisA : [real3](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real3.markdown)
 
 > The locally defined axis on object A . 
 > ``` lang=cpp, name=Lightning
@@ -23,7 +23,7 @@
 
 
 ---  
- #  LocalAxisB : [real3](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/lightning_base_types/real3.markdown)
+ #  LocalAxisB : [real3](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real3.markdown)
 
 > The locally defined axis on object B . 
 > ``` lang=cpp, name=Lightning
@@ -31,7 +31,7 @@
 
 
 ---  
- #  WorldAxis : [real3](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/lightning_base_types/real3.markdown)
+ #  WorldAxis : [real3](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real3.markdown)
 
 > The axis in world space that is being rotated about . 
 > ``` lang=cpp, name=Lightning
