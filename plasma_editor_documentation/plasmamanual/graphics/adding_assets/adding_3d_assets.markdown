@@ -2,7 +2,7 @@
 
  # Models and Model Animations
 
-After the file has been imported, a new window will open�GroupImportOptions window�that will provide a number of options for how the data should converted into a Resource.
+After the file has been imported, a new window will open `GroupImportOptions` window that will provide a number of options for how the data should converted into a Resource.
 
  ##  Group Import Options
 
