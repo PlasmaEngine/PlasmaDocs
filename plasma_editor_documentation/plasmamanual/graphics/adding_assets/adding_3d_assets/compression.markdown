@@ -14,14 +14,3 @@
 | `BC6` | `1` | RGB floats | for hdr images |
 
 (NOTE)**Compressions with the same BPP:** When two or more compression types have the same bytes per pixel, one should choose the compression with the best fitting color format.  For example, `BC4` and `BC1` have the same bpp.  If the texture in question has RGB color, `BC1` should be used since the color format is RGB.  If the texture has only one color, such as a height map, then `BC4` should be preferred.  By choosing the best fitting compression type for the height map, precision is almost guaranteed to be better on that texture.
-
- # Related Material
-
- ## Manual
-- [Adding Textures and Sprites](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/graphics/adding_assets/adding_textures_and_sprites.markdown)
-
- ## Code Reference
-- [BlockCompression](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#texturecompression)
- 
-
- 
