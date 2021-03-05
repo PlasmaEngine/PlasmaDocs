@@ -1,6 +1,9 @@
 # Engine
 
-<img src='https://g.gravizo.com/svg?
+![Alt text]('https://g.gravizo.com/svg?)
+<details> 
+<summary></summary>
+custom_mark10
  digraph G {
    node [shape=rectangle, fontsize=10, height=0, fontname=Verdana];
    edge [fontsize=10, fontname=Verdana];
@@ -20,7 +23,8 @@
     "Editor Spaces" -> "Tools (Cogs)" [label="uses"];
     "Editor Spaces" -> "Commands (Cogs)" [label="uses"];
  }
-'/>
+custom_mark10
+</details>
 
 Philosophy
 ----------
