@@ -2,16 +2,16 @@
 
 |Methods|Properties|Base Classes|Derived Classes|
 |---|---|---|---|
-|[ Constructor](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/indexedhalfedgemesh.markdown#indexedhalfedgemesh-void)|[ Edges](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/indexedhalfedgemesh.markdown#edges-plasma-engine-docume)|[referencecountedobject](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/referencecountedobject.markdown)| |
-| |[ Faces](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/indexedhalfedgemesh.markdown#faces-plasma-engine-docume)| | |
-| |[ Vertices](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/indexedhalfedgemesh.markdown#vertices-plasma-engine-doc)| | |
+|[ Constructor](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/indexedhalfedgemesh.markdown#indexedhalfedgemesh-void)|[ Edges](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/indexedhalfedgemesh.markdown#edges-plasma-engine-docume)|[referencecountedobject](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/referencecountedobject.markdown)| |
+| |[ Faces](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/indexedhalfedgemesh.markdown#faces-plasma-engine-docume)| | |
+| |[ Vertices](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/indexedhalfedgemesh.markdown#vertices-plasma-engine-doc)| | |
 
 
  #  Properties
 
 
 ---  
- #  Edges : [indexedhalfedgemeshedgearray](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/indexedhalfedgemeshedgearray.markdown)
+ #  Edges : [indexedhalfedgemeshedgearray](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/indexedhalfedgemeshedgearray.markdown)
 
  `read-only`
 
@@ -21,7 +21,7 @@
 
 
 ---  
- #  Faces : [indexedhalfedgemeshfacearray](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/indexedhalfedgemeshfacearray.markdown)
+ #  Faces : [indexedhalfedgemeshfacearray](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/indexedhalfedgemeshfacearray.markdown)
 
  `read-only`
 
@@ -31,7 +31,7 @@
 
 
 ---  
- #  Vertices : [indexedhalfedgemeshvertexarray](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/indexedhalfedgemeshvertexarray.markdown)
+ #  Vertices : [indexedhalfedgemeshvertexarray](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/indexedhalfedgemeshvertexarray.markdown)
 
  `read-only`
 
@@ -65,7 +65,7 @@
 > 
 > |Name|Type|Description|
 > |---|---|---|
-> |p0|[indexedhalfedgemesh](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/indexedhalfedgemesh.markdown)| |
+> |p0|[indexedhalfedgemesh](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/indexedhalfedgemesh.markdown)| |
 > ``` lang=cpp, name=Lightning
 > function IndexedHalfEdgeMesh(p0 : IndexedHalfEdgeMesh)
 > ``` 

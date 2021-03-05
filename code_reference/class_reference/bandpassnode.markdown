@@ -4,15 +4,15 @@
 
 |Methods|Properties|Base Classes|Derived Classes|
 |---|---|---|---|
-| |[ CentralFrequency](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/bandpassnode.markdown#centralfrequency-plasma-en)|[soundnode](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/soundnode.markdown)| |
-| |[ QualityFactor](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/bandpassnode.markdown#qualityfactor-plasma-engin)| | |
+| |[ CentralFrequency](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/bandpassnode.markdown#centralfrequency-plasma-en)|[soundnode](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/soundnode.markdown)| |
+| |[ QualityFactor](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/bandpassnode.markdown#qualityfactor-plasma-engin)| | |
 
 
  #  Properties
 
 
 ---  
- #  CentralFrequency : [real](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown)
+ #  CentralFrequency : [real](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown)
 
 > The center frequency of the band. Frequencies above and below this band will be attenuated.
 > ``` lang=cpp, name=Lightning
@@ -20,7 +20,7 @@
 
 
 ---  
- #  QualityFactor : [real](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown)
+ #  QualityFactor : [real](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown)
 
 > The Q number of the band pass filter: higher numbers make the band smaller, while smaller numbers make it wider. The default value is 0.669.
 > ``` lang=cpp, name=Lightning

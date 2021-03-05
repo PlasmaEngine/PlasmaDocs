@@ -4,15 +4,15 @@
 
 |Methods|Properties|Base Classes|Derived Classes|
 |---|---|---|---|
-| |[ Active](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/microphoneinputnode.markdown#active-plasma-engine-docum)|[soundnode](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/soundnode.markdown)| |
-| |[ Volume](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/microphoneinputnode.markdown#volume-plasma-engine-docum)| | |
+| |[ Active](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/microphoneinputnode.markdown#active-plasma-engine-docum)|[soundnode](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/soundnode.markdown)| |
+| |[ Volume](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/microphoneinputnode.markdown#volume-plasma-engine-docum)| | |
 
 
  #  Properties
 
 
 ---  
- #  Active : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown)
+ #  Active : [boolean](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown)
 
 > Microphone input will only be played while the Active property is set to True.
 > ``` lang=cpp, name=Lightning
@@ -20,7 +20,7 @@
 
 
 ---  
- #  Volume : [real](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown)
+ #  Volume : [real](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown)
 
 > The volume modifier applied to all audio data received from the microphone.
 > ``` lang=cpp, name=Lightning

@@ -6,21 +6,21 @@
 
 |Methods|Properties|Base Classes|Derived Classes|
 |---|---|---|---|
-|[ GetNetProperty](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/netchannel.markdown#getnetproperty-plasma-engi)|[ Authority](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/netchannel.markdown#authority-plasma-engine-do)|[safeid32object](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/safeid32object.markdown)| |
-|[ HasNetProperty](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/netchannel.markdown#hasnetproperty-plasma-engi)|[ ChangeFlag](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/netchannel.markdown#changeflag-plasma-engine-d)| | |
-|[ ReplicateNow](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/netchannel.markdown#replicatenow-plasma-engine)|[ IsNapping](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/netchannel.markdown#isnapping-plasma-engine-do)| | |
-|[ TakeNap](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/netchannel.markdown#takenap-void)|[ IsScheduled](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/netchannel.markdown#isscheduled-plasma-engine)| | |
-|[ WakeUp](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/netchannel.markdown#wakeup-void)|[ LastChangeTimePassed](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/netchannel.markdown#lastchangetimepassed-zer)| | |
-| |[ LastChangeTimestamp](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/netchannel.markdown#lastchangetimestamp-plasma)| | |
-| |[ Name](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/netchannel.markdown#name-plasma-engine-documen)| | |
-| |[ NetChannelType](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/netchannel.markdown#netchanneltype-plasma-engi)| | |
+|[ GetNetProperty](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/netchannel.markdown#getnetproperty-plasma-engi)|[ Authority](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/netchannel.markdown#authority-plasma-engine-do)|[safeid32object](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/safeid32object.markdown)| |
+|[ HasNetProperty](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/netchannel.markdown#hasnetproperty-plasma-engi)|[ ChangeFlag](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/netchannel.markdown#changeflag-plasma-engine-d)| | |
+|[ ReplicateNow](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/netchannel.markdown#replicatenow-plasma-engine)|[ IsNapping](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/netchannel.markdown#isnapping-plasma-engine-do)| | |
+|[ TakeNap](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/netchannel.markdown#takenap-void)|[ IsScheduled](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/netchannel.markdown#isscheduled-plasma-engine)| | |
+|[ WakeUp](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/netchannel.markdown#wakeup-void)|[ LastChangeTimePassed](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/netchannel.markdown#lastchangetimepassed-zer)| | |
+| |[ LastChangeTimestamp](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/netchannel.markdown#lastchangetimestamp-plasma)| | |
+| |[ Name](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/netchannel.markdown#name-plasma-engine-documen)| | |
+| |[ NetChannelType](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/netchannel.markdown#netchanneltype-plasma-engi)| | |
 
 
  #  Properties
 
 
 ---  
- #  Authority : [Authority](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#authority)
+ #  Authority : [Authority](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#authority)
 
 > Controls which peer has the authority to observe and replicate property changes. (Client: Indicates both the client and server are allowed to observe and replicate property changes) (Server: Indicates only the server is allowed to observe and replicate property changes) Only a single client, specified by NetObject::NetUserOwnerPeerId, may possess client authority at any given time. The server is still responsible for relaying contained property changes to other clients, but will not replicate contained property changes back to the authority client. However, the server is also still responsible for other replication commands (such as object creation/destruction), and these WILL be replicated to the authority client.
 > ``` lang=cpp, name=Lightning
@@ -28,7 +28,7 @@
 
 
 ---  
- #  ChangeFlag : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown)
+ #  ChangeFlag : [boolean](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown)
 
 > Manual change flag (checked upon manual change observation).
 > ``` lang=cpp, name=Lightning
@@ -36,7 +36,7 @@
 
 
 ---  
- #  IsNapping : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown)
+ #  IsNapping : [boolean](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown)
 
  `read-only`
 
@@ -46,7 +46,7 @@
 
 
 ---  
- #  IsScheduled : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown)
+ #  IsScheduled : [boolean](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown)
 
  `read-only`
 
@@ -56,7 +56,7 @@
 
 
 ---  
- #  LastChangeTimePassed : [real](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown)
+ #  LastChangeTimePassed : [real](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown)
 
  `read-only`
 
@@ -66,7 +66,7 @@
 
 
 ---  
- #  LastChangeTimestamp : [real](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown)
+ #  LastChangeTimestamp : [real](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown)
 
  `read-only`
 
@@ -76,7 +76,7 @@
 
 
 ---  
- #  Name : [string](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown)
+ #  Name : [string](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown)
 
  `read-only`
 
@@ -86,7 +86,7 @@
 
 
 ---  
- #  NetChannelType : [netchanneltype](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/netchanneltype.markdown)
+ #  NetChannelType : [netchanneltype](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/netchanneltype.markdown)
 
  `read-only`
 
@@ -100,33 +100,33 @@
 
 
 ---  
- #  GetNetProperty : [netproperty](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/netproperty.markdown)
+ #  GetNetProperty : [netproperty](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/netproperty.markdown)
 
 > [Client/Server] Returns the specified net property, else nullptr.
 > |Name|Type|Description|
 > |---|---|---|
-> |component|[component](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/component.markdown)| |
-> |propertyName|[string](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown)| |
+> |component|[component](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/component.markdown)| |
+> |propertyName|[string](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown)| |
 > ``` lang=cpp, name=Lightning
 > function GetNetProperty(component : Component, propertyName : String) : NetProperty
 > ``` 
 
 
 ---  
- #  HasNetProperty : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown)
+ #  HasNetProperty : [boolean](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown)
 
 > [Client/Server] Returns true if the net object has the specified net property, else false.
 > |Name|Type|Description|
 > |---|---|---|
-> |component|[component](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/component.markdown)| |
-> |propertyName|[string](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown)| |
+> |component|[component](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/component.markdown)| |
+> |propertyName|[string](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown)| |
 > ``` lang=cpp, name=Lightning
 > function HasNetProperty(component : Component, propertyName : String) : Boolean
 > ``` 
 
 
 ---  
- #  ReplicateNow : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown)
+ #  ReplicateNow : [boolean](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown)
 
 > Replicates net property changes immediately (only if changes are detected). Will also update nap state as configured. Returns true if changes were replicated, else false.
 > |Name|Type|Description|

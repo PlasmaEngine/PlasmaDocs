@@ -1,4 +1,3 @@
-# Gamepad Input
 Gamepads are very useful tools for any game project. They often offer a more comfortable method of controlling a game, especially if two or more players are intended to play at the same time. As well as being an alternate method of control, Gamepads can also make use of vibration as a method of feedback.
 
  # Common Uses

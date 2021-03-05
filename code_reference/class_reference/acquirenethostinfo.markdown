@@ -6,14 +6,14 @@
 
 |Methods|Properties|Base Classes|Derived Classes|
 |---|---|---|---|
-| |[ ReturnHostInfo](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/acquirenethostinfo.markdown#returnhostinfo-plasma-engi)|[event](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/event.markdown)| |
+| |[ ReturnHostInfo](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/acquirenethostinfo.markdown#returnhostinfo-plasma-engi)|[event](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/event.markdown)| |
 
 
  #  Properties
 
 
 ---  
- #  ReturnHostInfo : [eventbundle](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/eventbundle.markdown)
+ #  ReturnHostInfo : [eventbundle](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/eventbundle.markdown)
 
 > Return: Our bundled host info event data.
 > ``` lang=cpp, name=Lightning

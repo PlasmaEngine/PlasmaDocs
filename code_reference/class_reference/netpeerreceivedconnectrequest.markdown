@@ -6,19 +6,19 @@
 
 |Methods|Properties|Base Classes|Derived Classes|
 |---|---|---|---|
-| |[ OurIpAddress](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/netpeerreceivedconnectrequest.markdown#ouripaddress-plasma-engine)|[event](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/event.markdown)| |
-| |[ ReturnOurConnectResponse](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/netpeerreceivedconnectrequest.markdown#returnourconnectresponse)| | |
-| |[ ReturnOurResponseBundle](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/netpeerreceivedconnectrequest.markdown#returnourresponsebundle)| | |
-| |[ TheirIpAddress](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/netpeerreceivedconnectrequest.markdown#theiripaddress-plasma-engi)| | |
-| |[ TheirPendingUserAddRequestCount](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/netpeerreceivedconnectrequest.markdown#theirpendinguseraddreque)| | |
-| |[ TheirRequestBundle](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/netpeerreceivedconnectrequest.markdown#theirrequestbundle-plasma)| | |
+| |[ OurIpAddress](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/netpeerreceivedconnectrequest.markdown#ouripaddress-plasma-engine)|[event](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/event.markdown)| |
+| |[ ReturnOurConnectResponse](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/netpeerreceivedconnectrequest.markdown#returnourconnectresponse)| | |
+| |[ ReturnOurResponseBundle](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/netpeerreceivedconnectrequest.markdown#returnourresponsebundle)| | |
+| |[ TheirIpAddress](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/netpeerreceivedconnectrequest.markdown#theiripaddress-plasma-engi)| | |
+| |[ TheirPendingUserAddRequestCount](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/netpeerreceivedconnectrequest.markdown#theirpendinguseraddreque)| | |
+| |[ TheirRequestBundle](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/netpeerreceivedconnectrequest.markdown#theirrequestbundle-plasma)| | |
 
 
  #  Properties
 
 
 ---  
- #  OurIpAddress : [ipaddress](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/ipaddress.markdown)
+ #  OurIpAddress : [ipaddress](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/ipaddress.markdown)
 
  `read-only`
 
@@ -28,7 +28,7 @@
 
 
 ---  
- #  ReturnOurConnectResponse : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown)
+ #  ReturnOurConnectResponse : [boolean](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown)
 
 > Return: Our connect response (accept the connect request?).
 > ``` lang=cpp, name=Lightning
@@ -36,7 +36,7 @@
 
 
 ---  
- #  ReturnOurResponseBundle : [eventbundle](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/eventbundle.markdown)
+ #  ReturnOurResponseBundle : [eventbundle](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/eventbundle.markdown)
 
 > Return: Our bundled response event data.
 > ``` lang=cpp, name=Lightning
@@ -44,7 +44,7 @@
 
 
 ---  
- #  TheirIpAddress : [ipaddress](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/ipaddress.markdown)
+ #  TheirIpAddress : [ipaddress](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/ipaddress.markdown)
 
  `read-only`
 
@@ -54,7 +54,7 @@
 
 
 ---  
- #  TheirPendingUserAddRequestCount : [integer](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/integer.markdown)
+ #  TheirPendingUserAddRequestCount : [integer](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/lightning_base_types/integer.markdown)
 
  `read-only`
 
@@ -64,7 +64,7 @@
 
 
 ---  
- #  TheirRequestBundle : [eventbundle](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/eventbundle.markdown)
+ #  TheirRequestBundle : [eventbundle](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/eventbundle.markdown)
 
  `read-only`
 

@@ -1,5 +1,4 @@
 
-# Random
 Randomness is an important part of most games, without randomness a game will be deterministic meaning the same outcome will always happen given the same set of player inputs.
 
  # Creating a Random Number Generator Object

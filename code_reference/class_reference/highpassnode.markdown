@@ -4,14 +4,14 @@
 
 |Methods|Properties|Base Classes|Derived Classes|
 |---|---|---|---|
-| |[ CutoffFrequency](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/highpassnode.markdown#cutofffrequency-plasma-eng)|[soundnode](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/soundnode.markdown)| |
+| |[ CutoffFrequency](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/highpassnode.markdown#cutofffrequency-plasma-eng)|[soundnode](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/soundnode.markdown)| |
 
 
  #  Properties
 
 
 ---  
- #  CutoffFrequency : [real](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown)
+ #  CutoffFrequency : [real](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown)
 
 > Frequencies below this number in the node's input will be attenuated. Setting this value to 20.0 or lower will skip all filter calculations.
 > ``` lang=cpp, name=Lightning

@@ -6,16 +6,16 @@
 
 |Methods|Properties|Base Classes|Derived Classes|
 |---|---|---|---|
-|[ Constructor](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/defaultgamesetup.markdown#defaultgamesetup-void)|[ LoadEditingLevel](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/defaultgamesetup.markdown#loadeditinglevel-plasma-en)|[component](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/component.markdown)| |
-| |[ StartingLevel](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/defaultgamesetup.markdown#startinglevel-plasma-engin)| | |
-| |[ StartingSpace](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/defaultgamesetup.markdown#startingspace-plasma-engin)| | |
+|[ Constructor](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/defaultgamesetup.markdown#defaultgamesetup-void)|[ LoadEditingLevel](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/defaultgamesetup.markdown#loadeditinglevel-plasma-en)|[component](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/component.markdown)| |
+| |[ StartingLevel](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/defaultgamesetup.markdown#startinglevel-plasma-engin)| | |
+| |[ StartingSpace](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/defaultgamesetup.markdown#startingspace-plasma-engin)| | |
 
 
  #  Properties
 
 
 ---  
- #  LoadEditingLevel : [boolean](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown)
+ #  LoadEditingLevel : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -23,7 +23,7 @@
 
 
 ---  
- #  StartingLevel : [level](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/level.markdown)
+ #  StartingLevel : [level](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/level.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -31,7 +31,7 @@
 
 
 ---  
- #  StartingSpace : [archetype](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/archetype.markdown)
+ #  StartingSpace : [archetype](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/archetype.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning

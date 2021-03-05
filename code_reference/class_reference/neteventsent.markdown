@@ -6,16 +6,16 @@
 
 |Methods|Properties|Base Classes|Derived Classes|
 |---|---|---|---|
-| |[ Destination](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/neteventsent.markdown#destination-plasma-engine)|[event](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/event.markdown)| |
-| |[ NetEvent](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/neteventsent.markdown#netevent-plasma-engine-doc)| | |
-| |[ TheirNetPeerId](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/neteventsent.markdown#theirnetpeerid-plasma-engi)| | |
+| |[ Destination](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/neteventsent.markdown#destination-plasma-engine)|[event](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/event.markdown)| |
+| |[ NetEvent](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/neteventsent.markdown#netevent-plasma-engine-doc)| | |
+| |[ TheirNetPeerId](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/neteventsent.markdown#theirnetpeerid-plasma-engi)| | |
 
 
  #  Properties
 
 
 ---  
- #  Destination : [cog](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/cog.markdown)
+ #  Destination : [cog](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/cog.markdown)
 
  `read-only`
 
@@ -25,7 +25,7 @@
 
 
 ---  
- #  NetEvent : [event](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/event.markdown)
+ #  NetEvent : [event](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/event.markdown)
 
  `read-only`
 
@@ -35,7 +35,7 @@
 
 
 ---  
- #  TheirNetPeerId : [integer](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/integer.markdown)
+ #  TheirNetPeerId : [integer](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/lightning_base_types/integer.markdown)
 
  `read-only`
 

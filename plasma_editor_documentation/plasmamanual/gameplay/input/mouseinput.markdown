@@ -1,4 +1,3 @@
-# Mouse Input
 Along with the keyboard and gamepads, the mouse is a common channel of providing user input to a Plasma project. Mouse controls are easy to set up, but there are a few different input styles to consider.
 
  #  Using the Mouse
@@ -13,6 +12,7 @@ The mouse can either be used as a cursor controller, for tracking a specific pos
  ##  Direct Mouse Control
 
 **Direct mouse control** is commonly used for first-person camera controls, and anything else that is concerned with the frame-to-frame movement deltas of the mouse, and the state changes of its buttons and scroll wheel, rather than with the position of a cursor. When using direct mouse control, mouse event connections should be made on the Space or the camera viewport (rather than on individual interactive objects, as with cursor control).
+
 
 
  #  Event-Based Input vs. Polling-Based Input
@@ -117,7 +117,7 @@ function OnMouseUpdate(event : ViewportMouseEvent)
 
  ####  MouseEnter, MouseExit, and MouseEnterPreview
 
-When the mouse cursor "enters" a mouse event target ( that is, when it goes from not being over the target to being over it from the perspective of the viewport showing it ) the [ MouseEnter](https://github.PlasmaEngine/PlasmaDocsocs/blob/master/code_reference/event_reference.markdown#mouseenter) event is dispatched to that target that frame. Likewise, when the cursor "exits" a target (it goes from over it to not over it) the [ MouseExit](https://gitPlasmaEngine/PlasmaDocseroDocs/blob/master/code_reference/event_reference.markdown#mouseexit) event is dispatched to that target that frame.
+When the mouse cursor "enters" a mouse event target (that is, when it goes from not being over the target to being over it from the perspective of the viewport showing it) the [ MouseEnter](https://github.dragonCASTjosh/PlasmaDocsocs/blob/master/code_reference/event_reference.markdown#mouseenter) event is dispatched to that target that frame. Likewise, when the cursor "exits" a target (it goes from over it to not over it) the [ MouseExit](https://gitdragonCASTjosh/PlasmaDocseroDocs/blob/master/code_reference/event_reference.markdown#mouseexit) event is dispatched to that target that frame.
 
 As the mouse cursor enters a mouse event target, if it is simultaneously exiting another one, the [ MouseEnterPreview](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/event_reference.markdown#mouseenterpreview) event is dispatched that frame to the target being entered. This event is dispatched *immediately before* the **MouseExit** and subsequent **MouseEnter** events are dispatched, in the same frame.
 
@@ -362,4 +362,7 @@ Because mouse events are only dispatched when the mouse is used (other than [ Mo
 - [ CameraViewport](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/cameraviewport.markdown)
 - [ Camera](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/camera.markdown)
 - [ Keyboard](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/keyboard.markdown)
+ ##  Development Task
+- {T404} 
+
  

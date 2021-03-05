@@ -6,18 +6,18 @@
 
 |Methods|Properties|Base Classes|Derived Classes|
 |---|---|---|---|
-|[ Constructor](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/jointmotor.markdown#jointmotor-void)|[ Active](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/jointmotor.markdown#active-plasma-engine-docum)|[component](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/component.markdown)| |
-| |[ AtomIds](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/jointmotor.markdown#atomids-plasma-engine-docu)| | |
-| |[ MaxImpulse](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/jointmotor.markdown#maximpulse-plasma-engine-d)| | |
-| |[ Reverse](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/jointmotor.markdown#reverse-plasma-engine-docu)| | |
-| |[ Speed](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/jointmotor.markdown#speed-plasma-engine-docume)| | |
+|[ Constructor](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/jointmotor.markdown#jointmotor-void)|[ Active](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/jointmotor.markdown#active-plasma-engine-docum)|[component](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/component.markdown)| |
+| |[ AtomIds](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/jointmotor.markdown#atomids-plasma-engine-docu)| | |
+| |[ MaxImpulse](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/jointmotor.markdown#maximpulse-plasma-engine-d)| | |
+| |[ Reverse](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/jointmotor.markdown#reverse-plasma-engine-docu)| | |
+| |[ Speed](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/jointmotor.markdown#speed-plasma-engine-docume)| | |
 
 
  #  Properties
 
 
 ---  
- #  Active : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown)
+ #  Active : [boolean](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown)
 
 > Determines if this motor is currently active.
 > ``` lang=cpp, name=Lightning
@@ -25,7 +25,7 @@
 
 
 ---  
- #  AtomIds : [integer](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/integer.markdown)
+ #  AtomIds : [integer](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/lightning_base_types/integer.markdown)
 
 > Signifies what atoms on the joint this affects. For internal use.
 > ``` lang=cpp, name=Lightning
@@ -33,7 +33,7 @@
 
 
 ---  
- #  MaxImpulse : [real](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown)
+ #  MaxImpulse : [real](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown)
 
 > The maximum impulse that the motor can apply each frame to reach the target speed.
 > ``` lang=cpp, name=Lightning
@@ -41,7 +41,7 @@
 
 
 ---  
- #  Reverse : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown)
+ #  Reverse : [boolean](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown)
 
 > Determines if this motor should move in reverse. This is a convenient way to reverse a motor without having to negate the speed.
 > ``` lang=cpp, name=Lightning
@@ -49,7 +49,7 @@
 
 
 ---  
- #  Speed : [real](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown)
+ #  Speed : [real](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown)
 
 > The desired speed for this motor.
 > ``` lang=cpp, name=Lightning

@@ -4,19 +4,19 @@
 
 |Methods|Properties|Base Classes|Derived Classes|
 |---|---|---|---|
-|[ Constructor](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/adsrenvelope.markdown#adsrenvelope-void)|[ AttackTime](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/adsrenvelope.markdown#attacktime-plasma-engine-d)| | |
-| |[ DecayTime](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/adsrenvelope.markdown#decaytime-plasma-engine-do)| | |
-| |[ DelayTime](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/adsrenvelope.markdown#delaytime-plasma-engine-do)| | |
-| |[ ReleaseTime](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/adsrenvelope.markdown#releasetime-plasma-engine)| | |
-| |[ SustainLevel](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/adsrenvelope.markdown#sustainlevel-plasma-engine)| | |
-| |[ SustainTime](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/adsrenvelope.markdown#sustaintime-plasma-engine)| | |
+|[ Constructor](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/adsrenvelope.markdown#adsrenvelope-void)|[ AttackTime](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/adsrenvelope.markdown#attacktime-plasma-engine-d)| | |
+| |[ DecayTime](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/adsrenvelope.markdown#decaytime-plasma-engine-do)| | |
+| |[ DelayTime](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/adsrenvelope.markdown#delaytime-plasma-engine-do)| | |
+| |[ ReleaseTime](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/adsrenvelope.markdown#releasetime-plasma-engine)| | |
+| |[ SustainLevel](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/adsrenvelope.markdown#sustainlevel-plasma-engine)| | |
+| |[ SustainTime](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/adsrenvelope.markdown#sustaintime-plasma-engine)| | |
 
 
  #  Properties
 
 
 ---  
- #  AttackTime : [real](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown)
+ #  AttackTime : [real](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -24,7 +24,7 @@
 
 
 ---  
- #  DecayTime : [real](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown)
+ #  DecayTime : [real](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -32,7 +32,7 @@
 
 
 ---  
- #  DelayTime : [real](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown)
+ #  DelayTime : [real](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -40,7 +40,7 @@
 
 
 ---  
- #  ReleaseTime : [real](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown)
+ #  ReleaseTime : [real](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -48,7 +48,7 @@
 
 
 ---  
- #  SustainLevel : [real](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown)
+ #  SustainLevel : [real](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -56,7 +56,7 @@
 
 
 ---  
- #  SustainTime : [real](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown)
+ #  SustainTime : [real](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning

@@ -6,18 +6,18 @@
 
 |Methods|Properties|Base Classes|Derived Classes|
 |---|---|---|---|
-| |[ Direction](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/netlinkdisconnected.markdown#direction-plasma-engine-do)|[event](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/event.markdown)| |
-| |[ DisconnectReason](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/netlinkdisconnected.markdown#disconnectreason-plasma-en)| | |
-| |[ RequestBundle](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/netlinkdisconnected.markdown#requestbundle-plasma-engin)| | |
-| |[ TheirIpAddress](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/netlinkdisconnected.markdown#theiripaddress-plasma-engi)| | |
-| |[ TheirNetPeerId](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/netlinkdisconnected.markdown#theirnetpeerid-plasma-engi)| | |
+| |[ Direction](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/netlinkdisconnected.markdown#direction-plasma-engine-do)|[event](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/event.markdown)| |
+| |[ DisconnectReason](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/netlinkdisconnected.markdown#disconnectreason-plasma-en)| | |
+| |[ RequestBundle](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/netlinkdisconnected.markdown#requestbundle-plasma-engin)| | |
+| |[ TheirIpAddress](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/netlinkdisconnected.markdown#theiripaddress-plasma-engi)| | |
+| |[ TheirNetPeerId](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/netlinkdisconnected.markdown#theirnetpeerid-plasma-engi)| | |
 
 
  #  Properties
 
 
 ---  
- #  Direction : [TransmissionDirection](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#transmissiondirection)
+ #  Direction : [TransmissionDirection](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#transmissiondirection)
 
  `read-only`
 
@@ -27,7 +27,7 @@
 
 
 ---  
- #  DisconnectReason : [DisconnectReason](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#disconnectreason)
+ #  DisconnectReason : [DisconnectReason](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#disconnectreason)
 
  `read-only`
 
@@ -37,7 +37,7 @@
 
 
 ---  
- #  RequestBundle : [eventbundle](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/eventbundle.markdown)
+ #  RequestBundle : [eventbundle](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/eventbundle.markdown)
 
  `read-only`
 
@@ -47,7 +47,7 @@
 
 
 ---  
- #  TheirIpAddress : [ipaddress](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/ipaddress.markdown)
+ #  TheirIpAddress : [ipaddress](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/ipaddress.markdown)
 
  `read-only`
 
@@ -57,7 +57,7 @@
 
 
 ---  
- #  TheirNetPeerId : [integer](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/integer.markdown)
+ #  TheirNetPeerId : [integer](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/lightning_base_types/integer.markdown)
 
  `read-only`
 

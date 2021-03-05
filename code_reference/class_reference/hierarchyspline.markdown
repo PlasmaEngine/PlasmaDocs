@@ -6,19 +6,19 @@
 
 |Methods|Properties|Base Classes|Derived Classes|
 |---|---|---|---|
-|[ ForceRebuild](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/hierarchyspline.markdown#forcerebuild-void)|[ Closed](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/hierarchyspline.markdown#closed-plasma-engine-docum)|[component](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/component.markdown)| |
-|[ Constructor](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/hierarchyspline.markdown#hierarchyspline-void)|[ DebugDrawSpline](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/hierarchyspline.markdown#debugdrawspline-plasma-eng)| | |
-|[ RebuildIfModified](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/hierarchyspline.markdown#rebuildifmodified-void)|[ Error](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/hierarchyspline.markdown#error-plasma-engine-docume)| | |
-| |[ Spline](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/hierarchyspline.markdown#spline-plasma-engine-docum)| | |
-| |[ SplineColor](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/hierarchyspline.markdown#splinecolor-plasma-engine)| | |
-| |[ SplineType](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/hierarchyspline.markdown#splinetype-plasma-engine-d)| | |
+|[ ForceRebuild](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/hierarchyspline.markdown#forcerebuild-void)|[ Closed](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/hierarchyspline.markdown#closed-plasma-engine-docum)|[component](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/component.markdown)| |
+|[ Constructor](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/hierarchyspline.markdown#hierarchyspline-void)|[ DebugDrawSpline](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/hierarchyspline.markdown#debugdrawspline-plasma-eng)| | |
+|[ RebuildIfModified](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/hierarchyspline.markdown#rebuildifmodified-void)|[ Error](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/hierarchyspline.markdown#error-plasma-engine-docume)| | |
+| |[ Spline](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/hierarchyspline.markdown#spline-plasma-engine-docum)| | |
+| |[ SplineColor](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/hierarchyspline.markdown#splinecolor-plasma-engine)| | |
+| |[ SplineType](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/hierarchyspline.markdown#splinetype-plasma-engine-d)| | |
 
 
  #  Properties
 
 
 ---  
- #  Closed : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown)
+ #  Closed : [boolean](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown)
 
 > Does the spline loop back on itself?
 > ``` lang=cpp, name=Lightning
@@ -26,7 +26,7 @@
 
 
 ---  
- #  DebugDrawSpline : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown)
+ #  DebugDrawSpline : [boolean](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown)
 
 > Should the spline draw every frame? Mainly used for debugging purposes.
 > ``` lang=cpp, name=Lightning
@@ -34,7 +34,7 @@
 
 
 ---  
- #  Error : [real](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown)
+ #  Error : [real](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown)
 
 > The max number of units that a line segment is allowed to deviate from the curve.
 > ``` lang=cpp, name=Lightning
@@ -42,7 +42,7 @@
 
 
 ---  
- #  Spline : [spline](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/spline.markdown)
+ #  Spline : [spline](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/spline.markdown)
 
  `read-only`
 
@@ -52,7 +52,7 @@
 
 
 ---  
- #  SplineColor : [real4](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real4.markdown)
+ #  SplineColor : [real4](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/lightning_base_types/real4.markdown)
 
 > What color should that spline be drawn with.
 > ``` lang=cpp, name=Lightning
@@ -60,7 +60,7 @@
 
 
 ---  
- #  SplineType : [SplineType](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#splinetype)
+ #  SplineType : [SplineType](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#splinetype)
 
 > The kind of spline (Linear, BSpline, CatmullRom). Determines how the control points affect the curve.
 > ``` lang=cpp, name=Lightning
