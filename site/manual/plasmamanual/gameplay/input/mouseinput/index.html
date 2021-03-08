@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../../../../img/favicon.ico">
+        <title>Mouseinput - Docs | Plasma Engine</title>
+        <link href="../../../../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../../../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../../../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/docco.min.css">
+
+        <script src="../../../../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../../../../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../../../../..">Docs | Plasma Engine</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href="../../../../.." class="nav-link">Home</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="/getting_started/" class="nav-link">Getting Started</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Manual <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../../" class="dropdown-item">Manual</a>
+</li>
+                                    
+<li>
+    <a href="../../../ai/" class="dropdown-item">AI</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Architecture</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../architecture/architecture/" class="dropdown-item">Architecture</a>
+</li>
+            
+<li>
+    <a href="../../../architecture/archetypes/archtype_basics.markdown" class="dropdown-item">Archtypes</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Cogs</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../architecture/cogs/cogs/" class="dropdown-item">Cogs</a>
+</li>
+            
+<li>
+    <a href="../../../architecture/cogs/gameobjectsconcept/" class="dropdown-item">Game Objects</a>
+</li>
+            
+<li>
+    <a href="../../../architecture/cogs/objectstore/" class="dropdown-item">Object Store</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Objects</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../architecture/objects/objects/" class="dropdown-item">Objects</a>
+</li>
+            
+<li>
+    <a href="../../../architecture/objects/gamesession/" class="dropdown-item">Gamesession</a>
+</li>
+            
+<li>
+    <a href="../../../architecture/objects/spaces/" class="dropdown-item">Spaces</a>
+</li>
+            
+<li>
+    <a href="../../../architecture/objects/levelsettings/" class="dropdown-item">Levelsettings</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Resources</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../architecture/resources/resource.markdown" class="dropdown-item">Resources</a>
+</li>
+            
+<li>
+    <a href="../../../architecture/resources/level/" class="dropdown-item">Levels</a>
+</li>
+            
+<li>
+    <a href="../../../architecture/fonts/fonts.markdown" class="dropdown-item">Fonts</a>
+</li>
+            
+<li>
+    <a href="../../../architecture/resources/resourcestable.markdown" class="dropdown-item">Resource Table</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                                    
+<li>
+    <a href="../../../audio/" class="dropdown-item">Audio</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Editor</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../editor/" class="dropdown-item">Editor</a>
+</li>
+            
+<li>
+    <a href="../../../editor/tags/" class="dropdown-item">Tags</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Reference <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../../../reference/" class="dropdown-item">Index</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Contributing <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../../../source_docs/getting_started.md" class="dropdown-item">Getting Started</a>
+</li>
+                                    
+<li>
+    <a href="../../../../../source_docs/plasma_code/" class="dropdown-item">Plasma Code</a>
+</li>
+                                    
+<li>
+    <a href="../../../../../source_docs/plasma_overview/" class="dropdown-item">Plasma Overview</a>
+</li>
+                                    
+<li>
+    <a href="../../../../../source_docs/components.md" class="dropdown-item">Components</a>
+</li>
+                                    
+<li>
+    <a href="../../../../../source_docs/custom_event_names/" class="dropdown-item">Custom Event Names</a>
+</li>
+                                    
+<li>
+    <a href="../../../../../source_docs/editor/" class="dropdown-item">Editor</a>
+</li>
+                                    
+<li>
+    <a href="../../../../../source_docs/engine/" class="dropdown-item">Engine</a>
+</li>
+                                    
+<li>
+    <a href="../../../../../source_docs/enums/" class="dropdown-item">Enums</a>
+</li>
+                                    
+<li>
+    <a href="../../../../../source_docs/meta_bindings.markdown" class="dropdown-item">Meta Binding</a>
+</li>
+                                    
+<li>
+    <a href="../../../../../source_docs/platform/" class="dropdown-item">Adding Platforms</a>
+</li>
+                                    
+<li>
+    <a href="../../../../../source_docs/widgets/" class="dropdown-item">Widgets</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a href="https://github.com/PlasmaEngine/PlasmaDocs/edit/master/docs/manual/plasmamanual/gameplay/input/mouseinput.markdown" class="nav-link"><i class="fa fa-github"></i> Edit on GitHub</a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<p>Along with the keyboard and gamepads, the mouse is a common channel of providing user input to a Plasma project. Mouse controls are easy to set up, but there are a few different input styles to consider.</p>
+<p>#  Using the Mouse</p>
+<p>The mouse can either be used as a cursor controller, for tracking a specific position and pointing at and clicking on objects and buttons, etc., or it can be used as a direct input device, just like a keyboard or a gamepad.</p>
+<p>##  Cursor Control</p>
+<p><strong>Cursor control</strong>, also known as <em>point-and-click</em> control, is usually what is used for mouse-driven GUIs. It is mostly focused on the use of the mouse to manipulate the position of a cursor in a 2D plane. Cursor control typically makes heavy use of the <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/reactive.markdown"> Reactive</a> component to receive mouse events sent directly to interactive objects, such as buttons.</p>
+<p>##  Direct Mouse Control</p>
+<p><strong>Direct mouse control</strong> is commonly used for first-person camera controls, and anything else that is concerned with the frame-to-frame movement deltas of the mouse, and the state changes of its buttons and scroll wheel, rather than with the position of a cursor. When using direct mouse control, mouse event connections should be made on the Space or the camera viewport (rather than on individual interactive objects, as with cursor control).</p>
+<p>#  Event-Based Input vs. Polling-Based Input</p>
+<p>Whether the mouse is used for cursor control or direct control, in any case, there are two ways of using mouse input in the Plasma Engine: by connecting to mouse events, known as <strong>event-based</strong> input, by polling the state of the mouse (typically in an Update function), known as <strong>polling-based</strong> input. Each has its advantages.</p>
+<p>##  Events</p>
+<p>Mouse events are dispatched as the mouse is used, and the position of the mouse cursor determines the targets of these events. When the cursor is positioned over an cog with the <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/reactive.markdown"> Reactive</a> component, that cog receives mouse events.</p>
+<p>In addition, mouse events are also sent to viewports. When a mouse event occurs in a viewport, it is dispatched to the cog with the <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/camera.markdown"> Camera</a> component and the cog with the <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/cameraviewport.markdown"> CameraViewport</a> component that represent that viewport. (Events are not dispatched doubly if both components are on the same cog, as is commonly the case.)</p>
+<p>NOTE: A <strong>mouse event target</strong> is anything that can receive a mouse event. Mouse event targets are spaces, cogs with the Camera component, cogs with the CameraViewport component, and cogs with the Reactive component.</p>
+<p>Here is an example of the use of mouse events, showing two different event connections, one to the space and one to the Reactive object itself:</p>
+<p>```lang=csharp, name="Mouse Event Demonstration"
+class MouseEventDemonstration : LightningComponent
+{
+  [Dependency] var Transform : Transform;
+  [Dependency] var Reactive : Reactive;</p>
+<p>function Initialize(init : CogInitializer)
+  {
+    Plasma.Connect(this.Space, Events.LeftMouseDown, this.OnLeftMouseDown);
+    Plasma.Connect(this.Owner, Events.RightMouseDown, this.OnRightMouseDown);
+  }</p>
+<p>function OnLeftMouseDown(event : ViewportMouseEvent)
+  {
+    // when the left mouse button is pressed anywhere,
+    // make a cube at the mouse's world position
+    var mousePosition = event.ToWorldZPlane(0);
+    var cube = this.Space.CreateAtPosition(Archetype.Cube, mousePosition);
+    // delay five seconds and then destroy the cube
+    var destroySeq = Action.Sequence(cube.Actions);
+    Action.Delay(destroySeq, 5);
+    Action.Call(destroySeq, cube.Destroy);
+  }</p>
+<p>function OnRightMouseDown(event : ViewportMouseEvent)
+  {
+    // when the right mouse button is pressed on this object,
+    // make it a little bigger
+    this.Transform.Scale = this.Transform.Scale * 1.1;
+  }
+}</p>
+<pre><code>
+This component's dependency on **Reactive** requires that the object it is attached to has that component as well. Thus, whenever the left mouse button is pressed with the cursor over an object with this component, the `OnLeftMouseDown` function will be called. Additionally, whenever the right mouse button is pressed *anywhere* in the viewport showing this component's space, the `OnRightMouseButton` function will be called.
+
+
+ ###  List of Mouse Events
+
+There are a number of mouse events that are dispatched to mouse event targets:
+
+```lang=csharp, name=&quot;Mouse Event Connections&quot;
+function Initialize(init : CogInitializer)
+{
+  Plasma.Connect(this.Owner, Events.MouseUpdate,       this.OnMouseUpdate);
+
+  Plasma.Connect(this.Owner, Events.MouseEnter,        this.OnMouseEnter);
+  Plasma.Connect(this.Owner, Events.MouseExit,         this.OnMouseExit);
+  Plasma.Connect(this.Owner, Events.MouseEnterPreview, this.OnMouseEnterPreview);
+
+  Plasma.Connect(this.Owner, Events.MouseMove,         this.OnMouseMove);
+  Plasma.Connect(this.Owner, Events.MouseScroll,       this.OnMouseScroll);
+
+  Plasma.Connect(this.Owner, Events.MouseDown,         this.OnMouseDown);
+  Plasma.Connect(this.Owner, Events.MouseUp,           this.OnMouseUp);
+
+  Plasma.Connect(this.Owner, Events.LeftMouseDown,     this.OnLeftMouseDown);
+  Plasma.Connect(this.Owner, Events.LeftMouseUp,       this.OnLeftMouseUp);
+
+  Plasma.Connect(this.Owner, Events.RightMouseDown,    this.OnRightMouseDown);
+  Plasma.Connect(this.Owner, Events.RightMouseUp,      this.OnRightMouseUp);
+
+  Plasma.Connect(this.Owner, Events.MiddleMouseDown,   this.OnMiddleMouseDown);
+  Plasma.Connect(this.Owner, Events.MiddleMouseUp,     this.OnMiddleMouseUp);
+
+  Plasma.Connect(this.Owner, Events.LeftClick,         this.OnLeftClick);
+  Plasma.Connect(this.Owner, Events.RightClick,        this.OnRightClick);
+  Plasma.Connect(this.Owner, Events.MiddleClick,       this.OnMiddleClick);
+
+  Plasma.Connect(this.Owner, Events.DoubleClick,       this.OnDoubleClick);
+}
+</code></pre>
+<p>Each of these events is a <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/viewportmouseevent.markdown"> ViewportMouseEvent</a>. This event contains various relevant mouse data, such as the position of the cursor and the states of its buttons.</p>
+<p>####  MouseUpdate</p>
+<p>Every frame that the mouse is over a mouse event target, the <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/event_reference.markdown#mouseupdate"> MouseUpdate</a> event is dispatched to that target:</p>
+<p>```lang=csharp, name="MouseUpdate Example"
+function OnMouseUpdate(event : ViewportMouseEvent)
+{
+  // move this object to the mouse position
+  this.Transform.Translation = event.ToWorldZPlane(0);
+}</p>
+<pre><code>
+ ####  MouseEnter, MouseExit, and MouseEnterPreview
+
+When the mouse cursor &quot;enters&quot; a mouse event target (that is, when it goes from not being over the target to being over it from the perspective of the viewport showing it) the [ MouseEnter](https://github.dragonCASTjosh/PlasmaDocsocs/blob/master/code_reference/event_reference.markdown#mouseenter) event is dispatched to that target that frame. Likewise, when the cursor &quot;exits&quot; a target (it goes from over it to not over it) the [ MouseExit](https://gitdragonCASTjosh/PlasmaDocseroDocs/blob/master/code_reference/event_reference.markdown#mouseexit) event is dispatched to that target that frame.
+
+As the mouse cursor enters a mouse event target, if it is simultaneously exiting another one, the [ MouseEnterPreview](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/event_reference.markdown#mouseenterpreview) event is dispatched that frame to the target being entered. This event is dispatched *immediately before* the **MouseExit** and subsequent **MouseEnter** events are dispatched, in the same frame.
+
+For example, this code snippet connects to two different cogs, `CogA` and `CogB` (declared elsewhere in the script), for these events:
+
+```lang=csharp, name=&quot;MouseEnter, MouseExit, and MouseEnterPreview Examples&quot;
+function Initialize(init : CogInitializer)
+{
+  Plasma.Connect(this.CogA, Events.MouseExit, this.OnMouseExit);
+  Plasma.Connect(this.CogB, Events.MouseEnter, this.OnMouseEnter);
+  Plasma.Connect(this.CogB, Events.MouseEnterPreview, this.OnMouseEnterPreview);
+}
+
+function OnMouseExit(event : ViewportMouseEvent)
+{
+  Console.WriteLine(&quot;Exiting `this.CogA.Name`&quot;);
+}
+
+function OnMouseEnter(event : ViewportMouseEvent)
+{
+  Console.WriteLine(&quot;Entering `this.CogB.Name`&quot;);
+}
+
+function OnMouseEnterPreview(event : ViewportMouseEvent)
+{
+  Console.WriteLine(&quot;About to enter `this.CogB.Name`&quot;);
+}
+</code></pre>
+<p>Here is the console output when the mouse moves from <code>CogA</code> to <code>CogB</code>:</p>
+<p>```name="MouseEnter, MouseExit, and MouseEnterPreview Console Output"
+About to enter CogB
+Exiting CogA
+Entering CogB</p>
+<pre><code>
+MouseEnterPreview is useful when there is code that should be run before the MouseExit and MouseEnter callbacks are executed.
+
+ ####  MouseMove and MouseScroll
+
+Every frame that the mouse **moves** while the cursor is over a mouse event target, the [ MouseMove](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/event_reference.markdown#mousemove) event is dispatched to that target. When the mouse is **scrolled** while the cursor is over a mouse event target, the [ MouseScroll](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/event_reference.markdown#mousescroll) event is dispatched to that target:
+
+```lang=csharp, name=&quot;MouseMove and MouseScroll Examples&quot;
+function OnMouseMove(event : ViewportMouseEvent)
+{
+  // move the camera an amount equal to the
+  // mouse's movement vector
+  this.PanCamera(event.Movement);
+}
+
+function OnMouseScroll(event : ViewportMouseEvent)
+{
+  // zoom the camera an amount equal to the
+  // Y component of the scroll vector
+  this.Zoom(event.Scroll.Y);
+}
+</code></pre>
+<p>####  Down and Up Events</p>
+<p>When any mouse button is <strong>pressed</strong> while the cursor is over a mouse event target, the <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/event_reference.markdown#mousedown"> MouseDown</a> event is dispatched to that target. Likewise, when any mouse button is <strong>released</strong> while the cursor is over a mouse event target, the <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/event_reference.markdown#mouseup"> MouseUp</a> event is dispatched to that target.</p>
+<p><strong>MouseDown</strong> and <strong>MouseUp</strong> are useful when writing controls that can be bound to any mouse button. To determine which mouse button was pressed or released, just check the <code>Button</code> field on the ViewportMouseEvent object that is sent with the event:</p>
+<p>```lang=csharp, name="MouseDown and MouseUp Examples"
+function OnMouseDown(event : ViewportMouseEvent)
+{
+  if (event.Button == this.LaserButton)
+    this.BeginChargingLaser();
+  else if (event.Button == this.ShieldButton)
+    this.RaiseShields();
+  else if (event.Button == this.CameraPanningButton)
+    Plasma.Connect(this.Space, Events.MouseMove, this.OnMouseMove);
+}</p>
+<p>function OnMouseUp(event : ViewportMouseEvent)
+{
+  if (event.Button == this.LaserButton)
+    this.FireLaser();
+  else if (event.Button == this.ShieldButton)
+    this.LowerShields();
+  else if (event.Button == this.CameraPanningButton)
+    Plasma.Disconnect(this.Space, Events.MouseMove, this);
+}</p>
+<pre><code>
+Plasma also has specific events for [ LeftMouseDown](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/event_reference.markdown#leftmousedown) and [ LeftMouseUp](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/event_reference.markdown#leftmouseup), [ RightMouseDown](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/event_reference.markdown#rightmousedown) and [ RightMouseUp](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/event_reference.markdown#rightmouseup), and [ MiddleMouseDown](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/event_reference.markdown#middlemousedown) and [ MiddleMouseUp](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/event_reference.markdown#middlemouseup), which are dispatched only when the corresponding button is pressed or released:
+
+```lang=csharp, name=&quot;Other Down and Up Examples&quot;
+function OnLeftMouseDown(event : ViewportMouseEvent)
+{
+  this.BeginChargingLaser();
+}
+
+function OnRightMouseUp(event : ViewportMouseEvent)
+{
+  this.LowerShields();
+}
+
+function OnMiddleMouseDown(event : ViewportMouseEvent)
+{
+  Plasma.Connect(this.Space, Events.MouseMove, this);
+}
+</code></pre>
+<p>####  Click Events</p>
+<p>When a mouse button is both <strong>pressed</strong> and <strong>released</strong> over the same object, that object is said to have been //clicked//. Click events are commonly used for UI elements, such as buttons. Plasma dispatches <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/event_reference.markdown#leftclick"> LeftClick</a>, <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/event_reference.markdown#rightclick"> RightClick</a>, and <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/event_reference.markdown#middleclick"> MiddleClick</a> events:</p>
+<p>```lang=csharp, name="Click Examples"
+function OnLeftClick(event : ViewportMouseEvent)
+{
+  // perform whatever effect this button does
+  this.ExecuteButtonFunction();
+}</p>
+<p>function OnRightClick(event : ViewportMouseEvent)
+{
+  // open the context menu for this object
+  this.OpenContextMenu();
+}</p>
+<p>function OnMiddleClick(event : ViewportMouseEvent)
+{
+  // close this window
+  this.CloseWindow();
+}</p>
+<pre><code>
+ ####  DoubleClick
+
+When a mouse event target is double-clicked, the [ DoubleClick](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/event_reference.markdown#doubleclick) event is dispatched to that target:
+
+```lang=csharp, name=&quot;DoubleClick Example&quot;
+function OnDoubleClick(event : ViewportMouseEvent)
+{
+  if (event.Button == this.LaserButton)
+    this.ReloadLaser();
+  else if (event.Button == this.ShieldButton)
+    this.RebootShields();
+}
+</code></pre>
+<p>NOTE: The timing of the two clicks involved in a double click is defined by the user's operating system.</p>
+<hr />
+<p>##  Polling-Based Input</p>
+<p>Polling-based input typically occurs in a callback for an <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/updateevent.markdown"> Update event</a> such as <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/event_reference.markdown#logicupdate"> LogicUpdate</a>:</p>
+<p>```lang=csharp, name="Update Connection Example"
+function Initialize(init : CogInitializer)
+{
+  Plasma.Connect(this.Space, Events.LogicUpdate, this.OnLogicUpdate);
+}</p>
+<p>function OnLogicUpdate(event : UpdateEvent)
+{
+  // check for mouse input here
+}</p>
+<pre><code>
+The mouse may be polled via the global [ Mouse](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/mouse.markdown) object, which can be found at `Plasma.Mouse`; of interest to mouse input are its `CursorMovement`, `RawMovement`, and `ClientPosition` properties and its `IsButtonDown` function.
+
+ ###  CursorMovement, RawMovement, and ClientPosition
+
+[ RawMovement](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/mouse.markdown#rawmovement-plasma-engine) represents the amount of movement detected this frame by the mousing device. [ ClientPosition](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/mouse.markdown#clientposition-plasma-engi) gives the screen-space cursor position in pixels, as computed by the OS. ClientPosition is relative to the upper left pixel of the Plasma client (application), which is (0, 0), with X and Y increasing to the right and down respectively. The [ CursorMovement](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/mouse.markdown#cursormovement-plasma-engi) property is computed by Plasma as the difference in the ClientPosition between the current frame and the previous frame.
+
+NOTE: CursorMovement and RawMovement often differ because the final position of the cursor depends on OS settings.
+
+The ClientPosition property is given in screen space, but it may be helpful to convert it to another coordinate basis, such as world space. The [ CameraViewport](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/cameraviewport.markdown) component has handy functions for performing such changes of basis:
+
+```lang=csharp, name=&quot;ClientPosition to World Space Example&quot;
+function OnLogicUpdate(event : UpdateEvent)
+{
+  // mouse position in screen space
+  var clientPosition = Plasma.Mouse.ClientPosition;
+  // mouse position in world space (at Z = 0)
+  var mouseWorldPosition = this.CameraViewport.ScreenToWorldZPlane(clientPosition, 0);
+
+  // move this object to the mouse's world position
+  this.Transform.Translation = mouseWorldPosition;
+}
+</code></pre>
+<p>###  IsButtonDown</p>
+<p>The <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/mouse.markdown#isbuttondown-plasma-engine"> IsButtonDown</a> function returns whether the given mouse button is down on the current frame. It closely parallels the <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/keyboard.markdown#keyisdown-plasma-engine-do"> KeyIsDown</a> function on the <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/keyboard.markdown"> Keyboard</a> object:</p>
+<p><code>lang=csharp, name="IsButtonDown Example"
+function OnLogicUpdate(event : UpdateEvent)
+{
+  // if the mouse look button is held, turn the camera with the mouse's movement
+  if (Plasma.Mouse.IsButtonDown(this.MouseLookButton))
+  {
+    this.RotateCamera(Plasma.Mouse.CursorMovement);
+  }
+}</code></p>
+<p>#  What to Use</p>
+<p>Whether direct control or cursor control is used, event-based input and polling-based input may have performance differences. As is the case with <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/gameplay/input/keyboardinput.markdown#what-to-use"> Keyboard Input</a>, the difference will often be very small, so sometimes it is best to use whichever method is easiest for the developer, but knowing how to decide which input method to use is always important.</p>
+<p>To decide whether a component should use event-based mouse input or polling-based mouse input, begin by answering these guideline questions:</p>
+<p><strong>Is the mouse being used for cursor control or direct mouse control?</strong></p>
+<ul>
+<li><strong><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/gameplay/input/mouseinput/.markdown#cursor-control">Cursor control</a></strong>: mouse events are probably better</li>
+<li><strong><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/gameplay/input/mouseinput/.markdown#direct-mouse-control">direct mouse control</a></strong>: either may work</li>
+</ul>
+<p>The nature of a cursor-driven interface is well-suited to being controlled by mouse events, and is often awkward and impractical to implement with polling.</p>
+<p><strong>Is this component already connected to an update event?</strong>
+- <strong>Yes</strong>: polling may be better
+- <strong>No</strong>: consider events</p>
+<p>Some of the performance impact in frame-based input comes from the act of polling, but some of it comes from the mere fact of being connected to an update event. If a component's update event connection overhead is already considered acceptable, then the added overhead of input polling may not be a problem.</p>
+<p><strong>How many instances of this component are likely to be alive at once?</strong>
+- <strong>A lot</strong>: events may be better
+- <strong>Not many</strong>: consider polling</p>
+<p>Performance can suffer noticeably if a large number of objects are simultaneously connected to update events, especially if they're running complex logic. If there will be more than about a few hundred instances of a component all running at once, it may be wise to consider using event-based input instead of frame-based input. Of course, this number will vary greatly with factors such as the complexity of the logic being run and the capabilities of the user's computer.</p>
+<p><strong>How much time is likely to elapse between relevant inputs?</strong>
+- <strong>A long time</strong>: events may be better
+- <strong>Not long</strong>: consider polling</p>
+<p>Because mouse events are only dispatched when the mouse is used (other than <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/.markdown#mouseupdate"> MouseUpdate</a>), event-based input has the potential to be more efficient than frame-based input, especially when checking for an input that is expected to occur only rarely or sporadically.</p>
+<p>#  Related Materials
+ ##  Manual
+- <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/gameplay/input/keyboardinput.markdown#what-to-use"> Keyboard Input</a></p>
+<p>##  Code Reference
+- <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/mouse.markdown"> Mouse</a>
+- <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/viewportmouseevent.markdown"> ViewportMouseEvent</a>
+- <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/reactive.markdown"> Reactive</a>
+- <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/cameraviewport.markdown"> CameraViewport</a>
+- <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/camera.markdown"> Camera</a>
+- <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/keyboard.markdown"> Keyboard</a>
+ ##  Development Task
+- {T404} </p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+                <p>Copyright &copy; 2021 Plasma Engine. Released under the MIT License.</p>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../../../../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../../../../js/base.js" defer></script>
+        <script src="../../../../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

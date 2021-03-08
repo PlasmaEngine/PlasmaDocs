@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../../../img/favicon.ico">
+        <title>Eventsandconnections - Docs | Plasma Engine</title>
+        <link href="../../../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/docco.min.css">
+
+        <script src="../../../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../../../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../../../..">Docs | Plasma Engine</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href="../../../.." class="nav-link">Home</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="/getting_started/" class="nav-link">Getting Started</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Manual <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../" class="dropdown-item">Manual</a>
+</li>
+                                    
+<li>
+    <a href="../../ai/" class="dropdown-item">AI</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Architecture</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../architecture/architecture/" class="dropdown-item">Architecture</a>
+</li>
+            
+<li>
+    <a href="../../architecture/archetypes/archtype_basics.markdown" class="dropdown-item">Archtypes</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Cogs</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../architecture/cogs/cogs/" class="dropdown-item">Cogs</a>
+</li>
+            
+<li>
+    <a href="../../architecture/cogs/gameobjectsconcept/" class="dropdown-item">Game Objects</a>
+</li>
+            
+<li>
+    <a href="../../architecture/cogs/objectstore/" class="dropdown-item">Object Store</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Objects</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../architecture/objects/objects/" class="dropdown-item">Objects</a>
+</li>
+            
+<li>
+    <a href="../../architecture/objects/gamesession/" class="dropdown-item">Gamesession</a>
+</li>
+            
+<li>
+    <a href="../../architecture/objects/spaces/" class="dropdown-item">Spaces</a>
+</li>
+            
+<li>
+    <a href="../../architecture/objects/levelsettings/" class="dropdown-item">Levelsettings</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Resources</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../architecture/resources/resource.markdown" class="dropdown-item">Resources</a>
+</li>
+            
+<li>
+    <a href="../../architecture/resources/level/" class="dropdown-item">Levels</a>
+</li>
+            
+<li>
+    <a href="../../architecture/fonts/fonts.markdown" class="dropdown-item">Fonts</a>
+</li>
+            
+<li>
+    <a href="../../architecture/resources/resourcestable.markdown" class="dropdown-item">Resource Table</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                                    
+<li>
+    <a href="../../audio/" class="dropdown-item">Audio</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Editor</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../editor/" class="dropdown-item">Editor</a>
+</li>
+            
+<li>
+    <a href="../../editor/tags/" class="dropdown-item">Tags</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Reference <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../../reference/" class="dropdown-item">Index</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Contributing <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../../source_docs/getting_started.md" class="dropdown-item">Getting Started</a>
+</li>
+                                    
+<li>
+    <a href="../../../../source_docs/plasma_code/" class="dropdown-item">Plasma Code</a>
+</li>
+                                    
+<li>
+    <a href="../../../../source_docs/plasma_overview/" class="dropdown-item">Plasma Overview</a>
+</li>
+                                    
+<li>
+    <a href="../../../../source_docs/components.md" class="dropdown-item">Components</a>
+</li>
+                                    
+<li>
+    <a href="../../../../source_docs/custom_event_names/" class="dropdown-item">Custom Event Names</a>
+</li>
+                                    
+<li>
+    <a href="../../../../source_docs/editor/" class="dropdown-item">Editor</a>
+</li>
+                                    
+<li>
+    <a href="../../../../source_docs/engine/" class="dropdown-item">Engine</a>
+</li>
+                                    
+<li>
+    <a href="../../../../source_docs/enums/" class="dropdown-item">Enums</a>
+</li>
+                                    
+<li>
+    <a href="../../../../source_docs/meta_bindings.markdown" class="dropdown-item">Meta Binding</a>
+</li>
+                                    
+<li>
+    <a href="../../../../source_docs/platform/" class="dropdown-item">Adding Platforms</a>
+</li>
+                                    
+<li>
+    <a href="../../../../source_docs/widgets/" class="dropdown-item">Widgets</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a href="https://github.com/PlasmaEngine/PlasmaDocs/edit/master/docs/manual/plasmamanual/scripting/eventsandconnections.markdown" class="nav-link"><i class="fa fa-github"></i> Edit on GitHub</a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<p>Events are the main way that objects and components talk to each other in the Plasma Engine. When a component has information that it wants to share, the easiest way is to package the information into an Event, and then dispatch it.  Then, any component that wants to have that information can listen for it by connecting a member function to the event. In the Plasma Engine, there are two main categories of events: the pre-defined Engine events (such as as an Update event or a Collision event) that are that ready-made for you to connect to, and Custom LightningScript Events that the user creates. The Custom Events allow the user to decide when and where to send them out, what information is sent with them, and what listens for the event after it's sent. This page will briefly cover each of the two categories, but will focus specifically on Custom Events(see <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/event_reference.markdown">event_reference</a> for built-in events).</p>
+<p># Pre-Defined Engine Events</p>
+<p>At the bottom of this page is a comprehensive list of the pre-defined engine events. The <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/event_reference.markdown#logicupdate">LogicUpdate</a> Event, <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/collisionevent.markdown">Collision Events</a> (which comes in three variations: Started, Ended, and Persisted), <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/keyboardevent.markdown">Keyboard Events</a>, and <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/mouseevent.markdown">Mouse Events</a>.</p>
+<p># Custom LightningScript Events</p>
+<p>These are the events that the user will create and dispatch themselves. A primary reason to use custom events is that they move the focus away from whatever triggers an action (such as collision or a frame update) to the object that is responding to the event occurring (i.e. the player's health and the HUD element displaying the player's health that is changed as a result of colliding with an enemy). There are a number of benefits to this approach, including:
+*   One event dispatch on an object can cause many behaviors to occur.
+    *   i.e. PlayersDamagedEvent is dispatched on the player object
+        *   The player's hp lowers in the Health component attached to the player
+        *   The object representing the player's health in the HUD scales to reflect the player's new health
+        *   The AnimationController changes the player sprite to the DamagedAnimation
+*   Multiple components on different objects can all respond to the same event dispatch.
+*   Events can make it easier to understand and modify your code as particular behavior responses are more closely related to the objects they affect, while also encouraging logical decoupling.
+Keep in mind that the user will only want to use custom events when there is more than one component "listening" for the event. The user will get the most use out of custom events when the events that are created are things that affect multiple objects in your game. Using a custom event when only one object is listening adds an unnecessary layer of abstraction, whereas a simple, direct function call to enact the desired behavior change is much simpler.</p>
+<p># Using Custom Events in a Game</p>
+<p>Let's go through a quick analogy for events. Imagine a world just like ours, but where vampires and ghosts also happen to exist alongside humans. In this instance, the custom event we are concerned with is the rising of the sun in the morning. In this world we're imagining, the appearance of the sun causes specific behaviors in some of the objects that exist in the world, but for others, it means nothing at all. For the humans, the sun rising means it is time to wake up; for the vampires, it can mean instant death if they happen to be outside; for the ghosts, it means they are banished back to the grave; for rocks, however, it means nothing at all. Humans, vampires, and ghosts all have an interest in the sun rising and will respond to it in different ways. Rocks couldn't care less.</p>
+<p>(NOTE)<strong>Exceptions to the Rule</strong>: When might one want to use a custom event when there is only one object listening? Here is at least one example worth covering: When the user has a large number of instances of the same object that need to respond to some change. Using the example above, say that the world is overrun with vampires. There are hundreds swarming over an area. Once could put all instances of the vampire into an array and call the behavior-changing function on each one, but in this case it is simpler, and most likely more efficient, to just have the vampire archetype from which the instances are created have a component that listens for a "sun rises" event and changes their behavior accordingly.</p>
+<p>This scenario could translate into a game as follows:
+    *  When the sun rises, a custom event is "sent out" to the entire game space.
+    *  One must then decide what objects should be "listening" for this event. In the example, all humans, vampires, and ghosts.
+    *  These objects that are listening for the event respond to it in different ways, however, requiring the user to define how each separate object responds when they "hear" the event (to be written in behavior-changing functions--in the components attached to the listening objects--that are called as a result of the component "hearing" the event).
+    *  All the other objects that are not affected by the event (rocks, buildings, etc...) have no need to listen to the event. Since they don't care about the event, they will have no component that even acknowledges the event was sent.</p>
+<p>## Decoupling and Custom Events</p>
+<p>To understand how Custom Events can help with Decoupling one's code, it is helpful to first have a working definition of Coupling. Two elements within a project are considered coupled if a change in one element directly leads to a change in the other element. For example, if the player object has a child object that moves one-to-one with every movement of the player (and the player moves one-to-one with every movement of the child), the movement of those two objects could be considered tightly coupled. If, on the other hand, the child's movement is not reliant upon the movement of the player, the movement of the two objects is decoupled (otherwise known as loose or low coupling); that is, the action of either object does not have a direct, corresponding effect on the other.</p>
+<p>Custom Events allow you to decouple elements within one's game so that the emphasis lies more with those objects that are listening for an event, causing some change in behavior. The behavior change caused by listening to the event is not directly tied to the sending of the event; on the contrary, the objects that listen for the event can respond to hearing that event in completely different ways that do not affect each other and are not influenced by the sending of the event (the exception in this case being if you are attaching data with an event, as will be shown below). </p>
+<p># Event Dispatching</p>
+<p>Events are dispatched per object. The objects that events can be dispatched on can include the Space, the Level Settings of a level, the owner of the component dispatching the event (i.e. <code>this.Owner</code>), as well as any other specific object to which one has a reference. Events dispatched onto the Space object will be heard by every object that is listening to the Space for that particular event. In short, the listener that is connecting to an event must match up that connection exactly in the way in which the event was dispatched.</p>
+<p>(NOTE)<strong>Consider the Following</strong>:
+    There are two red Players, Player1 and Player2. They both connect to ChangeColorToBlueEvent so they can respond with their OnChangeColorToBlueEvent functions (that, in fact, change their color blue.) When Player1 signs up for the ChangeColorToBlueEvent, it listens for the one dispatched by the <strong>Space</strong> object.  When Player2 signs up for the same ChangeColorToBlueEvent, it listens for the one dispatched out by the <strong>Game</strong> object. Later when the ChangeColorToBlueEvent is fired from the Space, Player1 changes to the color Blue having received the event, while Player2 stays red. </p>
+<p># Creating and Using Custom Script Events</p>
+<p>The creation and usage of custom events in Plasma is a multi-step process that follows a simple mechanism that relies upon correctly matching up event dispatches with event connections. The following sections will detail the way in which to correctly create, attach data to, dispatch, and connect to custom events.</p>
+<p>WARNING: Occasionally, you will need to store information received in an event for later use. You may be tempted to store a reference to the event object itself. <strong>This is a bad practice and should never be done.</strong> You should instead copy the information within the received event object by value into variables of their corresponding types. </p>
+<p>If you were to store a reference to the event object itself the reference would lose its validity as soon as all event listeners have executed and the event is deallocated. This situation would result in the event reference to point at an address in memory that may be currently be in use by another part of the engine since it is no longer being used by the event. Accessing the broken event reference in the state will result in undefined behavior.</p>
+<p>## Creating the Event Definition</p>
+<p>The following code-block demonstrates both how to create a custom event as well as how to include data to send with the event. While it is rare that one will send no data, it is <em>not</em> necessary to include data when creating the event. In these cases, the dispatching of the event itself is the data. In most cases, however, data will be included that will have relevance to the behavior change desired by the object that is connecting to the event (i.e. on a "enemy destroyed" event, one might send the amount of points the player receives for destroying the enemy).</p>
+<pre><code>    // Define a custom LightningEvent
+    class MyCustomEvent : LightningEvent
+    {
+        //Data to be sent with the event 
+        //that will be used by the object connecting to the event
+        var InfoToSend : String = &quot;&quot;;
+        var NumberToSend : Integer = 0;
+        var RealToSend : Real = 0.0;
+    }   
+
+</code></pre>
+<p>## Send an Event</p>
+<p>Sending an event is a four part process. 
+1. Create an event. 
+2. Attach data to the event. <strong>(optional)</strong> 
+3. Use the <code>sends</code> keyword to add the <em>name</em> of the event you're sending to the <code>Events</code> namespace. 
+4. Using the appropriate event-sender, dispatch the event. </p>
+<p>## Create the Event</p>
+<pre><code>    //Create an instance of the Custom Event
+    var myCustomEvent = MyCustomEvent();
+
+</code></pre>
+<p>## Attach Data to the Event</p>
+<p>NOTE: Users can only add data to the member variables defined in the event's class. To add more data, the user needs to alter the event's class to include more member variables.</p>
+<pre><code>    class MyCustomEvent : LightningEvent
+    {
+        //Attach Data
+        myCustomEvent.InfoToSend = &quot;data&quot;;
+        myCustomEvent.NumberToSend = 5;
+    }
+
+    class EventDispatcher : LightningComponent
+    {
+        var DataThatWillNotBeAdded : Real = 10.5;
+
+        //This data WILL NOT be sent with the event
+        //as it is not added within the event-defining class
+        myCustomEvent.RealToSend = this.DataThatWillNotBeAdded;
+    }
+
+
+</code></pre>
+<p>## Using the Sends Keyword</p>
+<p>The <code>sends</code> keyword helps users in two ways. First, it registers the string type ID so that it's associated with the event type itself (allowing one to send and connect using the <code>Events.MyCustomEvent</code> syntax) while also keeping the event //type safe//; that is, an error will be thrown on the event response function if one tries to connect to an event that doesn't precisely match the method in which the event was dispatched.
+Users can only use the <code>sends</code> keyword within the outermost class-scope (of either the class defining the custom event or the class in which it is dispatched), <em>outside of any function</em> within that class. In other words, it must be used outside of <code>Initialize</code>, <code>OnLogicUpdate</code>, or any other function. Placing it within the class that creates the event itself is a good way to keep track of it is registered, but ultimately it is up to the user where they wish to put it so long as it not used inside any function. The following two code-blocks show two ways to use the <code>sends</code> keyword correctly:</p>
+<pre><code>    class MyCustomEvent : LightningEvent
+    {
+        //Using the sends keyword correctly within the class
+        //that defines that custom event
+        sends MyCustomEvent : MyCustomEvent;
+    }
+
+
+</code></pre>
+<pre><code>    class EventDispatcher : LightningComponent
+    {
+        //Using the sends keyword correctly within the class
+        //that dispatches the custom event
+        sends MyCustomEvent : MyCustomEvent;
+
+        function Initialize(init : CogInitializer)
+        {
+        }
+    }
+
+</code></pre>
+<p>The following code-block will show an <strong>incorrect</strong> way use the <code>sends</code> keyword:</p>
+<pre><code>    class EventDispatcher : LightningComponent
+    {
+        function Initialize(init : CogInitializer)
+        {
+            //Incorrect usage of sends keyword within a function 
+            sends MyCustomEvent : MyCustomEvent;
+        }
+    }
+
+</code></pre>
+<p>## Dispatch the Event</p>
+<p>Always be mindful of sending the events from the source one's subscribers are expecting to hear it from. </p>
+<pre><code>class MyCustomEvent : LightningEvent
+{
+  //Registers the string type ID to be associated with the event type
+  sends MyCustomEvent : MyCustomEvent;
+}
+
+class EventDispatcher : LightningComponent
+{
+    //Property for selecting the CogPath of the object for which to 
+    //dispatch the event
+    [Property]
+    var ObjectToDispatchToPath : CogPath = null;
+     //Cog variable for which to assign the Cog of the CogPath variable
+    var ObjectToDispatchTo : Cog = null;
+     function Initialize(init : CogInitializer)
+    {
+        //Sets Cog variable for the object to dispatch 
+        //to the Cog from CogPath variable
+        this.ObjectToDispatchTo = this.ObjectToDispatchToPath.Cog;
+         //Create an instance of the event
+        var myCustomEvent : MyCustomEvent = new MyCustomEvent();
+         //Dispatches the Event onto multiple objects from component
+         //Dispatch onto `this.Owner`
+        this.Owner.DispatchEvent(Events.MyCustomEvent, myCustomEvent);
+        //Dispatch onto LevelSettings
+        this.LevelSettings.DispatchEvent(Events.MyCustomEvent, myCustomEvent);
+        //Dispatch onto other, specific object
+        this.ObjectToDispatchTo.DispatchEvent(Events.MyCustomEvent, myCustomEvent);
+         //Dispatch onto `this.Space`
+        this.Space.DispatchEvent(Events.MyCustomEvent, myCustomEvent);    
+        //Dispatch onto `this.GameSession`
+        this.GameSession.DispatchEvent(Events.MyCustomEvent, myCustomEvent);
+    }
+}    
+</code></pre>
+<p>## Listening for an Event</p>
+<p><strong>In order to respond to an event, the user must identify which event-sender you are listening to:</strong>
+   Space, LevelSettings, GameSession, Object from which the event is dispatched (along with the object's parent or children), another specific object, etc.
+<strong>Which event the user cares about:</strong>
+   Events.LogicUpdate, Events.MyCustomEvent, etc.
+<strong>And how the user plans to respond:</strong>
+   OnLogicUpdate, OnMyCustomEvent, etc.</p>
+<p>(NOTE)<strong>Dispatching Onto Space vs LevelSettings</strong>: One thing to keep in mind when dispatching onto either the Space or LevelSettings is the scope of each. Remember that the LevelSettings object is also scoped to the Level that it is in. This is important to consider when using custom events because if the level is changed, the particular LevelSettings object for that level will no longer exist as well as any events that were dispatched onto LevelSettings. The Space on the other hand, could continue to exist between the changing of levels and any events that dispatch onto the Space will still exist. </p>
+<p>Many different functions in various components can connect to the same dispatched event. All that is required is that each object have a function that is connected correctly to the single event that has been dispatched on that object.</p>
+<p>IMPORTANT: Make sure the event connection is made in a place that will only run <strong>once</strong>. If the event ends up <em>connecting multiple times//, the object it's dispatched onto will //respond multiple times to a</em> <strong>single</strong> //event//.
+While connecting to an event is usually done in a component's <code>Initialize</code> function, it doesn't have to. The connection may be dependent on other factors or variables, especially if the user wants the object to connect only after something significant has happened. In these cases, one may choose to place the connection outside of the <code>Initialize</code> function and within the scope of a conditional statement checking for certain criteria.</p>
+<p>## Connecting</p>
+<pre><code>//Listening for Custom Events
+//Listening for Dispatch onto `this.Owner`
+Plasma.Connect(this.Owner, Events.MyCustomEvent, this.OnMyCustomEvent);
+//Listening for Dispatch onto `this.Space`
+Plasma.Connect(this.Space, Events.MyCustomEvent, this.OnMyCustomEvent);
+//Listening for Dispatch onto `this.LevelSettings`
+Plasma.Connect(this.LevelSettings, Events.MyCustomEvent, this.OnMyCustomEvent);
+//Listening for Dispatch onto `this.GameSession`
+Plasma.Connect(this.GameSession, Events.MyCustomEvent, this.OnMyCustomEvent);
+
+</code></pre>
+<p>## Responding to an Event</p>
+<p>In order to actually respond to the event, the user needs to define the function provided in the call to Plasma.Connect.
+ere, one can gain access to the data that is sent with the event, for use in altering behavior or setting properties.</p>
+<pre><code>    //This function gets called because this is the one 
+    //we connected to when we listened to the event
+    function OnMyCustomEvent(myCustomEvent : MyCustomEvent)
+    {
+        //Use as much or as little information passed by the event
+        this.Owner.ComponentName.PropertyName = myCustomEvent.InfoToSend;
+        this.Owner.ComponentName.Value = myCustomEvent.NumberToSend;
+    }   
+
+</code></pre>
+<p>## Disconnecting</p>
+<p>Disconnecting makes it so one is no longer notified when the event occurs. If multiple functions are linked to the same event, these too will be disconnected. There is no way to disconnect only one connection to the event; if one is disconnected, all are disconnected. </p>
+<pre><code>    //Disconnecting From Events    
+    Plasma.Disconnect(this.Owner, Events.MyCustomEvent, this);
+
+</code></pre>
+<p>Another important thing to keep in mind regarding Disconnecting is that is object-specific and event-specific but <em>not</em> receiver-specific. That is why in the code-block immediately above, only <code>this</code> is passed in as the final argument instead of the delegate itself (i.e. <code>this.OnMyCustomEvent</code>).</p>
+<p># Related Material</p>
+<p>## Reference
+- <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/event_reference.markdown">event_reference</a>
+- <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/collisionevent.markdown">Collision Events</a>
+- <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/keyboardevent.markdown">Keyboard Events</a>
+- <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/mouseevent.markdown">Mouse Events</a> </p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+                <p>Copyright &copy; 2021 Plasma Engine. Released under the MIT License.</p>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../../../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../../../js/base.js" defer></script>
+        <script src="../../../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

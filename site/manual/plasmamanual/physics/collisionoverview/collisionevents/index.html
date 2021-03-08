@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../../../../img/favicon.ico">
+        <title>Collisionevents - Docs | Plasma Engine</title>
+        <link href="../../../../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../../../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../../../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/docco.min.css">
+
+        <script src="../../../../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../../../../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../../../../..">Docs | Plasma Engine</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href="../../../../.." class="nav-link">Home</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="/getting_started/" class="nav-link">Getting Started</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Manual <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../../" class="dropdown-item">Manual</a>
+</li>
+                                    
+<li>
+    <a href="../../../ai/" class="dropdown-item">AI</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Architecture</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../architecture/architecture/" class="dropdown-item">Architecture</a>
+</li>
+            
+<li>
+    <a href="../../../architecture/archetypes/archtype_basics.markdown" class="dropdown-item">Archtypes</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Cogs</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../architecture/cogs/cogs/" class="dropdown-item">Cogs</a>
+</li>
+            
+<li>
+    <a href="../../../architecture/cogs/gameobjectsconcept/" class="dropdown-item">Game Objects</a>
+</li>
+            
+<li>
+    <a href="../../../architecture/cogs/objectstore/" class="dropdown-item">Object Store</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Objects</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../architecture/objects/objects/" class="dropdown-item">Objects</a>
+</li>
+            
+<li>
+    <a href="../../../architecture/objects/gamesession/" class="dropdown-item">Gamesession</a>
+</li>
+            
+<li>
+    <a href="../../../architecture/objects/spaces/" class="dropdown-item">Spaces</a>
+</li>
+            
+<li>
+    <a href="../../../architecture/objects/levelsettings/" class="dropdown-item">Levelsettings</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Resources</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../architecture/resources/resource.markdown" class="dropdown-item">Resources</a>
+</li>
+            
+<li>
+    <a href="../../../architecture/resources/level/" class="dropdown-item">Levels</a>
+</li>
+            
+<li>
+    <a href="../../../architecture/fonts/fonts.markdown" class="dropdown-item">Fonts</a>
+</li>
+            
+<li>
+    <a href="../../../architecture/resources/resourcestable.markdown" class="dropdown-item">Resource Table</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                                    
+<li>
+    <a href="../../../audio/" class="dropdown-item">Audio</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Editor</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../editor/" class="dropdown-item">Editor</a>
+</li>
+            
+<li>
+    <a href="../../../editor/tags/" class="dropdown-item">Tags</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Reference <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../../../reference/" class="dropdown-item">Index</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Contributing <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../../../source_docs/getting_started.md" class="dropdown-item">Getting Started</a>
+</li>
+                                    
+<li>
+    <a href="../../../../../source_docs/plasma_code/" class="dropdown-item">Plasma Code</a>
+</li>
+                                    
+<li>
+    <a href="../../../../../source_docs/plasma_overview/" class="dropdown-item">Plasma Overview</a>
+</li>
+                                    
+<li>
+    <a href="../../../../../source_docs/components.md" class="dropdown-item">Components</a>
+</li>
+                                    
+<li>
+    <a href="../../../../../source_docs/custom_event_names/" class="dropdown-item">Custom Event Names</a>
+</li>
+                                    
+<li>
+    <a href="../../../../../source_docs/editor/" class="dropdown-item">Editor</a>
+</li>
+                                    
+<li>
+    <a href="../../../../../source_docs/engine/" class="dropdown-item">Engine</a>
+</li>
+                                    
+<li>
+    <a href="../../../../../source_docs/enums/" class="dropdown-item">Enums</a>
+</li>
+                                    
+<li>
+    <a href="../../../../../source_docs/meta_bindings.markdown" class="dropdown-item">Meta Binding</a>
+</li>
+                                    
+<li>
+    <a href="../../../../../source_docs/platform/" class="dropdown-item">Adding Platforms</a>
+</li>
+                                    
+<li>
+    <a href="../../../../../source_docs/widgets/" class="dropdown-item">Widgets</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a href="https://github.com/PlasmaEngine/PlasmaDocs/edit/master/docs/manual/plasmamanual/physics/collisionoverview/collisionevents.markdown" class="nav-link"><i class="fa fa-github"></i> Edit on GitHub</a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<p><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/collisionevent.markdown"> CollisionEvents</a> are the primary way that physics sends collision information to users. Three main event types are sent out for collisions: starting, persisting, and ending.</p>
+<p>Collision events are often used in gameplay, such as applying damage if an impact was large enough. Sometimes it is necessary to alter information about the two objects involved in a collision, such as their velocity. Other common examples include creating audio effects or graphics effects in response to a collision, such as a scraping sound and sparks of a sliding metal object.</p>
+<p>#  Collision Event Types
+There are three primary collision events sent out. These events are typically sent to both objects involved and to the <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/physics/collisionoverview/physicsspace.markdown">PhysicsSpace</a>. If you're having trouble receiving events then see <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/physics/collisionoverview/physicstroubleshooting/whyaretheynotcolliding.markdown">WhyAreTheyNotColliding</a>.</p>
+<ul>
+<li><strong>CollisionStarted</strong> is sent out on the first frame two objects come into contact.</li>
+<li><strong>CollisionPersisted</strong> is sent every frame two objects are in contact. This event is not sent on the first frame of collision.</li>
+<li><strong>CollisionEnded</strong> is sent the frame that contact is broken. At this point the two objects are no longer in contact. This event is also sent if an object is destroyed.</li>
+</ul>
+<p>#  CollisionEvents Order
+The physics system will send out all CollisionEvents after resolving all collisions in the space. This means that some of the information in the event is //old//. This is most obvious when inspecting an object's position and velocity as both will reflect the post-collision resolution information. This is necessary to give final collision information like the final applied impulse. If pre-collision resolution information is desired, see <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/presolveevent.markdown">PreSolveEvent</a> of <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/physics/collisionoverview/collisiongroupsandtables.markdown">CollisionTables</a>.</p>
+<p>#  Properties
+There's a few properties worth discussing in detail on CollisionEvents.</p>
+<p>##  Object vs. OtherObject
+A collision event is sent with one object as the focus; that is to say that most information will have a primary object and a secondary object. This is necessary to know what direction other properties, such as the collision normal, face. If the event is received from the physics space then this ordering is not defined.</p>
+<p>##  ContactPoints
+A CollisionEvent exposes a range of contact points. For physics to solve a collision, several points of contact may be necessary. Often in game logic, one contact point is sufficient; for convenience, the FirstPoint  property is exposed. <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/contactpoint.markdown"> ContactPoints</a> expose information about what happened in a collision:</p>
+<p><strong>Local and World Points:</strong> Contact points expose both a local and world space point on each object.</p>
+<p><strong>Contact Normal:</strong> The normal of a collision describes the primary direction that collision is resolved in. ContactPoint exposes WorldNormalTowardsOther  which is the normal from the WorldPoint on <em>this// object towards the //other// object. This can be useful for pushing the //other// object away from //this//. To get the world normal towards //this</em> object just negate this property.</p>
+<p><strong>Impulses:</strong> The physics system solves collisions with impulses, i.e. an instantaneous force. To properly solve a collision there are three values: the normal impulse and two friction impulses. </p>
+<p>The normal impulse is the scalar impulse value that is applied in the direction of the contact normal to resolve the collision. This can be used to measure the strength of an impact between the two objects. Keep in mind that an impulse contains the inverse mass sum of the two objects involved.</p>
+<p>The two friction impulses are applied in tangential directions to the normal impulse to slow down an object. ContactPoint exposes FrictionImpulse , which is the total friction magnitude that was applied. Additionally, ComplexImpulse  is exposed, which contains the normal, friction1, and friction2 values in the x, y, and z components of the vector respectively.</p>
+<hr />
+<p># Related Materials
+ ##  Manual
+- <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/physics/collisionoverview/physicstroubleshooting/whyaretheynotcolliding.markdown">whyaretheynotcolliding.markdown</a>
+- <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/physics/collisionoverview/physicsspace.markdown">physicsspace.markdown</a>
+- <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/physics/collisionoverview/collisiongroupsandtables.markdown">collisiongroupsandtables.markdown</a>
+ ##  Reference
+- <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/collisionevent.markdown">CollisionEvent</a>
+- <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/contactpoint.markdown">ContactPoint</a>
+- <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/presolveevent.markdown">PreSolveEvent</a>
+- <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/physicsspace.markdown">PhysicsSpace</a> </p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+                <p>Copyright &copy; 2021 Plasma Engine. Released under the MIT License.</p>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../../../../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../../../../js/base.js" defer></script>
+        <script src="../../../../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

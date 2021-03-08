@@ -1,0 +1,1033 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../../img/favicon.ico">
+        <title>Netobject - Docs | Plasma Engine</title>
+        <link href="../../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/docco.min.css">
+
+        <script src="../../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../../..">Docs | Plasma Engine</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href="../../.." class="nav-link">Home</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="/getting_started/" class="nav-link">Getting Started</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Manual <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../manual/" class="dropdown-item">Manual</a>
+</li>
+                                    
+<li>
+    <a href="../../../manual/plasmamanual/ai/" class="dropdown-item">AI</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Architecture</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../manual/plasmamanual/architecture/architecture/" class="dropdown-item">Architecture</a>
+</li>
+            
+<li>
+    <a href="../../../manual/plasmamanual/architecture/archetypes/archtype_basics.markdown" class="dropdown-item">Archtypes</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Cogs</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../manual/plasmamanual/architecture/cogs/cogs/" class="dropdown-item">Cogs</a>
+</li>
+            
+<li>
+    <a href="../../../manual/plasmamanual/architecture/cogs/gameobjectsconcept/" class="dropdown-item">Game Objects</a>
+</li>
+            
+<li>
+    <a href="../../../manual/plasmamanual/architecture/cogs/objectstore/" class="dropdown-item">Object Store</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Objects</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../manual/plasmamanual/architecture/objects/objects/" class="dropdown-item">Objects</a>
+</li>
+            
+<li>
+    <a href="../../../manual/plasmamanual/architecture/objects/gamesession/" class="dropdown-item">Gamesession</a>
+</li>
+            
+<li>
+    <a href="../../../manual/plasmamanual/architecture/objects/spaces/" class="dropdown-item">Spaces</a>
+</li>
+            
+<li>
+    <a href="../../../manual/plasmamanual/architecture/objects/levelsettings/" class="dropdown-item">Levelsettings</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Resources</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../manual/plasmamanual/architecture/resources/resource.markdown" class="dropdown-item">Resources</a>
+</li>
+            
+<li>
+    <a href="../../../manual/plasmamanual/architecture/resources/level/" class="dropdown-item">Levels</a>
+</li>
+            
+<li>
+    <a href="../../../manual/plasmamanual/architecture/fonts/fonts.markdown" class="dropdown-item">Fonts</a>
+</li>
+            
+<li>
+    <a href="../../../manual/plasmamanual/architecture/resources/resourcestable.markdown" class="dropdown-item">Resource Table</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                                    
+<li>
+    <a href="../../../manual/plasmamanual/audio/" class="dropdown-item">Audio</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Editor</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../manual/plasmamanual/editor/" class="dropdown-item">Editor</a>
+</li>
+            
+<li>
+    <a href="../../../manual/plasmamanual/editor/tags/" class="dropdown-item">Tags</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Reference <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../" class="dropdown-item">Index</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Contributing <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../source_docs/getting_started.md" class="dropdown-item">Getting Started</a>
+</li>
+                                    
+<li>
+    <a href="../../../source_docs/plasma_code/" class="dropdown-item">Plasma Code</a>
+</li>
+                                    
+<li>
+    <a href="../../../source_docs/plasma_overview/" class="dropdown-item">Plasma Overview</a>
+</li>
+                                    
+<li>
+    <a href="../../../source_docs/components.md" class="dropdown-item">Components</a>
+</li>
+                                    
+<li>
+    <a href="../../../source_docs/custom_event_names/" class="dropdown-item">Custom Event Names</a>
+</li>
+                                    
+<li>
+    <a href="../../../source_docs/editor/" class="dropdown-item">Editor</a>
+</li>
+                                    
+<li>
+    <a href="../../../source_docs/engine/" class="dropdown-item">Engine</a>
+</li>
+                                    
+<li>
+    <a href="../../../source_docs/enums/" class="dropdown-item">Enums</a>
+</li>
+                                    
+<li>
+    <a href="../../../source_docs/meta_bindings.markdown" class="dropdown-item">Meta Binding</a>
+</li>
+                                    
+<li>
+    <a href="../../../source_docs/platform/" class="dropdown-item">Adding Platforms</a>
+</li>
+                                    
+<li>
+    <a href="../../../source_docs/widgets/" class="dropdown-item">Widgets</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a href="https://github.com/PlasmaEngine/PlasmaDocs/edit/master/docs/reference/class_reference/netobject.markdown" class="nav-link"><i class="fa fa-github"></i> Edit on GitHub</a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<p><code>Component</code> <code>Networking</code></p>
+<p>(NOTE) Network Object. Manages the replication of a single object on the network.</p>
+<table>
+<thead>
+<tr>
+<th>Methods</th>
+<th>Properties</th>
+<th>Base Classes</th>
+<th>Derived Classes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/netobject.markdown#dispatchbroadcast-void"> DispatchBroadcast</a></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/netobject.markdown#acceptincomingchanges-ze"> AcceptIncomingChanges</a></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/component.markdown">component</a></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/netpeer.markdown">netpeer</a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/netobject.markdown#dispatchlocal-void"> DispatchLocal</a></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/netobject.markdown#accuratetimestamponchang"> AccurateTimestampOnChange</a></td>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/netspace.markdown">netspace</a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/netobject.markdown#dispatchlocalandbroadcas"> DispatchLocalAndBroadcast</a></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/netobject.markdown#accuratetimestamponoffli"> AccurateTimestampOnOffline</a></td>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/netuser.markdown">netuser</a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/netobject.markdown#dispatchlocalandremote-v"> DispatchLocalAndRemote</a></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/netobject.markdown#accuratetimestampononlin"> AccurateTimestampOnOnline</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/netobject.markdown#dispatchremote-void"> DispatchRemote</a></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/netobject.markdown#allownapping-plasma-engine"> AllowNapping</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/netobject.markdown#forget-plasma-engine-docum"> Forget</a></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/netobject.markdown#automaticchannel-plasma-en"> AutomaticChannel</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/netobject.markdown#getnetchannel-plasma-engin"> GetNetChannel</a></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/netobject.markdown#detectoutgoingchanges-ze"> DetectOutgoingChanges</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/netobject.markdown#hasnetchannel-plasma-engin"> HasNetChannel</a></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/netobject.markdown#isclient-plasma-engine-doc"> IsClient</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/netobject.markdown#isownedbypeer-plasma-engin"> IsOwnedByPeer</a></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/netobject.markdown#isclientandmine-plasma-eng"> IsClientAndMine</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/netobject.markdown#isownedbyuser-plasma-engin"> IsOwnedByUser</a></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/netobject.markdown#isclientbutnotmine-plasma"> IsClientButNotMine</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/netobject.markdown#netobject-void"> Constructor</a></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/netobject.markdown#isclientoroffline-plasma-e"> IsClientOrOffline</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/netobject.markdown#replicatenow-plasma-engine"> ReplicateNow</a></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/netobject.markdown#isclientorserver-plasma-en"> IsClientOrServer</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/netobject.markdown#selectremote-plasma-engine"> SelectRemote</a></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/netobject.markdown#ismine-plasma-engine-docum"> IsMine</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/netobject.markdown#setnetuserownerdown-void"> SetNetUserOwnerDown</a></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/netobject.markdown#isnapping-plasma-engine-do"> IsNapping</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/netobject.markdown#setnetuserownerup-void"> SetNetUserOwnerUp</a></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/netobject.markdown#isnotmine-plasma-engine-do"> IsNotMine</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/netobject.markdown#takenap-void"> TakeNap</a></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/netobject.markdown#isnotownedbyauser-plasma-e"> IsNotOwnedByAUser</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/netobject.markdown#wakeup-void"> WakeUp</a></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/netobject.markdown#isoffline-plasma-engine-do"> IsOffline</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/netobject.markdown#isofflineandmine-plasma-en"> IsOfflineAndMine</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/netobject.markdown#isofflinebutnotmine-plasma"> IsOfflineButNotMine</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/netobject.markdown#isonline-plasma-engine-doc"> IsOnline</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/netobject.markdown#isownedbyauser-plasma-engi"> IsOwnedByAUser</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/netobject.markdown#isserver-plasma-engine-doc"> IsServer</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/netobject.markdown#isserverandmine-plasma-eng"> IsServerAndMine</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/netobject.markdown#isserverbutnotmine-plasma"> IsServerButNotMine</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/netobject.markdown#isserveroroffline-plasma-e"> IsServerOrOffline</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/netobject.markdown#lastchangetimepassed-zer"> LastChangeTimePassed</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/netobject.markdown#lastchangetimestamp-plasma"> LastChangeTimestamp</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/netobject.markdown#netobjectid-plasma-engine"> NetObjectId</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/netobject.markdown#netpropertyinfos-plasma-en"> NetPropertyInfos</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/netobject.markdown#netuserowner-plasma-engine"> NetUserOwner</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/netobject.markdown#netuserownerpath-plasma-en"> NetUserOwnerPath</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/netobject.markdown#netuserownerpeerid-plasma"> NetUserOwnerPeerId</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/netobject.markdown#netuserowneruserid-plasma"> NetUserOwnerUserId</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/netobject.markdown#offlinetimepassed-plasma-e"> OfflineTimePassed</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/netobject.markdown#offlinetimestamp-plasma-en"> OfflineTimestamp</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/netobject.markdown#onlinetimepassed-plasma-en"> OnlineTimePassed</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/netobject.markdown#onlinetimestamp-plasma-eng"> OnlineTimestamp</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/netobject.markdown#role-plasma-engine-documen"> Role</a></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>#  Properties</p>
+<hr />
+<p>#  AcceptIncomingChanges : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown">boolean</a></p>
+<blockquote>
+<p>Controls whether or not net channels on this net object may accept incoming changes.
+``` lang=cpp, name=Lightning
+var AcceptIncomingChanges : Boolean</p>
+</blockquote>
+<hr />
+<p>#  AccurateTimestampOnChange : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown">boolean</a></p>
+<blockquote>
+<p>Controls whether or not the net object will serialize an accurate timestamp value when changed (on any net channel), or will instead accept an estimated timestamp value. (Enabling this will override the corresponding net channel type setting for all net channels added to this net object)
+``` lang=cpp, name=Lightning
+var AccurateTimestampOnChange : Boolean</p>
+</blockquote>
+<hr />
+<p>#  AccurateTimestampOnOffline : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown">boolean</a></p>
+<blockquote>
+<p>Controls whether or not the net object will serialize an accurate timestamp value when taken offline, or will instead accept an estimated timestamp value.
+``` lang=cpp, name=Lightning
+var AccurateTimestampOnOffline : Boolean</p>
+</blockquote>
+<hr />
+<p>#  AccurateTimestampOnOnline : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown">boolean</a></p>
+<blockquote>
+<p>Controls whether or not the net object will serialize an accurate timestamp value when brought online, or will instead accept an estimated timestamp value.
+``` lang=cpp, name=Lightning
+var AccurateTimestampOnOnline : Boolean</p>
+</blockquote>
+<hr />
+<p>#  AllowNapping : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown">boolean</a></p>
+<blockquote>
+<p>Controls whether or not net channels on this net object may nap (perform change detection on longer intervals) if they haven't changed in a while.
+``` lang=cpp, name=Lightning
+var AllowNapping : Boolean</p>
+</blockquote>
+<hr />
+<p>#  AutomaticChannel : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/netchannelconfig.markdown">netchannelconfig</a></p>
+<blockquote>
+<p>Returns the automatic net channel configuration resource (assigned to net properties unless another channel is specified).
+``` lang=cpp, name=Lightning
+var AutomaticChannel : NetChannelConfig</p>
+</blockquote>
+<hr />
+<p>#  DetectOutgoingChanges : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown">boolean</a></p>
+<blockquote>
+<p>Controls whether or not net channels on this net object may detect outgoing changes.
+``` lang=cpp, name=Lightning
+var DetectOutgoingChanges : Boolean</p>
+</blockquote>
+<hr />
+<p>#  IsClient : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown">boolean</a></p>
+<p><code>read-only</code></p>
+<blockquote>
+<p>Returns true if our open peer's network role is client, else false.
+``` lang=cpp, name=Lightning
+var IsClient : Boolean</p>
+</blockquote>
+<hr />
+<p>#  IsClientAndMine : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown">boolean</a></p>
+<p><code>read-only</code></p>
+<blockquote>
+<p>Returns true if our open peer's network role is client and the net object is conceptually owned by a user added by our local peer, else false.
+``` lang=cpp, name=Lightning
+var IsClientAndMine : Boolean</p>
+</blockquote>
+<hr />
+<p>#  IsClientButNotMine : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown">boolean</a></p>
+<p><code>read-only</code></p>
+<blockquote>
+<p>Returns true if our open peer's network role is client and the net object is not conceptually owned by a user added by our local peer, else false.
+``` lang=cpp, name=Lightning
+var IsClientButNotMine : Boolean</p>
+</blockquote>
+<hr />
+<p>#  IsClientOrOffline : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown">boolean</a></p>
+<p><code>read-only</code></p>
+<blockquote>
+<p>Returns true if our open peer's network role is client or offline, else false.
+``` lang=cpp, name=Lightning
+var IsClientOrOffline : Boolean</p>
+</blockquote>
+<hr />
+<p>#  IsClientOrServer : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown">boolean</a></p>
+<p><code>read-only</code></p>
+<blockquote>
+<p>Returns true if our open peer's network role is client or server, else false.
+``` lang=cpp, name=Lightning
+var IsClientOrServer : Boolean</p>
+</blockquote>
+<hr />
+<p>#  IsMine : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown">boolean</a></p>
+<p><code>read-only</code></p>
+<blockquote>
+<p>Returns true if the net object is conceptually owned by a user added by our local peer, else false.
+``` lang=cpp, name=Lightning
+var IsMine : Boolean</p>
+</blockquote>
+<hr />
+<p>#  IsNapping : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown">boolean</a></p>
+<p><code>read-only</code></p>
+<blockquote>
+<p>Returns true if all net channels on this net object are napping (performing change detection on longer intervals), else false.
+``` lang=cpp, name=Lightning
+var IsNapping : Boolean</p>
+</blockquote>
+<hr />
+<p>#  IsNotMine : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown">boolean</a></p>
+<p><code>read-only</code></p>
+<blockquote>
+<p>Returns true if the net object is not conceptually owned by a user added by our local peer, else false.
+``` lang=cpp, name=Lightning
+var IsNotMine : Boolean</p>
+</blockquote>
+<hr />
+<p>#  IsNotOwnedByAUser : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown">boolean</a></p>
+<p><code>read-only</code></p>
+<blockquote>
+<p>Returns true if the net object is not conceptually owned by a user, else false.
+``` lang=cpp, name=Lightning
+var IsNotOwnedByAUser : Boolean</p>
+</blockquote>
+<hr />
+<p>#  IsOffline : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown">boolean</a></p>
+<p><code>read-only</code></p>
+<blockquote>
+<p>Returns true if our open peer's network role is offline, else false.
+``` lang=cpp, name=Lightning
+var IsOffline : Boolean</p>
+</blockquote>
+<hr />
+<p>#  IsOfflineAndMine : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown">boolean</a></p>
+<p><code>read-only</code></p>
+<blockquote>
+<p>Returns true if our open peer's network role is offline and the net object is conceptually owned by a user added by our local peer, else false.
+``` lang=cpp, name=Lightning
+var IsOfflineAndMine : Boolean</p>
+</blockquote>
+<hr />
+<p>#  IsOfflineButNotMine : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown">boolean</a></p>
+<p><code>read-only</code></p>
+<blockquote>
+<p>Returns true if our open peer's network role is offline and the net object is not conceptually owned by a user added by our local peer, else false.
+``` lang=cpp, name=Lightning
+var IsOfflineButNotMine : Boolean</p>
+</blockquote>
+<hr />
+<p>#  IsOnline : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown">boolean</a></p>
+<p><code>read-only</code></p>
+<blockquote>
+<p>Returns true if the net object is online, else false.
+``` lang=cpp, name=Lightning
+var IsOnline : Boolean</p>
+</blockquote>
+<hr />
+<p>#  IsOwnedByAUser : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown">boolean</a></p>
+<p><code>read-only</code></p>
+<blockquote>
+<p>Returns true if the net object is conceptually owned by a user, else false.
+``` lang=cpp, name=Lightning
+var IsOwnedByAUser : Boolean</p>
+</blockquote>
+<hr />
+<p>#  IsServer : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown">boolean</a></p>
+<p><code>read-only</code></p>
+<blockquote>
+<p>Returns true if our open peer's network role is server, else false.
+``` lang=cpp, name=Lightning
+var IsServer : Boolean</p>
+</blockquote>
+<hr />
+<p>#  IsServerAndMine : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown">boolean</a></p>
+<p><code>read-only</code></p>
+<blockquote>
+<p>Returns true if our open peer's network role is server and the net object is conceptually owned by a user added by our local peer, else false.
+``` lang=cpp, name=Lightning
+var IsServerAndMine : Boolean</p>
+</blockquote>
+<hr />
+<p>#  IsServerButNotMine : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown">boolean</a></p>
+<p><code>read-only</code></p>
+<blockquote>
+<p>Returns true if our open peer's network role is server and the net object is not conceptually owned by a user added by our local peer, else false.
+``` lang=cpp, name=Lightning
+var IsServerButNotMine : Boolean</p>
+</blockquote>
+<hr />
+<p>#  IsServerOrOffline : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown">boolean</a></p>
+<p><code>read-only</code></p>
+<blockquote>
+<p>Returns true if our open peer's network role is server or offline, else false.
+``` lang=cpp, name=Lightning
+var IsServerOrOffline : Boolean</p>
+</blockquote>
+<hr />
+<p>#  LastChangeTimePassed : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown">real</a></p>
+<p><code>read-only</code></p>
+<blockquote>
+<p>Elapsed time passed since this net object was last changed, else 0.
+``` lang=cpp, name=Lightning
+var LastChangeTimePassed : Real</p>
+</blockquote>
+<hr />
+<p>#  LastChangeTimestamp : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown">real</a></p>
+<p><code>read-only</code></p>
+<blockquote>
+<p>Timestamp indicating when this net object was last changed, else 0.
+``` lang=cpp, name=Lightning
+var LastChangeTimestamp : Real</p>
+</blockquote>
+<hr />
+<p>#  NetObjectId : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/integer.markdown">integer</a></p>
+<p><code>read-only</code></p>
+<blockquote>
+<p>Returns the net object ID (set if the net object is live), else 0.
+``` lang=cpp, name=Lightning
+var NetObjectId : Integer</p>
+</blockquote>
+<hr />
+<p>#  NetPropertyInfos : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/netpropertyinfos.markdown">netpropertyinfos</a></p>
+<blockquote>
+<p>Net property infos added through the property grid.
+``` lang=cpp, name=Lightning
+var NetPropertyInfos : NetPropertyInfos</p>
+</blockquote>
+<hr />
+<p>#  NetUserOwner : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/cog.markdown">cog</a></p>
+<blockquote>
+<p>Returns the network user this object conceptually belongs to, else nullptr.
+``` lang=cpp, name=Lightning
+var NetUserOwner : Cog</p>
+</blockquote>
+<hr />
+<p>#  NetUserOwnerPath : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/cogpath.markdown">cogpath</a></p>
+<p><code>read-only</code></p>
+<blockquote>
+<p>Path to the network user this object conceptually belongs to, else empty cog path.
+``` lang=cpp, name=Lightning
+var NetUserOwnerPath : CogPath</p>
+</blockquote>
+<hr />
+<p>#  NetUserOwnerPeerId : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/integer.markdown">integer</a></p>
+<p><code>read-only</code></p>
+<blockquote>
+<p>Returns the network peer identifier of the peer who added the user this object conceptually belongs to, else 0.
+``` lang=cpp, name=Lightning
+var NetUserOwnerPeerId : Integer</p>
+</blockquote>
+<hr />
+<p>#  NetUserOwnerUserId : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/integer.markdown">integer</a></p>
+<p><code>read-only</code></p>
+<blockquote>
+<p>Returns the network user identifier of the user this object conceptually belongs to, else 0.
+``` lang=cpp, name=Lightning
+var NetUserOwnerUserId : Integer</p>
+</blockquote>
+<hr />
+<p>#  OfflineTimePassed : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown">real</a></p>
+<p><code>read-only</code></p>
+<blockquote>
+<p>Elapsed time passed since this net object was taken offline, else 0.
+``` lang=cpp, name=Lightning
+var OfflineTimePassed : Real</p>
+</blockquote>
+<hr />
+<p>#  OfflineTimestamp : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown">real</a></p>
+<p><code>read-only</code></p>
+<blockquote>
+<p>Timestamp indicating when this net object was taken offline, else 0.
+``` lang=cpp, name=Lightning
+var OfflineTimestamp : Real</p>
+</blockquote>
+<hr />
+<p>#  OnlineTimePassed : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown">real</a></p>
+<p><code>read-only</code></p>
+<blockquote>
+<p>Elapsed time passed since this net object was brought online, else 0.
+``` lang=cpp, name=Lightning
+var OnlineTimePassed : Real</p>
+</blockquote>
+<hr />
+<p>#  OnlineTimestamp : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown">real</a></p>
+<p><code>read-only</code></p>
+<blockquote>
+<p>Timestamp indicating when this net object was brought online, else 0.
+``` lang=cpp, name=Lightning
+var OnlineTimestamp : Real</p>
+</blockquote>
+<hr />
+<p>#  Role : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#netrole">NetRole</a></p>
+<p><code>read-only</code></p>
+<blockquote>
+<p>Returns our open peer's network role (client, server, offline), else Role::Unspecified.
+``` lang=cpp, name=Lightning
+var Role : NetRole</p>
+</blockquote>
+<hr />
+<p>#  Methods</p>
+<hr />
+<p>#  DispatchBroadcast : Void</p>
+<blockquote>
+<p>Dispatches the net event on the net object for all remote peers. In Offline mode, this calls DispatchLocal only.
+|Name|Type|Description|
+|---|---|---|
+|eventId|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown">string</a>| |
+|event|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/event.markdown">event</a>| |
+<code>lang=cpp, name=Lightning
+function DispatchBroadcast(eventId : String, event : Event)</code> </p>
+</blockquote>
+<hr />
+<p>#  DispatchLocal : Void</p>
+<blockquote>
+<p>Dispatches the net event on the net object for the local peer.
+|Name|Type|Description|
+|---|---|---|
+|eventId|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown">string</a>| |
+|event|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/event.markdown">event</a>| |
+<code>lang=cpp, name=Lightning
+function DispatchLocal(eventId : String, event : Event)</code> </p>
+</blockquote>
+<hr />
+<p>#  DispatchLocalAndBroadcast : Void</p>
+<blockquote>
+<p>Dispatches the net event on the net object for the local peer and for all remote peers. In Offline mode, this calls DispatchLocal only.
+|Name|Type|Description|
+|---|---|---|
+|eventId|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown">string</a>| |
+|event|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/event.markdown">event</a>| |
+<code>lang=cpp, name=Lightning
+function DispatchLocalAndBroadcast(eventId : String, event : Event)</code> </p>
+</blockquote>
+<hr />
+<p>#  DispatchLocalAndRemote : Void</p>
+<blockquote>
+<p>Dispatches the net event on the net object for the local peer and for the remote peer. In Offline mode, this calls DispatchLocal only.
+|Name|Type|Description|
+|---|---|---|
+|eventId|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown">string</a>| |
+|event|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/event.markdown">event</a>| |
+|netPeerId|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/integer.markdown">integer</a>| |
+<code>lang=cpp, name=Lightning
+function DispatchLocalAndRemote(eventId : String, event : Event, netPeerId : Integer)</code> </p>
+</blockquote>
+<hr />
+<p>#  DispatchRemote : Void</p>
+<blockquote>
+<p>Dispatches the net event on the net object for the remote peer. In Offline mode, this calls DispatchLocal only.
+|Name|Type|Description|
+|---|---|---|
+|eventId|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown">string</a>| |
+|event|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/event.markdown">event</a>| |
+|netPeerId|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/integer.markdown">integer</a>| |
+<code>lang=cpp, name=Lightning
+function DispatchRemote(eventId : String, event : Event, netPeerId : Integer)</code> </p>
+</blockquote>
+<hr />
+<p>#  Forget : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown">boolean</a></p>
+<blockquote>
+<p>[Client] Forgets the online net object locally. [Server] Forgets the online net object locally and remotely for all relevant peers. Effectively removes the net object from the network system without destroying it. Returns true if successful, else false.
+|Name|Type|Description|
+|---|---|---|
+<code>lang=cpp, name=Lightning
+function Forget() : Boolean</code> </p>
+</blockquote>
+<hr />
+<p>#  GetNetChannel : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/netchannel.markdown">netchannel</a></p>
+<blockquote>
+<p>[Client/Server] Returns the specified net channel, else nullptr.
+|Name|Type|Description|
+|---|---|---|
+|netChannelName|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown">string</a>| |
+<code>lang=cpp, name=Lightning
+function GetNetChannel(netChannelName : String) : NetChannel</code> </p>
+</blockquote>
+<hr />
+<p>#  HasNetChannel : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown">boolean</a></p>
+<blockquote>
+<p>[Client/Server] Returns true if the net object has the specified net channel, else false.
+|Name|Type|Description|
+|---|---|---|
+|netChannelName|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown">string</a>| |
+<code>lang=cpp, name=Lightning
+function HasNetChannel(netChannelName : String) : Boolean</code> </p>
+</blockquote>
+<hr />
+<p>#  IsOwnedByPeer : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown">boolean</a></p>
+<blockquote>
+<p>Returns true if the net object is conceptually owned by a user added by the specified peer, else false.
+|Name|Type|Description|
+|---|---|---|
+|netPeerId|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/integer.markdown">integer</a>| |
+<code>lang=cpp, name=Lightning
+function IsOwnedByPeer(netPeerId : Integer) : Boolean</code> </p>
+</blockquote>
+<hr />
+<p>#  IsOwnedByUser : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown">boolean</a></p>
+<blockquote>
+<p>Returns true if the net object is conceptually owned by the specified user, else false.
+|Name|Type|Description|
+|---|---|---|
+|cog|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/cog.markdown">cog</a>| |
+<code>lang=cpp, name=Lightning
+function IsOwnedByUser(cog : Cog) : Boolean</code> </p>
+</blockquote>
+<hr />
+<p>#  NetObject : Void</p>
+<p><code>constructor</code></p>
+<blockquote>
+<p>Constructor.
+|Name|Type|Description|
+|---|---|---|
+<code>lang=cpp, name=Lightning
+function NetObject()</code> </p>
+</blockquote>
+<hr />
+<p>#  ReplicateNow : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown">boolean</a></p>
+<blockquote>
+<p>[Client/Server] Replicates all net channels' property changes immediately (only where changes are detected). Will also update nap state as configured. Returns true if changes were replicated, else false.
+|Name|Type|Description|
+|---|---|---|
+<code>lang=cpp, name=Lightning
+function ReplicateNow() : Boolean</code> </p>
+</blockquote>
+<hr />
+<p>#  SelectRemote : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown">boolean</a></p>
+<blockquote>
+<p>[Client/Server] Selects the remote net object on the first opposite-role peer found running in another game session instance on the engine. Will fail if the net object is not online, or not found remotely. Returns true if successful, else false.
+|Name|Type|Description|
+|---|---|---|
+<code>lang=cpp, name=Lightning
+function SelectRemote() : Boolean</code> </p>
+</blockquote>
+<hr />
+<p>#  SetNetUserOwnerDown : Void</p>
+<blockquote>
+<p>[Server/Offline] Sets the owning network user on this object and down the tree on all children recursively (pre-order traversal).
+|Name|Type|Description|
+|---|---|---|
+|cog|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/cog.markdown">cog</a>| |
+<code>lang=cpp, name=Lightning
+function SetNetUserOwnerDown(cog : Cog)</code> </p>
+</blockquote>
+<hr />
+<p>#  SetNetUserOwnerUp : Void</p>
+<blockquote>
+<p>[Server/Offline] Sets the owning network user on this object and up the tree on each parent recursively (pre-order traversal).
+|Name|Type|Description|
+|---|---|---|
+|cog|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/cog.markdown">cog</a>| |
+<code>lang=cpp, name=Lightning
+function SetNetUserOwnerUp(cog : Cog)</code> </p>
+</blockquote>
+<hr />
+<p>#  TakeNap : Void</p>
+<blockquote>
+<p>Forces all net channels on this net object to start napping immediately.
+|Name|Type|Description|
+|---|---|---|
+<code>lang=cpp, name=Lightning
+function TakeNap()</code> </p>
+</blockquote>
+<hr />
+<p>#  WakeUp : Void</p>
+<blockquote>
+<p>Forces all net channels on this net object to stop napping immediately.
+|Name|Type|Description|
+|---|---|---|
+<code>lang=cpp, name=Lightning
+function WakeUp()</code> </p>
+</blockquote>
+<hr /></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+                <p>Copyright &copy; 2021 Plasma Engine. Released under the MIT License.</p>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../../js/base.js" defer></script>
+        <script src="../../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

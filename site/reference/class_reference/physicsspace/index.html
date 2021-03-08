@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../../img/favicon.ico">
+        <title>Physicsspace - Docs | Plasma Engine</title>
+        <link href="../../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/docco.min.css">
+
+        <script src="../../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../../..">Docs | Plasma Engine</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href="../../.." class="nav-link">Home</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="/getting_started/" class="nav-link">Getting Started</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Manual <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../manual/" class="dropdown-item">Manual</a>
+</li>
+                                    
+<li>
+    <a href="../../../manual/plasmamanual/ai/" class="dropdown-item">AI</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Architecture</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../manual/plasmamanual/architecture/architecture/" class="dropdown-item">Architecture</a>
+</li>
+            
+<li>
+    <a href="../../../manual/plasmamanual/architecture/archetypes/archtype_basics.markdown" class="dropdown-item">Archtypes</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Cogs</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../manual/plasmamanual/architecture/cogs/cogs/" class="dropdown-item">Cogs</a>
+</li>
+            
+<li>
+    <a href="../../../manual/plasmamanual/architecture/cogs/gameobjectsconcept/" class="dropdown-item">Game Objects</a>
+</li>
+            
+<li>
+    <a href="../../../manual/plasmamanual/architecture/cogs/objectstore/" class="dropdown-item">Object Store</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Objects</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../manual/plasmamanual/architecture/objects/objects/" class="dropdown-item">Objects</a>
+</li>
+            
+<li>
+    <a href="../../../manual/plasmamanual/architecture/objects/gamesession/" class="dropdown-item">Gamesession</a>
+</li>
+            
+<li>
+    <a href="../../../manual/plasmamanual/architecture/objects/spaces/" class="dropdown-item">Spaces</a>
+</li>
+            
+<li>
+    <a href="../../../manual/plasmamanual/architecture/objects/levelsettings/" class="dropdown-item">Levelsettings</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Resources</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../manual/plasmamanual/architecture/resources/resource.markdown" class="dropdown-item">Resources</a>
+</li>
+            
+<li>
+    <a href="../../../manual/plasmamanual/architecture/resources/level/" class="dropdown-item">Levels</a>
+</li>
+            
+<li>
+    <a href="../../../manual/plasmamanual/architecture/fonts/fonts.markdown" class="dropdown-item">Fonts</a>
+</li>
+            
+<li>
+    <a href="../../../manual/plasmamanual/architecture/resources/resourcestable.markdown" class="dropdown-item">Resource Table</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                                    
+<li>
+    <a href="../../../manual/plasmamanual/audio/" class="dropdown-item">Audio</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Editor</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../manual/plasmamanual/editor/" class="dropdown-item">Editor</a>
+</li>
+            
+<li>
+    <a href="../../../manual/plasmamanual/editor/tags/" class="dropdown-item">Tags</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Reference <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../" class="dropdown-item">Index</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Contributing <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../source_docs/getting_started.md" class="dropdown-item">Getting Started</a>
+</li>
+                                    
+<li>
+    <a href="../../../source_docs/plasma_code/" class="dropdown-item">Plasma Code</a>
+</li>
+                                    
+<li>
+    <a href="../../../source_docs/plasma_overview/" class="dropdown-item">Plasma Overview</a>
+</li>
+                                    
+<li>
+    <a href="../../../source_docs/components.md" class="dropdown-item">Components</a>
+</li>
+                                    
+<li>
+    <a href="../../../source_docs/custom_event_names/" class="dropdown-item">Custom Event Names</a>
+</li>
+                                    
+<li>
+    <a href="../../../source_docs/editor/" class="dropdown-item">Editor</a>
+</li>
+                                    
+<li>
+    <a href="../../../source_docs/engine/" class="dropdown-item">Engine</a>
+</li>
+                                    
+<li>
+    <a href="../../../source_docs/enums/" class="dropdown-item">Enums</a>
+</li>
+                                    
+<li>
+    <a href="../../../source_docs/meta_bindings.markdown" class="dropdown-item">Meta Binding</a>
+</li>
+                                    
+<li>
+    <a href="../../../source_docs/platform/" class="dropdown-item">Adding Platforms</a>
+</li>
+                                    
+<li>
+    <a href="../../../source_docs/widgets/" class="dropdown-item">Widgets</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a href="https://github.com/PlasmaEngine/PlasmaDocs/edit/master/docs/reference/class_reference/physicsspace.markdown" class="nav-link"><i class="fa fa-github"></i> Edit on GitHub</a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<p><code>Component</code> <code>Physics</code></p>
+<p>(NOTE) The PhysicsSpace is an "instance" of a world. This world manages and stores all of the other physical components of this world. PhysicSpaces act independently of each other.</p>
+<table>
+<thead>
+<tr>
+<th>Methods</th>
+<th>Properties</th>
+<th>Base Classes</th>
+<th>Derived Classes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/physicsspace.markdown#addhierarchypairfilter-v"> AddHierarchyPairFilter</a></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/physicsspace.markdown#allowsleep-plasma-engine-d"> AllowSleep</a></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/component.markdown">component</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/physicsspace.markdown#addpairfilter-void"> AddPairFilter</a></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/physicsspace.markdown#collisiontable-plasma-engi"> CollisionTable</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/physicsspace.markdown#castaabb-plasma-engine-doc"> CastAabb</a></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/physicsspace.markdown#deterministic-plasma-engin"> Deterministic</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/physicsspace.markdown#castcollider-plasma-engine"> CastCollider</a></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/physicsspace.markdown#dynamicbroadphasetype-ze"> DynamicBroadphaseType</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/physicsspace.markdown#castfrustum-plasma-engine"> CastFrustum</a></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/physicsspace.markdown#mode2d-plasma-engine-docum"> Mode2D</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/physicsspace.markdown#castray-plasma-engine-docu"> CastRay</a></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/physicsspace.markdown#physicssolverconfig-plasma"> PhysicsSolverConfig</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/physicsspace.markdown#castrayfirst-plasma-engine"> CastRayFirst</a></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/physicsspace.markdown#staticbroadphasetype-zer"> StaticBroadphaseType</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/physicsspace.markdown#castsegment-plasma-engine"> CastSegment</a></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/physicsspace.markdown#substepcount-plasma-engine"> SubStepCount</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/physicsspace.markdown#castsphere-plasma-engine-d"> CastSphere</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/physicsspace.markdown#createjoint-plasma-engine"> CreateJoint</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/physicsspace.markdown#dispatchwithinaabb-void"> DispatchWithinAabb</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/physicsspace.markdown#dispatchwithinsphere-voi"> DispatchWithinSphere</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/physicsspace.markdown#flushphysicsqueue-void"> FlushPhysicsQueue</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/physicsspace.markdown#physicsspace-void"> Constructor</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/physicsspace.markdown#removehierarchypairfilte"> RemoveHierarchyPairFilter</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/physicsspace.markdown#removepairfilter-void"> RemovePairFilter</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/physicsspace.markdown#sweepcollider-plasma-engin"> SweepCollider</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/physicsspace.markdown#whyaretheynotcolliding-z"> WhyAreTheyNotColliding</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>#  Properties</p>
+<hr />
+<p>#  AllowSleep : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown">boolean</a></p>
+<blockquote>
+<p>Determines if anything in the space is allowed to fall sleep.
+``` lang=cpp, name=Lightning
+var AllowSleep : Boolean</p>
+</blockquote>
+<hr />
+<p>#  CollisionTable : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/collisiontable.markdown">collisiontable</a></p>
+<blockquote>
+<p>The collision table resource used to filter collisions in this space.
+``` lang=cpp, name=Lightning
+var CollisionTable : CollisionTable</p>
+</blockquote>
+<hr />
+<p>#  Deterministic : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown">boolean</a></p>
+<blockquote>
+<p>Performs extra work to help enforce determinism in the simulation.
+``` lang=cpp, name=Lightning
+var Deterministic : Boolean</p>
+</blockquote>
+<hr />
+<p>#  DynamicBroadphaseType : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown">string</a></p>
+<blockquote>
+<p>What kind of broadphase is used for dynamic objects (those with RigidBodies).
+``` lang=cpp, name=Lightning
+var DynamicBroadphaseType : String</p>
+</blockquote>
+<hr />
+<p>#  Mode2D : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown">boolean</a></p>
+<blockquote>
+<p>The default 2D mode for this space. If a RigidBody is set to InheritFromSpace then it will use this value.
+``` lang=cpp, name=Lightning
+var Mode2D : Boolean</p>
+</blockquote>
+<hr />
+<p>#  PhysicsSolverConfig : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/physicssolverconfig.markdown">physicssolverconfig</a></p>
+<blockquote>
+<p>The resource that controls how physics solves things. Mostly related to how collision is resolved.
+``` lang=cpp, name=Lightning
+var PhysicsSolverConfig : PhysicsSolverConfig</p>
+</blockquote>
+<hr />
+<p>#  StaticBroadphaseType : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown">string</a></p>
+<blockquote>
+<p>What kind of broadphase is used for static objects (those without RigidBodies).
+``` lang=cpp, name=Lightning
+var StaticBroadphaseType : String</p>
+</blockquote>
+<hr />
+<p>#  SubStepCount : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/integer.markdown">integer</a></p>
+<blockquote>
+<p>The number of iterations the physics space will take every frame. Used to achieve higher accuracy and increase visual results.
+``` lang=cpp, name=Lightning
+var SubStepCount : Integer</p>
+</blockquote>
+<hr />
+<p>#  Methods</p>
+<hr />
+<p>#  AddHierarchyPairFilter : Void</p>
+<blockquote>
+<p>Adds a filter to ignore collision between both hierarchies passed in. See AddPairFilter for more info.
+|Name|Type|Description|
+|---|---|---|
+|cog1|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/cog.markdown">cog</a>| |
+|cog2|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/cog.markdown">cog</a>| |
+<code>lang=cpp, name=Lightning
+function AddHierarchyPairFilter(cog1 : Cog, cog2 : Cog)</code> </p>
+</blockquote>
+<hr />
+<p>#  AddPairFilter : Void</p>
+<blockquote>
+<p>Filters two cogs to not resolve collisions with each other. This is a runtime only feature and will not be saved.
+|Name|Type|Description|
+|---|---|---|
+|cog1|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/cog.markdown">cog</a>| |
+|cog2|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/cog.markdown">cog</a>| |
+<code>lang=cpp, name=Lightning
+function AddPairFilter(cog1 : Cog, cog2 : Cog)</code> </p>
+</blockquote>
+<hr />
+<p>#  CastAabb : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/castresultsrange.markdown">castresultsrange</a></p>
+<blockquote>
+<p>Finds all colliders in the space that an Aabb hits using the given filter. This returns up to maxCount number of objects.
+|Name|Type|Description|
+|---|---|---|
+|aabb|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/aabb.markdown">aabb</a>| |
+|maxCount|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/integer.markdown">integer</a>| |
+|filter|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/castfilter.markdown">castfilter</a>| |
+<code>lang=cpp, name=Lightning
+function CastAabb(aabb : Aabb, maxCount : Integer, filter : CastFilter) : CastResultsRange</code> </p>
+</blockquote>
+<hr />
+<p>#  CastCollider : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/castresultsrange.markdown">castresultsrange</a></p>
+<blockquote>
+<p>Finds all colliders in the space that another collider hits using the given filter. The test collider's position can be offset to test at a different location. This returns up to maxCount number of objects.
+|Name|Type|Description|
+|---|---|---|
+|offset|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real3.markdown">real3</a>| |
+|testCollider|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/collider.markdown">collider</a>| |
+|filter|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/castfilter.markdown">castfilter</a>| |
+<code>lang=cpp, name=Lightning
+function CastCollider(offset : Real3, testCollider : Collider, filter : CastFilter) : CastResultsRange</code> </p>
+</blockquote>
+<hr />
+<p>#  CastFrustum : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/castresultsrange.markdown">castresultsrange</a></p>
+<blockquote>
+<p>Finds all colliders in the space that a Frustum hits using the given filter. This returns up to maxCount number of objects.
+|Name|Type|Description|
+|---|---|---|
+|frustum|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/frustum.markdown">frustum</a>| |
+|maxCount|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/integer.markdown">integer</a>| |
+|filter|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/castfilter.markdown">castfilter</a>| |
+<code>lang=cpp, name=Lightning
+function CastFrustum(frustum : Frustum, maxCount : Integer, filter : CastFilter) : CastResultsRange</code> </p>
+</blockquote>
+<hr />
+<p>#  CastRay : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/castresultsrange.markdown">castresultsrange</a></p>
+<blockquote>
+<p>Finds all colliders in the space that a ray hits. This returns up to maxCount number of objects. A default CastFilter will be used.
+|Name|Type|Description|
+|---|---|---|
+|worldRay|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/ray.markdown">ray</a>| |
+|maxCount|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/integer.markdown">integer</a>| |
+<code>lang=cpp, name=Lightning
+function CastRay(worldRay : Ray, maxCount : Integer) : CastResultsRange</code> </p>
+</blockquote>
+<hr />
+<p>#  CastRay : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/castresultsrange.markdown">castresultsrange</a></p>
+<blockquote>
+<p>Finds all colliders in the space that a ray hits using the given filter. This returns up to maxCount number of objects.
+|Name|Type|Description|
+|---|---|---|
+|worldRay|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/ray.markdown">ray</a>| |
+|maxCount|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/integer.markdown">integer</a>| |
+|filter|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/castfilter.markdown">castfilter</a>| |
+<code>lang=cpp, name=Lightning
+function CastRay(worldRay : Ray, maxCount : Integer, filter : CastFilter) : CastResultsRange</code> </p>
+</blockquote>
+<hr />
+<p>#  CastRayFirst : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/castresult.markdown">castresult</a></p>
+<blockquote>
+<p>Finds the first collider that a ray hits. A default CastFilter will be used.
+|Name|Type|Description|
+|---|---|---|
+|worldRay|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/ray.markdown">ray</a>| |
+<code>lang=cpp, name=Lightning
+function CastRayFirst(worldRay : Ray) : CastResult</code> </p>
+</blockquote>
+<hr />
+<p>#  CastRayFirst : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/castresult.markdown">castresult</a></p>
+<blockquote>
+<p>Finds the first collider that a ray hits using the given filter.
+|Name|Type|Description|
+|---|---|---|
+|worldRay|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/ray.markdown">ray</a>| |
+|filter|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/castfilter.markdown">castfilter</a>| |
+<code>lang=cpp, name=Lightning
+function CastRayFirst(worldRay : Ray, filter : CastFilter) : CastResult</code> </p>
+</blockquote>
+<hr />
+<p>#  CastSegment : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/castresultsrange.markdown">castresultsrange</a></p>
+<blockquote>
+<p>Finds all colliders in the space that a line segment hits. This returns up to maxCount number of objects. A default CastFilter will be used.
+|Name|Type|Description|
+|---|---|---|
+|segment|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/segment.markdown">segment</a>| |
+|maxCount|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/integer.markdown">integer</a>| |
+<code>lang=cpp, name=Lightning
+function CastSegment(segment : Segment, maxCount : Integer) : CastResultsRange</code> </p>
+</blockquote>
+<hr />
+<p>#  CastSegment : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/castresultsrange.markdown">castresultsrange</a></p>
+<blockquote>
+<p>Finds all colliders in the space that a line segment hits using the given filter. This returns up to maxCount number of objects.
+|Name|Type|Description|
+|---|---|---|
+|segment|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/segment.markdown">segment</a>| |
+|maxCount|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/integer.markdown">integer</a>| |
+|filter|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/castfilter.markdown">castfilter</a>| |
+<code>lang=cpp, name=Lightning
+function CastSegment(segment : Segment, maxCount : Integer, filter : CastFilter) : CastResultsRange</code> </p>
+</blockquote>
+<hr />
+<p>#  CastSphere : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/castresultsrange.markdown">castresultsrange</a></p>
+<blockquote>
+<p>Finds all colliders in the space that a Sphere hits using the given filter. This returns up to maxCount number of objects.
+|Name|Type|Description|
+|---|---|---|
+|sphere|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/sphere.markdown">sphere</a>| |
+|maxCount|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/integer.markdown">integer</a>| |
+|filter|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/castfilter.markdown">castfilter</a>| |
+<code>lang=cpp, name=Lightning
+function CastSphere(sphere : Sphere, maxCount : Integer, filter : CastFilter) : CastResultsRange</code> </p>
+</blockquote>
+<hr />
+<p>#  CreateJoint : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/cog.markdown">cog</a></p>
+<blockquote>
+<p>Creates a joint by name (e.g. StickJoint) between two cogs. The world points of the joint are both set to worldPoint.
+|Name|Type|Description|
+|---|---|---|
+|cog0|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/cog.markdown">cog</a>| |
+|cog1|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/cog.markdown">cog</a>| |
+|jointName|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown">string</a>| |
+|worldPoint|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real3.markdown">real3</a>| |
+<code>lang=cpp, name=Lightning
+function CreateJoint(cog0 : Cog, cog1 : Cog, jointName : String, worldPoint : Real3) : Cog</code> </p>
+</blockquote>
+<hr />
+<p>#  DispatchWithinAabb : Void</p>
+<blockquote>
+<p>Dispatches an event to all objects within the given aabb using the provided cast filter.
+|Name|Type|Description|
+|---|---|---|
+|aabb|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/aabb.markdown">aabb</a>| |
+|filter|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/castfilter.markdown">castfilter</a>| |
+|eventName|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown">string</a>| |
+|toSend|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/event.markdown">event</a>| |
+<code>lang=cpp, name=Lightning
+function DispatchWithinAabb(aabb : Aabb, filter : CastFilter, eventName : String, toSend : Event)</code> </p>
+</blockquote>
+<hr />
+<p>#  DispatchWithinAabb : Void</p>
+<blockquote>
+<p>Dispatches an event to all objects within the given aabb. Uses the default cast filter.
+|Name|Type|Description|
+|---|---|---|
+|aabb|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/aabb.markdown">aabb</a>| |
+|eventName|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown">string</a>| |
+|toSend|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/event.markdown">event</a>| |
+<code>lang=cpp, name=Lightning
+function DispatchWithinAabb(aabb : Aabb, eventName : String, toSend : Event)</code> </p>
+</blockquote>
+<hr />
+<p>#  DispatchWithinSphere : Void</p>
+<blockquote>
+<p>Dispatches an event to all objects within the given sphere using the provided cast filter.
+|Name|Type|Description|
+|---|---|---|
+|sphere|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/sphere.markdown">sphere</a>| |
+|filter|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/castfilter.markdown">castfilter</a>| |
+|eventName|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown">string</a>| |
+|toSend|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/event.markdown">event</a>| |
+<code>lang=cpp, name=Lightning
+function DispatchWithinSphere(sphere : Sphere, filter : CastFilter, eventName : String, toSend : Event)</code> </p>
+</blockquote>
+<hr />
+<p>#  DispatchWithinSphere : Void</p>
+<blockquote>
+<p>Dispatches an event to all objects within the given sphere. Uses the default cast filter.
+|Name|Type|Description|
+|---|---|---|
+|sphere|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/sphere.markdown">sphere</a>| |
+|eventName|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown">string</a>| |
+|toSend|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/event.markdown">event</a>| |
+<code>lang=cpp, name=Lightning
+function DispatchWithinSphere(sphere : Sphere, eventName : String, toSend : Event)</code> </p>
+</blockquote>
+<hr />
+<p>#  FlushPhysicsQueue : Void</p>
+<blockquote>
+<p>Forces all queued computations in physics to be updated now. Should only be used for debugging.
+|Name|Type|Description|
+|---|---|---|
+<code>lang=cpp, name=Lightning
+function FlushPhysicsQueue()</code> </p>
+</blockquote>
+<hr />
+<p>#  PhysicsSpace : Void</p>
+<p><code>constructor</code></p>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>``` lang=cpp, name=Lightning</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>function PhysicsSpace()</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>```</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<hr />
+<p>#  RemoveHierarchyPairFilter : Void</p>
+<blockquote>
+<p>Removes the filters between both hierarchies. See RemovePairFilter for more info.
+|Name|Type|Description|
+|---|---|---|
+|cog1|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/cog.markdown">cog</a>| |
+|cog2|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/cog.markdown">cog</a>| |
+<code>lang=cpp, name=Lightning
+function RemoveHierarchyPairFilter(cog1 : Cog, cog2 : Cog)</code> </p>
+</blockquote>
+<hr />
+<p>#  RemovePairFilter : Void</p>
+<blockquote>
+<p>Removes the filter between two cogs allowing collisions to be computed as normal.
+|Name|Type|Description|
+|---|---|---|
+|cog1|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/cog.markdown">cog</a>| |
+|cog2|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/cog.markdown">cog</a>| |
+<code>lang=cpp, name=Lightning
+function RemovePairFilter(cog1 : Cog, cog2 : Cog)</code> </p>
+</blockquote>
+<hr />
+<p>#  SweepCollider : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/sweepresultrange.markdown">sweepresultrange</a></p>
+<blockquote>
+<p>Performs a swept cast with a collider's shape and a given velocity. Returns a range of all objects the collider could've hit within 'dt' time.
+|Name|Type|Description|
+|---|---|---|
+|collider|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/collider.markdown">collider</a>| |
+|velocity|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real3.markdown">real3</a>| |
+|dt|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown">real</a>| |
+|filter|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/castfilter.markdown">castfilter</a>| |
+<code>lang=cpp, name=Lightning
+function SweepCollider(collider : Collider, velocity : Real3, dt : Real, filter : CastFilter) : SweepResultRange</code> </p>
+</blockquote>
+<hr />
+<p>#  WhyAreTheyNotColliding : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown">string</a></p>
+<blockquote>
+<p>Returns a debug string stating why physics does or doesn't think these two objects should be colliding.
+|Name|Type|Description|
+|---|---|---|
+|cog1|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/cog.markdown">cog</a>| |
+|cog2|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/cog.markdown">cog</a>| |
+<code>lang=cpp, name=Lightning
+function WhyAreTheyNotColliding(cog1 : Cog, cog2 : Cog) : String</code> </p>
+</blockquote>
+<hr /></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+                <p>Copyright &copy; 2021 Plasma Engine. Released under the MIT License.</p>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../../js/base.js" defer></script>
+        <script src="../../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

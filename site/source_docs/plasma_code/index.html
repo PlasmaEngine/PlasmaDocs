@@ -1,0 +1,841 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>Plasma Code - Docs | Plasma Engine</title>
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/docco.min.css">
+
+        <script src="../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../..">Docs | Plasma Engine</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href="../.." class="nav-link">Home</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="/getting_started/" class="nav-link">Getting Started</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Manual <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../manual/" class="dropdown-item">Manual</a>
+</li>
+                                    
+<li>
+    <a href="../../manual/plasmamanual/ai/" class="dropdown-item">AI</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Architecture</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../manual/plasmamanual/architecture/architecture/" class="dropdown-item">Architecture</a>
+</li>
+            
+<li>
+    <a href="../../manual/plasmamanual/architecture/archetypes/archtype_basics.markdown" class="dropdown-item">Archtypes</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Cogs</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../manual/plasmamanual/architecture/cogs/cogs/" class="dropdown-item">Cogs</a>
+</li>
+            
+<li>
+    <a href="../../manual/plasmamanual/architecture/cogs/gameobjectsconcept/" class="dropdown-item">Game Objects</a>
+</li>
+            
+<li>
+    <a href="../../manual/plasmamanual/architecture/cogs/objectstore/" class="dropdown-item">Object Store</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Objects</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../manual/plasmamanual/architecture/objects/objects/" class="dropdown-item">Objects</a>
+</li>
+            
+<li>
+    <a href="../../manual/plasmamanual/architecture/objects/gamesession/" class="dropdown-item">Gamesession</a>
+</li>
+            
+<li>
+    <a href="../../manual/plasmamanual/architecture/objects/spaces/" class="dropdown-item">Spaces</a>
+</li>
+            
+<li>
+    <a href="../../manual/plasmamanual/architecture/objects/levelsettings/" class="dropdown-item">Levelsettings</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Resources</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../manual/plasmamanual/architecture/resources/resource.markdown" class="dropdown-item">Resources</a>
+</li>
+            
+<li>
+    <a href="../../manual/plasmamanual/architecture/resources/level/" class="dropdown-item">Levels</a>
+</li>
+            
+<li>
+    <a href="../../manual/plasmamanual/architecture/fonts/fonts.markdown" class="dropdown-item">Fonts</a>
+</li>
+            
+<li>
+    <a href="../../manual/plasmamanual/architecture/resources/resourcestable.markdown" class="dropdown-item">Resource Table</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                                    
+<li>
+    <a href="../../manual/plasmamanual/audio/" class="dropdown-item">Audio</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Editor</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../manual/plasmamanual/editor/" class="dropdown-item">Editor</a>
+</li>
+            
+<li>
+    <a href="../../manual/plasmamanual/editor/tags/" class="dropdown-item">Tags</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Reference <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../reference/" class="dropdown-item">Index</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown active">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Contributing <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../getting_started.md" class="dropdown-item">Getting Started</a>
+</li>
+                                    
+<li>
+    <a href="./" class="dropdown-item active">Plasma Code</a>
+</li>
+                                    
+<li>
+    <a href="../plasma_overview/" class="dropdown-item">Plasma Overview</a>
+</li>
+                                    
+<li>
+    <a href="../components.md" class="dropdown-item">Components</a>
+</li>
+                                    
+<li>
+    <a href="../custom_event_names/" class="dropdown-item">Custom Event Names</a>
+</li>
+                                    
+<li>
+    <a href="../editor/" class="dropdown-item">Editor</a>
+</li>
+                                    
+<li>
+    <a href="../engine/" class="dropdown-item">Engine</a>
+</li>
+                                    
+<li>
+    <a href="../enums/" class="dropdown-item">Enums</a>
+</li>
+                                    
+<li>
+    <a href="../meta_bindings.markdown" class="dropdown-item">Meta Binding</a>
+</li>
+                                    
+<li>
+    <a href="../platform/" class="dropdown-item">Adding Platforms</a>
+</li>
+                                    
+<li>
+    <a href="../widgets/" class="dropdown-item">Widgets</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../../reference/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../plasma_overview/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="https://github.com/PlasmaEngine/PlasmaDocs/edit/master/docs/source_docs/plasma_code.markdown" class="nav-link"><i class="fa fa-github"></i> Edit on GitHub</a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#plasma-code" class="nav-link">Plasma Code</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#general-principles" class="nav-link">General Principles</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#game-object-system" class="nav-link">Game Object System</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#meta-data" class="nav-link">Meta Data</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#serialization" class="nav-link">Serialization</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#example-serialization-code" class="nav-link">Example Serialization Code</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#example-serialization-result" class="nav-link">Example Serialization Result</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#data-file-types" class="nav-link">Data File Types</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#initialization" class="nav-link">Initialization</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#events" class="nav-link">Events</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#include-structure" class="nav-link">Include Structure</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#asserts" class="nav-link">Asserts</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="plasma-code">Plasma Code</h1>
+<h2 id="general-principles">General Principles</h2>
+<ul>
+<li>Simplify</li>
+<li>Organized by what it does</li>
+<li>Embrace change</li>
+<li>Minimize dependencies</li>
+<li>Encapsulate what varies</li>
+<li>Readability is very important</li>
+</ul>
+<h3 id="core-engine-features">Core Engine Features</h3>
+<ul>
+<li>Component base engine</li>
+<li>Game object management</li>
+<li>Serialization system</li>
+<li>Data driven object construction</li>
+<li>Reflection system for editing, scripting, and messaging</li>
+<li>Signal/Event system </li>
+<li>Math library</li>
+<li>Platform independence</li>
+<li>Resource system</li>
+<li>Error handling</li>
+</ul>
+<h3 id="physical-code-structure">Physical Code Structure</h3>
+<p>Engine is divided into separate libraries that are separate projects.
+Libraries are organized in order from the most foundational (containers, math, etc.), to the engine (graphics, physics, etc.) to custom game code (game logic, scripts, etc.).
+Each higher level layer only depends on more fundamental layers.</p>
+<p><img alt="LayeredArchitecture" src="https://raw.githubusercontent.com/PlasmaEngine/PlasmaDocs/master/media/LayerArchitecture.png" /></p>
+<h3 id="fundamental-libraries">Fundamental Libraries</h3>
+<ul>
+<li>Base libraries have no dependencies used by all other libraries. Essentially extensions to C++.</li>
+<li>Common - Core C++ library including Containers, Assertion, and Memory management.<ul>
+<li>Custom container solution optimized for games</li>
+<li>Custom assertion system ErrorIf(expr, "msg")</li>
+<li>Memory support custom Pools, Heaps, and Stacks</li>
+</ul>
+</li>
+<li>Math - Floating point vector math library including matrices, vectors, and quaternions.</li>
+</ul>
+<h3 id="general-libraries">General Libraries</h3>
+<ul>
+<li>Used by all core systems and other tools.</li>
+<li>Serialization - Library for saving and loading data in JSON, text, and binary.</li>
+<li>Resource - Resource management and building.</li>
+<li>MetaLibrary - Reflection system used for property binding (PropertyGrid) and Event Connections.</li>
+</ul>
+<h3 id="geometric-libraries">Geometric Libraries</h3>
+<ul>
+<li>Used by all core systems and other tools (such as exporters).</li>
+<li>Intersection - Low level shape Intersection library used by physics primarily.</li>
+<li>Broad Phase - Spatial partitioning library used by graphics, physics, and AI for scene management and frustum culling.</li>
+</ul>
+<h3 id="platform-libraries">Platform Libraries</h3>
+<ul>
+<li>Used for platform independence. All platform dependent code is located here.</li>
+<li>Platform - Contains platform dependent functions for file access and threading.</li>
+<li>WindowsPlatform -  Right now the only working platform library. Others to be added in the future.</li>
+</ul>
+<h3 id="engine-libraries">Engine Libraries</h3>
+<ul>
+<li>Base for communication between systems and defines core components shared between systems.</li>
+<li>Contains the core which updates all systems.</li>
+<li>Other Engine elements</li>
+<li>Time management</li>
+<li>Base Components</li>
+<li>Connection System</li>
+<li>Animation system</li>
+</ul>
+<h3 id="system-libraries">System Libraries</h3>
+<ul>
+<li>Core Systems - Run the major simulation systems of the game engine.</li>
+<li>Graphics - Hardware accelerated graphics rendering.</li>
+<li>Physics - Constraint based dynamics engine.</li>
+<li>Sound- Hardware accelerated sound engine.</li>
+</ul>
+<h3 id="extensions">Extensions</h3>
+<ul>
+<li>Additional code that is not required for the core engine to run.</li>
+<li>Widget - UI System used by editor.</li>
+<li>Editor - Editor code and logic.</li>
+<li>On certain platforms, an extension may not be needed (the editor on a game console) or for a particular game (car physics in a puzzle game).</li>
+<li>Rather than bloat the core, these are optional.</li>
+</ul>
+<h2 id="game-object-system">Game Object System</h2>
+<h3 id="game-objects-cogs">Game Objects (Cogs)</h3>
+<ul>
+<li>To create an object either use the ObjectSpace component or the Factory.</li>
+<li>Cogs must be created from archetypes which are strings in the form of "filename.data"</li>
+<li>Cogs must be created in a space.</li>
+<li>Except for a space object itself</li>
+</ul>
+<h3 id="components">Components</h3>
+<ul>
+<li>The game object composition class (Cog) is a collection of components provided by the different systems.</li>
+<li>Every component class inherits from a base component class and has reference/pointer to its owning composition.</li>
+<li>When the game object composition is destroyed, it destroys all of its components.</li>
+</ul>
+<h3 id="creating-a-cog">Creating A Cog</h3>
+<pre><code>  Archetype* shipArchetype = ArchetypeManager::Find(&quot;Ship&quot;);
+  Cog* cog = space-&gt;Create(shipArchetype)
+</code></pre>
+<h3 id="has-operator">'has' Operator</h3>
+<ul>
+<li>Used to get components from compositions by type name.</li>
+<li>It is type safe and will return NULL or a valid component.</li>
+</ul>
+<pre><code>Model* model = cog-&gt;has(Model);
+if(model)
+{
+  model-&gt;SetColor(Vec4(0,1,0,1));
+}
+</code></pre>
+<h3 id="handles-cogid">Handles / CogId</h3>
+<ul>
+<li>The engine uses handles to safely refer to Cogs.</li>
+<li>CogIds do not keep the object alive.</li>
+<li>CogIds must be checked for NULL.</li>
+<li>Once a CogId is checked it is safe to use that object for the rest of the frame.</li>
+</ul>
+<pre><code>void SomeFunction(CogId target)
+{
+  if(Cog* cog = target)
+  {
+    if(Transform* transform = cog-&gt;has(Transform))
+    {
+      transform-&gt;SetTranslation(Vec3(0,10,0));
+    }
+  }
+}
+</code></pre>
+<p>also works on CogIds</p>
+<pre><code>void SomeFunction(CogId target)
+{
+  if(Transform* transform = target.has(Transform))
+  {
+    transform-&gt;SetTranslation(Vec3(0,10,0));
+  }
+}
+</code></pre>
+<h2 id="meta-data">Meta Data</h2>
+<ul>
+<li>Engine has a C++ Meta Object Reflection System.</li>
+<li>A Meta Object provides a map of member functions, member properties, and member objects.</li>
+<li>Used for property viewing/editing, reflection, and many editor features.</li>
+<li>Used for scripting engine to bind C++ functions.</li>
+</ul>
+<h3 id="binding">Binding</h3>
+<ul>
+<li>Binding is done by a static member function called InitializeMeta() on a class.</li>
+<li>The function is called when the class is registered or when InitializeMetaOfType is called.</li>
+<li>All the binding functions are Macros to make binding easy and compact.</li>
+</ul>
+<h3 id="meta-data-contents">Meta Data Contents</h3>
+<ul>
+<li>Properties</li>
+<li>A Getter and Setter function for field or data member.</li>
+<li>From the outside just a data member but setting may have side effects.</li>
+<li>Used for editing on the property grid.</li>
+<li>Example Position, HP, Color, etc.</li>
+<li>Methods</li>
+<li>Member functions on objects.</li>
+<li>Used for event connections, scripting, and simple commands.</li>
+<li>Example OpenDoor, PlayAnimation, Spawn, Unlock etc.</li>
+<li>Dependencies</li>
+<li>For components, what other components MUST be present for a component to function.</li>
+<li>Used to provide safe component addition and removal in the editor.</li>
+<li>Also, documents relationships between components.</li>
+<li>Events</li>
+<li>A list of events that can be dispatched on this object.</li>
+<li>Used by the editor to form connections.</li>
+</ul>
+<h3 id="component-interfaces">Component Interfaces</h3>
+<ul>
+<li>Multiple Components may provide the same interface functionality and it does not make sense to have more that one. </li>
+<li>Examples: Collider, Joints, etc</li>
+<li>Editor enforces only one component that has a particular interface. For example only one collider component (like BoxColllider) can be present.</li>
+</ul>
+<pre><code>void ComponentExample::InitializeMeta(MetaClass* meta)
+{
+  // Must have transform
+  BindDependency(Transform); 
+  // Bind shield strength member variable
+  BindMemberProperty(mShieldStrength);
+  // Bind the member function ActivateShield()
+  BindMethod(ActivateShield);
+  // This object can send the event ShieldDown
+  BindEvent(ShieldDown, GameEvent);
+  // This class implements the ShieldProvider interface
+  BindInterface(ShieldProvider);
+}
+</code></pre>
+<h3 id="bind-member-vs-property">Bind Member vs Property</h3>
+<ul>
+<li>BindMemberProperty</li>
+<li>Binds any member variable of a class.</li>
+<li>Used for quick binding (no get and set function).</li>
+<li>BindGetSetProperty</li>
+<li>Binds getter and setter function to act as a property.</li>
+<li>Allows programmable behavior (for example fetching a resource or updating position)</li>
+<li>Expects the getter and setter to be named Get'PropertyName' and Set'PropertyName'</li>
+</ul>
+<h3 id="other-special-properties">Other Special Properties</h3>
+<ul>
+<li>Enumerations</li>
+<li>Enums automatically make a pull down on a the property grid.</li>
+<li>Must be declared with DeclareEnum macro.</li>
+<li>Range Properties</li>
+<li>Displays a slider on the property grid.</li>
+<li>Resource Properties</li>
+<li>Automatically uses the resource system to display a list of resources.</li>
+</ul>
+<h2 id="serialization">Serialization</h2>
+<ul>
+<li>Converting an object to and from a file, buffer, network, server, etc.</li>
+<li>Normally moving from a runtime object to a file or buffer and back.</li>
+<li>AKA saving and loading.</li>
+<li>Save and load levels, copy and paste, all of data file loading, including many resources.</li>
+<li>If data needs to be loaded from a file it goes through the serialization.</li>
+</ul>
+<p><img alt="Serialization" src="https://raw.githubusercontent.com/PlasmaEngine/PlasmaDocs/master/media/Serialization.png" /></p>
+<h2 id="example-serialization-code">Example Serialization Code</h2>
+<pre><code>class ComponentExample
+{
+public:
+  float mHitPoints;
+  Vec3 mDirection;
+};
+
+void ComponentExample::Serialize(Serializer&amp; stream)
+{
+  // Expands to stream.SerializeFieldDefault(&quot;mHitPoints&quot;, mHitPoints, 100.0f)
+  // and we implicitly remove the 'm' in the data file
+  SerializeNameDefault(mHitPoints, 100.0f);
+  SerializeNameDefault(mDirection, Vec3::cXAxis);
+}
+</code></pre>
+<h2 id="example-serialization-result">Example Serialization Result</h2>
+<pre><code>ComponentExample = 
+{
+  float HitPoints = 20,
+  vec3 Direction = [1,0,0]
+}
+</code></pre>
+<h2 id="data-file-types">Data File Types</h2>
+<ul>
+<li>Text</li>
+<li>Human readable basic JSON like format.</li>
+<li>You can view an object Text by copying it to the clipboard.</li>
+<li>Binary</li>
+<li>Optimized binary format, compact and fast to load used for caching.</li>
+</ul>
+<h3 id="splitting-saving-and-loading">Splitting Saving and Loading</h3>
+<ul>
+<li>The save function handles both saving and loading to reduce the amount of code.</li>
+<li>Splitting saving and loading can be done based on the serialization direction.</li>
+<li>Versioning is also handled by the system for text files.</li>
+</ul>
+<h3 id="object-serialization-phases">Object Serialization Phases</h3>
+<ul>
+<li>Construct the object</li>
+<li>Constructed - Object has been built from the factory but is not active.</li>
+<li>Serialization and data setting</li>
+<li>The object is serialized and then data attributes are adjusted.</li>
+<li>Initialize the object</li>
+<li>Object really comes into existence using all the serialized data.</li>
+<li>Object is destroyed</li>
+</ul>
+<h3 id="special-serialization">Special Serialization</h3>
+<ul>
+<li>To be serialized, Enums must be declared with DeclareEnum.</li>
+<li>Resources also have specialized serialization.</li>
+</ul>
+<h3 id="serialization-of-cogs">Serialization of Cogs</h3>
+<ul>
+<li>When a cog is serialized, it uses the data file to find the components it needs.</li>
+<li>All components are registered to the factory.</li>
+<li>The factory looks up components by string, constructs them, and then serializes them.</li>
+<li>When all components are created and serialized the composition is initialized. </li>
+</ul>
+<h2 id="initialization">Initialization</h2>
+<h3 id="component-initialization">Component Initialization</h3>
+<ul>
+<li>Do not do anything in a component constructor except initialize values.</li>
+<li>All the real work is done in Initialize.</li>
+<li>Get pointers to other components</li>
+<li>Add component to various system</li>
+<li>Watch out for order of initialization Dependant components are initialized first.</li>
+</ul>
+<h3 id="example-initialization-code">Example Initialization Code</h3>
+<pre><code>void GraphicsComponent::Initialize(CogInitializer&amp; init)
+{
+  // Getting other components
+  mTransform = GetOwner()-&gt;has(Transform);
+
+  // Adding to the graphics space (or maybe system)
+  GraphicsSpace* graphics = GetSpace()-&gt;has(GraphicsSpace);
+  graphics-&gt;AddModel(this);
+};
+</code></pre>
+<h2 id="events">Events</h2>
+<ul>
+<li>Events are used to communicate between Systems, Game Objects, and Spaces.</li>
+<li>This is a listener pattern similar to signal/slots, flash events, or delegates from C#.</li>
+<li>An object <em>connects</em> to a target object, then listens for a particular event to be dispatched</li>
+<li>Calls the specified function on listening object</li>
+</ul>
+<h3 id="connect">Connect</h3>
+<pre><code>  Connect(targetObject, Events::EventName, receivingObject, &amp;ObjectType::FuncName);
+</code></pre>
+<ul>
+<li>
+<p>For example, the object that is involved in a collision event will have a function called when the event occurs and are constant strings.</p>
+</li>
+<li>
+<p>Usually this is the class doing the connection is a member function pointer othat will be called when the event fires.</p>
+</li>
+</ul>
+<h3 id="connecting-example-code">Connecting Example Code</h3>
+<pre><code>void GraphicsComponent::Initialize(CogInitializer&amp; init)
+{
+  // ConnectToThis expands to Connect(target, event, this, &amp;classname::function)
+
+  // Connect to our own Cog
+  ConnectToThis(GetOwner(), Events::VisibilityChanged, OnVisibilityChanged);
+
+  // We want to be updated every frame (regardless of being paused)...
+  ConnectToThis(GetSpace(), Events::FrameUpdate, OnFrameUpdate);       
+}
+</code></pre>
+<h3 id="declaring-events">Declaring Events</h3>
+<ul>
+<li>Creates a constant string used to hook up events.</li>
+<li>Prevents allocation of multiple string objects.</li>
+<li>Makes it easy to hook up events.</li>
+</ul>
+<h3 id="event-objects">Event Objects</h3>
+<ul>
+<li>When an event occurs an event object is sent.</li>
+<li>All event objects inherit from the base Event object.</li>
+<li>Many events use the same event object</li>
+<li>For example most mouse events (Move, Click, etc) send the event object MouseEvent</li>
+<li>This makes it easy to refactor and add new data without changing a lot of code.</li>
+</ul>
+<h3 id="connection">Connection</h3>
+<ul>
+<li>Connections are cleaned up automatically when either object destroyed.</li>
+</ul>
+<h3 id="example-event-connections">Example Event Connections</h3>
+<pre><code>void ComponentExample::Initialize(CogInitializer&amp; init)
+{
+  ConnectToSelf(GetOwner(), Events::CollisionStarted, OnCollisionStarted);
+}
+
+void ComponentExample::OnCollisionStarted(CollsionEvent* event)
+{
+  event-&gt;OtherObject-&gt;Destroy();
+}
+</code></pre>
+<h3 id="container-library">Container Library</h3>
+<ul>
+<li>A game oriented replacement for STL.</li>
+<li>Most of the same containers.</li>
+<li>Mostly the same interface.</li>
+<li>Several key game oriented features.</li>
+</ul>
+<h3 id="c-stl-equivalents">C++ stl Equivalents</h3>
+<ul>
+<li>std::vector -&gt; Array</li>
+<li>std::unordered_map -&gt; HashMap</li>
+<li>std::unordered_set -&gt; HashSet</li>
+<li><strong>No std::map</strong> (use HashMap)</li>
+<li><strong>No std::list</strong> (use InList)</li>
+</ul>
+<h3 id="intrusively-linked-list">Intrusively Linked List</h3>
+<ul>
+<li>Intrusive containers are useful for efficiency</li>
+<li>Most heavily used container besides Array.</li>
+<li>The next and previous pointers are stored on the object itself.</li>
+</ul>
+<h3 id="ranges">Ranges</h3>
+<ul>
+<li>Containers use ranges in place of iterators for most moving in a container.</li>
+<li>Ranges are more secure and easier to work with than iterators.</li>
+</ul>
+<pre><code>int Sum(Array&lt;int&gt;&amp; values)
+{
+  int total = 0;
+  for(Array&lt;int&gt;::range r = values.all(); !r.empty(); r.popFront())
+  {
+    total += r.front();
+  }
+  return total;
+}
+</code></pre>
+<pre><code>int Sum(Array&lt;int&gt;&amp; values)
+{
+  int total = 0;
+  forRange(int a, values.all())
+  {
+    total += a;
+  }
+  return total;
+}
+</code></pre>
+<h3 id="string-vs-stdstring">String vs std::string</h3>
+<ul>
+<li>std::string suffers from trying to be everything to everyone and is often large</li>
+<li>Greatly improves hashing, indexing, equality, and string passing</li>
+<li>Game engines mostly just pass strings around and index with them so immutable strings are ideal</li>
+</ul>
+<h3 id="working-with-strings">Working with Strings</h3>
+<ul>
+<li>Strings are immutable so they can not be modified so how do you change them?</li>
+<li>Assign a new string!</li>
+<li>For large amount of string appending use StringBuilder </li>
+</ul>
+<h3 id="stringrange">StringRange</h3>
+<ul>
+<li>Essentially replace const char*</li>
+<li>Internally two pointers to begin and end.</li>
+<li>Safer faster and easier to work with than null terminated string.</li>
+<li>Contents are always immutable.</li>
+<li>C style strings should effectively never be used.</li>
+</ul>
+<h3 id="memory-and-allocations">Memory and Allocations</h3>
+<ul>
+<li>STL allocators are very complicated to use.</li>
+<li>Engine containers use a simplified version of allocators that is faster, more flexible, and easier to use.</li>
+<li>The allocator itself is not templated and can be virtual.</li>
+<li>Each container has a instance of an allocator.</li>
+<li>These work with the memory system to track all allocations.</li>
+</ul>
+<h3 id="benefits">Benefits</h3>
+<ul>
+<li>Containers optimized for POD types.</li>
+<li>Designed to do minimal code generation</li>
+<li>Shallow function calls to increase performance</li>
+<li>Easy to read and understand (stl tends to be obfuscated)</li>
+<li>Intrusive containers</li>
+<li>Supports aligned data types</li>
+<li>Supports object sharing and memory pooling to prevent fragmentation</li>
+<li>Controled memory useage / containers do not allocate memory before it is needed.</li>
+</ul>
+<h2 id="include-structure">Include Structure</h2>
+<ul>
+<li>Engine uses pragma once instead of inclusion guards (clearer, faster, and support by all needed compilers)</li>
+<li>All include statements start from one of the roots (Systems or Utility)</li>
+<li>Examples:</li>
+<li>"Graphics/Model.hpp"</li>
+<li>"Containers/Array.hpp"</li>
+<li>It works on all platforms</li>
+<li>Engine used precompiled headers for all projects.</li>
+</ul>
+<h2 id="asserts">Asserts</h2>
+<ul>
+<li>Engine uses a custom assert system</li>
+<li>Does not use the usual assert syntax</li>
+<li>Primary function is ErrorIf(expression)</li>
+<li>Also has <em>printf</em> functionality</li>
+<li>ErrorIf(pointer == NULL, "Could not find object named %s", objectName.c_str())</li>
+<li>Exceptions are not used</li>
+</ul></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+                <p>Copyright &copy; 2021 Plasma Engine. Released under the MIT License.</p>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../js/base.js" defer></script>
+        <script src="../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

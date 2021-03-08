@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../../../img/favicon.ico">
+        <title>Boolean Operators - Docs | Plasma Engine</title>
+        <link href="../../../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/docco.min.css">
+
+        <script src="../../../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../../../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../../../..">Docs | Plasma Engine</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href="../../../.." class="nav-link">Home</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="/getting_started/" class="nav-link">Getting Started</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Manual <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../" class="dropdown-item">Manual</a>
+</li>
+                                    
+<li>
+    <a href="../../ai/" class="dropdown-item">AI</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Architecture</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../architecture/architecture/" class="dropdown-item">Architecture</a>
+</li>
+            
+<li>
+    <a href="../../architecture/archetypes/archtype_basics.markdown" class="dropdown-item">Archtypes</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Cogs</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../architecture/cogs/cogs/" class="dropdown-item">Cogs</a>
+</li>
+            
+<li>
+    <a href="../../architecture/cogs/gameobjectsconcept/" class="dropdown-item">Game Objects</a>
+</li>
+            
+<li>
+    <a href="../../architecture/cogs/objectstore/" class="dropdown-item">Object Store</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Objects</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../architecture/objects/objects/" class="dropdown-item">Objects</a>
+</li>
+            
+<li>
+    <a href="../../architecture/objects/gamesession/" class="dropdown-item">Gamesession</a>
+</li>
+            
+<li>
+    <a href="../../architecture/objects/spaces/" class="dropdown-item">Spaces</a>
+</li>
+            
+<li>
+    <a href="../../architecture/objects/levelsettings/" class="dropdown-item">Levelsettings</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Resources</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../architecture/resources/resource.markdown" class="dropdown-item">Resources</a>
+</li>
+            
+<li>
+    <a href="../../architecture/resources/level/" class="dropdown-item">Levels</a>
+</li>
+            
+<li>
+    <a href="../../architecture/fonts/fonts.markdown" class="dropdown-item">Fonts</a>
+</li>
+            
+<li>
+    <a href="../../architecture/resources/resourcestable.markdown" class="dropdown-item">Resource Table</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                                    
+<li>
+    <a href="../../audio/" class="dropdown-item">Audio</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Editor</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../editor/" class="dropdown-item">Editor</a>
+</li>
+            
+<li>
+    <a href="../../editor/tags/" class="dropdown-item">Tags</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Reference <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../../reference/" class="dropdown-item">Index</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Contributing <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../../source_docs/getting_started.md" class="dropdown-item">Getting Started</a>
+</li>
+                                    
+<li>
+    <a href="../../../../source_docs/plasma_code/" class="dropdown-item">Plasma Code</a>
+</li>
+                                    
+<li>
+    <a href="../../../../source_docs/plasma_overview/" class="dropdown-item">Plasma Overview</a>
+</li>
+                                    
+<li>
+    <a href="../../../../source_docs/components.md" class="dropdown-item">Components</a>
+</li>
+                                    
+<li>
+    <a href="../../../../source_docs/custom_event_names/" class="dropdown-item">Custom Event Names</a>
+</li>
+                                    
+<li>
+    <a href="../../../../source_docs/editor/" class="dropdown-item">Editor</a>
+</li>
+                                    
+<li>
+    <a href="../../../../source_docs/engine/" class="dropdown-item">Engine</a>
+</li>
+                                    
+<li>
+    <a href="../../../../source_docs/enums/" class="dropdown-item">Enums</a>
+</li>
+                                    
+<li>
+    <a href="../../../../source_docs/meta_bindings.markdown" class="dropdown-item">Meta Binding</a>
+</li>
+                                    
+<li>
+    <a href="../../../../source_docs/platform/" class="dropdown-item">Adding Platforms</a>
+</li>
+                                    
+<li>
+    <a href="../../../../source_docs/widgets/" class="dropdown-item">Widgets</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a href="https://github.com/PlasmaEngine/PlasmaDocs/edit/master/docs/manual/plasmamanual/lightning_in_plasma/boolean_operators.markdown" class="nav-link"><i class="fa fa-github"></i> Edit on GitHub</a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#boolean-operators" class="nav-link">Boolean Operators</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="boolean-operators">Boolean Operators</h1>
+<p>NOTE: It is highly suggested you read <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/lightning_in_plasma/conditionals.markdown">conditionals</a> before this page, as the concepts of conditionals are used through out to demonstrate Boolean Operators.</p>
+<p>The <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown">boolean</a> type has special operators that work with it.</p>
+<p># The Negation Operator <code>!</code>
+The <code>!</code> operator, called the negation operator, is typically the simplest of the boolean operators as it changes the value of its operand to <code>true</code> if it was <code>false</code>, and changes the value to <code>false</code> if it was <code>true</code>.</p>
+<p><code>``name=The ! Operator, lang=csharp
+var a = true;
+Console.WriteLine("a starts as</code>a<code>");
+a = !a;
+Console.WriteLine("a is negated and is now</code>a<code>");
+a = !a;
+Console.WriteLine("a is negated again and is now</code>a` again");</p>
+<pre><code>```name=Console Output
+a starts as true
+a is negated and is now false
+a is negated again and is now true again
+</code></pre>
+<p># Comparison Operators
+All comparison operators take a left side and right side operand and evaluate to a boolean value.</p>
+<p>## Equality <code>==</code>
+Often certain code should only run under specific conditions. The <code>==</code> operator, called the Equality operator, determines if the value of two operands are equalivalent and returns <code>true</code> or <code>false</code>.</p>
+<p>```name=Equality Operator, lang = csharp
+var a = true;
+var b = true;
+var c = false;</p>
+<p>Console.WriteLine("a is equal to b: <code>a == b</code>");
+Console.WriteLine("a is equal to c: <code>a == c</code>");
+Console.WriteLine("b is equal to c: <code>b == c</code>");
+Console.WriteLine("a, b, and c are equal: <code>a == b == c</code>");</p>
+<pre><code>```name=Console Output
+a is equal to b: true
+a is equal to c: false
+b is equal to c: false
+a, b, and c are equal: false
+</code></pre>
+<p>While the Equality operator is not exclusively used with booleans it does always result in a boolean value.</p>
+<p>|Equality | | <code>==</code> |
+| <strong>Left Operand</strong> | <strong>Right Operand</strong> | <strong>Result</strong> |
+| <code>true</code> | <code>true</code> | <code>true</code> |
+| <code>true</code> | <code>false</code> | <code>false</code> |
+| <code>false</code> | <code>true</code> | <code>false</code> |
+| <code>false</code> | <code>false</code> | <code>true</code> |</p>
+<p>## Inequality <code>!=</code>
+The <code>!=</code> operator, called the inequality operator, is the logical inverse of the equality operator return <code>true</code> if the operands are not the equal and <code>false</code> if they are.
+```name=Inequality Operator, lang = csharp</p>
+<p>var a = true;
+var b = true;
+var c = false;</p>
+<p>Console.WriteLine("a is not equal to b: <code>a != b</code>");
+Console.WriteLine("a is not equal to c: <code>a != c</code>");
+Console.WriteLine("b is not equal to c: <code>b != c</code>");
+Console.WriteLine("a, b, and c are not equal: <code>a != b != c</code>");</p>
+<pre><code>```name=Console Output
+a is not equal to b: false
+a is not equal to c: true
+b is not equal to c: true
+a, b, and c are not equal: false
+</code></pre>
+<p>Notice that <code>a != b != c</code> results in false. This is because <code>==</code> and <code>!=</code> are evaluated left to right. So first <code>a != b</code> returns <code>false</code> as both variables have a value of <code>true</code>. Because <code>a != b</code> evaluates to <code>false</code> and <code>c</code> has a value of <code>false</code> <code>a != b != c</code> is reduced to <code>false != c</code>. The reduced form evaluates to <code>false</code> since both operands have a value of <code>false</code>.</p>
+<p>|Inequality | | <code>!=</code> |
+| <strong>Left Operand</strong> | <strong>Right Operand</strong> | <strong>Result</strong> |
+| <code>true</code> | <code>true</code> | <code>false</code> |
+| <code>true</code> | <code>false</code> | <code>true</code> |
+| <code>false</code> | <code>true</code> | <code>false</code> |
+| <code>false</code> | <code>false</code> | <code>false</code> |</p>
+<p>## Less Than &amp; Greater Than <code>&lt;</code> &amp; <code>&gt;</code>
+The <code>&lt;</code> and <code>&gt;</code> operators, called the less or greater then operators respectively, evaluate if one operand has a smaller/larger value than the other.</p>
+<p>```name=Less/Greater Than, lang = csharp
+var i = 0;
+var j = 1;
+var k = 0;</p>
+<p>Console.WriteLine("i is less than j: <code>i &lt; j</code>");
+Console.WriteLine("i is less than k: <code>i &lt; k</code>");
+Console.WriteLine("j is less than k: <code>j &lt; k</code>");
+Console.WriteLine("i is greater than j: <code>i &gt; j</code>");
+Console.WriteLine("i is greater than k: <code>i &gt; k</code>");
+Console.WriteLine("j is greater than k: <code>j &gt; k</code>");</p>
+<pre><code>```name=Console Output
+i is less than j: true
+i is less than k: false
+j is less than k: false
+i is greater than j: false
+i is greater than k: false
+j is greater than k: true
+</code></pre>
+<p>Notice that <code>i</code> is not less or greater than <code>k</code> as <code>0</code> is not less or greater than <code>0</code>.</p>
+<p>## Less Than or Equal &amp; Greater Than or Equal (<code>&lt;=</code> &amp; <code>&gt;=</code>)
+The <code>&lt;=</code> and <code>&gt;=</code>, called the <code>less than or equal to</code> and <code>greater than or equal to</code> operators, determine if the value of the left operand is lesser than, greater than, or equal to the right operand.</p>
+<p>```name=Less/Greater Than, lang = csharp
+var i = 0;
+var j = 1;
+var k = 0;</p>
+<p>Console.WriteLine("i is less or equal to than j: <code>i &lt;= j</code>");
+Console.WriteLine("i is less or equal to than k: <code>i &lt;= k</code>");
+Console.WriteLine("j is less or equal to than k: <code>j &lt;= k</code>");
+Console.WriteLine("i is greater than or equal to j: <code>i &gt;= j</code>");
+Console.WriteLine("i is greater than or equal to k: <code>i &gt;= k</code>");
+Console.WriteLine("j is greater than or equal to k: <code>j &gt;= k</code>");</p>
+<pre><code>```name=Console Output
+i is less than or equal to j: true
+i is less than or equal to k: true
+j is less than or equal to k: false
+i is greater than or equal to j: false
+i is greater than or equal to k: true
+j is greater than or equal to k: true
+</code></pre>
+<p># Logical Operators
+Logical operators take a left and a right side areguement, both of which must evaluate to boolean values, and evaluates them returning another boolean value.</p>
+<p># and <code>&amp;&amp;</code>
+The <code>&amp;&amp;</code> operator, called the <code>and</code> operator, takes two boolean values and evaluates them, returning true only if both operands evaluate to true. This can be very useful as often one may find that a condition in script may depend on two seperate factors.</p>
+<p>```name=Nested if, lang = csharp
+var i = true;
+var j = false;</p>
+<p>if(i)
+{
+  if(j)
+  {
+    Console.WriteLine("Both i and j are true");
+  }
+  else
+  {
+    Console.WriteLine("Inner Else: Either i or j is false");
+  }
+}
+else
+{
+  Console.WriteLine("Outer Else: Either i or j is false");
+}</p>
+<pre><code>```name=Console Output
+Inner Else: Either i or j is false
+</code></pre>
+<p>This can be simplified using the <code>&amp;&amp;</code> operator to evaluate both <code>i</code> and <code>j</code> within the same <code>if</code> statement.</p>
+<p>```name=&amp;&amp;, lang = csharp
+var i = true;
+var j = false;</p>
+<p>if(i &amp;&amp; j)
+{
+  Console.WriteLine("Both i and j are true");
+}
+else
+{
+  Console.WriteLine("Either i or j is false");
+}</p>
+<pre><code>```name=Console Output
+Either i or j is false
+</code></pre>
+<p>The nested <code>if</code> version of the above code does allow information about whether it is <code>i</code> or <code>j</code> which is <code>false</code> to be gathered, but in many cases the <em>which</em> doesn't matter, just that one of them is <code>false</code> is enough.</p>
+<p>|And | | <code>&amp;&amp;</code> |
+| <strong>Left Operand</strong> | <strong>Right Operand</strong> | <strong>Result</strong> |
+| <code>true</code> | <code>true</code> | <code>true</code> |
+| <code>true</code> | <code>false</code> | <code>false</code> |
+| <code>false</code> | <code>true</code> | <code>false</code> |
+| <code>false</code> | <code>false</code> | <code>false</code> |</p>
+<p>(NOTE)<strong>Short Circuiting the Right Side Operand</strong>: Since logical <code>and</code> is an operator which is resolved left to right is can always be assumed that the left operand will be evaluated to either <code>true</code> or <code>false</code> before the righthand operand is evaluated at all. This is important as if the first operand does not evaluate to <code>true</code> the operator will immeidiately evaluate to <code>false</code> <em>short circuiting</em> the right side an causing it to not resolve and evaluate the expression of the right side operand at all. A good usage example is when checking object validity before accessing members such as components.</p>
+<p># or <code>||</code>
+The <code>||</code> operator, called the <code>or</code> operator, takes two boolean values and evaluates them, returning true if either operands evaluates to true.</p>
+<p>```name=||, lang = csharp
+var i = true;
+var j = false;</p>
+<p>if(i || j)
+{
+  Console.WriteLine("Either i or j is true");
+}
+else
+{
+  Console.WriteLine("Neither i or j is true");
+}</p>
+<pre><code>```name=Console Output
+Either i or j is true
+</code></pre>
+<p>|And | | <code>||</code> |
+| <strong>Left Operand</strong> | <strong>Right Operand</strong> | <strong>Result</strong> |
+| <code>true</code> | <code>true</code> | <code>true</code> |
+| <code>true</code> | <code>false</code> | <code>true</code> |
+| <code>false</code> | <code>true</code> | <code>true</code> |
+| <code>false</code> | <code>false</code> | <code>false</code> |</p>
+<p># Related Materials
+ ## Manual
+- <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/lightning_in_plasma/conditionals.markdown">conditionals</a>
+ ## Code Reference
+- <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown">boolean</a> </p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+                <p>Copyright &copy; 2021 Plasma Engine. Released under the MIT License.</p>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../../../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../../../js/base.js" defer></script>
+        <script src="../../../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

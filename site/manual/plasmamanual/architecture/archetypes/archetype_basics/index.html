@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../../../../img/favicon.ico">
+        <title>Archetype basics - Docs | Plasma Engine</title>
+        <link href="../../../../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../../../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../../../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/docco.min.css">
+
+        <script src="../../../../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../../../../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../../../../..">Docs | Plasma Engine</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href="../../../../.." class="nav-link">Home</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="/getting_started/" class="nav-link">Getting Started</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Manual <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../../" class="dropdown-item">Manual</a>
+</li>
+                                    
+<li>
+    <a href="../../../ai/" class="dropdown-item">AI</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Architecture</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../architecture/" class="dropdown-item">Architecture</a>
+</li>
+            
+<li>
+    <a href="../archtype_basics.markdown" class="dropdown-item">Archtypes</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Cogs</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../cogs/cogs/" class="dropdown-item">Cogs</a>
+</li>
+            
+<li>
+    <a href="../../cogs/gameobjectsconcept/" class="dropdown-item">Game Objects</a>
+</li>
+            
+<li>
+    <a href="../../cogs/objectstore/" class="dropdown-item">Object Store</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Objects</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../objects/objects/" class="dropdown-item">Objects</a>
+</li>
+            
+<li>
+    <a href="../../objects/gamesession/" class="dropdown-item">Gamesession</a>
+</li>
+            
+<li>
+    <a href="../../objects/spaces/" class="dropdown-item">Spaces</a>
+</li>
+            
+<li>
+    <a href="../../objects/levelsettings/" class="dropdown-item">Levelsettings</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Resources</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../resources/resource.markdown" class="dropdown-item">Resources</a>
+</li>
+            
+<li>
+    <a href="../../resources/level/" class="dropdown-item">Levels</a>
+</li>
+            
+<li>
+    <a href="../../fonts/fonts.markdown" class="dropdown-item">Fonts</a>
+</li>
+            
+<li>
+    <a href="../../resources/resourcestable.markdown" class="dropdown-item">Resource Table</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                                    
+<li>
+    <a href="../../../audio/" class="dropdown-item">Audio</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Editor</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../editor/" class="dropdown-item">Editor</a>
+</li>
+            
+<li>
+    <a href="../../../editor/tags/" class="dropdown-item">Tags</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Reference <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../../../reference/" class="dropdown-item">Index</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Contributing <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../../../source_docs/getting_started.md" class="dropdown-item">Getting Started</a>
+</li>
+                                    
+<li>
+    <a href="../../../../../source_docs/plasma_code/" class="dropdown-item">Plasma Code</a>
+</li>
+                                    
+<li>
+    <a href="../../../../../source_docs/plasma_overview/" class="dropdown-item">Plasma Overview</a>
+</li>
+                                    
+<li>
+    <a href="../../../../../source_docs/components.md" class="dropdown-item">Components</a>
+</li>
+                                    
+<li>
+    <a href="../../../../../source_docs/custom_event_names/" class="dropdown-item">Custom Event Names</a>
+</li>
+                                    
+<li>
+    <a href="../../../../../source_docs/editor/" class="dropdown-item">Editor</a>
+</li>
+                                    
+<li>
+    <a href="../../../../../source_docs/engine/" class="dropdown-item">Engine</a>
+</li>
+                                    
+<li>
+    <a href="../../../../../source_docs/enums/" class="dropdown-item">Enums</a>
+</li>
+                                    
+<li>
+    <a href="../../../../../source_docs/meta_bindings.markdown" class="dropdown-item">Meta Binding</a>
+</li>
+                                    
+<li>
+    <a href="../../../../../source_docs/platform/" class="dropdown-item">Adding Platforms</a>
+</li>
+                                    
+<li>
+    <a href="../../../../../source_docs/widgets/" class="dropdown-item">Widgets</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a href="https://github.com/PlasmaEngine/PlasmaDocs/edit/master/docs/manual/plasmamanual/architecture/archetypes/archetype_basics.markdown" class="nav-link"><i class="fa fa-github"></i> Edit on GitHub</a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<p>An Archetype <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/architecture/resources.markdown"> Resource </a> is the serialized definition of a Cog (Game Object Composition) which can be used as a template from which to create new cogs from. The core benefit of Archetypes is that any changes made to the Archetype affect each object created from the Archetype. These objects are called <strong>instances</strong> of the Archetype.</p>
+<p>#  Advantages of Archetypes
+Often in games we find reasons to have several copies of the same object in the game at once. The game could take place in a forest with thousands of trees and rocks with subtle differences. It could be an arcade shooter with hundreds of identical enemies swarming towards the player. In any case where there is duplicate object creation Archetypes can save us both development time, and performance at runtime.</p>
+<p>If a level has hundreds of instances of the same character Archetype, all those characters can be modified at the same time by modifying the Archetype. Where as if each chracter was not Archetyped, they would have to be individually modified which is slow. One could also group select and modify which may not be practical depending on the placement of objects in the level. While making full use of the Archetype system takes forethought, it increases development efficiency over the course of a project.</p>
+<p>Take the example of a game with an army of identical characters which are made out of instances of just 1 or 2 Archetypes the engine can load it much faster than if each character was its own unique Cog with no shared Archetype. This is because after the Archetype is loaded by the engine, it can be used by the engine to create/render the instances of it in the army. As opposed to the engine having to load a copy of the object data for each non-Archetyped tree object.</p>
+<p>#  Creating Archetypes
+Creating an Archetype is fairly simple. Just enter the name in the Archetype box and press enter. This will creatre the new Archetype resource from the selected object causing it to appear under the Archetype tag in the Resource Window.</p>
+<p><img alt="2017_07_07_11_34_28_Plasma_Editor_ArchetypeDocumentation" src="https://raw.githubusercontent.com/PlasmaEngine/PlasmaDocs/master/media/ArchetypeBasics.png" /></p>
+<p>#  Creating Objects from Archetypes
+Creating a new instance of an existing Archetype is simple and can be done through multiple approaches.</p>
+<p>##  Instance from the Resource Library
+By clicking and dragging an Archetype resource from the resource library into the Level Window we can create a new instance of that Archetype.</p>
+<p><img alt="ArchetypeInstantiationFromLibrary" src="https://raw.githubusercontent.com/PlasmaEngine/PlasmaDocs/master/media/CreateArchetype.gif" /></p>
+<p>##  Copying an Instance
+Objects which are an instance of an Archetype can be duplicated via copy &amp; paste to create a new instance of the same Archetype.</p>
+<ul>
+<li><code>ctrl + c</code></li>
+<li><code>ctrl + v</code></li>
+</ul>
+<p><img alt="ArchetypeCopyPaste" src="https://raw.githubusercontent.com/PlasmaEngine/PlasmaDocs/master/media/CopyPasteArchetype.gif" /></p>
+<p><em>Here <code>ctrl + +c</code> and <code>ctrl + v</code> are used then <code>ctrl + click + drag</code></em></p>
+<p>##  Instances at Runtime
+Archetypes are essential for creating objects at runtime. Here is a short example of how one might create instances of an Archetype at runtime.</p>
+<pre><code>class ObjectSpawner : LightningComponent
+{
+  [Property]
+  var ObjectArchetype : Archetype = Archetype.MyArchetype;
+
+  [Property]
+  var SpawnRate : Real = 1.0;
+
+  var Timer : Real = 0.0;
+
+  function Initialize(init : CogInitializer)
+  {
+    Plasma.Connect(this.Space, Events.LogicUpdate, this.OnLogicUpdate);
+  }
+
+  function OnLogicUpdate(event : LogicUpdate)
+  {
+    this.Timer += event.Dt;
+    if(this.Timer &gt; this.SpawnRate)
+    {
+      this.Timer = 0.0;
+      this.Space.Create(this.ObjectArchetype);
+    }
+  }
+}
+</code></pre>
+<p>As you can see the function <code>Space.Create()</code> is how you instantiate Archetypes at runtime from script. There is also <code>Space.CreateAtPosition()</code> which allows you to specify a position for the object to spawn at as opposed to the Space origin.</p>
+<p>#  Basic Archetype Modifications
+When an Archetype instance is modified it turns orange.</p>
+<p><img alt="image" src="https://raw.githubusercontent.com/PlasmaEngine/PlasmaDocs/master/media/ChangedArchetype.PNG" /></p>
+<p><img alt="image" src="https://raw.githubusercontent.com/PlasmaEngine/PlasmaDocs/master/media/ChangedArchetype2.PNG" /></p>
+<p>Below the behaviors various types of modifications are described.</p>
+<p>##  Property Modifications
+When a property field of an  an Archetype instance is edited it is turned orange to mark it as modified. This is a common theme as other items will turn orange when modified.</p>
+<p>### Local Modification Override
+It should be noted that modifications to <code>Transform</code> will not mark the Archetype as modified.
+This is because the properties such as <code>Transform.Translation</code>, <code>Transform.Rotation</code>, <code>Transform.Scale</code>, and <code>Area.Size</code> have the <code>LocalModificationOverride</code> attribute which prevents that property from normally interacting with archetype updates and reversion. A property with the <code>LocalModificationOverride</code> attribute will not be uploaded with other modifications when a modified instance is uploaded to the archetype. Overrridden properties will also not be modified when an instance is reverted to archetype. The <code>LocalModificationOverride</code> attribute can be applied to properties in custom Lightning components as well.</p>
+<p>##  Component Modifications
+Adding, removing, or reordering a component to an Archetype instance modifies it from Archetype.</p>
+<p><em>Component added</em></p>
+<p><img alt="image" src="https://raw.githubusercontent.com/PlasmaEngine/PlasmaDocs/master/media/ArchetypeComponentAdded.PNG" /></p>
+<p><em>Component removed</em></p>
+<p><img alt="image" src="https://raw.githubusercontent.com/PlasmaEngine/PlasmaDocs/master/media/ArchetypeComponentRemove.PNG" /></p>
+<p>## Child Modifications
+Adding, removing, reordering a child object from an Archetype instance will also mark the Archetype as modified.</p>
+<p><em>Child added</em></p>
+<p><img alt="image" src="https://raw.githubusercontent.com/PlasmaEngine/PlasmaDocs/master/media/ArchetypeObjectAdded.PNG" /></p>
+<p><em>Child removed</em></p>
+<p><img alt="image" src="https://raw.githubusercontent.com/PlasmaEngine/PlasmaDocs/master/media/ArchetypeObjectRemoved.PNG" /></p>
+<p>It is important to note that neither component nor child modifications have functionality equivalent to LocalModificationOverride available. Property modifications usually adjust some factor of a piece of functionality. However, component and child object operations have the potential change the fundamental functionality of the Archetype. In the case where a certain component or child object modification becomes common place it should be add to the original archetype (and have the originally unmodified instances use LocalModificationOverride) or create a new archetype with the modifications.</p>
+<p># Upload To Archetype
+Above we discussed the various modification types you can make to an Archetype. It is very common for a developer to create many instances of an Archetype then modify some paticular instance. However, sometimes we want to go the opposite direction and apply modifications we have made to an individual instance to the Archetype. Thinking about the army of characters we used as an example earlier. Imagine we had been changing hat colors for awhile and we decide we like a paticular color for the default. By clicking the upload button we can turn appply this change to all unmodified instances of the Archetype. This is called uploading to Archetype. Whereas if we give it a new Archetype name and click the upload button it will create a new archetype</p>
+<p><img alt="UploadToArchetype" src="https://raw.githubusercontent.com/PlasmaEngine/PlasmaDocs/master/media/UploadArchetype.gif" /></p>
+<p>Here we modify right two of the three Archetype instances. The middle instance, which is modified, is then uploaded to the Archetype causing the modification to be applied to the unmodified instance on the left. Notice that the other modified instance on the right does not turn Red. This is due to the right instance being already modified from the orginal Archetype (meaning it is modified from the newly uploaded version as well).</p>
+<p># Revert To Archetype
+ ## Reverting Cogs
+Often developers make accidental or undesireable changes to an Archetype instance and have legitamate reasons to not want to undo everything to revert the instances back to their original state. This is one of the many reasons Archetype instances can be reverted to the current state of the Archetype resource using the restore button next the Archetype field in the property window.</p>
+<p><em>Here you can see the middle sprite reverted to match the orginal Archetype.</em></p>
+<p>//TODO : get image</p>
+<p>## Reverting Properties
+Often it is necessary to revert individual properties on an Archetype instance. This is a simple operation:</p>
+<p>//TODO : get image</p>
+<p>By using <code>RightClick</code> on the property grid one can open the context menu allowing the property to be reverted without affecting the rest of the instance. This is important and simply setting the modified field to the same value will not make the field appear un-modified to the engine.</p>
+<p>## Reverting Locally Removed Child
+By using <code>RightClick</code> on the greyed out representation of objects which have been removed from the child hierarchy of an Archetype one can <code>Restore</code> an object back into the heirarchy.</p>
+<p>//TODO : get image</p>
+<p>## Reverting Child Order
+If children in an Archetype hierarchy are reordered, their order can be reverted to match the current Archetype by using <code>RightClick</code> on the Archetype instance root object and selecting <code>Restore Child Order</code>.</p>
+<p>//TODO : get image</p>
+<p>Reverting child modifications are important as for reasons of reverting </p>
+<p># Marking as Modified
+There are time where an Archetype is about to be upload, but it is realized there is a single unmodified instance of the Archetype which should not be updated to the new Archetype. In this case it is possible to manually mark a property as modified even if its value matches that of the original Archetype. This allows the Archetype to be updated without having the changes affecting the instance which has a locally overridden property.</p>
+<p>//TODO : get image</p>
+<p>Once again let's think back to the army of characters all created from the same Archetype, specifically the example where we have been experiementing and have just settled in on the hat color we would like to be the default for the whole army. Now imagine we want the leader to keep the original hat color. By marking the leader's hat color as modified, when we upload the new color to the Archetype the leader will not be affected.</p>
+<p># Related Materials
+ ## Manual
+- <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/architecture/resources.markdown"> Resource </a> </p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+                <p>Copyright &copy; 2021 Plasma Engine. Released under the MIT License.</p>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../../../../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../../../../js/base.js" defer></script>
+        <script src="../../../../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

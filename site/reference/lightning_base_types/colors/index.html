@@ -1,0 +1,2283 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../../img/favicon.ico">
+        <title>Colors - Docs | Plasma Engine</title>
+        <link href="../../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/docco.min.css">
+
+        <script src="../../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../../..">Docs | Plasma Engine</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href="../../.." class="nav-link">Home</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="/getting_started/" class="nav-link">Getting Started</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Manual <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../manual/" class="dropdown-item">Manual</a>
+</li>
+                                    
+<li>
+    <a href="../../../manual/plasmamanual/ai/" class="dropdown-item">AI</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Architecture</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../manual/plasmamanual/architecture/architecture/" class="dropdown-item">Architecture</a>
+</li>
+            
+<li>
+    <a href="../../../manual/plasmamanual/architecture/archetypes/archtype_basics.markdown" class="dropdown-item">Archtypes</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Cogs</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../manual/plasmamanual/architecture/cogs/cogs/" class="dropdown-item">Cogs</a>
+</li>
+            
+<li>
+    <a href="../../../manual/plasmamanual/architecture/cogs/gameobjectsconcept/" class="dropdown-item">Game Objects</a>
+</li>
+            
+<li>
+    <a href="../../../manual/plasmamanual/architecture/cogs/objectstore/" class="dropdown-item">Object Store</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Objects</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../manual/plasmamanual/architecture/objects/objects/" class="dropdown-item">Objects</a>
+</li>
+            
+<li>
+    <a href="../../../manual/plasmamanual/architecture/objects/gamesession/" class="dropdown-item">Gamesession</a>
+</li>
+            
+<li>
+    <a href="../../../manual/plasmamanual/architecture/objects/spaces/" class="dropdown-item">Spaces</a>
+</li>
+            
+<li>
+    <a href="../../../manual/plasmamanual/architecture/objects/levelsettings/" class="dropdown-item">Levelsettings</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Resources</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../manual/plasmamanual/architecture/resources/resource.markdown" class="dropdown-item">Resources</a>
+</li>
+            
+<li>
+    <a href="../../../manual/plasmamanual/architecture/resources/level/" class="dropdown-item">Levels</a>
+</li>
+            
+<li>
+    <a href="../../../manual/plasmamanual/architecture/fonts/fonts.markdown" class="dropdown-item">Fonts</a>
+</li>
+            
+<li>
+    <a href="../../../manual/plasmamanual/architecture/resources/resourcestable.markdown" class="dropdown-item">Resource Table</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                                    
+<li>
+    <a href="../../../manual/plasmamanual/audio/" class="dropdown-item">Audio</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Editor</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../manual/plasmamanual/editor/" class="dropdown-item">Editor</a>
+</li>
+            
+<li>
+    <a href="../../../manual/plasmamanual/editor/tags/" class="dropdown-item">Tags</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Reference <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../" class="dropdown-item">Index</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Contributing <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../source_docs/getting_started.md" class="dropdown-item">Getting Started</a>
+</li>
+                                    
+<li>
+    <a href="../../../source_docs/plasma_code/" class="dropdown-item">Plasma Code</a>
+</li>
+                                    
+<li>
+    <a href="../../../source_docs/plasma_overview/" class="dropdown-item">Plasma Overview</a>
+</li>
+                                    
+<li>
+    <a href="../../../source_docs/components.md" class="dropdown-item">Components</a>
+</li>
+                                    
+<li>
+    <a href="../../../source_docs/custom_event_names/" class="dropdown-item">Custom Event Names</a>
+</li>
+                                    
+<li>
+    <a href="../../../source_docs/editor/" class="dropdown-item">Editor</a>
+</li>
+                                    
+<li>
+    <a href="../../../source_docs/engine/" class="dropdown-item">Engine</a>
+</li>
+                                    
+<li>
+    <a href="../../../source_docs/enums/" class="dropdown-item">Enums</a>
+</li>
+                                    
+<li>
+    <a href="../../../source_docs/meta_bindings.markdown" class="dropdown-item">Meta Binding</a>
+</li>
+                                    
+<li>
+    <a href="../../../source_docs/platform/" class="dropdown-item">Adding Platforms</a>
+</li>
+                                    
+<li>
+    <a href="../../../source_docs/widgets/" class="dropdown-item">Widgets</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a href="https://github.com/PlasmaEngine/PlasmaDocs/edit/master/docs/reference/lightning_base_types/colors.markdown" class="nav-link"><i class="fa fa-github"></i> Edit on GitHub</a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<p><code>Core</code></p>
+<table>
+<thead>
+<tr>
+<th>Methods</th>
+<th>Properties</th>
+<th>Base Classes</th>
+<th>Derived Classes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/colors.markdown#aliceblue-plasma-engine-do"> AliceBlue</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/colors.markdown#antiquewhite-plasma-engine"> AntiqueWhite</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/colors.markdown#aqua-plasma-engine-documen"> Aqua</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/colors.markdown#aquamarine-plasma-engine-d"> Aquamarine</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/colors.markdown#azure-plasma-engine-docume"> Azure</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/colors.markdown#beige-plasma-engine-docume"> Beige</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/colors.markdown#bisque-plasma-engine-docum"> Bisque</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/colors.markdown#black-plasma-engine-docume"> Black</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/colors.markdown#blanchedalmond-plasma-engi"> BlanchedAlmond</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/colors.markdown#blue-plasma-engine-documen"> Blue</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/colors.markdown#blueviolet-plasma-engine-d"> BlueViolet</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/colors.markdown#brown-plasma-engine-docume"> Brown</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/colors.markdown#burlywood-plasma-engine-do"> Burlywood</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/colors.markdown#cadetblue-plasma-engine-do"> CadetBlue</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/colors.markdown#chartreuse-plasma-engine-d"> Chartreuse</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/colors.markdown#chocolate-plasma-engine-do"> Chocolate</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/colors.markdown#clear-plasma-engine-docume"> Clear</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/colors.markdown#coral-plasma-engine-docume"> Coral</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/colors.markdown#cornflower-plasma-engine-d"> Cornflower</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/colors.markdown#cornsilk-plasma-engine-doc"> Cornsilk</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/colors.markdown#crimson-plasma-engine-docu"> Crimson</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/colors.markdown#cyan-plasma-engine-documen"> Cyan</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/colors.markdown#darkgoldenrod-plasma-engin"> DarkGoldenrod</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/colors.markdown#darkgray-plasma-engine-doc"> DarkGray</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/colors.markdown#darkkhaki-plasma-engine-do"> DarkKhaki</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/colors.markdown#darkmagenta-plasma-engine"> DarkMagenta</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/colors.markdown#darkolivegreen-plasma-engi"> DarkOliveGreen</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/colors.markdown#darkorange-plasma-engine-d"> DarkOrange</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/colors.markdown#darkorchid-plasma-engine-d"> DarkOrchid</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/colors.markdown#darksalmon-plasma-engine-d"> DarkSalmon</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/colors.markdown#darkseagreen-plasma-engine"> DarkSeaGreen</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/colors.markdown#darkslateblue-plasma-engin"> DarkSlateBlue</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/colors.markdown#darkslategray-plasma-engin"> DarkSlateGray</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/colors.markdown#darkturquoise-plasma-engin"> DarkTurquoise</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/colors.markdown#darkviolet-plasma-engine-d"> DarkViolet</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/colors.markdown#deepgreen-plasma-engine-do"> DeepGreen</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/colors.markdown#deeppink-plasma-engine-doc"> DeepPink</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/colors.markdown#deepskyblue-plasma-engine"> DeepSkyBlue</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/colors.markdown#dimgray-plasma-engine-docu"> DimGray</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/colors.markdown#dodgerblue-plasma-engine-d"> DodgerBlue</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/colors.markdown#firebrick-plasma-engine-do"> Firebrick</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/colors.markdown#floralwhite-plasma-engine"> FloralWhite</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/colors.markdown#forestgreen-plasma-engine"> ForestGreen</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/colors.markdown#fuchsia-plasma-engine-docu"> Fuchsia</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/colors.markdown#gainsboro-plasma-engine-do"> Gainsboro</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/colors.markdown#ghostwhite-plasma-engine-d"> GhostWhite</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/colors.markdown#gold-plasma-engine-documen"> Gold</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/colors.markdown#goldenrod-plasma-engine-do"> Goldenrod</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/colors.markdown#gray-plasma-engine-documen"> Gray</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/colors.markdown#green-plasma-engine-docume"> Green</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/colors.markdown#greenyellow-plasma-engine"> GreenYellow</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/colors.markdown#honeydew-plasma-engine-doc"> Honeydew</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/colors.markdown#hotpink-plasma-engine-docu"> HotPink</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/colors.markdown#indianred-plasma-engine-do"> IndianRed</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/colors.markdown#indigo-plasma-engine-docum"> Indigo</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/colors.markdown#ivory-plasma-engine-docume"> Ivory</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/colors.markdown#khaki-plasma-engine-docume"> Khaki</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/colors.markdown#lavender-plasma-engine-doc"> Lavender</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/colors.markdown#lavenderblush-plasma-engin"> LavenderBlush</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/colors.markdown#lawngreen-plasma-engine-do"> LawnGreen</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/colors.markdown#lemonchiffon-plasma-engine"> LemonChiffon</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/colors.markdown#lightblue-plasma-engine-do"> LightBlue</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/colors.markdown#lightcoral-plasma-engine-d"> LightCoral</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/colors.markdown#lightcyan-plasma-engine-do"> LightCyan</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/colors.markdown#lightgoldenrod-plasma-engi"> LightGoldenrod</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/colors.markdown#lightgray-plasma-engine-do"> LightGray</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/colors.markdown#lightgreen-plasma-engine-d"> LightGreen</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/colors.markdown#lightpink-plasma-engine-do"> LightPink</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/colors.markdown#lightsalmon-plasma-engine"> LightSalmon</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/colors.markdown#lightseagreen-plasma-engin"> LightSeaGreen</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/colors.markdown#lightskyblue-plasma-engine"> LightSkyBlue</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/colors.markdown#lightslategray-plasma-engi"> LightSlateGray</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/colors.markdown#lightsteelblue-plasma-engi"> LightSteelBlue</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/colors.markdown#lightyellow-plasma-engine"> LightYellow</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/colors.markdown#lime-plasma-engine-documen"> Lime</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/colors.markdown#limegreen-plasma-engine-do"> LimeGreen</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/colors.markdown#linen-plasma-engine-docume"> Linen</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/colors.markdown#magenta-plasma-engine-docu"> Magenta</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/colors.markdown#maroon-plasma-engine-docum"> Maroon</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/colors.markdown#mediumaquamarine-plasma-en"> MediumAquamarine</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/colors.markdown#mediumblue-plasma-engine-d"> MediumBlue</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/colors.markdown#mediumorchid-plasma-engine"> MediumOrchid</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/colors.markdown#mediumpurple-plasma-engine"> MediumPurple</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/colors.markdown#mediumseagreen-plasma-engi"> MediumSeaGreen</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/colors.markdown#mediumslateblue-plasma-eng"> MediumSlateBlue</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/colors.markdown#mediumspringgreen-plasma-e"> MediumSpringGreen</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/colors.markdown#mediumturquoise-plasma-eng"> MediumTurquoise</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/colors.markdown#mediumvioletred-plasma-eng"> MediumVioletRed</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/colors.markdown#midnightblue-plasma-engine"> MidnightBlue</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/colors.markdown#mintcream-plasma-engine-do"> MintCream</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/colors.markdown#mistyrose-plasma-engine-do"> MistyRose</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/colors.markdown#moccasin-plasma-engine-doc"> Moccasin</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/colors.markdown#navajowhite-plasma-engine"> NavajoWhite</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/colors.markdown#navy-plasma-engine-documen"> Navy</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/colors.markdown#oldlace-plasma-engine-docu"> OldLace</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/colors.markdown#olive-plasma-engine-docume"> Olive</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/colors.markdown#olivedrab-plasma-engine-do"> OliveDrab</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/colors.markdown#orange-plasma-engine-docum"> Orange</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/colors.markdown#orangered-plasma-engine-do"> OrangeRed</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/colors.markdown#orchid-plasma-engine-docum"> Orchid</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/colors.markdown#palegoldenrod-plasma-engin"> PaleGoldenrod</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/colors.markdown#palegreen-plasma-engine-do"> PaleGreen</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/colors.markdown#paleturquoise-plasma-engin"> PaleTurquoise</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/colors.markdown#palevioletred-plasma-engin"> PaleVioletRed</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/colors.markdown#papayawhip-plasma-engine-d"> PapayaWhip</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/colors.markdown#peachpuff-plasma-engine-do"> PeachPuff</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/colors.markdown#peru-plasma-engine-documen"> Peru</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/colors.markdown#pink-plasma-engine-documen"> Pink</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/colors.markdown#plum-plasma-engine-documen"> Plum</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/colors.markdown#powderblue-plasma-engine-d"> PowderBlue</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/colors.markdown#purple-plasma-engine-docum"> Purple</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/colors.markdown#rebeccapurple-plasma-engin"> RebeccaPurple</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/colors.markdown#red-plasma-engine-document"> Red</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/colors.markdown#rosybrown-plasma-engine-do"> RosyBrown</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/colors.markdown#royalblue-plasma-engine-do"> RoyalBlue</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/colors.markdown#saddlebrown-plasma-engine"> SaddleBrown</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/colors.markdown#salmon-plasma-engine-docum"> Salmon</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/colors.markdown#sandybrown-plasma-engine-d"> SandyBrown</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/colors.markdown#seagreen-plasma-engine-doc"> SeaGreen</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/colors.markdown#seashell-plasma-engine-doc"> Seashell</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/colors.markdown#sienna-plasma-engine-docum"> Sienna</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/colors.markdown#silver-plasma-engine-docum"> Silver</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/colors.markdown#skyblue-plasma-engine-docu"> SkyBlue</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/colors.markdown#slateblue-plasma-engine-do"> SlateBlue</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/colors.markdown#slategray-plasma-engine-do"> SlateGray</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/colors.markdown#snow-plasma-engine-documen"> Snow</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/colors.markdown#springgreen-plasma-engine"> SpringGreen</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/colors.markdown#steelblue-plasma-engine-do"> SteelBlue</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/colors.markdown#tan-plasma-engine-document"> Tan</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/colors.markdown#teal-plasma-engine-documen"> Teal</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/colors.markdown#thistle-plasma-engine-docu"> Thistle</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/colors.markdown#tomato-plasma-engine-docum"> Tomato</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/colors.markdown#turquoise-plasma-engine-do"> Turquoise</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/colors.markdown#violet-plasma-engine-docum"> Violet</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/colors.markdown#wheat-plasma-engine-docume"> Wheat</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/colors.markdown#white-plasma-engine-docume"> White</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/colors.markdown#whitesmoke-plasma-engine-d"> WhiteSmoke</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/colors.markdown#yellow-plasma-engine-docum"> Yellow</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/colors.markdown#yellowgreen-plasma-engine"> YellowGreen</a></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>#  Properties</p>
+<hr />
+<p>#  AliceBlue : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real4.markdown">real4</a></p>
+<p><code>read-only</code> <code>static</code></p>
+<blockquote>
+<p>RGBA color of Real4(0.941176, 0.972549, 1, 1) or hex 0xF0F8FFFF
+``` lang=cpp, name=Lightning
+var AliceBlue : Real4</p>
+</blockquote>
+<hr />
+<p>#  AntiqueWhite : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real4.markdown">real4</a></p>
+<p><code>read-only</code> <code>static</code></p>
+<blockquote>
+<p>RGBA color of Real4(0.980392, 0.921569, 0.843137, 1) or hex 0xFAEBD7FF
+``` lang=cpp, name=Lightning
+var AntiqueWhite : Real4</p>
+</blockquote>
+<hr />
+<p>#  Aqua : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real4.markdown">real4</a></p>
+<p><code>read-only</code> <code>static</code></p>
+<blockquote>
+<p>RGBA color of Real4(0, 1, 1, 1) or hex 0x00FFFFFF
+``` lang=cpp, name=Lightning
+var Aqua : Real4</p>
+</blockquote>
+<hr />
+<p>#  Aquamarine : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real4.markdown">real4</a></p>
+<p><code>read-only</code> <code>static</code></p>
+<blockquote>
+<p>RGBA color of Real4(0.498039, 1, 0.831373, 1) or hex 0x7FFFD4FF
+``` lang=cpp, name=Lightning
+var Aquamarine : Real4</p>
+</blockquote>
+<hr />
+<p>#  Azure : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real4.markdown">real4</a></p>
+<p><code>read-only</code> <code>static</code></p>
+<blockquote>
+<p>RGBA color of Real4(0.941176, 1, 1, 1) or hex 0xF0FFFFFF
+``` lang=cpp, name=Lightning
+var Azure : Real4</p>
+</blockquote>
+<hr />
+<p>#  Beige : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real4.markdown">real4</a></p>
+<p><code>read-only</code> <code>static</code></p>
+<blockquote>
+<p>RGBA color of Real4(0.960784, 0.960784, 0.862745, 1) or hex 0xF5F5DCFF
+``` lang=cpp, name=Lightning
+var Beige : Real4</p>
+</blockquote>
+<hr />
+<p>#  Bisque : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real4.markdown">real4</a></p>
+<p><code>read-only</code> <code>static</code></p>
+<blockquote>
+<p>RGBA color of Real4(1, 0.894118, 0.768627, 1) or hex 0xFFE4C4FF
+``` lang=cpp, name=Lightning
+var Bisque : Real4</p>
+</blockquote>
+<hr />
+<p>#  Black : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real4.markdown">real4</a></p>
+<p><code>read-only</code> <code>static</code></p>
+<blockquote>
+<p>RGBA color of Real4(0, 0, 0, 1) or hex 0x000000FF
+``` lang=cpp, name=Lightning
+var Black : Real4</p>
+</blockquote>
+<hr />
+<p>#  BlanchedAlmond : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real4.markdown">real4</a></p>
+<p><code>read-only</code> <code>static</code></p>
+<blockquote>
+<p>RGBA color of Real4(1, 0.921569, 0.803922, 1) or hex 0xFFEBCDFF
+``` lang=cpp, name=Lightning
+var BlanchedAlmond : Real4</p>
+</blockquote>
+<hr />
+<p>#  Blue : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real4.markdown">real4</a></p>
+<p><code>read-only</code> <code>static</code></p>
+<blockquote>
+<p>RGBA color of Real4(0, 0, 1, 1) or hex 0x0000FFFF
+``` lang=cpp, name=Lightning
+var Blue : Real4</p>
+</blockquote>
+<hr />
+<p>#  BlueViolet : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real4.markdown">real4</a></p>
+<p><code>read-only</code> <code>static</code></p>
+<blockquote>
+<p>RGBA color of Real4(0.541176, 0.168627, 0.886275, 1) or hex 0x8A2BE2FF
+``` lang=cpp, name=Lightning
+var BlueViolet : Real4</p>
+</blockquote>
+<hr />
+<p>#  Brown : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real4.markdown">real4</a></p>
+<p><code>read-only</code> <code>static</code></p>
+<blockquote>
+<p>RGBA color of Real4(0.647059, 0.164706, 0.164706, 1) or hex 0xA52A2AFF
+``` lang=cpp, name=Lightning
+var Brown : Real4</p>
+</blockquote>
+<hr />
+<p>#  Burlywood : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real4.markdown">real4</a></p>
+<p><code>read-only</code> <code>static</code></p>
+<blockquote>
+<p>RGBA color of Real4(0.870588, 0.721569, 0.529412, 1) or hex 0xDEB887FF
+``` lang=cpp, name=Lightning
+var Burlywood : Real4</p>
+</blockquote>
+<hr />
+<p>#  CadetBlue : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real4.markdown">real4</a></p>
+<p><code>read-only</code> <code>static</code></p>
+<blockquote>
+<p>RGBA color of Real4(0.372549, 0.619608, 0.627451, 1) or hex 0x5F9EA0FF
+``` lang=cpp, name=Lightning
+var CadetBlue : Real4</p>
+</blockquote>
+<hr />
+<p>#  Chartreuse : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real4.markdown">real4</a></p>
+<p><code>read-only</code> <code>static</code></p>
+<blockquote>
+<p>RGBA color of Real4(0.498039, 1, 0, 1) or hex 0x7FFF00FF
+``` lang=cpp, name=Lightning
+var Chartreuse : Real4</p>
+</blockquote>
+<hr />
+<p>#  Chocolate : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real4.markdown">real4</a></p>
+<p><code>read-only</code> <code>static</code></p>
+<blockquote>
+<p>RGBA color of Real4(0.823529, 0.411765, 0.117647, 1) or hex 0xD2691EFF
+``` lang=cpp, name=Lightning
+var Chocolate : Real4</p>
+</blockquote>
+<hr />
+<p>#  Clear : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real4.markdown">real4</a></p>
+<p><code>read-only</code> <code>static</code></p>
+<blockquote>
+<p>RGBA color of Real4(1, 1, 1, 0) or hex 0xFFFFFF00
+``` lang=cpp, name=Lightning
+var Clear : Real4</p>
+</blockquote>
+<hr />
+<p>#  Coral : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real4.markdown">real4</a></p>
+<p><code>read-only</code> <code>static</code></p>
+<blockquote>
+<p>RGBA color of Real4(1, 0.498039, 0.313726, 1) or hex 0xFF7F50FF
+``` lang=cpp, name=Lightning
+var Coral : Real4</p>
+</blockquote>
+<hr />
+<p>#  Cornflower : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real4.markdown">real4</a></p>
+<p><code>read-only</code> <code>static</code></p>
+<blockquote>
+<p>RGBA color of Real4(0.392157, 0.584314, 0.929412, 1) or hex 0x6495EDFF
+``` lang=cpp, name=Lightning
+var Cornflower : Real4</p>
+</blockquote>
+<hr />
+<p>#  Cornsilk : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real4.markdown">real4</a></p>
+<p><code>read-only</code> <code>static</code></p>
+<blockquote>
+<p>RGBA color of Real4(1, 0.972549, 0.862745, 1) or hex 0xFFF8DCFF
+``` lang=cpp, name=Lightning
+var Cornsilk : Real4</p>
+</blockquote>
+<hr />
+<p>#  Crimson : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real4.markdown">real4</a></p>
+<p><code>read-only</code> <code>static</code></p>
+<blockquote>
+<p>RGBA color of Real4(0.862745, 0.0784314, 0.235294, 1) or hex 0xDC143CFF
+``` lang=cpp, name=Lightning
+var Crimson : Real4</p>
+</blockquote>
+<hr />
+<p>#  Cyan : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real4.markdown">real4</a></p>
+<p><code>read-only</code> <code>static</code></p>
+<blockquote>
+<p>RGBA color of Real4(0, 1, 1, 1) or hex 0x00FFFFFF
+``` lang=cpp, name=Lightning
+var Cyan : Real4</p>
+</blockquote>
+<hr />
+<p>#  DarkGoldenrod : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real4.markdown">real4</a></p>
+<p><code>read-only</code> <code>static</code></p>
+<blockquote>
+<p>RGBA color of Real4(0.721569, 0.52549, 0.0431373, 1) or hex 0xB8860BFF
+``` lang=cpp, name=Lightning
+var DarkGoldenrod : Real4</p>
+</blockquote>
+<hr />
+<p>#  DarkGray : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real4.markdown">real4</a></p>
+<p><code>read-only</code> <code>static</code></p>
+<blockquote>
+<p>RGBA color of Real4(0.662745, 0.662745, 0.662745, 1) or hex 0xA9A9A9FF
+``` lang=cpp, name=Lightning
+var DarkGray : Real4</p>
+</blockquote>
+<hr />
+<p>#  DarkKhaki : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real4.markdown">real4</a></p>
+<p><code>read-only</code> <code>static</code></p>
+<blockquote>
+<p>RGBA color of Real4(0.741176, 0.717647, 0.419608, 1) or hex 0xBDB76BFF
+``` lang=cpp, name=Lightning
+var DarkKhaki : Real4</p>
+</blockquote>
+<hr />
+<p>#  DarkMagenta : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real4.markdown">real4</a></p>
+<p><code>read-only</code> <code>static</code></p>
+<blockquote>
+<p>RGBA color of Real4(0.545098, 0, 0.545098, 1) or hex 0x8B008BFF
+``` lang=cpp, name=Lightning
+var DarkMagenta : Real4</p>
+</blockquote>
+<hr />
+<p>#  DarkOliveGreen : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real4.markdown">real4</a></p>
+<p><code>read-only</code> <code>static</code></p>
+<blockquote>
+<p>RGBA color of Real4(0.333333, 0.419608, 0.184314, 1) or hex 0x556B2FFF
+``` lang=cpp, name=Lightning
+var DarkOliveGreen : Real4</p>
+</blockquote>
+<hr />
+<p>#  DarkOrange : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real4.markdown">real4</a></p>
+<p><code>read-only</code> <code>static</code></p>
+<blockquote>
+<p>RGBA color of Real4(1, 0.54902, 0, 1) or hex 0xFF8C00FF
+``` lang=cpp, name=Lightning
+var DarkOrange : Real4</p>
+</blockquote>
+<hr />
+<p>#  DarkOrchid : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real4.markdown">real4</a></p>
+<p><code>read-only</code> <code>static</code></p>
+<blockquote>
+<p>RGBA color of Real4(0.6, 0.196078, 0.8, 1) or hex 0x9932CCFF
+``` lang=cpp, name=Lightning
+var DarkOrchid : Real4</p>
+</blockquote>
+<hr />
+<p>#  DarkSalmon : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real4.markdown">real4</a></p>
+<p><code>read-only</code> <code>static</code></p>
+<blockquote>
+<p>RGBA color of Real4(0.913725, 0.588235, 0.478431, 1) or hex 0xE9967AFF
+``` lang=cpp, name=Lightning
+var DarkSalmon : Real4</p>
+</blockquote>
+<hr />
+<p>#  DarkSeaGreen : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real4.markdown">real4</a></p>
+<p><code>read-only</code> <code>static</code></p>
+<blockquote>
+<p>RGBA color of Real4(0.560784, 0.737255, 0.560784, 1) or hex 0x8FBC8FFF
+``` lang=cpp, name=Lightning
+var DarkSeaGreen : Real4</p>
+</blockquote>
+<hr />
+<p>#  DarkSlateBlue : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real4.markdown">real4</a></p>
+<p><code>read-only</code> <code>static</code></p>
+<blockquote>
+<p>RGBA color of Real4(0.282353, 0.239216, 0.545098, 1) or hex 0x483D8BFF
+``` lang=cpp, name=Lightning
+var DarkSlateBlue : Real4</p>
+</blockquote>
+<hr />
+<p>#  DarkSlateGray : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real4.markdown">real4</a></p>
+<p><code>read-only</code> <code>static</code></p>
+<blockquote>
+<p>RGBA color of Real4(0.184314, 0.309804, 0.309804, 1) or hex 0x2F4F4FFF
+``` lang=cpp, name=Lightning
+var DarkSlateGray : Real4</p>
+</blockquote>
+<hr />
+<p>#  DarkTurquoise : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real4.markdown">real4</a></p>
+<p><code>read-only</code> <code>static</code></p>
+<blockquote>
+<p>RGBA color of Real4(0, 0.807843, 0.819608, 1) or hex 0x00CED1FF
+``` lang=cpp, name=Lightning
+var DarkTurquoise : Real4</p>
+</blockquote>
+<hr />
+<p>#  DarkViolet : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real4.markdown">real4</a></p>
+<p><code>read-only</code> <code>static</code></p>
+<blockquote>
+<p>RGBA color of Real4(0.580392, 0, 0.827451, 1) or hex 0x9400D3FF
+``` lang=cpp, name=Lightning
+var DarkViolet : Real4</p>
+</blockquote>
+<hr />
+<p>#  DeepGreen : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real4.markdown">real4</a></p>
+<p><code>read-only</code> <code>static</code></p>
+<blockquote>
+<p>RGBA color of Real4(0, 0.498039, 0, 1) or hex 0x007F00FF
+``` lang=cpp, name=Lightning
+var DeepGreen : Real4</p>
+</blockquote>
+<hr />
+<p>#  DeepPink : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real4.markdown">real4</a></p>
+<p><code>read-only</code> <code>static</code></p>
+<blockquote>
+<p>RGBA color of Real4(1, 0.0784314, 0.576471, 1) or hex 0xFF1493FF
+``` lang=cpp, name=Lightning
+var DeepPink : Real4</p>
+</blockquote>
+<hr />
+<p>#  DeepSkyBlue : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real4.markdown">real4</a></p>
+<p><code>read-only</code> <code>static</code></p>
+<blockquote>
+<p>RGBA color of Real4(0, 0.74902, 1, 1) or hex 0x00BFFFFF
+``` lang=cpp, name=Lightning
+var DeepSkyBlue : Real4</p>
+</blockquote>
+<hr />
+<p>#  DimGray : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real4.markdown">real4</a></p>
+<p><code>read-only</code> <code>static</code></p>
+<blockquote>
+<p>RGBA color of Real4(0.411765, 0.411765, 0.411765, 1) or hex 0x696969FF
+``` lang=cpp, name=Lightning
+var DimGray : Real4</p>
+</blockquote>
+<hr />
+<p>#  DodgerBlue : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real4.markdown">real4</a></p>
+<p><code>read-only</code> <code>static</code></p>
+<blockquote>
+<p>RGBA color of Real4(0.117647, 0.564706, 1, 1) or hex 0x1E90FFFF
+``` lang=cpp, name=Lightning
+var DodgerBlue : Real4</p>
+</blockquote>
+<hr />
+<p>#  Firebrick : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real4.markdown">real4</a></p>
+<p><code>read-only</code> <code>static</code></p>
+<blockquote>
+<p>RGBA color of Real4(0.698039, 0.133333, 0.133333, 1) or hex 0xB22222FF
+``` lang=cpp, name=Lightning
+var Firebrick : Real4</p>
+</blockquote>
+<hr />
+<p>#  FloralWhite : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real4.markdown">real4</a></p>
+<p><code>read-only</code> <code>static</code></p>
+<blockquote>
+<p>RGBA color of Real4(1, 0.980392, 0.941176, 1) or hex 0xFFFAF0FF
+``` lang=cpp, name=Lightning
+var FloralWhite : Real4</p>
+</blockquote>
+<hr />
+<p>#  ForestGreen : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real4.markdown">real4</a></p>
+<p><code>read-only</code> <code>static</code></p>
+<blockquote>
+<p>RGBA color of Real4(0.133333, 0.545098, 0.133333, 1) or hex 0x228B22FF
+``` lang=cpp, name=Lightning
+var ForestGreen : Real4</p>
+</blockquote>
+<hr />
+<p>#  Fuchsia : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real4.markdown">real4</a></p>
+<p><code>read-only</code> <code>static</code></p>
+<blockquote>
+<p>RGBA color of Real4(1, 0, 1, 1) or hex 0xFF00FFFF
+``` lang=cpp, name=Lightning
+var Fuchsia : Real4</p>
+</blockquote>
+<hr />
+<p>#  Gainsboro : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real4.markdown">real4</a></p>
+<p><code>read-only</code> <code>static</code></p>
+<blockquote>
+<p>RGBA color of Real4(0.862745, 0.862745, 0.862745, 1) or hex 0xDCDCDCFF
+``` lang=cpp, name=Lightning
+var Gainsboro : Real4</p>
+</blockquote>
+<hr />
+<p>#  GhostWhite : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real4.markdown">real4</a></p>
+<p><code>read-only</code> <code>static</code></p>
+<blockquote>
+<p>RGBA color of Real4(0.972549, 0.972549, 1, 1) or hex 0xF8F8FFFF
+``` lang=cpp, name=Lightning
+var GhostWhite : Real4</p>
+</blockquote>
+<hr />
+<p>#  Gold : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real4.markdown">real4</a></p>
+<p><code>read-only</code> <code>static</code></p>
+<blockquote>
+<p>RGBA color of Real4(1, 0.843137, 0, 1) or hex 0xFFD700FF
+``` lang=cpp, name=Lightning
+var Gold : Real4</p>
+</blockquote>
+<hr />
+<p>#  Goldenrod : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real4.markdown">real4</a></p>
+<p><code>read-only</code> <code>static</code></p>
+<blockquote>
+<p>RGBA color of Real4(0.854902, 0.647059, 0.12549, 1) or hex 0xDAA520FF
+``` lang=cpp, name=Lightning
+var Goldenrod : Real4</p>
+</blockquote>
+<hr />
+<p>#  Gray : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real4.markdown">real4</a></p>
+<p><code>read-only</code> <code>static</code></p>
+<blockquote>
+<p>RGBA color of Real4(0.498039, 0.498039, 0.498039, 1) or hex 0x7F7F7FFF
+``` lang=cpp, name=Lightning
+var Gray : Real4</p>
+</blockquote>
+<hr />
+<p>#  Green : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real4.markdown">real4</a></p>
+<p><code>read-only</code> <code>static</code></p>
+<blockquote>
+<p>RGBA color of Real4(0, 1, 0, 1) or hex 0x00FF00FF
+``` lang=cpp, name=Lightning
+var Green : Real4</p>
+</blockquote>
+<hr />
+<p>#  GreenYellow : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real4.markdown">real4</a></p>
+<p><code>read-only</code> <code>static</code></p>
+<blockquote>
+<p>RGBA color of Real4(0.678431, 1, 0.184314, 1) or hex 0xADFF2FFF
+``` lang=cpp, name=Lightning
+var GreenYellow : Real4</p>
+</blockquote>
+<hr />
+<p>#  Honeydew : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real4.markdown">real4</a></p>
+<p><code>read-only</code> <code>static</code></p>
+<blockquote>
+<p>RGBA color of Real4(0.941176, 1, 0.941176, 1) or hex 0xF0FFF0FF
+``` lang=cpp, name=Lightning
+var Honeydew : Real4</p>
+</blockquote>
+<hr />
+<p>#  HotPink : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real4.markdown">real4</a></p>
+<p><code>read-only</code> <code>static</code></p>
+<blockquote>
+<p>RGBA color of Real4(1, 0.411765, 0.705882, 1) or hex 0xFF69B4FF
+``` lang=cpp, name=Lightning
+var HotPink : Real4</p>
+</blockquote>
+<hr />
+<p>#  IndianRed : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real4.markdown">real4</a></p>
+<p><code>read-only</code> <code>static</code></p>
+<blockquote>
+<p>RGBA color of Real4(0.803922, 0.360784, 0.360784, 1) or hex 0xCD5C5CFF
+``` lang=cpp, name=Lightning
+var IndianRed : Real4</p>
+</blockquote>
+<hr />
+<p>#  Indigo : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real4.markdown">real4</a></p>
+<p><code>read-only</code> <code>static</code></p>
+<blockquote>
+<p>RGBA color of Real4(0.294118, 0, 0.509804, 1) or hex 0x4B0082FF
+``` lang=cpp, name=Lightning
+var Indigo : Real4</p>
+</blockquote>
+<hr />
+<p>#  Ivory : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real4.markdown">real4</a></p>
+<p><code>read-only</code> <code>static</code></p>
+<blockquote>
+<p>RGBA color of Real4(1, 1, 0.941176, 1) or hex 0xFFFFF0FF
+``` lang=cpp, name=Lightning
+var Ivory : Real4</p>
+</blockquote>
+<hr />
+<p>#  Khaki : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real4.markdown">real4</a></p>
+<p><code>read-only</code> <code>static</code></p>
+<blockquote>
+<p>RGBA color of Real4(0.941176, 0.901961, 0.54902, 1) or hex 0xF0E68CFF
+``` lang=cpp, name=Lightning
+var Khaki : Real4</p>
+</blockquote>
+<hr />
+<p>#  Lavender : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real4.markdown">real4</a></p>
+<p><code>read-only</code> <code>static</code></p>
+<blockquote>
+<p>RGBA color of Real4(0.901961, 0.901961, 0.980392, 1) or hex 0xE6E6FAFF
+``` lang=cpp, name=Lightning
+var Lavender : Real4</p>
+</blockquote>
+<hr />
+<p>#  LavenderBlush : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real4.markdown">real4</a></p>
+<p><code>read-only</code> <code>static</code></p>
+<blockquote>
+<p>RGBA color of Real4(1, 0.941176, 0.960784, 1) or hex 0xFFF0F5FF
+``` lang=cpp, name=Lightning
+var LavenderBlush : Real4</p>
+</blockquote>
+<hr />
+<p>#  LawnGreen : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real4.markdown">real4</a></p>
+<p><code>read-only</code> <code>static</code></p>
+<blockquote>
+<p>RGBA color of Real4(0.486275, 0.988235, 0, 1) or hex 0x7CFC00FF
+``` lang=cpp, name=Lightning
+var LawnGreen : Real4</p>
+</blockquote>
+<hr />
+<p>#  LemonChiffon : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real4.markdown">real4</a></p>
+<p><code>read-only</code> <code>static</code></p>
+<blockquote>
+<p>RGBA color of Real4(1, 0.980392, 0.803922, 1) or hex 0xFFFACDFF
+``` lang=cpp, name=Lightning
+var LemonChiffon : Real4</p>
+</blockquote>
+<hr />
+<p>#  LightBlue : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real4.markdown">real4</a></p>
+<p><code>read-only</code> <code>static</code></p>
+<blockquote>
+<p>RGBA color of Real4(0.678431, 0.847059, 0.901961, 1) or hex 0xADD8E6FF
+``` lang=cpp, name=Lightning
+var LightBlue : Real4</p>
+</blockquote>
+<hr />
+<p>#  LightCoral : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real4.markdown">real4</a></p>
+<p><code>read-only</code> <code>static</code></p>
+<blockquote>
+<p>RGBA color of Real4(0.941176, 0.501961, 0.501961, 1) or hex 0xF08080FF
+``` lang=cpp, name=Lightning
+var LightCoral : Real4</p>
+</blockquote>
+<hr />
+<p>#  LightCyan : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real4.markdown">real4</a></p>
+<p><code>read-only</code> <code>static</code></p>
+<blockquote>
+<p>RGBA color of Real4(0.878431, 1, 1, 1) or hex 0xE0FFFFFF
+``` lang=cpp, name=Lightning
+var LightCyan : Real4</p>
+</blockquote>
+<hr />
+<p>#  LightGoldenrod : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real4.markdown">real4</a></p>
+<p><code>read-only</code> <code>static</code></p>
+<blockquote>
+<p>RGBA color of Real4(0.980392, 0.980392, 0.823529, 1) or hex 0xFAFAD2FF
+``` lang=cpp, name=Lightning
+var LightGoldenrod : Real4</p>
+</blockquote>
+<hr />
+<p>#  LightGray : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real4.markdown">real4</a></p>
+<p><code>read-only</code> <code>static</code></p>
+<blockquote>
+<p>RGBA color of Real4(0.827451, 0.827451, 0.827451, 1) or hex 0xD3D3D3FF
+``` lang=cpp, name=Lightning
+var LightGray : Real4</p>
+</blockquote>
+<hr />
+<p>#  LightGreen : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real4.markdown">real4</a></p>
+<p><code>read-only</code> <code>static</code></p>
+<blockquote>
+<p>RGBA color of Real4(0.564706, 0.933333, 0.564706, 1) or hex 0x90EE90FF
+``` lang=cpp, name=Lightning
+var LightGreen : Real4</p>
+</blockquote>
+<hr />
+<p>#  LightPink : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real4.markdown">real4</a></p>
+<p><code>read-only</code> <code>static</code></p>
+<blockquote>
+<p>RGBA color of Real4(1, 0.713726, 0.756863, 1) or hex 0xFFB6C1FF
+``` lang=cpp, name=Lightning
+var LightPink : Real4</p>
+</blockquote>
+<hr />
+<p>#  LightSalmon : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real4.markdown">real4</a></p>
+<p><code>read-only</code> <code>static</code></p>
+<blockquote>
+<p>RGBA color of Real4(1, 0.627451, 0.478431, 1) or hex 0xFFA07AFF
+``` lang=cpp, name=Lightning
+var LightSalmon : Real4</p>
+</blockquote>
+<hr />
+<p>#  LightSeaGreen : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real4.markdown">real4</a></p>
+<p><code>read-only</code> <code>static</code></p>
+<blockquote>
+<p>RGBA color of Real4(0.12549, 0.698039, 0.666667, 1) or hex 0x20B2AAFF
+``` lang=cpp, name=Lightning
+var LightSeaGreen : Real4</p>
+</blockquote>
+<hr />
+<p>#  LightSkyBlue : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real4.markdown">real4</a></p>
+<p><code>read-only</code> <code>static</code></p>
+<blockquote>
+<p>RGBA color of Real4(0.529412, 0.807843, 0.980392, 1) or hex 0x87CEFAFF
+``` lang=cpp, name=Lightning
+var LightSkyBlue : Real4</p>
+</blockquote>
+<hr />
+<p>#  LightSlateGray : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real4.markdown">real4</a></p>
+<p><code>read-only</code> <code>static</code></p>
+<blockquote>
+<p>RGBA color of Real4(0.466667, 0.533333, 0.6, 1) or hex 0x778899FF
+``` lang=cpp, name=Lightning
+var LightSlateGray : Real4</p>
+</blockquote>
+<hr />
+<p>#  LightSteelBlue : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real4.markdown">real4</a></p>
+<p><code>read-only</code> <code>static</code></p>
+<blockquote>
+<p>RGBA color of Real4(0.690196, 0.768627, 0.870588, 1) or hex 0xB0C4DEFF
+``` lang=cpp, name=Lightning
+var LightSteelBlue : Real4</p>
+</blockquote>
+<hr />
+<p>#  LightYellow : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real4.markdown">real4</a></p>
+<p><code>read-only</code> <code>static</code></p>
+<blockquote>
+<p>RGBA color of Real4(1, 1, 0.878431, 1) or hex 0xFFFFE0FF
+``` lang=cpp, name=Lightning
+var LightYellow : Real4</p>
+</blockquote>
+<hr />
+<p>#  Lime : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real4.markdown">real4</a></p>
+<p><code>read-only</code> <code>static</code></p>
+<blockquote>
+<p>RGBA color of Real4(0, 1, 0, 1) or hex 0x00FF00FF
+``` lang=cpp, name=Lightning
+var Lime : Real4</p>
+</blockquote>
+<hr />
+<p>#  LimeGreen : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real4.markdown">real4</a></p>
+<p><code>read-only</code> <code>static</code></p>
+<blockquote>
+<p>RGBA color of Real4(0.196078, 0.803922, 0.196078, 1) or hex 0x32CD32FF
+``` lang=cpp, name=Lightning
+var LimeGreen : Real4</p>
+</blockquote>
+<hr />
+<p>#  Linen : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real4.markdown">real4</a></p>
+<p><code>read-only</code> <code>static</code></p>
+<blockquote>
+<p>RGBA color of Real4(0.980392, 0.941176, 0.901961, 1) or hex 0xFAF0E6FF
+``` lang=cpp, name=Lightning
+var Linen : Real4</p>
+</blockquote>
+<hr />
+<p>#  Magenta : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real4.markdown">real4</a></p>
+<p><code>read-only</code> <code>static</code></p>
+<blockquote>
+<p>RGBA color of Real4(1, 0, 1, 1) or hex 0xFF00FFFF
+``` lang=cpp, name=Lightning
+var Magenta : Real4</p>
+</blockquote>
+<hr />
+<p>#  Maroon : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real4.markdown">real4</a></p>
+<p><code>read-only</code> <code>static</code></p>
+<blockquote>
+<p>RGBA color of Real4(0.498039, 0, 0, 1) or hex 0x7F0000FF
+``` lang=cpp, name=Lightning
+var Maroon : Real4</p>
+</blockquote>
+<hr />
+<p>#  MediumAquamarine : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real4.markdown">real4</a></p>
+<p><code>read-only</code> <code>static</code></p>
+<blockquote>
+<p>RGBA color of Real4(0.4, 0.803922, 0.666667, 1) or hex 0x66CDAAFF
+``` lang=cpp, name=Lightning
+var MediumAquamarine : Real4</p>
+</blockquote>
+<hr />
+<p>#  MediumBlue : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real4.markdown">real4</a></p>
+<p><code>read-only</code> <code>static</code></p>
+<blockquote>
+<p>RGBA color of Real4(0, 0, 0.803922, 1) or hex 0x0000CDFF
+``` lang=cpp, name=Lightning
+var MediumBlue : Real4</p>
+</blockquote>
+<hr />
+<p>#  MediumOrchid : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real4.markdown">real4</a></p>
+<p><code>read-only</code> <code>static</code></p>
+<blockquote>
+<p>RGBA color of Real4(0.729412, 0.333333, 0.827451, 1) or hex 0xBA55D3FF
+``` lang=cpp, name=Lightning
+var MediumOrchid : Real4</p>
+</blockquote>
+<hr />
+<p>#  MediumPurple : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real4.markdown">real4</a></p>
+<p><code>read-only</code> <code>static</code></p>
+<blockquote>
+<p>RGBA color of Real4(0.576471, 0.439216, 0.858824, 1) or hex 0x9370DBFF
+``` lang=cpp, name=Lightning
+var MediumPurple : Real4</p>
+</blockquote>
+<hr />
+<p>#  MediumSeaGreen : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real4.markdown">real4</a></p>
+<p><code>read-only</code> <code>static</code></p>
+<blockquote>
+<p>RGBA color of Real4(0.235294, 0.701961, 0.443137, 1) or hex 0x3CB371FF
+``` lang=cpp, name=Lightning
+var MediumSeaGreen : Real4</p>
+</blockquote>
+<hr />
+<p>#  MediumSlateBlue : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real4.markdown">real4</a></p>
+<p><code>read-only</code> <code>static</code></p>
+<blockquote>
+<p>RGBA color of Real4(0.482353, 0.407843, 0.933333, 1) or hex 0x7B68EEFF
+``` lang=cpp, name=Lightning
+var MediumSlateBlue : Real4</p>
+</blockquote>
+<hr />
+<p>#  MediumSpringGreen : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real4.markdown">real4</a></p>
+<p><code>read-only</code> <code>static</code></p>
+<blockquote>
+<p>RGBA color of Real4(0, 0.980392, 0.603922, 1) or hex 0x00FA9AFF
+``` lang=cpp, name=Lightning
+var MediumSpringGreen : Real4</p>
+</blockquote>
+<hr />
+<p>#  MediumTurquoise : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real4.markdown">real4</a></p>
+<p><code>read-only</code> <code>static</code></p>
+<blockquote>
+<p>RGBA color of Real4(0.282353, 0.819608, 0.8, 1) or hex 0x48D1CCFF
+``` lang=cpp, name=Lightning
+var MediumTurquoise : Real4</p>
+</blockquote>
+<hr />
+<p>#  MediumVioletRed : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real4.markdown">real4</a></p>
+<p><code>read-only</code> <code>static</code></p>
+<blockquote>
+<p>RGBA color of Real4(0.780392, 0.0823529, 0.521569, 1) or hex 0xC71585FF
+``` lang=cpp, name=Lightning
+var MediumVioletRed : Real4</p>
+</blockquote>
+<hr />
+<p>#  MidnightBlue : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real4.markdown">real4</a></p>
+<p><code>read-only</code> <code>static</code></p>
+<blockquote>
+<p>RGBA color of Real4(0.0980392, 0.0980392, 0.439216, 1) or hex 0x191970FF
+``` lang=cpp, name=Lightning
+var MidnightBlue : Real4</p>
+</blockquote>
+<hr />
+<p>#  MintCream : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real4.markdown">real4</a></p>
+<p><code>read-only</code> <code>static</code></p>
+<blockquote>
+<p>RGBA color of Real4(0.960784, 1, 0.980392, 1) or hex 0xF5FFFAFF
+``` lang=cpp, name=Lightning
+var MintCream : Real4</p>
+</blockquote>
+<hr />
+<p>#  MistyRose : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real4.markdown">real4</a></p>
+<p><code>read-only</code> <code>static</code></p>
+<blockquote>
+<p>RGBA color of Real4(1, 0.894118, 0.882353, 1) or hex 0xFFE4E1FF
+``` lang=cpp, name=Lightning
+var MistyRose : Real4</p>
+</blockquote>
+<hr />
+<p>#  Moccasin : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real4.markdown">real4</a></p>
+<p><code>read-only</code> <code>static</code></p>
+<blockquote>
+<p>RGBA color of Real4(1, 0.894118, 0.709804, 1) or hex 0xFFE4B5FF
+``` lang=cpp, name=Lightning
+var Moccasin : Real4</p>
+</blockquote>
+<hr />
+<p>#  NavajoWhite : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real4.markdown">real4</a></p>
+<p><code>read-only</code> <code>static</code></p>
+<blockquote>
+<p>RGBA color of Real4(1, 0.870588, 0.678431, 1) or hex 0xFFDEADFF
+``` lang=cpp, name=Lightning
+var NavajoWhite : Real4</p>
+</blockquote>
+<hr />
+<p>#  Navy : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real4.markdown">real4</a></p>
+<p><code>read-only</code> <code>static</code></p>
+<blockquote>
+<p>RGBA color of Real4(0, 0, 0.501961, 1) or hex 0x000080FF
+``` lang=cpp, name=Lightning
+var Navy : Real4</p>
+</blockquote>
+<hr />
+<p>#  OldLace : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real4.markdown">real4</a></p>
+<p><code>read-only</code> <code>static</code></p>
+<blockquote>
+<p>RGBA color of Real4(0.992157, 0.960784, 0.901961, 1) or hex 0xFDF5E6FF
+``` lang=cpp, name=Lightning
+var OldLace : Real4</p>
+</blockquote>
+<hr />
+<p>#  Olive : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real4.markdown">real4</a></p>
+<p><code>read-only</code> <code>static</code></p>
+<blockquote>
+<p>RGBA color of Real4(0.501961, 0.501961, 0, 1) or hex 0x808000FF
+``` lang=cpp, name=Lightning
+var Olive : Real4</p>
+</blockquote>
+<hr />
+<p>#  OliveDrab : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real4.markdown">real4</a></p>
+<p><code>read-only</code> <code>static</code></p>
+<blockquote>
+<p>RGBA color of Real4(0.419608, 0.556863, 0.137255, 1) or hex 0x6B8E23FF
+``` lang=cpp, name=Lightning
+var OliveDrab : Real4</p>
+</blockquote>
+<hr />
+<p>#  Orange : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real4.markdown">real4</a></p>
+<p><code>read-only</code> <code>static</code></p>
+<blockquote>
+<p>RGBA color of Real4(1, 0.647059, 0, 1) or hex 0xFFA500FF
+``` lang=cpp, name=Lightning
+var Orange : Real4</p>
+</blockquote>
+<hr />
+<p>#  OrangeRed : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real4.markdown">real4</a></p>
+<p><code>read-only</code> <code>static</code></p>
+<blockquote>
+<p>RGBA color of Real4(1, 0.270588, 0, 1) or hex 0xFF4500FF
+``` lang=cpp, name=Lightning
+var OrangeRed : Real4</p>
+</blockquote>
+<hr />
+<p>#  Orchid : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real4.markdown">real4</a></p>
+<p><code>read-only</code> <code>static</code></p>
+<blockquote>
+<p>RGBA color of Real4(0.854902, 0.439216, 0.839216, 1) or hex 0xDA70D6FF
+``` lang=cpp, name=Lightning
+var Orchid : Real4</p>
+</blockquote>
+<hr />
+<p>#  PaleGoldenrod : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real4.markdown">real4</a></p>
+<p><code>read-only</code> <code>static</code></p>
+<blockquote>
+<p>RGBA color of Real4(0.933333, 0.909804, 0.666667, 1) or hex 0xEEE8AAFF
+``` lang=cpp, name=Lightning
+var PaleGoldenrod : Real4</p>
+</blockquote>
+<hr />
+<p>#  PaleGreen : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real4.markdown">real4</a></p>
+<p><code>read-only</code> <code>static</code></p>
+<blockquote>
+<p>RGBA color of Real4(0.596078, 0.984314, 0.596078, 1) or hex 0x98FB98FF
+``` lang=cpp, name=Lightning
+var PaleGreen : Real4</p>
+</blockquote>
+<hr />
+<p>#  PaleTurquoise : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real4.markdown">real4</a></p>
+<p><code>read-only</code> <code>static</code></p>
+<blockquote>
+<p>RGBA color of Real4(0.686275, 0.933333, 0.933333, 1) or hex 0xAFEEEEFF
+``` lang=cpp, name=Lightning
+var PaleTurquoise : Real4</p>
+</blockquote>
+<hr />
+<p>#  PaleVioletRed : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real4.markdown">real4</a></p>
+<p><code>read-only</code> <code>static</code></p>
+<blockquote>
+<p>RGBA color of Real4(0.858824, 0.439216, 0.576471, 1) or hex 0xDB7093FF
+``` lang=cpp, name=Lightning
+var PaleVioletRed : Real4</p>
+</blockquote>
+<hr />
+<p>#  PapayaWhip : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real4.markdown">real4</a></p>
+<p><code>read-only</code> <code>static</code></p>
+<blockquote>
+<p>RGBA color of Real4(1, 0.937255, 0.835294, 1) or hex 0xFFEFD5FF
+``` lang=cpp, name=Lightning
+var PapayaWhip : Real4</p>
+</blockquote>
+<hr />
+<p>#  PeachPuff : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real4.markdown">real4</a></p>
+<p><code>read-only</code> <code>static</code></p>
+<blockquote>
+<p>RGBA color of Real4(1, 0.854902, 0.72549, 1) or hex 0xFFDAB9FF
+``` lang=cpp, name=Lightning
+var PeachPuff : Real4</p>
+</blockquote>
+<hr />
+<p>#  Peru : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real4.markdown">real4</a></p>
+<p><code>read-only</code> <code>static</code></p>
+<blockquote>
+<p>RGBA color of Real4(0.803922, 0.521569, 0.247059, 1) or hex 0xCD853FFF
+``` lang=cpp, name=Lightning
+var Peru : Real4</p>
+</blockquote>
+<hr />
+<p>#  Pink : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real4.markdown">real4</a></p>
+<p><code>read-only</code> <code>static</code></p>
+<blockquote>
+<p>RGBA color of Real4(1, 0.752941, 0.796078, 1) or hex 0xFFC0CBFF
+``` lang=cpp, name=Lightning
+var Pink : Real4</p>
+</blockquote>
+<hr />
+<p>#  Plum : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real4.markdown">real4</a></p>
+<p><code>read-only</code> <code>static</code></p>
+<blockquote>
+<p>RGBA color of Real4(0.866667, 0.627451, 0.866667, 1) or hex 0xDDA0DDFF
+``` lang=cpp, name=Lightning
+var Plum : Real4</p>
+</blockquote>
+<hr />
+<p>#  PowderBlue : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real4.markdown">real4</a></p>
+<p><code>read-only</code> <code>static</code></p>
+<blockquote>
+<p>RGBA color of Real4(0.690196, 0.878431, 0.901961, 1) or hex 0xB0E0E6FF
+``` lang=cpp, name=Lightning
+var PowderBlue : Real4</p>
+</blockquote>
+<hr />
+<p>#  Purple : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real4.markdown">real4</a></p>
+<p><code>read-only</code> <code>static</code></p>
+<blockquote>
+<p>RGBA color of Real4(0.498039, 0, 0.498039, 1) or hex 0x7F007FFF
+``` lang=cpp, name=Lightning
+var Purple : Real4</p>
+</blockquote>
+<hr />
+<p>#  RebeccaPurple : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real4.markdown">real4</a></p>
+<p><code>read-only</code> <code>static</code></p>
+<blockquote>
+<p>RGBA color of Real4(0.4, 0.2, 0.6, 1) or hex 0x663399FF
+``` lang=cpp, name=Lightning
+var RebeccaPurple : Real4</p>
+</blockquote>
+<hr />
+<p>#  Red : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real4.markdown">real4</a></p>
+<p><code>read-only</code> <code>static</code></p>
+<blockquote>
+<p>RGBA color of Real4(1, 0, 0, 1) or hex 0xFF0000FF
+``` lang=cpp, name=Lightning
+var Red : Real4</p>
+</blockquote>
+<hr />
+<p>#  RosyBrown : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real4.markdown">real4</a></p>
+<p><code>read-only</code> <code>static</code></p>
+<blockquote>
+<p>RGBA color of Real4(0.737255, 0.560784, 0.560784, 1) or hex 0xBC8F8FFF
+``` lang=cpp, name=Lightning
+var RosyBrown : Real4</p>
+</blockquote>
+<hr />
+<p>#  RoyalBlue : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real4.markdown">real4</a></p>
+<p><code>read-only</code> <code>static</code></p>
+<blockquote>
+<p>RGBA color of Real4(0.254902, 0.411765, 0.882353, 1) or hex 0x4169E1FF
+``` lang=cpp, name=Lightning
+var RoyalBlue : Real4</p>
+</blockquote>
+<hr />
+<p>#  SaddleBrown : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real4.markdown">real4</a></p>
+<p><code>read-only</code> <code>static</code></p>
+<blockquote>
+<p>RGBA color of Real4(0.545098, 0.270588, 0.0745098, 1) or hex 0x8B4513FF
+``` lang=cpp, name=Lightning
+var SaddleBrown : Real4</p>
+</blockquote>
+<hr />
+<p>#  Salmon : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real4.markdown">real4</a></p>
+<p><code>read-only</code> <code>static</code></p>
+<blockquote>
+<p>RGBA color of Real4(0.980392, 0.501961, 0.447059, 1) or hex 0xFA8072FF
+``` lang=cpp, name=Lightning
+var Salmon : Real4</p>
+</blockquote>
+<hr />
+<p>#  SandyBrown : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real4.markdown">real4</a></p>
+<p><code>read-only</code> <code>static</code></p>
+<blockquote>
+<p>RGBA color of Real4(0.956863, 0.643137, 0.376471, 1) or hex 0xF4A460FF
+``` lang=cpp, name=Lightning
+var SandyBrown : Real4</p>
+</blockquote>
+<hr />
+<p>#  SeaGreen : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real4.markdown">real4</a></p>
+<p><code>read-only</code> <code>static</code></p>
+<blockquote>
+<p>RGBA color of Real4(0.180392, 0.545098, 0.341176, 1) or hex 0x2E8B57FF
+``` lang=cpp, name=Lightning
+var SeaGreen : Real4</p>
+</blockquote>
+<hr />
+<p>#  Seashell : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real4.markdown">real4</a></p>
+<p><code>read-only</code> <code>static</code></p>
+<blockquote>
+<p>RGBA color of Real4(1, 0.960784, 0.933333, 1) or hex 0xFFF5EEFF
+``` lang=cpp, name=Lightning
+var Seashell : Real4</p>
+</blockquote>
+<hr />
+<p>#  Sienna : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real4.markdown">real4</a></p>
+<p><code>read-only</code> <code>static</code></p>
+<blockquote>
+<p>RGBA color of Real4(0.627451, 0.321569, 0.176471, 1) or hex 0xA0522DFF
+``` lang=cpp, name=Lightning
+var Sienna : Real4</p>
+</blockquote>
+<hr />
+<p>#  Silver : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real4.markdown">real4</a></p>
+<p><code>read-only</code> <code>static</code></p>
+<blockquote>
+<p>RGBA color of Real4(0.752941, 0.752941, 0.752941, 1) or hex 0xC0C0C0FF
+``` lang=cpp, name=Lightning
+var Silver : Real4</p>
+</blockquote>
+<hr />
+<p>#  SkyBlue : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real4.markdown">real4</a></p>
+<p><code>read-only</code> <code>static</code></p>
+<blockquote>
+<p>RGBA color of Real4(0.529412, 0.807843, 0.921569, 1) or hex 0x87CEEBFF
+``` lang=cpp, name=Lightning
+var SkyBlue : Real4</p>
+</blockquote>
+<hr />
+<p>#  SlateBlue : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real4.markdown">real4</a></p>
+<p><code>read-only</code> <code>static</code></p>
+<blockquote>
+<p>RGBA color of Real4(0.415686, 0.352941, 0.803922, 1) or hex 0x6A5ACDFF
+``` lang=cpp, name=Lightning
+var SlateBlue : Real4</p>
+</blockquote>
+<hr />
+<p>#  SlateGray : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real4.markdown">real4</a></p>
+<p><code>read-only</code> <code>static</code></p>
+<blockquote>
+<p>RGBA color of Real4(0.439216, 0.501961, 0.564706, 1) or hex 0x708090FF
+``` lang=cpp, name=Lightning
+var SlateGray : Real4</p>
+</blockquote>
+<hr />
+<p>#  Snow : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real4.markdown">real4</a></p>
+<p><code>read-only</code> <code>static</code></p>
+<blockquote>
+<p>RGBA color of Real4(1, 0.980392, 0.980392, 1) or hex 0xFFFAFAFF
+``` lang=cpp, name=Lightning
+var Snow : Real4</p>
+</blockquote>
+<hr />
+<p>#  SpringGreen : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real4.markdown">real4</a></p>
+<p><code>read-only</code> <code>static</code></p>
+<blockquote>
+<p>RGBA color of Real4(0, 1, 0.498039, 1) or hex 0x00FF7FFF
+``` lang=cpp, name=Lightning
+var SpringGreen : Real4</p>
+</blockquote>
+<hr />
+<p>#  SteelBlue : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real4.markdown">real4</a></p>
+<p><code>read-only</code> <code>static</code></p>
+<blockquote>
+<p>RGBA color of Real4(0.27451, 0.509804, 0.705882, 1) or hex 0x4682B4FF
+``` lang=cpp, name=Lightning
+var SteelBlue : Real4</p>
+</blockquote>
+<hr />
+<p>#  Tan : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real4.markdown">real4</a></p>
+<p><code>read-only</code> <code>static</code></p>
+<blockquote>
+<p>RGBA color of Real4(0.823529, 0.705882, 0.54902, 1) or hex 0xD2B48CFF
+``` lang=cpp, name=Lightning
+var Tan : Real4</p>
+</blockquote>
+<hr />
+<p>#  Teal : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real4.markdown">real4</a></p>
+<p><code>read-only</code> <code>static</code></p>
+<blockquote>
+<p>RGBA color of Real4(0, 0.501961, 0.501961, 1) or hex 0x008080FF
+``` lang=cpp, name=Lightning
+var Teal : Real4</p>
+</blockquote>
+<hr />
+<p>#  Thistle : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real4.markdown">real4</a></p>
+<p><code>read-only</code> <code>static</code></p>
+<blockquote>
+<p>RGBA color of Real4(0.847059, 0.74902, 0.847059, 1) or hex 0xD8BFD8FF
+``` lang=cpp, name=Lightning
+var Thistle : Real4</p>
+</blockquote>
+<hr />
+<p>#  Tomato : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real4.markdown">real4</a></p>
+<p><code>read-only</code> <code>static</code></p>
+<blockquote>
+<p>RGBA color of Real4(1, 0.388235, 0.278431, 1) or hex 0xFF6347FF
+``` lang=cpp, name=Lightning
+var Tomato : Real4</p>
+</blockquote>
+<hr />
+<p>#  Turquoise : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real4.markdown">real4</a></p>
+<p><code>read-only</code> <code>static</code></p>
+<blockquote>
+<p>RGBA color of Real4(0.25098, 0.878431, 0.815686, 1) or hex 0x40E0D0FF
+``` lang=cpp, name=Lightning
+var Turquoise : Real4</p>
+</blockquote>
+<hr />
+<p>#  Violet : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real4.markdown">real4</a></p>
+<p><code>read-only</code> <code>static</code></p>
+<blockquote>
+<p>RGBA color of Real4(0.933333, 0.509804, 0.933333, 1) or hex 0xEE82EEFF
+``` lang=cpp, name=Lightning
+var Violet : Real4</p>
+</blockquote>
+<hr />
+<p>#  Wheat : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real4.markdown">real4</a></p>
+<p><code>read-only</code> <code>static</code></p>
+<blockquote>
+<p>RGBA color of Real4(0.960784, 0.870588, 0.701961, 1) or hex 0xF5DEB3FF
+``` lang=cpp, name=Lightning
+var Wheat : Real4</p>
+</blockquote>
+<hr />
+<p>#  White : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real4.markdown">real4</a></p>
+<p><code>read-only</code> <code>static</code></p>
+<blockquote>
+<p>RGBA color of Real4(1, 1, 1, 1) or hex 0xFFFFFFFF
+``` lang=cpp, name=Lightning
+var White : Real4</p>
+</blockquote>
+<hr />
+<p>#  WhiteSmoke : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real4.markdown">real4</a></p>
+<p><code>read-only</code> <code>static</code></p>
+<blockquote>
+<p>RGBA color of Real4(0.960784, 0.960784, 0.960784, 1) or hex 0xF5F5F5FF
+``` lang=cpp, name=Lightning
+var WhiteSmoke : Real4</p>
+</blockquote>
+<hr />
+<p>#  Yellow : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real4.markdown">real4</a></p>
+<p><code>read-only</code> <code>static</code></p>
+<blockquote>
+<p>RGBA color of Real4(1, 1, 0, 1) or hex 0xFFFF00FF
+``` lang=cpp, name=Lightning
+var Yellow : Real4</p>
+</blockquote>
+<hr />
+<p>#  YellowGreen : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real4.markdown">real4</a></p>
+<p><code>read-only</code> <code>static</code></p>
+<blockquote>
+<p>RGBA color of Real4(0.603922, 0.803922, 0.196078, 1) or hex 0x9ACD32FF
+``` lang=cpp, name=Lightning
+var YellowGreen : Real4</p>
+</blockquote>
+<hr />
+<p>#  Methods</p>
+<hr /></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+                <p>Copyright &copy; 2021 Plasma Engine. Released under the MIT License.</p>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../../js/base.js" defer></script>
+        <script src="../../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

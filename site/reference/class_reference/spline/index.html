@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../../img/favicon.ico">
+        <title>Spline - Docs | Plasma Engine</title>
+        <link href="../../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/docco.min.css">
+
+        <script src="../../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../../..">Docs | Plasma Engine</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href="../../.." class="nav-link">Home</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="/getting_started/" class="nav-link">Getting Started</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Manual <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../manual/" class="dropdown-item">Manual</a>
+</li>
+                                    
+<li>
+    <a href="../../../manual/plasmamanual/ai/" class="dropdown-item">AI</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Architecture</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../manual/plasmamanual/architecture/architecture/" class="dropdown-item">Architecture</a>
+</li>
+            
+<li>
+    <a href="../../../manual/plasmamanual/architecture/archetypes/archtype_basics.markdown" class="dropdown-item">Archtypes</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Cogs</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../manual/plasmamanual/architecture/cogs/cogs/" class="dropdown-item">Cogs</a>
+</li>
+            
+<li>
+    <a href="../../../manual/plasmamanual/architecture/cogs/gameobjectsconcept/" class="dropdown-item">Game Objects</a>
+</li>
+            
+<li>
+    <a href="../../../manual/plasmamanual/architecture/cogs/objectstore/" class="dropdown-item">Object Store</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Objects</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../manual/plasmamanual/architecture/objects/objects/" class="dropdown-item">Objects</a>
+</li>
+            
+<li>
+    <a href="../../../manual/plasmamanual/architecture/objects/gamesession/" class="dropdown-item">Gamesession</a>
+</li>
+            
+<li>
+    <a href="../../../manual/plasmamanual/architecture/objects/spaces/" class="dropdown-item">Spaces</a>
+</li>
+            
+<li>
+    <a href="../../../manual/plasmamanual/architecture/objects/levelsettings/" class="dropdown-item">Levelsettings</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Resources</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../manual/plasmamanual/architecture/resources/resource.markdown" class="dropdown-item">Resources</a>
+</li>
+            
+<li>
+    <a href="../../../manual/plasmamanual/architecture/resources/level/" class="dropdown-item">Levels</a>
+</li>
+            
+<li>
+    <a href="../../../manual/plasmamanual/architecture/fonts/fonts.markdown" class="dropdown-item">Fonts</a>
+</li>
+            
+<li>
+    <a href="../../../manual/plasmamanual/architecture/resources/resourcestable.markdown" class="dropdown-item">Resource Table</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                                    
+<li>
+    <a href="../../../manual/plasmamanual/audio/" class="dropdown-item">Audio</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Editor</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../manual/plasmamanual/editor/" class="dropdown-item">Editor</a>
+</li>
+            
+<li>
+    <a href="../../../manual/plasmamanual/editor/tags/" class="dropdown-item">Tags</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Reference <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../" class="dropdown-item">Index</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Contributing <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../source_docs/getting_started.md" class="dropdown-item">Getting Started</a>
+</li>
+                                    
+<li>
+    <a href="../../../source_docs/plasma_code/" class="dropdown-item">Plasma Code</a>
+</li>
+                                    
+<li>
+    <a href="../../../source_docs/plasma_overview/" class="dropdown-item">Plasma Overview</a>
+</li>
+                                    
+<li>
+    <a href="../../../source_docs/components.md" class="dropdown-item">Components</a>
+</li>
+                                    
+<li>
+    <a href="../../../source_docs/custom_event_names/" class="dropdown-item">Custom Event Names</a>
+</li>
+                                    
+<li>
+    <a href="../../../source_docs/editor/" class="dropdown-item">Editor</a>
+</li>
+                                    
+<li>
+    <a href="../../../source_docs/engine/" class="dropdown-item">Engine</a>
+</li>
+                                    
+<li>
+    <a href="../../../source_docs/enums/" class="dropdown-item">Enums</a>
+</li>
+                                    
+<li>
+    <a href="../../../source_docs/meta_bindings.markdown" class="dropdown-item">Meta Binding</a>
+</li>
+                                    
+<li>
+    <a href="../../../source_docs/platform/" class="dropdown-item">Adding Platforms</a>
+</li>
+                                    
+<li>
+    <a href="../../../source_docs/widgets/" class="dropdown-item">Widgets</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a href="https://github.com/PlasmaEngine/PlasmaDocs/edit/master/docs/reference/class_reference/spline.markdown" class="nav-link"><i class="fa fa-github"></i> Edit on GitHub</a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<p><code>Engine</code></p>
+<p>(NOTE) A spline built from control points. Bakes out the curve using an error term (distance from actual spline). Provides an interface to sample the curve at a given arc-length distance in order to provide constant speed interpolation.</p>
+<table>
+<thead>
+<tr>
+<th>Methods</th>
+<th>Properties</th>
+<th>Base Classes</th>
+<th>Derived Classes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/spline.markdown#clone-plasma-engine-docume"> Clone</a></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/spline.markdown#bakedpoints-plasma-engine"> BakedPoints</a></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/referencecountedeventobject.markdown">referencecountedeventobject</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/spline.markdown#create-plasma-engine-docum"> Create</a></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/spline.markdown#closed-plasma-engine-docum"> Closed</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/spline.markdown#debugdraw-void"> DebugDraw</a></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/spline.markdown#controlpoints-plasma-engin"> ControlPoints</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/spline.markdown#forcerebuild-void"> ForceRebuild</a></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/spline.markdown#error-plasma-engine-docume"> Error</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/spline.markdown#rebuildifmodified-void"> RebuildIfModified</a></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/spline.markdown#splinetype-plasma-engine-d"> SplineType</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/spline.markdown#sampledistance-plasma-engi"> SampleDistance</a></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/spline.markdown#totaldistance-plasma-engin"> TotalDistance</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/spline.markdown#samplenormalized-plasma-en"> SampleNormalized</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>#  Properties</p>
+<hr />
+<p>#  BakedPoints : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/splinebakedpoints.markdown">splinebakedpoints</a></p>
+<p><code>read-only</code></p>
+<blockquote>
+<p>The read-only curve points baked out to line segments using the provided error.
+``` lang=cpp, name=Lightning
+var BakedPoints : SplineBakedPoints</p>
+</blockquote>
+<hr />
+<p>#  Closed : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown">boolean</a></p>
+<blockquote>
+<p>Does the spline loop back on itself?
+``` lang=cpp, name=Lightning
+var Closed : Boolean</p>
+</blockquote>
+<hr />
+<p>#  ControlPoints : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/splinecontrolpoints.markdown">splinecontrolpoints</a></p>
+<p><code>read-only</code></p>
+<blockquote>
+<p>The control points used to bake out the curve.
+``` lang=cpp, name=Lightning
+var ControlPoints : SplineControlPoints</p>
+</blockquote>
+<hr />
+<p>#  Error : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown">real</a></p>
+<blockquote>
+<p>The max number of units that a line segment is allowed to deviate from the curve.
+``` lang=cpp, name=Lightning
+var Error : Real</p>
+</blockquote>
+<hr />
+<p>#  SplineType : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#splinetype">SplineType</a></p>
+<blockquote>
+<p>The kind of spline (Linear, BSpline, CatmullRom). Determines how the control points affect the curve.
+``` lang=cpp, name=Lightning
+var SplineType : SplineType</p>
+</blockquote>
+<hr />
+<p>#  TotalDistance : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown">real</a></p>
+<p><code>read-only</code></p>
+<blockquote>
+<p>The total arc-length of the curve. Use to normalize the curve if you wish.
+``` lang=cpp, name=Lightning
+var TotalDistance : Real</p>
+</blockquote>
+<hr />
+<p>#  Methods</p>
+<hr />
+<p>#  Clone : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/spline.markdown">spline</a></p>
+<blockquote>
+<p>Create a new copy of this spline.
+|Name|Type|Description|
+|---|---|---|
+<code>lang=cpp, name=Lightning
+function Clone() : Spline</code> </p>
+</blockquote>
+<hr />
+<p>#  Create : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/spline.markdown">spline</a></p>
+<p><code>static</code></p>
+<blockquote>
+<p>Create a new instance of a spline.
+|Name|Type|Description|
+|---|---|---|
+<code>lang=cpp, name=Lightning
+function Create() : Spline</code> </p>
+</blockquote>
+<hr />
+<p>#  DebugDraw : Void</p>
+<blockquote>
+<p>Draw the baked points of the curve with the provided color.
+|Name|Type|Description|
+|---|---|---|
+|color|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real4.markdown">real4</a>| |
+<code>lang=cpp, name=Lightning
+function DebugDraw(color : Real4)</code> </p>
+</blockquote>
+<hr />
+<p>#  ForceRebuild : Void</p>
+<blockquote>
+<p>Forcibly rebuild the baked points from the control points.
+|Name|Type|Description|
+|---|---|---|
+<code>lang=cpp, name=Lightning
+function ForceRebuild()</code> </p>
+</blockquote>
+<hr />
+<p>#  RebuildIfModified : Void</p>
+<blockquote>
+<p>Rebuild the baked points from the control points if they have changed. Should not need to be manually called unless the user wants to control the timing when the points are baked.
+|Name|Type|Description|
+|---|---|---|
+<code>lang=cpp, name=Lightning
+function RebuildIfModified()</code> </p>
+</blockquote>
+<hr />
+<p>#  SampleDistance : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/splinesampledata.markdown">splinesampledata</a></p>
+<blockquote>
+<p>Samples the curve at a given arc-length distance.
+|Name|Type|Description|
+|---|---|---|
+|distance|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown">real</a>| |
+<code>lang=cpp, name=Lightning
+function SampleDistance(distance : Real) : SplineSampleData</code> </p>
+</blockquote>
+<hr />
+<p>#  SampleNormalized : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/splinesampledata.markdown">splinesampledata</a></p>
+<blockquote>
+<p>Samples the curve with a time in the range of [0, 1].
+|Name|Type|Description|
+|---|---|---|
+|time|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown">real</a>| |
+<code>lang=cpp, name=Lightning
+function SampleNormalized(time : Real) : SplineSampleData</code> </p>
+</blockquote>
+<hr /></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+                <p>Copyright &copy; 2021 Plasma Engine. Released under the MIT License.</p>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../../js/base.js" defer></script>
+        <script src="../../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

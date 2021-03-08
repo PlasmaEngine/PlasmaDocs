@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../../img/favicon.ico">
+        <title>Soundinstance - Docs | Plasma Engine</title>
+        <link href="../../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/docco.min.css">
+
+        <script src="../../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../../..">Docs | Plasma Engine</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href="../../.." class="nav-link">Home</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="/getting_started/" class="nav-link">Getting Started</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Manual <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../manual/" class="dropdown-item">Manual</a>
+</li>
+                                    
+<li>
+    <a href="../../../manual/plasmamanual/ai/" class="dropdown-item">AI</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Architecture</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../manual/plasmamanual/architecture/architecture/" class="dropdown-item">Architecture</a>
+</li>
+            
+<li>
+    <a href="../../../manual/plasmamanual/architecture/archetypes/archtype_basics.markdown" class="dropdown-item">Archtypes</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Cogs</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../manual/plasmamanual/architecture/cogs/cogs/" class="dropdown-item">Cogs</a>
+</li>
+            
+<li>
+    <a href="../../../manual/plasmamanual/architecture/cogs/gameobjectsconcept/" class="dropdown-item">Game Objects</a>
+</li>
+            
+<li>
+    <a href="../../../manual/plasmamanual/architecture/cogs/objectstore/" class="dropdown-item">Object Store</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Objects</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../manual/plasmamanual/architecture/objects/objects/" class="dropdown-item">Objects</a>
+</li>
+            
+<li>
+    <a href="../../../manual/plasmamanual/architecture/objects/gamesession/" class="dropdown-item">Gamesession</a>
+</li>
+            
+<li>
+    <a href="../../../manual/plasmamanual/architecture/objects/spaces/" class="dropdown-item">Spaces</a>
+</li>
+            
+<li>
+    <a href="../../../manual/plasmamanual/architecture/objects/levelsettings/" class="dropdown-item">Levelsettings</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Resources</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../manual/plasmamanual/architecture/resources/resource.markdown" class="dropdown-item">Resources</a>
+</li>
+            
+<li>
+    <a href="../../../manual/plasmamanual/architecture/resources/level/" class="dropdown-item">Levels</a>
+</li>
+            
+<li>
+    <a href="../../../manual/plasmamanual/architecture/fonts/fonts.markdown" class="dropdown-item">Fonts</a>
+</li>
+            
+<li>
+    <a href="../../../manual/plasmamanual/architecture/resources/resourcestable.markdown" class="dropdown-item">Resource Table</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                                    
+<li>
+    <a href="../../../manual/plasmamanual/audio/" class="dropdown-item">Audio</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Editor</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../manual/plasmamanual/editor/" class="dropdown-item">Editor</a>
+</li>
+            
+<li>
+    <a href="../../../manual/plasmamanual/editor/tags/" class="dropdown-item">Tags</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Reference <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../" class="dropdown-item">Index</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Contributing <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../source_docs/getting_started.md" class="dropdown-item">Getting Started</a>
+</li>
+                                    
+<li>
+    <a href="../../../source_docs/plasma_code/" class="dropdown-item">Plasma Code</a>
+</li>
+                                    
+<li>
+    <a href="../../../source_docs/plasma_overview/" class="dropdown-item">Plasma Overview</a>
+</li>
+                                    
+<li>
+    <a href="../../../source_docs/components.md" class="dropdown-item">Components</a>
+</li>
+                                    
+<li>
+    <a href="../../../source_docs/custom_event_names/" class="dropdown-item">Custom Event Names</a>
+</li>
+                                    
+<li>
+    <a href="../../../source_docs/editor/" class="dropdown-item">Editor</a>
+</li>
+                                    
+<li>
+    <a href="../../../source_docs/engine/" class="dropdown-item">Engine</a>
+</li>
+                                    
+<li>
+    <a href="../../../source_docs/enums/" class="dropdown-item">Enums</a>
+</li>
+                                    
+<li>
+    <a href="../../../source_docs/meta_bindings.markdown" class="dropdown-item">Meta Binding</a>
+</li>
+                                    
+<li>
+    <a href="../../../source_docs/platform/" class="dropdown-item">Adding Platforms</a>
+</li>
+                                    
+<li>
+    <a href="../../../source_docs/widgets/" class="dropdown-item">Widgets</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a href="https://github.com/PlasmaEngine/PlasmaDocs/edit/master/docs/reference/class_reference/soundinstance.markdown" class="nav-link"><i class="fa fa-github"></i> Edit on GitHub</a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<p><code>Sound</code></p>
+<p>(NOTE) The object associated with a currently playing sound.</p>
+<table>
+<thead>
+<tr>
+<th>Methods</th>
+<th>Properties</th>
+<th>Base Classes</th>
+<th>Derived Classes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/soundinstance.markdown#interpolatedecibels-void"> InterpolateDecibels</a></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/soundinstance.markdown#customeventtime-plasma-eng"> CustomEventTime</a></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/referencecountedeventobject.markdown">referencecountedeventobject</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/soundinstance.markdown#interpolatepitch-void"> InterpolatePitch</a></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/soundinstance.markdown#decibels-plasma-engine-doc"> Decibels</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/soundinstance.markdown#interpolatesemitones-voi"> InterpolateSemitones</a></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/soundinstance.markdown#endtime-plasma-engine-docu"> EndTime</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/soundinstance.markdown#interpolatevolume-void"> InterpolateVolume</a></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/soundinstance.markdown#filelength-plasma-engine-d"> FileLength</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/soundinstance.markdown#stop-void"> Stop</a></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/soundinstance.markdown#isplaying-plasma-engine-do"> IsPlaying</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/soundinstance.markdown#loopendtime-plasma-engine"> LoopEndTime</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/soundinstance.markdown#looping-plasma-engine-docu"> Looping</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/soundinstance.markdown#loopstarttime-plasma-engin"> LoopStartTime</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/soundinstance.markdown#paused-plasma-engine-docum"> Paused</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/soundinstance.markdown#pitch-plasma-engine-docume"> Pitch</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/soundinstance.markdown#semitones-plasma-engine-do"> Semitones</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/soundinstance.markdown#soundname-plasma-engine-do"> SoundName</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/soundinstance.markdown#soundnode-plasma-engine-do"> SoundNode</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/soundinstance.markdown#time-plasma-engine-documen"> Time</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/soundinstance.markdown#volume-plasma-engine-docum"> Volume</a></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>#  Properties</p>
+<hr />
+<p>#  CustomEventTime : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown">real</a></p>
+<blockquote>
+<p>The time (in seconds from the beginning of the file) to get a MusicCustomTime event.
+``` lang=cpp, name=Lightning
+var CustomEventTime : Real</p>
+</blockquote>
+<hr />
+<p>#  Decibels : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown">real</a></p>
+<blockquote>
+<p>The volume adjustment (in decibels) of the SoundInstance, initially set by the SoundCue's Decibels property. A value of 0 does nothing, 6 will double the sound's volume, -6 will halve it. The Decibels property is linked to the Volume property (changing one will change the other).
+``` lang=cpp, name=Lightning
+var Decibels : Real</p>
+</blockquote>
+<hr />
+<p>#  EndTime : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown">real</a></p>
+<blockquote>
+<p>The time in seconds from the beginning of the file that the instance will stop.
+``` lang=cpp, name=Lightning
+var EndTime : Real</p>
+</blockquote>
+<hr />
+<p>#  FileLength : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown">real</a></p>
+<p><code>read-only</code></p>
+<blockquote>
+<p>The length of the entire audio file, in seconds.
+``` lang=cpp, name=Lightning
+var FileLength : Real</p>
+</blockquote>
+<hr />
+<p>#  IsPlaying : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown">boolean</a></p>
+<p><code>read-only</code></p>
+<blockquote>
+<p>This Property will be true while the SoundInstance is playing, then will become false when its sound has stopped.
+``` lang=cpp, name=Lightning
+var IsPlaying : Boolean</p>
+</blockquote>
+<hr />
+<p>#  LoopEndTime : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown">real</a></p>
+<blockquote>
+<p>The time in seconds from the beginning of the file that the instance will stop and jump back when looping.
+``` lang=cpp, name=Lightning
+var LoopEndTime : Real</p>
+</blockquote>
+<hr />
+<p>#  Looping : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown">boolean</a></p>
+<blockquote>
+<p>When this Property is true the SoundInstance will loop indefinitely. If changed to false while a SoundInstance is looping the SoundInstance will continue playing to its EndTime and then stop.
+``` lang=cpp, name=Lightning
+var Looping : Boolean</p>
+</blockquote>
+<hr />
+<p>#  LoopStartTime : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown">real</a></p>
+<blockquote>
+<p>The time in seconds from the beginning of the file that the instance will jump back to when it loops.
+``` lang=cpp, name=Lightning
+var LoopStartTime : Real</p>
+</blockquote>
+<hr />
+<p>#  Paused : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown">boolean</a></p>
+<blockquote>
+<p>Setting this Property to true will pause a currently playing SoundInstance. Setting it to false will resume playback.
+``` lang=cpp, name=Lightning
+var Paused : Boolean</p>
+</blockquote>
+<hr />
+<p>#  Pitch : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown">real</a></p>
+<blockquote>
+<p>The pitch adjustment of the SoundInstance, initially set by the SoundCue's Pitch property. A value of 0 will do nothing, 1 will raise the pitch by an octave and speed up the sound,.
+``` lang=cpp, name=Lightning
+var Pitch : Real</p>
+</blockquote>
+<hr />
+<p>#  Semitones : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown">real</a></p>
+<blockquote>
+<p>The pitch adjustment, in semitones (or half-steps), of the SoundInstance, initially set by the SoundCue's Semitones property. A value of 0 will do nothing, 12 will raise the pitch by an octave and speed up the sound, and -12 will lower the sound by an octave and slow it down. The Semitones property is linked to the Pitch property (changing one will change the other).
+``` lang=cpp, name=Lightning
+var Semitones : Real</p>
+</blockquote>
+<hr />
+<p>#  SoundName : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown">string</a></p>
+<p><code>read-only</code></p>
+<blockquote>
+<p>The name of the Sound being played by this SoundInstance.
+``` lang=cpp, name=Lightning
+var SoundName : String</p>
+</blockquote>
+<hr />
+<p>#  SoundNode : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/soundnode.markdown">soundnode</a></p>
+<p><code>read-only</code></p>
+<blockquote>
+<p>The SoundNode associated with this SoundInstance.
+``` lang=cpp, name=Lightning
+var SoundNode : SoundNode</p>
+</blockquote>
+<hr />
+<p>#  Time : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown">real</a></p>
+<blockquote>
+<p>This property tells you to the current playback position, in seconds from the beginning of the file, and allows you to tell the instance to change its playback position to a different time. Be aware that the time will not be precisely accurate. If the Sound resource used to play the SoundInstance has Streamed selected, you cannot set the playback position.
+``` lang=cpp, name=Lightning
+var Time : Real</p>
+</blockquote>
+<hr />
+<p>#  Volume : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown">real</a></p>
+<blockquote>
+<p>The volume adjustment of the SoundInstance, initially set by the SoundCue's Volume property. A value of 1 does nothing, 2 will double the sound's volume, 0.5 will halve it. The Volume property is linked to the Decibels property (changing one will change the other).
+``` lang=cpp, name=Lightning
+var Volume : Real</p>
+</blockquote>
+<hr />
+<p>#  Methods</p>
+<hr />
+<p>#  InterpolateDecibels : Void</p>
+<blockquote>
+<p>Interpolates the SoundInstance's Decibels property from its current value to the value passed in as the first parameter, over the number of seconds passed in as the second parameter.
+|Name|Type|Description|
+|---|---|---|
+|decibels|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown">real</a>| |
+|interpolationTime|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown">real</a>| |
+<code>lang=cpp, name=Lightning
+function InterpolateDecibels(decibels : Real, interpolationTime : Real)</code> </p>
+</blockquote>
+<hr />
+<p>#  InterpolatePitch : Void</p>
+<blockquote>
+<p>Interpolates the SoundInstance's Pitch property from its current value to the value passed in as the first parameter, over the number of seconds passed in as the second parameter.
+|Name|Type|Description|
+|---|---|---|
+|pitch|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown">real</a>| |
+|interpolationTime|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown">real</a>| |
+<code>lang=cpp, name=Lightning
+function InterpolatePitch(pitch : Real, interpolationTime : Real)</code> </p>
+</blockquote>
+<hr />
+<p>#  InterpolateSemitones : Void</p>
+<blockquote>
+<p>Interpolates the SoundInstance's Semitones property from its current value to the value passed in as the first parameter, over the number of seconds passed in as the second parameter.
+|Name|Type|Description|
+|---|---|---|
+|pitchSemitones|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown">real</a>| |
+|interpolationTime|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown">real</a>| |
+<code>lang=cpp, name=Lightning
+function InterpolateSemitones(pitchSemitones : Real, interpolationTime : Real)</code> </p>
+</blockquote>
+<hr />
+<p>#  InterpolateVolume : Void</p>
+<blockquote>
+<p>Interpolates the SoundInstance's Volume property from its current value to the value passed in as the first parameter, over the number of seconds passed in as the second parameter.
+|Name|Type|Description|
+|---|---|---|
+|volume|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown">real</a>| |
+|interpolationTime|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown">real</a>| |
+<code>lang=cpp, name=Lightning
+function InterpolateVolume(volume : Real, interpolationTime : Real)</code> </p>
+</blockquote>
+<hr />
+<p>#  Stop : Void</p>
+<blockquote>
+<p>Stops the playback of this SoundInstance. It cannot be re-started.
+|Name|Type|Description|
+|---|---|---|
+<code>lang=cpp, name=Lightning
+function Stop()</code> </p>
+</blockquote>
+<hr /></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+                <p>Copyright &copy; 2021 Plasma Engine. Released under the MIT License.</p>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../../js/base.js" defer></script>
+        <script src="../../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

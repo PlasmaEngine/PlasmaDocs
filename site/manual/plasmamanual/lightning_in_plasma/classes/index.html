@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../../../img/favicon.ico">
+        <title>Classes - Docs | Plasma Engine</title>
+        <link href="../../../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/docco.min.css">
+
+        <script src="../../../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../../../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../../../..">Docs | Plasma Engine</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href="../../../.." class="nav-link">Home</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="/getting_started/" class="nav-link">Getting Started</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Manual <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../" class="dropdown-item">Manual</a>
+</li>
+                                    
+<li>
+    <a href="../../ai/" class="dropdown-item">AI</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Architecture</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../architecture/architecture/" class="dropdown-item">Architecture</a>
+</li>
+            
+<li>
+    <a href="../../architecture/archetypes/archtype_basics.markdown" class="dropdown-item">Archtypes</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Cogs</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../architecture/cogs/cogs/" class="dropdown-item">Cogs</a>
+</li>
+            
+<li>
+    <a href="../../architecture/cogs/gameobjectsconcept/" class="dropdown-item">Game Objects</a>
+</li>
+            
+<li>
+    <a href="../../architecture/cogs/objectstore/" class="dropdown-item">Object Store</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Objects</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../architecture/objects/objects/" class="dropdown-item">Objects</a>
+</li>
+            
+<li>
+    <a href="../../architecture/objects/gamesession/" class="dropdown-item">Gamesession</a>
+</li>
+            
+<li>
+    <a href="../../architecture/objects/spaces/" class="dropdown-item">Spaces</a>
+</li>
+            
+<li>
+    <a href="../../architecture/objects/levelsettings/" class="dropdown-item">Levelsettings</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Resources</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../architecture/resources/resource.markdown" class="dropdown-item">Resources</a>
+</li>
+            
+<li>
+    <a href="../../architecture/resources/level/" class="dropdown-item">Levels</a>
+</li>
+            
+<li>
+    <a href="../../architecture/fonts/fonts.markdown" class="dropdown-item">Fonts</a>
+</li>
+            
+<li>
+    <a href="../../architecture/resources/resourcestable.markdown" class="dropdown-item">Resource Table</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                                    
+<li>
+    <a href="../../audio/" class="dropdown-item">Audio</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Editor</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../editor/" class="dropdown-item">Editor</a>
+</li>
+            
+<li>
+    <a href="../../editor/tags/" class="dropdown-item">Tags</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Reference <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../../reference/" class="dropdown-item">Index</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Contributing <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../../source_docs/getting_started.md" class="dropdown-item">Getting Started</a>
+</li>
+                                    
+<li>
+    <a href="../../../../source_docs/plasma_code/" class="dropdown-item">Plasma Code</a>
+</li>
+                                    
+<li>
+    <a href="../../../../source_docs/plasma_overview/" class="dropdown-item">Plasma Overview</a>
+</li>
+                                    
+<li>
+    <a href="../../../../source_docs/components.md" class="dropdown-item">Components</a>
+</li>
+                                    
+<li>
+    <a href="../../../../source_docs/custom_event_names/" class="dropdown-item">Custom Event Names</a>
+</li>
+                                    
+<li>
+    <a href="../../../../source_docs/editor/" class="dropdown-item">Editor</a>
+</li>
+                                    
+<li>
+    <a href="../../../../source_docs/engine/" class="dropdown-item">Engine</a>
+</li>
+                                    
+<li>
+    <a href="../../../../source_docs/enums/" class="dropdown-item">Enums</a>
+</li>
+                                    
+<li>
+    <a href="../../../../source_docs/meta_bindings.markdown" class="dropdown-item">Meta Binding</a>
+</li>
+                                    
+<li>
+    <a href="../../../../source_docs/platform/" class="dropdown-item">Adding Platforms</a>
+</li>
+                                    
+<li>
+    <a href="../../../../source_docs/widgets/" class="dropdown-item">Widgets</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a href="https://github.com/PlasmaEngine/PlasmaDocs/edit/master/docs/manual/plasmamanual/lightning_in_plasma/classes.markdown" class="nav-link"><i class="fa fa-github"></i> Edit on GitHub</a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#classes" class="nav-link">Classes</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="classes">Classes</h1>
+<p>Classes and structs define the type of certain objects in Lightning, and the <code>class</code> keyword can create user-defined data types.  The <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/lightning_in_plasma/variables_and_data_types.markdown">Variables</a> and <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/lightning_in_plasma/functions.markdown">Functions</a> defined in a class or struct are all stored and referenced from instantiations.  In contrast with how Structs handle <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/lightning_in_plasma/memory_management.markdown">Memory Management</a>, classes are copied <code>by-reference</code>.</p>
+<p># Class Contents
+Classes in Lightning must be defined in <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/lightning_in_plasma/variables_and_data_types.markdown#global-scope">global scope</a>.  The format for classes and structs are as shown below:</p>
+<p>```lang=csharp, name=Simple Classes
+struct SimpleStruct {}
+class SimpleClass {}</p>
+<pre><code>
+Any members that belong to `SimpleStruct` or `SimpleClass` will be defined within their curly braces.
+
+ ## Struct Members in Classes
+Because structs are copied `by-value`, structs cannot have class members.  As shown in the code snippet below, any other permutation of containment is valid.
+
+```lang=csharp, name=Classes and Structs in Classes and Structs
+struct StructInStruct { var MyStruct : SimpleStruct; }
+struct ClassInStruct { var MyClass : SimpleClass; } // ERROR
+class StructInClass { var MyStruct : SimpleStruct; }
+class ClassInClass { var MyClass : SimpleClass; }
+</code></pre>
+<p>The class <code>MyClass</code> is a member of <code>ClassInStruct</code>, which is a struct.  Having a class in a struct will cause Lightning to throw a compile-time exception.</p>
+<p>## Static vs Non-Static Members
+Variables and functions inside a class or struct are known as members. Most member variables must be accessed through instantiations of the object.  The one exception are member variables with the <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/lightning_in_plasma/attributes.markdown#static">Static</a> <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/lightning_in_plasma/attributes.markdown">Attribute</a>.</p>
+<p>```lang=csharp, name=Static Members
+class MyClass
+{
+  // standard variable instantiation and initialization
+  var MyReal : Real = 0;</p>
+<p>// static variable
+  [Static]
+  var MyStaticBoolean : Boolean = false;</p>
+<p>// static function
+  [Static]
+  function MyStaticFunction() {}
+}</p>
+<pre><code>
+Accessing static members can be done with `MyVariableClass.MyStaticReal` or `MyVariableClass.MyStaticFunction`, while `MyVariableClass().MyReal` is a way of accessing a non-static member.
+
+ ## Member Variable Declaration
+Member variables define the data in a class.  The rules for defining member variables differ from how local variables are defined.
+
+```lang=csharp, name=Member Variables
+class MyClass
+{
+  // variable instantiation only is allowed
+  var MyDoubleReal : DoubleReal;
+
+  // ERROR: type deduction not allowed on member variables
+  var MyBoolean = false;
+}
+</code></pre>
+<p>Notice how <code>MyDoubleReal</code> isn't initialized.  At the class scope, uninitialized member variables will be set to the default values of their types. Also note that member variables must be explicitly typed.  <code>MyBoolean</code> is set to <code>false</code>, but Lightning will still throw a compiler error if the type is omitted.</p>
+<p>## Member Functions
+Member functions hold executable code, can take input parameters, and can return data.  Member functions without the <code>[Static]</code> attribute  also have access to the instantiated object that invoked them.</p>
+<p>```lang=csharp, name=Member Functions
+class MyClass
+{
+  var MyReal : Real = 1.2;</p>
+<p>function MyFunc()
+  {
+    var localReal = this.MyReal;
+  }</p>
+<p>[Static]
+  function MyFunc()
+  {
+    var localReal = this.MyReal; // ERROR
+  }
+}</p>
+<pre><code>
+Notice how `MyReal`, a member variable of `MyClass`, is accessed in `MyFunc` using the `this` keyword.  `this` refers to the instantiated object.  If the function is static, then `this` cannot be used as there is no instantiation of `MyClass`.  Also notice how there are two versions of `MyFunc`, one static and one not.  This is valid because static members must always be accessed through the class with the format `&lt;class&gt;.&lt;function&gt;`.
+
+ ## Constructors and Destructors
+Structs/Classes can have constructor and destructors, which are special functions with no return type.  Constructors are called when an object is instantiated, and the destructor is called when the object is deleted.
+
+```lang=csharp, name=Default Constructor
+class ExplicitDefault
+{
+  constructor() {}
+}
+
+class ImplicitDefault {}
+
+class Driver
+{
+  function MyFunction()
+  {
+    ExplicitDefault(); // call default constructor
+    ImplicitDefault(); // call default constructor (implicitly defined)
+  }
+}
+</code></pre>
+<p>The class <code>ExplicitDefault</code> has a single constructor that takes no parameters.  This constructors type is known as the //default constructor//.  Notice how the constructor is called by the class name in the statement <code>ExplicitDefault();</code>  Also notice how <code>ImplicitDefault</code> is constructed with the default constructor in the statement <code>ImplicitDefault();</code>.  As long as there are no constructors defined, the default will always be defined by lightning.</p>
+<p>```lang=csharp, name=Custom Constructors
+class ExplicitCustom
+{
+  constructor(r : Real) {}
+}</p>
+<p>class ExplicitCustomAndDefault
+{
+  constructor() {}
+  constructor(r : Real) {}
+}</p>
+<p>class Driver
+{
+  function MyFunction()
+  {
+    ExplicitCustom(); // ERROR
+    ExplicitCustom(1.0);
+    ExplicitCustomAndDefault();
+    ExplicitCustomAndDefault(1.0);
+  }
+}</p>
+<pre><code>
+The class `ExplicitCustom` defines a single constructor that takes a single [real](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown).  This means that `ExplicitCustom` cannot be default constructed, therefore the statement `ExplicitCustom();` fails to compile.  The default constructor can still be readded by explicitly defining it alongside other constructors, as shown in the class `ExplicitCustomAndDefault`.
+
+NOTE: Explcitly defining a constructor is **not required** in Lightning as long as every data member of the class has a default constructor.
+
+Destructors are called when all handles to an object are destroyed.  The exception is when an object is not a copy by reference type, in which case the destructor isn't called.
+
+```lang=csharp, name=Destructors
+struct MyStruct
+{
+  var Id : Integer;
+  constructor(id : Integer)
+  {
+    this.Id = id;
+  }
+  destructor()
+  {
+    Console.WriteLine(this.Id);
+  }
+}
+
+class MyClass : MyStruct {}
+
+class Driver2
+{
+  [Static]
+  function MyFunction()
+  {
+    var v1 = MyStruct(1);
+    var v2 = local MyStruct(2);
+    var v3 = new MyStruct(3);
+    var v4 = MyClass(4);
+    var v5 = new MyClass(5);
+  } // end of the scope, all unreferenced objects are destroyed
+}
+</code></pre>
+<p><code>name=Console window
+3
+4
+5</code></p>
+<p>In the example above, <code>MyClass</code> <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/lightning_in_plasma/inheritance.markdown">inherits</a> from <code>MyStruct</code>.  <code>MyClass</code> has the same members as <code>MyStruct</code>, and the only difference between the two is that <code>MyClass</code> is a <code>class</code>.  Observe how <code>3</code>, <code>4</code>, and <code>5</code> are printed, which means that the destructor got called on <code>v3</code>, <code>v4</code>, and <code>v5</code>.  All struct destructors were ignored, while all class destructors were called.  The one exception is <code>v3</code>, which is of the type <code>ref MyStruct</code> and has the copy <code>by-reference</code> quality.</p>
+<p># Related Materials
+ ## Manual
+- <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/lightning_in_plasma/variables_and_data_types.markdown">Variables</a>
+- <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/lightning_in_plasma/functions.markdown">Functions</a>
+- <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/lightning_in_plasma/memory_management.markdown">memory_management</a>
+- <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/lightning_in_plasma/attributes.markdown">attributes</a>
+- <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/lightning_in_plasma/inheritance.markdown">inheritance</a>
+- <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/lightning_in_plasma/attributes.markdown#static">Static</a></p>
+<p>## Code Reference
+- <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown">real</a> </p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+                <p>Copyright &copy; 2021 Plasma Engine. Released under the MIT License.</p>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../../../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../../../js/base.js" defer></script>
+        <script src="../../../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

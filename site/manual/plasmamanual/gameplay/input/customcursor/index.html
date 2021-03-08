@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../../../../img/favicon.ico">
+        <title>Customcursor - Docs | Plasma Engine</title>
+        <link href="../../../../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../../../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../../../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/docco.min.css">
+
+        <script src="../../../../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../../../../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../../../../..">Docs | Plasma Engine</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href="../../../../.." class="nav-link">Home</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="/getting_started/" class="nav-link">Getting Started</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Manual <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../../" class="dropdown-item">Manual</a>
+</li>
+                                    
+<li>
+    <a href="../../../ai/" class="dropdown-item">AI</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Architecture</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../architecture/architecture/" class="dropdown-item">Architecture</a>
+</li>
+            
+<li>
+    <a href="../../../architecture/archetypes/archtype_basics.markdown" class="dropdown-item">Archtypes</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Cogs</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../architecture/cogs/cogs/" class="dropdown-item">Cogs</a>
+</li>
+            
+<li>
+    <a href="../../../architecture/cogs/gameobjectsconcept/" class="dropdown-item">Game Objects</a>
+</li>
+            
+<li>
+    <a href="../../../architecture/cogs/objectstore/" class="dropdown-item">Object Store</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Objects</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../architecture/objects/objects/" class="dropdown-item">Objects</a>
+</li>
+            
+<li>
+    <a href="../../../architecture/objects/gamesession/" class="dropdown-item">Gamesession</a>
+</li>
+            
+<li>
+    <a href="../../../architecture/objects/spaces/" class="dropdown-item">Spaces</a>
+</li>
+            
+<li>
+    <a href="../../../architecture/objects/levelsettings/" class="dropdown-item">Levelsettings</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Resources</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../architecture/resources/resource.markdown" class="dropdown-item">Resources</a>
+</li>
+            
+<li>
+    <a href="../../../architecture/resources/level/" class="dropdown-item">Levels</a>
+</li>
+            
+<li>
+    <a href="../../../architecture/fonts/fonts.markdown" class="dropdown-item">Fonts</a>
+</li>
+            
+<li>
+    <a href="../../../architecture/resources/resourcestable.markdown" class="dropdown-item">Resource Table</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                                    
+<li>
+    <a href="../../../audio/" class="dropdown-item">Audio</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Editor</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../editor/" class="dropdown-item">Editor</a>
+</li>
+            
+<li>
+    <a href="../../../editor/tags/" class="dropdown-item">Tags</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Reference <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../../../reference/" class="dropdown-item">Index</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Contributing <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../../../source_docs/getting_started.md" class="dropdown-item">Getting Started</a>
+</li>
+                                    
+<li>
+    <a href="../../../../../source_docs/plasma_code/" class="dropdown-item">Plasma Code</a>
+</li>
+                                    
+<li>
+    <a href="../../../../../source_docs/plasma_overview/" class="dropdown-item">Plasma Overview</a>
+</li>
+                                    
+<li>
+    <a href="../../../../../source_docs/components.md" class="dropdown-item">Components</a>
+</li>
+                                    
+<li>
+    <a href="../../../../../source_docs/custom_event_names/" class="dropdown-item">Custom Event Names</a>
+</li>
+                                    
+<li>
+    <a href="../../../../../source_docs/editor/" class="dropdown-item">Editor</a>
+</li>
+                                    
+<li>
+    <a href="../../../../../source_docs/engine/" class="dropdown-item">Engine</a>
+</li>
+                                    
+<li>
+    <a href="../../../../../source_docs/enums/" class="dropdown-item">Enums</a>
+</li>
+                                    
+<li>
+    <a href="../../../../../source_docs/meta_bindings.markdown" class="dropdown-item">Meta Binding</a>
+</li>
+                                    
+<li>
+    <a href="../../../../../source_docs/platform/" class="dropdown-item">Adding Platforms</a>
+</li>
+                                    
+<li>
+    <a href="../../../../../source_docs/widgets/" class="dropdown-item">Widgets</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a href="https://github.com/PlasmaEngine/PlasmaDocs/edit/master/docs/manual/plasmamanual/gameplay/input/customcursor.markdown" class="nav-link"><i class="fa fa-github"></i> Edit on GitHub</a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<p>Custom Cursors are a great way to add a level of professionalism and polish to any project. A Cursor created specifically for a project can be used for player feedback and fits into the project universe better than the normal  <a href="https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/plasma_editor_documentation/code_reference/class_reference/mouse.markdown">Mouse</a>  icon in most situations. There are several methods that can be used to add this functionality, all of which come with their own strengths and weaknesses. </p>
+<p>NOTE: <strong>Recommended Reading</strong> This section covers topics that may not have been encountered yet. To learn or review those topics, please see: <a href="https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/gameplay/input/mouseinput.markdown">Mouse Input</a> and  {icon university}[[plasma_engine_documentation/plasma_editor_documentation/plasmamanual/Graphics/CamerasViewportsRenderers/|Cameras, Viewports and Renderers]]</p>
+<p># Using a Custom Cursor
+ ## Hiding the Mouse</p>
+<table>
+<thead>
+<tr>
+<th>Pros</th>
+<th>Cons</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Quick to implement</td>
+<td>Mouse Icon can leave window bounds</td>
+</tr>
+<tr>
+<td>Retains all mouse functionality</td>
+<td>Will become visible if it does</td>
+</tr>
+</tbody>
+</table>
+<p>The first option involves making the Mouse Cursor invisible while not affecting any of its functionality. This has two easy-to-see benefits: it's quick to implement and all functionality is retained. </p>
+<pre><code>class HiddenMouseExample : LightningComponent
+{
+     [Dependency]
+     var Transform : Transform;
+     function Initialize(init : CogInitializer)
+    {
+        // Set the Mouse to invisible
+        Plasma.Mouse.Cursor = Cursor.Invisible;
+         // Connect to MouseMove Event
+        Plasma.Connect(this.Space, Events.MouseMove, this.OnMouseMove);
+    }
+// Code continued below
+</code></pre>
+<p>This would be the start of a component attached to the object that will act as the Custom Cursor. After making sure the object has a <a href="https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/plasma_editor_documentation/code_reference/class_reference/transform.markdown">transform</a> Component using the Dependency <a href="https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/codereference/reference/transform.markdown">-</a> Component using the Dependency <a href="https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/lightning_in_plasma/attributes.markdown">attributes</a>, it then sets the Mouse Cursor to be invisible. The final part of the code-block connects to the MouseMove event, which is fleshed out in the following code-block: </p>
+<pre><code>    // continued from above
+        function OnMouseMove(event : ViewportMouseEvent)
+        {
+            // Get mouse WorldPosition on the Z-Plane at depth 0
+            var mousePosition = event.ToWorldZPlane(0);
+            // Set the MouseCursor Objects position to the Mouse position
+            this.Transform.Translation = mousePosition;
+        }
+    }
+
+</code></pre>
+<p>The <a href="https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/plasma_editor_documentation/code_reference/class_reference/mouseevent.markdown">OnMouseMove</a> function will fire every time the Mouse is moved, keeping the custom cursor in the same location as the invisible Mouse. It could also connect to other Mouse Events, such as MouseDown or MouseUp, in order to interact with these events visually (e.g., by changing the <a href="https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/plasma_editor_documentation/code_reference/class_reference/spritesource.markdown">SpriteSource</a> of the object). All other working functionality can then be given to the Mouse itself, so that it can react with objects that have the <a href="https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/plasma_editor_documentation/code_reference/class_reference/reactive.markdown">Reactive</a> Component attached the them. </p>
+<p>A large drawback to using this method is the fact that it allows the Mouse icon to leave the boundaries of the Game window, which will make the Mouse visible and not hide it again even if the Game is brought back into focus.</p>
+<p>It would also be possible to set the Mouse invisible from the LogicUpdate event, keeping the cursor invisible in within the editor even when leaving the game window. </p>
+<p>## Locking the Mouse</p>
+<table>
+<thead>
+<tr>
+<th>Pros</th>
+<th>Cons</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Mouse stays within widow bounds</td>
+<td>Loses most mouse functionality</td>
+</tr>
+<tr>
+<td>Allows use of multiple Spaces</td>
+<td>More complex the hiding the mouse</td>
+</tr>
+</tbody>
+</table>
+<p>A second option, rather than hiding the Mouse, is to lock it to the center of the screen. It helps to solve the issue of the the Mouse staying within the the Game boundaries but also comes with its own set of problems. </p>
+<pre><code>class LockedMouseExample : LightningComponent
+{
+    // An Archetype of the Custom Cursor Object
+    [Property] var CursorArchetype : Archetype;
+
+    // An Archetype of the Space to be built
+    [Property] var CursorSpaceArchetype : Archetype;
+
+    // An Archetype of the GameCamera to use in the Cursor Level
+    [Property] var CameraArchetype : Archetype;
+
+    // Reference to the CameraViewport of the created Cursor Space
+    var CurViewport : CameraViewport = null;
+
+    // An empty Level used to create the Custom Cursor in
+    [Property] var CursorLevel : Level;
+
+    // Reference to the Custom Cursor Object once it's created
+    var CursorObj : Cog = null;
+
+    // The Space the Custom Cursor will inhabit
+    var CursorSpace : Space = null;
+
+    // Reference to the Translation of the Custom Cursor
+    var CursorTranslation : Real3
+    {
+        get { return this.CursorObj.Transform.Translation; }
+    }
+
+    // Calls a function to give the Cursor Position in Screen Space
+    var CursorScreenSpacePosition : Real2
+    {
+        get { return this.CurViewport.WorldToScreen(this.CursorTranslation); }
+    }
+
+    // Calls a function to give the Cursor Position in the Viewport
+    var CursorViewportPosition : Real2
+    {
+        get { return this.CurViewport.ScreenToViewport(this.CursorScreenSpacePosition); }
+    }
+// Code continued below
+</code></pre>
+<p>Just from the initial setup it becomes obvious that this method is much more complex than simply making the Mouse invisible and having an Object follow it, but it also offers benefits.</p>
+<p>NOTE: <strong>Get-Sets</strong> In order to reduce the amount of repetitive typing, a number of <code>getters</code> have been used to hold references to other functions. For further explanation of get-sets, see <a href="https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/lightning_in_plasma/properties.markdown">Get-Sets</a>.</p>
+<p>When this component is attached to the current level's <a href="https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/architecture/objects/levelsettings.markdown">LevelSettings</a>  object, it will create an Object in a new  <a href="https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/plasma_editor_documentation/code_reference/class_reference/space.markdown">Space</a>  that is built on top of the GameSpace. This object allows it to function properly in a 3D game. As the getters have defined most of the variables, much of the script is ready to be used. </p>
+<pre><code>...
+    function Initialize(init : CogInitializer)
+    {
+        // Traps the Mouse, locking it and making it invisible
+        Plasma.Mouse.Trapped = true;
+
+        // Creates a new Space for the Cursor to inhabit
+        this.CursorSpace = this.GameSession.CreateNamedSpace(&quot;CursorSpace&quot;, this.CursorSpaceArchetype);
+        // Loads the CursorLevel inside the newly made space
+        this.CursorSpace.LoadLevel(this.CursorLevel);
+        // Create the GameCamera
+        var cam = this.CursorSpace.Create(this.CameraArchetype);
+        // Set the viewport based on the GameCamera
+        this.CurViewport = cam.CameraViewport;
+        // Creates the Custom Cursor at (0,0,0) in the new Level
+        this.CursorObj = this.CursorSpace.CreateAtPosition(this.CursorArchetype, Real3());
+        // Connects to the MouseMove Event In the Cursor Space, NOT the Game Space
+        Plasma.Connect(this.CursorSpace, Events.MouseMove, this.OnMouseMove);
+    }
+...
+</code></pre>
+<p>The Initialize function creates the required Space, Level and Object for the Custom Cursor. It's important to make sure that the objects are being made in the CursorSpace, not the main GameSpace. </p>
+<pre><code>...
+    function OnMouseMove(event : ViewportMouseEvent)
+    {
+        // Get a new position by adding the distance of the MoveEvent to the Cursors current position
+        var newPos = this.CursorViewportPosition + event.Movement;
+         // Create a new position within the Viewport for the Cursor while also Clamping the range
+        var newCurViewportPos = Math.Clamp(newPos, Real2(), this.CurViewport.ViewportResolution);
+         // Adjust the Viewport position to the proper Screen position
+        var newCurScreenPos = this.CurViewport.ViewportToScreen(newCurViewportPos);
+         // Set the Cursor Objects position to the newly determined position in World Space
+        this.CursorObj.Transform.Translation = 
+        this.CurViewport.ScreenToWorldZPlane(newCurScreenPos, 0.0);
+    }
+}
+</code></pre>
+<p>Similar to hiding the mouse, the code-block above uses MouseMove Events to control the movement of the Custom Cursor object. This time, however, a few more steps are needed:
+ - The intended new cursor position is found by adding the current viewport position of the Cursor and the Mouse Movement vector given in the MouseMove Event.
+ - The new cursor viewport position must be clamped within the boundaries of the viewport.
+ - The viewport position must be converted to screen position as there is no way to directly convert from viewport space coordinates directly to worldspace. 
+ - The cursor screenspace position must be converted to worldspace so the custom cursor can be moved. </p>
+<p>The biggest problem with using this method is the fact that most Mouse functionality is lost, as it becomes locked to the center of the screen. All Cursor functionality will have to be determined using either collision events or Cursor position, which can become taxing on the system as it has to either check the position every frame or resolve various collisions. </p>
+<p>Below is an example of this script attached to the <code>LevelSettings</code> object of an empty level, with the blue sprite given as the <code>CursorArchetype</code> and the white sprite following the same script as the hidden cursor example, to show how the mouse is attempting to move from the world origin. </p>
+<p># Related Materials
+ ## Manual
+- <a href="https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/plasma_editor_documentation.markdown">Mouse Input</a>
+- <a href="https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/lightning_in_plasma/properties.markdown">Getters and Setters</a>
+-
+ ## Code Reference
+- <a href="https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/plasma_editor_documentation/code_reference/class_reference/mouse.markdown">Mouse</a> 
+- <a href="https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/plasma_editor_documentation/code_reference/class_reference/transform.markdown">Transform</a> 
+- <a href="https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/plasma_editor_documentation/code_reference/class_reference/sprite.markdown">Sprite</a> 
+- <a href="https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/plasma_editor_documentation/code_reference/class_reference/reactive.markdown">Reactive</a> 
+- <a href="https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/plasma_editor_documentation/code_reference/class_reference/space.markdown">Space</a> </p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+                <p>Copyright &copy; 2021 Plasma Engine. Released under the MIT License.</p>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../../../../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../../../../js/base.js" defer></script>
+        <script src="../../../../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

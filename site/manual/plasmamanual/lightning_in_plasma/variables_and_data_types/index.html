@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../../../img/favicon.ico">
+        <title>Variables - Docs | Plasma Engine</title>
+        <link href="../../../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/docco.min.css">
+
+        <script src="../../../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../../../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../../../..">Docs | Plasma Engine</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href="../../../.." class="nav-link">Home</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="/getting_started/" class="nav-link">Getting Started</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Manual <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../" class="dropdown-item">Manual</a>
+</li>
+                                    
+<li>
+    <a href="../../ai/" class="dropdown-item">AI</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Architecture</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../architecture/architecture/" class="dropdown-item">Architecture</a>
+</li>
+            
+<li>
+    <a href="../../architecture/archetypes/archtype_basics.markdown" class="dropdown-item">Archtypes</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Cogs</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../architecture/cogs/cogs/" class="dropdown-item">Cogs</a>
+</li>
+            
+<li>
+    <a href="../../architecture/cogs/gameobjectsconcept/" class="dropdown-item">Game Objects</a>
+</li>
+            
+<li>
+    <a href="../../architecture/cogs/objectstore/" class="dropdown-item">Object Store</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Objects</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../architecture/objects/objects/" class="dropdown-item">Objects</a>
+</li>
+            
+<li>
+    <a href="../../architecture/objects/gamesession/" class="dropdown-item">Gamesession</a>
+</li>
+            
+<li>
+    <a href="../../architecture/objects/spaces/" class="dropdown-item">Spaces</a>
+</li>
+            
+<li>
+    <a href="../../architecture/objects/levelsettings/" class="dropdown-item">Levelsettings</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Resources</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../architecture/resources/resource.markdown" class="dropdown-item">Resources</a>
+</li>
+            
+<li>
+    <a href="../../architecture/resources/level/" class="dropdown-item">Levels</a>
+</li>
+            
+<li>
+    <a href="../../architecture/fonts/fonts.markdown" class="dropdown-item">Fonts</a>
+</li>
+            
+<li>
+    <a href="../../architecture/resources/resourcestable.markdown" class="dropdown-item">Resource Table</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                                    
+<li>
+    <a href="../../audio/" class="dropdown-item">Audio</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Editor</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../editor/" class="dropdown-item">Editor</a>
+</li>
+            
+<li>
+    <a href="../../editor/tags/" class="dropdown-item">Tags</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Reference <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../../reference/" class="dropdown-item">Index</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Contributing <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../../source_docs/getting_started.md" class="dropdown-item">Getting Started</a>
+</li>
+                                    
+<li>
+    <a href="../../../../source_docs/plasma_code/" class="dropdown-item">Plasma Code</a>
+</li>
+                                    
+<li>
+    <a href="../../../../source_docs/plasma_overview/" class="dropdown-item">Plasma Overview</a>
+</li>
+                                    
+<li>
+    <a href="../../../../source_docs/components.md" class="dropdown-item">Components</a>
+</li>
+                                    
+<li>
+    <a href="../../../../source_docs/custom_event_names/" class="dropdown-item">Custom Event Names</a>
+</li>
+                                    
+<li>
+    <a href="../../../../source_docs/editor/" class="dropdown-item">Editor</a>
+</li>
+                                    
+<li>
+    <a href="../../../../source_docs/engine/" class="dropdown-item">Engine</a>
+</li>
+                                    
+<li>
+    <a href="../../../../source_docs/enums/" class="dropdown-item">Enums</a>
+</li>
+                                    
+<li>
+    <a href="../../../../source_docs/meta_bindings.markdown" class="dropdown-item">Meta Binding</a>
+</li>
+                                    
+<li>
+    <a href="../../../../source_docs/platform/" class="dropdown-item">Adding Platforms</a>
+</li>
+                                    
+<li>
+    <a href="../../../../source_docs/widgets/" class="dropdown-item">Widgets</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a href="https://github.com/PlasmaEngine/PlasmaDocs/edit/master/docs/manual/plasmamanual/lightning_in_plasma/variables_and_data_types.markdown" class="nav-link"><i class="fa fa-github"></i> Edit on GitHub</a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<p># Variables
+Variables are used to store data, and are declared using the <code>var</code> keyword.  Each variable in lightning has a name, a type, and a value which must be declared within a class using the following syntax.</p>
+<p><code>var Name : Type = value;</code></p>
+<p>```lang=csharp, name=Variable Instantiation with Initialization
+var Greeting : String = "Hello";
+var Sum : Real = 1 + 2;
+var Up : Real3 = Real3(0,1,0);</p>
+<pre><code>
+`var` is the keyword used to indicate that the statement on this line declares a variable. `Greeting` is the **name** of the first variable, an identifier used to reference the [string](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown) type value `&quot;Hello&quot;`. 
+
+Both `Greeting` and `Sum` follow the following format: `var` `Name` `:` `Type` `=` `&quot;Value&quot;``;`.
+
+| Token | Description |
+| `var` | Keyword used to indicate the statement declares a variable. |
+| `Name` | Name of the variable. |
+| `:` | Delimiter indicating the next identifier in the line is the type of the variable being declared. |
+| `Type` | Type of the variable being declared. |
+| `=` | Assignment operator used to initialize the variable to a value. |
+| `&quot;Value&quot;` | Value for the variable to be initialized to. |
+| `;` | Delimiter indicating the end of the statement. |
+
+NOTE: Identifier names must be alphanumeric and may include underscores. They cannot start with a number, and no other symbols are allowed. Remember to choose identifier names that don't clash with the [Keywords](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/lightning_in_plasma/keywords.markdown) or [Lightning Base Types](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types.markdown).
+
+Depending on the context, or [Scope](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/lightning_in_plasma/variables_and_data_types.markdown#scope), the required syntax for instantiating and initializing a variable can vary.  The codeblock above will only compile if placed at the scope of a class or struct.
+
+(NOTE)**Literal Types**: Literal values are values explicitly defined by the user in script.  `1 + 2` is an example of two literal values that evaluate to the non-literal value `3`.  Below is a table of more literal values and their associated [lightning_base_types](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types.markdown).
+
+ | Literal Value(s) | Type |
+ | -- | -- |
+ | `1`, `2`, etc. | Integer |
+ | `1d`, `2d`, etc. | DoubleInteger |
+ | `1.0`, `2.0`, etc. | Real |
+ | `1.0d`, `1.0d`, etc. | DoubleReal |
+ | `true`/`false` | Boolean |
+ | `&quot;Hello&quot;`, `&quot;Goodbye&quot;`, etc. | String |
+ | `null` | Null |
+
+ # Scope
+A scope is a region in which certain elements of the language, such as variables and functions, are defined.  Any scope can contain multiple nested scopes.  A real-life example of scope could be a building and the rooms inside it.  Whatever is *in* the scope of a room is also *in*, but not *at*, the scope of the building, because the room's scope exists inside the scope of the building. In Lightning, the three most common levels of scope are global, object, and block.
+
+ ## Global Scope
+Everything in script exists *in* the **global scope**; however, not everything is created *at* the **global scope**. Libraries such as `Plasma` and `Math` exist //at// the **global scope** and are therefore accessible from any scope in script.  The [plasma](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/plasma.markdown) and [Math](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/math.markdown) libraries are objects defined at the global scope. [Classes and Structs](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/lightning_in_plasma/classes.markdown) are the only Lightning constructs that can be defined //at* the **global scope**.
+
+```lang=csharp, name=Global Scope
+var R1 : Real; //Error, can not declare variables at the global scope
+
+class MyClass : LightningComponent //We can declare definitions of objects such as classes at the global scope
+{
+}
+</code></pre>
+<p>Notice in this example that the attempted instantiation of a variable at the <strong>global scope</strong> will throw an exception.</p>
+<p>## Object Scope
+<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/lightning_in_plasma/classes.markdown">Classes and Structs</a> define their own scope and are one of the few constructs that exist <em>at// the </em><em>Global Scope</em><em>. Variables defined //at</em> the <strong>object scope</strong> are called <strong>member</strong> variables and will exist as long as the object exists.</p>
+<p>```lang=csharp, name=Object Scope
+class MyClass
+{
+  var Pi : Real = Math.Pi; //compiles
+  var Theta : Real; // compiles
+  var A = 4.0; //compiles
+  var B = -5.0; //does not compile
+  var C = PerspectiveMode.Orthographic; //does not compile
+}</p>
+<pre><code>Notice in the example above that `Math` *in// the **global scope** is accessed //from* the **class scope** while initializing `MyClass.Pi`.
+
+ ### Implicit Initialization
+Notice above that `MyClass.Theta` is not given an **explicit** initial value. This means that **implicit** initialization will take place, assigning `Theta` an initial value of the default type value of the type [real](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown), which in this case is `0`. Implicit initialization of a variable is only possible when defining a **member** variable. The final restriction for member variables is that they must begin with an upper case letter.
+
+ ### Inferred Typing
+In the code block above `MyClass.A` is not given an explcit type. In this situation the type [real](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown) is **inferred** from the the type of its initialization value `4.0`. Only literal, type casted, or manually constructed values may be use for inferred typing when initializing a member variable. Statements such as `var B = -5.0;` will not compile because they contain an expression.
+
+NOTE: You can not use implicit initialization and inferred typing on the same variable.
+
+ ## Block Scope
+[functions](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/lightning_in_plasma/functions.markdown), [conditionals](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/lightning_in_plasma/conditionals.markdown), and [loops](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/lightning_in_plasma/looping.markdown) must have their scopes defined within an **object scope**. Variables defined within a **block scope** only exist until the scope is finished being executed. Variables defined within a block scope are called **local variables**.
+
+NOTE: Local variables can be implicitly initialized and have their types inferred just as member variables can.
+
+ ### The Scope Operator
+In addition to to logical constructs defining scope, Lightning allows the user to define arbitrary scopes using the [scope](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/lightning_in_plasma/keywords.markdown) keyword.
+```lang=csharp, name=Block Scope
+class MyClass
+{
+  var M1 : Real = 1.0;
+  function MyFunction()
+  {
+    var r1 = this.M1;
+    scope
+    {
+      var r2 = r1;
+    }
+    var r3 = r1;
+    r3 = r2; //ERROR
+  }
+}
+</code></pre>
+<p>In the above example begins with <code>var r1 = this.M1;</code> and then demonstrates the use of the {icon university}[[plasma_engine_documentation/plasma_editor_documentation/plasmama
+nual/lightning_in_plasma/keywords/|scope]] keyword.</p>
+<p>Inside the inner block scope is the line <code>var r2 = r1;</code>. Because <code>r1</code> is declared in an outer scope it can be used to initialize <code>r2</code>.</p>
+<p>The line <code>var r3 = r1;</code> follows the closing <code>}</code> of the inner block scope. Because <code>r1</code> was declared at the same scope as <code>r3</code>, it can be used as <code>r3</code>'s initialization value. However, the next line, <code>r3 = r2;</code>, will result in an error. <code>r2</code> was declared in the inner block scope. When that scope closes, <code>r2</code> is destroyed. As a result, <code>r2</code> is no longer a valid variable, and so it cannot be used to initialize <code>r3</code>.</p>
+<p>(NOTE)<strong>Data Lifetimes</strong>: It should be noted that when most variables go out of the scope they are declared in they stop existing. This is true for value types such as <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown">real</a> and <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/lightning_in_plasma/classes.markdown">Structs</a>. However, if a reference type such as a constructed <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/lightning_in_plasma/classes.markdown">Class</a> instance still has a valid reference being held outside of the instantiation scope it will remain alive in memory.</p>
+<p># Caching Variables
+Caching accessed data into locally scoped variables is a common practice that can improve the efficiency, readability, and flexibility of code. Often users may find themselves needing a value that will be used multiple times throughout the scope it is calculated/accessed in.</p>
+<p>```name=With Variable Caching, lang = csharp
+class Intercept : LightningComponent
+{
+  [Dependency] var RigidBody : RigidBody;</p>
+<p>[Property]
+  var PlayerCogPath : CogPath = CogPath();</p>
+<p>[Property]
+  var Velocity : Real = 5.0;</p>
+<p>[Property]
+  var MinDistance : Real = 5.0;</p>
+<p>[Property]
+  var PredictionTime : Real = 1.0;</p>
+<p>function Initialize(init : CogInitializer)
+  {
+    this.Owner.RigidBody.DynamicState = RigidBodyDynamicState.Kinematic;
+    Plasma.Connect(this.Space, Events.LogicUpdate, this.OnLogicUpdate);
+  }</p>
+<p>function OnLogicUpdate(event : UpdateEvent)
+  {
+    var playerCog = this.PlayerCogPath.Cog;
+    var playerPos = playerCog.Transform.Translation;
+    var myPos = this.Owner.Transform.Translation;
+    var distance = Math.Distance(myPos, playerPos);</p>
+<pre><code>if(distance &lt;= this.MinDistance)
+{
+  var playerVelocity = playerCog.RigidBody.Velocity;
+  var predictedPos = playerPos + (playerVelocity * this.PredictionTime);
+  var myMoveDir = Math.Normalize(predictedPos - myPos);
+  var newPos = myPos + (myMoveDir * this.Velocity * event.Dt);
+  this.Owner.Transform.Translation = newPos;
+}
+</code></pre>
+<p>}
+}</p>
+<pre><code>In the above example `playerCog`, `playerPos`, and `myPos` are all examples of caching accessed values to local variables. These pieces of data are needed multiple times in calculations made later in the `OnLogicUpdate` function. By caching these values, not only does writing and reading the calculations become easier, it reduces the number of member data accesses that are necessary via the `.` operator.
+
+```name=Intercept.OnLogicUpdate No Caching, lang=csharp, counterexample
+function OnLogicUpdate(event : UpdateEvent)
+{
+  if(Math.Distance(this.Owner.Transform.Translation, this.PlayerCogPath.Cog.Transform.Translation) &lt;= this.MinDistance)
+  {
+    this.Owner.Transform.Translation = this.Owner.Transform.Translation + (Math.Normalize(this.PlayerCogPath.Cog.Transform.Translation + (this.PlayerCogPath.Cog.RigidBody.Velocity * this.PredictionTime) - this.Owner.Transform.Translation) * this.Velocity * event.Dt);
+  }
+}
+</code></pre>
+<p>This example implements the exact same behavior as the previous <code>OnLogicUdpate</code> function, but does not cache any variables locally. As can be seen the line count has been reduced, but these few lines are much harder to interpret and contain many duplicate member access operations. While this may seems like a small issue, it is one that may add up rather quickly over time.</p>
+<p># Related Materials
+ ## Manual
+- <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/lightning_in_plasma/classes.markdown">Classes</a>
+- <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/lightning_in_plasma/functions.markdown">functions</a>
+- <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/lightning_in_plasma/keywords.markdown">Keywords</a>
+- <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/lightning_in_plasma/keywords.markdown">Scope</a>
+- <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/lightning_in_plasma/conditionals.markdown">Conditionals</a>
+- <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/lightning_in_plasma/looping.markdown">Loops</a></p>
+<p>## Code Reference
+- <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types.markdown">lightning_base_types</a>
+- <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown">real</a>
+- <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown">string</a>
+- <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/plasma.markdown">Plasma</a>
+- <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/math.markdown">Math</a> </p>
+<p>## Tasks
+- T472 </p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+                <p>Copyright &copy; 2021 Plasma Engine. Released under the MIT License.</p>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../../../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../../../js/base.js" defer></script>
+        <script src="../../../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

@@ -1,0 +1,1072 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../../img/favicon.ico">
+        <title>Cog - Docs | Plasma Engine</title>
+        <link href="../../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/docco.min.css">
+
+        <script src="../../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../../..">Docs | Plasma Engine</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href="../../.." class="nav-link">Home</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="/getting_started/" class="nav-link">Getting Started</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Manual <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../manual/" class="dropdown-item">Manual</a>
+</li>
+                                    
+<li>
+    <a href="../../../manual/plasmamanual/ai/" class="dropdown-item">AI</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Architecture</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../manual/plasmamanual/architecture/architecture/" class="dropdown-item">Architecture</a>
+</li>
+            
+<li>
+    <a href="../../../manual/plasmamanual/architecture/archetypes/archtype_basics.markdown" class="dropdown-item">Archtypes</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Cogs</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../manual/plasmamanual/architecture/cogs/cogs/" class="dropdown-item">Cogs</a>
+</li>
+            
+<li>
+    <a href="../../../manual/plasmamanual/architecture/cogs/gameobjectsconcept/" class="dropdown-item">Game Objects</a>
+</li>
+            
+<li>
+    <a href="../../../manual/plasmamanual/architecture/cogs/objectstore/" class="dropdown-item">Object Store</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Objects</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../manual/plasmamanual/architecture/objects/objects/" class="dropdown-item">Objects</a>
+</li>
+            
+<li>
+    <a href="../../../manual/plasmamanual/architecture/objects/gamesession/" class="dropdown-item">Gamesession</a>
+</li>
+            
+<li>
+    <a href="../../../manual/plasmamanual/architecture/objects/spaces/" class="dropdown-item">Spaces</a>
+</li>
+            
+<li>
+    <a href="../../../manual/plasmamanual/architecture/objects/levelsettings/" class="dropdown-item">Levelsettings</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Resources</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../manual/plasmamanual/architecture/resources/resource.markdown" class="dropdown-item">Resources</a>
+</li>
+            
+<li>
+    <a href="../../../manual/plasmamanual/architecture/resources/level/" class="dropdown-item">Levels</a>
+</li>
+            
+<li>
+    <a href="../../../manual/plasmamanual/architecture/fonts/fonts.markdown" class="dropdown-item">Fonts</a>
+</li>
+            
+<li>
+    <a href="../../../manual/plasmamanual/architecture/resources/resourcestable.markdown" class="dropdown-item">Resource Table</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                                    
+<li>
+    <a href="../../../manual/plasmamanual/audio/" class="dropdown-item">Audio</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Editor</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../manual/plasmamanual/editor/" class="dropdown-item">Editor</a>
+</li>
+            
+<li>
+    <a href="../../../manual/plasmamanual/editor/tags/" class="dropdown-item">Tags</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Reference <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../" class="dropdown-item">Index</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Contributing <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../source_docs/getting_started.md" class="dropdown-item">Getting Started</a>
+</li>
+                                    
+<li>
+    <a href="../../../source_docs/plasma_code/" class="dropdown-item">Plasma Code</a>
+</li>
+                                    
+<li>
+    <a href="../../../source_docs/plasma_overview/" class="dropdown-item">Plasma Overview</a>
+</li>
+                                    
+<li>
+    <a href="../../../source_docs/components.md" class="dropdown-item">Components</a>
+</li>
+                                    
+<li>
+    <a href="../../../source_docs/custom_event_names/" class="dropdown-item">Custom Event Names</a>
+</li>
+                                    
+<li>
+    <a href="../../../source_docs/editor/" class="dropdown-item">Editor</a>
+</li>
+                                    
+<li>
+    <a href="../../../source_docs/engine/" class="dropdown-item">Engine</a>
+</li>
+                                    
+<li>
+    <a href="../../../source_docs/enums/" class="dropdown-item">Enums</a>
+</li>
+                                    
+<li>
+    <a href="../../../source_docs/meta_bindings.markdown" class="dropdown-item">Meta Binding</a>
+</li>
+                                    
+<li>
+    <a href="../../../source_docs/platform/" class="dropdown-item">Adding Platforms</a>
+</li>
+                                    
+<li>
+    <a href="../../../source_docs/widgets/" class="dropdown-item">Widgets</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a href="https://github.com/PlasmaEngine/PlasmaDocs/edit/master/docs/reference/class_reference/cog.markdown" class="nav-link"><i class="fa fa-github"></i> Edit on GitHub</a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<p><code>Engine</code></p>
+<p>(NOTE) Game Object Composition class. This class is the foundational object for all dynamic objects in the game world. The Cog is a piece of logical interactive content and the primary mechanism game systems (Graphics, Physics, Etc.) provide functionality and communicate. A Cog can be anything from physical objects like trees, tanks, players to logical objects like teams, triggers, or AI objects.</p>
+<table>
+<thead>
+<tr>
+<th>Methods</th>
+<th>Properties</th>
+<th>Base Classes</th>
+<th>Derived Classes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/cog.markdown#addcomponentbyname-plasma"> AddComponentByName</a></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/cog.markdown#actions-plasma-engine-docu"> Actions</a></td>
+<td>Object</td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/gamesession.markdown">gamesession</a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/cog.markdown#addcomponentbytype-plasma"> AddComponentByType</a></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/cog.markdown#archetype-plasma-engine-do"> Archetype</a></td>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/space.markdown">space</a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/cog.markdown#attachto-plasma-engine-doc"> AttachTo</a></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/cog.markdown#basearchetype-plasma-engin"> BaseArchetype</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/cog.markdown#attachtopreservelocal-ze"> AttachToPreserveLocal</a></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/cog.markdown#childcount-plasma-engine-d"> ChildCount</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/cog.markdown#cleararchetype-void"> ClearArchetype</a></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/cog.markdown#children-plasma-engine-doc"> Children</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/cog.markdown#clone-plasma-engine-docume"> Clone</a></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/cog.markdown#componentcount-plasma-engi"> ComponentCount</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/cog.markdown#cog-void"> Constructor</a></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/cog.markdown#editorviewporthidden-zer"> EditorViewportHidden</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/cog.markdown#debugdraw-void"> DebugDraw</a></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/cog.markdown#gamesession-plasma-engine"> GameSession</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/cog.markdown#destroy-void"> Destroy</a></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/cog.markdown#levelsettings-plasma-engin"> LevelSettings</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/cog.markdown#detach-void"> Detach</a></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/cog.markdown#locked-plasma-engine-docum"> Locked</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/cog.markdown#detachpreservelocal-void"> DetachPreserveLocal</a></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/cog.markdown#markedfordestruction-zer"> MarkedForDestruction</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/cog.markdown#dispatchdown-void"> DispatchDown</a></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/cog.markdown#name-plasma-engine-documen"> Name</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/cog.markdown#dispatchevent-void"> DispatchEvent</a></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/cog.markdown#objectviewhidden-plasma-en"> ObjectViewHidden</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/cog.markdown#dispatchup-void"> DispatchUp</a></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/cog.markdown#parent-plasma-engine-docum"> Parent</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/cog.markdown#findallchildrenbyname-ze"> FindAllChildrenByName</a></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/cog.markdown#persistent-plasma-engine-d"> Persistent</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/cog.markdown#findchildbyname-plasma-eng"> FindChildByName</a></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/cog.markdown#runtimeid-plasma-engine-do"> RuntimeId</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/cog.markdown#finddirectchildbyname-ze"> FindDirectChildByName</a></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/cog.markdown#space-plasma-engine-docume"> Space</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/cog.markdown#findnearestarchetype-zer"> FindNearestArchetype</a></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/cog.markdown#transient-plasma-engine-do"> Transient</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/cog.markdown#findnextinorder-plasma-eng"> FindNextInOrder</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/cog.markdown#findnextsibling-plasma-eng"> FindNextSibling</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/cog.markdown#findpreviousinorder-plasma"> FindPreviousInOrder</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/cog.markdown#findprevioussibling-plasma"> FindPreviousSibling</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/cog.markdown#findroot-plasma-engine-doc"> FindRoot</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/cog.markdown#findrootarchetype-plasma-e"> FindRootArchetype</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/cog.markdown#getcomponentbyindex-plasma"> GetComponentByIndex</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/cog.markdown#getcomponentbyname-plasma"> GetComponentByName</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/cog.markdown#getcomponentindex-plasma-e"> GetComponentIndex</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/cog.markdown#isancestorof-plasma-engine"> IsAncestorOf</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/cog.markdown#isdescendant-plasma-engine"> IsDescendant</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/cog.markdown#isdescendantof-plasma-engi"> IsDescendantOf</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/cog.markdown#ismodifiedfromarchetype"> IsModifiedFromArchetype</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/cog.markdown#placeaftersibling-void"> PlaceAfterSibling</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/cog.markdown#placebeforesibling-void"> PlaceBeforeSibling</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/cog.markdown#removecomponentbyname-ze"> RemoveComponentByName</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/cog.markdown#removecomponentbytype-ze"> RemoveComponentByType</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/cog.markdown#replacechild-void"> ReplaceChild</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/cog.markdown#sanitizename-plasma-engine"> SanitizeName</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/cog.markdown#uploadtoarchetype-void"> UploadToArchetype</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>#  Properties</p>
+<hr />
+<p>#  Actions : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/actions.markdown">actions</a></p>
+<p><code>read-only</code></p>
+<blockquote>
+<p>``` lang=cpp, name=Lightning
+var Actions : Actions</p>
+</blockquote>
+<hr />
+<p>#  Archetype : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/archetype.markdown">archetype</a></p>
+<blockquote>
+<p>Getter / setter for Archetype.
+``` lang=cpp, name=Lightning
+var Archetype : Archetype</p>
+</blockquote>
+<hr />
+<p>#  BaseArchetype : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/archetype.markdown">archetype</a></p>
+<p><code>read-only</code></p>
+<blockquote>
+<p>Returns the Archetype our Archetype inherits from.
+``` lang=cpp, name=Lightning
+var BaseArchetype : Archetype</p>
+</blockquote>
+<hr />
+<p>#  ChildCount : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/integer.markdown">integer</a></p>
+<p><code>read-only</code></p>
+<blockquote>
+<p>Returns the amount of children on this Cog. Note that this function has to iterate over all children to calculate the count.
+``` lang=cpp, name=Lightning
+var ChildCount : Integer</p>
+</blockquote>
+<hr />
+<p>#  Children : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/hierarchylistrange.markdown">hierarchylistrange</a></p>
+<p><code>read-only</code></p>
+<blockquote>
+<p>Returns a range of all direct children on this Cog.
+``` lang=cpp, name=Lightning
+var Children : HierarchyListRange</p>
+</blockquote>
+<hr />
+<p>#  ComponentCount : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/integer.markdown">integer</a></p>
+<p><code>read-only</code></p>
+<blockquote>
+<p>Returns how many Components are on this Cog.
+``` lang=cpp, name=Lightning
+var ComponentCount : Integer</p>
+</blockquote>
+<hr />
+<p>#  EditorViewportHidden : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown">boolean</a></p>
+<blockquote>
+<p>Hidden from view used for editor.
+``` lang=cpp, name=Lightning
+var EditorViewportHidden : Boolean</p>
+</blockquote>
+<hr />
+<p>#  GameSession : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/gamesession.markdown">gamesession</a></p>
+<p><code>read-only</code></p>
+<blockquote>
+<p>Get the GameSession that owns us and our Space.
+``` lang=cpp, name=Lightning
+var GameSession : GameSession</p>
+</blockquote>
+<hr />
+<p>#  LevelSettings : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/cog.markdown">cog</a></p>
+<p><code>read-only</code></p>
+<blockquote>
+<p>Get the object named 'LevelSettings', a special convenience object where we can put general functionality for our Level.
+``` lang=cpp, name=Lightning
+var LevelSettings : Cog</p>
+</blockquote>
+<hr />
+<p>#  Locked : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown">boolean</a></p>
+<blockquote>
+<p>Not able to be modified or selected in the viewport.
+``` lang=cpp, name=Lightning
+var Locked : Boolean</p>
+</blockquote>
+<hr />
+<p>#  MarkedForDestruction : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown">boolean</a></p>
+<p><code>read-only</code></p>
+<blockquote>
+<p>Has this Cog already been destroyed and is waiting for the frame to end (delayed destruction). This allows us to do custom logic when an object is still not null, but about to be destroyed (e.g. we don't want to render Cogs marked for deletion).
+``` lang=cpp, name=Lightning
+var MarkedForDestruction : Boolean</p>
+</blockquote>
+<hr />
+<p>#  Name : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown">string</a></p>
+<blockquote>
+<p>Name of the Object.
+``` lang=cpp, name=Lightning
+var Name : String</p>
+</blockquote>
+<hr />
+<p>#  ObjectViewHidden : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown">boolean</a></p>
+<blockquote>
+<p>If the object needs to not show up in the object view.
+``` lang=cpp, name=Lightning
+var ObjectViewHidden : Boolean</p>
+</blockquote>
+<hr />
+<p>#  Parent : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/cog.markdown">cog</a></p>
+<p><code>read-only</code></p>
+<blockquote>
+<p>Get the parent of this object in the Hierarchy.
+``` lang=cpp, name=Lightning
+var Parent : Cog</p>
+</blockquote>
+<hr />
+<p>#  Persistent : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown">boolean</a></p>
+<blockquote>
+<p>Object will not be destroyed on level load or change.
+``` lang=cpp, name=Lightning
+var Persistent : Boolean</p>
+</blockquote>
+<hr />
+<p>#  RuntimeId : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/integer.markdown">integer</a></p>
+<p><code>read-only</code></p>
+<blockquote>
+<p>Gets a unique integer for this object (used primarily for debugging)
+``` lang=cpp, name=Lightning
+var RuntimeId : Integer</p>
+</blockquote>
+<hr />
+<p>#  Space : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/space.markdown">space</a></p>
+<p><code>read-only</code></p>
+<blockquote>
+<p>Returns the Space that this object lives in.
+``` lang=cpp, name=Lightning
+var Space : Space</p>
+</blockquote>
+<hr />
+<p>#  Transient : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown">boolean</a></p>
+<blockquote>
+<p>Object will not be saved.
+``` lang=cpp, name=Lightning
+var Transient : Boolean</p>
+</blockquote>
+<hr />
+<p>#  Methods</p>
+<hr />
+<p>#  AddComponentByName : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown">boolean</a></p>
+<blockquote>
+<p>Add a component by name.
+|Name|Type|Description|
+|---|---|---|
+|name|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown">string</a>| |
+<code>lang=cpp, name=Lightning
+function AddComponentByName(name : String) : Boolean</code> </p>
+</blockquote>
+<hr />
+<p>#  AddComponentByType : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown">boolean</a></p>
+<blockquote>
+<p>Add a component of the given type.
+|Name|Type|Description|
+|---|---|---|
+|componentType|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/boundtype.markdown">boundtype</a>| |
+<code>lang=cpp, name=Lightning
+function AddComponentByType(componentType : BoundType) : Boolean</code> </p>
+</blockquote>
+<hr />
+<p>#  AttachTo : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown">boolean</a></p>
+<blockquote>
+<p>Attach to a parent object and compute the new transform so that the objects are relative.
+|Name|Type|Description|
+|---|---|---|
+|parent|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/cog.markdown">cog</a>| |
+<code>lang=cpp, name=Lightning
+function AttachTo(parent : Cog) : Boolean</code> </p>
+</blockquote>
+<hr />
+<p>#  AttachToPreserveLocal : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown">boolean</a></p>
+<blockquote>
+<p>Attach to a parent object.
+|Name|Type|Description|
+|---|---|---|
+|parent|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/cog.markdown">cog</a>| |
+<code>lang=cpp, name=Lightning
+function AttachToPreserveLocal(parent : Cog) : Boolean</code> </p>
+</blockquote>
+<hr />
+<p>#  ClearArchetype : Void</p>
+<blockquote>
+<p>Removes our association with the current Archetype.
+|Name|Type|Description|
+|---|---|---|
+<code>lang=cpp, name=Lightning
+function ClearArchetype()</code> </p>
+</blockquote>
+<hr />
+<p>#  Clone : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/cog.markdown">cog</a></p>
+<blockquote>
+<p>Clones this cog. The cloned object will be parented to this objects parent (if it exists).
+|Name|Type|Description|
+|---|---|---|
+<code>lang=cpp, name=Lightning
+function Clone() : Cog</code> </p>
+</blockquote>
+<hr />
+<p>#  Cog : Void</p>
+<p><code>constructor</code></p>
+<blockquote>
+<p>Constructor / destructor.
+|Name|Type|Description|
+|---|---|---|
+<code>lang=cpp, name=Lightning
+function Cog()</code> </p>
+</blockquote>
+<hr />
+<p>#  DebugDraw : Void</p>
+<blockquote>
+<p>Calls DebugDraw on all components in this cog.
+|Name|Type|Description|
+|---|---|---|
+<code>lang=cpp, name=Lightning
+function DebugDraw()</code> </p>
+</blockquote>
+<hr />
+<p>#  Destroy : Void</p>
+<blockquote>
+<p>Queues the cog up for delayed destruction (at the end of the frame). If the object is marked as Protected, this will do nothing.
+|Name|Type|Description|
+|---|---|---|
+<code>lang=cpp, name=Lightning
+function Destroy()</code> </p>
+</blockquote>
+<hr />
+<p>#  Detach : Void</p>
+<blockquote>
+<p>Detach from a parent object and compute the new transform so that the objects are relative.
+|Name|Type|Description|
+|---|---|---|
+<code>lang=cpp, name=Lightning
+function Detach()</code> </p>
+</blockquote>
+<hr />
+<p>#  DetachPreserveLocal : Void</p>
+<blockquote>
+<p>Detach from a parent object.
+|Name|Type|Description|
+|---|---|---|
+<code>lang=cpp, name=Lightning
+function DetachPreserveLocal()</code> </p>
+</blockquote>
+<hr />
+<p>#  DispatchDown : Void</p>
+<blockquote>
+<p>Dispatches an event down the tree on all children recursively (pre-order traversal)
+|Name|Type|Description|
+|---|---|---|
+|eventId|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown">string</a>| |
+|event|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/event.markdown">event</a>| |
+<code>lang=cpp, name=Lightning
+function DispatchDown(eventId : String, event : Event)</code> </p>
+</blockquote>
+<hr />
+<p>#  DispatchEvent : Void</p>
+<blockquote>
+<p>Dispatches an event on this object.
+|Name|Type|Description|
+|---|---|---|
+|eventId|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown">string</a>| |
+|event|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/event.markdown">event</a>| |
+<code>lang=cpp, name=Lightning
+function DispatchEvent(eventId : String, event : Event)</code> </p>
+</blockquote>
+<hr />
+<p>#  DispatchUp : Void</p>
+<blockquote>
+<p>Dispatches an event up the tree on each parent recursively (pre-order traversal)
+|Name|Type|Description|
+|---|---|---|
+|eventId|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown">string</a>| |
+|event|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/event.markdown">event</a>| |
+<code>lang=cpp, name=Lightning
+function DispatchUp(eventId : String, event : Event)</code> </p>
+</blockquote>
+<hr />
+<p>#  FindAllChildrenByName : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/hierarchynamerange.markdown">hierarchynamerange</a></p>
+<blockquote>
+<p>Returns a range of all children with the given name.
+|Name|Type|Description|
+|---|---|---|
+|name|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown">string</a>| |
+<code>lang=cpp, name=Lightning
+function FindAllChildrenByName(name : String) : HierarchyNameRange</code> </p>
+</blockquote>
+<hr />
+<p>#  FindChildByName : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/cog.markdown">cog</a></p>
+<blockquote>
+<p>Depth first search of all children.
+|Name|Type|Description|
+|---|---|---|
+|name|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown">string</a>| |
+<code>lang=cpp, name=Lightning
+function FindChildByName(name : String) : Cog</code> </p>
+</blockquote>
+<hr />
+<p>#  FindDirectChildByName : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/cog.markdown">cog</a></p>
+<blockquote>
+<p>Checks only direct children.
+|Name|Type|Description|
+|---|---|---|
+|name|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown">string</a>| |
+<code>lang=cpp, name=Lightning
+function FindDirectChildByName(name : String) : Cog</code> </p>
+</blockquote>
+<hr />
+<p>#  FindNearestArchetype : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/cog.markdown">cog</a></p>
+<blockquote>
+<p>Same as FindNearestParentArchetype except that it includes this Cog.
+|Name|Type|Description|
+|---|---|---|
+<code>lang=cpp, name=Lightning
+function FindNearestArchetype() : Cog</code> </p>
+</blockquote>
+<hr />
+<p>#  FindNextInOrder : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/cog.markdown">cog</a></p>
+<blockquote>
+<p>Finds the next Cog in depth first post-order.
+|Name|Type|Description|
+|---|---|---|
+<code>lang=cpp, name=Lightning
+function FindNextInOrder() : Cog</code> </p>
+</blockquote>
+<hr />
+<p>#  FindNextSibling : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/cog.markdown">cog</a></p>
+<blockquote>
+<p>Returns the sibling Cog after this in the parents child list. Returns null if it's the last child. If the Cog doesn't have a parent, it will return the Cog after it in the Space.
+|Name|Type|Description|
+|---|---|---|
+<code>lang=cpp, name=Lightning
+function FindNextSibling() : Cog</code> </p>
+</blockquote>
+<hr />
+<p>#  FindPreviousInOrder : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/cog.markdown">cog</a></p>
+<blockquote>
+<p>Finds the previous Cog in reverse depth first post-order (the opposite of FindNextInOrder).
+|Name|Type|Description|
+|---|---|---|
+<code>lang=cpp, name=Lightning
+function FindPreviousInOrder() : Cog</code> </p>
+</blockquote>
+<hr />
+<p>#  FindPreviousSibling : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/cog.markdown">cog</a></p>
+<blockquote>
+<p>Returns the sibling Cog before this in the parents child list. Returns null if it's the first child. If the Cog doesn't have a parent, it will return the Cog before it in the Space.
+|Name|Type|Description|
+|---|---|---|
+<code>lang=cpp, name=Lightning
+function FindPreviousSibling() : Cog</code> </p>
+</blockquote>
+<hr />
+<p>#  FindRoot : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/cog.markdown">cog</a></p>
+<blockquote>
+<p>Searches up the hierarchy for the root Cog.
+|Name|Type|Description|
+|---|---|---|
+<code>lang=cpp, name=Lightning
+function FindRoot() : Cog</code> </p>
+</blockquote>
+<hr />
+<p>#  FindRootArchetype : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/cog.markdown">cog</a></p>
+<blockquote>
+<p>Finds the top most Archetype in the Hierarchy.
+|Name|Type|Description|
+|---|---|---|
+<code>lang=cpp, name=Lightning
+function FindRootArchetype() : Cog</code> </p>
+</blockquote>
+<hr />
+<p>#  GetComponentByIndex : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/component.markdown">component</a></p>
+<blockquote>
+<p>Returns the Component at the given index.
+|Name|Type|Description|
+|---|---|---|
+|index|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/integer.markdown">integer</a>| |
+<code>lang=cpp, name=Lightning
+function GetComponentByIndex(index : Integer) : Component</code> </p>
+</blockquote>
+<hr />
+<p>#  GetComponentByName : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/component.markdown">component</a></p>
+<blockquote>
+<p>Finds the Components with the given type name.
+|Name|Type|Description|
+|---|---|---|
+|componentTypeName|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown">string</a>| |
+<code>lang=cpp, name=Lightning
+function GetComponentByName(componentTypeName : String) : Component</code> </p>
+</blockquote>
+<hr />
+<p>#  GetComponentIndex : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/integer.markdown">integer</a></p>
+<blockquote>
+<p>Finds the index of the given Component type. Returns uint max if the Component didn't exist.
+|Name|Type|Description|
+|---|---|---|
+|componentType|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/boundtype.markdown">boundtype</a>| |
+<code>lang=cpp, name=Lightning
+function GetComponentIndex(componentType : BoundType) : Integer</code> </p>
+</blockquote>
+<hr />
+<p>#  IsAncestorOf : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown">boolean</a></p>
+<blockquote>
+<p>Returns whether or not we are an ancestor of the given Cog.
+|Name|Type|Description|
+|---|---|---|
+|descendant|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/cog.markdown">cog</a>| |
+<code>lang=cpp, name=Lightning
+function IsAncestorOf(descendant : Cog) : Boolean</code> </p>
+</blockquote>
+<hr />
+<p>#  IsDescendant : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown">boolean</a></p>
+<blockquote>
+<p>Returns whether or not the given cog is a descendant of us.
+|Name|Type|Description|
+|---|---|---|
+|cog|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/cog.markdown">cog</a>| |
+<code>lang=cpp, name=Lightning
+function IsDescendant(cog : Cog) : Boolean</code> </p>
+</blockquote>
+<hr />
+<p>#  IsDescendantOf : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown">boolean</a></p>
+<blockquote>
+<p>Returns whether or not we are a descendant of the given Cog.
+|Name|Type|Description|
+|---|---|---|
+|ancestor|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/cog.markdown">cog</a>| |
+<code>lang=cpp, name=Lightning
+function IsDescendantOf(ancestor : Cog) : Boolean</code> </p>
+</blockquote>
+<hr />
+<p>#  IsModifiedFromArchetype : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown">boolean</a></p>
+<blockquote>
+<p>Returns whether or not we have any local modifications from our Archetype. This does not account for properties with LocalModificationOverride (such as Transform modifications).
+|Name|Type|Description|
+|---|---|---|
+<code>lang=cpp, name=Lightning
+function IsModifiedFromArchetype() : Boolean</code> </p>
+</blockquote>
+<hr />
+<p>#  PlaceAfterSibling : Void</p>
+<blockquote>
+<p>Moves this Cog after the given sibling. Assumes they have the same parent.
+|Name|Type|Description|
+|---|---|---|
+|sibling|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/cog.markdown">cog</a>| |
+<code>lang=cpp, name=Lightning
+function PlaceAfterSibling(sibling : Cog)</code> </p>
+</blockquote>
+<hr />
+<p>#  PlaceBeforeSibling : Void</p>
+<blockquote>
+<p>Moves this Cog before the given sibling. Assumes they have the same parent.
+|Name|Type|Description|
+|---|---|---|
+|sibling|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/cog.markdown">cog</a>| |
+<code>lang=cpp, name=Lightning
+function PlaceBeforeSibling(sibling : Cog)</code> </p>
+</blockquote>
+<hr />
+<p>#  RemoveComponentByName : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown">boolean</a></p>
+<blockquote>
+<p>Remove a component by name. Returns true if the component existed.
+|Name|Type|Description|
+|---|---|---|
+|typeName|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown">string</a>| |
+<code>lang=cpp, name=Lightning
+function RemoveComponentByName(typeName : String) : Boolean</code> </p>
+</blockquote>
+<hr />
+<p>#  RemoveComponentByType : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown">boolean</a></p>
+<blockquote>
+<p>Remove a component by type. Returns true if the component existed.
+|Name|Type|Description|
+|---|---|---|
+|componentType|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/boundtype.markdown">boundtype</a>| |
+<code>lang=cpp, name=Lightning
+function RemoveComponentByType(componentType : BoundType) : Boolean</code> </p>
+</blockquote>
+<hr />
+<p>#  ReplaceChild : Void</p>
+<blockquote>
+<p>Places the new child at the same place as the old child in the Hierarchy. This detaches but does not destroy the old child.
+|Name|Type|Description|
+|---|---|---|
+|oldChild|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/cog.markdown">cog</a>| |
+|newChild|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/cog.markdown">cog</a>| |
+<code>lang=cpp, name=Lightning
+function ReplaceChild(oldChild : Cog, newChild : Cog)</code> </p>
+</blockquote>
+<hr />
+<p>#  SanitizeName : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown">string</a></p>
+<p><code>static</code></p>
+<blockquote>
+<p>Cleans an object name of invalid runes.
+|Name|Type|Description|
+|---|---|---|
+|newName|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown">string</a>| |
+<code>lang=cpp, name=Lightning
+function SanitizeName(newName : String) : String</code> </p>
+</blockquote>
+<hr />
+<p>#  UploadToArchetype : Void</p>
+<blockquote>
+<p>Upload this objects data to the archetype and marks this object as not modified. This function does not rebuild all other Cogs with the same Archetype. See ArchetypeRebuilder for more information about how to rebuild Archetypes.
+|Name|Type|Description|
+|---|---|---|
+<code>lang=cpp, name=Lightning
+function UploadToArchetype()</code> </p>
+</blockquote>
+<hr /></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+                <p>Copyright &copy; 2021 Plasma Engine. Released under the MIT License.</p>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../../js/base.js" defer></script>
+        <script src="../../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

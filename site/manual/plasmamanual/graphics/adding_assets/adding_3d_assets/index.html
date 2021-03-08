@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../../../../img/favicon.ico">
+        <title>Importing 3D Assets & Textures - Docs | Plasma Engine</title>
+        <link href="../../../../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../../../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../../../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/docco.min.css">
+
+        <script src="../../../../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../../../../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../../../../..">Docs | Plasma Engine</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href="../../../../.." class="nav-link">Home</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="/getting_started/" class="nav-link">Getting Started</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Manual <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../../" class="dropdown-item">Manual</a>
+</li>
+                                    
+<li>
+    <a href="../../../ai/" class="dropdown-item">AI</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Architecture</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../architecture/architecture/" class="dropdown-item">Architecture</a>
+</li>
+            
+<li>
+    <a href="../../../architecture/archetypes/archtype_basics.markdown" class="dropdown-item">Archtypes</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Cogs</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../architecture/cogs/cogs/" class="dropdown-item">Cogs</a>
+</li>
+            
+<li>
+    <a href="../../../architecture/cogs/gameobjectsconcept/" class="dropdown-item">Game Objects</a>
+</li>
+            
+<li>
+    <a href="../../../architecture/cogs/objectstore/" class="dropdown-item">Object Store</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Objects</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../architecture/objects/objects/" class="dropdown-item">Objects</a>
+</li>
+            
+<li>
+    <a href="../../../architecture/objects/gamesession/" class="dropdown-item">Gamesession</a>
+</li>
+            
+<li>
+    <a href="../../../architecture/objects/spaces/" class="dropdown-item">Spaces</a>
+</li>
+            
+<li>
+    <a href="../../../architecture/objects/levelsettings/" class="dropdown-item">Levelsettings</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Resources</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../architecture/resources/resource.markdown" class="dropdown-item">Resources</a>
+</li>
+            
+<li>
+    <a href="../../../architecture/resources/level/" class="dropdown-item">Levels</a>
+</li>
+            
+<li>
+    <a href="../../../architecture/fonts/fonts.markdown" class="dropdown-item">Fonts</a>
+</li>
+            
+<li>
+    <a href="../../../architecture/resources/resourcestable.markdown" class="dropdown-item">Resource Table</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                                    
+<li>
+    <a href="../../../audio/" class="dropdown-item">Audio</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Editor</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../editor/" class="dropdown-item">Editor</a>
+</li>
+            
+<li>
+    <a href="../../../editor/tags/" class="dropdown-item">Tags</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Reference <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../../../reference/" class="dropdown-item">Index</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Contributing <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../../../source_docs/getting_started.md" class="dropdown-item">Getting Started</a>
+</li>
+                                    
+<li>
+    <a href="../../../../../source_docs/plasma_code/" class="dropdown-item">Plasma Code</a>
+</li>
+                                    
+<li>
+    <a href="../../../../../source_docs/plasma_overview/" class="dropdown-item">Plasma Overview</a>
+</li>
+                                    
+<li>
+    <a href="../../../../../source_docs/components.md" class="dropdown-item">Components</a>
+</li>
+                                    
+<li>
+    <a href="../../../../../source_docs/custom_event_names/" class="dropdown-item">Custom Event Names</a>
+</li>
+                                    
+<li>
+    <a href="../../../../../source_docs/editor/" class="dropdown-item">Editor</a>
+</li>
+                                    
+<li>
+    <a href="../../../../../source_docs/engine/" class="dropdown-item">Engine</a>
+</li>
+                                    
+<li>
+    <a href="../../../../../source_docs/enums/" class="dropdown-item">Enums</a>
+</li>
+                                    
+<li>
+    <a href="../../../../../source_docs/meta_bindings.markdown" class="dropdown-item">Meta Binding</a>
+</li>
+                                    
+<li>
+    <a href="../../../../../source_docs/platform/" class="dropdown-item">Adding Platforms</a>
+</li>
+                                    
+<li>
+    <a href="../../../../../source_docs/widgets/" class="dropdown-item">Widgets</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a href="https://github.com/PlasmaEngine/PlasmaDocs/edit/master/docs/manual/plasmamanual/graphics/adding_assets/adding_3d_assets.markdown" class="nav-link"><i class="fa fa-github"></i> Edit on GitHub</a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#importing-3d-assets-textures" class="nav-link">Importing 3D Assets &amp; Textures</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="importing-3d-assets-textures">Importing 3D Assets &amp; Textures</h1>
+<p>3D assets, such as models, model animations, and images to be used on a <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/graphics/materials/materials_overview.markdown">Material</a>, are added as <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/architecture/resources.markdown">Resources</a> in the form of <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/mesh.markdown">meshes</a>, <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/animation.markdown">animations</a>, and <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/texture.markdown">textures</a>. The preferred file format for 3D assets is <code>.fbx</code> for models and animations (though Plasma does accept a number of other formats such as<code>.obj</code>, <code>.3ds</code>, <code>.blend</code>, etc...) and <code>.png</code> for textures. See <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/editor/editorcommands/resourceadding.markdown">resourceadding</a> for how to import data files into Plasma.</p>
+<p># Models and Model Animations</p>
+<p>After the file has been imported, a new window will open <code>GroupImportOptions</code> window that will provide a number of options for how the data should converted into a Resource.</p>
+<p>##  Group Import Options</p>
+<p>This window allows the user to specify a number of properties such as whether to import meshes, animations, and textures, whether to convert the scale of the imported asset, and more. All available options are described below.</p>
+<p>NOTE: All options except for ImportMeshes checkBox, ImportAnimations checkBox, and ImportTextures checkBox may be modified in the Properties window window by selecting the Resource from the Library after the asset has been imported.</p>
+<p><img alt="GroupImportOptions" src="https://raw.githubusercontent.com/PlasmaEngine/PlasmaDocs/master/media/FileImports.PNG" /></p>
+<p>### GenerateSmoothNormals and SmoothingAngleDegreesThreshold</p>
+<p>GenerateSmoothNormals checkBox is a boolean property set to <code>false</code> by default. When set to <code>true</code>, it exposes SmoothingDegreesAngleThreshold . Together, they smooth the normals between the vertices of a mesh where the angle between the vertices falls below the value set in SmoothingDegreesAngleTheshold .</p>
+<p>On an object shaded with uniform colors, smoothing the normals will have the effect of making the mesh appear seamless. Normally, whether an object should appear seamless or have each polygon be discretely visible is up to the artist working on a project. If using outsourced or pre-made art assets, however, one might wish to smooth the normals on an object with visible seams between each polygon.</p>
+<p>### InvertUvYaxis</p>
+<p>This boolean property should be set to <code>true</code> if the mesh being imported was authored and exported in a program where the default export options do not match Plasma's convention. When imported, the y-coordinate for each vertex will be inverted. Plasma's uv coordinate convention is for (0,0) to be at top-left and (1,1) at bottom right. Note this will only change the mesh being imported, not any textures that being imported along with it.</p>
+<p>Asset creation programs may export with a different convention where (0,0) is at bottom-left, causing the y-axis (or v-axis) to be inverted if imported to Plasma. If this happens, any Material applied to the object created from textures made for this mesh will not appear as expected. If working with an artist on a project, it is best to have them set the export options to match Plasma's convention. If using outsourced or pre-made art assets, however, one may need to invert the uv y-axis when importing scene assets.</p>
+<p>### GenerateTangentSpace</p>
+<p>This boolean property is set to <code>true</code> by default and should remain that way unless an artist has specifically authored the tangent space in a specific way that is different from Plasma's conventions. In Plasma, the vertex tangent will always be in the increasing x (or u) direction, while the bi-tangent will always be in the increasing y (or v) direction.</p>
+<p>### FlipWindingOrder</p>
+<p>This boolean property, when set to <code>true</code>, will flip the winding order of the vertices of a mesh. The winding order, described as either clockwise or counter-clockwise, is what determines whether a triangle within in the mesh is front-facing or back-facing (for more information on how winding order affects face culling, check out <a href="https://learnopengl.com/#!Advanced-OpenGL/Face-culling">this page</a>.  If they are ordered clockwise when imported, setting FlipWindingOrder checkBox to <code>true</code> will change them to counterclockwise; if ordered counterclockwise when imported, they will be changed to clockwise.</p>
+<p>### OriginOffset</p>
+<p>Setting this property will offset the mesh from it's origin by the value specified. As an example, imagine a model of a dragon is imported and OriginOffset  is set to <code>[10, 0, 0]</code>. Now, an instance of the archetype generated when the model was imported is created within the level and it's Translation is set to [0, 0, 0]. Normally, the dragon would appear at <code>[0, 0, 0]</code>, but since its origin has been offset, it now appears at <code>[10, 0, 0]</code> even though the object's Translation remains at <code>[0, 0, 0]</code>.</p>
+<p>### ScaleConversion and ScaleFactor</p>
+<p><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#scaleconversion">ScaleConversion</a> changes the mesh's scaling convention from one unit of measurement to another. For example, if a modeling program exported using centimeters as the unit of measurement, but the rest of the game has been using meters, choosing <code>CentimetersToMeters</code> would scale the mesh to match the units of measurement used throughout the game. The factor by which each option scales an incoming mesh are listed here:</p>
+<table>
+<thead>
+<tr>
+<th>ScaleConversion</th>
+<th>Factor</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>CentimetersToInches</code></td>
+<td>0.39</td>
+</tr>
+<tr>
+<td><code>CentimetersToMeters</code></td>
+<td>0.01</td>
+</tr>
+<tr>
+<td><code>InchesToCentimeters</code></td>
+<td>2.54</td>
+</tr>
+<tr>
+<td><code>InchesToMeters</code></td>
+<td>0.0264</td>
+</tr>
+<tr>
+<td><code>MetersToCentimeters</code></td>
+<td>100.0</td>
+</tr>
+<tr>
+<td><code>MetersToInches</code></td>
+<td>39.3701</td>
+</tr>
+</tbody>
+</table>
+<p><code>Custom</code> allows the user to define the factor by which the mesh is scaled by using the value set in ScaleFactor . If a project is using a custom unit of measurement, all imported meshes could be scaled to this custom unit by using ScaleFactor  in conjunction with setting ScaleConversion drop-down menu to <code>Custom</code>.</p>
+<p>### ChangeBasis</p>
+<p>This boolean property, when set to <code>true</code>, exposes three more properties, allowing the user to change the X-, Y-, and Z-bases of the mesh. Any of the three bases may be changed to the positive or negative x-, y-, or z-axis. One example where this setting would be changed is if a project is created where the orientation (i.e. right, forward, and up directions) is different from the mesh being imported.</p>
+<p># Textures</p>
+<p>When a file is imported as a texture, there are no options available to it directly after import as there are with models and model animations. There are, however, a number of options available through the texture Resource's ContentComponents, which are listed in the Properties window window and accessed by clicking on the texture Resource in the Library window window.</p>
+<p>## Default Texture Settings</p>
+<p>Based on certain features of the file being imported, the default settings for a texture found in the ContentComponents will be changed. The following table lists the file feature, feature value, setting affected, and the value applied for each possible default setting:</p>
+<table>
+<thead>
+<tr>
+<th>File Feature</th>
+<th>Value</th>
+<th>Affected Setting</th>
+<th>Setting Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>File Extension</td>
+<td><code>.hdr</code></td>
+<td>Compression</td>
+<td><code>None</code></td>
+</tr>
+<tr>
+<td>Name Substring</td>
+<td><code>"albedo"</code></td>
+<td>Compression</td>
+<td><code>BC1</code></td>
+</tr>
+<tr>
+<td>Name Substring</td>
+<td><code>"normal"</code></td>
+<td>Compression</td>
+<td><code>BC5</code></td>
+</tr>
+<tr>
+<td>Name Substring</td>
+<td><code>"metallic"/"metalness"</code> and <code>"roughness"</code></td>
+<td>Compression</td>
+<td><code>BC5</code></td>
+</tr>
+<tr>
+<td>Name Substring</td>
+<td><code>"metallic"/"metalness"</code></td>
+<td>Compression</td>
+<td><code>BC4</code></td>
+</tr>
+<tr>
+<td>Name Substring</td>
+<td><code>"roughness"</code></td>
+<td>Compression</td>
+<td><code>BC4</code></td>
+</tr>
+<tr>
+<td>Name Substring</td>
+<td><code>"albedo"</code></td>
+<td>GammaCorrection</td>
+<td><code>true</code></td>
+</tr>
+</tbody>
+</table>
+<p>## ContentComponents</p>
+<p>Every texture has two ContentComponents: <code>TextureBuilder</code> and <code>TextureInfo</code>.</p>
+<p>TextureInfo provides basic information about the texture. These values will stay the same with the exception of <code>Size</code>, which will change if certain properties are modified in the TextureBuilder component, such as Compression or MipMapping.</p>
+<p>TextureBuilder, on the other hand, is comprised of a number of modifiable properties that address a few different questions: how should the texture be interpreted, compressed, addressed, sampled &amp; filtered, and corrected. </p>
+<p>### Interpretation</p>
+<p><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#texturetype">Type</a> sets whether a texture should be interpreted as a <code>Texture2D</code> or as a <code>TextureCube</code>. <code>TextureCube</code> is the <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#texturetype">TextureType</a> that should be chosen when the image should be used as a skybox in the <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/graphics/renderer.markdown">renderer</a>. For any possible use, <code>Texture2D</code> should be chosen.</p>
+<p>### Compression</p>
+<p><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#texturecompression">Compression</a> sets the lossy, hardware-supported format to convert the texture to, if any. For a more detailed explanation, see <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/graphics/adding_assets/adding_3d_assets/compression.markdown">compression.markdown</a>.</p>
+<p>### Addressing</p>
+<p><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#textureaddressing">AddressingX and AddressingY</a> set how to address the texture whose uv fall outside of the range [0, 1]. The choices available are described in the table below:</p>
+<table>
+<thead>
+<tr>
+<th>Enum Value</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Clamp</td>
+<td>Uses the last pixel found at the border of the range</td>
+</tr>
+<tr>
+<td>Repeat</td>
+<td>Wraps to the other side and continues to sample the image</td>
+</tr>
+<tr>
+<td>Mirror</td>
+<td>The texture is mirrored at the range boundaries</td>
+</tr>
+</tbody>
+</table>
+<p><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#texturecompression">Compression</a>, <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#textureanisotropy">Anisotropy</a>, and so on. Once imported, check these settings to make sure they have been set correctly.</p>
+<p>### Sampling and Filtering</p>
+<p>Texture sampling is the process by which data is accessed from a texture. Given the near-infinite amount of positions, angles, and distance a texture may be viewed when placed on mesh within a level, as well as the computational limits of a real-time simulation, a number of different algorithms for how this data is accessed have been developed. These algorithms are the different methods of texture filtering.</p>
+<p><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#texturefiltering">Filtering</a> describes how pixels from the texture are sampled when viewing the texture from different sizes. Filtering enum sets the algorithm by which to sample the texture. The choices available are:
+ - <code>Nearest</code> - Gets the closest pixel 
+ - <code>Bilinear</code> - Get the four closest pixels and linearly blends between them
+ - <code>Trilinear</code> - The same as Bilinear, but with an additional linear blend between mip levels.</p>
+<p>anisotropy enum describes how pixels are sampled when the ratio of pixels viewed along its uv directions is not 1 : 1 (typically at an oblique angle). The settings available represent how large of a ratio will be accounted for when sampling the texture. For example, <code>x1</code> corresponds to a 1 : 1 ratio, which means this is no anisotropy. <code>x16</code>, which is also the highest quality available, corresponds to a 16 : 1 ratio.</p>
+<p>### Correction</p>
+<p>GammaCorrection checkBox, when set to <code>true</code>, will correct the values of each individual texel of a texture to account from moving the texture from linear space to gamma space that is caused by almost all current monitors (HDR monitors are the exception). When a texture authored in linear space is displayed on a monitor, it loses a percentage of its intensity, causing it to appear more washed-out than than was originally intended by the artist who created it. Gamma correction will account for this loss in intensity and correct it back to the intended level. Generally speaking, textures should be gamma corrected unless they have been authored with gamma space in mind. For a more detailed explanation of gamma correction, go <a href="https://www.cgsd.com/papers/gamma_intro.html">here</a>.</p>
+<p># Related Material
+ ## Manual</p>
+<ul>
+<li><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/graphics/models/model_component.markdown">Models and Skinned Models</a></li>
+</ul>
+<p>## Code Reference</p>
+<ul>
+<li><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/code_reference/class_reference/mesh.markdown">Mesh</a></li>
+<li><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/code_reference/class_reference/model.markdown">Model</a></li>
+<li><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/code_reference/class_reference/skinnedmodel.markdown">Skinned Model</a></li>
+<li><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/code_reference/class_reference/simpleanimation.markdown">Simple Animation</a> </li>
+</ul></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+                <p>Copyright &copy; 2021 Plasma Engine. Released under the MIT License.</p>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../../../../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../../../../js/base.js" defer></script>
+        <script src="../../../../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

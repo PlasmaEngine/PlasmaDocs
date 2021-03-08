@@ -1,0 +1,945 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../../img/favicon.ico">
+        <title>Physicscarwheel - Docs | Plasma Engine</title>
+        <link href="../../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/docco.min.css">
+
+        <script src="../../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../../..">Docs | Plasma Engine</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href="../../.." class="nav-link">Home</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="/getting_started/" class="nav-link">Getting Started</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Manual <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../manual/" class="dropdown-item">Manual</a>
+</li>
+                                    
+<li>
+    <a href="../../../manual/plasmamanual/ai/" class="dropdown-item">AI</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Architecture</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../manual/plasmamanual/architecture/architecture/" class="dropdown-item">Architecture</a>
+</li>
+            
+<li>
+    <a href="../../../manual/plasmamanual/architecture/archetypes/archtype_basics.markdown" class="dropdown-item">Archtypes</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Cogs</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../manual/plasmamanual/architecture/cogs/cogs/" class="dropdown-item">Cogs</a>
+</li>
+            
+<li>
+    <a href="../../../manual/plasmamanual/architecture/cogs/gameobjectsconcept/" class="dropdown-item">Game Objects</a>
+</li>
+            
+<li>
+    <a href="../../../manual/plasmamanual/architecture/cogs/objectstore/" class="dropdown-item">Object Store</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Objects</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../manual/plasmamanual/architecture/objects/objects/" class="dropdown-item">Objects</a>
+</li>
+            
+<li>
+    <a href="../../../manual/plasmamanual/architecture/objects/gamesession/" class="dropdown-item">Gamesession</a>
+</li>
+            
+<li>
+    <a href="../../../manual/plasmamanual/architecture/objects/spaces/" class="dropdown-item">Spaces</a>
+</li>
+            
+<li>
+    <a href="../../../manual/plasmamanual/architecture/objects/levelsettings/" class="dropdown-item">Levelsettings</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Resources</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../manual/plasmamanual/architecture/resources/resource.markdown" class="dropdown-item">Resources</a>
+</li>
+            
+<li>
+    <a href="../../../manual/plasmamanual/architecture/resources/level/" class="dropdown-item">Levels</a>
+</li>
+            
+<li>
+    <a href="../../../manual/plasmamanual/architecture/fonts/fonts.markdown" class="dropdown-item">Fonts</a>
+</li>
+            
+<li>
+    <a href="../../../manual/plasmamanual/architecture/resources/resourcestable.markdown" class="dropdown-item">Resource Table</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                                    
+<li>
+    <a href="../../../manual/plasmamanual/audio/" class="dropdown-item">Audio</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Editor</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../manual/plasmamanual/editor/" class="dropdown-item">Editor</a>
+</li>
+            
+<li>
+    <a href="../../../manual/plasmamanual/editor/tags/" class="dropdown-item">Tags</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Reference <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../" class="dropdown-item">Index</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Contributing <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../source_docs/getting_started.md" class="dropdown-item">Getting Started</a>
+</li>
+                                    
+<li>
+    <a href="../../../source_docs/plasma_code/" class="dropdown-item">Plasma Code</a>
+</li>
+                                    
+<li>
+    <a href="../../../source_docs/plasma_overview/" class="dropdown-item">Plasma Overview</a>
+</li>
+                                    
+<li>
+    <a href="../../../source_docs/components.md" class="dropdown-item">Components</a>
+</li>
+                                    
+<li>
+    <a href="../../../source_docs/custom_event_names/" class="dropdown-item">Custom Event Names</a>
+</li>
+                                    
+<li>
+    <a href="../../../source_docs/editor/" class="dropdown-item">Editor</a>
+</li>
+                                    
+<li>
+    <a href="../../../source_docs/engine/" class="dropdown-item">Engine</a>
+</li>
+                                    
+<li>
+    <a href="../../../source_docs/enums/" class="dropdown-item">Enums</a>
+</li>
+                                    
+<li>
+    <a href="../../../source_docs/meta_bindings.markdown" class="dropdown-item">Meta Binding</a>
+</li>
+                                    
+<li>
+    <a href="../../../source_docs/platform/" class="dropdown-item">Adding Platforms</a>
+</li>
+                                    
+<li>
+    <a href="../../../source_docs/widgets/" class="dropdown-item">Widgets</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a href="https://github.com/PlasmaEngine/PlasmaDocs/edit/master/docs/reference/class_reference/physicscarwheel.markdown" class="nav-link"><i class="fa fa-github"></i> Edit on GitHub</a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<p><code>Component</code> <code>Physics</code></p>
+<p>(NOTE) A wheel for a high speed physics based car. Each wheel contains properties to describe how to interact with the world (eg. spring forces, friction, etc...).</p>
+<table>
+<thead>
+<tr>
+<th>Methods</th>
+<th>Properties</th>
+<th>Base Classes</th>
+<th>Derived Classes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/physicscarwheel.markdown#physicscarwheel-void"> Constructor</a></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/physicscarwheel.markdown#active-plasma-engine-docum"> Active</a></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/component.markdown">component</a></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/physicscarwheel.markdown#contactedobject-plasma-eng"> ContactedObject</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/physicscarwheel.markdown#contactnormal-plasma-engin"> ContactNormal</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/physicscarwheel.markdown#contactpoint-plasma-engine"> ContactPoint</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/physicscarwheel.markdown#dampingcompressionratio"> DampingCompressionRatio</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/physicscarwheel.markdown#dampingrelaxationratio-z"> DampingRelaxationRatio</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/physicscarwheel.markdown#drivefactor-plasma-engine"> DriveFactor</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/physicscarwheel.markdown#forwarddynamicfriction-z"> ForwardDynamicFriction</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/physicscarwheel.markdown#forwardimpulse-plasma-engi"> ForwardImpulse</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/physicscarwheel.markdown#forwardstaticfriction-ze"> ForwardStaticFriction</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/physicscarwheel.markdown#frequencyhz-plasma-engine"> FrequencyHz</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/physicscarwheel.markdown#grip-plasma-engine-documen"> Grip</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/physicscarwheel.markdown#gripscalar-plasma-engine-d"> GripScalar</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/physicscarwheel.markdown#is2dwheel-plasma-engine-do"> Is2DWheel</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/physicscarwheel.markdown#isdrivewheel-plasma-engine"> IsDriveWheel</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/physicscarwheel.markdown#isincontact-plasma-engine"> IsInContact</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/physicscarwheel.markdown#issliding-plasma-engine-do"> IsSliding</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/physicscarwheel.markdown#maxbrakestrength-plasma-en"> MaxBrakeStrength</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/physicscarwheel.markdown#maxspringcompressiondist"> MaxSpringCompressionDistance</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/physicscarwheel.markdown#maxspringforce-plasma-engi"> MaxSpringForce</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/physicscarwheel.markdown#maxspringrelaxationdista"> MaxSpringRelaxationDistance</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/physicscarwheel.markdown#normalimpulse-plasma-engin"> NormalImpulse</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/physicscarwheel.markdown#physicscarpath-plasma-engi"> PhysicsCarPath</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/physicscarwheel.markdown#prerotation-plasma-engine"> PreRotation</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/physicscarwheel.markdown#radius-plasma-engine-docum"> Radius</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/physicscarwheel.markdown#rotation-plasma-engine-doc"> Rotation</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/physicscarwheel.markdown#rotationalvelocity-plasma"> RotationalVelocity</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/physicscarwheel.markdown#sidedynamicfriction-plasma"> SideDynamicFriction</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/physicscarwheel.markdown#sideimpulse-plasma-engine"> SideImpulse</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/physicscarwheel.markdown#sidestaticfriction-plasma"> SideStaticFriction</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/physicscarwheel.markdown#springlength-plasma-engine"> SpringLength</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/physicscarwheel.markdown#springmaxlength-plasma-eng"> SpringMaxLength</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/physicscarwheel.markdown#springminlength-plasma-eng"> SpringMinLength</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/physicscarwheel.markdown#springrestlength-plasma-en"> SpringRestLength</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/physicscarwheel.markdown#springstartlength-plasma-e"> SpringStartLength</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/physicscarwheel.markdown#steerfactor-plasma-engine"> SteerFactor</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/physicscarwheel.markdown#wheellocalstartposition"> WheelLocalStartPosition</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/physicscarwheel.markdown#worldangularvelocity-zer"> WorldAngularVelocity</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/physicscarwheel.markdown#worldaxleaxis-plasma-engin"> WorldAxleAxis</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/physicscarwheel.markdown#worldforwardaxis-plasma-en"> WorldForwardAxis</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/physicscarwheel.markdown#worldlinearvelocity-plasma"> WorldLinearVelocity</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/physicscarwheel.markdown#worldspringaxis-plasma-eng"> WorldSpringAxis</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/physicscarwheel.markdown#worldwheelbasis-plasma-eng"> WorldWheelBasis</a></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>#  Properties</p>
+<hr />
+<p>#  Active : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown">boolean</a></p>
+<blockquote>
+<p>Should this wheel calculate forces for the current PhysicsCar.
+``` lang=cpp, name=Lightning
+var Active : Boolean</p>
+</blockquote>
+<hr />
+<p>#  ContactedObject : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/cog.markdown">cog</a></p>
+<p><code>read-only</code></p>
+<blockquote>
+<p>The object that this wheel is currently in contact with.
+``` lang=cpp, name=Lightning
+var ContactedObject : Cog</p>
+</blockquote>
+<hr />
+<p>#  ContactNormal : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real3.markdown">real3</a></p>
+<p><code>read-only</code></p>
+<blockquote>
+<p>The normal of the surface where the wheel is currently in contact. Will be the plasma vector if there is no contact.
+``` lang=cpp, name=Lightning
+var ContactNormal : Real3</p>
+</blockquote>
+<hr />
+<p>#  ContactPoint : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real3.markdown">real3</a></p>
+<p><code>read-only</code></p>
+<blockquote>
+<p>The point in world space where the wheel is currently in contact. Will be the plasma vector if there is no contact.
+``` lang=cpp, name=Lightning
+var ContactPoint : Real3</p>
+</blockquote>
+<hr />
+<p>#  DampingCompressionRatio : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown">real</a></p>
+<blockquote>
+<p>The damping ratio when the spring is compressing (0: no damping, 1 critical damping)
+``` lang=cpp, name=Lightning
+var DampingCompressionRatio : Real</p>
+</blockquote>
+<hr />
+<p>#  DampingRelaxationRatio : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown">real</a></p>
+<blockquote>
+<p>The damping ratio when the spring is relaxing (0: no damping, 1 critical damping)
+``` lang=cpp, name=Lightning
+var DampingRelaxationRatio : Real</p>
+</blockquote>
+<hr />
+<p>#  DriveFactor : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown">real</a></p>
+<blockquote>
+<p>Used to alter the direction this wheel turns when the motor receives power. Typically set to 1 or -1. Useful to cause a wheel to temporarily rotate backwards without having to change its basis.
+``` lang=cpp, name=Lightning
+var DriveFactor : Real</p>
+</blockquote>
+<hr />
+<p>#  ForwardDynamicFriction : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown">real</a></p>
+<blockquote>
+<p>Determines the force applied in the forward direction when the wheel is in dynamic friction and therefore slipping. (i.e. force = muK * Fnormal)
+``` lang=cpp, name=Lightning
+var ForwardDynamicFriction : Real</p>
+</blockquote>
+<hr />
+<p>#  ForwardImpulse : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown">real</a></p>
+<p><code>read-only</code></p>
+<blockquote>
+<p>The forward impulse (drive force) being exerted by the wheel.
+``` lang=cpp, name=Lightning
+var ForwardImpulse : Real</p>
+</blockquote>
+<hr />
+<p>#  ForwardStaticFriction : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown">real</a></p>
+<blockquote>
+<p>Used with Coulomb's friction to determine when the wheel will start slipping in the forward direction. (i.e. the friction is bound by muS * Fnormal).
+``` lang=cpp, name=Lightning
+var ForwardStaticFriction : Real</p>
+</blockquote>
+<hr />
+<p>#  FrequencyHz : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown">real</a></p>
+<blockquote>
+<p>The frequency at which the spring of this wheel oscillates per second.
+``` lang=cpp, name=Lightning
+var FrequencyHz : Real</p>
+</blockquote>
+<hr />
+<p>#  Grip : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown">real</a></p>
+<p><code>read-only</code></p>
+<blockquote>
+<p>A coefficient from 0 to 1 that represents how much grip the wheel has.
+``` lang=cpp, name=Lightning
+var Grip : Real</p>
+</blockquote>
+<hr />
+<p>#  GripScalar : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown">real</a></p>
+<blockquote>
+<p>Artificially increases the grip of the car (where 2 is twice the grip). The total grip scalar is computed as CarGripScalar * WheelGripScalar so the total car can be easily tweaked while allowing individual wheel tweaks.
+``` lang=cpp, name=Lightning
+var GripScalar : Real</p>
+</blockquote>
+<hr />
+<p>#  Is2DWheel : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown">boolean</a></p>
+<blockquote>
+<p>Does this wheel only operate in 2D? Ignores the side friction axis.
+``` lang=cpp, name=Lightning
+var Is2DWheel : Boolean</p>
+</blockquote>
+<hr />
+<p>#  IsDriveWheel : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown">boolean</a></p>
+<blockquote>
+<p>Drive wheels turn when the car body has gas pressed.
+``` lang=cpp, name=Lightning
+var IsDriveWheel : Boolean</p>
+</blockquote>
+<hr />
+<p>#  IsInContact : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown">boolean</a></p>
+<p><code>read-only</code></p>
+<blockquote>
+<p>If the wheel is currently in contact with an object.
+``` lang=cpp, name=Lightning
+var IsInContact : Boolean</p>
+</blockquote>
+<hr />
+<p>#  IsSliding : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown">boolean</a></p>
+<p><code>read-only</code></p>
+<blockquote>
+<p>If the wheel is currently sliding. This means that the wheel is slipping from spinning too fast (using dynamic friction instead of static).
+``` lang=cpp, name=Lightning
+var IsSliding : Boolean</p>
+</blockquote>
+<hr />
+<p>#  MaxBrakeStrength : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown">real</a></p>
+<blockquote>
+<p>The max force that this wheel can exert to break.
+``` lang=cpp, name=Lightning
+var MaxBrakeStrength : Real</p>
+</blockquote>
+<hr />
+<p>#  MaxSpringCompressionDistance : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown">real</a></p>
+<blockquote>
+<p>The max distance that a spring can compress in one frame.
+``` lang=cpp, name=Lightning
+var MaxSpringCompressionDistance : Real</p>
+</blockquote>
+<hr />
+<p>#  MaxSpringForce : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown">real</a></p>
+<blockquote>
+<p>The maximum force that the wheel's spring can exert.
+``` lang=cpp, name=Lightning
+var MaxSpringForce : Real</p>
+</blockquote>
+<hr />
+<p>#  MaxSpringRelaxationDistance : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown">real</a></p>
+<blockquote>
+<p>The max distance that a spring can relax in one frame.
+``` lang=cpp, name=Lightning
+var MaxSpringRelaxationDistance : Real</p>
+</blockquote>
+<hr />
+<p>#  NormalImpulse : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown">real</a></p>
+<p><code>read-only</code></p>
+<blockquote>
+<p>The normal impulse (spring force) being exerted by the wheel.
+``` lang=cpp, name=Lightning
+var NormalImpulse : Real</p>
+</blockquote>
+<hr />
+<p>#  PhysicsCarPath : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/cogpath.markdown">cogpath</a></p>
+<blockquote>
+<p>The path to the car that this is a wheel for.
+``` lang=cpp, name=Lightning
+var PhysicsCarPath : CogPath</p>
+</blockquote>
+<hr />
+<p>#  PreRotation : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/quaternion.markdown">quaternion</a></p>
+<blockquote>
+<p>Used to rotate the wheel before taking into account it's transform. Typically used to rotate a cylinder to align with a model.
+``` lang=cpp, name=Lightning
+var PreRotation : Quaternion</p>
+</blockquote>
+<hr />
+<p>#  Radius : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown">real</a></p>
+<blockquote>
+<p>The radius of the wheel.
+``` lang=cpp, name=Lightning
+var Radius : Real</p>
+</blockquote>
+<hr />
+<p>#  Rotation : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown">real</a></p>
+<p><code>read-only</code></p>
+<blockquote>
+<p>The current rotation of the wheel in radians about it's axle.
+``` lang=cpp, name=Lightning
+var Rotation : Real</p>
+</blockquote>
+<hr />
+<p>#  RotationalVelocity : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown">real</a></p>
+<p><code>read-only</code></p>
+<blockquote>
+<p>The current rotational velocity of the wheel about it's axle.
+``` lang=cpp, name=Lightning
+var RotationalVelocity : Real</p>
+</blockquote>
+<hr />
+<p>#  SideDynamicFriction : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown">real</a></p>
+<blockquote>
+<p>Same as ForwardDynamicFriction, but in the side direction. See SideStaticFriction for a why these are separated.
+``` lang=cpp, name=Lightning
+var SideDynamicFriction : Real</p>
+</blockquote>
+<hr />
+<p>#  SideImpulse : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown">real</a></p>
+<p><code>read-only</code></p>
+<blockquote>
+<p>The side impulse (side friction) being exerted by the wheel.
+``` lang=cpp, name=Lightning
+var SideImpulse : Real</p>
+</blockquote>
+<hr />
+<p>#  SideStaticFriction : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown">real</a></p>
+<blockquote>
+<p>Same as ForwardStaticFriction, but in the side direction. Forward and side friction are separated since the forward direction is rolling friction and the side direction is sliding friction.
+``` lang=cpp, name=Lightning
+var SideStaticFriction : Real</p>
+</blockquote>
+<hr />
+<p>#  SpringLength : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown">real</a></p>
+<p><code>read-only</code></p>
+<blockquote>
+<p>The current length of the spring.
+``` lang=cpp, name=Lightning
+var SpringLength : Real</p>
+</blockquote>
+<hr />
+<p>#  SpringMaxLength : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown">real</a></p>
+<blockquote>
+<p>The maximum length of the spring of the wheel. If the wheel hits something further away than this length (plus the wheel radius) then that object will be ignored.
+``` lang=cpp, name=Lightning
+var SpringMaxLength : Real</p>
+</blockquote>
+<hr />
+<p>#  SpringMinLength : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown">real</a></p>
+<blockquote>
+<p>The minimum length of the spring of the wheel. If a wheel cast hits an object at a time before min but after start then the wheel will still collide with this object but the spring forces and visuals will be at the min spring length. This is useful for putting the starting raycast position inside of the object so as to avoid tunneling but still having the wheel only visually display where it should.
+``` lang=cpp, name=Lightning
+var SpringMinLength : Real</p>
+</blockquote>
+<hr />
+<p>#  SpringRestLength : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown">real</a></p>
+<blockquote>
+<p>The rest length of the spring.
+``` lang=cpp, name=Lightning
+var SpringRestLength : Real</p>
+</blockquote>
+<hr />
+<p>#  SpringStartLength : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown">real</a></p>
+<blockquote>
+<p>The t value to start the raycast at. This t value is 0 at the wheel position and travels in the direction of the wheel spring direction. This value is used to modify where the raycast actually starts relative to the start position.
+``` lang=cpp, name=Lightning
+var SpringStartLength : Real</p>
+</blockquote>
+<hr />
+<p>#  SteerFactor : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown">real</a></p>
+<blockquote>
+<p>How much this wheel steers. [0, 1] where 1 is the max steering of the car.
+``` lang=cpp, name=Lightning
+var SteerFactor : Real</p>
+</blockquote>
+<hr />
+<p>#  WheelLocalStartPosition : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real3.markdown">real3</a></p>
+<blockquote>
+<p>The local position on the car body that the wheel starts at (raycasts from).
+``` lang=cpp, name=Lightning
+var WheelLocalStartPosition : Real3</p>
+</blockquote>
+<hr />
+<p>#  WorldAngularVelocity : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real3.markdown">real3</a></p>
+<p><code>read-only</code></p>
+<blockquote>
+<p>The axis that represents the world angular velocity of the wheel.
+``` lang=cpp, name=Lightning
+var WorldAngularVelocity : Real3</p>
+</blockquote>
+<hr />
+<p>#  WorldAxleAxis : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real3.markdown">real3</a></p>
+<p><code>read-only</code></p>
+<blockquote>
+<p>The current axis of the wheel's axle in world space.
+``` lang=cpp, name=Lightning
+var WorldAxleAxis : Real3</p>
+</blockquote>
+<hr />
+<p>#  WorldForwardAxis : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real3.markdown">real3</a></p>
+<p><code>read-only</code></p>
+<blockquote>
+<p>The current axis of the wheel's forward in world space.
+``` lang=cpp, name=Lightning
+var WorldForwardAxis : Real3</p>
+</blockquote>
+<hr />
+<p>#  WorldLinearVelocity : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real3.markdown">real3</a></p>
+<p><code>read-only</code></p>
+<blockquote>
+<p>The velocity of the center of the wheel while taking into account the car's velocity.
+``` lang=cpp, name=Lightning
+var WorldLinearVelocity : Real3</p>
+</blockquote>
+<hr />
+<p>#  WorldSpringAxis : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real3.markdown">real3</a></p>
+<p><code>read-only</code></p>
+<blockquote>
+<p>The current world-space spring axis of the wheel.
+``` lang=cpp, name=Lightning
+var WorldSpringAxis : Real3</p>
+</blockquote>
+<hr />
+<p>#  WorldWheelBasis : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/quaternion.markdown">quaternion</a></p>
+<blockquote>
+<p>Determines what directions the forward, axle, and spring are on the wheel. The forward direction is taken from the x-axis of the basis. Likewise the axle is from the y-axis and the spring is from the z-axis. Use ToQuaternion to construct this.
+``` lang=cpp, name=Lightning
+var WorldWheelBasis : Quaternion</p>
+</blockquote>
+<hr />
+<p>#  Methods</p>
+<hr />
+<p>#  PhysicsCarWheel : Void</p>
+<p><code>constructor</code></p>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>``` lang=cpp, name=Lightning</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>function PhysicsCarWheel()</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>```</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<hr /></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+                <p>Copyright &copy; 2021 Plasma Engine. Released under the MIT License.</p>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../../js/base.js" defer></script>
+        <script src="../../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

@@ -1,0 +1,1573 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../../img/favicon.ico">
+        <title>String - Docs | Plasma Engine</title>
+        <link href="../../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/docco.min.css">
+
+        <script src="../../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../../..">Docs | Plasma Engine</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href="../../.." class="nav-link">Home</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="/getting_started/" class="nav-link">Getting Started</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Manual <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../manual/" class="dropdown-item">Manual</a>
+</li>
+                                    
+<li>
+    <a href="../../../manual/plasmamanual/ai/" class="dropdown-item">AI</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Architecture</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../manual/plasmamanual/architecture/architecture/" class="dropdown-item">Architecture</a>
+</li>
+            
+<li>
+    <a href="../../../manual/plasmamanual/architecture/archetypes/archtype_basics.markdown" class="dropdown-item">Archtypes</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Cogs</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../manual/plasmamanual/architecture/cogs/cogs/" class="dropdown-item">Cogs</a>
+</li>
+            
+<li>
+    <a href="../../../manual/plasmamanual/architecture/cogs/gameobjectsconcept/" class="dropdown-item">Game Objects</a>
+</li>
+            
+<li>
+    <a href="../../../manual/plasmamanual/architecture/cogs/objectstore/" class="dropdown-item">Object Store</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Objects</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../manual/plasmamanual/architecture/objects/objects/" class="dropdown-item">Objects</a>
+</li>
+            
+<li>
+    <a href="../../../manual/plasmamanual/architecture/objects/gamesession/" class="dropdown-item">Gamesession</a>
+</li>
+            
+<li>
+    <a href="../../../manual/plasmamanual/architecture/objects/spaces/" class="dropdown-item">Spaces</a>
+</li>
+            
+<li>
+    <a href="../../../manual/plasmamanual/architecture/objects/levelsettings/" class="dropdown-item">Levelsettings</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Resources</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../manual/plasmamanual/architecture/resources/resource.markdown" class="dropdown-item">Resources</a>
+</li>
+            
+<li>
+    <a href="../../../manual/plasmamanual/architecture/resources/level/" class="dropdown-item">Levels</a>
+</li>
+            
+<li>
+    <a href="../../../manual/plasmamanual/architecture/fonts/fonts.markdown" class="dropdown-item">Fonts</a>
+</li>
+            
+<li>
+    <a href="../../../manual/plasmamanual/architecture/resources/resourcestable.markdown" class="dropdown-item">Resource Table</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                                    
+<li>
+    <a href="../../../manual/plasmamanual/audio/" class="dropdown-item">Audio</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Editor</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../manual/plasmamanual/editor/" class="dropdown-item">Editor</a>
+</li>
+            
+<li>
+    <a href="../../../manual/plasmamanual/editor/tags/" class="dropdown-item">Tags</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Reference <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../" class="dropdown-item">Index</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Contributing <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../source_docs/getting_started.md" class="dropdown-item">Getting Started</a>
+</li>
+                                    
+<li>
+    <a href="../../../source_docs/plasma_code/" class="dropdown-item">Plasma Code</a>
+</li>
+                                    
+<li>
+    <a href="../../../source_docs/plasma_overview/" class="dropdown-item">Plasma Overview</a>
+</li>
+                                    
+<li>
+    <a href="../../../source_docs/components.md" class="dropdown-item">Components</a>
+</li>
+                                    
+<li>
+    <a href="../../../source_docs/custom_event_names/" class="dropdown-item">Custom Event Names</a>
+</li>
+                                    
+<li>
+    <a href="../../../source_docs/editor/" class="dropdown-item">Editor</a>
+</li>
+                                    
+<li>
+    <a href="../../../source_docs/engine/" class="dropdown-item">Engine</a>
+</li>
+                                    
+<li>
+    <a href="../../../source_docs/enums/" class="dropdown-item">Enums</a>
+</li>
+                                    
+<li>
+    <a href="../../../source_docs/meta_bindings.markdown" class="dropdown-item">Meta Binding</a>
+</li>
+                                    
+<li>
+    <a href="../../../source_docs/platform/" class="dropdown-item">Adding Platforms</a>
+</li>
+                                    
+<li>
+    <a href="../../../source_docs/widgets/" class="dropdown-item">Widgets</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a href="https://github.com/PlasmaEngine/PlasmaDocs/edit/master/docs/reference/lightning_base_types/string.markdown" class="nav-link"><i class="fa fa-github"></i> Edit on GitHub</a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<p><code>Core</code></p>
+<table>
+<thead>
+<tr>
+<th>Methods</th>
+<th>Properties</th>
+<th>Base Classes</th>
+<th>Derived Classes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown#compare-plasma-engine-docu"> Compare</a></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown#all-plasma-engine-document"> All</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown#compareto-plasma-engine-do"> CompareTo</a></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown#begin-plasma-engine-docume"> Begin</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown#computerunecount-plasma-en"> ComputeRuneCount</a></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown#bytecount-plasma-engine-do"> ByteCount</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown#concatenate-plasma-engine"> Concatenate</a></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown#count-plasma-engine-docume"> Count</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown#contains-plasma-engine-doc"> Contains</a></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown#empty-plasma-engine-docume"> Empty</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown#endswith-plasma-engine-doc"> EndsWith</a></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown#end-plasma-engine-document"> End</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown#findfirstof-plasma-engine"> FindFirstOf</a></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown#isnotempty-plasma-engine-d"> IsNotEmpty</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown#findlastof-plasma-engine-d"> FindLastOf</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown#findrangeexclusive-plasma"> FindRangeExclusive</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown#findrangeinclusive-plasma"> FindRangeInclusive</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown#formatc-plasma-engine-docu"> FormatC</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown#fromrune-plasma-engine-doc"> FromRune</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown#get-plasma-engine-document"> Get</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown#isnullorempty-plasma-engin"> IsNullOrEmpty</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown#isnullorwhitespace-plasma"> IsNullOrWhitespace</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown#join-plasma-engine-documen"> Join</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown#replace-plasma-engine-docu"> Replace</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown#runeiteratorfrombyteinde"> RuneIteratorFromByteIndex</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown#runeiteratorfromruneinde"> RuneIteratorFromRuneIndex</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown#split-plasma-engine-docume"> Split</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown#startswith-plasma-engine-d"> StartsWith</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown#substring-plasma-engine-do"> SubString</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown#substringbytes-plasma-engi"> SubStringBytes</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown#substringfromruneindices"> SubStringFromRuneIndices</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown#tolower-plasma-engine-docu"> ToLower</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown#toupper-plasma-engine-docu"> ToUpper</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown#trim-plasma-engine-documen"> Trim</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown#trimend-plasma-engine-docu"> TrimEnd</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown#trimstart-plasma-engine-do"> TrimStart</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>#  Properties</p>
+<hr />
+<p>#  All : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/stringrange.markdown">stringrange</a></p>
+<p><code>read-only</code></p>
+<blockquote>
+<p>Converts the string into a string range.
+``` lang=cpp, name=Lightning
+var All : StringRange</p>
+</blockquote>
+<hr />
+<p>#  Begin : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/runeiterator.markdown">runeiterator</a></p>
+<p><code>read-only</code></p>
+<blockquote>
+<p>Returns the RuneIterator at the start of this string.
+``` lang=cpp, name=Lightning
+var Begin : RuneIterator</p>
+</blockquote>
+<hr />
+<p>#  ByteCount : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/integer.markdown">integer</a></p>
+<p><code>read-only</code></p>
+<blockquote>
+<p>Returns the number of bytes in the string.
+``` lang=cpp, name=Lightning
+var ByteCount : Integer</p>
+</blockquote>
+<hr />
+<p>#  Count : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/integer.markdown">integer</a></p>
+<p><code>read-only</code></p>
+<blockquote>
+<p>Returns the number of bytes in the string.
+``` lang=cpp, name=Lightning
+var Count : Integer</p>
+</blockquote>
+<hr />
+<p>#  Empty : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown">boolean</a></p>
+<p><code>read-only</code></p>
+<blockquote>
+<p>Returns true if the string is emtpy.
+``` lang=cpp, name=Lightning
+var Empty : Boolean</p>
+</blockquote>
+<hr />
+<p>#  End : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/runeiterator.markdown">runeiterator</a></p>
+<p><code>read-only</code></p>
+<blockquote>
+<p>Returns the RuneIterator at the end (one past the last Rune) of this string.
+``` lang=cpp, name=Lightning
+var End : RuneIterator</p>
+</blockquote>
+<hr />
+<p>#  IsNotEmpty : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown">boolean</a></p>
+<p><code>read-only</code></p>
+<blockquote>
+<p>Returns true if the string is not empty.
+``` lang=cpp, name=Lightning
+var IsNotEmpty : Boolean</p>
+</blockquote>
+<hr />
+<p>#  Methods</p>
+<hr />
+<p>#  Compare : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/integer.markdown">integer</a></p>
+<p><code>static</code></p>
+<blockquote>
+<p>Compares the two strings and returns an integer to denote their relative sort order.
+|Name|Type|Description|
+|---|---|---|
+|left|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown">string</a>| |
+|right|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown">string</a>| |
+<code>lang=cpp, name=Lightning
+function Compare(left : String, right : String) : Integer</code> </p>
+</blockquote>
+<hr />
+<p>#  CompareTo : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/integer.markdown">integer</a></p>
+<blockquote>
+<p>Compares this string to the given string and returns an integer to denote their relative sort order.
+|Name|Type|Description|
+|---|---|---|
+|p0|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/stringrange.markdown">stringrange</a>| |
+<code>lang=cpp, name=Lightning
+function CompareTo(p0 : StringRange) : Integer</code> </p>
+</blockquote>
+<hr />
+<p>#  ComputeRuneCount : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/integer.markdown">integer</a></p>
+<blockquote>
+<p>Compute the number of runes in the string.
+|Name|Type|Description|
+|---|---|---|
+<code>lang=cpp, name=Lightning
+function ComputeRuneCount() : Integer</code> </p>
+</blockquote>
+<hr />
+<p>#  Concatenate : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown">string</a></p>
+<p><code>static</code></p>
+<blockquote>
+<p>Combines the two strings into a new string.
+|Name|Type|Description|
+|---|---|---|
+|p0|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown">string</a>| |
+|p1|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown">string</a>| |
+<code>lang=cpp, name=Lightning
+function Concatenate(p0 : String, p1 : String) : String</code> </p>
+</blockquote>
+<hr />
+<p>#  Concatenate : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown">string</a></p>
+<p><code>static</code></p>
+<blockquote>
+<p>Combines the two string ranges into a new string.
+|Name|Type|Description|
+|---|---|---|
+|p0|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/stringrange.markdown">stringrange</a>| |
+|p1|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/stringrange.markdown">stringrange</a>| |
+<code>lang=cpp, name=Lightning
+function Concatenate(p0 : StringRange, p1 : StringRange) : String</code> </p>
+</blockquote>
+<hr />
+<p>#  Contains : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown">boolean</a></p>
+<blockquote>
+<p>Returns if the string Contains the specified substring.
+|Name|Type|Description|
+|---|---|---|
+|p0|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/stringrange.markdown">stringrange</a>| |
+<code>lang=cpp, name=Lightning
+function Contains(p0 : StringRange) : Boolean</code> </p>
+</blockquote>
+<hr />
+<p>#  EndsWith : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown">boolean</a></p>
+<blockquote>
+<p>Returns if the string ends with the specified substring.
+|Name|Type|Description|
+|---|---|---|
+|p0|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/stringrange.markdown">stringrange</a>| |
+<code>lang=cpp, name=Lightning
+function EndsWith(p0 : StringRange) : Boolean</code> </p>
+</blockquote>
+<hr />
+<p>#  FindFirstOf : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/stringrange.markdown">stringrange</a></p>
+<blockquote>
+<p>Returns a StringRange that Contains the first occurrence of given StringRange.
+|Name|Type|Description|
+|---|---|---|
+|p0|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/stringrange.markdown">stringrange</a>| |
+<code>lang=cpp, name=Lightning
+function FindFirstOf(p0 : StringRange) : StringRange</code> </p>
+</blockquote>
+<hr />
+<p>#  FindLastOf : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/stringrange.markdown">stringrange</a></p>
+<blockquote>
+<p>Returns a StringRange that Contains the last occurrence of given StringRange.
+|Name|Type|Description|
+|---|---|---|
+|p0|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/stringrange.markdown">stringrange</a>| |
+<code>lang=cpp, name=Lightning
+function FindLastOf(p0 : StringRange) : StringRange</code> </p>
+</blockquote>
+<hr />
+<p>#  FindRangeExclusive : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/stringrange.markdown">stringrange</a></p>
+<blockquote>
+<p>Finds the first StringRange that starts with 'startRange' and ends with 'endRange'. This substring excludes 'startRange' and 'endRange'.
+|Name|Type|Description|
+|---|---|---|
+|startRange|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/stringrange.markdown">stringrange</a>| |
+|endRange|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/stringrange.markdown">stringrange</a>| |
+<code>lang=cpp, name=Lightning
+function FindRangeExclusive(startRange : StringRange, endRange : StringRange) : StringRange</code> </p>
+</blockquote>
+<hr />
+<p>#  FindRangeInclusive : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/stringrange.markdown">stringrange</a></p>
+<blockquote>
+<p>Finds the first StringRange that starts with 'startRange' and ends with 'endRange'. This substring includes 'startRange' and 'endRange'.
+|Name|Type|Description|
+|---|---|---|
+|startRange|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/stringrange.markdown">stringrange</a>| |
+|endRange|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/stringrange.markdown">stringrange</a>| |
+<code>lang=cpp, name=Lightning
+function FindRangeInclusive(startRange : StringRange, endRange : StringRange) : StringRange</code> </p>
+</blockquote>
+<hr />
+<p>#  FormatC : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown">string</a></p>
+<p><code>static</code></p>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>format</td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown">string</a></td>
+<td></td>
+</tr>
+<tr>
+<td>p1</td>
+<td>T</td>
+<td></td>
+</tr>
+<tr>
+<td>``` lang=cpp, name=Lightning</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>function FormatC(format : String, p1 : T) : String</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>```</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<hr />
+<p>#  FormatC : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown">string</a></p>
+<p><code>static</code></p>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>format</td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown">string</a></td>
+<td></td>
+</tr>
+<tr>
+<td>p1</td>
+<td>T</td>
+<td></td>
+</tr>
+<tr>
+<td>p2</td>
+<td>T</td>
+<td></td>
+</tr>
+<tr>
+<td>``` lang=cpp, name=Lightning</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>function FormatC(format : String, p1 : T, p2 : T) : String</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>```</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<hr />
+<p>#  FormatC : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown">string</a></p>
+<p><code>static</code></p>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>format</td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown">string</a></td>
+<td></td>
+</tr>
+<tr>
+<td>p1</td>
+<td>T</td>
+<td></td>
+</tr>
+<tr>
+<td>p2</td>
+<td>T</td>
+<td></td>
+</tr>
+<tr>
+<td>p3</td>
+<td>T</td>
+<td></td>
+</tr>
+<tr>
+<td>``` lang=cpp, name=Lightning</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>function FormatC(format : String, p1 : T, p2 : T, p3 : T) : String</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>```</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<hr />
+<p>#  FormatC : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown">string</a></p>
+<p><code>static</code></p>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>format</td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown">string</a></td>
+<td></td>
+</tr>
+<tr>
+<td>p1</td>
+<td>T</td>
+<td></td>
+</tr>
+<tr>
+<td>p2</td>
+<td>T</td>
+<td></td>
+</tr>
+<tr>
+<td>p3</td>
+<td>T</td>
+<td></td>
+</tr>
+<tr>
+<td>p4</td>
+<td>T</td>
+<td></td>
+</tr>
+<tr>
+<td>``` lang=cpp, name=Lightning</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>function FormatC(format : String, p1 : T, p2 : T, p3 : T, p4 : T) : String</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>```</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<hr />
+<p>#  FormatC : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown">string</a></p>
+<p><code>static</code></p>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>format</td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown">string</a></td>
+<td></td>
+</tr>
+<tr>
+<td>p1</td>
+<td>T</td>
+<td></td>
+</tr>
+<tr>
+<td>p2</td>
+<td>T</td>
+<td></td>
+</tr>
+<tr>
+<td>p3</td>
+<td>T</td>
+<td></td>
+</tr>
+<tr>
+<td>p4</td>
+<td>T</td>
+<td></td>
+</tr>
+<tr>
+<td>p5</td>
+<td>T</td>
+<td></td>
+</tr>
+<tr>
+<td>``` lang=cpp, name=Lightning</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>function FormatC(format : String, p1 : T, p2 : T, p3 : T, p4 : T, p5 : T) : String</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>```</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<hr />
+<p>#  FormatC : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown">string</a></p>
+<p><code>static</code></p>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>format</td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown">string</a></td>
+<td></td>
+</tr>
+<tr>
+<td>p1</td>
+<td>T</td>
+<td></td>
+</tr>
+<tr>
+<td>p2</td>
+<td>T</td>
+<td></td>
+</tr>
+<tr>
+<td>p3</td>
+<td>T</td>
+<td></td>
+</tr>
+<tr>
+<td>p4</td>
+<td>T</td>
+<td></td>
+</tr>
+<tr>
+<td>p5</td>
+<td>T</td>
+<td></td>
+</tr>
+<tr>
+<td>p6</td>
+<td>T</td>
+<td></td>
+</tr>
+<tr>
+<td>``` lang=cpp, name=Lightning</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>function FormatC(format : String, p1 : T, p2 : T, p3 : T, p4 : T, p5 : T, p6 : T) : String</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>```</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<hr />
+<p>#  FormatC : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown">string</a></p>
+<p><code>static</code></p>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>format</td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown">string</a></td>
+<td></td>
+</tr>
+<tr>
+<td>p1</td>
+<td>T</td>
+<td></td>
+</tr>
+<tr>
+<td>p2</td>
+<td>T</td>
+<td></td>
+</tr>
+<tr>
+<td>p3</td>
+<td>T</td>
+<td></td>
+</tr>
+<tr>
+<td>p4</td>
+<td>T</td>
+<td></td>
+</tr>
+<tr>
+<td>p5</td>
+<td>T</td>
+<td></td>
+</tr>
+<tr>
+<td>p6</td>
+<td>T</td>
+<td></td>
+</tr>
+<tr>
+<td>p7</td>
+<td>T</td>
+<td></td>
+</tr>
+<tr>
+<td>``` lang=cpp, name=Lightning</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>function FormatC(format : String, p1 : T, p2 : T, p3 : T, p4 : T, p5 : T, p6 : T, p7 : T) : String</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>```</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<hr />
+<p>#  FormatC : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown">string</a></p>
+<p><code>static</code></p>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>format</td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown">string</a></td>
+<td></td>
+</tr>
+<tr>
+<td>p1</td>
+<td>T</td>
+<td></td>
+</tr>
+<tr>
+<td>p2</td>
+<td>T</td>
+<td></td>
+</tr>
+<tr>
+<td>p3</td>
+<td>T</td>
+<td></td>
+</tr>
+<tr>
+<td>p4</td>
+<td>T</td>
+<td></td>
+</tr>
+<tr>
+<td>p5</td>
+<td>T</td>
+<td></td>
+</tr>
+<tr>
+<td>p6</td>
+<td>T</td>
+<td></td>
+</tr>
+<tr>
+<td>p7</td>
+<td>T</td>
+<td></td>
+</tr>
+<tr>
+<td>p8</td>
+<td>T</td>
+<td></td>
+</tr>
+<tr>
+<td>``` lang=cpp, name=Lightning</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>function FormatC(format : String, p1 : T, p2 : T, p3 : T, p4 : T, p5 : T, p6 : T, p7 : T, p8 : T) : String</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>```</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<hr />
+<p>#  FormatC : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown">string</a></p>
+<p><code>static</code></p>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>format</td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown">string</a></td>
+<td></td>
+</tr>
+<tr>
+<td>p1</td>
+<td>T</td>
+<td></td>
+</tr>
+<tr>
+<td>p2</td>
+<td>T</td>
+<td></td>
+</tr>
+<tr>
+<td>p3</td>
+<td>T</td>
+<td></td>
+</tr>
+<tr>
+<td>p4</td>
+<td>T</td>
+<td></td>
+</tr>
+<tr>
+<td>p5</td>
+<td>T</td>
+<td></td>
+</tr>
+<tr>
+<td>p6</td>
+<td>T</td>
+<td></td>
+</tr>
+<tr>
+<td>p7</td>
+<td>T</td>
+<td></td>
+</tr>
+<tr>
+<td>p8</td>
+<td>T</td>
+<td></td>
+</tr>
+<tr>
+<td>p9</td>
+<td>T</td>
+<td></td>
+</tr>
+<tr>
+<td>``` lang=cpp, name=Lightning</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>function FormatC(format : String, p1 : T, p2 : T, p3 : T, p4 : T, p5 : T, p6 : T, p7 : T, p8 : T, p9 : T) : String</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>```</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<hr />
+<p>#  FormatC : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown">string</a></p>
+<p><code>static</code></p>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>format</td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown">string</a></td>
+<td></td>
+</tr>
+<tr>
+<td>p1</td>
+<td>T</td>
+<td></td>
+</tr>
+<tr>
+<td>p2</td>
+<td>T</td>
+<td></td>
+</tr>
+<tr>
+<td>p3</td>
+<td>T</td>
+<td></td>
+</tr>
+<tr>
+<td>p4</td>
+<td>T</td>
+<td></td>
+</tr>
+<tr>
+<td>p5</td>
+<td>T</td>
+<td></td>
+</tr>
+<tr>
+<td>p6</td>
+<td>T</td>
+<td></td>
+</tr>
+<tr>
+<td>p7</td>
+<td>T</td>
+<td></td>
+</tr>
+<tr>
+<td>p8</td>
+<td>T</td>
+<td></td>
+</tr>
+<tr>
+<td>p9</td>
+<td>T</td>
+<td></td>
+</tr>
+<tr>
+<td>p10</td>
+<td>T</td>
+<td></td>
+</tr>
+<tr>
+<td>``` lang=cpp, name=Lightning</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>function FormatC(format : String, p1 : T, p2 : T, p3 : T, p4 : T, p5 : T, p6 : T, p7 : T, p8 : T, p9 : T, p10 : T) : String</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>```</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<hr />
+<p>#  FromRune : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown">string</a></p>
+<p><code>static</code></p>
+<blockquote>
+<p>Constructs a string from the utf-8 code point of a rune.
+|Name|Type|Description|
+|---|---|---|
+|p0|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/integer.markdown">integer</a>| |
+<code>lang=cpp, name=Lightning
+function FromRune(p0 : Integer) : String</code> </p>
+</blockquote>
+<hr />
+<p>#  FromRune : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown">string</a></p>
+<p><code>static</code></p>
+<blockquote>
+<p>Constructs a string from a rune.
+|Name|Type|Description|
+|---|---|---|
+|p0|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/rune.markdown">rune</a>| |
+<code>lang=cpp, name=Lightning
+function FromRune(p0 : Rune) : String</code> </p>
+</blockquote>
+<hr />
+<p>#  Get : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/rune.markdown">rune</a></p>
+<blockquote>
+<p>String operator Get is deprecated. To iterate through a String use a StringRange (.All) or StringIterator (.Begin).
+|Name|Type|Description|
+|---|---|---|
+|index|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/integer.markdown">integer</a>| |
+<code>lang=cpp, name=Lightning
+function Get(index : Integer) : Rune</code> </p>
+</blockquote>
+<hr />
+<p>#  IsNullOrEmpty : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown">boolean</a></p>
+<p><code>static</code></p>
+<blockquote>
+<p>Returns if the given string is null or empty.
+|Name|Type|Description|
+|---|---|---|
+|p0|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/stringrange.markdown">stringrange</a>| |
+<code>lang=cpp, name=Lightning
+function IsNullOrEmpty(p0 : StringRange) : Boolean</code> </p>
+</blockquote>
+<hr />
+<p>#  IsNullOrWhitespace : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown">boolean</a></p>
+<p><code>static</code></p>
+<blockquote>
+<p>Returns if the given string is null, empty, or all whitespace.
+|Name|Type|Description|
+|---|---|---|
+|p0|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/stringrange.markdown">stringrange</a>| |
+<code>lang=cpp, name=Lightning
+function IsNullOrWhitespace(p0 : StringRange) : Boolean</code> </p>
+</blockquote>
+<hr />
+<p>#  Join : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown">string</a></p>
+<p><code>static</code></p>
+<blockquote>
+<p>Concatenates the given strings with the given separator string.
+|Name|Type|Description|
+|---|---|---|
+|separator|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/stringrange.markdown">stringrange</a>| |
+|value0|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/stringrange.markdown">stringrange</a>| |
+|value1|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/stringrange.markdown">stringrange</a>| |
+<code>lang=cpp, name=Lightning
+function Join(separator : StringRange, value0 : StringRange, value1 : StringRange) : String</code> </p>
+</blockquote>
+<hr />
+<p>#  Join : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown">string</a></p>
+<p><code>static</code></p>
+<blockquote>
+<p>Concatenates the given strings with the given separator string.
+|Name|Type|Description|
+|---|---|---|
+|separator|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/stringrange.markdown">stringrange</a>| |
+|value0|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/stringrange.markdown">stringrange</a>| |
+|value1|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/stringrange.markdown">stringrange</a>| |
+|value2|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/stringrange.markdown">stringrange</a>| |
+<code>lang=cpp, name=Lightning
+function Join(separator : StringRange, value0 : StringRange, value1 : StringRange, value2 : StringRange) : String</code> </p>
+</blockquote>
+<hr />
+<p>#  Join : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown">string</a></p>
+<p><code>static</code></p>
+<blockquote>
+<p>Concatenates the given strings with the given separator string.
+|Name|Type|Description|
+|---|---|---|
+|separator|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/stringrange.markdown">stringrange</a>| |
+|value0|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/stringrange.markdown">stringrange</a>| |
+|value1|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/stringrange.markdown">stringrange</a>| |
+|value2|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/stringrange.markdown">stringrange</a>| |
+|value3|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/stringrange.markdown">stringrange</a>| |
+<code>lang=cpp, name=Lightning
+function Join(separator : StringRange, value0 : StringRange, value1 : StringRange, value2 : StringRange, value3 : StringRange) : String</code> </p>
+</blockquote>
+<hr />
+<p>#  Replace : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown">string</a></p>
+<blockquote>
+<p>Returns a new string with all occurances of a substrings replaced with another substring.
+|Name|Type|Description|
+|---|---|---|
+|oldValue|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/stringrange.markdown">stringrange</a>| |
+|newValue|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/stringrange.markdown">stringrange</a>| |
+<code>lang=cpp, name=Lightning
+function Replace(oldValue : StringRange, newValue : StringRange) : String</code> </p>
+</blockquote>
+<hr />
+<p>#  RuneIteratorFromByteIndex : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/runeiterator.markdown">runeiterator</a></p>
+<blockquote>
+<p>Finds the iterator from a byte index. WARNING: Strings are UTF8 and constructing an iterator from bytes indices can make an iterator in the middle of a rune.
+|Name|Type|Description|
+|---|---|---|
+|byteIndex|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/integer.markdown">integer</a>| |
+<code>lang=cpp, name=Lightning
+function RuneIteratorFromByteIndex(byteIndex : Integer) : RuneIterator</code> </p>
+</blockquote>
+<hr />
+<p>#  RuneIteratorFromRuneIndex : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/runeiterator.markdown">runeiterator</a></p>
+<blockquote>
+<p>Finds the iterator from a rune index. WARNING: this may be slow as finding an iterator from rune index requires a linear search.
+|Name|Type|Description|
+|---|---|---|
+|runeIndex|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/integer.markdown">integer</a>| |
+<code>lang=cpp, name=Lightning
+function RuneIteratorFromRuneIndex(runeIndex : Integer) : RuneIterator</code> </p>
+</blockquote>
+<hr />
+<p>#  Split : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/stringsplitrange.markdown">stringsplitrange</a></p>
+<blockquote>
+<p>Splits the string, according to the separator string, into a range of substrings.
+|Name|Type|Description|
+|---|---|---|
+|separator|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/stringrange.markdown">stringrange</a>| |
+<code>lang=cpp, name=Lightning
+function Split(separator : StringRange) : StringSplitRange</code> </p>
+</blockquote>
+<hr />
+<p>#  StartsWith : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown">boolean</a></p>
+<blockquote>
+<p>Returns if the string starts with the specified substring.
+|Name|Type|Description|
+|---|---|---|
+|p0|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/stringrange.markdown">stringrange</a>| |
+<code>lang=cpp, name=Lightning
+function StartsWith(p0 : StringRange) : Boolean</code> </p>
+</blockquote>
+<hr />
+<p>#  SubString : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown">string</a></p>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>start</td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/runeiterator.markdown">runeiterator</a></td>
+<td></td>
+</tr>
+<tr>
+<td>end</td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/runeiterator.markdown">runeiterator</a></td>
+<td></td>
+</tr>
+<tr>
+<td>``` lang=cpp, name=Lightning</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>function SubString(start : RuneIterator, end : RuneIterator) : String</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>```</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<hr />
+<p>#  SubStringBytes : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/stringrange.markdown">stringrange</a></p>
+<blockquote>
+<p>Constructs a substring based upon a number of bytes. WARNING: strings are UTF8 so indexing by bytes could produce unexpected results on non-ascii strings.
+|Name|Type|Description|
+|---|---|---|
+|startByteIndex|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/integer.markdown">integer</a>| |
+|lengthInBytes|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/integer.markdown">integer</a>| |
+<code>lang=cpp, name=Lightning
+function SubStringBytes(startByteIndex : Integer, lengthInBytes : Integer) : StringRange</code> </p>
+</blockquote>
+<hr />
+<p>#  SubStringFromRuneIndices : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown">string</a></p>
+<blockquote>
+<p>Creates a substring from start and end indices. WARNING: this may be slow as finding an index for a UTF8 string requires a linear search.
+|Name|Type|Description|
+|---|---|---|
+|startIndex|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/integer.markdown">integer</a>| |
+|endIndex|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/integer.markdown">integer</a>| |
+<code>lang=cpp, name=Lightning
+function SubStringFromRuneIndices(startIndex : Integer, endIndex : Integer) : String</code> </p>
+</blockquote>
+<hr />
+<p>#  ToLower : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown">string</a></p>
+<blockquote>
+<p>Returns a copy of the string that has been converted to lowercase.
+|Name|Type|Description|
+|---|---|---|
+<code>lang=cpp, name=Lightning
+function ToLower() : String</code> </p>
+</blockquote>
+<hr />
+<p>#  ToUpper : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown">string</a></p>
+<blockquote>
+<p>Returns a copy of the string that has been converted to uppercase.
+|Name|Type|Description|
+|---|---|---|
+<code>lang=cpp, name=Lightning
+function ToUpper() : String</code> </p>
+</blockquote>
+<hr />
+<p>#  Trim : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/stringrange.markdown">stringrange</a></p>
+<blockquote>
+<p>Trims all leading and trailing whitespace.
+|Name|Type|Description|
+|---|---|---|
+<code>lang=cpp, name=Lightning
+function Trim() : StringRange</code> </p>
+</blockquote>
+<hr />
+<p>#  TrimEnd : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/stringrange.markdown">stringrange</a></p>
+<blockquote>
+<p>Trims all trailing whitespace.
+|Name|Type|Description|
+|---|---|---|
+<code>lang=cpp, name=Lightning
+function TrimEnd() : StringRange</code> </p>
+</blockquote>
+<hr />
+<p>#  TrimStart : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/stringrange.markdown">stringrange</a></p>
+<blockquote>
+<p>Trims all leading whitespace.
+|Name|Type|Description|
+|---|---|---|
+<code>lang=cpp, name=Lightning
+function TrimStart() : StringRange</code> </p>
+</blockquote>
+<hr /></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+                <p>Copyright &copy; 2021 Plasma Engine. Released under the MIT License.</p>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../../js/base.js" defer></script>
+        <script src="../../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../../img/favicon.ico">
+        <title>Rigidbody - Docs | Plasma Engine</title>
+        <link href="../../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/docco.min.css">
+
+        <script src="../../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../../..">Docs | Plasma Engine</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href="../../.." class="nav-link">Home</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="/getting_started/" class="nav-link">Getting Started</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Manual <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../manual/" class="dropdown-item">Manual</a>
+</li>
+                                    
+<li>
+    <a href="../../../manual/plasmamanual/ai/" class="dropdown-item">AI</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Architecture</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../manual/plasmamanual/architecture/architecture/" class="dropdown-item">Architecture</a>
+</li>
+            
+<li>
+    <a href="../../../manual/plasmamanual/architecture/archetypes/archtype_basics.markdown" class="dropdown-item">Archtypes</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Cogs</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../manual/plasmamanual/architecture/cogs/cogs/" class="dropdown-item">Cogs</a>
+</li>
+            
+<li>
+    <a href="../../../manual/plasmamanual/architecture/cogs/gameobjectsconcept/" class="dropdown-item">Game Objects</a>
+</li>
+            
+<li>
+    <a href="../../../manual/plasmamanual/architecture/cogs/objectstore/" class="dropdown-item">Object Store</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Objects</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../manual/plasmamanual/architecture/objects/objects/" class="dropdown-item">Objects</a>
+</li>
+            
+<li>
+    <a href="../../../manual/plasmamanual/architecture/objects/gamesession/" class="dropdown-item">Gamesession</a>
+</li>
+            
+<li>
+    <a href="../../../manual/plasmamanual/architecture/objects/spaces/" class="dropdown-item">Spaces</a>
+</li>
+            
+<li>
+    <a href="../../../manual/plasmamanual/architecture/objects/levelsettings/" class="dropdown-item">Levelsettings</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Resources</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../manual/plasmamanual/architecture/resources/resource.markdown" class="dropdown-item">Resources</a>
+</li>
+            
+<li>
+    <a href="../../../manual/plasmamanual/architecture/resources/level/" class="dropdown-item">Levels</a>
+</li>
+            
+<li>
+    <a href="../../../manual/plasmamanual/architecture/fonts/fonts.markdown" class="dropdown-item">Fonts</a>
+</li>
+            
+<li>
+    <a href="../../../manual/plasmamanual/architecture/resources/resourcestable.markdown" class="dropdown-item">Resource Table</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                                    
+<li>
+    <a href="../../../manual/plasmamanual/audio/" class="dropdown-item">Audio</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Editor</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../manual/plasmamanual/editor/" class="dropdown-item">Editor</a>
+</li>
+            
+<li>
+    <a href="../../../manual/plasmamanual/editor/tags/" class="dropdown-item">Tags</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Reference <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../" class="dropdown-item">Index</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Contributing <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../source_docs/getting_started.md" class="dropdown-item">Getting Started</a>
+</li>
+                                    
+<li>
+    <a href="../../../source_docs/plasma_code/" class="dropdown-item">Plasma Code</a>
+</li>
+                                    
+<li>
+    <a href="../../../source_docs/plasma_overview/" class="dropdown-item">Plasma Overview</a>
+</li>
+                                    
+<li>
+    <a href="../../../source_docs/components.md" class="dropdown-item">Components</a>
+</li>
+                                    
+<li>
+    <a href="../../../source_docs/custom_event_names/" class="dropdown-item">Custom Event Names</a>
+</li>
+                                    
+<li>
+    <a href="../../../source_docs/editor/" class="dropdown-item">Editor</a>
+</li>
+                                    
+<li>
+    <a href="../../../source_docs/engine/" class="dropdown-item">Engine</a>
+</li>
+                                    
+<li>
+    <a href="../../../source_docs/enums/" class="dropdown-item">Enums</a>
+</li>
+                                    
+<li>
+    <a href="../../../source_docs/meta_bindings.markdown" class="dropdown-item">Meta Binding</a>
+</li>
+                                    
+<li>
+    <a href="../../../source_docs/platform/" class="dropdown-item">Adding Platforms</a>
+</li>
+                                    
+<li>
+    <a href="../../../source_docs/widgets/" class="dropdown-item">Widgets</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a href="https://github.com/PlasmaEngine/PlasmaDocs/edit/master/docs/reference/class_reference/rigidbody.markdown" class="nav-link"><i class="fa fa-github"></i> Edit on GitHub</a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<p><code>Component</code> <code>Physics</code></p>
+<p>(NOTE) RigidBody defines the inertia (mass, velocity, etc...) of a rigid object. Any PhysicsEffects attached to a RigidBody without a region will be applied to the center of mass of this body.</p>
+<table>
+<thead>
+<tr>
+<th>Methods</th>
+<th>Properties</th>
+<th>Base Classes</th>
+<th>Derived Classes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/rigidbody.markdown#applyangularimpulse-void"> ApplyAngularImpulse</a></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/rigidbody.markdown#activebody-plasma-engine-d"> ActiveBody</a></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/component.markdown">component</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/rigidbody.markdown#applyangularvelocity-voi"> ApplyAngularVelocity</a></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/rigidbody.markdown#allowsleep-plasma-engine-d"> AllowSleep</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/rigidbody.markdown#applyforce-void"> ApplyForce</a></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/rigidbody.markdown#angularvelocity-plasma-eng"> AngularVelocity</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/rigidbody.markdown#applyforceatoffsetvector"> ApplyForceAtOffsetVector</a></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/rigidbody.markdown#asleep-plasma-engine-docum"> Asleep</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/rigidbody.markdown#applyforceatoffsetvector"> ApplyForceAtOffsetVectorNoWakeUp</a></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/rigidbody.markdown#dynamicstate-plasma-engine"> DynamicState</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/rigidbody.markdown#applyforceatpoint-void"> ApplyForceAtPoint</a></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/rigidbody.markdown#force-plasma-engine-docume"> Force</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/rigidbody.markdown#applyforceatpointnowakeu"> ApplyForceAtPointNoWakeUp</a></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/rigidbody.markdown#localinverseinertiatenso"> LocalInverseInertiaTensor</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/rigidbody.markdown#applyforcenowakeup-void"> ApplyForceNoWakeUp</a></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/rigidbody.markdown#mass-plasma-engine-documen"> Mass</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/rigidbody.markdown#applyimpulseatoffsetvect"> ApplyImpulseAtOffsetVector</a></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/rigidbody.markdown#mode2d-plasma-engine-docum"> Mode2D</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/rigidbody.markdown#applyimpulseatpoint-void"> ApplyImpulseAtPoint</a></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/rigidbody.markdown#rotationlocked-plasma-engi"> RotationLocked</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/rigidbody.markdown#applylinearimpulse-void"> ApplyLinearImpulse</a></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/rigidbody.markdown#torque-plasma-engine-docum"> Torque</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/rigidbody.markdown#applylinearvelocity-void"> ApplyLinearVelocity</a></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/rigidbody.markdown#velocity-plasma-engine-doc"> Velocity</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/rigidbody.markdown#applytorque-void"> ApplyTorque</a></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/rigidbody.markdown#worldcenterofmass-plasma-e"> WorldCenterOfMass</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/rigidbody.markdown#applytorquenowakeup-void"> ApplyTorqueNoWakeUp</a></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/rigidbody.markdown#worldinverseinertiatenso"> WorldInverseInertiaTensor</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/rigidbody.markdown#applyvelocityatpoint-voi"> ApplyVelocityAtPoint</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/rigidbody.markdown#forceasleep-void"> ForceAsleep</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/rigidbody.markdown#forceawake-void"> ForceAwake</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/rigidbody.markdown#getpointvelocity-plasma-en"> GetPointVelocity</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/rigidbody.markdown#rigidbody-void"> Constructor</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>#  Properties</p>
+<hr />
+<p>#  ActiveBody : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/rigidbody.markdown">rigidbody</a></p>
+<p><code>read-only</code></p>
+<blockquote>
+<p>If this is a static body then the active body (the one force/velocity should be applied to or calculated from) is the nearest parent body up the hierarchy that is not static. If one isn't found then this returns the current rigid body (this).
+``` lang=cpp, name=Lightning
+var ActiveBody : RigidBody</p>
+</blockquote>
+<hr />
+<p>#  AllowSleep : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown">boolean</a></p>
+<blockquote>
+<p>Sleeping happens when an object has not "moved" (small enough linear + angular velocity) for long enough. If this happens then the physics engine stops updating this object (integration, collision detection, etc...) until an awake object hits it. Sleeping is purely an optimization. Sometimes it is not desirable for a body to ever fall asleep (such as a player).
+``` lang=cpp, name=Lightning
+var AllowSleep : Boolean</p>
+</blockquote>
+<hr />
+<p>#  AngularVelocity : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real3.markdown">real3</a></p>
+<blockquote>
+<p>The angular velocity (radians per second) of this body in world space. Objects will rotate about this axis using the right-hand rule. Max bounds are around 1e+10, after this the angular velocity will be capped. Setting this will wake up the body if it's asleep.
+``` lang=cpp, name=Lightning
+var AngularVelocity : Real3</p>
+</blockquote>
+<hr />
+<p>#  Asleep : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown">boolean</a></p>
+<blockquote>
+<p>Whether or not this object is currently asleep. Setting this to true will force the object asleep even if this causes invalid behavior (objects floating).
+``` lang=cpp, name=Lightning
+var Asleep : Boolean</p>
+</blockquote>
+<hr />
+<p>#  DynamicState : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#rigidbodydynamicstate">RigidBodyDynamicState</a></p>
+<blockquote>
+<p>How this rigid body handles dynamics. Is it a regular rigid body (dynamic)? Does it not move (static)? Does the user want to manually move it and have objects properly collide with it (kinematic)? Note: Static vs. static does not check for collision.
+``` lang=cpp, name=Lightning
+var DynamicState : RigidBodyDynamicState</p>
+</blockquote>
+<hr />
+<p>#  Force : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real3.markdown">real3</a></p>
+<blockquote>
+<p>The total accumulated force (in world space) that is being applied to the center of mass of this rigid body this frame. Setting this will wake up the body if it's asleep.
+``` lang=cpp, name=Lightning
+var Force : Real3</p>
+</blockquote>
+<hr />
+<p>#  LocalInverseInertiaTensor : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real3x3.markdown">real3x3</a></p>
+<p><code>read-only</code></p>
+<blockquote>
+<p>The inverse inertia tensor in local space of this body. The local space inertia tensor doesn't change when the object rotates but is not typically useful for any calculations other than computing the world-space inverse inertia tensor.
+``` lang=cpp, name=Lightning
+var LocalInverseInertiaTensor : Real3x3</p>
+</blockquote>
+<hr />
+<p>#  Mass : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown">real</a></p>
+<p><code>read-only</code></p>
+<blockquote>
+<p>The current mass of the rigid body. This includes all child colliders belonging to this body.
+``` lang=cpp, name=Lightning
+var Mass : Real</p>
+</blockquote>
+<hr />
+<p>#  Mode2D : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#mode2dstates">Mode2DStates</a></p>
+<blockquote>
+<p>Used to make an object act as if it were 2D. This is done by locking it to the current z-plane and only allowing rotation about the world's z-axis. Objects can be set to always be 2D or 3D, or this can be deferred to the PhysicsSpace's Mode2D.
+``` lang=cpp, name=Lightning
+var Mode2D : Mode2DStates</p>
+</blockquote>
+<hr />
+<p>#  RotationLocked : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown">boolean</a></p>
+<blockquote>
+<p>Makes physics unable to rotate this object. Manual rotations can still be applied.
+``` lang=cpp, name=Lightning
+var RotationLocked : Boolean</p>
+</blockquote>
+<hr />
+<p>#  Torque : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real3.markdown">real3</a></p>
+<blockquote>
+<p>The total accumulated torque (in world space) that is being applied to the center of mass of this rigid body this frame. Setting this will wake up the body if it's asleep.
+``` lang=cpp, name=Lightning
+var Torque : Real3</p>
+</blockquote>
+<hr />
+<p>#  Velocity : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real3.markdown">real3</a></p>
+<blockquote>
+<p>The velocity (units per second) of this body in world space. Max bounds are around 1e+10, after this the velocity will be capped. Setting this will wake up the body if it's asleep.
+``` lang=cpp, name=Lightning
+var Velocity : Real3</p>
+</blockquote>
+<hr />
+<p>#  WorldCenterOfMass : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real3.markdown">real3</a></p>
+<p><code>read-only</code></p>
+<blockquote>
+<p>The position of the center of mass in world space.
+``` lang=cpp, name=Lightning
+var WorldCenterOfMass : Real3</p>
+</blockquote>
+<hr />
+<p>#  WorldInverseInertiaTensor : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real3x3.markdown">real3x3</a></p>
+<p><code>read-only</code></p>
+<blockquote>
+<p>The inverse inertia tensor in world space of this body. Describes how hard it is to rotate an object about the world-space axes. Useful to convert any torque into an angular velocity.
+``` lang=cpp, name=Lightning
+var WorldInverseInertiaTensor : Real3x3</p>
+</blockquote>
+<hr />
+<p>#  Methods</p>
+<hr />
+<p>#  ApplyAngularImpulse : Void</p>
+<blockquote>
+<p>Applies an angular impulse through the center of mass (world space). Only results in a change of angular velocity. Will wake up the body if it's asleep.
+|Name|Type|Description|
+|---|---|---|
+|angular|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real3.markdown">real3</a>| |
+<code>lang=cpp, name=Lightning
+function ApplyAngularImpulse(angular : Real3)</code> </p>
+</blockquote>
+<hr />
+<p>#  ApplyAngularVelocity : Void</p>
+<blockquote>
+<p>Adds to the current angular velocity (world space). Will wake up the body if it's asleep.
+|Name|Type|Description|
+|---|---|---|
+|angular|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real3.markdown">real3</a>| |
+<code>lang=cpp, name=Lightning
+function ApplyAngularVelocity(angular : Real3)</code> </p>
+</blockquote>
+<hr />
+<p>#  ApplyForce : Void</p>
+<blockquote>
+<p>Applies a force through the center of mass of the body (world space). Will wake up the body if it's asleep.
+|Name|Type|Description|
+|---|---|---|
+|force|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real3.markdown">real3</a>| |
+<code>lang=cpp, name=Lightning
+function ApplyForce(force : Real3)</code> </p>
+</blockquote>
+<hr />
+<p>#  ApplyForceAtOffsetVector : Void</p>
+<blockquote>
+<p>Applies a force at an offset from the center of mass (world space). Results in a force and torque to the center of mass. Will wake up the body if it's asleep.
+|Name|Type|Description|
+|---|---|---|
+|force|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real3.markdown">real3</a>| |
+|worldOffset|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real3.markdown">real3</a>| |
+<code>lang=cpp, name=Lightning
+function ApplyForceAtOffsetVector(force : Real3, worldOffset : Real3)</code> </p>
+</blockquote>
+<hr />
+<p>#  ApplyForceAtOffsetVectorNoWakeUp : Void</p>
+<blockquote>
+<p>Applies a force at an offset from the center of mass (world space). Results in a force and torque to the center of mass. Will not wake up the body if it's asleep.
+|Name|Type|Description|
+|---|---|---|
+|force|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real3.markdown">real3</a>| |
+|worldOffset|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real3.markdown">real3</a>| |
+<code>lang=cpp, name=Lightning
+function ApplyForceAtOffsetVectorNoWakeUp(force : Real3, worldOffset : Real3)</code> </p>
+</blockquote>
+<hr />
+<p>#  ApplyForceAtPoint : Void</p>
+<blockquote>
+<p>Applies a force at a world point (world space). Results in a force and torque to the center of mass. Will wake up the body if it's asleep.
+|Name|Type|Description|
+|---|---|---|
+|force|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real3.markdown">real3</a>| |
+|worldPoint|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real3.markdown">real3</a>| |
+<code>lang=cpp, name=Lightning
+function ApplyForceAtPoint(force : Real3, worldPoint : Real3)</code> </p>
+</blockquote>
+<hr />
+<p>#  ApplyForceAtPointNoWakeUp : Void</p>
+<blockquote>
+<p>Applies a force at a world point (world space). Results in a force and torque to the center of mass. Will not wake up the body if it's asleep.
+|Name|Type|Description|
+|---|---|---|
+|force|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real3.markdown">real3</a>| |
+|worldPoint|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real3.markdown">real3</a>| |
+<code>lang=cpp, name=Lightning
+function ApplyForceAtPointNoWakeUp(force : Real3, worldPoint : Real3)</code> </p>
+</blockquote>
+<hr />
+<p>#  ApplyForceNoWakeUp : Void</p>
+<blockquote>
+<p>Applies a force through the center of mass of the body (world space). Will not wake up the body if it's asleep.
+|Name|Type|Description|
+|---|---|---|
+|force|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real3.markdown">real3</a>| |
+<code>lang=cpp, name=Lightning
+function ApplyForceNoWakeUp(force : Real3)</code> </p>
+</blockquote>
+<hr />
+<p>#  ApplyImpulseAtOffsetVector : Void</p>
+<blockquote>
+<p>Applies an impulse at on offset from the center of mass (world space). Results in a change in linear and angular velocity. Will wake up the body if it's asleep.
+|Name|Type|Description|
+|---|---|---|
+|impulse|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real3.markdown">real3</a>| |
+|worldOffset|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real3.markdown">real3</a>| |
+<code>lang=cpp, name=Lightning
+function ApplyImpulseAtOffsetVector(impulse : Real3, worldOffset : Real3)</code> </p>
+</blockquote>
+<hr />
+<p>#  ApplyImpulseAtPoint : Void</p>
+<blockquote>
+<p>Applies an impulse at a world point (world space). Results in a change to linear and angular velocity. Will wake up the body if it's asleep.
+|Name|Type|Description|
+|---|---|---|
+|impulse|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real3.markdown">real3</a>| |
+|worldPoint|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real3.markdown">real3</a>| |
+<code>lang=cpp, name=Lightning
+function ApplyImpulseAtPoint(impulse : Real3, worldPoint : Real3)</code> </p>
+</blockquote>
+<hr />
+<p>#  ApplyLinearImpulse : Void</p>
+<blockquote>
+<p>Applies a linear impulse through the center of mass (world space). Only results in a change of linear velocity. Will wake up the body if it's asleep.
+|Name|Type|Description|
+|---|---|---|
+|linear|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real3.markdown">real3</a>| |
+<code>lang=cpp, name=Lightning
+function ApplyLinearImpulse(linear : Real3)</code> </p>
+</blockquote>
+<hr />
+<p>#  ApplyLinearVelocity : Void</p>
+<blockquote>
+<p>Adds to the current linear velocity (world space). Will wake up the body if it's asleep.
+|Name|Type|Description|
+|---|---|---|
+|linear|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real3.markdown">real3</a>| |
+<code>lang=cpp, name=Lightning
+function ApplyLinearVelocity(linear : Real3)</code> </p>
+</blockquote>
+<hr />
+<p>#  ApplyTorque : Void</p>
+<blockquote>
+<p>Applies a torque through the center of mass of the body (world space). Will wake up the body if it's asleep.
+|Name|Type|Description|
+|---|---|---|
+|torque|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real3.markdown">real3</a>| |
+<code>lang=cpp, name=Lightning
+function ApplyTorque(torque : Real3)</code> </p>
+</blockquote>
+<hr />
+<p>#  ApplyTorqueNoWakeUp : Void</p>
+<blockquote>
+<p>Applies a torque through the center of mass of the body (world space). Will not wake up the body if it's asleep.
+|Name|Type|Description|
+|---|---|---|
+|torque|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real3.markdown">real3</a>| |
+<code>lang=cpp, name=Lightning
+function ApplyTorqueNoWakeUp(torque : Real3)</code> </p>
+</blockquote>
+<hr />
+<p>#  ApplyVelocityAtPoint : Void</p>
+<blockquote>
+<p>Applies a velocity at a world space point on the object. Results in a change to linear and angular velocity. Will wake up the body if it's asleep.
+|Name|Type|Description|
+|---|---|---|
+|velocity|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real3.markdown">real3</a>| |
+|worldPoint|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real3.markdown">real3</a>| |
+<code>lang=cpp, name=Lightning
+function ApplyVelocityAtPoint(velocity : Real3, worldPoint : Real3)</code> </p>
+</blockquote>
+<hr />
+<p>#  ForceAsleep : Void</p>
+<blockquote>
+<p>Forces the object asleep. Warning: calling this function could create gameplay flaws if used incorrectly, use at your own risk (and sparingly).
+|Name|Type|Description|
+|---|---|---|
+<code>lang=cpp, name=Lightning
+function ForceAsleep()</code> </p>
+</blockquote>
+<hr />
+<p>#  ForceAwake : Void</p>
+<blockquote>
+<p>Forces the object awake. Will reset the sleep timer.
+|Name|Type|Description|
+|---|---|---|
+<code>lang=cpp, name=Lightning
+function ForceAwake()</code> </p>
+</blockquote>
+<hr />
+<p>#  GetPointVelocity : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real3.markdown">real3</a></p>
+<blockquote>
+<p>Computes the linear point velocity of world-space point.
+|Name|Type|Description|
+|---|---|---|
+|worldPoint|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real3.markdown">real3</a>| |
+<code>lang=cpp, name=Lightning
+function GetPointVelocity(worldPoint : Real3) : Real3</code> </p>
+</blockquote>
+<hr />
+<p>#  RigidBody : Void</p>
+<p><code>constructor</code></p>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>``` lang=cpp, name=Lightning</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>function RigidBody()</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>```</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<hr /></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+                <p>Copyright &copy; 2021 Plasma Engine. Released under the MIT License.</p>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../../js/base.js" defer></script>
+        <script src="../../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

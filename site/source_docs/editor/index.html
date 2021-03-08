@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>Editor - Docs | Plasma Engine</title>
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/docco.min.css">
+
+        <script src="../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../..">Docs | Plasma Engine</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href="../.." class="nav-link">Home</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="/getting_started/" class="nav-link">Getting Started</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Manual <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../manual/" class="dropdown-item">Manual</a>
+</li>
+                                    
+<li>
+    <a href="../../manual/plasmamanual/ai/" class="dropdown-item">AI</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Architecture</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../manual/plasmamanual/architecture/architecture/" class="dropdown-item">Architecture</a>
+</li>
+            
+<li>
+    <a href="../../manual/plasmamanual/architecture/archetypes/archtype_basics.markdown" class="dropdown-item">Archtypes</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Cogs</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../manual/plasmamanual/architecture/cogs/cogs/" class="dropdown-item">Cogs</a>
+</li>
+            
+<li>
+    <a href="../../manual/plasmamanual/architecture/cogs/gameobjectsconcept/" class="dropdown-item">Game Objects</a>
+</li>
+            
+<li>
+    <a href="../../manual/plasmamanual/architecture/cogs/objectstore/" class="dropdown-item">Object Store</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Objects</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../manual/plasmamanual/architecture/objects/objects/" class="dropdown-item">Objects</a>
+</li>
+            
+<li>
+    <a href="../../manual/plasmamanual/architecture/objects/gamesession/" class="dropdown-item">Gamesession</a>
+</li>
+            
+<li>
+    <a href="../../manual/plasmamanual/architecture/objects/spaces/" class="dropdown-item">Spaces</a>
+</li>
+            
+<li>
+    <a href="../../manual/plasmamanual/architecture/objects/levelsettings/" class="dropdown-item">Levelsettings</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Resources</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../manual/plasmamanual/architecture/resources/resource.markdown" class="dropdown-item">Resources</a>
+</li>
+            
+<li>
+    <a href="../../manual/plasmamanual/architecture/resources/level/" class="dropdown-item">Levels</a>
+</li>
+            
+<li>
+    <a href="../../manual/plasmamanual/architecture/fonts/fonts.markdown" class="dropdown-item">Fonts</a>
+</li>
+            
+<li>
+    <a href="../../manual/plasmamanual/architecture/resources/resourcestable.markdown" class="dropdown-item">Resource Table</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                                    
+<li>
+    <a href="../../manual/plasmamanual/audio/" class="dropdown-item">Audio</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Editor</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../manual/plasmamanual/editor/" class="dropdown-item">Editor</a>
+</li>
+            
+<li>
+    <a href="../../manual/plasmamanual/editor/tags/" class="dropdown-item">Tags</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Reference <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../reference/" class="dropdown-item">Index</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown active">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Contributing <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../getting_started.md" class="dropdown-item">Getting Started</a>
+</li>
+                                    
+<li>
+    <a href="../plasma_code/" class="dropdown-item">Plasma Code</a>
+</li>
+                                    
+<li>
+    <a href="../plasma_overview/" class="dropdown-item">Plasma Overview</a>
+</li>
+                                    
+<li>
+    <a href="../components.md" class="dropdown-item">Components</a>
+</li>
+                                    
+<li>
+    <a href="../custom_event_names/" class="dropdown-item">Custom Event Names</a>
+</li>
+                                    
+<li>
+    <a href="./" class="dropdown-item active">Editor</a>
+</li>
+                                    
+<li>
+    <a href="../engine/" class="dropdown-item">Engine</a>
+</li>
+                                    
+<li>
+    <a href="../enums/" class="dropdown-item">Enums</a>
+</li>
+                                    
+<li>
+    <a href="../meta_bindings.markdown" class="dropdown-item">Meta Binding</a>
+</li>
+                                    
+<li>
+    <a href="../platform/" class="dropdown-item">Adding Platforms</a>
+</li>
+                                    
+<li>
+    <a href="../widgets/" class="dropdown-item">Widgets</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../custom_event_names/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../engine/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="https://github.com/PlasmaEngine/PlasmaDocs/edit/master/docs/source_docs/editor.markdown" class="nav-link"><i class="fa fa-github"></i> Edit on GitHub</a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#editor" class="nav-link">Editor</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#project-loading" class="nav-link">Project loading</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#commands" class="nav-link">Commands</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#commands-from-data" class="nav-link">Commands from Data</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#cog-commands" class="nav-link">Cog Commands</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#command-context" class="nav-link">Command Context</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#command-active-state" class="nav-link">Command 'Active' state</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#gizmos" class="nav-link">Gizmos</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#basic-gizmos" class="nav-link">Basic Gizmos</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#tools" class="nav-link">Tools</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#events" class="nav-link">Events</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#operations" class="nav-link">Operations</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#custom-tools" class="nav-link">Custom Tools</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#viewports" class="nav-link">Viewports</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#editorviewport" class="nav-link">EditorViewport</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#gameviewport" class="nav-link">GameViewport</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#notifications" class="nav-link">Notifications</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#windows" class="nav-link">Windows</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#text-editor" class="nav-link">Text Editor</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#main-property-grid" class="nav-link">Main Property Grid</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#resource-library" class="nav-link">Resource Library</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#object-view" class="nav-link">Object View</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#console" class="nav-link">Console</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#tools-window" class="nav-link">Tools Window</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#resource-editors" class="nav-link">Resource Editors</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#downloads" class="nav-link">Downloads</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#automation" class="nav-link">Automation</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#animator" class="nav-link">Animator</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#rich-animation" class="nav-link">Rich Animation</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#animation-editor" class="nav-link">Animation Editor</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#controls" class="nav-link">Controls</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#track-view" class="nav-link">Track View</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#scrubber" class="nav-link">Scrubber</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#graph" class="nav-link">Graph</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#dope-sheet" class="nav-link">Dope Sheet</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#controls_1" class="nav-link">Controls</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="editor">Editor</h1>
+<p>The editor is created once and manages:</p>
+<ul>
+<li>All windows and docking (done through the base MultiDock class)</li>
+<li>The current level(s) being edited</li>
+<li>All running game sessions</li>
+<li>Selection</li>
+<li>Operation queue (undo/redo)</li>
+<li>Commands</li>
+<li>Tools</li>
+</ul>
+<h2 id="project-loading">Project loading</h2>
+<p>Why we restart editor when loading projects (meta flush)</p>
+<h2 id="commands">Commands</h2>
+<ul>
+<li>Requires documentation</li>
+</ul>
+<h2 id="commands-from-data">Commands from Data</h2>
+<p>Commands are loaded from the Data\Commands.data file in the Plasma repository. These commands are then bound in C++ to specific functions on the editor.</p>
+<h2 id="cog-commands">Cog Commands</h2>
+<p>CogCommands are just Cogs that are marked as a command object, and when the command is invoked, the 'ExecuteEvent' event will be sent on the cog. This allows for users to create custom commands without learning a new system. They use what they're used to and just respond to a different event. The command Cogs are all created in a single Space (named "CommandSpace") that lives under the editors game session.</p>
+<p>There are two ways a CogCommand can be created:</p>
+<ul>
+<li>A Component with the [Command] attribute with the attribute parameter 'autoCommand' set to true.</li>
+<li>An Archetype with tag "Command".</li>
+</ul>
+<h2 id="command-context">Command Context</h2>
+<p>This gives commands more information about the circumstances they were invoked in, such as which viewport has focus when the command is invoked.</p>
+<h2 id="command-active-state">Command 'Active' state</h2>
+<p>Used for Tools and toggle-able commands. Example: Tools have Commands that enable them, so when the tool is selected, that command is now considered 'Active' until another tool is selected. This allows the IconButton in the Ui to display that the tool is active.</p>
+<h1 id="gizmos">Gizmos</h1>
+<ul>
+<li>Requires documentation</li>
+</ul>
+<h2 id="basic-gizmos">Basic Gizmos</h2>
+<ul>
+<li>Requires documentation</li>
+</ul>
+<h1 id="tools">Tools</h1>
+<ul>
+<li>Requires documentation</li>
+</ul>
+<h2 id="events">Events</h2>
+<p>Connect to this.Owner for all events. They will all be sent directly to the tool when the tool is selected.</p>
+<ul>
+<li>Events.ToolActivate   - Sent when the tool has been selected</li>
+<li>Events.ToolDeactivate - Sent when the tool has been de-selected</li>
+<li>
+<p>Events.ToolDraw       - Sent every frame to debug draw</p>
+</li>
+<li>
+<p>Events::MouseDown</p>
+</li>
+<li>Events::MouseMove</li>
+<li>Events::MouseUpdate</li>
+<li>Events::LeftMouseDown</li>
+<li>Events::LeftMouseUp</li>
+<li>Events::DoubleClick</li>
+<li>Events::RightMouseDown</li>
+<li>Events::RightMouseUp</li>
+<li>Events::MiddleMouseDown</li>
+<li>
+<p>Events::MouseScroll</p>
+</li>
+<li>
+<p>Events::KeyDown</p>
+</li>
+<li>Events::KeyUp</li>
+</ul>
+<h1 id="operations">Operations</h1>
+<ul>
+<li>Requires documentation</li>
+</ul>
+<h2 id="custom-tools">Custom Tools</h2>
+<ul>
+<li>Requires documentation</li>
+</ul>
+<h1 id="viewports">Viewports</h1>
+<ul>
+<li>Requires documentation</li>
+</ul>
+<h2 id="editorviewport">EditorViewport</h2>
+<ul>
+<li>Requires documentation</li>
+</ul>
+<h2 id="gameviewport">GameViewport</h2>
+<ul>
+<li>Requires documentation</li>
+</ul>
+<h1 id="notifications">Notifications</h1>
+<ul>
+<li>Requires documentation</li>
+</ul>
+<h1 id="windows">Windows</h1>
+<h2 id="text-editor">Text Editor</h2>
+<ul>
+<li>Requires documentation</li>
+</ul>
+<h2 id="main-property-grid">Main Property Grid</h2>
+<ul>
+<li>Requires documentation</li>
+</ul>
+<h2 id="resource-library">Resource Library</h2>
+<ul>
+<li>Requires documentation</li>
+</ul>
+<h2 id="object-view">Object View</h2>
+<ul>
+<li>Requires documentation</li>
+</ul>
+<h2 id="console">Console</h2>
+<ul>
+<li>Requires documentation</li>
+</ul>
+<h2 id="tools-window">Tools Window</h2>
+<ul>
+<li>Requires documentation</li>
+</ul>
+<h2 id="resource-editors">Resource Editors</h2>
+<ul>
+<li>Requires documentation</li>
+</ul>
+<h1 id="downloads">Downloads</h1>
+<ul>
+<li>Requires documentation</li>
+</ul>
+<h1 id="automation">Automation</h1>
+<ul>
+<li>Stress Test</li>
+<li>Coming soon</li>
+</ul>
+<h1 id="animator">Animator</h1>
+<ul>
+<li>Requires documentation</li>
+</ul>
+<h2 id="rich-animation">Rich Animation</h2>
+<ul>
+<li>Requires documentation</li>
+<li>Fbx -&gt; RichAnimation issues   </li>
+</ul>
+<h2 id="animation-editor">Animation Editor</h2>
+<ul>
+<li>AnimationEditorData</li>
+</ul>
+<h2 id="controls">Controls</h2>
+<ul>
+<li>Requires documentation</li>
+</ul>
+<h2 id="track-view">Track View</h2>
+<ul>
+<li>Requires documentation</li>
+</ul>
+<h2 id="scrubber">Scrubber</h2>
+<ul>
+<li>Requires documentation</li>
+</ul>
+<h2 id="graph">Graph</h2>
+<ul>
+<li>Requires documentation</li>
+</ul>
+<h2 id="dope-sheet">Dope Sheet</h2>
+<ul>
+<li>Requires documentation</li>
+</ul>
+<h2 id="controls_1">Controls</h2>
+<ul>
+<li>Requires documentation</li>
+</ul></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+                <p>Copyright &copy; 2021 Plasma Engine. Released under the MIT License.</p>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../js/base.js" defer></script>
+        <script src="../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

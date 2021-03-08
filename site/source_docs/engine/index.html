@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>Engine - Docs | Plasma Engine</title>
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/docco.min.css">
+
+        <script src="../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../..">Docs | Plasma Engine</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href="../.." class="nav-link">Home</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="/getting_started/" class="nav-link">Getting Started</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Manual <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../manual/" class="dropdown-item">Manual</a>
+</li>
+                                    
+<li>
+    <a href="../../manual/plasmamanual/ai/" class="dropdown-item">AI</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Architecture</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../manual/plasmamanual/architecture/architecture/" class="dropdown-item">Architecture</a>
+</li>
+            
+<li>
+    <a href="../../manual/plasmamanual/architecture/archetypes/archtype_basics.markdown" class="dropdown-item">Archtypes</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Cogs</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../manual/plasmamanual/architecture/cogs/cogs/" class="dropdown-item">Cogs</a>
+</li>
+            
+<li>
+    <a href="../../manual/plasmamanual/architecture/cogs/gameobjectsconcept/" class="dropdown-item">Game Objects</a>
+</li>
+            
+<li>
+    <a href="../../manual/plasmamanual/architecture/cogs/objectstore/" class="dropdown-item">Object Store</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Objects</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../manual/plasmamanual/architecture/objects/objects/" class="dropdown-item">Objects</a>
+</li>
+            
+<li>
+    <a href="../../manual/plasmamanual/architecture/objects/gamesession/" class="dropdown-item">Gamesession</a>
+</li>
+            
+<li>
+    <a href="../../manual/plasmamanual/architecture/objects/spaces/" class="dropdown-item">Spaces</a>
+</li>
+            
+<li>
+    <a href="../../manual/plasmamanual/architecture/objects/levelsettings/" class="dropdown-item">Levelsettings</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Resources</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../manual/plasmamanual/architecture/resources/resource.markdown" class="dropdown-item">Resources</a>
+</li>
+            
+<li>
+    <a href="../../manual/plasmamanual/architecture/resources/level/" class="dropdown-item">Levels</a>
+</li>
+            
+<li>
+    <a href="../../manual/plasmamanual/architecture/fonts/fonts.markdown" class="dropdown-item">Fonts</a>
+</li>
+            
+<li>
+    <a href="../../manual/plasmamanual/architecture/resources/resourcestable.markdown" class="dropdown-item">Resource Table</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                                    
+<li>
+    <a href="../../manual/plasmamanual/audio/" class="dropdown-item">Audio</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Editor</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../manual/plasmamanual/editor/" class="dropdown-item">Editor</a>
+</li>
+            
+<li>
+    <a href="../../manual/plasmamanual/editor/tags/" class="dropdown-item">Tags</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Reference <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../reference/" class="dropdown-item">Index</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown active">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Contributing <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../getting_started.md" class="dropdown-item">Getting Started</a>
+</li>
+                                    
+<li>
+    <a href="../plasma_code/" class="dropdown-item">Plasma Code</a>
+</li>
+                                    
+<li>
+    <a href="../plasma_overview/" class="dropdown-item">Plasma Overview</a>
+</li>
+                                    
+<li>
+    <a href="../components.md" class="dropdown-item">Components</a>
+</li>
+                                    
+<li>
+    <a href="../custom_event_names/" class="dropdown-item">Custom Event Names</a>
+</li>
+                                    
+<li>
+    <a href="../editor/" class="dropdown-item">Editor</a>
+</li>
+                                    
+<li>
+    <a href="./" class="dropdown-item active">Engine</a>
+</li>
+                                    
+<li>
+    <a href="../enums/" class="dropdown-item">Enums</a>
+</li>
+                                    
+<li>
+    <a href="../meta_bindings.markdown" class="dropdown-item">Meta Binding</a>
+</li>
+                                    
+<li>
+    <a href="../platform/" class="dropdown-item">Adding Platforms</a>
+</li>
+                                    
+<li>
+    <a href="../widgets/" class="dropdown-item">Widgets</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../editor/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../enums/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="https://github.com/PlasmaEngine/PlasmaDocs/edit/master/docs/source_docs/engine.markdown" class="nav-link"><i class="fa fa-github"></i> Edit on GitHub</a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#engine" class="nav-link">Engine</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#philosophy" class="nav-link">Philosophy</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#useful-libraries" class="nav-link">Useful Libraries</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#engine-classes" class="nav-link">Engine Classes</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#engine_1" class="nav-link">Engine</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#system" class="nav-link">System</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#cog" class="nav-link">Cog</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#component" class="nav-link">Component</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#proxy-components" class="nav-link">Proxy Components</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#engine-components" class="nav-link">Engine Components</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#game-session" class="nav-link">Game Session</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#space" class="nav-link">Space</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#level-settings" class="nav-link">Level Settings</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#factory" class="nav-link">Factory</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#coginitializer" class="nav-link">CogInitializer</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#handles" class="nav-link">Handles</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#archetype" class="nav-link">Archetype</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#hierarchy" class="nav-link">Hierarchy</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#initialization-order-of-cogs" class="nav-link">Initialization Order of Cogs</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#cogpath" class="nav-link">CogPath</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#events" class="nav-link">Events</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#engine-events" class="nav-link">Engine Events</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#systems" class="nav-link">Systems</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#actions" class="nav-link">Actions</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#job-system" class="nav-link">Job System</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#project" class="nav-link">Project</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#object-store" class="nav-link">Object Store</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#resources" class="nav-link">Resources</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#engine-resources" class="nav-link">Engine Resources</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#animations" class="nav-link">Animations</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#animation" class="nav-link">Animation</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#rich-animation" class="nav-link">Rich Animation</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#animation-editor" class="nav-link">Animation Editor</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#animation-graph" class="nav-link">Animation Graph</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#graph-visualization" class="nav-link">Graph Visualization</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#simple-animation" class="nav-link">Simple Animation</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#input-shell-system" class="nav-link">Input / Shell System</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#tweakables" class="nav-link">Tweakables</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="engine">Engine</h1>
+<p><img alt="Alt text" src="'https://g.gravizo.com/svg?" /></p>
+<details> 
+<summary></summary>
+custom_mark10
+ digraph G {
+   node [shape=rectangle, fontsize=10, height=0, fontname=Verdana];
+   edge [fontsize=10, fontname=Verdana];
+    "Engine" -> "Systems" [label="owns"];
+    "Systems" -> "ShellSystem";
+    "Systems" -> "TimeSystem";
+    "Systems" -> "PhysicsSystem";
+    "Systems" -> "GraphicsSystem...";
+    "Engine" -> "Game Sessions" [label="owns"];
+    "Game Sessions" -> "Spaces" [label="owns"];
+    "Spaces" -> "Cogs" [label="owns"];
+    "Spaces" -> "LevelSettings" [label="own"];
+    "Game Sessions" -> "Editor GameSession";
+    "Game Sessions" -> "Game1 GameSession...";
+    "Editor" -> "Editor GameSession" [label="uses"];
+    "Editor GameSession" -> "Editor Spaces" [label="uses"];
+    "Editor Spaces" -> "Tools (Cogs)" [label="uses"];
+    "Editor Spaces" -> "Commands (Cogs)" [label="uses"];
+ }
+custom_mark10
+</details>
+
+<h2 id="philosophy">Philosophy</h2>
+<p>The driving philosophy behind Plasma has generally been to re-use as much code as possible in different locations. This is the reason we use component based design. Its much easier to share code by adding components then it is in an inheritance model. Plasma also maintains its WYSIWYG style by reusing code between the editor and game-play. All components that we write in C++ generally have to acknowledge that they can be used in both editor and game, which is an advantage since they can display the best data to the editor (such as a Microphone component debug drawing its virtual ears). Because it is difficult to trust the user to write code that works perfectly in both editor and game, by default we 'proxy' their Lightning components in the editor. The proxy is basically a fake object that looks exactly like their object, but does not run their code (all the same properties). We do expose the ability for users to make their scripts run in editor if they would like.</p>
+<h2 id="useful-libraries">Useful Libraries</h2>
+<p>Behind the scenes at the core of Plamsa is the Meta system, which exposes methods and members of C++ objects to both the GUI and Lightning. To maximise code reuse, we rely heavily upon the property grid GUI. The property grid automatically generates GUI based on the members of an object (either from C++ or from Lightning). The property grid is also built to handle component based design (adding and removing components at its core). By using the property grid, users don't have to create custom GUIs for every type of object/component/tool they add to the engine. Having said that, sometimes it is advantageous to write custom UI, such as in the case of the Animator tool which requires time-lines and key-frames. With the Meta system, we can query for type information such as how many members a type has and what their names are, how many methods and what parameters they take, etc.</p>
+<p>We also have a serialization system that serializes out to our own format (though it is somewhat similar to JSON). We maximise code reuse by using bi-directional serialization, which means we use a single function to both save and load an object, instead of writing two separate functions. We also support serialization from Meta, which is the quickest way to save and load all of an objects properties. In the future, we may switch to serialization being entirely from Meta, because it would simplify some of our paths and reuse more code.</p>
+<p>Almost everything in Plasma is written from scratch (with the exceptions of a few minor libraries such as libpng, zlib, freetype, etc). These libraries dive deeply into the specifies of file formats and unit test them very well, so we opted to use these libraries where they make sense. Aside from that, everything including the physics, graphics, scripting, networking, and even eventually the sound engine will be written by our team.</p>
+<h1 id="engine-classes">Engine Classes</h1>
+<h2 id="engine_1">Engine</h2>
+<p>The Engine class is created once (allocated and stored into gEngine). Calling Run on the engine starts the main loop, and it will continue running until Terminate is called. The Engine invokes the Update function every frame, which walks through all the Systems that were added to the engine in the WinMain/Startup function. Many of our objects in Plasma use delayed destruction (such as Cog) which means when we call Destroy on them, they are marked for deletion and added to a list to be deleted later. The Engine deletes these objects upon its Update every frame. The Engine is also responsible for pumping events that come from other threads in its Update.</p>
+<h2 id="system">System</h2>
+<p>A System is effectively a component that gets added to the Engine. Examples include the PhysicsEngine, SoundSystem, etc. The SoundSystem is a particularly good example of a system because it has one time initialization and destruction logic, such as starting up the mixing thread. Moreover, the SoundSystem must be updated every frame to receive threaded notifications from the mix sound thread. Some Systems, such as the TimeSystem and the PhysicsEngine mostly manage updating space components such as the TimeSpace and PhysicsSpace. By updating them when we update each system, we ensure that all spaces have their LogicUpdate run, then all spaces have their physics updated. Note that order of the Systems is very important to reduce input lag.</p>
+<h2 id="cog">Cog</h2>
+<p>The Cog is our base composition class to which components can be added. Space and GameSession both inherit from Cog. Cogs are typically created via the Factory (gFactory) which handles looking up types by name and then creating them (including components). Cogs use delayed destruction, which means they don't instantly get deleted upon calling Destroy, but rather get destroyed at the beginning of the next frame.</p>
+<h2 id="component">Component</h2>
+<p>Component is our base class for all components. Cog contains an ArrayMap of components (mapped by type id for quick typed lookup). We generally only allow there to be one component of a particular type per Cog. Components are mostly WYSIWYG in the editor, in that the actual components we code up in C++ are exactly the same ones running in the editor. The only major difference is that the editor is generally paused which stops physics and other time based systems from running.</p>
+<h2 id="proxy-components">Proxy Components</h2>
+<p>Proxy components are a special class of components that pretend to look like another component by duplicating a component's meta. The proxy component is a property bag (map of strings to variants) and can store anything. Proxy components are useful because they don't run any code in the editor. All script components are proxied when they are added in the editor, but in the actual game they are substituted for the actual component.</p>
+<h2 id="engine-components">Engine Components</h2>
+<ul>
+<li>Requires documentation</li>
+<li>Transform</li>
+<li>Object Link</li>
+<li>Area</li>
+</ul>
+<h2 id="game-session">Game Session</h2>
+<p>The GameSession manages all created Spaces, and is effectively an instance of a running 'game'. Every time you press F5 in the editor or run a standalone exported project, a GameSession is created. If you press Ctrl+F5, multiple GameSessions will be ran at the same time, which is useful for networking tests. GameSession inherits from Cog and can therefore have components (including LightningScripts) attached to it. The GameSession gets events sent on it, such as GameStarted where you can create spaces and load levels. The editor has a GameSession that you can edit and add components to (which will be used in the game). You can also attach [RunInEditor] scripts to the editor GameSession. The GameSession will destroy all child Spaces when it is destroyed.</p>
+<h2 id="space">Space</h2>
+<p>Spaces are one of the main features that sets Plasma apart from other engines. A Space contains a collection of Cogs (game objects). Each Space is independent of another Space. For example, you can have a physics object at (0,0,0) in one space, and a physics object at (0,0,0) in another space and the two objects will not interact or collide. We've found that Spaces are a great way to do UI, because you can run a separate space from your game that has UI objects in it. In many other game engines, the UI is either something entirely special, or you have to parent objects to your Camera which is cumbersome when you want to change cameras.</p>
+<p>Spaces can be given a name and are always created through the GameSession (which owns the Spaces). Named spaces can be found via the GameSession's FindSpaceByName. Because Space also inherits from Cog, you can add components and scripts to it. Although you can just create objects in a Space, the primary usage case is calling LoadLevel, which loads a collection of objects into the Space. The first time LoadLevel is called it is instantaneous (right after the call, all the objects are created). The subsequent times LoadLevel is called on the same space, it will be delayed by one frame. This is to avoid the issue of two objects existing at the same time with the same names and so on due to delayed destruction. Users will typically either listen to the LoadLevel event to perform level logic, or they will always create new spaces and call LoadLevel only on new spaces to ensure it is always instantaneous.</p>
+<h2 id="level-settings">Level Settings</h2>
+<p>The LevelSettings object is actually part of the Level resource (just another object) but is worth mentioning in the context of the Space. The LevelSettings should always be the first Cog in the Space's list, and is therefore guaranteed to be initialized before any other object. Moreover, many built in components use the LevelSettings object as a way to define global effects for the entire level. For example, I can add a ForceEffect to the LevelSettings and then all objects in the current level will get that force applied. This isn't built in or special behavior of the LevelSettings, but rather the PhysicsEngine looks for any force effects first on the Cogs, then on the LevelSettings, and then on the Space. This is a common pattern. LevelSettings is also very core to writing user logic, so we put that property on both Space and Cog. You can directly access LevelSettings by doing 'this.LevelSettings' instead of trying to find it by name.</p>
+<h2 id="factory">Factory</h2>
+<p>The factory (PL::gFactory) is responsible for constructing a type from a serialzied name such as a Cog, Space, or any components like Transform. Currently, the factory mostly only handles Cog related types, however our Meta can also be used as a factory.</p>
+<h2 id="coginitializer">CogInitializer</h2>
+<p>The CogInitializer is a type passed to each cog that is being initialized. When we create Cogs, we could be creating multiple, ie loading Cogs from a level, loading an Archetype which has a hierarchy with children, etc. Multiple Cogs loaded at the same time is known as a serialization context (we commonly refer to it as 'all objects within the context'). The CogInitializer stores a bunch of data that is useful to each cog being created, for example the parent GameSession or Space it is being created within. We also send the AllObjectsInitialized event on the CogInitializer once the entire initialization phase is completed for all objects within the context.</p>
+<h2 id="handles">Handles</h2>
+<p>Cogs use a safe handle system that allows us to look up a cog by id and version: a pattern also called 'slot map'. The CogId class encompasses the id and version (two integers). CogId can implicitly convert to a Cog<em> and will be null if the object no longer exists. We originally used to directly store Cog</em> in many places, but we found that it was almost always a bad idea to assume the object still existed (dangling pointers). The user can delete objects, spaces can be unloaded, actions can delete objects, etc. We now almost always store references to objects in C++ as CogIds. We do work with Cog* on the stack because we know that with delayed destruction, the objects WILL NOT be deleted until the beginning of the next frame. Moreover, in script all references to Cogs are actually CogIds just to keep scripts safe. As a side note, whenever we pass around MetaHandles to Cogs, we're essentially just stuffing a CogId into the MetaHandleData.</p>
+<h2 id="archetype">Archetype</h2>
+<p>Archetypes are a data resource that stores a serialized Cog. Archetypes can be referenced within a Level and can also be created and loaded into a space. The advantage of Archetypes is that they allow instancing the same object in multiple places (sharing) and when the Archetype definition is changed in editor, all instances of that Archetype change. Archetypes are stored as text serialization, however we cache them using binary serialization so that subsequent creation of the same Archetype is very fast. This cache must be dumped any time a change to script is made (such as the order of members) because the binary serialization is linear: members are directly read in the order they are saved in. When an Archetype is uploaded in a Level in the editor, we run special code to update all live instances of that Archetype in the same level. When an Archetype is modified it gets a special flag that says it is locally modified within that level, meaning the object is basically copied into the level and is not instanced.</p>
+<h2 id="hierarchy">Hierarchy</h2>
+<p>Cog Hierarchies allow for any Cogs to be parented to other Cogs. When a parent Cog is destroyed, all of its children are destroyed, and so on. It is up to the components to give meaning to parenting. For example, Transform knows that when it gets childed to another Transform, it will act as a relative object and concatenate matricies. Physics Colliders and RigidBodies also have special behavior for childed objects, such as multiple collision volumes for a single object. Hierarchy uses an intrusive list to maintain the list of children and the hierarchy link is on the Cog itself.</p>
+<h2 id="initialization-order-of-cogs">Initialization Order of Cogs</h2>
+<p>Related to hierarchies is the initialization order of Cogs. Cogs are initialized from first to last object in the object view, and from parent to child. This is why LevelSettings is the first object to be initialized. The order of initialization is important because scripts may rely on this order. Moreover, we found that if script components were initialized in the same phase as C++ components, then they were often able to access data before it was fully initialized and crash the engine. This lead to separating script initialize into its own phase. Though it sounds obnoxious, we actually have effectively 4 phases of initialization. The first is calling Initialize on every component in C++. In the Initialize phase, we can only assume that other components that are above ours have been Initialized. Specifically we can rely on our component's dependencies being initialized. Then we invoke OnAllObjectsCreated on every C++ component, a phase where we know all components have been Initialized. Note that we must run ALL Initializes first and then ALL OnAllObjectsCreated in order for them to actually be correct. After that, we run ScriptInitialize on all script components, therefore we know all C++ components are fully initialized. Lastly, we send the AllObjectsInitialized event on CogInitializer which anyone can listen to.</p>
+<h2 id="cogpath">CogPath</h2>
+<p>In the beginning of Plasma we needed a way to refer to other objects by id, and this id would have to persist through serialization (data saved to disk). This was useful if we wanted one object to point at another, eg a following script, and then we could save that link in the level. This problem is easily solvable if both objects you are linking are contained within the same file (two objects in a level, two objects in a single archetype, etc). However, once the objects were split apart into different files the problem becomes nearly impossible to solve properly. This case was especially common when a user would make a Zombie script and then use the Cog id's to point at the Player. As soon as the Zombie was uploaded to its own archetype, it would lose its own reference to the Player because the Zombie file by itself could no longer properly refer to the Player saved in the level. Many other popular editors exhibit this same behavior, but we deemed it undesirable. CogPaths were a partial solution to this problem. By using the names of objects and the hierarchy order, we gave the users a unique way to identify which object they were referring to. CogPaths also combine using the id so that they can best try to save, load, and continue pointing at the same object you originally picked without losing a reference. CogPaths use string lookups to find children Cogs, and special operators to find parents, children by index, children by archetype name, etc. The syntax of CogPaths also allows the user to find objects in different named spaces, which is very useful for UI.</p>
+<h2 id="events">Events</h2>
+<p>Plasma uses an event system at its core which allows any class to send and receive events. An event is basically just a callback (function pointer) plus an event data structure with all the relevant information to the event that occurred. For example, you can listen for the KeyDown event on the global Keyboard object, which tells you what key was pressed, as well as other helpful features such as if Ctrl, Shift, or Alt were pressed too. The event system is critical to the performance of Plasma because it discourages writing poll-based logic. Having a bunch of objects that update every frame and check to see if a key gets pressed is generally much less efficient than having a single object getting updated (the Keyboard) that then calls into everyone when a key gets pressed. Moreover, events allow for some level of dynamic dispatch. You can send an event to anyone and they may or may not handle it (think of it like a message). I can do a ray-cast and send the Open event to the first object I hit, which may do nothing, or it may open a door or a chest. Events can also be forwarded or bubbled up / down a hierarchy, which is very useful for UI. The common class that everyone inherits from to automatically get event handling is the EventObject class.</p>
+<h2 id="engine-events">Engine Events</h2>
+<ul>
+<li>Requires documentation</li>
+</ul>
+<h1 id="systems">Systems</h1>
+<p>There are many different Systems that we add to the engine. One of the more important ones it the TimeSystem. The TimeSystem has a intrusive linked list of all TimeSpace components (which are components that get added to each Space). When the TimeSystem updates, we compute the amount of time passed since the last frame, and then we walk through and update each TimeSpace. The TimeSpace update will dispatch critical events such as LogicUpdate, FrameUpdate, etc. Many different components (including user scripts) rely on LogicUpdate being sent on the space.</p>
+<h2 id="actions">Actions</h2>
+<ul>
+<li>Requires documentation</li>
+</ul>
+<h2 id="job-system">Job System</h2>
+<ul>
+<li>Requires documentation</li>
+</ul>
+<h2 id="project">Project</h2>
+<ul>
+<li>Requires documentation</li>
+</ul>
+<h2 id="object-store">Object Store</h2>
+<ul>
+<li>Requires documentation</li>
+</ul>
+<h2 id="resources">Resources</h2>
+<ul>
+<li>Requires documentation</li>
+</ul>
+<h2 id="engine-resources">Engine Resources</h2>
+<ul>
+<li>Requires documentation</li>
+<li>Archetype</li>
+<li>Level</li>
+<li>TextResource</li>
+<li>SampleCurve</li>
+<li>Paths</li>
+<li>ResourceTable</li>
+<li>DocumentResource</li>
+</ul>
+<h2 id="animations">Animations</h2>
+<ul>
+<li>Requires documentation</li>
+</ul>
+<h2 id="animation">Animation</h2>
+<ul>
+<li>Property Track</li>
+<li>Event Track</li>
+</ul>
+<h2 id="rich-animation">Rich Animation</h2>
+<ul>
+<li>See Editor Rich Animation</li>
+</ul>
+<h2 id="animation-editor">Animation Editor</h2>
+<ul>
+<li>See Editor Section</li>
+</ul>
+<h2 id="animation-graph">Animation Graph</h2>
+<p>Events:</p>
+<p>Animation Nodes:</p>
+<ul>
+<li>Pose Node</li>
+<li>Basic Node</li>
+<li>Direct Blend Node</li>
+<li>Cross Blend Node</li>
+<li>Selective Node</li>
+<li>Chain Node</li>
+<li>N-blend Node</li>
+</ul>
+<h2 id="graph-visualization">Graph Visualization</h2>
+<h2 id="simple-animation">Simple Animation</h2>
+<ul>
+<li>Requires documentation</li>
+</ul>
+<h2 id="input-shell-system">Input / Shell System</h2>
+<ul>
+<li>Requires documentation</li>
+</ul>
+<h2 id="tweakables">Tweakables</h2>
+<ul>
+<li>Requires documentation</li>
+</ul></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+                <p>Copyright &copy; 2021 Plasma Engine. Released under the MIT License.</p>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../js/base.js" defer></script>
+        <script src="../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

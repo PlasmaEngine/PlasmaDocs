@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../../../img/favicon.ico">
+        <title>Strings - Docs | Plasma Engine</title>
+        <link href="../../../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/docco.min.css">
+
+        <script src="../../../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../../../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../../../..">Docs | Plasma Engine</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href="../../../.." class="nav-link">Home</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="/getting_started/" class="nav-link">Getting Started</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Manual <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../" class="dropdown-item">Manual</a>
+</li>
+                                    
+<li>
+    <a href="../../ai/" class="dropdown-item">AI</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Architecture</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../architecture/architecture/" class="dropdown-item">Architecture</a>
+</li>
+            
+<li>
+    <a href="../../architecture/archetypes/archtype_basics.markdown" class="dropdown-item">Archtypes</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Cogs</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../architecture/cogs/cogs/" class="dropdown-item">Cogs</a>
+</li>
+            
+<li>
+    <a href="../../architecture/cogs/gameobjectsconcept/" class="dropdown-item">Game Objects</a>
+</li>
+            
+<li>
+    <a href="../../architecture/cogs/objectstore/" class="dropdown-item">Object Store</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Objects</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../architecture/objects/objects/" class="dropdown-item">Objects</a>
+</li>
+            
+<li>
+    <a href="../../architecture/objects/gamesession/" class="dropdown-item">Gamesession</a>
+</li>
+            
+<li>
+    <a href="../../architecture/objects/spaces/" class="dropdown-item">Spaces</a>
+</li>
+            
+<li>
+    <a href="../../architecture/objects/levelsettings/" class="dropdown-item">Levelsettings</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Resources</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../architecture/resources/resource.markdown" class="dropdown-item">Resources</a>
+</li>
+            
+<li>
+    <a href="../../architecture/resources/level/" class="dropdown-item">Levels</a>
+</li>
+            
+<li>
+    <a href="../../architecture/fonts/fonts.markdown" class="dropdown-item">Fonts</a>
+</li>
+            
+<li>
+    <a href="../../architecture/resources/resourcestable.markdown" class="dropdown-item">Resource Table</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                                    
+<li>
+    <a href="../../audio/" class="dropdown-item">Audio</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Editor</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../editor/" class="dropdown-item">Editor</a>
+</li>
+            
+<li>
+    <a href="../../editor/tags/" class="dropdown-item">Tags</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Reference <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../../reference/" class="dropdown-item">Index</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Contributing <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../../source_docs/getting_started.md" class="dropdown-item">Getting Started</a>
+</li>
+                                    
+<li>
+    <a href="../../../../source_docs/plasma_code/" class="dropdown-item">Plasma Code</a>
+</li>
+                                    
+<li>
+    <a href="../../../../source_docs/plasma_overview/" class="dropdown-item">Plasma Overview</a>
+</li>
+                                    
+<li>
+    <a href="../../../../source_docs/components.md" class="dropdown-item">Components</a>
+</li>
+                                    
+<li>
+    <a href="../../../../source_docs/custom_event_names/" class="dropdown-item">Custom Event Names</a>
+</li>
+                                    
+<li>
+    <a href="../../../../source_docs/editor/" class="dropdown-item">Editor</a>
+</li>
+                                    
+<li>
+    <a href="../../../../source_docs/engine/" class="dropdown-item">Engine</a>
+</li>
+                                    
+<li>
+    <a href="../../../../source_docs/enums/" class="dropdown-item">Enums</a>
+</li>
+                                    
+<li>
+    <a href="../../../../source_docs/meta_bindings.markdown" class="dropdown-item">Meta Binding</a>
+</li>
+                                    
+<li>
+    <a href="../../../../source_docs/platform/" class="dropdown-item">Adding Platforms</a>
+</li>
+                                    
+<li>
+    <a href="../../../../source_docs/widgets/" class="dropdown-item">Widgets</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a href="https://github.com/PlasmaEngine/PlasmaDocs/edit/master/docs/manual/plasmamanual/lightning_in_plasma/strings.markdown" class="nav-link"><i class="fa fa-github"></i> Edit on GitHub</a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#strings" class="nav-link">Strings</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="strings">Strings</h1>
+<p><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown"> String</a> is a Lightning type used to represent text as a sequence of characters.</p>
+<p>#  Making Strings</p>
+<p>In Lightning, a string literal is made by enclosing plasma or more characters in double quotation marks:</p>
+<p>```lang=csharp, name=String Literal Examples
+var greeting = "hello world";
+var colorCode = "#F9EF1A";
+var empty = "";</p>
+<pre><code>
+ #  String Interpolation
+
+*String interpolation* is a way of evaluating an expression and inserting it directly into a string literal. In Lightning, string interpolation is done using the **grave accent** character, ##`##. Anything in a string literal that is entered between two ##`##s is evaluated, and the result of that evaluation is used instead. For example:
+
+```lang=csharp, name=String Interpolation Examples
+var xp = Integer.PositiveMax;
+var message = &quot;Gained `xp` experience points.&quot;;
+Console.WriteLine(message);
+
+message = &quot;Turn `Math.ToDegrees(Math.ACos(0.2)) - 15.0` degrees to starboard.&quot;;
+Console.WriteLine(message);
+
+message = &quot;This component is attached to `this.Owner`.&quot;;
+Console.WriteLine(message);
+</code></pre>
+<p>```name=Console Window
+Gained 2147483647 experience points.
+Turn 63.463 degrees to starboard.
+This component is attached to <Cog 'LevelSettings' [425]>.</p>
+<pre><code>
+String interpolation presents a handy means of joining two strings:
+
+```lang=csharp, name=String Interpolation Joining
+var str0 = &quot;GAME&quot;;
+var str1 = &quot;OVER&quot;;
+Console.WriteLine(&quot;`str0` `str1`&quot;);
+</code></pre>
+<p>```name=Console Window
+GAME OVER</p>
+<pre><code>
+It can also be used to effectively &quot;append&quot; to a string:
+
+```lang=csharp, name=String Interpolation Appending
+var evenDigits = &quot;&quot;;
+var oddDigits = &quot;&quot;;
+
+for (var i = 0; i &lt; 10; ++i)
+{
+  if (i % 2 == 0)
+    evenDigits = &quot;`evenDigits` `i`&quot;;
+  else
+    oddDigits = &quot;`oddDigits` `i`&quot;;
+}
+
+Console.WriteLine(&quot;Even base-ten digits: `evenDigits`&quot;);
+Console.WriteLine(&quot;Odd base-ten digits: `oddDigits`&quot;);
+</code></pre>
+<p>```name=Console Window
+Even base-ten digits:  0 2 4 6 8
+Odd base-ten digits:  1 3 5 7 9</p>
+<pre><code>
+Note that strings in Lightning are **immutable**, which means they cannot be altered after they have been created. Thus, strictly speaking, no true *appending* takes place. In the above code block, where it appears that `evenDigits` is being appended via string interpolation, a new string is actually created using the previous value of `evenDigits` and the value of `i`, and that new string is assigned back to the `evenDigits` variable.
+
+(NOTE) Since this means of string appending involves the creation of another new string each time it occurs, it is less efficient than using a [ StringBuilder](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/stringbuilder.markdown), which is intended for just this purpose. In certain situations, such as a deeply nested loop, this performance difference may be significant.
+
+ #  Escape Sequences
+
+Some characters are entered in a string literal via special sequences of characters called //escape sequences//. In Lightning, all escape sequences consist of a backslash followed by another character.
+
+```lang=csharp, name=Escape Sequence Examples
+// \&quot; -- double quotation marks
+Console.WriteLine(&quot;Say \&quot;hello\&quot; to Dr. Cosmo for me.&quot;);
+Console.WriteLine();
+
+// \` -- grave accent
+Console.WriteLine(&quot;Press the \` key to open the console&quot;);
+Console.WriteLine();
+
+// \\ -- backslash
+Console.WriteLine(&quot;C:\\Logs\\Analytics\\ForestLevel.Analytics.gamedata&quot;);
+Console.WriteLine();
+
+// \n or \r -- newline
+Console.WriteLine(&quot;BEWARE\n  OF\r DOUG&quot;);
+Console.WriteLine();
+
+// \t -- horizontal tab
+Console.WriteLine(&quot;+---+---+---+&quot;);
+Console.WriteLine(&quot;1\t12\t123\t|&quot;);
+Console.WriteLine(&quot;+---+---+---+&quot;);
+</code></pre>
+<p>```name=Console Window
+Say "hello" to Dr. Cosmo for me.</p>
+<p>Press the ` key to open the console</p>
+<p>C:\Logs\Analytics\ForestLevel.Analytics.gamedata</p>
+<p>BEWARE
+  OF
+ DOUG</p>
+<p>+---+---+---+
+1   12  123 |
++---+---+---+</p>
+<pre><code>
+ #  Strings and StringRanges
+
+[ StringRange](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/stringrange.markdown) is a separate but related class to **String**. It is an iterable range that can be used in a [ For Each loop](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/lightning_in_plasma/looping.markdown#for-each-loop). A string can be **implicitly cast** to StringRange, so a string can be passed into any function that expects a StringRange. However, a StringRange *cannot* be implicitly cast to String:
+
+```lang=csharp, name=String and StringRange Implicit Casting Examples
+  var string = &quot;&quot;;
+  var stringRange = StringRange();
+
+  this.FunctionTakingString(string);                  // okay
+*this.FunctionTakingString(stringRange);             * error
+  this.FunctionTakingString(stringRange.ToString());  // okay
+  this.FunctionTakingStringRange(string);             // okay
+  this.FunctionTakingStringRange(stringRange);        // okay
+</code></pre>
+<p>#  Static String Functions</p>
+<p><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/lightning_in_plasma/attributes.markdown#static"> As with all static functions</a>, the static functions of the String class are not invoked from instances of the class, but instead are found in the String namespace itself.</p>
+<p>##  Compare</p>
+<p><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown#compare-plasma-engine-docu"> Compare</a> returns an Integer indicating the <em>relative sort order</em> of the two given strings; that is, whether one string would be sorted before another when comparing the character codes of the two strings:</p>
+<p>```lang=csharp, name=Relative Sort Order Example
+var str0 = "abc";
+var str1 = "def";</p>
+<p>Console.WriteLine(String.Compare(str0, str1));
+Console.WriteLine(String.Compare(str1, str0));
+Console.WriteLine(String.Compare(str0, str0));</p>
+<pre><code>```name=Console Window
+-1
+1
+0
+</code></pre>
+<p>This results in more or less the same ordering as one would use to sort entries in an English dictionary, except that because it goes by character codes, uppercase letters are sorted before lowercase letters, etc.:</p>
+<p>```lang=csharp, name=Letter Case Sorting Example
+var str0 = "cat";
+var str1 = "dog";
+var str2 = "DOG";</p>
+<p>Console.WriteLine(String.Compare(str0, str1));
+Console.WriteLine(String.Compare(str0, str2));</p>
+<pre><code>```name=Console Window
+-1
+1
+</code></pre>
+<p>This method is handy for sorting arrays of strings. <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/array_t.markdown#sort-void"> Sort</a> is an <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/array_t.markdown"> Array</a> method that sorts an array in place using a given comparison function:</p>
+<p>```lang=csharp, name=Compare Sort Example
+var strings = Array<a href="">String</a>;</p>
+<p>strings.Add("hi");
+strings.Add("greetings");
+strings.Add("nice to see you");
+strings.Add("good morning");</p>
+<p>Console.WriteLine(strings);</p>
+<p>strings.Sort(String.Compare); // the Compare function is passed as a delegate</p>
+<p>Console.WriteLine(strings);</p>
+<pre><code>```name=Console Window
+{hi, greetings, nice to see you, good morning}
+{good morning, greetings, hi, nice to see you}
+</code></pre>
+<p>##  Concatenate</p>
+<p><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown#concatenate-plasma-engine"> Concatenate</a> can be used to join two existing strings:</p>
+<p>```lang=csharp, name=Concatenate Example
+Console.WriteLine(String.Concatenate("exa", "mple"));</p>
+<pre><code>```name=Console Window
+example
+</code></pre>
+<p>##  FormatC</p>
+<p><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown#formatc-plasma-engine-docu"> FormatC</a> produces a string using C-style string formatting syntax:</p>
+<p>```lang=csharp, name=FormatC Example
+var score = 12340;
+Console.WriteLine(String.FormatC("Score: %08d", score));
+var hull = 100.0 * 43.0 / 64.0; // actual value 67.1875
+Console.WriteLine(String.FormatC("Hull integrity at %.2f percent", hull));</p>
+<pre><code>```name=Console Window
+Score: 00012340
+Hull integrity at 67.19 percent
+</code></pre>
+<p><strong>FormatC</strong> uses the same syntax as <a href="http://www.cplusplus.com/reference/cstdio/printf/">the C printf function</a>, with the following notes:
+- the <code>p</code> format specifier can only be used with references to objects of reference types
+- the <code>n</code> format specifier cannot be used
+- the <code>#</code> flag can only be used with the <code>o</code>, <code>x</code>, and <code>X</code> specifiers
+- the <code>.</code> precision marker must have its precision value specified</p>
+<p>##  FromRune</p>
+<p><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown#fromrune-plasma-engine-doc"> FromRune</a> returns a one-character string that consists of the given rune, which can either be passed in directly, or be specified by its code point:</p>
+<p>```lang=csharp, name=FromRune Example
+Console.WriteLine(String.FromRune(65));
+Console.WriteLine(String.FromRune(Rune(90)));</p>
+<pre><code>```name=Console Window
+A
+Z
+</code></pre>
+<p>##  IsNullOrEmpty and IsNullOrWhitespace</p>
+<p><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown#isnullorempty-plasma-engin"> IsNullOrEmpty</a> returns true if the given string is either <strong>null</strong> or the empty string, <code>""</code>, and false otherwise. <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown#isnullorwhitespace-plasma"> IsNullOrWhitespace</a> works just the same way, except that it also returns true if the given string consists only of <strong>whitespace</strong> characters:</p>
+<p>```lang=csharp, name=IsNullOrWhitespace Example
+Console.WriteLine(String.IsNullOrWhitespace("  \n  \t  "));</p>
+<pre><code>```name=Console Window
+true
+</code></pre>
+<p>##  Join</p>
+<p><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown#join-plasma-engine-documen"> Join</a> combines two, three, or four strings into one, placing a given separator string between them in the result:</p>
+<p>```lang=csharp, name=Join Example
+var word0 = "Eeny";
+var word1 = "Meeny";
+var word2 = "Miney";
+var word3 = "Moe";
+var separator = ", ";
+Console.WriteLine(String.Join(separator, word0, word1, word2, word3));</p>
+<pre><code>```name=Console Window
+Eeny, Meeny, Miney, Moe
+</code></pre>
+<p>#  String Properties</p>
+<p>##  All</p>
+<p><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown#all-plasma-engine-document"> All</a> converts the string into a StringRange. In Lightning, strings can be implicitly cast to StringRanges, so it is typically not necessary to use this property:</p>
+<p>```lang=csharp, name=All Example
+// Contains takes a StringRange
+Console.WriteLine("homeowner".Contains("meow"));
+Console.WriteLine("homeowner".Contains("meow".All));</p>
+<pre><code>```name=Console Window
+true
+true
+</code></pre>
+<p>##  Begin and End</p>
+<p><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown#begin-plasma-engine-docume"> Begin</a> gets the RuneIterator at the start of the string, and <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown#end-plasma-engine-document"> End</a> gets the RuneIterator at the end of it:</p>
+<p>```lang=csharp, name=Begin and End Example
+var fileName = "SnowLevel.Analytics.gamedata";
+var levelName = fileName.SubString(fileName.Begin, fileName.FindFirstOf(".").Begin);
+var extension = fileName.SubString(fileName.FindLastOf(".").End, fileName.End);
+Console.WriteLine(levelName);
+Console.WriteLine(extension);</p>
+<pre><code>```name=ConsoleWindow
+SnowLevel
+gamedata
+</code></pre>
+<p>##  ByteCount and Count</p>
+<p><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown#bytecount-plasma-engine-do"> ByteCount</a> gets the number of bytes in the string. For a string that contains one or more characters outside of the ASCII range, this will be different from the number of runes represented by the string (see <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/lightning_in_plasma/strings/.markdown#computerunecount">ComputeRuneCount</a> below). Consider the following code example, attached to a cog that has a SpriteText component whose Text property is set to the French word //gar�on//:</p>
+<p>```lang=csharp, name=ByteCount Example
+var englishString = "string";
+var frenchString = this.Owner.SpriteText.Text;</p>
+<p>Console.WriteLine("The English string has <code>englishString.ByteCount</code> bytes");
+Console.WriteLine("The French string has <code>frenchString.ByteCount</code> bytes");</p>
+<pre><code>```name=Console Window
+The English string has 6 bytes
+The French string has 7 bytes
+</code></pre>
+<p>The <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown#count-plasma-engine-docume"> Count</a> property gets the same value as <strong>ByteCount</strong>, and exists for legacy purposes.</p>
+<p>##  Empty and IsNotEmpty</p>
+<p><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown#empty-plasma-engine-docume"> Empty</a> gets whether the string contains any characters at all:</p>
+<p>```lang=csharp, name=Empty Example
+var userNameInput = "";</p>
+<p>if (userNameInput.Empty)
+  Console.WriteLine("Please enter a name.");
+else
+  Console.WriteLine("Welcome, <code>userNameInput</code>.");</p>
+<pre><code>```name=Console Window
+Please enter a name.
+</code></pre>
+<p><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown#isnotempty-plasma-engine-d"> IsNotEmpty</a> is always the exact opposite of <strong>Empty</strong>.</p>
+<p>#  String Methods</p>
+<p>String methods are found on string instances, including literals:</p>
+<p>```lang=csharp, name=String Method on Literal Example
+Console.WriteLine("hello world".ToUpper());</p>
+<pre><code>```name=Console Window
+HELLO WORLD
+</code></pre>
+<p>##  CompareTo</p>
+<p>A string's <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown#compareto-plasma-engine-do"> CompareTo</a> method returns an Integer indicating its relative sort order when compared with a given StringRange. It works much like the static <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/lightning_in_plasma/strings/.markdown#compare">Compare</a> function seen above, except that it compares a given StringRange to the string on which this method is being invoked.</p>
+<p>##  ComputeRuneCount</p>
+<p>The <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown#computerunecount-plasma-en"> ComputeRuneCount</a> method calculates the number of runes represented by the string by iterating through it from its <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/lightning_in_plasma/strings/.markdown#begin-and-end">Begin iterator to its End</a>. As noted <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/lightning_in_plasma/strings/.markdown#bytecount-and-count">above</a>, a string that contains one or more characters outside of the ASCII range will have a different rune count from its byte count:</p>
+<p>```lang=csharp, name=ComputeRuneCount Example
+var englishString = "string";
+var frenchString = this.Owner.SpriteText.Text;</p>
+<p>Console.WriteLine("The English string has <code>englishString.ComputeRuneCount()</code> runes");
+Console.WriteLine("The French string has <code>frenchString.ComputeRuneCount()</code> runes");</p>
+<pre><code>```name=Console Window
+The English string has 6 runes
+The French string has 6 runes
+</code></pre>
+<p>##  Contains</p>
+<p>The <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown#contains-plasma-engine-doc"> Contains</a> method checks whether a string contains a given substring:</p>
+<p>```lang=csharp, name=Contains Example
+var sentence = "DR. COSMO: \"I'm looking for a person named Brianna.\"";
+var name0 = "Brian";
+var name1 = "Anna";</p>
+<p>Console.WriteLine(sentence);</p>
+<p>if (sentence.Contains(name0))
+  Console.WriteLine("<em> BRIAN: \"Did someone mention me?\"");
+if (sentence.Contains(name1))
+  Console.WriteLine("</em> ANNA: \"My ears are burning.\"");</p>
+<pre><code>```name=Console Window
+DR. COSMO: &quot;I'm looking for a person named Brianna.&quot;
+* BRIAN: &quot;Did someone mention me?&quot;
+</code></pre>
+<p>As this example shows, <strong>Contains</strong> is case-sensitive, but it does <em>not</em> match only complete words. <code>Brianna</code> contains <code>Brian</code>, and it does contain <code>anna</code>, but not <code>Anna</code>.</p>
+<p>##  EndsWith and StartsWith</p>
+<p>The <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown#endswith-plasma-engine-doc"> EndsWith</a> method checks whether a string ends with a given substring:</p>
+<p>```lang=csharp, name=EndsWith Example
+var fileNameToOpen = "DesertLevel.Analytics.gamedata";</p>
+<p>var validFileExtension = ".gamedata";</p>
+<p>if (fileNameToOpen.EndsWith(validFileExtension))
+  Console.WriteLine("Opening <code>fileNameToOpen</code>....");
+else
+  Console.WriteLine("<code>fileNameToOpen</code> is not a valid file");</p>
+<pre><code>```name=ConsoleWindow
+Opening DesertLevel.Analytics.gamedata....
+</code></pre>
+<p>The <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown#startswith-plasma-engine-d"> StartsWith</a> method works the same way, except that it checks the beginning of the string instead the end.</p>
+<p>##  Replace</p>
+<p>The <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown#replace-plasma-engine-docu"> Replace</a> method returns a new string, with all occurrences of a given old substring replaced with a given new substring:</p>
+<p>```lang=csharp, name=Replace Example
+var dialogueFromFile = "Oh, [HERO_NAME]! Your friend [VILLAIN_NAME] was looking for you.";</p>
+<p>var heroName = "Brianna";
+var villainName = "Dr. Cosmo";</p>
+<p>var dialogue = dialogueFromFile.Replace("[HERO_NAME]", heroName);
+dialogue = dialogue.Replace("[VILLAIN_NAME]", villainName);</p>
+<p>Console.WriteLine(dialogue);</p>
+<pre><code>```name=Console Window
+Oh, Brianna! Your friend Dr. Cosmo was looking for you.
+</code></pre>
+<p>##  Split</p>
+<p>The <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown#split-plasma-engine-docume"> Split</a> method scans a string for a given delimiter StringRange of one or more characters. The substrings that were found separated by occurrences of that delimiter, if any, are returned as an iterable range. The delimiter itself is not present in the split results:</p>
+<p>```lang=csharp, name=Split Example
+var dataFromFile = "0,0,2,0,5,4,1,1,0,0,0,1,1,3,5,1";
+var splitResults = dataFromFile.Split(",");</p>
+<p>// splitResults now contains "0", "0", "2", "0", "5", "4", and so on</p>
+<p>var total = 0;</p>
+<p>foreach (var result in splitResults)
+  total += Integer.Parse(result);</p>
+<p>Console.WriteLine("Data Total: <code>total</code>");</p>
+<pre><code>```name=Console Window
+Data Total: 24
+</code></pre>
+<p>NOTE: <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/integer.markdown#parse-plasma-engine-docume"> Parse</a> is a static <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/integer.markdown"> Integer</a> function. It takes a StringRange and interprets it as if it were an Integer, and returns that value. Equivalent static functions exist in other classes, such as <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown"> Real</a>, <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/doubleinteger.markdown"> DoubleInteger</a>, etc.</p>
+<p>##  SubString, SubStringBytes, and SubStringFromRuneIndices</p>
+<p>The <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown#substring-plasma-engine-do"> SubString</a> method returns the snippet of a string that is bounded by the two given RuneIterators. This may be the entire string itself, or it may be a smaller portion thereof:</p>
+<p>```lang=csharp, name=SubString Example
+var name = "The Evil Dr. Cosmo";</p>
+<p>var firstSpace = name.FindFirstOf(" ");
+// firstSpace refers to the space directly after "The"
+var title = name.FindFirstOf("Dr.");
+// title refers to the "Dr." between "Evil" and "Cosmo"
+var lastSpace = name.FindLastOf(" ");
+// lastSpace refers to the space directly before "Cosmo"</p>
+<p>var part0 = name.SubString(name.Begin, firstSpace.Begin); // "The"
+var part1 = "Handsome but Misunderstood";
+var part2 = name.SubString(title.Begin, title.End);       // "Dr."
+var part3 = "Eugene";
+var part4 = name.SubString(lastSpace.End, name.End);      // "Cosmo"
+var part5 = "IV";</p>
+<p>var revisedName = "<code>part0</code> <code>part1</code> <code>part2</code> <code>part3</code> <code>part4</code> <code>part5</code>";</p>
+<p>Console.WriteLine(revisedName);</p>
+<pre><code>```name=Console Window
+The Handsome but Misunderstood Dr. Eugene Cosmo IV
+</code></pre>
+<ul>
+<li>See also <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/lightning_in_plasma/strings/.markdown#findfirstof">FindFirstOf</a></li>
+<li>See also <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/lightning_in_plasma/strings/.markdown#findfirstof">FindLastOf</a></li>
+</ul>
+<p>Besides <strong>SubString</strong>, there are two other String methods that return substrings:</p>
+<ul>
+<li><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown#substringbytes-plasma-engi"> SubStringBytes</a> returns a string's substring that starts at the given byte index and runs for the given byte length:</li>
+</ul>
+<p>```lang=csharp, name=SubStringBytes Example
+var str = "abcdefghij";
+//         0123456789
+//      start ^
+//            12345
+//                ^ 5 bytes long
+var sub = str.SubStringBytes(3, 5);
+Console.WriteLine(sub);</p>
+<pre><code>```name=Console Window
+defgh
+</code></pre>
+<p>IMPORTANT: A string that contains characters that are outside of the ASCII range will not have a matching rune count and byte count. Using <strong>SubStringBytes</strong> on such a string may produce undesired behavior.</p>
+<ul>
+<li><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown#substringfromruneindices"> SubStringFromRuneIndices</a> returns a string's substring that starts at the given starting rune index and ends one past the given ending rune index:</li>
+</ul>
+<p>```lang=csharp, name=SubStringFromRuneIndices Example
+var str = "abcdefghij";
+//         0123456789
+//     start ^      ^ one past the end
+var sub = str.SubStringFromRuneIndices(2, 9);
+Console.WriteLine(sub);</p>
+<pre><code>```name=Console Window
+cdefghi
+</code></pre>
+<p>NOTE: Finding a given rune by its index requires a linear search through a string. Because <strong>SubStringFromRuneIndices</strong> requires two such searches, this method can be slower than <strong>SubString</strong>. In certain situations, such as a deeply nested loop, this performance difference may be significant.</p>
+<p>##  ToLower and ToUpper</p>
+<p>The <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown#tolower-plasma-engine-docu"> ToLower</a> method returns a copy of the original string with all of its letters converted to lowercase. Any character that is not an uppercase alphabetical character is unchanged:</p>
+<p>```lang=csharp, name=ToLower Example
+var sentence = "gEt ReKT scRUb";
+var forbiddenWord = "scrub";</p>
+<p>var lower = sentence.ToLower();</p>
+<p>if (lower.Contains(forbiddenWord))
+  Console.WriteLine("You have been reported for bad manners.");
+else
+  Console.WriteLine(sentence);</p>
+<pre><code>```name=Console Window
+You have been reported for bad manners.
+</code></pre>
+<p>The <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown#toupper-plasma-engine-docu"> ToUpper</a> method is just like ToLower, except that it converts letters to uppercase:</p>
+<p><code>``lang=csharp, name=ToUpper Example
+var name = "Johnny";
+var upperName = name.ToUpper();
+var dialogue = "</code>upperName<code>: \"This is</code>name`.\"";
+Console.WriteLine(dialogue);</p>
+<pre><code>```name=ConsoleWindow
+JOHNNY: &quot;This is Johnny.&quot;
+</code></pre>
+<p>##  Trim, TrimEnd, and TrimStart</p>
+<p>The <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown#trim-plasma-engine-documen"> Trim</a> method returns a copy of the original string with all of its whitespace characters removed from its beginning and end:</p>
+<p><code>``lang=csharp, name=Trim Example
+var untrimmedID = "    f08b47e1            ";
+Console.WriteLine("Your ID is</code>untrimmedID`. Write it down.");</p>
+<p>var trimmedID = untrimmedID.Trim();
+Console.WriteLine("Your ID is <code>trimmedID</code>. Write it down.");</p>
+<pre><code>```name=Console Window
+Your ID is     f08b47e1            . Write it down.
+Your ID is f08b47e1. Write it down.
+</code></pre>
+<p><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown#trimend-plasma-engine-docu"> TrimEnd</a> and <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown#trimstart-plasma-engine-do"> TrimStart</a> work just the same as <strong>Trim</strong>, except that <strong>TrimEnd</strong> only trims whitespace characters from the end of the string, and <strong>TrimStart</strong> only trims from the start of the string.</p>
+<p>#  Related Materials
+ ##  Manual
+- <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/lightning_in_plasma/looping.markdown"> Looping</a></p>
+<p>##  Code Reference
+- <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown"> String</a>
+- <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/stringrange.markdown"> StringRange</a>
+- <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/stringbuilder.markdown"> StringBuilder</a>
+- <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/stringsplitrange.markdown"> StringSplitRange</a>
+- <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/rune.markdown"> Rune</a>
+- <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/runeiterator.markdown"> RuneIterator</a> </p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+                <p>Copyright &copy; 2021 Plasma Engine. Released under the MIT License.</p>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../../../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../../../js/base.js" defer></script>
+        <script src="../../../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

@@ -1,0 +1,1387 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../../img/favicon.ico">
+        <title>Filepath - Docs | Plasma Engine</title>
+        <link href="../../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/docco.min.css">
+
+        <script src="../../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../../..">Docs | Plasma Engine</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href="../../.." class="nav-link">Home</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="/getting_started/" class="nav-link">Getting Started</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Manual <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../manual/" class="dropdown-item">Manual</a>
+</li>
+                                    
+<li>
+    <a href="../../../manual/plasmamanual/ai/" class="dropdown-item">AI</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Architecture</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../manual/plasmamanual/architecture/architecture/" class="dropdown-item">Architecture</a>
+</li>
+            
+<li>
+    <a href="../../../manual/plasmamanual/architecture/archetypes/archtype_basics.markdown" class="dropdown-item">Archtypes</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Cogs</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../manual/plasmamanual/architecture/cogs/cogs/" class="dropdown-item">Cogs</a>
+</li>
+            
+<li>
+    <a href="../../../manual/plasmamanual/architecture/cogs/gameobjectsconcept/" class="dropdown-item">Game Objects</a>
+</li>
+            
+<li>
+    <a href="../../../manual/plasmamanual/architecture/cogs/objectstore/" class="dropdown-item">Object Store</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Objects</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../manual/plasmamanual/architecture/objects/objects/" class="dropdown-item">Objects</a>
+</li>
+            
+<li>
+    <a href="../../../manual/plasmamanual/architecture/objects/gamesession/" class="dropdown-item">Gamesession</a>
+</li>
+            
+<li>
+    <a href="../../../manual/plasmamanual/architecture/objects/spaces/" class="dropdown-item">Spaces</a>
+</li>
+            
+<li>
+    <a href="../../../manual/plasmamanual/architecture/objects/levelsettings/" class="dropdown-item">Levelsettings</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Resources</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../manual/plasmamanual/architecture/resources/resource.markdown" class="dropdown-item">Resources</a>
+</li>
+            
+<li>
+    <a href="../../../manual/plasmamanual/architecture/resources/level/" class="dropdown-item">Levels</a>
+</li>
+            
+<li>
+    <a href="../../../manual/plasmamanual/architecture/fonts/fonts.markdown" class="dropdown-item">Fonts</a>
+</li>
+            
+<li>
+    <a href="../../../manual/plasmamanual/architecture/resources/resourcestable.markdown" class="dropdown-item">Resource Table</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                                    
+<li>
+    <a href="../../../manual/plasmamanual/audio/" class="dropdown-item">Audio</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Editor</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../manual/plasmamanual/editor/" class="dropdown-item">Editor</a>
+</li>
+            
+<li>
+    <a href="../../../manual/plasmamanual/editor/tags/" class="dropdown-item">Tags</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Reference <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../" class="dropdown-item">Index</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Contributing <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../source_docs/getting_started.md" class="dropdown-item">Getting Started</a>
+</li>
+                                    
+<li>
+    <a href="../../../source_docs/plasma_code/" class="dropdown-item">Plasma Code</a>
+</li>
+                                    
+<li>
+    <a href="../../../source_docs/plasma_overview/" class="dropdown-item">Plasma Overview</a>
+</li>
+                                    
+<li>
+    <a href="../../../source_docs/components.md" class="dropdown-item">Components</a>
+</li>
+                                    
+<li>
+    <a href="../../../source_docs/custom_event_names/" class="dropdown-item">Custom Event Names</a>
+</li>
+                                    
+<li>
+    <a href="../../../source_docs/editor/" class="dropdown-item">Editor</a>
+</li>
+                                    
+<li>
+    <a href="../../../source_docs/engine/" class="dropdown-item">Engine</a>
+</li>
+                                    
+<li>
+    <a href="../../../source_docs/enums/" class="dropdown-item">Enums</a>
+</li>
+                                    
+<li>
+    <a href="../../../source_docs/meta_bindings.markdown" class="dropdown-item">Meta Binding</a>
+</li>
+                                    
+<li>
+    <a href="../../../source_docs/platform/" class="dropdown-item">Adding Platforms</a>
+</li>
+                                    
+<li>
+    <a href="../../../source_docs/widgets/" class="dropdown-item">Widgets</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a href="https://github.com/PlasmaEngine/PlasmaDocs/edit/master/docs/reference/lightning_base_types/filepath.markdown" class="nav-link"><i class="fa fa-github"></i> Edit on GitHub</a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<p><code>Core</code></p>
+<table>
+<thead>
+<tr>
+<th>Methods</th>
+<th>Properties</th>
+<th>Base Classes</th>
+<th>Derived Classes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/filepath.markdown#addtrailingdirectorysepa"> AddTrailingDirectorySeparator</a></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/filepath.markdown#directoryseparator-plasma"> DirectorySeparator</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/filepath.markdown#changeextension-plasma-eng"> ChangeExtension</a></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/filepath.markdown#executabledirectory-plasma"> ExecutableDirectory</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/filepath.markdown#combinedirectories-plasma"> CombineDirectories</a></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/filepath.markdown#executablefile-plasma-engi"> ExecutableFile</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/filepath.markdown#combinedirectoriesandfil"> CombineDirectoriesAndFile</a></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/filepath.markdown#temporarydirectory-plasma"> TemporaryDirectory</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/filepath.markdown#getcanonicalizedpathfrom"> GetCanonicalizedPathFromAbsolutePath</a></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/filepath.markdown#userdocumentsdirectory-z"> UserDocumentsDirectory</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/filepath.markdown#getcomparablepathfromabs"> GetComparablePathFromAbsolutePath</a></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/filepath.markdown#userlocaldirectory-plasma"> UserLocalDirectory</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/filepath.markdown#getdirectoryname-plasma-en"> GetDirectoryName</a></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/filepath.markdown#workingdirectory-plasma-en"> WorkingDirectory</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/filepath.markdown#getdirectorypath-plasma-en"> GetDirectoryPath</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/filepath.markdown#getextensionwithdot-plasma"> GetExtensionWithDot</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/filepath.markdown#getextensionwithoutdot-z"> GetExtensionWithoutDot</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/filepath.markdown#getfilenamewithextension"> GetFileNameWithExtension</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/filepath.markdown#getfilenamewithoutextens"> GetFileNameWithoutExtension</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/filepath.markdown#isrelative-plasma-engine-d"> IsRelative</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/filepath.markdown#removetrailingdirectorys"> RemoveTrailingDirectorySeparator</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>#  Properties</p>
+<hr />
+<p>#  DirectorySeparator : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown">string</a></p>
+<p><code>read-only</code> <code>static</code></p>
+<blockquote>
+<p>Gets the character(s) used for separating directories and files. This value is often different depending on the operating system (generally either '/' or '\')</p>
+<p>``` lang=cpp, name=Lightning
+var DirectorySeparator : String</p>
+</blockquote>
+<hr />
+<p>#  ExecutableDirectory : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown">string</a></p>
+<p><code>read-only</code> <code>static</code></p>
+<blockquote>
+<p>The directory the executable lives with in (exe, elf...). This will always include a directory separator at the end of the result.</p>
+<p>``` lang=cpp, name=Lightning
+var ExecutableDirectory : String</p>
+</blockquote>
+<hr />
+<p>#  ExecutableFile : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown">string</a></p>
+<p><code>read-only</code> <code>static</code></p>
+<blockquote>
+<p>A path directly to the executable itself (exe, elf...).</p>
+<p>``` lang=cpp, name=Lightning
+var ExecutableFile : String</p>
+</blockquote>
+<hr />
+<p>#  TemporaryDirectory : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown">string</a></p>
+<p><code>read-only</code> <code>static</code></p>
+<blockquote>
+<p>Temporary files should be placed here. This will always include a directory separator at the end of the result.</p>
+<p>``` lang=cpp, name=Lightning
+var TemporaryDirectory : String</p>
+</blockquote>
+<hr />
+<p>#  UserDocumentsDirectory : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown">string</a></p>
+<p><code>read-only</code> <code>static</code></p>
+<blockquote>
+<p>User saved data that the user can backup or modify should be placed here (read/write/create permissions should be allowed). This will always include a directory separator at the end of the result.</p>
+<p>``` lang=cpp, name=Lightning
+var UserDocumentsDirectory : String</p>
+</blockquote>
+<hr />
+<p>#  UserLocalDirectory : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown">string</a></p>
+<p><code>read-only</code> <code>static</code></p>
+<blockquote>
+<p>Application saved information should be placed here (read/write/create permissions should be allowed). This will always include a directory separator at the end of the result.</p>
+<p>``` lang=cpp, name=Lightning
+var UserLocalDirectory : String</p>
+</blockquote>
+<hr />
+<p>#  WorkingDirectory : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown">string</a></p>
+<p><code>static</code></p>
+<blockquote>
+<p>A directory that all relative paths start resolving from. In general the changing of the working directory is discouraged because it may affect assumptions of the host application. This will always include a directory separator at the end of the result.</p>
+<p>``` lang=cpp, name=Lightning
+var WorkingDirectory : String</p>
+</blockquote>
+<hr />
+<p>#  Methods</p>
+<hr />
+<p>#  AddTrailingDirectorySeparator : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown">string</a></p>
+<p><code>static</code></p>
+<blockquote>
+<p>Pass in a directory path with or without the separator and this will add it at the end (if needed).
+Example: ('Content\Powerups') results in 'Content\Powerups\'
+Example: ('Content\Powerups\') results in 'Content\Powerups\'</p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>p0</td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown">string</a></td>
+<td></td>
+</tr>
+<tr>
+<td>``` lang=cpp, name=Lightning</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>function AddTrailingDirectorySeparator(p0 : String) : String</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>```</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<hr />
+<p>#  ChangeExtension : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown">string</a></p>
+<p><code>static</code></p>
+<blockquote>
+<p>Changes the extension of a path (with file name at the end) to a new extension. If the file has no extension, then this will automatically add the extension to the end. The extension is allowed to contain a leading dot '.' character (or not). The path is also allowed to contain a trailing dot '.' character (or not).
+Example: ('Content\Player.png', 'jpg') results in 'Content\Player.jpg'
+Example: ('Content\Player', 'jpg') results in 'Content\Player.jpg'
+Example: ('Content\Player.', '.jpg') results in 'Content\Player.jpg'</p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>p0</td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown">string</a></td>
+<td></td>
+</tr>
+<tr>
+<td>p1</td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown">string</a></td>
+<td></td>
+</tr>
+<tr>
+<td>``` lang=cpp, name=Lightning</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>function ChangeExtension(p0 : String, p1 : String) : String</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>```</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<hr />
+<p>#  CombineDirectories : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown">string</a></p>
+<p><code>static</code></p>
+<blockquote>
+<p>Combines directory paths and directories names together (empty entries are skipped). This will always include a directory separator at the end of the result.
+Example: ('Content', 'Powerups') results in 'Content\Powerups\'
+Example: ('Content\', 'Powerups\') results in 'Content\Powerups\'
+Example: ('Content\', '', 'Powerups') results in 'Content\Powerups\'
+Example: ('C:\Sandbox\', 'Content') results in 'C:\Sandbox\Content\'</p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>dir0</td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown">string</a></td>
+<td></td>
+</tr>
+<tr>
+<td>dir1</td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown">string</a></td>
+<td></td>
+</tr>
+<tr>
+<td>``` lang=cpp, name=Lightning</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>function CombineDirectories(dir0 : String, dir1 : String) : String</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>```</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<hr />
+<p>#  CombineDirectories : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown">string</a></p>
+<p><code>static</code></p>
+<blockquote>
+<p>Combines directory paths and directories names together (empty entries are skipped). This will always include a directory separator at the end of the result.
+Example: ('Content', 'Powerups') results in 'Content\Powerups\'
+Example: ('Content\', 'Powerups\') results in 'Content\Powerups\'
+Example: ('Content\', '', 'Powerups') results in 'Content\Powerups\'
+Example: ('C:\Sandbox\', 'Content') results in 'C:\Sandbox\Content\'</p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>dir0</td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown">string</a></td>
+<td></td>
+</tr>
+<tr>
+<td>dir1</td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown">string</a></td>
+<td></td>
+</tr>
+<tr>
+<td>dir2</td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown">string</a></td>
+<td></td>
+</tr>
+<tr>
+<td>``` lang=cpp, name=Lightning</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>function CombineDirectories(dir0 : String, dir1 : String, dir2 : String) : String</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>```</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<hr />
+<p>#  CombineDirectories : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown">string</a></p>
+<p><code>static</code></p>
+<blockquote>
+<p>Combines directory paths and directories names together (empty entries are skipped). This will always include a directory separator at the end of the result.
+Example: ('Content', 'Powerups') results in 'Content\Powerups\'
+Example: ('Content\', 'Powerups\') results in 'Content\Powerups\'
+Example: ('Content\', '', 'Powerups') results in 'Content\Powerups\'
+Example: ('C:\Sandbox\', 'Content') results in 'C:\Sandbox\Content\'</p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>dir0</td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown">string</a></td>
+<td></td>
+</tr>
+<tr>
+<td>dir1</td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown">string</a></td>
+<td></td>
+</tr>
+<tr>
+<td>dir2</td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown">string</a></td>
+<td></td>
+</tr>
+<tr>
+<td>dir3</td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown">string</a></td>
+<td></td>
+</tr>
+<tr>
+<td>``` lang=cpp, name=Lightning</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>function CombineDirectories(dir0 : String, dir1 : String, dir2 : String, dir3 : String) : String</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>```</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<hr />
+<p>#  CombineDirectories : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown">string</a></p>
+<p><code>static</code></p>
+<blockquote>
+<p>Combines directory paths and directories names together (empty entries are skipped). This will always include a directory separator at the end of the result.
+Example: ('Content', 'Powerups') results in 'Content\Powerups\'
+Example: ('Content\', 'Powerups\') results in 'Content\Powerups\'
+Example: ('Content\', '', 'Powerups') results in 'Content\Powerups\'
+Example: ('C:\Sandbox\', 'Content') results in 'C:\Sandbox\Content\'</p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>dir0</td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown">string</a></td>
+<td></td>
+</tr>
+<tr>
+<td>dir1</td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown">string</a></td>
+<td></td>
+</tr>
+<tr>
+<td>dir2</td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown">string</a></td>
+<td></td>
+</tr>
+<tr>
+<td>dir3</td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown">string</a></td>
+<td></td>
+</tr>
+<tr>
+<td>dir4</td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown">string</a></td>
+<td></td>
+</tr>
+<tr>
+<td>``` lang=cpp, name=Lightning</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>function CombineDirectories(dir0 : String, dir1 : String, dir2 : String, dir3 : String, dir4 : String) : String</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>```</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<hr />
+<p>#  CombineDirectoriesAndFile : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown">string</a></p>
+<p><code>static</code></p>
+<blockquote>
+<p>Combines directory paths, directories names, and a single file name together (empty entries are skipped). Because we are combining a file name at the end, this will not result in a trailing directory separator.
+Example: ('Content\Powerups\', 'Recharge.png') results in 'Content\Powerups\Recharge.png'
+Example: ('Content\Powerups', '', 'Recharge.png') results in 'Content\Powerups\Recharge.png'
+Example: ('Content', 'Powerups', 'Recharge.png') results in 'Content\Powerups\Recharge.png'
+Example: ('C:\Sandbox\', 'Content\Player.png') results in 'C:\Sandbox\Content\Player.png'</p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>dir0</td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown">string</a></td>
+<td></td>
+</tr>
+<tr>
+<td>fileName</td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown">string</a></td>
+<td></td>
+</tr>
+<tr>
+<td>``` lang=cpp, name=Lightning</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>function CombineDirectoriesAndFile(dir0 : String, fileName : String) : String</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>```</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<hr />
+<p>#  CombineDirectoriesAndFile : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown">string</a></p>
+<p><code>static</code></p>
+<blockquote>
+<p>Combines directory paths, directories names, and a single file name together (empty entries are skipped). Because we are combining a file name at the end, this will not result in a trailing directory separator.
+Example: ('Content\Powerups\', 'Recharge.png') results in 'Content\Powerups\Recharge.png'
+Example: ('Content\Powerups', '', 'Recharge.png') results in 'Content\Powerups\Recharge.png'
+Example: ('Content', 'Powerups', 'Recharge.png') results in 'Content\Powerups\Recharge.png'
+Example: ('C:\Sandbox\', 'Content\Player.png') results in 'C:\Sandbox\Content\Player.png'</p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>dir0</td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown">string</a></td>
+<td></td>
+</tr>
+<tr>
+<td>dir1</td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown">string</a></td>
+<td></td>
+</tr>
+<tr>
+<td>fileName</td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown">string</a></td>
+<td></td>
+</tr>
+<tr>
+<td>``` lang=cpp, name=Lightning</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>function CombineDirectoriesAndFile(dir0 : String, dir1 : String, fileName : String) : String</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>```</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<hr />
+<p>#  CombineDirectoriesAndFile : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown">string</a></p>
+<p><code>static</code></p>
+<blockquote>
+<p>Combines directory paths, directories names, and a single file name together (empty entries are skipped). Because we are combining a file name at the end, this will not result in a trailing directory separator.
+Example: ('Content\Powerups\', 'Recharge.png') results in 'Content\Powerups\Recharge.png'
+Example: ('Content\Powerups', '', 'Recharge.png') results in 'Content\Powerups\Recharge.png'
+Example: ('Content', 'Powerups', 'Recharge.png') results in 'Content\Powerups\Recharge.png'
+Example: ('C:\Sandbox\', 'Content\Player.png') results in 'C:\Sandbox\Content\Player.png'</p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>dir0</td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown">string</a></td>
+<td></td>
+</tr>
+<tr>
+<td>dir1</td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown">string</a></td>
+<td></td>
+</tr>
+<tr>
+<td>dir2</td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown">string</a></td>
+<td></td>
+</tr>
+<tr>
+<td>fileName</td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown">string</a></td>
+<td></td>
+</tr>
+<tr>
+<td>``` lang=cpp, name=Lightning</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>function CombineDirectoriesAndFile(dir0 : String, dir1 : String, dir2 : String, fileName : String) : String</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>```</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<hr />
+<p>#  CombineDirectoriesAndFile : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown">string</a></p>
+<p><code>static</code></p>
+<blockquote>
+<p>Combines directory paths, directories names, and a single file name together (empty entries are skipped). Because we are combining a file name at the end, this will not result in a trailing directory separator.
+Example: ('Content\Powerups\', 'Recharge.png') results in 'Content\Powerups\Recharge.png'
+Example: ('Content\Powerups', '', 'Recharge.png') results in 'Content\Powerups\Recharge.png'
+Example: ('Content', 'Powerups', 'Recharge.png') results in 'Content\Powerups\Recharge.png'
+Example: ('C:\Sandbox\', 'Content\Player.png') results in 'C:\Sandbox\Content\Player.png'</p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>dir0</td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown">string</a></td>
+<td></td>
+</tr>
+<tr>
+<td>dir1</td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown">string</a></td>
+<td></td>
+</tr>
+<tr>
+<td>dir2</td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown">string</a></td>
+<td></td>
+</tr>
+<tr>
+<td>dir3</td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown">string</a></td>
+<td></td>
+</tr>
+<tr>
+<td>fileName</td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown">string</a></td>
+<td></td>
+</tr>
+<tr>
+<td>``` lang=cpp, name=Lightning</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>function CombineDirectoriesAndFile(dir0 : String, dir1 : String, dir2 : String, dir3 : String, fileName : String) : String</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>```</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<hr />
+<p>#  GetCanonicalizedPathFromAbsolutePath : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown">string</a></p>
+<p><code>static</code></p>
+<blockquote>
+<p>Changes all directory separators to be the current operating system directory separator, removes duplicate separators, and removes '..' and '.' from the paths. Canonicalized is only guaranteed to work on absolute paths. This behavior is operating system dependent and may call the related OS functions.
+Example: ('C:/Sandbox//Engine/../Content/./Player.png') results in 'C:\Sandbox\Content\Player.png'</p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>p0</td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown">string</a></td>
+<td></td>
+</tr>
+<tr>
+<td>``` lang=cpp, name=Lightning</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>function GetCanonicalizedPathFromAbsolutePath(p0 : String) : String</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>```</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<hr />
+<p>#  GetComparablePathFromAbsolutePath : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown">string</a></p>
+<p><code>static</code></p>
+<blockquote>
+<p>First this normalizes the path, then if the operating system is case insensative, it will make the path all lowercase so that it compares.
+Example: ('C:\Sandbox\Engine..\Content.\Player.png') results in 'c:\sandbox\content\player.png'</p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>p0</td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown">string</a></td>
+<td></td>
+</tr>
+<tr>
+<td>``` lang=cpp, name=Lightning</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>function GetComparablePathFromAbsolutePath(p0 : String) : String</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>```</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<hr />
+<p>#  GetDirectoryName : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown">string</a></p>
+<p><code>static</code></p>
+<blockquote>
+<p>If a file path is passed in, this will return the name of the parent directory. If a directory path is passed in (ending in a separator), this will return the name of the directory. A directory path without a trailing separator is abiguous with a file that has no extension. In this case, we always assume it is a file and therefore get the parent directory's name.
+Example: ('Content\Powerups\Recharge.png') results in 'Powerups'
+Example: ('Content\Powerups\') results in 'Powerups'
+Example: ('Content\Powerups') results in 'Content'
+Example: ('Content') results in ''</p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>p0</td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown">string</a></td>
+<td></td>
+</tr>
+<tr>
+<td>``` lang=cpp, name=Lightning</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>function GetDirectoryName(p0 : String) : String</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>```</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<hr />
+<p>#  GetDirectoryPath : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown">string</a></p>
+<p><code>static</code></p>
+<blockquote>
+<p>If a file path is passed in, this will return the parent directory. If a directory path is passed in (ending in a separator), this will return the directy back with no modifications. A directory path without a trailing separator is abiguous with a file that has no extension. This will always include a directory separator at the end of the result. In this case, we always assume it is a file and therefore get the parent directory's name.
+Example: ('Content\Powerups\Recharge.png') results in 'Content\Powerups\'
+Example: ('Content\Powerups\') results in 'Content\Powerups\'
+Example: ('Content\Powerups') results in 'Content\'
+Example: ('Content') results in ''</p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>p0</td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown">string</a></td>
+<td></td>
+</tr>
+<tr>
+<td>``` lang=cpp, name=Lightning</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>function GetDirectoryPath(p0 : String) : String</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>```</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<hr />
+<p>#  GetExtensionWithDot : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown">string</a></p>
+<p><code>static</code></p>
+<blockquote>
+<p>Returns only the extension of a file (everything after the last dot, including the dot). If the file has no extension then this will return an empty string.
+Example: ('Content\Player.png') results in '.png'
+Example: ('Content\Player.') results in ''
+Example: ('Parent.Directory\Log') results in ''</p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>p0</td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown">string</a></td>
+<td></td>
+</tr>
+<tr>
+<td>``` lang=cpp, name=Lightning</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>function GetExtensionWithDot(p0 : String) : String</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>```</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<hr />
+<p>#  GetExtensionWithoutDot : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown">string</a></p>
+<p><code>static</code></p>
+<blockquote>
+<p>Returns only the extension of a file (everything after the last dot, not including the dot). If the file has no extension then this will return an empty string.
+Example: ('Content\Player.png') results in 'png'
+Example: ('Content\Player.') results in ''
+Example: ('Parent.Directory\Log') results in ''</p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>p0</td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown">string</a></td>
+<td></td>
+</tr>
+<tr>
+<td>``` lang=cpp, name=Lightning</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>function GetExtensionWithoutDot(p0 : String) : String</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>```</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<hr />
+<p>#  GetFileNameWithExtension : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown">string</a></p>
+<p><code>static</code></p>
+<blockquote>
+<p>Returns only the file portion of a path (everything past the last separator including the extension).
+Example: ('Content\Player.png') results in 'Player.png'
+Example: ('Content\Powerups\') results in ''
+Example: ('Content\Powerups') results in 'Powerups'</p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>p0</td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown">string</a></td>
+<td></td>
+</tr>
+<tr>
+<td>``` lang=cpp, name=Lightning</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>function GetFileNameWithExtension(p0 : String) : String</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>```</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<hr />
+<p>#  GetFileNameWithoutExtension : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown">string</a></p>
+<p><code>static</code></p>
+<blockquote>
+<p>Returns only the file portion of a path (everything past the last separator excluding the extension).
+Example: ('Content\Player.png') results in 'Player'
+Example: ('Content\Powerups\') results in ''
+Example: ('Content\Powerups') results in 'Powerups'</p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>p0</td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown">string</a></td>
+<td></td>
+</tr>
+<tr>
+<td>``` lang=cpp, name=Lightning</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>function GetFileNameWithoutExtension(p0 : String) : String</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>```</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<hr />
+<p>#  IsRelative : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown">boolean</a></p>
+<p><code>static</code></p>
+<blockquote>
+<p>Returns true if a path has no root (such as a volume/hard drive specifier, or unix like systems a beginning slash). Even a beginning slash that means 'relative to the current working directory volume' is still relative. Empty paths will return that they are relative.
+Example: ('C:\Sandbox\Engine..\Content.\Player.png') results in 'false'
+Example: ('Sandbox') results in 'true'
+Example: ('Content\Powerups\Recharge.png') results in 'true'
+Example: ('/usr/Content/Player.png') results in 'false'</p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>p0</td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown">string</a></td>
+<td></td>
+</tr>
+<tr>
+<td>``` lang=cpp, name=Lightning</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>function IsRelative(p0 : String) : Boolean</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>```</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<hr />
+<p>#  RemoveTrailingDirectorySeparator : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown">string</a></p>
+<p><code>static</code></p>
+<blockquote>
+<p>Pass in a directory path with or without the separator and this will remove it from the end (if needed).
+Example: ('Content\Powerups') results in 'Content\Powerups'
+Example: ('Content\Powerups\') results in 'Content\Powerups'</p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>p0</td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown">string</a></td>
+<td></td>
+</tr>
+<tr>
+<td>``` lang=cpp, name=Lightning</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>function RemoveTrailingDirectorySeparator(p0 : String) : String</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>```</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<hr /></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+                <p>Copyright &copy; 2021 Plasma Engine. Released under the MIT License.</p>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../../js/base.js" defer></script>
+        <script src="../../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

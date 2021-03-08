@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../../../img/favicon.ico">
+        <title>Joints - Docs | Plasma Engine</title>
+        <link href="../../../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/docco.min.css">
+
+        <script src="../../../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../../../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../../../..">Docs | Plasma Engine</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href="../../../.." class="nav-link">Home</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="/getting_started/" class="nav-link">Getting Started</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Manual <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../" class="dropdown-item">Manual</a>
+</li>
+                                    
+<li>
+    <a href="../../ai/" class="dropdown-item">AI</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Architecture</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../architecture/architecture/" class="dropdown-item">Architecture</a>
+</li>
+            
+<li>
+    <a href="../../architecture/archetypes/archtype_basics.markdown" class="dropdown-item">Archtypes</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Cogs</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../architecture/cogs/cogs/" class="dropdown-item">Cogs</a>
+</li>
+            
+<li>
+    <a href="../../architecture/cogs/gameobjectsconcept/" class="dropdown-item">Game Objects</a>
+</li>
+            
+<li>
+    <a href="../../architecture/cogs/objectstore/" class="dropdown-item">Object Store</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Objects</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../architecture/objects/objects/" class="dropdown-item">Objects</a>
+</li>
+            
+<li>
+    <a href="../../architecture/objects/gamesession/" class="dropdown-item">Gamesession</a>
+</li>
+            
+<li>
+    <a href="../../architecture/objects/spaces/" class="dropdown-item">Spaces</a>
+</li>
+            
+<li>
+    <a href="../../architecture/objects/levelsettings/" class="dropdown-item">Levelsettings</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Resources</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../architecture/resources/resource.markdown" class="dropdown-item">Resources</a>
+</li>
+            
+<li>
+    <a href="../../architecture/resources/level/" class="dropdown-item">Levels</a>
+</li>
+            
+<li>
+    <a href="../../architecture/fonts/fonts.markdown" class="dropdown-item">Fonts</a>
+</li>
+            
+<li>
+    <a href="../../architecture/resources/resourcestable.markdown" class="dropdown-item">Resource Table</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                                    
+<li>
+    <a href="../../audio/" class="dropdown-item">Audio</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Editor</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../editor/" class="dropdown-item">Editor</a>
+</li>
+            
+<li>
+    <a href="../../editor/tags/" class="dropdown-item">Tags</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Reference <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../../reference/" class="dropdown-item">Index</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Contributing <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../../source_docs/getting_started.md" class="dropdown-item">Getting Started</a>
+</li>
+                                    
+<li>
+    <a href="../../../../source_docs/plasma_code/" class="dropdown-item">Plasma Code</a>
+</li>
+                                    
+<li>
+    <a href="../../../../source_docs/plasma_overview/" class="dropdown-item">Plasma Overview</a>
+</li>
+                                    
+<li>
+    <a href="../../../../source_docs/components.md" class="dropdown-item">Components</a>
+</li>
+                                    
+<li>
+    <a href="../../../../source_docs/custom_event_names/" class="dropdown-item">Custom Event Names</a>
+</li>
+                                    
+<li>
+    <a href="../../../../source_docs/editor/" class="dropdown-item">Editor</a>
+</li>
+                                    
+<li>
+    <a href="../../../../source_docs/engine/" class="dropdown-item">Engine</a>
+</li>
+                                    
+<li>
+    <a href="../../../../source_docs/enums/" class="dropdown-item">Enums</a>
+</li>
+                                    
+<li>
+    <a href="../../../../source_docs/meta_bindings.markdown" class="dropdown-item">Meta Binding</a>
+</li>
+                                    
+<li>
+    <a href="../../../../source_docs/platform/" class="dropdown-item">Adding Platforms</a>
+</li>
+                                    
+<li>
+    <a href="../../../../source_docs/widgets/" class="dropdown-item">Widgets</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a href="https://github.com/PlasmaEngine/PlasmaDocs/edit/master/docs/manual/plasmamanual/physics/joints.markdown" class="nav-link"><i class="fa fa-github"></i> Edit on GitHub</a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<p><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/joint.markdown"> Joints</a> are a representation of a physics concept known as <a href="https://en.wikipedia.org/wiki/Constraint_(mathematics)">constraints</a>. A constraint is a mathematical rule that defines (or constrains) how objects are allowed to move. A Joint is a collection of one or more constraints that define a more common interaction. In Plasma, a Joint is typically an independent object that connects two <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/objectlink.markdown">ObjectLink</a>.</p>
+<p>#  Shared Properties
+Before looking at individual joints, there's a few useful shared properties:
+ - Active checkBox Any joint can be toggled in order to temporarily disable it.
+ - CollideConnected checkBox Sometimes it's useful to disable collision between the two objects the joint is connected to (e.g. articulated bodies).
+ - MaxImpulse  The max impulse (instantaneous force) allowed for the joint to solve any of its constraints. 'JointExceedImpulseLimit' is sent when this happens.
+ - AutoSnaps checkBox It's common to auto-delete a joint when the MaxImpulse  is exceeded. This property provides this behavior without requiring scripting.</p>
+<p>#  Joint Add-ons
+Before discussing each individual Joint, there's several helper components that are important to understand. These components affect how a joint will affect the connected objects. These components can be added to any Joint, but may not always make sense for a specific one.</p>
+<p>###  <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/jointlimit.markdown">JointLimit</a>
+A limit restricts a certain portion of the joint to only be active part of the time. This is typically sets some min/max distance/angle where the joint will allow free movement.
+NOTE: When the limit is for angles it is specified in radians.</p>
+<p>###  <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/jointmotor.markdown">JointMotor</a>
+A motor takes a portion of the joint and adds energy to it. This is often used to drive a portion of the joint when no external forces are acting upon it. A motor allows setting a target speed and a max impulse it can use to try and achieve this.</p>
+<p>###  <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/jointspring.markdown">JointSpring</a>
+A spring takes a portion of the joint and makes it soft, or non-rigid. This can be useful to simulate a spring or make the limits of a joint springy. Springs are defined by a frequency in Hertz (oscillations per second) and a damping ratio. The damping ratio defines how much energy should be damped out of the system where 0 means no damping and 1 is critical (perfect) damping.</p>
+<p>##  Extra AddOns
+There are a few extra joint add-ons that are less frequently used.</p>
+<p>###  <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/jointconfigoverride.markdown">JointConfigOverride</a>
+This allows configuring individual joint properties for solving. Typically you shouldn't touch this if you don't understand it.</p>
+<p>###  <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/jointdebugdrawconfig.markdown">JointDebugDrawConfig</a>
+The debug draw config is used to give additional debug drawing information to the joint. This is mostly to allow configuring which object's perspective to draw information from. Not all joints currently observe this component.</p>
+<p>#  JointTypes
+The physics systems supports most common mechanical joint types.</p>
+<p>###  StickJoint
+A stick joint, or distance joint, defines that two points on the objects should be a certain distance apart. This is common for creating rope-like objects.</p>
+<p>###  PositionJoint
+A position joint locks two points on the objects to be at the same position. This is common for a ball-and-socket like joint.</p>
+<p>###  WeldJoint
+A weld joint locks the the relative position and rotation of two objects together. For a rigid connection, <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/physics/hierarchies.markdown">hierarchies</a> should be used instead as joints are not completely stiff. If run-time behaviors, such as auto-snapping with a max impulse, are desired then using a weld is easier than hierarchies.</p>
+<p>###  PrismaticJoint
+A prismatic joint (or slider) locks the rotation of two objects together and two of the linear axes. This allows relative translation of the objects along one axis. This is often used to create pistons or sliders.</p>
+<p>###  RevoluteJoint
+A revolute joint (or hinge) locks the positions of two objects together and two of the rotational axes. This allows relative rotation of the objects along one axis. This is often used to create doors, wheels, seesaws, etc....</p>
+<p>###  WheelJoint
+A wheel joint is a revolute joint with a spring on one of the translational axes. This allows the axis to act like a suspension.</p>
+<p>###  UniversalJoint
+A universal joint locks the positions of two objects together and one of the rotational axes. This allows relative rotation about two axes. This joint is currently in a prototype state.</p>
+<p>###  UprightJoint
+The upright joint locks the rotation about one axis of two objects together. This is often used to keep an object always pointing up (or close enough).</p>
+<p>###  GearJoint
+The gear joint connects two joints of two objects together. The expected joint types to connect are prismatic or revolute. This makes the two joints transfer energy between each other to make more complicated joints.</p>
+<p>###  PulleyJoint
+A pulley joint connects two stick joints on two objects together. This restricts the relative length of the two joints together to create a pulley system.</p>
+<p>###  CustomJoint
+A custom joint is for advanced users. This allows you to define your own constraints via Jacobians and other constraint definitions.</p>
+<p>##  2D Joints
+A few joints have 2D versions that should be used when making a 2D game instead of their 3D counterpart. The 2D versions makes certain assumptions about axes that don't need to be solved which result in faster performance and increased stability.</p>
+<hr />
+<p>##  Related Materials
+ ###  Manual
+- <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/physics/colliders.markdown">colliders.markdown</a></p>
+<p>###  Reference
+ - <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/joint.markdown">Joint</a>
+ - <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/stickjoint.markdown">StickJoint</a>
+ - <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/positionjoint.markdown">PositionJoint</a>
+ - <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/weldjoint.markdown">WeldJoint</a>
+ - <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/prismaticjoint.markdown">PrismaticJoint</a>
+ - <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/prismaticjoint2d.markdown">PrismaticJoint2d</a>
+ - <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/revolutejoint.markdown">RevoluteJoint</a>
+ - <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/revolutejoint2d.markdown">RevoluteJoint2d</a>
+ - <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/wheeljoint.markdown">WheelJoint</a>
+ - <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/wheeljoint2d.markdown">WheelJoint2d</a>
+ - <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/universaljoint.markdown">UniversalJoint</a>
+ - <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/uprightjoint.markdown">UprightJoint</a>
+ - <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/gearjoint.markdown">GearJoint</a>
+ - <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/pulleyjoint.markdown">PulleyJoint</a>
+ - <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/customjoint.markdown">CustomJoint</a>
+ - <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/jointevent.markdown">JointEvent</a>
+ - <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/customjointevent.markdown">CustomJointEvent</a>
+ - <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/jointlimit.markdown">JointLimit</a>
+ - <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/jointmotor.markdown">JointMotor</a>
+ - <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/jointspring.markdown">JointSpring</a>
+ - <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/jointdebugdrawconfig.markdown">JointDebugDrawConfig</a>
+ - <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/jointconfigoverride.markdown">JointConfigOverride</a>
+ - <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/customconstraintinfo.markdown">CustomConstraintInfo</a>
+ - <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/collider.markdown">Collider</a></p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+                <p>Copyright &copy; 2021 Plasma Engine. Released under the MIT License.</p>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../../../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../../../js/base.js" defer></script>
+        <script src="../../../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

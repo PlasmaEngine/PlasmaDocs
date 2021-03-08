@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../../../img/favicon.ico">
+        <title>Debugdrawing - Docs | Plasma Engine</title>
+        <link href="../../../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/docco.min.css">
+
+        <script src="../../../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../../../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../../../..">Docs | Plasma Engine</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href="../../../.." class="nav-link">Home</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="/getting_started/" class="nav-link">Getting Started</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Manual <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../" class="dropdown-item">Manual</a>
+</li>
+                                    
+<li>
+    <a href="../../ai/" class="dropdown-item">AI</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Architecture</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../architecture/architecture/" class="dropdown-item">Architecture</a>
+</li>
+            
+<li>
+    <a href="../../architecture/archetypes/archtype_basics.markdown" class="dropdown-item">Archtypes</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Cogs</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../architecture/cogs/cogs/" class="dropdown-item">Cogs</a>
+</li>
+            
+<li>
+    <a href="../../architecture/cogs/gameobjectsconcept/" class="dropdown-item">Game Objects</a>
+</li>
+            
+<li>
+    <a href="../../architecture/cogs/objectstore/" class="dropdown-item">Object Store</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Objects</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../architecture/objects/objects/" class="dropdown-item">Objects</a>
+</li>
+            
+<li>
+    <a href="../../architecture/objects/gamesession/" class="dropdown-item">Gamesession</a>
+</li>
+            
+<li>
+    <a href="../../architecture/objects/spaces/" class="dropdown-item">Spaces</a>
+</li>
+            
+<li>
+    <a href="../../architecture/objects/levelsettings/" class="dropdown-item">Levelsettings</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Resources</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../architecture/resources/resource.markdown" class="dropdown-item">Resources</a>
+</li>
+            
+<li>
+    <a href="../../architecture/resources/level/" class="dropdown-item">Levels</a>
+</li>
+            
+<li>
+    <a href="../../architecture/fonts/fonts.markdown" class="dropdown-item">Fonts</a>
+</li>
+            
+<li>
+    <a href="../../architecture/resources/resourcestable.markdown" class="dropdown-item">Resource Table</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                                    
+<li>
+    <a href="../../audio/" class="dropdown-item">Audio</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Editor</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../editor/" class="dropdown-item">Editor</a>
+</li>
+            
+<li>
+    <a href="../../editor/tags/" class="dropdown-item">Tags</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Reference <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../../reference/" class="dropdown-item">Index</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Contributing <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../../source_docs/getting_started.md" class="dropdown-item">Getting Started</a>
+</li>
+                                    
+<li>
+    <a href="../../../../source_docs/plasma_code/" class="dropdown-item">Plasma Code</a>
+</li>
+                                    
+<li>
+    <a href="../../../../source_docs/plasma_overview/" class="dropdown-item">Plasma Overview</a>
+</li>
+                                    
+<li>
+    <a href="../../../../source_docs/components.md" class="dropdown-item">Components</a>
+</li>
+                                    
+<li>
+    <a href="../../../../source_docs/custom_event_names/" class="dropdown-item">Custom Event Names</a>
+</li>
+                                    
+<li>
+    <a href="../../../../source_docs/editor/" class="dropdown-item">Editor</a>
+</li>
+                                    
+<li>
+    <a href="../../../../source_docs/engine/" class="dropdown-item">Engine</a>
+</li>
+                                    
+<li>
+    <a href="../../../../source_docs/enums/" class="dropdown-item">Enums</a>
+</li>
+                                    
+<li>
+    <a href="../../../../source_docs/meta_bindings.markdown" class="dropdown-item">Meta Binding</a>
+</li>
+                                    
+<li>
+    <a href="../../../../source_docs/platform/" class="dropdown-item">Adding Platforms</a>
+</li>
+                                    
+<li>
+    <a href="../../../../source_docs/widgets/" class="dropdown-item">Widgets</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a href="https://github.com/PlasmaEngine/PlasmaDocs/edit/master/docs/manual/plasmamanual/scripting/debugdrawing.markdown" class="nav-link"><i class="fa fa-github"></i> Edit on GitHub</a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<p>Debug drawing is a feature in Plasma that allows you to draw lines and shapes within the editor for the purpose of debugging your game. DebugDraw objects have simple interfaces to draw simple, solid color primitives that are intended for communicating information visually to the developer. While there are many different shapes that may be debug drawn, this page limits itself to describing lines and triangles.</p>
+<p># DebugDraw</p>
+<p>The DebugDraw object draws all the debug objects in a level once per frame.  Each debug draw object is turned into a graphical which uses either the DebugDraw resource or  DebugDrawOnTop resource <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/graphics/rendergroups.markdown">RenderGroup</a>. The user will never make the draw call directly; instead, all debug objects to be rendered must be added to the debug draw call using the <code>DebugDraw.Add()</code> function:</p>
+<p>``` lang=csharp
+// Create a DebugLine instance with a point and a radius, and add it to the DebugDraw call
+var dLine = DebugLine(Real3(0,0,0), Real3(5, 5, 0));
+dLine.HeadSize = 1.0;
+dLine.Color = Real4(0.2, 0.4, 0.8, 1.0);
+DebugDraw.Add(dLine);</p>
+<p>// Create a DebugSphere instance and add it to the DebugDraw call
+var dSphere = DebugSphere(Real3(0,0,0), 4.0);
+dSphere.Colored = true;
+DebugDraw.Add(dSphere);</p>
+<pre><code>
+
+![DebugDrawLineSphere2D](https://media.githubusercontent.com/media/dragonCASTjosh/ZeroFiles/master/doc_files/47257.png) *The preceding code block as rendered in a 2D level*
+
+
+
+
+![DebugDrawLineSphere3D](https://media.githubusercontent.com/media/dragonCASTjosh/ZeroFiles/master/doc_files/47259.png) *The preceding code block as rendered in a 3D level (viewed from an angle)*
+
+
+ # DebugLine
+
+DebugLine draws a line between two points, a start and an end.  Lines can also be arrows by using the BoxHeads checkBox property, which adds a cone on the end of the line.   These two points provide the minimum required settings when adding a debug line object. The DebugLine-specific member variables along with descriptions of each are listed below:
+
+| Parameter |  Description
+|------------|-----------------
+|  Start  | Defines the starting position of the line
+|  End  | Defines the end position of the line
+|  Color  | Defines the color of the line
+|  HeadSize  | Defines the size of the head at the top of the line (default shape is an arrow) 
+|  BoxHeads checkBox | A Boolean that when set to true changes the heads to boxes
+|  DualHeads checkBox | A Boolean that when set to true places Heads on both ends of the line
+
+The following LightningScript shows how a debug object's member variables may be defined with properties as well as updated according to game logic:
+
+</code></pre>
+<p>class RotateLine : LightningComponent
+{
+  [Dependency] var Transform : Transform;</p>
+<p>[Property] var DrawLine : Boolean = false;
+  [Property] var LineEnd : Real3;
+  [Property] var RotDegrees : Real = 90.0;
+  [Property] var LineColor : Real4 = Real4(0.2, 0.4, 0.8, 1.0);
+  [Property] var LineArrowSize : Real = 1.0;</p>
+<p>var Angle : Real;      // The angle by which to rotate the line</p>
+<p>function Initialize(init : CogInitializer)
+  {
+    Plasma.Connect(this.Space, Events.LogicUpdate, this.OnLogicUpdate);
+  }</p>
+<p>function OnLogicUpdate(event : UpdateEvent)
+  {
+    if(this.DrawLine)
+    {
+      // Create a DebugLine instance
+      var debugLine = DebugLine(this.Owner.Transform.Translation, this.LineEnd);</p>
+<pre><code>  // Set debug line start to the object's translation
+  debugLine.Start = this.Owner.Transform.Translation;
+
+  // Set target angle to the desired rotation multiplied by Dt
+  this.Angle += Math.ToRadians(this.RotDegrees) * event.Dt;
+
+  // Rotate the debug line's end based on the target angle
+  var endX = (this.LineEnd.X * Math.Cos(this.Angle)) - (this.LineEnd.Y * Math.Sin(this.Angle));
+  var endY = (this.LineEnd.Y * Math.Cos(this.Angle)) + (this.LineEnd.X * Math.Sin(this.Angle));
+
+  // Set the new end point
+  debugLine.End = Real3(endX, endY, 0);
+
+  // Set line color and head size
+  debugLine.Color = this.LineColor;
+  debugLine.HeadSize = this.LineArrowSize;
+
+  // Add the line to the DebugDraw call
+  DebugDraw.Add(debugLine);
+}
+</code></pre>
+<p>}
+}</p>
+<pre><code>
+
+
+
+![RotateLine](https://media.githubusercontent.com/media/dragonCASTjosh/ZeroFiles/master/doc_files/47261.gif) *The preceding LightningScript rendered in a 2D level*
+
+
+ ## DebugTriangle
+
+DebugTriangle draws a triangle defined by three vertices (the member variables `Point0`, `Point1`, and `Point2`). The DebugTriangle-specific member variables along with descriptions of each are listed below:
+
+|  Parameter |  Description 
+|-------------|---------------
+|  {nav icon=pencil-square-o, name=Point0} | Defines the first vertex of the triangle
+|  {nav icon=pencil-square-o, name=Point1} | Defines the second vertex of the triangle
+| {nav icon=pencil-square-o, name=Point2} | Defines the third vertex of the triangle
+| Color  | Defines the color of the border/fill of the triangle
+
+The following ZIlchScript illustrates in a simple manner how consecutive triangles may be debug drawn:
+
+</code></pre>
+<p>class DrawTriangles: LightningComponent
+{
+  // The vertices for the triangle pairs
+  [Property] var Vertex1: Real3;
+  [Property] var Vertex2 : Real3;
+  [Property] var Vertex3 : Real3;
+  [Property] var Vertex4 : Real3;</p>
+<p>// The two colors to use for each triangle pair
+  [Property] var ColorA : Real4;
+  [Property] var ColorB : Real4;</p>
+<p>// Number of triangle pairs to draw
+  [Property] var NumberOfTriangles : Real;</p>
+<p>function Initialize(init : CogInitializer)
+  {
+    Plasma.Connect(this.Space, Events.LogicUpdate, this.OnLogicUpdate);
+  }</p>
+<p>function OnLogicUpdate(event : UpdateEvent)
+  {
+    // Store the x-coordinate values for each vertex
+    var x1 = this.Vertex1.X;
+    var x2 = this.Vertex2.X;
+    var x3 = this.Vertex3.X;
+    var x4 = this.Vertex4.X;</p>
+<pre><code>// Get the difference between two x-coordinates that share the same y-coordinate
+var diff = this.Vertex2.X - this.Vertex1.X;
+// Loop as many times as there should be pairs of triangles
+for(var i = 0; i &lt; this.NumberOfTriangles; ++i)
+{
+  // Increase the x-coordinate by the difference
+  this.Vertex1.X += diff;
+  this.Vertex2.X += diff;
+  this.Vertex3.X += diff;
+  this.Vertex4.X += diff;
+
+  // Create and add the first triangle
+  var triA = DebugTriangle(this.Vertex1, this.Vertex2, this.Vertex4);
+  triA.Color = this.ColorA;
+  DebugDraw.Add(triA);
+
+  // Create and add the second triangle
+  var triB = DebugTriangle(this.Vertex2, this.Vertex3, this.Vertex4);
+  triB.Color = this.ColorB;
+  DebugDraw.Add(triB);
+}
+
+// Reset the original x-coordinate values
+this.Vertex1.X = x1;
+this.Vertex2.X = x2;
+this.Vertex3.X = x3;
+this.Vertex4.X = x4;
+</code></pre>
+<p>}
+}</p>
+<p>```</p>
+<p><img alt="DebugTris" src="https://media.githubusercontent.com/media/dragonCASTjosh/ZeroFiles/master/doc_files/47264.png" /> <em>The preceding LightningScript rendered in a 2D level</em></p>
+<p>## Related Materials
+ ### Manual
+- <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/graphics/rendergroups.markdown">rendergroups</a> </p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+                <p>Copyright &copy; 2021 Plasma Engine. Released under the MIT License.</p>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../../../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../../../js/base.js" defer></script>
+        <script src="../../../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

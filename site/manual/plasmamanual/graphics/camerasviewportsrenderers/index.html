@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../../../img/favicon.ico">
+        <title>Camerasviewportsrenderers - Docs | Plasma Engine</title>
+        <link href="../../../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/docco.min.css">
+
+        <script src="../../../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../../../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../../../..">Docs | Plasma Engine</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href="../../../.." class="nav-link">Home</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="/getting_started/" class="nav-link">Getting Started</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Manual <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../" class="dropdown-item">Manual</a>
+</li>
+                                    
+<li>
+    <a href="../../ai/" class="dropdown-item">AI</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Architecture</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../architecture/architecture/" class="dropdown-item">Architecture</a>
+</li>
+            
+<li>
+    <a href="../../architecture/archetypes/archtype_basics.markdown" class="dropdown-item">Archtypes</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Cogs</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../architecture/cogs/cogs/" class="dropdown-item">Cogs</a>
+</li>
+            
+<li>
+    <a href="../../architecture/cogs/gameobjectsconcept/" class="dropdown-item">Game Objects</a>
+</li>
+            
+<li>
+    <a href="../../architecture/cogs/objectstore/" class="dropdown-item">Object Store</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Objects</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../architecture/objects/objects/" class="dropdown-item">Objects</a>
+</li>
+            
+<li>
+    <a href="../../architecture/objects/gamesession/" class="dropdown-item">Gamesession</a>
+</li>
+            
+<li>
+    <a href="../../architecture/objects/spaces/" class="dropdown-item">Spaces</a>
+</li>
+            
+<li>
+    <a href="../../architecture/objects/levelsettings/" class="dropdown-item">Levelsettings</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Resources</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../architecture/resources/resource.markdown" class="dropdown-item">Resources</a>
+</li>
+            
+<li>
+    <a href="../../architecture/resources/level/" class="dropdown-item">Levels</a>
+</li>
+            
+<li>
+    <a href="../../architecture/fonts/fonts.markdown" class="dropdown-item">Fonts</a>
+</li>
+            
+<li>
+    <a href="../../architecture/resources/resourcestable.markdown" class="dropdown-item">Resource Table</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                                    
+<li>
+    <a href="../../audio/" class="dropdown-item">Audio</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Editor</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../editor/" class="dropdown-item">Editor</a>
+</li>
+            
+<li>
+    <a href="../../editor/tags/" class="dropdown-item">Tags</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Reference <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../../reference/" class="dropdown-item">Index</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Contributing <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../../source_docs/getting_started.md" class="dropdown-item">Getting Started</a>
+</li>
+                                    
+<li>
+    <a href="../../../../source_docs/plasma_code/" class="dropdown-item">Plasma Code</a>
+</li>
+                                    
+<li>
+    <a href="../../../../source_docs/plasma_overview/" class="dropdown-item">Plasma Overview</a>
+</li>
+                                    
+<li>
+    <a href="../../../../source_docs/components.md" class="dropdown-item">Components</a>
+</li>
+                                    
+<li>
+    <a href="../../../../source_docs/custom_event_names/" class="dropdown-item">Custom Event Names</a>
+</li>
+                                    
+<li>
+    <a href="../../../../source_docs/editor/" class="dropdown-item">Editor</a>
+</li>
+                                    
+<li>
+    <a href="../../../../source_docs/engine/" class="dropdown-item">Engine</a>
+</li>
+                                    
+<li>
+    <a href="../../../../source_docs/enums/" class="dropdown-item">Enums</a>
+</li>
+                                    
+<li>
+    <a href="../../../../source_docs/meta_bindings.markdown" class="dropdown-item">Meta Binding</a>
+</li>
+                                    
+<li>
+    <a href="../../../../source_docs/platform/" class="dropdown-item">Adding Platforms</a>
+</li>
+                                    
+<li>
+    <a href="../../../../source_docs/widgets/" class="dropdown-item">Widgets</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a href="https://github.com/PlasmaEngine/PlasmaDocs/edit/master/docs/manual/plasmamanual/graphics/camerasviewportsrenderers.markdown" class="nav-link"><i class="fa fa-github"></i> Edit on GitHub</a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<p>A <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/cameraviewport.markdown">cameraviewport</a> draws to an on-screen or off-screen texture. Whether it is visible to in the editor or game depends on whether RenderToViewport checkBox is set to <code>true</code>.  It references both a <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/camera.markdown">camera</a> component and a <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/graphics/renderer/deferred_renderer.markdown">Renderer</a> component from their respective cogs to render that scene from the perspective of the camera.  As long as there are single instances of these components, it doesn't matter what cog they're on.  If a game has a HUD, two renderers may be necessary and therefore two seperate renderer cogs.  If a game supports splitscreen, both the <code>CameraViewport</code> and <code>Camera</code> should be duplicated onto another cog. A single CameraViewport can be used to reference multiple Camera objects at different times. A Camera, however, cannot generally be referenced by multiple CameraViewports. For example, if a script sets a CameraViewport's Camera reference to a Camera that is already being referenced by a CameraViewport, the one in the script will "steal" the reference, removing it from the CameraViewport that originally had it.</p>
+<p>By default the Camera and CameraViewport components are on the object called "GameCamera" where the DeferredRenderer is found on the Renderer object. This is useful for game scripting as a reference to the camera can be obtained through <code>CameraViewport.Camera</code> in order to change it.</p>
+<p># CameraViewport</p>
+<p><img alt="image" src="https://media.githubusercontent.com/media/dragonCASTjosh/ZeroFiles/master/doc_files/46327.png" /> <em>CameraViewport Component</em></p>
+<p>(NOTE)<strong>Where does the CameraViewport render to?</strong>
+The camera can draw onto both the editor window and the game session window.  By default, the <code>EditorCamera</code> has RenderInEditor checkBox set to <code>true</code> and RenderInGame checkBox set to <code>false</code>. As long as RenderToViewport checkBox is also set to <code>true</code>, it will render in the editor window and not the game session window.</p>
+<p>## Viewport Placement
+The position and scale of each viewport is controlled with NormalizedSize , NormalizedOffset , ResolutionOrAspect , and <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#viewportscaling">ViewportScaling</a>.  When placing viewports, the dimentions of the game session window are in the normalized range <code>[0,1]</code> on both the x and y axes.  <code>(0,0)</code> is then the top left corner and <code>(1,1)</code> is the bottom right corner.  Below is an example of a camera viewport taking up the whole screen:</p>
+<p><img alt="CameraViewport" src="https://media.githubusercontent.com/media/dragonCASTjosh/ZeroFiles/master/doc_files/47642.png" /> <em>Default Single CameraViewport</em></p>
+<p>### Viewport Scaling
+ViewportScaling drop-down menu sets the method of fitting the viewport to the region defined by the viewport placement.  Below is a brief description of what each mode does.</p>
+<table>
+<thead>
+<tr>
+<th>Viewport Fitting Method</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Fill</code></td>
+<td>The viewport fills the entire window size</td>
+</tr>
+<tr>
+<td><code>LetterBox</code></td>
+<td>Viewport aspect ratio is always preserved and gaps are filled in with margins.</td>
+</tr>
+<tr>
+<td><code>Exact</code></td>
+<td>The viewport is not scaled</td>
+</tr>
+<tr>
+<td><code>LargestMultiple</code></td>
+<td>The viewport is the largest multiple of the resolution that fits in the window</td>
+</tr>
+</tbody>
+</table>
+<p>### Render Order</p>
+<p>Render order sets the value by which the CameraViewport should be rendered relative to other CameraViewports (such as the one on a <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/graphics/lighting/direct_lighting/directional_light.markdown">directional_light</a>), where the viewport with the lowest value is rendered first and the one with the highest value is rendered last.</p>
+<p>#### Viewport Layering
+The viewports exist in 2D, so there's no Z-axis to sort our viewports on.  Instead, viewports are layered in the order they're drawn.  The draw order is determined first by the integer value RenderOrder , where a high value is drawn later.  If two viewports are on the same layer, the viewport with the cog earlier in the Objects window window draws first.</p>
+<p>When a mouse event is sent to the window, it's forwarded to the topmost viewport containing the cursor.  If ForwardViewportEvents checkBox is on, the cursor will then be sent to viewports on underlying layers.  For example, a first person shooter might have a hud map on a separate viewport, but the mouse tracking should work even when the mouse is over the hud.  Mouse events should be sent through the hud viewport, and therefore its CameraViewport should have ForwardViewportEvents checkBox on.</p>
+<p>## Camera
+The cog considered to be the <code>Camera</code> is whatever the <code>CameraViewport</code> references with CameraPath cogPath.  The <code>Camera</code> cog should also have a <code>Camera</code> component, or else the viewport wont be rendered.</p>
+<p><img alt="Camera" src="https://media.githubusercontent.com/media/dragonCASTjosh/ZeroFiles/master/doc_files/47645.png" /> <em>Camera Component</em></p>
+<p>### Perspective vs. Orthographic
+Changing the shape of the view frustum has a significant impact on how objects are viewed in the world.  Usually in a 2D setting, <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#perspectivemode">PerspectiveMode</a> is set to <code>Orthographic</code> while with 3D applications PerspectiveMode drop-down menu is set to <code>Perspective</code>.  Objects in a <code>Perspective</code> view and the distances between them will appear smaller as they move away from the camera.  2D games often work with the assumption that everything is approximately the same distance from the camera, and so objects that move away from an <code>Orthographic</code> camera will appear the same.</p>
+<p><img alt="image" src="https://media.githubusercontent.com/media/dragonCASTjosh/ZeroFiles/master/doc_files/46825.png" /> <em><code>Perspective</code> camera(left) vs. <code>Orthographic</code> camera(right)</em></p>
+<p>(NOTE)<strong>Parallaxing</strong> Even if the camera has an orthographic perspective, the illusion of depth is still possible.  Instead of just one universal depth, the new assumption is that there are a set number of layers for an object, often refered to as foregrounds and backgrounds.  For an example, try the <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/tutorials/graphics/parallaxbackground.markdown">Parallaxing Background</a> tutorial.</p>
+<p>NOTE: The method of controlling the viewport size changes with different viewing frustums.  When PerspectiveMode drop-down menu is set to <code>Perspective</code>, the FieldOfView  parameter represents the vertical angle that the frustum makes from the camera eye outward.  When PerspectiveMode drop-down menu is set to <code>Orthographic</code>, the Size  parameter represents the height that the camera sees in world space.</p>
+<p>## Related Materials
+ ### Manual
+- <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/graphics/renderer.markdown">Renderer</a></p>
+<p>### Reference
+- <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/cameraviewport.markdown">cameraviewport</a>
+- <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/camera.markdown">camera</a> </p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+                <p>Copyright &copy; 2021 Plasma Engine. Released under the MIT License.</p>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../../../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../../../js/base.js" defer></script>
+        <script src="../../../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

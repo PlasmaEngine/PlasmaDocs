@@ -1,0 +1,2586 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>About - Docs | Plasma Engine</title>
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/docco.min.css">
+
+        <script src="../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../..">Docs | Plasma Engine</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href="../.." class="nav-link">Home</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="/getting_started/" class="nav-link">Getting Started</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Manual <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../manual/" class="dropdown-item">Manual</a>
+</li>
+                                    
+<li>
+    <a href="../../manual/plasmamanual/ai/" class="dropdown-item">AI</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Architecture</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../manual/plasmamanual/architecture/architecture/" class="dropdown-item">Architecture</a>
+</li>
+            
+<li>
+    <a href="../../manual/plasmamanual/architecture/archetypes/archtype_basics.markdown" class="dropdown-item">Archtypes</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Cogs</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../manual/plasmamanual/architecture/cogs/cogs/" class="dropdown-item">Cogs</a>
+</li>
+            
+<li>
+    <a href="../../manual/plasmamanual/architecture/cogs/gameobjectsconcept/" class="dropdown-item">Game Objects</a>
+</li>
+            
+<li>
+    <a href="../../manual/plasmamanual/architecture/cogs/objectstore/" class="dropdown-item">Object Store</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Objects</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../manual/plasmamanual/architecture/objects/objects/" class="dropdown-item">Objects</a>
+</li>
+            
+<li>
+    <a href="../../manual/plasmamanual/architecture/objects/gamesession/" class="dropdown-item">Gamesession</a>
+</li>
+            
+<li>
+    <a href="../../manual/plasmamanual/architecture/objects/spaces/" class="dropdown-item">Spaces</a>
+</li>
+            
+<li>
+    <a href="../../manual/plasmamanual/architecture/objects/levelsettings/" class="dropdown-item">Levelsettings</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Resources</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../manual/plasmamanual/architecture/resources/resource.markdown" class="dropdown-item">Resources</a>
+</li>
+            
+<li>
+    <a href="../../manual/plasmamanual/architecture/resources/level/" class="dropdown-item">Levels</a>
+</li>
+            
+<li>
+    <a href="../../manual/plasmamanual/architecture/fonts/fonts.markdown" class="dropdown-item">Fonts</a>
+</li>
+            
+<li>
+    <a href="../../manual/plasmamanual/architecture/resources/resourcestable.markdown" class="dropdown-item">Resource Table</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                                    
+<li>
+    <a href="../../manual/plasmamanual/audio/" class="dropdown-item">Audio</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Editor</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../manual/plasmamanual/editor/" class="dropdown-item">Editor</a>
+</li>
+            
+<li>
+    <a href="../../manual/plasmamanual/editor/tags/" class="dropdown-item">Tags</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Reference <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../" class="dropdown-item">Index</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Contributing <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../source_docs/getting_started.md" class="dropdown-item">Getting Started</a>
+</li>
+                                    
+<li>
+    <a href="../../source_docs/plasma_code/" class="dropdown-item">Plasma Code</a>
+</li>
+                                    
+<li>
+    <a href="../../source_docs/plasma_overview/" class="dropdown-item">Plasma Overview</a>
+</li>
+                                    
+<li>
+    <a href="../../source_docs/components.md" class="dropdown-item">Components</a>
+</li>
+                                    
+<li>
+    <a href="../../source_docs/custom_event_names/" class="dropdown-item">Custom Event Names</a>
+</li>
+                                    
+<li>
+    <a href="../../source_docs/editor/" class="dropdown-item">Editor</a>
+</li>
+                                    
+<li>
+    <a href="../../source_docs/engine/" class="dropdown-item">Engine</a>
+</li>
+                                    
+<li>
+    <a href="../../source_docs/enums/" class="dropdown-item">Enums</a>
+</li>
+                                    
+<li>
+    <a href="../../source_docs/meta_bindings.markdown" class="dropdown-item">Meta Binding</a>
+</li>
+                                    
+<li>
+    <a href="../../source_docs/platform/" class="dropdown-item">Adding Platforms</a>
+</li>
+                                    
+<li>
+    <a href="../../source_docs/widgets/" class="dropdown-item">Widgets</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a href="https://github.com/PlasmaEngine/PlasmaDocs/edit/master/docs/reference/command_reference.markdown" class="nav-link"><i class="fa fa-github"></i> Edit on GitHub</a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<p>#  About
+|Tags|Shortcut|Menu Selection|
+|---|---|---|
+|No Tags | No Keyboard Shortcut |  |</p>
+<hr />
+<p>#  Add
+Add a new content item to the project</p>
+<table>
+<thead>
+<tr>
+<th>Tags</th>
+<th>Shortcut</th>
+<th>Menu Selection</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Editor</td>
+<td><code>Ctrl + N</code></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#  AddComponent
+Add component to object</p>
+<table>
+<thead>
+<tr>
+<th>Tags</th>
+<th>Shortcut</th>
+<th>Menu Selection</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>No Tags</td>
+<td><code>Ctrl + M</code></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#  AlignCameraToSelectedCamera
+Aligns the editor camera to the selected camera</p>
+<table>
+<thead>
+<tr>
+<th>Tags</th>
+<th>Shortcut</th>
+<th>Menu Selection</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Camera</td>
+<td>No Keyboard Shortcut</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#  AlignSelectedCameraToCamera
+Aligns the selected camera to the editor's camera</p>
+<table>
+<thead>
+<tr>
+<th>Tags</th>
+<th>Shortcut</th>
+<th>Menu Selection</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Camera</td>
+<td>No Keyboard Shortcut</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#  Animator
+Show the Animator Window</p>
+<table>
+<thead>
+<tr>
+<th>Tags</th>
+<th>Shortcut</th>
+<th>Menu Selection</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Windows</td>
+<td>No Keyboard Shortcut</td>
+<td><code>name=Windows&gt; Animator</code></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#  ArchiveProject
+Archive a project into a file</p>
+<table>
+<thead>
+<tr>
+<th>Tags</th>
+<th>Shortcut</th>
+<th>Menu Selection</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Project</td>
+<td>No Keyboard Shortcut</td>
+<td><code>name=Project&gt; ArchiveProject</code></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#  BackupProject
+Back up project to time stamped archive</p>
+<table>
+<thead>
+<tr>
+<th>Tags</th>
+<th>Shortcut</th>
+<th>Menu Selection</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Project</td>
+<td>No Keyboard Shortcut</td>
+<td><code>name=Project&gt; BackupProject</code></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#  BroadPhaseTracker
+Used to compare broad phase performance</p>
+<table>
+<thead>
+<tr>
+<th>Tags</th>
+<th>Shortcut</th>
+<th>Menu Selection</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Editor</td>
+<td>No Keyboard Shortcut</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#  Browser
+Show the Browser Window</p>
+<table>
+<thead>
+<tr>
+<th>Tags</th>
+<th>Shortcut</th>
+<th>Menu Selection</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Windows</td>
+<td>No Keyboard Shortcut</td>
+<td><code>name=Windows&gt; Browser</code></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#  BuildVersion
+Print this version date and revision number in the console and copies them to the clipboard</p>
+<table>
+<thead>
+<tr>
+<th>Tags</th>
+<th>Shortcut</th>
+<th>Menu Selection</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Editor</td>
+<td>No Keyboard Shortcut</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#  CenterSelected
+Center the object in the view</p>
+<table>
+<thead>
+<tr>
+<th>Tags</th>
+<th>Shortcut</th>
+<th>Menu Selection</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Select</td>
+<td><code>F</code></td>
+<td><code>name=Select&gt; CenterSelected</code></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#  Chat
+A place where users can talk to each other and share content</p>
+<table>
+<thead>
+<tr>
+<th>Tags</th>
+<th>Shortcut</th>
+<th>Menu Selection</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Windows</td>
+<td>No Keyboard Shortcut</td>
+<td><code>name=Windows&gt; Chat</code></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#  ClearConsole
+Clears output text from the console</p>
+<table>
+<thead>
+<tr>
+<th>Tags</th>
+<th>Shortcut</th>
+<th>Menu Selection</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Editor</td>
+<td>No Keyboard Shortcut</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#  ClearObjectStore
+Clear the Object Store on this computer</p>
+<table>
+<thead>
+<tr>
+<th>Tags</th>
+<th>Shortcut</th>
+<th>Menu Selection</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Editor</td>
+<td>No Keyboard Shortcut</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#  Commands
+Show the Command List Viewer</p>
+<table>
+<thead>
+<tr>
+<th>Tags</th>
+<th>Shortcut</th>
+<th>Menu Selection</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Windows</td>
+<td><code>Ctrl + Shift + C</code></td>
+<td><code>name=Windows&gt; Commands</code></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#  Console
+Toggle the Console Window</p>
+<table>
+<thead>
+<tr>
+<th>Tags</th>
+<th>Shortcut</th>
+<th>Menu Selection</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Windows</td>
+<td><code>~</code></td>
+<td><code>name=Windows&gt; Console</code></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#  Copy
+Copy objects to clipboard</p>
+<table>
+<thead>
+<tr>
+<th>Tags</th>
+<th>Shortcut</th>
+<th>Menu Selection</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Edit</td>
+<td><code>Ctrl + C</code></td>
+<td><code>name=Edit&gt; Copy</code></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#  CrashEngine
+|Tags|Shortcut|Menu Selection|
+|---|---|---|
+|No Tags | No Keyboard Shortcut |  |</p>
+<hr />
+<p>#  CreateBlockTower
+|Tags|Shortcut|Menu Selection|
+|---|---|---|
+|Create | No Keyboard Shortcut | <code>name=Create&gt; CreateBlockTower</code> |</p>
+<hr />
+<p>#  CreateCamera
+Create Camera</p>
+<table>
+<thead>
+<tr>
+<th>Tags</th>
+<th>Shortcut</th>
+<th>Menu Selection</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Create</td>
+<td>No Keyboard Shortcut</td>
+<td><code>name=Create&gt; CreateCamera</code></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#  CreateCube
+Create Cube</p>
+<table>
+<thead>
+<tr>
+<th>Tags</th>
+<th>Shortcut</th>
+<th>Menu Selection</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Create</td>
+<td>No Keyboard Shortcut</td>
+<td><code>name=Create&gt; CreateCube</code></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#  CreateCylinder
+Create Cylinder</p>
+<table>
+<thead>
+<tr>
+<th>Tags</th>
+<th>Shortcut</th>
+<th>Menu Selection</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Create</td>
+<td>No Keyboard Shortcut</td>
+<td><code>name=Create&gt; CreateCylinder</code></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#  CreateDirectionalLight
+Create DirectionalLight</p>
+<table>
+<thead>
+<tr>
+<th>Tags</th>
+<th>Shortcut</th>
+<th>Menu Selection</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Create</td>
+<td>No Keyboard Shortcut</td>
+<td><code>name=Create&gt; CreateDirectionalLight</code></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#  CreateDirectionalLightShadows
+Create DirectionalLightShadows</p>
+<table>
+<thead>
+<tr>
+<th>Tags</th>
+<th>Shortcut</th>
+<th>Menu Selection</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Create</td>
+<td>No Keyboard Shortcut</td>
+<td><code>name=Create&gt; CreateDirectionalLightShadows</code></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#  CreateGrid
+Create Grid</p>
+<table>
+<thead>
+<tr>
+<th>Tags</th>
+<th>Shortcut</th>
+<th>Menu Selection</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Create</td>
+<td>No Keyboard Shortcut</td>
+<td><code>name=Create&gt; CreateGrid</code></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#  CreatePointLight
+Create PointLight</p>
+<table>
+<thead>
+<tr>
+<th>Tags</th>
+<th>Shortcut</th>
+<th>Menu Selection</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Create</td>
+<td>No Keyboard Shortcut</td>
+<td><code>name=Create&gt; CreatePointLight</code></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#  CreatePyramid
+|Tags|Shortcut|Menu Selection|
+|---|---|---|
+|Create | No Keyboard Shortcut | <code>name=Create&gt; CreatePyramid</code> |</p>
+<hr />
+<p>#  CreateSphere
+Create Sphere</p>
+<table>
+<thead>
+<tr>
+<th>Tags</th>
+<th>Shortcut</th>
+<th>Menu Selection</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Create</td>
+<td>No Keyboard Shortcut</td>
+<td><code>name=Create&gt; CreateSphere</code></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#  CreateSpline
+Create Spline</p>
+<table>
+<thead>
+<tr>
+<th>Tags</th>
+<th>Shortcut</th>
+<th>Menu Selection</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Create</td>
+<td>No Keyboard Shortcut</td>
+<td><code>name=Create&gt; CreateSpline</code></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#  CreateSplineParticleSystem
+Create SplineParticleSystem</p>
+<table>
+<thead>
+<tr>
+<th>Tags</th>
+<th>Shortcut</th>
+<th>Menu Selection</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Create</td>
+<td>No Keyboard Shortcut</td>
+<td><code>name=Create&gt; CreateSplineParticleSystem</code></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#  CreateSpotLight
+Create SpotLight</p>
+<table>
+<thead>
+<tr>
+<th>Tags</th>
+<th>Shortcut</th>
+<th>Menu Selection</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Create</td>
+<td>No Keyboard Shortcut</td>
+<td><code>name=Create&gt; CreateSpotLight</code></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#  CreateSpotLightShadows
+Create SpotLightShadows</p>
+<table>
+<thead>
+<tr>
+<th>Tags</th>
+<th>Shortcut</th>
+<th>Menu Selection</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Create</td>
+<td>No Keyboard Shortcut</td>
+<td><code>name=Create&gt; CreateSpotLightShadows</code></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#  CreateSprite
+Create Sprite</p>
+<table>
+<thead>
+<tr>
+<th>Tags</th>
+<th>Shortcut</th>
+<th>Menu Selection</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Create</td>
+<td>No Keyboard Shortcut</td>
+<td><code>name=Create&gt; CreateSprite</code></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#  CreateSpriteParticles
+Create SpriteParticles</p>
+<table>
+<thead>
+<tr>
+<th>Tags</th>
+<th>Shortcut</th>
+<th>Menu Selection</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Create</td>
+<td>No Keyboard Shortcut</td>
+<td><code>name=Create&gt; CreateSpriteParticles</code></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#  CreateSpriteText
+Create SpriteText</p>
+<table>
+<thead>
+<tr>
+<th>Tags</th>
+<th>Shortcut</th>
+<th>Menu Selection</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Create</td>
+<td>No Keyboard Shortcut</td>
+<td><code>name=Create&gt; CreateSpriteText</code></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#  CreateTeeter
+|Tags|Shortcut|Menu Selection|
+|---|---|---|
+|Create | No Keyboard Shortcut | <code>name=Create&gt; CreateTeeter</code> |</p>
+<hr />
+<p>#  CreateTower
+|Tags|Shortcut|Menu Selection|
+|---|---|---|
+|Create | No Keyboard Shortcut | <code>name=Create&gt; CreateTower</code> |</p>
+<hr />
+<p>#  CreateTransform
+Create Transform</p>
+<table>
+<thead>
+<tr>
+<th>Tags</th>
+<th>Shortcut</th>
+<th>Menu Selection</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Create</td>
+<td>No Keyboard Shortcut</td>
+<td><code>name=Create&gt; CreateTransform</code></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#  CreateWall
+|Tags|Shortcut|Menu Selection|
+|---|---|---|
+|Create | No Keyboard Shortcut | <code>name=Create&gt; CreateWall</code> |</p>
+<hr />
+<p>#  CreateWedge
+Create Wedge</p>
+<table>
+<thead>
+<tr>
+<th>Tags</th>
+<th>Shortcut</th>
+<th>Menu Selection</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Create</td>
+<td>No Keyboard Shortcut</td>
+<td><code>name=Create&gt; CreateWedge</code></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#  CreationTool
+Enables the CreationTool tool</p>
+<table>
+<thead>
+<tr>
+<th>Tags</th>
+<th>Shortcut</th>
+<th>Menu Selection</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Tool</td>
+<td>No Keyboard Shortcut</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#  Cut
+Cut selected objects and save them to clipboard</p>
+<table>
+<thead>
+<tr>
+<th>Tags</th>
+<th>Shortcut</th>
+<th>Menu Selection</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Edit</td>
+<td><code>Ctrl + X</code></td>
+<td><code>name=Edit&gt; Cut</code></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#  DebugShaderTranslation
+|Tags|Shortcut|Menu Selection|
+|---|---|---|
+|No Tags | No Keyboard Shortcut |  |</p>
+<hr />
+<p>#  Delete
+Delete selected objects</p>
+<table>
+<thead>
+<tr>
+<th>Tags</th>
+<th>Shortcut</th>
+<th>Menu Selection</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Edit</td>
+<td><code>Delete</code></td>
+<td><code>name=Edit&gt; Delete</code></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#  DetachSelected
+|Tags|Shortcut|Menu Selection|
+|---|---|---|
+|No Tags | No Keyboard Shortcut |  |</p>
+<hr />
+<p>#  DisableAutoProjectScreenshot
+Disables automatically taking a project screen shot every time you save. Use the 'TakeProjectScreenshot' command to take the screen shot manually.</p>
+<table>
+<thead>
+<tr>
+<th>Tags</th>
+<th>Shortcut</th>
+<th>Menu Selection</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>No Tags</td>
+<td>No Keyboard Shortcut</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#  Documentation
+|Tags|Shortcut|Menu Selection|
+|---|---|---|
+|No Tags | No Keyboard Shortcut |  |</p>
+<hr />
+<p>#  DumpMemoryDebuggerStats
+|Tags|Shortcut|Menu Selection|
+|---|---|---|
+|No Tags | No Keyboard Shortcut |  |</p>
+<hr />
+<p>#  Duplicate
+Duplicate select objects</p>
+<table>
+<thead>
+<tr>
+<th>Tags</th>
+<th>Shortcut</th>
+<th>Menu Selection</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Edit</td>
+<td><code>Ctrl + D</code></td>
+<td><code>name=Edit&gt; Duplicate</code></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#  EditColorScheme
+Edit color scheme</p>
+<table>
+<thead>
+<tr>
+<th>Tags</th>
+<th>Shortcut</th>
+<th>Menu Selection</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Editor</td>
+<td>No Keyboard Shortcut</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#  EnableAutoProjectScreenshot
+Enables automatically taking a project screen shot every time you save.</p>
+<table>
+<thead>
+<tr>
+<th>Tags</th>
+<th>Shortcut</th>
+<th>Menu Selection</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>No Tags</td>
+<td>No Keyboard Shortcut</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#  Exit
+Exit the editor</p>
+<table>
+<thead>
+<tr>
+<th>Tags</th>
+<th>Shortcut</th>
+<th>Menu Selection</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>File</td>
+<td><code>Alt + F4</code></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#  ExportAndPlayGame
+Export the game and play it</p>
+<table>
+<thead>
+<tr>
+<th>Tags</th>
+<th>Shortcut</th>
+<th>Menu Selection</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Export</td>
+<td>No Keyboard Shortcut</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#  ExportContent
+Export content to a folder for an installer</p>
+<table>
+<thead>
+<tr>
+<th>Tags</th>
+<th>Shortcut</th>
+<th>Menu Selection</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Export</td>
+<td>No Keyboard Shortcut</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#  ExportContentPackage
+|Tags|Shortcut|Menu Selection|
+|---|---|---|
+|No Tags | No Keyboard Shortcut |  |</p>
+<hr />
+<p>#  ExportGame
+Export game to a standalone exe</p>
+<table>
+<thead>
+<tr>
+<th>Tags</th>
+<th>Shortcut</th>
+<th>Menu Selection</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Export</td>
+<td>No Keyboard Shortcut</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#  ExportHeightMapToObj
+|Tags|Shortcut|Menu Selection|
+|---|---|---|
+|No Tags | No Keyboard Shortcut |  |</p>
+<hr />
+<p>#  ExportTypeList
+|Tags|Shortcut|Menu Selection|
+|---|---|---|
+|No Tags | No Keyboard Shortcut |  |</p>
+<hr />
+<p>#  FindAll
+Show the Find/Replace Window to search all documents</p>
+<table>
+<thead>
+<tr>
+<th>Tags</th>
+<th>Shortcut</th>
+<th>Menu Selection</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Windows</td>
+<td><code>Ctrl + Shift + F</code></td>
+<td><code>name=Windows&gt; FindAll</code></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#  FindNext
+Show the Find/Replace Window to search the current document</p>
+<table>
+<thead>
+<tr>
+<th>Tags</th>
+<th>Shortcut</th>
+<th>Menu Selection</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Windows</td>
+<td><code>Ctrl + F</code></td>
+<td><code>name=Windows&gt; FindNext</code></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#  FixArchetypeTransforms
+|Tags|Shortcut|Menu Selection|
+|---|---|---|
+|No Tags | No Keyboard Shortcut |  |</p>
+<hr />
+<p>#  ForceCompileAllShaders
+|Tags|Shortcut|Menu Selection|
+|---|---|---|
+|No Tags | No Keyboard Shortcut |  |</p>
+<hr />
+<p>#  FrameSelected
+Center and frame the object in the view</p>
+<table>
+<thead>
+<tr>
+<th>Tags</th>
+<th>Shortcut</th>
+<th>Menu Selection</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Select</td>
+<td><code>FF</code></td>
+<td><code>name=Select&gt; FrameSelected</code></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#  GoToDefinition
+Using the current cursor in the current open script we will attempt to go to the definition of that type, member, or variable</p>
+<table>
+<thead>
+<tr>
+<th>Tags</th>
+<th>Shortcut</th>
+<th>Menu Selection</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Script</td>
+<td><code>F12</code></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#  Graph
+Displays a graph</p>
+<table>
+<thead>
+<tr>
+<th>Tags</th>
+<th>Shortcut</th>
+<th>Menu Selection</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Editor</td>
+<td>No Keyboard Shortcut</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#  GroupSelected
+Create a transform at the center of the selected objects and parent them to it</p>
+<table>
+<thead>
+<tr>
+<th>Tags</th>
+<th>Shortcut</th>
+<th>Menu Selection</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Editor</td>
+<td><code>Ctrl + G</code></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#  HeightMapTool
+Enables the HeightMapTool tool</p>
+<table>
+<thead>
+<tr>
+<th>Tags</th>
+<th>Shortcut</th>
+<th>Menu Selection</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Tool</td>
+<td>No Keyboard Shortcut</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#  Help
+Display documentation for the engine</p>
+<table>
+<thead>
+<tr>
+<th>Tags</th>
+<th>Shortcut</th>
+<th>Menu Selection</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Editor</td>
+<td>No Keyboard Shortcut</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#  HideConsole
+Hide the Console Window</p>
+<table>
+<thead>
+<tr>
+<th>Tags</th>
+<th>Shortcut</th>
+<th>Menu Selection</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Windows</td>
+<td>No Keyboard Shortcut</td>
+<td><code>name=Windows&gt; HideConsole</code></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#  HideSelected
+Hide selected objects</p>
+<table>
+<thead>
+<tr>
+<th>Tags</th>
+<th>Shortcut</th>
+<th>Menu Selection</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Hide</td>
+<td>No Keyboard Shortcut</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#  HostLightningDebugger
+|Tags|Shortcut|Menu Selection|
+|---|---|---|
+|No Tags | No Keyboard Shortcut |  |</p>
+<hr />
+<p>#  ImportContentPackage
+|Tags|Shortcut|Menu Selection|
+|---|---|---|
+|No Tags | No Keyboard Shortcut |  |</p>
+<hr />
+<p>#  ImportGroup
+|Tags|Shortcut|Menu Selection|
+|---|---|---|
+|No Tags | No Keyboard Shortcut |  |</p>
+<hr />
+<p>#  ImportHeightMap
+|Tags|Shortcut|Menu Selection|
+|---|---|---|
+|No Tags | No Keyboard Shortcut |  |</p>
+<hr />
+<p>#  ImportSpriteSheet
+|Tags|Shortcut|Menu Selection|
+|---|---|---|
+|No Tags | No Keyboard Shortcut |  |</p>
+<hr />
+<p>#  JointTool
+Enables the JointTool tool</p>
+<table>
+<thead>
+<tr>
+<th>Tags</th>
+<th>Shortcut</th>
+<th>Menu Selection</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Tool</td>
+<td>No Keyboard Shortcut</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#  Library
+Show the Library Window</p>
+<table>
+<thead>
+<tr>
+<th>Tags</th>
+<th>Shortcut</th>
+<th>Menu Selection</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Windows</td>
+<td>No Keyboard Shortcut</td>
+<td><code>name=Windows&gt; Library</code></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#  ManipulatorTool
+Enables the Manipulator Tool</p>
+<table>
+<thead>
+<tr>
+<th>Tags</th>
+<th>Shortcut</th>
+<th>Menu Selection</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Tool</td>
+<td>No Keyboard Shortcut</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#  Market
+Show the Plasma Market where you can download content for your projects</p>
+<table>
+<thead>
+<tr>
+<th>Tags</th>
+<th>Shortcut</th>
+<th>Menu Selection</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Windows</td>
+<td>No Keyboard Shortcut</td>
+<td><code>name=Windows&gt; Market</code></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#  Mode2D
+|Tags|Shortcut|Menu Selection|
+|---|---|---|
+|No Tags | No Keyboard Shortcut |  |</p>
+<hr />
+<p>#  Mode3D
+|Tags|Shortcut|Menu Selection|
+|---|---|---|
+|No Tags | No Keyboard Shortcut |  |</p>
+<hr />
+<p>#  MoveToLookPoint
+|Tags|Shortcut|Menu Selection|
+|---|---|---|
+|No Tags | No Keyboard Shortcut |  |</p>
+<hr />
+<p>#  NewProject
+Create a new project</p>
+<table>
+<thead>
+<tr>
+<th>Tags</th>
+<th>Shortcut</th>
+<th>Menu Selection</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Project</td>
+<td><code>Ctrl + Shift + N</code></td>
+<td><code>name=Project&gt; NewProject</code></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#  NextSelection
+|Tags|Shortcut|Menu Selection|
+|---|---|---|
+|Select | <code>Alt + Right</code> | <code>name=Select&gt; NextSelection</code> |</p>
+<hr />
+<p>#  Objects
+Show the Objects Window</p>
+<table>
+<thead>
+<tr>
+<th>Tags</th>
+<th>Shortcut</th>
+<th>Menu Selection</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Windows</td>
+<td>No Keyboard Shortcut</td>
+<td><code>name=Windows&gt; Objects</code></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#  OnExportCommandsList
+|Tags|Shortcut|Menu Selection|
+|---|---|---|
+|No Tags | No Keyboard Shortcut |  |</p>
+<hr />
+<p>#  OpenProject
+Open a project</p>
+<table>
+<thead>
+<tr>
+<th>Tags</th>
+<th>Shortcut</th>
+<th>Menu Selection</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Project</td>
+<td><code>Ctrl + O</code></td>
+<td><code>name=Project&gt; OpenProject</code></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#  OpenTestWidgets
+|Tags|Shortcut|Menu Selection|
+|---|---|---|
+|No Tags | No Keyboard Shortcut |  |</p>
+<hr />
+<p>#  OperationHistory
+Show the Operation Queue</p>
+<table>
+<thead>
+<tr>
+<th>Tags</th>
+<th>Shortcut</th>
+<th>Menu Selection</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Windows</td>
+<td><code>Ctrl + Shift + O</code></td>
+<td><code>name=Windows&gt; OperationHistory</code></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#  ParentToPrimary
+Parents all selected objects to the primary selected object (highlighted in orange)</p>
+<table>
+<thead>
+<tr>
+<th>Tags</th>
+<th>Shortcut</th>
+<th>Menu Selection</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Editor</td>
+<td>No Keyboard Shortcut</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#  ParentingTool
+Enables the ParentingTool tool</p>
+<table>
+<thead>
+<tr>
+<th>Tags</th>
+<th>Shortcut</th>
+<th>Menu Selection</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Tool</td>
+<td>No Keyboard Shortcut</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#  Paste
+Paste objects on clipboard to space</p>
+<table>
+<thead>
+<tr>
+<th>Tags</th>
+<th>Shortcut</th>
+<th>Menu Selection</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Edit</td>
+<td><code>Ctrl + V</code></td>
+<td><code>name=Edit&gt; Paste</code></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#  PauseGame
+Pause / resume the game</p>
+<table>
+<thead>
+<tr>
+<th>Tags</th>
+<th>Shortcut</th>
+<th>Menu Selection</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Game</td>
+<td><code>F6</code></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#  Performance
+Displays a performance graph</p>
+<table>
+<thead>
+<tr>
+<th>Tags</th>
+<th>Shortcut</th>
+<th>Menu Selection</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Editor</td>
+<td>No Keyboard Shortcut</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#  PlayGame
+Play the game with the current level</p>
+<table>
+<thead>
+<tr>
+<th>Tags</th>
+<th>Shortcut</th>
+<th>Menu Selection</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Game</td>
+<td><code>F5</code></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#  PlayNewGame
+Play the game in an additional window</p>
+<table>
+<thead>
+<tr>
+<th>Tags</th>
+<th>Shortcut</th>
+<th>Menu Selection</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Game</td>
+<td><code>Ctrl + F5</code></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#  PlayUnitTestFile
+|Tags|Shortcut|Menu Selection|
+|---|---|---|
+|No Tags | No Keyboard Shortcut |  |</p>
+<hr />
+<p>#  PreviousSelection
+|Tags|Shortcut|Menu Selection|
+|---|---|---|
+|Select | <code>Alt + Left</code> | <code>name=Select&gt; PreviousSelection</code> |</p>
+<hr />
+<p>#  Properties
+Show the Property Window</p>
+<table>
+<thead>
+<tr>
+<th>Tags</th>
+<th>Shortcut</th>
+<th>Menu Selection</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Windows</td>
+<td>No Keyboard Shortcut</td>
+<td><code>name=Windows&gt; Properties</code></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#  RecordUnitTestFile
+|Tags|Shortcut|Menu Selection|
+|---|---|---|
+|No Tags | No Keyboard Shortcut |  |</p>
+<hr />
+<p>#  Redo
+Redo last undo operation</p>
+<table>
+<thead>
+<tr>
+<th>Tags</th>
+<th>Shortcut</th>
+<th>Menu Selection</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Edit</td>
+<td><code>Ctrl + Y</code></td>
+<td><code>name=Edit&gt; Redo</code></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#  ReloadProject
+Reload the current project</p>
+<table>
+<thead>
+<tr>
+<th>Tags</th>
+<th>Shortcut</th>
+<th>Menu Selection</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Project</td>
+<td>No Keyboard Shortcut</td>
+<td><code>name=Project&gt; ReloadProject</code></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#  RenderGroupHierarchies
+Show the RenderGroup Hierarchies Window</p>
+<table>
+<thead>
+<tr>
+<th>Tags</th>
+<th>Shortcut</th>
+<th>Menu Selection</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Editor</td>
+<td>No Keyboard Shortcut</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#  ReplaceAll
+Show the Find/Replace Window to replace in all documents</p>
+<table>
+<thead>
+<tr>
+<th>Tags</th>
+<th>Shortcut</th>
+<th>Menu Selection</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Windows</td>
+<td><code>Ctrl + Shift + H</code></td>
+<td><code>name=Windows&gt; ReplaceAll</code></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#  ReplaceNext
+Show the Find/Replace Window to replace in the current document</p>
+<table>
+<thead>
+<tr>
+<th>Tags</th>
+<th>Shortcut</th>
+<th>Menu Selection</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Windows</td>
+<td><code>Ctrl + H</code></td>
+<td><code>name=Windows&gt; ReplaceNext</code></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#  ReportBug
+Report a bug</p>
+<table>
+<thead>
+<tr>
+<th>Tags</th>
+<th>Shortcut</th>
+<th>Menu Selection</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Windows</td>
+<td>No Keyboard Shortcut</td>
+<td><code>name=Windows&gt; ReportBug</code></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#  ResaveAllResources
+|Tags|Shortcut|Menu Selection|
+|---|---|---|
+|No Tags | No Keyboard Shortcut |  |</p>
+<hr />
+<p>#  ResetCamera
+Resets the camera to look at the origin</p>
+<table>
+<thead>
+<tr>
+<th>Tags</th>
+<th>Shortcut</th>
+<th>Menu Selection</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Camera</td>
+<td>No Keyboard Shortcut</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#  ResetTransform
+|Tags|Shortcut|Menu Selection|
+|---|---|---|
+|No Tags | No Keyboard Shortcut |  |</p>
+<hr />
+<p>#  Restart
+Restart the editor</p>
+<table>
+<thead>
+<tr>
+<th>Tags</th>
+<th>Shortcut</th>
+<th>Menu Selection</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>File</td>
+<td>No Keyboard Shortcut</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#  RotateTool
+Enables the Rotate Tool</p>
+<table>
+<thead>
+<tr>
+<th>Tags</th>
+<th>Shortcut</th>
+<th>Menu Selection</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Tool</td>
+<td>No Keyboard Shortcut</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#  RunUnitTests
+|Tags|Shortcut|Menu Selection|
+|---|---|---|
+|No Tags | No Keyboard Shortcut |  |</p>
+<hr />
+<p>#  RunLightningDebugger
+|Tags|Shortcut|Menu Selection|
+|---|---|---|
+|No Tags | No Keyboard Shortcut |  |</p>
+<hr />
+<p>#  SaveProject
+Save project and all resources</p>
+<table>
+<thead>
+<tr>
+<th>Tags</th>
+<th>Shortcut</th>
+<th>Menu Selection</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Project</td>
+<td><code>Ctrl + S</code></td>
+<td><code>name=Project&gt; SaveProject</code></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#  ScaleTool
+Enables the Scale Tool</p>
+<table>
+<thead>
+<tr>
+<th>Tags</th>
+<th>Shortcut</th>
+<th>Menu Selection</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Tool</td>
+<td>No Keyboard Shortcut</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#  SelectAll
+Select all in scene</p>
+<table>
+<thead>
+<tr>
+<th>Tags</th>
+<th>Shortcut</th>
+<th>Menu Selection</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Select</td>
+<td><code>Shift + A</code></td>
+<td><code>name=Select&gt; SelectAll</code></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#  SelectAllInTree
+Select all in tree</p>
+<table>
+<thead>
+<tr>
+<th>Tags</th>
+<th>Shortcut</th>
+<th>Menu Selection</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Select</td>
+<td>No Keyboard Shortcut</td>
+<td><code>name=Select&gt; SelectAllInTree</code></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#  SelectChild
+Select the first child</p>
+<table>
+<thead>
+<tr>
+<th>Tags</th>
+<th>Shortcut</th>
+<th>Menu Selection</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Select</td>
+<td>No Keyboard Shortcut</td>
+<td><code>name=Select&gt; SelectChild</code></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#  SelectEditorConfig
+Show the Editor Config in the Property Window</p>
+<table>
+<thead>
+<tr>
+<th>Tags</th>
+<th>Shortcut</th>
+<th>Menu Selection</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Select</td>
+<td><code>Shift + E</code></td>
+<td><code>name=Select&gt; SelectEditorConfig</code></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#  SelectGame
+Select game</p>
+<table>
+<thead>
+<tr>
+<th>Tags</th>
+<th>Shortcut</th>
+<th>Menu Selection</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Select</td>
+<td><code>Shift + G</code></td>
+<td><code>name=Select&gt; SelectGame</code></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#  SelectNone
+Select no objects</p>
+<table>
+<thead>
+<tr>
+<th>Tags</th>
+<th>Shortcut</th>
+<th>Menu Selection</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Select</td>
+<td><code>Shift + D</code></td>
+<td><code>name=Select&gt; SelectNone</code></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#  SelectParent
+Select parent of current object</p>
+<table>
+<thead>
+<tr>
+<th>Tags</th>
+<th>Shortcut</th>
+<th>Menu Selection</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Select</td>
+<td><code>Shift + W</code></td>
+<td><code>name=Select&gt; SelectParent</code></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#  SelectProject
+Show the Project in the Property Window</p>
+<table>
+<thead>
+<tr>
+<th>Tags</th>
+<th>Shortcut</th>
+<th>Menu Selection</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Select</td>
+<td><code>Shift + P</code></td>
+<td><code>name=Select&gt; SelectProject</code></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#  SelectRoot
+Select root of tree</p>
+<table>
+<thead>
+<tr>
+<th>Tags</th>
+<th>Shortcut</th>
+<th>Menu Selection</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Select</td>
+<td><code>Shift + Q</code></td>
+<td><code>name=Select&gt; SelectRoot</code></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#  SelectSibling
+Select the next sibling</p>
+<table>
+<thead>
+<tr>
+<th>Tags</th>
+<th>Shortcut</th>
+<th>Menu Selection</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Select</td>
+<td>No Keyboard Shortcut</td>
+<td><code>name=Select&gt; SelectSibling</code></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#  SelectSpace
+Select the space</p>
+<table>
+<thead>
+<tr>
+<th>Tags</th>
+<th>Shortcut</th>
+<th>Menu Selection</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Select</td>
+<td><code>Shift + S</code></td>
+<td><code>name=Select&gt; SelectSpace</code></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#  SelectTool
+Picks objects in the scene.</p>
+<table>
+<thead>
+<tr>
+<th>Tags</th>
+<th>Shortcut</th>
+<th>Menu Selection</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Tool</td>
+<td>No Keyboard Shortcut</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#  ShowConsole
+Show the Console Window</p>
+<table>
+<thead>
+<tr>
+<th>Tags</th>
+<th>Shortcut</th>
+<th>Menu Selection</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Windows</td>
+<td>No Keyboard Shortcut</td>
+<td><code>name=Windows&gt; ShowConsole</code></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#  ShowContentOutput
+Show the project's content output folder</p>
+<table>
+<thead>
+<tr>
+<th>Tags</th>
+<th>Shortcut</th>
+<th>Menu Selection</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Project</td>
+<td>No Keyboard Shortcut</td>
+<td><code>name=Project&gt; ShowContentOutput</code></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#  ShowCoreLibrary
+|Tags|Shortcut|Menu Selection|
+|---|---|---|
+|Tool | No Keyboard Shortcut |  |</p>
+<hr />
+<p>#  ShowProjectFolder
+Show the folder the project is located in the file system</p>
+<table>
+<thead>
+<tr>
+<th>Tags</th>
+<th>Shortcut</th>
+<th>Menu Selection</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Project</td>
+<td>No Keyboard Shortcut</td>
+<td><code>name=Project&gt; ShowProjectFolder</code></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#  SoundNodeGraph
+Show the Sound Node Graph Window</p>
+<table>
+<thead>
+<tr>
+<th>Tags</th>
+<th>Shortcut</th>
+<th>Menu Selection</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Windows</td>
+<td>No Keyboard Shortcut</td>
+<td><code>name=Windows&gt; SoundNodeGraph</code></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#  SpringTools
+|Tags|Shortcut|Menu Selection|
+|---|---|---|
+|No Tags | No Keyboard Shortcut |  |</p>
+<hr />
+<p>#  StepGame
+Step the game forward one frame</p>
+<table>
+<thead>
+<tr>
+<th>Tags</th>
+<th>Shortcut</th>
+<th>Menu Selection</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Game</td>
+<td><code>F7</code></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#  StopGame
+Stop the game</p>
+<table>
+<thead>
+<tr>
+<th>Tags</th>
+<th>Shortcut</th>
+<th>Menu Selection</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Game</td>
+<td><code>F8</code></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#  StressTest
+Stress test the engine by doing a bunch of random stuff</p>
+<table>
+<thead>
+<tr>
+<th>Tags</th>
+<th>Shortcut</th>
+<th>Menu Selection</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Editor</td>
+<td>No Keyboard Shortcut</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#  TakeProjectScreenshot
+Takes a screen shot for the project. Disables automatically taking a project screen shot every time you save.</p>
+<table>
+<thead>
+<tr>
+<th>Tags</th>
+<th>Shortcut</th>
+<th>Menu Selection</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>No Tags</td>
+<td>No Keyboard Shortcut</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#  TileEditor2D
+Enables the TileEditor2D tool</p>
+<table>
+<thead>
+<tr>
+<th>Tags</th>
+<th>Shortcut</th>
+<th>Menu Selection</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Tool</td>
+<td>No Keyboard Shortcut</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#  ToggleFullScreen
+|Tags|Shortcut|Menu Selection|
+|---|---|---|
+|No Tags | No Keyboard Shortcut |  |</p>
+<hr />
+<p>#  Tools
+Show the Tools Window</p>
+<table>
+<thead>
+<tr>
+<th>Tags</th>
+<th>Shortcut</th>
+<th>Menu Selection</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Windows</td>
+<td>No Keyboard Shortcut</td>
+<td><code>name=Windows&gt; Tools</code></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#  TranslateTool
+Enables the Translate Tool</p>
+<table>
+<thead>
+<tr>
+<th>Tags</th>
+<th>Shortcut</th>
+<th>Menu Selection</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Tool</td>
+<td>No Keyboard Shortcut</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#  Undo
+Undo last operation</p>
+<table>
+<thead>
+<tr>
+<th>Tags</th>
+<th>Shortcut</th>
+<th>Menu Selection</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Edit</td>
+<td><code>Ctrl + Z</code></td>
+<td><code>name=Edit&gt; Undo</code></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#  UnhideAll
+Unhide all objects</p>
+<table>
+<thead>
+<tr>
+<th>Tags</th>
+<th>Shortcut</th>
+<th>Menu Selection</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Hide</td>
+<td>No Keyboard Shortcut</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#  UnhideSelected
+Unhide selected objects</p>
+<table>
+<thead>
+<tr>
+<th>Tags</th>
+<th>Shortcut</th>
+<th>Menu Selection</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Hide</td>
+<td>No Keyboard Shortcut</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#  VolumeMeter
+Show the Volume Meter Window</p>
+<table>
+<thead>
+<tr>
+<th>Tags</th>
+<th>Shortcut</th>
+<th>Menu Selection</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Windows</td>
+<td>No Keyboard Shortcut</td>
+<td><code>name=Windows&gt; VolumeMeter</code></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#  WriteBuildInfo
+|Tags|Shortcut|Menu Selection|
+|---|---|---|
+|No Tags | No Keyboard Shortcut |  |</p>
+<hr />
+<p>#  PlasmaHub
+|Tags|Shortcut|Menu Selection|
+|---|---|---|
+|No Tags | No Keyboard Shortcut |  |</p>
+<hr /></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+                <p>Copyright &copy; 2021 Plasma Engine. Released under the MIT License.</p>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../js/base.js" defer></script>
+        <script src="../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

@@ -36,6 +36,8 @@ nav:
       - Editor: manual/plasmamanual/editor/index.markdown
       - Tags: manual/plasmamanual/editor/tags.markdown
 
+  - Reference:
+    - Index: reference/index.markdown
   - Contributing: 
     - "Getting Started": source_docs/getting_started.md
     - "Plasma Code": source_docs/plasma_code.markdown

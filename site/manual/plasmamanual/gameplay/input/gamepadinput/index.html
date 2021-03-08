@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../../../../img/favicon.ico">
+        <title>Gamepadinput - Docs | Plasma Engine</title>
+        <link href="../../../../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../../../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../../../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/docco.min.css">
+
+        <script src="../../../../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../../../../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../../../../..">Docs | Plasma Engine</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href="../../../../.." class="nav-link">Home</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="/getting_started/" class="nav-link">Getting Started</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Manual <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../../" class="dropdown-item">Manual</a>
+</li>
+                                    
+<li>
+    <a href="../../../ai/" class="dropdown-item">AI</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Architecture</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../architecture/architecture/" class="dropdown-item">Architecture</a>
+</li>
+            
+<li>
+    <a href="../../../architecture/archetypes/archtype_basics.markdown" class="dropdown-item">Archtypes</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Cogs</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../architecture/cogs/cogs/" class="dropdown-item">Cogs</a>
+</li>
+            
+<li>
+    <a href="../../../architecture/cogs/gameobjectsconcept/" class="dropdown-item">Game Objects</a>
+</li>
+            
+<li>
+    <a href="../../../architecture/cogs/objectstore/" class="dropdown-item">Object Store</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Objects</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../architecture/objects/objects/" class="dropdown-item">Objects</a>
+</li>
+            
+<li>
+    <a href="../../../architecture/objects/gamesession/" class="dropdown-item">Gamesession</a>
+</li>
+            
+<li>
+    <a href="../../../architecture/objects/spaces/" class="dropdown-item">Spaces</a>
+</li>
+            
+<li>
+    <a href="../../../architecture/objects/levelsettings/" class="dropdown-item">Levelsettings</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Resources</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../architecture/resources/resource.markdown" class="dropdown-item">Resources</a>
+</li>
+            
+<li>
+    <a href="../../../architecture/resources/level/" class="dropdown-item">Levels</a>
+</li>
+            
+<li>
+    <a href="../../../architecture/fonts/fonts.markdown" class="dropdown-item">Fonts</a>
+</li>
+            
+<li>
+    <a href="../../../architecture/resources/resourcestable.markdown" class="dropdown-item">Resource Table</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                                    
+<li>
+    <a href="../../../audio/" class="dropdown-item">Audio</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Editor</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../editor/" class="dropdown-item">Editor</a>
+</li>
+            
+<li>
+    <a href="../../../editor/tags/" class="dropdown-item">Tags</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Reference <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../../../reference/" class="dropdown-item">Index</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Contributing <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../../../source_docs/getting_started.md" class="dropdown-item">Getting Started</a>
+</li>
+                                    
+<li>
+    <a href="../../../../../source_docs/plasma_code/" class="dropdown-item">Plasma Code</a>
+</li>
+                                    
+<li>
+    <a href="../../../../../source_docs/plasma_overview/" class="dropdown-item">Plasma Overview</a>
+</li>
+                                    
+<li>
+    <a href="../../../../../source_docs/components.md" class="dropdown-item">Components</a>
+</li>
+                                    
+<li>
+    <a href="../../../../../source_docs/custom_event_names/" class="dropdown-item">Custom Event Names</a>
+</li>
+                                    
+<li>
+    <a href="../../../../../source_docs/editor/" class="dropdown-item">Editor</a>
+</li>
+                                    
+<li>
+    <a href="../../../../../source_docs/engine/" class="dropdown-item">Engine</a>
+</li>
+                                    
+<li>
+    <a href="../../../../../source_docs/enums/" class="dropdown-item">Enums</a>
+</li>
+                                    
+<li>
+    <a href="../../../../../source_docs/meta_bindings.markdown" class="dropdown-item">Meta Binding</a>
+</li>
+                                    
+<li>
+    <a href="../../../../../source_docs/platform/" class="dropdown-item">Adding Platforms</a>
+</li>
+                                    
+<li>
+    <a href="../../../../../source_docs/widgets/" class="dropdown-item">Widgets</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a href="https://github.com/PlasmaEngine/PlasmaDocs/edit/master/docs/manual/plasmamanual/gameplay/input/gamepadinput.markdown" class="nav-link"><i class="fa fa-github"></i> Edit on GitHub</a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<p>Gamepads are very useful tools for any game project. They often offer a more comfortable method of controlling a game, especially if two or more players are intended to play at the same time. As well as being an alternate method of control, Gamepads can also make use of vibration as a method of feedback.</p>
+<p># Common Uses
+ - Provides a alternative method of control to Keyboard and Mouse inputs
+ - Lets multiple players comfortably play a game on the same screen
+ - Gives access to vibration for tactile feedback to players</p>
+<p>## Before Using Gamepads
+Before starting to use Gamepads in a project, take the time to check that they are properly working. What may be thought to be an error in code may, in fact, be that the Gamepad is not plugged in properly, has outdated drivers, etc. Most wired Gamepads should work without issue; however, some wireless Gamepads may need to have drivers updated. This page was written using wired XBox 360 controllers. If using an XBox One Gamepad, drivers may be found <a href="http://support.xbox.com/en-US/xbox-one/accessories/controller-pc-compatibility">here </a>.</p>
+<p># Using Gamepads
+ ## Initial Setup
+Unlike most things in Plasma, it's not possible to make a simple reference to <code>Plasma.Gamepads</code> and have the Engine understand what is meant, even if only a single Gamepad is connected. Rather, whenever any number of Gamepads are detected, Plasma will store them in a list that must be accessed to select the desired Gamepad. </p>
+<pre><code>class GamepadLogic : LightningComponent
+{
+    // Create a variable to later use as reference to the Gamepad
+    var Controller : Gamepad = null;
+    // Set a Speed property to be used to adjust the movement speed
+    [Property]
+    var Speed : Real = 0.0;
+    function Initialize(init : CogInitializer)
+    {
+        // Assign the first Gamepad detected as the Gamepad this object will use
+        this.Controller = Plasma.Gamepads.GetGamePad(0);
+    }
+}
+</code></pre>
+<p><code>Plasma.Gamepads</code> is a reference to the PlasmaObject <code>Gamepads</code>, which keeps track of all detected Gamepads. The <code>GetGamePad</code> function will return a reference to whichever Gamepad corresponds to the ID passed to the function. In the case above, the Gamepad in the first element (at index 0 in the list) is accessed. <code>Plasma.Gamepads</code> is a helpful reference to remember for the future, as it can be used to affect all Gamepads at once. </p>
+<p>## Reading from Thumbsticks
+Thumbsticks on a Gamepad are typically used for moving the player or aiming. When accessed, they return a normalized 2D vector that is stored in corresponding <code>LeftStick</code> and <code>RightStick</code> Real2 variables on each Gamepad object. </p>
+<pre><code>function OnLogicUpdate(event : UpdateEvent)
+{
+    // Create a local variable to be used for movement
+    var movement = local Real3(0.0, 0.0, 0.0);
+
+    // Check to make sure that the Gamepad exists
+    if (this.Controller.IsActive)
+    {
+        // Assign the current direction of the Left thumbstick to the movement variable
+        movement.X += this.Controller.LeftStick.X;
+        movement.Y += this.Controller.LeftStick.Y;
+    }
+    // Apply this movement to the Velocity of the Game Objects RigidBody, multiplied by the Speed
+    this.Owner.RigidBody.Velocity = movement * event.Dt * this.Speed;
+}
+</code></pre>
+<p>Since the thumbsticks return a Real2 at a range from <code>-1</code> to <code>1</code>, this can easily be translated into creating movement on a 2D plane. Keep in mind this example does not use the <code>RightStick</code>, only the <code>LeftStick</code>. </p>
+<p>## Button Input
+Similar to Mouse Input, assigning logic to the various buttons on the Gamepad can be Frame Based or Event Based. Both have their strengths and weaknesses; determining which approach is better for a specific project should be decided on a case by case basis. </p>
+<p>## Frame Based Button Input
+The example given above is Frame Based, and the reason for that is simple: Frame Based Input from a Gamepad works best when there will be sustained action, such as when a thumbstick is held down to move a player character. This same logic applies to buttons as well. </p>
+<pre><code>    function OnLogicUpdate(event : UpdateEvent)
+    {
+        if (this.Controller.IsButtonDown(Buttons.A))
+        {
+            // Insert code here
+        }
+    }
+
+</code></pre>
+<p>(NOTE) <strong>Using Buttons in Plasma Engine</strong>: Plasma Engine has an enum set up to be used to call a desired button, which can be accessed in a LightningScript with <code>Buttons</code> followed by a period (e.g., <code>Buttons.X</code>). It should be noted however that the list of buttons specifically refers to the button layout of an Xbox 360 Gamepad, and may not be accurate for other Gamepads. 
+This particular line of code will simply trigger whatever is placed inside the <code>if</code> statement whenever the <code>A</code> button on the Gampad is held down. <code>Buttons</code> can be changed to refer to any button on the Gamepad. <code>Buttons.AnyButton</code> can also be used if it doesn't matter which button is pressed, such as at a title screen. </p>
+<p>## Event Based Button Input
+When looking for a single press or release of a button to trigger a function, Event Based Input is a better choice. In this approach, the component listens for a gamepad event dispatch, rather than checking every frame to see if a change has occurred.</p>
+<pre><code>function Initialize(init : CogInitializer)
+{
+    Plasma.Connect(this.Controller, Events.ButtonDown, this.OnButtonDown);
+    Plasma.Connect(this.Controller, Events.ButtonUp, this.OnButtonUp);
+}
+function OnButtonDown(event : GamepadEvent)
+{
+    if (event.Button == Buttons.B)
+    {
+        // Insert code here
+    }
+}
+function OnButtonUp(event : GamepadEvent)
+{
+    if (event.Button == Buttons.B)
+    {
+        // Insert code here
+    }
+}
+</code></pre>
+<p>This block of code first connects to two different events: <code>ButtonDown</code> and <code>ButtonUp</code>. These events will be sent whenever a button on the Gamepad has been either pressed or let go, respectively. If it is the B button, <code>OnButtonDown</code> or <code>OnButtonUp</code> will run. A short example of this functionality: an attack charges as long as a button is held down; the attack is then used when the button is released. </p>
+<p>NOTE: <strong>Using Triggers in Plasma Engine</strong> By looking at the options that come up by typing <code>Buttons.</code> into a LightningScript, one may notice that neither of the Xbox 360 Triggers are options. This is because they return a Real instead of a <code>boolean</code>. While this excludes them from sending any Events, it also allows them to be used as pressure sensitive buttons, as can be seen below in the Vibration section. </p>
+<p>### Flicking</p>
+<p>Flicking is a Gamepad event that is sent whenever a thumbstick moves further than <code>0.5</code> is any direction. Because of how the event associated with flicking is dispatched--immediately and automatically once the stick goes past the "halfway point"--it should usually be used on whichever thumbstick is not being used for movement. </p>
+<pre><code>function Initialize(init : CogInitializer)
+{
+    Plasma.Connect(this.Controller, Events.GamepadStickFlicked, this.OnGamepadStickFlicked);
+}
+
+function OnGamepadStickFlicked(event : GamepadEvent)
+{
+    // Left thumbstick
+    if(event.FlickedStick == 1)
+    {
+        // Insert code here
+    }
+     // Right thumbstick
+    if(event.FlickedStick == 2)
+    {
+        // Insert code here
+    }
+}
+</code></pre>
+<p>This event is useful for something like a dodging mechanic, as it can be called side by side with an UpdateEvent (e.g., LogicUpdate), allowing for normal movement to continue at the same time. </p>
+<p>## Vibration
+Provided that the Gamepad being used has a Vibration feature, Plasma simply needs a function call to access it. As it is a physical reaction, however, an example works best to explain.</p>
+<pre><code>function OnLogicUpdate(event : UpdateEvent)
+{
+    // Amount of time to spend vibrating
+    var vibrationTime = 1;
+
+     this.Controller.Vibrate(vibrationTime,  // Time to vibrate for
+                            this.Controller.LeftTrigger,  // Left-Side Vibration
+                            this.Controller.RightTrigger); // Right-Side Vibration
+}
+</code></pre>
+<p>This will cause the controller to vibrate whenever either the left or right triggers are depressed on the Gamepad. The second and third parameters for <code>Vibrate()</code> are Reals that define the intensity of the vibration. In the example abovea, as the triggers are pressed in further, the value they return slowly rises from <code>0</code> (not pressed) to <code>1</code> (fully depressed). As the value rises, the vibration will become stronger as the value moves towards <code>1</code>, with each trigger controlling the vibration on their respective sides.</p>
+<p>Most Gamepads that have vibration functionality will create it by utilizing two motors housed in the casing, oftentimes with one side slightly heavier than the other (typically the left side). This allows for numerous different combinations of tactile feedback to be created, such as if the player is hit:</p>
+<pre><code>    function OnCollisionStarted(event : CollisionEvent)
+    {
+        this.Controller.Vibrate(0.25,  // Time to vibrate for
+                                1,     // Left-Side Vibration
+                                0.5);  // Right-Side Vibration
+    }
+
+</code></pre>
+<p>which will cause the controller to vibrate for a quarter of a second, with the left side vibrating at full power and the right side vibrating at half. </p>
+<p>## Using Multiple Gamepads
+When using multiple Gamepads, Plasma will need to keep a reference of which object is associated with which Gamepad. This is easily done with the addition of a Property. </p>
+<pre><code>// Which Gamepad is meant to control this object
+[Property]
+var PlayerIndex : Integer = 0;
+
+var Controller : Gamepad = null;
+
+function Initialize(init : CogInitializer)
+{
+    this.Controller = Plasma.Gamepads.GetGamePad(this.PlayerIndex);
+}
+</code></pre>
+<p>Simply change the PlayerIndex of an object to assign it to Gamepad One, Gamepad Two, etc. Keep in mind, however, that the GamePad index starts at <code>0</code>, so the index for GamePad One would be <code>0</code>, GamePad Two would be <code>1</code>, Three <code>2</code>, and so on.</p>
+<p># Properties of Gamepad and Object Events
+All of the events associated with the Gamepad are GamepadEvents, with the exception of GamepadUpdated, which is an ObjectEvent. As all the others are the same type of event, they all share the same properties that can be accessed when the event is dispatched. <code>ObjectEvents</code> themselves can access the Gamepad that dispatched the event by using  <code>ObjectEvent</code>, which <code>GamepadEvents</code> likewise has access to with <code>GamepadEvent.Gamepad</code>.</p>
+<p>IMPORTANT: As of the time of the creation of this page, <code>ObjectEvent.Source</code> returns a null pointer rather than the Gamepad that dispatched the event. </p>
+<p>Both of these can be used to trigger the same functions, the main difference being <code>GamepadEvent.Gamepad</code> would need to be triggered by the specific Gamepad, while <code>ObjectEvent.Source</code> could be used for a general script that runs the logic for multiple Gamepads during a GameSession. </p>
+<p><code>GamepadEvents</code> can also reference the button used to dispatch the event with <code>GamepadEvent.Button</code>, which returns an int referring to the triggering button. The last two references all <code>GamepadEvents</code> have can only be used by the <code>GamepadStickFlicked</code> event: <code>FlickDirection</code>, which returns a Real2 of the direction the thumbstick moved in; and <code>FlickedStick</code>, which returns a reference to the thumbstick that dispatched the event. These can be used together to create movement mechanics very easily.</p>
+<pre><code>function OnGamepadStickFlicked(event : GamepadEvent)
+{        
+    var movement = local Real3(0.0, 0.0, 0.0);
+    // Assign the X and Y values of the moved thumbstick to the local movement variable
+    movement.X += event.FlickDirection.X;
+    movement.Y += event.FlickDirection.Y;
+    //This uses the right thumbstick, while the left is 1
+    if(event.FlickedStick == 2)
+    {
+        // &quot;Teleport&quot; to a further away location
+        // note no Dt, so it'll be approx 60x further than normal
+        this.Owner.RigidBody.Velocity = movement * this.Speed;
+    }
+}
+</code></pre>
+<p>## Gamepad Events
+*    <code>GamepadUpdated</code> : <code>ObjectEvent</code>
+    * An event dispatched to an object whenever the Gamepad updates. Runs every frame. </p>
+<ul>
+<li>
+<p><code>ButtonDown</code> : <code>GamepadEvent</code></p>
+<ul>
+<li>An event dispatched when any button is pressed on the connected Gamepad. </li>
+</ul>
+</li>
+<li>
+<p><code>ButtonUp</code> : <code>GamepadEvent</code></p>
+<ul>
+<li>An event dispatched when any button is released on the connected Gamepad. </li>
+</ul>
+</li>
+<li>
+<p><code>GamepadStickFlicked</code> : <code>GamepadEvent</code></p>
+<ul>
+<li>An event dispatched when either thumbstick on the connected Gamepad is pushed forward more than halfway to its max. </li>
+</ul>
+</li>
+</ul></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+                <p>Copyright &copy; 2021 Plasma Engine. Released under the MIT License.</p>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../../../../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../../../../js/base.js" defer></script>
+        <script src="../../../../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

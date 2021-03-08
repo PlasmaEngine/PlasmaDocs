@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../../../img/favicon.ico">
+        <title>Memory Management - Docs | Plasma Engine</title>
+        <link href="../../../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/docco.min.css">
+
+        <script src="../../../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../../../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../../../..">Docs | Plasma Engine</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href="../../../.." class="nav-link">Home</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="/getting_started/" class="nav-link">Getting Started</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Manual <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../" class="dropdown-item">Manual</a>
+</li>
+                                    
+<li>
+    <a href="../../ai/" class="dropdown-item">AI</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Architecture</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../architecture/architecture/" class="dropdown-item">Architecture</a>
+</li>
+            
+<li>
+    <a href="../../architecture/archetypes/archtype_basics.markdown" class="dropdown-item">Archtypes</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Cogs</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../architecture/cogs/cogs/" class="dropdown-item">Cogs</a>
+</li>
+            
+<li>
+    <a href="../../architecture/cogs/gameobjectsconcept/" class="dropdown-item">Game Objects</a>
+</li>
+            
+<li>
+    <a href="../../architecture/cogs/objectstore/" class="dropdown-item">Object Store</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Objects</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../architecture/objects/objects/" class="dropdown-item">Objects</a>
+</li>
+            
+<li>
+    <a href="../../architecture/objects/gamesession/" class="dropdown-item">Gamesession</a>
+</li>
+            
+<li>
+    <a href="../../architecture/objects/spaces/" class="dropdown-item">Spaces</a>
+</li>
+            
+<li>
+    <a href="../../architecture/objects/levelsettings/" class="dropdown-item">Levelsettings</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Resources</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../architecture/resources/resource.markdown" class="dropdown-item">Resources</a>
+</li>
+            
+<li>
+    <a href="../../architecture/resources/level/" class="dropdown-item">Levels</a>
+</li>
+            
+<li>
+    <a href="../../architecture/fonts/fonts.markdown" class="dropdown-item">Fonts</a>
+</li>
+            
+<li>
+    <a href="../../architecture/resources/resourcestable.markdown" class="dropdown-item">Resource Table</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                                    
+<li>
+    <a href="../../audio/" class="dropdown-item">Audio</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Editor</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../editor/" class="dropdown-item">Editor</a>
+</li>
+            
+<li>
+    <a href="../../editor/tags/" class="dropdown-item">Tags</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Reference <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../../reference/" class="dropdown-item">Index</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Contributing <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../../source_docs/getting_started.md" class="dropdown-item">Getting Started</a>
+</li>
+                                    
+<li>
+    <a href="../../../../source_docs/plasma_code/" class="dropdown-item">Plasma Code</a>
+</li>
+                                    
+<li>
+    <a href="../../../../source_docs/plasma_overview/" class="dropdown-item">Plasma Overview</a>
+</li>
+                                    
+<li>
+    <a href="../../../../source_docs/components.md" class="dropdown-item">Components</a>
+</li>
+                                    
+<li>
+    <a href="../../../../source_docs/custom_event_names/" class="dropdown-item">Custom Event Names</a>
+</li>
+                                    
+<li>
+    <a href="../../../../source_docs/editor/" class="dropdown-item">Editor</a>
+</li>
+                                    
+<li>
+    <a href="../../../../source_docs/engine/" class="dropdown-item">Engine</a>
+</li>
+                                    
+<li>
+    <a href="../../../../source_docs/enums/" class="dropdown-item">Enums</a>
+</li>
+                                    
+<li>
+    <a href="../../../../source_docs/meta_bindings.markdown" class="dropdown-item">Meta Binding</a>
+</li>
+                                    
+<li>
+    <a href="../../../../source_docs/platform/" class="dropdown-item">Adding Platforms</a>
+</li>
+                                    
+<li>
+    <a href="../../../../source_docs/widgets/" class="dropdown-item">Widgets</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a href="https://github.com/PlasmaEngine/PlasmaDocs/edit/master/docs/manual/plasmamanual/lightning_in_plasma/memory_management.markdown" class="nav-link"><i class="fa fa-github"></i> Edit on GitHub</a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#memory-management" class="nav-link">Memory Management</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="memory-management">Memory Management</h1>
+<p>This section covers the basics of memory management in Lightning. Specifically, the topics covered include: <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/lightning_in_plasma/memory_management.markdown#types-of-memory-storage">Types of Memory Storage</a>, <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/lightning_in_plasma/memory_management.markdown#allocating-memory">allocating-memory</a>, and <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/lightning_in_plasma/memory_management.markdown#freeing-memory">freeing-memory</a></p>
+<p># Types of Memory Storage
+ ## By-Value</p>
+<p>There are two main types of storage, <code>by-value</code> and <code>by-reference</code> (or <code>by-ref</code> for short). <code>By-value</code> is stored on the local stack and the storage is cleaned up once it goes out of scope. When passed into a function it copies data <code>by-value</code>. <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/lightning_in_plasma/structs.markdown">Structs</a> and primitives are <code>by-value</code>.</p>
+<p>```lang=csharp, name=By-Value Storage in a Struct
+struct ByValue
+{
+    var ID: Integer = 0;
+    constructor(guid: Integer)
+    {
+        this.ID = guid;
+    }</p>
+<pre><code>[Static]
+function IncrementID(a: ByValue)
+{
+    a.ID += 1;
+}
+
+function ToString() : String
+{
+    return "ID: `this.ID`\n";
+}
+</code></pre>
+<p>}</p>
+<pre><code>```name=Usage, lang=csharp
+// If we were to test it:
+var byValA: ByValue = local ByValue(1111111);
+
+Console.Write(&quot;byValA &quot;);
+Console.WriteLine(byValA.ToString());           // byValA ID: 1111111
+                                                  // by-value copy does not update the passed in argument.
+ByValue.IncrementID(byValA);                    // Since it was copied, the changes were to a 
+                                                  // local variable. The local variable is destroyed at 
+Console.Write(&quot;byValA &quot;);                       // the end of the function's scope.
+Console.WriteLine(byValA.ToString());           // byValA ID: 1111111
+</code></pre>
+<p>```name=Console Window
+byValA
+ID: 1111111</p>
+<p>byValA
+ID: 1111111</p>
+<pre><code>
+ ## By-Reference
+`By-reference` is stored on the heap and the storage is cleaned up once there are no longer references to it, or the handle is explicitly deleted in code. When passed into a [function](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/lightning_in_plasma/functions.markdown) it copies it `by-reference`. [Classes](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/lightning_in_plasma/classes.markdown) and structs promoted with the `ref` keyword are `by-reference`.
+
+ ### By-Ref Storage in a Struct and a Class
+
+```lang=csharp, name=ByValue
+struct ByValue
+{
+    var ID: Integer = 0;
+    constructor(guid: Integer)
+    {
+        this.ID = guid;
+    }
+
+    [Static]
+    function IncrementID(a: ref ByValue)
+    {
+        a.ID += 1;
+    }
+
+    function ToString() : String
+    {
+        return &quot;ID: `this.ID`\n&quot;;
+    }
+}
+</code></pre>
+<p>```name=ByRef
+class ByRef
+{
+    var ID: Integer = 0;
+    constructor(guid: Integer)
+    {
+        this.ID = guid;
+    }</p>
+<pre><code>[Static]
+function IncrementID(a: ByRef)
+{
+    a.ID += 1;
+}
+
+function ToString() : String
+{
+    return "ID: `this.ID`\n";
+}
+</code></pre>
+<p>}</p>
+<pre><code>```name=Usage, lang=csharp
+// If we were to test ByValue:
+var byValC: ref ByValue = new ByValue(3333333);
+
+Console.Write(&quot;byValC &quot;);
+Console.WriteLine(byValC.ToString());           // byValC ID: 3333333
+
+ByValue.IncrementID(byValC);
+                                                // Similar to a pointer, by-ref argument allows for
+Console.Write(&quot;byValC &quot;);                       // persistent changes to its internals:
+Console.WriteLine(byValC.ToString());           // byValC ID: 3333334
+
+// If we were to test ByRef:
+var byRefA: ByRef = new ByRef(5555555);
+
+Console.Write(&quot;byRefA &quot;);
+Console.WriteLine(byRefA.ToString());           // byRefA ID: 5555555
+
+ByRef.IncrementID(byRefA);                      // Since classes are made to be passed by-reference
+                                                  // this works without adding the ref keyword
+Console.Write(&quot;byRefA &quot;);                       // (adding it would make it not compile!)
+Console.WriteLine(byRefA.ToString());           // byRefA ID: 5555556 
+</code></pre>
+<p>```name=Console Window
+byValC 
+ID: 3333333</p>
+<p>byValC 
+ID: 3333334</p>
+<p>byRefA 
+ID: 5555555</p>
+<p>byRefA 
+ID: 5555556</p>
+<pre><code>
+ # Allocating Memory
+
+ ## Null
+
+Null is a special type of its own:
+
+```name=null, lang=csharp
+Console.Write(typeid(null).Name);  // Null
+</code></pre>
+<p>NOTE: A <code>by-ref</code> type can be set to null, but a <code>by-value</code> type cannot.</p>
+<p>## Creating variables <code>by-value</code> and <code>by-ref</code>
+ ### Local
+When working with by-value types that have constructors, such as structs or more complex stack primitive data types, the <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/lightning_in_plasma/keywords.markdown">keyword</a> <strong>local</strong> may be used:</p>
+<p>```lang=csharp
+var up: Real3 = local Real3(0.0, 1.0, 0.0);
+var stackStructInstance: CustomStruct = local CustomStruct();</p>
+<pre><code>
+The compiler will infer the use of local for by-value types:
+```lang=csharp
+// This is also valid.
+var up: Real3 = Real3(0.0, 1.0, 0.0);
+var stackStructInstance: CustomStruct = CustomStruct();
+</code></pre>
+<p>### New</p>
+<p>When working with classes, references, or other or anything located on the heap with a constructor, use the <strong>new</strong> keyword:</p>
+<p>```lang=csharp
+var heapObject: CustomClass = new CustomClass();
+var heapStructInstance: ref CustomStruct = new CustomStruct();</p>
+<pre><code>
+Once again the compiler will infer the use of new for by-ref types:
+
+```lang=csharp
+// This is also valid.
+var heapObject: CustomClass = CustomClass();
+</code></pre>
+<p>Since structs are by-value, in order to get a ref you <strong>must</strong> specify new.</p>
+<p>```lang=csharp
+// This does not compile
+var heapStructInstance: ref CustomStruct = CustomStruct();</p>
+<pre><code>
+```name=Console Window
+The value being assigned to 'heapStructInstance' must be of type 'ref CustomStruct'. Its type is 'CustomStruct'.
+</code></pre>
+<hr />
+<p>IMPORTANT: Lightning does not currently have a dereferencing operator. Although you can still use the <code>ref</code> type with the <strong>dot operator</strong> to access functionality, those typed with <code>ref</code> will not be equivalent to the <code>non-ref</code> type. <em>Anything expecting a// <code>non-ref</code> //type will not accept a// <code>ref</code> //type without dereferencing.</em> Consider the following:</p>
+<p>```lang=csharp, name=Incorrect Assignment of Ref Type to Non-Ref Type
+var heapObject: ref CustomStruct = new CustomStruct();
+// The following will not compile because they are different types:
+//              CustomStruct != ref CustomStruct
+var stackObject: CustomStruct = heapObject;</p>
+<pre><code>
+ ## constructors
+
+Constructors are required when calling local or new. The only times you wouldn't have a constructor is when your class or struct lacks instanced data, or you are using a primitive data type that can be created from a literal.
+
+```lang=csharp
+class MyClass
+{
+  constructor()
+  {
+    // Initialize members here.
+  }
+}
+</code></pre>
+<p>A class or struct may possess one or more constructors. Like <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/lightning_in_plasma/functions.markdown">functions</a> they can be overloaded via their <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/lightning_in_plasma/named_parameters.markdown">named_parameters</a>. Special syntax is also used when constructing a derived class, see <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/lightning_in_plasma/inheritance.markdown">inheritance</a> for more.</p>
+<p># Freeing Memory</p>
+<p>Lightning does not have a full-fledged garbage collector, but it does have ref-counted handles. When you use local to make things on the stack they are cleaned up upon leaving the scope. When you use new to construct objects on the heap they are cleaned up when:</p>
+<ul>
+<li>
+<p>You call delete on the handle.</p>
+</li>
+<li>
+<p>No references to the object exist.</p>
+</li>
+</ul>
+<p>## Important things to note:</p>
+<ol>
+<li>Lightning <strong>cannot</strong> detect cycles. These must be deleted explicitly.</li>
+</ol>
+<p>```lang=csharp, name=Deleting Objects
+  // Cycles will not get cleaned up without explicitly deleting.
+  var gh: ARefHolder = new ARefHolder("gh");
+  var ef: ARefHolder = new ARefHolder("ef");
+  // Simply having one point at another is not
+  // a cycle, it cleans up just fine.
+  gh.Handle = ef; // Both gh &amp; ef will clean up at the end of the scope.</p>
+<p>var ab: ARefHolder = new ARefHolder("ab");
+  var ba: ARefHolder = new ARefHolder("ba");</p>
+<p>ab.Handle = ba;
+  ba.Handle = ab;
+  Console.WriteLine("Note ba's handle is valid: <code>ba.Handle</code>");</p>
+<p>// Cleans up when you explicitly delete one of the 
+  // Objects as it becomes null and nulls all references
+  // to it as ARefHolder is a LightningType.
+  delete ab;
+  Console.WriteLine("Note ba's handle has been made null: <code>ba.Handle</code>");</p>
+<p>var cd: ARefHolder = new ARefHolder("cd");
+  var dc: ARefHolder = new ARefHolder("dc");</p>
+<p>cd.Handle = dc;
+  dc.Handle = cd;</p>
+<p>// Making a reference type null does not delete it. 
+  // The object is still alive in dc's handle
+  // and since that handle has an object that refers 
+  // back to it; the cycle remains uncollected. (memory leak)
+  cd = null;</p>
+<p>var ij: ARefHolder = new ARefHolder("ij");
+  var ji: ARefHolder = new ARefHolder("ji");</p>
+<p>ij.Handle = ji;
+  ji.Handle = ij;</p>
+<p>// Making null the cyclic handle breaks the cycle
+  // allowing ref-counting to take care of the clean up:
+  ij.Handle = null;</p>
+<p>var abc: ARefHolder = new ARefHolder("abc");
+  var bca: ARefHolder = new ARefHolder("bca");
+  var cab: ARefHolder = new ARefHolder("cab");</p>
+<p>abc.Handle = bca;
+  bca.Handle = cab;
+  cab.Handle = abc;
+  // Without deleting any of the objects
+  // e.g. delete abc;
+  // or breaking the cycle
+  // e.g. abc.Handle = null;
+  // abc, bca, and cab will leak.</p>
+<pre><code>
+2. [delegates](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/lightning_in_plasma/delegates.markdown) containing an instance member function hold the `this` handle to the object, and thus will keep ref-counted objects alive.
+```lang=csharp, name=Examples of Delegate Leaking
+class Utility
+{
+  [Static]
+  function NullDelegate()
+  {
+  }
+}
+
+class DelegateHolder
+{
+  var Name:String = &quot;Unnamed&quot;;
+  var Greeting: delegate() = Utility.NullDelegate;
+
+  constructor(name: String)
+  {
+    this.Name = name;
+  }
+
+  function Introduce()
+  {
+    Console.WriteLine(&quot;Hi I'm `this.Name`&quot;);
+  }
+
+  destructor()
+  {
+    onsole.WriteLine(&quot;Dtor: `this.Name`&quot;);
+  }
+}
+
+class Driver
+{
+  function DelegateLeaking()
+  {
+    // Here are five Objects with the ability to hold delegates:
+    var leaky = new DelegateHolder(&quot;Leaky&quot;);
+    var tarp = new DelegateHolder(&quot;Tarp&quot;);
+    var waterproof = new DelegateHolder(&quot;Waterproof&quot;);
+    var mop = new DelegateHolder(&quot;Mop&quot;);
+    var morph = new DelegateHolder(&quot;Morph&quot;);
+
+    // This one has another object's delegate.
+    // There is no cycle so they are all cleaned up
+    // via ref-counting at the end of the scope.
+    tarp.Greeting = waterproof.Introduce;
+
+    // This instance holds a delegate to its own function. 
+    // The delegate, referring to a member function, includes
+    // a handle to the instance it is associated with.
+    // This creates a cycle between the delegate and the 
+    // the instance.
+    leaky.Greeting = leaky.Introduce; // This will leak. 
+    mop.Greeting = mop.Introduce;
+    morph.Greeting = morph.Introduce;
+
+    // To not leak you'd have to either manually delete: 
+    delete mop;
+
+    // or break the cycle by changing
+    // what the delegate points to:
+    morph.Greeting = tarp.Introduce;
+
+    // Upon completion the console prints out:
+    // Dtor: Mop
+    // Dtor: Morph
+    // Dtor: Tarp
+    // Dtor: Waterproof
+    // The Dtor for Leaky is never called; it is a
+    // memory leak in this snippet.   
+  }
+}
+</code></pre>
+<p>## Deleting variables</p>
+<p>```lang=csharp, name=Utility
+// Using ByValue and ByRef as defined above &amp; the Utility class:
+class Utility
+{
+  [Static]
+  function SafeToString(a: ref ByValue, name: String)
+  {
+    Console.Write(name);
+    if (a == null)
+    {
+      Console.WriteLine(" is null");
+    }
+    else
+    {
+      Console.WriteLine(a.ToString());
+    }
+  }</p>
+<p>[Static]
+  function SafeToString(a: ByRef, name: String)
+  {
+    Console.Write(name);
+    if (a == null)
+    {
+      Console.WriteLine(" is null");
+    }
+    else
+    {
+      Console.WriteLine(a.ToString());
+    }
+  }
+}</p>
+<pre><code>
+```name=Examples of Deleting Variables, lang=csharp
+// Examples of deleting:
+
+// 1. Delete a by-value struct instance:
+var byValA: ByValue = local ByValue(1111111);
+// Unable to delete a non reference type;
+delete byValA; // This line won't compile.
+
+// 2. Delete an instance of a struct promoted to by-reference:
+var byValB: ref ByValue = new ByValue(1111111);
+var byValC: ref ByValue = byValB;
+var byValD: ref ByValue = byValB;
+var byValK: ref ByValue = byValC;
+
+// Utility function calls ToString method, when ref is valid.
+// If invalid, it indicates it is null.
+Utility.SafeToString(byValB, &quot;byValB&quot;);  // byValBID: 1111111
+Utility.SafeToString(byValC, &quot;byValC&quot;);  // byValCID: 1111111
+Utility.SafeToString(byValD, &quot;byValD&quot;);  // byValDID: 1111111
+Utility.SafeToString(byValK, &quot;byValK&quot;);  // byValKID: 1111111
+
+// Simply use the delete keyword on the handle.
+delete byValB; 
+// Since these are all handles to LightningTypes, all references
+// are made null.
+Utility.SafeToString(byValB, &quot;byValB&quot;);  // byValB is null
+Utility.SafeToString(byValC, &quot;byValC&quot;);  // byValC is null
+Utility.SafeToString(byValD, &quot;byValD&quot;);  // byValD is null
+Utility.SafeToString(byValK, &quot;byValK&quot;);  // byValK is null
+
+// 3. Delete an instance of a class:
+var byRefA: ByRef = new ByRef(22222222);
+var byRefB: ByRef = byRefA;
+var byRefC: ByRef = byRefA;
+var byRefK: ByRef = byRefC;
+
+Utility.SafeToString(byRefA, &quot;byRefA&quot;);  // byRefAID: 22222222
+Utility.SafeToString(byRefB, &quot;byRefB&quot;);  // byRefBID: 22222222
+Utility.SafeToString(byRefC, &quot;byRefC&quot;);  // byRefCID: 22222222
+Utility.SafeToString(byRefK, &quot;byRefK&quot;);  // byRefKID: 22222222
+
+delete byRefA;
+
+// Since these are all handles to LightningTypes, all references
+// are made null.
+Utility.SafeToString(byRefA, &quot;byRefA&quot;);  // byRefA is null
+Utility.SafeToString(byRefB, &quot;byRefB&quot;);  // byRefB is null
+Utility.SafeToString(byRefC, &quot;byRefC&quot;);  // byRefC is null
+Utility.SafeToString(byRefK, &quot;byRefK&quot;);  // byRefK is null
+</code></pre>
+<p>### Important things to note:</p>
+<ol>
+<li>
+<p>Lightning <strong>always</strong> sets the deleted handle to null after deletion. Only if the handle points to a <em>LightningType// does it make null the other objects referencing it. It //cannot</em> automatically do things for objects bound through C++. In order to have C++ BoundTypes work the same as LightningTypes it must be handled in C++ by the object bound. </p>
+</li>
+<li>
+<p>Deleting in Lightning forwards delete calls to C++ bound objects. Thus, when you call delete in Lightning on a C++ BoundType, that bound type will have the C++ delete called allowing it to call its destructor.</p>
+</li>
+</ol>
+<p>## Destructors</p>
+<p>```lang=csharp
+class MyClass
+{
+  constructor()
+  {
+    // Initialize members here.
+  }</p>
+<p>destructor()
+  {
+    // Do any object clean-up here.
+  }
+}
+<code>``
+Destructors allow you to do any necessary clean up on your part, such as free memory. You can only have one, and there are no parameters or return values. It's important to know that stack allocated instances (i.e. non-ref</code>by-value` types, or non-ref primitives) have no guarantee they'll call the destructor. Only those objects with handles that do not leak are guaranteed to have their destructors called. </p>
+<p># Related Materials
+ ## Manual
+- <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/lightning_in_plasma/classes.markdown">Classes</a>
+- <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/lightning_in_plasma/structs.markdown">Structs</a>
+- <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/lightning_in_plasma/functions.markdown">Functions</a>
+- <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/lightning_in_plasma/keywords.markdown">Keywords</a>
+- <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/lightning_in_plasma/named_parameters.markdown">named_parameters</a>
+- <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/lightning_in_plasma/inheritance.markdown">inheritance</a>
+- <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/lightning_in_plasma/delegates.markdown">delegates</a> </p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+                <p>Copyright &copy; 2021 Plasma Engine. Released under the MIT License.</p>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../../../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../../../js/base.js" defer></script>
+        <script src="../../../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

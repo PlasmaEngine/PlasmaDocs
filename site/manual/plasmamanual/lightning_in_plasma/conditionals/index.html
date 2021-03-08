@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../../../img/favicon.ico">
+        <title>Conditionals - Docs | Plasma Engine</title>
+        <link href="../../../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/docco.min.css">
+
+        <script src="../../../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../../../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../../../..">Docs | Plasma Engine</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href="../../../.." class="nav-link">Home</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="/getting_started/" class="nav-link">Getting Started</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Manual <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../" class="dropdown-item">Manual</a>
+</li>
+                                    
+<li>
+    <a href="../../ai/" class="dropdown-item">AI</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Architecture</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../architecture/architecture/" class="dropdown-item">Architecture</a>
+</li>
+            
+<li>
+    <a href="../../architecture/archetypes/archtype_basics.markdown" class="dropdown-item">Archtypes</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Cogs</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../architecture/cogs/cogs/" class="dropdown-item">Cogs</a>
+</li>
+            
+<li>
+    <a href="../../architecture/cogs/gameobjectsconcept/" class="dropdown-item">Game Objects</a>
+</li>
+            
+<li>
+    <a href="../../architecture/cogs/objectstore/" class="dropdown-item">Object Store</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Objects</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../architecture/objects/objects/" class="dropdown-item">Objects</a>
+</li>
+            
+<li>
+    <a href="../../architecture/objects/gamesession/" class="dropdown-item">Gamesession</a>
+</li>
+            
+<li>
+    <a href="../../architecture/objects/spaces/" class="dropdown-item">Spaces</a>
+</li>
+            
+<li>
+    <a href="../../architecture/objects/levelsettings/" class="dropdown-item">Levelsettings</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Resources</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../architecture/resources/resource.markdown" class="dropdown-item">Resources</a>
+</li>
+            
+<li>
+    <a href="../../architecture/resources/level/" class="dropdown-item">Levels</a>
+</li>
+            
+<li>
+    <a href="../../architecture/fonts/fonts.markdown" class="dropdown-item">Fonts</a>
+</li>
+            
+<li>
+    <a href="../../architecture/resources/resourcestable.markdown" class="dropdown-item">Resource Table</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                                    
+<li>
+    <a href="../../audio/" class="dropdown-item">Audio</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Editor</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../editor/" class="dropdown-item">Editor</a>
+</li>
+            
+<li>
+    <a href="../../editor/tags/" class="dropdown-item">Tags</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Reference <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../../reference/" class="dropdown-item">Index</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Contributing <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../../source_docs/getting_started.md" class="dropdown-item">Getting Started</a>
+</li>
+                                    
+<li>
+    <a href="../../../../source_docs/plasma_code/" class="dropdown-item">Plasma Code</a>
+</li>
+                                    
+<li>
+    <a href="../../../../source_docs/plasma_overview/" class="dropdown-item">Plasma Overview</a>
+</li>
+                                    
+<li>
+    <a href="../../../../source_docs/components.md" class="dropdown-item">Components</a>
+</li>
+                                    
+<li>
+    <a href="../../../../source_docs/custom_event_names/" class="dropdown-item">Custom Event Names</a>
+</li>
+                                    
+<li>
+    <a href="../../../../source_docs/editor/" class="dropdown-item">Editor</a>
+</li>
+                                    
+<li>
+    <a href="../../../../source_docs/engine/" class="dropdown-item">Engine</a>
+</li>
+                                    
+<li>
+    <a href="../../../../source_docs/enums/" class="dropdown-item">Enums</a>
+</li>
+                                    
+<li>
+    <a href="../../../../source_docs/meta_bindings.markdown" class="dropdown-item">Meta Binding</a>
+</li>
+                                    
+<li>
+    <a href="../../../../source_docs/platform/" class="dropdown-item">Adding Platforms</a>
+</li>
+                                    
+<li>
+    <a href="../../../../source_docs/widgets/" class="dropdown-item">Widgets</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a href="https://github.com/PlasmaEngine/PlasmaDocs/edit/master/docs/manual/plasmamanual/lightning_in_plasma/conditionals.markdown" class="nav-link"><i class="fa fa-github"></i> Edit on GitHub</a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#conditionals" class="nav-link">Conditionals</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="conditionals">Conditionals</h1>
+<p>Conditionals allow programs to ask questions and act or not act based of the results.</p>
+<p># if
+An <code>if</code> conditional evaluates a given statement that evaluates to a <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown">boolean</a> value and executes code in a block scope defined underneath if it evaluates to <code>true</code>.</p>
+<p>```lang=csharp, name=if Conditional
+var boolValue = true;
+if(boolValue)
+{
+  Console.WriteLine("boolValue is true");
+}</p>
+<p>boolValue = false;
+if(boolValue)
+{
+  Console.WriteLine("boolValue is still true");
+}</p>
+<p>Console.WriteLine("End of the example");</p>
+<pre><code>```name=Console window
+boolValue is true
+End of the example
+</code></pre>
+<p><code>boolValue</code>, which initially stores <code>true</code>, is checked in the first <code>if</code> block.  Since <code>if</code> is given the value <code>true</code>, the following block scope is executed and the <code>Console.WriteLine</code> function is called.  It is good practice to have a program log it's activity for debugging certain values. The 'Console window' snippet above shows that <code>"boolValue is true"</code> and <code>"End of the example"</code> are printed.  Notice that the line <code>Console.WriteLine("boolValue is still true")</code> exists as well, but <code>"boolValue is still true"</code> is not printed.  This is because the second <code>if</code> is given the value <code>false</code>, instructing the program to not execute any code inside that conditional's block scope.</p>
+<p>## Unnecessary Conditionals
+Because <code>if</code> conditionals take boolean values, a literal value can also be used:</p>
+<p>```lang=csharp, name=Tautology and Contradiction
+if(true)
+{
+  Console.WriteLine("This is a tautology");
+}</p>
+<p>if(false)
+{
+  Console.WriteLine("This is a contradiction");
+}</p>
+<pre><code>```name=Console window
+This is a tautology
+</code></pre>
+<p>The first <code>if</code> conditional is known as a tautology, while the second is a contradiction.  A tautology is always true, and the code block will always execute.  A condtradiction is always false, and its code block will never be executed.  While these patterns have no practical purpose in a program, the ability to 'disable' a conditional can be a useful debugging tool, making minimal changes to the code:</p>
+<p>```lang=csharp, name=Disabling an if conditional with a tautology
+if(true /<em>myVar</em>/)
+{
+  Console.WriteLine("Is this line run?");
+}</p>
+<pre><code>`myVar` is a variable defined somewhere, but the check to see if it has the value `true` has been commented out and replaced with the literal `true` in order to explicitlly test the code within the scope of the `if` block.
+
+ # Else
+An `if` conditional on its own has the power to decide between action and inaction, but often a decision is made between two different actions. The `else` conditional is used to execute code when the `if` condition fails.
+
+```lang=csharp, name=else Conditional
+if(false)
+{
+  Console.WriteLine(&quot;The if ran&quot;);
+}
+else
+{
+  Console.WriteLine(&quot;The else ran&quot;);
+}
+</code></pre>
+<p>```name=Console window
+The else ran</p>
+<pre><code>Under the code block of the first `if`, there is a code block paired with the [Keyword](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/lightning_in_plasma/keywords.markdown) `else`.  The value `false` if given to the `if` conditional, and so the `else` block is executed. In any `if`-`else` pair, exactly one of the two code blocks will run.
+
+ ## Else If
+While often for any given conditional there are only two outcomes, sometimes there are more. The `else if` keyword combinations allows the chaining of conditional statements.
+
+```lang=csharp, name=else if Conditional
+var valone = false;
+var valtwo = false;
+
+if(valone)
+{
+  Console.WriteLine(&quot;valone is true&quot;);
+}
+else if(valtwo)
+{
+  Console.WriteLine(&quot;valtwo is true&quot;);
+}
+else
+{
+  Console.WriteLine(&quot;neither valone or valtwo are true&quot;);
+}
+</code></pre>
+<p>```name=Console window
+neither valone or valtwo are true</p>
+<pre><code>In the example above `valone` is evaluated as `false` in the first `if` conditional. Since the first if fails the script continues to the `else if` and evaluates `valtwo` as `false` causing the script to continue to the `else` condition.
+
+ # Condensed Conditionals
+
+Conditionals don't always require the use of scope operators. If the code block underneath is only one line long, the `{` and `}` become unnecessary.
+
+```lang=csharp, name=else if Conditional
+var valone = false;
+var valtwo = false;
+
+if(valone)
+  Console.WriteLine(&quot;valone is true&quot;);
+else if(valtwo)
+  Console.WriteLine(&quot;valtwo is true&quot;);
+else
+  Console.WriteLine(&quot;neither valone or valtwo are true&quot;);
+</code></pre>
+<p>```name=Console window
+neither valone or valtwo are true</p>
+<pre><code>The above rewrite of the last code block illustrates how scoping brackets can be removed to make code more compact.
+
+WARNING: Removing scope operators isn't always good practice, because they need to be added when a code block is more than one statement. Omitting scope operators can unintentionally change the scope of some code, and yet the script can still sucessfully compile.
+
+ ##  Uncondensing else if
+The `else if` conditional is actually an `else` conditional with an `if`-`else` pair afterwards. The fact that scope operators can be removed is the reason that `else if` is valid. Using this logic we can rewrite the last example with explcit scopes to make this clearer.
+
+
+```lang=csharp, name=else if Conditional
+var valone = false;
+var valtwo = false;
+
+if(valone)
+{
+  Console.WriteLine(&quot;valone is true&quot;);
+}
+else
+{
+  if(valtwo)
+  {
+    Console.WriteLine(&quot;valtwo is true&quot;);
+  }
+  else
+  {
+    Console.WriteLine(&quot;neither valone or valtwo are true&quot;);
+  }
+}
+</code></pre>
+<p><code>name=Console window
+neither valone or valtwo are true</code></p>
+<p><code>else if</code> may seem like a seperate keyword than <code>if</code> and <code>else</code> but it is actually just syntactical suger to make code easier to follow.</p>
+<p># Boolean Operations
+While conditionals a useful their real power comes when used in combination with <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/lightning_in_plasma/boolean_operators.markdown">boolean_operators</a>. It is highly suggested you review this page.</p>
+<p># Related Material
+ ## Manual
+- <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/lightning_in_plasma/keywords.markdown">keywords</a>
+- <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/lightning_in_plasma/boolean_operators.markdown">boolean_operators</a></p>
+<p>## Code Reference
+- <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown">boolean</a></p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+                <p>Copyright &copy; 2021 Plasma Engine. Released under the MIT License.</p>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../../../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../../../js/base.js" defer></script>
+        <script src="../../../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

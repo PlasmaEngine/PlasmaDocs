@@ -1,0 +1,6318 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>Enum reference - Docs | Plasma Engine</title>
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/docco.min.css">
+
+        <script src="../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../..">Docs | Plasma Engine</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href="../.." class="nav-link">Home</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="/getting_started/" class="nav-link">Getting Started</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Manual <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../manual/" class="dropdown-item">Manual</a>
+</li>
+                                    
+<li>
+    <a href="../../manual/plasmamanual/ai/" class="dropdown-item">AI</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Architecture</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../manual/plasmamanual/architecture/architecture/" class="dropdown-item">Architecture</a>
+</li>
+            
+<li>
+    <a href="../../manual/plasmamanual/architecture/archetypes/archtype_basics.markdown" class="dropdown-item">Archtypes</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Cogs</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../manual/plasmamanual/architecture/cogs/cogs/" class="dropdown-item">Cogs</a>
+</li>
+            
+<li>
+    <a href="../../manual/plasmamanual/architecture/cogs/gameobjectsconcept/" class="dropdown-item">Game Objects</a>
+</li>
+            
+<li>
+    <a href="../../manual/plasmamanual/architecture/cogs/objectstore/" class="dropdown-item">Object Store</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Objects</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../manual/plasmamanual/architecture/objects/objects/" class="dropdown-item">Objects</a>
+</li>
+            
+<li>
+    <a href="../../manual/plasmamanual/architecture/objects/gamesession/" class="dropdown-item">Gamesession</a>
+</li>
+            
+<li>
+    <a href="../../manual/plasmamanual/architecture/objects/spaces/" class="dropdown-item">Spaces</a>
+</li>
+            
+<li>
+    <a href="../../manual/plasmamanual/architecture/objects/levelsettings/" class="dropdown-item">Levelsettings</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Resources</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../manual/plasmamanual/architecture/resources/resource.markdown" class="dropdown-item">Resources</a>
+</li>
+            
+<li>
+    <a href="../../manual/plasmamanual/architecture/resources/level/" class="dropdown-item">Levels</a>
+</li>
+            
+<li>
+    <a href="../../manual/plasmamanual/architecture/fonts/fonts.markdown" class="dropdown-item">Fonts</a>
+</li>
+            
+<li>
+    <a href="../../manual/plasmamanual/architecture/resources/resourcestable.markdown" class="dropdown-item">Resource Table</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                                    
+<li>
+    <a href="../../manual/plasmamanual/audio/" class="dropdown-item">Audio</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Editor</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../manual/plasmamanual/editor/" class="dropdown-item">Editor</a>
+</li>
+            
+<li>
+    <a href="../../manual/plasmamanual/editor/tags/" class="dropdown-item">Tags</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Reference <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../" class="dropdown-item">Index</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Contributing <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../source_docs/getting_started.md" class="dropdown-item">Getting Started</a>
+</li>
+                                    
+<li>
+    <a href="../../source_docs/plasma_code/" class="dropdown-item">Plasma Code</a>
+</li>
+                                    
+<li>
+    <a href="../../source_docs/plasma_overview/" class="dropdown-item">Plasma Overview</a>
+</li>
+                                    
+<li>
+    <a href="../../source_docs/components.md" class="dropdown-item">Components</a>
+</li>
+                                    
+<li>
+    <a href="../../source_docs/custom_event_names/" class="dropdown-item">Custom Event Names</a>
+</li>
+                                    
+<li>
+    <a href="../../source_docs/editor/" class="dropdown-item">Editor</a>
+</li>
+                                    
+<li>
+    <a href="../../source_docs/engine/" class="dropdown-item">Engine</a>
+</li>
+                                    
+<li>
+    <a href="../../source_docs/enums/" class="dropdown-item">Enums</a>
+</li>
+                                    
+<li>
+    <a href="../../source_docs/meta_bindings.markdown" class="dropdown-item">Meta Binding</a>
+</li>
+                                    
+<li>
+    <a href="../../source_docs/platform/" class="dropdown-item">Adding Platforms</a>
+</li>
+                                    
+<li>
+    <a href="../../source_docs/widgets/" class="dropdown-item">Widgets</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a href="https://github.com/PlasmaEngine/PlasmaDocs/edit/master/docs/reference/enum_reference.markdown" class="nav-link"><i class="fa fa-github"></i> Edit on GitHub</a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<p>|Enum||
+|---|
+|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#actionexecutemode"> ActionExecuteMode</a>|
+|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#actionstate"> ActionState</a>|
+|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#animationblendmode"> AnimationBlendMode</a>|
+|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#animationblendtype"> AnimationBlendType</a>|
+|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#animationplaymode"> AnimationPlayMode</a>|
+|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#arrowheadtype"> ArrowHeadType</a>|
+|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#atomfilter"> AtomFilter</a>|
+|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#audiocueimport"> AudioCueImport</a>|
+|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#audiofileloadtype"> AudioFileLoadType</a>|
+|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#audiolatency"> AudioLatency</a>|
+|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#audiomixtypes"> AudioMixTypes</a>|
+|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#authority"> Authority</a>|
+|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#authoritymode"> AuthorityMode</a>|
+|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#axisdirection"> AxisDirection</a>|
+|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#basicnettype"> BasicNetType</a>|
+|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#basistype"> BasisType</a>|
+|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#blendequation"> BlendEquation</a>|
+|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#blendfactor"> BlendFactor</a>|
+|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#blendmode"> BlendMode</a>|
+|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#boundtype"> BoundType</a>|
+|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#buttons"> Buttons</a>|
+|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#cameradragmode"> CameraDragMode</a>|
+|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#capsulescalingmode"> CapsuleScalingMode</a>|
+|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#castfilterstate"> CastFilterState</a>|
+|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#cellindextype"> CellIndexType</a>|
+|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#cogpathpreference"> CogPathPreference</a>|
+|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#collidertype"> ColliderType</a>|
+|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#collisionfilterblocktype"> CollisionFilterBlockType</a>|
+|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#collisionfiltercollision"> CollisionFilterCollisionFlags</a>|
+|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#collisiontype"> CollisionType</a>|
+|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#conflictaction"> ConflictAction</a>|
+|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#connectresponse"> ConnectResponse</a>|
+|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#connectresponsemode"> ConnectResponseMode</a>|
+|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#constraintpositioncorrec"> ConstraintPositionCorrection</a>|
+|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#controlmode"> ControlMode</a>|
+|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#convergencestate"> ConvergenceState</a>|
+|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#cullmode"> CullMode</a>|
+|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#cursor"> Cursor</a>|
+|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#curvetype"> CurveType</a>|
+|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#defaultaddonfilters"> DefaultAddOnFilters</a>|
+|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#depthmode"> DepthMode</a>|
+|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#detectionmode"> DetectionMode</a>|
+|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#disconnectreason"> DisconnectReason</a>|
+|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#dockarea"> DockArea</a>|
+|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#ease"> Ease</a>|
+|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#editormode"> EditorMode</a>|
+|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#enum"> Enum</a>|
+|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#eupdatetransformstate"> eUpdateTransformState</a>|
+|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#falloffcurvetype"> FalloffCurveType</a>|
+|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#filter"> Filter</a>|
+|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#flickedstick"> FlickedStick</a>|
+|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#fragmentcountfilter"> FragmentCountFilter</a>|
+|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#fragmentfilter"> FragmentFilter</a>|
+|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#geometryvalue"> GeometryValue</a>|
+|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#gizmobasis"> GizmoBasis</a>|
+|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#gizmodragmode"> GizmoDragMode</a>|
+|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#gizmograb"> GizmoGrab</a>|
+|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#gizmograbmode"> GizmoGrabMode</a>|
+|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#gizmopivot"> GizmoPivot</a>|
+|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#gizmosnapmode"> GizmoSnapMode</a>|
+|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#granularsynthwindows"> GranularSynthWindows</a>|
+|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#graphicalsortmethod"> GraphicalSortMethod</a>|
+|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#heighttextureselect"> HeightTextureSelect</a>|
+|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#heighttool"> HeightTool</a>|
+|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#horizontalalignment"> HorizontalAlignment</a>|
+|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#imageimport"> ImageImport</a>|
+|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#importframes"> ImportFrames</a>|
+|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#importmode"> ImportMode</a>|
+|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#includemode"> IncludeMode</a>|
+|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#indicatorside"> IndicatorSide</a>|
+|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#inputdevice"> InputDevice</a>|
+|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#internalkeystate"> InternalKeyState</a>|
+|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#internetprotocol"> InternetProtocol</a>|
+|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#jointframeofreference"> JointFrameOfReference</a>|
+|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#jointtooltypes"> JointToolTypes</a>|
+|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#jointtypes"> JointTypes</a>|
+|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#keys"> Keys</a>|
+|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#keystate"> KeyState</a>|
+|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#launcherautorunmode"> LauncherAutoRunMode</a>|
+|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#linkstate"> LinkState</a>|
+|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#linkstatus"> LinkStatus</a>|
+|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#location"> Location</a>|
+|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#loopingmode"> LoopingMode</a>|
+|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#meshemitmode"> MeshEmitMode</a>|
+|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#meshimport"> MeshImport</a>|
+|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#mode2dstates"> Mode2DStates</a>|
+|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#mousebuttons"> MouseButtons</a>|
+|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#multiconvexmeshautocompu"> MultiConvexMeshAutoComputeMethod</a>|
+|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#multiconvexmeshautocompu"> MultiConvexMeshAutoComputeMode</a>|
+|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#multiconvexmeshdrawmode"> MultiConvexMeshDrawMode</a>|
+|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#multiconvexmeshsnappingm"> MultiConvexMeshSnappingMode</a>|
+|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#netrefreshresult"> NetRefreshResult</a>|
+|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#netrole"> NetRole</a>|
+|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#netuseraddresponse"> NetUserAddResponse</a>|
+|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#network"> Network</a>|
+|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#objectindex"> ObjectIndex</a>|
+|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#orientationbases"> OrientationBases</a>|
+|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#perspectivemode"> PerspectiveMode</a>|
+|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#physicscontacttangenttyp"> PhysicsContactTangentTypes</a>|
+|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#physicseffectendconditio"> PhysicsEffectEndCondition</a>|
+|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#physicseffectinterpolati"> PhysicsEffectInterpolationType</a>|
+|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#physicseffecttype"> PhysicsEffectType</a>|
+|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#physicsimport"> PhysicsImport</a>|
+|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#physicsislandpreprocessi"> PhysicsIslandPreProcessingMode</a>|
+|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#physicsislandtype"> PhysicsIslandType</a>|
+|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#physicsmeshtype"> PhysicsMeshType</a>|
+|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#physicssolverpositioncor"> PhysicsSolverPositionCorrection</a>|
+|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#physicssolversubtype"> PhysicsSolverSubType</a>|
+|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#physicssolvertype"> PhysicsSolverType</a>|
+|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#placement"> Placement</a>|
+|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#playgameoptions"> PlayGameOptions</a>|
+|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#primitivetype"> PrimitiveType</a>|
+|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#receipt"> Receipt</a>|
+|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#receivestate"> ReceiveState</a>|
+|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#reliabilitymode"> ReliabilityMode</a>|
+|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#replicationphase"> ReplicationPhase</a>|
+|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#rigidbodydynamicstate"> RigidBodyDynamicState</a>|
+|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#routemode"> RouteMode</a>|
+|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#scaleconversion"> ScaleConversion</a>|
+|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#sendsevents"> SendsEvents</a>|
+|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#serializationmode"> SerializationMode</a>|
+|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#shadowresolution"> ShadowResolution</a>|
+|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#soundplaymode"> SoundPlayMode</a>|
+|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#soundselectmode"> SoundSelectMode</a>|
+|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#splineanimatormode"> SplineAnimatorMode</a>|
+|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#splinetype"> SplineType</a>|
+|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#springdebugdrawmode"> SpringDebugDrawMode</a>|
+|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#springdebugdrawtype"> SpringDebugDrawType</a>|
+|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#springsortorder"> SpringSortOrder</a>|
+|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#springsubtools"> SpringSubTools</a>|
+|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#spritefill"> SpriteFill</a>|
+|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#spritegeometrymode"> SpriteGeometryMode</a>|
+|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#spriteorigin"> SpriteOrigin</a>|
+|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#spriteparticleanimationm"> SpriteParticleAnimationMode</a>|
+|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#spriteparticlegeometrymo"> SpriteParticleGeometryMode</a>|
+|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#spriteparticlesortmode"> SpriteParticleSortMode</a>|
+|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#spritesampling"> SpriteSampling</a>|
+|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#stencilmode"> StencilMode</a>|
+|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#stencilop"> StencilOp</a>|
+|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#storeresult"> StoreResult</a>|
+|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#streamorigin"> StreamOrigin</a>|
+|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#streamtype"> StreamType</a>|
+|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#synthwavetype"> SynthWaveType</a>|
+|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#systemspace"> SystemSpace</a>|
+|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#tabwidth"> TabWidth</a>|
+|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#tcpsocketbind"> TcpSocketBind</a>|
+|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#textalign"> TextAlign</a>|
+|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#textureaddressing"> TextureAddressing</a>|
+|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#textureanisotropy"> TextureAnisotropy</a>|
+|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#texturecomparefunc"> TextureCompareFunc</a>|
+|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#texturecomparemode"> TextureCompareMode</a>|
+|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#texturecompression"> TextureCompression</a>|
+|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#textureface"> TextureFace</a>|
+|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#texturefiltering"> TextureFiltering</a>|
+|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#textureformat"> TextureFormat</a>|
+|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#texturemipmapping"> TextureMipMapping</a>|
+|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#texturetype"> TextureType</a>|
+|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#tileeditor2dsubtooltype"> TileEditor2DSubToolType</a>|
+|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#timedisplay"> TimeDisplay</a>|
+|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#timemode"> TimeMode</a>|
+|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#tooltipcolorscheme"> ToolTipColorScheme</a>|
+|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#tracktype"> TrackType</a>|
+|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#transfermode"> TransferMode</a>|
+|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#transmissiondirection"> TransmissionDirection</a>|
+|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#transportprotocol"> TransportProtocol</a>|
+|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#uidockmode"> UiDockMode</a>|
+|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#uifocusdirection"> UiFocusDirection</a>|
+|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#uihighlightcolormode"> UiHighlightColorMode</a>|
+|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#uihighlightcolorop"> UiHighlightColorOp</a>|
+|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#uihighlightmousemode"> UiHighlightMouseMode</a>|
+|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#uihorizontalalignment"> UiHorizontalAlignment</a>|
+|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#uiscrollbaraxis"> UiScrollBarAxis</a>|
+|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#uisizepolicy"> UiSizePolicy</a>|
+|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#uistacklayoutdirection"> UiStackLayoutDirection</a>|
+|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#uiverticalalignment"> UiVerticalAlignment</a>|
+|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#updatemode"> UpdateMode</a>|
+|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#userconnectresponse"> UserConnectResponse</a>|
+|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#verbosity"> Verbosity</a>|
+|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#vertexelementtype"> VertexElementType</a>|
+|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#vertexsemantic"> VertexSemantic</a>|
+|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#verticalalignment"> VerticalAlignment</a>|
+|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#viewportscaling"> ViewportScaling</a>|
+|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#webbrowsermodifiers"> WebBrowserModifiers</a>|
+|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#windowstate"> WindowState</a>|
+|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#windowstyleflags"> WindowStyleFlags</a>|</p>
+<hr />
+<p>#### ActionExecuteMode</p>
+<table>
+<thead>
+<tr>
+<th>EnumValue</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>FrameUpdate</td>
+<td></td>
+</tr>
+<tr>
+<td>LogicUpdate</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#### ActionState</p>
+<table>
+<thead>
+<tr>
+<th>EnumValue</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Completed</td>
+<td></td>
+</tr>
+<tr>
+<td>Running</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#### AnimationBlendMode</p>
+<table>
+<thead>
+<tr>
+<th>EnumValue</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Auto</td>
+<td></td>
+</tr>
+<tr>
+<td>Manual</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#### AnimationBlendType</p>
+<table>
+<thead>
+<tr>
+<th>EnumValue</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Normalized</td>
+<td></td>
+</tr>
+<tr>
+<td>Standard</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#### AnimationPlayMode</p>
+<table>
+<thead>
+<tr>
+<th>EnumValue</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Loop</td>
+<td></td>
+</tr>
+<tr>
+<td>Pingpong</td>
+<td></td>
+</tr>
+<tr>
+<td>PlayOnce</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#### ArrowHeadType</p>
+<table>
+<thead>
+<tr>
+<th>EnumValue</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Arrow</td>
+<td></td>
+</tr>
+<tr>
+<td>Cube</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#### AtomFilter</p>
+<table>
+<thead>
+<tr>
+<th>EnumValue</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>AngularAxis</td>
+<td></td>
+</tr>
+<tr>
+<td>LinearAxis</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#### AudioCueImport</p>
+<table>
+<thead>
+<tr>
+<th>EnumValue</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Grouped</td>
+<td></td>
+</tr>
+<tr>
+<td>None</td>
+<td></td>
+</tr>
+<tr>
+<td>PerSound</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#### AudioFileLoadType</p>
+<p>The choices for how to load and play an audio file.</p>
+<table>
+<thead>
+<tr>
+<th>EnumValue</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Auto</td>
+<td>This will choose whether to stream a file depending on its length. Files longer than 30 seconds will be streamed from memory, and those longer than 1 minute will be streamed from file.</td>
+</tr>
+<tr>
+<td>StreamFromFile</td>
+<td>The audio data will be read from the file and decompressed as it plays.</td>
+</tr>
+<tr>
+<td>StreamFromMemory</td>
+<td>The compressed audio data will be read into memory when the Sound resource is loaded and will be decompressed as it plays.</td>
+</tr>
+<tr>
+<td>Uncompressed</td>
+<td>The audio data will be decompressed and held in memory when the Sound resource is loaded.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#### AudioLatency</p>
+<p>The latency setting used by the audio system.</p>
+<table>
+<thead>
+<tr>
+<th>EnumValue</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>High</td>
+<td>Audio will have a higher latency. This can fix some audio problems in some cases.</td>
+</tr>
+<tr>
+<td>Low</td>
+<td>The default setting, where audio will have a low amount of latency.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#### AudioMixTypes</p>
+<p>The possible settings for the number of channels used by the audio system when creating audio.</p>
+<table>
+<thead>
+<tr>
+<th>EnumValue</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>AutoDetect</td>
+<td>The audio system will match its channels to the default output device.</td>
+</tr>
+<tr>
+<td>FiveOne</td>
+<td>Audio will be produced using a typical 5.1 speaker configuration.</td>
+</tr>
+<tr>
+<td>Mono</td>
+<td>Audio will be produced using only a single channel.</td>
+</tr>
+<tr>
+<td>Quad</td>
+<td>Audio will be produced using two left channels and two right channels.</td>
+</tr>
+<tr>
+<td>SevenOne</td>
+<td>Audio will be produced using a typical 7.1 speaker configuration.</td>
+</tr>
+<tr>
+<td>Stereo</td>
+<td>Audio will be produced using two channels, one for the left speaker and one for the right.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#### Authority</p>
+<table>
+<thead>
+<tr>
+<th>EnumValue</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Client</td>
+<td></td>
+</tr>
+<tr>
+<td>Server</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#### AuthorityMode</p>
+<table>
+<thead>
+<tr>
+<th>EnumValue</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Dynamic</td>
+<td></td>
+</tr>
+<tr>
+<td>Fixed</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#### AxisDirection</p>
+<p>Defines a primary direction for an axis.</p>
+<table>
+<thead>
+<tr>
+<th>EnumValue</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>X</td>
+<td></td>
+</tr>
+<tr>
+<td>Y</td>
+<td></td>
+</tr>
+<tr>
+<td>Z</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#### BasicNetType</p>
+<p>Use Archetype "ResourceId:Name" String as ReplicaType? Otherwise we will use ResourceId u64 as ReplicaType (much more efficient). This impacts bandwidth performance when first spawning/cloning new NetObject types to remote peers.</p>
+<table>
+<thead>
+<tr>
+<th>EnumValue</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Boolean</td>
+<td></td>
+</tr>
+<tr>
+<td>Boolean2</td>
+<td></td>
+</tr>
+<tr>
+<td>Boolean3</td>
+<td></td>
+</tr>
+<tr>
+<td>Boolean4</td>
+<td></td>
+</tr>
+<tr>
+<td>Byte</td>
+<td></td>
+</tr>
+<tr>
+<td>DoubleInteger</td>
+<td></td>
+</tr>
+<tr>
+<td>DoubleReal</td>
+<td></td>
+</tr>
+<tr>
+<td>Integer</td>
+<td></td>
+</tr>
+<tr>
+<td>Integer2</td>
+<td></td>
+</tr>
+<tr>
+<td>Integer3</td>
+<td></td>
+</tr>
+<tr>
+<td>Integer4</td>
+<td></td>
+</tr>
+<tr>
+<td>Other</td>
+<td></td>
+</tr>
+<tr>
+<td>Quaternion</td>
+<td></td>
+</tr>
+<tr>
+<td>Real</td>
+<td></td>
+</tr>
+<tr>
+<td>Real2</td>
+<td></td>
+</tr>
+<tr>
+<td>Real2x2</td>
+<td></td>
+</tr>
+<tr>
+<td>Real3</td>
+<td></td>
+</tr>
+<tr>
+<td>Real3x3</td>
+<td></td>
+</tr>
+<tr>
+<td>Real4</td>
+<td></td>
+</tr>
+<tr>
+<td>Real4x4</td>
+<td></td>
+</tr>
+<tr>
+<td>String</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#### BasisType</p>
+<table>
+<thead>
+<tr>
+<th>EnumValue</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NegativeX</td>
+<td></td>
+</tr>
+<tr>
+<td>NegativeY</td>
+<td></td>
+</tr>
+<tr>
+<td>NegativeZ</td>
+<td></td>
+</tr>
+<tr>
+<td>PositiveX</td>
+<td></td>
+</tr>
+<tr>
+<td>PositiveY</td>
+<td></td>
+</tr>
+<tr>
+<td>PositiveZ</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#### BlendEquation</p>
+<p>How pixel values (source) are combined with the active render target's values (destination).</p>
+<table>
+<thead>
+<tr>
+<th>EnumValue</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Add</td>
+<td>Source is added to destination.</td>
+</tr>
+<tr>
+<td>Max</td>
+<td>The maximum value between source and destination is kept.</td>
+</tr>
+<tr>
+<td>Min</td>
+<td>The minimum value between source and destination is kept.</td>
+</tr>
+<tr>
+<td>ReverseSubtract</td>
+<td>Destination is subtracted from source.</td>
+</tr>
+<tr>
+<td>Subtract</td>
+<td>Source is subtracted from destination.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#### BlendFactor</p>
+<p>Values that can be multiplied with the operands used in the blend equation.</p>
+<table>
+<thead>
+<tr>
+<th>EnumValue</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>DestAlpha</td>
+<td>The alpha channel of the destination value.</td>
+</tr>
+<tr>
+<td>DestColor</td>
+<td>The RGB of the destination value.</td>
+</tr>
+<tr>
+<td>InvDestAlpha</td>
+<td>One minus the alpha channel of the destination value.</td>
+</tr>
+<tr>
+<td>InvDestColor</td>
+<td>One minus the RGB of the destination value.</td>
+</tr>
+<tr>
+<td>InvSourceAlpha</td>
+<td>One minus the alpha channel of the source value.</td>
+</tr>
+<tr>
+<td>InvSourceColor</td>
+<td>One minus the RGB of the source value.</td>
+</tr>
+<tr>
+<td>One</td>
+<td>Multiplied by one, operand is unchanged.</td>
+</tr>
+<tr>
+<td>SourceAlpha</td>
+<td>The alpha channel of the source value.</td>
+</tr>
+<tr>
+<td>SourceAlphaSaturate</td>
+<td>Minimum of source alpha and one minus destination alpha.</td>
+</tr>
+<tr>
+<td>SourceColor</td>
+<td>The RGB of the source value.</td>
+</tr>
+<tr>
+<td>Plasma</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#### BlendMode</p>
+<p>If blend equations are applied when writing to a render target.</p>
+<table>
+<thead>
+<tr>
+<th>EnumValue</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Disabled</td>
+<td>Blending is not used.</td>
+</tr>
+<tr>
+<td>Enabled</td>
+<td>Blending is used, color and alpha use the same equations.</td>
+</tr>
+<tr>
+<td>Separate</td>
+<td>Blending is used, color and alpha use separate equations.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#### BoundType</p>
+<table>
+<thead>
+<tr>
+<th>EnumValue</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>PrismJoint</td>
+<td></td>
+</tr>
+<tr>
+<td>PrismJoint2d</td>
+<td></td>
+</tr>
+<tr>
+<td>RevJoint</td>
+<td></td>
+</tr>
+<tr>
+<td>RevJoint2d</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#### Buttons</p>
+<table>
+<thead>
+<tr>
+<th>EnumValue</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A</td>
+<td></td>
+</tr>
+<tr>
+<td>AnyButton</td>
+<td></td>
+</tr>
+<tr>
+<td>B</td>
+<td></td>
+</tr>
+<tr>
+<td>Back</td>
+<td></td>
+</tr>
+<tr>
+<td>DpadDown</td>
+<td></td>
+</tr>
+<tr>
+<td>DpadDownFiltered</td>
+<td></td>
+</tr>
+<tr>
+<td>DpadLeft</td>
+<td></td>
+</tr>
+<tr>
+<td>DpadLeftFiltered</td>
+<td></td>
+</tr>
+<tr>
+<td>DpadRight</td>
+<td></td>
+</tr>
+<tr>
+<td>DpadRightFiltered</td>
+<td></td>
+</tr>
+<tr>
+<td>DpadUp</td>
+<td></td>
+</tr>
+<tr>
+<td>DpadUpFiltered</td>
+<td></td>
+</tr>
+<tr>
+<td>LeftShoulder</td>
+<td></td>
+</tr>
+<tr>
+<td>LeftThumb</td>
+<td></td>
+</tr>
+<tr>
+<td>RightShoulder</td>
+<td></td>
+</tr>
+<tr>
+<td>RightThumb</td>
+<td></td>
+</tr>
+<tr>
+<td>Start</td>
+<td></td>
+</tr>
+<tr>
+<td>StickDown</td>
+<td></td>
+</tr>
+<tr>
+<td>StickLeft</td>
+<td></td>
+</tr>
+<tr>
+<td>StickRight</td>
+<td></td>
+</tr>
+<tr>
+<td>StickUp</td>
+<td></td>
+</tr>
+<tr>
+<td>X</td>
+<td></td>
+</tr>
+<tr>
+<td>Y</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#### CameraDragMode</p>
+<table>
+<thead>
+<tr>
+<th>EnumValue</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NotActive</td>
+<td></td>
+</tr>
+<tr>
+<td>Pan</td>
+<td></td>
+</tr>
+<tr>
+<td>Rotation</td>
+<td></td>
+</tr>
+<tr>
+<td>Zoom</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#### CapsuleScalingMode</p>
+<p>How should a capsule collider respond to non-uniform scale?</p>
+<table>
+<thead>
+<tr>
+<th>EnumValue</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>PreserveHeight</td>
+<td>Scale applies to the height of the cylinder.</td>
+</tr>
+<tr>
+<td>PreserveScale</td>
+<td>Scale applies to the total size of the capsule.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#### CastFilterState</p>
+<p>Controls custom cast filtering via the CastFilterEvent . Allows custom filter logic per object.</p>
+<table>
+<thead>
+<tr>
+<th>EnumValue</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Accept</td>
+<td>Always accept this object for testing.</td>
+</tr>
+<tr>
+<td>DefaultBehavior</td>
+<td>Run the rest of the filtering logic on the cast filter.</td>
+</tr>
+<tr>
+<td>Reject</td>
+<td>Always reject this object for testing.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#### CellIndexType</p>
+<table>
+<thead>
+<tr>
+<th>EnumValue</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Absoulte</td>
+<td></td>
+</tr>
+<tr>
+<td>Local</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#### CogPathPreference</p>
+<table>
+<thead>
+<tr>
+<th>EnumValue</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Absolute</td>
+<td></td>
+</tr>
+<tr>
+<td>CogRelative</td>
+<td></td>
+</tr>
+<tr>
+<td>SpaceRelative</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#### ColliderType</p>
+<p>All possible collider types. Needed mostly for collision detection. The order is somewhat important as collision detection currently assumes that all simple shapes (primitive types) are before the complex shapes.</p>
+<table>
+<thead>
+<tr>
+<th>EnumValue</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>cBox</td>
+<td></td>
+</tr>
+<tr>
+<td>cCapsule</td>
+<td></td>
+</tr>
+<tr>
+<td>cConvexMesh</td>
+<td></td>
+</tr>
+<tr>
+<td>cCylinder</td>
+<td></td>
+</tr>
+<tr>
+<td>cEllipsoid</td>
+<td></td>
+</tr>
+<tr>
+<td>cHeightMap</td>
+<td></td>
+</tr>
+<tr>
+<td>cInvalid</td>
+<td></td>
+</tr>
+<tr>
+<td>cMesh</td>
+<td></td>
+</tr>
+<tr>
+<td>cMultiConvexMesh</td>
+<td></td>
+</tr>
+<tr>
+<td>cSize</td>
+<td></td>
+</tr>
+<tr>
+<td>cSphere</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#### CollisionFilterBlockType</p>
+<p>What kind of filter block this is. These blocks are used to send out/override collision group events of certain types (collision started, etc...)</p>
+<table>
+<thead>
+<tr>
+<th>EnumValue</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CollisionEndedBlock</td>
+<td></td>
+</tr>
+<tr>
+<td>CollisionPersistedBlock</td>
+<td></td>
+</tr>
+<tr>
+<td>CollisionStartedBlock</td>
+<td></td>
+</tr>
+<tr>
+<td>PreSolveBlock</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#### CollisionFilterCollisionFlags</p>
+<p>Controls what parts of collision detection/resolution are run for a CollisionGroup pair.</p>
+<table>
+<thead>
+<tr>
+<th>EnumValue</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Resolve</td>
+<td>Run both collision detection and resolution as normal.</td>
+</tr>
+<tr>
+<td>SkipDetection</td>
+<td>Don't run collision detection. No events will be sent.</td>
+</tr>
+<tr>
+<td>SkipResolution</td>
+<td>Don't run collision resolution. Detection will still be run so events might be sent out.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#### CollisionType</p>
+<p>Used to determine what kind of collision this is during event sending.</p>
+<table>
+<thead>
+<tr>
+<th>EnumValue</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CollisionEnded</td>
+<td></td>
+</tr>
+<tr>
+<td>CollisionPersisted</td>
+<td></td>
+</tr>
+<tr>
+<td>CollisionStarted</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#### ConflictAction</p>
+<table>
+<thead>
+<tr>
+<th>EnumValue</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Replace</td>
+<td></td>
+</tr>
+<tr>
+<td>Skip</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#### ConnectResponse</p>
+<table>
+<thead>
+<tr>
+<th>EnumValue</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Accept</td>
+<td></td>
+</tr>
+<tr>
+<td>Deny</td>
+<td></td>
+</tr>
+<tr>
+<td>DenyFull</td>
+<td></td>
+</tr>
+<tr>
+<td>DenyTimeout</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#### ConnectResponseMode</p>
+<table>
+<thead>
+<tr>
+<th>EnumValue</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Accept</td>
+<td></td>
+</tr>
+<tr>
+<td>Custom</td>
+<td></td>
+</tr>
+<tr>
+<td>Deny</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#### ConstraintPositionCorrection</p>
+<p>What kind of position correction behavior is desired for constraint or constraint type.</p>
+<table>
+<thead>
+<tr>
+<th>EnumValue</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Baumgarte</td>
+<td>Use a baumgarte penalty force.</td>
+</tr>
+<tr>
+<td>Inherit</td>
+<td>Use the global position correction method.</td>
+</tr>
+<tr>
+<td>PostStabilization</td>
+<td>Directly fix position errors via translation.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#### ControlMode</p>
+<table>
+<thead>
+<tr>
+<th>EnumValue</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>FirstPerson</td>
+<td></td>
+</tr>
+<tr>
+<td>Orbit</td>
+<td></td>
+</tr>
+<tr>
+<td>ZPlane</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#### ConvergenceState</p>
+<table>
+<thead>
+<tr>
+<th>EnumValue</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Active</td>
+<td></td>
+</tr>
+<tr>
+<td>None</td>
+<td></td>
+</tr>
+<tr>
+<td>Resting</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#### CullMode</p>
+<p>How triangles should be culled (not rendered) depending on which way they face.</p>
+<table>
+<thead>
+<tr>
+<th>EnumValue</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>BackFace</td>
+<td>Clockwise triangles are not rendered.</td>
+</tr>
+<tr>
+<td>Disabled</td>
+<td>Triangles are always rendered.</td>
+</tr>
+<tr>
+<td>FrontFace</td>
+<td>Counter clockwise triangles are not rendered.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#### Cursor</p>
+<p>Standard Mouse Cursors.</p>
+<table>
+<thead>
+<tr>
+<th>EnumValue</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Arrow</td>
+<td></td>
+</tr>
+<tr>
+<td>Cross</td>
+<td></td>
+</tr>
+<tr>
+<td>Hand</td>
+<td></td>
+</tr>
+<tr>
+<td>Invisible</td>
+<td></td>
+</tr>
+<tr>
+<td>SizeAll</td>
+<td></td>
+</tr>
+<tr>
+<td>SizeNESW</td>
+<td></td>
+</tr>
+<tr>
+<td>SizeNS</td>
+<td></td>
+</tr>
+<tr>
+<td>SizeNWSE</td>
+<td></td>
+</tr>
+<tr>
+<td>SizeWE</td>
+<td></td>
+</tr>
+<tr>
+<td>TextBeam</td>
+<td></td>
+</tr>
+<tr>
+<td>Wait</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#### CurveType</p>
+<table>
+<thead>
+<tr>
+<th>EnumValue</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>BSpline</td>
+<td></td>
+</tr>
+<tr>
+<td>CatmullRom</td>
+<td></td>
+</tr>
+<tr>
+<td>Linear</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#### DefaultAddOnFilters</p>
+<table>
+<thead>
+<tr>
+<th>EnumValue</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>AllAngularAxes</td>
+<td></td>
+</tr>
+<tr>
+<td>AllAxes</td>
+<td></td>
+</tr>
+<tr>
+<td>AllLinearAxes</td>
+<td></td>
+</tr>
+<tr>
+<td>SingleAngularAxis</td>
+<td></td>
+</tr>
+<tr>
+<td>SingleAxis</td>
+<td></td>
+</tr>
+<tr>
+<td>SingleLinearAxis</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#### DepthMode</p>
+<p>How pixels depth values should be tested to determine if the pixel renders.</p>
+<table>
+<thead>
+<tr>
+<th>EnumValue</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Disabled</td>
+<td>No depth testing.</td>
+</tr>
+<tr>
+<td>Read</td>
+<td>Depth values are compared to the depth buffer.</td>
+</tr>
+<tr>
+<td>Write</td>
+<td>Depth values are compared to the depth buffer, if comparison succeeds the new value is written to the buffer.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#### DetectionMode</p>
+<table>
+<thead>
+<tr>
+<th>EnumValue</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Assume</td>
+<td></td>
+</tr>
+<tr>
+<td>Automatic</td>
+<td></td>
+</tr>
+<tr>
+<td>Manual</td>
+<td></td>
+</tr>
+<tr>
+<td>Manumatic</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#### DisconnectReason</p>
+<table>
+<thead>
+<tr>
+<th>EnumValue</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Latency</td>
+<td></td>
+</tr>
+<tr>
+<td>Request</td>
+<td></td>
+</tr>
+<tr>
+<td>Timeout</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#### DockArea</p>
+<table>
+<thead>
+<tr>
+<th>EnumValue</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>BotTool</td>
+<td></td>
+</tr>
+<tr>
+<td>Bottom</td>
+<td></td>
+</tr>
+<tr>
+<td>Center</td>
+<td></td>
+</tr>
+<tr>
+<td>Count</td>
+<td></td>
+</tr>
+<tr>
+<td>Floating</td>
+<td></td>
+</tr>
+<tr>
+<td>Left</td>
+<td></td>
+</tr>
+<tr>
+<td>Right</td>
+<td></td>
+</tr>
+<tr>
+<td>Top</td>
+<td></td>
+</tr>
+<tr>
+<td>TopTool</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#### Ease</p>
+<table>
+<thead>
+<tr>
+<th>EnumValue</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>BackIn</td>
+<td></td>
+</tr>
+<tr>
+<td>BackInOut</td>
+<td></td>
+</tr>
+<tr>
+<td>BackOut</td>
+<td></td>
+</tr>
+<tr>
+<td>BounceIn</td>
+<td></td>
+</tr>
+<tr>
+<td>BounceInOut</td>
+<td></td>
+</tr>
+<tr>
+<td>BounceOut</td>
+<td></td>
+</tr>
+<tr>
+<td>ElasticIn</td>
+<td></td>
+</tr>
+<tr>
+<td>ElasticInOut</td>
+<td></td>
+</tr>
+<tr>
+<td>ElasticOut</td>
+<td></td>
+</tr>
+<tr>
+<td>Linear</td>
+<td></td>
+</tr>
+<tr>
+<td>QuadIn</td>
+<td></td>
+</tr>
+<tr>
+<td>QuadInOut</td>
+<td></td>
+</tr>
+<tr>
+<td>QuadOut</td>
+<td></td>
+</tr>
+<tr>
+<td>SinIn</td>
+<td></td>
+</tr>
+<tr>
+<td>SinInOut</td>
+<td></td>
+</tr>
+<tr>
+<td>SinOut</td>
+<td></td>
+</tr>
+<tr>
+<td>WarpIn</td>
+<td></td>
+</tr>
+<tr>
+<td>WarpInOut</td>
+<td></td>
+</tr>
+<tr>
+<td>WarpOut</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#### EditorMode</p>
+<table>
+<thead>
+<tr>
+<th>EnumValue</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Mode2D</td>
+<td></td>
+</tr>
+<tr>
+<td>Mode3D</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#### Enum</p>
+<table>
+<thead>
+<tr>
+<th>EnumValue</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#### eUpdateTransformState</p>
+<p>Internal enum used for determining what kind of transform update is happening.</p>
+<table>
+<thead>
+<tr>
+<th>EnumValue</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>cInitialize</td>
+<td></td>
+</tr>
+<tr>
+<td>cUpdate</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#### FalloffCurveType</p>
+<p>The type of curve used for attenuating volume by SoundAttenuators.</p>
+<table>
+<thead>
+<tr>
+<th>EnumValue</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Custom</td>
+<td>Sets the volume reduction using a SampleCurve resource.</td>
+</tr>
+<tr>
+<td>Linear</td>
+<td>Volume reduces linearly with distance.</td>
+</tr>
+<tr>
+<td>Log</td>
+<td>Volume reduces logarithmically, mimicking sound in real life.</td>
+</tr>
+<tr>
+<td>Sine</td>
+<td>Volume reduces linearly at first then slowly.</td>
+</tr>
+<tr>
+<td>SquareRoot</td>
+<td>Volume reduces quickly at first then linearly.</td>
+</tr>
+<tr>
+<td>Squared</td>
+<td>Volume reduces slowly at first then linearly.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#### Filter</p>
+<table>
+<thead>
+<tr>
+<th>EnumValue</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ActiveOffset</td>
+<td></td>
+</tr>
+<tr>
+<td>DefaultOffset</td>
+<td></td>
+</tr>
+<tr>
+<td>FilterFlag</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#### FlickedStick</p>
+<table>
+<thead>
+<tr>
+<th>EnumValue</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Left</td>
+<td></td>
+</tr>
+<tr>
+<td>None</td>
+<td></td>
+</tr>
+<tr>
+<td>Right</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#### FragmentCountFilter</p>
+<table>
+<thead>
+<tr>
+<th>EnumValue</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>FiveFragments</td>
+<td></td>
+</tr>
+<tr>
+<td>FourFragments</td>
+<td></td>
+</tr>
+<tr>
+<td>OneFragment</td>
+<td></td>
+</tr>
+<tr>
+<td>SixFragments</td>
+<td></td>
+</tr>
+<tr>
+<td>ThreeFragments</td>
+<td></td>
+</tr>
+<tr>
+<td>TwoFragments</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#### FragmentFilter</p>
+<table>
+<thead>
+<tr>
+<th>EnumValue</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>FreeAngularFragment</td>
+<td></td>
+</tr>
+<tr>
+<td>FreeLinearFragment</td>
+<td></td>
+</tr>
+<tr>
+<td>NoFreeAxesFragment</td>
+<td></td>
+</tr>
+<tr>
+<td>SingleFragment</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#### GeometryValue</p>
+<table>
+<thead>
+<tr>
+<th>EnumValue</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Albedo</td>
+<td></td>
+</tr>
+<tr>
+<td>Depth</td>
+<td></td>
+</tr>
+<tr>
+<td>Metallic</td>
+<td></td>
+</tr>
+<tr>
+<td>None</td>
+<td></td>
+</tr>
+<tr>
+<td>Normal</td>
+<td></td>
+</tr>
+<tr>
+<td>Roughness</td>
+<td></td>
+</tr>
+<tr>
+<td>Specular</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#### GizmoBasis</p>
+<table>
+<thead>
+<tr>
+<th>EnumValue</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Local</td>
+<td></td>
+</tr>
+<tr>
+<td>World</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#### GizmoDragMode</p>
+<table>
+<thead>
+<tr>
+<th>EnumValue</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Line</td>
+<td></td>
+</tr>
+<tr>
+<td>Plane</td>
+<td></td>
+</tr>
+<tr>
+<td>ViewPlane</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#### GizmoGrab</p>
+<table>
+<thead>
+<tr>
+<th>EnumValue</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Hold</td>
+<td></td>
+</tr>
+<tr>
+<td>Toggle</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#### GizmoGrabMode</p>
+<table>
+<thead>
+<tr>
+<th>EnumValue</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Hold</td>
+<td></td>
+</tr>
+<tr>
+<td>Toggle</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#### GizmoPivot</p>
+<table>
+<thead>
+<tr>
+<th>EnumValue</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Average</td>
+<td></td>
+</tr>
+<tr>
+<td>Center</td>
+<td></td>
+</tr>
+<tr>
+<td>Primary</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#### GizmoSnapMode</p>
+<table>
+<thead>
+<tr>
+<th>EnumValue</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Relative</td>
+<td></td>
+</tr>
+<tr>
+<td>WorldAxes</td>
+<td></td>
+</tr>
+<tr>
+<td>WorldGrid</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#### GranularSynthWindows</p>
+<p>Types of windows (volume envelopes) that can be used for individual grains generated by the GranularSynthNode .</p>
+<table>
+<thead>
+<tr>
+<th>EnumValue</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Linear</td>
+<td>A triangle-shaped linear envelope. Does not use attack and release times.</td>
+</tr>
+<tr>
+<td>Parabolic</td>
+<td>A smoothly curved envelope. Does not use attack and release times.</td>
+</tr>
+<tr>
+<td>RaisedCosine</td>
+<td>Uses cosine curves to smoothly ramp up and down during attack and release times.</td>
+</tr>
+<tr>
+<td>Trapezoid</td>
+<td>Uses linear ramps during attack and release times. More efficient than RaisedCosine but not as smooth.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#### GraphicalSortMethod</p>
+<p>Method of sorting for determining the draw order of graphicals.</p>
+<table>
+<thead>
+<tr>
+<th>EnumValue</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>BackToFrontView</td>
+<td>Uses the distance in the view direction, furthest to nearest.</td>
+</tr>
+<tr>
+<td>FrontToBackView</td>
+<td>Uses the distance in the view direction, nearest to furthest.</td>
+</tr>
+<tr>
+<td>GraphicalSortValue</td>
+<td>Uses the sort value on the graphical component, lowest to highest.</td>
+</tr>
+<tr>
+<td>NegativeToPositiveX</td>
+<td>Uses the world space X-coordinate.</td>
+</tr>
+<tr>
+<td>NegativeToPositiveY</td>
+<td>Uses the world space Y-coordinate.</td>
+</tr>
+<tr>
+<td>NegativeToPositiveZ</td>
+<td>Uses the world space Z-coordinate.</td>
+</tr>
+<tr>
+<td>None</td>
+<td>Not sorted, draw order is undefined.</td>
+</tr>
+<tr>
+<td>PositiveToNegativeX</td>
+<td>Uses the world space X-coordinate.</td>
+</tr>
+<tr>
+<td>PositiveToNegativeY</td>
+<td>Uses the world space Y-coordinate.</td>
+</tr>
+<tr>
+<td>PositiveToNegativeZ</td>
+<td>Uses the world space Z-coordinate.</td>
+</tr>
+<tr>
+<td>SortEvent</td>
+<td>An event is sent on CameraViewport every frame for custom logic to determine the sort value.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#### HeightTextureSelect</p>
+<table>
+<thead>
+<tr>
+<th>EnumValue</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Texture0</td>
+<td></td>
+</tr>
+<tr>
+<td>Texture1</td>
+<td></td>
+</tr>
+<tr>
+<td>Texture2</td>
+<td></td>
+</tr>
+<tr>
+<td>Texture3</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#### HeightTool</p>
+<table>
+<thead>
+<tr>
+<th>EnumValue</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CreateDestroy</td>
+<td></td>
+</tr>
+<tr>
+<td>Flatten</td>
+<td></td>
+</tr>
+<tr>
+<td>RaiseLower</td>
+<td></td>
+</tr>
+<tr>
+<td>SmoothSharpen</td>
+<td></td>
+</tr>
+<tr>
+<td>WeightPainter</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#### HorizontalAlignment</p>
+<table>
+<thead>
+<tr>
+<th>EnumValue</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Center</td>
+<td></td>
+</tr>
+<tr>
+<td>Left</td>
+<td></td>
+</tr>
+<tr>
+<td>Right</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#### ImageImport</p>
+<table>
+<thead>
+<tr>
+<th>EnumValue</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Sprites</td>
+<td></td>
+</tr>
+<tr>
+<td>Textures</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#### ImportFrames</p>
+<table>
+<thead>
+<tr>
+<th>EnumValue</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>AllFrames</td>
+<td></td>
+</tr>
+<tr>
+<td>SelectedFrames</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#### ImportMode</p>
+<table>
+<thead>
+<tr>
+<th>EnumValue</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>FitToPatches</td>
+<td></td>
+</tr>
+<tr>
+<td>MaintainAspectRatio</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#### IncludeMode</p>
+<table>
+<thead>
+<tr>
+<th>EnumValue</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Children</td>
+<td></td>
+</tr>
+<tr>
+<td>OnlyRoot</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#### IndicatorSide</p>
+<table>
+<thead>
+<tr>
+<th>EnumValue</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Bottom</td>
+<td></td>
+</tr>
+<tr>
+<td>Left</td>
+<td></td>
+</tr>
+<tr>
+<td>Right</td>
+<td></td>
+</tr>
+<tr>
+<td>Top</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#### InputDevice</p>
+<table>
+<thead>
+<tr>
+<th>EnumValue</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Gamepad</td>
+<td></td>
+</tr>
+<tr>
+<td>Joystick</td>
+<td></td>
+</tr>
+<tr>
+<td>Keyboard</td>
+<td></td>
+</tr>
+<tr>
+<td>Mouse</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#### InternalKeyState</p>
+<table>
+<thead>
+<tr>
+<th>EnumValue</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>KeyHeld</td>
+<td></td>
+</tr>
+<tr>
+<td>KeyNotHeld</td>
+<td></td>
+</tr>
+<tr>
+<td>KeyPressed</td>
+<td></td>
+</tr>
+<tr>
+<td>KeyReleased</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#### InternetProtocol</p>
+<table>
+<thead>
+<tr>
+<th>EnumValue</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Both</td>
+<td></td>
+</tr>
+<tr>
+<td>Unspecified</td>
+<td></td>
+</tr>
+<tr>
+<td>V4</td>
+<td></td>
+</tr>
+<tr>
+<td>V6</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#### JointFrameOfReference</p>
+<table>
+<thead>
+<tr>
+<th>EnumValue</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ObjectA</td>
+<td></td>
+</tr>
+<tr>
+<td>ObjectB</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#### JointToolTypes</p>
+<table>
+<thead>
+<tr>
+<th>EnumValue</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>FixedAngleJoint</td>
+<td></td>
+</tr>
+<tr>
+<td>GearJoint</td>
+<td></td>
+</tr>
+<tr>
+<td>LinearAxisJoint</td>
+<td></td>
+</tr>
+<tr>
+<td>ObjectLink</td>
+<td></td>
+</tr>
+<tr>
+<td>PositionJoint</td>
+<td></td>
+</tr>
+<tr>
+<td>PrismaticJoint</td>
+<td></td>
+</tr>
+<tr>
+<td>PrismaticJoint2d</td>
+<td></td>
+</tr>
+<tr>
+<td>PulleyJoint</td>
+<td></td>
+</tr>
+<tr>
+<td>RevoluteJoint</td>
+<td></td>
+</tr>
+<tr>
+<td>RevoluteJoint2d</td>
+<td></td>
+</tr>
+<tr>
+<td>StickJoint</td>
+<td></td>
+</tr>
+<tr>
+<td>UniversalJoint</td>
+<td></td>
+</tr>
+<tr>
+<td>UprightJoint</td>
+<td></td>
+</tr>
+<tr>
+<td>WeldJoint</td>
+<td></td>
+</tr>
+<tr>
+<td>WheelJoint</td>
+<td></td>
+</tr>
+<tr>
+<td>WheelJoint2d</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#### JointTypes</p>
+<table>
+<thead>
+<tr>
+<th>EnumValue</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CustomJoint</td>
+<td></td>
+</tr>
+<tr>
+<td>FixedAngleJoint</td>
+<td></td>
+</tr>
+<tr>
+<td>GearJoint</td>
+<td></td>
+</tr>
+<tr>
+<td>LinearAxisJoint</td>
+<td></td>
+</tr>
+<tr>
+<td>ManipulatorJoint</td>
+<td></td>
+</tr>
+<tr>
+<td>PhyGunJoint</td>
+<td></td>
+</tr>
+<tr>
+<td>PositionJoint</td>
+<td></td>
+</tr>
+<tr>
+<td>PrismaticJoint</td>
+<td></td>
+</tr>
+<tr>
+<td>PrismaticJoint2d</td>
+<td></td>
+</tr>
+<tr>
+<td>PulleyJoint</td>
+<td></td>
+</tr>
+<tr>
+<td>RelativeVelocityJoint</td>
+<td></td>
+</tr>
+<tr>
+<td>RevoluteJoint</td>
+<td></td>
+</tr>
+<tr>
+<td>RevoluteJoint2d</td>
+<td></td>
+</tr>
+<tr>
+<td>StickJoint</td>
+<td></td>
+</tr>
+<tr>
+<td>UniversalJoint</td>
+<td></td>
+</tr>
+<tr>
+<td>UprightJoint</td>
+<td></td>
+</tr>
+<tr>
+<td>WeldJoint</td>
+<td></td>
+</tr>
+<tr>
+<td>WheelJoint</td>
+<td></td>
+</tr>
+<tr>
+<td>WheelJoint2d</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#### Keys</p>
+<table>
+<thead>
+<tr>
+<th>EnumValue</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>A</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>Add</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>Alt</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>Apostrophe</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>B</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>Back</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>Backslash</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>C</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>Capital</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>Comma</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>Control</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>D</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>Decimal</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>Delete</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>Divide</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>Down</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>E</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>Eight</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>End</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>Enter</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>Equal</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>Escape</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>F</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>F1</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>F10</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>F11</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>F12</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>F2</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>F3</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>F4</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>F5</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>F6</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>F7</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>F8</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>F9</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>Five</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>Four</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>G</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>H</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>Home</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>I</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>Insert</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>J</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>K</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>L</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>Left</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>LeftBracket</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>M</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>Minus</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>Multiply</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>N</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>Nine</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>None</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>NumPad0</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>NumPad1</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>NumPad2</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>NumPad3</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>NumPad4</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>NumPad5</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>NumPad6</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>NumPad7</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>NumPad8</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>NumPad9</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>O</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>One</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>P</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>PageDown</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>PageUp</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>Period</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>Q</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>R</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>Right</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>RightBracket</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>S</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>Semicolon</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>Seven</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>Shift</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>Six</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>Slash</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>Space</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>Subtract</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>T</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>Tab</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>Three</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>Tilde</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>Two</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>U</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>Unknown</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>Up</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>V</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>W</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>X</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>Y</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>Z</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>Zero</code></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#### KeyState</p>
+<table>
+<thead>
+<tr>
+<th>EnumValue</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Down</td>
+<td></td>
+</tr>
+<tr>
+<td>Repeated</td>
+<td></td>
+</tr>
+<tr>
+<td>Up</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#### LauncherAutoRunMode</p>
+<table>
+<thead>
+<tr>
+<th>EnumValue</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>IfInstalled</td>
+<td></td>
+</tr>
+<tr>
+<td>InstallAndRun</td>
+<td></td>
+</tr>
+<tr>
+<td>None</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#### LinkState</p>
+<table>
+<thead>
+<tr>
+<th>EnumValue</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Connected</td>
+<td></td>
+</tr>
+<tr>
+<td>Disconnected</td>
+<td></td>
+</tr>
+<tr>
+<td>ReceivedConnectRequest</td>
+<td></td>
+</tr>
+<tr>
+<td>ReceivedDisconnectNotice</td>
+<td></td>
+</tr>
+<tr>
+<td>ReceivedNegativeConnectResponse</td>
+<td></td>
+</tr>
+<tr>
+<td>SentConnectRequest</td>
+<td></td>
+</tr>
+<tr>
+<td>SentDisconnectNotice</td>
+<td></td>
+</tr>
+<tr>
+<td>SentNegativeConnectResponse</td>
+<td></td>
+</tr>
+<tr>
+<td>Unspecified</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#### LinkStatus</p>
+<table>
+<thead>
+<tr>
+<th>EnumValue</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>AttemptingConnection</td>
+<td></td>
+</tr>
+<tr>
+<td>Connected</td>
+<td></td>
+</tr>
+<tr>
+<td>Disconnected</td>
+<td></td>
+</tr>
+<tr>
+<td>Unspecified</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#### Location</p>
+<table>
+<thead>
+<tr>
+<th>EnumValue</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>BottomCenter</td>
+<td></td>
+</tr>
+<tr>
+<td>BottomLeft</td>
+<td></td>
+</tr>
+<tr>
+<td>BottomRight</td>
+<td></td>
+</tr>
+<tr>
+<td>Center</td>
+<td></td>
+</tr>
+<tr>
+<td>CenterLeft</td>
+<td></td>
+</tr>
+<tr>
+<td>CenterRight</td>
+<td></td>
+</tr>
+<tr>
+<td>TopCenter</td>
+<td></td>
+</tr>
+<tr>
+<td>TopLeft</td>
+<td></td>
+</tr>
+<tr>
+<td>TopRight</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#### LoopingMode</p>
+<table>
+<thead>
+<tr>
+<th>EnumValue</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Default</td>
+<td></td>
+</tr>
+<tr>
+<td>Looping</td>
+<td></td>
+</tr>
+<tr>
+<td>Once</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#### MeshEmitMode</p>
+<table>
+<thead>
+<tr>
+<th>EnumValue</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Edge</td>
+<td></td>
+</tr>
+<tr>
+<td>Face</td>
+<td></td>
+</tr>
+<tr>
+<td>Vertex</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#### MeshImport</p>
+<table>
+<thead>
+<tr>
+<th>EnumValue</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>MultiMesh</td>
+<td></td>
+</tr>
+<tr>
+<td>NoMesh</td>
+<td></td>
+</tr>
+<tr>
+<td>SingleMesh</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#### Mode2DStates</p>
+<p>Represents what dimensions a RigidBody should operate in (how many degrees of freedom it has by default).</p>
+<table>
+<thead>
+<tr>
+<th>EnumValue</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>InheritFromSpace</td>
+<td>Use the Mode2D state on the PhysicsSpace . This allows easy changing of the entire space between 2D/3D.</td>
+</tr>
+<tr>
+<td>Mode2D</td>
+<td>Restricts the object's movement through physics to 2D. This lowers the object's degrees of freedom down to 3 (x-linear, y-linear, z-angular).</td>
+</tr>
+<tr>
+<td>Mode3D</td>
+<td>A regular 3D object (6 degrees of freedom).</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#### MouseButtons</p>
+<p>As the extra mouse buttons are typically Back and Forward they have been named accordingly.</p>
+<table>
+<thead>
+<tr>
+<th>EnumValue</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Left</td>
+<td></td>
+</tr>
+<tr>
+<td>Middle</td>
+<td></td>
+</tr>
+<tr>
+<td>None</td>
+<td></td>
+</tr>
+<tr>
+<td>Right</td>
+<td></td>
+</tr>
+<tr>
+<td>XOneBack</td>
+<td></td>
+</tr>
+<tr>
+<td>XTwoForward</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#### MultiConvexMeshAutoComputeMethod</p>
+<table>
+<thead>
+<tr>
+<th>EnumValue</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>MarchingSquares</td>
+<td></td>
+</tr>
+<tr>
+<td>Pixels</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#### MultiConvexMeshAutoComputeMode</p>
+<table>
+<thead>
+<tr>
+<th>EnumValue</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Alpha</td>
+<td></td>
+</tr>
+<tr>
+<td>Intensity</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#### MultiConvexMeshDrawMode</p>
+<table>
+<thead>
+<tr>
+<th>EnumValue</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Edges</td>
+<td></td>
+</tr>
+<tr>
+<td>Filled</td>
+<td></td>
+</tr>
+<tr>
+<td>None</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#### MultiConvexMeshSnappingMode</p>
+<table>
+<thead>
+<tr>
+<th>EnumValue</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Always</td>
+<td></td>
+</tr>
+<tr>
+<td>IfClose</td>
+<td></td>
+</tr>
+<tr>
+<td>None</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#### NetRefreshResult</p>
+<p>Network refresh result.</p>
+<table>
+<thead>
+<tr>
+<th>EnumValue</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>DirectBasicHostInfo</td>
+<td></td>
+</tr>
+<tr>
+<td>ExtraHostInfo</td>
+<td></td>
+</tr>
+<tr>
+<td>IndirectBasicHostInfo</td>
+<td></td>
+</tr>
+<tr>
+<td>NoResponse</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#### NetRole</p>
+<table>
+<thead>
+<tr>
+<th>EnumValue</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Client</td>
+<td></td>
+</tr>
+<tr>
+<td>MasterServer</td>
+<td></td>
+</tr>
+<tr>
+<td>Offline</td>
+<td></td>
+</tr>
+<tr>
+<td>Server</td>
+<td></td>
+</tr>
+<tr>
+<td>Unspecified</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#### NetUserAddResponse</p>
+<p>Network user add response.</p>
+<table>
+<thead>
+<tr>
+<th>EnumValue</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Accept</td>
+<td></td>
+</tr>
+<tr>
+<td>Deny</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#### Network</p>
+<p>Network specification.</p>
+<table>
+<thead>
+<tr>
+<th>EnumValue</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Internet</td>
+<td></td>
+</tr>
+<tr>
+<td>LAN</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#### ObjectIndex</p>
+<table>
+<thead>
+<tr>
+<th>EnumValue</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>IndexA</td>
+<td></td>
+</tr>
+<tr>
+<td>IndexB</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#### OrientationBases</p>
+<table>
+<thead>
+<tr>
+<th>EnumValue</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Custom</td>
+<td></td>
+</tr>
+<tr>
+<td>ForwardNegativeZUpY</td>
+<td></td>
+</tr>
+<tr>
+<td>ForwardXUpY</td>
+<td></td>
+</tr>
+<tr>
+<td>ForwardXUpZ</td>
+<td></td>
+</tr>
+<tr>
+<td>ForwardYUpZ</td>
+<td></td>
+</tr>
+<tr>
+<td>ForwardZUpY</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#### PerspectiveMode</p>
+<p>Method of 3D scene projection to a 2D plane.</p>
+<table>
+<thead>
+<tr>
+<th>EnumValue</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Orthographic</td>
+<td>Projection is parallel with the viewing direction.</td>
+</tr>
+<tr>
+<td>Perspective</td>
+<td>Projection towards a single view point, making distant objects appear smaller.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#### PhysicsContactTangentTypes</p>
+<p>How to compute the tangents for a contact point. Mainly for testing.</p>
+<table>
+<thead>
+<tr>
+<th>EnumValue</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>OrthonormalTangents</td>
+<td></td>
+</tr>
+<tr>
+<td>RandomTangents</td>
+<td></td>
+</tr>
+<tr>
+<td>VelocityTangents</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#### PhysicsEffectEndCondition</p>
+<p>Describes how interpolation is performed (if at all) outside of a physics effect's max distance.</p>
+<table>
+<thead>
+<tr>
+<th>EnumValue</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ClampToMax</td>
+<td>Clamps to the max force value</td>
+</tr>
+<tr>
+<td>ContinueFalloff</td>
+<td>Continue the regular interpolation method</td>
+</tr>
+<tr>
+<td>NoEffect</td>
+<td>Don't apply a force past the max distance</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#### PhysicsEffectInterpolationType</p>
+<p>Describes how force values are interpolated between min/max values.</p>
+<table>
+<thead>
+<tr>
+<th>EnumValue</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Linear</td>
+<td>Linearly interpolate between values.</td>
+</tr>
+<tr>
+<td>Quadratic</td>
+<td>Quadratically interpolate between values (uses t^2).</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#### PhysicsEffectType</p>
+<table>
+<thead>
+<tr>
+<th>EnumValue</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Buoyancy</td>
+<td></td>
+</tr>
+<tr>
+<td>Custom</td>
+<td></td>
+</tr>
+<tr>
+<td>Drag</td>
+<td></td>
+</tr>
+<tr>
+<td>Flow</td>
+<td></td>
+</tr>
+<tr>
+<td>Force</td>
+<td></td>
+</tr>
+<tr>
+<td>Gravity</td>
+<td></td>
+</tr>
+<tr>
+<td>Invalid</td>
+<td></td>
+</tr>
+<tr>
+<td>PointForce</td>
+<td></td>
+</tr>
+<tr>
+<td>PointGravity</td>
+<td></td>
+</tr>
+<tr>
+<td>Thrust</td>
+<td></td>
+</tr>
+<tr>
+<td>Torque</td>
+<td></td>
+</tr>
+<tr>
+<td>Vortex</td>
+<td></td>
+</tr>
+<tr>
+<td>Wind</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#### PhysicsImport</p>
+<table>
+<thead>
+<tr>
+<th>EnumValue</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ConvexMesh</td>
+<td></td>
+</tr>
+<tr>
+<td>NoMesh</td>
+<td></td>
+</tr>
+<tr>
+<td>StaticMesh</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#### PhysicsIslandPreProcessingMode</p>
+<p>What kind of pre-processing strategy should be used for merging islands.</p>
+<table>
+<thead>
+<tr>
+<th>EnumValue</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ColliderCount</td>
+<td></td>
+</tr>
+<tr>
+<td>ConstraintCount</td>
+<td></td>
+</tr>
+<tr>
+<td>None</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#### PhysicsIslandType</p>
+<p>How should islands be built. Internal for testing (mostly legacy).</p>
+<table>
+<thead>
+<tr>
+<th>EnumValue</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Composites</td>
+<td></td>
+</tr>
+<tr>
+<td>ForcedOne</td>
+<td></td>
+</tr>
+<tr>
+<td>Kinematics</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#### PhysicsMeshType</p>
+<table>
+<thead>
+<tr>
+<th>EnumValue</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ConvexMesh</td>
+<td></td>
+</tr>
+<tr>
+<td>PhysicsMesh</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#### PhysicsSolverPositionCorrection</p>
+<p>What kind of position correction should be applied for any constraint that is set to Inherit.</p>
+<table>
+<thead>
+<tr>
+<th>EnumValue</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Baumgarte</td>
+<td>Use a baumgarte penalty force.</td>
+</tr>
+<tr>
+<td>PostStabilization</td>
+<td>Directly fix position errors via translation.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#### PhysicsSolverSubType</p>
+<p>What kind of solver technique to use for position correction. Mainly for testing.</p>
+<table>
+<thead>
+<tr>
+<th>EnumValue</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>BasicSolving</td>
+<td></td>
+</tr>
+<tr>
+<td>BlockSolving</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#### PhysicsSolverType</p>
+<p>What kind of a constraint solver should be used. A few pre-defined types meant for comparing performance.</p>
+<table>
+<thead>
+<tr>
+<th>EnumValue</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Basic</td>
+<td></td>
+</tr>
+<tr>
+<td>GenericBasic</td>
+<td></td>
+</tr>
+<tr>
+<td>Normal</td>
+<td></td>
+</tr>
+<tr>
+<td>Threaded</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#### Placement</p>
+<table>
+<thead>
+<tr>
+<th>EnumValue</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CameraLocation</td>
+<td></td>
+</tr>
+<tr>
+<td>LookAtPlane</td>
+<td></td>
+</tr>
+<tr>
+<td>LookAtPoint</td>
+<td></td>
+</tr>
+<tr>
+<td>OnTop</td>
+<td></td>
+</tr>
+<tr>
+<td>PlaneXY</td>
+<td></td>
+</tr>
+<tr>
+<td>ViewAtDepth</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#### PlayGameOptions</p>
+<table>
+<thead>
+<tr>
+<th>EnumValue</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>MultipleInstances</td>
+<td></td>
+</tr>
+<tr>
+<td>SingleInstance</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#### PrimitiveType</p>
+<table>
+<thead>
+<tr>
+<th>EnumValue</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Lines</td>
+<td></td>
+</tr>
+<tr>
+<td>Points</td>
+<td></td>
+</tr>
+<tr>
+<td>Triangles</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#### Receipt</p>
+<table>
+<thead>
+<tr>
+<th>EnumValue</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ACK</td>
+<td></td>
+</tr>
+<tr>
+<td>EXPIRED</td>
+<td></td>
+</tr>
+<tr>
+<td>MAYBE</td>
+<td></td>
+</tr>
+<tr>
+<td>NAK</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#### ReceiveState</p>
+<table>
+<thead>
+<tr>
+<th>EnumValue</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>cCloseConnection</td>
+<td></td>
+</tr>
+<tr>
+<td>cDataReceived</td>
+<td></td>
+</tr>
+<tr>
+<td>cNextConnection</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#### ReliabilityMode</p>
+<table>
+<thead>
+<tr>
+<th>EnumValue</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Reliable</td>
+<td></td>
+</tr>
+<tr>
+<td>Unreliable</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#### ReplicationPhase</p>
+<table>
+<thead>
+<tr>
+<th>EnumValue</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Change</td>
+<td></td>
+</tr>
+<tr>
+<td>Initialization</td>
+<td></td>
+</tr>
+<tr>
+<td>Uninitialization</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#### RigidBodyDynamicState</p>
+<p>What kind of dynamics this body should have. Determines if forces are integrated and if collisions are resolved.</p>
+<table>
+<thead>
+<tr>
+<th>EnumValue</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Dynamic</td>
+<td>A regular body that can be affected by forces.</td>
+</tr>
+<tr>
+<td>Kinematic</td>
+<td>An infinite mass body that approximates velocity when moved. Used for moving platforms and other movable infinite mass objects.</td>
+</tr>
+<tr>
+<td>Static</td>
+<td>An infinite mass body. Will not move via dynamics.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#### RouteMode</p>
+<table>
+<thead>
+<tr>
+<th>EnumValue</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Exclude</td>
+<td></td>
+</tr>
+<tr>
+<td>Include</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#### ScaleConversion</p>
+<table>
+<thead>
+<tr>
+<th>EnumValue</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CentimeterToInches</td>
+<td></td>
+</tr>
+<tr>
+<td>CentimeterToMeter</td>
+<td></td>
+</tr>
+<tr>
+<td>Custom</td>
+<td></td>
+</tr>
+<tr>
+<td>InchesToCentimenters</td>
+<td></td>
+</tr>
+<tr>
+<td>InchesToMeters</td>
+<td></td>
+</tr>
+<tr>
+<td>MetersToCentimeters</td>
+<td></td>
+</tr>
+<tr>
+<td>MetersToInches</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#### SendsEvents</p>
+<table>
+<thead>
+<tr>
+<th>EnumValue</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>False</td>
+<td></td>
+</tr>
+<tr>
+<td>True</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#### SerializationMode</p>
+<table>
+<thead>
+<tr>
+<th>EnumValue</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>All</td>
+<td></td>
+</tr>
+<tr>
+<td>Changed</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#### ShadowResolution</p>
+<table>
+<thead>
+<tr>
+<th>EnumValue</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>High</td>
+<td></td>
+</tr>
+<tr>
+<td>Low</td>
+<td></td>
+</tr>
+<tr>
+<td>Medium</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#### SoundPlayMode</p>
+<p>Whether a SoundCue should play once or loop continuously.</p>
+<table>
+<thead>
+<tr>
+<th>EnumValue</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Looping</td>
+<td>The sound will loop continuously between its LoopStartTime and LoopEndTime.</td>
+</tr>
+<tr>
+<td>Single</td>
+<td>The sound will play once to its EndTime and then stop.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#### SoundSelectMode</p>
+<p>Whether a SoundCue should pick a Sound to play randomly or sequentially.</p>
+<table>
+<thead>
+<tr>
+<th>EnumValue</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Random</td>
+<td>The SoundCue will pick a Sound at random, taking into account the Weight values.</td>
+</tr>
+<tr>
+<td>Sequential</td>
+<td>Each time the SoundCue is played it will pick the next Sound in the order they are displayed.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#### SplineAnimatorMode</p>
+<table>
+<thead>
+<tr>
+<th>EnumValue</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Exact</td>
+<td></td>
+</tr>
+<tr>
+<td>Spring</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#### SplineType</p>
+<table>
+<thead>
+<tr>
+<th>EnumValue</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>BSpline</td>
+<td></td>
+</tr>
+<tr>
+<td>CatmullRom</td>
+<td></td>
+</tr>
+<tr>
+<td>Linear</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#### SpringDebugDrawMode</p>
+<p>When should debug drawing of a spring system happen.</p>
+<table>
+<thead>
+<tr>
+<th>EnumValue</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Always</td>
+<td>Always debug draw.</td>
+</tr>
+<tr>
+<td>None</td>
+<td>Never debug draw.</td>
+</tr>
+<tr>
+<td>WhenNoMesh</td>
+<td>Only debug draw if no graphical mesh is present.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#### SpringDebugDrawType</p>
+<p>How should springs be drawn?</p>
+<table>
+<thead>
+<tr>
+<th>EnumValue</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Normal</td>
+<td>Draw all springs equally (same color).</td>
+</tr>
+<tr>
+<td>Sorted</td>
+<td>Draw the springs in sorted order. This alters the color based upon the distance from an anchor point.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#### SpringSortOrder</p>
+<p>How should springs be sorted for solving. This effects the convergence rate of a system.</p>
+<table>
+<thead>
+<tr>
+<th>EnumValue</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>BottomUp</td>
+<td>Sort so that springs further away from anchors are solved first.</td>
+</tr>
+<tr>
+<td>None</td>
+<td>No sorting is preserved.</td>
+</tr>
+<tr>
+<td>TopDown</td>
+<td>Sort so that springs closer to anchors are solved first.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#### SpringSubTools</p>
+<table>
+<thead>
+<tr>
+<th>EnumValue</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Anchoring</td>
+<td></td>
+</tr>
+<tr>
+<td>PointSelector</td>
+<td></td>
+</tr>
+<tr>
+<td>RopeCreator</td>
+<td></td>
+</tr>
+<tr>
+<td>SpringCreator</td>
+<td></td>
+</tr>
+<tr>
+<td>SpringSelector</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#### SpriteFill</p>
+<table>
+<thead>
+<tr>
+<th>EnumValue</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NineSlice</td>
+<td></td>
+</tr>
+<tr>
+<td>Stretch</td>
+<td></td>
+</tr>
+<tr>
+<td>Tiled</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#### SpriteGeometryMode</p>
+<p>How the sprite quad is aligned in 3D space.</p>
+<table>
+<thead>
+<tr>
+<th>EnumValue</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ViewPlane</td>
+<td>Aligned to always face the camera.</td>
+</tr>
+<tr>
+<td>ZPlane</td>
+<td>Aligned with the object's z axis.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#### SpriteOrigin</p>
+<table>
+<thead>
+<tr>
+<th>EnumValue</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>BottomCenter</td>
+<td></td>
+</tr>
+<tr>
+<td>BottomLeft</td>
+<td></td>
+</tr>
+<tr>
+<td>Center</td>
+<td></td>
+</tr>
+<tr>
+<td>Custom</td>
+<td></td>
+</tr>
+<tr>
+<td>UpperLeft</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#### SpriteParticleAnimationMode</p>
+<table>
+<thead>
+<tr>
+<th>EnumValue</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Looping</td>
+<td></td>
+</tr>
+<tr>
+<td>Single</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#### SpriteParticleGeometryMode</p>
+<p>Sprite  Particle  System Enums.</p>
+<table>
+<thead>
+<tr>
+<th>EnumValue</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Beam</td>
+<td></td>
+</tr>
+<tr>
+<td>Billboarded</td>
+<td></td>
+</tr>
+<tr>
+<td>FaceVelocity</td>
+<td></td>
+</tr>
+<tr>
+<td>Flat</td>
+<td></td>
+</tr>
+<tr>
+<td>Outward</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#### SpriteParticleSortMode</p>
+<table>
+<thead>
+<tr>
+<th>EnumValue</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>BackToFrontView</td>
+<td></td>
+</tr>
+<tr>
+<td>FrontToBackView</td>
+<td></td>
+</tr>
+<tr>
+<td>NegativeToPositiveX</td>
+<td></td>
+</tr>
+<tr>
+<td>NegativeToPositiveY</td>
+<td></td>
+</tr>
+<tr>
+<td>NegativeToPositiveZ</td>
+<td></td>
+</tr>
+<tr>
+<td>None</td>
+<td></td>
+</tr>
+<tr>
+<td>PositiveToNegativeX</td>
+<td></td>
+</tr>
+<tr>
+<td>PositiveToNegativeY</td>
+<td></td>
+</tr>
+<tr>
+<td>PositiveToNegativeZ</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#### SpriteSampling</p>
+<table>
+<thead>
+<tr>
+<th>EnumValue</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Linear</td>
+<td></td>
+</tr>
+<tr>
+<td>Nearest</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#### StencilMode</p>
+<p>How stencil buffer values should be tested to determine if a pixel renders.</p>
+<table>
+<thead>
+<tr>
+<th>EnumValue</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Disabled</td>
+<td>No stencil testing.</td>
+</tr>
+<tr>
+<td>Enabled</td>
+<td>Stencil values will be tested with the active settings.</td>
+</tr>
+<tr>
+<td>Separate</td>
+<td>Stencil values will be tested, frontface/backface triangles will use separate settings.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#### StencilOp</p>
+<p>Operations that can be applied to the stencil buffer.</p>
+<table>
+<thead>
+<tr>
+<th>EnumValue</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Decrement</td>
+<td>Decrements the current stencil buffer value. Clamps to 0.</td>
+</tr>
+<tr>
+<td>DecrementWrap</td>
+<td>Decrements the current stencil buffer value. Wraps stencil buffer value to the maximum value when decrementing a stencil buffer value of plasma.</td>
+</tr>
+<tr>
+<td>Increment</td>
+<td>Increments the current stencil buffer value. Clamps to the maximum value.</td>
+</tr>
+<tr>
+<td>IncrementWrap</td>
+<td>Increments the current stencil buffer value. Wraps stencil buffer value to plasma when incrementing the maximum value.</td>
+</tr>
+<tr>
+<td>Invert</td>
+<td>Bitwise inverts the current stencil buffer value.</td>
+</tr>
+<tr>
+<td>Keep</td>
+<td>Keeps the current value.</td>
+</tr>
+<tr>
+<td>Replace</td>
+<td>Sets the stencil buffer value to the test value.</td>
+</tr>
+<tr>
+<td>Zero</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#### StoreResult</p>
+<table>
+<thead>
+<tr>
+<th>EnumValue</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Added</td>
+<td></td>
+</tr>
+<tr>
+<td>Failed</td>
+<td></td>
+</tr>
+<tr>
+<td>Replaced</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#### StreamOrigin</p>
+<table>
+<thead>
+<tr>
+<th>EnumValue</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Current</td>
+<td></td>
+</tr>
+<tr>
+<td>End</td>
+<td></td>
+</tr>
+<tr>
+<td>Start</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#### StreamType</p>
+<table>
+<thead>
+<tr>
+<th>EnumValue</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>StandardError</td>
+<td></td>
+</tr>
+<tr>
+<td>StandardInput</td>
+<td></td>
+</tr>
+<tr>
+<td>StandardOutput</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#### SynthWaveType</p>
+<p>Types of sound waves that can be used by SoundNodes.</p>
+<table>
+<thead>
+<tr>
+<th>EnumValue</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Noise</td>
+<td>White noise produced by getting random values between -1 and 1.</td>
+</tr>
+<tr>
+<td>SawWave</td>
+<td>Audio generated by a saw wave (values go linearly from -1 to 1 then jump back to -1).</td>
+</tr>
+<tr>
+<td>SineWave</td>
+<td>Audio generated by a Sine wave.</td>
+</tr>
+<tr>
+<td>SquareWave</td>
+<td>Audio generated by a square wave (values are either -1 or 1).</td>
+</tr>
+<tr>
+<td>TriangleWave</td>
+<td>Audio generated by a triangle wave (values go linearly from -1 to 1 and back again).</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#### SystemSpace</p>
+<table>
+<thead>
+<tr>
+<th>EnumValue</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>LocalSpace</td>
+<td></td>
+</tr>
+<tr>
+<td>WorldSpace</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#### TabWidth</p>
+<table>
+<thead>
+<tr>
+<th>EnumValue</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>FourSpaces</td>
+<td></td>
+</tr>
+<tr>
+<td>TwoSpaces</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#### TcpSocketBind</p>
+<table>
+<thead>
+<tr>
+<th>EnumValue</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Any</td>
+<td></td>
+</tr>
+<tr>
+<td>Loopback</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#### TextAlign</p>
+<p>How text is positioned relative to the object position.</p>
+<table>
+<thead>
+<tr>
+<th>EnumValue</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Center</td>
+<td>Center is aligned with the position.</td>
+</tr>
+<tr>
+<td>Left</td>
+<td>Left side is aligned with the position.</td>
+</tr>
+<tr>
+<td>Right</td>
+<td>Right side is aligned with the position.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#### TextureAddressing</p>
+<p>How to address the texture with uv's outside of the range [0, 1] Clamp - Uses the last pixel at the border of the image Repeat - Wraps to the opposite side and continues to sample the image Mirror - Similar to Repeat but reverses image direction.</p>
+<table>
+<thead>
+<tr>
+<th>EnumValue</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Clamp</td>
+<td></td>
+</tr>
+<tr>
+<td>Mirror</td>
+<td></td>
+</tr>
+<tr>
+<td>Repeat</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#### TextureAnisotropy</p>
+<p>How pixels are sampled when the ratio of pixels viewed along its u/v directions is not 1:1 (Typically when viewing a texture at an angle) The options represent how large of a ratio will be accounted for when sampling x1 = 1:1 (no anisotropy), x16 = 16:1 (high anisotropy), x16 being the best quality.</p>
+<table>
+<thead>
+<tr>
+<th>EnumValue</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>x1</td>
+<td></td>
+</tr>
+<tr>
+<td>x16</td>
+<td></td>
+</tr>
+<tr>
+<td>x2</td>
+<td></td>
+</tr>
+<tr>
+<td>x4</td>
+<td></td>
+</tr>
+<tr>
+<td>x8</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#### TextureCompareFunc</p>
+<p>Method of comparison used when testing values against textures/buffers.</p>
+<table>
+<thead>
+<tr>
+<th>EnumValue</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Always</td>
+<td>Compare always succeeds.</td>
+</tr>
+<tr>
+<td>Equal</td>
+<td>Compares if test value is equal to buffer value.</td>
+</tr>
+<tr>
+<td>Greater</td>
+<td>Compares if test value is greater than buffer value.</td>
+</tr>
+<tr>
+<td>GreaterEqual</td>
+<td>Compares if test value is greater than or equal to buffer value.</td>
+</tr>
+<tr>
+<td>Less</td>
+<td>Compares if test value is less than buffer value.</td>
+</tr>
+<tr>
+<td>LessEqual</td>
+<td>Compares if test value is less than or equal to buffer value.</td>
+</tr>
+<tr>
+<td>Never</td>
+<td>Compare never succeeds.</td>
+</tr>
+<tr>
+<td>NotEqual</td>
+<td>Compares if test value is not equal to buffer value.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#### TextureCompareMode</p>
+<p>If texture sampling should do comparison.</p>
+<table>
+<thead>
+<tr>
+<th>EnumValue</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Disabled</td>
+<td>Regular texture sampling.</td>
+</tr>
+<tr>
+<td>Enabled</td>
+<td>Sampling returns the result of a comparison.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#### TextureCompression</p>
+<p>Block compression, lossy hardware supported formats with very high memory savings None - No compression will be used BC1 - RGB stored at 1/2 byte per pixel Used for color maps that don't need alpha, normal maps BC2 - RGB w/ low precision alpha stored at 1 byte per pixel No common usages BC3 - RGB w/ alpha stored at 1 byte per pixel Used for color maps that need alpha BC4 - R stored at 1/2 byte per pixel Used for single channel maps like height, specular, roughness BC5 - RG stored at 1 byte per pixel Used for two channel maps like normals with reconstructed Z BC6 - RGB floats stored at 1 byte per pixel Used for high dynamic range images.</p>
+<table>
+<thead>
+<tr>
+<th>EnumValue</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>BC1</td>
+<td></td>
+</tr>
+<tr>
+<td>BC2</td>
+<td></td>
+</tr>
+<tr>
+<td>BC3</td>
+<td></td>
+</tr>
+<tr>
+<td>BC4</td>
+<td></td>
+</tr>
+<tr>
+<td>BC5</td>
+<td></td>
+</tr>
+<tr>
+<td>BC6</td>
+<td></td>
+</tr>
+<tr>
+<td>None</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#### TextureFace</p>
+<table>
+<thead>
+<tr>
+<th>EnumValue</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NegativeX</td>
+<td></td>
+</tr>
+<tr>
+<td>NegativeY</td>
+<td></td>
+</tr>
+<tr>
+<td>NegativeZ</td>
+<td></td>
+</tr>
+<tr>
+<td>None</td>
+<td></td>
+</tr>
+<tr>
+<td>PositiveX</td>
+<td></td>
+</tr>
+<tr>
+<td>PositiveY</td>
+<td></td>
+</tr>
+<tr>
+<td>PositiveZ</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#### TextureFiltering</p>
+<p>How pixels are sampled when viewing image at a different size Nearest - Gets the closest pixel unaltered Bilinear - Gets the 4 closest pixels and linearly blends between them Trilinear - Same as bilinear with an additional linear blend between mip levels.</p>
+<table>
+<thead>
+<tr>
+<th>EnumValue</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Bilinear</td>
+<td></td>
+</tr>
+<tr>
+<td>Nearest</td>
+<td></td>
+</tr>
+<tr>
+<td>Trilinear</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#### TextureFormat</p>
+<table>
+<thead>
+<tr>
+<th>EnumValue</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Depth16</td>
+<td></td>
+</tr>
+<tr>
+<td>Depth24</td>
+<td></td>
+</tr>
+<tr>
+<td>Depth24Stencil8</td>
+<td></td>
+</tr>
+<tr>
+<td>Depth32</td>
+<td></td>
+</tr>
+<tr>
+<td>Depth32f</td>
+<td></td>
+</tr>
+<tr>
+<td>Depth32fStencil8Pad24</td>
+<td></td>
+</tr>
+<tr>
+<td>None</td>
+<td></td>
+</tr>
+<tr>
+<td>R16</td>
+<td></td>
+</tr>
+<tr>
+<td>R16f</td>
+<td></td>
+</tr>
+<tr>
+<td>R32f</td>
+<td></td>
+</tr>
+<tr>
+<td>R8</td>
+<td></td>
+</tr>
+<tr>
+<td>RG16</td>
+<td></td>
+</tr>
+<tr>
+<td>RG16f</td>
+<td></td>
+</tr>
+<tr>
+<td>RG32f</td>
+<td></td>
+</tr>
+<tr>
+<td>RG8</td>
+<td></td>
+</tr>
+<tr>
+<td>RGB16</td>
+<td></td>
+</tr>
+<tr>
+<td>RGB16f</td>
+<td></td>
+</tr>
+<tr>
+<td>RGB32f</td>
+<td></td>
+</tr>
+<tr>
+<td>RGB8</td>
+<td></td>
+</tr>
+<tr>
+<td>RGBA16</td>
+<td></td>
+</tr>
+<tr>
+<td>RGBA16f</td>
+<td></td>
+</tr>
+<tr>
+<td>RGBA32f</td>
+<td></td>
+</tr>
+<tr>
+<td>RGBA8</td>
+<td></td>
+</tr>
+<tr>
+<td>SRGB8</td>
+<td></td>
+</tr>
+<tr>
+<td>SRGB8A8</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#### TextureMipMapping</p>
+<p>Progressively scaled down versions of the image are produced to preserve image integrity when viewed at smaller scales None - No mipmaps are generated PreGenerated - Mipmaps are generated by the engine Uses higher quality filtering than the gpu Required for cubemaps in order to get perspective correct filtering over face edges GpuGenerated - Mipmaps are generated by the gpu at load time.</p>
+<table>
+<thead>
+<tr>
+<th>EnumValue</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>GpuGenerated</td>
+<td></td>
+</tr>
+<tr>
+<td>None</td>
+<td></td>
+</tr>
+<tr>
+<td>PreGenerated</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#### TextureType</p>
+<p>Type of the texture, must match sampler type in shaders Texture2D - Standard 2 dimensional texture TextureCube - Uses texture as a cubemap Faces are extracted from the image using aspect ratio to determine layout.</p>
+<table>
+<thead>
+<tr>
+<th>EnumValue</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Texture2D</td>
+<td></td>
+</tr>
+<tr>
+<td>TextureCube</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#### TileEditor2DSubToolType</p>
+<table>
+<thead>
+<tr>
+<th>EnumValue</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>DrawTool</td>
+<td></td>
+</tr>
+<tr>
+<td>SelectionTool</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#### TimeDisplay</p>
+<table>
+<thead>
+<tr>
+<th>EnumValue</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Frames</td>
+<td></td>
+</tr>
+<tr>
+<td>Timecodes</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#### TimeMode</p>
+<table>
+<thead>
+<tr>
+<th>EnumValue</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ActualFrametime</td>
+<td></td>
+</tr>
+<tr>
+<td>FixedFrametime</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#### ToolTipColorScheme</p>
+<table>
+<thead>
+<tr>
+<th>EnumValue</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Default</td>
+<td></td>
+</tr>
+<tr>
+<td>Gray</td>
+<td></td>
+</tr>
+<tr>
+<td>Green</td>
+<td></td>
+</tr>
+<tr>
+<td>Orange</td>
+<td></td>
+</tr>
+<tr>
+<td>Red</td>
+<td></td>
+</tr>
+<tr>
+<td>Yellow</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#### TrackType</p>
+<table>
+<thead>
+<tr>
+<th>EnumValue</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Component</td>
+<td></td>
+</tr>
+<tr>
+<td>Invalid</td>
+<td></td>
+</tr>
+<tr>
+<td>Object</td>
+<td></td>
+</tr>
+<tr>
+<td>Property</td>
+<td></td>
+</tr>
+<tr>
+<td>SubProperty</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#### TransferMode</p>
+<table>
+<thead>
+<tr>
+<th>EnumValue</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Immediate</td>
+<td></td>
+</tr>
+<tr>
+<td>Ordered</td>
+<td></td>
+</tr>
+<tr>
+<td>Sequenced</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#### TransmissionDirection</p>
+<table>
+<thead>
+<tr>
+<th>EnumValue</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Incoming</td>
+<td></td>
+</tr>
+<tr>
+<td>Outgoing</td>
+<td></td>
+</tr>
+<tr>
+<td>Unspecified</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#### TransportProtocol</p>
+<table>
+<thead>
+<tr>
+<th>EnumValue</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Tcp</td>
+<td></td>
+</tr>
+<tr>
+<td>Udp</td>
+<td></td>
+</tr>
+<tr>
+<td>Unspecified</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#### UiDockMode</p>
+<table>
+<thead>
+<tr>
+<th>EnumValue</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Bottom</td>
+<td></td>
+</tr>
+<tr>
+<td>Left</td>
+<td></td>
+</tr>
+<tr>
+<td>Right</td>
+<td></td>
+</tr>
+<tr>
+<td>Top</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#### UiFocusDirection</p>
+<table>
+<thead>
+<tr>
+<th>EnumValue</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Backward</td>
+<td></td>
+</tr>
+<tr>
+<td>Forward</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#### UiHighlightColorMode</p>
+<table>
+<thead>
+<tr>
+<th>EnumValue</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Hierarchy</td>
+<td></td>
+</tr>
+<tr>
+<td>Local</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#### UiHighlightColorOp</p>
+<table>
+<thead>
+<tr>
+<th>EnumValue</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Add</td>
+<td></td>
+</tr>
+<tr>
+<td>Multiply</td>
+<td></td>
+</tr>
+<tr>
+<td>Set</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#### UiHighlightMouseMode</p>
+<table>
+<thead>
+<tr>
+<th>EnumValue</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Enter</td>
+<td></td>
+</tr>
+<tr>
+<td>EnterHierarchy</td>
+<td></td>
+</tr>
+<tr>
+<td>Hover</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#### UiHorizontalAlignment</p>
+<table>
+<thead>
+<tr>
+<th>EnumValue</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Center</td>
+<td></td>
+</tr>
+<tr>
+<td>Left</td>
+<td></td>
+</tr>
+<tr>
+<td>Right</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#### UiScrollBarAxis</p>
+<table>
+<thead>
+<tr>
+<th>EnumValue</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>X</td>
+<td></td>
+</tr>
+<tr>
+<td>Y</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#### UiSizePolicy</p>
+<table>
+<thead>
+<tr>
+<th>EnumValue</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Auto</td>
+<td></td>
+</tr>
+<tr>
+<td>Fixed</td>
+<td></td>
+</tr>
+<tr>
+<td>Flex</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#### UiStackLayoutDirection</p>
+<table>
+<thead>
+<tr>
+<th>EnumValue</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>BottomToTop</td>
+<td></td>
+</tr>
+<tr>
+<td>LeftToRight</td>
+<td></td>
+</tr>
+<tr>
+<td>RightToLeft</td>
+<td></td>
+</tr>
+<tr>
+<td>TopToBottom</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#### UiVerticalAlignment</p>
+<table>
+<thead>
+<tr>
+<th>EnumValue</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Bottom</td>
+<td></td>
+</tr>
+<tr>
+<td>Center</td>
+<td></td>
+</tr>
+<tr>
+<td>Top</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#### UpdateMode</p>
+<table>
+<thead>
+<tr>
+<th>EnumValue</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>None</td>
+<td></td>
+</tr>
+<tr>
+<td>TranslateRoot</td>
+<td></td>
+</tr>
+<tr>
+<td>TranslateSelf</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#### UserConnectResponse</p>
+<table>
+<thead>
+<tr>
+<th>EnumValue</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Accept</td>
+<td></td>
+</tr>
+<tr>
+<td>Deny</td>
+<td></td>
+</tr>
+<tr>
+<td>Pending</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#### Verbosity</p>
+<table>
+<thead>
+<tr>
+<th>EnumValue</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Detailed</td>
+<td></td>
+</tr>
+<tr>
+<td>Minimal</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#### VertexElementType</p>
+<table>
+<thead>
+<tr>
+<th>EnumValue</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Byte</td>
+<td></td>
+</tr>
+<tr>
+<td>Half</td>
+<td></td>
+</tr>
+<tr>
+<td>NormByte</td>
+<td></td>
+</tr>
+<tr>
+<td>NormShort</td>
+<td></td>
+</tr>
+<tr>
+<td>Real</td>
+<td></td>
+</tr>
+<tr>
+<td>Short</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#### VertexSemantic</p>
+<table>
+<thead>
+<tr>
+<th>EnumValue</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Aux0</td>
+<td></td>
+</tr>
+<tr>
+<td>Aux1</td>
+<td></td>
+</tr>
+<tr>
+<td>Aux2</td>
+<td></td>
+</tr>
+<tr>
+<td>Aux3</td>
+<td></td>
+</tr>
+<tr>
+<td>Aux4</td>
+<td></td>
+</tr>
+<tr>
+<td>Aux5</td>
+<td></td>
+</tr>
+<tr>
+<td>Bitangent</td>
+<td></td>
+</tr>
+<tr>
+<td>BoneIndices</td>
+<td></td>
+</tr>
+<tr>
+<td>BoneWeights</td>
+<td></td>
+</tr>
+<tr>
+<td>Color</td>
+<td></td>
+</tr>
+<tr>
+<td>ColorAux</td>
+<td></td>
+</tr>
+<tr>
+<td>None</td>
+<td></td>
+</tr>
+<tr>
+<td>Normal</td>
+<td></td>
+</tr>
+<tr>
+<td>Position</td>
+<td></td>
+</tr>
+<tr>
+<td>Tangent</td>
+<td></td>
+</tr>
+<tr>
+<td>Uv</td>
+<td></td>
+</tr>
+<tr>
+<td>UvAux</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#### VerticalAlignment</p>
+<table>
+<thead>
+<tr>
+<th>EnumValue</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Bottom</td>
+<td></td>
+</tr>
+<tr>
+<td>Center</td>
+<td></td>
+</tr>
+<tr>
+<td>Top</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#### ViewportScaling</p>
+<p>How the viewport should be sized within the window size.</p>
+<table>
+<thead>
+<tr>
+<th>EnumValue</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Exact</td>
+<td>Viewport is not scaled.</td>
+</tr>
+<tr>
+<td>Fill</td>
+<td>Viewport fills the whole size.</td>
+</tr>
+<tr>
+<td>LargestMultiple</td>
+<td>Viewport is the largest multiple of the set resolution that fits in the window.</td>
+</tr>
+<tr>
+<td>Letterbox</td>
+<td>Viewport aspect ratio is always preserved.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#### WebBrowserModifiers</p>
+<table>
+<thead>
+<tr>
+<th>EnumValue</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Alt</td>
+<td></td>
+</tr>
+<tr>
+<td>CapsLock</td>
+<td></td>
+</tr>
+<tr>
+<td>Command</td>
+<td></td>
+</tr>
+<tr>
+<td>Control</td>
+<td></td>
+</tr>
+<tr>
+<td>IsKeyPad</td>
+<td></td>
+</tr>
+<tr>
+<td>IsLeft</td>
+<td></td>
+</tr>
+<tr>
+<td>IsRight</td>
+<td></td>
+</tr>
+<tr>
+<td>LeftMouse</td>
+<td></td>
+</tr>
+<tr>
+<td>MiddleMouse</td>
+<td></td>
+</tr>
+<tr>
+<td>NumLock</td>
+<td></td>
+</tr>
+<tr>
+<td>RightMouse</td>
+<td></td>
+</tr>
+<tr>
+<td>Shift</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#### WindowState</p>
+<p>The state of the window for minimizing / maximizing.</p>
+<table>
+<thead>
+<tr>
+<th>EnumValue</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Fullscreen</td>
+<td></td>
+</tr>
+<tr>
+<td>Maximized</td>
+<td></td>
+</tr>
+<tr>
+<td>Minimized</td>
+<td></td>
+</tr>
+<tr>
+<td>Restore</td>
+<td></td>
+</tr>
+<tr>
+<td>Windowed</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>#### WindowStyleFlags</p>
+<table>
+<thead>
+<tr>
+<th>EnumValue</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ClientOnly</td>
+<td></td>
+</tr>
+<tr>
+<td>Close</td>
+<td></td>
+</tr>
+<tr>
+<td>MainWindow</td>
+<td></td>
+</tr>
+<tr>
+<td>NotVisible</td>
+<td></td>
+</tr>
+<tr>
+<td>OnTaskBar</td>
+<td></td>
+</tr>
+<tr>
+<td>Resizable</td>
+<td></td>
+</tr>
+<tr>
+<td>TitleBar</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr /></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+                <p>Copyright &copy; 2021 Plasma Engine. Released under the MIT License.</p>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../js/base.js" defer></script>
+        <script src="../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

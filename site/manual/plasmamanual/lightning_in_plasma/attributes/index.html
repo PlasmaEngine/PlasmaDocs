@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../../../img/favicon.ico">
+        <title>Attributes - Docs | Plasma Engine</title>
+        <link href="../../../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/docco.min.css">
+
+        <script src="../../../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../../../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../../../..">Docs | Plasma Engine</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href="../../../.." class="nav-link">Home</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="/getting_started/" class="nav-link">Getting Started</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Manual <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../" class="dropdown-item">Manual</a>
+</li>
+                                    
+<li>
+    <a href="../../ai/" class="dropdown-item">AI</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Architecture</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../architecture/architecture/" class="dropdown-item">Architecture</a>
+</li>
+            
+<li>
+    <a href="../../architecture/archetypes/archtype_basics.markdown" class="dropdown-item">Archtypes</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Cogs</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../architecture/cogs/cogs/" class="dropdown-item">Cogs</a>
+</li>
+            
+<li>
+    <a href="../../architecture/cogs/gameobjectsconcept/" class="dropdown-item">Game Objects</a>
+</li>
+            
+<li>
+    <a href="../../architecture/cogs/objectstore/" class="dropdown-item">Object Store</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Objects</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../architecture/objects/objects/" class="dropdown-item">Objects</a>
+</li>
+            
+<li>
+    <a href="../../architecture/objects/gamesession/" class="dropdown-item">Gamesession</a>
+</li>
+            
+<li>
+    <a href="../../architecture/objects/spaces/" class="dropdown-item">Spaces</a>
+</li>
+            
+<li>
+    <a href="../../architecture/objects/levelsettings/" class="dropdown-item">Levelsettings</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Resources</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../architecture/resources/resource.markdown" class="dropdown-item">Resources</a>
+</li>
+            
+<li>
+    <a href="../../architecture/resources/level/" class="dropdown-item">Levels</a>
+</li>
+            
+<li>
+    <a href="../../architecture/fonts/fonts.markdown" class="dropdown-item">Fonts</a>
+</li>
+            
+<li>
+    <a href="../../architecture/resources/resourcestable.markdown" class="dropdown-item">Resource Table</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                                    
+<li>
+    <a href="../../audio/" class="dropdown-item">Audio</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Editor</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../editor/" class="dropdown-item">Editor</a>
+</li>
+            
+<li>
+    <a href="../../editor/tags/" class="dropdown-item">Tags</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Reference <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../../reference/" class="dropdown-item">Index</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Contributing <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../../source_docs/getting_started.md" class="dropdown-item">Getting Started</a>
+</li>
+                                    
+<li>
+    <a href="../../../../source_docs/plasma_code/" class="dropdown-item">Plasma Code</a>
+</li>
+                                    
+<li>
+    <a href="../../../../source_docs/plasma_overview/" class="dropdown-item">Plasma Overview</a>
+</li>
+                                    
+<li>
+    <a href="../../../../source_docs/components.md" class="dropdown-item">Components</a>
+</li>
+                                    
+<li>
+    <a href="../../../../source_docs/custom_event_names/" class="dropdown-item">Custom Event Names</a>
+</li>
+                                    
+<li>
+    <a href="../../../../source_docs/editor/" class="dropdown-item">Editor</a>
+</li>
+                                    
+<li>
+    <a href="../../../../source_docs/engine/" class="dropdown-item">Engine</a>
+</li>
+                                    
+<li>
+    <a href="../../../../source_docs/enums/" class="dropdown-item">Enums</a>
+</li>
+                                    
+<li>
+    <a href="../../../../source_docs/meta_bindings.markdown" class="dropdown-item">Meta Binding</a>
+</li>
+                                    
+<li>
+    <a href="../../../../source_docs/platform/" class="dropdown-item">Adding Platforms</a>
+</li>
+                                    
+<li>
+    <a href="../../../../source_docs/widgets/" class="dropdown-item">Widgets</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a href="https://github.com/PlasmaEngine/PlasmaDocs/edit/master/docs/manual/plasmamanual/lightning_in_plasma/attributes.markdown" class="nav-link"><i class="fa fa-github"></i> Edit on GitHub</a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#attributes" class="nav-link">Attributes</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="attributes">Attributes</h1>
+<p>Attributes are part of the Lightning grammar allowing additional information to be associated with other Lightning constructs, i.e. they may be applied to classes, fields, get-sets, and functions. While some attributes are inherent to the Lightning programming language, the program embedding Lightning may create and assign their own meaning to new attributes as appropriate for their scripting needs. This means that some attributes exist in Lightning, the standalone language, while others are available in Lightning due to the extensions made by the Plasma Engine in which it is embedded. </p>
+<p># Using Attributes</p>
+<p>In Lightning, attributes can be assigned by annotating the affected construct with a capitalized name of the recognized attribute in square brackets above the definition:</p>
+<p>```lang=csharp, name=Assigning an Attribute to a Function
+[Virtual] // Here we've added the attribute "Virtual" to the function Speak
+function Speak() : String
+{
+  return "...";
+}</p>
+<pre><code>
+ # Existing Attributes
+
+The following are usable in the Plasma Engine:
+
+| Attribute                               | From  | High Concept                                                |
+|-----------------------------------------|-------|-------------------------------------------------------------|
+| `[Static]`                              | Lightning | Makes construct static                                      |
+| `[Virtual]`                             | Lightning | Marks a construct as a polymorphic base                     |
+| `[Override]`                            | Lightning | Marks a construct as overriding a base construct            |
+| `[Extension(typeid(OtherType))]`        | Lightning | Appends construct to preexisting `OtherType`                |
+| `[Display]`                            | Plasma  | Allows construct to appear in Property Grid                 |
+| `[Serialize]`                          | Plasma  | Allows construct value to be saved by Plasma                  |
+| `[Property]`                            | Plasma  | Combines `[Display]` and `[Serialize]`                    |
+| `[Dependency]`                          | Plasma  | Enables Plasma to enforce explicit dependencies               |
+| `[RunInEditor]`                         | Plasma  | Allows code to run in the editor                            |
+| `[Tool]`                                | Plasma  | Can run in editor and accessible in Tools Window            |
+| `[Command]`                             | Plasma  | Can run in editor and accessible in Search Window           |
+| `[ComponentInterface]`                  | Plasma  | Defines a class as a generic interface for derived classes  |
+
+ ## [Static]
+
+Static can be used on function, fields, and get-sets. These allow you to access fields, get-sets, and functions without first creating an instance of the class in your code. 
+
+```lang=csharp, name=Defining a Static Variable and Function
+  class Mathematics
+  {
+      [Static]
+      var PI: Real{ get{return 3.14159292;}}
+      [Static]
+      function Circumference(radius : Real) : Real
+      {
+          return Mathematics.PI * radius * radius;
+      }
+  }
+</code></pre>
+<p>Given the class above you can use its functionality by calling into the class's namespace:</p>
+<p><code>``lang=csharp, name=Using Static Variable and Function
+  var myNewFavoriteNumber = Mathematics.PI + Mathematics.Circumference(2.0);
+  Console.WriteLine(My new favorite number is:</code>myNewFavoriteNumber`");</p>
+<pre><code>will result in 
+
+```name=ConsoleWindow
+My new favorite number is: 15.708
+</code></pre>
+<p>NOTE: While these attributes enable polymorphism, they are still in their infancy. Virtual is to be used with the base class field/get-set/function, while Override is for all the derived classes seeking to write over the base class's field/get-set/function. That said, mixing up <code>[Virtual]</code> and <code>[Override]</code> , or forgetting the use of the <code>[Override]</code> may still provide desired results. To promote forward compatibility, we highly encourage the correct, indicated usage.</p>
+<p>## [Virtual]</p>
+<p>Virtual is used to give Base classes the ability to determine some functions as being able to be overridden by its derived classes.</p>
+<p>```lang=csharp, name=Applying Virtual to a Function
+class Animal
+{
+  [Virtual]
+  function Speak() : String
+  {
+    return "...";
+  }
+}</p>
+<pre><code>
+ ## [Override]
+Override is used by a derived class to mark the intentional overriding of a base class's virtual function.
+
+```lang=csharp, name=Applying Override to a Function
+class Dog : Animal
+{
+  [Override]
+  function Speak() : String
+  {
+    return &quot;Woof&quot;;
+  }
+}
+</code></pre>
+<p>## [Extension(typeid(OtherType))]</p>
+<p>This allow you to add functionality to a preexisting class from inside another. Currently, you can only extend a class by adding get-sets and functions (i.e. you cannot add fields). If a function is being added to an existing class (<code>Math</code>, for example), the [Static] attribute should also be used:</p>
+<p>```lang=csharp, name=Applying Extension Attribute to a Function
+class MyClass : LightningComponent
+{
+  [Extension(typeid(Math))][Static]
+  function Circumference(radius : Real) : Real
+  {
+    return Mathematics.PI * radius * radius;
+  }
+}</p>
+<pre><code>
+Plasma works with Lightning to offer these additional attributes:
+
+ ## [Display]
+
+Allows you to set a field or get-set via the Property Grid in the editor. Because this doesn't save the settings, it is usually used in conjunction with either `[RunInEditor]` or `[Serialize]` . For example, changing
+
+```lang=csharp, name=Variable without Display Attribute
+class MyClass : LightningComponent
+{
+  var MyVariable : Real;
+}
+</code></pre>
+<p>to</p>
+<p>```lang=csharp, name=Variable with Display Attribute
+[Editiable]
+var MyVariable : Real;</p>
+<pre><code>
+results in the the variable appearing in the Property Grid in Properties window
+
+
+ ## [Serialize]
+
+Allows a value to be saved by the Engine. This allows a field and get-sets to be saved with ObjectStore. When used with `[Display]` it allows the values to be saved from the Property Grid so that they may be loaded in an instance of the game. 
+
+ ## [Property]
+
+Property wraps the `[Display]` and `[Serialize]` attributes together into one. As implied by the use of `[Display]` and `[Serialize]`, it works on fields and get-sets. Properties of certain types will result in unique set fields in the Property Grid. For example,
+
+```lang=csharp, name=Variables with Property Attribute
+class MyClass
+{
+  [Property]
+  var MyColor : Real4;
+
+  [Property]
+  var  MyMaterial : Material;
+}
+</code></pre>
+<p>## [Dependency]</p>
+<p>Allows the programmer to make a dependency between components explicit. This allows users to determine the interrelatedness without having intimate knowledge of a component's inner workings. The Plasma Engine supports this by requiring dependencies to be added prior to attaching the component, preventing the removal of dependencies while the component is still attached, and safeguarding the order of initialization of components such that the dependencies will always be initialized first. </p>
+<p>The below sample demonstrates the declaration of a dependence upon another component:</p>
+<p>```lang=csharp, name=Applying the Dependence Attribute on Another Component
+  class SimpleOffset : LightningComponent
+  {
+      // Declaring that SimpleOffset depends upon Transform component.
+      [Dependency]
+      var Transform : Transform = null; 
+      function Initialize(init : CogInitializer)
+      {
+          // This declaration also physically adds that variable to our fields: 
+          // Since this.Transform contains the component we have a dependency 
+          // on, we can access it without going through the Owner. 
+          this.Transform.Translation += Real3(0,5,0);
+      }
+  }</p>
+<pre><code>
+The `[Dependency]` attribute may also be used on get-sets.
+
+NOTE: **Did you know?** When working in the editor, the space the objects operate in is paused. This means that the `LogicUpdate` event will never fire, and that Actions on objects never get updated! In order to receive continuous events, the object should connect to `UpdateFrame` instead.
+
+
+ ## [RunInEditor]
+
+When placed on a class derived from LightningComponent, it changes proxy objects into live objects upon being attached in the editor. This means that the object will run its code in the editor. When *any* scripting file is saved in the editor, all live objects (i.e. those with the RunInEditor component attached) will, by default, have their object destroyed, recreated, and its data reinitialized. 
+
+IMPORTANT: Any code you choose to run via `[RunInEditor]` can result in editor instability. For instance, if you choose to loop through and destroy all the objects and save your game you may lose your ability to recover the lost objects, and have to recreate them by hand. Undo and Redo operations for RunInEditor components must be handled by the programmer!  
+
+ ## [Tool]
+
+Allows for a tool to be hooked into the Tools Window such that it shows up in the drop down menu, and can be used in the editor. When creating a new custom tool, a good starting point is generating the LightningScript with the Tool template chosen in the Add Window.
+
+ ## [Command]
+
+Allows for a class to be hooked into the command system such that it shows up, and can be ran, from Plasma's Search Window. The following Paste provides a template for a custom Command that creates an object based on an archetype, allowing the user to make their own &quot;Create&quot; commands similar to `CreateCube` and `CreateSphere`:
+
+</code></pre>
+<p>[Command(autoRegister:true)]
+class CreateArchetype : LightningComponent
+{
+  // The archetype from which to create an object
+  var ArchetypeToCreate : Archetype = Archetype.MyObject;</p>
+<p>// The position at which to create the object
+  var Position : Real3 = Real3(0, 1, 0);</p>
+<p>function Initialize(init : CogInitializer)
+  {
+    Plasma.Connect(this.Owner, Events.CommandExecute, this.OnCommandExecute);
+  }</p>
+<p>function OnCommandExecute(event : CommandEvent)
+  {
+    var selection = Plasma.Editor.Selection;
+    selection.SelectOnly(this);
+    selection.FinalSelectionChanged();</p>
+<pre><code>this.CreateObject();
+</code></pre>
+<p>}</p>
+<p>function CreateObject()
+  {
+    // Create the object in Editor space
+    var editorSpace = Plasma.Editor.EditSpace;
+    editorSpace.CreateAtPosition(this.ArchetypeToCreate, this.Position);
+  }
+}</p>
+<pre><code>
+
+ ## [ComponentInterface]
+The ComponentInterface attribute allows the user to define a class as a generic interface for its derived types. One common example of this is [collider](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/collider.markdown), which acts as a component interface for all collider types, such as [boxcollider](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/boxcollider.markdown), [capsulecollider](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/capsulecollider.markdown), and more. Defining an interface using this attribute allows the user to access the members of a derived class using the component name of the base class.
+
+```name=Component Interface Access Example, lang=csharp
+var collisionGroup = this.Owner.BoxCollider.CollisionGroup;
+var collisionGroupAccessedByInterface = this.Owner.Collider.CollisionGroup;
+
+if(collisionGroup == collisionGroupAccessedByInterface)
+  Console.WriteLine(&quot;These variables reference the same component&quot;);
+</code></pre>
+<p>Using a component interface does not mean that the property and methods of a derived class need to be exactly the same as the base class. What would be the point? Using the <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/sandbox/arend_danielek/attributes.markdown#virtual"> Virtual</a> and <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/sandbox/arend_danielek/attributes.markdown#override"> Override </a> attributes, we can modify the interface of derived classes.</p>
+<p>```name=Component Interface Example, lang=csharp
+[ComponentInterface]
+class AnimationDebugNode : LightningComponent
+{
+  [Virtual]
+  var Node : AnimationNode;</p>
+<p>function Initialize(init : CogInitializer)
+  {</p>
+<p>}
+}</p>
+<p>class SelectiveDebugNode : AnimationDebugNode
+{
+  [Override]
+  var Node : SelectiveNode;
+}</p>
+<p>class DirectBlendDebugNode : AnimationDebugNode
+{
+  [Override]
+  var Node : DirectBlend;
+}</p>
+<p>class CrossBlendDebugNode : AnimationDebugNode
+{
+  [Override]
+  var Node : CrossBlend;
+}</p>
+<pre><code>
+ # Parameters in Attributes
+
+Attributes can also take parameters; below is the template generated for creating a new Command by Plasma:
+
+```lang=csharp
+[Command(autoRegister:true)] // This template file sets a parameter, autoRegister, to true.
+class MyNewCommand : LightningComponent
+{
+  function Initialize(init : CogInitializer)
+  {
+      Plasma.Connect(this.Owner, Events.CommandExecute, this.OnCommandExecute);
+  }
+
+  function OnCommandExecute(event : CommandEvent)
+  {
+    Console.WriteLine(&quot;MyNewCommand Command Executed&quot;);
+  }
+}
+</code></pre>
+<p>At this time, only Extension, Tool, and Command attributes take parameters. </p>
+<ul>
+<li>
+<p>Extension requires the type you are using to extend the attribute, as a parameter. </p>
+</li>
+<li>
+<p>Tool and Command have the optional parameter to automatically register the component with the engine. </p>
+</li>
+</ul>
+<p>To manually register, you would add these components to an archetype and then add the Tool or Command editor tag via the Library Window, respectively. Registering manually gives you access to the archetype, making it possible to leverage component-based design in the construction of new Tools and Commands.</p>
+<p># Related Materials
+ ## Manual
+- <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/lightning_in_plasma/inheritance.markdown">inheritance</a>
+- <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/lightning_in_plasma/variables_and_data_types.markdown">variables_and_data_types</a>
+- <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/scripting/wysiwyg.markdown">wysiwyg</a> </p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+                <p>Copyright &copy; 2021 Plasma Engine. Released under the MIT License.</p>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../../../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../../../js/base.js" defer></script>
+        <script src="../../../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

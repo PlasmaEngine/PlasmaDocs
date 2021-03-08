@@ -1,0 +1,1304 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../../img/favicon.ico">
+        <title>Uiwidget - Docs | Plasma Engine</title>
+        <link href="../../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/docco.min.css">
+
+        <script src="../../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../../..">Docs | Plasma Engine</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href="../../.." class="nav-link">Home</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="/getting_started/" class="nav-link">Getting Started</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Manual <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../manual/" class="dropdown-item">Manual</a>
+</li>
+                                    
+<li>
+    <a href="../../../manual/plasmamanual/ai/" class="dropdown-item">AI</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Architecture</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../manual/plasmamanual/architecture/architecture/" class="dropdown-item">Architecture</a>
+</li>
+            
+<li>
+    <a href="../../../manual/plasmamanual/architecture/archetypes/archtype_basics.markdown" class="dropdown-item">Archtypes</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Cogs</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../manual/plasmamanual/architecture/cogs/cogs/" class="dropdown-item">Cogs</a>
+</li>
+            
+<li>
+    <a href="../../../manual/plasmamanual/architecture/cogs/gameobjectsconcept/" class="dropdown-item">Game Objects</a>
+</li>
+            
+<li>
+    <a href="../../../manual/plasmamanual/architecture/cogs/objectstore/" class="dropdown-item">Object Store</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Objects</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../manual/plasmamanual/architecture/objects/objects/" class="dropdown-item">Objects</a>
+</li>
+            
+<li>
+    <a href="../../../manual/plasmamanual/architecture/objects/gamesession/" class="dropdown-item">Gamesession</a>
+</li>
+            
+<li>
+    <a href="../../../manual/plasmamanual/architecture/objects/spaces/" class="dropdown-item">Spaces</a>
+</li>
+            
+<li>
+    <a href="../../../manual/plasmamanual/architecture/objects/levelsettings/" class="dropdown-item">Levelsettings</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Resources</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../manual/plasmamanual/architecture/resources/resource.markdown" class="dropdown-item">Resources</a>
+</li>
+            
+<li>
+    <a href="../../../manual/plasmamanual/architecture/resources/level/" class="dropdown-item">Levels</a>
+</li>
+            
+<li>
+    <a href="../../../manual/plasmamanual/architecture/fonts/fonts.markdown" class="dropdown-item">Fonts</a>
+</li>
+            
+<li>
+    <a href="../../../manual/plasmamanual/architecture/resources/resourcestable.markdown" class="dropdown-item">Resource Table</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                                    
+<li>
+    <a href="../../../manual/plasmamanual/audio/" class="dropdown-item">Audio</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Editor</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../manual/plasmamanual/editor/" class="dropdown-item">Editor</a>
+</li>
+            
+<li>
+    <a href="../../../manual/plasmamanual/editor/tags/" class="dropdown-item">Tags</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Reference <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../" class="dropdown-item">Index</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Contributing <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../source_docs/getting_started.md" class="dropdown-item">Getting Started</a>
+</li>
+                                    
+<li>
+    <a href="../../../source_docs/plasma_code/" class="dropdown-item">Plasma Code</a>
+</li>
+                                    
+<li>
+    <a href="../../../source_docs/plasma_overview/" class="dropdown-item">Plasma Overview</a>
+</li>
+                                    
+<li>
+    <a href="../../../source_docs/components.md" class="dropdown-item">Components</a>
+</li>
+                                    
+<li>
+    <a href="../../../source_docs/custom_event_names/" class="dropdown-item">Custom Event Names</a>
+</li>
+                                    
+<li>
+    <a href="../../../source_docs/editor/" class="dropdown-item">Editor</a>
+</li>
+                                    
+<li>
+    <a href="../../../source_docs/engine/" class="dropdown-item">Engine</a>
+</li>
+                                    
+<li>
+    <a href="../../../source_docs/enums/" class="dropdown-item">Enums</a>
+</li>
+                                    
+<li>
+    <a href="../../../source_docs/meta_bindings.markdown" class="dropdown-item">Meta Binding</a>
+</li>
+                                    
+<li>
+    <a href="../../../source_docs/platform/" class="dropdown-item">Adding Platforms</a>
+</li>
+                                    
+<li>
+    <a href="../../../source_docs/widgets/" class="dropdown-item">Widgets</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a href="https://github.com/PlasmaEngine/PlasmaDocs/edit/master/docs/reference/class_reference/uiwidget.markdown" class="nav-link"><i class="fa fa-github"></i> Edit on GitHub</a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<p><code>Component</code> <code>UiWidget</code></p>
+<table>
+<thead>
+<tr>
+<th>Methods</th>
+<th>Properties</th>
+<th>Base Classes</th>
+<th>Derived Classes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/uiwidget.markdown#castpoint-plasma-engine-do"> CastPoint</a></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/uiwidget.markdown#absoluteminsize-plasma-eng"> AbsoluteMinSize</a></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/uiwidgetcomponenthierarchy.markdown">uiwidgetcomponenthierarchy</a></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/uirootwidget.markdown">uirootwidget</a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/uiwidget.markdown#castrect-plasma-engine-doc"> CastRect</a></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/uiwidget.markdown#active-plasma-engine-docum"> Active</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/uiwidget.markdown#losefocus-void"> LoseFocus</a></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/uiwidget.markdown#cantakefocus-plasma-engine"> CanTakeFocus</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/uiwidget.markdown#markasneedsupdate-void"> MarkAsNeedsUpdate</a></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/uiwidget.markdown#clipchildren-plasma-engine"> ClipChildren</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/uiwidget.markdown#setlocallocation-void"> SetLocalLocation</a></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/uiwidget.markdown#dockmode-plasma-engine-doc"> DockMode</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/uiwidget.markdown#setworldlocation-void"> SetWorldLocation</a></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/uiwidget.markdown#flexsize-plasma-engine-doc"> FlexSize</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/uiwidget.markdown#sizetocontents-void"> SizeToContents</a></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/uiwidget.markdown#hasfocus-plasma-engine-doc"> HasFocus</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/uiwidget.markdown#tabjump-plasma-engine-docu"> TabJump</a></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/uiwidget.markdown#hierarchycolor-plasma-engi"> HierarchyColor</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/uiwidget.markdown#tabjumpdirection-void"> TabJumpDirection</a></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/uiwidget.markdown#hierarchyhasfocus-plasma-e"> HierarchyHasFocus</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/uiwidget.markdown#takefocus-void"> TakeFocus</a></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/uiwidget.markdown#horizontalalignment-plasma"> HorizontalAlignment</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/uiwidget.markdown#transformpoint-plasma-engi"> TransformPoint</a></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/uiwidget.markdown#inlayout-plasma-engine-doc"> InLayout</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/uiwidget.markdown#transformpointinverse-ze"> TransformPointInverse</a></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/uiwidget.markdown#interactive-plasma-engine"> Interactive</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/uiwidget.markdown#uiwidget-void"> Constructor</a></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/uiwidget.markdown#localbottom-plasma-engine"> LocalBottom</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/uiwidget.markdown#update-void"> Update</a></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/uiwidget.markdown#localbottomcenter-plasma-e"> LocalBottomCenter</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/uiwidget.markdown#localbottomleft-plasma-eng"> LocalBottomLeft</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/uiwidget.markdown#localbottomright-plasma-en"> LocalBottomRight</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/uiwidget.markdown#localcenter-plasma-engine"> LocalCenter</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/uiwidget.markdown#localcenterleft-plasma-eng"> LocalCenterLeft</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/uiwidget.markdown#localcenterright-plasma-en"> LocalCenterRight</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/uiwidget.markdown#localcolor-plasma-engine-d"> LocalColor</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/uiwidget.markdown#localleft-plasma-engine-do"> LocalLeft</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/uiwidget.markdown#localrectangle-plasma-engi"> LocalRectangle</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/uiwidget.markdown#localright-plasma-engine-d"> LocalRight</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/uiwidget.markdown#localtop-plasma-engine-doc"> LocalTop</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/uiwidget.markdown#localtopcenter-plasma-engi"> LocalTopCenter</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/uiwidget.markdown#localtopleft-plasma-engine"> LocalTopLeft</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/uiwidget.markdown#localtopright-plasma-engin"> LocalTopRight</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/uiwidget.markdown#localtranslation-plasma-en"> LocalTranslation</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/uiwidget.markdown#marginbottom-plasma-engine"> MarginBottom</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/uiwidget.markdown#marginleft-plasma-engine-d"> MarginLeft</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/uiwidget.markdown#marginright-plasma-engine"> MarginRight</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/uiwidget.markdown#margintop-plasma-engine-do"> MarginTop</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/uiwidget.markdown#mouseover-plasma-engine-do"> MouseOver</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/uiwidget.markdown#mouseoverhierarchy-plasma"> MouseOverHierarchy</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/uiwidget.markdown#ontop-plasma-engine-docume"> OnTop</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/uiwidget.markdown#root-plasma-engine-documen"> Root</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/uiwidget.markdown#size-plasma-engine-documen"> Size</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/uiwidget.markdown#sizepolicyx-plasma-engine"> SizePolicyX</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/uiwidget.markdown#sizepolicyy-plasma-engine"> SizePolicyY</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/uiwidget.markdown#verticalalignment-plasma-e"> VerticalAlignment</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/uiwidget.markdown#visible-plasma-engine-docu"> Visible</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/uiwidget.markdown#worldbottom-plasma-engine"> WorldBottom</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/uiwidget.markdown#worldbottomcenter-plasma-e"> WorldBottomCenter</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/uiwidget.markdown#worldbottomleft-plasma-eng"> WorldBottomLeft</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/uiwidget.markdown#worldbottomright-plasma-en"> WorldBottomRight</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/uiwidget.markdown#worldcenter-plasma-engine"> WorldCenter</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/uiwidget.markdown#worldcenterleft-plasma-eng"> WorldCenterLeft</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/uiwidget.markdown#worldcenterright-plasma-en"> WorldCenterRight</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/uiwidget.markdown#worldleft-plasma-engine-do"> WorldLeft</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/uiwidget.markdown#worldrectangle-plasma-engi"> WorldRectangle</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/uiwidget.markdown#worldright-plasma-engine-d"> WorldRight</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/uiwidget.markdown#worldtop-plasma-engine-doc"> WorldTop</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/uiwidget.markdown#worldtopcenter-plasma-engi"> WorldTopCenter</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/uiwidget.markdown#worldtopleft-plasma-engine"> WorldTopLeft</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/uiwidget.markdown#worldtopright-plasma-engin"> WorldTopRight</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/uiwidget.markdown#worldtranslation-plasma-en"> WorldTranslation</a></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>#  Properties</p>
+<hr />
+<p>#  AbsoluteMinSize : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real2.markdown">real2</a></p>
+<blockquote>
+<p>The minimum size this widget has to be when being laid out.
+``` lang=cpp, name=Lightning
+var AbsoluteMinSize : Real2</p>
+</blockquote>
+<hr />
+<p>#  Active : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown">boolean</a></p>
+<blockquote>
+<p>Active getter / setter.
+``` lang=cpp, name=Lightning
+var Active : Boolean</p>
+</blockquote>
+<hr />
+<p>#  CanTakeFocus : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown">boolean</a></p>
+<blockquote>
+<p>``` lang=cpp, name=Lightning
+var CanTakeFocus : Boolean</p>
+</blockquote>
+<hr />
+<p>#  ClipChildren : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown">boolean</a></p>
+<blockquote>
+<p>``` lang=cpp, name=Lightning
+var ClipChildren : Boolean</p>
+</blockquote>
+<hr />
+<p>#  DockMode : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#uidockmode">UiDockMode</a></p>
+<blockquote>
+<p>Used in the dock layout.
+``` lang=cpp, name=Lightning
+var DockMode : UiDockMode</p>
+</blockquote>
+<hr />
+<p>#  FlexSize : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real2.markdown">real2</a></p>
+<blockquote>
+<p>Flex size used in conjunction with mSizePolicy (if FlexSize is set).
+``` lang=cpp, name=Lightning
+var FlexSize : Real2</p>
+</blockquote>
+<hr />
+<p>#  HasFocus : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown">boolean</a></p>
+<p><code>read-only</code></p>
+<blockquote>
+<p>``` lang=cpp, name=Lightning
+var HasFocus : Boolean</p>
+</blockquote>
+<hr />
+<p>#  HierarchyColor : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real4.markdown">real4</a></p>
+<blockquote>
+<p>Color that cascades down to children.
+``` lang=cpp, name=Lightning
+var HierarchyColor : Real4</p>
+</blockquote>
+<hr />
+<p>#  HierarchyHasFocus : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown">boolean</a></p>
+<p><code>read-only</code></p>
+<blockquote>
+<p>``` lang=cpp, name=Lightning
+var HierarchyHasFocus : Boolean</p>
+</blockquote>
+<hr />
+<p>#  HorizontalAlignment : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#uihorizontalalignment">UiHorizontalAlignment</a></p>
+<blockquote>
+<p>Alignments used to shift widgets when in a layout.
+``` lang=cpp, name=Lightning
+var HorizontalAlignment : UiHorizontalAlignment</p>
+</blockquote>
+<hr />
+<p>#  InLayout : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown">boolean</a></p>
+<blockquote>
+<p>If true, we will be ignored when our parent updates the layout. Disable this if you want to manually place this widget.
+``` lang=cpp, name=Lightning
+var InLayout : Boolean</p>
+</blockquote>
+<hr />
+<p>#  Interactive : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown">boolean</a></p>
+<blockquote>
+<p>``` lang=cpp, name=Lightning
+var Interactive : Boolean</p>
+</blockquote>
+<hr />
+<p>#  LocalBottom : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown">real</a></p>
+<blockquote>
+<p>``` lang=cpp, name=Lightning
+var LocalBottom : Real</p>
+</blockquote>
+<hr />
+<p>#  LocalBottomCenter : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real2.markdown">real2</a></p>
+<blockquote>
+<p>``` lang=cpp, name=Lightning
+var LocalBottomCenter : Real2</p>
+</blockquote>
+<hr />
+<p>#  LocalBottomLeft : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real2.markdown">real2</a></p>
+<blockquote>
+<p>``` lang=cpp, name=Lightning
+var LocalBottomLeft : Real2</p>
+</blockquote>
+<hr />
+<p>#  LocalBottomRight : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real2.markdown">real2</a></p>
+<blockquote>
+<p>``` lang=cpp, name=Lightning
+var LocalBottomRight : Real2</p>
+</blockquote>
+<hr />
+<p>#  LocalCenter : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real2.markdown">real2</a></p>
+<blockquote>
+<p>``` lang=cpp, name=Lightning
+var LocalCenter : Real2</p>
+</blockquote>
+<hr />
+<p>#  LocalCenterLeft : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real2.markdown">real2</a></p>
+<blockquote>
+<p>``` lang=cpp, name=Lightning
+var LocalCenterLeft : Real2</p>
+</blockquote>
+<hr />
+<p>#  LocalCenterRight : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real2.markdown">real2</a></p>
+<blockquote>
+<p>``` lang=cpp, name=Lightning
+var LocalCenterRight : Real2</p>
+</blockquote>
+<hr />
+<p>#  LocalColor : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real4.markdown">real4</a></p>
+<blockquote>
+<p>Color that does not cascade to children. It is, however, affected by the parents color.
+``` lang=cpp, name=Lightning
+var LocalColor : Real4</p>
+</blockquote>
+<hr />
+<p>#  LocalLeft : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown">real</a></p>
+<blockquote>
+<p>``` lang=cpp, name=Lightning
+var LocalLeft : Real</p>
+</blockquote>
+<hr />
+<p>#  LocalRectangle : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/rectangle.markdown">rectangle</a></p>
+<blockquote>
+<p>Returns our rect relative to parent. The origin of this Rect is bottom left.
+``` lang=cpp, name=Lightning
+var LocalRectangle : Rectangle</p>
+</blockquote>
+<hr />
+<p>#  LocalRight : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown">real</a></p>
+<blockquote>
+<p>``` lang=cpp, name=Lightning
+var LocalRight : Real</p>
+</blockquote>
+<hr />
+<p>#  LocalTop : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown">real</a></p>
+<blockquote>
+<p>``` lang=cpp, name=Lightning
+var LocalTop : Real</p>
+</blockquote>
+<hr />
+<p>#  LocalTopCenter : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real2.markdown">real2</a></p>
+<blockquote>
+<p>``` lang=cpp, name=Lightning
+var LocalTopCenter : Real2</p>
+</blockquote>
+<hr />
+<p>#  LocalTopLeft : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real2.markdown">real2</a></p>
+<blockquote>
+<p>``` lang=cpp, name=Lightning
+var LocalTopLeft : Real2</p>
+</blockquote>
+<hr />
+<p>#  LocalTopRight : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real2.markdown">real2</a></p>
+<blockquote>
+<p>``` lang=cpp, name=Lightning
+var LocalTopRight : Real2</p>
+</blockquote>
+<hr />
+<p>#  LocalTranslation : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real2.markdown">real2</a></p>
+<blockquote>
+<p>Local Translation relative to parent.
+``` lang=cpp, name=Lightning
+var LocalTranslation : Real2</p>
+</blockquote>
+<hr />
+<p>#  MarginBottom : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown">real</a></p>
+<blockquote>
+<p>``` lang=cpp, name=Lightning
+var MarginBottom : Real</p>
+</blockquote>
+<hr />
+<p>#  MarginLeft : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown">real</a></p>
+<blockquote>
+<p>``` lang=cpp, name=Lightning
+var MarginLeft : Real</p>
+</blockquote>
+<hr />
+<p>#  MarginRight : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown">real</a></p>
+<blockquote>
+<p>``` lang=cpp, name=Lightning
+var MarginRight : Real</p>
+</blockquote>
+<hr />
+<p>#  MarginTop : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown">real</a></p>
+<blockquote>
+<p>``` lang=cpp, name=Lightning
+var MarginTop : Real</p>
+</blockquote>
+<hr />
+<p>#  MouseOver : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown">boolean</a></p>
+<p><code>read-only</code></p>
+<blockquote>
+<p>``` lang=cpp, name=Lightning
+var MouseOver : Boolean</p>
+</blockquote>
+<hr />
+<p>#  MouseOverHierarchy : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown">boolean</a></p>
+<p><code>read-only</code></p>
+<blockquote>
+<p>``` lang=cpp, name=Lightning
+var MouseOverHierarchy : Boolean</p>
+</blockquote>
+<hr />
+<p>#  OnTop : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown">boolean</a></p>
+<blockquote>
+<p>``` lang=cpp, name=Lightning
+var OnTop : Boolean</p>
+</blockquote>
+<hr />
+<p>#  Root : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/uirootwidget.markdown">uirootwidget</a></p>
+<p><code>read-only</code></p>
+<blockquote>
+<p>Hide the ComponentHierarchy with a more specific root type.
+``` lang=cpp, name=Lightning
+var Root : UiRootWidget</p>
+</blockquote>
+<hr />
+<p>#  Size : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real2.markdown">real2</a></p>
+<blockquote>
+<p>Size getter / setter. This acts as a shortcut to the Area Component.
+``` lang=cpp, name=Lightning
+var Size : Real2</p>
+</blockquote>
+<hr />
+<p>#  SizePolicyX : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#uisizepolicy">UiSizePolicy</a></p>
+<blockquote>
+<p>``` lang=cpp, name=Lightning
+var SizePolicyX : UiSizePolicy</p>
+</blockquote>
+<hr />
+<p>#  SizePolicyY : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#uisizepolicy">UiSizePolicy</a></p>
+<blockquote>
+<p>``` lang=cpp, name=Lightning
+var SizePolicyY : UiSizePolicy</p>
+</blockquote>
+<hr />
+<p>#  VerticalAlignment : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#uiverticalalignment">UiVerticalAlignment</a></p>
+<blockquote>
+<p>Alignments used to shift widgets when in a layout.
+``` lang=cpp, name=Lightning
+var VerticalAlignment : UiVerticalAlignment</p>
+</blockquote>
+<hr />
+<p>#  Visible : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown">boolean</a></p>
+<blockquote>
+<p>``` lang=cpp, name=Lightning
+var Visible : Boolean</p>
+</blockquote>
+<hr />
+<p>#  WorldBottom : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown">real</a></p>
+<blockquote>
+<p>``` lang=cpp, name=Lightning
+var WorldBottom : Real</p>
+</blockquote>
+<hr />
+<p>#  WorldBottomCenter : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real2.markdown">real2</a></p>
+<blockquote>
+<p>``` lang=cpp, name=Lightning
+var WorldBottomCenter : Real2</p>
+</blockquote>
+<hr />
+<p>#  WorldBottomLeft : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real2.markdown">real2</a></p>
+<blockquote>
+<p>``` lang=cpp, name=Lightning
+var WorldBottomLeft : Real2</p>
+</blockquote>
+<hr />
+<p>#  WorldBottomRight : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real2.markdown">real2</a></p>
+<blockquote>
+<p>``` lang=cpp, name=Lightning
+var WorldBottomRight : Real2</p>
+</blockquote>
+<hr />
+<p>#  WorldCenter : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real2.markdown">real2</a></p>
+<blockquote>
+<p>``` lang=cpp, name=Lightning
+var WorldCenter : Real2</p>
+</blockquote>
+<hr />
+<p>#  WorldCenterLeft : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real2.markdown">real2</a></p>
+<blockquote>
+<p>``` lang=cpp, name=Lightning
+var WorldCenterLeft : Real2</p>
+</blockquote>
+<hr />
+<p>#  WorldCenterRight : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real2.markdown">real2</a></p>
+<blockquote>
+<p>``` lang=cpp, name=Lightning
+var WorldCenterRight : Real2</p>
+</blockquote>
+<hr />
+<p>#  WorldLeft : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown">real</a></p>
+<blockquote>
+<p>``` lang=cpp, name=Lightning
+var WorldLeft : Real</p>
+</blockquote>
+<hr />
+<p>#  WorldRectangle : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/rectangle.markdown">rectangle</a></p>
+<blockquote>
+<p>Returns our world rect. The origin of this Rect is bottom left.
+``` lang=cpp, name=Lightning
+var WorldRectangle : Rectangle</p>
+</blockquote>
+<hr />
+<p>#  WorldRight : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown">real</a></p>
+<blockquote>
+<p>``` lang=cpp, name=Lightning
+var WorldRight : Real</p>
+</blockquote>
+<hr />
+<p>#  WorldTop : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown">real</a></p>
+<blockquote>
+<p>``` lang=cpp, name=Lightning
+var WorldTop : Real</p>
+</blockquote>
+<hr />
+<p>#  WorldTopCenter : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real2.markdown">real2</a></p>
+<blockquote>
+<p>``` lang=cpp, name=Lightning
+var WorldTopCenter : Real2</p>
+</blockquote>
+<hr />
+<p>#  WorldTopLeft : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real2.markdown">real2</a></p>
+<blockquote>
+<p>``` lang=cpp, name=Lightning
+var WorldTopLeft : Real2</p>
+</blockquote>
+<hr />
+<p>#  WorldTopRight : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real2.markdown">real2</a></p>
+<blockquote>
+<p>``` lang=cpp, name=Lightning
+var WorldTopRight : Real2</p>
+</blockquote>
+<hr />
+<p>#  WorldTranslation : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real2.markdown">real2</a></p>
+<blockquote>
+<p>Translation in world space.
+``` lang=cpp, name=Lightning
+var WorldTranslation : Real2</p>
+</blockquote>
+<hr />
+<p>#  Methods</p>
+<hr />
+<p>#  CastPoint : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/uiwidget.markdown">uiwidget</a></p>
+<blockquote>
+<p>Finds the Widget at the given point. All Widgets bellow and including the 'ignore' widget will not be included. The ignore was added for trying to find the widget underneath a dragging window. The window is directly under the mouse, so we want to ignore it.
+|Name|Type|Description|
+|---|---|---|
+|worldPoint|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real2.markdown">real2</a>| |
+|ignore|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/uiwidget.markdown">uiwidget</a>| |
+|interactiveOnly|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown">boolean</a>| |
+<code>lang=cpp, name=Lightning
+function CastPoint(worldPoint : Real2, ignore : UiWidget, interactiveOnly : Boolean) : UiWidget</code> </p>
+</blockquote>
+<hr />
+<p>#  CastRect : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/uiwidgetcastresultsrange.markdown">uiwidgetcastresultsrange</a></p>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>worldRect</td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/rectangle.markdown">rectangle</a></td>
+<td></td>
+</tr>
+<tr>
+<td>ignore</td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/uiwidget.markdown">uiwidget</a></td>
+<td></td>
+</tr>
+<tr>
+<td>interactiveOnly</td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown">boolean</a></td>
+<td></td>
+</tr>
+<tr>
+<td>``` lang=cpp, name=Lightning</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>function CastRect(worldRect : Rectangle, ignore : UiWidget, interactiveOnly : Boolean) : UiWidgetCastResultsRange</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>```</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<hr />
+<p>#  LoseFocus : Void</p>
+<blockquote>
+<p>Gives focus back to the root widget.
+|Name|Type|Description|
+|---|---|---|
+<code>lang=cpp, name=Lightning
+function LoseFocus()</code> </p>
+</blockquote>
+<hr />
+<p>#  MarkAsNeedsUpdate : Void</p>
+<blockquote>
+<p>Lets the Widget system know that this object has been modified and needs to be re-laid out.
+|Name|Type|Description|
+|---|---|---|
+<code>lang=cpp, name=Lightning
+function MarkAsNeedsUpdate()</code> </p>
+</blockquote>
+<hr />
+<p>#  SetLocalLocation : Void</p>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>location</td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#location">Location</a></td>
+<td></td>
+</tr>
+<tr>
+<td>localTranslation</td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real2.markdown">real2</a></td>
+<td></td>
+</tr>
+<tr>
+<td>``` lang=cpp, name=Lightning</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>function SetLocalLocation(location : Location, localTranslation : Real2)</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>```</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<hr />
+<p>#  SetWorldLocation : Void</p>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>location</td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#location">Location</a></td>
+<td></td>
+</tr>
+<tr>
+<td>worldTranslation</td>
+<td><a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real2.markdown">real2</a></td>
+<td></td>
+</tr>
+<tr>
+<td>``` lang=cpp, name=Lightning</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>function SetWorldLocation(location : Location, worldTranslation : Real2)</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>```</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<hr />
+<p>#  SizeToContents : Void</p>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>``` lang=cpp, name=Lightning</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>function SizeToContents()</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>```</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<hr />
+<p>#  TabJump : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown">boolean</a></p>
+<blockquote>
+<p>Changes focus to the next applicable widget in the direction based on the key pressed in the given keyboard event.
+|Name|Type|Description|
+|---|---|---|
+|e|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/keyboardevent.markdown">keyboardevent</a>| |
+<code>lang=cpp, name=Lightning
+function TabJump(e : KeyboardEvent) : Boolean</code> </p>
+</blockquote>
+<hr />
+<p>#  TabJumpDirection : Void</p>
+<blockquote>
+<p>Changes focus to the next applicable widget in the given direction.
+|Name|Type|Description|
+|---|---|---|
+|direction|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#uifocusdirection">UiFocusDirection</a>| |
+<code>lang=cpp, name=Lightning
+function TabJumpDirection(direction : UiFocusDirection)</code> </p>
+</blockquote>
+<hr />
+<p>#  TakeFocus : Void</p>
+<blockquote>
+<p>Focus control.
+|Name|Type|Description|
+|---|---|---|
+<code>lang=cpp, name=Lightning
+function TakeFocus()</code> </p>
+</blockquote>
+<hr />
+<p>#  TransformPoint : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real2.markdown">real2</a></p>
+<blockquote>
+<p>Transforms a local point into world space.
+|Name|Type|Description|
+|---|---|---|
+|localPosition|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real2.markdown">real2</a>| |
+<code>lang=cpp, name=Lightning
+function TransformPoint(localPosition : Real2) : Real2</code> </p>
+</blockquote>
+<hr />
+<p>#  TransformPointInverse : <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real2.markdown">real2</a></p>
+<blockquote>
+<p>Transforms a world point into this Widget's local space. Note, this is not the same space as LocalTranslation. LocalTranslation is in this Widget's parent space.
+|Name|Type|Description|
+|---|---|---|
+|worldPosition|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real2.markdown">real2</a>| |
+<code>lang=cpp, name=Lightning
+function TransformPointInverse(worldPosition : Real2) : Real2</code> </p>
+</blockquote>
+<hr />
+<p>#  UiWidget : Void</p>
+<p><code>constructor</code></p>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>``` lang=cpp, name=Lightning</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>function UiWidget()</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>```</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<hr />
+<p>#  Update : Void</p>
+<blockquote>
+<p>Handles the updating of this Widget and the child Widgets. Once called, it will update the internal TransformUpdateState.
+|Name|Type|Description|
+|---|---|---|
+|e|<a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/uitransformupdateevent.markdown">uitransformupdateevent</a>| |
+<code>lang=cpp, name=Lightning
+function Update(e : UiTransformUpdateEvent)</code> </p>
+</blockquote>
+<hr /></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+                <p>Copyright &copy; 2021 Plasma Engine. Released under the MIT License.</p>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../../js/base.js" defer></script>
+        <script src="../../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
