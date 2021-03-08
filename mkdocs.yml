@@ -14,7 +14,7 @@ nav:
     - AI: manual/plasmamanual/ai.markdown
     - Architecture: 
       - manual/plasmamanual/architecture/architecture.markdown
-      - Archtypes: manual/plasmamanual/architecture/archetypes.markdown
+      # - Archtypes: manual/plasmamanual/architecture/archetypes.markdown
       - Cogs: 
         - manual/plasmamanual/architecture/cogs/cogs.markdown
         - Game Objects: manual/plasmamanual/architecture/cogs/gameobjectsconcept.markdown
@@ -31,6 +31,7 @@ nav:
         - "Resource Table": manual/plasmamanual/architecture/resources/resourcestable.markdown
 
     - Audio: manual/plasmamanual/audio.markdown
+    - Archetypes: manual/plasmamanual/archetypes/archetype_basics.markdown
     - Editor: 
       - Editor: manual/plasmamanual/editor/index.markdown
       - Tags: manual/plasmamanual/editor/tags.markdown
