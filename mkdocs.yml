@@ -15,14 +15,20 @@ nav:
     - Architecture: 
       - manual/plasmamanual/architecture/architecture.markdown
       - Archtypes: manual/plasmamanual/architecture/archetypes.markdown
-      - Cogs: manual/plasmamanual/architecture/cogs.markdown
-      - Objects: manual/plasmamanual/architecture/objects.markdown
+      - Cogs: 
+        - manual/plasmamanual/architecture/cogs/cogs.markdown
+        - Game Objects: manual/plasmamanual/architecture/cogs/gameobjectsconcept.markdown
+        - Object Store: manual/plasmamanual/architecture/cogs/objectstore.markdown
+      - Objects: 
+        - manual/plasmamanual/architecture/objects/objects.markdown
+        - manual/plasmamanual/architecture/objects/gamesession.markdown 
+        - manual/plasmamanual/architecture/objects/spaces.markdown
+        - manual/plasmamanual/architecture/objects/levelsettings.markdown
       - Resources:
         - Resources: manual/plasmamanual/architecture/resources/resource.markdown
         - Levels: manual/plasmamanual/architecture/resources/level.markdown
         - Fonts: manual/plasmamanual/architecture/fonts/fonts.markdown
         - "Resource Table": manual/plasmamanual/architecture/resources/resourcestable.markdown
-
 
     - Audio: manual/plasmamanual/audio.markdown
     - Editor: 
