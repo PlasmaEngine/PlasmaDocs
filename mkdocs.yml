@@ -9,12 +9,13 @@ copyright: "Copyright &copy; 2021 Plasma Engine. Released under the MIT License.
 
 nav:
   - Home: index.md
+  - "Getting Started" : "/getting_started/"
   - Manual:
     - Manual: manual/index.markdown
     - AI: manual/plasmamanual/ai.markdown
     - Architecture: 
       - manual/plasmamanual/architecture/architecture.markdown
-      # - Archtypes: manual/plasmamanual/architecture/archetypes.markdown
+      - Archtypes: manual/plasmamanual/architecture/archetypes/archtype_basics.markdown
       - Cogs: 
         - manual/plasmamanual/architecture/cogs/cogs.markdown
         - Game Objects: manual/plasmamanual/architecture/cogs/gameobjectsconcept.markdown
@@ -31,9 +32,19 @@ nav:
         - "Resource Table": manual/plasmamanual/architecture/resources/resourcestable.markdown
 
     - Audio: manual/plasmamanual/audio.markdown
-    - Archetypes: manual/plasmamanual/archetypes/archetype_basics.markdown
     - Editor: 
       - Editor: manual/plasmamanual/editor/index.markdown
       - Tags: manual/plasmamanual/editor/tags.markdown
-  - "Getting Started" : "/getting_started/"
-  - "Contributing": "/source_docs/"
+
+  - Contributing: 
+    - "Getting Started": source_docs/getting_started.md
+    - "Plasma Code": source_docs/plasma_code.markdown
+    - "Plasma Overview": source_docs/plasma_overview.markdown
+    - Components: source_docs/components.md
+    - "Custom Event Names": source_docs/custom_event_names.markdown
+    - Editor: source_docs/editor.markdown
+    - Engine: source_docs/engine.markdown
+    - Enums: source_docs/enums.markdown
+    - "Meta Binding": source_docs/meta_bindings.markdown
+    - "Adding Platforms": source_docs/platform.markdown
+    - Widgets: source_docs/widgets.markdown
