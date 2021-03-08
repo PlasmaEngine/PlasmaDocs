@@ -2,17 +2,17 @@
 
 |Methods|Properties|Base Classes|Derived Classes|
 |---|---|---|---|
-|[ Constructor](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/cognamerange.markdown#cognamerange-void)|[ All](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/cognamerange.markdown#all-plasma-engine-document)| | |
-|[ MoveNext](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/cognamerange.markdown#movenext-void)|[ Current](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/cognamerange.markdown#current-plasma-engine-docu)| | |
-| |[ IsEmpty](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/cognamerange.markdown#isempty-plasma-engine-docu)| | |
-| |[ IsNotEmpty](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/cognamerange.markdown#isnotempty-plasma-engine-d)| | |
+|[ Constructor](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/cognamerange.markdown#cognamerange-void)|[ All](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/cognamerange.markdown#all-plasma-engine-document)| | |
+|[ MoveNext](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/cognamerange.markdown#movenext-void)|[ Current](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/cognamerange.markdown#current-plasma-engine-docu)| | |
+| |[ IsEmpty](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/cognamerange.markdown#isempty-plasma-engine-docu)| | |
+| |[ IsNotEmpty](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/cognamerange.markdown#isnotempty-plasma-engine-d)| | |
 
 
  #  Properties
 
 
 ---  
- #  All : [cognamerange](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/cognamerange.markdown)
+ #  All : [cognamerange](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/cognamerange.markdown)
 
  `read-only`
 
@@ -22,7 +22,7 @@
 
 
 ---  
- #  Current : [cog](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/cog.markdown)
+ #  Current : [cog](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/cog.markdown)
 
  `read-only`
 
@@ -32,7 +32,7 @@
 
 
 ---  
- #  IsEmpty : [boolean](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown)
+ #  IsEmpty : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown)
 
  `read-only`
 
@@ -42,7 +42,7 @@
 
 
 ---  
- #  IsNotEmpty : [boolean](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown)
+ #  IsNotEmpty : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown)
 
  `read-only`
 
@@ -76,7 +76,7 @@
 > 
 > |Name|Type|Description|
 > |---|---|---|
-> |p0|[cognamerange](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/cognamerange.markdown)| |
+> |p0|[cognamerange](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/cognamerange.markdown)| |
 > ``` lang=cpp, name=Lightning
 > function CogNameRange(p0 : CogNameRange)
 > ``` 

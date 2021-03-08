@@ -2,17 +2,17 @@
 
 |Methods|Properties|Base Classes|Derived Classes|
 |---|---|---|---|
-|[ Constructor](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/castresultsrange.markdown#castresultsrange-void)|[ All](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/castresultsrange.markdown#all-plasma-engine-document)| | |
-|[ MoveNext](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/castresultsrange.markdown#movenext-void)|[ Current](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/castresultsrange.markdown#current-plasma-engine-docu)| | |
-| |[ IsEmpty](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/castresultsrange.markdown#isempty-plasma-engine-docu)| | |
-| |[ IsNotEmpty](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/castresultsrange.markdown#isnotempty-plasma-engine-d)| | |
+|[ Constructor](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/castresultsrange.markdown#castresultsrange-void)|[ All](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/castresultsrange.markdown#all-plasma-engine-document)| | |
+|[ MoveNext](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/castresultsrange.markdown#movenext-void)|[ Current](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/castresultsrange.markdown#current-plasma-engine-docu)| | |
+| |[ IsEmpty](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/castresultsrange.markdown#isempty-plasma-engine-docu)| | |
+| |[ IsNotEmpty](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/castresultsrange.markdown#isnotempty-plasma-engine-d)| | |
 
 
  #  Properties
 
 
 ---  
- #  All : [castresultsrange](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/castresultsrange.markdown)
+ #  All : [castresultsrange](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/castresultsrange.markdown)
 
  `read-only`
 
@@ -22,7 +22,7 @@
 
 
 ---  
- #  Current : [castresult](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/castresult.markdown)
+ #  Current : [castresult](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/castresult.markdown)
 
  `read-only`
 
@@ -32,7 +32,7 @@
 
 
 ---  
- #  IsEmpty : [boolean](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown)
+ #  IsEmpty : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown)
 
  `read-only`
 
@@ -42,7 +42,7 @@
 
 
 ---  
- #  IsNotEmpty : [boolean](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown)
+ #  IsNotEmpty : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown)
 
  `read-only`
 
@@ -76,7 +76,7 @@
 > 
 > |Name|Type|Description|
 > |---|---|---|
-> |p0|[castresultsrange](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/castresultsrange.markdown)| |
+> |p0|[castresultsrange](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/castresultsrange.markdown)| |
 > ``` lang=cpp, name=Lightning
 > function CastResultsRange(p0 : CastResultsRange)
 > ``` 

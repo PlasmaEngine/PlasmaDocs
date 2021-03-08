@@ -6,7 +6,7 @@
 
 |Methods|Properties|Base Classes|Derived Classes|
 |---|---|---|---|
-|[ Constructor](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/gravityeffect.markdown#gravityeffect-void)| |[basicdirectioneffect](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/basicdirectioneffect.markdown)| |
+|[ Constructor](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/gravityeffect.markdown#gravityeffect-void)| |[basicdirectioneffect](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/basicdirectioneffect.markdown)| |
 
 
  #  Properties

@@ -6,15 +6,15 @@
 
 |Methods|Properties|Base Classes|Derived Classes|
 |---|---|---|---|
-|[ Constructor](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/fixedanglejoint.markdown#fixedanglejoint-void)|[ LocalBasisA](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/fixedanglejoint.markdown#localbasisa-plasma-engine)|[joint](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/joint.markdown)| |
-| |[ LocalBasisB](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/fixedanglejoint.markdown#localbasisb-plasma-engine)| | |
+|[ Constructor](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/fixedanglejoint.markdown#fixedanglejoint-void)|[ LocalBasisA](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/fixedanglejoint.markdown#localbasisa-plasma-engine)|[joint](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/joint.markdown)| |
+| |[ LocalBasisB](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/fixedanglejoint.markdown#localbasisb-plasma-engine)| | |
 
 
  #  Properties
 
 
 ---  
- #  LocalBasisA : [quaternion](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/lightning_base_types/quaternion.markdown)
+ #  LocalBasisA : [quaternion](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/quaternion.markdown)
 
 > The local space reference frame of object A . This frame is transformed to world space and then aligned with object B s frame . 
 > ``` lang=cpp, name=Lightning
@@ -22,7 +22,7 @@
 
 
 ---  
- #  LocalBasisB : [quaternion](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/lightning_base_types/quaternion.markdown)
+ #  LocalBasisB : [quaternion](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/quaternion.markdown)
 
 > The local space reference frame of object B . This frame is transformed to world space and then aligned with object A s frame . 
 > ``` lang=cpp, name=Lightning

@@ -2,17 +2,17 @@
 
 |Methods|Properties|Base Classes|Derived Classes|
 |---|---|---|---|
-|[ Constructor](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/arrayhandleofmaterial.markdown#arrayhandleofmaterial-vo)|[ All](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/arrayhandleofmaterial.markdown#all-plasma-engine-document)| | |
-|[ MoveNext](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/arrayhandleofmaterial.markdown#movenext-void)|[ Current](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/arrayhandleofmaterial.markdown#current-plasma-engine-docu)| | |
-| |[ IsEmpty](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/arrayhandleofmaterial.markdown#isempty-plasma-engine-docu)| | |
-| |[ IsNotEmpty](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/arrayhandleofmaterial.markdown#isnotempty-plasma-engine-d)| | |
+|[ Constructor](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/arrayhandleofmaterial.markdown#arrayhandleofmaterial-vo)|[ All](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/arrayhandleofmaterial.markdown#all-plasma-engine-document)| | |
+|[ MoveNext](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/arrayhandleofmaterial.markdown#movenext-void)|[ Current](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/arrayhandleofmaterial.markdown#current-plasma-engine-docu)| | |
+| |[ IsEmpty](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/arrayhandleofmaterial.markdown#isempty-plasma-engine-docu)| | |
+| |[ IsNotEmpty](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/arrayhandleofmaterial.markdown#isnotempty-plasma-engine-d)| | |
 
 
  #  Properties
 
 
 ---  
- #  All : [arrayhandleofmaterial](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/arrayhandleofmaterial.markdown)
+ #  All : [arrayhandleofmaterial](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/arrayhandleofmaterial.markdown)
 
  `read-only`
 
@@ -22,7 +22,7 @@
 
 
 ---  
- #  Current : [material](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/material.markdown)
+ #  Current : [material](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/material.markdown)
 
  `read-only`
 
@@ -32,7 +32,7 @@
 
 
 ---  
- #  IsEmpty : [boolean](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown)
+ #  IsEmpty : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown)
 
  `read-only`
 
@@ -42,7 +42,7 @@
 
 
 ---  
- #  IsNotEmpty : [boolean](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown)
+ #  IsNotEmpty : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown)
 
  `read-only`
 
@@ -76,7 +76,7 @@
 > 
 > |Name|Type|Description|
 > |---|---|---|
-> |p0|[arrayhandleofmaterial](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/arrayhandleofmaterial.markdown)| |
+> |p0|[arrayhandleofmaterial](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/arrayhandleofmaterial.markdown)| |
 > ``` lang=cpp, name=Lightning
 > function ArrayHandleOfMaterial(p0 : ArrayHandleOfMaterial)
 > ``` 

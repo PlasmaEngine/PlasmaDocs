@@ -2,21 +2,21 @@
 
 |Methods|Properties|Base Classes|Derived Classes|
 |---|---|---|---|
-|[ Constructor](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/debugarc.markdown#debugarc-void)|[ Color](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/debugarc.markdown#color-plasma-engine-docume)| | |
-| |[ End](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/debugarc.markdown#end-plasma-engine-document)| | |
-| |[ Mid](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/debugarc.markdown#mid-plasma-engine-document)| | |
-| |[ OnTop](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/debugarc.markdown#ontop-plasma-engine-docume)| | |
-| |[ Start](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/debugarc.markdown#start-plasma-engine-docume)| | |
-| |[ ViewAligned](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/debugarc.markdown#viewaligned-plasma-engine)| | |
-| |[ ViewScaled](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/debugarc.markdown#viewscaled-plasma-engine-d)| | |
-| |[ ViewScaleOffset](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/debugarc.markdown#viewscaleoffset-plasma-eng)| | |
+|[ Constructor](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/debugarc.markdown#debugarc-void)|[ Color](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/debugarc.markdown#color-plasma-engine-docume)| | |
+| |[ End](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/debugarc.markdown#end-plasma-engine-document)| | |
+| |[ Mid](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/debugarc.markdown#mid-plasma-engine-document)| | |
+| |[ OnTop](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/debugarc.markdown#ontop-plasma-engine-docume)| | |
+| |[ Start](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/debugarc.markdown#start-plasma-engine-docume)| | |
+| |[ ViewAligned](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/debugarc.markdown#viewaligned-plasma-engine)| | |
+| |[ ViewScaled](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/debugarc.markdown#viewscaled-plasma-engine-d)| | |
+| |[ ViewScaleOffset](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/debugarc.markdown#viewscaleoffset-plasma-eng)| | |
 
 
  #  Properties
 
 
 ---  
- #  Color : [real4](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/lightning_base_types/real4.markdown)
+ #  Color : [real4](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real4.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -24,7 +24,7 @@
 
 
 ---  
- #  End : [real3](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/lightning_base_types/real3.markdown)
+ #  End : [real3](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real3.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -32,7 +32,7 @@
 
 
 ---  
- #  Mid : [real3](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/lightning_base_types/real3.markdown)
+ #  Mid : [real3](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real3.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -40,7 +40,7 @@
 
 
 ---  
- #  OnTop : [boolean](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown)
+ #  OnTop : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -48,7 +48,7 @@
 
 
 ---  
- #  Start : [real3](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/lightning_base_types/real3.markdown)
+ #  Start : [real3](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real3.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -56,7 +56,7 @@
 
 
 ---  
- #  ViewAligned : [boolean](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown)
+ #  ViewAligned : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -64,7 +64,7 @@
 
 
 ---  
- #  ViewScaled : [boolean](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown)
+ #  ViewScaled : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -72,7 +72,7 @@
 
 
 ---  
- #  ViewScaleOffset : [real3](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/lightning_base_types/real3.markdown)
+ #  ViewScaleOffset : [real3](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real3.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -104,9 +104,9 @@
 > 
 > |Name|Type|Description|
 > |---|---|---|
-> |start|[real3](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/lightning_base_types/real3.markdown)| |
-> |mid|[real3](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/lightning_base_types/real3.markdown)| |
-> |end|[real3](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/lightning_base_types/real3.markdown)| |
+> |start|[real3](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real3.markdown)| |
+> |mid|[real3](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real3.markdown)| |
+> |end|[real3](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real3.markdown)| |
 > ``` lang=cpp, name=Lightning
 > function DebugArc(start : Real3, mid : Real3, end : Real3)
 > ``` 

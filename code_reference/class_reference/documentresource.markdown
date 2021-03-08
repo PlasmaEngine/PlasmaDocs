@@ -6,8 +6,8 @@
 
 |Methods|Properties|Base Classes|Derived Classes|
 |---|---|---|---|
-| | |Resource|[textblock](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/textblock.markdown)|
-| | | |[lightningdocumentresource](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/lightningdocumentresource.markdown)|
+| | |Resource|[textblock](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/textblock.markdown)|
+| | | |[lightningdocumentresource](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/lightningdocumentresource.markdown)|
 
 
  #  Properties

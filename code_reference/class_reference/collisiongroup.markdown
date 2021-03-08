@@ -6,8 +6,8 @@
 
 |Methods|Properties|Base Classes|Derived Classes|
 |---|---|---|---|
-|[ CreateRuntime](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/collisiongroup.markdown#createruntime-plasma-engin)| |[dataresource](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/dataresource.markdown)| |
-|[ RuntimeClone](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/collisiongroup.markdown#runtimeclone-plasma-engine)| | | |
+|[ CreateRuntime](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/collisiongroup.markdown#createruntime-plasma-engin)| |[dataresource](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/dataresource.markdown)| |
+|[ RuntimeClone](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/collisiongroup.markdown#runtimeclone-plasma-engine)| | | |
 
 
  #  Properties
@@ -18,7 +18,7 @@
 
 
 ---  
- #  CreateRuntime : [collisiongroup](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/collisiongroup.markdown)
+ #  CreateRuntime : [collisiongroup](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/collisiongroup.markdown)
 
  `static`
 
@@ -31,7 +31,7 @@
 
 
 ---  
- #  RuntimeClone : [collisiongroup](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/collisiongroup.markdown)
+ #  RuntimeClone : [collisiongroup](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/collisiongroup.markdown)
 
 > Creates a clone of this CollisionGroup for run-time modifications.
 > |Name|Type|Description|

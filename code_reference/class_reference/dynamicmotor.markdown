@@ -6,17 +6,17 @@
 
 |Methods|Properties|Base Classes|Derived Classes|
 |---|---|---|---|
-|[ Constructor](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/dynamicmotor.markdown#dynamicmotor-void)|[ Active](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/dynamicmotor.markdown#active-plasma-engine-docum)|[component](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/component.markdown)| |
-|[ MoveInDirection](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/dynamicmotor.markdown#moveindirection-void)|[ MaxMoveImpulse](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/dynamicmotor.markdown#maxmoveimpulse-plasma-engi)| | |
-|[ SetReferenceFrameToObject](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/dynamicmotor.markdown#setreferenceframetoobjec)| | | |
-|[ SetReferenceFrameToWorld](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/dynamicmotor.markdown#setreferenceframetoworld)| | | |
+|[ Constructor](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/dynamicmotor.markdown#dynamicmotor-void)|[ Active](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/dynamicmotor.markdown#active-plasma-engine-docum)|[component](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/component.markdown)| |
+|[ MoveInDirection](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/dynamicmotor.markdown#moveindirection-void)|[ MaxMoveImpulse](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/dynamicmotor.markdown#maxmoveimpulse-plasma-engi)| | |
+|[ SetReferenceFrameToObject](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/dynamicmotor.markdown#setreferenceframetoobjec)| | | |
+|[ SetReferenceFrameToWorld](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/dynamicmotor.markdown#setreferenceframetoworld)| | | |
 
 
  #  Properties
 
 
 ---  
- #  Active : [boolean](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown)
+ #  Active : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown)
 
 > Should physics restrict the movement of this object?
 > ``` lang=cpp, name=Lightning
@@ -24,7 +24,7 @@
 
 
 ---  
- #  MaxMoveImpulse : [real](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown)
+ #  MaxMoveImpulse : [real](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown)
 
 > What is the max impulse allowed for controlling movement.
 > ``` lang=cpp, name=Lightning
@@ -54,8 +54,8 @@
 > Attempts to move the body in the given direction.
 > |Name|Type|Description|
 > |---|---|---|
-> |direction|[real3](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/lightning_base_types/real3.markdown)| |
-> |up|[real3](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/lightning_base_types/real3.markdown)| |
+> |direction|[real3](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real3.markdown)| |
+> |up|[real3](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real3.markdown)| |
 > ``` lang=cpp, name=Lightning
 > function MoveInDirection(direction : Real3, up : Real3)
 > ``` 
@@ -67,7 +67,7 @@
 > Compute the relative velocity with respect to a target object. Used to control movement on moving platforms.
 > |Name|Type|Description|
 > |---|---|---|
-> |object|[cog](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/cog.markdown)| |
+> |object|[cog](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/cog.markdown)| |
 > ``` lang=cpp, name=Lightning
 > function SetReferenceFrameToObject(object : Cog)
 > ``` 
