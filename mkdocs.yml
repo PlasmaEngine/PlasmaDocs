@@ -1,0 +1,32 @@
+site_name: "Docs | Plasma Engine"
+theme: flatly
+docs_dir: "src/"
+
+repo_url: "https://github.com/PlasmaEngine/PlasmaDocs"
+repo_name: GitHub
+site_description: "The documentation site of the Plasma Game Engine."
+copyright: "Copyright &copy; 2021 Plasma Engine. Released under the MIT License."
+
+nav:
+  - Home: index.md
+  - Manual:
+    - Manual: manual/index.markdown
+    - AI: manual/plasmamanual/ai.markdown
+    - Architecture: 
+      - manual/plasmamanual/architecture/architecture.markdown
+      - Archtypes: manual/plasmamanual/architecture/archetypes.markdown
+      - Cogs: manual/plasmamanual/architecture/cogs.markdown
+      - Objects: manual/plasmamanual/architecture/objects.markdown
+      - Resources:
+        - Resources: manual/plasmamanual/architecture/resources/resource.markdown
+        - Levels: manual/plasmamanual/architecture/resources/level.markdown
+        - Fonts: manual/plasmamanual/architecture/fonts/fonts.markdown
+        - "Resource Table": manual/plasmamanual/architecture/resources/resourcestable.markdown
+
+
+    - Audio: manual/plasmamanual/audio.markdown
+    - Editor: 
+      - Editor: manual/plasmamanual/editor/index.markdown
+      - Tags: manual/plasmamanual/editor/tags.markdown
+  - "Getting Started" : "/getting_started/"
+  - "Contributing": "/source_docs/"

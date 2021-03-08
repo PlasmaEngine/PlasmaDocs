@@ -1,6 +1,6 @@
 - [anyhandle](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/anyhandle.markdown) 
 - [anytype](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/anytype.markdown) 
-- [array_type ](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/array_type .markdown) 
+- [array_type ](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/array_type.markdown) 
 - [asciiencoding](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/asciiencoding.markdown) 
 - [boolean](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown) 
 - [boolean2](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean2.markdown) 
