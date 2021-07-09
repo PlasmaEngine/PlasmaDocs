@@ -108,7 +108,7 @@ DebugTriangle draws a triangle defined by three vertices (the member variables `
 | {nav icon=pencil-square-o, name=Point2} | Defines the third vertex of the triangle
 | Color  | Defines the color of the border/fill of the triangle
 
-The following ZIlchScript illustrates in a simple manner how consecutive triangles may be debug drawn:
+The following LightningScript illustrates in a simple manner how consecutive triangles may be debug drawn:
 
 ```
 class DrawTriangles: LightningComponent
