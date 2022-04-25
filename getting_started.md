@@ -3,7 +3,7 @@
 
  # Installing the Plasma Engine (and Plasma Launcher)
 
-The Plasma Engine is downloaded through the Plasma Launcher, this allows to the installation and manamagement of multiple engine versions along with the
+The Plasma Engine is downloaded through the Plasma Launcher, this allows the installation and manamagement of multiple engine versions along with the
 creation and management of projects. This is all designed to make the life of the user as easy as possible.
 
  - [Learn how to use the Plasma Launcher](https://github.comPlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/editor/launcher.markdown).
