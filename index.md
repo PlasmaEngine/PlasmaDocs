@@ -16,6 +16,5 @@ The Plasma Engine Manual, Tutorials, and Code Reference
   - [Tutorials](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/tutorials.markdown)
    - [Tutorial Sequences](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/tutorials/tutorial_sequences.markdown) -->
  - [Code Reference](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference.markdown)
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA5MjAyMzM1Nl19
--->
+
+
