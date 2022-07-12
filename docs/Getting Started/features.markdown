@@ -1,4 +1,4 @@
-# Ten Exciting Features of the Plasma Engine (and also Spaces)
+# Features
 
 ## Events
 
