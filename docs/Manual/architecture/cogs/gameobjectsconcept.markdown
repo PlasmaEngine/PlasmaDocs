@@ -1,4 +1,4 @@
-Game objects in the Plasma Engine (game object compositions, or COGs) are not defined using classes. Instead they are collections of components, each of which provide a certain functionality to the object. A component can be data, behavior, and/or a link to a system. For example, an Cog called "Ball" might be a composition that includes the [ Transform  ](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/transform.markdown) (position, rotation, etc.), [ Model  ](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/graphics/models.markdown) (geometry, textures, etc.), [ RigidBody  ](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/physics/rigidbody.markdown) (movement), and Collider (shape, collision, etc.) components, while a "Main Camera" object would include Transform, Controller (mouse or keyboard input, etc.), and Camera (field of view, zoom, etc.). Or you could create a "Ball Camera," with Transform, Model, Rigid Body, Collider, Controller, and Camera.
+Game objects in the Plasma Engine (game object compositions, or COGs) are not defined using classes. Instead they are collections of components, each of which provide a certain functionality to the object. A component can be data, behavior, and/or a link to a system. For example, an Cog called "Ball" might be a composition that includes the [ Transform  ](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/transform.markdown) (position, rotation, etc.), [ Model  ](https://plasmaengine.github.io/PlasmaDocs/Manual/graphics/models.markdown) (geometry, textures, etc.), [ RigidBody  ](https://plasmaengine.github.io/PlasmaDocs/Manual/physics/rigidbody.markdown) (movement), and Collider (shape, collision, etc.) components, while a "Main Camera" object would include Transform, Controller (mouse or keyboard input, etc.), and Camera (field of view, zoom, etc.). Or you could create a "Ball Camera," with Transform, Model, Rigid Body, Collider, Controller, and Camera.
 
 One of the keys to working with a component based engine is to think of objects in terms of what they do, not what they are. If you have a hospital, a soldier, and a medic, the hospital and the medic have a healing component, while the soldier and the medic have a mobility component, but you don't need to group one as a building and the other two as infantry. All the game engine cares about is what the object can do. You might see a ball and a car as different types of things, but to the game engine they are both objects composed of Transform, Model, Rigid Body and Collider. They have the same functionality: the only difference is their data.
 
@@ -54,7 +54,7 @@ Selection selection =
 ```
 
 
-This code can be copy and pasted into other projects. This works because, unless you manually remove them, you have all the default [Resources](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/architecture/resources.markdown) necessary to create this object. In many cases this won't work with your cogs because the copied object references resources that differ between your destination project and the source project.
+This code can be copy and pasted into other projects. This works because, unless you manually remove them, you have all the default [Resources](https://plasmaengine.github.io/PlasmaDocs/Manual/architecture/resources.markdown) necessary to create this object. In many cases this won't work with your cogs because the copied object references resources that differ between your destination project and the source project.
 
 ---
 
@@ -66,7 +66,7 @@ This code can be copy and pasted into other projects. This works because, unless
  - [ CreateTransform ](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/command_reference.markdown#createtransform)
 
  ## Manual
- - [ Model  ](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/graphics/models.markdown)
- - [ RigidBody  ](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/physics/rigidbody.markdown) 
+ - [ Model  ](https://plasmaengine.github.io/PlasmaDocs/Manual/graphics/models.markdown)
+ - [ RigidBody  ](https://plasmaengine.github.io/PlasmaDocs/Manual/physics/rigidbody.markdown) 
 
  

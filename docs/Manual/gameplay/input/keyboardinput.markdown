@@ -165,8 +165,8 @@ Some input tasks don't lend themselves to being done with event-based input. For
 
  #  Related Materials
  ##  Manual
-- [ Events & Connections](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/scripting/eventsandconnections.markdown)
-- [ Components](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/architecture/components.markdown)
+- [ Events & Connections](https://plasmaengine.github.io/PlasmaDocs/Manual/scripting/eventsandconnections.markdown)
+- [ Components](https://plasmaengine.github.io/PlasmaDocs/Manual/architecture/components.markdown)
 
  ##  Code Reference
 - [ Keyboard](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/keyboard.markdown)

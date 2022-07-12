@@ -1,4 +1,4 @@
-A point light is a light that has a defined shape, exists at particular point in space, and sends light out equally from all points on that shape. It uses a sphere [mesh](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/mesh.markdown) to define its volume, as can be seen on the [Model component](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/graphics/models/model_component.markdown). The light that is emitted will only be processed on geometry that the light overlaps, which is found using a special depth test unique to the point light.
+A point light is a light that has a defined shape, exists at particular point in space, and sends light out equally from all points on that shape. It uses a sphere [mesh](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/mesh.markdown) to define its volume, as can be seen on the [Model component](https://plasmaengine.github.io/PlasmaDocs/Manual/graphics/models/model_component.markdown). The light that is emitted will only be processed on geometry that the light overlaps, which is found using a special depth test unique to the point light.
 
  # LightIntensity and LightRadius
 
@@ -13,7 +13,7 @@ FalloffRadius  defines the size of the sphere mesh that acts as the volume in wh
 
  # Related Materials
  ## Manual
-- [Model component](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/graphics/models/model_component.markdown)
+- [Model component](https://plasmaengine.github.io/PlasmaDocs/Manual/graphics/models/model_component.markdown)
 
  ## Code Reference
 - [Mesh](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/class_reference/mesh.markdown) 
