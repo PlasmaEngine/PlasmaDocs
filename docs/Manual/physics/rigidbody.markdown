@@ -8,7 +8,7 @@ Commonly, a body needs to be locked in space to behave as some fixed world geome
 A RigidBody can also be set to `Kinematic`. `Kinematic` is an infinite mass object like `Static`; however, it also gives the physics system extra information about how to resolve collisions. A static object is never expected to move, so if it is teleported by the user into contact with other objects, then the physics system doesn't know how to properly resolve the collision as no velocity was involved. A kinematic object tells the physics system to approximate the velocity in the collision based upon the last and current position of the object. This is typically used for moving platforms or other moving, infinite mass objects.
 
  #  Mode2D
-{nav icon=list, name=Mode2D} defines whether a RigidBody should behave like a 2D or 3D object. If an object is 3D, it can translate and rotate in all three dimensions. If an object is 2D then its movement is restricted to the xy-plane and can only rotate about the z-axis. By default, a RigidBody will use the {nav icon=check-square-o, name="Mode2D"} state of the [PhysicsSpace](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/physics/physicsspace.markdown) so that an entire space can be changed at once, but an individual RigidBody can be set independently from the space.
+{nav icon=list, name=Mode2D} defines whether a RigidBody should behave like a 2D or 3D object. If an object is 3D, it can translate and rotate in all three dimensions. If an object is 2D then its movement is restricted to the xy-plane and can only rotate about the z-axis. By default, a RigidBody will use the {nav icon=check-square-o, name="Mode2D"} state of the [PhysicsSpace](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/physics/physicsspace.markdown) so that an entire space can be changed at once, but an individual RigidBody can be set independently from the space.
 
 It is important to note that Mode2D only affects how the physics system will treat the object. A user can still manually translate or rotate an object on any axis, but physics will be unable to move a RigidBody on the locked axes, even if forces or velocity act on them.
 
@@ -42,7 +42,7 @@ All of these are applied by default to the center of mass of the RigidBody. This
 
  #  Related Materials
  ##  Manual
-- [physicsspace.markdown](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/physics/physicsspace.markdown)
+- [physicsspace.markdown](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/physics/physicsspace.markdown)
 
  ##  Reference
 - [PhysicsSpace](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/physicsspace.markdown)

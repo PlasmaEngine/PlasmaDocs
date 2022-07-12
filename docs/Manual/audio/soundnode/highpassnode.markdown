@@ -12,9 +12,9 @@ High pass filters leave high frequencies untouched while silencing low frequenci
 ___
  # Related Materials
  ## Manual
-- [soudnode_overview](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/audio/soundnode/soudnode_overview.markdown)
-- [bandpassnode](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/audio/soundnode/bandpassnode.markdown)
-- [lowpassnode](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/audio/soundnode/lowpassnode.markdown)
+- [soudnode_overview](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/audio/soundnode/soudnode_overview.markdown)
+- [bandpassnode](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/audio/soundnode/bandpassnode.markdown)
+- [lowpassnode](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/audio/soundnode/lowpassnode.markdown)
 
  ## Code Reference
 - [ HighPassNode ](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/highpassnode.markdown) 

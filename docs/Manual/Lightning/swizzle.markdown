@@ -25,7 +25,7 @@ Example 6: a.ZYXZ: (2, 1, 0, 2)
 In this example `a` is a simple [real3](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real3.markdown):
 
 - Example 1 constructs a [Real](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown) containing the value of `a.X`
-- Example 2 constructs a [by-value](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/lightning_in_plasma/constructbyvaluevsbyref.markdown) copy of `a`.
+- Example 2 constructs a [by-value](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/Lightning/constructbyvaluevsbyref.markdown) copy of `a`.
 - Example 3 constructs a [real2](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real2.markdown) containing the `X` and `Y` values of `a`. 
 - Example 4 constructs a [real2](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real2.markdown) with `X` as the value of `a.Y`, and `Y` as the value of `a.X`.
 - Example 5 constructs a [real3](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real3.markdown) where the `X` and `Y` are set to the value of `a.X` and `Z` is set to the value of `a.Y`.
@@ -50,8 +50,8 @@ In this example `.XY` returns a by-value copy of the `LocalTranslation`'s `X` an
 
  # Related Materials
  ## Manual
-- [constructbyvaluevsbyref](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/lightning_in_plasma/constructbyvaluevsbyref.markdown)
-- [properties](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/lightning_in_plasma/properties.markdown)
+- [constructbyvaluevsbyref](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/Lightning/constructbyvaluevsbyref.markdown)
+- [properties](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/Lightning/properties.markdown)
 
  ## Reference
 - [real2](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real2.markdown)

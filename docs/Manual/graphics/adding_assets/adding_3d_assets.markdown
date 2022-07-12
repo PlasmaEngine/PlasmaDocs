@@ -1,6 +1,6 @@
 # Importing 3D Assets & Textures
 
-3D assets, such as models, model animations, and images to be used on a [Material](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/graphics/materials/materials_overview.markdown), are added as [Resources](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/architecture/resources.markdown) in the form of [meshes](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/mesh.markdown), [animations](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/animation.markdown), and [textures](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/texture.markdown). The preferred file format for 3D assets is `.fbx` for models and animations (though Plasma does accept a number of other formats such as`.obj`, `.3ds`, `.blend`, etc...) and `.png` for textures. See [resourceadding](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/editor/editorcommands/resourceadding.markdown) for how to import data files into Plasma.
+3D assets, such as models, model animations, and images to be used on a [Material](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/graphics/materials/materials_overview.markdown), are added as [Resources](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/architecture/resources.markdown) in the form of [meshes](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/mesh.markdown), [animations](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/animation.markdown), and [textures](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/texture.markdown). The preferred file format for 3D assets is `.fbx` for models and animations (though Plasma does accept a number of other formats such as`.obj`, `.3ds`, `.blend`, etc...) and `.png` for textures. See [resourceadding](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/editor/editorcommands/resourceadding.markdown) for how to import data files into Plasma.
 
  # Models and Model Animations
 
@@ -89,11 +89,11 @@ TextureBuilder, on the other hand, is comprised of a number of modifiable proper
 
  ### Interpretation
 
-[Type](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#texturetype) sets whether a texture should be interpreted as a `Texture2D` or as a `TextureCube`. `TextureCube` is the [TextureType](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#texturetype) that should be chosen when the image should be used as a skybox in the [renderer](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/graphics/renderer.markdown). For any possible use, `Texture2D` should be chosen.
+[Type](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#texturetype) sets whether a texture should be interpreted as a `Texture2D` or as a `TextureCube`. `TextureCube` is the [TextureType](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#texturetype) that should be chosen when the image should be used as a skybox in the [renderer](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/graphics/renderer.markdown). For any possible use, `Texture2D` should be chosen.
 
  ### Compression
 
-[Compression](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#texturecompression) sets the lossy, hardware-supported format to convert the texture to, if any. For a more detailed explanation, see [compression.markdown](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/graphics/adding_assets/adding_3d_assets/compression.markdown).
+[Compression](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#texturecompression) sets the lossy, hardware-supported format to convert the texture to, if any. For a more detailed explanation, see [compression.markdown](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/graphics/adding_assets/adding_3d_assets/compression.markdown).
 
  ### Addressing
 
@@ -126,13 +126,13 @@ GammaCorrection checkBox, when set to `true`, will correct the values of each in
  # Related Material
  ## Manual
 
-- [Models and Skinned Models](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/graphics/models/model_component.markdown)
+- [Models and Skinned Models](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/graphics/models/model_component.markdown)
 
  ## Code Reference
 
-- [Mesh](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/code_reference/class_reference/mesh.markdown)
-- [Model](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/code_reference/class_reference/model.markdown)
-- [Skinned Model](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/code_reference/class_reference/skinnedmodel.markdown)
-- [Simple Animation](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/code_reference/class_reference/simpleanimation.markdown) 
+- [Mesh](https://plasmaengine.github.io/PlasmaDocs/Manual//code_reference/class_reference/mesh.markdown)
+- [Model](https://plasmaengine.github.io/PlasmaDocs/Manual//code_reference/class_reference/model.markdown)
+- [Skinned Model](https://plasmaengine.github.io/PlasmaDocs/Manual//code_reference/class_reference/skinnedmodel.markdown)
+- [Simple Animation](https://plasmaengine.github.io/PlasmaDocs/Manual//code_reference/class_reference/simpleanimation.markdown) 
 
  

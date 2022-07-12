@@ -5,14 +5,14 @@ The only difference between the gravity and force effect is whether an accelerat
 The *force// applied is a constant linear //force* based upon the direction and strength of the effect. By default, the effect will be applied in the local space of the object it's attached to. This means that rotating the object will affect the direction of the //force//.
 
  #  Application Methods
-GravityEffect and ForceEffect are assumed to work with all application methods of PhysicsEffects. If the effect is on the Space or LevelSettings then the *force* will apply to all objects in the level. If the effect is on a Region then it'll apply to all objects in the region. Otherwise, the effect will apply to the center of mass of the [RigidBody](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/physics/physicseffectsandregions/rigidbody.markdown) (no angular //force//). [Collider](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/physics/physicseffectsandregions/colliders.markdown) and Hierarchy application methods do not differ from the RigidBody mode.
+GravityEffect and ForceEffect are assumed to work with all application methods of PhysicsEffects. If the effect is on the Space or LevelSettings then the *force* will apply to all objects in the level. If the effect is on a Region then it'll apply to all objects in the region. Otherwise, the effect will apply to the center of mass of the [RigidBody](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/physics/physicseffectsandregions/rigidbody.markdown) (no angular //force//). [Collider](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/physics/physicseffectsandregions/colliders.markdown) and Hierarchy application methods do not differ from the RigidBody mode.
 
 ---
  #  Related Materials
  ##  Manual
-- [physicseffectsandregions.markdown](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/physics/physicseffectsandregions.markdown)
-- [rigidbody.markdown](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/physics/physicseffectsandregions/rigidbody.markdown)
-- [colliders.markdown](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/physics/physicseffectsandregions/colliders.markdown)
+- [physicseffectsandregions.markdown](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/physics/physicseffectsandregions.markdown)
+- [rigidbody.markdown](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/physics/physicseffectsandregions/rigidbody.markdown)
+- [colliders.markdown](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/physics/physicseffectsandregions/colliders.markdown)
 
  ##  Reference
 - [ForceEffect](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/forceeffect.markdown)

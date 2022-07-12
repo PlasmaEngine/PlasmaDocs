@@ -61,7 +61,7 @@ quick
 {the, quick, polka-dotted, fox}
 ```
 
-Attempting to access a negative index or an index that is greater than or equal to the array's [Count](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/lightning_in_plasma/arrays/.markdown#array-size) will throw a Lightning exception.
+Attempting to access a negative index or an index that is greater than or equal to the array's [Count](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/Lightning/arrays/.markdown#array-size) will throw a Lightning exception.
 
  #  Adding to and Removing from Arrays
 
@@ -302,11 +302,11 @@ secondExample, after copy and clear:  {7, 6, 5, 4, 3, 2, 1, 0}
 
  #  Looping Over Arrays
 
-As arrays are ordered sequences of objects, they lend themselves naturally to use in [ loops](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/lightning_in_plasma/looping.markdown): in each loop iteration, the next element of the array can be accessed, modified, copied, etc.
+As arrays are ordered sequences of objects, they lend themselves naturally to use in [ loops](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/Lightning/looping.markdown): in each loop iteration, the next element of the array can be accessed, modified, copied, etc.
 
  ##  For Loops
 
-The most basic way to loop over an array is by using a [ for loop](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/lightning_in_plasma/looping.markdown#for-loop). This takes advantage of the fact that an array contains its [ Count](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/array_t.markdown#count-plasma-engine-docume), or number of elements, as a property:
+The most basic way to loop over an array is by using a [ for loop](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/Lightning/looping.markdown#for-loop). This takes advantage of the fact that an array contains its [ Count](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/array_t.markdown#count-plasma-engine-docume), or number of elements, as a property:
 
 ```lang=csharp, name=For Loop Example
 var numbers = Array[Integer]() { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, };
@@ -336,7 +336,7 @@ Squares:
 
  ##  For Each Loops
 
-Another way to iterate through an array is to use a [ foreach loop](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/lightning_in_plasma/looping.markdown#for-each-loop):
+Another way to iterate through an array is to use a [ foreach loop](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/Lightning/looping.markdown#for-each-loop):
 
 ```lang=csharp, name=For Each Loop Example
 var numbers = Array[Integer]() { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, };
@@ -528,7 +528,7 @@ Note that the `CompareNameLengthsThenAlpha` function sorts Adventurers in ascend
 
  ##  Count and Capacity
 
-[ Count](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/array_t.markdown#count-plasma-engine-docume) and [ Capacity](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/array_t.markdown#capacity-plasma-engine-doc) get the number of elements in the array, and its potential capacity to hold elements, respectively. They are discussed in detail [above](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/lightning_in_plasma/arrays/.markdown#array-size).
+[ Count](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/array_t.markdown#count-plasma-engine-docume) and [ Capacity](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/array_t.markdown#capacity-plasma-engine-doc) get the number of elements in the array, and its potential capacity to hold elements, respectively. They are discussed in detail [above](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/Lightning/arrays/.markdown#array-size).
 
  ##  LastIndex
 
@@ -540,17 +540,17 @@ Note that the `CompareNameLengthsThenAlpha` function sorts Adventurers in ascend
 
 The [ Add](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/array_t.markdown#add-void) method expands an array so that the given element is the last item in it. The [ Push](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/array_t.markdown#push-void) method is identical to Add, and exists only for legacy purposes. The [ Insert](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/array_t.markdown#insert-void) method expands an array so that the given element is at the given index in it.
 
-All of these methods are discussed in detail [above](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/lightning_in_plasma/arrays/.markdown#adding).
+All of these methods are discussed in detail [above](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/Lightning/arrays/.markdown#adding).
 
  ##  Pop, RemoveAt, RemoveSwap, RemoveFirst, RemoveAll, and Clear
 
 The [ Pop](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/array_t.markdown#pop-any) method removes the last item from an array. The [ RemoveAt](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/array_t.markdown#removeat-void) method removes from an array the element found at the given index. The [ RemoveSwap](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/array_t.markdown#removeswap-void) method removes from an array the element found at the given index and swaps the last item in the array to that newly-vacated index. The [ RemoveFirst](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/array_t.markdown#removefirst-plasma-engine) method removes from an array the first element that matches the given object. The [ RemoveAll](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/array_t.markdown#removeall-plasma-engine-do) method removes from an array every element that matches the given object. The [ Clear](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/array_t.markdown#clear-void) method removes all the elements from an array.
 
-All of these methods are discussed in detail [above](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/lightning_in_plasma/arrays/.markdown#removing).
+All of these methods are discussed in detail [above](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/Lightning/arrays/.markdown#removing).
 
  ##  Copy
 
-The [ Copy](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/array_t.markdown#copy-array-t) method returns a new array that is a copy of the original. This method should be used to create a clone of an array that is to be modified separately without affecting the original. Because **Array** is a reference type, this cannot be done merely with the assignment operator, as shown [above](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/lightning_in_plasma/arrays/.markdown#reference-type).
+The [ Copy](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/array_t.markdown#copy-array-t) method returns a new array that is a copy of the original. This method should be used to create a clone of an array that is to be modified separately without affecting the original. Because **Array** is a reference type, this cannot be done merely with the assignment operator, as shown [above](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/Lightning/arrays/.markdown#reference-type).
 
  ##  FindFirstIndex
 
@@ -661,15 +661,15 @@ As with all cases of changing an array's size, if Resize raises an array's Count
 
  ##  Sort
 
-The [ Sort](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/array_t.markdown#sort-void) method sorts an array using the given comparison function. Typically, this is something the user provides, though some types, such as [ String](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown), provide static functions that can be used with the Sort method. Array sorting is discussed in depth [above](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/lightning_in_plasma/arrays/.markdown#sorting-arrays).
+The [ Sort](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/array_t.markdown#sort-void) method sorts an array using the given comparison function. Typically, this is something the user provides, though some types, such as [ String](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown), provide static functions that can be used with the Sort method. Array sorting is discussed in depth [above](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/Lightning/arrays/.markdown#sorting-arrays).
 
  #  Related Materials
 
  ##  Manual
 
-- [ Strings](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/lightning_in_plasma/strings.markdown)
-- [ Classes and Structs](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/lightning_in_plasma/classes.markdown)
-- [ Looping](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/lightning_in_plasma/looping.markdown)
+- [ Strings](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/Lightning/strings.markdown)
+- [ Classes and Structs](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/Lightning/classes.markdown)
+- [ Looping](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/Lightning/looping.markdown)
 
  ##  Code Reference
 

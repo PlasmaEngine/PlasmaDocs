@@ -1,4 +1,4 @@
-The metallic fragment, in the form of either a map or value, describes whether a [Material](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/graphics/materials.markdown), or part of a material, should have the properties of a metal (or conductor) in relation to light. Metals have high specular and their color represents the visible spectrum of light that a particular metal reflects. This is in opposition for dielectrics, or non-metals, that--for the most part--have high diffuse reflectance. In fact, when authoring a new material for a PBR-based renderer, whether that material is a metal or not (or some combination of the two) is usually the first consideration one should make.
+The metallic fragment, in the form of either a map or value, describes whether a [Material](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/graphics/materials.markdown), or part of a material, should have the properties of a metal (or conductor) in relation to light. Metals have high specular and their color represents the visible spectrum of light that a particular metal reflects. This is in opposition for dielectrics, or non-metals, that--for the most part--have high diffuse reflectance. In fact, when authoring a new material for a PBR-based renderer, whether that material is a metal or not (or some combination of the two) is usually the first consideration one should make.
 
 As metals have very high specular and very low diffuse reflectance, their color comes from a "tint" to reflected light. Gold and copper are two metals associated with their unique colors, instead of the grays usually found with metals. A simplified explanation of why gold and copper have the tint that they do is because they do not reflect much of the blue part of the spectrum. Compare the following three spheres, each tinted to represent gold, copper, and silver respectively.
 
@@ -45,8 +45,8 @@ A MetallicMap fragment is appropriate to use when the Material will have section
  # Related Materials
 
  ## Manual
-- [materials](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/graphics/materials.markdown)
-- [adding_textures_and_sprites](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/graphics/adding_assets/adding_textures_and_sprites.markdown)
+- [materials](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/graphics/materials.markdown)
+- [adding_textures_and_sprites](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/graphics/adding_assets/adding_textures_and_sprites.markdown)
 
  ## Code Reference
 - [material](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/material.markdown)

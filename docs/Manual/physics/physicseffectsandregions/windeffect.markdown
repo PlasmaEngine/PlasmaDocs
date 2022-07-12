@@ -8,7 +8,7 @@ WindEffect expects to be applied as a [Region](https://github.com/PlasmaEngine/P
 ---
  #  Related Materials
  ##  Manual
-- [physicseffectsandregions.markdown](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/physics/physicseffectsandregions.markdown)
+- [physicseffectsandregions.markdown](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/physics/physicseffectsandregions.markdown)
 
  ##  Reference
 - [WindEffect](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/windeffect.markdown)

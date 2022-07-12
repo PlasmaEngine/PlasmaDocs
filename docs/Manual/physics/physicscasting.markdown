@@ -1,12 +1,12 @@
 
  #  PhysicsCasting
 
-One of the most common run-time interactions with a [PhysicsSpace](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/physics/physicsspace.markdown) is casting, which queries for all objects within a region of space. This allows common operations such as line-of-sight queries, volume queries, and so on.
+One of the most common run-time interactions with a [PhysicsSpace](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/physics/physicsspace.markdown) is casting, which queries for all objects within a region of space. This allows common operations such as line-of-sight queries, volume queries, and so on.
 
 Typically a cast will take 3 arguments:
   - The shape to cast
   - How many results to receive at max. This is needed for internal optimizations in physics. For Ray/Segments, the results will be sorted by the t-value.
-  - The [CastFilter](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/castfilter.markdown) describes how to filter out results when casting. Common operations include skipping objects of certain configurations (Static, Kinematic, [CollisionGroups](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/physics/collisionoverview/collisiongroupsandtables.markdown), etc...).
+  - The [CastFilter](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/castfilter.markdown) describes how to filter out results when casting. Common operations include skipping objects of certain configurations (Static, Kinematic, [CollisionGroups](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/physics/collisionoverview/collisiongroupsandtables.markdown), etc...).
   
 Currently, the physics systems supports a few common casting types:
 
@@ -27,7 +27,7 @@ Sometimes a more complicated shape query is desired. [Collider](https://github.c
 Ray and Segments have an additional "CastFirst" operation for convenience. These cast functions implicitly have a max object count of `1`.
   
  #  DispatchWithin
-In addition to regular casting, the [physicsspace.markdown](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/physics/physicsspace.markdown) contains other common cast related functions. Sometimes casts are performed just to send events to all shapes within a region. This is common for a generic interaction system where each object may or may-not handle some event. Instead of casting and iterating over all results, the PhysicsSpace has the "DispatchWithin" functions. Currently only Sphere and Aabb dispatch functions exist.
+In addition to regular casting, the [physicsspace.markdown](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/physics/physicsspace.markdown) contains other common cast related functions. Sometimes casts are performed just to send events to all shapes within a region. This is common for a generic interaction system where each object may or may-not handle some event. Instead of casting and iterating over all results, the PhysicsSpace has the "DispatchWithin" functions. Currently only Sphere and Aabb dispatch functions exist.
 
  #  Sweeping
 While a cast can be used as a preventative check, sometimes the accuracy is not enough. This is where the `SweepCollider` function comes in. Sweeping can be thought of as extending a collider's volume in a direction to find the exact times that a collision would happen with static objects. This allows writing Time-of-Impact logic to avoid missing any collisions.
@@ -37,9 +37,9 @@ NOTE: Swept casts are expensive operations and should be used only when importan
 ---
  #  Related Materials
  ##  Manual
-- [physicsspace.markdown](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/physics/physicsspace.markdown)
-- [colliders.markdown](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/physics/colliders.markdown)
-- [collisiongroupsandtables.markdown](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/physics/collisionoverview/collisiongroupsandtables.markdown)
+- [physicsspace.markdown](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/physics/physicsspace.markdown)
+- [colliders.markdown](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/physics/colliders.markdown)
+- [collisiongroupsandtables.markdown](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/physics/collisionoverview/collisiongroupsandtables.markdown)
   
  ###  Reference
 - [CastFilter](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/castfilter.markdown)

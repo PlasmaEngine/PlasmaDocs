@@ -1,6 +1,6 @@
 # Comparison Operators
 
-Comparison operators take two operands and evaluate to a boolean value which describes a relationship between the given values. Comparison operators are frequently used with [conditionals](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/lightning_in_plasma/conditionals.markdown).
+Comparison operators take two operands and evaluate to a boolean value which describes a relationship between the given values. Comparison operators are frequently used with [conditionals](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/Lightning/conditionals.markdown).
 
  #  `==` & `!=` Operators
 The `==` (equality) operator compares two operands and returns `true` if they are the same and `false` if they are not. The `!=` (inequality) operator performs the inverse operation, returning `false` if they are the same and `true` if they are not.
@@ -43,7 +43,7 @@ if(unknownObject != null)
  # Object Comparison
 As seen in the first code block, object comparison is fairly common. However, there are a few details to be aware of when comparing objects by value vs. by reference.
 
-NOTE: To read about the details about by-value and by-reference objects, [ read the manual page](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/lightning_in_plasma/constructbyvaluevsbyref.markdown).
+NOTE: To read about the details about by-value and by-reference objects, [ read the manual page](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/Lightning/constructbyvaluevsbyref.markdown).
 
  ## Object Comparison by Value
 Take the following struct as a by-value example:
@@ -194,4 +194,4 @@ if(height >= 5)
 
  # Related Materials
  # Manual
-- [operators_precedence_chart](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/lightning_in_plasma/operators_precedence_chart.markdown)
+- [operators_precedence_chart](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/Lightning/operators_precedence_chart.markdown)

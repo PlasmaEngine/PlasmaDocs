@@ -23,6 +23,6 @@ If the user is experiencing audio problems such as clicks, static, or other audi
 
  ## Reference
 
-- [ AudioSettings ](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/code_reference/class_reference/audiosettings.markdown) 
+- [ AudioSettings ](https://plasmaengine.github.io/PlasmaDocs/Manual//code_reference/class_reference/audiosettings.markdown) 
 
  

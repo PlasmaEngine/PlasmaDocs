@@ -1,6 +1,6 @@
-The particle animator uses [ColorGradients](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/architecture/resources/colorgradient.markdown) to color each particle uniquely based on its current state.  The final color of any given particle is calculated from an element-wise multiplication of three color vectors:
+The particle animator uses [ColorGradients](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/architecture/resources/colorgradient.markdown) to color each particle uniquely based on its current state.  The final color of any given particle is calculated from an element-wise multiplication of three color vectors:
 ```Color = VertexColor * TimeGradientColor * VelocityGradientColor```
-where `VertexColor` comes from VectexColor  on the [SpriteParticleSystem](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/code_reference/class_reference/spriteparticlesystem.markdown) component.  `TimeGradientColor` is then found from sampling the TimeGradient resource, while `VelocityGradientColor` is found from sampling the VelocityGradient resource.
+where `VertexColor` comes from VectexColor  on the [SpriteParticleSystem](https://plasmaengine.github.io/PlasmaDocs/Manual//code_reference/class_reference/spriteparticlesystem.markdown) component.  `TimeGradientColor` is then found from sampling the TimeGradient resource, while `VelocityGradientColor` is found from sampling the VelocityGradient resource.
 
 
 
@@ -14,10 +14,10 @@ When sampling from VelocityGradient resource, the magnitude of the velocity is u
 
  # Related Material
  ## Manual
-- [Color Gradient](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/architecture/resources/colorgradient.markdown)
-- [Sprite Particle System](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/tutorials/graphics/particles/sprite_particle_system.markdown)
+- [Color Gradient](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/architecture/resources/colorgradient.markdown)
+- [Sprite Particle System](https://plasmaengine.github.io/PlasmaDocs/Manual//tutorials/graphics/particles/sprite_particle_system.markdown)
 
  ## Code Reference
-- [SpriteParticleSystem](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/code_reference/class_reference/spriteparticlesystem.markdown) 
+- [SpriteParticleSystem](https://plasmaengine.github.io/PlasmaDocs/Manual//code_reference/class_reference/spriteparticlesystem.markdown) 
 
  

@@ -69,7 +69,7 @@ else
 ```name=Console window
 The else ran
 ```
-Under the code block of the first `if`, there is a code block paired with the [Keyword](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/lightning_in_plasma/keywords.markdown) `else`.  The value `false` if given to the `if` conditional, and so the `else` block is executed. In any `if`-`else` pair, exactly one of the two code blocks will run.
+Under the code block of the first `if`, there is a code block paired with the [Keyword](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/Lightning/keywords.markdown) `else`.  The value `false` if given to the `if` conditional, and so the `else` block is executed. In any `if`-`else` pair, exactly one of the two code blocks will run.
 
  ## Else If
 While often for any given conditional there are only two outcomes, sometimes there are more. The `else if` keyword combinations allows the chaining of conditional statements.
@@ -149,12 +149,12 @@ neither valone or valtwo are true
 `else if` may seem like a seperate keyword than `if` and `else` but it is actually just syntactical suger to make code easier to follow.
 
  # Boolean Operations
-While conditionals a useful their real power comes when used in combination with [boolean_operators](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/lightning_in_plasma/boolean_operators.markdown). It is highly suggested you review this page.
+While conditionals a useful their real power comes when used in combination with [boolean_operators](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/Lightning/boolean_operators.markdown). It is highly suggested you review this page.
 
  # Related Material
  ## Manual
-- [keywords](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/lightning_in_plasma/keywords.markdown)
-- [boolean_operators](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/lightning_in_plasma/boolean_operators.markdown)
+- [keywords](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/Lightning/keywords.markdown)
+- [boolean_operators](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/Lightning/boolean_operators.markdown)
 
  ## Code Reference
 - [boolean](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown)

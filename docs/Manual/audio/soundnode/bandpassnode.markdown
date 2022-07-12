@@ -7,9 +7,9 @@ Band pass filters are a combination of low pass and high pass filtering which al
 ---
  # Related Materials
  ## Manual
-- [soudnode_overview](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/audio/soundnode/soudnode_overview.markdown)
-- [lowpassnode](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/audio/soundnode/lowpassnode.markdown)
-- [highpassnode](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/audio/soundnode/highpassnode.markdown)
+- [soudnode_overview](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/audio/soundnode/soudnode_overview.markdown)
+- [lowpassnode](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/audio/soundnode/lowpassnode.markdown)
+- [highpassnode](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/audio/soundnode/highpassnode.markdown)
 
  ## Code Reference
 - [ BandPassNode ](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/bandpassnode.markdown) 

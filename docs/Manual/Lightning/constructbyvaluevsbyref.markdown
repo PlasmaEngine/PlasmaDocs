@@ -1,4 +1,4 @@
-(NOTE)**Advanced Users Only**: The use of the **new** and **local** [keywords](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/lightning_in_plasma/keywords.markdown) __**is not something most users need to be concerned with**__, as it is almost entirely #deprecated. Heap or stack allocation is almost always handled automatically by the engine based off whether the constructed type is a class or struct, however, **new** and **local** still remain in the language for explicit allocation practices. Users attemptting to use **new** or **local** keywords should be aware that they override the standard allocation functionality of Lightning, but reference counted garbage collection will still happen for objects explicitly constructed with **new** and **local**.
+(NOTE)**Advanced Users Only**: The use of the **new** and **local** [keywords](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/Lightning/keywords.markdown) __**is not something most users need to be concerned with**__, as it is almost entirely #deprecated. Heap or stack allocation is almost always handled automatically by the engine based off whether the constructed type is a class or struct, however, **new** and **local** still remain in the language for explicit allocation practices. Users attemptting to use **new** or **local** keywords should be aware that they override the standard allocation functionality of Lightning, but reference counted garbage collection will still happen for objects explicitly constructed with **new** and **local**.
 
  # Local
 
@@ -18,7 +18,7 @@ The compiler will infer the use of local for by-value types:
 
  # New
 
-When working with [classes](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/lightning_in_plasma/classes.markdown), references, or other or anything located on the heap with a constructor, use the **new** keyword:
+When working with [classes](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/Lightning/classes.markdown), references, or other or anything located on the heap with a constructor, use the **new** keyword:
 
 ```lang=csharp
   var heapObject : CustomClass = new CustomClass();
@@ -45,8 +45,8 @@ Since structs are by-value, in order to get a reference you **must** specify new
 
  # Related Material
  ## Manual
-- [keywords](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/lightning_in_plasma/keywords.markdown)
-- [classes](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/lightning_in_plasma/classes.markdown)
-- [memory_management](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/lightning_in_plasma/memory_management.markdown) 
+- [keywords](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/Lightning/keywords.markdown)
+- [classes](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/Lightning/classes.markdown)
+- [memory_management](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/Lightning/memory_management.markdown) 
 
  

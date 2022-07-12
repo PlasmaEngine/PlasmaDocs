@@ -25,7 +25,7 @@ When adding a new LightningFragment, there are multiple templates for each type 
 
 This tool translates Materials (rather, the LightningFragments that make up the Material) into different versions of the shader language GLSL.
 
-[Command](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/editor/editorcommands/commands.markdown) : [ DebugShaderTranslation](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/command_reference.markdown#debugshadertranslation) will open the tool
+[Command](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/editor/editorcommands/commands.markdown) : [ DebugShaderTranslation](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/command_reference.markdown#debugshadertranslation) will open the tool
 
 On the left hand side of the window are properties that set the parameters that define the shaders to be be translated: CoreVertex enum, Material enum, and RenderPass enum. `Translation Language` set the version of GLSL to translate to.  These options set what exactly will be translated. Material enum, for example, sets the Material to be translated as its name would suggest.
 
@@ -33,8 +33,8 @@ If not familiar with GLSL, these will become overwhelmingly complex very quickly
 
  # Related Materials
  ## Manual
-- [normal_map](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/graphics/materials/normal_map.markdown)
-- [Material](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/graphics/materials/materials_overview.markdown)
+- [normal_map](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/graphics/materials/normal_map.markdown)
+- [Material](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/graphics/materials/materials_overview.markdown)
  
 
  

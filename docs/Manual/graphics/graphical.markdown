@@ -19,16 +19,16 @@ Initially, the values of these two properties will be such that they do not chan
 
  # GroupSortValue
 
-This property should only be used if using a [RenderGroup](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/graphics/rendergroups.markdown) that uses `GraphicalSortValue` as its GraphicalSortMethod enum. While GroupSortValue  could be set on an object by object basis, if there is even a moderate amount of graphicals in a project, setting this value for all graphicals through a script�where graphicals can be filtered into discrete groups�is recommended.
+This property should only be used if using a [RenderGroup](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/graphics/rendergroups.markdown) that uses `GraphicalSortValue` as its GraphicalSortMethod enum. While GroupSortValue  could be set on an object by object basis, if there is even a moderate amount of graphicals in a project, setting this value for all graphicals through a script�where graphicals can be filtered into discrete groups�is recommended.
 
  # Material
 
-Every graphical uses a Material, whether it is user-defined or built-in. Information on Materials can be found in the [materials_overview](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/graphics/materials/materials_overview.markdown).
+Every graphical uses a Material, whether it is user-defined or built-in. Information on Materials can be found in the [materials_overview](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/graphics/materials/materials_overview.markdown).
 
  # RelatedMaterials
  ## Manual
-- [RenderGroup](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/graphics/rendergroups.markdown)
-- [materials_overview](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/graphics/materials/materials_overview.markdown)
+- [RenderGroup](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/graphics/rendergroups.markdown)
+- [materials_overview](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/graphics/materials/materials_overview.markdown)
 
  ## Code Reference
 - [graphical](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/graphical.markdown)

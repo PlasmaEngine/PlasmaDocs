@@ -1,8 +1,8 @@
-**ColorGradiant** is a [resources](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/architecture/resources.markdown) that allows the user to make a custom color gradient. The gradient may then be sampled from and applied as a color to any object that has a component with a color property.
+**ColorGradiant** is a [resources](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/architecture/resources.markdown) that allows the user to make a custom color gradient. The gradient may then be sampled from and applied as a color to any object that has a component with a color property.
 
  # Using ColorGradient
  ## Creating a ColorGradient
-A new ColorGradient may be created through the [Add a Resource](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/editor/editorcommands/resourceadding.markdown) window.
+A new ColorGradient may be created through the [Add a Resource](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/editor/editorcommands/resourceadding.markdown) window.
 Once the new ColorGradient has been named and created, an editor window will pop up.
 The editor currently shows a gradient from black to white. The user may add keypoints on the gradient, however, to add in new colors by left-clicking anywhere on the gradient bar. These colors are selected via the common color selection window.
 As the common color selection window is used, any value within it may be changed as well, including the alpha value.
@@ -72,8 +72,8 @@ The above code-block accomplishes the following things:
 
  # Related Materials
  ## Manual Pages
-- [resources](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/architecture/resources.markdown)
-- [resourceadding](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/editor/editorcommands/resourceadding.markdown)
+- [resources](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/architecture/resources.markdown)
+- [resourceadding](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/editor/editorcommands/resourceadding.markdown)
  ## Reference Pages
 - [colorgradient](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/colorgradient.markdown)
 - [Sprite](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/sprite.markdown) 

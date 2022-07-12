@@ -1,10 +1,10 @@
 # Memory Management
-This section covers the basics of memory management in Lightning. Specifically, the topics covered include: [Types of Memory Storage](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/lightning_in_plasma/memory_management.markdown#types-of-memory-storage), [allocating-memory](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/lightning_in_plasma/memory_management.markdown#allocating-memory), and [freeing-memory](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/lightning_in_plasma/memory_management.markdown#freeing-memory)
+This section covers the basics of memory management in Lightning. Specifically, the topics covered include: [Types of Memory Storage](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/Lightning/memory_management.markdown#types-of-memory-storage), [allocating-memory](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/Lightning/memory_management.markdown#allocating-memory), and [freeing-memory](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/Lightning/memory_management.markdown#freeing-memory)
 
  # Types of Memory Storage
  ## By-Value
 
-There are two main types of storage, `by-value` and `by-reference` (or `by-ref` for short). `By-value` is stored on the local stack and the storage is cleaned up once it goes out of scope. When passed into a function it copies data `by-value`. [Structs](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/lightning_in_plasma/structs.markdown) and primitives are `by-value`.
+There are two main types of storage, `by-value` and `by-reference` (or `by-ref` for short). `By-value` is stored on the local stack and the storage is cleaned up once it goes out of scope. When passed into a function it copies data `by-value`. [Structs](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/Lightning/structs.markdown) and primitives are `by-value`.
 
 ```lang=csharp, name=By-Value Storage in a Struct
 struct ByValue
@@ -48,7 +48,7 @@ ID: 1111111
 ```
 
  ## By-Reference
-`By-reference` is stored on the heap and the storage is cleaned up once there are no longer references to it, or the handle is explicitly deleted in code. When passed into a [function](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/lightning_in_plasma/functions.markdown) it copies it `by-reference`. [Classes](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/lightning_in_plasma/classes.markdown) and structs promoted with the `ref` keyword are `by-reference`.
+`By-reference` is stored on the heap and the storage is cleaned up once there are no longer references to it, or the handle is explicitly deleted in code. When passed into a [function](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/Lightning/functions.markdown) it copies it `by-reference`. [Classes](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/Lightning/classes.markdown) and structs promoted with the `ref` keyword are `by-reference`.
 
  ### By-Ref Storage in a Struct and a Class
 
@@ -146,7 +146,7 @@ NOTE: A `by-ref` type can be set to null, but a `by-value` type cannot.
 
  ## Creating variables `by-value` and `by-ref`
  ### Local
-When working with by-value types that have constructors, such as structs or more complex stack primitive data types, the [keyword](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/lightning_in_plasma/keywords.markdown) **local** may be used:
+When working with by-value types that have constructors, such as structs or more complex stack primitive data types, the [keyword](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/Lightning/keywords.markdown) **local** may be used:
 
 ```lang=csharp
 var up: Real3 = local Real3(0.0, 1.0, 0.0);
@@ -211,7 +211,7 @@ class MyClass
 }
 ```
 
-A class or struct may possess one or more constructors. Like [functions](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/lightning_in_plasma/functions.markdown) they can be overloaded via their [named_parameters](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/lightning_in_plasma/named_parameters.markdown). Special syntax is also used when constructing a derived class, see [inheritance](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/lightning_in_plasma/inheritance.markdown) for more.
+A class or struct may possess one or more constructors. Like [functions](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/Lightning/functions.markdown) they can be overloaded via their [named_parameters](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/Lightning/named_parameters.markdown). Special syntax is also used when constructing a derived class, see [inheritance](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/Lightning/inheritance.markdown) for more.
 
  # Freeing Memory
 
@@ -283,7 +283,7 @@ Lightning does not have a full-fledged garbage collector, but it does have ref-c
   // abc, bca, and cab will leak.
 ```
 
-2. [delegates](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/lightning_in_plasma/delegates.markdown) containing an instance member function hold the `this` handle to the object, and thus will keep ref-counted objects alive.
+2. [delegates](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/Lightning/delegates.markdown) containing an instance member function hold the `this` handle to the object, and thus will keep ref-counted objects alive.
 ```lang=csharp, name=Examples of Delegate Leaking
 class Utility
 {
@@ -470,12 +470,12 @@ Destructors allow you to do any necessary clean up on your part, such as free me
 
  # Related Materials
  ## Manual
-- [Classes](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/lightning_in_plasma/classes.markdown)
-- [Structs](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/lightning_in_plasma/structs.markdown)
-- [Functions](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/lightning_in_plasma/functions.markdown)
-- [Keywords](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/lightning_in_plasma/keywords.markdown)
-- [named_parameters](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/lightning_in_plasma/named_parameters.markdown)
-- [inheritance](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/lightning_in_plasma/inheritance.markdown)
-- [delegates](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/lightning_in_plasma/delegates.markdown) 
+- [Classes](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/Lightning/classes.markdown)
+- [Structs](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/Lightning/structs.markdown)
+- [Functions](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/Lightning/functions.markdown)
+- [Keywords](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/Lightning/keywords.markdown)
+- [named_parameters](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/Lightning/named_parameters.markdown)
+- [inheritance](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/Lightning/inheritance.markdown)
+- [delegates](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/Lightning/delegates.markdown) 
 
  

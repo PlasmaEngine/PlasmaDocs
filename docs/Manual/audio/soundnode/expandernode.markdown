@@ -18,8 +18,8 @@ The `AttackMillisec` and `ReleaseMillisec` properties control how quickly the fi
 ---
  # Related Materials
  ## Manual
-- [soudnode_overview](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/audio/soundnode/soudnode_overview.markdown)
-- [compressornode](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/audio/soundnode/compressornode.markdown)
+- [soudnode_overview](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/audio/soundnode/soudnode_overview.markdown)
+- [compressornode](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/audio/soundnode/compressornode.markdown)
 
  ## Code Reference
 - [ ExpanderNode ](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/expandernode.markdown) 

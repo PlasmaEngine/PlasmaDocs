@@ -3,7 +3,7 @@ The [ PanningNode ](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_
  # Common Uses
 
 - Moving sounds from left to right and right to left (such as an ambient wind sound)
-- Positioning sounds without using a [SoundEmitter ](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/audio/soundnode/soundemitter.markdown)
+- Positioning sounds without using a [SoundEmitter ](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/audio/soundnode/soundemitter.markdown)
 
  # Using the PanningNode
 
@@ -80,7 +80,7 @@ class MovingNoise : LightningComponent
 ---
  # Related Materials
  ## Manual
-- [soudnode_overview](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/audio/soundnode/soudnode_overview.markdown)
+- [soudnode_overview](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/audio/soundnode/soudnode_overview.markdown)
 
  ## Code Reference
 - [ PanningNode ](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/panningnode.markdown) 

@@ -5,7 +5,7 @@ The [FlowEffect](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_ref
 ![FlowEffect](https://raw.githubusercontent.com/PlasmaEngine/PlasmaDocs/master/media/46701.png)
 
 
-Unlike a [ForceEffect](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/physics/physicseffectsandregions/forceeffect.markdown) which applies a constant force in a direction, FlowEffect applies a variable force to make an object move at a constant speed in the flow direction. MaxFlowForce  allows the user to control how much force can be applied to reach this target speed. This can also be thought of as controlling the acceleration of objects within the field. Note: the flow portion of the effect only affects movement in the flow direction, not in the inward force direction.
+Unlike a [ForceEffect](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/physics/physicseffectsandregions/forceeffect.markdown) which applies a constant force in a direction, FlowEffect applies a variable force to make an object move at a constant speed in the flow direction. MaxFlowForce  allows the user to control how much force can be applied to reach this target speed. This can also be thought of as controlling the acceleration of objects within the field. Note: the flow portion of the effect only affects movement in the flow direction, not in the inward force direction.
 
 Additionally, FlowEffect has the AttractToFlowCenter checkBox property to pull objects towards the flow center. This attractional force is similarly defined by a target speed and a max force. Note: this force only affects movement in the inward direction, not in the flow direction.
 
@@ -15,8 +15,8 @@ FlowEffect is only expected to be used as a [Region](https://github.com/PlasmaEn
 ---
  #  Related Materials
  ##  Manual
-- [physicseffectsandregions.markdown](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/physics/physicseffectsandregions.markdown)
-- [forceeffect.markdown](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/physics/physicseffectsandregions/forceeffect.markdown)
+- [physicseffectsandregions.markdown](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/physics/physicseffectsandregions.markdown)
+- [forceeffect.markdown](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/physics/physicseffectsandregions/forceeffect.markdown)
 
  ##  Reference
 - [FlowEffect](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/floweffect.markdown)

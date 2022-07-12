@@ -1,4 +1,4 @@
-[ SoundTags ](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/soundtag.markdown) are resources that allow users to pause, resume, and stop a group of [SoundInstances ](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/audio/soundinstance.markdown); control their volume, EQ, and compression; and get a list of tagged SoundInstances to change other properties in LightningScripts. 
+[ SoundTags ](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/soundtag.markdown) are resources that allow users to pause, resume, and stop a group of [SoundInstances ](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/audio/soundinstance.markdown); control their volume, EQ, and compression; and get a list of tagged SoundInstances to change other properties in LightningScripts. 
 
  # Common Uses
 
@@ -8,23 +8,23 @@
 
  # Using SoundTags
 
-SoundTags can be added to [SoundCues](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/audio/soundcue.markdown) using [SoundTagEntries ](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/audio/soundcue.markdown#soundtagentries). When a SoundCue is played, the resulting SoundInstance will be automatically added to all SoundTags that are on the SoundCue. Users can also add and remove SoundInstances from SoundTags in scripts at runtime. Unlike other audio objects, SoundTags exist across all Spaces, so the same SoundTag can be used for SoundInstances in different [SoundSpaces ](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/audio/soundspace.markdown). 
+SoundTags can be added to [SoundCues](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/audio/soundcue.markdown) using [SoundTagEntries ](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/audio/soundcue.markdown#soundtagentries). When a SoundCue is played, the resulting SoundInstance will be automatically added to all SoundTags that are on the SoundCue. Users can also add and remove SoundInstances from SoundTags in scripts at runtime. Unlike other audio objects, SoundTags exist across all Spaces, so the same SoundTag can be used for SoundInstances in different [SoundSpaces ](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/audio/soundspace.markdown). 
 
  ## Volume 
 
 The Volume  and Decibels  properties set the volume adjustment that is applied to all tagged SoundInstances. Volume  uses floating point values, while Decibels  uses the logarithmic decibel scale commonly used in audio. These properties are linked, so changing one will also change the value of the other.
 
-Note that these volume changes will be combined with any other volume modifications applied by objects such as [SoundEmitters](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/audio/soundemitter.markdown), SoundCues, and SoundSpaces. If a SoundCue's Volume  is set to `0.5` and it is played with a SoundTag which also has a volume of `0.5`, this effectively sets the resulting SoundInstance's volume to `0.25`.
+Note that these volume changes will be combined with any other volume modifications applied by objects such as [SoundEmitters](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/audio/soundemitter.markdown), SoundCues, and SoundSpaces. If a SoundCue's Volume  is set to `0.5` and it is played with a SoundTag which also has a volume of `0.5`, this effectively sets the resulting SoundInstance's volume to `0.25`.
 
 Volume can be interpolated over time using either floating point or decibel values with the `InterpolateVolume` and `InterpolateDecibels` methods. Using these methods ensures that the volume changes are applied smoothly by the audio engine.
 
  ## Equalizer
 
-If the `UseEqualizer` property is set to `true`, the EQ properties will be applied to all tagged SoundInstances. These settings control the volume of the audio at different frequency ranges. SoundTags have properties for `EQLowPassGain`, `EQBand1Gain`, `EQBand2Gain`, `EQBand3Gain`, and `EQHighPassGain`. See the [EqualizerNode ](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/audio/soundnode/equalizernode.markdown) for explanations of how these properties work.
+If the `UseEqualizer` property is set to `true`, the EQ properties will be applied to all tagged SoundInstances. These settings control the volume of the audio at different frequency ranges. SoundTags have properties for `EQLowPassGain`, `EQBand1Gain`, `EQBand2Gain`, `EQBand3Gain`, and `EQHighPassGain`. See the [EqualizerNode ](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/audio/soundnode/equalizernode.markdown) for explanations of how these properties work.
 
  ## Compressor
 
-If the `UseCompressor` property is set to `true`, the Compressor properties will be applied to all tagged SoundInstances. A compressor reduces the volume of the sound if it goes above a specified decibel level, or threshold. SoundTags have properties for `CompressorThreshold`, `CompressorAttack`, `CompressorRelease`, `CompressorRatio`, and `CompressorKneeWidth`. See the [CompressorNode ](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/audio/soundnode/compressornode.markdown) for explanations of how these properties work.
+If the `UseCompressor` property is set to `true`, the Compressor properties will be applied to all tagged SoundInstances. A compressor reduces the volume of the sound if it goes above a specified decibel level, or threshold. SoundTags have properties for `CompressorThreshold`, `CompressorAttack`, `CompressorRelease`, `CompressorRatio`, and `CompressorKneeWidth`. See the [CompressorNode ](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/audio/soundnode/compressornode.markdown) for explanations of how these properties work.
 
 If the `TagForDucking` property is set to another SoundTag that tag's volume level will be used to trigger the compressor settings of this SoundTag.
 
@@ -38,13 +38,13 @@ If the `TagForDucking` property is set to another SoundTag that tag's volume lev
 
  ## Manual
 
-- [SoundInstance ](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/audio/soundinstance.markdown)
-- [SoundCue ](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/audio/soundcue.markdown)
-- [SoundTagEntries ](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/audio/soundcue.markdown#soundtagentries)
-- [SoundSpace ](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/audio/soundspace.markdown)
-- [SoundEmitter ](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/audio/soundemitter.markdown)
-- [EqualizerNode ](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/audio/soundnode/equalizernode.markdown)
-- [CompressorNode ](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/audio/soundnode/compressornode.markdown)
+- [SoundInstance ](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/audio/soundinstance.markdown)
+- [SoundCue ](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/audio/soundcue.markdown)
+- [SoundTagEntries ](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/audio/soundcue.markdown#soundtagentries)
+- [SoundSpace ](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/audio/soundspace.markdown)
+- [SoundEmitter ](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/audio/soundemitter.markdown)
+- [EqualizerNode ](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/audio/soundnode/equalizernode.markdown)
+- [CompressorNode ](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/audio/soundnode/compressornode.markdown)
 
  ## Reference
 

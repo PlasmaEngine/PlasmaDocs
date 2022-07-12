@@ -1,5 +1,5 @@
 # Inheritance
-Inheritance allows a *child [class](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/lightning_in_plasma/classes.markdown) to automatically receive all of the data and functionality defined within the base* class.
+Inheritance allows a *child [class](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/Lightning/classes.markdown) to automatically receive all of the data and functionality defined within the base* class.
 
 ```name=Feline, lang=csharp
 class Feline
@@ -23,7 +23,7 @@ var simba = new Lion(); // Instantiated from the inherited constructor
 In the above example the variable `simba` can be instantiated as a `Lion` using the constructor from `Feline`.
 
  # The **base** Keyword
-The **base** [keyword](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/lightning_in_plasma/keywords.markdown) is for use when defining an inherited class; it allows you to call the constructor of the base class being inherited from before running an explicitly defined constructor.
+The **base** [keyword](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/Lightning/keywords.markdown) is for use when defining an inherited class; it allows you to call the constructor of the base class being inherited from before running an explicitly defined constructor.
 
 ```name=Animal, lang=csharp
 class Animal
@@ -233,6 +233,6 @@ var d : Cat = Cat();
 
  # Related Materials
  ## Manual
-- [attributes](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/lightning_in_plasma/attributes.markdown) 
+- [attributes](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/Lightning/attributes.markdown) 
 
  

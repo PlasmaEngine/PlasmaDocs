@@ -1,9 +1,9 @@
 # Classes
 
-Classes and structs define the type of certain objects in Lightning, and the `class` keyword can create user-defined data types.  The [Variables](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/lightning_in_plasma/variables_and_data_types.markdown) and [Functions](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/lightning_in_plasma/functions.markdown) defined in a class or struct are all stored and referenced from instantiations.  In contrast with how Structs handle [Memory Management](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/lightning_in_plasma/memory_management.markdown), classes are copied `by-reference`.
+Classes and structs define the type of certain objects in Lightning, and the `class` keyword can create user-defined data types.  The [Variables](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/Lightning/variables_and_data_types.markdown) and [Functions](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/Lightning/functions.markdown) defined in a class or struct are all stored and referenced from instantiations.  In contrast with how Structs handle [Memory Management](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/Lightning/memory_management.markdown), classes are copied `by-reference`.
 
  # Class Contents
-Classes in Lightning must be defined in [global scope](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/lightning_in_plasma/variables_and_data_types.markdown#global-scope).  The format for classes and structs are as shown below:
+Classes in Lightning must be defined in [global scope](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/Lightning/variables_and_data_types.markdown#global-scope).  The format for classes and structs are as shown below:
 
 ```lang=csharp, name=Simple Classes
 struct SimpleStruct {}
@@ -25,7 +25,7 @@ class ClassInClass { var MyClass : SimpleClass; }
 The class `MyClass` is a member of `ClassInStruct`, which is a struct.  Having a class in a struct will cause Lightning to throw a compile-time exception.
 
  ## Static vs Non-Static Members
-Variables and functions inside a class or struct are known as members. Most member variables must be accessed through instantiations of the object.  The one exception are member variables with the [Static](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/lightning_in_plasma/attributes.markdown#static) [Attribute](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/lightning_in_plasma/attributes.markdown).
+Variables and functions inside a class or struct are known as members. Most member variables must be accessed through instantiations of the object.  The one exception are member variables with the [Static](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/Lightning/attributes.markdown#static) [Attribute](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/Lightning/attributes.markdown).
 
 ```lang=csharp, name=Static Members
 class MyClass
@@ -170,16 +170,16 @@ class Driver2
 5
 ```
 
-In the example above, `MyClass` [inherits](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/lightning_in_plasma/inheritance.markdown) from `MyStruct`.  `MyClass` has the same members as `MyStruct`, and the only difference between the two is that `MyClass` is a `class`.  Observe how `3`, `4`, and `5` are printed, which means that the destructor got called on `v3`, `v4`, and `v5`.  All struct destructors were ignored, while all class destructors were called.  The one exception is `v3`, which is of the type `ref MyStruct` and has the copy `by-reference` quality.
+In the example above, `MyClass` [inherits](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/Lightning/inheritance.markdown) from `MyStruct`.  `MyClass` has the same members as `MyStruct`, and the only difference between the two is that `MyClass` is a `class`.  Observe how `3`, `4`, and `5` are printed, which means that the destructor got called on `v3`, `v4`, and `v5`.  All struct destructors were ignored, while all class destructors were called.  The one exception is `v3`, which is of the type `ref MyStruct` and has the copy `by-reference` quality.
 
  # Related Materials
  ## Manual
-- [Variables](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/lightning_in_plasma/variables_and_data_types.markdown)
-- [Functions](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/lightning_in_plasma/functions.markdown)
-- [memory_management](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/lightning_in_plasma/memory_management.markdown)
-- [attributes](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/lightning_in_plasma/attributes.markdown)
-- [inheritance](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/lightning_in_plasma/inheritance.markdown)
-- [Static](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/lightning_in_plasma/attributes.markdown#static)
+- [Variables](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/Lightning/variables_and_data_types.markdown)
+- [Functions](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/Lightning/functions.markdown)
+- [memory_management](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/Lightning/memory_management.markdown)
+- [attributes](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/Lightning/attributes.markdown)
+- [inheritance](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/Lightning/inheritance.markdown)
+- [Static](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/Lightning/attributes.markdown#static)
 
  ## Code Reference
 - [real](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown) 

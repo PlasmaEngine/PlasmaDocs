@@ -1,5 +1,5 @@
 # Flags
-Flags are very similar to [enums](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/lightning_in_plasma/enums.markdown) except that they are ordered like a bit field (i.e. increasing in powers of two starting at 1 by default). Flags can be defined with the **flags** keyword:
+Flags are very similar to [enums](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/Lightning/enums.markdown) except that they are ordered like a bit field (i.e. increasing in powers of two starting at 1 by default). Flags can be defined with the **flags** keyword:
 
 ```lang=csharp, name=Flags Type Defined
 flags Pizza 
@@ -298,7 +298,7 @@ The binary '+' operator 'Positive / Add' is not valid with 'Pizza' and 'Cookie'.
 
  # Related Materials
  # Manual
-- [enums](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/lightning_in_plasma/enums.markdown)
+- [enums](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/Lightning/enums.markdown)
 
  ## Code Reference
 - [flags_reference](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/flags_reference.markdown)

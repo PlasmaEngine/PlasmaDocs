@@ -2,7 +2,7 @@ Debug drawing is a feature in Plasma that allows you to draw lines and shapes wi
 
  # DebugDraw
 
-The DebugDraw object draws all the debug objects in a level once per frame.  Each debug draw object is turned into a graphical which uses either the DebugDraw resource or  DebugDrawOnTop resource [RenderGroup](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/graphics/rendergroups.markdown). The user will never make the draw call directly; instead, all debug objects to be rendered must be added to the debug draw call using the `DebugDraw.Add()` function:
+The DebugDraw object draws all the debug objects in a level once per frame.  Each debug draw object is turned into a graphical which uses either the DebugDraw resource or  DebugDrawOnTop resource [RenderGroup](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/graphics/rendergroups.markdown). The user will never make the draw call directly; instead, all debug objects to be rendered must be added to the debug draw call using the `DebugDraw.Add()` function:
 
 ``` lang=csharp
 // Create a DebugLine instance with a point and a radius, and add it to the DebugDraw call
@@ -179,6 +179,6 @@ class DrawTriangles: LightningComponent
 
  ## Related Materials
  ### Manual
-- [rendergroups](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/graphics/rendergroups.markdown) 
+- [rendergroups](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/graphics/rendergroups.markdown) 
 
  

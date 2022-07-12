@@ -322,14 +322,14 @@ function OnLogicUpdate(event : UpdateEvent)
 
  #  What to Use
 
-Whether direct control or cursor control is used, event-based input and polling-based input may have performance differences. As is the case with [ Keyboard Input](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/gameplay/input/keyboardinput.markdown#what-to-use), the difference will often be very small, so sometimes it is best to use whichever method is easiest for the developer, but knowing how to decide which input method to use is always important.
+Whether direct control or cursor control is used, event-based input and polling-based input may have performance differences. As is the case with [ Keyboard Input](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/gameplay/input/keyboardinput.markdown#what-to-use), the difference will often be very small, so sometimes it is best to use whichever method is easiest for the developer, but knowing how to decide which input method to use is always important.
 
 To decide whether a component should use event-based mouse input or polling-based mouse input, begin by answering these guideline questions:
 
 **Is the mouse being used for cursor control or direct mouse control?**
 
-- **[Cursor control](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/gameplay/input/mouseinput/.markdown#cursor-control)**: mouse events are probably better
-- **[direct mouse control](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/gameplay/input/mouseinput/.markdown#direct-mouse-control)**: either may work
+- **[Cursor control](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/gameplay/input/mouseinput/.markdown#cursor-control)**: mouse events are probably better
+- **[direct mouse control](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/gameplay/input/mouseinput/.markdown#direct-mouse-control)**: either may work
 
 The nature of a cursor-driven interface is well-suited to being controlled by mouse events, and is often awkward and impractical to implement with polling.
 
@@ -353,7 +353,7 @@ Because mouse events are only dispatched when the mouse is used (other than [ Mo
 
  #  Related Materials
  ##  Manual
-- [ Keyboard Input](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/gameplay/input/keyboardinput.markdown#what-to-use)
+- [ Keyboard Input](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/gameplay/input/keyboardinput.markdown#what-to-use)
 
  ##  Code Reference
 - [ Mouse](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/mouse.markdown)

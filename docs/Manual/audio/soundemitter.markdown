@@ -1,17 +1,17 @@
-The [ SoundEmitter ](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/soundemitter.markdown) component handles the 3D positioning of sounds in a level. For instance, if the SoundEmitter's object is to the left of a [SoundListener ](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/audio/soundlistener.markdown), it will reduce the amount of sound going to the right speaker, so that the player hears the sound to their left. 
+The [ SoundEmitter ](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/soundemitter.markdown) component handles the 3D positioning of sounds in a level. For instance, if the SoundEmitter's object is to the left of a [SoundListener ](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/audio/soundlistener.markdown), it will reduce the amount of sound going to the right speaker, so that the player hears the sound to their left. 
 
  # Using SoundEmitters
 
 
  ## Volume and Pitch Settings
 
-The Volume  and Decibels  properties set the volume adjustment that is applied to any [SoundInstances](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/audio/soundinstance.markdown) played through the SoundEmitter. The Volume  property uses floating point values, while the Decibels  property uses the logarithmic decibel scale commonly used in audio. These properties are linked, so changing one will also change the value of the other. 
+The Volume  and Decibels  properties set the volume adjustment that is applied to any [SoundInstances](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/audio/soundinstance.markdown) played through the SoundEmitter. The Volume  property uses floating point values, while the Decibels  property uses the logarithmic decibel scale commonly used in audio. These properties are linked, so changing one will also change the value of the other. 
 
 The Pitch  and Semitones  properties set the pitch adjustment that is applied to SoundInstances. This adjustment affects both the pitch and speed of the sound: higher-pitched sounds will play faster, while lower-pitched sounds play slower. Large pitch changes will likely affect the quality of the sound. The Pitch  property uses floating point values, while the Semitones  property uses semitones, or half-steps. These properties are also linked.
 
 The `InterpolateVolume`, `InterpolateDecibels`, `InterpolatePitch`, and `InterpolateSemitones` methods can be used at runtime to smoothly change the SoundEmitter's volume or pitch over time. Using these interpolation methods is preferable to using Actions to set the properties: changing a property every frame with an Action can result in audible jumps in volume or pitch, while the interpolation method causes the volume change to be handled smoothly by the audio engine.
 
-Note that these volume and pitch changes will be combined with any other volume modifications applied by objects such as [SoundTags](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/audio/soundtag.markdown), [SoundCues](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/audio/soundcue.markdown), and [SoundSpaces](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/audio/soundspace.markdown). If a SoundCue's volume is set to `0.5` and it is played on a SoundEmitter which also has a volume of `0.5`, this effectively sets the resulting SoundInstance's volume to `0.25`. If a SoundInstance's Semitones is set to `12` and it is played on a SoundEmitter with a Semitones value of `-6`, this effectively raises the SoundInstance's pitch by 6 semitones or half an octave. 
+Note that these volume and pitch changes will be combined with any other volume modifications applied by objects such as [SoundTags](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/audio/soundtag.markdown), [SoundCues](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/audio/soundcue.markdown), and [SoundSpaces](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/audio/soundspace.markdown). If a SoundCue's volume is set to `0.5` and it is played on a SoundEmitter which also has a volume of `0.5`, this effectively sets the resulting SoundInstance's volume to `0.25`. If a SoundInstance's Semitones is set to `12` and it is played on a SoundEmitter with a Semitones value of `-6`, this effectively raises the SoundInstance's pitch by 6 semitones or half an octave. 
 
  ## Directional SoundEmitters
 
@@ -22,11 +22,11 @@ Note that these volume and pitch changes will be combined with any other volume 
 
  ## Attenuation
 
-If a [SoundAttenuator](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/audio/soundattenuator.markdown) resource other than DefaultNoAttenuation resource is selected, its settings will be used for any SoundCues played through the SoundEmitter that have DefaultNoAttenuation resource selected on their Attenuator resource property. 
+If a [SoundAttenuator](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/audio/soundattenuator.markdown) resource other than DefaultNoAttenuation resource is selected, its settings will be used for any SoundCues played through the SoundEmitter that have DefaultNoAttenuation resource selected on their Attenuator resource property. 
 
  ## SoundNodes
 
-Unlike other objects, SoundEmitters are a collection of multiple [SoundNodes ](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/audio/soundnode.markdown). This allows them to have settings for volume and pitch as well as handling spatialization. Because of this, instead of one SoundNode property, SoundEmitters have two separate properties for the first and last SoundNodes in their chain. 
+Unlike other objects, SoundEmitters are a collection of multiple [SoundNodes ](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/audio/soundnode.markdown). This allows them to have settings for volume and pitch as well as handling spatialization. Because of this, instead of one SoundNode property, SoundEmitters have two separate properties for the first and last SoundNodes in their chain. 
 
 The `InputNode` property should be used for attaching other SoundNodes to the input of the SoundEmitter, while the `OutputNode` should be used for attaching to its output. Users cannot insert other SoundNodes before or after the `InputNode`, and cannot insert SoundNodes before the `OutputNode`. Neither of these nodes can be replaced or removed from the graph.
 
@@ -40,13 +40,13 @@ The `InputNode` property should be used for attaching other SoundNodes to the in
 
  ## Manual
 
-- [SoundListener ](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/audio/soundlistener.markdown)
-- [SoundInstance ](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/audio/soundinstance.markdown)
-- [SoundTag ](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/audio/soundtag.markdown)
-- [SoundCue ](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/audio/soundcue.markdown)
-- [SoundSpace ](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/audio/soundspace.markdown)
-- [SoundAttenuator ](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/audio/soundattenuator.markdown)
-- [SoundNode ](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/audio/soundnode.markdown)
+- [SoundListener ](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/audio/soundlistener.markdown)
+- [SoundInstance ](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/audio/soundinstance.markdown)
+- [SoundTag ](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/audio/soundtag.markdown)
+- [SoundCue ](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/audio/soundcue.markdown)
+- [SoundSpace ](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/audio/soundspace.markdown)
+- [SoundAttenuator ](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/audio/soundattenuator.markdown)
+- [SoundNode ](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/audio/soundnode.markdown)
 
  ## Reference
 

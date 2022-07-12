@@ -2,7 +2,7 @@ The [VortexEffect](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_r
  - An attractive linear force pulls objects towards the center of the disc.
  - A perpendicular  linear force twists objects around the center of the disc.
 
-The same interpolation scheme as [PointForceEffect](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/physics/physicseffectsandregions/pointforceeffect.markdown) is used by VortexEffect to compute the inward strength and twist strength.
+The same interpolation scheme as [PointForceEffect](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/physics/physicseffectsandregions/pointforceeffect.markdown) is used by VortexEffect to compute the inward strength and twist strength.
 
  #  Application Modes
 VortexEffect is only expected to work as a Region effect. All other application modes are undefined.
@@ -10,8 +10,8 @@ VortexEffect is only expected to work as a Region effect. All other application 
 ---
  #  Related Materials
  ##  Manual
-- [physicseffectsandregions.markdown](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/physics/physicseffectsandregions.markdown)
-- [pointforceeffect.markdown](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/physics/physicseffectsandregions/pointforceeffect.markdown)
+- [physicseffectsandregions.markdown](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/physics/physicseffectsandregions.markdown)
+- [pointforceeffect.markdown](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/physics/physicseffectsandregions/pointforceeffect.markdown)
 
  ##  Reference
 - [VortexEffect](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/vortexeffect.markdown)

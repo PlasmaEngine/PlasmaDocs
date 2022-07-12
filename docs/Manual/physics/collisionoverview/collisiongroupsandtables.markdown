@@ -1,10 +1,10 @@
-[ CollisionGroups](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/collisiongroup.markdown) and [ CollisionTables](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/collisiontable.markdown) are intertwined resources in the physics system. A CollisionGroup defines a label for a [colliders.markdown](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/physics/collisionoverview/colliders.markdown) to be used within a CollisionTable. A CollisionTable defines filters for pairs of CollisionGroups. These filters allow extra control over what collisions can take place. Additionally, filters can be configured to send extra events.
+[ CollisionGroups](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/collisiongroup.markdown) and [ CollisionTables](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/collisiontable.markdown) are intertwined resources in the physics system. A CollisionGroup defines a label for a [colliders.markdown](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/physics/collisionoverview/colliders.markdown) to be used within a CollisionTable. A CollisionTable defines filters for pairs of CollisionGroups. These filters allow extra control over what collisions can take place. Additionally, filters can be configured to send extra events.
 
  #  CollisionGroup
 A CollisionGroup defines a group (or label) for a Collider to take part in. This only serves to group certain Colliders together but doesn't change any behavior unless the active CollisionTable is configured to do so.
 
  #  CollisionTable
-A CollisionTable is a resource property set on [PhysicsSpace](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/physics/collisionoverview/physicsspace.markdown) that defines pair-wise CollisionGroup relationships known as CollisionFilters. These filters control if a collision happens and if extra events are sent between group pairings.
+A CollisionTable is a resource property set on [PhysicsSpace](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/physics/collisionoverview/physicsspace.markdown) that defines pair-wise CollisionGroup relationships known as CollisionFilters. These filters control if a collision happens and if extra events are sent between group pairings.
 
  ##  CollisionFilters
 A [CollisionFilter](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/collisionfilter.markdown) can be used to control if collisions happen between pairs of CollisionGroups. There are three primary states of a CollisionFilter:
@@ -28,15 +28,15 @@ Additionally, filter blocks contain the EventOverride  property that lets the us
 The PreSolveBlock is a special block that should be used sparingly. As [PreSolveEvent](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/presolveevent.markdown) before collisions are resolved. This event does not expect any drastic changes to the scene, such as removing components. Any complex behavior other than changing property values may crash the engine.
 
  #  Troubleshooting
-One of the most common issues when using CollisionGroups and CollisionTables is forgetting to set the correct CollisionTable resource on the [PhysicsSpace](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/physics/collisionoverview/physicsspace.markdown). Additionally, see [WhyAreTheyNotColliding](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/physics/collisionoverview/physicstroubleshooting/whyaretheynotcolliding.markdown) for other common collision issues.
+One of the most common issues when using CollisionGroups and CollisionTables is forgetting to set the correct CollisionTable resource on the [PhysicsSpace](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/physics/collisionoverview/physicsspace.markdown). Additionally, see [WhyAreTheyNotColliding](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/physics/collisionoverview/physicstroubleshooting/whyaretheynotcolliding.markdown) for other common collision issues.
 
 ---
  #  Related Materials
  ##  Manual
-- [collisionevents.markdown](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/physics/collisionoverview/collisionevents.markdown)
-- [physicsspace.markdown](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/physics/collisionoverview/physicsspace.markdown)
-- [colliders.markdown](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/physics/collisionoverview/colliders.markdown)
-- [whyaretheynotcolliding.markdown](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/physics/collisionoverview/physicstroubleshooting/whyaretheynotcolliding.markdown)
+- [collisionevents.markdown](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/physics/collisionoverview/collisionevents.markdown)
+- [physicsspace.markdown](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/physics/collisionoverview/physicsspace.markdown)
+- [colliders.markdown](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/physics/collisionoverview/colliders.markdown)
+- [whyaretheynotcolliding.markdown](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/physics/collisionoverview/physicstroubleshooting/whyaretheynotcolliding.markdown)
 
  ##  Reference
 - [CollisionGroup](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/collisiongroup.markdown)

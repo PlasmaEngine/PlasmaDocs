@@ -1,4 +1,4 @@
-A [PhysicsMaterial](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/physicsmaterial.markdown) describes material properties to use for a [Collider](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/physics/colliders.markdown). These properties affect how collisions are resolved between collider types.
+A [PhysicsMaterial](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/physicsmaterial.markdown) describes material properties to use for a [Collider](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/physics/colliders.markdown). These properties affect how collisions are resolved between collider types.
 
 Some PhysicsMaterial properties are used to define the surface of an object. In reality, these surface properties are not defined per object, but per object pair. The physics system computes a combined value for these properties as an approximation of the real life values.
 
@@ -28,14 +28,14 @@ The **combined friction** is computed as the square-root of the product of the t
 RestitutionImportance  determines which object's restitution should be used in collision resolution. When two objects are colliding, the restitution of the object with the higher importance value will be used. If both objects have the same importance value, the max of the two restitutions is applied.
 
  #  Friction Importance
-FrictionImportance  determines which object's friction should be used in collision resolution. When two objects are colliding, the friction of the object with the higher importance value will be used. If both objects have the same importance value, the combined friction is used (see [above](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/physics/physicsmaterial/.markdown#friction)).
+FrictionImportance  determines which object's friction should be used in collision resolution. When two objects are colliding, the friction of the object with the higher importance value will be used. If both objects have the same importance value, the combined friction is used (see [above](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/physics/physicsmaterial/.markdown#friction)).
 
 ---
 
  #  Related Materials
  ##  Manual
-- [rigidbody.markdown](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/physics/rigidbody.markdown)
-- [colliders.markdown](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/physics/colliders.markdown)
+- [rigidbody.markdown](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/physics/rigidbody.markdown)
+- [colliders.markdown](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/physics/colliders.markdown)
  ##  Reference
 - [PhysicsMaterial](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/physicsmaterial.markdown)
 - [RigidBody](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/rigidbody.markdown)

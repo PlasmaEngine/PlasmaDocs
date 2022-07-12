@@ -1,7 +1,7 @@
 [ Hierarchies](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/hierarchy.markdown) allows physics to building complicated objects from simpler pieces
 
  ##  Basic understanding
-To understand the basics of hierarchies, it's first important to conceptually understand what a [RigidBody](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/physics/rigidbody.markdown) and {icon university}[[../Colliders | Collider's]] role is. A Collider defines a shape and contains certain physical attributes such as density, volume, friction, etc... A RigidBody gives an object inertia (e.g. mass, velocity, etc...). This gives a few meanings to objects in a hierarchy. If an object doesn't have a Collider, then it doesn't have volume or density, which means it can't contribute to the mass of a RigidBody. If an object doesn't have a RigidBody, then it may have collision properties, but it cannot be moved by physics interaction.
+To understand the basics of hierarchies, it's first important to conceptually understand what a [RigidBody](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/physics/rigidbody.markdown) and {icon university}[[../Colliders | Collider's]] role is. A Collider defines a shape and contains certain physical attributes such as density, volume, friction, etc... A RigidBody gives an object inertia (e.g. mass, velocity, etc...). This gives a few meanings to objects in a hierarchy. If an object doesn't have a Collider, then it doesn't have volume or density, which means it can't contribute to the mass of a RigidBody. If an object doesn't have a RigidBody, then it may have collision properties, but it cannot be moved by physics interaction.
 
 This gives four simple objects configurations:
  - No RigidBody no Collider: Physics doesn't do anything.
@@ -34,7 +34,7 @@ If a RigidBody is marked as `Kinematic` then it behaves like a `Static` body in 
 One common problem with building hierarchies is when a parent object is non-uniformly scaled. This introduces what is known as a skew. Skews are currently not supported by the physics system and will be stripped out of any transformation. Typically all root objects should be configured with uniform scales.
 
  #  Massless Children
-A common scenario when building complicated hierarchies is wanting to add a collision volume for game logic reasons without affecting the overall mass properties of the hierarchy. To do this, the physics systems supports a special configuration on the [PhysicsMaterial](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/physics/physicsmaterial.markdown). If a material's density is set to 0 (this has to be manually typed) then the object doesn't contribute to a RigidBody's total mass.
+A common scenario when building complicated hierarchies is wanting to add a collision volume for game logic reasons without affecting the overall mass properties of the hierarchy. To do this, the physics systems supports a special configuration on the [PhysicsMaterial](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/physics/physicsmaterial.markdown). If a material's density is set to 0 (this has to be manually typed) then the object doesn't contribute to a RigidBody's total mass.
 
  #  Troubleshooting
 When building a larger hierarchy, each Collider is still treated as a distinct object for collision detection. This means that it's possible for another object to get sandwiched between two flush Colliders (e.g. a table and its legs). Currently no solution is available to prevent this behavior. 
@@ -42,9 +42,9 @@ When building a larger hierarchy, each Collider is still treated as a distinct o
 ---
  #  Related Materials
  ##  Manual
-- [rigidbody.markdown](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/physics/rigidbody.markdown)
-- [colliders.markdown](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/physics/colliders.markdown)
-- [physicsmaterial.markdown](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/physics/physicsmaterial.markdown)
+- [rigidbody.markdown](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/physics/rigidbody.markdown)
+- [colliders.markdown](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/physics/colliders.markdown)
+- [physicsmaterial.markdown](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/physics/physicsmaterial.markdown)
 
  ##  Reference
 - [Hierarchy](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/hierarchy.markdown)

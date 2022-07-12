@@ -21,7 +21,7 @@ loop
 1
 3
 ```
-The values of `sum` printed are `0`, `1`, and `3` because `sum += 0`, `sum += 1`, and `sum += 2` are all executed in sequence with a call to `Console.WriteLine` after each.  Whatever code is in the block following `loop` will be repeatedly executed until the `loop` is escaped with `return`, [break](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/lightning_in_plasma/looping.markdown#navigating-loops), or [continue](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/lightning_in_plasma/looping.markdown#continue).  `return` is a directive that leaves the [function](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/lightning_in_plasma/functions.markdown), and therefore can be used to exit a loop.
+The values of `sum` printed are `0`, `1`, and `3` because `sum += 0`, `sum += 1`, and `sum += 2` are all executed in sequence with a call to `Console.WriteLine` after each.  Whatever code is in the block following `loop` will be repeatedly executed until the `loop` is escaped with `return`, [break](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/Lightning/looping.markdown#navigating-loops), or [continue](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/Lightning/looping.markdown#continue).  `return` is a directive that leaves the [function](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/Lightning/functions.markdown), and therefore can be used to exit a loop.
 
  # While and Do While
 While the `loop` keyword is sufficient in executing code an arbitrary ammount of times, there are other types of loop blocks that make for cleaner code.
@@ -171,7 +171,7 @@ for (var i = 0; i < 3; ++i)
 (2, 0)
 (2, 1)
 ```
-Notice how the `break` statement only exits the inner `for` loop.  The [string](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/lightning_in_plasma/strings.markdown) passed into `Console.WriteLine` will evaluate to `(1, 0)`, `(2, 0)`, and `(2, 1)`.  In other words, the result is printed when `j < i`.
+Notice how the `break` statement only exits the inner `for` loop.  The [string](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/Lightning/strings.markdown) passed into `Console.WriteLine` will evaluate to `(1, 0)`, `(2, 0)`, and `(2, 1)`.  In other words, the result is printed when `j < i`.
 
  ## Continue
 The `continue` keyword operates similarly to `break`.  While `break` will jump to the end of the loop's scope **and** exit the loop, `continue` will only jump to the end of the loop's scope.
@@ -193,7 +193,7 @@ for(var i = 0; i < 5; ++i)
 Notice how `Console.WriteLine(i)` executes for each `i` in the range `[0, 4]` with the exception of `2`.  When `i == 2`, `continue` is reached and the next iteration is reached.  Also note that even when using `continue` in a for loop, the iterative statement `++i` is still executed.
 
  # Condensed Loops
-In the case that a loops only contains one statement within its scope (simliar to [ conditionals ](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/lightning_in_plasma/conditionals.markdown#condensed-conditionals)) then no `{}` brackets are needed.
+In the case that a loops only contains one statement within its scope (simliar to [ conditionals ](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/Lightning/conditionals.markdown#condensed-conditionals)) then no `{}` brackets are needed.
 
 ```name=Single Line Loop, lang=csharp
 for(var i = 0; i < 3; ++i)
@@ -211,8 +211,8 @@ Here you can see that the second instance of `Console.WriteLine(i);` is only exe
 
  # Related Material
  ## Manual
-- [functions](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/lightning_in_plasma/functions.markdown)
-- [strings](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/lightning_in_plasma/strings.markdown)
+- [functions](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/Lightning/functions.markdown)
+- [strings](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/Lightning/strings.markdown)
 
  ## Code Reference
 - [array_t](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/array_t.markdown) 

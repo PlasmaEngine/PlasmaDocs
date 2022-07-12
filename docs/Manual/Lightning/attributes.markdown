@@ -299,8 +299,8 @@ To manually register, you would add these components to an archetype and then ad
 
  # Related Materials
  ## Manual
-- [inheritance](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/lightning_in_plasma/inheritance.markdown)
-- [variables_and_data_types](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/lightning_in_plasma/variables_and_data_types.markdown)
-- [wysiwyg](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/scripting/wysiwyg.markdown) 
+- [inheritance](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/Lightning/inheritance.markdown)
+- [variables_and_data_types](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/Lightning/variables_and_data_types.markdown)
+- [wysiwyg](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/scripting/wysiwyg.markdown) 
 
  

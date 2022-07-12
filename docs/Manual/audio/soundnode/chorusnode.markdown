@@ -12,7 +12,7 @@ Chorus filters use an oscillating delay filter to add a chorus-like effect to th
  # Related Materials
 
  ## Manual
-- [soudnode_overview](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/audio/soundnode/soudnode_overview.markdown)
+- [soudnode_overview](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/audio/soundnode/soudnode_overview.markdown)
 
  ## Code Reference
 - [ ChorusNode ](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/chorusnode.markdown) 

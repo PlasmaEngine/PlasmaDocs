@@ -2,7 +2,7 @@ If a MIDI device is connected when the Plasma Engine starts up it will listen fo
 
  # Common Uses
 
-- Using a synthesizer created with the [AdditiveSynthNode ](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/audio/soundnode/additivesynthnode.markdown)
+- Using a synthesizer created with the [AdditiveSynthNode ](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/audio/soundnode/additivesynthnode.markdown)
 - Alternate game input and control 
 
  # Using the MIDI Events
@@ -36,7 +36,7 @@ The following events will be sent whenever a corresponding MIDI message is recei
 
  ## Manual
 
-- [AdditiveSynthNode ](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/audio/soundnode/additivesynthnode.markdown)
+- [AdditiveSynthNode ](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/audio/soundnode/additivesynthnode.markdown)
 
  ## Reference
 

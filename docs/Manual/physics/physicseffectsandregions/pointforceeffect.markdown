@@ -54,7 +54,7 @@ Point effects are only expected to be used as Region effects. Other application 
 ---
  #  Related Materials
  ###  Manual
-- [physicseffectsandregions.markdown](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/physics/physicseffectsandregions.markdown)
+- [physicseffectsandregions.markdown](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/physics/physicseffectsandregions.markdown)
  ##  Reference
 - [PointForceEffect](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/pointforceeffect.markdown)
 - [PointGravityEffect](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/pointgravityeffect.markdown)

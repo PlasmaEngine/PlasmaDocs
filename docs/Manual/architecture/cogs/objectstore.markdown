@@ -34,6 +34,6 @@ To clear all stored objects on a computer you can use the [ ClearStore ](https:/
  ## Code Reference
 - [ ClearStore ](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/command_reference.markdown#clearobjectstore) 
  ## Tutorial
-- [Loading and Saving Data](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/tutorials/architecture/objectstore.markdown) 
+- [Loading and Saving Data](https://plasmaengine.github.io/PlasmaDocs/Manual/tutorials/architecture/objectstore.markdown) 
 
  

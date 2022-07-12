@@ -30,7 +30,7 @@ In the above picture the ball does end up hitting the wall; however, it hits on 
  #  Fixing Tunneling
 The easiest way to fix tunneling is to limit the size and speed of an object. If an object can't move faster than its "radius" each frame then it won't tunnel.
 
-Another way to avoid tunneling is to increase the framerate of the simulation. [PhysicsSpace](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/physics/physicstroubleshooting/physicsspace.markdown) exposes SubStepCount  which allows the user to run physics at a higher framerate.
+Another way to avoid tunneling is to increase the framerate of the simulation. [PhysicsSpace](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/physics/physicstroubleshooting/physicsspace.markdown) exposes SubStepCount  which allows the user to run physics at a higher framerate.
 
 The final way to avoid tunneling is to use continuous collision detection. Currently, continuous collision detection is only available through PhysicsSpace's `SweepCollider` function  which is meant for character controllers. See the SweptController script for an example. Future plans include making this an option on rigid bodies. 
 
@@ -39,9 +39,9 @@ NOTE: Continuous collision detection is significantly more computationally expen
 ---
  # Related Materials
  ## Manual
-- [physicstroubleshooting.markdown](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/physics/physicstroubleshooting.markdown)
-- [collisionoverview.markdown](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/physics/physicstroubleshooting/collisionoverview.markdown)
-- [physicsspace.markdown](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/physics/physicstroubleshooting/physicsspace.markdown)
+- [physicstroubleshooting.markdown](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/physics/physicstroubleshooting.markdown)
+- [collisionoverview.markdown](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/physics/physicstroubleshooting/collisionoverview.markdown)
+- [physicsspace.markdown](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/physics/physicstroubleshooting/physicsspace.markdown)
  ##  Reference
 - [PhysicsSpace](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/physicsspace.markdown) 
 

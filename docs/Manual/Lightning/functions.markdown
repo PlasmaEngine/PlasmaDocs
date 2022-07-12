@@ -1,5 +1,5 @@
 # Functions
-A function is a named block of code (with its own [scope](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/lightning_in_plasma/variables_and_data_types.markdown#scope) that performs a task. Ideally, one function should perform just one task. A function may return a value of a specific [type](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/lightning_in_plasma/variables_and_data_types.markdown) based on the operation performed in the function or it may return nothing at all. Functions can also take in values of a specific type, which are called parameters, that are used and/or changed by the operation of the function.
+A function is a named block of code (with its own [scope](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/Lightning/variables_and_data_types.markdown#scope) that performs a task. Ideally, one function should perform just one task. A function may return a value of a specific [type](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/Lightning/variables_and_data_types.markdown) based on the operation performed in the function or it may return nothing at all. Functions can also take in values of a specific type, which are called parameters, that are used and/or changed by the operation of the function.
 
 Functions are declared using the **function** keyword:
 ```lang=csharp, name=Function Declaration
@@ -26,7 +26,7 @@ function MyFunctionName(param1: MyParamType1, param2: MyParamType2) : MyReturnTy
 There are a number of important rules that functions in Lightning must follow. If these rules are not followed, an error will be thrown, as can be seen in the examples below. 
 
  ## No Global Functions
-Lightning **does not support** global functions. They must be contained within the scope of either a [class](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/lightning_in_plasma/classes.markdown) or [struct](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/lightning_in_plasma/structs.markdown). Thus, the above would actually be encased like this:
+Lightning **does not support** global functions. They must be contained within the scope of either a [class](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/Lightning/classes.markdown) or [struct](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/Lightning/structs.markdown). Thus, the above would actually be encased like this:
 
 ```lang=csharp, name=Function Defined Within a Class
 class MyClassName
@@ -134,11 +134,11 @@ The return statement was not expected to return a '[ErrorType]' value, since the
 
  # Related Materials
  ## Manual
-- [attributes](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/lightning_in_plasma/attributes.markdown)
-- [classes](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/lightning_in_plasma/classes.markdown)
-- [variables_and_data_types](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/lightning_in_plasma/variables_and_data_types.markdown)
-- [classes](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/lightning_in_plasma/classes.markdown)
-- [structs](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/lightning_in_plasma/structs.markdown)
+- [attributes](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/Lightning/attributes.markdown)
+- [classes](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/Lightning/classes.markdown)
+- [variables_and_data_types](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/Lightning/variables_and_data_types.markdown)
+- [classes](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/Lightning/classes.markdown)
+- [structs](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/Lightning/structs.markdown)
  
 
  

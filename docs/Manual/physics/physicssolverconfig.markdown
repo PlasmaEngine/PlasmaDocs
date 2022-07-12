@@ -25,9 +25,9 @@ A configuration block can be added for any joint type that determines how the ph
 
  #  Related Materials
  ##  Manual
-- [joints.markdown](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/physics/joints.markdown)
-- [collisionoverview.markdown](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/physics/collisionoverview.markdown)
-- [physicsspace.markdown](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/physics/physicsspace.markdown)
+- [joints.markdown](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/physics/joints.markdown)
+- [collisionoverview.markdown](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/physics/collisionoverview.markdown)
+- [physicsspace.markdown](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/physics/physicsspace.markdown)
 
  ##  Code Reference
 - [Joint](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/joint.markdown)

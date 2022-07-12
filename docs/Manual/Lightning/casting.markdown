@@ -1,5 +1,5 @@
 # Casting
-Fundamentally, casting is converting from one type to another.  As demonstrated in the code snippet below, a [Function](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/lightning_in_plasma/functions.markdown) that takes a grade and returns pass/fail can be thought of as a conversion from a [real](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown) to a [boolean](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown).
+Fundamentally, casting is converting from one type to another.  As demonstrated in the code snippet below, a [Function](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/Lightning/functions.markdown) that takes a grade and returns pass/fail can be thought of as a conversion from a [real](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown) to a [boolean](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown).
 ```lang=csharp, name=Conversion Function
 function IsPassing(grade : Real) : Boolean
 {
@@ -13,7 +13,7 @@ function IsPassing(grade : Real) : Boolean
 The logic of that particular conversion is defined as a function and intended for a specific situation, but *cast operations* are more general-case and defined by Lightning.
 
  # Implicit and Explicit
-There are two types of casting, implicit and explicit.  Implicit casting occurs during the assignment of a variable of one type, with a value of a *different* type.  Implicit casting is a mechanism that Lightning uses when a [Variable](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/lightning_in_plasma/variables_and_data_types.markdown) of one type is set to data of another type.  Explicit casting is a mechanic used by the user with the `as` keyword.  Any cast that can happen implicitly can be done explicitly.
+There are two types of casting, implicit and explicit.  Implicit casting occurs during the assignment of a variable of one type, with a value of a *different* type.  Implicit casting is a mechanism that Lightning uses when a [Variable](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/Lightning/variables_and_data_types.markdown) of one type is set to data of another type.  Explicit casting is a mechanic used by the user with the `as` keyword.  Any cast that can happen implicitly can be done explicitly.
 
 WARNING: Even with explicit casting, there are still *cast operations* that are invalid and will trigger compile-time exceptions.
 
@@ -65,7 +65,7 @@ Console.WriteLine(-3.99 as Integer);
 ```
 
  # Upcasting and Downcasting
-When casting between classes related through [inheritance](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/lightning_in_plasma/inheritance.markdown), one class must be a base class of the other.
+When casting between classes related through [inheritance](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/Lightning/inheritance.markdown), one class must be a base class of the other.
 
 ```lang=csharp, name=Classes with Inheritance
 class A {}
@@ -134,9 +134,9 @@ var myInteger : Integer = 1 as Integer; // explicit same cast
 
  # Related Materials
  ## Manual
-- [Function](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/lightning_in_plasma/functions.markdown)
-- [Variable](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/lightning_in_plasma/variables_and_data_types.markdown)
-- [inheritance](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/lightning_in_plasma/inheritance.markdown)
+- [Function](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/Lightning/functions.markdown)
+- [Variable](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/Lightning/variables_and_data_types.markdown)
+- [inheritance](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/Lightning/inheritance.markdown)
 
  ## Code Reference
 - [integer](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/integer.markdown)

@@ -1,8 +1,8 @@
-[ SoundInstances ](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/soundinstance.markdown) are created at runtime whenever a [SoundCue](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/audio/soundcue.markdown) is played. Their properties are initially set by the SoundCue, but the user can then manipulate the SoundInstance's properties without affecting the SoundCue or any other SoundInstances created by it. 
+[ SoundInstances ](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/soundinstance.markdown) are created at runtime whenever a [SoundCue](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/audio/soundcue.markdown) is played. Their properties are initially set by the SoundCue, but the user can then manipulate the SoundInstance's properties without affecting the SoundCue or any other SoundInstances created by it. 
 
  #  Using SoundInstances
 
-A SoundInstance is returned by the `PlayCue`and `PlayCuePaused` methods on [SoundEmitters ](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/audio/soundemitter.markdown) and [SoundSpaces ](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/audio/soundspace.markdown), the `Play` method on [SimpleSounds ](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/audio/simplesound.markdown), and the `PlayCueOnNode` method on SoundCues. If a `PlayCuePaused` method is used, the SoundInstance must have its Paused checkBox property set to `False` before it will begin playing.
+A SoundInstance is returned by the `PlayCue`and `PlayCuePaused` methods on [SoundEmitters ](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/audio/soundemitter.markdown) and [SoundSpaces ](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/audio/soundspace.markdown), the `Play` method on [SimpleSounds ](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/audio/simplesound.markdown), and the `PlayCueOnNode` method on SoundCues. If a `PlayCuePaused` method is used, the SoundInstance must have its Paused checkBox property set to `False` before it will begin playing.
 
 SoundInstance objects are reference counted: they will stay alive as long as a variable is stored with the SoundInstance assigned to it, so the SoundInstance can still be accessed even after it finishes playing. If the user does not store a variable, the SoundInstance will continue playing audio, but cannot be accessed in LightningScripts.
 
@@ -22,11 +22,11 @@ The  Pitch  and  Semitones  properties set the pitch adjustment that is applied 
 
 The `InterpolateVolume`, `InterpolateDecibels`, `InterpolatePitch`, and `InterpolateSemitones` methods can be used at runtime to smoothly change the SoundInstance's volume or pitch over time. Using these interpolation methods is preferable to using Actions to set the properties: changing a property every frame with an Action can result in audible jumps in volume or pitch, while the interpolation method causes the volume change to be handled smoothly by the audio engine.
 
-Note that these volume changes will be combined with any other volume modifications applied by objects such as [SoundTags ](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/audio/soundtag.markdown), SoundEmitters, and SoundSpaces. If a SoundInstance's  Volume  is set to `0.5` and it is played on a SoundEmitter which also has a  Volume  of `0.5`, this effectively sets the SoundInstance's  Volume  to `0.25`. If it's  Semitones  is set to `12` and it is played on a SoundEmitter with a  Semitones  value of `-6`, this effectively raises the SoundInstance's pitch by half an octave.
+Note that these volume changes will be combined with any other volume modifications applied by objects such as [SoundTags ](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/audio/soundtag.markdown), SoundEmitters, and SoundSpaces. If a SoundInstance's  Volume  is set to `0.5` and it is played on a SoundEmitter which also has a  Volume  of `0.5`, this effectively sets the SoundInstance's  Volume  to `0.25`. If it's  Semitones  is set to `12` and it is played on a SoundEmitter with a  Semitones  value of `-6`, this effectively raises the SoundInstance's pitch by half an octave.
 
  ## Looping
 
-A SoundInstance's  Looping checkBox property is initially set by the corresponding property on the SoundCue. When this property is `true`, the SoundInstance will repeat indefinitely, using the  LoopStartTime  and  LoopEndTime  properties on the [SoundEntry](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/audio/soundcue.markdown#soundentry) that the SoundCue used to create the SoundInstance. If a SoundInstance is looping and the property is changed to `false` as it is playing it will continue playing to its  EndTime  and then stop.
+A SoundInstance's  Looping checkBox property is initially set by the corresponding property on the SoundCue. When this property is `true`, the SoundInstance will repeat indefinitely, using the  LoopStartTime  and  LoopEndTime  properties on the [SoundEntry](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/audio/soundcue.markdown#soundentry) that the SoundCue used to create the SoundInstance. If a SoundInstance is looping and the property is changed to `false` as it is playing it will continue playing to its  EndTime  and then stop.
 
 The following code block shows you how to make a SoundInstance finish naturally after it has looped three times, using the `SoundLooped` event.
 ```lang=csharp
@@ -85,11 +85,11 @@ If the  CustomEventTime checkBox property is set, the SoundInstance will also se
 
  ## Manual
 
-- [SoundCue ](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/audio/soundcue.markdown)
-- [SoundEmitter ](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/audio/soundemitter.markdown)
-- [SoundSpace ](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/audio/soundspace.markdown)
-- [SimpleSound ](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/audio/simplesound.markdown)
-- [SoundTag ](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/audio/soundtag.markdown)
+- [SoundCue ](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/audio/soundcue.markdown)
+- [SoundEmitter ](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/audio/soundemitter.markdown)
+- [SoundSpace ](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/audio/soundspace.markdown)
+- [SimpleSound ](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/audio/simplesound.markdown)
+- [SoundTag ](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/audio/soundtag.markdown)
 
  ## Reference
 

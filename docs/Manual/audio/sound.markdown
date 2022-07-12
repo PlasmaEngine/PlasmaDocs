@@ -1,4 +1,4 @@
-A [ Sound ](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/sound.markdown) resource is created for every imported audio file. Sounds can be attached to any number of [SoundCues](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/audio/soundcue.markdown), allowing the user to play the same sound multiple ways while only storing the file once.
+A [ Sound ](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/sound.markdown) resource is created for every imported audio file. Sounds can be attached to any number of [SoundCues](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/audio/soundcue.markdown), allowing the user to play the same sound multiple ways while only storing the file once.
 
  # Using Sounds
 
@@ -35,8 +35,8 @@ If the Normalize checkBox property is checked the MaxVolume  property will be sh
 
  ## Manual
 
-- [SoundCue ](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/audio/soundcue.markdown)
-- [SoundEntry ](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/audio/soundcue.markdown#soundentries)
+- [SoundCue ](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/audio/soundcue.markdown)
+- [SoundEntry ](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/audio/soundcue.markdown#soundentries)
 
  ## Reference
 - [ Sound ](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/sound.markdown)

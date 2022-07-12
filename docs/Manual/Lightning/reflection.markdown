@@ -1,5 +1,5 @@
 # Reflection
-Reflection describes an objects ability to "reflect" on itself, generally this means to understand it's type and relationships to other types. Although Lightning does not boast a robust reflection library it does have a basic typeid for by-value types and [property_delegates](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/lightning_in_plasma/property_delegates.markdown):
+Reflection describes an objects ability to "reflect" on itself, generally this means to understand it's type and relationships to other types. Although Lightning does not boast a robust reflection library it does have a basic typeid for by-value types and [property_delegates](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/Lightning/property_delegates.markdown):
 
  # typeid
 ```lang=csharp
@@ -49,7 +49,7 @@ Reflection describes an objects ability to "reflect" on itself, generally this m
 --------------------
  # String Interpolation
 
-Those types that are [memory_management](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/lightning_in_plasma/memory_management.markdown) or [delegates](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/lightning_in_plasma/delegates.markdown) types can be inspected with [string](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/lightning_in_plasma/lightning_base_types/string.markdown) Interpolation:
+Those types that are [memory_management](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/Lightning/memory_management.markdown) or [delegates](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/Lightning/delegates.markdown) types can be inspected with [string](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/Lightning/lightning_base_types/string.markdown) Interpolation:
 
 ```lang=csharp
 class Utility
@@ -104,7 +104,7 @@ ref Real3, (0.0, 1.0, 2.0) is of type: ref Real3
 
  # Console.DumpValue
 
-Useful in understanding the current state of a Lightning object, Console.DumpValue prints out the names of the variables and their type, if a [class](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/lightning_in_plasma/classes.markdown), or their value if a basic, built-in data type.
+Useful in understanding the current state of a Lightning object, Console.DumpValue prints out the names of the variables and their type, if a [class](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/Lightning/classes.markdown), or their value if a basic, built-in data type.
 
 ```lang=csharp
 class TopLevel
@@ -171,11 +171,11 @@ BottomLevel
  # Related Materials
  ## Manual
 
-- [property_delegates](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/lightning_in_plasma/property_delegates.markdown)
-- [memory_management](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/lightning_in_plasma/memory_management.markdown)
-- [delegates](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/lightning_in_plasma/delegates.markdown)
-- [string](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/lightning_in_plasma/lightning_base_types/string.markdown)
-- [classes](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/lightning_in_plasma/classes.markdown)
+- [property_delegates](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/Lightning/property_delegates.markdown)
+- [memory_management](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/Lightning/memory_management.markdown)
+- [delegates](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/Lightning/delegates.markdown)
+- [string](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/Lightning/lightning_base_types/string.markdown)
+- [classes](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/Lightning/classes.markdown)
  
 
  

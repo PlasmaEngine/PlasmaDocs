@@ -16,10 +16,10 @@ When an object is moving fast, the fact that its motion is an illusion becomes m
 
  # Related Material
  ## Manual
-- [Color Gradient](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/architecture/resources/colorgradient.markdown)
+- [Color Gradient](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/architecture/resources/colorgradient.markdown)
 
  ## Code Reference
-- [SpriteParticleSystem](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/code_reference/class_reference/spriteparticlesystem.markdown)
+- [SpriteParticleSystem](https://plasmaengine.github.io/PlasmaDocs/Manual//code_reference/class_reference/spriteparticlesystem.markdown)
 - [BoxParticleEmitter](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/boxparticleemitter.markdown)
 - [SphericalParticleEmitter](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/sphericalparticleemitter.markdown)
 - [MeshParticleEmitter](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/meshparticleemitter.markdown)

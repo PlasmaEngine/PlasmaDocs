@@ -1,9 +1,9 @@
-The [ SoundAttenuator ](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/soundattenuator.markdown) resource controls how a sound played through a [SoundEmitter ](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/audio/soundemitter.markdown) on an object decreases in volume as the object gets further away from a  [SoundListener ](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/audio/soundlistener.markdown). 
+The [ SoundAttenuator ](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/soundattenuator.markdown) resource controls how a sound played through a [SoundEmitter ](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/audio/soundemitter.markdown) on an object decreases in volume as the object gets further away from a  [SoundListener ](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/audio/soundlistener.markdown). 
 
  # Using SoundAttenuators 
 
 
-SoundAttenuators can be added to both [SoundCues ](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/audio/soundcue.markdown) and SoundEmitters. If a SoundCue has a SoundAttenuator other than the DefaultNoAttenuation resource attenuator, its settings will be used when the SoundCue is played through any SoundEmitter. Otherwise the settings from the SoundAttenuator on the SoundEmitter will be used. If the SoundEmitter also has DefaultNoAttenuation resource selected, the sound will be heard spatially by SoundListeners (panned to left or right depending on the location of the object), but will not change its volume with distance.
+SoundAttenuators can be added to both [SoundCues ](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/audio/soundcue.markdown) and SoundEmitters. If a SoundCue has a SoundAttenuator other than the DefaultNoAttenuation resource attenuator, its settings will be used when the SoundCue is played through any SoundEmitter. Otherwise the settings from the SoundAttenuator on the SoundEmitter will be used. If the SoundEmitter also has DefaultNoAttenuation resource selected, the sound will be heard spatially by SoundListeners (panned to left or right depending on the location of the object), but will not change its volume with distance.
 
  ## Attenuation
 
@@ -21,9 +21,9 @@ Another thing that happens in the real world with distance is that high frequenc
 
  ## Manual
 
-- [SoundEmitter ](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/audio/soundemitter.markdown)
-- [SoundListener ](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/audio/soundlistener.markdown)
-- [SoundCue ](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/audio/soundcue.markdown)
+- [SoundEmitter ](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/audio/soundemitter.markdown)
+- [SoundListener ](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/audio/soundlistener.markdown)
+- [SoundCue ](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/audio/soundcue.markdown)
 
  ## Reference
 

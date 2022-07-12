@@ -2,7 +2,7 @@
 
  ## Common Uses
 
-- A custom synthesizer using [MIDI ](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/audio/soundnode//midi.markdown) events sent by a keyboard or other device
+- A custom synthesizer using [MIDI ](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/audio/soundnode//midi.markdown) events sent by a keyboard or other device
 - Creating music or sound effects with no audio files
 - Dynamic or procedural music 
 
@@ -67,8 +67,8 @@ NOTE: Setting the `SustainTime` property to `0` will make the harmonic play inde
  # Related Materials
 
  ## Manual
-- [soudnode_overview](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/audio/soundnode/soudnode_overview.markdown)
-- [MIDI ](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/audio/soundnode/midi.markdown)
+- [soudnode_overview](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/audio/soundnode/soudnode_overview.markdown)
+- [MIDI ](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/audio/soundnode/midi.markdown)
 
  ## Code Reference
 - [ AdditiveSynthNode ](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/additivesynthnode.markdown)

@@ -1,6 +1,6 @@
 [EllipsoidCollider](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/ellipsoidcollider.markdown) defines an [ellipsoid](https://en.wikipedia.org/wiki/Ellipsoid ) shape for collision. The base size of the ellipsoid is determined by three radius values. Scale is applied afterwards to determine the final ellipsoid's size.
 
-(NOTE) **Recommended Reading:** The [Collider](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/physics/colliders.markdown) page should be read before this page.
+(NOTE) **Recommended Reading:** The [Collider](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/physics/colliders.markdown) page should be read before this page.
 
 
  #  Radii
@@ -13,7 +13,7 @@ EllipsoidCollider fully respects non-uniform scale (sheer aside).
 ---
  #  Related Materials
  ##  Manual
-- [colliders.markdown](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/physics/colliders.markdown)
+- [colliders.markdown](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/physics/colliders.markdown)
 
  ##  Reference
 - [EllipsoidCollider](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/ellipsoidcollider.markdown)

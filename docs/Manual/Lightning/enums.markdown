@@ -5,7 +5,7 @@ An enum, or enumerated type, is a set custom identifiers that are enumerated. An
 enum ControllerButtons {Start, Select, Up=0, Down, Left, Right, A=0, B=1} // no semicolon
 ```
 
-The names line up with incrementing [Integers](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/integer.markdown) where the default starting value is 0. The values can be manually set in which case the following values will increment off of that manually defined value. Note that to access these Integer values, the enum must be [casted](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/lightning_in_plasma/casting.markdown) to an Integer:
+The names line up with incrementing [Integers](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/integer.markdown) where the default starting value is 0. The values can be manually set in which case the following values will increment off of that manually defined value. Note that to access these Integer values, the enum must be [casted](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/Lightning/casting.markdown) to an Integer:
 ```lang=csharp, name=Casting Enums to Integers
 Console.WriteLine("ControllerButtons.Start  = `ControllerButtons.Start  as Integer`  " );
 Console.WriteLine("ControllerButtons.Select = `ControllerButtons.Select as Integer`  " );
@@ -119,7 +119,7 @@ class Controller
 }
 ```
 
-We can test the calls to these [functions](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/lightning_in_plasma/functions.markdown) to see the interplay of casting:
+We can test the calls to these [functions](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/Lightning/functions.markdown) to see the interplay of casting:
 
 ```lang=csharp, name=Implicit Enum Cast
 var paramInt = 3;
@@ -218,8 +218,8 @@ The binary '+' operator 'Positive / Add' is not valid with 'ControllerButtons' a
 
  # Related Materials
  ## Manual
-- [casting](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/lightning_in_plasma/casting.markdown)
-- [functions](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/lightning_in_plasma/functions.markdown)
+- [casting](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/Lightning/casting.markdown)
+- [functions](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/Lightning/functions.markdown)
 
  ## Code Reference
 - [enum_reference](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown)

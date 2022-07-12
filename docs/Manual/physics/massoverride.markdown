@@ -7,8 +7,8 @@ Another common use of MassOverride is to manually set the mass. Sometimes the us
 ---
  #  Related Materials
  ##  Manual
-- [rigidbody.markdown](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/physics/rigidbody.markdown)
-- [colliders.markdown](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/physics/colliders.markdown)
+- [rigidbody.markdown](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/physics/rigidbody.markdown)
+- [colliders.markdown](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/physics/colliders.markdown)
  ##  Reference
 - [MassOverride](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/massoverride.markdown)
 - [RigidBody](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/rigidbody.markdown)

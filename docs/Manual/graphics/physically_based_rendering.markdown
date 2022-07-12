@@ -21,12 +21,12 @@ Physically-based rendering (PBR) is a relatively recent rendering technique and 
 
  # Implementation in Plasma
 
-The [DeferredRenderer and ForwardRenderer](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/graphics/renderer/deferred_renderer.markdown) follow a metallic-roughness workflow (as opposed to metallic-glossiness) and expects inputs for albedo (referred to as "base color" in other workflows), metallic, roughness, and specular in the form of texture maps or uniform values. These maps or values are set via LightningFragments and applied to a [Material](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/graphics/materials/materials_overview.markdown). 
+The [DeferredRenderer and ForwardRenderer](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/graphics/renderer/deferred_renderer.markdown) follow a metallic-roughness workflow (as opposed to metallic-glossiness) and expects inputs for albedo (referred to as "base color" in other workflows), metallic, roughness, and specular in the form of texture maps or uniform values. These maps or values are set via LightningFragments and applied to a [Material](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/graphics/materials/materials_overview.markdown). 
 
  # Related Materials
  ## Manual
 
-- [DeferredRenderer and ForwardRenderer](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/graphics/renderer/deferred_renderer.markdown)
-- [Material](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/graphics/materials/materials_overview.markdown) 
+- [DeferredRenderer and ForwardRenderer](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/graphics/renderer/deferred_renderer.markdown)
+- [Material](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/graphics/materials/materials_overview.markdown) 
 
  

@@ -1,6 +1,6 @@
 # Boolean Operators
 
-NOTE: It is highly suggested you read [conditionals](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/lightning_in_plasma/conditionals.markdown) before this page, as the concepts of conditionals are used through out to demonstrate Boolean Operators.
+NOTE: It is highly suggested you read [conditionals](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/Lightning/conditionals.markdown) before this page, as the concepts of conditionals are used through out to demonstrate Boolean Operators.
 
 The [boolean](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown) type has special operators that work with it.
 
@@ -221,7 +221,7 @@ Either i or j is true
 
  # Related Materials
  ## Manual
-- [conditionals](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/lightning_in_plasma/conditionals.markdown)
+- [conditionals](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/Lightning/conditionals.markdown)
  ## Code Reference
 - [boolean](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown) 
 

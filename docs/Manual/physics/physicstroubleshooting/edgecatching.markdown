@@ -1,6 +1,6 @@
 Sometimes a physics object will seem to get stuck on a smooth surface. This is often caused by an issue known as edge-catching. This issue is most common when creating a player.
 
-In a game, the ground is often piece-wise, i.e. made of a collection of individual pieces. In this example, assume that the ground is a collection of boxes. Now a rotation locked player is implemented with a [BoxCollider](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/physics/physicstroubleshooting/colliders/boxcollider.markdown) to move via simple velocity changes (velocity is the drawn arrow). 
+In a game, the ground is often piece-wise, i.e. made of a collection of individual pieces. In this example, assume that the ground is a collection of boxes. Now a rotation locked player is implemented with a [BoxCollider](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/physics/physicstroubleshooting/colliders/boxcollider.markdown) to move via simple velocity changes (velocity is the drawn arrow). 
 
 
 
@@ -63,7 +63,7 @@ Now physics resolves collisions and puts the red box right back where it started
 
 Unfortunately there is no perfect generic solution to the edge catching problem. There are two main approaches to work around the problem:
 
-**Change your collision:** The root issue here is that a seam does exist. One way to fix this is to remove the seam by merging the surface's collision. It's near impossible to remove all seams in a game though, and it is often more practical to change the player's collision shape. Commonly, a player uses a [CapsuleCollider](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/physics/physicstroubleshooting/colliders/capsulecollider.markdown) instead of a [BoxCollider](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/physics/physicstroubleshooting/colliders/boxcollider.markdown) to avoid seams.
+**Change your collision:** The root issue here is that a seam does exist. One way to fix this is to remove the seam by merging the surface's collision. It's near impossible to remove all seams in a game though, and it is often more practical to change the player's collision shape. Commonly, a player uses a [CapsuleCollider](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/physics/physicstroubleshooting/colliders/capsulecollider.markdown) instead of a [BoxCollider](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/physics/physicstroubleshooting/colliders/boxcollider.markdown) to avoid seams.
 
 
 
@@ -77,17 +77,17 @@ While this method mostly fixes edge catching, it tends to produce small bumps wh
 
 There's two issues with the swept controller.
  - It's more computationally expensive. This isn't an issue for a few number of objects, such as the player, but wouldn't be practical for every object.
- - It only works with Kinematic objects. Using the swept controller means manually translating the player and not working through velocity and forces. This swept object will no longer react to [PhysicsEffects](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/physics/physicstroubleshooting/physicseffectsandregions.markdown), collision resolution won't do anything, and Joints won't affect it. For some games this may make the SweptController impractical.
+ - It only works with Kinematic objects. Using the swept controller means manually translating the player and not working through velocity and forces. This swept object will no longer react to [PhysicsEffects](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/physics/physicstroubleshooting/physicseffectsandregions.markdown), collision resolution won't do anything, and Joints won't affect it. For some games this may make the SweptController impractical.
 
 ---
  #  Related Materials
  ##  Manual
-- [physicstroubleshooting.markdown](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/physics/physicstroubleshooting.markdown)
-- [physicsspace.markdown](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/physics/physicstroubleshooting/physicsspace.markdown)
-- [colliders.markdown](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/physics/physicstroubleshooting/colliders.markdown)
-- [boxcollider.markdown](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/physics/physicstroubleshooting/colliders/boxcollider.markdown)
-- [capsulecollider.markdown](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/physics/physicstroubleshooting/colliders/capsulecollider.markdown)
-- [physicseffectsandregions.markdown](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/physics/physicstroubleshooting/physicseffectsandregions.markdown)
+- [physicstroubleshooting.markdown](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/physics/physicstroubleshooting.markdown)
+- [physicsspace.markdown](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/physics/physicstroubleshooting/physicsspace.markdown)
+- [colliders.markdown](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/physics/physicstroubleshooting/colliders.markdown)
+- [boxcollider.markdown](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/physics/physicstroubleshooting/colliders/boxcollider.markdown)
+- [capsulecollider.markdown](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/physics/physicstroubleshooting/colliders/capsulecollider.markdown)
+- [physicseffectsandregions.markdown](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/physics/physicstroubleshooting/physicseffectsandregions.markdown)
  ##  Reference
 - [PhysicsSpace](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/physicsspace.markdown)
 - [Collider](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/collider.markdown)

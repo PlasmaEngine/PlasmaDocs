@@ -1,4 +1,4 @@
-The Model component allows the user to assign a [Mesh](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/mesh.markdown) and a [ Material](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/graphics/materials/materials_overview.markdown) to an object.
+The Model component allows the user to assign a [Mesh](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/mesh.markdown) and a [ Material](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/graphics/materials/materials_overview.markdown) to an object.
 
  # Material and Mesh
 
@@ -10,10 +10,10 @@ The only property the SkinnedModel component has that the Model component does n
 
  # Related Materials
  ## Reference
-- [Model](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/code_reference/class_reference/model.markdown)
-- [SkinnedModel](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/code_reference/class_reference/skinnedmodel.markdown)
-- [Mesh](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/code_reference/class_reference/mesh.markdown)
-- [Material](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/code_reference/class_reference/material.markdown)
+- [Model](https://plasmaengine.github.io/PlasmaDocs/Manual//code_reference/class_reference/model.markdown)
+- [SkinnedModel](https://plasmaengine.github.io/PlasmaDocs/Manual//code_reference/class_reference/skinnedmodel.markdown)
+- [Mesh](https://plasmaengine.github.io/PlasmaDocs/Manual//code_reference/class_reference/mesh.markdown)
+- [Material](https://plasmaengine.github.io/PlasmaDocs/Manual//code_reference/class_reference/material.markdown)
  
 
  

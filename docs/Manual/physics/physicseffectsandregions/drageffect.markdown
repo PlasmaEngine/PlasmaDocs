@@ -22,14 +22,14 @@ Angular drag is defined similarly to linear drag as:
 where `w` is the angular velocity, `k` is the angular drag coefficient, and `T` is the resultant torque. Angular damping similarly defines an angular acceleration instead of force.
 
  #  Application Modes
-The DragEffect component is expected to work with all application modes. Drag applied to the space or level will affect all objects within. Used as a Region effect, drag will slow down all objects in contact with the Region. On a [RigidBody](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/physics/physicseffectsandregions/rigidbody.markdown) the effect will slow down that object alone. [Collider](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/physics/physicseffectsandregions/colliders.markdown) and Hierarchy effects will behave the same as a RigidBody effect.
+The DragEffect component is expected to work with all application modes. Drag applied to the space or level will affect all objects within. Used as a Region effect, drag will slow down all objects in contact with the Region. On a [RigidBody](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/physics/physicseffectsandregions/rigidbody.markdown) the effect will slow down that object alone. [Collider](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/physics/physicseffectsandregions/colliders.markdown) and Hierarchy effects will behave the same as a RigidBody effect.
 
 ---
  #  Related Materials
  ##  Manual
-- [physicseffectsandregions.markdown](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/physics/physicseffectsandregions.markdown)
-- [rigidbody.markdown](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/physics/physicseffectsandregions/rigidbody.markdown)
-- [colliders.markdown](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/physics/physicseffectsandregions/colliders.markdown)
+- [physicseffectsandregions.markdown](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/physics/physicseffectsandregions.markdown)
+- [rigidbody.markdown](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/physics/physicseffectsandregions/rigidbody.markdown)
+- [colliders.markdown](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/physics/physicseffectsandregions/colliders.markdown)
 
  ##  Reference
 - [DragEffect](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/drageffect.markdown)

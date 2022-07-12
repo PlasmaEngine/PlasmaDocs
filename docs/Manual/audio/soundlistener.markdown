@@ -1,4 +1,4 @@
-[ SoundListeners ](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/soundlistener.markdown), along with [SoundEmitters ](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/audio/soundemitter.markdown), are responsible for all positional audio in the Plasma Engine.
+[ SoundListeners ](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/soundlistener.markdown), along with [SoundEmitters ](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/audio/soundemitter.markdown), are responsible for all positional audio in the Plasma Engine.
 
  # Using SoundListeners
 
@@ -15,10 +15,10 @@ If the SoundListener's Active checkBox property is set to `false` in a Lightning
 
  ## Manual
 
-- [SoundEmitter ](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/audio/soundemitter.markdown)
-- [SoundSpace ](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/audio/soundspace.markdown)
-- [SoundCue ](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/audio/soundcue.markdown)
-- [SoundAttenuator ](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/audio/soundattenuator.markdown)
+- [SoundEmitter ](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/audio/soundemitter.markdown)
+- [SoundSpace ](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/audio/soundspace.markdown)
+- [SoundCue ](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/audio/soundcue.markdown)
+- [SoundAttenuator ](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/audio/soundattenuator.markdown)
 
  ## Reference
 

@@ -4,7 +4,7 @@ Spaces in the Plasma Engine are containers for game objects. When a level is loa
 
  # Using the Space
  ## Creating a Space
-You can create a space through the [GameSession](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/architecture/objects/gamesession.markdown) object.
+You can create a space through the [GameSession](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/architecture/objects/gamesession.markdown) object.
 
 ```
     class SpaceCreator : LightningComponent
@@ -72,7 +72,7 @@ n some games you may have multiple spaces in order to implement certain features
  # Space Components
 Spaces have special space components that can not be removed. These are core engine components for containing different aspects of the game objects like physics, graphics, and sound.
 
-Spaces are stored as [Archetypes](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/architecture/archetypes.markdown) and can be modified to change the properties of a space.
+Spaces are stored as [Archetypes](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/architecture/archetypes.markdown) and can be modified to change the properties of a space.
 
 To access the space of the current level Press: 
 
@@ -95,23 +95,23 @@ NOTE: The ReactiveSpace component is deprecated and changes made to it will have
 
 | Event Name                | Type                       | Description                                                         |
 |---------------------------|----------------------------|---------------------------------------------------------------------|
-| PhysicsUpdateFinished     | [objectevent](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/code_reference/class_reference/objectevent.markdown) | Dispatched immediately after physics has finished updating.         |
-| LogicUpdate               | [updateevent](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/code_reference/class_reference/updateevent.markdown) | Dispatched after the major systems's updates (doesn't run in editor)|
-| FrameUpdate               | [updateevent](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/code_reference/class_reference/updateevent.markdown) | Dispatched after the engine update. Runs in editor.                 |
+| PhysicsUpdateFinished     | [objectevent](https://plasmaengine.github.io/PlasmaDocs/Manual//code_reference/class_reference/objectevent.markdown) | Dispatched immediately after physics has finished updating.         |
+| LogicUpdate               | [updateevent](https://plasmaengine.github.io/PlasmaDocs/Manual//code_reference/class_reference/updateevent.markdown) | Dispatched after the major systems's updates (doesn't run in editor)|
+| FrameUpdate               | [updateevent](https://plasmaengine.github.io/PlasmaDocs/Manual//code_reference/class_reference/updateevent.markdown) | Dispatched after the engine update. Runs in editor.                 |
 
 ---
 
  # Related Materials
  ## Manual
-- [Archetypes](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/architecture/archetypes.markdown)
-- [GameSession object](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/architecture/objects/gamesession.markdown)
+- [Archetypes](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/architecture/archetypes.markdown)
+- [GameSession object](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/architecture/objects/gamesession.markdown)
  ## Code Reference
 - [timespace](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/timespace.markdown)
 - [graphicsspace](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/graphicsspace.markdown)
-- [physicsspace](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/physics/physicsspace.markdown)
-- [soundspace](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/audio/soundspace.markdown)
-- [objectevent](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/code_reference/class_reference/objectevent.markdown)
-- [updateevent](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/code_reference/class_reference/updateevent.markdown)
+- [physicsspace](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/physics/physicsspace.markdown)
+- [soundspace](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/audio/soundspace.markdown)
+- [objectevent](https://plasmaengine.github.io/PlasmaDocs/Manual//code_reference/class_reference/objectevent.markdown)
+- [updateevent](https://plasmaengine.github.io/PlasmaDocs/Manual//code_reference/class_reference/updateevent.markdown)
  
 
  

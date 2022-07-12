@@ -113,7 +113,7 @@ BEWARE
 
  #  Strings and StringRanges
 
-[ StringRange](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/stringrange.markdown) is a separate but related class to **String**. It is an iterable range that can be used in a [ For Each loop](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/lightning_in_plasma/looping.markdown#for-each-loop). A string can be **implicitly cast** to StringRange, so a string can be passed into any function that expects a StringRange. However, a StringRange *cannot* be implicitly cast to String:
+[ StringRange](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/stringrange.markdown) is a separate but related class to **String**. It is an iterable range that can be used in a [ For Each loop](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/Lightning/looping.markdown#for-each-loop). A string can be **implicitly cast** to StringRange, so a string can be passed into any function that expects a StringRange. However, a StringRange *cannot* be implicitly cast to String:
 
 ```lang=csharp, name=String and StringRange Implicit Casting Examples
   var string = "";
@@ -128,7 +128,7 @@ BEWARE
 
  #  Static String Functions
 
-[ As with all static functions](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/lightning_in_plasma/attributes.markdown#static), the static functions of the String class are not invoked from instances of the class, but instead are found in the String namespace itself.
+[ As with all static functions](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/Lightning/attributes.markdown#static), the static functions of the String class are not invoked from instances of the class, but instead are found in the String namespace itself.
 
  ##  Compare
 
@@ -290,7 +290,7 @@ gamedata
 
  ##  ByteCount and Count
 
-[ ByteCount](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown#bytecount-plasma-engine-do) gets the number of bytes in the string. For a string that contains one or more characters outside of the ASCII range, this will be different from the number of runes represented by the string (see [ComputeRuneCount](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/lightning_in_plasma/strings/.markdown#computerunecount) below). Consider the following code example, attached to a cog that has a SpriteText component whose Text property is set to the French word //gar�on//:
+[ ByteCount](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown#bytecount-plasma-engine-do) gets the number of bytes in the string. For a string that contains one or more characters outside of the ASCII range, this will be different from the number of runes represented by the string (see [ComputeRuneCount](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/Lightning/strings/.markdown#computerunecount) below). Consider the following code example, attached to a cog that has a SpriteText component whose Text property is set to the French word //gar�on//:
 
 ```lang=csharp, name=ByteCount Example
 var englishString = "string";
@@ -337,11 +337,11 @@ HELLO WORLD
 
  ##  CompareTo
 
-A string's [ CompareTo](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown#compareto-plasma-engine-do) method returns an Integer indicating its relative sort order when compared with a given StringRange. It works much like the static [Compare](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/lightning_in_plasma/strings/.markdown#compare) function seen above, except that it compares a given StringRange to the string on which this method is being invoked.
+A string's [ CompareTo](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown#compareto-plasma-engine-do) method returns an Integer indicating its relative sort order when compared with a given StringRange. It works much like the static [Compare](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/Lightning/strings/.markdown#compare) function seen above, except that it compares a given StringRange to the string on which this method is being invoked.
 
  ##  ComputeRuneCount
 
-The [ ComputeRuneCount](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown#computerunecount-plasma-en) method calculates the number of runes represented by the string by iterating through it from its [Begin iterator to its End](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/lightning_in_plasma/strings/.markdown#begin-and-end). As noted [above](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/lightning_in_plasma/strings/.markdown#bytecount-and-count), a string that contains one or more characters outside of the ASCII range will have a different rune count from its byte count:
+The [ ComputeRuneCount](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown#computerunecount-plasma-en) method calculates the number of runes represented by the string by iterating through it from its [Begin iterator to its End](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/Lightning/strings/.markdown#begin-and-end). As noted [above](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/Lightning/strings/.markdown#bytecount-and-count), a string that contains one or more characters outside of the ASCII range will have a different rune count from its byte count:
 
 ```lang=csharp, name=ComputeRuneCount Example
 var englishString = "string";
@@ -469,8 +469,8 @@ Console.WriteLine(revisedName);
 The Handsome but Misunderstood Dr. Eugene Cosmo IV
 ```
 
- - See also [FindFirstOf](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/lightning_in_plasma/strings/.markdown#findfirstof)
- - See also [FindLastOf](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/lightning_in_plasma/strings/.markdown#findfirstof)
+ - See also [FindFirstOf](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/Lightning/strings/.markdown#findfirstof)
+ - See also [FindLastOf](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/Lightning/strings/.markdown#findfirstof)
 
 Besides **SubString**, there are two other String methods that return substrings:
 
@@ -557,7 +557,7 @@ Your ID is f08b47e1. Write it down.
 
  #  Related Materials
  ##  Manual
-- [ Looping](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/lightning_in_plasma/looping.markdown)
+- [ Looping](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/Lightning/looping.markdown)
 
  ##  Code Reference
 - [ String](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown)

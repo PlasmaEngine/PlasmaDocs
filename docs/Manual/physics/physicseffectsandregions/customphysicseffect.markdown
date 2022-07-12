@@ -8,7 +8,7 @@ It is up to a user to define what application modes the CustomPhysicsEffect work
 ---
  #  Related Materials
  ##  Manual
-- [physicseffectsandregions.markdown](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/physics/physicseffectsandregions.markdown)
+- [physicseffectsandregions.markdown](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/physics/physicseffectsandregions.markdown)
 
  ##  Reference
 - [CustomPhysicsEffect](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/customphysicseffect.markdown)

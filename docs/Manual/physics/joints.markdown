@@ -39,7 +39,7 @@ A stick joint, or distance joint, defines that two points on the objects should 
 A position joint locks two points on the objects to be at the same position. This is common for a ball-and-socket like joint.
 
  ###  WeldJoint
-A weld joint locks the the relative position and rotation of two objects together. For a rigid connection, [hierarchies](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/physics/hierarchies.markdown) should be used instead as joints are not completely stiff. If run-time behaviors, such as auto-snapping with a max impulse, are desired then using a weld is easier than hierarchies.
+A weld joint locks the the relative position and rotation of two objects together. For a rigid connection, [hierarchies](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/physics/hierarchies.markdown) should be used instead as joints are not completely stiff. If run-time behaviors, such as auto-snapping with a max impulse, are desired then using a weld is easier than hierarchies.
 
  ###  PrismaticJoint
 A prismatic joint (or slider) locks the rotation of two objects together and two of the linear axes. This allows relative translation of the objects along one axis. This is often used to create pistons or sliders.
@@ -71,7 +71,7 @@ A few joints have 2D versions that should be used when making a 2D game instead 
 ---
  ##  Related Materials
  ###  Manual
-- [colliders.markdown](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/physics/colliders.markdown)
+- [colliders.markdown](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/physics/colliders.markdown)
 
  ###  Reference
  - [Joint](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/joint.markdown)

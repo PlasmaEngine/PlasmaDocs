@@ -86,7 +86,7 @@ class Driver
 1
 0.25
 ```
-NOTE: Get-sets are not fields, and thus they have no storage of their own. If data state is needed you'll have to make another field on the class to which you may refer.  Although get-sets are not fields, fields can auto-generate the property interface using [property_delegates](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/lightning_in_plasma/property_delegates.markdown).
+NOTE: Get-sets are not fields, and thus they have no storage of their own. If data state is needed you'll have to make another field on the class to which you may refer.  Although get-sets are not fields, fields can auto-generate the property interface using [property_delegates](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/Lightning/property_delegates.markdown).
 
  # Parts of a Property's definition
 
@@ -106,6 +106,6 @@ var Perimeter : Real // Despite ``var`` keyword, Properties have no storage.
 ```
  # Related Materials
  ## Manual
-- [property_delegates](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/lightning_in_plasma/property_delegates.markdown) 
+- [property_delegates](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/Lightning/property_delegates.markdown) 
 
  
