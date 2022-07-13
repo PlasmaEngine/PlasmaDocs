@@ -4,7 +4,7 @@
 
 ![ResourceTable1](https://raw.githubusercontent.com/PlasmaEngine/PlasmaDocs/master/media/ResourceTable.png)
 
-ResourceTables store a homogeneous collection of entries. Pictured above is a table of [ Archetypes ](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/architecture/archetypes.markdown). This can be switched to any other resource type or to strings.
+ResourceTables store a homogeneous collection of entries. Pictured above is a table of [ Archetypes ](https://plasmaengine.github.io/PlasmaDocs/Manual/architecture/archetypes.markdown). This can be switched to any other resource type or to strings.
 
 ResourceTable entries are composed of three items:
  - **Name**: A name used for hashmap queries. This is sometimes used as a display name for the entry. Note: This name does not have to Value. 

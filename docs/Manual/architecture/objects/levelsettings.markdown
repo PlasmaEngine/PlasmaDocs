@@ -1,15 +1,15 @@
 # Level Settings
-The LevelSettings object is a [Cog](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/architecture/cogs.markdown) of which there is one unique instance per Level. It serves as a globally accessible object from a variety of object types such as Components or other Cog. Unlike any other Cog there is no way to instantiate a LevelSettings object.
+The LevelSettings object is a [Cog](https://plasmaengine.github.io/PlasmaDocs/Manual/architecture/cogs.markdown) of which there is one unique instance per Level. It serves as a globally accessible object from a variety of object types such as Components or other Cog. Unlike any other Cog there is no way to instantiate a LevelSettings object.
 
 # Common Uses
- - Adding level specific [physics effects](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/physics/physicseffectsandregions.markdown).
+ - Adding level specific [physics effects](https://plasmaengine.github.io/PlasmaDocs/Manual/physics/physicseffectsandregions.markdown).
  - Adding custom components which need to be globally accessible in a level by any other components that exist in the level.
 
 # Using the LevelSettings Object
 
 ## Accessing the LevelSettings Object In Editor
 
-NOTE: **Initialization Order** Notice that because the LevelSettings object is always the first object in the [Object Window](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/editor/editorui.markdown) (and cannot be reordered) it will always be the first object to be created and initialized when the level is loaded into the Space. This can be very useful when implementing logic which depends on being initialized before related components on other objects in the level.
+NOTE: **Initialization Order** Notice that because the LevelSettings object is always the first object in the [Object Window](https://plasmaengine.github.io/PlasmaDocs/Manual/editor/editorui.markdown) (and cannot be reordered) it will always be the first object to be created and initialized when the level is loaded into the Space. This can be very useful when implementing logic which depends on being initialized before related components on other objects in the level.
 
 
 The LevelSettings object will always be the first object in the Object Window making it easy to find in editor.
@@ -47,10 +47,10 @@ class ExampleComponent : LightningComponent
 ## Default Components of LevelSettings
 
 ### GravityEffect & DragEffect
-Physics Effects are built in components that implement a piece of common physics-based functionality such as the [GravityEffect](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/physics/physicseffectsandregions/forceeffect.markdown) or the [DragEffect](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/drageffect.markdown) components that are attached to the LevelSettings by default. Each physics effect component may perform the logic on different spatial scopes depending on which object is attached to. When a physics effect component is attached to the LevelSettings object it is applied to all objects in that level. This allows one to implement level wide effects with any of the built in physics effects as is done by default with GravityEffect and DragEffect.
+Physics Effects are built in components that implement a piece of common physics-based functionality such as the [GravityEffect](https://plasmaengine.github.io/PlasmaDocs/Manual/physics/physicseffectsandregions/forceeffect.markdown) or the [DragEffect](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/drageffect.markdown) components that are attached to the LevelSettings by default. Each physics effect component may perform the logic on different spatial scopes depending on which object is attached to. When a physics effect component is attached to the LevelSettings object it is applied to all objects in that level. This allows one to implement level wide effects with any of the built in physics effects as is done by default with GravityEffect and DragEffect.
 
 ### GridDraw
-The [griddraw](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/griddraw.markdown) component is a simple debug drawing component. It uses Plasma's buit in GridDraw component is a simple debug drawing component. It uses Plasma's buit in [debugdrawing](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/scripting/debugdrawing.markdown) to create a customizable unit grid in the Level Window.
+The [griddraw](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/griddraw.markdown) component is a simple debug drawing component. It uses Plasma's buit in GridDraw component is a simple debug drawing component. It uses Plasma's buit in [debugdrawing](https://plasmaengine.github.io/PlasmaDocs/Manual/scripting/debugdrawing.markdown) to create a customizable unit grid in the Level Window.
 
 ## Custom Components
 The LevelSettings object is often a very convenient object on which to attach certain custom Lightning components. Imagine a scenario in which a function is implemented for a friendly AI which needs to return an enemy to attack. If all the enemies exist independent of any other object or component, there may be no immediate path from which to access all enemies from the AI.
@@ -71,10 +71,10 @@ While the above example may not be applicable to all games, it demonstrates the 
 
 # Related Materials
 ## Manual Pages
-- [Cog](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/architecture/cogs.markdown)
-- [Editor UI](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/editor/editorui.markdown)
-- [Debug Drawing](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/scripting/debugdrawing.markdown)
-- [physics effects](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/physics/physicseffectsandregions.markdown)
+- [Cog](https://plasmaengine.github.io/PlasmaDocs/Manual/architecture/cogs.markdown)
+- [Editor UI](https://plasmaengine.github.io/PlasmaDocs/Manual/editor/editorui.markdown)
+- [Debug Drawing](https://plasmaengine.github.io/PlasmaDocs/Manual/scripting/debugdrawing.markdown)
+- [physics effects](https://plasmaengine.github.io/PlasmaDocs/Manual/physics/physicseffectsandregions.markdown)
 
 ## Code Reference
 - [GravityEffect](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/gravityeffect.markdown) 

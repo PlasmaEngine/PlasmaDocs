@@ -1,12 +1,12 @@
-A level is resource that stores a set of objects which will then be created later when the level is loaded. Levels can be loaded into a space in order to create all objects saved to the resource. Levels can be edited using several tools, especially those found via the [Editor UI](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/editor/editorui.markdown).
+A level is resource that stores a set of objects which will then be created later when the level is loaded. Levels can be loaded into a space in order to create all objects saved to the resource. Levels can be edited using several tools, especially those found via the [Editor UI](https://plasmaengine.github.io/PlasmaDocs/Manual/editor/editorui.markdown).
 # Levels
 
 ## Using Levels
 ### Creating a Level
-A new level can be added by using the Add command ([Command](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/editor/editorcommands/commands.markdown) : [Add](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/command_reference.markdown#add) or clicking on the Add button button) followed by selecting Level drop-down menu. The newly-created level will open in the Level Window and allow for the manipulation of objects to build game levels. At creation the level will only have the default objects inside it: `LevelSettings` and a few other object from the level template you select.
+A new level can be added by using the Add command ([Command](https://plasmaengine.github.io/PlasmaDocs/Manual/editor/editorcommands/commands.markdown) : [Add](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/command_reference.markdown#add) or clicking on the Add button button) followed by selecting Level drop-down menu. The newly-created level will open in the Level Window and allow for the manipulation of objects to build game levels. At creation the level will only have the default objects inside it: `LevelSettings` and a few other object from the level template you select.
 
 
- - The [LevelSettings](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/architecture/objects/levelsettings.markdown) object is a cog that has a single unique instance per level that cannot be deleted or duplicated. It has several components attached in order to run various effects in the level, such as gravity.
+ - The [LevelSettings](https://plasmaengine.github.io/PlasmaDocs/Manual/architecture/objects/levelsettings.markdown) object is a cog that has a single unique instance per level that cannot be deleted or duplicated. It has several components attached in order to run various effects in the level, such as gravity.
 
 The background grid will also be turned on. The grid is there to help place objects within the level editor but will not be visible during gameplay, and can be turned on and off by using the toolbar in the top left corner of the Level Window.
 
@@ -65,10 +65,10 @@ This code snippet gives an example of having two levels exist at once. By giving
 
 # Related Materials
 ## Manual
-- [Editor UI](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/editor/editorui.markdown)
-- [Spaces](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/architecture/objects/spaces.markdown)
-- [CamerasViewportsRenderers](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/graphics/camerasviewportsrenderers.markdown)
-- [Level Settings](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/architecture/objects/levelsettings.markdown)
+- [Editor UI](https://plasmaengine.github.io/PlasmaDocs/Manual/editor/editorui.markdown)
+- [Spaces](https://plasmaengine.github.io/PlasmaDocs/Manual/architecture/objects/spaces.markdown)
+- [CamerasViewportsRenderers](https://plasmaengine.github.io/PlasmaDocs/Manual/graphics/camerasviewportsrenderers.markdown)
+- [Level Settings](https://plasmaengine.github.io/PlasmaDocs/Manual/architecture/objects/levelsettings.markdown)
  
 
  
