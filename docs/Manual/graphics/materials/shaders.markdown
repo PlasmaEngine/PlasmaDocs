@@ -1,3 +1,4 @@
+# Shaders
 Shaders may be added to Plasma in the form of LightningFragments, allowing the user to write shaders using the Lightning language. Zero currently supports the following types of shaders:
 
  - **Pixel** - Operates on individual pixels, setting and changing their properties.
@@ -21,20 +22,20 @@ When adding a new LightningFragment, there are multiple templates for each type 
 | PostProcess | Post Process Copy | Copies a texture. |
 
 
- # Shader Translation Debug Helper
+# Shader Translation Debug Helper
 
 This tool translates Materials (rather, the LightningFragments that make up the Material) into different versions of the shader language GLSL.
 
-[Command](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/editor/editorcommands/commands.markdown) : [ DebugShaderTranslation](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/command_reference.markdown#debugshadertranslation) will open the tool
+[Command](https://plasmaengine.github.io/PlasmaDocs/Manual/editor/editorcommands/commands.markdown) : [ DebugShaderTranslation](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/command_reference.markdown#debugshadertranslation) will open the tool
 
 On the left hand side of the window are properties that set the parameters that define the shaders to be be translated: CoreVertex enum, Material enum, and RenderPass enum. `Translation Language` set the version of GLSL to translate to.  These options set what exactly will be translated. Material enum, for example, sets the Material to be translated as its name would suggest.
 
 If not familiar with GLSL, these will become overwhelmingly complex very quickly. With at least an intermediate amount of experience in GLSL, however, this translator provides a valuable tool for debugging your LightningFragment shaders. Changing the other attributes to different settings will result in different outputs, so try to make sure that the attributes selected line up to the location on the render pipeline.
 
- # Related Materials
- ## Manual
-- [normal_map](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/graphics/materials/normal_map.markdown)
-- [Material](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/graphics/materials/materials_overview.markdown)
+# Related Materials
+## Manual
+- [normal_map](https://plasmaengine.github.io/PlasmaDocs/Manual/graphics/materials/normal_map.markdown)
+- [Material](https://plasmaengine.github.io/PlasmaDocs/Manual/graphics/materials/materials_overview.markdown)
  
 
  
