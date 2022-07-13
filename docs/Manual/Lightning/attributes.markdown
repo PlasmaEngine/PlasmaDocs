@@ -6,7 +6,7 @@ Attributes are part of the Lightning grammar allowing additional information to 
 
 In Lightning, attributes can be assigned by annotating the affected construct with a capitalized name of the recognized attribute in square brackets above the definition:
 
-```lang=csharp, name=Assigning an Attribute to a Function
+``` lang=csharp, name=Assigning an Attribute to a Function
 [Virtual] // Here we've added the attribute "Virtual" to the function Speak
 function Speak() : String
 {
@@ -37,7 +37,7 @@ The following are usable in the Plasma Engine:
         
 Static can be used on function, fields, and get-sets. These allow you to access fields, get-sets, and functions without first creating an instance of the class in your code. 
 
-```lang=csharp, name=Defining a Static Variable and Function
+``` lang=csharp, name=Defining a Static Variable and Function
   class Mathematics
   {
       [Static]
@@ -51,13 +51,13 @@ Static can be used on function, fields, and get-sets. These allow you to access 
 ```
 Given the class above you can use its functionality by calling into the class's namespace:
 
-```lang=csharp, name=Using Static Variable and Function
+``` lang=csharp, name=Using Static Variable and Function
   var myNewFavoriteNumber = Mathematics.PI + Mathematics.Circumference(2.0);
   Console.WriteLine(My new favorite number is: `myNewFavoriteNumber`");
 ```
 will result in 
 
-```name=ConsoleWindow
+``` name=ConsoleWindow
 My new favorite number is: 15.708
 ```
 
@@ -67,7 +67,7 @@ NOTE: While these attributes enable polymorphism, they are still in their infanc
 
 Virtual is used to give Base classes the ability to determine some functions as being able to be overridden by its derived classes.
 
-```lang=csharp, name=Applying Virtual to a Function
+``` lang=csharp, name=Applying Virtual to a Function
 class Animal
 {
   [Virtual]
@@ -81,7 +81,7 @@ class Animal
  ## [Override]
 Override is used by a derived class to mark the intentional overriding of a base class's virtual function.
 
-```lang=csharp, name=Applying Override to a Function
+``` lang=csharp, name=Applying Override to a Function
 class Dog : Animal
 {
   [Override]
@@ -96,7 +96,7 @@ class Dog : Animal
 
 This allow you to add functionality to a preexisting class from inside another. Currently, you can only extend a class by adding get-sets and functions (i.e. you cannot add fields). If a function is being added to an existing class (`Math`, for example), the [Static] attribute should also be used:
 
-```lang=csharp, name=Applying Extension Attribute to a Function
+``` lang=csharp, name=Applying Extension Attribute to a Function
 class MyClass : LightningComponent
 {
   [Extension(typeid(Math))][Static]
@@ -113,7 +113,7 @@ Plasma works with Lightning to offer these additional attributes:
 
 Allows you to set a field or get-set via the Property Grid in the editor. Because this doesn't save the settings, it is usually used in conjunction with either `[RunInEditor]` or `[Serialize]` . For example, changing
 
-```lang=csharp, name=Variable without Display Attribute
+``` lang=csharp, name=Variable without Display Attribute
 class MyClass : LightningComponent
 {
   var MyVariable : Real;
@@ -121,7 +121,7 @@ class MyClass : LightningComponent
 ```
 to
 
-```lang=csharp, name=Variable with Display Attribute
+``` lang=csharp, name=Variable with Display Attribute
 [Editiable]
 var MyVariable : Real;
 ```
@@ -137,7 +137,7 @@ Allows a value to be saved by the Engine. This allows a field and get-sets to be
 
 Property wraps the `[Display]` and `[Serialize]` attributes together into one. As implied by the use of `[Display]` and `[Serialize]`, it works on fields and get-sets. Properties of certain types will result in unique set fields in the Property Grid. For example,
 
-```lang=csharp, name=Variables with Property Attribute
+``` lang=csharp, name=Variables with Property Attribute
 class MyClass
 {
   [Property]
@@ -155,7 +155,7 @@ Allows the programmer to make a dependency between components explicit. This all
 
 The below sample demonstrates the declaration of a dependence upon another component:
 
-```lang=csharp, name=Applying the Dependence Attribute on Another Component
+``` lang=csharp, name=Applying the Dependence Attribute on Another Component
   class SimpleOffset : LightningComponent
   {
       // Declaring that SimpleOffset depends upon Transform component.
@@ -228,7 +228,7 @@ class CreateArchetype : LightningComponent
  ## [ComponentInterface]
 The ComponentInterface attribute allows the user to define a class as a generic interface for its derived types. One common example of this is [collider](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/collider.markdown), which acts as a component interface for all collider types, such as [boxcollider](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/boxcollider.markdown), [capsulecollider](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/capsulecollider.markdown), and more. Defining an interface using this attribute allows the user to access the members of a derived class using the component name of the base class.
 
-```name=Component Interface Access Example, lang=csharp
+``` name=Component Interface Access Example, lang=csharp
 var collisionGroup = this.Owner.BoxCollider.CollisionGroup;
 var collisionGroupAccessedByInterface = this.Owner.Collider.CollisionGroup;
 
@@ -238,7 +238,7 @@ if(collisionGroup == collisionGroupAccessedByInterface)
 
 Using a component interface does not mean that the property and methods of a derived class need to be exactly the same as the base class. What would be the point? Using the [ Virtual](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/sandbox/arend_danielek/attributes.markdown#virtual) and [ Override ](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/sandbox/arend_danielek/attributes.markdown#override) attributes, we can modify the interface of derived classes.
 
-```name=Component Interface Example, lang=csharp
+``` name=Component Interface Example, lang=csharp
 [ComponentInterface]
 class AnimationDebugNode : LightningComponent
 {
@@ -274,7 +274,7 @@ class CrossBlendDebugNode : AnimationDebugNode
 
 Attributes can also take parameters; below is the template generated for creating a new Command by Plasma:
 
-```lang=csharp
+``` lang=csharp
 [Command(autoRegister:true)] // This template file sets a parameter, autoRegister, to true.
 class MyNewCommand : LightningComponent
 {
