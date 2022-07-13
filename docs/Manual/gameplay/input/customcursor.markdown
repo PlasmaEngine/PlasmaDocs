@@ -1,9 +1,10 @@
+# Custom Cursors
 Custom Cursors are a great way to add a level of professionalism and polish to any project. A Cursor created specifically for a project can be used for player feedback and fits into the project universe better than the normal  [Mouse](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/code_reference/class_reference/mouse.markdown)  icon in most situations. There are several methods that can be used to add this functionality, all of which come with their own strengths and weaknesses. 
 
 NOTE: **Recommended Reading** This section covers topics that may not have been encountered yet. To learn or review those topics, please see: [Mouse Input](https://plasmaengine.github.io/PlasmaDocs/Manual/gameplay/input/mouseinput.markdown) and  {icon university}[[plasma_engine_documentation/plasma_editor_documentation/plasmamanual/Graphics/CamerasViewportsRenderers/|Cameras, Viewports and Renderers]]
 
- # Using a Custom Cursor
- ## Hiding the Mouse
+# Using a Custom Cursor
+## Hiding the Mouse
 
 |Pros | Cons |
 |-----|------|
@@ -15,9 +16,10 @@ The first option involves making the Mouse Cursor invisible while not affecting 
 ```
 class HiddenMouseExample : LightningComponent
 {
-     [Dependency]
-     var Transform : Transform;
-     function Initialize(init : CogInitializer)
+    [Dependency]
+    var Transform : Transform;
+
+    function Initialize(init : CogInitializer)
     {
         // Set the Mouse to invisible
         Plasma.Mouse.Cursor = Cursor.Invisible;
@@ -31,15 +33,15 @@ class HiddenMouseExample : LightningComponent
 This would be the start of a component attached to the object that will act as the Custom Cursor. After making sure the object has a [transform](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/code_reference/class_reference/transform.markdown) Component using the Dependency [-](https://plasmaengine.github.io/PlasmaDocs/Manual/codereference/reference/transform.markdown) Component using the Dependency [attributes](https://plasmaengine.github.io/PlasmaDocs/Manual/Lightning/attributes.markdown), it then sets the Mouse Cursor to be invisible. The final part of the code-block connects to the MouseMove event, which is fleshed out in the following code-block: 
 
 ```
-    // continued from above
-        function OnMouseMove(event : ViewportMouseEvent)
-        {
-            // Get mouse WorldPosition on the Z-Plane at depth 0
-            var mousePosition = event.ToWorldZPlane(0);
-            // Set the MouseCursor Objects position to the Mouse position
-            this.Transform.Translation = mousePosition;
-        }
+// continued from above
+    function OnMouseMove(event : ViewportMouseEvent)
+    {
+        // Get mouse WorldPosition on the Z-Plane at depth 0
+        var mousePosition = event.ToWorldZPlane(0);
+        // Set the MouseCursor Objects position to the Mouse position
+        this.Transform.Translation = mousePosition;
     }
+}
 
 ```
 
@@ -50,7 +52,7 @@ A large drawback to using this method is the fact that it allows the Mouse icon 
 
 It would also be possible to set the Mouse invisible from the LogicUpdate event, keeping the cursor invisible in within the editor even when leaving the game window. 
 
- ## Locking the Mouse
+## Locking the Mouse
 
 |Pros | Cons |
 |-----|------|
@@ -112,7 +114,7 @@ NOTE: **Get-Sets** In order to reduce the amount of repetitive typing, a number 
 When this component is attached to the current level's [LevelSettings](https://plasmaengine.github.io/PlasmaDocs/Manual/architecture/objects/levelsettings.markdown)  object, it will create an Object in a new  [Space](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/code_reference/class_reference/space.markdown)  that is built on top of the GameSpace. This object allows it to function properly in a 3D game. As the getters have defined most of the variables, much of the script is ready to be used. 
 
 ```
-...
+// Code continued from above
     function Initialize(init : CogInitializer)
     {
         // Traps the Mouse, locking it and making it invisible
@@ -131,14 +133,14 @@ When this component is attached to the current level's [LevelSettings](https://p
         // Connects to the MouseMove Event In the Cursor Space, NOT the Game Space
         Plasma.Connect(this.CursorSpace, Events.MouseMove, this.OnMouseMove);
     }
-...
+// Code continued below
 ```
 
 
 The Initialize function creates the required Space, Level and Object for the Custom Cursor. It's important to make sure that the objects are being made in the CursorSpace, not the main GameSpace. 
 
 ```
-...
+// Code continued from above
     function OnMouseMove(event : ViewportMouseEvent)
     {
         // Get a new position by adding the distance of the MoveEvent to the Cursors current position
@@ -166,12 +168,14 @@ The biggest problem with using this method is the fact that most Mouse functiona
 Below is an example of this script attached to the `LevelSettings` object of an empty level, with the blue sprite given as the `CursorArchetype` and the white sprite following the same script as the hidden cursor example, to show how the mouse is attempting to move from the world origin. 
 
 
- # Related Materials
- ## Manual
+# Related Materials
+
+## Manual
 - [Mouse Input](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation.markdown)
 - [Getters and Setters](https://plasmaengine.github.io/PlasmaDocs/Manual/Lightning/properties.markdown)
 -
- ## Code Reference
+
+## Code Reference
 - [Mouse](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/code_reference/class_reference/mouse.markdown) 
 - [Transform](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/code_reference/class_reference/transform.markdown) 
 - [Sprite](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/code_reference/class_reference/sprite.markdown) 

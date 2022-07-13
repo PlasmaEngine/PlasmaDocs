@@ -1,6 +1,6 @@
-
- # Linear Interpolation
-
- # Spherical Linear Interpolation 
-
+# Interpolation
+# Linear Interpolation
+TODO
+# Spherical Linear Interpolation 
+TODO
  
