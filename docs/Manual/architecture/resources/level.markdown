@@ -17,7 +17,7 @@ The background grid will also be turned on. The grid is there to help place obje
 
 | Buttons                             | Purpose |
 |-------------------------------------|---------------------------------------------|
-| ![image](https://raw.githubusercontent.com/PlasmaEngine/PlasmaDocs/master/media/3DToggle.PNG) ![image](https://media.githubusercontent.com/media/dragonCASTjosh/ZeroFiles/master/doc_files/47020.png) | Toggles between 2D & 3D camera controls.    |
+| ![image](https://raw.githubusercontent.com/PlasmaEngine/PlasmaDocs/master/media/3DToggle.PNG) ![image](https://media.githubusercontent.com/media/PlasmaEngine/PlasmaDocs/master/doc_files/47020.png) | Toggles between 2D & 3D camera controls.    |
 | ![image](https://raw.githubusercontent.com/PlasmaEngine/PlasmaDocs/master/media/PerspectiveToggle.PNG) ![image](https://raw.githubusercontent.com/PlasmaEngine/PlasmaDocs/master/media/OrthographicsToggle.PNG) | Toggles the editor camera's rendering mode between Orthographic and Perspective Projection. |
 | ![image](https://raw.githubusercontent.com/PlasmaEngine/PlasmaDocs/master/media/GridOn.PNG) ![image](https://raw.githubusercontent.com/PlasmaEngine/PlasmaDocs/master/media/GridOff.PNG) | Toggles the grid line visuals in the editor. |
 | ![image](https://raw.githubusercontent.com/PlasmaEngine/PlasmaDocs/master/media/DebugViews.png) | With the debug views option you can preview diffrent rendering buffers, this is useful for debugging issues with materials.  |

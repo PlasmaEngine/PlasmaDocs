@@ -18,12 +18,12 @@ DebugDraw.Add(dSphere);
 ```
 
 
-![DebugDrawLineSphere2D](https://media.githubusercontent.com/media/dragonCASTjosh/ZeroFiles/master/doc_files/47257.png) *The preceding code block as rendered in a 2D level*
+![DebugDrawLineSphere2D](https://media.githubusercontent.com/media/PlasmaEngine/PlasmaDocs/master/doc_files/47257.png) *The preceding code block as rendered in a 2D level*
 
 
 
 
-![DebugDrawLineSphere3D](https://media.githubusercontent.com/media/dragonCASTjosh/ZeroFiles/master/doc_files/47259.png) *The preceding code block as rendered in a 3D level (viewed from an angle)*
+![DebugDrawLineSphere3D](https://media.githubusercontent.com/media/PlasmaEngine/PlasmaDocs/master/doc_files/47259.png) *The preceding code block as rendered in a 3D level (viewed from an angle)*
 
 
  # DebugLine
@@ -94,7 +94,7 @@ class RotateLine : LightningComponent
 
 
 
-![RotateLine](https://media.githubusercontent.com/media/dragonCASTjosh/ZeroFiles/master/doc_files/47261.gif) *The preceding LightningScript rendered in a 2D level*
+![RotateLine](https://media.githubusercontent.com/media/PlasmaEngine/PlasmaDocs/master/doc_files/47261.gif) *The preceding LightningScript rendered in a 2D level*
 
 
  ## DebugTriangle
@@ -174,7 +174,7 @@ class DrawTriangles: LightningComponent
 
 
 
-![DebugTris](https://media.githubusercontent.com/media/dragonCASTjosh/ZeroFiles/master/doc_files/47264.png) *The preceding LightningScript rendered in a 2D level*
+![DebugTris](https://media.githubusercontent.com/media/PlasmaEngine/PlasmaDocs/master/doc_files/47264.png) *The preceding LightningScript rendered in a 2D level*
 
 
  ## Related Materials

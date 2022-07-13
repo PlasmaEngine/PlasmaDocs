@@ -6,7 +6,7 @@ Here the [ Sprite ](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanua
 
 
 
-![flipped](https://media.githubusercontent.com/media/dragonCASTjosh/ZeroFiles/master/doc_files/47657.gif)
+![flipped](https://media.githubusercontent.com/media/PlasmaEngine/PlasmaDocs/master/doc_files/47657.gif)
 
 
 As a demonstration, the following custom [ LightningScript ](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/Lightning.markdown) will emulateFlipX checkBox while using a Property:
@@ -43,7 +43,7 @@ class Flipper : LightningComponent
 
 
 
-![propertyset](https://media.githubusercontent.com/media/dragonCASTjosh/ZeroFiles/master/doc_files/1265.png)
+![propertyset](https://media.githubusercontent.com/media/PlasmaEngine/PlasmaDocs/master/doc_files/1265.png)
 
 
 While this works, it doesn't flip when FlipX checkBox is altered at runtime. By only 
@@ -99,7 +99,7 @@ class Flipper : LightningComponent
 
 
 
-![flippereditorruntime](https://media.githubusercontent.com/media/dragonCASTjosh/ZeroFiles/master/doc_files/47671.gif)
+![flippereditorruntime](https://media.githubusercontent.com/media/PlasmaEngine/PlasmaDocs/master/doc_files/47671.gif)
 
 
 Employing [ RunInEditor ](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/Lightning/attributes.markdown), [ Serialized ](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/Lightning/attributes.markdown), and [ Editable ](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/Lightning/attributes.markdown) we've created the WYSIWYG feel, and the sprite can now be flipped at editor runtime. This design pattern can be reused to create the polished WYSIWYG feel with most scripted components.

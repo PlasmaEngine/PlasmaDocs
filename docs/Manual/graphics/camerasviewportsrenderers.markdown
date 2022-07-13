@@ -5,7 +5,7 @@ By default the Camera and CameraViewport components are on the object called "Ga
  # CameraViewport
 
 
-![image](https://media.githubusercontent.com/media/dragonCASTjosh/ZeroFiles/master/doc_files/46327.png) *CameraViewport Component*
+![image](https://media.githubusercontent.com/media/PlasmaEngine/PlasmaDocs/master/doc_files/46327.png) *CameraViewport Component*
 
 
 (NOTE)**Where does the CameraViewport render to?**
@@ -16,7 +16,7 @@ The position and scale of each viewport is controlled with NormalizedSize , Norm
 
 
 
-![CameraViewport](https://media.githubusercontent.com/media/dragonCASTjosh/ZeroFiles/master/doc_files/47642.png) *Default Single CameraViewport*
+![CameraViewport](https://media.githubusercontent.com/media/PlasmaEngine/PlasmaDocs/master/doc_files/47642.png) *Default Single CameraViewport*
 
 
  ### Viewport Scaling
@@ -43,7 +43,7 @@ The cog considered to be the `Camera` is whatever the `CameraViewport` reference
 
 
 
-![Camera](https://media.githubusercontent.com/media/dragonCASTjosh/ZeroFiles/master/doc_files/47645.png) *Camera Component*
+![Camera](https://media.githubusercontent.com/media/PlasmaEngine/PlasmaDocs/master/doc_files/47645.png) *Camera Component*
 
 
  ### Perspective vs. Orthographic
@@ -51,7 +51,7 @@ Changing the shape of the view frustum has a significant impact on how objects a
 
 
 
-![image](https://media.githubusercontent.com/media/dragonCASTjosh/ZeroFiles/master/doc_files/46825.png) *`Perspective` camera(left) vs. `Orthographic` camera(right)*
+![image](https://media.githubusercontent.com/media/PlasmaEngine/PlasmaDocs/master/doc_files/46825.png) *`Perspective` camera(left) vs. `Orthographic` camera(right)*
 
 
 (NOTE)**Parallaxing** Even if the camera has an orthographic perspective, the illusion of depth is still possible.  Instead of just one universal depth, the new assumption is that there are a set number of layers for an object, often refered to as foregrounds and backgrounds.  For an example, try the [Parallaxing Background](https://plasmaengine.github.io/PlasmaDocs/Manual//tutorials/graphics/parallaxbackground.markdown) tutorial.

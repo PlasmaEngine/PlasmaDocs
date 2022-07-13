@@ -5,7 +5,7 @@ Game physics engines are commonly implemented using a discrete collision detecti
 
 
 
-![DiscretePhysics](https://media.githubusercontent.com/media/dragonCASTjosh/ZeroFiles/master/doc_files/46691.gif)
+![DiscretePhysics](https://media.githubusercontent.com/media/PlasmaEngine/PlasmaDocs/master/doc_files/46691.gif)
 
 Pictured above is an illustration of discrete physics. Notice how there are gaps in the object's movement trail due to a lowered framerate. Typically a physics engine runs at a much higher framerate which is why motion seems smooth.
 
@@ -14,7 +14,7 @@ As an object becomes smaller and moves faster it becomes more likely to tunnel. 
 
 
 
-![Tunneling](https://media.githubusercontent.com/media/dragonCASTjosh/ZeroFiles/master/doc_files/46693.PNG)
+![Tunneling](https://media.githubusercontent.com/media/PlasmaEngine/PlasmaDocs/master/doc_files/46693.PNG)
 
 In the above picture, the red ball is moving at a constant speed to the right with a framerate of `1` fps. In this example no collision is detected as the ball teleports past the wall without ever coming into contact with it.
 
@@ -22,7 +22,7 @@ Tunneling happens even if the framerate is high. The faster and smaller an objec
 
 
 
-![Tunneling2](https://media.githubusercontent.com/media/dragonCASTjosh/ZeroFiles/master/doc_files/46695.PNG)
+![Tunneling2](https://media.githubusercontent.com/media/PlasmaEngine/PlasmaDocs/master/doc_files/46695.PNG)
 
 
 In the above picture the ball does end up hitting the wall; however, it hits on the opposite side. In this way the collision will be detected but in the wrong direction.
