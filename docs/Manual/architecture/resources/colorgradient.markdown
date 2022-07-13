@@ -1,13 +1,14 @@
+# Color Gradiant
 **ColorGradiant** is a [resources](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/architecture/resources.markdown) that allows the user to make a custom color gradient. The gradient may then be sampled from and applied as a color to any object that has a component with a color property.
 
- # Using ColorGradient
- ## Creating a ColorGradient
+# Using ColorGradient
+## Creating a ColorGradient
 A new ColorGradient may be created through the [Add a Resource](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/editor/editorcommands/resourceadding.markdown) window.
 Once the new ColorGradient has been named and created, an editor window will pop up.
 The editor currently shows a gradient from black to white. The user may add keypoints on the gradient, however, to add in new colors by left-clicking anywhere on the gradient bar. These colors are selected via the common color selection window.
 As the common color selection window is used, any value within it may be changed as well, including the alpha value.
 
- ## Applying the ColorGradient
+## Applying the ColorGradient
 Sampling from ColorGradient is done through a ColorGradient variable within LightningScript. The value passed into `Sample()` must be between 0 and 1:
 
 ```
@@ -23,7 +24,6 @@ class GradDemo : LightningComponent
     }
 }
 ```
-
 
 Attaching this code as a component onto a basic sprite (and selecting the ColorGradient made above for the `ColorGrad` property), the sprite will show a solid color based on the sample point selected.
 
@@ -68,13 +68,11 @@ The above code-block accomplishes the following things:
  - It then calls a function-- `InterpolateValue()` --that uses an Action to interpolate the [Real](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown) variable Value from 0 - 1 over the course of three seconds.
  - Finally, the `VertexColor` property on the Sprite component is updated every frame by the value sampled from `ColorGrad` using `Value`
 
----
-
- # Related Materials
- ## Manual Pages
+# Related Materials
+## Manual Pages
 - [resources](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/architecture/resources.markdown)
 - [resourceadding](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/editor/editorcommands/resourceadding.markdown)
- ## Reference Pages
+## Reference Pages
 - [colorgradient](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/colorgradient.markdown)
 - [Sprite](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/sprite.markdown) 
 - [Material](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/material.markdown) 

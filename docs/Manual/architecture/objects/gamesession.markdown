@@ -1,10 +1,11 @@
+# Game Session
 [GameSession](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/gamesession.markdown) manages the running of the game, both upon pressing the play button and dealing with the exported version. It is an object that represents one instance of the game. Being an object, it is possible to create more than one game session per executable.
 
- # Common Uses
+# Common Uses
  - Setting the starting [level](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/architecture/resources/level.markdown) 
  - Redirecting the use of `Esc` key in game 
 
- # Using the GameSession
+# Using the GameSession
 The GameSession object may be accessed from the scripts that are running via any [ Cog](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/architecture/cogs/gameobjectsconcept.markdown):
 
 ```
@@ -14,9 +15,7 @@ The GameSession object may be accessed from the scripts that are running via any
     var myGame = this.GameSession;
     // Here is an example of pulling it from a dynamically created cog.
     var cube = this.Space.Create(Archetype.Cube);
-    var alsoMyGame = cube.GameSession;
-    
-
+    var alsoMyGame = cube.GameSession;   
 ```
 
 
@@ -25,8 +24,6 @@ In Lightning, a GameSession object cannot be created using the a normal construc
 ```
     // Here, a C++ function bound to Lightning is used to create a GameSession
     var myGame = Plasma.Engine.CreateGameSession();
-    
-
 ```
 
 
@@ -36,7 +33,7 @@ IMPORTANT:
 
 Being that all Plasma Projects run a game, it can be edited within the editor. The hotkey `Shift + g` accesses the Game Archetype that is used to spawn the game. By default it comes with the `DefaultGameSetup` component, which can be used to set the starting level or load a custom space archetype. From here one can also add custom-made components, just like any other object.
 
- ## Events of GameSession
+## Events of GameSession
 The user connects to these events when dispatched on the GameSession], e.g.:
 
 `Plasma.Connect(this.GameSession, Events.GameLoad, this.OnGameLoad);`
@@ -51,15 +48,15 @@ The user connects to these events when dispatched on the GameSession], e.g.:
 | GameRequestQuit  | [gameevent](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/gameevent.markdown) | This event fires after the pressing the `Esc` key. This allows a script to hook the key in order to override this behavior. See [HandlingQuitMessage](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/gameplay/handlingquitmessage.markdown) for more on this. |
 
 
- # Related Materials
- ## Manual
+# Related Materials
+## Manual
 - [HandlingQuitMessage](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/gameplay/handlingquitmessage.markdown)
 - [level](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/architecture/resources/level.markdown) 
 - [ Cog](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/architecture/cogs/gameobjectsconcept.markdown)
 
- ## Reference
+## Reference
 - [GameSession](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/gamesession.markdown)
-- [gameevent](https://plasmaengine.github.io/PlasmaDocs/Manual//code_reference/class_reference/gameevent.markdown)
+- [gameevent](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/gameevent.markdown)
 
  
 

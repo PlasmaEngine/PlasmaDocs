@@ -24,7 +24,7 @@ When the Streamed checkBox property is un-checked the entire audio file is loade
 
 In general the only audio that should be streamed are long files, such as background music, and only when worried about memory usage.
 
-NOTE: Streaming files can�t be played multiple times simultaneously, can�t have their playback position set directly, and can�t use the LoopTailLength  property on [SoundEntries](https://githudragonCASTjosh/PlasmaDocsoDocs/blob/master/plasma_editor_documentation/plasmamanual/audio/soundcue.markdown#soundentries).
+NOTE: Streaming files can�t be played multiple times simultaneously, can�t have their playback position set directly, and can�t use the LoopTailLength  property on [SoundEntries](https://githuPlasmaEngine/PlasmaDocsoDocs/blob/master/plasma_editor_documentation/plasmamanual/audio/soundcue.markdown#soundentries).
 
  ##  Normalizing
 

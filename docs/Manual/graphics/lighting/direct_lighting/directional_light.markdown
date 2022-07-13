@@ -23,7 +23,7 @@ This component defines the blue, debug-drawn bounding box visible in the editor.
 
  ### Shadow Acne
 
-Be wary when increasing the size of the camera as [Resolution](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#shadowresolution) on the ShadowRenderer component is set to `Low`. In fact, at default values, setting Resolution enum to `Low` will cause shadow acne:
+Be wary when increasing the size of the camera as [Resolution](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#shadowresolution) on the ShadowRenderer component is set to `Low`. In fact, at default values, setting Resolution enum to `Low` will cause shadow acne:
 
 
 
@@ -54,7 +54,7 @@ If one or two directional lights are being used to represent the sun and/or moon
 
  ## Code Reference
 
- [ShadowResolution](https://github.com/dragonCASTjosh/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#shadowresolution)
+ [ShadowResolution](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#shadowresolution)
 
  
 

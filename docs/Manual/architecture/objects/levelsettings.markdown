@@ -1,12 +1,13 @@
+# Level Settings
 The LevelSettings object is a [Cog](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/architecture/cogs.markdown) of which there is one unique instance per Level. It serves as a globally accessible object from a variety of object types such as Components or other Cog. Unlike any other Cog there is no way to instantiate a LevelSettings object.
 
- # Common Uses
+# Common Uses
  - Adding level specific [physics effects](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/physics/physicseffectsandregions.markdown).
  - Adding custom components which need to be globally accessible in a level by any other components that exist in the level.
 
- # Using the LevelSettings Object
+# Using the LevelSettings Object
 
- ## Accessing the LevelSettings Object In Editor
+## Accessing the LevelSettings Object In Editor
 
 NOTE: **Initialization Order** Notice that because the LevelSettings object is always the first object in the [Object Window](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/editor/editorui.markdown) (and cannot be reordered) it will always be the first object to be created and initialized when the level is loaded into the Space. This can be very useful when implementing logic which depends on being initialized before related components on other objects in the level.
 
@@ -16,10 +17,10 @@ Since the LevelSettings object lacks any Graphics or Physics based representatio
 
 NOTE: **LevelSettings & Hierarchies**  While parenting can often be useful with objects that do not have transforms, in the case of the LevelSettings object, parenting has been deactivated.
 
- ## Accessing the LevelSettings Object In Script
+## Accessing the LevelSettings Object In Script
 The LevelSettings object may be accessed from scripts via any component or Cog:
 
-```name=LevelSettings Access Example, lang=csharp
+<pre><code class="language-csharp" name="LevelSettings Access Example">
 class ExampleComponent : LightningComponent
 {
   function Initialize(init : CogInitializer)
@@ -41,24 +42,24 @@ class ExampleComponent : LightningComponent
     }
   }
 }
-```
+</code></pre>
 
- ## Default Components of LevelSettings
+## Default Components of LevelSettings
 
- ### GravityEffect & DragEffect
+### GravityEffect & DragEffect
 Physics Effects are built in components that implement a piece of common physics-based functionality such as the [GravityEffect](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/physics/physicseffectsandregions/forceeffect.markdown) or the [DragEffect](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/drageffect.markdown) components that are attached to the LevelSettings by default. Each physics effect component may perform the logic on different spatial scopes depending on which object is attached to. When a physics effect component is attached to the LevelSettings object it is applied to all objects in that level. This allows one to implement level wide effects with any of the built in physics effects as is done by default with GravityEffect and DragEffect.
 
- ### GridDraw
+### GridDraw
 The [griddraw](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/griddraw.markdown) component is a simple debug drawing component. It uses Plasma's buit in GridDraw component is a simple debug drawing component. It uses Plasma's buit in [debugdrawing](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/scripting/debugdrawing.markdown) to create a customizable unit grid in the Level Window.
 
- ## Custom Components
+## Custom Components
 The LevelSettings object is often a very convenient object on which to attach certain custom Lightning components. Imagine a scenario in which a function is implemented for a friendly AI which needs to return an enemy to attack. If all the enemies exist independent of any other object or component, there may be no immediate path from which to access all enemies from the AI.
 
 A common technique is to add an `EnemyManager` component to the LevelSettings object which has a member of type `Array[Cog]` called `EnemyList`. By attaching this component to the LevelSettings object all objects, including the enemies, are given access to the `EnemyManager` component. If the enemies are implemented so that they add themselves to the `EnemyList` when they are initialized and remove themselves when they are destroyed, there now exists a reliable way of accessing a complete list of all existing enemies.
 
 While the above example may not be applicable to all games, it demonstrates the usefulness and flexibility that the LevelSettings object may grant.
 
- ## Events Dispatched On The LevelSettings Object
+## Events Dispatched On The LevelSettings Object
 
 
 | Event Name       | Type                                | Description                                                       |
@@ -68,14 +69,14 @@ While the above example may not be applicable to all games, it demonstrates the 
 
 ---
 
- # Related Materials
- ## Manual Pages
+# Related Materials
+## Manual Pages
 - [Cog](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/architecture/cogs.markdown)
 - [Editor UI](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/editor/editorui.markdown)
 - [Debug Drawing](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/scripting/debugdrawing.markdown)
 - [physics effects](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/physics/physicseffectsandregions.markdown)
 
- ## Code Reference
+## Code Reference
 - [GravityEffect](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/gravityeffect.markdown) 
 - [DragEffect](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/drageffect.markdown) 
 - [GridDraw](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/griddraw.markdown) 

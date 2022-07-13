@@ -1,9 +1,10 @@
+# Spaces
 [Space](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/space.markdown) is the infinite three-dimensional extent in which objects and events have relative position and direction. It consists of 3 dimensional axes and time.
 
 Spaces in the Plasma Engine are containers for game objects. When a level is loaded, all the game objects from that level are put into a space. Also, when you create a game object in code, you must put it into a space, usually the same one that the level was loaded into. In a simple game you only have one space, which is where all your game objects go. Each space has its own instances of the core systems of the engine: graphics, physics, etc. Because of this, game objects in two different spaces will not collide or otherwise physically interact. Game objects in different spaces are rendered separately, but can be layered, such as when using one space for level game objects and another for UI game objects. Creating a separate space for UI game objects is one of the most common uses of multiple spaces in a game.
 
- # Using the Space
- ## Creating a Space
+# Using the Space
+## Creating a Space
 You can create a space through the [GameSession](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/architecture/objects/gamesession.markdown) object.
 
 ```
@@ -33,7 +34,7 @@ You can create a space through the [GameSession](https://plasmaengine.github.io/
 
 Naming a space is not absolutely necessary, if you have a good system keeping track of the spaces you are creating. However, naming your space is a good general practice as you'll find when trying to access Spaces you have created.
 
- ## Accessing a the Space
+## Accessing a the Space
 You can access the Space object from scripts via any component or Cog:
 
 ```
@@ -69,7 +70,7 @@ You can access the Space object from scripts via any component or Cog:
 Accessing the Space this way will give you a reference to the Space that the object `ExampleComponent` is attached to exists in.
 n some games you may have multiple spaces in order to implement certain features such as an in game HUD. In situations such as this you must store a reference to the `HUDSpace` on creation in order to access it later.
 
- # Space Components
+# Space Components
 Spaces have special space components that can not be removed. These are core engine components for containing different aspects of the game objects like physics, graphics, and sound.
 
 Spaces are stored as [Archetypes](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/architecture/archetypes.markdown) and can be modified to change the properties of a space.
@@ -77,12 +78,12 @@ Spaces are stored as [Archetypes](https://plasmaengine.github.io/PlasmaDocs/Manu
 To access the space of the current level Press: 
 
  - In the `name=Level Window, icon=window-restore`
-  - Press `shift + s`
+ - Press `shift + s`
 
 **Or**
 
  - In Select drop down
-  - Click Select Space
+ - Click Select Space
 
 
 By default a space has four components TimeSpace, GraphicsSpace, PhysicsSpace, and SoundSpace, but if needed you may add more by creating a new space archetype and adding the desired components. In each component of the space properties can be found that will affect the entire space.
@@ -90,7 +91,7 @@ By default a space has four components TimeSpace, GraphicsSpace, PhysicsSpace, a
 NOTE: The ReactiveSpace component is deprecated and changes made to it will have no effect on the Space or how using the Reactive component works.
 
 
- # Events Dispatched On The Space Object
+# Events Dispatched On The Space Object
 
 
 | Event Name                | Type                       | Description                                                         |
@@ -99,13 +100,12 @@ NOTE: The ReactiveSpace component is deprecated and changes made to it will have
 | LogicUpdate               | [updateevent](https://plasmaengine.github.io/PlasmaDocs/Manual//code_reference/class_reference/updateevent.markdown) | Dispatched after the major systems's updates (doesn't run in editor)|
 | FrameUpdate               | [updateevent](https://plasmaengine.github.io/PlasmaDocs/Manual//code_reference/class_reference/updateevent.markdown) | Dispatched after the engine update. Runs in editor.                 |
 
----
 
- # Related Materials
- ## Manual
+# Related Materials
+## Manual
 - [Archetypes](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/architecture/archetypes.markdown)
 - [GameSession object](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/architecture/objects/gamesession.markdown)
- ## Code Reference
+## Code Reference
 - [timespace](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/timespace.markdown)
 - [graphicsspace](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/graphicsspace.markdown)
 - [physicsspace](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/physics/physicsspace.markdown)

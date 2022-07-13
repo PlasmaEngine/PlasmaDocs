@@ -117,7 +117,7 @@ function OnMouseUpdate(event : ViewportMouseEvent)
 
  ####  MouseEnter, MouseExit, and MouseEnterPreview
 
-When the mouse cursor "enters" a mouse event target (that is, when it goes from not being over the target to being over it from the perspective of the viewport showing it) the [ MouseEnter](https://github.dragonCASTjosh/PlasmaDocsocs/blob/master/code_reference/event_reference.markdown#mouseenter) event is dispatched to that target that frame. Likewise, when the cursor "exits" a target (it goes from over it to not over it) the [ MouseExit](https://gitdragonCASTjosh/PlasmaDocseroDocs/blob/master/code_reference/event_reference.markdown#mouseexit) event is dispatched to that target that frame.
+When the mouse cursor "enters" a mouse event target (that is, when it goes from not being over the target to being over it from the perspective of the viewport showing it) the [ MouseEnter](https://github.PlasmaEngine/PlasmaDocsocs/blob/master/code_reference/event_reference.markdown#mouseenter) event is dispatched to that target that frame. Likewise, when the cursor "exits" a target (it goes from over it to not over it) the [ MouseExit](https://gitPlasmaEngine/PlasmaDocseroDocs/blob/master/code_reference/event_reference.markdown#mouseexit) event is dispatched to that target that frame.
 
 As the mouse cursor enters a mouse event target, if it is simultaneously exiting another one, the [ MouseEnterPreview](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/event_reference.markdown#mouseenterpreview) event is dispatched that frame to the target being entered. This event is dispatched *immediately before* the **MouseExit** and subsequent **MouseEnter** events are dispatched, in the same frame.
 

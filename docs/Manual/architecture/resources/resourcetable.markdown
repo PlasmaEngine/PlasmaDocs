@@ -1,6 +1,5 @@
+# Resource Table
 [ResourceTable](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/resourcetable.markdown) is a resource that stores a collection of entries of a certain resource type for sampling during run-time. Sampling can be performed through three different interfaces: array, hashmap, and a [ weighted table](https://github.com/PlasmaEngine/PlasmaDocs/blob/master.markdown#weightedtable-interface).
-
-
 
 
 ![ResourceTable1](https://raw.githubusercontent.com/PlasmaEngine/PlasmaDocs/master/media/ResourceTable.png)
@@ -14,11 +13,11 @@ ResourceTable entries are composed of three items:
 
 All sampling functions for a ResourceTable return a [ResourceTableEntry](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/resourcetableentry.markdown). In addition to the above listed properties, the stored resource can also be looked up via the `Resource` property. Note: This must be casted to the correct resource type.
 
- #  Array Interface
+## Array Interface
 
 ResourceTables can be accessed as an array at run-time. This is useful for a list of objects where order is important (e.g. generating UI). Given below is a simple example of using the array interface to spawn archetypes:
 
-```lang=csharp 
+<pre><code class="language-csharp">
   // Spawn each archtype one below another
   for(var i = 0; i < this.Table.Count; ++i)
   {
@@ -29,9 +28,9 @@ ResourceTables can be accessed as an array at run-time. This is useful for a lis
     var pos = Real3(0, i * -10, 0);
     this.Space.CreateAtPosition(archetype, pos);
   }
-```
+</code></pre>
 
- #  HashMap Interface
+## HashMap Interface
 
 ResourceTable can also be used as a hashmap where the entry's name is the key.
 
@@ -42,7 +41,7 @@ ResourceTable can also be used as a hashmap where the entry's name is the key.
 
  One such example is mapping button names to a resource. Pictured above is a table of Levels. A menu in a game could use the `Name` properties to populate the text on buttons. When a button is clicked, the easiest way to get the Level to load is to use the HashMap interface to look up the entry by name.
 
-```lang=csharp
+<pre><code class="language-csharp">
   function GetLevelByName(name : String) : Level
   {
     var entry = this.Table.GetOrNull(name);
@@ -50,7 +49,7 @@ ResourceTable can also be used as a hashmap where the entry's name is the key.
       throw new Exception("Level '`name`' didn't exist");
     return entry.Resource as Level;
   }
-```
+</code></pre>
 
  #  WeightedTable Interface
 
@@ -69,7 +68,7 @@ Each entry in a table has a weight used to determine how likely it is to be rand
  ##  Sampling the Table
 ResourceTable can be sampled at run-time through the `Sample` function:
 
-```lang=csharp
+<pre><code class="language-csharp">
   function SpawnDropAt(pos : Real3)
   {
     // Sampling the weighted table requires two random numbers in the range of [0, 1)
@@ -77,7 +76,8 @@ ResourceTable can be sampled at run-time through the `Sample` function:
     var archetype = entry.Resource as Archetype;
     this.Space.CreateAtPosition(archetype, pos);
   }
-```
+</code></pre>
+
 One of the most common uses of the weighted table is for a drop table. In the above example the table is randomly sampled to Spawn an Archetype at a given position. Note that the sample function requires two random numbers in the range of 0 to 1.
 
 Additionally, ResourceTable exposes the `SampleIndex` function which returns the index into the table instead of the entry itself.
