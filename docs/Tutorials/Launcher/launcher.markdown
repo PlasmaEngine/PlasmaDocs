@@ -55,7 +55,7 @@ The **Discord** link connects you to the Plasma discord where you can get questi
   
 ![image](https://raw.githubusercontent.com/PlasmaEngine/PlasmaDocs/master/media/NewProject.PNG)
 
- ##  *Recent Projects*
+ ## *Recent Projects*
 
 
 Here, you will see a list of the latest projects that you have worked on. From here you can open project along with change there engine versions, Delete the projects, Rename project and go to there location on the computer.
@@ -79,13 +79,13 @@ Here, you will see a list of the latest projects that you have worked on. From h
 4. To return to the list of recent projects, click the **Back** button.
 
 
- ##  *Browse Projects*
+ ## *Browse Projects*
 
 
 Click Browse button to find a Plasma project through your operating system's Open dialog.
 
 
- #  The Builds Tab
+ # The Builds Tab
 
 
 The Builds tab features a list of Plasma Engine builds that are installed on your computer or available for download. From here you can install desired engine versions along with removing any undesired versions. You are also able to see the release notes for each version when it is selected.
