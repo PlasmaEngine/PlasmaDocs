@@ -130,11 +130,11 @@ var MyVariable : Real;
 results in the the variable appearing in the Property Grid in Properties window
 
 
- ## [Serialize]
+## [Serialize]
 
 Allows a value to be saved by the Engine. This allows a field and get-sets to be saved with ObjectStore. When used with `[Display]` it allows the values to be saved from the Property Grid so that they may be loaded in an instance of the game. 
 
- ## [Property]
+## [Property]
 
 Property wraps the `[Display]` and `[Serialize]` attributes together into one. As implied by the use of `[Display]` and `[Serialize]`, it works on fields and get-sets. Properties of certain types will result in unique set fields in the Property Grid. For example,
 
@@ -150,7 +150,7 @@ class MyClass
 </code></pre>
 
 
- ## [Dependency]
+## [Dependency]
 
 Allows the programmer to make a dependency between components explicit. This allows users to determine the interrelatedness without having intimate knowledge of a component's inner workings. The Plasma Engine supports this by requiring dependencies to be added prior to attaching the component, preventing the removal of dependencies while the component is still attached, and safeguarding the order of initialization of components such that the dependencies will always be initialized first. 
 
@@ -177,17 +177,17 @@ The `[Dependency]` attribute may also be used on get-sets.
 NOTE: **Did you know?** When working in the editor, the space the objects operate in is paused. This means that the `LogicUpdate` event will never fire, and that Actions on objects never get updated! In order to receive continuous events, the object should connect to `UpdateFrame` instead.
 
 
- ## [RunInEditor]
+## [RunInEditor]
 
 When placed on a class derived from LightningComponent, it changes proxy objects into live objects upon being attached in the editor. This means that the object will run its code in the editor. When *any* scripting file is saved in the editor, all live objects (i.e. those with the RunInEditor component attached) will, by default, have their object destroyed, recreated, and its data reinitialized. 
 
 IMPORTANT: Any code you choose to run via `[RunInEditor]` can result in editor instability. For instance, if you choose to loop through and destroy all the objects and save your game you may lose your ability to recover the lost objects, and have to recreate them by hand. Undo and Redo operations for RunInEditor components must be handled by the programmer!  
 
- ## [Tool]
+## [Tool]
 
 Allows for a tool to be hooked into the Tools Window such that it shows up in the drop down menu, and can be used in the editor. When creating a new custom tool, a good starting point is generating the LightningScript with the Tool template chosen in the Add Window.
 
- ## [Command]
+## [Command]
 
 Allows for a class to be hooked into the command system such that it shows up, and can be ran, from Plasma's Search Window. The following Paste provides a template for a custom Command that creates an object based on an archetype, allowing the user to make their own "Create" commands similar to `CreateCube` and `CreateSphere`:
 
@@ -226,7 +226,7 @@ class CreateArchetype : LightningComponent
 ```
 
 
- ## [ComponentInterface]
+## [ComponentInterface]
 The ComponentInterface attribute allows the user to define a class as a generic interface for its derived types. One common example of this is [collider](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/collider.markdown), which acts as a component interface for all collider types, such as [boxcollider](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/boxcollider.markdown), [capsulecollider](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/capsulecollider.markdown), and more. Defining an interface using this attribute allows the user to access the members of a derived class using the component name of the base class.
 
 <pre><code class="language-csharp" name="Component Interface Access Example">
@@ -271,7 +271,7 @@ class CrossBlendDebugNode : AnimationDebugNode
 }
 </code></pre>
 
- # Parameters in Attributes
+# Parameters in Attributes
 
 Attributes can also take parameters; below is the template generated for creating a new Command by Plasma:
 
