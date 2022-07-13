@@ -67,7 +67,7 @@ This code can be copy and pasted into other projects. This works because, unless
  - [ CreateCube ](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/command_reference.markdown#createcube)
  - [ CreateTransform ](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/command_reference.markdown#createtransform)
 
- ## Manual
+## Manual
  - [ Model  ](https://plasmaengine.github.io/PlasmaDocs/Manual/graphics/models.markdown)
  - [ RigidBody  ](https://plasmaengine.github.io/PlasmaDocs/Manual/physics/rigidbody.markdown) 
 
