@@ -1,14 +1,15 @@
+# Pitch Node
 The [ PitchNode ](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/pitchnode.markdown) collects audio data from all of its inputs and applies a pitch modification to the samples before passing them off to its output nodes.
 
- # Common Uses
+# Common Uses
 
 - Controlling the pitch of several sounds at once
 
- # Using the PitchNode
+# Using the PitchNode
 
 WARNING: When using PitchNodes, if a generating node has multiple output connections the user must make sure all of them are at the same pitch. If SoundNodes request data from the generating node at different pitch settings there will be an error and the nodes will be disconnected.
 
- ## Pitch and Semitones
+## Pitch and Semitones
 
 PitchNodes have two linked properties for setting their pitch change: changing one will also change the value of the other. Raising the pitch also speeds up the sound, while lowering the pitch slows it down. Large pitch changes will likely affect the quality of the sound.
 
@@ -16,16 +17,15 @@ The `Pitch` property is a floating point value where `0.0` does not affect the p
 
 The pitch can be interpolated over time using either floating point or semitone values with the `InterpolatePitch` and `InterpolateSemitones` methods. In both methods, the first value is the pitch to interpolate to, and the second is the length of time (in seconds) for the interpolation. Using these methods ensures that the pitch change is applied smoothly by the audio engine.
 
- ## Events
+## Events
 
 The `AudioInterpolationDone` event will be sent when a pitch interpolation has finished.
 
----
- # Related Materials
- ## Manual
-- [soudnode_overview](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/audio/soundnode/soudnode_overview.markdown)
+# Related Materials
+## Manual
+- [soudnode_overview](https://plasmaengine.github.io/PlasmaDocs/Manual/audio/soundnode/soudnode_overview.markdown)
 
- ## Code Reference
+## Code Reference
 - [ PitchNode ](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/pitchnode.markdown) 
 
  

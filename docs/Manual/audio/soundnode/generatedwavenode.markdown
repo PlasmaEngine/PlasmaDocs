@@ -1,18 +1,19 @@
+# Generated Wave Node
 The [ GeneratedWaveNode](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/generatedwavenode.markdown) will generate audio using a specified wave type and frequency. Since it is a generating node, it will ignore any input connections.
 
- # Common Uses
+# Common Uses
 
 - Creating synthesized sound effects
 - Combining white noise with audio filters to generate wind or other sound effects
 
- # Using the GeneratedWaveNode
+# Using the GeneratedWaveNode
 
 GeneratedWaveNodes create audio using either a sine wave, square wave, saw wave, triangle wave, or white noise. The `WaveFrequency` property controls the pitch of the audio, and can be smoothly changed over time using the `InterpolateWaveFrequency` method. Like other objects, its volume can be controlled using either the `Volume` or the `Decibels` property, and interpolated with the `InterpolateVolume` and `InterpolateDecibels` methods.
 
 The following code block illustrates how to use a GeneratedWaveNode to make a simple alarm-siren noise.
 
 
-```lang=csharp
+<pre><code class="language-csharp">
 class SimpleSiren : LightningComponent
 {
   // Make sure this object has a SoundEmitter component
@@ -67,14 +68,13 @@ class SimpleSiren : LightningComponent
     Actions.Call(sequence, this.ChangeFrequency);
   }
 }
-```
+</code></pre>
 
----
- # Related Materials
- ## Manual
-- [soudnode_overview](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/audio/soundnode/soudnode_overview.markdown)
+# Related Materials
+## Manual
+- [soudnode_overview](https://plasmaengine.github.io/PlasmaDocs/Manual/audio/soundnode/soudnode_overview.markdown)
 
- ## Code Reference
+## Code Reference
 - [ GeneratedWaveNode ](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/generatedwavenode.markdown) 
 
  

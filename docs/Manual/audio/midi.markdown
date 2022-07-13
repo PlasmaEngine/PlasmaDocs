@@ -1,11 +1,12 @@
+# MIDI
 If a MIDI device is connected when the Plasma Engine starts up it will listen for messages from that device and send corresponding [ MidiEvents ](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/midievent.markdown). It does not keep track of device changes, so if a MIDI keyboard is plugged in after the editor or the game is running it won't respond to that device.
 
- # Common Uses
+# Common Uses
 
-- Using a synthesizer created with the [AdditiveSynthNode ](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/audio/soundnode/additivesynthnode.markdown)
+- Using a synthesizer created with the [AdditiveSynthNode ](https://plasmaengine.github.io/PlasmaDocs/Manual/audio/soundnode/additivesynthnode.markdown)
 - Alternate game input and control 
 
- # Using the MIDI Events
+# Using the MIDI Events
 
 Each `MidiEvent` has three properties, though not all of them apply to every event. See the table below for the property meanings on each type of event.
 - The `Channel` property is the MIDI channel received from the device.
@@ -31,15 +32,12 @@ The following events will be sent whenever a corresponding MIDI message is recei
 | MIDIModWheel | Channel# | N/A | Modulation value in the range 0 - 127.
 | MIDIOtherControl | Channel# | Control# | Control value in the range 0 - 127.
 
----
- # Related Materials
+# Related Materials
 
- ## Manual
+## Manual
+- [AdditiveSynthNode ](https://plasmaengine.github.io/PlasmaDocs/Manual/audio/soundnode/additivesynthnode.markdown)
 
-- [AdditiveSynthNode ](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/audio/soundnode/additivesynthnode.markdown)
-
- ## Reference
-
+## Reference
 - [ MIDIEvent ](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/midievent.markdown) 
 
  

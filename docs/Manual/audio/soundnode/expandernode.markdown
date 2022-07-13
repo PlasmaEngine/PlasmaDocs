@@ -1,11 +1,12 @@
+# Expander Node
 The [ ExpanderNode ](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/expandernode.markdown) collects audio data from all of its inputs and applies an expander filter before passing the data along to its outputs. 
 
- # Common Uses
+# Common Uses
 
 - Increasing the contrast between the soft and loud parts of the audio
 - Removing quiet sounds from the audio
 
- # Using the ExpanderNode 
+# Using the ExpanderNode 
 
 Expander filters reduce the volume of sounds that drop below the threshold, according to a specified ratio. The volume is calculated according to this formula:
 
@@ -15,13 +16,12 @@ In other words, if the `Ratio` is `2`, the `ThresholdDecibels` is `-10` dB, and 
 
 The `AttackMillisec` and `ReleaseMillisec` properties control how quickly the filter eases in and out as the sound goes below the `ThresholdDecibels` then goes back above it. The `AttackMillisec` should generally be short and the `ReleaseMillisec` should be longer, but this will depend on the desired effect. The `KneeWidth` property sets the number of decibels, centered at the `ThresholdDecibels`, over which the volume change eases in. 
 
----
- # Related Materials
- ## Manual
-- [soudnode_overview](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/audio/soundnode/soudnode_overview.markdown)
-- [compressornode](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/audio/soundnode/compressornode.markdown)
+# Related Materials
+## Manual
+- [soudnode_overview](https://plasmaengine.github.io/PlasmaDocs/Manual/audio/soundnode/soudnode_overview.markdown)
+- [compressornode](https://plasmaengine.github.io/PlasmaDocs/Manual/audio/soundnode/compressornode.markdown)
 
- ## Code Reference
+## Code Reference
 - [ ExpanderNode ](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/expandernode.markdown) 
 
  

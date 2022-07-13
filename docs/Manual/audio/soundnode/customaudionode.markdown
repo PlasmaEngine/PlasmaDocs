@@ -1,17 +1,18 @@
+# Custom Audio Node
 The [ CustomAudioNode ](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/customaudionode.markdown) allows the user to provide buffers of custom audio data to the system for output, using a [ SoundBuffer ](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/soundbuffer.markdown) object. 
 
- # Common Uses
+# Common Uses
 
 - Playing user-generated pre-computed audio
 
- # Using the CustomAudioNode
+# Using the CustomAudioNode
 
 NOTE: This is a fairly limited and high-latency way to output audio. The audio data must be in floating-point numbers between `-1.0` and `1.0`, and it must match the sample rate of the audio engine, which is provided via the `SystemSampleRate` property.
 
 To output audio using a CustomAudioNode the user must connect to the CustomAudioNode's `NeedMoreSamples` event and send a buffer of audio samples when the event is received which is at least as large as the `MinimumBufferSize`. The CustomAudioNode will work best when the audio data is pre-computed and as little as possible is done when the event is received. If the data is not received quickly enough by the audio engine there may be clicks or gaps in the audio. 
 
 The following code block illustrates how to use a CustomAudioNode and a SoundBuffer to generate a single audio channel with a constant Sine tone.
-```lang=csharp
+<pre><code class="language-csharp">
 // Create and store the CustomAudioNode object
 var CustomNode : CustomAudioNode = Audio.CustomAudioNode();
 
@@ -45,14 +46,13 @@ function OnSoundEvent(event : SoundEvent)
   // Send the buffer of Sine wave samples
   this.CustomNode.SendBuffer(this.Buffer);
 }
-```
+</code></pre>
 
----
- # Related Materials
- ## Manual
-- [soudnode_overview](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/audio/soundnode/soudnode_overview.markdown)
+# Related Materials
+## Manual
+- [soudnode_overview](https://plasmaengine.github.io/PlasmaDocs/Manual/audio/soundnode/soudnode_overview.markdown)
 
- ## Code Reference
+## Code Reference
 - [ CustomAudioNode ](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/customaudionode.markdown)
 - [ SoundBuffer ](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/soundbuffer.markdown) 
 

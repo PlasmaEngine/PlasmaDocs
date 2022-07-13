@@ -1,10 +1,11 @@
+# Volume Node
 The [ VolumeNode ](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/volumenode.markdown) collects audio data from all of its inputs and applies a volume modification to the samples before passing them off to its output nodes.
 
- # Common Uses
+# Common Uses
 
 - Collecting several sounds together and changing their volume all at once
 
- # Using the VolumeNode
+# Using the VolumeNode
 
 There are two linked properties that can be used to set the value of the volume modification: changing one of them will also change the value of the other. The `Volume` property is a floating point multiplier applied to the audio signal: a value of `1.0` does not affect the sound, `2.0` will double the volume, `0.5` will halve it, and `0.0` will make the sound inaudible. The `Decibels` property allows you to set the volume using the logarithmic decibel scale. A value of `0` dB does not affect the sound, `6` dB will double the sound�s volume, `-6` dB will halve it, and `-100` dB is effectively the same as setting Volume to `0`.
 
@@ -12,16 +13,15 @@ The volume can be interpolated over time using either floating point or decibel 
 
 NOTE: If a VolumeNode has an output connection, setting the volume directly using the `Volume` or `Decibels` property is not actually instantaneous, so setting the volume and then calling `InterpolateVolume` immediately afterward may have unexpected results.
 
- ## Events
+## Events
 
 The `AudioInterpolationDone` event will be sent when a volume interpolation has finished.
 
----
- # Related Materials
- ## Manual
-- [soudnode_overview](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/audio/soundnode/soudnode_overview.markdown)
+# Related Materials
+## Manual
+- [soudnode_overview](https://plasmaengine.github.io/PlasmaDocs/Manual/audio/soundnode/soudnode_overview.markdown)
 
- ## Code Reference
+## Code Reference
 - [ VolumeNode ](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/volumenode.markdown) 
 
  

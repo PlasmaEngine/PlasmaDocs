@@ -1,27 +1,28 @@
+# Panning Node
 The [ PanningNode ](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/panningnode.markdown) collects audio data from all of its inputs and applies a volume modification to the left and right channels separately. 
 
- # Common Uses
+# Common Uses
 
 - Moving sounds from left to right and right to left (such as an ambient wind sound)
-- Positioning sounds without using a [SoundEmitter ](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/audio/soundnode/soundemitter.markdown)
+- Positioning sounds without using a [SoundEmitter ](https://plasmaengine.github.io/PlasmaDocs/Manual/audio/soundnode/soundemitter.markdown)
 
- # Using the PanningNode
+# Using the PanningNode
 
 PanningNodes will always process audio in two channels regardless of how many channels are used by their inputs or outputs. If the audio input has more than two channels it will be translated into only two before being processed.
 
- ## SumToMono
+## SumToMono
 
 If the `SumToMono` property is set to `true`, all channels of audio input will be combined before being spread to the left and right channels with the appropriate volume modification. This can be useful if you want the entire sound to be heard as if it is coming from a single position (this is how audio is handled by SoundEmitters). If it is `false`, the volume modifications will be applied to the existing channels. 
 
- ## Events
+## Events
 
 The `AudioInterpolationDone` event will be sent when a volume interpolation has finished.
 
- ## Example
+## Example
 
 The following code block illustrates how to make white noise sound like it's moving back and forth.
 
-```lang=csharp
+<pre><code class="language-csharp">
 class MovingNoise : LightningComponent
 {
   // Create and store the PanningNode to change its properties later
@@ -75,14 +76,13 @@ class MovingNoise : LightningComponent
     Actions.Call(sequence, this.ChangePanning);
   }
 }
-```
+</code></pre>
 
----
- # Related Materials
- ## Manual
-- [soudnode_overview](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/audio/soundnode/soudnode_overview.markdown)
+# Related Materials
+## Manual
+- [soudnode_overview](https://plasmaengine.github.io/PlasmaDocs/Manual/audio/soundnode/soudnode_overview.markdown)
 
- ## Code Reference
+## Code Reference
 - [ PanningNode ](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/panningnode.markdown) 
 
  
