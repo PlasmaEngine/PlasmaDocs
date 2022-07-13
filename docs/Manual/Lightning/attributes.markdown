@@ -2,7 +2,7 @@
 
 Attributes are part of the Lightning grammar allowing additional information to be associated with other Lightning constructs, i.e. they may be applied to classes, fields, get-sets, and functions. While some attributes are inherent to the Lightning programming language, the program embedding Lightning may create and assign their own meaning to new attributes as appropriate for their scripting needs. This means that some attributes exist in Lightning, the standalone language, while others are available in Lightning due to the extensions made by the Plasma Engine in which it is embedded. 
 
- # Using Attributes
+# Using Attributes
 
 In Lightning, attributes can be assigned by annotating the affected construct with a capitalized name of the recognized attribute in square brackets above the definition:
 
@@ -14,7 +14,7 @@ function Speak() : String
 }
 </code></pre>
 
- # Existing Attributes
+# Existing Attributes
 
 The following are usable in the Plasma Engine:
 
@@ -33,7 +33,7 @@ The following are usable in the Plasma Engine:
 | `[Command]`                             | Plasma  | Can run in editor and accessible in Search Window           |
 | `[ComponentInterface]`                  | Plasma  | Defines a class as a generic interface for derived classes  |
 
- ## [Static]
+## [Static]
         
 Static can be used on function, fields, and get-sets. These allow you to access fields, get-sets, and functions without first creating an instance of the class in your code. 
 
@@ -64,7 +64,7 @@ My new favorite number is: 15.708
 
 NOTE: While these attributes enable polymorphism, they are still in their infancy. Virtual is to be used with the base class field/get-set/function, while Override is for all the derived classes seeking to write over the base class's field/get-set/function. That said, mixing up `[Virtual]` and `[Override]` , or forgetting the use of the `[Override]` may still provide desired results. To promote forward compatibility, we highly encourage the correct, indicated usage.
 
- ## [Virtual]
+## [Virtual]
 
 Virtual is used to give Base classes the ability to determine some functions as being able to be overridden by its derived classes.
 
@@ -79,7 +79,7 @@ class Animal
 }
 </code></pre>
 
- ## [Override]
+## [Override]
 Override is used by a derived class to mark the intentional overriding of a base class's virtual function.
 
 <pre><code class="language-csharp" name="Applying Override to a Function">
@@ -93,7 +93,7 @@ class Dog : Animal
 }
 </code></pre>
 
- ## [Extension(typeid(OtherType))]
+## [Extension(typeid(OtherType))]
 
 This allow you to add functionality to a preexisting class from inside another. Currently, you can only extend a class by adding get-sets and functions (i.e. you cannot add fields). If a function is being added to an existing class (`Math`, for example), the [Static] attribute should also be used:
 
@@ -110,7 +110,7 @@ class MyClass : LightningComponent
 
 Plasma works with Lightning to offer these additional attributes:
 
- ## [Display]
+## [Display]
 
 Allows you to set a field or get-set via the Property Grid in the editor. Because this doesn't save the settings, it is usually used in conjunction with either `[RunInEditor]` or `[Serialize]` . For example, changing
 
@@ -299,8 +299,8 @@ At this time, only Extension, Tool, and Command attributes take parameters.
 
 To manually register, you would add these components to an archetype and then add the Tool or Command editor tag via the Library Window, respectively. Registering manually gives you access to the archetype, making it possible to leverage component-based design in the construction of new Tools and Commands.
 
- # Related Materials
- ## Manual
+# Related Materials
+## Manual
 - [inheritance](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/Lightning/inheritance.markdown)
 - [variables_and_data_types](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/Lightning/variables_and_data_types.markdown)
 - [wysiwyg](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/scripting/wysiwyg.markdown) 
