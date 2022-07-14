@@ -1,5 +1,5 @@
 # Graphical
-All [graphical](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/graphical.markdown) components�2D and 3D alike�inherit from the Graphical base class. As a result there are a number of properties that all graphical components have in common.
+All [graphical](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/graphical.markdown) components 2D and 3D alike inherit from the Graphical base class. As a result there are a number of properties that all graphical components have in common.
 
 # ViewCulling
 
@@ -17,7 +17,7 @@ Initially, the values of these two properties will be such that they do not chan
 
 # GroupSortValue
 
-This property should only be used if using a [RenderGroup](https://plasmaengine.github.io/PlasmaDocs/Manual/graphics/rendergroups.markdown) that uses `GraphicalSortValue` as its GraphicalSortMethod enum. While GroupSortValue  could be set on an object by object basis, if there is even a moderate amount of graphicals in a project, setting this value for all graphicals through a script�where graphicals can be filtered into discrete groups�is recommended.
+This property should only be used if using a [RenderGroup](https://plasmaengine.github.io/PlasmaDocs/Manual/graphics/rendergroups.markdown) that uses `GraphicalSortValue` as its GraphicalSortMethod enum. While GroupSortValue  could be set on an object by object basis, if there is even a moderate amount of graphicals in a project, setting this value for all graphicals through a script'where graphicals can be filtered into discrete groups'is recommended.
 
 # Material
 
