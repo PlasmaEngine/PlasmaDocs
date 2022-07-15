@@ -6,22 +6,22 @@
 
 |Methods|Properties|Base Classes|Derived Classes|
 |---|---|---|---|
-|[ Constructor](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/camera.markdown#camera-void)|[ CameraViewportCog](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/camera.markdown#cameraviewportcog-plasma-e)|[component](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/component.markdown)| |
-|[ GetFrustum](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/camera.markdown#getfrustum-plasma-engine-d)|[ FarPlane](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/camera.markdown#farplane-plasma-engine-doc)| | |
-| |[ FieldOfView](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/camera.markdown#fieldofview-plasma-engine)| | |
-| |[ NearPlane](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/camera.markdown#nearplane-plasma-engine-do)| | |
-| |[ PerspectiveMode](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/camera.markdown#perspectivemode-plasma-eng)| | |
-| |[ Size](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/camera.markdown#size-plasma-engine-documen)| | |
-| |[ WorldDirection](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/camera.markdown#worlddirection-plasma-engi)| | |
-| |[ WorldTranslation](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/camera.markdown#worldtranslation-plasma-en)| | |
-| |[ WorldUp](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/camera.markdown#worldup-plasma-engine-docu)| | |
+|[ Constructor](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/camera.markdown#camera-void)|[ CameraViewportCog](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/camera.markdown#cameraviewportcog-plasma-e)|[component](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/component.markdown)| |
+|[ GetFrustum](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/camera.markdown#getfrustum-plasma-engine-d)|[ FarPlane](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/camera.markdown#farplane-plasma-engine-doc)| | |
+| |[ FieldOfView](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/camera.markdown#fieldofview-plasma-engine)| | |
+| |[ NearPlane](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/camera.markdown#nearplane-plasma-engine-do)| | |
+| |[ PerspectiveMode](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/camera.markdown#perspectivemode-plasma-eng)| | |
+| |[ Size](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/camera.markdown#size-plasma-engine-documen)| | |
+| |[ WorldDirection](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/camera.markdown#worlddirection-plasma-engi)| | |
+| |[ WorldTranslation](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/camera.markdown#worldtranslation-plasma-en)| | |
+| |[ WorldUp](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/camera.markdown#worldup-plasma-engine-docu)| | |
 
 
  #  Properties
 
 
 ---  
- #  CameraViewportCog : [cog](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/cog.markdown)
+ #  CameraViewportCog : [cog](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/cog.markdown)
 
  `read-only`
 
@@ -31,7 +31,7 @@
 
 
 ---  
- #  FarPlane : [real](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown)
+ #  FarPlane : [real](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real.markdown)
 
 > The far clipping plane, always positive and in the view direction.
 > ``` lang=cpp, name=Lightning
@@ -39,7 +39,7 @@
 
 
 ---  
- #  FieldOfView : [real](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown)
+ #  FieldOfView : [real](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real.markdown)
 
 > The vertical field of view of the Camera, in degrees. Horizontal fov derived from aspect ratio (Hor+).
 > ``` lang=cpp, name=Lightning
@@ -47,7 +47,7 @@
 
 
 ---  
- #  NearPlane : [real](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown)
+ #  NearPlane : [real](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real.markdown)
 
 > The near clipping plane, always positive and in the view direction.
 > ``` lang=cpp, name=Lightning
@@ -55,7 +55,7 @@
 
 
 ---  
- #  PerspectiveMode : [PerspectiveMode](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#perspectivemode)
+ #  PerspectiveMode : [PerspectiveMode](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/enum_reference.markdown#perspectivemode)
 
 > How the scene is projected on to the view plane.
 > ``` lang=cpp, name=Lightning
@@ -63,7 +63,7 @@
 
 
 ---  
- #  Size : [real](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown)
+ #  Size : [real](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real.markdown)
 
 > Size (width and height) of the orthographic projection, in world units.
 > ``` lang=cpp, name=Lightning
@@ -71,7 +71,7 @@
 
 
 ---  
- #  WorldDirection : [real3](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real3.markdown)
+ #  WorldDirection : [real3](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real3.markdown)
 
  `read-only`
 
@@ -81,7 +81,7 @@
 
 
 ---  
- #  WorldTranslation : [real3](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real3.markdown)
+ #  WorldTranslation : [real3](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real3.markdown)
 
  `read-only`
 
@@ -91,7 +91,7 @@
 
 
 ---  
- #  WorldUp : [real3](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real3.markdown)
+ #  WorldUp : [real3](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real3.markdown)
 
  `read-only`
 
@@ -118,12 +118,12 @@
 
 
 ---  
- #  GetFrustum : [frustum](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/frustum.markdown)
+ #  GetFrustum : [frustum](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/frustum.markdown)
 
 > Creates a frustum using the Camera's settings along with the given aspect ratio.
 > |Name|Type|Description|
 > |---|---|---|
-> |aspect|[real](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown)| |
+> |aspect|[real](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real.markdown)| |
 > ``` lang=cpp, name=Lightning
 > function GetFrustum(aspect : Real) : Frustum
 > ``` 

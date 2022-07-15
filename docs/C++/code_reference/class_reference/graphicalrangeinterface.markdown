@@ -4,16 +4,16 @@
 
 |Methods|Properties|Base Classes|Derived Classes|
 |---|---|---|---|
-|[ Add](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/graphicalrangeinterface.markdown#add-void)|[ Count](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/graphicalrangeinterface.markdown#count-plasma-engine-docume)| | |
-|[ Clear](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/graphicalrangeinterface.markdown#clear-void)| | | |
-|[ Constructor](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/graphicalrangeinterface.markdown#graphicalrangeinterface)| | | |
+|[ Add](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/graphicalrangeinterface.markdown#add-void)|[ Count](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/graphicalrangeinterface.markdown#count-plasma-engine-docume)| | |
+|[ Clear](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/graphicalrangeinterface.markdown#clear-void)| | | |
+|[ Constructor](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/graphicalrangeinterface.markdown#graphicalrangeinterface)| | | |
 
 
  #  Properties
 
 
 ---  
- #  Count : [integer](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/integer.markdown)
+ #  Count : [integer](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/integer.markdown)
 
  `read-only`
 
@@ -32,7 +32,7 @@
 > Add a Graphical to the list.
 > |Name|Type|Description|
 > |---|---|---|
-> |graphical|[graphical](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/graphical.markdown)| |
+> |graphical|[graphical](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/graphical.markdown)| |
 > ``` lang=cpp, name=Lightning
 > function Add(graphical : Graphical)
 > ``` 
@@ -70,7 +70,7 @@
 > 
 > |Name|Type|Description|
 > |---|---|---|
-> ||[graphicalrangeinterface](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/graphicalrangeinterface.markdown)| |
+> ||[graphicalrangeinterface](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/graphicalrangeinterface.markdown)| |
 > ``` lang=cpp, name=Lightning
 > function GraphicalRangeInterface( : GraphicalRangeInterface)
 > ``` 

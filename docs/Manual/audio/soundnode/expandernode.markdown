@@ -1,5 +1,5 @@
 # Expander Node
-The [ ExpanderNode ](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/expandernode.markdown) collects audio data from all of its inputs and applies an expander filter before passing the data along to its outputs. 
+The [ ExpanderNode ](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/expandernode.markdown) collects audio data from all of its inputs and applies an expander filter before passing the data along to its outputs. 
 
 # Common Uses
 
@@ -22,6 +22,6 @@ The `AttackMillisec` and `ReleaseMillisec` properties control how quickly the fi
 - [compressornode](https://plasmaengine.github.io/PlasmaDocs/Manual/audio/soundnode/compressornode.markdown)
 
 ## Code Reference
-- [ ExpanderNode ](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/expandernode.markdown) 
+- [ ExpanderNode ](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/expandernode.markdown) 
 
  

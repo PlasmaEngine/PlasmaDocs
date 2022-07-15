@@ -2,22 +2,22 @@
 
 |Methods|Properties|Base Classes|Derived Classes|
 |---|---|---|---|
-| |[ AutoFocus](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/animationsettings.markdown#autofocus-plasma-engine-do)| | |
-| |[ AutoKey](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/animationsettings.markdown#autokey-plasma-engine-docu)| | |
-| |[ EditFps](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/animationsettings.markdown#editfps-plasma-engine-docu)| | |
-| |[ OnionSkinning](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/animationsettings.markdown#onionskinning-plasma-engin)| | |
-| |[ PlaybackSpeed](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/animationsettings.markdown#playbackspeed-plasma-engin)| | |
-| |[ PreviewMode](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/animationsettings.markdown#previewmode-plasma-engine)| | |
-| |[ SnappingX](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/animationsettings.markdown#snappingx-plasma-engine-do)| | |
-| |[ SnappingY](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/animationsettings.markdown#snappingy-plasma-engine-do)| | |
-| |[ TimeDisplay](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/animationsettings.markdown#timedisplay-plasma-engine)| | |
+| |[ AutoFocus](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/animationsettings.markdown#autofocus-plasma-engine-do)| | |
+| |[ AutoKey](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/animationsettings.markdown#autokey-plasma-engine-docu)| | |
+| |[ EditFps](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/animationsettings.markdown#editfps-plasma-engine-docu)| | |
+| |[ OnionSkinning](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/animationsettings.markdown#onionskinning-plasma-engin)| | |
+| |[ PlaybackSpeed](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/animationsettings.markdown#playbackspeed-plasma-engin)| | |
+| |[ PreviewMode](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/animationsettings.markdown#previewmode-plasma-engine)| | |
+| |[ SnappingX](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/animationsettings.markdown#snappingx-plasma-engine-do)| | |
+| |[ SnappingY](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/animationsettings.markdown#snappingy-plasma-engine-do)| | |
+| |[ TimeDisplay](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/animationsettings.markdown#timedisplay-plasma-engine)| | |
 
 
  #  Properties
 
 
 ---  
- #  AutoFocus : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown)
+ #  AutoFocus : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/boolean.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -25,7 +25,7 @@
 
 
 ---  
- #  AutoKey : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown)
+ #  AutoKey : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/boolean.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -33,7 +33,7 @@
 
 
 ---  
- #  EditFps : [integer](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/integer.markdown)
+ #  EditFps : [integer](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/integer.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -41,7 +41,7 @@
 
 
 ---  
- #  OnionSkinning : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown)
+ #  OnionSkinning : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/boolean.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -49,7 +49,7 @@
 
 
 ---  
- #  PlaybackSpeed : [real](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown)
+ #  PlaybackSpeed : [real](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -57,7 +57,7 @@
 
 
 ---  
- #  PreviewMode : [integer](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/integer.markdown)
+ #  PreviewMode : [integer](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/integer.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -65,7 +65,7 @@
 
 
 ---  
- #  SnappingX : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown)
+ #  SnappingX : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/boolean.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -73,7 +73,7 @@
 
 
 ---  
- #  SnappingY : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown)
+ #  SnappingY : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/boolean.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -81,7 +81,7 @@
 
 
 ---  
- #  TimeDisplay : [TimeDisplay](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#timedisplay)
+ #  TimeDisplay : [TimeDisplay](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/enum_reference.markdown#timedisplay)
 
 > 
 > ``` lang=cpp, name=Lightning

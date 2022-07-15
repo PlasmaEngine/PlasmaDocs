@@ -1,5 +1,5 @@
 # Custom Audio Node
-The [ CustomAudioNode ](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/customaudionode.markdown) allows the user to provide buffers of custom audio data to the system for output, using a [ SoundBuffer ](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/soundbuffer.markdown) object. 
+The [ CustomAudioNode ](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/customaudionode.markdown) allows the user to provide buffers of custom audio data to the system for output, using a [ SoundBuffer ](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/soundbuffer.markdown) object. 
 
 # Common Uses
 
@@ -53,7 +53,7 @@ function OnSoundEvent(event : SoundEvent)
 - [soudnode_overview](https://plasmaengine.github.io/PlasmaDocs/Manual/audio/soundnode/soudnode_overview.markdown)
 
 ## Code Reference
-- [ CustomAudioNode ](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/customaudionode.markdown)
-- [ SoundBuffer ](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/soundbuffer.markdown) 
+- [ CustomAudioNode ](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/customaudionode.markdown)
+- [ SoundBuffer ](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/soundbuffer.markdown) 
 
  

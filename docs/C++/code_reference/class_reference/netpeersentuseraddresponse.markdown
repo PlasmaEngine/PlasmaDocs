@@ -6,20 +6,20 @@
 
 |Methods|Properties|Base Classes|Derived Classes|
 |---|---|---|---|
-| |[ OurAddResponse](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/netpeersentuseraddresponse.markdown#ouraddresponse-plasma-engi)|[event](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/event.markdown)| |
-| |[ OurResponseBundle](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/netpeersentuseraddresponse.markdown#ourresponsebundle-plasma-e)| | |
-| |[ TheirIpAddress](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/netpeersentuseraddresponse.markdown#theiripaddress-plasma-engi)| | |
-| |[ TheirNetPeerId](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/netpeersentuseraddresponse.markdown#theirnetpeerid-plasma-engi)| | |
-| |[ TheirNetUser](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/netpeersentuseraddresponse.markdown#theirnetuser-plasma-engine)| | |
-| |[ TheirNetUserId](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/netpeersentuseraddresponse.markdown#theirnetuserid-plasma-engi)| | |
-| |[ TheirRequestBundle](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/netpeersentuseraddresponse.markdown#theirrequestbundle-plasma)| | |
+| |[ OurAddResponse](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netpeersentuseraddresponse.markdown#ouraddresponse-plasma-engi)|[event](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/event.markdown)| |
+| |[ OurResponseBundle](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netpeersentuseraddresponse.markdown#ourresponsebundle-plasma-e)| | |
+| |[ TheirIpAddress](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netpeersentuseraddresponse.markdown#theiripaddress-plasma-engi)| | |
+| |[ TheirNetPeerId](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netpeersentuseraddresponse.markdown#theirnetpeerid-plasma-engi)| | |
+| |[ TheirNetUser](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netpeersentuseraddresponse.markdown#theirnetuser-plasma-engine)| | |
+| |[ TheirNetUserId](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netpeersentuseraddresponse.markdown#theirnetuserid-plasma-engi)| | |
+| |[ TheirRequestBundle](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netpeersentuseraddresponse.markdown#theirrequestbundle-plasma)| | |
 
 
  #  Properties
 
 
 ---  
- #  OurAddResponse : [NetUserAddResponse](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#netuseraddresponse)
+ #  OurAddResponse : [NetUserAddResponse](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/enum_reference.markdown#netuseraddresponse)
 
  `read-only`
 
@@ -29,7 +29,7 @@
 
 
 ---  
- #  OurResponseBundle : [eventbundle](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/eventbundle.markdown)
+ #  OurResponseBundle : [eventbundle](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/eventbundle.markdown)
 
  `read-only`
 
@@ -39,7 +39,7 @@
 
 
 ---  
- #  TheirIpAddress : [ipaddress](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/ipaddress.markdown)
+ #  TheirIpAddress : [ipaddress](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/ipaddress.markdown)
 
  `read-only`
 
@@ -49,7 +49,7 @@
 
 
 ---  
- #  TheirNetPeerId : [integer](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/integer.markdown)
+ #  TheirNetPeerId : [integer](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/integer.markdown)
 
  `read-only`
 
@@ -59,7 +59,7 @@
 
 
 ---  
- #  TheirNetUser : [cog](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/cog.markdown)
+ #  TheirNetUser : [cog](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/cog.markdown)
 
  `read-only`
 
@@ -69,7 +69,7 @@
 
 
 ---  
- #  TheirNetUserId : [integer](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/integer.markdown)
+ #  TheirNetUserId : [integer](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/integer.markdown)
 
  `read-only`
 
@@ -79,7 +79,7 @@
 
 
 ---  
- #  TheirRequestBundle : [eventbundle](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/eventbundle.markdown)
+ #  TheirRequestBundle : [eventbundle](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/eventbundle.markdown)
 
  `read-only`
 

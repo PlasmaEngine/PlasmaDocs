@@ -2,13 +2,13 @@
 
 |Methods|Properties|Base Classes|Derived Classes|
 |---|---|---|---|
-|[ DumpValue](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/console.markdown#dumpvalue-void)| | | |
-|[ ReadBoolean](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/console.markdown#readboolean-plasma-engine)| | | |
-|[ ReadInteger](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/console.markdown#readinteger-plasma-engine)| | | |
-|[ ReadReal](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/console.markdown#readreal-plasma-engine-doc)| | | |
-|[ ReadString](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/console.markdown#readstring-plasma-engine-d)| | | |
-|[ Write](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/console.markdown#write-void)| | | |
-|[ WriteLine](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/console.markdown#writeline-void)| | | |
+|[ DumpValue](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/console.markdown#dumpvalue-void)| | | |
+|[ ReadBoolean](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/console.markdown#readboolean-plasma-engine)| | | |
+|[ ReadInteger](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/console.markdown#readinteger-plasma-engine)| | | |
+|[ ReadReal](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/console.markdown#readreal-plasma-engine-doc)| | | |
+|[ ReadString](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/console.markdown#readstring-plasma-engine-d)| | | |
+|[ Write](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/console.markdown#write-void)| | | |
+|[ WriteLine](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/console.markdown#writeline-void)| | | |
 
 
  #  Properties
@@ -41,14 +41,14 @@
 > |Name|Type|Description|
 > |---|---|---|
 > |p0|T| |
-> |p1|[integer](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/integer.markdown)| |
+> |p1|[integer](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/integer.markdown)| |
 > ``` lang=cpp, name=Lightning
 > function DumpValue(p0 : T, p1 : Integer)
 > ``` 
 
 
 ---  
- #  ReadBoolean : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown)
+ #  ReadBoolean : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/boolean.markdown)
 
  `static`
 
@@ -61,7 +61,7 @@
 
 
 ---  
- #  ReadInteger : [integer](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/integer.markdown)
+ #  ReadInteger : [integer](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/integer.markdown)
 
  `static`
 
@@ -74,7 +74,7 @@
 
 
 ---  
- #  ReadReal : [real](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown)
+ #  ReadReal : [real](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real.markdown)
 
  `static`
 
@@ -87,7 +87,7 @@
 
 
 ---  
- #  ReadString : [string](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown)
+ #  ReadString : [string](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/string.markdown)
 
  `static`
 

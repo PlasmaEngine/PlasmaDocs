@@ -32,7 +32,7 @@ The **Discord** link connects you to the Plasma discord where you can get questi
 | New Project Default Settings by Template |--|--|--|
 |--|--|--|--|
 | **Setting**  | **Description**| **EMPTY 2D PROJECT** | **EMPTY 3D PROJECT**|
-|[ PhysicsSpace ](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/physicsspace.markdown) {nav icon=check-square-o, name=Mode2D}| Default behavior for collision resolution| `true`|`false`|
+|[ PhysicsSpace ](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/physicsspace.markdown) {nav icon=check-square-o, name=Mode2D}| Default behavior for collision resolution| `true`|`false`|
 |EditorCamera|Settings of editor camera|2D (orthographic, etc...)|3D (perspective, etc...)|
 |Default Camera|Settings of the camera that is placed by default in each new level|2D (orthographic, etc...)|3D (perspective, etc...)|
 |GridDraw Axis|Perpendicular axis to the grid plane|`ZAxis`|`YAxis`|

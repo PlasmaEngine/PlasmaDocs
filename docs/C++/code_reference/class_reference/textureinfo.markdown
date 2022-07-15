@@ -2,17 +2,17 @@
 
 |Methods|Properties|Base Classes|Derived Classes|
 |---|---|---|---|
-|[ Constructor](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/textureinfo.markdown#textureinfo-void)|[ Dimensions](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/textureinfo.markdown#dimensions-plasma-engine-d)|[contentcomponent](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/contentcomponent.markdown)| |
-| |[ FileType](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/textureinfo.markdown#filetype-plasma-engine-doc)| | |
-| |[ LoadFormat](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/textureinfo.markdown#loadformat-plasma-engine-d)| | |
-| |[ Size](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/textureinfo.markdown#size-plasma-engine-documen)| | |
+|[ Constructor](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/textureinfo.markdown#textureinfo-void)|[ Dimensions](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/textureinfo.markdown#dimensions-plasma-engine-d)|[contentcomponent](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/contentcomponent.markdown)| |
+| |[ FileType](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/textureinfo.markdown#filetype-plasma-engine-doc)| | |
+| |[ LoadFormat](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/textureinfo.markdown#loadformat-plasma-engine-d)| | |
+| |[ Size](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/textureinfo.markdown#size-plasma-engine-documen)| | |
 
 
  #  Properties
 
 
 ---  
- #  Dimensions : [string](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown)
+ #  Dimensions : [string](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/string.markdown)
 
  `read-only`
 
@@ -22,7 +22,7 @@
 
 
 ---  
- #  FileType : [string](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown)
+ #  FileType : [string](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/string.markdown)
 
  `read-only`
 
@@ -32,7 +32,7 @@
 
 
 ---  
- #  LoadFormat : [string](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown)
+ #  LoadFormat : [string](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/string.markdown)
 
  `read-only`
 
@@ -42,7 +42,7 @@
 
 
 ---  
- #  Size : [string](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown)
+ #  Size : [string](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/string.markdown)
 
  `read-only`
 

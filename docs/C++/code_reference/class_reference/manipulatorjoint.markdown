@@ -6,16 +6,16 @@
 
 |Methods|Properties|Base Classes|Derived Classes|
 |---|---|---|---|
-|[ Constructor](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/manipulatorjoint.markdown#manipulatorjoint-void)|[ LocalPoint](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/manipulatorjoint.markdown#localpoint-plasma-engine-d)|[joint](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/joint.markdown)| |
-| |[ TargetPoint](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/manipulatorjoint.markdown#targetpoint-plasma-engine)| | |
-| |[ WorldPoint](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/manipulatorjoint.markdown#worldpoint-plasma-engine-d)| | |
+|[ Constructor](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/manipulatorjoint.markdown#manipulatorjoint-void)|[ LocalPoint](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/manipulatorjoint.markdown#localpoint-plasma-engine-d)|[joint](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/joint.markdown)| |
+| |[ TargetPoint](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/manipulatorjoint.markdown#targetpoint-plasma-engine)| | |
+| |[ WorldPoint](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/manipulatorjoint.markdown#worldpoint-plasma-engine-d)| | |
 
 
  #  Properties
 
 
 ---  
- #  LocalPoint : [real3](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real3.markdown)
+ #  LocalPoint : [real3](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real3.markdown)
 
 > The local space point on the object that the joint is connected to.
 > ``` lang=cpp, name=Lightning
@@ -23,7 +23,7 @@
 
 
 ---  
- #  TargetPoint : [real3](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real3.markdown)
+ #  TargetPoint : [real3](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real3.markdown)
 
 > The point in world space that the object's point is being moved towards.
 > ``` lang=cpp, name=Lightning
@@ -31,7 +31,7 @@
 
 
 ---  
- #  WorldPoint : [real3](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real3.markdown)
+ #  WorldPoint : [real3](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real3.markdown)
 
 > The world space point on the object that the joint is connected to.
 > ``` lang=cpp, name=Lightning

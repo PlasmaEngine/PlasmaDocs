@@ -2,14 +2,14 @@
 
 |Methods|Properties|Base Classes|Derived Classes|
 |---|---|---|---|
-| |[ Action](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/conflictoptions.markdown#action-plasma-engine-docum)|Object| |
+| |[ Action](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/conflictoptions.markdown#action-plasma-engine-docum)|Object| |
 
 
  #  Properties
 
 
 ---  
- #  Action : [ConflictAction](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#conflictaction)
+ #  Action : [ConflictAction](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/enum_reference.markdown#conflictaction)
 
 > 
 > ``` lang=cpp, name=Lightning

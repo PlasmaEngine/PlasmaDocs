@@ -2,9 +2,9 @@
 
 |Methods|Properties|Base Classes|Derived Classes|
 |---|---|---|---|
-|[ All](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/castresults.markdown#all-plasma-engine-document)| | | |
-|[ Clear](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/castresults.markdown#clear-void)| | | |
-|[ Empty](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/castresults.markdown#empty-plasma-engine-docume)| | | |
+|[ All](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/castresults.markdown#all-plasma-engine-document)| | | |
+|[ Clear](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/castresults.markdown#clear-void)| | | |
+|[ Empty](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/castresults.markdown#empty-plasma-engine-docume)| | | |
 
 
  #  Properties
@@ -15,7 +15,7 @@
 
 
 ---  
- #  All : [castresultsarrayrange](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/castresultsarrayrange.markdown)
+ #  All : [castresultsarrayrange](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/castresultsarrayrange.markdown)
 
 > 
 > |Name|Type|Description|
@@ -37,7 +37,7 @@
 
 
 ---  
- #  Empty : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown)
+ #  Empty : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/boolean.markdown)
 
 > 
 > |Name|Type|Description|

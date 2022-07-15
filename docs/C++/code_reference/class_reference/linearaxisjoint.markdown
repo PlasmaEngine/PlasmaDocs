@@ -6,14 +6,14 @@
 
 |Methods|Properties|Base Classes|Derived Classes|
 |---|---|---|---|
-|[ Constructor](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/linearaxisjoint.markdown#linearaxisjoint-void)|[ WorldAxis](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/linearaxisjoint.markdown#worldaxis-plasma-engine-do)|[joint](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/joint.markdown)| |
+|[ Constructor](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/linearaxisjoint.markdown#linearaxisjoint-void)|[ WorldAxis](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/linearaxisjoint.markdown#worldaxis-plasma-engine-do)|[joint](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/joint.markdown)| |
 
 
  #  Properties
 
 
 ---  
- #  WorldAxis : [real3](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real3.markdown)
+ #  WorldAxis : [real3](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real3.markdown)
 
 > The axis in world space that is constrained.
 > ``` lang=cpp, name=Lightning

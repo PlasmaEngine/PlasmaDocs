@@ -4,16 +4,16 @@
 
 |Methods|Properties|Base Classes|Derived Classes|
 |---|---|---|---|
-| |[ Animation](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/animationgraphevent.markdown#animation-plasma-engine-do)|[event](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/event.markdown)| |
-| |[ Node](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/animationgraphevent.markdown#node-plasma-engine-documen)| | |
-| |[ PlayMode](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/animationgraphevent.markdown#playmode-plasma-engine-doc)| | |
+| |[ Animation](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/animationgraphevent.markdown#animation-plasma-engine-do)|[event](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/event.markdown)| |
+| |[ Node](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/animationgraphevent.markdown#node-plasma-engine-documen)| | |
+| |[ PlayMode](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/animationgraphevent.markdown#playmode-plasma-engine-doc)| | |
 
 
  #  Properties
 
 
 ---  
- #  Animation : [animation](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/animation.markdown)
+ #  Animation : [animation](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/animation.markdown)
 
  `read-only`
 
@@ -23,7 +23,7 @@
 
 
 ---  
- #  Node : [animationnode](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/animationnode.markdown)
+ #  Node : [animationnode](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/animationnode.markdown)
 
  `read-only`
 
@@ -33,7 +33,7 @@
 
 
 ---  
- #  PlayMode : [AnimationPlayMode](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#animationplaymode)
+ #  PlayMode : [AnimationPlayMode](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/enum_reference.markdown#animationplaymode)
 
  `read-only`
 

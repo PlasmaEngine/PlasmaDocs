@@ -4,18 +4,18 @@
 
 |Methods|Properties|Base Classes|Derived Classes|
 |---|---|---|---|
-| |[ NewScreenPosition](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/mainwindowtransformevent.markdown#newscreenposition-plasma-e)|[event](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/event.markdown)| |
-| |[ NewScreenSize](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/mainwindowtransformevent.markdown#newscreensize-plasma-engin)| | |
-| |[ OldScreenPosition](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/mainwindowtransformevent.markdown#oldscreenposition-plasma-e)| | |
-| |[ OldScreenSize](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/mainwindowtransformevent.markdown#oldscreensize-plasma-engin)| | |
-| |[ TargetWindow](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/mainwindowtransformevent.markdown#targetwindow-plasma-engine)| | |
+| |[ NewScreenPosition](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/mainwindowtransformevent.markdown#newscreenposition-plasma-e)|[event](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/event.markdown)| |
+| |[ NewScreenSize](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/mainwindowtransformevent.markdown#newscreensize-plasma-engin)| | |
+| |[ OldScreenPosition](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/mainwindowtransformevent.markdown#oldscreenposition-plasma-e)| | |
+| |[ OldScreenSize](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/mainwindowtransformevent.markdown#oldscreensize-plasma-engin)| | |
+| |[ TargetWindow](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/mainwindowtransformevent.markdown#targetwindow-plasma-engine)| | |
 
 
  #  Properties
 
 
 ---  
- #  NewScreenPosition : [real2](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real2.markdown)
+ #  NewScreenPosition : [real2](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real2.markdown)
 
  `read-only`
 
@@ -25,7 +25,7 @@
 
 
 ---  
- #  NewScreenSize : [real2](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real2.markdown)
+ #  NewScreenSize : [real2](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real2.markdown)
 
  `read-only`
 
@@ -35,7 +35,7 @@
 
 
 ---  
- #  OldScreenPosition : [real2](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real2.markdown)
+ #  OldScreenPosition : [real2](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real2.markdown)
 
  `read-only`
 
@@ -45,7 +45,7 @@
 
 
 ---  
- #  OldScreenSize : [real2](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real2.markdown)
+ #  OldScreenSize : [real2](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real2.markdown)
 
  `read-only`
 
@@ -55,7 +55,7 @@
 
 
 ---  
- #  TargetWindow : [oswindow](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/oswindow.markdown)
+ #  TargetWindow : [oswindow](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/oswindow.markdown)
 
  `read-only`
 

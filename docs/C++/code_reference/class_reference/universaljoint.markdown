@@ -6,21 +6,21 @@
 
 |Methods|Properties|Base Classes|Derived Classes|
 |---|---|---|---|
-|[ SetWorldPoints](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/universaljoint.markdown#setworldpoints-void)|[ LocalAxis0OfBodyA](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/universaljoint.markdown#localaxis0ofbodya-plasma-e)|[joint](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/joint.markdown)| |
-|[ Constructor](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/universaljoint.markdown#universaljoint-void)|[ LocalAxis0OfBodyB](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/universaljoint.markdown#localaxis0ofbodyb-plasma-e)| | |
-| |[ LocalAxis1OfBodyA](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/universaljoint.markdown#localaxis1ofbodya-plasma-e)| | |
-| |[ LocalAxis1OfBodyB](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/universaljoint.markdown#localaxis1ofbodyb-plasma-e)| | |
-| |[ LocalPointA](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/universaljoint.markdown#localpointa-plasma-engine)| | |
-| |[ LocalPointB](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/universaljoint.markdown#localpointb-plasma-engine)| | |
-| |[ WorldPointA](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/universaljoint.markdown#worldpointa-plasma-engine)| | |
-| |[ WorldPointB](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/universaljoint.markdown#worldpointb-plasma-engine)| | |
+|[ SetWorldPoints](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/universaljoint.markdown#setworldpoints-void)|[ LocalAxis0OfBodyA](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/universaljoint.markdown#localaxis0ofbodya-plasma-e)|[joint](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/joint.markdown)| |
+|[ Constructor](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/universaljoint.markdown#universaljoint-void)|[ LocalAxis0OfBodyB](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/universaljoint.markdown#localaxis0ofbodyb-plasma-e)| | |
+| |[ LocalAxis1OfBodyA](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/universaljoint.markdown#localaxis1ofbodya-plasma-e)| | |
+| |[ LocalAxis1OfBodyB](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/universaljoint.markdown#localaxis1ofbodyb-plasma-e)| | |
+| |[ LocalPointA](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/universaljoint.markdown#localpointa-plasma-engine)| | |
+| |[ LocalPointB](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/universaljoint.markdown#localpointb-plasma-engine)| | |
+| |[ WorldPointA](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/universaljoint.markdown#worldpointa-plasma-engine)| | |
+| |[ WorldPointB](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/universaljoint.markdown#worldpointb-plasma-engine)| | |
 
 
  #  Properties
 
 
 ---  
- #  LocalAxis0OfBodyA : [real3](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real3.markdown)
+ #  LocalAxis0OfBodyA : [real3](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real3.markdown)
 
 > One of the two axes in local space of object A that the objects are allowed to rotate about.
 > ``` lang=cpp, name=Lightning
@@ -28,7 +28,7 @@
 
 
 ---  
- #  LocalAxis0OfBodyB : [real3](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real3.markdown)
+ #  LocalAxis0OfBodyB : [real3](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real3.markdown)
 
 > One of the two axes in local space of object B that the objects are allowed to rotate about.
 > ``` lang=cpp, name=Lightning
@@ -36,7 +36,7 @@
 
 
 ---  
- #  LocalAxis1OfBodyA : [real3](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real3.markdown)
+ #  LocalAxis1OfBodyA : [real3](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real3.markdown)
 
 > One of the two axes in local space of object A that the objects are allowed to rotate about.
 > ``` lang=cpp, name=Lightning
@@ -44,7 +44,7 @@
 
 
 ---  
- #  LocalAxis1OfBodyB : [real3](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real3.markdown)
+ #  LocalAxis1OfBodyB : [real3](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real3.markdown)
 
 > One of the two axes in local space of object B that the objects are allowed to rotate about.
 > ``` lang=cpp, name=Lightning
@@ -52,7 +52,7 @@
 
 
 ---  
- #  LocalPointA : [real3](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real3.markdown)
+ #  LocalPointA : [real3](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real3.markdown)
 
 > The local point of the anchor on object A . 
 > ``` lang=cpp, name=Lightning
@@ -60,7 +60,7 @@
 
 
 ---  
- #  LocalPointB : [real3](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real3.markdown)
+ #  LocalPointB : [real3](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real3.markdown)
 
 > The local point of the anchor on object B . 
 > ``` lang=cpp, name=Lightning
@@ -68,7 +68,7 @@
 
 
 ---  
- #  WorldPointA : [real3](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real3.markdown)
+ #  WorldPointA : [real3](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real3.markdown)
 
 > The position of the anchor on object A given a position in world space 
 > ``` lang=cpp, name=Lightning
@@ -76,7 +76,7 @@
 
 
 ---  
- #  WorldPointB : [real3](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real3.markdown)
+ #  WorldPointB : [real3](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real3.markdown)
 
 > The position of the anchor on object B given a position in world space 
 > ``` lang=cpp, name=Lightning
@@ -93,7 +93,7 @@
 > Sets the position of the anchor on object A and B given a position in world space 
 > |Name|Type|Description|
 > |---|---|---|
-> |point|[real3](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real3.markdown)| |
+> |point|[real3](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real3.markdown)| |
 > ``` lang=cpp, name=Lightning
 > function SetWorldPoints(point : Real3)
 > ``` 

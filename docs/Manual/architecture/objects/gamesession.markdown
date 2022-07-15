@@ -1,5 +1,5 @@
 # Game Session
-[GameSession](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/gamesession.markdown) manages the running of the game, both upon pressing the play button and dealing with the exported version. It is an object that represents one instance of the game. Being an object, it is possible to create more than one game session per executable.
+[GameSession](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/gamesession.markdown) manages the running of the game, both upon pressing the play button and dealing with the exported version. It is an object that represents one instance of the game. Being an object, it is possible to create more than one game session per executable.
 
 # Common Uses
  - Setting the starting [level](https://plasmaengine.github.io/PlasmaDocs/Manual/architecture/resources/level.markdown) 
@@ -40,12 +40,12 @@ The user connects to these events when dispatched on the GameSession], e.g.:
 
 | Event Name       |          Type         | Description                                                                       |
 |------------------|-----------------------|-----------------------------------------------------------------------------------|
-| GameSetup        | [gameevent](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/gameevent.markdown) | This event fires after the creation of the GameSession. Only GameSession will be to respond to this event due to the timing of the dispatch during normal circumstances. |
-| GameLoad         | [gameevent](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/gameevent.markdown) | This event fires after the creation of the Space Archetype. Only GameSession and spaces will be able to respond to this event due to the timing of the dispatch in normal circumstances. |
-| GameStarted      | [gameevent](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/gameevent.markdown) | This event fires after the starting level is fully loaded. All cogs present at the start of level are able respond to this event. Dynamically created objects may or may not respond depending on when they were created. (e.g. those created during initialize of those objects loaded with the level will still receive this event, but those created in response to the `LogicUpdate` event will not. |
-| GameFocusIn      | [gameevent](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/gameevent.markdown) | This event fires once the game window has regained focus (having been out of focus.) This event is not sent when testing in the editor. In order to test this logic, run the game using the `ExportAndPlayGame` command. |
-| GameFocusOut     | [gameevent](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/gameevent.markdown) | This event fires after the game window has lost focus, for instance when clicking on another application. This event is not sent when testing in the editor. In order to test this logic, run the game using the `ExportAndPlayGame` command. |
-| GameRequestQuit  | [gameevent](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/gameevent.markdown) | This event fires after the pressing the `Esc` key. This allows a script to hook the key in order to override this behavior. See [HandlingQuitMessage](https://plasmaengine.github.io/PlasmaDocs/Manual/gameplay/handlingquitmessage.markdown) for more on this. |
+| GameSetup        | [gameevent](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/gameevent.markdown) | This event fires after the creation of the GameSession. Only GameSession will be to respond to this event due to the timing of the dispatch during normal circumstances. |
+| GameLoad         | [gameevent](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/gameevent.markdown) | This event fires after the creation of the Space Archetype. Only GameSession and spaces will be able to respond to this event due to the timing of the dispatch in normal circumstances. |
+| GameStarted      | [gameevent](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/gameevent.markdown) | This event fires after the starting level is fully loaded. All cogs present at the start of level are able respond to this event. Dynamically created objects may or may not respond depending on when they were created. (e.g. those created during initialize of those objects loaded with the level will still receive this event, but those created in response to the `LogicUpdate` event will not. |
+| GameFocusIn      | [gameevent](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/gameevent.markdown) | This event fires once the game window has regained focus (having been out of focus.) This event is not sent when testing in the editor. In order to test this logic, run the game using the `ExportAndPlayGame` command. |
+| GameFocusOut     | [gameevent](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/gameevent.markdown) | This event fires after the game window has lost focus, for instance when clicking on another application. This event is not sent when testing in the editor. In order to test this logic, run the game using the `ExportAndPlayGame` command. |
+| GameRequestQuit  | [gameevent](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/gameevent.markdown) | This event fires after the pressing the `Esc` key. This allows a script to hook the key in order to override this behavior. See [HandlingQuitMessage](https://plasmaengine.github.io/PlasmaDocs/Manual/gameplay/handlingquitmessage.markdown) for more on this. |
 
 
 # Related Materials
@@ -55,8 +55,8 @@ The user connects to these events when dispatched on the GameSession], e.g.:
 - [ Cog](https://plasmaengine.github.io/PlasmaDocs/Manual/architecture/cogs/gameobjectsconcept.markdown)
 
 ## Reference
-- [GameSession](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/gamesession.markdown)
-- [gameevent](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/gameevent.markdown)
+- [GameSession](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/gamesession.markdown)
+- [gameevent](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/gameevent.markdown)
 
  
 

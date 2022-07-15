@@ -2,17 +2,17 @@
 
 |Methods|Properties|Base Classes|Derived Classes|
 |---|---|---|---|
-|[ Constructor](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/functionrange.markdown#functionrange-void)|[ All](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/functionrange.markdown#all-plasma-engine-document)| | |
-|[ MoveNext](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/functionrange.markdown#movenext-void)|[ Current](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/functionrange.markdown#current-plasma-engine-docu)| | |
-| |[ IsEmpty](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/functionrange.markdown#isempty-plasma-engine-docu)| | |
-| |[ IsNotEmpty](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/functionrange.markdown#isnotempty-plasma-engine-d)| | |
+|[ Constructor](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/functionrange.markdown#functionrange-void)|[ All](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/functionrange.markdown#all-plasma-engine-document)| | |
+|[ MoveNext](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/functionrange.markdown#movenext-void)|[ Current](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/functionrange.markdown#current-plasma-engine-docu)| | |
+| |[ IsEmpty](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/functionrange.markdown#isempty-plasma-engine-docu)| | |
+| |[ IsNotEmpty](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/functionrange.markdown#isnotempty-plasma-engine-d)| | |
 
 
  #  Properties
 
 
 ---  
- #  All : [functionrange](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/functionrange.markdown)
+ #  All : [functionrange](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/functionrange.markdown)
 
  `read-only`
 
@@ -22,7 +22,7 @@
 
 
 ---  
- #  Current : [function](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/function.markdown)
+ #  Current : [function](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/function.markdown)
 
  `read-only`
 
@@ -32,7 +32,7 @@
 
 
 ---  
- #  IsEmpty : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown)
+ #  IsEmpty : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/boolean.markdown)
 
  `read-only`
 
@@ -42,7 +42,7 @@
 
 
 ---  
- #  IsNotEmpty : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown)
+ #  IsNotEmpty : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/boolean.markdown)
 
  `read-only`
 
@@ -76,7 +76,7 @@
 > 
 > |Name|Type|Description|
 > |---|---|---|
-> |p0|[functionrange](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/functionrange.markdown)| |
+> |p0|[functionrange](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/functionrange.markdown)| |
 > ``` lang=cpp, name=Lightning
 > function FunctionRange(p0 : FunctionRange)
 > ``` 

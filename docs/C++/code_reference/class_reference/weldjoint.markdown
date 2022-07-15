@@ -6,19 +6,19 @@
 
 |Methods|Properties|Base Classes|Derived Classes|
 |---|---|---|---|
-|[ SetWorldPoints](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/weldjoint.markdown#setworldpoints-void)|[ LocalBasisA](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/weldjoint.markdown#localbasisa-plasma-engine)|[joint](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/joint.markdown)| |
-|[ Constructor](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/weldjoint.markdown#weldjoint-void)|[ LocalBasisB](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/weldjoint.markdown#localbasisb-plasma-engine)| | |
-| |[ LocalPointA](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/weldjoint.markdown#localpointa-plasma-engine)| | |
-| |[ LocalPointB](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/weldjoint.markdown#localpointb-plasma-engine)| | |
-| |[ WorldPointA](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/weldjoint.markdown#worldpointa-plasma-engine)| | |
-| |[ WorldPointB](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/weldjoint.markdown#worldpointb-plasma-engine)| | |
+|[ SetWorldPoints](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/weldjoint.markdown#setworldpoints-void)|[ LocalBasisA](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/weldjoint.markdown#localbasisa-plasma-engine)|[joint](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/joint.markdown)| |
+|[ Constructor](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/weldjoint.markdown#weldjoint-void)|[ LocalBasisB](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/weldjoint.markdown#localbasisb-plasma-engine)| | |
+| |[ LocalPointA](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/weldjoint.markdown#localpointa-plasma-engine)| | |
+| |[ LocalPointB](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/weldjoint.markdown#localpointb-plasma-engine)| | |
+| |[ WorldPointA](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/weldjoint.markdown#worldpointa-plasma-engine)| | |
+| |[ WorldPointB](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/weldjoint.markdown#worldpointb-plasma-engine)| | |
 
 
  #  Properties
 
 
 ---  
- #  LocalBasisA : [quaternion](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/quaternion.markdown)
+ #  LocalBasisA : [quaternion](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/quaternion.markdown)
 
 > The local space reference frame of object A . This frame is transformed to world space and then aligned with object B s frame . 
 > ``` lang=cpp, name=Lightning
@@ -26,7 +26,7 @@
 
 
 ---  
- #  LocalBasisB : [quaternion](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/quaternion.markdown)
+ #  LocalBasisB : [quaternion](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/quaternion.markdown)
 
 > The local space reference frame of object B . This frame is transformed to world space and then aligned with object A s frame . 
 > ``` lang=cpp, name=Lightning
@@ -34,7 +34,7 @@
 
 
 ---  
- #  LocalPointA : [real3](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real3.markdown)
+ #  LocalPointA : [real3](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real3.markdown)
 
 > The local point of the anchor on object A . 
 > ``` lang=cpp, name=Lightning
@@ -42,7 +42,7 @@
 
 
 ---  
- #  LocalPointB : [real3](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real3.markdown)
+ #  LocalPointB : [real3](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real3.markdown)
 
 > The local point of the anchor on object B . 
 > ``` lang=cpp, name=Lightning
@@ -50,7 +50,7 @@
 
 
 ---  
- #  WorldPointA : [real3](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real3.markdown)
+ #  WorldPointA : [real3](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real3.markdown)
 
 > The position of the anchor on object A given a position in world space 
 > ``` lang=cpp, name=Lightning
@@ -58,7 +58,7 @@
 
 
 ---  
- #  WorldPointB : [real3](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real3.markdown)
+ #  WorldPointB : [real3](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real3.markdown)
 
 > The position of the anchor on object B given a position in world space 
 > ``` lang=cpp, name=Lightning
@@ -75,7 +75,7 @@
 > Sets the position of the anchor on object A and B given a position in world space 
 > |Name|Type|Description|
 > |---|---|---|
-> |point|[real3](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real3.markdown)| |
+> |point|[real3](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real3.markdown)| |
 > ``` lang=cpp, name=Lightning
 > function SetWorldPoints(point : Real3)
 > ``` 

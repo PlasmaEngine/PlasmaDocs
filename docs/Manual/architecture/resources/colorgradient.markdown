@@ -65,7 +65,7 @@ class GradDemo : LightningComponent
 The above code-block accomplishes the following things:
 
  - Initially, it sets the color of the Sprite to the value sampled at `0` on the ColorGradient.
- - It then calls a function-- `InterpolateValue()` --that uses an Action to interpolate the [Real](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown) variable Value from 0 - 1 over the course of three seconds.
+ - It then calls a function-- `InterpolateValue()` --that uses an Action to interpolate the [Real](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real.markdown) variable Value from 0 - 1 over the course of three seconds.
  - Finally, the `VertexColor` property on the Sprite component is updated every frame by the value sampled from `ColorGrad` using `Value`
 
 # Related Materials
@@ -73,9 +73,9 @@ The above code-block accomplishes the following things:
 - [resources](https://plasmaengine.github.io/PlasmaDocs/Manual/architecture/resources.markdown)
 - [resourceadding](https://plasmaengine.github.io/PlasmaDocs/Manual/editor/editorcommands/resourceadding.markdown)
 ## Reference Pages
-- [colorgradient](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/colorgradient.markdown)
-- [Sprite](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/sprite.markdown) 
-- [Material](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/material.markdown) 
+- [colorgradient](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/colorgradient.markdown)
+- [Sprite](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/sprite.markdown) 
+- [Material](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/material.markdown) 
 
  
 

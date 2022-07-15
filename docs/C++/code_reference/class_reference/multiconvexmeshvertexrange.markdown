@@ -2,17 +2,17 @@
 
 |Methods|Properties|Base Classes|Derived Classes|
 |---|---|---|---|
-|[ MoveNext](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/multiconvexmeshvertexrange.markdown#movenext-void)|[ All](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/multiconvexmeshvertexrange.markdown#all-plasma-engine-document)| | |
-|[ Constructor](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/multiconvexmeshvertexrange.markdown#multiconvexmeshvertexran)|[ Current](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/multiconvexmeshvertexrange.markdown#current-plasma-engine-docu)| | |
-| |[ IsEmpty](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/multiconvexmeshvertexrange.markdown#isempty-plasma-engine-docu)| | |
-| |[ IsNotEmpty](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/multiconvexmeshvertexrange.markdown#isnotempty-plasma-engine-d)| | |
+|[ MoveNext](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/multiconvexmeshvertexrange.markdown#movenext-void)|[ All](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/multiconvexmeshvertexrange.markdown#all-plasma-engine-document)| | |
+|[ Constructor](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/multiconvexmeshvertexrange.markdown#multiconvexmeshvertexran)|[ Current](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/multiconvexmeshvertexrange.markdown#current-plasma-engine-docu)| | |
+| |[ IsEmpty](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/multiconvexmeshvertexrange.markdown#isempty-plasma-engine-docu)| | |
+| |[ IsNotEmpty](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/multiconvexmeshvertexrange.markdown#isnotempty-plasma-engine-d)| | |
 
 
  #  Properties
 
 
 ---  
- #  All : [multiconvexmeshvertexrange](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/multiconvexmeshvertexrange.markdown)
+ #  All : [multiconvexmeshvertexrange](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/multiconvexmeshvertexrange.markdown)
 
  `read-only`
 
@@ -22,7 +22,7 @@
 
 
 ---  
- #  Current : [real3](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real3.markdown)
+ #  Current : [real3](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real3.markdown)
 
  `read-only`
 
@@ -32,7 +32,7 @@
 
 
 ---  
- #  IsEmpty : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown)
+ #  IsEmpty : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/boolean.markdown)
 
  `read-only`
 
@@ -42,7 +42,7 @@
 
 
 ---  
- #  IsNotEmpty : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown)
+ #  IsNotEmpty : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/boolean.markdown)
 
  `read-only`
 
@@ -87,7 +87,7 @@
 > 
 > |Name|Type|Description|
 > |---|---|---|
-> |p0|[multiconvexmeshvertexrange](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/multiconvexmeshvertexrange.markdown)| |
+> |p0|[multiconvexmeshvertexrange](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/multiconvexmeshvertexrange.markdown)| |
 > ``` lang=cpp, name=Lightning
 > function MultiConvexMeshVertexRange(p0 : MultiConvexMeshVertexRange)
 > ``` 

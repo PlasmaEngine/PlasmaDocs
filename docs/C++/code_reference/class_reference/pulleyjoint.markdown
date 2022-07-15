@@ -6,18 +6,18 @@
 
 |Methods|Properties|Base Classes|Derived Classes|
 |---|---|---|---|
-|[ Constructor](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/pulleyjoint.markdown#pulleyjoint-void)|[ JointA](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/pulleyjoint.markdown#jointa-plasma-engine-docum)|[joint](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/joint.markdown)| |
-| |[ JointAPath](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/pulleyjoint.markdown#jointapath-plasma-engine-d)| | |
-| |[ JointB](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/pulleyjoint.markdown#jointb-plasma-engine-docum)| | |
-| |[ JointBPath](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/pulleyjoint.markdown#jointbpath-plasma-engine-d)| | |
-| |[ Ratio](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/pulleyjoint.markdown#ratio-plasma-engine-docume)| | |
+|[ Constructor](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/pulleyjoint.markdown#pulleyjoint-void)|[ JointA](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/pulleyjoint.markdown#jointa-plasma-engine-docum)|[joint](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/joint.markdown)| |
+| |[ JointAPath](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/pulleyjoint.markdown#jointapath-plasma-engine-d)| | |
+| |[ JointB](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/pulleyjoint.markdown#jointb-plasma-engine-docum)| | |
+| |[ JointBPath](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/pulleyjoint.markdown#jointbpath-plasma-engine-d)| | |
+| |[ Ratio](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/pulleyjoint.markdown#ratio-plasma-engine-docume)| | |
 
 
  #  Properties
 
 
 ---  
- #  JointA : [cog](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/cog.markdown)
+ #  JointA : [cog](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/cog.markdown)
 
 > The joint connected to ObjectA that the pulley operates on.
 > ``` lang=cpp, name=Lightning
@@ -25,7 +25,7 @@
 
 
 ---  
- #  JointAPath : [cogpath](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/cogpath.markdown)
+ #  JointAPath : [cogpath](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/cogpath.markdown)
 
 > The joint connected to ObjectA that the pulley operates on.
 > ``` lang=cpp, name=Lightning
@@ -33,7 +33,7 @@
 
 
 ---  
- #  JointB : [cog](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/cog.markdown)
+ #  JointB : [cog](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/cog.markdown)
 
 > The joint connected to ObjectB that the pulley operates on.
 > ``` lang=cpp, name=Lightning
@@ -41,7 +41,7 @@
 
 
 ---  
- #  JointBPath : [cogpath](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/cogpath.markdown)
+ #  JointBPath : [cogpath](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/cogpath.markdown)
 
 > The joint connected to ObjectB that the pulley operates on.
 > ``` lang=cpp, name=Lightning
@@ -49,7 +49,7 @@
 
 
 ---  
- #  Ratio : [real](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown)
+ #  Ratio : [real](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real.markdown)
 
 > The ratio between the two stick joints. The ratio is used in the formula "length0 + ratio * length1 = 0".
 > ``` lang=cpp, name=Lightning

@@ -6,17 +6,17 @@
 
 |Methods|Properties|Base Classes|Derived Classes|
 |---|---|---|---|
-| |[ DeltaRadiansAroundAxis](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/ringgizmoevent.markdown#deltaradiansaroundaxis-z)|[gizmoupdateevent](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/gizmoupdateevent.markdown)| |
-| |[ RadiansAroundAxis](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/ringgizmoevent.markdown#radiansaroundaxis-plasma-e)| | |
-| |[ WorldRotation](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/ringgizmoevent.markdown#worldrotation-plasma-engin)| | |
-| |[ WorldRotationAxis](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/ringgizmoevent.markdown#worldrotationaxis-plasma-e)| | |
+| |[ DeltaRadiansAroundAxis](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/ringgizmoevent.markdown#deltaradiansaroundaxis-z)|[gizmoupdateevent](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/gizmoupdateevent.markdown)| |
+| |[ RadiansAroundAxis](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/ringgizmoevent.markdown#radiansaroundaxis-plasma-e)| | |
+| |[ WorldRotation](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/ringgizmoevent.markdown#worldrotation-plasma-engin)| | |
+| |[ WorldRotationAxis](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/ringgizmoevent.markdown#worldrotationaxis-plasma-e)| | |
 
 
  #  Properties
 
 
 ---  
- #  DeltaRadiansAroundAxis : [real](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown)
+ #  DeltaRadiansAroundAxis : [real](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -24,7 +24,7 @@
 
 
 ---  
- #  RadiansAroundAxis : [real](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown)
+ #  RadiansAroundAxis : [real](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -32,7 +32,7 @@
 
 
 ---  
- #  WorldRotation : [quaternion](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/quaternion.markdown)
+ #  WorldRotation : [quaternion](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/quaternion.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -40,7 +40,7 @@
 
 
 ---  
- #  WorldRotationAxis : [real3](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real3.markdown)
+ #  WorldRotationAxis : [real3](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real3.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning

@@ -2,33 +2,33 @@
 
 |Methods|Properties|Base Classes|Derived Classes|
 |---|---|---|---|
-|[ GetOffsetX](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/spritesheetimporter.markdown#getoffsetx-plasma-engine-d)|[ AlphaColor](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/spritesheetimporter.markdown#alphacolor-plasma-engine-d)|[composite](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/composite.markdown)| |
-|[ GetOffsetY](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/spritesheetimporter.markdown#getoffsety-plasma-engine-d)|[ CreatePalette](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/spritesheetimporter.markdown#createpalette-plasma-engin)| | |
-|[ SetOffsetX](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/spritesheetimporter.markdown#setoffsetx-void)|[ FrameCount](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/spritesheetimporter.markdown#framecount-plasma-engine-d)| | |
-|[ SetOffsetY](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/spritesheetimporter.markdown#setoffsety-void)|[ FrameHeight](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/spritesheetimporter.markdown#frameheight-plasma-engine)| | |
-| |[ FrameRate](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/spritesheetimporter.markdown#framerate-plasma-engine-do)| | |
-| |[ FramesPerRow](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/spritesheetimporter.markdown#framesperrow-plasma-engine)| | |
-| |[ FrameWidth](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/spritesheetimporter.markdown#framewidth-plasma-engine-d)| | |
-| |[ ImportFrames](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/spritesheetimporter.markdown#importframes-plasma-engine)| | |
-| |[ Name](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/spritesheetimporter.markdown#name-plasma-engine-documen)| | |
-| |[ NumberOfRows](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/spritesheetimporter.markdown#numberofrows-plasma-engine)| | |
-| |[ Origin](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/spritesheetimporter.markdown#origin-plasma-engine-docum)| | |
-| |[ PixelsPerUnit](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/spritesheetimporter.markdown#pixelsperunit-plasma-engin)| | |
-| |[ PreviewAnimate](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/spritesheetimporter.markdown#previewanimate-plasma-engi)| | |
-| |[ PreviewFrame](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/spritesheetimporter.markdown#previewframe-plasma-engine)| | |
-| |[ Smoothing](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/spritesheetimporter.markdown#smoothing-plasma-engine-do)| | |
-| |[ SourceSizeX](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/spritesheetimporter.markdown#sourcesizex-plasma-engine)| | |
-| |[ SourceSizeY](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/spritesheetimporter.markdown#sourcesizey-plasma-engine)| | |
-| |[ SpacingX](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/spritesheetimporter.markdown#spacingx-plasma-engine-doc)| | |
-| |[ SpacingY](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/spritesheetimporter.markdown#spacingy-plasma-engine-doc)| | |
-| |[ UseAlphaColorKey](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/spritesheetimporter.markdown#usealphacolorkey-plasma-en)| | |
+|[ GetOffsetX](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/spritesheetimporter.markdown#getoffsetx-plasma-engine-d)|[ AlphaColor](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/spritesheetimporter.markdown#alphacolor-plasma-engine-d)|[composite](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/composite.markdown)| |
+|[ GetOffsetY](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/spritesheetimporter.markdown#getoffsety-plasma-engine-d)|[ CreatePalette](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/spritesheetimporter.markdown#createpalette-plasma-engin)| | |
+|[ SetOffsetX](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/spritesheetimporter.markdown#setoffsetx-void)|[ FrameCount](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/spritesheetimporter.markdown#framecount-plasma-engine-d)| | |
+|[ SetOffsetY](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/spritesheetimporter.markdown#setoffsety-void)|[ FrameHeight](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/spritesheetimporter.markdown#frameheight-plasma-engine)| | |
+| |[ FrameRate](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/spritesheetimporter.markdown#framerate-plasma-engine-do)| | |
+| |[ FramesPerRow](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/spritesheetimporter.markdown#framesperrow-plasma-engine)| | |
+| |[ FrameWidth](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/spritesheetimporter.markdown#framewidth-plasma-engine-d)| | |
+| |[ ImportFrames](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/spritesheetimporter.markdown#importframes-plasma-engine)| | |
+| |[ Name](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/spritesheetimporter.markdown#name-plasma-engine-documen)| | |
+| |[ NumberOfRows](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/spritesheetimporter.markdown#numberofrows-plasma-engine)| | |
+| |[ Origin](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/spritesheetimporter.markdown#origin-plasma-engine-docum)| | |
+| |[ PixelsPerUnit](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/spritesheetimporter.markdown#pixelsperunit-plasma-engin)| | |
+| |[ PreviewAnimate](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/spritesheetimporter.markdown#previewanimate-plasma-engi)| | |
+| |[ PreviewFrame](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/spritesheetimporter.markdown#previewframe-plasma-engine)| | |
+| |[ Smoothing](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/spritesheetimporter.markdown#smoothing-plasma-engine-do)| | |
+| |[ SourceSizeX](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/spritesheetimporter.markdown#sourcesizex-plasma-engine)| | |
+| |[ SourceSizeY](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/spritesheetimporter.markdown#sourcesizey-plasma-engine)| | |
+| |[ SpacingX](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/spritesheetimporter.markdown#spacingx-plasma-engine-doc)| | |
+| |[ SpacingY](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/spritesheetimporter.markdown#spacingy-plasma-engine-doc)| | |
+| |[ UseAlphaColorKey](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/spritesheetimporter.markdown#usealphacolorkey-plasma-en)| | |
 
 
  #  Properties
 
 
 ---  
- #  AlphaColor : [real4](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real4.markdown)
+ #  AlphaColor : [real4](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real4.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -36,7 +36,7 @@
 
 
 ---  
- #  CreatePalette : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown)
+ #  CreatePalette : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/boolean.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -44,7 +44,7 @@
 
 
 ---  
- #  FrameCount : [integer](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/integer.markdown)
+ #  FrameCount : [integer](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/integer.markdown)
 
  `read-only`
 
@@ -54,7 +54,7 @@
 
 
 ---  
- #  FrameHeight : [integer](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/integer.markdown)
+ #  FrameHeight : [integer](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/integer.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -62,7 +62,7 @@
 
 
 ---  
- #  FrameRate : [real](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown)
+ #  FrameRate : [real](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -70,7 +70,7 @@
 
 
 ---  
- #  FramesPerRow : [integer](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/integer.markdown)
+ #  FramesPerRow : [integer](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/integer.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -78,7 +78,7 @@
 
 
 ---  
- #  FrameWidth : [integer](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/integer.markdown)
+ #  FrameWidth : [integer](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/integer.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -86,7 +86,7 @@
 
 
 ---  
- #  ImportFrames : [ImportFrames](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#importframes)
+ #  ImportFrames : [ImportFrames](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/enum_reference.markdown#importframes)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -94,7 +94,7 @@
 
 
 ---  
- #  Name : [string](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown)
+ #  Name : [string](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/string.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -102,7 +102,7 @@
 
 
 ---  
- #  NumberOfRows : [integer](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/integer.markdown)
+ #  NumberOfRows : [integer](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/integer.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -110,7 +110,7 @@
 
 
 ---  
- #  Origin : [SpriteOrigin](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#spriteorigin)
+ #  Origin : [SpriteOrigin](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/enum_reference.markdown#spriteorigin)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -118,7 +118,7 @@
 
 
 ---  
- #  PixelsPerUnit : [integer](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/integer.markdown)
+ #  PixelsPerUnit : [integer](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/integer.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -126,7 +126,7 @@
 
 
 ---  
- #  PreviewAnimate : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown)
+ #  PreviewAnimate : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/boolean.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -134,7 +134,7 @@
 
 
 ---  
- #  PreviewFrame : [integer](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/integer.markdown)
+ #  PreviewFrame : [integer](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/integer.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -142,7 +142,7 @@
 
 
 ---  
- #  Smoothing : [SpriteSampling](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#spritesampling)
+ #  Smoothing : [SpriteSampling](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/enum_reference.markdown#spritesampling)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -150,7 +150,7 @@
 
 
 ---  
- #  SourceSizeX : [integer](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/integer.markdown)
+ #  SourceSizeX : [integer](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/integer.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -158,7 +158,7 @@
 
 
 ---  
- #  SourceSizeY : [integer](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/integer.markdown)
+ #  SourceSizeY : [integer](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/integer.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -166,7 +166,7 @@
 
 
 ---  
- #  SpacingX : [integer](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/integer.markdown)
+ #  SpacingX : [integer](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/integer.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -174,7 +174,7 @@
 
 
 ---  
- #  SpacingY : [integer](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/integer.markdown)
+ #  SpacingY : [integer](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/integer.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -182,7 +182,7 @@
 
 
 ---  
- #  UseAlphaColorKey : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown)
+ #  UseAlphaColorKey : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/boolean.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -194,7 +194,7 @@
 
 
 ---  
- #  GetOffsetX : [integer](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/integer.markdown)
+ #  GetOffsetX : [integer](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/integer.markdown)
 
 > 
 > |Name|Type|Description|
@@ -205,7 +205,7 @@
 
 
 ---  
- #  GetOffsetY : [integer](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/integer.markdown)
+ #  GetOffsetY : [integer](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/integer.markdown)
 
 > 
 > |Name|Type|Description|
@@ -221,7 +221,7 @@
 > 
 > |Name|Type|Description|
 > |---|---|---|
-> |value|[integer](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/integer.markdown)| |
+> |value|[integer](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/integer.markdown)| |
 > ``` lang=cpp, name=Lightning
 > function SetOffsetX(value : Integer)
 > ``` 
@@ -233,7 +233,7 @@
 > 
 > |Name|Type|Description|
 > |---|---|---|
-> |value|[integer](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/integer.markdown)| |
+> |value|[integer](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/integer.markdown)| |
 > ``` lang=cpp, name=Lightning
 > function SetOffsetY(value : Integer)
 > ``` 

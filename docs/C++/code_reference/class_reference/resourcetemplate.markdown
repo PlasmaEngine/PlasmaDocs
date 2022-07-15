@@ -2,18 +2,18 @@
 
 |Methods|Properties|Base Classes|Derived Classes|
 |---|---|---|---|
-|[ Constructor](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/resourcetemplate.markdown#resourcetemplate-void)|[ Category](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/resourcetemplate.markdown#category-plasma-engine-doc)|[contentcomponent](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/contentcomponent.markdown)| |
-| |[ CategorySortWeight](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/resourcetemplate.markdown#categorysortweight-plasma)| | |
-| |[ Description](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/resourcetemplate.markdown#description-plasma-engine)| | |
-| |[ DisplayName](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/resourcetemplate.markdown#displayname-plasma-engine)| | |
-| |[ SortWeight](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/resourcetemplate.markdown#sortweight-plasma-engine-d)| | |
+|[ Constructor](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/resourcetemplate.markdown#resourcetemplate-void)|[ Category](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/resourcetemplate.markdown#category-plasma-engine-doc)|[contentcomponent](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/contentcomponent.markdown)| |
+| |[ CategorySortWeight](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/resourcetemplate.markdown#categorysortweight-plasma)| | |
+| |[ Description](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/resourcetemplate.markdown#description-plasma-engine)| | |
+| |[ DisplayName](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/resourcetemplate.markdown#displayname-plasma-engine)| | |
+| |[ SortWeight](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/resourcetemplate.markdown#sortweight-plasma-engine-d)| | |
 
 
  #  Properties
 
 
 ---  
- #  Category : [string](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown)
+ #  Category : [string](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/string.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -21,7 +21,7 @@
 
 
 ---  
- #  CategorySortWeight : [integer](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/integer.markdown)
+ #  CategorySortWeight : [integer](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/integer.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -29,7 +29,7 @@
 
 
 ---  
- #  Description : [string](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown)
+ #  Description : [string](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/string.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -37,7 +37,7 @@
 
 
 ---  
- #  DisplayName : [string](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown)
+ #  DisplayName : [string](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/string.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -45,7 +45,7 @@
 
 
 ---  
- #  SortWeight : [integer](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/integer.markdown)
+ #  SortWeight : [integer](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/integer.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning

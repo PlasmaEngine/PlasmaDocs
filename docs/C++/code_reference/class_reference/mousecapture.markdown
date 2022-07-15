@@ -4,16 +4,16 @@
 
 |Methods|Properties|Base Classes|Derived Classes|
 |---|---|---|---|
-|[ Capture](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/mousecapture.markdown#capture-plasma-engine-docu)|[ IsCaptured](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/mousecapture.markdown#iscaptured-plasma-engine-d)|[component](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/component.markdown)| |
-|[ Constructor](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/mousecapture.markdown#mousecapture-void)| | | |
-|[ ReleaseCapture](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/mousecapture.markdown#releasecapture-void)| | | |
+|[ Capture](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/mousecapture.markdown#capture-plasma-engine-docu)|[ IsCaptured](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/mousecapture.markdown#iscaptured-plasma-engine-d)|[component](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/component.markdown)| |
+|[ Constructor](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/mousecapture.markdown#mousecapture-void)| | | |
+|[ ReleaseCapture](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/mousecapture.markdown#releasecapture-void)| | | |
 
 
  #  Properties
 
 
 ---  
- #  IsCaptured : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown)
+ #  IsCaptured : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/boolean.markdown)
 
  `read-only`
 
@@ -27,12 +27,12 @@
 
 
 ---  
- #  Capture : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown)
+ #  Capture : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/boolean.markdown)
 
 > Starts the mouse manipulation. All mouse events will now only go to the owner of this Component. Returns whether or not the manipulation can be started.
 > |Name|Type|Description|
 > |---|---|---|
-> |e|[viewportmouseevent](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/viewportmouseevent.markdown)| |
+> |e|[viewportmouseevent](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/viewportmouseevent.markdown)| |
 > ``` lang=cpp, name=Lightning
 > function Capture(e : ViewportMouseEvent) : Boolean
 > ``` 
@@ -68,7 +68,7 @@
 > Releases the mouse manipulation.
 > |Name|Type|Description|
 > |---|---|---|
-> |e|[viewportmouseevent](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/viewportmouseevent.markdown)| |
+> |e|[viewportmouseevent](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/viewportmouseevent.markdown)| |
 > ``` lang=cpp, name=Lightning
 > function ReleaseCapture(e : ViewportMouseEvent)
 > ``` 

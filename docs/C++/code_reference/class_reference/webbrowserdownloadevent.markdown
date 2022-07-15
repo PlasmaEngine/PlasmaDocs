@@ -4,26 +4,26 @@
 
 |Methods|Properties|Base Classes|Derived Classes|
 |---|---|---|---|
-| |[ Cancel](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/webbrowserdownloadevent.markdown#cancel-plasma-engine-docum)|[webbrowserevent](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/webbrowserevent.markdown)| |
-| |[ ContentDisposition](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/webbrowserdownloadevent.markdown#contentdisposition-plasma)| | |
-| |[ CurrentSpeed](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/webbrowserdownloadevent.markdown#currentspeed-plasma-engine)| | |
-| |[ FilePath](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/webbrowserdownloadevent.markdown#filepath-plasma-engine-doc)| | |
-| |[ Id](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/webbrowserdownloadevent.markdown#id-plasma-engine-documenta)| | |
-| |[ IsComplete](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/webbrowserdownloadevent.markdown#iscomplete-plasma-engine-d)| | |
-| |[ IsInProgress](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/webbrowserdownloadevent.markdown#isinprogress-plasma-engine)| | |
-| |[ MimeType](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/webbrowserdownloadevent.markdown#mimetype-plasma-engine-doc)| | |
-| |[ OriginalUrl](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/webbrowserdownloadevent.markdown#originalurl-plasma-engine)| | |
-| |[ ReceivedBytes](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/webbrowserdownloadevent.markdown#receivedbytes-plasma-engin)| | |
-| |[ SuggestedFileName](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/webbrowserdownloadevent.markdown#suggestedfilename-plasma-e)| | |
-| |[ TotalBytes](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/webbrowserdownloadevent.markdown#totalbytes-plasma-engine-d)| | |
-| |[ Url](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/webbrowserdownloadevent.markdown#url-plasma-engine-document)| | |
+| |[ Cancel](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/webbrowserdownloadevent.markdown#cancel-plasma-engine-docum)|[webbrowserevent](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/webbrowserevent.markdown)| |
+| |[ ContentDisposition](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/webbrowserdownloadevent.markdown#contentdisposition-plasma)| | |
+| |[ CurrentSpeed](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/webbrowserdownloadevent.markdown#currentspeed-plasma-engine)| | |
+| |[ FilePath](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/webbrowserdownloadevent.markdown#filepath-plasma-engine-doc)| | |
+| |[ Id](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/webbrowserdownloadevent.markdown#id-plasma-engine-documenta)| | |
+| |[ IsComplete](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/webbrowserdownloadevent.markdown#iscomplete-plasma-engine-d)| | |
+| |[ IsInProgress](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/webbrowserdownloadevent.markdown#isinprogress-plasma-engine)| | |
+| |[ MimeType](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/webbrowserdownloadevent.markdown#mimetype-plasma-engine-doc)| | |
+| |[ OriginalUrl](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/webbrowserdownloadevent.markdown#originalurl-plasma-engine)| | |
+| |[ ReceivedBytes](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/webbrowserdownloadevent.markdown#receivedbytes-plasma-engin)| | |
+| |[ SuggestedFileName](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/webbrowserdownloadevent.markdown#suggestedfilename-plasma-e)| | |
+| |[ TotalBytes](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/webbrowserdownloadevent.markdown#totalbytes-plasma-engine-d)| | |
+| |[ Url](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/webbrowserdownloadevent.markdown#url-plasma-engine-document)| | |
 
 
  #  Properties
 
 
 ---  
- #  Cancel : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown)
+ #  Cancel : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/boolean.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -31,7 +31,7 @@
 
 
 ---  
- #  ContentDisposition : [string](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown)
+ #  ContentDisposition : [string](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/string.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -39,7 +39,7 @@
 
 
 ---  
- #  CurrentSpeed : [doubleinteger](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/doubleinteger.markdown)
+ #  CurrentSpeed : [doubleinteger](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/doubleinteger.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -47,7 +47,7 @@
 
 
 ---  
- #  FilePath : [string](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown)
+ #  FilePath : [string](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/string.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -55,7 +55,7 @@
 
 
 ---  
- #  Id : [integer](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/integer.markdown)
+ #  Id : [integer](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/integer.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -63,7 +63,7 @@
 
 
 ---  
- #  IsComplete : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown)
+ #  IsComplete : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/boolean.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -71,7 +71,7 @@
 
 
 ---  
- #  IsInProgress : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown)
+ #  IsInProgress : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/boolean.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -79,7 +79,7 @@
 
 
 ---  
- #  MimeType : [string](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown)
+ #  MimeType : [string](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/string.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -87,7 +87,7 @@
 
 
 ---  
- #  OriginalUrl : [string](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown)
+ #  OriginalUrl : [string](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/string.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -95,7 +95,7 @@
 
 
 ---  
- #  ReceivedBytes : [doubleinteger](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/doubleinteger.markdown)
+ #  ReceivedBytes : [doubleinteger](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/doubleinteger.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -103,7 +103,7 @@
 
 
 ---  
- #  SuggestedFileName : [string](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown)
+ #  SuggestedFileName : [string](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/string.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -111,7 +111,7 @@
 
 
 ---  
- #  TotalBytes : [doubleinteger](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/doubleinteger.markdown)
+ #  TotalBytes : [doubleinteger](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/doubleinteger.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -119,7 +119,7 @@
 
 
 ---  
- #  Url : [string](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown)
+ #  Url : [string](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/string.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning

@@ -6,18 +6,18 @@
 
 |Methods|Properties|Base Classes|Derived Classes|
 |---|---|---|---|
-| |[ LastChangeTimePassed](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/netproperty.markdown#lastchangetimepassed-zer)|[safeid32object](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/safeid32object.markdown)| |
-| |[ LastChangeTimestamp](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/netproperty.markdown#lastchangetimestamp-plasma)| | |
-| |[ Name](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/netproperty.markdown#name-plasma-engine-documen)| | |
-| |[ NetChannel](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/netproperty.markdown#netchannel-plasma-engine-d)| | |
-| |[ NetPropertyType](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/netproperty.markdown#netpropertytype-plasma-eng)| | |
+| |[ LastChangeTimePassed](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netproperty.markdown#lastchangetimepassed-zer)|[safeid32object](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/safeid32object.markdown)| |
+| |[ LastChangeTimestamp](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netproperty.markdown#lastchangetimestamp-plasma)| | |
+| |[ Name](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netproperty.markdown#name-plasma-engine-documen)| | |
+| |[ NetChannel](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netproperty.markdown#netchannel-plasma-engine-d)| | |
+| |[ NetPropertyType](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netproperty.markdown#netpropertytype-plasma-eng)| | |
 
 
  #  Properties
 
 
 ---  
- #  LastChangeTimePassed : [real](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown)
+ #  LastChangeTimePassed : [real](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real.markdown)
 
  `read-only`
 
@@ -27,7 +27,7 @@
 
 
 ---  
- #  LastChangeTimestamp : [real](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown)
+ #  LastChangeTimestamp : [real](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real.markdown)
 
  `read-only`
 
@@ -37,7 +37,7 @@
 
 
 ---  
- #  Name : [string](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown)
+ #  Name : [string](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/string.markdown)
 
  `read-only`
 
@@ -47,7 +47,7 @@
 
 
 ---  
- #  NetChannel : [netchannel](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/netchannel.markdown)
+ #  NetChannel : [netchannel](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netchannel.markdown)
 
  `read-only`
 
@@ -57,7 +57,7 @@
 
 
 ---  
- #  NetPropertyType : [netpropertytype](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/netpropertytype.markdown)
+ #  NetPropertyType : [netpropertytype](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netpropertytype.markdown)
 
  `read-only`
 

@@ -2,7 +2,7 @@
 
 |Methods|Properties|Base Classes|Derived Classes|
 |---|---|---|---|
-|[ Constructor](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/eventhandler.markdown#eventhandler-void)| | |[executablestate](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/executablestate.markdown)|
+|[ Constructor](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/eventhandler.markdown#eventhandler-void)| | |[executablestate](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/executablestate.markdown)|
 
 
  #  Properties

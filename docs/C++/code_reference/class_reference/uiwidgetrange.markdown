@@ -2,17 +2,17 @@
 
 |Methods|Properties|Base Classes|Derived Classes|
 |---|---|---|---|
-|[ MoveNext](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/uiwidgetrange.markdown#movenext-void)|[ All](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/uiwidgetrange.markdown#all-plasma-engine-document)| | |
-|[ Constructor](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/uiwidgetrange.markdown#uiwidgetrange-void)|[ Current](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/uiwidgetrange.markdown#current-plasma-engine-docu)| | |
-| |[ IsEmpty](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/uiwidgetrange.markdown#isempty-plasma-engine-docu)| | |
-| |[ IsNotEmpty](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/uiwidgetrange.markdown#isnotempty-plasma-engine-d)| | |
+|[ MoveNext](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/uiwidgetrange.markdown#movenext-void)|[ All](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/uiwidgetrange.markdown#all-plasma-engine-document)| | |
+|[ Constructor](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/uiwidgetrange.markdown#uiwidgetrange-void)|[ Current](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/uiwidgetrange.markdown#current-plasma-engine-docu)| | |
+| |[ IsEmpty](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/uiwidgetrange.markdown#isempty-plasma-engine-docu)| | |
+| |[ IsNotEmpty](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/uiwidgetrange.markdown#isnotempty-plasma-engine-d)| | |
 
 
  #  Properties
 
 
 ---  
- #  All : [uiwidgetrange](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/uiwidgetrange.markdown)
+ #  All : [uiwidgetrange](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/uiwidgetrange.markdown)
 
  `read-only`
 
@@ -22,7 +22,7 @@
 
 
 ---  
- #  Current : [uiwidget](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/uiwidget.markdown)
+ #  Current : [uiwidget](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/uiwidget.markdown)
 
  `read-only`
 
@@ -32,7 +32,7 @@
 
 
 ---  
- #  IsEmpty : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown)
+ #  IsEmpty : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/boolean.markdown)
 
  `read-only`
 
@@ -42,7 +42,7 @@
 
 
 ---  
- #  IsNotEmpty : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown)
+ #  IsNotEmpty : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/boolean.markdown)
 
  `read-only`
 
@@ -87,7 +87,7 @@
 > 
 > |Name|Type|Description|
 > |---|---|---|
-> |p0|[uiwidgetrange](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/uiwidgetrange.markdown)| |
+> |p0|[uiwidgetrange](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/uiwidgetrange.markdown)| |
 > ``` lang=cpp, name=Lightning
 > function UiWidgetRange(p0 : UiWidgetRange)
 > ``` 

@@ -6,14 +6,14 @@
 
 |Methods|Properties|Base Classes|Derived Classes|
 |---|---|---|---|
-| |[ Duration](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/animation.markdown#duration-plasma-engine-doc)|Resource| |
+| |[ Duration](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/animation.markdown#duration-plasma-engine-doc)|Resource| |
 
 
  #  Properties
 
 
 ---  
- #  Duration : [real](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown)
+ #  Duration : [real](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real.markdown)
 
  `read-only`
 

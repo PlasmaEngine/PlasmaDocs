@@ -6,17 +6,17 @@
 
 |Methods|Properties|Base Classes|Derived Classes|
 |---|---|---|---|
-|[ Constructor](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/drageffect.markdown#drageffect-void)|[ AngularDamping](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/drageffect.markdown#angulardamping-plasma-engi)|[physicseffect](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/physicseffect.markdown)| |
-| |[ AngularDrag](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/drageffect.markdown#angulardrag-plasma-engine)| | |
-| |[ LinearDamping](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/drageffect.markdown#lineardamping-plasma-engin)| | |
-| |[ LinearDrag](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/drageffect.markdown#lineardrag-plasma-engine-d)| | |
+|[ Constructor](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/drageffect.markdown#drageffect-void)|[ AngularDamping](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/drageffect.markdown#angulardamping-plasma-engi)|[physicseffect](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/physicseffect.markdown)| |
+| |[ AngularDrag](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/drageffect.markdown#angulardrag-plasma-engine)| | |
+| |[ LinearDamping](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/drageffect.markdown#lineardamping-plasma-engin)| | |
+| |[ LinearDrag](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/drageffect.markdown#lineardrag-plasma-engine-d)| | |
 
 
  #  Properties
 
 
 ---  
- #  AngularDamping : [real](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown)
+ #  AngularDamping : [real](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real.markdown)
 
 > Angular damping coefficient for applying an angular drag acceleration (accel = -kw). Note: this affects objects the same regardless of mass.
 > ``` lang=cpp, name=Lightning
@@ -24,7 +24,7 @@
 
 
 ---  
- #  AngularDrag : [real](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown)
+ #  AngularDrag : [real](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real.markdown)
 
 > The angular drag coefficient for applying an angular drag force (T = -kw).
 > ``` lang=cpp, name=Lightning
@@ -32,7 +32,7 @@
 
 
 ---  
- #  LinearDamping : [real](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown)
+ #  LinearDamping : [real](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real.markdown)
 
 > Linear damping coefficient for applying a linear drag acceleration (accel = -bv). Note: this affects objects the same regardless of mass.
 > ``` lang=cpp, name=Lightning
@@ -40,7 +40,7 @@
 
 
 ---  
- #  LinearDrag : [real](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown)
+ #  LinearDrag : [real](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real.markdown)
 
 > The linear drag coefficient for applying a linear drag force (F = -bv).
 > ``` lang=cpp, name=Lightning

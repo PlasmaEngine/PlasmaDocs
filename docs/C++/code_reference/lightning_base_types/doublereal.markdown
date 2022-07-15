@@ -2,17 +2,17 @@
 
 |Methods|Properties|Base Classes|Derived Classes|
 |---|---|---|---|
-|[ Parse](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/doublereal.markdown#parse-plasma-engine-docume)|[ NegativeMin](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/doublereal.markdown#negativemin-plasma-engine)| | |
-| |[ NegativeValueClosestToZero](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/doublereal.markdown#negativevalueclosesttoze)| | |
-| |[ PositiveMax](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/doublereal.markdown#positivemax-plasma-engine)| | |
-| |[ PositiveValueClosestToZero](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/doublereal.markdown#positivevalueclosesttoze)| | |
+|[ Parse](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/doublereal.markdown#parse-plasma-engine-docume)|[ NegativeMin](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/doublereal.markdown#negativemin-plasma-engine)| | |
+| |[ NegativeValueClosestToZero](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/doublereal.markdown#negativevalueclosesttoze)| | |
+| |[ PositiveMax](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/doublereal.markdown#positivemax-plasma-engine)| | |
+| |[ PositiveValueClosestToZero](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/doublereal.markdown#positivevalueclosesttoze)| | |
 
 
  #  Properties
 
 
 ---  
- #  NegativeMin : [doublereal](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/doublereal.markdown)
+ #  NegativeMin : [doublereal](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/doublereal.markdown)
 
  `read-only` `static`
 
@@ -22,7 +22,7 @@
 
 
 ---  
- #  NegativeValueClosestToZero : [doublereal](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/doublereal.markdown)
+ #  NegativeValueClosestToZero : [doublereal](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/doublereal.markdown)
 
  `read-only` `static`
 
@@ -32,7 +32,7 @@
 
 
 ---  
- #  PositiveMax : [doublereal](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/doublereal.markdown)
+ #  PositiveMax : [doublereal](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/doublereal.markdown)
 
  `read-only` `static`
 
@@ -42,7 +42,7 @@
 
 
 ---  
- #  PositiveValueClosestToZero : [doublereal](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/doublereal.markdown)
+ #  PositiveValueClosestToZero : [doublereal](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/doublereal.markdown)
 
  `read-only` `static`
 
@@ -56,14 +56,14 @@
 
 
 ---  
- #  Parse : [doublereal](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/doublereal.markdown)
+ #  Parse : [doublereal](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/doublereal.markdown)
 
  `static`
 
 > Attempt to convert the given StringRange to a DoubleReal. If parsing fails 0 is returned.
 > |Name|Type|Description|
 > |---|---|---|
-> |p0|[stringrange](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/stringrange.markdown)| |
+> |p0|[stringrange](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/stringrange.markdown)| |
 > ``` lang=cpp, name=Lightning
 > function Parse(p0 : StringRange) : DoubleReal
 > ``` 

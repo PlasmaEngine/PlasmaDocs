@@ -2,17 +2,17 @@
 
 |Methods|Properties|Base Classes|Derived Classes|
 |---|---|---|---|
-|[ Constructor](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/memberrange.markdown#memberrange-void)|[ All](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/memberrange.markdown#all-plasma-engine-document)| | |
-|[ MoveNext](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/memberrange.markdown#movenext-void)|[ Current](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/memberrange.markdown#current-plasma-engine-docu)| | |
-| |[ IsEmpty](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/memberrange.markdown#isempty-plasma-engine-docu)| | |
-| |[ IsNotEmpty](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/memberrange.markdown#isnotempty-plasma-engine-d)| | |
+|[ Constructor](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/memberrange.markdown#memberrange-void)|[ All](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/memberrange.markdown#all-plasma-engine-document)| | |
+|[ MoveNext](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/memberrange.markdown#movenext-void)|[ Current](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/memberrange.markdown#current-plasma-engine-docu)| | |
+| |[ IsEmpty](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/memberrange.markdown#isempty-plasma-engine-docu)| | |
+| |[ IsNotEmpty](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/memberrange.markdown#isnotempty-plasma-engine-d)| | |
 
 
  #  Properties
 
 
 ---  
- #  All : [memberrange](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/memberrange.markdown)
+ #  All : [memberrange](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/memberrange.markdown)
 
  `read-only`
 
@@ -22,7 +22,7 @@
 
 
 ---  
- #  Current : [member](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/member.markdown)
+ #  Current : [member](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/member.markdown)
 
  `read-only`
 
@@ -32,7 +32,7 @@
 
 
 ---  
- #  IsEmpty : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown)
+ #  IsEmpty : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/boolean.markdown)
 
  `read-only`
 
@@ -42,7 +42,7 @@
 
 
 ---  
- #  IsNotEmpty : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown)
+ #  IsNotEmpty : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/boolean.markdown)
 
  `read-only`
 
@@ -76,7 +76,7 @@
 > 
 > |Name|Type|Description|
 > |---|---|---|
-> |p0|[memberrange](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/memberrange.markdown)| |
+> |p0|[memberrange](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/memberrange.markdown)| |
 > ``` lang=cpp, name=Lightning
 > function MemberRange(p0 : MemberRange)
 > ``` 

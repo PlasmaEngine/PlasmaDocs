@@ -6,33 +6,33 @@
 
 |Methods|Properties|Base Classes|Derived Classes|
 |---|---|---|---|
-|[ ResetCount](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/particleemittershared.markdown#resetcount-void)|[ Active](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/particleemittershared.markdown#active-plasma-engine-docum)|[particleemitter](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/particleemitter.markdown)|[boxparticleemitter](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/boxparticleemitter.markdown)|
-| |[ EmitCount](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/particleemittershared.markdown#emitcount-plasma-engine-do)| |[meshparticleemitter](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/meshparticleemitter.markdown)|
-| |[ EmitDelay](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/particleemittershared.markdown#emitdelay-plasma-engine-do)| |[sphericalparticleemitter](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/sphericalparticleemitter.markdown)|
-| |[ EmitRate](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/particleemittershared.markdown#emitrate-plasma-engine-doc)| |[splineparticleemitter](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/splineparticleemitter.markdown)|
-| |[ EmitRateSoftStartTime](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/particleemittershared.markdown#emitratesoftstarttime-ze)| | |
-| |[ EmitterSize](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/particleemittershared.markdown#emittersize-plasma-engine)| | |
-| |[ EmitterVelocityPercent](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/particleemittershared.markdown#emittervelocitypercent-z)| | |
-| |[ EmitVariance](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/particleemittershared.markdown#emitvariance-plasma-engine)| | |
-| |[ FastMovingEmitter](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/particleemittershared.markdown#fastmovingemitter-plasma-e)| | |
-| |[ Fill](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/particleemittershared.markdown#fill-plasma-engine-documen)| | |
-| |[ Lifetime](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/particleemittershared.markdown#lifetime-plasma-engine-doc)| | |
-| |[ LifetimeVariance](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/particleemittershared.markdown#lifetimevariance-plasma-en)| | |
-| |[ RandomSpin](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/particleemittershared.markdown#randomspin-plasma-engine-d)| | |
-| |[ RandomVelocity](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/particleemittershared.markdown#randomvelocity-plasma-engi)| | |
-| |[ Size](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/particleemittershared.markdown#size-plasma-engine-documen)| | |
-| |[ SizeVariance](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/particleemittershared.markdown#sizevariance-plasma-engine)| | |
-| |[ Spin](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/particleemittershared.markdown#spin-plasma-engine-documen)| | |
-| |[ SpinVariance](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/particleemittershared.markdown#spinvariance-plasma-engine)| | |
-| |[ StartVelocity](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/particleemittershared.markdown#startvelocity-plasma-engin)| | |
-| |[ TangentVelocity](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/particleemittershared.markdown#tangentvelocity-plasma-eng)| | |
+|[ ResetCount](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/particleemittershared.markdown#resetcount-void)|[ Active](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/particleemittershared.markdown#active-plasma-engine-docum)|[particleemitter](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/particleemitter.markdown)|[boxparticleemitter](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/boxparticleemitter.markdown)|
+| |[ EmitCount](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/particleemittershared.markdown#emitcount-plasma-engine-do)| |[meshparticleemitter](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/meshparticleemitter.markdown)|
+| |[ EmitDelay](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/particleemittershared.markdown#emitdelay-plasma-engine-do)| |[sphericalparticleemitter](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/sphericalparticleemitter.markdown)|
+| |[ EmitRate](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/particleemittershared.markdown#emitrate-plasma-engine-doc)| |[splineparticleemitter](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/splineparticleemitter.markdown)|
+| |[ EmitRateSoftStartTime](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/particleemittershared.markdown#emitratesoftstarttime-ze)| | |
+| |[ EmitterSize](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/particleemittershared.markdown#emittersize-plasma-engine)| | |
+| |[ EmitterVelocityPercent](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/particleemittershared.markdown#emittervelocitypercent-z)| | |
+| |[ EmitVariance](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/particleemittershared.markdown#emitvariance-plasma-engine)| | |
+| |[ FastMovingEmitter](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/particleemittershared.markdown#fastmovingemitter-plasma-e)| | |
+| |[ Fill](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/particleemittershared.markdown#fill-plasma-engine-documen)| | |
+| |[ Lifetime](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/particleemittershared.markdown#lifetime-plasma-engine-doc)| | |
+| |[ LifetimeVariance](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/particleemittershared.markdown#lifetimevariance-plasma-en)| | |
+| |[ RandomSpin](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/particleemittershared.markdown#randomspin-plasma-engine-d)| | |
+| |[ RandomVelocity](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/particleemittershared.markdown#randomvelocity-plasma-engi)| | |
+| |[ Size](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/particleemittershared.markdown#size-plasma-engine-documen)| | |
+| |[ SizeVariance](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/particleemittershared.markdown#sizevariance-plasma-engine)| | |
+| |[ Spin](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/particleemittershared.markdown#spin-plasma-engine-documen)| | |
+| |[ SpinVariance](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/particleemittershared.markdown#spinvariance-plasma-engine)| | |
+| |[ StartVelocity](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/particleemittershared.markdown#startvelocity-plasma-engin)| | |
+| |[ TangentVelocity](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/particleemittershared.markdown#tangentvelocity-plasma-eng)| | |
 
 
  #  Properties
 
 
 ---  
- #  Active : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown)
+ #  Active : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/boolean.markdown)
 
 > Is this emitter currently emitting particles?
 > ``` lang=cpp, name=Lightning
@@ -40,7 +40,7 @@
 
 
 ---  
- #  EmitCount : [integer](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/integer.markdown)
+ #  EmitCount : [integer](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/integer.markdown)
 
 > Number of particles to emit per reset.
 > ``` lang=cpp, name=Lightning
@@ -48,7 +48,7 @@
 
 
 ---  
- #  EmitDelay : [real](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown)
+ #  EmitDelay : [real](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real.markdown)
 
 > Time in seconds to delay the emission of particles from time of creation.
 > ``` lang=cpp, name=Lightning
@@ -56,7 +56,7 @@
 
 
 ---  
- #  EmitRate : [real](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown)
+ #  EmitRate : [real](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real.markdown)
 
 > Rate that particles spawn per second.
 > ``` lang=cpp, name=Lightning
@@ -64,7 +64,7 @@
 
 
 ---  
- #  EmitRateSoftStartTime : [real](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown)
+ #  EmitRateSoftStartTime : [real](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real.markdown)
 
 > Slowly ramps up to EmitRate over this time.
 > ``` lang=cpp, name=Lightning
@@ -72,7 +72,7 @@
 
 
 ---  
- #  EmitterSize : [real3](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real3.markdown)
+ #  EmitterSize : [real3](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real3.markdown)
 
 > Size of the emitter.
 > ``` lang=cpp, name=Lightning
@@ -80,7 +80,7 @@
 
 
 ---  
- #  EmitterVelocityPercent : [real](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown)
+ #  EmitterVelocityPercent : [real](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real.markdown)
 
 > How much of the objects velocity is added to the particles.
 > ``` lang=cpp, name=Lightning
@@ -88,7 +88,7 @@
 
 
 ---  
- #  EmitVariance : [real](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown)
+ #  EmitVariance : [real](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real.markdown)
 
 > How much the emit can vary per sample.
 > ``` lang=cpp, name=Lightning
@@ -96,7 +96,7 @@
 
 
 ---  
- #  FastMovingEmitter : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown)
+ #  FastMovingEmitter : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/boolean.markdown)
 
 > Whether or not we attempt to emit along the vector between the previous position to the current position, which looks better for fast moving particle systems Note: Particle systems that teleport will emit along the teleport line.
 > ``` lang=cpp, name=Lightning
@@ -104,7 +104,7 @@
 
 
 ---  
- #  Fill : [real](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown)
+ #  Fill : [real](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real.markdown)
 
 > How much area of the emitter to used 0 to 1.
 > ``` lang=cpp, name=Lightning
@@ -112,7 +112,7 @@
 
 
 ---  
- #  Lifetime : [real](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown)
+ #  Lifetime : [real](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real.markdown)
 
 > How a particle's starting lifetime is.
 > ``` lang=cpp, name=Lightning
@@ -120,7 +120,7 @@
 
 
 ---  
- #  LifetimeVariance : [real](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown)
+ #  LifetimeVariance : [real](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real.markdown)
 
 > How much lifetime can vary per particle.
 > ``` lang=cpp, name=Lightning
@@ -128,7 +128,7 @@
 
 
 ---  
- #  RandomSpin : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown)
+ #  RandomSpin : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/boolean.markdown)
 
 > Each particle should start with random spin.
 > ``` lang=cpp, name=Lightning
@@ -136,7 +136,7 @@
 
 
 ---  
- #  RandomVelocity : [real3](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real3.markdown)
+ #  RandomVelocity : [real3](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real3.markdown)
 
 > Random Velocity per particle.
 > ``` lang=cpp, name=Lightning
@@ -144,7 +144,7 @@
 
 
 ---  
- #  Size : [real](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown)
+ #  Size : [real](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real.markdown)
 
 > Size of each particle spawned.
 > ``` lang=cpp, name=Lightning
@@ -152,7 +152,7 @@
 
 
 ---  
- #  SizeVariance : [real](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown)
+ #  SizeVariance : [real](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real.markdown)
 
 > How much the size can vary from the base size per particle.
 > ``` lang=cpp, name=Lightning
@@ -160,7 +160,7 @@
 
 
 ---  
- #  Spin : [real](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown)
+ #  Spin : [real](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real.markdown)
 
 > Speed in rads per second of the particle.
 > ``` lang=cpp, name=Lightning
@@ -168,7 +168,7 @@
 
 
 ---  
- #  SpinVariance : [real](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown)
+ #  SpinVariance : [real](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real.markdown)
 
 > How much spin speed can vary per particle.
 > ``` lang=cpp, name=Lightning
@@ -176,7 +176,7 @@
 
 
 ---  
- #  StartVelocity : [real3](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real3.markdown)
+ #  StartVelocity : [real3](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real3.markdown)
 
 > Velocity of each particle at start.
 > ``` lang=cpp, name=Lightning
@@ -184,7 +184,7 @@
 
 
 ---  
- #  TangentVelocity : [real3](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real3.markdown)
+ #  TangentVelocity : [real3](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real3.markdown)
 
 > Velocity of each particle in x horizontal tangent y vertical tangent and z outward tangent.
 > ``` lang=cpp, name=Lightning

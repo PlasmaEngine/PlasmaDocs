@@ -2,12 +2,12 @@
 
 |Methods|Properties|Base Classes|Derived Classes|
 |---|---|---|---|
-|[ GetValue](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/property_type .markdown#getvalue-plasma-engine-doc)|[[plasma_engine_documentation/code_reference/lightning_base_types/property_type /#get-delegate () : key | Get]]| | |
-|[ Constructor](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/property_type .markdown#property-type-void)|[ Getter](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/property_type .markdown#getter-plasma-engine-docum)| | |
-|[ SetValue](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/property_type .markdown#setvalue-void)|[ Instance](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/property_type .markdown#instance-t)| | |
-| |[ Property](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/property_type .markdown#property-plasma-engine-doc)| | |
+|[ GetValue](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/property_type .markdown#getvalue-plasma-engine-doc)|[[plasma_engine_documentation/code_reference/lightning_base_types/property_type /#get-delegate () : key | Get]]| | |
+|[ Constructor](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/property_type .markdown#property-type-void)|[ Getter](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/property_type .markdown#getter-plasma-engine-docum)| | |
+|[ SetValue](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/property_type .markdown#setvalue-void)|[ Instance](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/property_type .markdown#instance-t)| | |
+| |[ Property](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/property_type .markdown#property-plasma-engine-doc)| | |
 | |[[plasma_engine_documentation/code_reference/lightning_base_types/property_type /#set-delegate (value : ke | Set]]| | |
-| |[ Setter](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/property_type .markdown#setter-plasma-engine-docum)| | |
+| |[ Setter](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/property_type .markdown#setter-plasma-engine-docum)| | |
 
 
  #  Properties
@@ -22,7 +22,7 @@
 
 
 ---  
- #  Getter : [function](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/function.markdown)
+ #  Getter : [function](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/function.markdown)
 
  `read-only`
 
@@ -40,7 +40,7 @@
 
 
 ---  
- #  Property : Property[[type](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/type.markdown)]
+ #  Property : Property[[type](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/type.markdown)]
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -56,7 +56,7 @@
 
 
 ---  
- #  Setter : [function](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/function.markdown)
+ #  Setter : [function](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/function.markdown)
 
  `read-only`
 

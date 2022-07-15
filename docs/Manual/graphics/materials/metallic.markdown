@@ -9,7 +9,7 @@ Using either a map or a value fragment, one may assign a metallic value between 
 
 # The Metallic Fragment
 
-Metallic may be set using a [Texture](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/texture.markdown) map or a value. If a value is used, it applied uniformly across the entire Material. If a map is used, the metallic value may be set to different levels across the Material.  If there is neither a metallic map or value fragment, it would be as if a metallic value of `0.0` is applied to the entire Material.
+Metallic may be set using a [Texture](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/texture.markdown) map or a value. If a value is used, it applied uniformly across the entire Material. If a map is used, the metallic value may be set to different levels across the Material.  If there is neither a metallic map or value fragment, it would be as if a metallic value of `0.0` is applied to the entire Material.
 
 ## MetallicValue
 
@@ -38,5 +38,5 @@ A MetallicMap fragment is appropriate to use when the Material will have section
 - [adding_textures_and_sprites](https://plasmaengine.github.io/PlasmaDocs/Manual/graphics/adding_assets/adding_textures_and_sprites.markdown)
 
 ## Code Reference
-- [material](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/material.markdown)
-- [texture](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/texture.markdown) 
+- [material](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/material.markdown)
+- [texture](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/texture.markdown) 

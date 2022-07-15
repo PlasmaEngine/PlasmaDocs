@@ -4,15 +4,15 @@
 
 |Methods|Properties|Base Classes|Derived Classes|
 |---|---|---|---|
-| |[ Name](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/webbrowserpopupcreateevent.markdown#name-plasma-engine-documen)|[webbrowserevent](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/webbrowserevent.markdown)| |
-| |[ Url](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/webbrowserpopupcreateevent.markdown#url-plasma-engine-document)| | |
+| |[ Name](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/webbrowserpopupcreateevent.markdown#name-plasma-engine-documen)|[webbrowserevent](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/webbrowserevent.markdown)| |
+| |[ Url](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/webbrowserpopupcreateevent.markdown#url-plasma-engine-document)| | |
 
 
  #  Properties
 
 
 ---  
- #  Name : [string](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown)
+ #  Name : [string](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/string.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -20,7 +20,7 @@
 
 
 ---  
- #  Url : [string](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown)
+ #  Url : [string](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/string.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning

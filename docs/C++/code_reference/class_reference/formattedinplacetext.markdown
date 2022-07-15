@@ -2,7 +2,7 @@
 
 |Methods|Properties|Base Classes|Derived Classes|
 |---|---|---|---|
-|[ Constructor](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/formattedinplacetext.markdown#formattedinplacetext-voi)| | | |
+|[ Constructor](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/formattedinplacetext.markdown#formattedinplacetext-voi)| | | |
 
 
  #  Properties
@@ -33,7 +33,7 @@
 > 
 > |Name|Type|Description|
 > |---|---|---|
-> |p0|[formattedinplacetext](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/formattedinplacetext.markdown)| |
+> |p0|[formattedinplacetext](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/formattedinplacetext.markdown)| |
 > ``` lang=cpp, name=Lightning
 > function FormattedInPlaceText(p0 : FormattedInPlaceText)
 > ``` 

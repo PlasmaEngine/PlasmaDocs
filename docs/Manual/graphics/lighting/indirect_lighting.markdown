@@ -3,7 +3,7 @@ Indirect lighting in Plasma takes the form of image-based lighting, where an ima
 
 When using a skybox, it may be either visible, providing a static background for a scene (e.g. clouds in a sky) or invisible, in which the skybox provides ambient light for an interior scene (e.g. a cave that needs to have a constant source of ambient light not provided by [deferred or forward renderer](https://plasmaengine.github.io/PlasmaDocs/Manual/graphics/renderer/deferred_renderer.markdown).
 
-NOTE: If a skybox is used and is visible, [MipMapping](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#texturemipmapping) on the skybox [TextureBuilder](https://plasmaengine.github.io/PlasmaDocs/Manual/graphics/adding_assets/adding_textures_and_sprites.markdown) ContentComponent must be set to `PreGenerated`.
+NOTE: If a skybox is used and is visible, [MipMapping](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/enum_reference.markdown#texturemipmapping) on the skybox [TextureBuilder](https://plasmaengine.github.io/PlasmaDocs/Manual/graphics/adding_assets/adding_textures_and_sprites.markdown) ContentComponent must be set to `PreGenerated`.
 
 When applying indirect lighting to scene, the math used is the same as is used when applying [direct lighting](https://plasmaengine.github.io/PlasmaDocs/Manual/graphics/lighting/direct_lighting.markdown). The only difference between the two is that much of the math is pre-calculated for indirect lighting. 
 

@@ -138,5 +138,5 @@ The difference may be subtle or pronounced depending on the degree of change bet
 - [materials](https://plasmaengine.github.io/PlasmaDocs/Manual/graphics/materials.markdown)
 
 ### Code Reference
-- [model](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/model.markdown)
-- [material](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/material.markdown) 
+- [model](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/model.markdown)
+- [material](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/material.markdown) 

@@ -4,21 +4,21 @@
 
 |Methods|Properties|Base Classes|Derived Classes|
 |---|---|---|---|
-|[ Constructor](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/creationtool.markdown#creationtool-void)|[ Depth](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/creationtool.markdown#depth-plasma-engine-docume)|[component](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/component.markdown)| |
-| |[ DepthPlane](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/creationtool.markdown#depthplane-plasma-engine-d)| | |
-| |[ ObjectToSpawn](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/creationtool.markdown#objecttospawn-plasma-engin)| | |
-| |[ Offset](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/creationtool.markdown#offset-plasma-engine-docum)| | |
-| |[ PlacementMode](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/creationtool.markdown#placementmode-plasma-engin)| | |
-| |[ Raycaster](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/creationtool.markdown#raycaster-plasma-engine-do)| | |
-| |[ SnapDistance](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/creationtool.markdown#snapdistance-plasma-engine)| | |
-| |[ Snapping](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/creationtool.markdown#snapping-plasma-engine-doc)| | |
+|[ Constructor](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/creationtool.markdown#creationtool-void)|[ Depth](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/creationtool.markdown#depth-plasma-engine-docume)|[component](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/component.markdown)| |
+| |[ DepthPlane](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/creationtool.markdown#depthplane-plasma-engine-d)| | |
+| |[ ObjectToSpawn](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/creationtool.markdown#objecttospawn-plasma-engin)| | |
+| |[ Offset](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/creationtool.markdown#offset-plasma-engine-docum)| | |
+| |[ PlacementMode](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/creationtool.markdown#placementmode-plasma-engin)| | |
+| |[ Raycaster](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/creationtool.markdown#raycaster-plasma-engine-do)| | |
+| |[ SnapDistance](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/creationtool.markdown#snapdistance-plasma-engine)| | |
+| |[ Snapping](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/creationtool.markdown#snapping-plasma-engine-doc)| | |
 
 
  #  Properties
 
 
 ---  
- #  Depth : [real](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown)
+ #  Depth : [real](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -26,7 +26,7 @@
 
 
 ---  
- #  DepthPlane : [real](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown)
+ #  DepthPlane : [real](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -34,7 +34,7 @@
 
 
 ---  
- #  ObjectToSpawn : [archetype](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/archetype.markdown)
+ #  ObjectToSpawn : [archetype](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/archetype.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -42,7 +42,7 @@
 
 
 ---  
- #  Offset : [real3](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real3.markdown)
+ #  Offset : [real3](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real3.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -50,7 +50,7 @@
 
 
 ---  
- #  PlacementMode : [Placement](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#placement)
+ #  PlacementMode : [Placement](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/enum_reference.markdown#placement)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -58,7 +58,7 @@
 
 
 ---  
- #  Raycaster : [raycaster](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/raycaster.markdown)
+ #  Raycaster : [raycaster](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/raycaster.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -66,7 +66,7 @@
 
 
 ---  
- #  SnapDistance : [real](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown)
+ #  SnapDistance : [real](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -74,7 +74,7 @@
 
 
 ---  
- #  Snapping : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown)
+ #  Snapping : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/boolean.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning

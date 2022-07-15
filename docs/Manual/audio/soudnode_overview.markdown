@@ -1,5 +1,5 @@
 # Sound Node Overview
-[ SoundNodes ](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/soundnode.markdown) are the building blocks behind all audio in the Plasma Engine. A SoundNode receives audio data from other SoundNodes through its input connections, modifies that data in some way (or simply collects it), then passes it along to more SoundNodes through its output connections.
+[ SoundNodes ](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/soundnode.markdown) are the building blocks behind all audio in the Plasma Engine. A SoundNode receives audio data from other SoundNodes through its input connections, modifies that data in some way (or simply collects it), then passes it along to more SoundNodes through its output connections.
 
 Some SoundNodes only generate audio data, like [SoundInstances](https://plasmaengine.github.io/PlasmaDocs/Manual/audio/soundinstance.markdown). Those nodes do not collect anything from their input connections and attaching nodes to their input would have no effect.
 
@@ -72,7 +72,7 @@ If the `AutoCollapse` property is set to True, the SoundNode will automatically 
 
 ## Lightning Events
 
-- The `SoundNodeDisconnected` [ SoundEvent ](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/soundevent.markdown) is sent by all SoundNodes when they are is completely disconnected from the graph (when the node has no more inputs or outputs).
+- The `SoundNodeDisconnected` [ SoundEvent ](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/soundevent.markdown) is sent by all SoundNodes when they are is completely disconnected from the graph (when the node has no more inputs or outputs).
 
 # Related Materials
 
@@ -82,6 +82,6 @@ If the `AutoCollapse` property is set to True, the SoundNode will automatically 
 - [SoundNode Graph ](https://plasmaengine.github.io/PlasmaDocs/Manual/audio/soundnode_graph.markdown)
 
  ## Reference
-- [ SoundNode ](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/soundnode.markdown) 
+- [ SoundNode ](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/soundnode.markdown) 
 
  

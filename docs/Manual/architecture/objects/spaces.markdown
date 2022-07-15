@@ -1,5 +1,5 @@
 # Spaces
-[Space](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/space.markdown) is the infinite three-dimensional extent in which objects and events have relative position and direction. It consists of 3 dimensional axes and time.
+[Space](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/space.markdown) is the infinite three-dimensional extent in which objects and events have relative position and direction. It consists of 3 dimensional axes and time.
 
 Spaces in the Plasma Engine are containers for game objects. When a level is loaded, all the game objects from that level are put into a space. Also, when you create a game object in code, you must put it into a space, usually the same one that the level was loaded into. In a simple game you only have one space, which is where all your game objects go. Each space has its own instances of the core systems of the engine: graphics, physics, etc. Because of this, game objects in two different spaces will not collide or otherwise physically interact. Game objects in different spaces are rendered separately, but can be layered, such as when using one space for level game objects and another for UI game objects. Creating a separate space for UI game objects is one of the most common uses of multiple spaces in a game.
 
@@ -106,8 +106,8 @@ NOTE: The ReactiveSpace component is deprecated and changes made to it will have
 - [Archetypes](https://plasmaengine.github.io/PlasmaDocs/Manual/architecture/archetypes.markdown)
 - [GameSession object](https://plasmaengine.github.io/PlasmaDocs/Manual/architecture/objects/gamesession.markdown)
 ## Code Reference
-- [timespace](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/timespace.markdown)
-- [graphicsspace](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/graphicsspace.markdown)
+- [timespace](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/timespace.markdown)
+- [graphicsspace](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/graphicsspace.markdown)
 - [physicsspace](https://plasmaengine.github.io/PlasmaDocs/Manual/physics/physicsspace.markdown)
 - [soundspace](https://plasmaengine.github.io/PlasmaDocs/Manual/audio/soundspace.markdown)
 - [objectevent](https://plasmaengine.github.io/PlasmaDocs/Manual//code_reference/class_reference/objectevent.markdown)

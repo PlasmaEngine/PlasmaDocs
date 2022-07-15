@@ -1,5 +1,5 @@
 # Sound Space
-The [ SoundSpace ](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/soundspace.markdown) is one of the default components of a Space. Its basic purpose is to separate sound areas, which means that a [SoundListener](https://plasmaengine.github.io/PlasmaDocs/Manual/audio/soundlistener.markdown) in one SoundSpace can't hear sounds in a different SoundSpace. It also allows the user to control properties like pitch and volume for all sounds in the Space. 
+The [ SoundSpace ](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/soundspace.markdown) is one of the default components of a Space. Its basic purpose is to separate sound areas, which means that a [SoundListener](https://plasmaengine.github.io/PlasmaDocs/Manual/audio/soundlistener.markdown) in one SoundSpace can't hear sounds in a different SoundSpace. It also allows the user to control properties like pitch and volume for all sounds in the Space. 
 
 # Using SoundSpaces
 
@@ -51,6 +51,6 @@ SoundNodes cannot be inserted after the `InputNode` or before the `OutputNode`, 
 - [SoundNode ](https://plasmaengine.github.io/PlasmaDocs/Manual/audio/soundnode.markdown)
 
 ## Reference
-- [ SoundSpace ](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/soundspace.markdown) 
+- [ SoundSpace ](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/soundspace.markdown) 
 
  

@@ -4,16 +4,16 @@
 
 |Methods|Properties|Base Classes|Derived Classes|
 |---|---|---|---|
-|[ Constructor](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/projectdescription.markdown#projectdescription-void)|[ LongDescription](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/projectdescription.markdown#longdescription-plasma-eng)|[component](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/component.markdown)| |
-| |[ ShortDescription](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/projectdescription.markdown#shortdescription-plasma-en)| | |
-| |[ Tags](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/projectdescription.markdown#tags-plasma-engine-documen)| | |
+|[ Constructor](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/projectdescription.markdown#projectdescription-void)|[ LongDescription](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/projectdescription.markdown#longdescription-plasma-eng)|[component](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/component.markdown)| |
+| |[ ShortDescription](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/projectdescription.markdown#shortdescription-plasma-en)| | |
+| |[ Tags](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/projectdescription.markdown#tags-plasma-engine-documen)| | |
 
 
  #  Properties
 
 
 ---  
- #  LongDescription : [string](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown)
+ #  LongDescription : [string](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/string.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -21,7 +21,7 @@
 
 
 ---  
- #  ShortDescription : [string](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown)
+ #  ShortDescription : [string](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/string.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -29,7 +29,7 @@
 
 
 ---  
- #  Tags : [string](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown)
+ #  Tags : [string](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/string.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning

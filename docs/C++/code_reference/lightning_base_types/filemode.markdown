@@ -2,20 +2,20 @@
 
 |Methods|Properties|Base Classes|Derived Classes|
 |---|---|---|---|
-| |[ Append](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/filemode.markdown#append-plasma-engine-docum)|[enum](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/enum.markdown)| |
-| |[ Read](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/filemode.markdown#read-plasma-engine-documen)| | |
-| |[ Sequential](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/filemode.markdown#sequential-plasma-engine-d)| | |
-| |[ ShareDelete](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/filemode.markdown#sharedelete-plasma-engine)| | |
-| |[ ShareRead](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/filemode.markdown#shareread-plasma-engine-do)| | |
-| |[ ShareWrite](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/filemode.markdown#sharewrite-plasma-engine-d)| | |
-| |[ Write](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/filemode.markdown#write-plasma-engine-docume)| | |
+| |[ Append](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/filemode.markdown#append-plasma-engine-docum)|[enum](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/enum.markdown)| |
+| |[ Read](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/filemode.markdown#read-plasma-engine-documen)| | |
+| |[ Sequential](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/filemode.markdown#sequential-plasma-engine-d)| | |
+| |[ ShareDelete](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/filemode.markdown#sharedelete-plasma-engine)| | |
+| |[ ShareRead](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/filemode.markdown#shareread-plasma-engine-do)| | |
+| |[ ShareWrite](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/filemode.markdown#sharewrite-plasma-engine-d)| | |
+| |[ Write](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/filemode.markdown#write-plasma-engine-docume)| | |
 
 
  #  Properties
 
 
 ---  
- #  Append : [filemode](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/filemode.markdown)
+ #  Append : [filemode](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/filemode.markdown)
 
  `read-only` `static`
 
@@ -25,7 +25,7 @@
 
 
 ---  
- #  Read : [filemode](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/filemode.markdown)
+ #  Read : [filemode](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/filemode.markdown)
 
  `read-only` `static`
 
@@ -35,7 +35,7 @@
 
 
 ---  
- #  Sequential : [filemode](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/filemode.markdown)
+ #  Sequential : [filemode](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/filemode.markdown)
 
  `read-only` `static`
 
@@ -45,7 +45,7 @@
 
 
 ---  
- #  ShareDelete : [filemode](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/filemode.markdown)
+ #  ShareDelete : [filemode](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/filemode.markdown)
 
  `read-only` `static`
 
@@ -55,7 +55,7 @@
 
 
 ---  
- #  ShareRead : [filemode](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/filemode.markdown)
+ #  ShareRead : [filemode](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/filemode.markdown)
 
  `read-only` `static`
 
@@ -65,7 +65,7 @@
 
 
 ---  
- #  ShareWrite : [filemode](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/filemode.markdown)
+ #  ShareWrite : [filemode](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/filemode.markdown)
 
  `read-only` `static`
 
@@ -75,7 +75,7 @@
 
 
 ---  
- #  Write : [filemode](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/filemode.markdown)
+ #  Write : [filemode](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/filemode.markdown)
 
  `read-only` `static`
 

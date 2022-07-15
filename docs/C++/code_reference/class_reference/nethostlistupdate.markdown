@@ -6,14 +6,14 @@
 
 |Methods|Properties|Base Classes|Derived Classes|
 |---|---|---|---|
-| |[ Network](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/nethostlistupdate.markdown#network-plasma-engine-docu)|[event](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/event.markdown)| |
+| |[ Network](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/nethostlistupdate.markdown#network-plasma-engine-docu)|[event](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/event.markdown)| |
 
 
  #  Properties
 
 
 ---  
- #  Network : [Network](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#network)
+ #  Network : [Network](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/enum_reference.markdown#network)
 
  `read-only`
 

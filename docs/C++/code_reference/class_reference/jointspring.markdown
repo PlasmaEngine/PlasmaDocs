@@ -6,17 +6,17 @@
 
 |Methods|Properties|Base Classes|Derived Classes|
 |---|---|---|---|
-|[ Constructor](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/jointspring.markdown#jointspring-void)|[ Active](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/jointspring.markdown#active-plasma-engine-docum)|[component](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/component.markdown)| |
-| |[ AtomIds](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/jointspring.markdown#atomids-plasma-engine-docu)| | |
-| |[ DampingRatio](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/jointspring.markdown#dampingratio-plasma-engine)| | |
-| |[ FrequencyHz](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/jointspring.markdown#frequencyhz-plasma-engine)| | |
+|[ Constructor](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/jointspring.markdown#jointspring-void)|[ Active](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/jointspring.markdown#active-plasma-engine-docum)|[component](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/component.markdown)| |
+| |[ AtomIds](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/jointspring.markdown#atomids-plasma-engine-docu)| | |
+| |[ DampingRatio](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/jointspring.markdown#dampingratio-plasma-engine)| | |
+| |[ FrequencyHz](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/jointspring.markdown#frequencyhz-plasma-engine)| | |
 
 
  #  Properties
 
 
 ---  
- #  Active : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown)
+ #  Active : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/boolean.markdown)
 
 > Determines if this spring is active.
 > ``` lang=cpp, name=Lightning
@@ -24,7 +24,7 @@
 
 
 ---  
- #  AtomIds : [integer](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/integer.markdown)
+ #  AtomIds : [integer](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/integer.markdown)
 
 > Signifies what atoms on the joint this affects. For internal use.
 > ``` lang=cpp, name=Lightning
@@ -32,7 +32,7 @@
 
 
 ---  
- #  DampingRatio : [real](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown)
+ #  DampingRatio : [real](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real.markdown)
 
 > The damping ratio of this spring. The value should range from 0 to 1 where 0 is no damping and 1 is critical damping.
 > ``` lang=cpp, name=Lightning
@@ -40,7 +40,7 @@
 
 
 ---  
- #  FrequencyHz : [real](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown)
+ #  FrequencyHz : [real](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real.markdown)
 
 > The oscillation frequency of the spring in Hertz (cycles per second).
 > ``` lang=cpp, name=Lightning

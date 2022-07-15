@@ -6,26 +6,26 @@
 
 |Methods|Properties|Base Classes|Derived Classes|
 |---|---|---|---|
-|[ CreateRuntime](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/texture.markdown#createruntime-plasma-engin)|[ AddressingX](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/texture.markdown#addressingx-plasma-engine)|Resource| |
-|[ SubUpload](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/texture.markdown#subupload-void)|[ AddressingY](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/texture.markdown#addressingy-plasma-engine)| | |
-|[ Upload](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/texture.markdown#upload-void)|[ Anisotropy](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/texture.markdown#anisotropy-plasma-engine-d)| | |
-| |[ CompareFunc](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/texture.markdown#comparefunc-plasma-engine)| | |
-| |[ CompareMode](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/texture.markdown#comparemode-plasma-engine)| | |
-| |[ Compression](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/texture.markdown#compression-plasma-engine)| | |
-| |[ Filtering](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/texture.markdown#filtering-plasma-engine-do)| | |
-| |[ Format](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/texture.markdown#format-plasma-engine-docum)| | |
-| |[ Height](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/texture.markdown#height-plasma-engine-docum)| | |
-| |[ MipMapping](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/texture.markdown#mipmapping-plasma-engine-d)| | |
-| |[ Size](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/texture.markdown#size-plasma-engine-documen)| | |
-| |[ Type](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/texture.markdown#type-plasma-engine-documen)| | |
-| |[ Width](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/texture.markdown#width-plasma-engine-docume)| | |
+|[ CreateRuntime](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/texture.markdown#createruntime-plasma-engin)|[ AddressingX](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/texture.markdown#addressingx-plasma-engine)|Resource| |
+|[ SubUpload](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/texture.markdown#subupload-void)|[ AddressingY](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/texture.markdown#addressingy-plasma-engine)| | |
+|[ Upload](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/texture.markdown#upload-void)|[ Anisotropy](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/texture.markdown#anisotropy-plasma-engine-d)| | |
+| |[ CompareFunc](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/texture.markdown#comparefunc-plasma-engine)| | |
+| |[ CompareMode](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/texture.markdown#comparemode-plasma-engine)| | |
+| |[ Compression](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/texture.markdown#compression-plasma-engine)| | |
+| |[ Filtering](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/texture.markdown#filtering-plasma-engine-do)| | |
+| |[ Format](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/texture.markdown#format-plasma-engine-docum)| | |
+| |[ Height](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/texture.markdown#height-plasma-engine-docum)| | |
+| |[ MipMapping](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/texture.markdown#mipmapping-plasma-engine-d)| | |
+| |[ Size](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/texture.markdown#size-plasma-engine-documen)| | |
+| |[ Type](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/texture.markdown#type-plasma-engine-documen)| | |
+| |[ Width](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/texture.markdown#width-plasma-engine-docume)| | |
 
 
  #  Properties
 
 
 ---  
- #  AddressingX : [TextureAddressing](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#textureaddressing)
+ #  AddressingX : [TextureAddressing](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/enum_reference.markdown#textureaddressing)
 
 > How to treat uv coordinates outside of [0, 1] along the Texture's width.
 > ``` lang=cpp, name=Lightning
@@ -33,7 +33,7 @@
 
 
 ---  
- #  AddressingY : [TextureAddressing](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#textureaddressing)
+ #  AddressingY : [TextureAddressing](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/enum_reference.markdown#textureaddressing)
 
 > How to treat uv coordinates outside of [0, 1] along the Texture's height.
 > ``` lang=cpp, name=Lightning
@@ -41,7 +41,7 @@
 
 
 ---  
- #  Anisotropy : [TextureAnisotropy](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#textureanisotropy)
+ #  Anisotropy : [TextureAnisotropy](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/enum_reference.markdown#textureanisotropy)
 
 > Max ratio of anisotropy that filtering will account for at oblique viewing angles.
 > ``` lang=cpp, name=Lightning
@@ -49,7 +49,7 @@
 
 
 ---  
- #  CompareFunc : [TextureCompareFunc](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#texturecomparefunc)
+ #  CompareFunc : [TextureCompareFunc](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/enum_reference.markdown#texturecomparefunc)
 
 > Which method of comparison should be used if CompareMode is set to Enable.
 > ``` lang=cpp, name=Lightning
@@ -57,7 +57,7 @@
 
 
 ---  
- #  CompareMode : [TextureCompareMode](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#texturecomparemode)
+ #  CompareMode : [TextureCompareMode](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/enum_reference.markdown#texturecomparemode)
 
 > If sampling in hardware should perform comparison instead of fetching. Requires using SamplerShadow2d in the shader.
 > ``` lang=cpp, name=Lightning
@@ -65,7 +65,7 @@
 
 
 ---  
- #  Compression : [TextureCompression](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#texturecompression)
+ #  Compression : [TextureCompression](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/enum_reference.markdown#texturecompression)
 
  `read-only`
 
@@ -75,7 +75,7 @@
 
 
 ---  
- #  Filtering : [TextureFiltering](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#texturefiltering)
+ #  Filtering : [TextureFiltering](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/enum_reference.markdown#texturefiltering)
 
 > How samples should be blended under minification/magnification.
 > ``` lang=cpp, name=Lightning
@@ -83,7 +83,7 @@
 
 
 ---  
- #  Format : [TextureFormat](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#textureformat)
+ #  Format : [TextureFormat](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/enum_reference.markdown#textureformat)
 
  `read-only`
 
@@ -93,7 +93,7 @@
 
 
 ---  
- #  Height : [integer](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/integer.markdown)
+ #  Height : [integer](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/integer.markdown)
 
  `read-only`
 
@@ -103,7 +103,7 @@
 
 
 ---  
- #  MipMapping : [TextureMipMapping](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#texturemipmapping)
+ #  MipMapping : [TextureMipMapping](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/enum_reference.markdown#texturemipmapping)
 
 > If downsampled versions of the texture (mip maps) should be generated. PreGenerated is not valid for runtime Textures.
 > ``` lang=cpp, name=Lightning
@@ -111,7 +111,7 @@
 
 
 ---  
- #  Size : [integer2](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/integer2.markdown)
+ #  Size : [integer2](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/integer2.markdown)
 
  `read-only`
 
@@ -121,7 +121,7 @@
 
 
 ---  
- #  Type : [TextureType](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#texturetype)
+ #  Type : [TextureType](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/enum_reference.markdown#texturetype)
 
  `read-only`
 
@@ -131,7 +131,7 @@
 
 
 ---  
- #  Width : [integer](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/integer.markdown)
+ #  Width : [integer](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/integer.markdown)
 
  `read-only`
 
@@ -145,7 +145,7 @@
 
 
 ---  
- #  CreateRuntime : [texture](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/texture.markdown)
+ #  CreateRuntime : [texture](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/texture.markdown)
 
  `static`
 
@@ -163,9 +163,9 @@
 > Uploads the given texture data, overwriting a sub region of the texture data that is already on the gpu.
 > |Name|Type|Description|
 > |---|---|---|
-> |textureData|[texturedata](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/texturedata.markdown)| |
-> |xOffset|[integer](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/integer.markdown)| |
-> |yOffset|[integer](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/integer.markdown)| |
+> |textureData|[texturedata](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/texturedata.markdown)| |
+> |xOffset|[integer](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/integer.markdown)| |
+> |yOffset|[integer](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/integer.markdown)| |
 > ``` lang=cpp, name=Lightning
 > function SubUpload(textureData : TextureData, xOffset : Integer, yOffset : Integer)
 > ``` 
@@ -177,7 +177,7 @@
 > Uploads the given texture data to the gpu, configured with the current settings of this Texture.
 > |Name|Type|Description|
 > |---|---|---|
-> |textureData|[texturedata](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/texturedata.markdown)| |
+> |textureData|[texturedata](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/texturedata.markdown)| |
 > ``` lang=cpp, name=Lightning
 > function Upload(textureData : TextureData)
 > ``` 

@@ -2,17 +2,17 @@
 
 |Methods|Properties|Base Classes|Derived Classes|
 |---|---|---|---|
-| |[ AnimationIndex](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/animationclip.markdown#animationindex-plasma-engi)|Object| |
-| |[ EndFrame](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/animationclip.markdown#endframe-plasma-engine-doc)| | |
-| |[ Name](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/animationclip.markdown#name-plasma-engine-documen)| | |
-| |[ StartFrame](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/animationclip.markdown#startframe-plasma-engine-d)| | |
+| |[ AnimationIndex](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/animationclip.markdown#animationindex-plasma-engi)|Object| |
+| |[ EndFrame](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/animationclip.markdown#endframe-plasma-engine-doc)| | |
+| |[ Name](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/animationclip.markdown#name-plasma-engine-documen)| | |
+| |[ StartFrame](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/animationclip.markdown#startframe-plasma-engine-d)| | |
 
 
  #  Properties
 
 
 ---  
- #  AnimationIndex : [integer](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/integer.markdown)
+ #  AnimationIndex : [integer](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/integer.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -20,7 +20,7 @@
 
 
 ---  
- #  EndFrame : [integer](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/integer.markdown)
+ #  EndFrame : [integer](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/integer.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -28,7 +28,7 @@
 
 
 ---  
- #  Name : [string](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown)
+ #  Name : [string](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/string.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -36,7 +36,7 @@
 
 
 ---  
- #  StartFrame : [integer](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/integer.markdown)
+ #  StartFrame : [integer](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/integer.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning

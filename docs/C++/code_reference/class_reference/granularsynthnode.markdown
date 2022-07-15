@@ -2,28 +2,28 @@
 
 |Methods|Properties|Base Classes|Derived Classes|
 |---|---|---|---|
-|[ Play](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/granularsynthnode.markdown#play-void)|[ BufferScanRate](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/granularsynthnode.markdown#bufferscanrate-plasma-engi)|[soundnode](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/soundnode.markdown)| |
-|[ SetSound](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/granularsynthnode.markdown#setsound-void)|[ GrainDelay](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/granularsynthnode.markdown#graindelay-plasma-engine-d)| | |
-|[ Stop](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/granularsynthnode.markdown#stop-void)|[ GrainDelayVariance](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/granularsynthnode.markdown#graindelayvariance-plasma)| | |
-| |[ GrainLength](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/granularsynthnode.markdown#grainlength-plasma-engine)| | |
-| |[ GrainLengthVariance](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/granularsynthnode.markdown#grainlengthvariance-plasma)| | |
-| |[ GrainPanningValue](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/granularsynthnode.markdown#grainpanningvalue-plasma-e)| | |
-| |[ GrainPanningVariance](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/granularsynthnode.markdown#grainpanningvariance-zer)| | |
-| |[ GrainResampleRate](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/granularsynthnode.markdown#grainresamplerate-plasma-e)| | |
-| |[ GrainResampleRateVariance](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/granularsynthnode.markdown#grainresampleratevarianc)| | |
-| |[ GrainVolume](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/granularsynthnode.markdown#grainvolume-plasma-engine)| | |
-| |[ GrainVolumeVariance](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/granularsynthnode.markdown#grainvolumevariance-plasma)| | |
-| |[ RandomLocationValue](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/granularsynthnode.markdown#randomlocationvalue-plasma)| | |
-| |[ WindowAttack](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/granularsynthnode.markdown#windowattack-plasma-engine)| | |
-| |[ WindowRelease](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/granularsynthnode.markdown#windowrelease-plasma-engin)| | |
-| |[ WindowType](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/granularsynthnode.markdown#windowtype-plasma-engine-d)| | |
+|[ Play](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/granularsynthnode.markdown#play-void)|[ BufferScanRate](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/granularsynthnode.markdown#bufferscanrate-plasma-engi)|[soundnode](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/soundnode.markdown)| |
+|[ SetSound](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/granularsynthnode.markdown#setsound-void)|[ GrainDelay](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/granularsynthnode.markdown#graindelay-plasma-engine-d)| | |
+|[ Stop](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/granularsynthnode.markdown#stop-void)|[ GrainDelayVariance](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/granularsynthnode.markdown#graindelayvariance-plasma)| | |
+| |[ GrainLength](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/granularsynthnode.markdown#grainlength-plasma-engine)| | |
+| |[ GrainLengthVariance](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/granularsynthnode.markdown#grainlengthvariance-plasma)| | |
+| |[ GrainPanningValue](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/granularsynthnode.markdown#grainpanningvalue-plasma-e)| | |
+| |[ GrainPanningVariance](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/granularsynthnode.markdown#grainpanningvariance-zer)| | |
+| |[ GrainResampleRate](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/granularsynthnode.markdown#grainresamplerate-plasma-e)| | |
+| |[ GrainResampleRateVariance](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/granularsynthnode.markdown#grainresampleratevarianc)| | |
+| |[ GrainVolume](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/granularsynthnode.markdown#grainvolume-plasma-engine)| | |
+| |[ GrainVolumeVariance](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/granularsynthnode.markdown#grainvolumevariance-plasma)| | |
+| |[ RandomLocationValue](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/granularsynthnode.markdown#randomlocationvalue-plasma)| | |
+| |[ WindowAttack](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/granularsynthnode.markdown#windowattack-plasma-engine)| | |
+| |[ WindowRelease](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/granularsynthnode.markdown#windowrelease-plasma-engin)| | |
+| |[ WindowType](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/granularsynthnode.markdown#windowtype-plasma-engine-d)| | |
 
 
  #  Properties
 
 
 ---  
- #  BufferScanRate : [real](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown)
+ #  BufferScanRate : [real](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real.markdown)
 
 > The rate at which the synthesizer scans the buffer as it creates grains. A value of 1.0 will move through the audio data at the same rate as it would normally be played, 0.5 will move at half speed, and -1.0 will move at normal speed backward. A value of 0.0 will make the synthesizer repeat the same audio continuously.
 > ``` lang=cpp, name=Lightning
@@ -31,7 +31,7 @@
 
 
 ---  
- #  GrainDelay : [integer](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/integer.markdown)
+ #  GrainDelay : [integer](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/integer.markdown)
 
 > The number of milliseconds to wait before playing another grain.
 > ``` lang=cpp, name=Lightning
@@ -39,7 +39,7 @@
 
 
 ---  
- #  GrainDelayVariance : [integer](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/integer.markdown)
+ #  GrainDelayVariance : [integer](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/integer.markdown)
 
 > The variance for randomizing the grain delay, in milliseconds.
 > ``` lang=cpp, name=Lightning
@@ -47,7 +47,7 @@
 
 
 ---  
- #  GrainLength : [integer](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/integer.markdown)
+ #  GrainLength : [integer](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/integer.markdown)
 
 > The length of a grain, in milliseconds.
 > ``` lang=cpp, name=Lightning
@@ -55,7 +55,7 @@
 
 
 ---  
- #  GrainLengthVariance : [integer](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/integer.markdown)
+ #  GrainLengthVariance : [integer](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/integer.markdown)
 
 > The variance for randomizing the grain length, in milliseconds.
 > ``` lang=cpp, name=Lightning
@@ -63,7 +63,7 @@
 
 
 ---  
- #  GrainPanningValue : [real](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown)
+ #  GrainPanningValue : [real](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real.markdown)
 
 > The value used to pan the grains left or right. A value of 0 will be heard equally from the left and right, 1.0 will be heard only on the right, and -1.0 will be only left.
 > ``` lang=cpp, name=Lightning
@@ -71,7 +71,7 @@
 
 
 ---  
- #  GrainPanningVariance : [real](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown)
+ #  GrainPanningVariance : [real](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real.markdown)
 
 > The variance for randomizing the grain panning value.
 > ``` lang=cpp, name=Lightning
@@ -79,7 +79,7 @@
 
 
 ---  
- #  GrainResampleRate : [real](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown)
+ #  GrainResampleRate : [real](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real.markdown)
 
 > The rate at which grains resample their audio data. A value of 1.0 will play normally, 0.5 will play at half speed, and -1.0 will play at normal speed backward. Cannot be 0.
 > ``` lang=cpp, name=Lightning
@@ -87,7 +87,7 @@
 
 
 ---  
- #  GrainResampleRateVariance : [real](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown)
+ #  GrainResampleRateVariance : [real](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real.markdown)
 
 > The variance for randomizing the grain resample rate.
 > ``` lang=cpp, name=Lightning
@@ -95,7 +95,7 @@
 
 
 ---  
- #  GrainVolume : [real](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown)
+ #  GrainVolume : [real](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real.markdown)
 
 > The volume modifier applied to the grains.
 > ``` lang=cpp, name=Lightning
@@ -103,7 +103,7 @@
 
 
 ---  
- #  GrainVolumeVariance : [real](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown)
+ #  GrainVolumeVariance : [real](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real.markdown)
 
 > The variance for randomizing the grain volume.
 > ``` lang=cpp, name=Lightning
@@ -111,7 +111,7 @@
 
 
 ---  
- #  RandomLocationValue : [real](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown)
+ #  RandomLocationValue : [real](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real.markdown)
 
 > The value for controlling how many grains have randomized starting positions in the audio. A value of 0 will be completely sequential, while 1.0 will be completely random.
 > ``` lang=cpp, name=Lightning
@@ -119,7 +119,7 @@
 
 
 ---  
- #  WindowAttack : [integer](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/integer.markdown)
+ #  WindowAttack : [integer](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/integer.markdown)
 
 > The window attack time, in milliseconds. Does not have an effect on some windows.
 > ``` lang=cpp, name=Lightning
@@ -127,7 +127,7 @@
 
 
 ---  
- #  WindowRelease : [integer](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/integer.markdown)
+ #  WindowRelease : [integer](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/integer.markdown)
 
 > The window release time, in milliseconds. Does not have an effect on some windows.
 > ``` lang=cpp, name=Lightning
@@ -135,7 +135,7 @@
 
 
 ---  
- #  WindowType : [GranularSynthWindows](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#granularsynthwindows)
+ #  WindowType : [GranularSynthWindows](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/enum_reference.markdown#granularsynthwindows)
 
 > The type of window, or volume envelope, used for each grain.
 > ``` lang=cpp, name=Lightning
@@ -163,9 +163,9 @@
 > Sets the Sound resource that will be used for the grains, along with an optional start and stop time. If the stopTime is 0.0, all audio from the Sound will be used.
 > |Name|Type|Description|
 > |---|---|---|
-> |sound|[sound](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/sound.markdown)| |
-> |startTime|[real](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown)| |
-> |stopTime|[real](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown)| |
+> |sound|[sound](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/sound.markdown)| |
+> |startTime|[real](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real.markdown)| |
+> |stopTime|[real](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real.markdown)| |
 > ``` lang=cpp, name=Lightning
 > function SetSound(sound : Sound, startTime : Real, stopTime : Real)
 > ``` 

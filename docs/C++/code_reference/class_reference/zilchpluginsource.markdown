@@ -4,13 +4,13 @@
 
 |Methods|Properties|Base Classes|Derived Classes|
 |---|---|---|---|
-|[ Clean](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/lightningpluginsource.markdown#clean-void)| |[dataresource](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/dataresource.markdown)| |
-|[ CompileDebug](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/lightningpluginsource.markdown#compiledebug-void)| | | |
-|[ CompileRelease](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/lightningpluginsource.markdown#compilerelease-void)| | | |
-|[ CopyPluginDependencies](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/lightningpluginsource.markdown#copyplugindependencies-v)| | | |
-|[ InstallIdeTools](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/lightningpluginsource.markdown#installidetools-void)| | | |
-|[ OpenDirectory](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/lightningpluginsource.markdown#opendirectory-void)| | | |
-|[ OpenIde](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/lightningpluginsource.markdown#openide-void)| | | |
+|[ Clean](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/lightningpluginsource.markdown#clean-void)| |[dataresource](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/dataresource.markdown)| |
+|[ CompileDebug](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/lightningpluginsource.markdown#compiledebug-void)| | | |
+|[ CompileRelease](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/lightningpluginsource.markdown#compilerelease-void)| | | |
+|[ CopyPluginDependencies](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/lightningpluginsource.markdown#copyplugindependencies-v)| | | |
+|[ InstallIdeTools](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/lightningpluginsource.markdown#installidetools-void)| | | |
+|[ OpenDirectory](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/lightningpluginsource.markdown#opendirectory-void)| | | |
+|[ OpenIde](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/lightningpluginsource.markdown#openide-void)| | | |
 
 
  #  Properties

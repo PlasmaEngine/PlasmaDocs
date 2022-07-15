@@ -4,20 +4,20 @@
 
 |Methods|Properties|Base Classes|Derived Classes|
 |---|---|---|---|
-|[ Constructor](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/blendsettings.markdown#blendsettings-void)|[ BlendEquation](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/blendsettings.markdown#blendequation-plasma-engin)| | |
-| |[ BlendEquationAlpha](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/blendsettings.markdown#blendequationalpha-plasma)| | |
-| |[ BlendMode](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/blendsettings.markdown#blendmode-plasma-engine-do)| | |
-| |[ DestFactor](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/blendsettings.markdown#destfactor-plasma-engine-d)| | |
-| |[ DestFactorAlpha](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/blendsettings.markdown#destfactoralpha-plasma-eng)| | |
-| |[ SourceFactor](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/blendsettings.markdown#sourcefactor-plasma-engine)| | |
-| |[ SourceFactorAlpha](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/blendsettings.markdown#sourcefactoralpha-plasma-e)| | |
+|[ Constructor](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/blendsettings.markdown#blendsettings-void)|[ BlendEquation](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/blendsettings.markdown#blendequation-plasma-engin)| | |
+| |[ BlendEquationAlpha](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/blendsettings.markdown#blendequationalpha-plasma)| | |
+| |[ BlendMode](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/blendsettings.markdown#blendmode-plasma-engine-do)| | |
+| |[ DestFactor](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/blendsettings.markdown#destfactor-plasma-engine-d)| | |
+| |[ DestFactorAlpha](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/blendsettings.markdown#destfactoralpha-plasma-eng)| | |
+| |[ SourceFactor](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/blendsettings.markdown#sourcefactor-plasma-engine)| | |
+| |[ SourceFactorAlpha](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/blendsettings.markdown#sourcefactoralpha-plasma-e)| | |
 
 
  #  Properties
 
 
 ---  
- #  BlendEquation : [BlendEquation](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#blendequation)
+ #  BlendEquation : [BlendEquation](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/enum_reference.markdown#blendequation)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -25,7 +25,7 @@
 
 
 ---  
- #  BlendEquationAlpha : [BlendEquation](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#blendequation)
+ #  BlendEquationAlpha : [BlendEquation](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/enum_reference.markdown#blendequation)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -33,7 +33,7 @@
 
 
 ---  
- #  BlendMode : [BlendMode](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#blendmode)
+ #  BlendMode : [BlendMode](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/enum_reference.markdown#blendmode)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -41,7 +41,7 @@
 
 
 ---  
- #  DestFactor : [BlendFactor](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#blendfactor)
+ #  DestFactor : [BlendFactor](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/enum_reference.markdown#blendfactor)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -49,7 +49,7 @@
 
 
 ---  
- #  DestFactorAlpha : [BlendFactor](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#blendfactor)
+ #  DestFactorAlpha : [BlendFactor](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/enum_reference.markdown#blendfactor)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -57,7 +57,7 @@
 
 
 ---  
- #  SourceFactor : [BlendFactor](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#blendfactor)
+ #  SourceFactor : [BlendFactor](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/enum_reference.markdown#blendfactor)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -65,7 +65,7 @@
 
 
 ---  
- #  SourceFactorAlpha : [BlendFactor](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#blendfactor)
+ #  SourceFactorAlpha : [BlendFactor](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/enum_reference.markdown#blendfactor)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -97,7 +97,7 @@
 > 
 > |Name|Type|Description|
 > |---|---|---|
-> |other|[blendsettings](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/blendsettings.markdown)| |
+> |other|[blendsettings](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/blendsettings.markdown)| |
 > ``` lang=cpp, name=Lightning
 > function BlendSettings(other : BlendSettings)
 > ``` 

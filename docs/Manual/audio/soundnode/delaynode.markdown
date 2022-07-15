@@ -1,5 +1,5 @@
 # Delay Node
-The [ DelayNode ](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/delaynode.markdown) collects audio data from all of its inputs and applies a delay filter before passing it off to its outputs. 
+The [ DelayNode ](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/delaynode.markdown) collects audio data from all of its inputs and applies a delay filter before passing it off to its outputs. 
 
 # Common Uses
 
@@ -17,6 +17,6 @@ The `WetPercent` property controls the loudness of the delayed echo. At `100` th
 - [soudnode_overview](https://plasmaengine.github.io/PlasmaDocs/Manual/audio/soundnode/soudnode_overview.markdown)
 
 ## Code Reference
-- [ DelayNode ](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/delaynode.markdown) 
+- [ DelayNode ](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/delaynode.markdown) 
 
  

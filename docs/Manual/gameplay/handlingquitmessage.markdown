@@ -1,5 +1,5 @@
 # Quit Messages
-Quit Messages are sent by the engine to quit out of a game by closing Game window. This happens by default when the `esc` (escape) key is pressed in game. Using the [ GameRequestQuit  ](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/event_reference.markdown#gamerequestquit) event, however, gives the user control over the `esc` key press (which is otherwise inaccessible by Keyboard events). When connecting to the `GameRequestQuit` event, the user may assign any activity to the `esc` key that they wish. 
+Quit Messages are sent by the engine to quit out of a game by closing Game window. This happens by default when the `esc` (escape) key is pressed in game. Using the [ GameRequestQuit  ](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/event_reference.markdown#gamerequestquit) event, however, gives the user control over the `esc` key press (which is otherwise inaccessible by Keyboard events). When connecting to the `GameRequestQuit` event, the user may assign any activity to the `esc` key that they wish. 
 
 # Common Uses
  - Using the `esc` key to pause the game
@@ -63,4 +63,4 @@ class GameQuitTest : LightningComponent
 
 ## Code Reference
 - [GameEvent](https://plasmaengine.github.io/PlasmaDocs/Manual//code_reference/class_reference/gameevent.markdown) 
-- [ GameRequestQuit  ](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/event_reference.markdown#gamerequestquit)
+- [ GameRequestQuit  ](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/event_reference.markdown#gamerequestquit)

@@ -1,5 +1,5 @@
 # Pitch Node
-The [ PitchNode ](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/pitchnode.markdown) collects audio data from all of its inputs and applies a pitch modification to the samples before passing them off to its output nodes.
+The [ PitchNode ](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/pitchnode.markdown) collects audio data from all of its inputs and applies a pitch modification to the samples before passing them off to its output nodes.
 
 # Common Uses
 
@@ -26,6 +26,6 @@ The `AudioInterpolationDone` event will be sent when a pitch interpolation has f
 - [soudnode_overview](https://plasmaengine.github.io/PlasmaDocs/Manual/audio/soundnode/soudnode_overview.markdown)
 
 ## Code Reference
-- [ PitchNode ](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/pitchnode.markdown) 
+- [ PitchNode ](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/pitchnode.markdown) 
 
  

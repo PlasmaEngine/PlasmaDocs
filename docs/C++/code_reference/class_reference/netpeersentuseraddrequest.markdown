@@ -6,16 +6,16 @@
 
 |Methods|Properties|Base Classes|Derived Classes|
 |---|---|---|---|
-| |[ OurRequestBundle](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/netpeersentuseraddrequest.markdown#ourrequestbundle-plasma-en)|[event](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/event.markdown)| |
-| |[ TheirIpAddress](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/netpeersentuseraddrequest.markdown#theiripaddress-plasma-engi)| | |
-| |[ TheirNetPeerId](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/netpeersentuseraddrequest.markdown#theirnetpeerid-plasma-engi)| | |
+| |[ OurRequestBundle](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netpeersentuseraddrequest.markdown#ourrequestbundle-plasma-en)|[event](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/event.markdown)| |
+| |[ TheirIpAddress](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netpeersentuseraddrequest.markdown#theiripaddress-plasma-engi)| | |
+| |[ TheirNetPeerId](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netpeersentuseraddrequest.markdown#theirnetpeerid-plasma-engi)| | |
 
 
  #  Properties
 
 
 ---  
- #  OurRequestBundle : [eventbundle](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/eventbundle.markdown)
+ #  OurRequestBundle : [eventbundle](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/eventbundle.markdown)
 
  `read-only`
 
@@ -25,7 +25,7 @@
 
 
 ---  
- #  TheirIpAddress : [ipaddress](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/ipaddress.markdown)
+ #  TheirIpAddress : [ipaddress](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/ipaddress.markdown)
 
  `read-only`
 
@@ -35,7 +35,7 @@
 
 
 ---  
- #  TheirNetPeerId : [integer](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/integer.markdown)
+ #  TheirNetPeerId : [integer](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/integer.markdown)
 
  `read-only`
 

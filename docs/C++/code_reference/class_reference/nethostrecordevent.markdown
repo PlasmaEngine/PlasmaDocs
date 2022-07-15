@@ -6,14 +6,14 @@
 
 |Methods|Properties|Base Classes|Derived Classes|
 |---|---|---|---|
-| |[ HostRecord](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/nethostrecordevent.markdown#hostrecord-plasma-engine-d)|[event](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/event.markdown)| |
+| |[ HostRecord](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/nethostrecordevent.markdown#hostrecord-plasma-engine-d)|[event](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/event.markdown)| |
 
 
  #  Properties
 
 
 ---  
- #  HostRecord : [nethostrecord](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/nethostrecord.markdown)
+ #  HostRecord : [nethostrecord](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/nethostrecord.markdown)
 
  `read-only`
 

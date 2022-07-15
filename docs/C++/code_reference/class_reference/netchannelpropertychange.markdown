@@ -6,20 +6,20 @@
 
 |Methods|Properties|Base Classes|Derived Classes|
 |---|---|---|---|
-| |[ ChannelName](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/netchannelpropertychange.markdown#channelname-plasma-engine)|[event](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/event.markdown)| |
-| |[ ComponentName](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/netchannelpropertychange.markdown#componentname-plasma-engin)| | |
-| |[ Direction](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/netchannelpropertychange.markdown#direction-plasma-engine-do)| | |
-| |[ Object](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/netchannelpropertychange.markdown#object-plasma-engine-docum)| | |
-| |[ PropertyName](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/netchannelpropertychange.markdown#propertyname-plasma-engine)| | |
-| |[ ReplicationPhase](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/netchannelpropertychange.markdown#replicationphase-plasma-en)| | |
-| |[ Timestamp](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/netchannelpropertychange.markdown#timestamp-plasma-engine-do)| | |
+| |[ ChannelName](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netchannelpropertychange.markdown#channelname-plasma-engine)|[event](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/event.markdown)| |
+| |[ ComponentName](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netchannelpropertychange.markdown#componentname-plasma-engin)| | |
+| |[ Direction](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netchannelpropertychange.markdown#direction-plasma-engine-do)| | |
+| |[ Object](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netchannelpropertychange.markdown#object-plasma-engine-docum)| | |
+| |[ PropertyName](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netchannelpropertychange.markdown#propertyname-plasma-engine)| | |
+| |[ ReplicationPhase](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netchannelpropertychange.markdown#replicationphase-plasma-en)| | |
+| |[ Timestamp](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netchannelpropertychange.markdown#timestamp-plasma-engine-do)| | |
 
 
  #  Properties
 
 
 ---  
- #  ChannelName : [string](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown)
+ #  ChannelName : [string](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/string.markdown)
 
  `read-only`
 
@@ -29,7 +29,7 @@
 
 
 ---  
- #  ComponentName : [string](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown)
+ #  ComponentName : [string](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/string.markdown)
 
  `read-only`
 
@@ -39,7 +39,7 @@
 
 
 ---  
- #  Direction : [TransmissionDirection](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#transmissiondirection)
+ #  Direction : [TransmissionDirection](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/enum_reference.markdown#transmissiondirection)
 
  `read-only`
 
@@ -49,7 +49,7 @@
 
 
 ---  
- #  Object : [cog](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/cog.markdown)
+ #  Object : [cog](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/cog.markdown)
 
  `read-only`
 
@@ -59,7 +59,7 @@
 
 
 ---  
- #  PropertyName : [string](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown)
+ #  PropertyName : [string](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/string.markdown)
 
  `read-only`
 
@@ -69,7 +69,7 @@
 
 
 ---  
- #  ReplicationPhase : [ReplicationPhase](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#replicationphase)
+ #  ReplicationPhase : [ReplicationPhase](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/enum_reference.markdown#replicationphase)
 
  `read-only`
 
@@ -79,7 +79,7 @@
 
 
 ---  
- #  Timestamp : [real](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown)
+ #  Timestamp : [real](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real.markdown)
 
  `read-only`
 

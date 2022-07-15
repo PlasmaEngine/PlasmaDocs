@@ -1,5 +1,5 @@
 # Panning Node
-The [ PanningNode ](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/panningnode.markdown) collects audio data from all of its inputs and applies a volume modification to the left and right channels separately. 
+The [ PanningNode ](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/panningnode.markdown) collects audio data from all of its inputs and applies a volume modification to the left and right channels separately. 
 
 # Common Uses
 
@@ -83,6 +83,6 @@ class MovingNoise : LightningComponent
 - [soudnode_overview](https://plasmaengine.github.io/PlasmaDocs/Manual/audio/soundnode/soudnode_overview.markdown)
 
 ## Code Reference
-- [ PanningNode ](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/panningnode.markdown) 
+- [ PanningNode ](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/panningnode.markdown) 
 
  

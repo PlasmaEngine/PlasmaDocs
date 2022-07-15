@@ -6,16 +6,16 @@
 
 |Methods|Properties|Base Classes|Derived Classes|
 |---|---|---|---|
-|[ RuntimeClone](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/material.markdown#runtimeclone-plasma-engine)|[ CompositionLabel](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/material.markdown#compositionlabel-plasma-en)|[dataresource](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/dataresource.markdown)| |
-| |[ ReferencedByList](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/material.markdown#referencedbylist-plasma-en)| | |
-| |[ RenderGroups](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/material.markdown#rendergroups-plasma-engine)| | |
+|[ RuntimeClone](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/material.markdown#runtimeclone-plasma-engine)|[ CompositionLabel](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/material.markdown#compositionlabel-plasma-en)|[dataresource](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/dataresource.markdown)| |
+| |[ ReferencedByList](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/material.markdown#referencedbylist-plasma-en)| | |
+| |[ RenderGroups](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/material.markdown#rendergroups-plasma-engine)| | |
 
 
  #  Properties
 
 
 ---  
- #  CompositionLabel : [integer](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/integer.markdown)
+ #  CompositionLabel : [integer](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/integer.markdown)
 
  `read-only`
 
@@ -25,7 +25,7 @@
 
 
 ---  
- #  ReferencedByList : [rendergrouplist](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/rendergrouplist.markdown)
+ #  ReferencedByList : [rendergrouplist](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/rendergrouplist.markdown)
 
  `read-only`
 
@@ -35,7 +35,7 @@
 
 
 ---  
- #  RenderGroups : [rendergrouplist](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/rendergrouplist.markdown)
+ #  RenderGroups : [rendergrouplist](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/rendergrouplist.markdown)
 
  `read-only`
 
@@ -49,7 +49,7 @@
 
 
 ---  
- #  RuntimeClone : [material](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/material.markdown)
+ #  RuntimeClone : [material](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/material.markdown)
 
 > Creates an anonymous copy that can be independently modified, destroyed when all references are gone.
 > |Name|Type|Description|

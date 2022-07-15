@@ -4,17 +4,17 @@
 
 |Methods|Properties|Base Classes|Derived Classes|
 |---|---|---|---|
-| |[ Frequency](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/modulationnode.markdown#frequency-plasma-engine-do)|[soundnode](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/soundnode.markdown)| |
-| |[ UseAmplitudeModulation](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/modulationnode.markdown#useamplitudemodulation-z)| | |
-| |[ WetPercent](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/modulationnode.markdown#wetpercent-plasma-engine-d)| | |
-| |[ WetValue](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/modulationnode.markdown#wetvalue-plasma-engine-doc)| | |
+| |[ Frequency](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/modulationnode.markdown#frequency-plasma-engine-do)|[soundnode](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/soundnode.markdown)| |
+| |[ UseAmplitudeModulation](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/modulationnode.markdown#useamplitudemodulation-z)| | |
+| |[ WetPercent](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/modulationnode.markdown#wetpercent-plasma-engine-d)| | |
+| |[ WetValue](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/modulationnode.markdown#wetvalue-plasma-engine-doc)| | |
 
 
  #  Properties
 
 
 ---  
- #  Frequency : [real](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown)
+ #  Frequency : [real](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real.markdown)
 
 > The frequency of the sine wave used for the modulation.
 > ``` lang=cpp, name=Lightning
@@ -22,7 +22,7 @@
 
 
 ---  
- #  UseAmplitudeModulation : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown)
+ #  UseAmplitudeModulation : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/boolean.markdown)
 
 > If this property is true, the node will apply amplitude modulation (multiply the audio input with a unipolar sine wave with values from 0.0 to 1.0). If false, the node will apply ring modulation (multiply the input with a bipolar sine wave with values from -1.0 to 1.0).
 > ``` lang=cpp, name=Lightning
@@ -30,7 +30,7 @@
 
 
 ---  
- #  WetPercent : [real](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown)
+ #  WetPercent : [real](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real.markdown)
 
 > DEPRECATED The WetValue property should be used instead.
 > ``` lang=cpp, name=Lightning
@@ -38,7 +38,7 @@
 
 
 ---  
- #  WetValue : [real](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown)
+ #  WetValue : [real](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real.markdown)
 
 > The percentage of the input (0 - 1.0) which should have the modulation applied to it.
 > ``` lang=cpp, name=Lightning

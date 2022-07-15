@@ -2,7 +2,7 @@
 
 |Methods|Properties|Base Classes|Derived Classes|
 |---|---|---|---|
-|[ Constructor](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/propertypath.markdown#propertypath-void)| | | |
+|[ Constructor](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/propertypath.markdown#propertypath-void)| | | |
 
 
  #  Properties
@@ -33,7 +33,7 @@
 > 
 > |Name|Type|Description|
 > |---|---|---|
-> |p0|[propertypath](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/propertypath.markdown)| |
+> |p0|[propertypath](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/propertypath.markdown)| |
 > ``` lang=cpp, name=Lightning
 > function PropertyPath(p0 : PropertyPath)
 > ``` 

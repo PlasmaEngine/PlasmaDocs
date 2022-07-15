@@ -4,18 +4,18 @@
 
 |Methods|Properties|Base Classes|Derived Classes|
 |---|---|---|---|
-|[ Constructor](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/heightmaptool.markdown#heightmaptool-void)|[ CellIndexType](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/heightmaptool.markdown#cellindextype-plasma-engin)|[component](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/component.markdown)| |
-| |[ CurrentTool](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/heightmaptool.markdown#currenttool-plasma-engine)| | |
-| |[ ShowCellIndex](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/heightmaptool.markdown#showcellindex-plasma-engin)| | |
-| |[ ShowPatchIndex](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/heightmaptool.markdown#showpatchindex-plasma-engi)| | |
-| |[ SubTool](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/heightmaptool.markdown#subtool-plasma-engine-docu)| | |
+|[ Constructor](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/heightmaptool.markdown#heightmaptool-void)|[ CellIndexType](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/heightmaptool.markdown#cellindextype-plasma-engin)|[component](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/component.markdown)| |
+| |[ CurrentTool](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/heightmaptool.markdown#currenttool-plasma-engine)| | |
+| |[ ShowCellIndex](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/heightmaptool.markdown#showcellindex-plasma-engin)| | |
+| |[ ShowPatchIndex](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/heightmaptool.markdown#showpatchindex-plasma-engi)| | |
+| |[ SubTool](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/heightmaptool.markdown#subtool-plasma-engine-docu)| | |
 
 
  #  Properties
 
 
 ---  
- #  CellIndexType : [CellIndexType](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#cellindextype)
+ #  CellIndexType : [CellIndexType](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/enum_reference.markdown#cellindextype)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -23,7 +23,7 @@
 
 
 ---  
- #  CurrentTool : [HeightTool](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#heighttool)
+ #  CurrentTool : [HeightTool](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/enum_reference.markdown#heighttool)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -31,7 +31,7 @@
 
 
 ---  
- #  ShowCellIndex : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown)
+ #  ShowCellIndex : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/boolean.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -39,7 +39,7 @@
 
 
 ---  
- #  ShowPatchIndex : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown)
+ #  ShowPatchIndex : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/boolean.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -47,7 +47,7 @@
 
 
 ---  
- #  SubTool : [heightmapsubtool](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/heightmapsubtool.markdown)
+ #  SubTool : [heightmapsubtool](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/heightmapsubtool.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning

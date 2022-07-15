@@ -1,5 +1,5 @@
 # Graphical
-All [graphical](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/graphical.markdown) components 2D and 3D alike inherit from the Graphical base class. As a result there are a number of properties that all graphical components have in common.
+All [graphical](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/graphical.markdown) components 2D and 3D alike inherit from the Graphical base class. As a result there are a number of properties that all graphical components have in common.
 
 # ViewCulling
 
@@ -7,7 +7,7 @@ By default, this property is set to true and the model will be culled if its bou
 
 # VisibilityEvents
 
-When set to `true` the object that owns this graphical component will receive events upon entering or exiting the view frustum of an active camera (such as the game camera). To put it another way, if set to `false`, when the object that owns this graphical component enters an active view frustum, it will not connect to view [GraphicalEvents](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/graphicalevent.markdown) such as `EnterView` and `ExitView`.
+When set to `true` the object that owns this graphical component will receive events upon entering or exiting the view frustum of an active camera (such as the game camera). To put it another way, if set to `false`, when the object that owns this graphical component enters an active view frustum, it will not connect to view [GraphicalEvents](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/graphicalevent.markdown) such as `EnterView` and `ExitView`.
 
 # OverrideBoundingBox
 
@@ -29,8 +29,8 @@ Every graphical uses a Material, whether it is user-defined or built-in. Informa
 - [materials_overview](https://plasmaengine.github.io/PlasmaDocs/Manual/graphics/materials/materials_overview.markdown)
 
 ## Code Reference
-- [graphical](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/graphical.markdown)
-- [graphicalevent](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/graphicalevent.markdown)
+- [graphical](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/graphical.markdown)
+- [graphicalevent](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/graphicalevent.markdown)
  
 
  

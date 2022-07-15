@@ -6,14 +6,14 @@
 
 |Methods|Properties|Base Classes|Derived Classes|
 |---|---|---|---|
-| |[ GameSession](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/netgamestarted.markdown#gamesession-plasma-engine)|[event](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/event.markdown)| |
+| |[ GameSession](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netgamestarted.markdown#gamesession-plasma-engine)|[event](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/event.markdown)| |
 
 
  #  Properties
 
 
 ---  
- #  GameSession : [gamesession](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/gamesession.markdown)
+ #  GameSession : [gamesession](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/gamesession.markdown)
 
  `read-only`
 

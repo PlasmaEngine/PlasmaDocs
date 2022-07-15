@@ -1,5 +1,5 @@
 # Materials
-[Materials](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/material.markdown), and the parameters found in them, define the shader for drawing objects for any purpose, using any renderer. Their overarching, generalized purpose is to house shader code (pixel, vertex, and geometry) using individual LightningFragments. These LightningFragments added to a Material as MaterialBlocks. These [ shader fragments ](https://plasmaengine.github.io/PlasmaDocs/Manual/graphics/materials/shaders.markdown) define how the surface of the object on which it is placed will react to its environment.  [PBR](https://plasmaengine.github.io/PlasmaDocs/Manual/graphics/physically_based_rendering.markdown), which is provided for the user as the default [DeferredRenderer](https://plasmaengine.github.io/PlasmaDocs/Manual/graphics/renderer/deferred_renderer.markdown#deferred-renderer), is just one instance of how Materials may be used to render objects. To add a new Material, see [Adding a Resource](https://plasmaengine.github.io/PlasmaDocs/Manual/editor/editorcommands/resourceadding.markdown).
+[Materials](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/material.markdown), and the parameters found in them, define the shader for drawing objects for any purpose, using any renderer. Their overarching, generalized purpose is to house shader code (pixel, vertex, and geometry) using individual LightningFragments. These LightningFragments added to a Material as MaterialBlocks. These [ shader fragments ](https://plasmaengine.github.io/PlasmaDocs/Manual/graphics/materials/shaders.markdown) define how the surface of the object on which it is placed will react to its environment.  [PBR](https://plasmaengine.github.io/PlasmaDocs/Manual/graphics/physically_based_rendering.markdown), which is provided for the user as the default [DeferredRenderer](https://plasmaengine.github.io/PlasmaDocs/Manual/graphics/renderer/deferred_renderer.markdown#deferred-renderer), is just one instance of how Materials may be used to render objects. To add a new Material, see [Adding a Resource](https://plasmaengine.github.io/PlasmaDocs/Manual/editor/editorcommands/resourceadding.markdown).
 
 # Material Templates
 
@@ -30,8 +30,8 @@ Each of these templates has MaterialBlocks and references to RenderGroups pre-ad
 - [shaders](https://plasmaengine.github.io/PlasmaDocs/Manual/graphics/materials/shaders.markdown)
 
 ## Code Reference
-- [rendergroup](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/rendergroup.markdown) 
-- [model](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/model.markdown)
-- [material](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/material.markdown) 
+- [rendergroup](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/rendergroup.markdown) 
+- [model](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/model.markdown)
+- [material](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/material.markdown) 
 
  

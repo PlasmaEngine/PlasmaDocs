@@ -4,30 +4,30 @@
 
 |Methods|Properties|Base Classes|Derived Classes|
 |---|---|---|---|
-|[ Constructor](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/depthsettings.markdown#depthsettings-void)|[ DepthCompareFunc](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/depthsettings.markdown#depthcomparefunc-plasma-en)| | |
-| |[ DepthFailOp](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/depthsettings.markdown#depthfailop-plasma-engine)| | |
-| |[ DepthFailOpBackFace](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/depthsettings.markdown#depthfailopbackface-plasma)| | |
-| |[ DepthMode](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/depthsettings.markdown#depthmode-plasma-engine-do)| | |
-| |[ DepthPassOp](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/depthsettings.markdown#depthpassop-plasma-engine)| | |
-| |[ DepthPassOpBackFace](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/depthsettings.markdown#depthpassopbackface-plasma)| | |
-| |[ StencilCompareFunc](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/depthsettings.markdown#stencilcomparefunc-plasma)| | |
-| |[ StencilCompareFuncBackFace](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/depthsettings.markdown#stencilcomparefuncbackfa)| | |
-| |[ StencilFailOp](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/depthsettings.markdown#stencilfailop-plasma-engin)| | |
-| |[ StencilFailOpBackFace](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/depthsettings.markdown#stencilfailopbackface-ze)| | |
-| |[ StencilMode](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/depthsettings.markdown#stencilmode-plasma-engine)| | |
-| |[ StencilReadMask](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/depthsettings.markdown#stencilreadmask-plasma-eng)| | |
-| |[ StencilReadMaskBackFace](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/depthsettings.markdown#stencilreadmaskbackface)| | |
-| |[ StencilTestValue](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/depthsettings.markdown#stenciltestvalue-plasma-en)| | |
-| |[ StencilTestValueBackFace](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/depthsettings.markdown#stenciltestvaluebackface)| | |
-| |[ StencilWriteMask](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/depthsettings.markdown#stencilwritemask-plasma-en)| | |
-| |[ StencilWriteMaskBackFace](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/depthsettings.markdown#stencilwritemaskbackface)| | |
+|[ Constructor](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/depthsettings.markdown#depthsettings-void)|[ DepthCompareFunc](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/depthsettings.markdown#depthcomparefunc-plasma-en)| | |
+| |[ DepthFailOp](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/depthsettings.markdown#depthfailop-plasma-engine)| | |
+| |[ DepthFailOpBackFace](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/depthsettings.markdown#depthfailopbackface-plasma)| | |
+| |[ DepthMode](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/depthsettings.markdown#depthmode-plasma-engine-do)| | |
+| |[ DepthPassOp](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/depthsettings.markdown#depthpassop-plasma-engine)| | |
+| |[ DepthPassOpBackFace](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/depthsettings.markdown#depthpassopbackface-plasma)| | |
+| |[ StencilCompareFunc](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/depthsettings.markdown#stencilcomparefunc-plasma)| | |
+| |[ StencilCompareFuncBackFace](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/depthsettings.markdown#stencilcomparefuncbackfa)| | |
+| |[ StencilFailOp](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/depthsettings.markdown#stencilfailop-plasma-engin)| | |
+| |[ StencilFailOpBackFace](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/depthsettings.markdown#stencilfailopbackface-ze)| | |
+| |[ StencilMode](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/depthsettings.markdown#stencilmode-plasma-engine)| | |
+| |[ StencilReadMask](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/depthsettings.markdown#stencilreadmask-plasma-eng)| | |
+| |[ StencilReadMaskBackFace](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/depthsettings.markdown#stencilreadmaskbackface)| | |
+| |[ StencilTestValue](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/depthsettings.markdown#stenciltestvalue-plasma-en)| | |
+| |[ StencilTestValueBackFace](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/depthsettings.markdown#stenciltestvaluebackface)| | |
+| |[ StencilWriteMask](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/depthsettings.markdown#stencilwritemask-plasma-en)| | |
+| |[ StencilWriteMaskBackFace](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/depthsettings.markdown#stencilwritemaskbackface)| | |
 
 
  #  Properties
 
 
 ---  
- #  DepthCompareFunc : [TextureCompareFunc](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#texturecomparefunc)
+ #  DepthCompareFunc : [TextureCompareFunc](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/enum_reference.markdown#texturecomparefunc)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -35,7 +35,7 @@
 
 
 ---  
- #  DepthFailOp : [StencilOp](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#stencilop)
+ #  DepthFailOp : [StencilOp](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/enum_reference.markdown#stencilop)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -43,7 +43,7 @@
 
 
 ---  
- #  DepthFailOpBackFace : [StencilOp](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#stencilop)
+ #  DepthFailOpBackFace : [StencilOp](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/enum_reference.markdown#stencilop)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -51,7 +51,7 @@
 
 
 ---  
- #  DepthMode : [DepthMode](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#depthmode)
+ #  DepthMode : [DepthMode](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/enum_reference.markdown#depthmode)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -59,7 +59,7 @@
 
 
 ---  
- #  DepthPassOp : [StencilOp](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#stencilop)
+ #  DepthPassOp : [StencilOp](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/enum_reference.markdown#stencilop)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -67,7 +67,7 @@
 
 
 ---  
- #  DepthPassOpBackFace : [StencilOp](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#stencilop)
+ #  DepthPassOpBackFace : [StencilOp](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/enum_reference.markdown#stencilop)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -75,7 +75,7 @@
 
 
 ---  
- #  StencilCompareFunc : [TextureCompareFunc](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#texturecomparefunc)
+ #  StencilCompareFunc : [TextureCompareFunc](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/enum_reference.markdown#texturecomparefunc)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -83,7 +83,7 @@
 
 
 ---  
- #  StencilCompareFuncBackFace : [TextureCompareFunc](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#texturecomparefunc)
+ #  StencilCompareFuncBackFace : [TextureCompareFunc](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/enum_reference.markdown#texturecomparefunc)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -91,7 +91,7 @@
 
 
 ---  
- #  StencilFailOp : [StencilOp](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#stencilop)
+ #  StencilFailOp : [StencilOp](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/enum_reference.markdown#stencilop)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -99,7 +99,7 @@
 
 
 ---  
- #  StencilFailOpBackFace : [StencilOp](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#stencilop)
+ #  StencilFailOpBackFace : [StencilOp](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/enum_reference.markdown#stencilop)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -107,7 +107,7 @@
 
 
 ---  
- #  StencilMode : [StencilMode](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#stencilmode)
+ #  StencilMode : [StencilMode](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/enum_reference.markdown#stencilmode)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -115,7 +115,7 @@
 
 
 ---  
- #  StencilReadMask : [byte](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/byte.markdown)
+ #  StencilReadMask : [byte](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/byte.markdown)
 
 > Bit mask for buffer value and test value when being compared.
 > ``` lang=cpp, name=Lightning
@@ -123,7 +123,7 @@
 
 
 ---  
- #  StencilReadMaskBackFace : [byte](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/byte.markdown)
+ #  StencilReadMaskBackFace : [byte](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/byte.markdown)
 
 > Bit mask for buffer value and test value when being compared, for triangle back faces if in separate mode.
 > ``` lang=cpp, name=Lightning
@@ -131,7 +131,7 @@
 
 
 ---  
- #  StencilTestValue : [byte](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/byte.markdown)
+ #  StencilTestValue : [byte](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/byte.markdown)
 
 > Value that will be used to compare against the stencil buffer for all pixels.
 > ``` lang=cpp, name=Lightning
@@ -139,7 +139,7 @@
 
 
 ---  
- #  StencilTestValueBackFace : [byte](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/byte.markdown)
+ #  StencilTestValueBackFace : [byte](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/byte.markdown)
 
 > Value that will be used to compare against the stencil buffer for all pixels, for triangle back faces if in separate mode.
 > ``` lang=cpp, name=Lightning
@@ -147,7 +147,7 @@
 
 
 ---  
- #  StencilWriteMask : [byte](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/byte.markdown)
+ #  StencilWriteMask : [byte](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/byte.markdown)
 
 > Bit mask for which bits in the buffer can be modified.
 > ``` lang=cpp, name=Lightning
@@ -155,7 +155,7 @@
 
 
 ---  
- #  StencilWriteMaskBackFace : [byte](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/byte.markdown)
+ #  StencilWriteMaskBackFace : [byte](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/byte.markdown)
 
 > Bit mask for which bits in the buffer can be modified, for triangle back faces if in separate mode.
 > ``` lang=cpp, name=Lightning
@@ -187,7 +187,7 @@
 > 
 > |Name|Type|Description|
 > |---|---|---|
-> |other|[depthsettings](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/depthsettings.markdown)| |
+> |other|[depthsettings](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/depthsettings.markdown)| |
 > ``` lang=cpp, name=Lightning
 > function DepthSettings(other : DepthSettings)
 > ``` 

@@ -2,9 +2,9 @@
 
 |Methods|Properties|Base Classes|Derived Classes|
 |---|---|---|---|
-| |[[plasma_engine_documentation/code_reference/lightning_base_types/delegatetype/#parameters-delegate() | Parameters]]|[type](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/type.markdown)| |
-| |[ Return](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/delegatetype.markdown#return-plasma-engine-docum)| | |
-| |[ Signature](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/delegatetype.markdown#signature-plasma-engine-do)| | |
+| |[[plasma_engine_documentation/code_reference/lightning_base_types/delegatetype/#parameters-delegate() | Parameters]]|[type](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/type.markdown)| |
+| |[ Return](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/delegatetype.markdown#return-plasma-engine-docum)| | |
+| |[ Signature](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/delegatetype.markdown#signature-plasma-engine-do)| | |
 
 
  #  Properties
@@ -21,7 +21,7 @@
 
 
 ---  
- #  Return : [type](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/type.markdown)
+ #  Return : [type](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/type.markdown)
 
  `read-only`
 
@@ -31,7 +31,7 @@
 
 
 ---  
- #  Signature : [string](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown)
+ #  Signature : [string](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/string.markdown)
 
  `read-only`
 

@@ -2,15 +2,15 @@
 
 |Methods|Properties|Base Classes|Derived Classes|
 |---|---|---|---|
-|[ CreateDelegate](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/function.markdown#createdelegate-plasma-engi)|[ Type](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/function.markdown#type-plasma-engine-documen)|[member](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/member.markdown)| |
-|[ Invoke](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/function.markdown#invoke-plasma-engine-docum)| | | |
+|[ CreateDelegate](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/function.markdown#createdelegate-plasma-engi)|[ Type](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/function.markdown#type-plasma-engine-documen)|[member](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/member.markdown)| |
+|[ Invoke](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/function.markdown#invoke-plasma-engine-docum)| | | |
 
 
  #  Properties
 
 
 ---  
- #  Type : [delegatetype](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/delegatetype.markdown)
+ #  Type : [delegatetype](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/delegatetype.markdown)
 
  `read-only`
 

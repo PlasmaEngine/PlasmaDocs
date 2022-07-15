@@ -2,16 +2,16 @@
 
 |Methods|Properties|Base Classes|Derived Classes|
 |---|---|---|---|
-| |[ Current](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/streamorigin.markdown#current-plasma-engine-docu)|[enum](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/enum.markdown)| |
-| |[ End](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/streamorigin.markdown#end-plasma-engine-document)| | |
-| |[ Start](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/streamorigin.markdown#start-plasma-engine-docume)| | |
+| |[ Current](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/streamorigin.markdown#current-plasma-engine-docu)|[enum](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/enum.markdown)| |
+| |[ End](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/streamorigin.markdown#end-plasma-engine-document)| | |
+| |[ Start](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/streamorigin.markdown#start-plasma-engine-docume)| | |
 
 
  #  Properties
 
 
 ---  
- #  Current : [streamorigin](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/streamorigin.markdown)
+ #  Current : [streamorigin](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/streamorigin.markdown)
 
  `read-only` `static`
 
@@ -21,7 +21,7 @@
 
 
 ---  
- #  End : [streamorigin](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/streamorigin.markdown)
+ #  End : [streamorigin](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/streamorigin.markdown)
 
  `read-only` `static`
 
@@ -31,7 +31,7 @@
 
 
 ---  
- #  Start : [streamorigin](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/streamorigin.markdown)
+ #  Start : [streamorigin](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/streamorigin.markdown)
 
  `read-only` `static`
 

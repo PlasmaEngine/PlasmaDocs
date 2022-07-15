@@ -2,7 +2,7 @@
 
 |Methods|Properties|Base Classes|Derived Classes|
 |---|---|---|---|
-| | |[springsubtool](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/springsubtool.markdown)| |
+| | |[springsubtool](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/springsubtool.markdown)| |
 
 
  #  Properties

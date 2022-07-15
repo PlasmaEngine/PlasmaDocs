@@ -6,7 +6,7 @@
 
 |Methods|Properties|Base Classes|Derived Classes|
 |---|---|---|---|
-| | |[component](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/component.markdown)|[particleemittershared](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/particleemittershared.markdown)|
+| | |[component](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/component.markdown)|[particleemittershared](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/particleemittershared.markdown)|
 
 
  #  Properties

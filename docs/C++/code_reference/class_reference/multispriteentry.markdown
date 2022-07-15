@@ -2,15 +2,15 @@
 
 |Methods|Properties|Base Classes|Derived Classes|
 |---|---|---|---|
-|[ Constructor](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/multispriteentry.markdown#multispriteentry-void)|[ Index](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/multispriteentry.markdown#index-plasma-engine-docume)| | |
-| |[ SpriteSource](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/multispriteentry.markdown#spritesource-plasma-engine)| | |
+|[ Constructor](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/multispriteentry.markdown#multispriteentry-void)|[ Index](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/multispriteentry.markdown#index-plasma-engine-docume)| | |
+| |[ SpriteSource](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/multispriteentry.markdown#spritesource-plasma-engine)| | |
 
 
  #  Properties
 
 
 ---  
- #  Index : [integer2](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/integer2.markdown)
+ #  Index : [integer2](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/integer2.markdown)
 
  `read-only`
 
@@ -20,7 +20,7 @@
 
 
 ---  
- #  SpriteSource : [spritesource](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/spritesource.markdown)
+ #  SpriteSource : [spritesource](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/spritesource.markdown)
 
  `read-only`
 
@@ -41,7 +41,7 @@
 > 
 > |Name|Type|Description|
 > |---|---|---|
-> |p0|[multispriteentry](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/multispriteentry.markdown)| |
+> |p0|[multispriteentry](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/multispriteentry.markdown)| |
 > ``` lang=cpp, name=Lightning
 > function MultiSpriteEntry(p0 : MultiSpriteEntry)
 > ``` 

@@ -1,5 +1,5 @@
 # High Pass Node
-The [ HighPassNode ](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/highpassnode.markdown) collects audio data from all of its inputs and applies a high pass filter to it before passing it along to its outputs. 
+The [ HighPassNode ](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/highpassnode.markdown) collects audio data from all of its inputs and applies a high pass filter to it before passing it along to its outputs. 
 
 # Common Uses
 
@@ -17,6 +17,6 @@ High pass filters leave high frequencies untouched while silencing low frequenci
 - [lowpassnode](https://plasmaengine.github.io/PlasmaDocs/Manual/audio/soundnode/lowpassnode.markdown)
 
 ## Code Reference
-- [ HighPassNode ](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/highpassnode.markdown) 
+- [ HighPassNode ](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/highpassnode.markdown) 
 
  

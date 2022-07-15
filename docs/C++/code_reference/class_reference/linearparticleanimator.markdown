@@ -6,19 +6,19 @@
 
 |Methods|Properties|Base Classes|Derived Classes|
 |---|---|---|---|
-|[ Constructor](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/linearparticleanimator.markdown#linearparticleanimator-v)|[ Dampening](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/linearparticleanimator.markdown#dampening-plasma-engine-do)|[particleanimator](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/particleanimator.markdown)| |
-| |[ Force](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/linearparticleanimator.markdown#force-plasma-engine-docume)| | |
-| |[ Growth](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/linearparticleanimator.markdown#growth-plasma-engine-docum)| | |
-| |[ RandomForce](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/linearparticleanimator.markdown#randomforce-plasma-engine)| | |
-| |[ Torque](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/linearparticleanimator.markdown#torque-plasma-engine-docum)| | |
-| |[ Twist](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/linearparticleanimator.markdown#twist-plasma-engine-docume)| | |
+|[ Constructor](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/linearparticleanimator.markdown#linearparticleanimator-v)|[ Dampening](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/linearparticleanimator.markdown#dampening-plasma-engine-do)|[particleanimator](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/particleanimator.markdown)| |
+| |[ Force](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/linearparticleanimator.markdown#force-plasma-engine-docume)| | |
+| |[ Growth](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/linearparticleanimator.markdown#growth-plasma-engine-docum)| | |
+| |[ RandomForce](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/linearparticleanimator.markdown#randomforce-plasma-engine)| | |
+| |[ Torque](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/linearparticleanimator.markdown#torque-plasma-engine-docum)| | |
+| |[ Twist](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/linearparticleanimator.markdown#twist-plasma-engine-docume)| | |
 
 
  #  Properties
 
 
 ---  
- #  Dampening : [real](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown)
+ #  Dampening : [real](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real.markdown)
 
 > Velocity dampening.
 > ``` lang=cpp, name=Lightning
@@ -26,7 +26,7 @@
 
 
 ---  
- #  Force : [real3](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real3.markdown)
+ #  Force : [real3](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real3.markdown)
 
 > Constance force applied to particles.
 > ``` lang=cpp, name=Lightning
@@ -34,7 +34,7 @@
 
 
 ---  
- #  Growth : [real](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown)
+ #  Growth : [real](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real.markdown)
 
 > Rate of particle size growth.
 > ``` lang=cpp, name=Lightning
@@ -42,7 +42,7 @@
 
 
 ---  
- #  RandomForce : [real3](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real3.markdown)
+ #  RandomForce : [real3](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real3.markdown)
 
 > Random force applied to particles.
 > ``` lang=cpp, name=Lightning
@@ -50,7 +50,7 @@
 
 
 ---  
- #  Torque : [real](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown)
+ #  Torque : [real](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real.markdown)
 
 > Force that applies spin.
 > ``` lang=cpp, name=Lightning
@@ -58,7 +58,7 @@
 
 
 ---  
- #  Twist : [real3](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real3.markdown)
+ #  Twist : [real3](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real3.markdown)
 
 > Twist applies a twisting/tornado force to the particles.
 > ``` lang=cpp, name=Lightning

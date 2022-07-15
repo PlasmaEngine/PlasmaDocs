@@ -2,21 +2,21 @@
 
 |Methods|Properties|Base Classes|Derived Classes|
 |---|---|---|---|
-|[ Constructor](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/processstartinfo.markdown#processstartinfo-void)|[ ApplicationName](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/processstartinfo.markdown#applicationname-plasma-eng)| | |
-| |[ Arguments](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/processstartinfo.markdown#arguments-plasma-engine-do)| | |
-| |[ RedirectStandardError](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/processstartinfo.markdown#redirectstandarderror-ze)| | |
-| |[ RedirectStandardInput](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/processstartinfo.markdown#redirectstandardinput-ze)| | |
-| |[ RedirectStandardOutput](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/processstartinfo.markdown#redirectstandardoutput-z)| | |
-| |[ SearchPath](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/processstartinfo.markdown#searchpath-plasma-engine-d)| | |
-| |[ ShowWindow](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/processstartinfo.markdown#showwindow-plasma-engine-d)| | |
-| |[ WorkingDirectory](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/processstartinfo.markdown#workingdirectory-plasma-en)| | |
+|[ Constructor](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/processstartinfo.markdown#processstartinfo-void)|[ ApplicationName](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/processstartinfo.markdown#applicationname-plasma-eng)| | |
+| |[ Arguments](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/processstartinfo.markdown#arguments-plasma-engine-do)| | |
+| |[ RedirectStandardError](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/processstartinfo.markdown#redirectstandarderror-ze)| | |
+| |[ RedirectStandardInput](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/processstartinfo.markdown#redirectstandardinput-ze)| | |
+| |[ RedirectStandardOutput](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/processstartinfo.markdown#redirectstandardoutput-z)| | |
+| |[ SearchPath](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/processstartinfo.markdown#searchpath-plasma-engine-d)| | |
+| |[ ShowWindow](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/processstartinfo.markdown#showwindow-plasma-engine-d)| | |
+| |[ WorkingDirectory](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/processstartinfo.markdown#workingdirectory-plasma-en)| | |
 
 
  #  Properties
 
 
 ---  
- #  ApplicationName : [string](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown)
+ #  ApplicationName : [string](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/string.markdown)
 
 > Name of the application to execute. No quoting of this string is necessary.
 > ``` lang=cpp, name=Lightning
@@ -24,7 +24,7 @@
 
 
 ---  
- #  Arguments : [string](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown)
+ #  Arguments : [string](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/string.markdown)
 
 > Arguments to pass to the application.
 > ``` lang=cpp, name=Lightning
@@ -32,7 +32,7 @@
 
 
 ---  
- #  RedirectStandardError : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown)
+ #  RedirectStandardError : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/boolean.markdown)
 
 > Whether or not we should redirect the Standard Error of the process for capturing.
 > ``` lang=cpp, name=Lightning
@@ -40,7 +40,7 @@
 
 
 ---  
- #  RedirectStandardInput : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown)
+ #  RedirectStandardInput : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/boolean.markdown)
 
 > Whether or not we should redirect the Standard Input of the process for writing.
 > ``` lang=cpp, name=Lightning
@@ -48,7 +48,7 @@
 
 
 ---  
- #  RedirectStandardOutput : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown)
+ #  RedirectStandardOutput : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/boolean.markdown)
 
 > Whether or not we should redirect the Standard Output of the process for capturing.
 > ``` lang=cpp, name=Lightning
@@ -56,7 +56,7 @@
 
 
 ---  
- #  SearchPath : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown)
+ #  SearchPath : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/boolean.markdown)
 
 > Whether or not we should search the path for the application.
 > ``` lang=cpp, name=Lightning
@@ -64,7 +64,7 @@
 
 
 ---  
- #  ShowWindow : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown)
+ #  ShowWindow : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/boolean.markdown)
 
 > Whether or not the window of the launched application should be shown.
 > ``` lang=cpp, name=Lightning
@@ -72,7 +72,7 @@
 
 
 ---  
- #  WorkingDirectory : [string](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/string.markdown)
+ #  WorkingDirectory : [string](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/string.markdown)
 
 > The working directory for the process to start with. No quoting of this string is necessary.
 > ``` lang=cpp, name=Lightning

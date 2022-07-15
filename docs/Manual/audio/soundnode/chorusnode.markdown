@@ -1,5 +1,5 @@
 # Chorus Node
-The [ ChorusNode ](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/chorusnode.markdown) collects audio data from all of its inputs and applies a chorus filter before passing it along to its outputs. 
+The [ ChorusNode ](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/chorusnode.markdown) collects audio data from all of its inputs and applies a chorus filter before passing it along to its outputs. 
 
 # Common Uses
 
@@ -15,6 +15,6 @@ Chorus filters use an oscillating delay filter to add a chorus-like effect to th
 - [soudnode_overview](https://plasmaengine.github.io/PlasmaDocs/Manual/audio/soundnode/soudnode_overview.markdown)
 
 ## Code Reference
-- [ ChorusNode ](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/chorusnode.markdown) 
+- [ ChorusNode ](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/chorusnode.markdown) 
 
  

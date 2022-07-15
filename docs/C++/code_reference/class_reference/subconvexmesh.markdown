@@ -6,17 +6,17 @@
 
 |Methods|Properties|Base Classes|Derived Classes|
 |---|---|---|---|
-| |[ Indices](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/subconvexmesh.markdown#indices-plasma-engine-docu)|[safeid32object](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/safeid32object.markdown)| |
-| |[ Mesh](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/subconvexmesh.markdown#mesh-plasma-engine-documen)| | |
-| |[ TriangleIndices](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/subconvexmesh.markdown#triangleindices-plasma-eng)| | |
-| |[ Valid](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/subconvexmesh.markdown#valid-plasma-engine-docume)| | |
+| |[ Indices](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/subconvexmesh.markdown#indices-plasma-engine-docu)|[safeid32object](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/safeid32object.markdown)| |
+| |[ Mesh](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/subconvexmesh.markdown#mesh-plasma-engine-documen)| | |
+| |[ TriangleIndices](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/subconvexmesh.markdown#triangleindices-plasma-eng)| | |
+| |[ Valid](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/subconvexmesh.markdown#valid-plasma-engine-docume)| | |
 
 
  #  Properties
 
 
 ---  
- #  Indices : [multiconvexmeshindexdata](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/multiconvexmeshindexdata.markdown)
+ #  Indices : [multiconvexmeshindexdata](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/multiconvexmeshindexdata.markdown)
 
  `read-only`
 
@@ -26,7 +26,7 @@
 
 
 ---  
- #  Mesh : [multiconvexmesh](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/multiconvexmesh.markdown)
+ #  Mesh : [multiconvexmesh](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/multiconvexmesh.markdown)
 
 > The MultiConvexMesh that owns this sub-mesh.
 > ``` lang=cpp, name=Lightning
@@ -34,7 +34,7 @@
 
 
 ---  
- #  TriangleIndices : [multiconvexmeshindexdata](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/multiconvexmeshindexdata.markdown)
+ #  TriangleIndices : [multiconvexmeshindexdata](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/multiconvexmeshindexdata.markdown)
 
  `read-only`
 
@@ -44,7 +44,7 @@
 
 
 ---  
- #  Valid : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/boolean.markdown)
+ #  Valid : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/boolean.markdown)
 
  `read-only`
 

@@ -4,17 +4,17 @@
 
 |Methods|Properties|Base Classes|Derived Classes|
 |---|---|---|---|
-| |[ AdditiveCutoff](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/addnoisenode.markdown#additivecutoff-plasma-engi)|[soundnode](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/soundnode.markdown)| |
-| |[ AdditiveGain](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/addnoisenode.markdown#additivegain-plasma-engine)| | |
-| |[ MultiplicativeCutoff](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/addnoisenode.markdown#multiplicativecutoff-zer)| | |
-| |[ MultiplicativeGain](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/addnoisenode.markdown#multiplicativegain-plasma)| | |
+| |[ AdditiveCutoff](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/addnoisenode.markdown#additivecutoff-plasma-engi)|[soundnode](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/soundnode.markdown)| |
+| |[ AdditiveGain](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/addnoisenode.markdown#additivegain-plasma-engine)| | |
+| |[ MultiplicativeCutoff](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/addnoisenode.markdown#multiplicativecutoff-zer)| | |
+| |[ MultiplicativeGain](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/addnoisenode.markdown#multiplicativegain-plasma)| | |
 
 
  #  Properties
 
 
 ---  
- #  AdditiveCutoff : [real](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown)
+ #  AdditiveCutoff : [real](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real.markdown)
 
 > The cutoff frequency used for the additive noise component, in Hz.
 > ``` lang=cpp, name=Lightning
@@ -22,7 +22,7 @@
 
 
 ---  
- #  AdditiveGain : [real](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown)
+ #  AdditiveGain : [real](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real.markdown)
 
 > The gain of the additive noise component, in decibels.
 > ``` lang=cpp, name=Lightning
@@ -30,7 +30,7 @@
 
 
 ---  
- #  MultiplicativeCutoff : [real](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown)
+ #  MultiplicativeCutoff : [real](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real.markdown)
 
 > The cutoff frequency used for the multiplicative noise component, in Hz.
 > ``` lang=cpp, name=Lightning
@@ -38,7 +38,7 @@
 
 
 ---  
- #  MultiplicativeGain : [real](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown)
+ #  MultiplicativeGain : [real](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real.markdown)
 
 > The gain of the multiplicative noise component, in decibels.
 > ``` lang=cpp, name=Lightning

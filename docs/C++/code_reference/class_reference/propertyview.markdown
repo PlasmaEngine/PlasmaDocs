@@ -2,10 +2,10 @@
 
 |Methods|Properties|Base Classes|Derived Classes|
 |---|---|---|---|
-|[ ActivateAutoUpdate](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/propertyview.markdown#activateautoupdate-void)| |[composite](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/composite.markdown)| |
-|[ Invalidate](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/propertyview.markdown#invalidate-void)| | | |
-|[ Refresh](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/propertyview.markdown#refresh-void)| | | |
-|[ SetObject](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/propertyview.markdown#setobject-void)| | | |
+|[ ActivateAutoUpdate](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/propertyview.markdown#activateautoupdate-void)| |[composite](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/composite.markdown)| |
+|[ Invalidate](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/propertyview.markdown#invalidate-void)| | | |
+|[ Refresh](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/propertyview.markdown#refresh-void)| | | |
+|[ SetObject](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/propertyview.markdown#setobject-void)| | | |
 
 
  #  Properties

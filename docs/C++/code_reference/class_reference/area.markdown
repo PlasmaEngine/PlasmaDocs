@@ -4,52 +4,52 @@
 
 |Methods|Properties|Base Classes|Derived Classes|
 |---|---|---|---|
-|[ Constructor](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/area.markdown#area-void)|[ BottomCenter](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/area.markdown#bottomcenter-plasma-engine)|[component](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/component.markdown)| |
-|[ GetLocalLocation](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/area.markdown#getlocallocation-plasma-en)|[ BottomLeft](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/area.markdown#bottomleft-plasma-engine-d)| | |
-|[ GetWorldLocation](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/area.markdown#getworldlocation-plasma-en)|[ BottomRight](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/area.markdown#bottomright-plasma-engine)| | |
-|[ LocalOffsetOf](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/area.markdown#localoffsetof-plasma-engin)|[ Center](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/area.markdown#center-plasma-engine-docum)| | |
-|[ SetLocalLocation](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/area.markdown#setlocallocation-void)|[ CenterLeft](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/area.markdown#centerleft-plasma-engine-d)| | |
-|[ SetWorldLocation](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/area.markdown#setworldlocation-void)|[ CenterRight](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/area.markdown#centerright-plasma-engine)| | |
-| |[ LocalBottom](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/area.markdown#localbottom-plasma-engine)| | |
-| |[ LocalBottomCenter](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/area.markdown#localbottomcenter-plasma-e)| | |
-| |[ LocalBottomLeft](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/area.markdown#localbottomleft-plasma-eng)| | |
-| |[ LocalBottomRight](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/area.markdown#localbottomright-plasma-en)| | |
-| |[ LocalCenter](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/area.markdown#localcenter-plasma-engine)| | |
-| |[ LocalCenterLeft](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/area.markdown#localcenterleft-plasma-eng)| | |
-| |[ LocalCenterRight](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/area.markdown#localcenterright-plasma-en)| | |
-| |[ LocalLeft](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/area.markdown#localleft-plasma-engine-do)| | |
-| |[ LocalRectangle](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/area.markdown#localrectangle-plasma-engi)| | |
-| |[ LocalRight](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/area.markdown#localright-plasma-engine-d)| | |
-| |[ LocalTop](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/area.markdown#localtop-plasma-engine-doc)| | |
-| |[ LocalTopCenter](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/area.markdown#localtopcenter-plasma-engi)| | |
-| |[ LocalTopLeft](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/area.markdown#localtopleft-plasma-engine)| | |
-| |[ LocalTopRight](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/area.markdown#localtopright-plasma-engin)| | |
-| |[ Origin](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/area.markdown#origin-plasma-engine-docum)| | |
-| |[ Size](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/area.markdown#size-plasma-engine-documen)| | |
-| |[ TopCenter](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/area.markdown#topcenter-plasma-engine-do)| | |
-| |[ TopLeft](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/area.markdown#topleft-plasma-engine-docu)| | |
-| |[ TopRight](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/area.markdown#topright-plasma-engine-doc)| | |
-| |[ WorldBottom](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/area.markdown#worldbottom-plasma-engine)| | |
-| |[ WorldBottomCenter](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/area.markdown#worldbottomcenter-plasma-e)| | |
-| |[ WorldBottomLeft](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/area.markdown#worldbottomleft-plasma-eng)| | |
-| |[ WorldBottomRight](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/area.markdown#worldbottomright-plasma-en)| | |
-| |[ WorldCenter](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/area.markdown#worldcenter-plasma-engine)| | |
-| |[ WorldCenterLeft](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/area.markdown#worldcenterleft-plasma-eng)| | |
-| |[ WorldCenterRight](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/area.markdown#worldcenterright-plasma-en)| | |
-| |[ WorldLeft](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/area.markdown#worldleft-plasma-engine-do)| | |
-| |[ WorldRectangle](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/area.markdown#worldrectangle-plasma-engi)| | |
-| |[ WorldRight](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/area.markdown#worldright-plasma-engine-d)| | |
-| |[ WorldTop](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/area.markdown#worldtop-plasma-engine-doc)| | |
-| |[ WorldTopCenter](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/area.markdown#worldtopcenter-plasma-engi)| | |
-| |[ WorldTopLeft](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/area.markdown#worldtopleft-plasma-engine)| | |
-| |[ WorldTopRight](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/area.markdown#worldtopright-plasma-engin)| | |
+|[ Constructor](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/area.markdown#area-void)|[ BottomCenter](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/area.markdown#bottomcenter-plasma-engine)|[component](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/component.markdown)| |
+|[ GetLocalLocation](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/area.markdown#getlocallocation-plasma-en)|[ BottomLeft](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/area.markdown#bottomleft-plasma-engine-d)| | |
+|[ GetWorldLocation](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/area.markdown#getworldlocation-plasma-en)|[ BottomRight](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/area.markdown#bottomright-plasma-engine)| | |
+|[ LocalOffsetOf](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/area.markdown#localoffsetof-plasma-engin)|[ Center](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/area.markdown#center-plasma-engine-docum)| | |
+|[ SetLocalLocation](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/area.markdown#setlocallocation-void)|[ CenterLeft](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/area.markdown#centerleft-plasma-engine-d)| | |
+|[ SetWorldLocation](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/area.markdown#setworldlocation-void)|[ CenterRight](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/area.markdown#centerright-plasma-engine)| | |
+| |[ LocalBottom](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/area.markdown#localbottom-plasma-engine)| | |
+| |[ LocalBottomCenter](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/area.markdown#localbottomcenter-plasma-e)| | |
+| |[ LocalBottomLeft](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/area.markdown#localbottomleft-plasma-eng)| | |
+| |[ LocalBottomRight](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/area.markdown#localbottomright-plasma-en)| | |
+| |[ LocalCenter](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/area.markdown#localcenter-plasma-engine)| | |
+| |[ LocalCenterLeft](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/area.markdown#localcenterleft-plasma-eng)| | |
+| |[ LocalCenterRight](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/area.markdown#localcenterright-plasma-en)| | |
+| |[ LocalLeft](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/area.markdown#localleft-plasma-engine-do)| | |
+| |[ LocalRectangle](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/area.markdown#localrectangle-plasma-engi)| | |
+| |[ LocalRight](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/area.markdown#localright-plasma-engine-d)| | |
+| |[ LocalTop](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/area.markdown#localtop-plasma-engine-doc)| | |
+| |[ LocalTopCenter](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/area.markdown#localtopcenter-plasma-engi)| | |
+| |[ LocalTopLeft](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/area.markdown#localtopleft-plasma-engine)| | |
+| |[ LocalTopRight](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/area.markdown#localtopright-plasma-engin)| | |
+| |[ Origin](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/area.markdown#origin-plasma-engine-docum)| | |
+| |[ Size](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/area.markdown#size-plasma-engine-documen)| | |
+| |[ TopCenter](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/area.markdown#topcenter-plasma-engine-do)| | |
+| |[ TopLeft](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/area.markdown#topleft-plasma-engine-docu)| | |
+| |[ TopRight](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/area.markdown#topright-plasma-engine-doc)| | |
+| |[ WorldBottom](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/area.markdown#worldbottom-plasma-engine)| | |
+| |[ WorldBottomCenter](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/area.markdown#worldbottomcenter-plasma-e)| | |
+| |[ WorldBottomLeft](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/area.markdown#worldbottomleft-plasma-eng)| | |
+| |[ WorldBottomRight](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/area.markdown#worldbottomright-plasma-en)| | |
+| |[ WorldCenter](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/area.markdown#worldcenter-plasma-engine)| | |
+| |[ WorldCenterLeft](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/area.markdown#worldcenterleft-plasma-eng)| | |
+| |[ WorldCenterRight](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/area.markdown#worldcenterright-plasma-en)| | |
+| |[ WorldLeft](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/area.markdown#worldleft-plasma-engine-do)| | |
+| |[ WorldRectangle](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/area.markdown#worldrectangle-plasma-engi)| | |
+| |[ WorldRight](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/area.markdown#worldright-plasma-engine-d)| | |
+| |[ WorldTop](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/area.markdown#worldtop-plasma-engine-doc)| | |
+| |[ WorldTopCenter](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/area.markdown#worldtopcenter-plasma-engi)| | |
+| |[ WorldTopLeft](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/area.markdown#worldtopleft-plasma-engine)| | |
+| |[ WorldTopRight](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/area.markdown#worldtopright-plasma-engin)| | |
 
 
  #  Properties
 
 
 ---  
- #  BottomCenter : [real2](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real2.markdown)
+ #  BottomCenter : [real2](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real2.markdown)
 
  `read-only`
 
@@ -59,7 +59,7 @@
 
 
 ---  
- #  BottomLeft : [real2](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real2.markdown)
+ #  BottomLeft : [real2](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real2.markdown)
 
  `read-only`
 
@@ -69,7 +69,7 @@
 
 
 ---  
- #  BottomRight : [real2](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real2.markdown)
+ #  BottomRight : [real2](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real2.markdown)
 
  `read-only`
 
@@ -79,7 +79,7 @@
 
 
 ---  
- #  Center : [real2](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real2.markdown)
+ #  Center : [real2](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real2.markdown)
 
  `read-only`
 
@@ -89,7 +89,7 @@
 
 
 ---  
- #  CenterLeft : [real2](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real2.markdown)
+ #  CenterLeft : [real2](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real2.markdown)
 
  `read-only`
 
@@ -99,7 +99,7 @@
 
 
 ---  
- #  CenterRight : [real2](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real2.markdown)
+ #  CenterRight : [real2](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real2.markdown)
 
  `read-only`
 
@@ -109,7 +109,7 @@
 
 
 ---  
- #  LocalBottom : [real](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown)
+ #  LocalBottom : [real](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -117,7 +117,7 @@
 
 
 ---  
- #  LocalBottomCenter : [real2](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real2.markdown)
+ #  LocalBottomCenter : [real2](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real2.markdown)
 
  `read-only`
 
@@ -127,7 +127,7 @@
 
 
 ---  
- #  LocalBottomLeft : [real2](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real2.markdown)
+ #  LocalBottomLeft : [real2](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real2.markdown)
 
  `read-only`
 
@@ -137,7 +137,7 @@
 
 
 ---  
- #  LocalBottomRight : [real2](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real2.markdown)
+ #  LocalBottomRight : [real2](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real2.markdown)
 
  `read-only`
 
@@ -147,7 +147,7 @@
 
 
 ---  
- #  LocalCenter : [real2](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real2.markdown)
+ #  LocalCenter : [real2](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real2.markdown)
 
  `read-only`
 
@@ -157,7 +157,7 @@
 
 
 ---  
- #  LocalCenterLeft : [real2](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real2.markdown)
+ #  LocalCenterLeft : [real2](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real2.markdown)
 
  `read-only`
 
@@ -167,7 +167,7 @@
 
 
 ---  
- #  LocalCenterRight : [real2](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real2.markdown)
+ #  LocalCenterRight : [real2](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real2.markdown)
 
  `read-only`
 
@@ -177,7 +177,7 @@
 
 
 ---  
- #  LocalLeft : [real](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown)
+ #  LocalLeft : [real](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -185,7 +185,7 @@
 
 
 ---  
- #  LocalRectangle : [rectangle](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/rectangle.markdown)
+ #  LocalRectangle : [rectangle](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/rectangle.markdown)
 
 > Rectangle representing the area relative to parent.
 > ``` lang=cpp, name=Lightning
@@ -193,7 +193,7 @@
 
 
 ---  
- #  LocalRight : [real](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown)
+ #  LocalRight : [real](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -201,7 +201,7 @@
 
 
 ---  
- #  LocalTop : [real](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown)
+ #  LocalTop : [real](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -209,7 +209,7 @@
 
 
 ---  
- #  LocalTopCenter : [real2](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real2.markdown)
+ #  LocalTopCenter : [real2](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real2.markdown)
 
  `read-only`
 
@@ -219,7 +219,7 @@
 
 
 ---  
- #  LocalTopLeft : [real2](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real2.markdown)
+ #  LocalTopLeft : [real2](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real2.markdown)
 
  `read-only`
 
@@ -229,7 +229,7 @@
 
 
 ---  
- #  LocalTopRight : [real2](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real2.markdown)
+ #  LocalTopRight : [real2](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real2.markdown)
 
  `read-only`
 
@@ -239,7 +239,7 @@
 
 
 ---  
- #  Origin : [Location](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#location)
+ #  Origin : [Location](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/enum_reference.markdown#location)
 
 > Location of the Origin of the Area.
 > ``` lang=cpp, name=Lightning
@@ -247,7 +247,7 @@
 
 
 ---  
- #  Size : [real2](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real2.markdown)
+ #  Size : [real2](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real2.markdown)
 
 > Size of the Area.
 > ``` lang=cpp, name=Lightning
@@ -255,7 +255,7 @@
 
 
 ---  
- #  TopCenter : [real2](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real2.markdown)
+ #  TopCenter : [real2](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real2.markdown)
 
  `read-only`
 
@@ -265,7 +265,7 @@
 
 
 ---  
- #  TopLeft : [real2](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real2.markdown)
+ #  TopLeft : [real2](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real2.markdown)
 
  `read-only`
 
@@ -275,7 +275,7 @@
 
 
 ---  
- #  TopRight : [real2](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real2.markdown)
+ #  TopRight : [real2](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real2.markdown)
 
  `read-only`
 
@@ -285,7 +285,7 @@
 
 
 ---  
- #  WorldBottom : [real](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown)
+ #  WorldBottom : [real](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -293,7 +293,7 @@
 
 
 ---  
- #  WorldBottomCenter : [real2](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real2.markdown)
+ #  WorldBottomCenter : [real2](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real2.markdown)
 
  `read-only`
 
@@ -303,7 +303,7 @@
 
 
 ---  
- #  WorldBottomLeft : [real2](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real2.markdown)
+ #  WorldBottomLeft : [real2](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real2.markdown)
 
  `read-only`
 
@@ -313,7 +313,7 @@
 
 
 ---  
- #  WorldBottomRight : [real2](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real2.markdown)
+ #  WorldBottomRight : [real2](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real2.markdown)
 
  `read-only`
 
@@ -323,7 +323,7 @@
 
 
 ---  
- #  WorldCenter : [real2](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real2.markdown)
+ #  WorldCenter : [real2](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real2.markdown)
 
  `read-only`
 
@@ -333,7 +333,7 @@
 
 
 ---  
- #  WorldCenterLeft : [real2](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real2.markdown)
+ #  WorldCenterLeft : [real2](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real2.markdown)
 
  `read-only`
 
@@ -343,7 +343,7 @@
 
 
 ---  
- #  WorldCenterRight : [real2](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real2.markdown)
+ #  WorldCenterRight : [real2](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real2.markdown)
 
  `read-only`
 
@@ -353,7 +353,7 @@
 
 
 ---  
- #  WorldLeft : [real](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown)
+ #  WorldLeft : [real](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -361,7 +361,7 @@
 
 
 ---  
- #  WorldRectangle : [rectangle](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/rectangle.markdown)
+ #  WorldRectangle : [rectangle](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/rectangle.markdown)
 
 > Rectangle representing the area in world space.
 > ``` lang=cpp, name=Lightning
@@ -369,7 +369,7 @@
 
 
 ---  
- #  WorldRight : [real](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown)
+ #  WorldRight : [real](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -377,7 +377,7 @@
 
 
 ---  
- #  WorldTop : [real](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown)
+ #  WorldTop : [real](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -385,7 +385,7 @@
 
 
 ---  
- #  WorldTopCenter : [real2](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real2.markdown)
+ #  WorldTopCenter : [real2](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real2.markdown)
 
  `read-only`
 
@@ -395,7 +395,7 @@
 
 
 ---  
- #  WorldTopLeft : [real2](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real2.markdown)
+ #  WorldTopLeft : [real2](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real2.markdown)
 
  `read-only`
 
@@ -405,7 +405,7 @@
 
 
 ---  
- #  WorldTopRight : [real2](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real2.markdown)
+ #  WorldTopRight : [real2](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real2.markdown)
 
  `read-only`
 
@@ -432,36 +432,36 @@
 
 
 ---  
- #  GetLocalLocation : [real2](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real2.markdown)
+ #  GetLocalLocation : [real2](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real2.markdown)
 
 > 
 > |Name|Type|Description|
 > |---|---|---|
-> |location|[Location](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#location)| |
+> |location|[Location](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/enum_reference.markdown#location)| |
 > ``` lang=cpp, name=Lightning
 > function GetLocalLocation(location : Location) : Real2
 > ``` 
 
 
 ---  
- #  GetWorldLocation : [real2](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real2.markdown)
+ #  GetWorldLocation : [real2](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real2.markdown)
 
 > 
 > |Name|Type|Description|
 > |---|---|---|
-> |location|[Location](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#location)| |
+> |location|[Location](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/enum_reference.markdown#location)| |
 > ``` lang=cpp, name=Lightning
 > function GetWorldLocation(location : Location) : Real2
 > ``` 
 
 
 ---  
- #  LocalOffsetOf : [real2](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real2.markdown)
+ #  LocalOffsetOf : [real2](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real2.markdown)
 
 > Offset of the given location in local space.
 > |Name|Type|Description|
 > |---|---|---|
-> |location|[Location](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#location)| |
+> |location|[Location](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/enum_reference.markdown#location)| |
 > ``` lang=cpp, name=Lightning
 > function LocalOffsetOf(location : Location) : Real2
 > ``` 
@@ -473,8 +473,8 @@
 > 
 > |Name|Type|Description|
 > |---|---|---|
-> |location|[Location](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#location)| |
-> |localTranslation|[real2](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real2.markdown)| |
+> |location|[Location](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/enum_reference.markdown#location)| |
+> |localTranslation|[real2](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real2.markdown)| |
 > ``` lang=cpp, name=Lightning
 > function SetLocalLocation(location : Location, localTranslation : Real2)
 > ``` 
@@ -486,8 +486,8 @@
 > 
 > |Name|Type|Description|
 > |---|---|---|
-> |location|[Location](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#location)| |
-> |worldTranslation|[real2](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real2.markdown)| |
+> |location|[Location](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/enum_reference.markdown#location)| |
+> |worldTranslation|[real2](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real2.markdown)| |
 > ``` lang=cpp, name=Lightning
 > function SetWorldLocation(location : Location, worldTranslation : Real2)
 > ``` 

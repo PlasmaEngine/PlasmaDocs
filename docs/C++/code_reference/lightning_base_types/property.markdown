@@ -1,14 +1,14 @@
 |Methods|Properties|Base Classes|Derived Classes|
 |---|---|---|---|
-|[ GetValue](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/property.markdown#getvalue-plasma-engine-doc)|[ Getter](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/property.markdown#getter-plasma-engine-docum)|[member](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/member.markdown)|[field](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/field.markdown)|
-|[ SetValue](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/property.markdown#setvalue-void)|[ Setter](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/property.markdown#setter-plasma-engine-docum)| |[gettersetter](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/gettersetter.markdown)|
+|[ GetValue](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/property.markdown#getvalue-plasma-engine-doc)|[ Getter](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/property.markdown#getter-plasma-engine-docum)|[member](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/member.markdown)|[field](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/field.markdown)|
+|[ SetValue](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/property.markdown#setvalue-void)|[ Setter](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/property.markdown#setter-plasma-engine-docum)| |[gettersetter](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/gettersetter.markdown)|
 
 
  #  Properties
 
 
 ---  
- #  Getter : [function](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/function.markdown)
+ #  Getter : [function](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/function.markdown)
 
  `read-only`
 
@@ -18,7 +18,7 @@
 
 
 ---  
- #  Setter : [function](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/function.markdown)
+ #  Setter : [function](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/function.markdown)
 
  `read-only`
 
