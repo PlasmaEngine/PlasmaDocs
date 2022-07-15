@@ -1,6 +1,7 @@
-The [DragEffect](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/drageffect.markdown) component applies forces to slow down the linear and angular velocity of an object. This is often used globally on the space to simulate air resistance, but can also be used for slowing movement in a water region, making one object slow down quickly, etc...
+# Drag Effect
+The [DragEffect](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/drageffect.markdown) component applies forces to slow down the linear and angular velocity of an object. This is often used globally on the space to simulate air resistance, but can also be used for slowing movement in a water region, making one object slow down quickly, etc...
 
- #  Drag vs. Damping
+# Drag vs. Damping
 DragEffect exposes properties for setting both drag and damping coefficients.
 
 A drag force is defined as:
@@ -21,21 +22,20 @@ Angular drag is defined similarly to linear drag as:
 
 where `w` is the angular velocity, `k` is the angular drag coefficient, and `T` is the resultant torque. Angular damping similarly defines an angular acceleration instead of force.
 
- #  Application Modes
-The DragEffect component is expected to work with all application modes. Drag applied to the space or level will affect all objects within. Used as a Region effect, drag will slow down all objects in contact with the Region. On a [RigidBody](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/physics/physicseffectsandregions/rigidbody.markdown) the effect will slow down that object alone. [Collider](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/physics/physicseffectsandregions/colliders.markdown) and Hierarchy effects will behave the same as a RigidBody effect.
+# Application Modes
+The DragEffect component is expected to work with all application modes. Drag applied to the space or level will affect all objects within. Used as a Region effect, drag will slow down all objects in contact with the Region. On a [RigidBody](https://plasmaengine.github.io/PlasmaDocs/Manual/physics/physicseffectsandregions/rigidbody.markdown) the effect will slow down that object alone. [Collider](https://plasmaengine.github.io/PlasmaDocs/Manual/physics/physicseffectsandregions/colliders.markdown) and Hierarchy effects will behave the same as a RigidBody effect.
 
----
- #  Related Materials
- ##  Manual
-- [physicseffectsandregions.markdown](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/physics/physicseffectsandregions.markdown)
-- [rigidbody.markdown](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/physics/physicseffectsandregions/rigidbody.markdown)
-- [colliders.markdown](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/physics/physicseffectsandregions/colliders.markdown)
+# Related Materials
+## Manual
+- [physicseffectsandregions.markdown](https://plasmaengine.github.io/PlasmaDocs/Manual/physics/physicseffectsandregions.markdown)
+- [rigidbody.markdown](https://plasmaengine.github.io/PlasmaDocs/Manual/physics/physicseffectsandregions/rigidbody.markdown)
+- [colliders.markdown](https://plasmaengine.github.io/PlasmaDocs/Manual/physics/physicseffectsandregions/colliders.markdown)
 
- ##  Reference
-- [DragEffect](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/drageffect.markdown)
-- [PhysicsEffect](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/physicseffect.markdown)
-- [RigidBody](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/rigidbody.markdown)
-- [Collider](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/collider.markdown)
-- [Region](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/region.markdown) 
+## Reference
+- [DragEffect](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/drageffect.markdown)
+- [PhysicsEffect](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/physicseffect.markdown)
+- [RigidBody](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/rigidbody.markdown)
+- [Collider](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/collider.markdown)
+- [Region](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/region.markdown) 
 
  
