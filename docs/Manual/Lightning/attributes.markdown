@@ -227,7 +227,7 @@ class CreateArchetype : LightningComponent
 
 
 ## [ComponentInterface]
-The ComponentInterface attribute allows the user to define a class as a generic interface for its derived types. One common example of this is [collider](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/collider.markdown), which acts as a component interface for all collider types, such as [boxcollider](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/boxcollider.markdown), [capsulecollider](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/capsulecollider.markdown), and more. Defining an interface using this attribute allows the user to access the members of a derived class using the component name of the base class.
+The ComponentInterface attribute allows the user to define a class as a generic interface for its derived types. One common example of this is [collider](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/collider.markdown), which acts as a component interface for all collider types, such as [boxcollider](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/boxcollider.markdown), [capsulecollider](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/capsulecollider.markdown), and more. Defining an interface using this attribute allows the user to access the members of a derived class using the component name of the base class.
 
 <pre><code class="language-csharp" name="Component Interface Access Example">
 var collisionGroup = this.Owner.BoxCollider.CollisionGroup;
@@ -301,8 +301,8 @@ To manually register, you would add these components to an archetype and then ad
 
 # Related Materials
 ## Manual
-- [inheritance](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/Lightning/inheritance.markdown)
-- [variables_and_data_types](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/Lightning/variables_and_data_types.markdown)
-- [wysiwyg](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/scripting/wysiwyg.markdown) 
+- [inheritance](https://plasmaengine.github.io/PlasmaDocs/Manual/Lightning/inheritance.markdown)
+- [variables_and_data_types](https://plasmaengine.github.io/PlasmaDocs/Manual/Lightning/variables_and_data_types.markdown)
+- [wysiwyg](https://plasmaengine.github.io/PlasmaDocs/Manual/scripting/wysiwyg.markdown) 
 
  

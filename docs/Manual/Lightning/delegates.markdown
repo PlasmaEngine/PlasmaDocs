@@ -3,7 +3,7 @@ Delegates allows you to hold a function pointer in a variable, and use them at a
 
 The following three classes will work together to demonstrate creating, defining, and calling delegates.
 
-```
+<pre><code class="language-csharp">
 class DelegateHolder
 {
   var Name : String = "Unnamed";
@@ -19,12 +19,11 @@ class DelegateHolder
     Console.WriteLine("Hi I'm `this.Name`");
   }
 }
+</code></pre>
 
-```
+The `DelegateHolder` class contains a delegate member variable `Greeting` that is set in the [constructor](https://plasmaengine.github.io/PlasmaDocs/Manual/Lightning/classes.markdown#constructors-and-destruc) to the member function `Introduce()`.
 
-The `DelegateHolder` class contains a delegate member variable `Greeting` that is set in the [constructor](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/Lightning/classes.markdown#constructors-and-destruc) to the member function `Introduce()`.
-
-```
+<pre><code class="language-csharp">
 class MyMathLib
 {
   [Static]
@@ -39,11 +38,11 @@ class MyMathLib
     return baseNum;
   }
 }
-```
+</code></pre>
 
-The `MyMathLib` class contains just a single [static](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/Lightning/attributes.markdown#static) [function](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/Lightning/functions.markdown) that returns the product of exponentiation. This function will be used to demonstrate how to use a delegate in the next and final class.
+The `MyMathLib` class contains just a single [static](https://plasmaengine.github.io/PlasmaDocs/Manual/Lightning/attributes.markdown#static) [function](https://plasmaengine.github.io/PlasmaDocs/Manual/Lightning/functions.markdown) that returns the product of exponentiation. This function will be used to demonstrate how to use a delegate in the next and final class.
 
-```
+<pre><code class="language-csharp">
 class DelegateDriver : LightningComponent
 {
   function Initialize(init : CogInitializer)
@@ -122,40 +121,41 @@ class DelegateDriver : LightningComponent
     Console.WriteLine(doMath(2, 8));
   }
 }
-
-```
+</code></pre>
 
 
 The `DelegateDriver` class covers a number of different ways to define and call a delegate. Lines 10 and 11 create two `DelegateHolder` objects, `gh` and `ef`, while line 14 creates a delegate variable that's set to the delegate variable found in object `gh`:
 
-```name=Drive Lines 10 - 14, lang=csharp
+<pre><code class="language-csharp">
 var gh = new DelegateHolder("gh");
 var ef = new DelegateHolder("ef");
 
 var getName : delegate() = gh.Greeting;
-```
+</code></pre>
 
  Line 17 demonstrates directly calling a delegate using a delegate variable, while line 20 reassigns that delegate to the delegate variable found in object `ef`:
-```lang=csharp, name=Driver Lines 17 & 20
+<pre><code class="language-csharp">
 getName();    
 
 getName = ef.Greeting;
-```
+</code></pre>
 
-Line 24 passes the delegate variable into a function, `DelegateCaller`, which is defined further down the script�that calls the delegate function of any delegate passed into it:
-```lang=csharp, name=Driver Line 24
+Line 24 passes the delegate variable into a function, `DelegateCaller`, which is defined further down the script'that calls the delegate function of any delegate passed into it:
+<pre><code class="language-csharp">
 getName = DelegateDriver.DelegateTest;
-```
+</code></pre>
+
 Line 27 assigns a static function to the delegate variable, `DelegateTest`, which defines its own delegate function assigned the to `Exponent` function in `MyMathLib`:
-```lang=csharp, name=Driver Line 27
+<pre><code class="language-csharp">
 getName = DelegateDriver.DelegateTest;
-```
+</code></pre>
+
 Line 30 then passes in the re-assigned variable back into the `DelegateCaller` function, showing that the `Exponent` function is still called:
-```lang=csharp, name=Driver Line 30
+<pre><code class="language-csharp">
 DelegateDriver.DelegateCaller(getName);
-```
+</code></pre>
 Line 33 creates a new delegate variable assigning it to another static function, while lines 35 - 44 demonstrates passing a delegate (that is redefined a couple of times) into a function that expects a delegate as a parameter:
-```lang=csharp, name=Driver Lines 33-44
+<pre><code class="language-csharp">
 var doMath : delegate(a: Integer, b: Integer): Integer = DelegateDriver.Add;
     
 Console.WriteLine(DelegateDriver.BinaryIntOpsCaller(doMath)); // 8
@@ -168,10 +168,10 @@ Console.WriteLine(doMath(2,6));                       // 12
 doMath = DelegateDriver.Subtract;
 Console.WriteLine(DelegateDriver.BinaryIntOpsCaller(doMath)); // 2
 Console.WriteLine(doMath(2,6));    
-```
+</code></pre>
 Attaching `DelegateDriver` to an object and running the project results in the following print statements in the `Console Window`:
 
-```name=Console Output
+<pre><code name="console output">
 ---------------- Begin Game ---------------
 Hi I'm gh
 Hi I'm ef
@@ -184,12 +184,12 @@ Hi I'm ef
 12
 2
 -4    
-```
+</code></pre>
 
- # Named Parameters
+# Named Parameters
 IMPORTANT: At this time the names chosen for the parameters are part of the signature. In order for two function signatures to be the same the names chosen for the parameters must match:
 
-```lang=csharp, name=MyMathLib
+<pre><code class="language-csharp">
 class MyMathLib
 {
   [Static] // Note named parameters are lhs and rhs:
@@ -198,11 +198,11 @@ class MyMathLib
     return lhs^rhs;
   }
 }
-```
+</code></pre>
 
 Consider these tests:
 
-```lang=csharp, name=Invalid Delegate Parameter Names
+<pre><code class="language-csharp">
 class Driver
 {
   function DelegateTest()
@@ -211,14 +211,14 @@ class Driver
     var doMath : delegate(a: Integer, b: Integer): Integer = MyMathLib.Exponent;// This won't compile.
   }
 }
-```
+</code></pre>
 
-```name=Console Output
+<pre><code name="console output">
   The value being assigned to 'doMath' must be of type 'delegate (a : Integer, b : Integer) : Integer'. 
   Its type is 'delegate (lhs : Integer, rhs : Integer) : Integer'.
-```
+</code></pre>
 
-```lang=csharp, name=Excluded Parameter Names
+<pre><code class="language-csharp">
 class Driver
 {
   function DelegateTest()
@@ -227,14 +227,14 @@ class Driver
     var doMath : delegate(Integer, Integer): Integer = MyMathLib.Exponent;// This won't compile.
   }
 }
-```
+</code></pre>
 
-```name=Console Output
+<pre><code name="console output">
 Function declaration 'delegate' has an invalid argument list. We found 'UpperIdentifier' but 
 we expected to find ')'.
-```
+</code></pre>
 
-```lang=csharp, name=Correctly Named Parameters
+<pre><code class="language-csharp">
 class Driver
 {
   function DelegateTest()
@@ -244,19 +244,19 @@ class Driver
     Console.WriteLine(doMath(2,8));
   }
 }
-```
+</code></pre>
 
-```name=Console Output
+<pre><code name="console output">
 ---------------- Begin Game ---------------
 256
-```
+</code></pre>
 
- # Member Function Delegates
-IMPORTANT: Delegates that point at member functions can create memory leaks if they make cycles. See [memory_management](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/Lightning/memory_management.markdown) for more.
+# Member Function Delegates
+IMPORTANT: Delegates that point at member functions can create memory leaks if they make cycles. See [memory_management](https://plasmaengine.github.io/PlasmaDocs/Manual/Lightning/memory_management.markdown) for more.
 
 IMPORTANT: Delegates pointing to member functions will throw runtime errors if the instance it was bound with was destroyed:
 
-```lang=csharp, name=Invalid Call to a Delegate from a Deleted Variable
+<pre><code class="language-csharp">
   // Here are three Objects with the ability to hold delegates:
   var ab = new DelegateHolder("ab");
   var b = new DelegateHolder("b");
@@ -265,31 +265,29 @@ IMPORTANT: Delegates pointing to member functions will throw runtime errors if t
   
   delete b;
   ab.Greeting(); // This throws a runtime error
-```
+</code></pre>
 
-```name=Console Output
+<pre><code name="console output">
 Attempted to access a member of a null handle: Attempted to call a member function on a null object
-```
+</code></pre>
 
- # Null Delegates
+# Null Delegates
 
 IMPORTANT: It is an illegal operation to call a null delegate, so be sure to initialize your delegates before calling!
 
-```lang=csharp
+<pre><code class="language-csharp">
 // Here are three Objects with the ability to hold delegates:
 var ab: delegate(a: Integer, b: Integer): Integer  = null;
 
 ab(3, 6);// This throws a runtime error
-```
+</code></pre>
 
-```name=Console Output
+<pre><code name="console output">
 Attempted to invoke a null delegate
-```
+</code></pre>
 
- # Related Materials
- ## Manual
-- [memory_management](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/Lightning/memory_management.markdown)
-- [classes](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/Lightning/classes.markdown)
-- [attributes](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/Lightning/attributes.markdown) 
-
- 
+# Related Materials
+## Manual
+- [memory_management](https://plasmaengine.github.io/PlasmaDocs/Manual/Lightning/memory_management.markdown)
+- [classes](https://plasmaengine.github.io/PlasmaDocs/Manual/Lightning/classes.markdown)
+- [attributes](https://plasmaengine.github.io/PlasmaDocs/Manual/Lightning/attributes.markdown)  
