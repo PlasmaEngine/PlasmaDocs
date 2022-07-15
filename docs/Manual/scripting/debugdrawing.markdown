@@ -1,10 +1,11 @@
+ # Debug Drawing
 Debug drawing is a feature in Plasma that allows you to draw lines and shapes within the editor for the purpose of debugging your game. DebugDraw objects have simple interfaces to draw simple, solid color primitives that are intended for communicating information visually to the developer. While there are many different shapes that may be debug drawn, this page limits itself to describing lines and triangles.
 
- # DebugDraw
+# DebugDraw
 
-The DebugDraw object draws all the debug objects in a level once per frame.  Each debug draw object is turned into a graphical which uses either the DebugDraw resource or  DebugDrawOnTop resource [RenderGroup](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/graphics/rendergroups.markdown). The user will never make the draw call directly; instead, all debug objects to be rendered must be added to the debug draw call using the `DebugDraw.Add()` function:
+The DebugDraw object draws all the debug objects in a level once per frame.  Each debug draw object is turned into a graphical which uses either the DebugDraw resource or  DebugDrawOnTop resource [RenderGroup](https://plasmaengine.github.io/PlasmaDocs/Manual/graphics/rendergroups.markdown). The user will never make the draw call directly; instead, all debug objects to be rendered must be added to the debug draw call using the `DebugDraw.Add()` function:
 
-``` lang=csharp
+<pre><code class="language-csharp">
 // Create a DebugLine instance with a point and a radius, and add it to the DebugDraw call
 var dLine = DebugLine(Real3(0,0,0), Real3(5, 5, 0));
 dLine.HeadSize = 1.0;
@@ -15,18 +16,15 @@ DebugDraw.Add(dLine);
 var dSphere = DebugSphere(Real3(0,0,0), 4.0);
 dSphere.Colored = true;
 DebugDraw.Add(dSphere);
-```
+</code></pre>
+
+![DebugDrawLineSphere2D](https://raw.githubusercontent.com/PlasmaEngine/PlasmaDocs/master/media/47257.png) *The preceding code block as rendered in a 2D level*
 
 
-![DebugDrawLineSphere2D](https://media.githubusercontent.com/media/PlasmaEngine/PlasmaDocs/master/doc_files/47257.png) *The preceding code block as rendered in a 2D level*
+![DebugDrawLineSphere3D](https://raw.githubusercontent.com/PlasmaEngine/PlasmaDocs/master/media/47259.png) *The preceding code block as rendered in a 3D level (viewed from an angle)*
 
 
-
-
-![DebugDrawLineSphere3D](https://media.githubusercontent.com/media/PlasmaEngine/PlasmaDocs/master/doc_files/47259.png) *The preceding code block as rendered in a 3D level (viewed from an angle)*
-
-
- # DebugLine
+# DebugLine
 
 DebugLine draws a line between two points, a start and an end.  Lines can also be arrows by using the BoxHeads checkBox property, which adds a cone on the end of the line.   These two points provide the minimum required settings when adding a debug line object. The DebugLine-specific member variables along with descriptions of each are listed below:
 
@@ -91,13 +89,9 @@ class RotateLine : LightningComponent
 
 ```
 
+![RotateLine](https://raw.githubusercontent.com/PlasmaEngine/PlasmaDocs/master/media/47261.gif) *The preceding LightningScript rendered in a 2D level*
 
-
-
-![RotateLine](https://media.githubusercontent.com/media/PlasmaEngine/PlasmaDocs/master/doc_files/47261.gif) *The preceding LightningScript rendered in a 2D level*
-
-
- ## DebugTriangle
+## DebugTriangle
 
 DebugTriangle draws a triangle defined by three vertices (the member variables `Point0`, `Point1`, and `Point2`). The DebugTriangle-specific member variables along with descriptions of each are listed below:
 
@@ -171,14 +165,11 @@ class DrawTriangles: LightningComponent
 
 ```
 
+![DebugTris](https://raw.githubusercontent.com/PlasmaEngine/PlasmaDocs/master/media/47264.png) *The preceding LightningScript rendered in a 2D level*
 
 
-
-![DebugTris](https://media.githubusercontent.com/media/PlasmaEngine/PlasmaDocs/master/doc_files/47264.png) *The preceding LightningScript rendered in a 2D level*
-
-
- ## Related Materials
- ### Manual
-- [rendergroups](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/graphics/rendergroups.markdown) 
+## Related Materials
+### Manual
+- [rendergroups](https://plasmaengine.github.io/PlasmaDocs/Manual/graphics/rendergroups.markdown) 
 
  

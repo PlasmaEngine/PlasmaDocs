@@ -1,15 +1,11 @@
-Properties are one of the easiest ways to make components more reusable. While some properties affect runtime behavior, others are simply items that help set the initial state of one�s components.
+# WYSIWYG
+Properties are one of the easiest ways to make components more reusable. While some properties affect runtime behavior, others are simply items that help set the initial state of one's components.
 
 One can see the WYSIWYG (what-you-see-is-what-you-get) effect with some of the built-in components.
 
-Here the [ Sprite ](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/graphics/sprites.markdown)'s orientation is changed the moment the FlipX checkBox box is checked in the editor. 
+Here the [ Sprite ](https://plasmaengine.github.io/PlasmaDocs/Manual/graphics/sprites.markdown)'s orientation is changed the moment the FlipX checkBox box is checked in the editor. 
 
-
-
-![flipped](https://media.githubusercontent.com/media/PlasmaEngine/PlasmaDocs/master/doc_files/47657.gif)
-
-
-As a demonstration, the following custom [ LightningScript ](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/Lightning.markdown) will emulateFlipX checkBox while using a Property:
+As a demonstration, the following custom [ LightningScript ](https://plasmaengine.github.io/PlasmaDocs/Manual/Lightning.markdown) will emulateFlipX checkBox while using a Property:
 
 ```
 class Flipper : LightningComponent
@@ -40,18 +36,12 @@ class Flipper : LightningComponent
 }
 ```
 
-
-
-
-![propertyset](https://media.githubusercontent.com/media/PlasmaEngine/PlasmaDocs/master/doc_files/1265.png)
-
-
 While this works, it doesn't flip when FlipX checkBox is altered at runtime. By only 
 calling `Flip()` during initialization, it runs once and then never again. Although other scripts can access and call `Flip()` themselves, this function doesn't update FlipX checkBox, which means it doesn't represent the state of the object, like it does in the  Sprite component. 
 
-To link the call of flip with the setting of the variable, we'll use a [Get-Set](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/Lightning/properties.markdown) for editing and a field for the backing variable. i.e.
+To link the call of flip with the setting of the variable, we'll use a [Get-Set](https://plasmaengine.github.io/PlasmaDocs/Manual/Lightning/properties.markdown) for editing and a field for the backing variable. i.e.
 
-Update `Flipper.z` to the following:
+Update `Flipper.lightningscript` to the following:
 ```
 [RunInEditor]
 class Flipper : LightningComponent
@@ -94,25 +84,14 @@ class Flipper : LightningComponent
   }
 }
 ```
+Employing [ RunInEditor ](https://plasmaengine.github.io/PlasmaDocs/Manual/Lightning/attributes.markdown), [ Serialized ](https://plasmaengine.github.io/PlasmaDocs/Manual/Lightning/attributes.markdown), and [ Editable ](https://plasmaengine.github.io/PlasmaDocs/Manual/Lightning/attributes.markdown) we've created the WYSIWYG feel, and the sprite can now be flipped at editor runtime. This design pattern can be reused to create the polished WYSIWYG feel with most scripted components.
 
-
-
-
-
-![flippereditorruntime](https://media.githubusercontent.com/media/PlasmaEngine/PlasmaDocs/master/doc_files/47671.gif)
-
-
-Employing [ RunInEditor ](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/Lightning/attributes.markdown), [ Serialized ](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/Lightning/attributes.markdown), and [ Editable ](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/Lightning/attributes.markdown) we've created the WYSIWYG feel, and the sprite can now be flipped at editor runtime. This design pattern can be reused to create the polished WYSIWYG feel with most scripted components.
-
----
- # Related Materials
- ## Manual
- [ LightningScript ](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/Lightning.markdown)
-- [ Sprites ](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/graphics/sprites.markdown)
-- [RunInEditor](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/Lightning/attributes.markdown)
-- [Get-Set](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/Lightning/properties.markdown)
-- [ RunInEditor ](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/Lightning/attributes.markdown)
-- [ Serialized ](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/Lightning/attributes.markdown)
-- [ Editable ](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/Lightning/attributes.markdown) 
-
- 
+# Related Materials
+## Manual
+- [LightningScript ](https://plasmaengine.github.io/PlasmaDocs/Manual/Lightning.markdown)
+- [Sprites ](https://plasmaengine.github.io/PlasmaDocs/Manual/graphics/sprites.markdown)
+- [RunInEditor](https://plasmaengine.github.io/PlasmaDocs/Manual/Lightning/attributes.markdown)
+- [Get-Set](https://plasmaengine.github.io/PlasmaDocs/Manual/Lightning/properties.markdown)
+- [RunInEditor ](https://plasmaengine.github.io/PlasmaDocs/Manual/Lightning/attributes.markdown)
+- [Serialized ](https://plasmaengine.github.io/PlasmaDocs/Manual/Lightning/attributes.markdown)
+- [Editable ](https://plasmaengine.github.io/PlasmaDocs/Manual/Lightning/attributes.markdown) 
