@@ -1,6 +1,9 @@
 # Audio Error
 *Audio Error: Audio is too loud and is being clipped. Reduce volume or number of sounds to avoid audio problems.*
 
+# Audio Error: Audio is too loud and is being clipped. Reduce volume or number of sounds to avoid audio problems.
+
+## Why does this happen?
 
 ## Why does this happen?
 
