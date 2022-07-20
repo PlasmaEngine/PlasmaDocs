@@ -6,18 +6,18 @@
 
 |Methods|Properties|Base Classes|Derived Classes|
 |---|---|---|---|
-|[ Constructor](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/cylindercollider.markdown#cylindercollider-void)|[ Direction](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/cylindercollider.markdown#direction-plasma-engine-do)|[collider](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/collider.markdown)| |
-| |[ Height](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/cylindercollider.markdown#height-plasma-engine-docum)| | |
-| |[ Radius](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/cylindercollider.markdown#radius-plasma-engine-docum)| | |
-| |[ WorldHeight](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/cylindercollider.markdown#worldheight-plasma-engine)| | |
-| |[ WorldRadius](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/cylindercollider.markdown#worldradius-plasma-engine)| | |
+|[ Constructor](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/cylindercollider.markdown#cylindercollider-void)|[ Direction](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/cylindercollider.markdown#direction-plasma-engine-do)|[collider](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/collider.markdown)| |
+| |[ Height](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/cylindercollider.markdown#height-plasma-engine-docum)| | |
+| |[ Radius](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/cylindercollider.markdown#radius-plasma-engine-docum)| | |
+| |[ WorldHeight](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/cylindercollider.markdown#worldheight-plasma-engine)| | |
+| |[ WorldRadius](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/cylindercollider.markdown#worldradius-plasma-engine)| | |
 
 
  #  Properties
 
 
 ---  
- #  Direction : [AxisDirection](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#axisdirection)
+ #  Direction : [AxisDirection](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/enum_reference.markdown#axisdirection)
 
 > The direction that the height is defined along. Allows the user to change whether the cylinder's height is along the x, y, or z axis.
 > ``` lang=cpp, name=Lightning
@@ -25,7 +25,7 @@
 
 
 ---  
- #  Height : [real](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown)
+ #  Height : [real](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real.markdown)
 
 > The local space distance from the top of the cylinder to the bottom.
 > ``` lang=cpp, name=Lightning
@@ -33,7 +33,7 @@
 
 
 ---  
- #  Radius : [real](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown)
+ #  Radius : [real](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real.markdown)
 
 > The local space radius of the cylinder.
 > ``` lang=cpp, name=Lightning
@@ -41,7 +41,7 @@
 
 
 ---  
- #  WorldHeight : [real](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown)
+ #  WorldHeight : [real](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real.markdown)
 
  `read-only`
 
@@ -51,7 +51,7 @@
 
 
 ---  
- #  WorldRadius : [real](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/real.markdown)
+ #  WorldRadius : [real](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real.markdown)
 
  `read-only`
 

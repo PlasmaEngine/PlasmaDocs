@@ -4,16 +4,16 @@
 
 |Methods|Properties|Base Classes|Derived Classes|
 |---|---|---|---|
-|[ Constructor](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/collisionfilter.markdown#collisionfilter-void)|[ CollisionFlag](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/collisionfilter.markdown#collisionflag-plasma-engin)|[safeid32eventobject](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/safeid32eventobject.markdown)| |
-| |[ CollisionGroupA](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/collisionfilter.markdown#collisiongroupa-plasma-eng)| | |
-| |[ CollisionGroupB](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/collisionfilter.markdown#collisiongroupb-plasma-eng)| | |
+|[ Constructor](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/collisionfilter.markdown#collisionfilter-void)|[ CollisionFlag](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/collisionfilter.markdown#collisionflag-plasma-engin)|[safeid32eventobject](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/safeid32eventobject.markdown)| |
+| |[ CollisionGroupA](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/collisionfilter.markdown#collisiongroupa-plasma-eng)| | |
+| |[ CollisionGroupB](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/collisionfilter.markdown#collisiongroupb-plasma-eng)| | |
 
 
  #  Properties
 
 
 ---  
- #  CollisionFlag : [CollisionFilterCollisionFlags](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#collisionfiltercollisionflags)
+ #  CollisionFlag : [CollisionFilterCollisionFlags](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/enum_reference.markdown#collisionfiltercollisionflags)
 
 > The collision state between the two types. Controls whether the types skip detection, skip resolution, or resolve as normal.
 > ``` lang=cpp, name=Lightning
@@ -21,7 +21,7 @@
 
 
 ---  
- #  CollisionGroupA : [collisiongroup](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/collisiongroup.markdown)
+ #  CollisionGroupA : [collisiongroup](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/collisiongroup.markdown)
 
  `read-only`
 
@@ -31,7 +31,7 @@
 
 
 ---  
- #  CollisionGroupB : [collisiongroup](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/collisiongroup.markdown)
+ #  CollisionGroupB : [collisiongroup](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/collisiongroup.markdown)
 
  `read-only`
 

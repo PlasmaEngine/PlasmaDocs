@@ -2,20 +2,20 @@
 
 |Methods|Properties|Base Classes|Derived Classes|
 |---|---|---|---|
-|[ CrashEngine](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/engine.markdown#crashengine-void)|[ GameSessions](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/engine.markdown#gamesessions-plasma-engine)|[eventobject](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/eventobject.markdown)| |
-|[ CreateGameSession](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/engine.markdown#creategamesession-plasma-e)| | | |
-|[ CreateGameSessionFromArchetype](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/engine.markdown#creategamesessionfromarc)| | | |
-|[ DebugBreak](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/engine.markdown#debugbreak-void)| | | |
-|[ GetCurrentInputDevice](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/engine.markdown#getcurrentinputdevice-ze)| | | |
-|[ RebuildArchetypes](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/engine.markdown#rebuildarchetypes-void)| | | |
-|[ Terminate](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/engine.markdown#terminate-void)| | | |
+|[ CrashEngine](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/engine.markdown#crashengine-void)|[ GameSessions](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/engine.markdown#gamesessions-plasma-engine)|[eventobject](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/eventobject.markdown)| |
+|[ CreateGameSession](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/engine.markdown#creategamesession-plasma-e)| | | |
+|[ CreateGameSessionFromArchetype](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/engine.markdown#creategamesessionfromarc)| | | |
+|[ DebugBreak](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/engine.markdown#debugbreak-void)| | | |
+|[ GetCurrentInputDevice](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/engine.markdown#getcurrentinputdevice-ze)| | | |
+|[ RebuildArchetypes](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/engine.markdown#rebuildarchetypes-void)| | | |
+|[ Terminate](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/engine.markdown#terminate-void)| | | |
 
 
  #  Properties
 
 
 ---  
- #  GameSessions : [gamesessionrange](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/gamesessionrange.markdown)
+ #  GameSessions : [gamesessionrange](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/gamesessionrange.markdown)
 
  `read-only`
 
@@ -40,7 +40,7 @@
 
 
 ---  
- #  CreateGameSession : [gamesession](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/gamesession.markdown)
+ #  CreateGameSession : [gamesession](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/gamesession.markdown)
 
 > 
 > |Name|Type|Description|
@@ -51,12 +51,12 @@
 
 
 ---  
- #  CreateGameSessionFromArchetype : [gamesession](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/gamesession.markdown)
+ #  CreateGameSessionFromArchetype : [gamesession](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/gamesession.markdown)
 
 > 
 > |Name|Type|Description|
 > |---|---|---|
-> |p0|[archetype](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/archetype.markdown)| |
+> |p0|[archetype](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/archetype.markdown)| |
 > ``` lang=cpp, name=Lightning
 > function CreateGameSessionFromArchetype(p0 : Archetype) : GameSession
 > ``` 
@@ -74,7 +74,7 @@
 
 
 ---  
- #  GetCurrentInputDevice : [InputDevice](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/enum_reference.markdown#inputdevice)
+ #  GetCurrentInputDevice : [InputDevice](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/enum_reference.markdown#inputdevice)
 
 > 
 > |Name|Type|Description|
@@ -90,7 +90,7 @@
 > 
 > |Name|Type|Description|
 > |---|---|---|
-> |p0|[archetype](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/class_reference/archetype.markdown)| |
+> |p0|[archetype](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/archetype.markdown)| |
 > ``` lang=cpp, name=Lightning
 > function RebuildArchetypes(p0 : Archetype)
 > ``` 
