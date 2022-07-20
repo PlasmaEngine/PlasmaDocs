@@ -8,7 +8,7 @@ The first thing we need to do is create a class that derives from StaticLibrary.
 
 Below we have an example of a header file that contains the static library Wallaby and two example classes that might belong to that library. Remember, the name of the library can be anything you want.
 
-```lang=csharp
+<pre><code class="language-csharp">
 
 # pragma once
 
@@ -55,12 +55,12 @@ public:
   // Note that we don't bind Speak again because it gets inherited from the base
   virtual void Speak() const;
 };
-```
+</code></pre>
 
 With *Internal Binding* we must use the `LightningDeclareBaseType` and `LightningDeclareDerivedType` macros in a public section of the class (typically at the beginning, but make sure to use public!). The Character class also publicly inherits from `ILightningObject`, which is not required but allows the `character->LightningGetDerivedType()` function to be virtual, which will retrieve the BoundType for `Player` instead of `Character`.
 The following code should appear once within a translational unit (do not put this within a header):
 
-```lang=csharp
+<pre><code class="language-csharp">
 
 # include "Wallaby.hpp"
 
@@ -124,7 +124,7 @@ LightningDefineType(Player, "Player", Wallaby, builder, type)
   
   // Note that we don't bind Speak again because it gets inherited from the base
 }
-```
+</code></pre>
 
 The macro `LightningDefineStaticLibrary` is a place where we must initialize all types defined within our library. Because that list of types must exist somewhere within code, we often place that entire `LightningDefineStaticLibrary` in its own translational unit (cpp). The macros `LightningDefineType` can be placed all in a single file, or next to their respective class implementations (such as in a Character.cpp and Player.cpp). Be aware that placing them all in the same file encourages merge conflicts.
 
@@ -147,11 +147,11 @@ External binding works the same as internal binding, except the following differ
  #  Binding Enumerations or Flags
 Since enumerations cannot be virtual or have methods declare inside of them, all enums must be bound using External Binding. At the moment, enumerations MUST be the same size as the int type, which you can generally force either be using the new C++ class enums or by making an enum value set to `0x7FFFFFFF`. Inside the `LightningDefineExternalType` macro at the beginning use the following lines:
 
-```lang=csharp
+<pre><code class="language-csharp">
 // You can also pass in SpecialType::Flags if all the values of the enum are bit flags
 LightningBindEnum(builder, type, SpecialType::Enumeration);
 LightningBindEnumValue(builder, type, YourEnum::ValueName, "ValueName");
-```
+</code></pre>
 
  #  Built-in Types Available To Binding
 The following list is not exhaustive, but contains the most common types that we accept in binding automatically. Technically anything defined in Lightning.hpp that either internal or external binding and is bound to the Core library can be used. Note that most primitives (int, float, etc) are simply type-defined as Integer, Real, etc and can be used in binding.
@@ -181,7 +181,7 @@ The following list is not exhaustive, but contains the most common types that we
 
 The following types are automatically redirected to the Lightning Integer type (except unsigned long long which redirects to DoubleInteger):
 
-```lang=csharp
+<pre><code class="language-csharp">
 char
 signed char
 signed short
@@ -190,7 +190,7 @@ unsigned int
 signed long
 unsigned long
 unsigned long long
-```
+</code></pre>
 
  #  Limitations
 

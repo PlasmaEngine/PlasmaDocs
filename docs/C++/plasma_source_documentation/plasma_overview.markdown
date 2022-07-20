@@ -38,7 +38,7 @@
 ### Sample Cog Data File
 
 
-```
+<pre><code class="language-csharp">
   Cog = 
   {
     Transform =
@@ -54,7 +54,7 @@
       string MeshName = "Cube" ,
     },
   }
-```
+</code></pre>
 
 
 ### Core Engine Components

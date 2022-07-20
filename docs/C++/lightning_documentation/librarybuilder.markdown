@@ -8,13 +8,13 @@ The *LibraryBuilder* allows us to create Lightning types from C++ and add native
 
 Say we want to create a Ray type from C++ that takes a position and normalized direction in 3D. Our type will contain a Real3 for translation and a Real3 for direction. We'll want this type to be considered a struct type (ValueType) in lightning which means that it gets fully copied on every assignment. The first thing we're going to want to do is define the offset of the members.
 
-```
+<pre><code class="language-csharp">
 const size_t PositionOffset = 0;
 const size_t DirectionOffset = PositionOffset + sizeof(Real3);
-```
+</code></pre>
 It would obviously be more beneficial to actually create a Ray struct in C++ and use the automatically generated member offsets (via the standard offsetof macro). This would be actually safer too due to alignment issues on some platforms.
 
-```
+<pre><code class="language-csharp">
 // Use whatever name you would like for your library
 LibraryBuilder builder("Wallaby");
 
@@ -30,7 +30,7 @@ BoundType* rayType = builder.AddBoundType("Ray", TypeCopyMode::ValueType, raySiz
 // such as a 'short' and the property can automatically convert it into an Integer for Lightning
 builder.AddBoundField(rayType, "Position", LightningTypeId(Real3), PositionOffset, MemberOptions::None);
 builder.AddBoundField(rayType, "Direction", LightningTypeId(Real3), DirectionOffset, MemberOptions::None);
-```
+</code></pre>
 
 This type is now usable in Lightning. We can access the Position and Direction and copy it around, but it has no other functionality.
 
@@ -50,7 +50,7 @@ When we bind this function to Lightning via the LibraryBuilder, this function wi
 
 Since this function is going to be an instance function, then we know that'this' is implicitly passed in. Call allows us to easily grab 'this' as a Lightning. Lightning automatically protects against calling a member function on a null object, so we can assume our this will always be non-null here (other handles such as parameters may need to be checked!). Be sure to store handles by reference because copying them incurs a reference count cost. Once we have the Handle we can call Dereference to get a direct pointer to the object.
 
-```
+<pre><code class="language-csharp">
 void GetPointOnRay(Call& call, ExceptionReport& report)
 {
   // Note: Call's Get and Set take parameter indices, however there are two special indices
@@ -74,11 +74,11 @@ void GetPointOnRay(Call& call, ExceptionReport& report)
   Real3 result = position + direction * distance;
   call.Set<Real3>(Call::Return, result);
 }
-```
+</code></pre>
 
 We can use Lightning's exception handling to guard against bad parameter values, such as a negative distance:
 
-```
+<pre><code class="language-csharp">
 if (distance < 0)
 {
   // We should always make sure to return after throwing a Lightning exception
@@ -87,7 +87,7 @@ if (distance < 0)
   call.GetState()->ThrowException("The distance cannot be negative");
   return;
 }
-```
+</code></pre>
 
 In our experience (especially for game engines) it is best to keep the number of exceptions thrown low, and always have a way to prevent the exception via logic.. For example in this case the user could check for a negative distance themselves before calling to prevent the exception.
 
@@ -103,7 +103,7 @@ NOTE: We encourage you to write your own macros and templates to wrap up functio
 A Property in Lightning looks similar to a Field but when you attempt to read its value it will call a 'get' function, and when writing to its value it will call a 'set' function. The get takes no parameters and returns the value, and the set takes one parameter (the value to set) and returns nothing. Properties can also be made read only or write only just by passing in null for the set or the get (both cannot be null).
 
 Lets make Direction a property that automatically normalizes itself upon being set. Start by making two Lightning style functions in C++.
-```
+<pre><code class="language-csharp">
 void GetDirection(Call& call, ExceptionReport& report)
 {
   // Get takes no parameters (except an implicit 'this' if this is an instance property)
@@ -130,7 +130,7 @@ void SetDirection(Call& call, ExceptionReport& report)
   // We're going to perform safe normalization on the direction (this will either normalize it or plasma it out)
   direction = Math::AttemptNormalize(newDirection);
 }
-```
+</code></pre>
 The last thing we have to do is replace the call to *AddBoundField* for Direction with:
 `builder.AddBoundProperty(rayType, "Direction", LightningTypeId(Real3), SetDirection, GetDirection, MemberOptions::None);`
 
@@ -139,7 +139,7 @@ You can use AddExtensionProperty or AddExtensionFunction to add a pretend instan
  #  Creating A Reference Type (Class)
 The main difference between a class and a struct in Lightning is that classes are always allocated on the heap. Class types are plasmaed out when they are allocated (all members become 0 or null, including composed structs on that class). This is guaranteed to be safe for all classes written entirely within Lightning and is the main reason why constructors are optional for Lightning types, however, for a type bound from C++ we often need to invoke constructors or destructors on members. Moreover, if the C++ class has a virtual table, we always have to be sure to invoke the constructor to initialize it. If we're allowinLightningch to allocate our C++ object (via the HeapManager) then we need to be sure to provide a constructor and destructor for it. Using placement new and explicitly invoking the C++ destructor is the best way to achieve proper behavior.
 
-```
+<pre><code class="language-csharp">
 void ClassDefaultConstructor(Call& call, ExceptionReport& report)
 {
   // Get takes no parameters (except an implicit 'this' if this is an instance property)
@@ -159,13 +159,13 @@ void ClassDestructor(Call& call, ExceptionReport& report)
   // Explicitly invoke the destructor on our type
   classData->~Class();
 }
-```
+</code></pre>
 And finally to binding the default constructor and destructor to our type using the LibraryBuilder:
 
-```
+<pre><code class="language-csharp">
 builder.AddBoundDefaultConstructor(classType, ClassDefaultConstructor);
 builder.AddBoundDestructor(classType, ClassDestructor);
-```
+</code></pre>
 Take note that you can use other functions like AddBoundConstructor to bind constructors with parameters. It is often a good idea to have a default constructor (if it makes sense) because it simplifies inheritance and makes other features possibly like automatic serialization.
  
 

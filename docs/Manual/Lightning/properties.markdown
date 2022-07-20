@@ -1,7 +1,7 @@
 # Properties
 Get-Sets are syntactic sugar. They define two functions that look like variable usage.
 
-```lang=csharp
+<pre><code class="language-csharp">
 class Example
 {
   // This is a field.
@@ -33,18 +33,18 @@ class Driver
     square.Perimeter = 8.0;                       // SquareSideLength = 2.0
   }
 }
-```
-```name=Console Output
+</code></pre>
+<pre><code class="language-csharp">
 ---------------- Begin Game ---------------
 12
 3
 1
 0.25
-```
+</code></pre>
 
 This get-set could easily be replaced by functions. The following is its equivalent:
 
-```lang=csharp
+<pre><code class="language-csharp">
 class Example
 {
   var SquareSideLength: Real = 2.0;
@@ -78,19 +78,20 @@ class Driver
     square.SetPerimeter(8.0);                     // SquareSideLength = 2.0     
   }
 }
-```
-```name=Console Output
+</code></pre>
+<pre><code class="language-csharp">
 ---------------- Begin Game ---------------
 12
 3
 1
 0.25
-```
-NOTE: Get-sets are not fields, and thus they have no storage of their own. If data state is needed you'll have to make another field on the class to which you may refer.  Although get-sets are not fields, fields can auto-generate the property interface using [property_delegates](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/Lightning/property_delegates.markdown).
+</code></pre>
+
+NOTE: Get-sets are not fields, and thus they have no storage of their own. If data state is needed you'll have to make another field on the class to which you may refer.  Although get-sets are not fields, fields can auto-generate the property interface using [property_delegates](https://plasmaengine.github.io/PlasmaDocs/Manual/Lightning/property_delegates.markdown).
 
  # Parts of a Property's definition
 
-```lang=csharp
+<pre><code class="language-csharp">
 // The type specified refers to BOTH the return type of the getter
 // and the parameter type of the setter.
 var Perimeter : Real // Despite ``var`` keyword, Properties have no storage.
@@ -103,9 +104,10 @@ var Perimeter : Real // Despite ``var`` keyword, Properties have no storage.
   // assignment operator as passed in from the user.
   set { this.SquareSideLength = value * 0.25; } // Body of setter is wrapped in {}
 }
-```
+</code></pre>
+
  # Related Materials
  ## Manual
-- [property_delegates](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/Lightning/property_delegates.markdown) 
+- [property_delegates](https://plasmaengine.github.io/PlasmaDocs/Manual/Lightning/property_delegates.markdown) 
 
  

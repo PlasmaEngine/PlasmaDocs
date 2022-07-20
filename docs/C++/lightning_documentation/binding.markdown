@@ -8,7 +8,7 @@ WARNING: Lightning uses its own containers, including Array, HashMap, String, et
 
 Include the Lightning.cpp into your compilation process, and start by having your main include the Lightning.hpp
 
-```lang=csharp
+<pre><code class="language-csharp">
 
 # include "Lightning.hpp"
 
@@ -19,12 +19,11 @@ int main()
 {
   return 0;
 }
-```
+</code></pre>
 So long as Lightning.cpp is built and linked in, this program should fully compile.
 
  #  Compiling a Lightning script
-```lang=csharp
-
+<pre><code class="language-csharp">
 # include "Lightning.hpp"
 
 
@@ -60,7 +59,7 @@ int main()
 
   return 0;
 }
-```
+</code></pre>
 
  #  Running a Lightning script
 As a language meant to be called and run from C++, Lightning has no 'main entrypoint' of its own. Instead it is up to the user to instantiate types defined witLightningilch scripts and call functions on them (or invoke static methods).
@@ -69,7 +68,7 @@ Create a Lightning script with code that we want to test out.
 
  ##  Player.Lightning
 
-```lang=csharp
+<pre><code class="language-csharp">
 class Player
 {
   var Health : Real = 100;
@@ -86,7 +85,7 @@ class Player
     Console.WriteLine("Ouch! I've got `this.Health` health left!");
   }
 }
-```
+</code></pre>
 
 From the C++ side change `AddCodeFromString` to `AddCodeFromFile`.
 
@@ -96,8 +95,7 @@ WARNING: Make sure to put the `Player.lightning` file side by side with the exec
 
 We now need to compile the code into a Library, and finally link that library into an ExecutableState. A Library stores all the compiled types and functions. The ExecutableState has its own stack and virtual machine, and is responsible for executing Lightning code.
 
-```lang=csharp
-
+<pre><code class="language-csharp">
 # include "Lightning.hpp"
 
 
@@ -216,6 +214,6 @@ int main()
 
   return 0;
 }
-``` 
+</code></pre>
 
  

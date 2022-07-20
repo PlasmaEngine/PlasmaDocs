@@ -1,8 +1,8 @@
 # Reflection
-Reflection describes an objects ability to "reflect" on itself, generally this means to understand it's type and relationships to other types. Although Lightning does not boast a robust reflection library it does have a basic typeid for by-value types and [property_delegates](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/Lightning/property_delegates.markdown):
+Reflection describes an objects ability to "reflect" on itself, generally this means to understand it's type and relationships to other types. Although Lightning does not boast a robust reflection library it does have a basic typeid for by-value types and [property_delegates](https://plasmaengine.github.io/PlasmaDocs/Manual/Lightning/property_delegates.markdown):
 
  # typeid
-```lang=csharp
+<pre><code class="language-csharp">
   var i = 0;
   var di = 0d;
   var real = 0.0;
@@ -31,10 +31,9 @@ Reflection describes an objects ability to "reflect" on itself, generally this m
   Console.WriteLine(typeid(boolFalse).Name);       // boolean, false is of type: Boolean   
   Console.Write("Real property delegate is of type: "); 
   Console.WriteLine(typeid(prop).Name);            // Real property delegate is of type: Property[Real]
-```
+</code></pre>
 
-
-```name=Console Output
+<pre><code class="language-csharp">
   ---------------- Begin Game ---------------
   integer, 0 is of type: Integer
   doubleinteger, 0d is of type: DoubleInteger
@@ -45,13 +44,13 @@ Reflection describes an objects ability to "reflect" on itself, generally this m
   boolean, true is of type: Boolean
   boolean, false is of type: Boolean
   Real property delegate is of type: Property[Real]
-```
+</code></pre>
 --------------------
  # String Interpolation
 
-Those types that are [memory_management](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/Lightning/memory_management.markdown) or [delegates](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/Lightning/delegates.markdown) types can be inspected with [string](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/Lightning/lightning_base_types/string.markdown) Interpolation:
+Those types that are [memory_management](https://plasmaengine.github.io/PlasmaDocs/Manual/Lightning/memory_management.markdown) or [delegates](https://plasmaengine.github.io/PlasmaDocs/Manual/Lightning/delegates.markdown) types can be inspected with [string](https://plasmaengine.github.io/PlasmaDocs/Manual/Lightning/lightning_base_types/string.markdown) Interpolation:
 
-```lang=csharp
+<pre><code class="language-csharp">
 class Utility
 {
   constructor()
@@ -90,23 +89,22 @@ class Driver
     Console.WriteLine("`vectorRef`");
   }
 }
-```
+</code></pre>
 
-
-```name=Console Output
+<pre><code class="language-csharp">
 ---------------- Begin Game ---------------
 delegate(), Utility.HelloWorld can be string interpolated to read: Utility.HelloWorld()
 delegate(a:Integer, b:Integer):Integer, Utility.Add can be string interpolated to read: 
 Utility.Add(a : Integer, b : Integer) : Integer
 ref Real3, (0.0, 1.0, 2.0) is of type: ref Real3
-```
+</code></pre>
 --------------
 
  # Console.DumpValue
 
-Useful in understanding the current state of a Lightning object, Console.DumpValue prints out the names of the variables and their type, if a [class](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/Lightning/classes.markdown), or their value if a basic, built-in data type.
+Useful in understanding the current state of a Lightning object, Console.DumpValue prints out the names of the variables and their type, if a [class](https://plasmaengine.github.io/PlasmaDocs/Manual/Lightning/classes.markdown), or their value if a basic, built-in data type.
 
-```lang=csharp
+<pre><code class="language-csharp">
 class TopLevel
 {
   var MyVariable: MidLevel = null;
@@ -148,9 +146,9 @@ class ReflectionDriver
     
   }
 }
-```
+</code></pre>
 
-```name=Console Output
+<pre><code class="language-csharp">
 ---------------- Begin Game ---------------
 TopLevel
   MyVariable: (null) MidLevel
@@ -164,18 +162,18 @@ MidLevel
 BottomLevel
   IsBottom: True
   UpAxis: (0, 1, 0)
-```
+</code></pre>
 
 *Notice how the MidLevel dumps more information than the BottomLevel with comparable information, due to the second parameter.*
 
  # Related Materials
  ## Manual
 
-- [property_delegates](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/Lightning/property_delegates.markdown)
-- [memory_management](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/Lightning/memory_management.markdown)
-- [delegates](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/Lightning/delegates.markdown)
-- [string](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/Lightning/lightning_base_types/string.markdown)
-- [classes](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/Lightning/classes.markdown)
+- [property_delegates](https://plasmaengine.github.io/PlasmaDocs/Manual/Lightning/property_delegates.markdown)
+- [memory_management](https://plasmaengine.github.io/PlasmaDocs/Manual/Lightning/memory_management.markdown)
+- [delegates](https://plasmaengine.github.io/PlasmaDocs/Manual/Lightning/delegates.markdown)
+- [string](https://plasmaengine.github.io/PlasmaDocs/Manual/Lightning/lightning_base_types/string.markdown)
+- [classes](https://plasmaengine.github.io/PlasmaDocs/Manual/Lightning/classes.markdown)
  
 
  

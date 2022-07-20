@@ -10,8 +10,7 @@ The bare minimum requirements for making a component are as follows:
 
 Within the `CustomComponent.hpp` header file:
 
-```
-
+<pre><code class="language-csharp">
 # pragma once
 
 
@@ -24,13 +23,12 @@ namespace Plasma
     static void InitializeMeta(MetaType* meta);
   };
 }
-```
+</code></pre>
 It is our coding style to not tab in the namespace. We also generally rely upon all compilers supporing #pragma once (though you can use include guards if you wish).
 
 Within the `CustomComponent.cpp` file:
 
-```
-
+<pre><code class="language-csharp">
 # include "Precompiled.hpp"
 
 #include "CustomComponent.hpp"
@@ -44,7 +42,7 @@ namespace Plasma
     BindSetup(SetupMode::DefaultSerialization);
   }
 }
-```
+</code></pre>
 
 The inclusion of `Precompiled.hpp` is only required if your project is using precompiled headers. All projects within Plasma have this option enabled.
 
@@ -75,20 +73,20 @@ Within the component there are a few virtual functions which can be overridden.
 
 Add the following code to `CustomComponent.hpp` right after `InitializeMeta`:
 
-```
+<pre><code class="language-csharp">
 // These functions are in the order they will be invoked:
 void Serialize(Serializer& stream) override;
 void Initialize(CogInitializer& initializer) override;
 void OnAllObjectsCreated(CogInitializer& initializer) override;
 void DebugDraw() override;
 void OnDestroy(uint flags) override;
-```
+</code></pre>
 
 You may implement these functions as you see fit. Empty implementations are OK, and they do NOT need to invoke the base class version of the function.
 
 The following includes some common example implementations of the above functions:
 
-```
+<pre><code class="language-csharp">
 void CustomComponent::InitializeMeta(MetaType* meta)
 {
   BindBase(Component);
@@ -112,8 +110,8 @@ void CustomComponent::InitializeMeta(MetaType* meta)
   // These methods will be callable by script
   BindMethod(Speak);
 }
-```
-```
+</code></pre>
+<pre><code class="language-csharp">
 void CustomComponent::Serialize(Serializer& stream)
 {
   // Our serialization handles both directions (saving and loading)
@@ -121,8 +119,8 @@ void CustomComponent::Serialize(Serializer& stream)
   SerializeEnumName(ButtonState, mState);
   SerializeResourceName(mFace, MaterialManager);
 }
-```
-```
+</code></pre>
+<pre><code class="language-csharp">
 void CustomComponent::Initialize(CogInitializer& initializer)
 {
   // You might grab another component on your object
@@ -130,30 +128,30 @@ void CustomComponent::Initialize(CogInitializer& initializer)
   // if it were added AFTER your component (see Dependencies)
   mTransform = GetOwner()->has(Transform);
 }
-```
-```
+</code></pre>
+<pre><code class="language-csharp">
 void CustomComponent::OnAllObjectsCreated(CogInitializer& initializer)
 {
   // Find another object within the space (everything should be created by here)
   Cog* player = GetSpace()->FindObjectByName("Player");
 }
-```
-```
+</code></pre>
+<pre><code class="language-csharp">
 void CustomComponent::DebugDraw()
 {
   // Draw a red sphere at our position
   gDebugDrawer->Add(Debug::Sphere(mTransform->GetWorldTranslation(), 0.5f).Color(Color::Red));
 }
-```
-```
+</code></pre>
+<pre><code class="language-csharp">
 void CustomComponent::OnDestroy(uint flags)
 {
   // Disconnect ourselves from any lists we've been added to
 }
-```
+</code></pre>
 Last but not least, if you would like your component to be automatically documented by doxygen, you must use tripple slashes `///` for comments above any classes, functions, properties, or members you want to be documented. The file header that doxygen requires should look something like:
 
-```
+<pre><code class="language-csharp">
 *///////////////////////////////////////////////////////////////////////////*
 ///
 /// \file CustomComponent.hpp
@@ -161,7 +159,7 @@ Last but not least, if you would like your component to be automatically documen
 /// Authors: Your Name
 ///
 *///////////////////////////////////////////////////////////////////////////*
-```
+</code></pre>
 
 Remember to also put this header in your cpp file and rename `.hpp` to `.cpp`
  

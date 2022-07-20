@@ -8,7 +8,7 @@ Every Lightning class or struct creates a BoundType which defines all the member
 
 If your serialization format reads in names of members, then you can find a data-field or property via:
 
-```
+<pre><code class="language-csharp">
 void SerializeMember(const String& name, BoundType* type)
 {
   // This will find an instance member that we can call 'get' or 'set' on
@@ -39,7 +39,7 @@ void SerializeMember(const String& name, BoundType* type)
 
   }
 }
-```
+</code></pre>
 
  
 

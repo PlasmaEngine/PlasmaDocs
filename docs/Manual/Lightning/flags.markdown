@@ -1,7 +1,7 @@
 # Flags
-Flags are very similar to [enums](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/Lightning/enums.markdown) except that they are ordered like a bit field (i.e. increasing in powers of two starting at 1 by default). Flags can be defined with the **flags** keyword:
+Flags are very similar to [enums](https://plasmaengine.github.io/PlasmaDocs/Manual/Lightning/enums.markdown) except that they are ordered like a bit field (i.e. increasing in powers of two starting at 1 by default). Flags can be defined with the **flags** keyword:
 
-```lang=csharp, name=Flags Type Defined
+<pre><code class="language-csharp">
 flags Pizza 
 { 
   Sauce, 
@@ -15,11 +15,11 @@ flags Pizza
   CanadianBacon, 
   Artichokes 
 }
-```
+</code></pre>
 
 The names flags enumeration line up with Integral Powers of two, the default starting value is `1`:
 
-```
+<pre><code class="language-csharp">
 Console.WriteLine("Pizza.Sauce         as Integer: `Pizza.Sauce         as Integer`");
 Console.WriteLine("Pizza.Cheese        as Integer: `Pizza.Cheese        as Integer`");
 Console.WriteLine("Pizza.Pepperoni     as Integer: `Pizza.Pepperoni     as Integer`");
@@ -30,9 +30,9 @@ Console.WriteLine("Pizza.Mushroom      as Integer: `Pizza.Mushroom      as Integ
 Console.WriteLine("Pizza.Pineapple     as Integer: `Pizza.Pineapple     as Integer`");
 Console.WriteLine("Pizza.CanadianBacon as Integer: `Pizza.CanadianBacon as Integer`");
 Console.WriteLine("Pizza.Artichokes    as Integer: `Pizza.Artichokes    as Integer`");
-```
+</code></pre>
 
-```name=Console Output
+<pre><code class="language-csharp">
 Pizza.Sauce         as Integer: 1
 Pizza.Cheese        as Integer: 2
 Pizza.Pepperoni     as Integer: 4
@@ -43,11 +43,11 @@ Pizza.Mushroom      as Integer: 64
 Pizza.Pineapple     as Integer: 128
 Pizza.CanadianBacon as Integer: 256
 Pizza.Artichokes    as Integer: 512
-```
+</code></pre>
 
 Flags are meant to work together; consider the following:
 
-```lang=csharp, name=Adding Flags Together
+<pre><code class="language-csharp">
 var hawaiian : Pizza = Pizza.Sauce + Pizza.Cheese + Pizza.CanadianBacon + Pizza.Pineapple;
 Console.WriteLine(hawaiian);
 // Using bitwise and, '&', to determine if the hawaiian pizza has pepperoni on it
@@ -59,18 +59,18 @@ else
 {
     Console.WriteLine("Hawaiian pizza does not have `Pizza.Pepperoni` on it.");
 }
-```
-```name=Console Output
+</code></pre>
+<pre><code class="language-csharp">
 ---------------- Begin Game ---------------
 Sauce | Cheese | Pineapple | CanadianBacon
 Hawaiian pizza does not have Pepperoni on it.
-```
+</code></pre>
 *Notice how it prints all of the active flags*
 
 Basically, flags are enums that assign the next value by multiplying the previous value by two. 
 For instance, given:
 
-```lang=csharp, name=Defining a Custom Value
+<pre><code class="language-csharp">
 flags Cookie
 {
   ChocolateChips, 
@@ -84,11 +84,11 @@ flags Cookie
   Cinnamon,
   Sugar = 3
 }
-```
+</code></pre>
 
 The values are different:
 
-```lang=csharp
+<pre><code class="language-csharp">
 Console.WriteLine("Cookie.ChocolateChips as Integer: `Cookie.ChocolateChips as Integer`");
 Console.WriteLine("Cookie.Raisins        as Integer: `Cookie.Raisins        as Integer`");
 Console.WriteLine("Cookie.Oatmeal        as Integer: `Cookie.Oatmeal        as Integer`");
@@ -99,8 +99,8 @@ Console.WriteLine("Cookie.Caramel        as Integer: `Cookie.Caramel        as I
 Console.WriteLine("Cookie.Ginger         as Integer: `Cookie.Ginger         as Integer`");
 Console.WriteLine("Cookie.Cinnamon       as Integer: `Cookie.Cinnamon       as Integer`");
 Console.WriteLine("Cookie.Sugar          as Integer: `Cookie.Sugar          as Integer`");
-```
-```name=Console Output
+</code></pre>
+<pre><code class="language-csharp">
 Cookie.ChocolateChips as Integer: 1
 Cookie.Raisins        as Integer: 2
 Cookie.Oatmeal        as Integer: 4
@@ -111,79 +111,79 @@ Cookie.Caramel        as Integer: 24
 Cookie.Ginger         as Integer: 48
 Cookie.Cinnamon       as Integer: 96
 Cookie.Sugar          as Integer: 3
-```
+</code></pre>
 *Notice how after MacadamiaNuts is set to 3, the increment is no longer on powers of 2*
 
-The underlying structure is [integer](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/integer.markdown); therefore, you could interpret Integers as a flags type:
+The underlying structure is [integer](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/integer.markdown); therefore, you could interpret Integers as a flags type:
 
-```lang=csharp, name=Casting Integers to Flags
+<pre><code class="language-csharp">
 var random: Pizza = 583 as Pizza;
 Console.WriteLine(random);
 Console.WriteLine(7 as Cookie);
-```
-```name=Console Output
+</code></pre>
+<pre><code class="language-csharp">
 Sauce | Cheese | Pepperoni | Mushroom | Artichokes
 ChocolateChips | Raisins | Oatmeal | MacadamiaNuts | Peanuts | Sugar
-```
+</code></pre>
 *Notice how flags print both enumerated values if the flags share the same underlying integer value.*
 
  # Flags Rules
  ## Identifier Capitalization
 Identifiers for the flags type name and the enumerated values must be capitalized.
 
-```lang=csharp, name=Invalid Value Capitalization
+<pre><code class="language-csharp">
 // This will not compile. 
 flags Directions {up, down, left, right}
-```
-```name=Console Output
+</code></pre>
+<pre><code class="language-csharp">
 Enum declaration 'Directions' does not have a closing '}'. We found 'LowerIdentifier' but we
 expected to find '}'.
-```
+</code></pre>
 
-```lang=csharp, name=Invalid Type Name Capitalization
+<pre><code class="language-csharp">
 // Neither will this.
 flags directions {Up, Down, Left, Right}
-```
-```name=Console Output
+</code></pre>
+<pre><code class="language-csharp">
 Enum declaration is missing a name. Upper-camel case names are required here (use 'Directions'
 instead of 'directions').
-```
+</code></pre>
 
  ## Unique Identifiers
 Identifiers for the enumerated values must be unique.
 
-```lang=csharp, name=Duplicate Identifiers
+<pre><code class="language-csharp">
 // This will not compile.
 flags Directions {Up, Down, Up, Down}
-```
-```name=Console Output
+</code></pre>
+<pre><code class="language-csharp">
 A value of the same name 'Up' has already been declared in the enum 'Directions'. Names must 
 only be used once.
-```
+</code></pre>
 
  ## Definition Scope
 Flags cannot be defined inside classes, structs, or other enums.
 
-```lang=csharp, name=Incorrectly Defined Inside a Class
+<pre><code class="language-csharp">
 // Classes cannot contain flags.
 class FlagsWrapper
 {
   // This won't compile.
   flags Directions {Up, Down, Left, Right};
 }
-```
-```name=Console Output
+</code></pre>
+<pre><code class="language-csharp">
 Class declaration 'FlagsWrapper' does not have a closing '}'. We found 'flags' but we expected to find '}'.
-```
+</code></pre>
 
  ## Representation
 If there is no enumerated value the enum is represented as an Integer:
-```lang=csharp, name=Integer That Does Not Map to Enum
+<pre><code class="language-csharp">
 Console.WriteLine((64) as Cookie);
-```
-```name=Console Output
+</code></pre>
+<pre><code class="language-csharp">
 64
-```
+</code></pre>
 
  # Flags and Integers
 As in other languages, Integers make up the backbone of how flags work, and thus they work together in many situations.
@@ -191,7 +191,7 @@ As in other languages, Integers make up the backbone of how flags work, and thus
  ## Casting
 Because of this, Lightning will implicitly cast from a flag to an Integer when necessary:
 
-```lang=csharp, name=Implict Integer Cast
+<pre><code class="language-csharp">
 class FlagsExample
 {
   [Static]
@@ -208,11 +208,11 @@ class FlagsExample
     Console.WriteLine(" turned into `param`!");
   }
 }
-```
+</code></pre>
 
 We can test the calls to these functions to see the interplay of casting:
 
-```lang=csharp
+<pre><code class="language-csharp">
 var paramInt = 128;
 var paramFlags = Pizza.Pineapple;
 
@@ -224,19 +224,19 @@ FlagsExample.AcceptsFlags(paramFlags);
 Console.Write(paramInt);
 *FlagsExample.AcceptsFlags(paramInt); * Doesn't compile
 FlagsExample.AcceptsFlags(paramInt as Pizza);
-```
-```name=Console Output
+</code></pre>
+<pre><code class="language-csharp">
 Pineapple turned into Pineapple!
 128 turned into Pineapple!
-```
+</code></pre>
 
-```lang=csharp, name=Invalid Implicit Cast
+<pre><code class="language-csharp">
 // Attempting to pass an Integer without casting to an enum 
 // will cause a compiler error
 Console.Write(paramInt);
 FlagsExample.AcceptsFlags(paramInt);
-```
-```name=Console Output
+</code></pre>
+<pre><code class="language-csharp">
 The function 'AcceptsFlags' exists, but could not be resolved since the 
 types of the arguments used did not match. The arguments you gave were: 
 
@@ -245,9 +245,9 @@ types of the arguments used did not match. The arguments you gave were:
 The possible choices were: 
 
   AcceptsFlags(param : Pizza)
-```
+</code></pre>
 
-```lang=csharp
+<pre><code class="language-csharp">
 // This also works as you'd expect. 
 Console.Write(paramInt);
 FlagsExample.AcceptsInt(paramInt);
@@ -255,17 +255,17 @@ FlagsExample.AcceptsInt(paramInt);
 // The flags type parameter is implicitly casted to an Integer and is then passed to the function. 
 Console.Write(paramFlags);
 FlagsExample.AcceptsInt(paramFlags);
-```
-```name=Console Output
+</code></pre>
+<pre><code class="language-csharp">
 128 turned into 128!
 Pineapple turned into 128!
-```
+</code></pre>
 
  ## Flag-Integer Operations
 
 Flags can perform all operations as if they were Integers. For instance, you can perform all of the normal math operations as implicit conversion will happen as necessary from the enum type to Integer:
 
-```lang=csharp, name=Flags Using Integer Operations
+<pre><code class="language-csharp">
 // Here you can see use of the +, -, *, /, (), ^ and % Integer operators.
 var pizza = (Pizza.Sauce + Pizza.Cheese) ^ Pizza.Sausage % 
            Pizza.Mushroom - Pizza.Artichokes * Pizza.Peppers;
@@ -274,12 +274,13 @@ var pizza = (Pizza.Sauce + Pizza.Cheese) ^ Pizza.Sausage %
 // prints out its integer value.
 Console.WriteLine(pizza); 
 Console.WriteLine(typeid(pizza).Name);
-```
+</code></pre>
 
-```name=Console Output
+<pre><code class="language-csharp">
 Sauce | Onion (-8159)
 Pizza
-```
+</code></pre>
+
 You can see the typeid is not an Integer but Pizza. An Integer value was printed because there were flags with no alias in that maps all aspects of `-8159`. Because the type is still of the flags, you could pass it to our `FlagsExample.AcceptsFlags` function without issue. When an operation includes both a flags and an Integer the result is always promoted to the flags type. If you want an Integer either 
  - Declare the variable you are storing the result in as an Integer: `var result : Integer`
  - Cast it: `result as Integer`
@@ -288,20 +289,20 @@ You can see the typeid is not an Integer but Pizza. An Integer value was printed
 
 Although flags cast to Integers, they **will not** cast to Integers to perform cross-flags operations.
 
-```lang=csharp, name=Invalid Cross-Flags Operation
+<pre><code class="language-csharp">
 // This won't compile.
 Console.WriteLine(Pizza.Pineapple + Cookie.Sugar);
-```
-```name=Console Output
+</code></pre>
+<pre><code class="language-csharp">
 The binary '+' operator 'Positive / Add' is not valid with 'Pizza' and 'Cookie'.
-```
+</code></pre>
 
  # Related Materials
  # Manual
-- [enums](https://plasmaengine.github.io/PlasmaDocs/Manual/plasmamanual/Lightning/enums.markdown)
+- [enums](https://plasmaengine.github.io/PlasmaDocs/Manual/Lightning/enums.markdown)
 
  ## Code Reference
-- [flags_reference](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/flags_reference.markdown)
-- [integer](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/code_reference/lightning_base_types/integer.markdown) 
+- [flags_reference](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/flags_reference.markdown)
+- [integer](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/integer.markdown) 
 
  

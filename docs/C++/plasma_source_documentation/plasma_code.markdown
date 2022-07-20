@@ -116,10 +116,10 @@ Each higher level layer only depends on more fundamental layers.
 
 ### Creating A Cog
 
-```
+<pre><code class="language-csharp">
   Archetype* shipArchetype = ArchetypeManager::Find("Ship");
   Cog* cog = space->Create(shipArchetype)
-```
+</code></pre>
 
 
 ### 'has' Operator
@@ -127,13 +127,13 @@ Each higher level layer only depends on more fundamental layers.
 - Used to get components from compositions by type name.
 - It is type safe and will return NULL or a valid component.
 
-```
+<pre><code class="language-csharp">
 Model* model = cog->has(Model);
 if(model)
 {
   model->SetColor(Vec4(0,1,0,1));
 }
-```
+</code></pre>
 
 
 ### Handles / CogId
@@ -143,7 +143,7 @@ if(model)
 - CogIds must be checked for NULL.
 - Once a CogId is checked it is safe to use that object for the rest of the frame.
 
-```
+<pre><code class="language-csharp">
 void SomeFunction(CogId target)
 {
   if(Cog* cog = target)
@@ -154,10 +154,10 @@ void SomeFunction(CogId target)
     }
   }
 }
-```
+</code></pre>
 also works on CogIds
 
-```
+<pre><code class="language-csharp">
 void SomeFunction(CogId target)
 {
   if(Transform* transform = target.has(Transform))
@@ -165,7 +165,7 @@ void SomeFunction(CogId target)
     transform->SetTranslation(Vec3(0,10,0));
   }
 }
-```
+</code></pre>
 
 
 ## Meta Data
@@ -209,7 +209,7 @@ void SomeFunction(CogId target)
 - Examples: Collider, Joints, etc
 - Editor enforces only one component that has a particular interface. For example only one collider component (like BoxColllider) can be present.
 
-```
+<pre><code class="language-csharp">
 void ComponentExample::InitializeMeta(MetaClass* meta)
 {
   // Must have transform
@@ -223,7 +223,7 @@ void ComponentExample::InitializeMeta(MetaClass* meta)
   // This class implements the ShieldProvider interface
   BindInterface(ShieldProvider);
 }
-```
+</code></pre>
 
 ### Bind Member vs Property
 
@@ -264,7 +264,7 @@ void ComponentExample::InitializeMeta(MetaClass* meta)
 ## Example Serialization Code
 
 
-```
+<pre><code class="language-csharp">
 class ComponentExample
 {
 public:
@@ -279,18 +279,18 @@ void ComponentExample::Serialize(Serializer& stream)
   SerializeNameDefault(mHitPoints, 100.0f);
   SerializeNameDefault(mDirection, Vec3::cXAxis);
 }
-```
+</code></pre>
 
 
 ## Example Serialization Result
 
-```
+<pre><code class="language-csharp">
 ComponentExample = 
 {
   float HitPoints = 20,
   vec3 Direction = [1,0,0]
 }
-```
+</code></pre>
 
 
 ## Data File Types
@@ -338,7 +338,7 @@ ComponentExample =
 
 ## Initialization
 
-###Component Initialization
+### Component Initialization
 - Do not do anything in a component constructor except initialize values.
 - All the real work is done in Initialize.
   - Get pointers to other components
@@ -348,7 +348,7 @@ ComponentExample =
 
 ### Example Initialization Code
 
-```
+<pre><code class="language-csharp">
 void GraphicsComponent::Initialize(CogInitializer& init)
 {
   // Getting other components
@@ -358,7 +358,7 @@ void GraphicsComponent::Initialize(CogInitializer& init)
   GraphicsSpace* graphics = GetSpace()->has(GraphicsSpace);
   graphics->AddModel(this);
 };
-```
+</code></pre>
 
 
 ## Events
@@ -371,9 +371,9 @@ void GraphicsComponent::Initialize(CogInitializer& init)
 
 ### Connect
 
-```
+<pre><code class="language-csharp">
   Connect(targetObject, Events::EventName, receivingObject, &ObjectType::FuncName);
-```
+</code></pre>
 - For example, the object that is involved in a collision event will have a function called when the event occurs and are constant strings.
 
   - Usually this is the class doing the connection is a member function pointer othat will be called when the event fires.
@@ -381,7 +381,7 @@ void GraphicsComponent::Initialize(CogInitializer& init)
 
 ### Connecting Example Code
 
-```
+<pre><code class="language-csharp">
 void GraphicsComponent::Initialize(CogInitializer& init)
 {
   // ConnectToThis expands to Connect(target, event, this, &classname::function)
@@ -392,7 +392,7 @@ void GraphicsComponent::Initialize(CogInitializer& init)
   // We want to be updated every frame (regardless of being paused)...
   ConnectToThis(GetSpace(), Events::FrameUpdate, OnFrameUpdate);       
 }
-```
+</code></pre>
 
 
 ### Declaring Events
@@ -418,7 +418,7 @@ void GraphicsComponent::Initialize(CogInitializer& init)
 
 ### Example Event Connections
 
-```
+<pre><code class="language-csharp">
 void ComponentExample::Initialize(CogInitializer& init)
 {
   ConnectToSelf(GetOwner(), Events::CollisionStarted, OnCollisionStarted);
@@ -428,7 +428,7 @@ void ComponentExample::OnCollisionStarted(CollsionEvent* event)
 {
   event->OtherObject->Destroy();
 }
-```
+</code></pre>
 
 ### Container Library
 
@@ -459,7 +459,7 @@ void ComponentExample::OnCollisionStarted(CollsionEvent* event)
 - Containers use ranges in place of iterators for most moving in a container.
 - Ranges are more secure and easier to work with than iterators.
 
-```
+<pre><code class="language-csharp">
 int Sum(Array<int>& values)
 {
   int total = 0;
@@ -469,8 +469,8 @@ int Sum(Array<int>& values)
   }
   return total;
 }
-```
-```
+</code></pre>
+<pre><code class="language-csharp">
 int Sum(Array<int>& values)
 {
   int total = 0;
@@ -480,8 +480,7 @@ int Sum(Array<int>& values)
   }
   return total;
 }
-```
-
+</code></pre>
 
 ### String vs std::string
 
