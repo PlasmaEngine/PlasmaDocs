@@ -16,7 +16,7 @@ The Growth  property can change the size of particles over time.  Set Growth  to
 - [Physics Effects and Regions](https://plasmaengine.github.io/PlasmaDocs/Manual/physics/physicseffectsandregions.markdown)
 
 ## Code Reference
-- [SpriteParticleSystem](https://plasmaengine.github.io/PlasmaDocs/Manual//code_reference/class_reference/spriteparticlesystem.markdown)
+- [SpriteParticleSystem](https://plasmaengine.github.io/PlasmaDocs/Manual/code_reference/class_reference/spriteparticlesystem.markdown)
 - [LinearParticleAnimator](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/linearparticleanimator.markdown) 
 
  

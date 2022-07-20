@@ -11,10 +11,10 @@ The only property the SkinnedModel component has that the Model component does n
 
 # Related Materials
 ## Reference
-- [Model](https://plasmaengine.github.io/PlasmaDocs/Manual//code_reference/class_reference/model.markdown)
-- [SkinnedModel](https://plasmaengine.github.io/PlasmaDocs/Manual//code_reference/class_reference/skinnedmodel.markdown)
-- [Mesh](https://plasmaengine.github.io/PlasmaDocs/Manual//code_reference/class_reference/mesh.markdown)
-- [Material](https://plasmaengine.github.io/PlasmaDocs/Manual//code_reference/class_reference/material.markdown)
+- [Model](https://plasmaengine.github.io/PlasmaDocs/Manual/code_reference/class_reference/model.markdown)
+- [SkinnedModel](https://plasmaengine.github.io/PlasmaDocs/Manual/code_reference/class_reference/skinnedmodel.markdown)
+- [Mesh](https://plasmaengine.github.io/PlasmaDocs/Manual/code_reference/class_reference/mesh.markdown)
+- [Material](https://plasmaengine.github.io/PlasmaDocs/Manual/code_reference/class_reference/material.markdown)
  
 
  

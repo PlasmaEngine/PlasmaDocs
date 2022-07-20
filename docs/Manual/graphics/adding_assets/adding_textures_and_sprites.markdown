@@ -19,7 +19,7 @@ There are many different properties that may be modified such as where to set th
  [Block Compression](https://plasmaengine.github.io/PlasmaDocs/Manual/graphics/adding_assets/block_compression.markdown)
 
 ## Reference
- [SpriteSource](https://plasmaengine.github.io/PlasmaDocs/Manual//code_reference/class_reference/spritesource.markdown) 
- [Sprite](https://plasmaengine.github.io/PlasmaDocs/Manual//code_reference/class_reference/sprite.markdown)  
+ [SpriteSource](https://plasmaengine.github.io/PlasmaDocs/Manual/code_reference/class_reference/spritesource.markdown) 
+ [Sprite](https://plasmaengine.github.io/PlasmaDocs/Manual/code_reference/class_reference/sprite.markdown)  
 
  

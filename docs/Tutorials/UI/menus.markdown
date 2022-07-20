@@ -271,7 +271,7 @@ Now to make our first button, the *Start Game* button. When we're done with it, 
 
 The button's outward appearance is mostly complete, but we need to give it a Lightning component that gives it its functionality.
 
-- Command : [ Add Resource](https://github.com/PlasmaEngine/PlasmaDocs/blob/master/plasma_editor_documentation/plasmamanual/editor/editorcommands/resourceadding.markdown)
+- Command : [ Add Resource](https://plasmaengine.github.io/PlasmaDocs/Manual/editor/editorcommands/resourceadding.markdown)
 - Create a LightningScript resource using the Component template template and name it `LoadLevelOnClick`
 - Update the `LoadLevelOnClick` script to the following:
 

@@ -129,9 +129,9 @@ GammaCorrection checkBox, when set to `true`, will correct the values of each in
 - [Models and Skinned Models](https://plasmaengine.github.io/PlasmaDocs/Manual/graphics/models/model_component.markdown)
 
 ## Code Reference
-- [Mesh](https://plasmaengine.github.io/PlasmaDocs/Manual//code_reference/class_reference/mesh.markdown)
-- [Model](https://plasmaengine.github.io/PlasmaDocs/Manual//code_reference/class_reference/model.markdown)
-- [Skinned Model](https://plasmaengine.github.io/PlasmaDocs/Manual//code_reference/class_reference/skinnedmodel.markdown)
-- [Simple Animation](https://plasmaengine.github.io/PlasmaDocs/Manual//code_reference/class_reference/simpleanimation.markdown) 
+- [Mesh](https://plasmaengine.github.io/PlasmaDocs/Manual/code_reference/class_reference/mesh.markdown)
+- [Model](https://plasmaengine.github.io/PlasmaDocs/Manual/code_reference/class_reference/model.markdown)
+- [Skinned Model](https://plasmaengine.github.io/PlasmaDocs/Manual/code_reference/class_reference/skinnedmodel.markdown)
+- [Simple Animation](https://plasmaengine.github.io/PlasmaDocs/Manual/code_reference/class_reference/simpleanimation.markdown) 
 
  

@@ -44,7 +44,7 @@ Changing the shape of the view frustum has a significant impact on how objects a
 
 ![image](https://media.githubusercontent.com/media/PlasmaEngine/PlasmaDocs/master/doc_files/46825.png) *`Perspective` camera(left) vs. `Orthographic` camera(right)*
 
-(NOTE)**Parallaxing** Even if the camera has an orthographic perspective, the illusion of depth is still possible.  Instead of just one universal depth, the new assumption is that there are a set number of layers for an object, often refered to as foregrounds and backgrounds.  For an example, try the [Parallaxing Background](https://plasmaengine.github.io/PlasmaDocs/Manual//tutorials/graphics/parallaxbackground.markdown) tutorial.
+(NOTE)**Parallaxing** Even if the camera has an orthographic perspective, the illusion of depth is still possible.  Instead of just one universal depth, the new assumption is that there are a set number of layers for an object, often refered to as foregrounds and backgrounds.  For an example, try the [Parallaxing Background](https://plasmaengine.github.io/PlasmaDocs/Manual/tutorials/graphics/parallaxbackground.markdown) tutorial.
 
 NOTE: The method of controlling the viewport size changes with different viewing frustums.  When PerspectiveMode drop-down menu is set to `Perspective`, the FieldOfView  parameter represents the vertical angle that the frustum makes from the camera eye outward.  When PerspectiveMode drop-down menu is set to `Orthographic`, the Size  parameter represents the height that the camera sees in world space.
 
