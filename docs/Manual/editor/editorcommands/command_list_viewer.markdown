@@ -8,7 +8,7 @@ The list can be accessed in the same way as any other command
 
 
 
-* ADD IMAGE *
+**ADD IMAGE**
 
  
 
