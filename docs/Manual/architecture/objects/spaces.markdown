@@ -96,9 +96,9 @@ NOTE: The ReactiveSpace component is deprecated and changes made to it will have
 
 | Event Name                | Type                       | Description                                                         |
 |---------------------------|----------------------------|---------------------------------------------------------------------|
-| PhysicsUpdateFinished     | [objectevent](https://plasmaengine.github.io/PlasmaDocs/Manual//code_reference/class_reference/objectevent.markdown) | Dispatched immediately after physics has finished updating.         |
-| LogicUpdate               | [updateevent](https://plasmaengine.github.io/PlasmaDocs/Manual//code_reference/class_reference/updateevent.markdown) | Dispatched after the major systems's updates (doesn't run in editor)|
-| FrameUpdate               | [updateevent](https://plasmaengine.github.io/PlasmaDocs/Manual//code_reference/class_reference/updateevent.markdown) | Dispatched after the engine update. Runs in editor.                 |
+| PhysicsUpdateFinished     | [objectevent](https://plasmaengine.github.io/PlasmaDocs/Manual/code_reference/class_reference/objectevent.markdown) | Dispatched immediately after physics has finished updating.         |
+| LogicUpdate               | [updateevent](https://plasmaengine.github.io/PlasmaDocs/Manual/code_reference/class_reference/updateevent.markdown) | Dispatched after the major systems's updates (doesn't run in editor)|
+| FrameUpdate               | [updateevent](https://plasmaengine.github.io/PlasmaDocs/Manual/code_reference/class_reference/updateevent.markdown) | Dispatched after the engine update. Runs in editor.                 |
 
 
 # Related Materials
@@ -110,8 +110,8 @@ NOTE: The ReactiveSpace component is deprecated and changes made to it will have
 - [graphicsspace](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/graphicsspace.markdown)
 - [physicsspace](https://plasmaengine.github.io/PlasmaDocs/Manual/physics/physicsspace.markdown)
 - [soundspace](https://plasmaengine.github.io/PlasmaDocs/Manual/audio/soundspace.markdown)
-- [objectevent](https://plasmaengine.github.io/PlasmaDocs/Manual//code_reference/class_reference/objectevent.markdown)
-- [updateevent](https://plasmaengine.github.io/PlasmaDocs/Manual//code_reference/class_reference/updateevent.markdown)
+- [objectevent](https://plasmaengine.github.io/PlasmaDocs/Manual/code_reference/class_reference/objectevent.markdown)
+- [updateevent](https://plasmaengine.github.io/PlasmaDocs/Manual/code_reference/class_reference/updateevent.markdown)
  
 
  

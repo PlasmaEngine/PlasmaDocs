@@ -40,7 +40,7 @@ When you export your game, your new banner will replace the default one.
 To give your exported game a custom icon:
 
  - Create a .ico image file using a tool or website (we recommend [converticon ](http://converticon.com/))
-  - Place in the same directory as your project file - [ Command](https://plasmaengine.github.io/PlasmaDocs/Manual//editor/editorcommands/commands.markdown) : [ ShowProjectFolder](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/command_reference.markdown#showprojectfolder)
+  - Place in the same directory as your project file - [ Command](https://plasmaengine.github.io/PlasmaDocs/Manual/editor/editorcommands/commands.markdown) : [ ShowProjectFolder](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/command_reference.markdown#showprojectfolder)
    - Rename it to: `Icon.ico`
 
 
