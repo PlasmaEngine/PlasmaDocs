@@ -47,8 +47,8 @@ The `Level Window` (located in the center of the editor as seen in the image abo
 
 
 In a collapsible toolbar at the top of the `Level Window` are a few buttons for altering the view.
-| Buttons                             | Purpose |
-|-------------------------------------|---------------------------------------------|
+| Buttons | Purpose |
+|-----------------------------|---------------------------------------------|
 | **ADD IMAGE** **ADD IMAGE** | Toggles between 2D & 3D camera controls. |
 | **ADD IMAGE** **ADD IMAGE** | Toggles the editor camera's rendering mode between Orthographic and Perspective Projection. |
 | **ADD IMAGE** **ADD IMAGE** | With the camera options you can either reset the editor camera to its default settings, or align a selected camera with the editor's camera. |
