@@ -10,10 +10,6 @@ This page introduces the Plasma Engine editor and user interface. It covers edit
 
 It is recommended that you create a new project. If this is the first time you have run the Plasma Engine you will already be in the Projects screen and can simply type in a name for your project.  If you are not on the new Projects screen, you can access it using the Project menu.  See the section [The Plasma Launcher](https://plasmaengine.github.io/PlasmaDocs/Manual/editor/launcher.markdown)) for more information.
 
-To create a new project follow these steps:
-* [Command](https://plasmaengine.github.io/PlasmaDocs/Manual/editor/editorcommands/commands.markdown) : [NewProject](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/command_reference.markdown#newproject)
-
-
 
 ![Launcher](https://raw.githubusercontent.com/PlasmaEngine/PlasmaDocs/master/media/LauncherDiscover.png)
 
@@ -47,8 +43,8 @@ The `Level Window` (located in the center of the editor as seen in the image abo
 
 
 In a collapsible toolbar at the top of the `Level Window` are a few buttons for altering the view.
-| Buttons                             | Purpose |
-|-------------------------------------|---------------------------------------------|
+| Buttons | Purpose |
+|-----------------------------|---------------------------------------------|
 | **ADD IMAGE** **ADD IMAGE** | Toggles between 2D & 3D camera controls. |
 | **ADD IMAGE** **ADD IMAGE** | Toggles the editor camera's rendering mode between Orthographic and Perspective Projection. |
 | **ADD IMAGE** **ADD IMAGE** | With the camera options you can either reset the editor camera to its default settings, or align a selected camera with the editor's camera. |
