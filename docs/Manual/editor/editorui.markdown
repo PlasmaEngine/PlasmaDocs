@@ -15,7 +15,7 @@ To create a new project follow these steps:
 
 
 
-**ADD IMAGE**
+![Launcher](https://raw.githubusercontent.com/PlasmaEngine/PlasmaDocs/master/media/LauncherDiscover.png)
 
 
 * In the launcher
