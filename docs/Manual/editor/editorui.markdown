@@ -11,7 +11,7 @@ This page introduces the Plasma Engine editor and user interface. It covers edit
 It is recommended that you create a new project. If this is the first time you have run the Plasma Engine you will already be in the Projects screen and can simply type in a name for your project.  If you are not on the new Projects screen, you can access it using the Project menu.  See the section [The Plasma Launcher](https://plasmaengine.github.io/PlasmaDocs/Manual/editor/launcher.markdown)) for more information.
 
 
-![Launcher](https://raw.githubusercontent.com/PlasmaEngine/PlasmaDocs/master/media/LauncherDiscover.png)
+![Launcher](https://raw.githubusercontent.com/PlasmaEngine/PlasmaDocs/master/media/LauncherDiscover.PNG)
 
 
 * In the launcher
