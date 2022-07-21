@@ -10,11 +10,6 @@ This page introduces the Plasma Engine editor and user interface. It covers edit
 
 It is recommended that you create a new project. If this is the first time you have run the Plasma Engine you will already be in the Projects screen and can simply type in a name for your project.  If you are not on the new Projects screen, you can access it using the Project menu.  See the section [The Plasma Launcher](https://plasmaengine.github.io/PlasmaDocs/Manual/editor/launcher.markdown)) for more information.
 
-To create a new project follow these steps:
-* [Command](https://plasmaengine.github.io/PlasmaDocs/Manual/editor/editorcommands/commands.markdown) : [NewProject](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/command_reference.markdown#newproject)
-
-
-
 **ADD IMAGE**
 
 
