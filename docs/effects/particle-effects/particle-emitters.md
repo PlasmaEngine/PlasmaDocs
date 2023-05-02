@@ -14,7 +14,7 @@ This emitter type spawns particles either in one instantaneous burst or over a l
 
 **SpawnCountScaleParam:** An optional name of an [effect parameter](particle-effects-overview.md#effect-parameters) that can be used to scale the number of emitted particles up or down. *Note:* At the moment this mostly allows to reduce the number of emitted particles. Increasing the amount of particles may have no visible effect.
 
-<video src="media/burst-emitter.webm" width="500" height="500" autoplay loop></video>
+![[burst-emitter.webm]]
 
 ## Continuous Emitter
 
@@ -28,7 +28,7 @@ This emitter type continuously spawns new particles. Effects which have at least
 
 **CountCurve, CurveDuration:** If no *CountCurve* is specified, particles are spawned in regular intervals. Only a large value for *SpawnCountPerSecRange* may introduce irregularities. Using a count curve, the distribution of how many particles are spawned at what time can be controlled. If a curve is given, *CurveDuration* specifies its timespan. For instance, a curve duration of two seconds means, that the count curve is sampled from left to right over a duration of two seconds, before it repeats again. The value of the curve at a given time determines how many particles will get spawned. The curve is only used as a scale factor between zero and one, though (its absolute values don't matter, it is normalized internally). Every time the emitter attempts to spawn particles, *SpawnCountPerSec* and *SpawnCountPerSecRange* determine the *maximum* amount of particles to spawn. Then the curve is sampled and the current value is used to scale the number of particles down. Thus count curves can be used to introduce more elaborate spawn patterns.
 
-<video src="media/continuous-emitter.webm" width="500" height="500" autoplay loop></video>
+![[continuous-emitter.webm]]
 
 ## Distance Emitter
 
@@ -40,7 +40,7 @@ This emitter type only spawns new particles when the particle effect is moved fo
 
 **SpawnCountScaleParam:** See the [burst emitter](#burst-emitter).
 
-<video src="media/distance-emitter.webm" width="500" height="500" autoplay loop></video>
+![[distance-emitter.webm]]
 
 ## OnEvent Emitter
 
@@ -54,7 +54,7 @@ This emitter type spawns new particles whenever a specific [event](particle-effe
 
 In the animation below, the blue particles use a [raycast behavior](particle-behaviors.md#raycast-behavior) to get removed when a collision is detected. The behavior also sends an *event*. This is picked up by a second particle system, which then spawns a number of red particles.
 
-<video src="media/onevent-emitter.webm" width="500" height="500" autoplay loop></video>
+![[onevent-emitter.webm]]
 
 ## See Also
 
