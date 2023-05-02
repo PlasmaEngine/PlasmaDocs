@@ -4,7 +4,7 @@ site_author: PlasmaDev
 site_description: Documentation on the Plasma Game Engine
 
 theme:
-    name: mkdocs-windmill-dark
+    name: readthedocs
     custom_dir: mkdocs-windmill-dark/
 
 plugins:
