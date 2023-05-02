@@ -3,7 +3,9 @@ site_url: https://plasmaengine.github.io/PlasmaDocs/
 site_author: PlasmaDev
 site_description: Documentation on the Plasma Game Engine
 
-theme_dir: 'mkdocs-windmill-dark'
+theme:
+    name: mkdocs-windmill-dark
+    custom_dir: mkdocs-windmill-dark/
 
 plugins:
     - search:
