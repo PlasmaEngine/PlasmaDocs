@@ -4,8 +4,6 @@ site_author: PlasmaDev
 site_description: Documentation on the Plasma Game Engine
 
 theme: windmill-dark
-extra.logo: https://raw.githubusercontent.com/PlasmaEngine/PlasmaDocs/master/assets/PlasmaLogo.png
-extra.version: 0.0.1
 
 plugins:
     - search:
