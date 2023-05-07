@@ -12,7 +12,7 @@ Initializes a particle's position to a random point within a box shape.
 
 **Note:** Scaling the volume will change particle density. To compensate, the particle system will automatically spawn more or fewer particles. Thus you can author an effect as a 1x1x0 meter sized patch and then let the user decide how large a patch she needs by exposing these parameters. If your 1x1x0 patch requires roughly 100 particles at all times, then scaling it to a 10x5x0 patch will require 5000 particles.
 
-![[box-position-init.webm]]
+![[box-position-init.gif]]
 
 ## Cylinder Position Initializer
 
@@ -30,7 +30,7 @@ Optional names of [effect parameters](particle-effects-overview.md#effect-parame
 
 **Note:** Scaling the volume will change particle density. See the [box position initializer](#box-position-initializer) for details.
 
-![[cylinder-position-init.webm]]
+![[cylinder-position-init.gif]]
 
 ## Sphere Position Initializer
 
@@ -48,7 +48,7 @@ Optional name of an [effect parameter](particle-effects-overview.md#effect-param
 
 **Note:** Scaling the volume will change particle density. See the [box position initializer](#box-position-initializer) for details.
 
-![[sphere-position-init.webm]]
+![[sphere-position-init.gif]]
 
 ## Random Color Initializer
 
@@ -58,7 +58,7 @@ Initializes a particle's color to a random color.
 
 **Color1, Color2:** A random interpolated color between the two given colors is used. So if one color is white and the other is black, particles will get a random grey value as their color. If a *gradient* is set as well, the two colors are combined.
 
-![[random-color-init.webm]]
+![[random-color-init.gif]]
 
 ## Random Size Initializer
 
@@ -68,7 +68,7 @@ Initializes a particle's size to a random value.
 
 **SizeCurve:** If specified, the [curve](../../animation/common/curves.md) is sampled at a random location and the normalized value (always between `0` and `1`) is used to scale the randomly chosen base size. The shape of the curve has no meaning for this use case, it only provides a way to affect the distribution of the random sizes. For example, you could have a curve that sets exactly half of all particles to exactly a tenth of the base size. If you want exactly the same distribution as the curve has, you should set the variance of the *base size* to zero.
 
-![[random-size-init.webm]]
+![[random-size-init.gif]]
 
 ## Rotation Speed Initializer
 
@@ -78,7 +78,7 @@ Initializes a particle's rotation and rotation speed to a random value.
 
 **DegreesPerSecond:** If set to a non-zero value, particles will rotate with a constant speed. Each particle gets its own random speed assigned. With a low variance all particles will rotate similarly fast, with a high variance you will see some particles rotate very fast and some very slowly. Half of the particles rotate clockwise, the other half counter-clockwise.
 
-![[rotation-speed-init.webm]]
+![[rotation-speed-init.gif]]
 
 ## Velocity Cone Initializer
 
@@ -88,7 +88,7 @@ Initializes a particle's velocity to a random up vector.
 
 **Speed:** The initial speed for the particles.
 
-![[velocity-cone-init.webm]]
+![[velocity-cone-init.gif]]
 
 ## See Also
 

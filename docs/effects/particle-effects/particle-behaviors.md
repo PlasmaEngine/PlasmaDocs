@@ -29,7 +29,7 @@ This behavior changes a particle's color during the update step. A [color gradie
 
 **MaxSpeed:** When using *ColorFrom = Speed*, this value specifies the maximum expected speed of any particle. That speed is then mapped to the rightmost side of the color gradient.
 
-![[color-gradient.webm]]
+![[color-gradient.gif]]
 
 ## Fade Out Behavior
 
@@ -51,7 +51,7 @@ This behavior moves particles around the emitter center in erratic patterns, sim
 
 **MaxSteeringAngle:** Every time a particle has traveled a distance of *PathLength*, it will make a random turn. This value specifies how large that turn may be. A small value results in very slow and wide turns, whereas a large value results in quick and erratic behavior.
 
-![[flies.webm]]
+![[flies.gif]]
 
 ## Gravity Behavior
 
@@ -59,7 +59,7 @@ This behavior lets particles fall downwards.
 
 **GravityFactor:** Scales gravity before applying it to the particles' velocity.
 
-![[gravity.webm]]
+![[gravity.gif]]
 
 ## Pull Along Behavior
 
@@ -71,7 +71,7 @@ The *pull along behavior* helps to solve this problem by keeping track of any po
 
 The video below shows two effects beside each other. The left one does not use the pull along behavior, the right one does. As can be seen, the particles on the right stay closer to the moving emitter position.
 
-![[pull-along-behavior.webm]]
+![[pull-along-behavior.gif]]
 
 ## Raycast Behavior
 
@@ -89,7 +89,7 @@ This behavior uses raycasts to detect collisions along the trajectory of a parti
 
 **OnCollideEvent:** An optional name of an [event](particle-effects-overview.md#events-and-event-reactions) to raise. If set, other effects or prefabs can be spawned at the location of impact.
 
-![[raycast.webm]]
+![[raycast.gif]]
 
 ## Size Curve Behavior
 
@@ -101,7 +101,7 @@ This behavior changes a particle's size over the course of its lifetime.
 
 **CurveScale:** Specifies what value the largest value in the curve maps to. That means at the peak of a curve, the particle's size will be `BaseSize + CurveScale`.
 
-![[size-curve.webm]]
+![[size-curve.gif]]
 
 ## Velocity Behavior
 
@@ -113,7 +113,7 @@ This behavior affects particle position and velocity. It can be used to graduall
 
 **WindInfluence:** If the scene has wind, this value specifies how much the wind should be able to push the particles around.
 
-![[velocity.webm]]
+![[velocity.gif]]
 
 ## See Also
 

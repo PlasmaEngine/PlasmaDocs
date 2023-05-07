@@ -92,7 +92,7 @@ Particles may raise *events*. The most common one is when a particle dies, but d
 
 The **Event Reactions** tab allows you to configure what happens for a specific event. This is mostly used to chain effects. For example the fireworks effect below has particles that represent the rockets flying up, and when one 'dies', an explosion is spawned at that position, using event reactions.
 
-![[event-reaction-effect.webm]]
+![[event-reaction-effect.gif]]
 
 Instead of spawning other particle effects, you can also spawn entire prefabs, which enables even more complex effects.
 
@@ -128,7 +128,7 @@ Some effects should always behave the same, no matter how the owning game object
 
 When enabling **SimulateInLocalSpace** in the *Effect tab*, the effect is simulated as if it was positioned at the world origin and with the default orientation. This removes any influence that the effects position, orientation and movement would otherwise have on the effect, as shown below:
 
-![[sim-local-space.webm]]
+![[sim-local-space.gif]]
 
 Some behaviors won't properly work for effects that are simulated in local space. For example the [raycast behavior](particle-behaviors.md#raycast-behavior) will do it's raycasts at the origin of the scene, rendering it pointless.
 
