@@ -1300,3 +1300,5 @@ site/search/lunr.js
 site/search/main.js
 site/search/search_index.json
 site/search/worker.js
+
+.idea/

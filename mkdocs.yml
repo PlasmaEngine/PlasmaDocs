@@ -3,6 +3,10 @@ site_url: https://plasmaengine.github.io/PlasmaDocs/
 site_author: PlasmaDev
 site_description: Documentation on the Plasma Game Engine
 
+theme:
+    name: readthedocs
+    custom_dir: PlamsaTheme
+
 plugins:
     - search:
         separator: '[\s\-\.]+'
