@@ -1,11 +1,9 @@
+![PlasmaLogo.png](..%2Fassets%2FPlasmaLogo.png)
+
 # Welcome
 
 Welcome to the Plasma Engine documentation.
+You will find all pages listed in the sidebar on the left. This is split into 2 major sections mapping to each engine version.
+The organization of docs between engine version may differ as they are build for different audiences. 
 
-In the sidebar on the left you'll find pages documenting the vast majority of features. You can either browse by topic, or you can use the searchbar on the top right to search by keywords.
-
-All pages link to related topics at their bottom in the *See Also* section.
-
-Some pages are marked with TODO. For these topics the documentation is not yet written. Generally, all features that have documentation are also in a good enough state to be used.
-
-Features that are undocumented are typically not yet good enough to be used productively, unless their documentation page says differently. Those features are subject to breaking changes in the future.
+If you have any feedback or recommendations then please feel free to create a ticket/PR on the github or reach out via discord
