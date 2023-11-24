@@ -4,9 +4,9 @@
 
 |Methods|Properties|Base Classes|Derived Classes|
 |---|---|---|---|
-| | |[action](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/action.markdown)|[actiongroup](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/actiongroup.markdown)|
-| | | |[actions](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/actions.markdown)|
-| | | |[actionsequence](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/actionsequence.markdown)|
+| | |[action](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/action.markdown)|[actiongroup](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/actiongroup.markdown)|
+| | | |[actions](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/actions.markdown)|
+| | | |[actionsequence](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/actionsequence.markdown)|
 
 
  #  Properties

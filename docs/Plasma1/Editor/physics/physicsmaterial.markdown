@@ -1,6 +1,6 @@
 # Physics Material
 
-A [PhysicsMaterial](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/physicsmaterial.markdown) describes material properties to use for a [Collider](https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/physics/colliders.markdown). These properties affect how collisions are resolved between collider types.
+A [PhysicsMaterial](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/physicsmaterial.markdown) describes material properties to use for a [Collider](https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/physics/colliders.markdown). These properties affect how collisions are resolved between collider types.
 
 Some PhysicsMaterial properties are used to define the surface of an object. In reality, these surface properties are not defined per object, but per object pair. The physics system computes a combined value for these properties as an approximation of the real life values.
 
@@ -43,9 +43,9 @@ FrictionImportance  determines which object's friction should be used in collisi
 - [colliders.markdown](https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/physics/colliders.markdown)
 
 ## Reference
-- [PhysicsMaterial](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/physicsmaterial.markdown)
-- [RigidBody](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/rigidbody.markdown)
-- [Collider](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/collider.markdown)
+- [PhysicsMaterial](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/physicsmaterial.markdown)
+- [RigidBody](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/rigidbody.markdown)
+- [Collider](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/collider.markdown)
  
 
  

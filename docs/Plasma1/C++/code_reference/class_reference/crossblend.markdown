@@ -2,17 +2,17 @@
 
 |Methods|Properties|Base Classes|Derived Classes|
 |---|---|---|---|
-|[ SetNormalizedTimeScale](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/crossblend.markdown#setnormalizedtimescale-v)|[ Mode](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/crossblend.markdown#mode-plasma-engine-documen)|[dualblendcrossblend](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/dualblendcrossblend.markdown)| |
-|[ SyncCadence](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/crossblend.markdown#synccadence-void)|[ TimeScaleFrom](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/crossblend.markdown#timescalefrom-plasma-engin)| | |
-| |[ TimeScaleTo](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/crossblend.markdown#timescaleto-plasma-engine)| | |
-| |[ Type](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/crossblend.markdown#type-plasma-engine-documen)| | |
+|[ SetNormalizedTimeScale](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/crossblend.markdown#setnormalizedtimescale-v)|[ Mode](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/crossblend.markdown#mode-plasma-engine-documen)|[dualblendcrossblend](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/dualblendcrossblend.markdown)| |
+|[ SyncCadence](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/crossblend.markdown#synccadence-void)|[ TimeScaleFrom](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/crossblend.markdown#timescalefrom-plasma-engin)| | |
+| |[ TimeScaleTo](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/crossblend.markdown#timescaleto-plasma-engine)| | |
+| |[ Type](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/crossblend.markdown#type-plasma-engine-documen)| | |
 
 
  #  Properties
 
 
 ---  
- #  Mode : [AnimationBlendMode](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/enum_reference.markdown#animationblendmode)
+ #  Mode : [AnimationBlendMode](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/enum_reference.markdown#animationblendmode)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -20,7 +20,7 @@
 
 
 ---  
- #  TimeScaleFrom : [real](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real.markdown)
+ #  TimeScaleFrom : [real](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -28,7 +28,7 @@
 
 
 ---  
- #  TimeScaleTo : [real](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real.markdown)
+ #  TimeScaleTo : [real](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -36,7 +36,7 @@
 
 
 ---  
- #  Type : [AnimationBlendType](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/enum_reference.markdown#animationblendtype)
+ #  Type : [AnimationBlendType](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/enum_reference.markdown#animationblendtype)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -53,9 +53,9 @@
 > 
 > |Name|Type|Description|
 > |---|---|---|
-> |p0|[real](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real.markdown)| |
-> |p1|[real](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real.markdown)| |
-> |p2|[real](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real.markdown)| |
+> |p0|[real](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.markdown)| |
+> |p1|[real](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.markdown)| |
+> |p2|[real](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.markdown)| |
 > ``` lang=cpp, name=Lightning
 > function SetNormalizedTimeScale(p0 : Real, p1 : Real, p2 : Real)
 > ``` 

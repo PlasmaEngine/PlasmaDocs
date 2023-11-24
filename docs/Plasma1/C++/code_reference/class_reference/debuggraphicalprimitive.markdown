@@ -4,7 +4,7 @@
 
 |Methods|Properties|Base Classes|Derived Classes|
 |---|---|---|---|
-|[ Constructor](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/debuggraphicalprimitive.markdown#debuggraphicalprimitive)| |[debuggraphical](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/debuggraphical.markdown)|[debuggraphicalthickline](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/debuggraphicalthickline.markdown)|
+|[ Constructor](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/debuggraphicalprimitive.markdown#debuggraphicalprimitive)| |[debuggraphical](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/debuggraphical.markdown)|[debuggraphicalthickline](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/debuggraphicalthickline.markdown)|
 
 
  #  Properties

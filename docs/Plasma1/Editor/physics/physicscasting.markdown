@@ -5,33 +5,33 @@ One of the most common run-time interactions with a [PhysicsSpace](https://plasm
 Typically a cast will take 3 arguments:
   - The shape to cast
   - How many results to receive at max. This is needed for internal optimizations in physics. For Ray/Segments, the results will be sorted by the t-value.
-  - The [CastFilter](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/castfilter.markdown) describes how to filter out results when casting. Common operations include skipping objects of certain configurations (Static, Kinematic, [CollisionGroups](https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/physics/collisionoverview/collisiongroupsandtables.markdown), etc...).
+  - The [CastFilter](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/castfilter.markdown) describes how to filter out results when casting. Common operations include skipping objects of certain configurations (Static, Kinematic, [CollisionGroups](https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/physics/collisionoverview/collisiongroupsandtables.markdown), etc...).
   
 Currently, the physics systems supports a few common casting types:
 
 ## Ray Casting
 
-[ray](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/ray.markdown) casting checks for all shapes in a direction. Ray casts are common for things like line-of-sight tests.
+[ray](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/ray.markdown) casting checks for all shapes in a direction. Ray casts are common for things like line-of-sight tests.
 
 ## Segment Casting
 
-A [segment](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/segment.markdown) cast is like a ray cast except it has an end position. Segment casts are used when there is a known max distance for the cast.
+A [segment](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/segment.markdown) cast is like a ray cast except it has an end position. Segment casts are used when there is a known max distance for the cast.
 
 ## Sphere Casting
 
-[sphere](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/sphere.markdown) casting checks to see what objects are within a sphere. Useful for simple volume queries such as finding all objects within an explosion radius.
+[sphere](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/sphere.markdown) casting checks to see what objects are within a sphere. Useful for simple volume queries such as finding all objects within an explosion radius.
 
 ## Aabb Casting
 
-[aabb](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/aabb.markdown) casting checks what objects are within an axis-aligned box. Sometimes a box is a better shape for casting, especially when the query area is long an thin.
+[aabb](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/aabb.markdown) casting checks what objects are within an axis-aligned box. Sometimes a box is a better shape for casting, especially when the query area is long an thin.
 
 ## Frustum Casting
 
-[frustum](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/frustum.markdown) casting checks what objects are within a frustum. Useful for queries that come from a camera where perspective should be taken into account.
+[frustum](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/frustum.markdown) casting checks what objects are within a frustum. Useful for queries that come from a camera where perspective should be taken into account.
 
 ## Collider Casting
 
-Sometimes a more complicated shape query is desired. [Collider](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/collider.markdown) casting allows the user to say: "What if this collider was over there". This is commonly used for a simple preventative collision check.
+Sometimes a more complicated shape query is desired. [Collider](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/collider.markdown) casting allows the user to say: "What if this collider was over there". This is commonly used for a simple preventative collision check.
 
 ## CastFirst
 
@@ -54,14 +54,14 @@ NOTE: Swept casts are expensive operations and should be used only when importan
 - [collisiongroupsandtables.markdown](https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/physics/collisionoverview/collisiongroupsandtables.markdown)
   
 ### Reference
-- [CastFilter](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/castfilter.markdown)
-- [CastResult](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/castresult.markdown)
-- [SweepResult](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/sweepresult.markdown)
-- [Ray](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/ray.markdown)
-- [Segment](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/segment.markdown)
-- [Aabb](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/aabb.markdown)
-- [Sphere](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/sphere.markdown)
-- [Frustum](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/frustum.markdown)
-- [PhysicsSpace](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/physicsspace.markdown)
-- [CollisionGroup](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/collisiongroup.markdown)
-- [Collider](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/collider.markdown) 
+- [CastFilter](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/castfilter.markdown)
+- [CastResult](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/castresult.markdown)
+- [SweepResult](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/sweepresult.markdown)
+- [Ray](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/ray.markdown)
+- [Segment](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/segment.markdown)
+- [Aabb](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/aabb.markdown)
+- [Sphere](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/sphere.markdown)
+- [Frustum](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/frustum.markdown)
+- [PhysicsSpace](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/physicsspace.markdown)
+- [CollisionGroup](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/collisiongroup.markdown)
+- [Collider](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/collider.markdown) 

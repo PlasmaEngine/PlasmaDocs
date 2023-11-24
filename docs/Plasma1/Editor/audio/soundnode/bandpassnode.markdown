@@ -1,5 +1,5 @@
 # Band Pass Node
-The [ BandPassNode ](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/bandpassnode.markdown) collects audio data from all of its inputs and applies a band pass filter to it before passing it along to its outputs. 
+The [ BandPassNode ](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/bandpassnode.markdown) collects audio data from all of its inputs and applies a band pass filter to it before passing it along to its outputs. 
 
 # Using the BandPassNode
 
@@ -12,6 +12,6 @@ Band pass filters are a combination of low pass and high pass filtering which al
 - [highpassnode](https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/audio/soundnode/highpassnode.markdown)
 
 ## Code Reference
-- [ BandPassNode ](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/bandpassnode.markdown) 
+- [ BandPassNode ](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/bandpassnode.markdown) 
 
  

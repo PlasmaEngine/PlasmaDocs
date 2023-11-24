@@ -2,18 +2,18 @@
 
 |Methods|Properties|Base Classes|Derived Classes|
 |---|---|---|---|
-| |[ Connections](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/nodeprintinfo.markdown#connections-plasma-engine)| | |
-| |[ HasOutput](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/nodeprintinfo.markdown#hasoutput-plasma-engine-do)| | |
-| |[ ID](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/nodeprintinfo.markdown#id-plasma-engine-documenta)| | |
-| |[ Name](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/nodeprintinfo.markdown#name-plasma-engine-documen)| | |
-| |[ Position](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/nodeprintinfo.markdown#position-plasma-engine-doc)| | |
+| |[ Connections](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/nodeprintinfo.markdown#connections-plasma-engine)| | |
+| |[ HasOutput](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/nodeprintinfo.markdown#hasoutput-plasma-engine-do)| | |
+| |[ ID](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/nodeprintinfo.markdown#id-plasma-engine-documenta)| | |
+| |[ Name](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/nodeprintinfo.markdown#name-plasma-engine-documen)| | |
+| |[ Position](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/nodeprintinfo.markdown#position-plasma-engine-doc)| | |
 
 
  #  Properties
 
 
 ---  
- #  Connections : [nodeinfolistrange](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/nodeinfolistrange.markdown)
+ #  Connections : [nodeinfolistrange](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/nodeinfolistrange.markdown)
 
  `read-only`
 
@@ -23,7 +23,7 @@
 
 
 ---  
- #  HasOutput : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/boolean.markdown)
+ #  HasOutput : [boolean](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -31,7 +31,7 @@
 
 
 ---  
- #  ID : [integer](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/integer.markdown)
+ #  ID : [integer](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -39,7 +39,7 @@
 
 
 ---  
- #  Name : [string](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/string.markdown)
+ #  Name : [string](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/string.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -47,7 +47,7 @@
 
 
 ---  
- #  Position : [real2](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real2.markdown)
+ #  Position : [real2](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real2.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning

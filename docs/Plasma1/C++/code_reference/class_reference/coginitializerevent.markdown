@@ -4,14 +4,14 @@
 
 |Methods|Properties|Base Classes|Derived Classes|
 |---|---|---|---|
-| |[ CogInitializer](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/coginitializerevent.markdown#coginitializer-plasma-engi)|[event](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/event.markdown)| |
+| |[ CogInitializer](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/coginitializerevent.markdown#coginitializer-plasma-engi)|[event](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/event.markdown)| |
 
 
  #  Properties
 
 
 ---  
- #  CogInitializer : [coginitializer](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/coginitializer.markdown)
+ #  CogInitializer : [coginitializer](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/coginitializer.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning

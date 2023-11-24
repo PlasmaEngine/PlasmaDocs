@@ -6,15 +6,15 @@
 
 |Methods|Properties|Base Classes|Derived Classes|
 |---|---|---|---|
-|[ ResetConfig](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netpropertytype.markdown#resetconfig-void)|[ Name](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netpropertytype.markdown#name-plasma-engine-documen)|[safeid32object](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/safeid32object.markdown)| |
-|[ SetConfig](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netpropertytype.markdown#setconfig-void)| | | |
+|[ ResetConfig](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/netpropertytype.markdown#resetconfig-void)|[ Name](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/netpropertytype.markdown#name-plasma-engine-documen)|[safeid32object](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/safeid32object.markdown)| |
+|[ SetConfig](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/netpropertytype.markdown#setconfig-void)| | | |
 
 
  #  Properties
 
 
 ---  
- #  Name : [string](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/string.markdown)
+ #  Name : [string](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/string.markdown)
 
  `read-only`
 
@@ -44,7 +44,7 @@
 > Sets all configuration settings according to the specified NetPropertyConfig resource. (Cannot be modified at game runtime)
 > |Name|Type|Description|
 > |---|---|---|
-> |netPropertyConfig|[netpropertyconfig](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netpropertyconfig.markdown)| |
+> |netPropertyConfig|[netpropertyconfig](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/netpropertyconfig.markdown)| |
 > ``` lang=cpp, name=Lightning
 > function SetConfig(netPropertyConfig : NetPropertyConfig)
 > ``` 

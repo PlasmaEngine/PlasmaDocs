@@ -2,15 +2,15 @@
 
 |Methods|Properties|Base Classes|Derived Classes|
 |---|---|---|---|
-| |[ AnchoredPointMassColor](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/anchoringsubtool.markdown#anchoredpointmasscolor-z)|[pointmassselectorsubtool](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/pointmassselectorsubtool.markdown)| |
-| |[ DrawAnchoredPoints](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/anchoringsubtool.markdown#drawanchoredpoints-plasma)| | |
+| |[ AnchoredPointMassColor](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/anchoringsubtool.markdown#anchoredpointmasscolor-z)|[pointmassselectorsubtool](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/pointmassselectorsubtool.markdown)| |
+| |[ DrawAnchoredPoints](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/anchoringsubtool.markdown#drawanchoredpoints-plasma)| | |
 
 
  #  Properties
 
 
 ---  
- #  AnchoredPointMassColor : [real4](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real4.markdown)
+ #  AnchoredPointMassColor : [real4](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real4.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -18,7 +18,7 @@
 
 
 ---  
- #  DrawAnchoredPoints : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/boolean.markdown)
+ #  DrawAnchoredPoints : [boolean](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning

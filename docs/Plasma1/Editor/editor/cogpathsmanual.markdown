@@ -78,8 +78,8 @@ Once an object has been selected, a number of different options become available
 - [Game Objects (Cogs)](https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/architecture/cogs/gameobjectsconcept.markdown)
 
 ## Reference
-- [cogpath](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/cogpath.markdown)
-- [cog](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/cog.markdown)
+- [cogpath](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/cogpath.markdown)
+- [cog](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/cog.markdown)
 
  
 

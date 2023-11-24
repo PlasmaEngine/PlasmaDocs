@@ -1,6 +1,6 @@
 # Physics Solver Config
 
-The [PhysicsSolverConfig](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/physicssolverconfig.markdown) resource allows a certain level of customization in how physics solves [PhysicsSolverPositionCorrection](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/enum_reference.markdown#physicssolverpositioncor) types.
+The [PhysicsSolverConfig](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/physicssolverconfig.markdown) resource allows a certain level of customization in how physics solves [PhysicsSolverPositionCorrection](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/enum_reference.markdown#physicssolverpositioncor) types.
 
 WARNING: If you don't understand the topic of constraints then you probably shouldn't change the properties of this resource.
 
@@ -22,7 +22,7 @@ This property configures the default solving method for all constraints unless o
 
 # Joint/Contact Configurations
 
-[JointConfigOverride](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/jointconfigoverride.markdown) component and uses its properties. Note that this component cannot be applied to contacts. Next, the joint will check its space's PhysicsSolverConfig to see if a block for its joint type exists. If this block exists then it'll use the specified values. Finally, any global fallback values will be used such as the position correction type. In the case of properties like slop, each joint type has its own defaults to use when no block exists.
+[JointConfigOverride](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/jointconfigoverride.markdown) component and uses its properties. Note that this component cannot be applied to contacts. Next, the joint will check its space's PhysicsSolverConfig to see if a block for its joint type exists. If this block exists then it'll use the specified values. Finally, any global fallback values will be used such as the position correction type. In the case of properties like slop, each joint type has its own defaults to use when no block exists.
 
 # Joint Blocks
 A configuration block can be added for any joint type that determines how the physics system solves that constraint type. This allows changing certain joint types at a global level to solve differently from others.
@@ -34,8 +34,8 @@ A configuration block can be added for any joint type that determines how the ph
 - [physicsspace.markdown](https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/physics/physicsspace.markdown)
 
 ## Code Reference
-- [Joint](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/joint.markdown)
-- [JointConfigOverride](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/jointconfigoverride.markdown)
-- [ConstraintConfigBlock](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/constraintconfigblock.markdown)
-- [PhysicsSpace](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/physicsspace.markdown)
-- [PhysicsSolverPositionCorrection](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/enum_reference.markdown#physicssolverpositioncor) 
+- [Joint](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/joint.markdown)
+- [JointConfigOverride](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/jointconfigoverride.markdown)
+- [ConstraintConfigBlock](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/constraintconfigblock.markdown)
+- [PhysicsSpace](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/physicsspace.markdown)
+- [PhysicsSolverPositionCorrection](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/enum_reference.markdown#physicssolverpositioncor) 

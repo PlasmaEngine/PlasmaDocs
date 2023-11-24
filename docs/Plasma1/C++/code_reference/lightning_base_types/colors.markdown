@@ -2,152 +2,152 @@
 
 |Methods|Properties|Base Classes|Derived Classes|
 |---|---|---|---|
-| |[ AliceBlue](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/colors.markdown#aliceblue-plasma-engine-do)| | |
-| |[ AntiqueWhite](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/colors.markdown#antiquewhite-plasma-engine)| | |
-| |[ Aqua](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/colors.markdown#aqua-plasma-engine-documen)| | |
-| |[ Aquamarine](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/colors.markdown#aquamarine-plasma-engine-d)| | |
-| |[ Azure](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/colors.markdown#azure-plasma-engine-docume)| | |
-| |[ Beige](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/colors.markdown#beige-plasma-engine-docume)| | |
-| |[ Bisque](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/colors.markdown#bisque-plasma-engine-docum)| | |
-| |[ Black](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/colors.markdown#black-plasma-engine-docume)| | |
-| |[ BlanchedAlmond](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/colors.markdown#blanchedalmond-plasma-engi)| | |
-| |[ Blue](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/colors.markdown#blue-plasma-engine-documen)| | |
-| |[ BlueViolet](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/colors.markdown#blueviolet-plasma-engine-d)| | |
-| |[ Brown](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/colors.markdown#brown-plasma-engine-docume)| | |
-| |[ Burlywood](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/colors.markdown#burlywood-plasma-engine-do)| | |
-| |[ CadetBlue](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/colors.markdown#cadetblue-plasma-engine-do)| | |
-| |[ Chartreuse](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/colors.markdown#chartreuse-plasma-engine-d)| | |
-| |[ Chocolate](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/colors.markdown#chocolate-plasma-engine-do)| | |
-| |[ Clear](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/colors.markdown#clear-plasma-engine-docume)| | |
-| |[ Coral](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/colors.markdown#coral-plasma-engine-docume)| | |
-| |[ Cornflower](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/colors.markdown#cornflower-plasma-engine-d)| | |
-| |[ Cornsilk](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/colors.markdown#cornsilk-plasma-engine-doc)| | |
-| |[ Crimson](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/colors.markdown#crimson-plasma-engine-docu)| | |
-| |[ Cyan](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/colors.markdown#cyan-plasma-engine-documen)| | |
-| |[ DarkGoldenrod](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/colors.markdown#darkgoldenrod-plasma-engin)| | |
-| |[ DarkGray](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/colors.markdown#darkgray-plasma-engine-doc)| | |
-| |[ DarkKhaki](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/colors.markdown#darkkhaki-plasma-engine-do)| | |
-| |[ DarkMagenta](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/colors.markdown#darkmagenta-plasma-engine)| | |
-| |[ DarkOliveGreen](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/colors.markdown#darkolivegreen-plasma-engi)| | |
-| |[ DarkOrange](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/colors.markdown#darkorange-plasma-engine-d)| | |
-| |[ DarkOrchid](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/colors.markdown#darkorchid-plasma-engine-d)| | |
-| |[ DarkSalmon](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/colors.markdown#darksalmon-plasma-engine-d)| | |
-| |[ DarkSeaGreen](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/colors.markdown#darkseagreen-plasma-engine)| | |
-| |[ DarkSlateBlue](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/colors.markdown#darkslateblue-plasma-engin)| | |
-| |[ DarkSlateGray](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/colors.markdown#darkslategray-plasma-engin)| | |
-| |[ DarkTurquoise](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/colors.markdown#darkturquoise-plasma-engin)| | |
-| |[ DarkViolet](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/colors.markdown#darkviolet-plasma-engine-d)| | |
-| |[ DeepGreen](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/colors.markdown#deepgreen-plasma-engine-do)| | |
-| |[ DeepPink](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/colors.markdown#deeppink-plasma-engine-doc)| | |
-| |[ DeepSkyBlue](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/colors.markdown#deepskyblue-plasma-engine)| | |
-| |[ DimGray](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/colors.markdown#dimgray-plasma-engine-docu)| | |
-| |[ DodgerBlue](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/colors.markdown#dodgerblue-plasma-engine-d)| | |
-| |[ Firebrick](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/colors.markdown#firebrick-plasma-engine-do)| | |
-| |[ FloralWhite](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/colors.markdown#floralwhite-plasma-engine)| | |
-| |[ ForestGreen](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/colors.markdown#forestgreen-plasma-engine)| | |
-| |[ Fuchsia](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/colors.markdown#fuchsia-plasma-engine-docu)| | |
-| |[ Gainsboro](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/colors.markdown#gainsboro-plasma-engine-do)| | |
-| |[ GhostWhite](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/colors.markdown#ghostwhite-plasma-engine-d)| | |
-| |[ Gold](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/colors.markdown#gold-plasma-engine-documen)| | |
-| |[ Goldenrod](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/colors.markdown#goldenrod-plasma-engine-do)| | |
-| |[ Gray](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/colors.markdown#gray-plasma-engine-documen)| | |
-| |[ Green](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/colors.markdown#green-plasma-engine-docume)| | |
-| |[ GreenYellow](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/colors.markdown#greenyellow-plasma-engine)| | |
-| |[ Honeydew](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/colors.markdown#honeydew-plasma-engine-doc)| | |
-| |[ HotPink](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/colors.markdown#hotpink-plasma-engine-docu)| | |
-| |[ IndianRed](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/colors.markdown#indianred-plasma-engine-do)| | |
-| |[ Indigo](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/colors.markdown#indigo-plasma-engine-docum)| | |
-| |[ Ivory](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/colors.markdown#ivory-plasma-engine-docume)| | |
-| |[ Khaki](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/colors.markdown#khaki-plasma-engine-docume)| | |
-| |[ Lavender](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/colors.markdown#lavender-plasma-engine-doc)| | |
-| |[ LavenderBlush](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/colors.markdown#lavenderblush-plasma-engin)| | |
-| |[ LawnGreen](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/colors.markdown#lawngreen-plasma-engine-do)| | |
-| |[ LemonChiffon](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/colors.markdown#lemonchiffon-plasma-engine)| | |
-| |[ LightBlue](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/colors.markdown#lightblue-plasma-engine-do)| | |
-| |[ LightCoral](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/colors.markdown#lightcoral-plasma-engine-d)| | |
-| |[ LightCyan](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/colors.markdown#lightcyan-plasma-engine-do)| | |
-| |[ LightGoldenrod](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/colors.markdown#lightgoldenrod-plasma-engi)| | |
-| |[ LightGray](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/colors.markdown#lightgray-plasma-engine-do)| | |
-| |[ LightGreen](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/colors.markdown#lightgreen-plasma-engine-d)| | |
-| |[ LightPink](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/colors.markdown#lightpink-plasma-engine-do)| | |
-| |[ LightSalmon](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/colors.markdown#lightsalmon-plasma-engine)| | |
-| |[ LightSeaGreen](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/colors.markdown#lightseagreen-plasma-engin)| | |
-| |[ LightSkyBlue](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/colors.markdown#lightskyblue-plasma-engine)| | |
-| |[ LightSlateGray](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/colors.markdown#lightslategray-plasma-engi)| | |
-| |[ LightSteelBlue](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/colors.markdown#lightsteelblue-plasma-engi)| | |
-| |[ LightYellow](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/colors.markdown#lightyellow-plasma-engine)| | |
-| |[ Lime](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/colors.markdown#lime-plasma-engine-documen)| | |
-| |[ LimeGreen](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/colors.markdown#limegreen-plasma-engine-do)| | |
-| |[ Linen](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/colors.markdown#linen-plasma-engine-docume)| | |
-| |[ Magenta](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/colors.markdown#magenta-plasma-engine-docu)| | |
-| |[ Maroon](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/colors.markdown#maroon-plasma-engine-docum)| | |
-| |[ MediumAquamarine](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/colors.markdown#mediumaquamarine-plasma-en)| | |
-| |[ MediumBlue](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/colors.markdown#mediumblue-plasma-engine-d)| | |
-| |[ MediumOrchid](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/colors.markdown#mediumorchid-plasma-engine)| | |
-| |[ MediumPurple](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/colors.markdown#mediumpurple-plasma-engine)| | |
-| |[ MediumSeaGreen](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/colors.markdown#mediumseagreen-plasma-engi)| | |
-| |[ MediumSlateBlue](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/colors.markdown#mediumslateblue-plasma-eng)| | |
-| |[ MediumSpringGreen](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/colors.markdown#mediumspringgreen-plasma-e)| | |
-| |[ MediumTurquoise](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/colors.markdown#mediumturquoise-plasma-eng)| | |
-| |[ MediumVioletRed](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/colors.markdown#mediumvioletred-plasma-eng)| | |
-| |[ MidnightBlue](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/colors.markdown#midnightblue-plasma-engine)| | |
-| |[ MintCream](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/colors.markdown#mintcream-plasma-engine-do)| | |
-| |[ MistyRose](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/colors.markdown#mistyrose-plasma-engine-do)| | |
-| |[ Moccasin](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/colors.markdown#moccasin-plasma-engine-doc)| | |
-| |[ NavajoWhite](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/colors.markdown#navajowhite-plasma-engine)| | |
-| |[ Navy](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/colors.markdown#navy-plasma-engine-documen)| | |
-| |[ OldLace](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/colors.markdown#oldlace-plasma-engine-docu)| | |
-| |[ Olive](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/colors.markdown#olive-plasma-engine-docume)| | |
-| |[ OliveDrab](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/colors.markdown#olivedrab-plasma-engine-do)| | |
-| |[ Orange](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/colors.markdown#orange-plasma-engine-docum)| | |
-| |[ OrangeRed](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/colors.markdown#orangered-plasma-engine-do)| | |
-| |[ Orchid](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/colors.markdown#orchid-plasma-engine-docum)| | |
-| |[ PaleGoldenrod](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/colors.markdown#palegoldenrod-plasma-engin)| | |
-| |[ PaleGreen](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/colors.markdown#palegreen-plasma-engine-do)| | |
-| |[ PaleTurquoise](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/colors.markdown#paleturquoise-plasma-engin)| | |
-| |[ PaleVioletRed](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/colors.markdown#palevioletred-plasma-engin)| | |
-| |[ PapayaWhip](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/colors.markdown#papayawhip-plasma-engine-d)| | |
-| |[ PeachPuff](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/colors.markdown#peachpuff-plasma-engine-do)| | |
-| |[ Peru](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/colors.markdown#peru-plasma-engine-documen)| | |
-| |[ Pink](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/colors.markdown#pink-plasma-engine-documen)| | |
-| |[ Plum](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/colors.markdown#plum-plasma-engine-documen)| | |
-| |[ PowderBlue](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/colors.markdown#powderblue-plasma-engine-d)| | |
-| |[ Purple](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/colors.markdown#purple-plasma-engine-docum)| | |
-| |[ RebeccaPurple](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/colors.markdown#rebeccapurple-plasma-engin)| | |
-| |[ Red](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/colors.markdown#red-plasma-engine-document)| | |
-| |[ RosyBrown](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/colors.markdown#rosybrown-plasma-engine-do)| | |
-| |[ RoyalBlue](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/colors.markdown#royalblue-plasma-engine-do)| | |
-| |[ SaddleBrown](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/colors.markdown#saddlebrown-plasma-engine)| | |
-| |[ Salmon](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/colors.markdown#salmon-plasma-engine-docum)| | |
-| |[ SandyBrown](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/colors.markdown#sandybrown-plasma-engine-d)| | |
-| |[ SeaGreen](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/colors.markdown#seagreen-plasma-engine-doc)| | |
-| |[ Seashell](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/colors.markdown#seashell-plasma-engine-doc)| | |
-| |[ Sienna](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/colors.markdown#sienna-plasma-engine-docum)| | |
-| |[ Silver](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/colors.markdown#silver-plasma-engine-docum)| | |
-| |[ SkyBlue](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/colors.markdown#skyblue-plasma-engine-docu)| | |
-| |[ SlateBlue](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/colors.markdown#slateblue-plasma-engine-do)| | |
-| |[ SlateGray](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/colors.markdown#slategray-plasma-engine-do)| | |
-| |[ Snow](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/colors.markdown#snow-plasma-engine-documen)| | |
-| |[ SpringGreen](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/colors.markdown#springgreen-plasma-engine)| | |
-| |[ SteelBlue](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/colors.markdown#steelblue-plasma-engine-do)| | |
-| |[ Tan](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/colors.markdown#tan-plasma-engine-document)| | |
-| |[ Teal](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/colors.markdown#teal-plasma-engine-documen)| | |
-| |[ Thistle](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/colors.markdown#thistle-plasma-engine-docu)| | |
-| |[ Tomato](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/colors.markdown#tomato-plasma-engine-docum)| | |
-| |[ Turquoise](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/colors.markdown#turquoise-plasma-engine-do)| | |
-| |[ Violet](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/colors.markdown#violet-plasma-engine-docum)| | |
-| |[ Wheat](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/colors.markdown#wheat-plasma-engine-docume)| | |
-| |[ White](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/colors.markdown#white-plasma-engine-docume)| | |
-| |[ WhiteSmoke](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/colors.markdown#whitesmoke-plasma-engine-d)| | |
-| |[ Yellow](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/colors.markdown#yellow-plasma-engine-docum)| | |
-| |[ YellowGreen](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/colors.markdown#yellowgreen-plasma-engine)| | |
+| |[ AliceBlue](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/colors.markdown#aliceblue-plasma-engine-do)| | |
+| |[ AntiqueWhite](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/colors.markdown#antiquewhite-plasma-engine)| | |
+| |[ Aqua](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/colors.markdown#aqua-plasma-engine-documen)| | |
+| |[ Aquamarine](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/colors.markdown#aquamarine-plasma-engine-d)| | |
+| |[ Azure](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/colors.markdown#azure-plasma-engine-docume)| | |
+| |[ Beige](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/colors.markdown#beige-plasma-engine-docume)| | |
+| |[ Bisque](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/colors.markdown#bisque-plasma-engine-docum)| | |
+| |[ Black](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/colors.markdown#black-plasma-engine-docume)| | |
+| |[ BlanchedAlmond](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/colors.markdown#blanchedalmond-plasma-engi)| | |
+| |[ Blue](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/colors.markdown#blue-plasma-engine-documen)| | |
+| |[ BlueViolet](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/colors.markdown#blueviolet-plasma-engine-d)| | |
+| |[ Brown](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/colors.markdown#brown-plasma-engine-docume)| | |
+| |[ Burlywood](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/colors.markdown#burlywood-plasma-engine-do)| | |
+| |[ CadetBlue](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/colors.markdown#cadetblue-plasma-engine-do)| | |
+| |[ Chartreuse](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/colors.markdown#chartreuse-plasma-engine-d)| | |
+| |[ Chocolate](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/colors.markdown#chocolate-plasma-engine-do)| | |
+| |[ Clear](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/colors.markdown#clear-plasma-engine-docume)| | |
+| |[ Coral](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/colors.markdown#coral-plasma-engine-docume)| | |
+| |[ Cornflower](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/colors.markdown#cornflower-plasma-engine-d)| | |
+| |[ Cornsilk](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/colors.markdown#cornsilk-plasma-engine-doc)| | |
+| |[ Crimson](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/colors.markdown#crimson-plasma-engine-docu)| | |
+| |[ Cyan](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/colors.markdown#cyan-plasma-engine-documen)| | |
+| |[ DarkGoldenrod](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/colors.markdown#darkgoldenrod-plasma-engin)| | |
+| |[ DarkGray](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/colors.markdown#darkgray-plasma-engine-doc)| | |
+| |[ DarkKhaki](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/colors.markdown#darkkhaki-plasma-engine-do)| | |
+| |[ DarkMagenta](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/colors.markdown#darkmagenta-plasma-engine)| | |
+| |[ DarkOliveGreen](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/colors.markdown#darkolivegreen-plasma-engi)| | |
+| |[ DarkOrange](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/colors.markdown#darkorange-plasma-engine-d)| | |
+| |[ DarkOrchid](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/colors.markdown#darkorchid-plasma-engine-d)| | |
+| |[ DarkSalmon](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/colors.markdown#darksalmon-plasma-engine-d)| | |
+| |[ DarkSeaGreen](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/colors.markdown#darkseagreen-plasma-engine)| | |
+| |[ DarkSlateBlue](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/colors.markdown#darkslateblue-plasma-engin)| | |
+| |[ DarkSlateGray](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/colors.markdown#darkslategray-plasma-engin)| | |
+| |[ DarkTurquoise](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/colors.markdown#darkturquoise-plasma-engin)| | |
+| |[ DarkViolet](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/colors.markdown#darkviolet-plasma-engine-d)| | |
+| |[ DeepGreen](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/colors.markdown#deepgreen-plasma-engine-do)| | |
+| |[ DeepPink](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/colors.markdown#deeppink-plasma-engine-doc)| | |
+| |[ DeepSkyBlue](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/colors.markdown#deepskyblue-plasma-engine)| | |
+| |[ DimGray](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/colors.markdown#dimgray-plasma-engine-docu)| | |
+| |[ DodgerBlue](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/colors.markdown#dodgerblue-plasma-engine-d)| | |
+| |[ Firebrick](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/colors.markdown#firebrick-plasma-engine-do)| | |
+| |[ FloralWhite](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/colors.markdown#floralwhite-plasma-engine)| | |
+| |[ ForestGreen](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/colors.markdown#forestgreen-plasma-engine)| | |
+| |[ Fuchsia](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/colors.markdown#fuchsia-plasma-engine-docu)| | |
+| |[ Gainsboro](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/colors.markdown#gainsboro-plasma-engine-do)| | |
+| |[ GhostWhite](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/colors.markdown#ghostwhite-plasma-engine-d)| | |
+| |[ Gold](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/colors.markdown#gold-plasma-engine-documen)| | |
+| |[ Goldenrod](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/colors.markdown#goldenrod-plasma-engine-do)| | |
+| |[ Gray](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/colors.markdown#gray-plasma-engine-documen)| | |
+| |[ Green](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/colors.markdown#green-plasma-engine-docume)| | |
+| |[ GreenYellow](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/colors.markdown#greenyellow-plasma-engine)| | |
+| |[ Honeydew](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/colors.markdown#honeydew-plasma-engine-doc)| | |
+| |[ HotPink](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/colors.markdown#hotpink-plasma-engine-docu)| | |
+| |[ IndianRed](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/colors.markdown#indianred-plasma-engine-do)| | |
+| |[ Indigo](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/colors.markdown#indigo-plasma-engine-docum)| | |
+| |[ Ivory](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/colors.markdown#ivory-plasma-engine-docume)| | |
+| |[ Khaki](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/colors.markdown#khaki-plasma-engine-docume)| | |
+| |[ Lavender](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/colors.markdown#lavender-plasma-engine-doc)| | |
+| |[ LavenderBlush](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/colors.markdown#lavenderblush-plasma-engin)| | |
+| |[ LawnGreen](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/colors.markdown#lawngreen-plasma-engine-do)| | |
+| |[ LemonChiffon](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/colors.markdown#lemonchiffon-plasma-engine)| | |
+| |[ LightBlue](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/colors.markdown#lightblue-plasma-engine-do)| | |
+| |[ LightCoral](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/colors.markdown#lightcoral-plasma-engine-d)| | |
+| |[ LightCyan](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/colors.markdown#lightcyan-plasma-engine-do)| | |
+| |[ LightGoldenrod](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/colors.markdown#lightgoldenrod-plasma-engi)| | |
+| |[ LightGray](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/colors.markdown#lightgray-plasma-engine-do)| | |
+| |[ LightGreen](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/colors.markdown#lightgreen-plasma-engine-d)| | |
+| |[ LightPink](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/colors.markdown#lightpink-plasma-engine-do)| | |
+| |[ LightSalmon](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/colors.markdown#lightsalmon-plasma-engine)| | |
+| |[ LightSeaGreen](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/colors.markdown#lightseagreen-plasma-engin)| | |
+| |[ LightSkyBlue](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/colors.markdown#lightskyblue-plasma-engine)| | |
+| |[ LightSlateGray](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/colors.markdown#lightslategray-plasma-engi)| | |
+| |[ LightSteelBlue](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/colors.markdown#lightsteelblue-plasma-engi)| | |
+| |[ LightYellow](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/colors.markdown#lightyellow-plasma-engine)| | |
+| |[ Lime](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/colors.markdown#lime-plasma-engine-documen)| | |
+| |[ LimeGreen](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/colors.markdown#limegreen-plasma-engine-do)| | |
+| |[ Linen](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/colors.markdown#linen-plasma-engine-docume)| | |
+| |[ Magenta](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/colors.markdown#magenta-plasma-engine-docu)| | |
+| |[ Maroon](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/colors.markdown#maroon-plasma-engine-docum)| | |
+| |[ MediumAquamarine](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/colors.markdown#mediumaquamarine-plasma-en)| | |
+| |[ MediumBlue](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/colors.markdown#mediumblue-plasma-engine-d)| | |
+| |[ MediumOrchid](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/colors.markdown#mediumorchid-plasma-engine)| | |
+| |[ MediumPurple](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/colors.markdown#mediumpurple-plasma-engine)| | |
+| |[ MediumSeaGreen](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/colors.markdown#mediumseagreen-plasma-engi)| | |
+| |[ MediumSlateBlue](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/colors.markdown#mediumslateblue-plasma-eng)| | |
+| |[ MediumSpringGreen](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/colors.markdown#mediumspringgreen-plasma-e)| | |
+| |[ MediumTurquoise](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/colors.markdown#mediumturquoise-plasma-eng)| | |
+| |[ MediumVioletRed](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/colors.markdown#mediumvioletred-plasma-eng)| | |
+| |[ MidnightBlue](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/colors.markdown#midnightblue-plasma-engine)| | |
+| |[ MintCream](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/colors.markdown#mintcream-plasma-engine-do)| | |
+| |[ MistyRose](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/colors.markdown#mistyrose-plasma-engine-do)| | |
+| |[ Moccasin](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/colors.markdown#moccasin-plasma-engine-doc)| | |
+| |[ NavajoWhite](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/colors.markdown#navajowhite-plasma-engine)| | |
+| |[ Navy](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/colors.markdown#navy-plasma-engine-documen)| | |
+| |[ OldLace](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/colors.markdown#oldlace-plasma-engine-docu)| | |
+| |[ Olive](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/colors.markdown#olive-plasma-engine-docume)| | |
+| |[ OliveDrab](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/colors.markdown#olivedrab-plasma-engine-do)| | |
+| |[ Orange](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/colors.markdown#orange-plasma-engine-docum)| | |
+| |[ OrangeRed](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/colors.markdown#orangered-plasma-engine-do)| | |
+| |[ Orchid](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/colors.markdown#orchid-plasma-engine-docum)| | |
+| |[ PaleGoldenrod](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/colors.markdown#palegoldenrod-plasma-engin)| | |
+| |[ PaleGreen](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/colors.markdown#palegreen-plasma-engine-do)| | |
+| |[ PaleTurquoise](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/colors.markdown#paleturquoise-plasma-engin)| | |
+| |[ PaleVioletRed](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/colors.markdown#palevioletred-plasma-engin)| | |
+| |[ PapayaWhip](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/colors.markdown#papayawhip-plasma-engine-d)| | |
+| |[ PeachPuff](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/colors.markdown#peachpuff-plasma-engine-do)| | |
+| |[ Peru](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/colors.markdown#peru-plasma-engine-documen)| | |
+| |[ Pink](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/colors.markdown#pink-plasma-engine-documen)| | |
+| |[ Plum](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/colors.markdown#plum-plasma-engine-documen)| | |
+| |[ PowderBlue](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/colors.markdown#powderblue-plasma-engine-d)| | |
+| |[ Purple](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/colors.markdown#purple-plasma-engine-docum)| | |
+| |[ RebeccaPurple](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/colors.markdown#rebeccapurple-plasma-engin)| | |
+| |[ Red](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/colors.markdown#red-plasma-engine-document)| | |
+| |[ RosyBrown](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/colors.markdown#rosybrown-plasma-engine-do)| | |
+| |[ RoyalBlue](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/colors.markdown#royalblue-plasma-engine-do)| | |
+| |[ SaddleBrown](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/colors.markdown#saddlebrown-plasma-engine)| | |
+| |[ Salmon](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/colors.markdown#salmon-plasma-engine-docum)| | |
+| |[ SandyBrown](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/colors.markdown#sandybrown-plasma-engine-d)| | |
+| |[ SeaGreen](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/colors.markdown#seagreen-plasma-engine-doc)| | |
+| |[ Seashell](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/colors.markdown#seashell-plasma-engine-doc)| | |
+| |[ Sienna](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/colors.markdown#sienna-plasma-engine-docum)| | |
+| |[ Silver](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/colors.markdown#silver-plasma-engine-docum)| | |
+| |[ SkyBlue](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/colors.markdown#skyblue-plasma-engine-docu)| | |
+| |[ SlateBlue](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/colors.markdown#slateblue-plasma-engine-do)| | |
+| |[ SlateGray](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/colors.markdown#slategray-plasma-engine-do)| | |
+| |[ Snow](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/colors.markdown#snow-plasma-engine-documen)| | |
+| |[ SpringGreen](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/colors.markdown#springgreen-plasma-engine)| | |
+| |[ SteelBlue](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/colors.markdown#steelblue-plasma-engine-do)| | |
+| |[ Tan](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/colors.markdown#tan-plasma-engine-document)| | |
+| |[ Teal](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/colors.markdown#teal-plasma-engine-documen)| | |
+| |[ Thistle](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/colors.markdown#thistle-plasma-engine-docu)| | |
+| |[ Tomato](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/colors.markdown#tomato-plasma-engine-docum)| | |
+| |[ Turquoise](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/colors.markdown#turquoise-plasma-engine-do)| | |
+| |[ Violet](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/colors.markdown#violet-plasma-engine-docum)| | |
+| |[ Wheat](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/colors.markdown#wheat-plasma-engine-docume)| | |
+| |[ White](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/colors.markdown#white-plasma-engine-docume)| | |
+| |[ WhiteSmoke](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/colors.markdown#whitesmoke-plasma-engine-d)| | |
+| |[ Yellow](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/colors.markdown#yellow-plasma-engine-docum)| | |
+| |[ YellowGreen](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/colors.markdown#yellowgreen-plasma-engine)| | |
 
 
  #  Properties
 
 
 ---  
- #  AliceBlue : [real4](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real4.markdown)
+ #  AliceBlue : [real4](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real4.markdown)
 
  `read-only` `static`
 
@@ -157,7 +157,7 @@
 
 
 ---  
- #  AntiqueWhite : [real4](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real4.markdown)
+ #  AntiqueWhite : [real4](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real4.markdown)
 
  `read-only` `static`
 
@@ -167,7 +167,7 @@
 
 
 ---  
- #  Aqua : [real4](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real4.markdown)
+ #  Aqua : [real4](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real4.markdown)
 
  `read-only` `static`
 
@@ -177,7 +177,7 @@
 
 
 ---  
- #  Aquamarine : [real4](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real4.markdown)
+ #  Aquamarine : [real4](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real4.markdown)
 
  `read-only` `static`
 
@@ -187,7 +187,7 @@
 
 
 ---  
- #  Azure : [real4](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real4.markdown)
+ #  Azure : [real4](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real4.markdown)
 
  `read-only` `static`
 
@@ -197,7 +197,7 @@
 
 
 ---  
- #  Beige : [real4](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real4.markdown)
+ #  Beige : [real4](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real4.markdown)
 
  `read-only` `static`
 
@@ -207,7 +207,7 @@
 
 
 ---  
- #  Bisque : [real4](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real4.markdown)
+ #  Bisque : [real4](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real4.markdown)
 
  `read-only` `static`
 
@@ -217,7 +217,7 @@
 
 
 ---  
- #  Black : [real4](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real4.markdown)
+ #  Black : [real4](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real4.markdown)
 
  `read-only` `static`
 
@@ -227,7 +227,7 @@
 
 
 ---  
- #  BlanchedAlmond : [real4](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real4.markdown)
+ #  BlanchedAlmond : [real4](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real4.markdown)
 
  `read-only` `static`
 
@@ -237,7 +237,7 @@
 
 
 ---  
- #  Blue : [real4](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real4.markdown)
+ #  Blue : [real4](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real4.markdown)
 
  `read-only` `static`
 
@@ -247,7 +247,7 @@
 
 
 ---  
- #  BlueViolet : [real4](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real4.markdown)
+ #  BlueViolet : [real4](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real4.markdown)
 
  `read-only` `static`
 
@@ -257,7 +257,7 @@
 
 
 ---  
- #  Brown : [real4](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real4.markdown)
+ #  Brown : [real4](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real4.markdown)
 
  `read-only` `static`
 
@@ -267,7 +267,7 @@
 
 
 ---  
- #  Burlywood : [real4](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real4.markdown)
+ #  Burlywood : [real4](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real4.markdown)
 
  `read-only` `static`
 
@@ -277,7 +277,7 @@
 
 
 ---  
- #  CadetBlue : [real4](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real4.markdown)
+ #  CadetBlue : [real4](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real4.markdown)
 
  `read-only` `static`
 
@@ -287,7 +287,7 @@
 
 
 ---  
- #  Chartreuse : [real4](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real4.markdown)
+ #  Chartreuse : [real4](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real4.markdown)
 
  `read-only` `static`
 
@@ -297,7 +297,7 @@
 
 
 ---  
- #  Chocolate : [real4](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real4.markdown)
+ #  Chocolate : [real4](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real4.markdown)
 
  `read-only` `static`
 
@@ -307,7 +307,7 @@
 
 
 ---  
- #  Clear : [real4](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real4.markdown)
+ #  Clear : [real4](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real4.markdown)
 
  `read-only` `static`
 
@@ -317,7 +317,7 @@
 
 
 ---  
- #  Coral : [real4](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real4.markdown)
+ #  Coral : [real4](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real4.markdown)
 
  `read-only` `static`
 
@@ -327,7 +327,7 @@
 
 
 ---  
- #  Cornflower : [real4](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real4.markdown)
+ #  Cornflower : [real4](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real4.markdown)
 
  `read-only` `static`
 
@@ -337,7 +337,7 @@
 
 
 ---  
- #  Cornsilk : [real4](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real4.markdown)
+ #  Cornsilk : [real4](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real4.markdown)
 
  `read-only` `static`
 
@@ -347,7 +347,7 @@
 
 
 ---  
- #  Crimson : [real4](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real4.markdown)
+ #  Crimson : [real4](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real4.markdown)
 
  `read-only` `static`
 
@@ -357,7 +357,7 @@
 
 
 ---  
- #  Cyan : [real4](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real4.markdown)
+ #  Cyan : [real4](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real4.markdown)
 
  `read-only` `static`
 
@@ -367,7 +367,7 @@
 
 
 ---  
- #  DarkGoldenrod : [real4](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real4.markdown)
+ #  DarkGoldenrod : [real4](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real4.markdown)
 
  `read-only` `static`
 
@@ -377,7 +377,7 @@
 
 
 ---  
- #  DarkGray : [real4](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real4.markdown)
+ #  DarkGray : [real4](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real4.markdown)
 
  `read-only` `static`
 
@@ -387,7 +387,7 @@
 
 
 ---  
- #  DarkKhaki : [real4](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real4.markdown)
+ #  DarkKhaki : [real4](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real4.markdown)
 
  `read-only` `static`
 
@@ -397,7 +397,7 @@
 
 
 ---  
- #  DarkMagenta : [real4](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real4.markdown)
+ #  DarkMagenta : [real4](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real4.markdown)
 
  `read-only` `static`
 
@@ -407,7 +407,7 @@
 
 
 ---  
- #  DarkOliveGreen : [real4](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real4.markdown)
+ #  DarkOliveGreen : [real4](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real4.markdown)
 
  `read-only` `static`
 
@@ -417,7 +417,7 @@
 
 
 ---  
- #  DarkOrange : [real4](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real4.markdown)
+ #  DarkOrange : [real4](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real4.markdown)
 
  `read-only` `static`
 
@@ -427,7 +427,7 @@
 
 
 ---  
- #  DarkOrchid : [real4](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real4.markdown)
+ #  DarkOrchid : [real4](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real4.markdown)
 
  `read-only` `static`
 
@@ -437,7 +437,7 @@
 
 
 ---  
- #  DarkSalmon : [real4](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real4.markdown)
+ #  DarkSalmon : [real4](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real4.markdown)
 
  `read-only` `static`
 
@@ -447,7 +447,7 @@
 
 
 ---  
- #  DarkSeaGreen : [real4](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real4.markdown)
+ #  DarkSeaGreen : [real4](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real4.markdown)
 
  `read-only` `static`
 
@@ -457,7 +457,7 @@
 
 
 ---  
- #  DarkSlateBlue : [real4](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real4.markdown)
+ #  DarkSlateBlue : [real4](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real4.markdown)
 
  `read-only` `static`
 
@@ -467,7 +467,7 @@
 
 
 ---  
- #  DarkSlateGray : [real4](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real4.markdown)
+ #  DarkSlateGray : [real4](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real4.markdown)
 
  `read-only` `static`
 
@@ -477,7 +477,7 @@
 
 
 ---  
- #  DarkTurquoise : [real4](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real4.markdown)
+ #  DarkTurquoise : [real4](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real4.markdown)
 
  `read-only` `static`
 
@@ -487,7 +487,7 @@
 
 
 ---  
- #  DarkViolet : [real4](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real4.markdown)
+ #  DarkViolet : [real4](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real4.markdown)
 
  `read-only` `static`
 
@@ -497,7 +497,7 @@
 
 
 ---  
- #  DeepGreen : [real4](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real4.markdown)
+ #  DeepGreen : [real4](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real4.markdown)
 
  `read-only` `static`
 
@@ -507,7 +507,7 @@
 
 
 ---  
- #  DeepPink : [real4](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real4.markdown)
+ #  DeepPink : [real4](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real4.markdown)
 
  `read-only` `static`
 
@@ -517,7 +517,7 @@
 
 
 ---  
- #  DeepSkyBlue : [real4](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real4.markdown)
+ #  DeepSkyBlue : [real4](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real4.markdown)
 
  `read-only` `static`
 
@@ -527,7 +527,7 @@
 
 
 ---  
- #  DimGray : [real4](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real4.markdown)
+ #  DimGray : [real4](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real4.markdown)
 
  `read-only` `static`
 
@@ -537,7 +537,7 @@
 
 
 ---  
- #  DodgerBlue : [real4](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real4.markdown)
+ #  DodgerBlue : [real4](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real4.markdown)
 
  `read-only` `static`
 
@@ -547,7 +547,7 @@
 
 
 ---  
- #  Firebrick : [real4](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real4.markdown)
+ #  Firebrick : [real4](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real4.markdown)
 
  `read-only` `static`
 
@@ -557,7 +557,7 @@
 
 
 ---  
- #  FloralWhite : [real4](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real4.markdown)
+ #  FloralWhite : [real4](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real4.markdown)
 
  `read-only` `static`
 
@@ -567,7 +567,7 @@
 
 
 ---  
- #  ForestGreen : [real4](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real4.markdown)
+ #  ForestGreen : [real4](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real4.markdown)
 
  `read-only` `static`
 
@@ -577,7 +577,7 @@
 
 
 ---  
- #  Fuchsia : [real4](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real4.markdown)
+ #  Fuchsia : [real4](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real4.markdown)
 
  `read-only` `static`
 
@@ -587,7 +587,7 @@
 
 
 ---  
- #  Gainsboro : [real4](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real4.markdown)
+ #  Gainsboro : [real4](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real4.markdown)
 
  `read-only` `static`
 
@@ -597,7 +597,7 @@
 
 
 ---  
- #  GhostWhite : [real4](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real4.markdown)
+ #  GhostWhite : [real4](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real4.markdown)
 
  `read-only` `static`
 
@@ -607,7 +607,7 @@
 
 
 ---  
- #  Gold : [real4](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real4.markdown)
+ #  Gold : [real4](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real4.markdown)
 
  `read-only` `static`
 
@@ -617,7 +617,7 @@
 
 
 ---  
- #  Goldenrod : [real4](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real4.markdown)
+ #  Goldenrod : [real4](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real4.markdown)
 
  `read-only` `static`
 
@@ -627,7 +627,7 @@
 
 
 ---  
- #  Gray : [real4](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real4.markdown)
+ #  Gray : [real4](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real4.markdown)
 
  `read-only` `static`
 
@@ -637,7 +637,7 @@
 
 
 ---  
- #  Green : [real4](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real4.markdown)
+ #  Green : [real4](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real4.markdown)
 
  `read-only` `static`
 
@@ -647,7 +647,7 @@
 
 
 ---  
- #  GreenYellow : [real4](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real4.markdown)
+ #  GreenYellow : [real4](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real4.markdown)
 
  `read-only` `static`
 
@@ -657,7 +657,7 @@
 
 
 ---  
- #  Honeydew : [real4](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real4.markdown)
+ #  Honeydew : [real4](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real4.markdown)
 
  `read-only` `static`
 
@@ -667,7 +667,7 @@
 
 
 ---  
- #  HotPink : [real4](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real4.markdown)
+ #  HotPink : [real4](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real4.markdown)
 
  `read-only` `static`
 
@@ -677,7 +677,7 @@
 
 
 ---  
- #  IndianRed : [real4](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real4.markdown)
+ #  IndianRed : [real4](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real4.markdown)
 
  `read-only` `static`
 
@@ -687,7 +687,7 @@
 
 
 ---  
- #  Indigo : [real4](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real4.markdown)
+ #  Indigo : [real4](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real4.markdown)
 
  `read-only` `static`
 
@@ -697,7 +697,7 @@
 
 
 ---  
- #  Ivory : [real4](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real4.markdown)
+ #  Ivory : [real4](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real4.markdown)
 
  `read-only` `static`
 
@@ -707,7 +707,7 @@
 
 
 ---  
- #  Khaki : [real4](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real4.markdown)
+ #  Khaki : [real4](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real4.markdown)
 
  `read-only` `static`
 
@@ -717,7 +717,7 @@
 
 
 ---  
- #  Lavender : [real4](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real4.markdown)
+ #  Lavender : [real4](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real4.markdown)
 
  `read-only` `static`
 
@@ -727,7 +727,7 @@
 
 
 ---  
- #  LavenderBlush : [real4](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real4.markdown)
+ #  LavenderBlush : [real4](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real4.markdown)
 
  `read-only` `static`
 
@@ -737,7 +737,7 @@
 
 
 ---  
- #  LawnGreen : [real4](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real4.markdown)
+ #  LawnGreen : [real4](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real4.markdown)
 
  `read-only` `static`
 
@@ -747,7 +747,7 @@
 
 
 ---  
- #  LemonChiffon : [real4](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real4.markdown)
+ #  LemonChiffon : [real4](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real4.markdown)
 
  `read-only` `static`
 
@@ -757,7 +757,7 @@
 
 
 ---  
- #  LightBlue : [real4](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real4.markdown)
+ #  LightBlue : [real4](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real4.markdown)
 
  `read-only` `static`
 
@@ -767,7 +767,7 @@
 
 
 ---  
- #  LightCoral : [real4](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real4.markdown)
+ #  LightCoral : [real4](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real4.markdown)
 
  `read-only` `static`
 
@@ -777,7 +777,7 @@
 
 
 ---  
- #  LightCyan : [real4](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real4.markdown)
+ #  LightCyan : [real4](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real4.markdown)
 
  `read-only` `static`
 
@@ -787,7 +787,7 @@
 
 
 ---  
- #  LightGoldenrod : [real4](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real4.markdown)
+ #  LightGoldenrod : [real4](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real4.markdown)
 
  `read-only` `static`
 
@@ -797,7 +797,7 @@
 
 
 ---  
- #  LightGray : [real4](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real4.markdown)
+ #  LightGray : [real4](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real4.markdown)
 
  `read-only` `static`
 
@@ -807,7 +807,7 @@
 
 
 ---  
- #  LightGreen : [real4](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real4.markdown)
+ #  LightGreen : [real4](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real4.markdown)
 
  `read-only` `static`
 
@@ -817,7 +817,7 @@
 
 
 ---  
- #  LightPink : [real4](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real4.markdown)
+ #  LightPink : [real4](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real4.markdown)
 
  `read-only` `static`
 
@@ -827,7 +827,7 @@
 
 
 ---  
- #  LightSalmon : [real4](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real4.markdown)
+ #  LightSalmon : [real4](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real4.markdown)
 
  `read-only` `static`
 
@@ -837,7 +837,7 @@
 
 
 ---  
- #  LightSeaGreen : [real4](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real4.markdown)
+ #  LightSeaGreen : [real4](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real4.markdown)
 
  `read-only` `static`
 
@@ -847,7 +847,7 @@
 
 
 ---  
- #  LightSkyBlue : [real4](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real4.markdown)
+ #  LightSkyBlue : [real4](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real4.markdown)
 
  `read-only` `static`
 
@@ -857,7 +857,7 @@
 
 
 ---  
- #  LightSlateGray : [real4](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real4.markdown)
+ #  LightSlateGray : [real4](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real4.markdown)
 
  `read-only` `static`
 
@@ -867,7 +867,7 @@
 
 
 ---  
- #  LightSteelBlue : [real4](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real4.markdown)
+ #  LightSteelBlue : [real4](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real4.markdown)
 
  `read-only` `static`
 
@@ -877,7 +877,7 @@
 
 
 ---  
- #  LightYellow : [real4](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real4.markdown)
+ #  LightYellow : [real4](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real4.markdown)
 
  `read-only` `static`
 
@@ -887,7 +887,7 @@
 
 
 ---  
- #  Lime : [real4](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real4.markdown)
+ #  Lime : [real4](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real4.markdown)
 
  `read-only` `static`
 
@@ -897,7 +897,7 @@
 
 
 ---  
- #  LimeGreen : [real4](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real4.markdown)
+ #  LimeGreen : [real4](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real4.markdown)
 
  `read-only` `static`
 
@@ -907,7 +907,7 @@
 
 
 ---  
- #  Linen : [real4](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real4.markdown)
+ #  Linen : [real4](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real4.markdown)
 
  `read-only` `static`
 
@@ -917,7 +917,7 @@
 
 
 ---  
- #  Magenta : [real4](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real4.markdown)
+ #  Magenta : [real4](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real4.markdown)
 
  `read-only` `static`
 
@@ -927,7 +927,7 @@
 
 
 ---  
- #  Maroon : [real4](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real4.markdown)
+ #  Maroon : [real4](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real4.markdown)
 
  `read-only` `static`
 
@@ -937,7 +937,7 @@
 
 
 ---  
- #  MediumAquamarine : [real4](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real4.markdown)
+ #  MediumAquamarine : [real4](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real4.markdown)
 
  `read-only` `static`
 
@@ -947,7 +947,7 @@
 
 
 ---  
- #  MediumBlue : [real4](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real4.markdown)
+ #  MediumBlue : [real4](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real4.markdown)
 
  `read-only` `static`
 
@@ -957,7 +957,7 @@
 
 
 ---  
- #  MediumOrchid : [real4](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real4.markdown)
+ #  MediumOrchid : [real4](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real4.markdown)
 
  `read-only` `static`
 
@@ -967,7 +967,7 @@
 
 
 ---  
- #  MediumPurple : [real4](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real4.markdown)
+ #  MediumPurple : [real4](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real4.markdown)
 
  `read-only` `static`
 
@@ -977,7 +977,7 @@
 
 
 ---  
- #  MediumSeaGreen : [real4](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real4.markdown)
+ #  MediumSeaGreen : [real4](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real4.markdown)
 
  `read-only` `static`
 
@@ -987,7 +987,7 @@
 
 
 ---  
- #  MediumSlateBlue : [real4](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real4.markdown)
+ #  MediumSlateBlue : [real4](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real4.markdown)
 
  `read-only` `static`
 
@@ -997,7 +997,7 @@
 
 
 ---  
- #  MediumSpringGreen : [real4](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real4.markdown)
+ #  MediumSpringGreen : [real4](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real4.markdown)
 
  `read-only` `static`
 
@@ -1007,7 +1007,7 @@
 
 
 ---  
- #  MediumTurquoise : [real4](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real4.markdown)
+ #  MediumTurquoise : [real4](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real4.markdown)
 
  `read-only` `static`
 
@@ -1017,7 +1017,7 @@
 
 
 ---  
- #  MediumVioletRed : [real4](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real4.markdown)
+ #  MediumVioletRed : [real4](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real4.markdown)
 
  `read-only` `static`
 
@@ -1027,7 +1027,7 @@
 
 
 ---  
- #  MidnightBlue : [real4](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real4.markdown)
+ #  MidnightBlue : [real4](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real4.markdown)
 
  `read-only` `static`
 
@@ -1037,7 +1037,7 @@
 
 
 ---  
- #  MintCream : [real4](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real4.markdown)
+ #  MintCream : [real4](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real4.markdown)
 
  `read-only` `static`
 
@@ -1047,7 +1047,7 @@
 
 
 ---  
- #  MistyRose : [real4](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real4.markdown)
+ #  MistyRose : [real4](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real4.markdown)
 
  `read-only` `static`
 
@@ -1057,7 +1057,7 @@
 
 
 ---  
- #  Moccasin : [real4](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real4.markdown)
+ #  Moccasin : [real4](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real4.markdown)
 
  `read-only` `static`
 
@@ -1067,7 +1067,7 @@
 
 
 ---  
- #  NavajoWhite : [real4](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real4.markdown)
+ #  NavajoWhite : [real4](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real4.markdown)
 
  `read-only` `static`
 
@@ -1077,7 +1077,7 @@
 
 
 ---  
- #  Navy : [real4](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real4.markdown)
+ #  Navy : [real4](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real4.markdown)
 
  `read-only` `static`
 
@@ -1087,7 +1087,7 @@
 
 
 ---  
- #  OldLace : [real4](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real4.markdown)
+ #  OldLace : [real4](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real4.markdown)
 
  `read-only` `static`
 
@@ -1097,7 +1097,7 @@
 
 
 ---  
- #  Olive : [real4](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real4.markdown)
+ #  Olive : [real4](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real4.markdown)
 
  `read-only` `static`
 
@@ -1107,7 +1107,7 @@
 
 
 ---  
- #  OliveDrab : [real4](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real4.markdown)
+ #  OliveDrab : [real4](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real4.markdown)
 
  `read-only` `static`
 
@@ -1117,7 +1117,7 @@
 
 
 ---  
- #  Orange : [real4](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real4.markdown)
+ #  Orange : [real4](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real4.markdown)
 
  `read-only` `static`
 
@@ -1127,7 +1127,7 @@
 
 
 ---  
- #  OrangeRed : [real4](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real4.markdown)
+ #  OrangeRed : [real4](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real4.markdown)
 
  `read-only` `static`
 
@@ -1137,7 +1137,7 @@
 
 
 ---  
- #  Orchid : [real4](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real4.markdown)
+ #  Orchid : [real4](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real4.markdown)
 
  `read-only` `static`
 
@@ -1147,7 +1147,7 @@
 
 
 ---  
- #  PaleGoldenrod : [real4](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real4.markdown)
+ #  PaleGoldenrod : [real4](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real4.markdown)
 
  `read-only` `static`
 
@@ -1157,7 +1157,7 @@
 
 
 ---  
- #  PaleGreen : [real4](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real4.markdown)
+ #  PaleGreen : [real4](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real4.markdown)
 
  `read-only` `static`
 
@@ -1167,7 +1167,7 @@
 
 
 ---  
- #  PaleTurquoise : [real4](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real4.markdown)
+ #  PaleTurquoise : [real4](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real4.markdown)
 
  `read-only` `static`
 
@@ -1177,7 +1177,7 @@
 
 
 ---  
- #  PaleVioletRed : [real4](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real4.markdown)
+ #  PaleVioletRed : [real4](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real4.markdown)
 
  `read-only` `static`
 
@@ -1187,7 +1187,7 @@
 
 
 ---  
- #  PapayaWhip : [real4](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real4.markdown)
+ #  PapayaWhip : [real4](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real4.markdown)
 
  `read-only` `static`
 
@@ -1197,7 +1197,7 @@
 
 
 ---  
- #  PeachPuff : [real4](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real4.markdown)
+ #  PeachPuff : [real4](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real4.markdown)
 
  `read-only` `static`
 
@@ -1207,7 +1207,7 @@
 
 
 ---  
- #  Peru : [real4](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real4.markdown)
+ #  Peru : [real4](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real4.markdown)
 
  `read-only` `static`
 
@@ -1217,7 +1217,7 @@
 
 
 ---  
- #  Pink : [real4](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real4.markdown)
+ #  Pink : [real4](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real4.markdown)
 
  `read-only` `static`
 
@@ -1227,7 +1227,7 @@
 
 
 ---  
- #  Plum : [real4](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real4.markdown)
+ #  Plum : [real4](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real4.markdown)
 
  `read-only` `static`
 
@@ -1237,7 +1237,7 @@
 
 
 ---  
- #  PowderBlue : [real4](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real4.markdown)
+ #  PowderBlue : [real4](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real4.markdown)
 
  `read-only` `static`
 
@@ -1247,7 +1247,7 @@
 
 
 ---  
- #  Purple : [real4](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real4.markdown)
+ #  Purple : [real4](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real4.markdown)
 
  `read-only` `static`
 
@@ -1257,7 +1257,7 @@
 
 
 ---  
- #  RebeccaPurple : [real4](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real4.markdown)
+ #  RebeccaPurple : [real4](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real4.markdown)
 
  `read-only` `static`
 
@@ -1267,7 +1267,7 @@
 
 
 ---  
- #  Red : [real4](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real4.markdown)
+ #  Red : [real4](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real4.markdown)
 
  `read-only` `static`
 
@@ -1277,7 +1277,7 @@
 
 
 ---  
- #  RosyBrown : [real4](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real4.markdown)
+ #  RosyBrown : [real4](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real4.markdown)
 
  `read-only` `static`
 
@@ -1287,7 +1287,7 @@
 
 
 ---  
- #  RoyalBlue : [real4](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real4.markdown)
+ #  RoyalBlue : [real4](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real4.markdown)
 
  `read-only` `static`
 
@@ -1297,7 +1297,7 @@
 
 
 ---  
- #  SaddleBrown : [real4](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real4.markdown)
+ #  SaddleBrown : [real4](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real4.markdown)
 
  `read-only` `static`
 
@@ -1307,7 +1307,7 @@
 
 
 ---  
- #  Salmon : [real4](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real4.markdown)
+ #  Salmon : [real4](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real4.markdown)
 
  `read-only` `static`
 
@@ -1317,7 +1317,7 @@
 
 
 ---  
- #  SandyBrown : [real4](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real4.markdown)
+ #  SandyBrown : [real4](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real4.markdown)
 
  `read-only` `static`
 
@@ -1327,7 +1327,7 @@
 
 
 ---  
- #  SeaGreen : [real4](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real4.markdown)
+ #  SeaGreen : [real4](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real4.markdown)
 
  `read-only` `static`
 
@@ -1337,7 +1337,7 @@
 
 
 ---  
- #  Seashell : [real4](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real4.markdown)
+ #  Seashell : [real4](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real4.markdown)
 
  `read-only` `static`
 
@@ -1347,7 +1347,7 @@
 
 
 ---  
- #  Sienna : [real4](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real4.markdown)
+ #  Sienna : [real4](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real4.markdown)
 
  `read-only` `static`
 
@@ -1357,7 +1357,7 @@
 
 
 ---  
- #  Silver : [real4](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real4.markdown)
+ #  Silver : [real4](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real4.markdown)
 
  `read-only` `static`
 
@@ -1367,7 +1367,7 @@
 
 
 ---  
- #  SkyBlue : [real4](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real4.markdown)
+ #  SkyBlue : [real4](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real4.markdown)
 
  `read-only` `static`
 
@@ -1377,7 +1377,7 @@
 
 
 ---  
- #  SlateBlue : [real4](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real4.markdown)
+ #  SlateBlue : [real4](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real4.markdown)
 
  `read-only` `static`
 
@@ -1387,7 +1387,7 @@
 
 
 ---  
- #  SlateGray : [real4](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real4.markdown)
+ #  SlateGray : [real4](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real4.markdown)
 
  `read-only` `static`
 
@@ -1397,7 +1397,7 @@
 
 
 ---  
- #  Snow : [real4](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real4.markdown)
+ #  Snow : [real4](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real4.markdown)
 
  `read-only` `static`
 
@@ -1407,7 +1407,7 @@
 
 
 ---  
- #  SpringGreen : [real4](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real4.markdown)
+ #  SpringGreen : [real4](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real4.markdown)
 
  `read-only` `static`
 
@@ -1417,7 +1417,7 @@
 
 
 ---  
- #  SteelBlue : [real4](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real4.markdown)
+ #  SteelBlue : [real4](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real4.markdown)
 
  `read-only` `static`
 
@@ -1427,7 +1427,7 @@
 
 
 ---  
- #  Tan : [real4](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real4.markdown)
+ #  Tan : [real4](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real4.markdown)
 
  `read-only` `static`
 
@@ -1437,7 +1437,7 @@
 
 
 ---  
- #  Teal : [real4](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real4.markdown)
+ #  Teal : [real4](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real4.markdown)
 
  `read-only` `static`
 
@@ -1447,7 +1447,7 @@
 
 
 ---  
- #  Thistle : [real4](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real4.markdown)
+ #  Thistle : [real4](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real4.markdown)
 
  `read-only` `static`
 
@@ -1457,7 +1457,7 @@
 
 
 ---  
- #  Tomato : [real4](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real4.markdown)
+ #  Tomato : [real4](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real4.markdown)
 
  `read-only` `static`
 
@@ -1467,7 +1467,7 @@
 
 
 ---  
- #  Turquoise : [real4](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real4.markdown)
+ #  Turquoise : [real4](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real4.markdown)
 
  `read-only` `static`
 
@@ -1477,7 +1477,7 @@
 
 
 ---  
- #  Violet : [real4](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real4.markdown)
+ #  Violet : [real4](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real4.markdown)
 
  `read-only` `static`
 
@@ -1487,7 +1487,7 @@
 
 
 ---  
- #  Wheat : [real4](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real4.markdown)
+ #  Wheat : [real4](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real4.markdown)
 
  `read-only` `static`
 
@@ -1497,7 +1497,7 @@
 
 
 ---  
- #  White : [real4](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real4.markdown)
+ #  White : [real4](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real4.markdown)
 
  `read-only` `static`
 
@@ -1507,7 +1507,7 @@
 
 
 ---  
- #  WhiteSmoke : [real4](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real4.markdown)
+ #  WhiteSmoke : [real4](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real4.markdown)
 
  `read-only` `static`
 
@@ -1517,7 +1517,7 @@
 
 
 ---  
- #  Yellow : [real4](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real4.markdown)
+ #  Yellow : [real4](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real4.markdown)
 
  `read-only` `static`
 
@@ -1527,7 +1527,7 @@
 
 
 ---  
- #  YellowGreen : [real4](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real4.markdown)
+ #  YellowGreen : [real4](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real4.markdown)
 
  `read-only` `static`
 

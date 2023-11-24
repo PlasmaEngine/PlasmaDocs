@@ -2,14 +2,14 @@
 
 |Methods|Properties|Base Classes|Derived Classes|
 |---|---|---|---|
-|[ Constructor](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/contenthistory.markdown#contenthistory-void)|[ Revisions](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/contenthistory.markdown#revisions-plasma-engine-do)|[contentcomponent](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/contentcomponent.markdown)| |
+|[ Constructor](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/contenthistory.markdown#contenthistory-void)|[ Revisions](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/contenthistory.markdown#revisions-plasma-engine-do)|[contentcomponent](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/contentcomponent.markdown)| |
 
 
  #  Properties
 
 
 ---  
- #  Revisions : [revisions](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/revisions.markdown)
+ #  Revisions : [revisions](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/revisions.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning

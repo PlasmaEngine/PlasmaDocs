@@ -6,9 +6,9 @@
 
 |Methods|Properties|Base Classes|Derived Classes|
 |---|---|---|---|
-|[ CreateRuntime](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/physicsmesh.markdown#createruntime-plasma-engin)| |[genericphysicsmesh](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/genericphysicsmesh.markdown)| |
-|[ Constructor](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/physicsmesh.markdown#physicsmesh-void)| | | |
-|[ RuntimeClone](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/physicsmesh.markdown#runtimeclone-plasma-engine)| | | |
+|[ CreateRuntime](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/physicsmesh.markdown#createruntime-plasma-engin)| |[genericphysicsmesh](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/genericphysicsmesh.markdown)| |
+|[ Constructor](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/physicsmesh.markdown#physicsmesh-void)| | | |
+|[ RuntimeClone](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/physicsmesh.markdown#runtimeclone-plasma-engine)| | | |
 
 
  #  Properties
@@ -19,7 +19,7 @@
 
 
 ---  
- #  CreateRuntime : [physicsmesh](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/physicsmesh.markdown)
+ #  CreateRuntime : [physicsmesh](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/physicsmesh.markdown)
 
  `static`
 
@@ -45,7 +45,7 @@
 
 
 ---  
- #  RuntimeClone : [physicsmesh](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/physicsmesh.markdown)
+ #  RuntimeClone : [physicsmesh](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/physicsmesh.markdown)
 
 > Creates a clone of this mesh for run-time modifications.
 > |Name|Type|Description|

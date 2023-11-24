@@ -2,14 +2,14 @@
 
 |Methods|Properties|Base Classes|Derived Classes|
 |---|---|---|---|
-| |[ AutoRegister](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/metaeditorscriptobject.markdown#autoregister-plasma-engine)|[metaattribute](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/metaattribute.markdown)| |
+| |[ AutoRegister](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/metaeditorscriptobject.markdown#autoregister-plasma-engine)|[metaattribute](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/metaattribute.markdown)| |
 
 
  #  Properties
 
 
 ---  
- #  AutoRegister : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/boolean.markdown)
+ #  AutoRegister : [boolean](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning

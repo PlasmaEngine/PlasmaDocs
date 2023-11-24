@@ -31,13 +31,13 @@ Menu options will be referred to like this `Project  > New Project` which should
 *Plasma Search Window, often abbreviated to just "Search Window"*
 
 * Type the command name into the text box
-* Command names will be referred to like this [ New Project ](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/command_reference.markdown#newproject)
+* Command names will be referred to like this [ New Project ](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/command_reference.markdown#newproject)
 
 ## Keyboard Shortcuts
 
 
 * Displayed in the menu bar is the keyboard shortcut for the command. This key sequence 
- can be pressed to activate the command without using the menu. For example, [ Save Project ](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/command_reference.markdown#saveproject) can be accessed with `Ctrl + S`
+ can be pressed to activate the command without using the menu. For example, [ Save Project ](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/command_reference.markdown#saveproject) can be accessed with `Ctrl + S`
 * Keyboard shortcuts will be referred to like this: `Ctrl + O`
 
 ## Tool Bar Icons

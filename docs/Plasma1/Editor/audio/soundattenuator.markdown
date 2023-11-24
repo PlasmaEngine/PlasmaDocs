@@ -1,5 +1,5 @@
 # Sound Attenuators
-The [ SoundAttenuator ](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/soundattenuator.markdown) resource controls how a sound played through a [SoundEmitter ](https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/audio/soundemitter.markdown) on an object decreases in volume as the object gets further away from a  [SoundListener ](https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/audio/soundlistener.markdown). 
+The [ SoundAttenuator ](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/soundattenuator.markdown) resource controls how a sound played through a [SoundEmitter ](https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/audio/soundemitter.markdown) on an object decreases in volume as the object gets further away from a  [SoundListener ](https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/audio/soundlistener.markdown). 
 
 # Using SoundAttenuators 
 
@@ -23,6 +23,6 @@ Another thing that happens in the real world with distance is that high frequenc
 - [SoundCue ](https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/audio/soundcue.markdown)
 
 ## Reference
-- [ SoundAttenuator ](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/soundattenuator.markdown) 
+- [ SoundAttenuator ](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/soundattenuator.markdown) 
 
  

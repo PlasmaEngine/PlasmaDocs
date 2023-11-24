@@ -2,17 +2,17 @@
 
 |Methods|Properties|Base Classes|Derived Classes|
 |---|---|---|---|
-|[ Constructor](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/joystickrange.markdown#joystickrange-void)|[ All](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/joystickrange.markdown#all-plasma-engine-document)| | |
-|[ MoveNext](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/joystickrange.markdown#movenext-void)|[ Current](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/joystickrange.markdown#current-plasma-engine-docu)| | |
-| |[ IsEmpty](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/joystickrange.markdown#isempty-plasma-engine-docu)| | |
-| |[ IsNotEmpty](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/joystickrange.markdown#isnotempty-plasma-engine-d)| | |
+|[ Constructor](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/joystickrange.markdown#joystickrange-void)|[ All](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/joystickrange.markdown#all-plasma-engine-document)| | |
+|[ MoveNext](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/joystickrange.markdown#movenext-void)|[ Current](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/joystickrange.markdown#current-plasma-engine-docu)| | |
+| |[ IsEmpty](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/joystickrange.markdown#isempty-plasma-engine-docu)| | |
+| |[ IsNotEmpty](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/joystickrange.markdown#isnotempty-plasma-engine-d)| | |
 
 
  #  Properties
 
 
 ---  
- #  All : [joystickrange](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/joystickrange.markdown)
+ #  All : [joystickrange](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/joystickrange.markdown)
 
  `read-only`
 
@@ -22,7 +22,7 @@
 
 
 ---  
- #  Current : [joystick](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/joystick.markdown)
+ #  Current : [joystick](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/joystick.markdown)
 
  `read-only`
 
@@ -32,7 +32,7 @@
 
 
 ---  
- #  IsEmpty : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/boolean.markdown)
+ #  IsEmpty : [boolean](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.markdown)
 
  `read-only`
 
@@ -42,7 +42,7 @@
 
 
 ---  
- #  IsNotEmpty : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/boolean.markdown)
+ #  IsNotEmpty : [boolean](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.markdown)
 
  `read-only`
 
@@ -76,7 +76,7 @@
 > 
 > |Name|Type|Description|
 > |---|---|---|
-> |p0|[joystickrange](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/joystickrange.markdown)| |
+> |p0|[joystickrange](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/joystickrange.markdown)| |
 > ``` lang=cpp, name=Lightning
 > function JoystickRange(p0 : JoystickRange)
 > ``` 

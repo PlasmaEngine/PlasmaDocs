@@ -6,18 +6,18 @@
 
 |Methods|Properties|Base Classes|Derived Classes|
 |---|---|---|---|
-|[ AddedByPeer](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netuser.markdown#addedbypeer-plasma-engine)|[ AddedByMyPeer](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netuser.markdown#addedbymypeer-plasma-engin)|[netobject](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netobject.markdown)| |
-|[ FindOwnedNetObjectByName](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netuser.markdown#findownednetobjectbyname)|[ NetPeerId](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netuser.markdown#netpeerid-plasma-engine-do)| | |
-|[ FindOwnedNetObjectByNameInSpace](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netuser.markdown#findownednetobjectbyname)|[ NetUserId](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netuser.markdown#netuserid-plasma-engine-do)| | |
-|[ Constructor](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netuser.markdown#netuser-void)|[ OwnedNetObjectCount](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netuser.markdown#ownednetobjectcount-plasma)| | |
-|[ ReleaseOwnedNetObjects](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netuser.markdown#releaseownednetobjects-v)|[ OwnedNetObjects](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netuser.markdown#ownednetobjects-plasma-eng)| | |
+|[ AddedByPeer](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/netuser.markdown#addedbypeer-plasma-engine)|[ AddedByMyPeer](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/netuser.markdown#addedbymypeer-plasma-engin)|[netobject](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/netobject.markdown)| |
+|[ FindOwnedNetObjectByName](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/netuser.markdown#findownednetobjectbyname)|[ NetPeerId](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/netuser.markdown#netpeerid-plasma-engine-do)| | |
+|[ FindOwnedNetObjectByNameInSpace](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/netuser.markdown#findownednetobjectbyname)|[ NetUserId](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/netuser.markdown#netuserid-plasma-engine-do)| | |
+|[ Constructor](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/netuser.markdown#netuser-void)|[ OwnedNetObjectCount](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/netuser.markdown#ownednetobjectcount-plasma)| | |
+|[ ReleaseOwnedNetObjects](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/netuser.markdown#releaseownednetobjects-v)|[ OwnedNetObjects](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/netuser.markdown#ownednetobjects-plasma-eng)| | |
 
 
  #  Properties
 
 
 ---  
- #  AddedByMyPeer : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/boolean.markdown)
+ #  AddedByMyPeer : [boolean](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.markdown)
 
  `read-only`
 
@@ -27,7 +27,7 @@
 
 
 ---  
- #  NetPeerId : [integer](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/integer.markdown)
+ #  NetPeerId : [integer](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer.markdown)
 
  `read-only`
 
@@ -37,7 +37,7 @@
 
 
 ---  
- #  NetUserId : [integer](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/integer.markdown)
+ #  NetUserId : [integer](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer.markdown)
 
  `read-only`
 
@@ -47,7 +47,7 @@
 
 
 ---  
- #  OwnedNetObjectCount : [integer](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/integer.markdown)
+ #  OwnedNetObjectCount : [integer](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer.markdown)
 
  `read-only`
 
@@ -57,7 +57,7 @@
 
 
 ---  
- #  OwnedNetObjects : [coghashsetrange](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/coghashsetrange.markdown)
+ #  OwnedNetObjects : [coghashsetrange](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/coghashsetrange.markdown)
 
  `read-only`
 
@@ -71,37 +71,37 @@
 
 
 ---  
- #  AddedByPeer : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/boolean.markdown)
+ #  AddedByPeer : [boolean](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.markdown)
 
 > Returns true if the user was added by the specified peer, else false.
 > |Name|Type|Description|
 > |---|---|---|
-> |netPeerId|[integer](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/integer.markdown)| |
+> |netPeerId|[integer](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer.markdown)| |
 > ``` lang=cpp, name=Lightning
 > function AddedByPeer(netPeerId : Integer) : Boolean
 > ``` 
 
 
 ---  
- #  FindOwnedNetObjectByName : [cog](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/cog.markdown)
+ #  FindOwnedNetObjectByName : [cog](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/cog.markdown)
 
 > Finds a net object with the given name owned by this user in any space, else nullptr.
 > |Name|Type|Description|
 > |---|---|---|
-> |name|[string](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/string.markdown)| |
+> |name|[string](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/string.markdown)| |
 > ``` lang=cpp, name=Lightning
 > function FindOwnedNetObjectByName(name : String) : Cog
 > ``` 
 
 
 ---  
- #  FindOwnedNetObjectByNameInSpace : [cog](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/cog.markdown)
+ #  FindOwnedNetObjectByNameInSpace : [cog](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/cog.markdown)
 
 > Finds a net object with the given name owned by this user in the specified space, else nullptr.
 > |Name|Type|Description|
 > |---|---|---|
-> |name|[string](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/string.markdown)| |
-> |space|[space](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/space.markdown)| |
+> |name|[string](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/string.markdown)| |
+> |space|[space](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/space.markdown)| |
 > ``` lang=cpp, name=Lightning
 > function FindOwnedNetObjectByNameInSpace(name : String, space : Space) : Cog
 > ``` 

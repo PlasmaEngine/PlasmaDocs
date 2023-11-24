@@ -1,5 +1,5 @@
 # Additive Synth Nodes
-[ AdditiveSynthNodes ](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/additivesynthnode.markdown) are basic synthesizers, generating notes using a combination of sound waves.
+[ AdditiveSynthNodes ](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/additivesynthnode.markdown) are basic synthesizers, generating notes using a combination of sound waves.
 
 ## Common Uses
 
@@ -60,7 +60,7 @@ The `NoteOff` method stops any currently playing notes with the specified MIDI k
 
 ## AdsrEnvelope
 
-An ADSR envelope controls the Attack, Decay, Sustain, and Release portions of a sound's volume. The Attack period is first, where the sound goes from silence to full volume. The Decay period is next, where the sound goes from full volume to its sustain volume. The Sustain period controls how long it stays at the sustain volume, and the Release period is where it goes from the sustain volume back to silence. The [ AdsrEnvelope ](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/adsrenvelope.markdown) object used by the Plasma Engine also has a parameter for delaying when the sound starts.
+An ADSR envelope controls the Attack, Decay, Sustain, and Release portions of a sound's volume. The Attack period is first, where the sound goes from silence to full volume. The Decay period is next, where the sound goes from full volume to its sustain volume. The Sustain period controls how long it stays at the sustain volume, and the Release period is where it goes from the sustain volume back to silence. The [ AdsrEnvelope ](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/adsrenvelope.markdown) object used by the Plasma Engine also has a parameter for delaying when the sound starts.
 
 NOTE: Setting the `SustainTime` property to `0` will make the harmonic play indefinitely until the `NoteOff` method is called.
 
@@ -71,7 +71,7 @@ NOTE: Setting the `SustainTime` property to `0` will make the harmonic play inde
 - [MIDI ](https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/audio/soundnode/midi.markdown)
 
 ## Code Reference
-- [ AdditiveSynthNode ](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/additivesynthnode.markdown)
-- [ AdsrEnvelope ](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/adsrenvelope.markdown) 
+- [ AdditiveSynthNode ](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/additivesynthnode.markdown)
+- [ AdsrEnvelope ](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/adsrenvelope.markdown) 
 
  

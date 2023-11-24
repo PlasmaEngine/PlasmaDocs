@@ -7,7 +7,7 @@ The mouse can either be used as a cursor controller, for tracking a specific pos
 
 ## Cursor Control
 
-**Cursor control**, also known as *point-and-click* control, is usually what is used for mouse-driven GUIs. It is mostly focused on the use of the mouse to manipulate the position of a cursor in a 2D plane. Cursor control typically makes heavy use of the [ Reactive](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/reactive.markdown) component to receive mouse events sent directly to interactive objects, such as buttons.
+**Cursor control**, also known as *point-and-click* control, is usually what is used for mouse-driven GUIs. It is mostly focused on the use of the mouse to manipulate the position of a cursor in a 2D plane. Cursor control typically makes heavy use of the [ Reactive](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/reactive.markdown) component to receive mouse events sent directly to interactive objects, such as buttons.
 
 
 ## Direct Mouse Control
@@ -22,9 +22,9 @@ Whether the mouse is used for cursor control or direct control, in any case, the
 
 ## Events
 
-Mouse events are dispatched as the mouse is used, and the position of the mouse cursor determines the targets of these events. When the cursor is positioned over an cog with the [ Reactive](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/reactive.markdown) component, that cog receives mouse events.
+Mouse events are dispatched as the mouse is used, and the position of the mouse cursor determines the targets of these events. When the cursor is positioned over an cog with the [ Reactive](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/reactive.markdown) component, that cog receives mouse events.
 
-In addition, mouse events are also sent to viewports. When a mouse event occurs in a viewport, it is dispatched to the cog with the [ Camera](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/camera.markdown) component and the cog with the [ CameraViewport](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/cameraviewport.markdown) component that represent that viewport. (Events are not dispatched doubly if both components are on the same cog, as is commonly the case.)
+In addition, mouse events are also sent to viewports. When a mouse event occurs in a viewport, it is dispatched to the cog with the [ Camera](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/camera.markdown) component and the cog with the [ CameraViewport](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/cameraviewport.markdown) component that represent that viewport. (Events are not dispatched doubly if both components are on the same cog, as is commonly the case.)
 
 NOTE: A **mouse event target** is anything that can receive a mouse event. Mouse event targets are spaces, cogs with the Camera component, cogs with the CameraViewport component, and cogs with the Reactive component.
 
@@ -102,11 +102,11 @@ function Initialize(init : CogInitializer)
 }
 </code></pre>
 
-Each of these events is a [ ViewportMouseEvent](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/viewportmouseevent.markdown). This event contains various relevant mouse data, such as the position of the cursor and the states of its buttons.
+Each of these events is a [ ViewportMouseEvent](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/viewportmouseevent.markdown). This event contains various relevant mouse data, such as the position of the cursor and the states of its buttons.
 
 #### MouseUpdate
 
-Every frame that the mouse is over a mouse event target, the [ MouseUpdate](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/event_reference.markdown#mouseupdate) event is dispatched to that target:
+Every frame that the mouse is over a mouse event target, the [ MouseUpdate](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/event_reference.markdown#mouseupdate) event is dispatched to that target:
 
 <pre><code class="language-csharp" name="MouseUpdate Example">
 function OnMouseUpdate(event : ViewportMouseEvent)
@@ -120,7 +120,7 @@ function OnMouseUpdate(event : ViewportMouseEvent)
 
 When the mouse cursor "enters" a mouse event target (that is, when it goes from not being over the target to being over it from the perspective of the viewport showing it) the [ MouseEnter](https://github.PlasmaEngine/PlasmaDocsocs/blob/master/code_reference/event_reference.markdown#mouseenter) event is dispatched to that target that frame. Likewise, when the cursor "exits" a target (it goes from over it to not over it) the [ MouseExit](https://github.PlasmaEngine/PlasmaDocseroDocs/blob/master/code_reference/event_reference.markdown#mouseexit) event is dispatched to that target that frame.
 
-As the mouse cursor enters a mouse event target, if it is simultaneously exiting another one, the [ MouseEnterPreview](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/event_reference.markdown#mouseenterpreview) event is dispatched that frame to the target being entered. This event is dispatched *immediately before* the **MouseExit** and subsequent **MouseEnter** events are dispatched, in the same frame.
+As the mouse cursor enters a mouse event target, if it is simultaneously exiting another one, the [ MouseEnterPreview](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/event_reference.markdown#mouseenterpreview) event is dispatched that frame to the target being entered. This event is dispatched *immediately before* the **MouseExit** and subsequent **MouseEnter** events are dispatched, in the same frame.
 
 For example, this code snippet connects to two different cogs, `CogA` and `CogB` (declared elsewhere in the script), for these events:
 
@@ -160,7 +160,7 @@ MouseEnterPreview is useful when there is code that should be run before the Mou
 
 #### MouseMove and MouseScroll
 
-Every frame that the mouse **moves** while the cursor is over a mouse event target, the [ MouseMove](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/event_reference.markdown#mousemove) event is dispatched to that target. When the mouse is **scrolled** while the cursor is over a mouse event target, the [ MouseScroll](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/event_reference.markdown#mousescroll) event is dispatched to that target:
+Every frame that the mouse **moves** while the cursor is over a mouse event target, the [ MouseMove](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/event_reference.markdown#mousemove) event is dispatched to that target. When the mouse is **scrolled** while the cursor is over a mouse event target, the [ MouseScroll](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/event_reference.markdown#mousescroll) event is dispatched to that target:
 
 <pre><code class="language-csharp" name="MouseMove and MouseScroll Examples">
 function OnMouseMove(event : ViewportMouseEvent)
@@ -180,7 +180,7 @@ function OnMouseScroll(event : ViewportMouseEvent)
 
 #### Down and Up Events
 
-When any mouse button is **pressed** while the cursor is over a mouse event target, the [ MouseDown](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/event_reference.markdown#mousedown) event is dispatched to that target. Likewise, when any mouse button is **released** while the cursor is over a mouse event target, the [ MouseUp](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/event_reference.markdown#mouseup) event is dispatched to that target.
+When any mouse button is **pressed** while the cursor is over a mouse event target, the [ MouseDown](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/event_reference.markdown#mousedown) event is dispatched to that target. Likewise, when any mouse button is **released** while the cursor is over a mouse event target, the [ MouseUp](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/event_reference.markdown#mouseup) event is dispatched to that target.
 
 **MouseDown** and **MouseUp** are useful when writing controls that can be bound to any mouse button. To determine which mouse button was pressed or released, just check the `Button` field on the ViewportMouseEvent object that is sent with the event:
 
@@ -206,7 +206,7 @@ function OnMouseUp(event : ViewportMouseEvent)
 }
 </code></pre>
 
-Plasma also has specific events for [ LeftMouseDown](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/event_reference.markdown#leftmousedown) and [ LeftMouseUp](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/event_reference.markdown#leftmouseup), [ RightMouseDown](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/event_reference.markdown#rightmousedown) and [ RightMouseUp](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/event_reference.markdown#rightmouseup), and [ MiddleMouseDown](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/event_reference.markdown#middlemousedown) and [ MiddleMouseUp](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/event_reference.markdown#middlemouseup), which are dispatched only when the corresponding button is pressed or released:
+Plasma also has specific events for [ LeftMouseDown](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/event_reference.markdown#leftmousedown) and [ LeftMouseUp](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/event_reference.markdown#leftmouseup), [ RightMouseDown](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/event_reference.markdown#rightmousedown) and [ RightMouseUp](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/event_reference.markdown#rightmouseup), and [ MiddleMouseDown](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/event_reference.markdown#middlemousedown) and [ MiddleMouseUp](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/event_reference.markdown#middlemouseup), which are dispatched only when the corresponding button is pressed or released:
 
 <pre><code class="language-csharp" name="Other Down and Up Examples">
 function OnLeftMouseDown(event : ViewportMouseEvent)
@@ -227,7 +227,7 @@ function OnMiddleMouseDown(event : ViewportMouseEvent)
 
 #### Click Events
 
-When a mouse button is both **pressed** and **released** over the same object, that object is said to have been //clicked//. Click events are commonly used for UI elements, such as buttons. Plasma dispatches [ LeftClick](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/event_reference.markdown#leftclick), [ RightClick](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/event_reference.markdown#rightclick), and [ MiddleClick](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/event_reference.markdown#middleclick) events:
+When a mouse button is both **pressed** and **released** over the same object, that object is said to have been //clicked//. Click events are commonly used for UI elements, such as buttons. Plasma dispatches [ LeftClick](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/event_reference.markdown#leftclick), [ RightClick](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/event_reference.markdown#rightclick), and [ MiddleClick](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/event_reference.markdown#middleclick) events:
 
 <pre><code class="language-csharp" name="Click Examples">
 function OnLeftClick(event : ViewportMouseEvent)
@@ -251,7 +251,7 @@ function OnMiddleClick(event : ViewportMouseEvent)
 
 #### DoubleClick
 
-When a mouse event target is double-clicked, the [ DoubleClick](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/event_reference.markdown#doubleclick) event is dispatched to that target:
+When a mouse event target is double-clicked, the [ DoubleClick](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/event_reference.markdown#doubleclick) event is dispatched to that target:
 
 <pre><code class="language-csharp" name="DoubleClick Example">
 function OnDoubleClick(event : ViewportMouseEvent)
@@ -267,7 +267,7 @@ NOTE: The timing of the two clicks involved in a double click is defined by the 
 
 ## Polling-Based Input
 
-Polling-based input typically occurs in a callback for an [ Update event](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/updateevent.markdown) such as [ LogicUpdate](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/event_reference.markdown#logicupdate):
+Polling-based input typically occurs in a callback for an [ Update event](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/updateevent.markdown) such as [ LogicUpdate](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/event_reference.markdown#logicupdate):
 
 <pre><code class="language-csharp" name="Update Connection Example">
 function Initialize(init : CogInitializer)
@@ -281,15 +281,15 @@ function OnLogicUpdate(event : UpdateEvent)
 }
 </code></pre>
 
-The mouse may be polled via the global [ Mouse](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/mouse.markdown) object, which can be found at `Plasma.Mouse`; of interest to mouse input are its `CursorMovement`, `RawMovement`, and `ClientPosition` properties and its `IsButtonDown` function.
+The mouse may be polled via the global [ Mouse](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/mouse.markdown) object, which can be found at `Plasma.Mouse`; of interest to mouse input are its `CursorMovement`, `RawMovement`, and `ClientPosition` properties and its `IsButtonDown` function.
 
 ### CursorMovement, RawMovement, and ClientPosition
 
-[ RawMovement](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/mouse.markdown#rawmovement-plasma-engine) represents the amount of movement detected this frame by the mousing device. [ ClientPosition](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/mouse.markdown#clientposition-plasma-engi) gives the screen-space cursor position in pixels, as computed by the OS. ClientPosition is relative to the upper left pixel of the Plasma client (application), which is (0, 0), with X and Y increasing to the right and down respectively. The [ CursorMovement](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/mouse.markdown#cursormovement-plasma-engi) property is computed by Plasma as the difference in the ClientPosition between the current frame and the previous frame.
+[ RawMovement](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/mouse.markdown#rawmovement-plasma-engine) represents the amount of movement detected this frame by the mousing device. [ ClientPosition](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/mouse.markdown#clientposition-plasma-engi) gives the screen-space cursor position in pixels, as computed by the OS. ClientPosition is relative to the upper left pixel of the Plasma client (application), which is (0, 0), with X and Y increasing to the right and down respectively. The [ CursorMovement](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/mouse.markdown#cursormovement-plasma-engi) property is computed by Plasma as the difference in the ClientPosition between the current frame and the previous frame.
 
 NOTE: CursorMovement and RawMovement often differ because the final position of the cursor depends on OS settings.
 
-The ClientPosition property is given in screen space, but it may be helpful to convert it to another coordinate basis, such as world space. The [ CameraViewport](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/cameraviewport.markdown) component has handy functions for performing such changes of basis:
+The ClientPosition property is given in screen space, but it may be helpful to convert it to another coordinate basis, such as world space. The [ CameraViewport](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/cameraviewport.markdown) component has handy functions for performing such changes of basis:
 
 <pre><code class="language-csharp" name="ClientPosition to World Space Example">
 function OnLogicUpdate(event : UpdateEvent)
@@ -306,7 +306,7 @@ function OnLogicUpdate(event : UpdateEvent)
 
  ###  IsButtonDown
 
-The [ IsButtonDown](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/mouse.markdown#isbuttondown-plasma-engine) function returns whether the given mouse button is down on the current frame. It closely parallels the [ KeyIsDown](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/keyboard.markdown#keyisdown-plasma-engine-do) function on the [ Keyboard](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/keyboard.markdown) object:
+The [ IsButtonDown](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/mouse.markdown#isbuttondown-plasma-engine) function returns whether the given mouse button is down on the current frame. It closely parallels the [ KeyIsDown](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/keyboard.markdown#keyisdown-plasma-engine-do) function on the [ Keyboard](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/keyboard.markdown) object:
 
 <pre><code class="language-csharp" name="IsButtonDown Example">
 function OnLogicUpdate(event : UpdateEvent)
@@ -355,12 +355,12 @@ Because mouse events are only dispatched when the mouse is used (other than [ Mo
 - [ Keyboard Input](https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/gameplay/input/keyboardinput.markdown#what-to-use)
 
 ## Code Reference
-- [ Mouse](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/mouse.markdown)
-- [ ViewportMouseEvent](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/viewportmouseevent.markdown)
-- [ Reactive](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/reactive.markdown)
-- [ CameraViewport](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/cameraviewport.markdown)
-- [ Camera](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/camera.markdown)
-- [ Keyboard](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/keyboard.markdown)
+- [ Mouse](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/mouse.markdown)
+- [ ViewportMouseEvent](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/viewportmouseevent.markdown)
+- [ Reactive](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/reactive.markdown)
+- [ CameraViewport](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/cameraviewport.markdown)
+- [ Camera](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/camera.markdown)
+- [ Keyboard](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/keyboard.markdown)
 
 
  

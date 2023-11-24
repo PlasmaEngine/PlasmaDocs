@@ -6,17 +6,17 @@
 
 |Methods|Properties|Base Classes|Derived Classes|
 |---|---|---|---|
-|[ CreateRuntime](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/multiconvexmesh.markdown#createruntime-plasma-engin)|[ Modified](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/multiconvexmesh.markdown#modified-plasma-engine-doc)|Resource| |
-|[ RuntimeClone](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/multiconvexmesh.markdown#runtimeclone-plasma-engine)|[ SubMeshes](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/multiconvexmesh.markdown#submeshes-plasma-engine-do)| | |
-|[ UpdateAndNotifyIfModified](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/multiconvexmesh.markdown#updateandnotifyifmodifie)|[ Valid](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/multiconvexmesh.markdown#valid-plasma-engine-docume)| | |
-|[ Validate](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/multiconvexmesh.markdown#validate-plasma-engine-doc)|[ Vertices](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/multiconvexmesh.markdown#vertices-plasma-engine-doc)| | |
+|[ CreateRuntime](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/multiconvexmesh.markdown#createruntime-plasma-engin)|[ Modified](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/multiconvexmesh.markdown#modified-plasma-engine-doc)|Resource| |
+|[ RuntimeClone](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/multiconvexmesh.markdown#runtimeclone-plasma-engine)|[ SubMeshes](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/multiconvexmesh.markdown#submeshes-plasma-engine-do)| | |
+|[ UpdateAndNotifyIfModified](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/multiconvexmesh.markdown#updateandnotifyifmodifie)|[ Valid](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/multiconvexmesh.markdown#valid-plasma-engine-docume)| | |
+|[ Validate](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/multiconvexmesh.markdown#validate-plasma-engine-doc)|[ Vertices](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/multiconvexmesh.markdown#vertices-plasma-engine-doc)| | |
 
 
  #  Properties
 
 
 ---  
- #  Modified : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/boolean.markdown)
+ #  Modified : [boolean](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.markdown)
 
  `read-only`
 
@@ -26,7 +26,7 @@
 
 
 ---  
- #  SubMeshes : [multiconvexmeshsubmeshdata](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/multiconvexmeshsubmeshdata.markdown)
+ #  SubMeshes : [multiconvexmeshsubmeshdata](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/multiconvexmeshsubmeshdata.markdown)
 
  `read-only`
 
@@ -36,7 +36,7 @@
 
 
 ---  
- #  Valid : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/boolean.markdown)
+ #  Valid : [boolean](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.markdown)
 
  `read-only`
 
@@ -46,7 +46,7 @@
 
 
 ---  
- #  Vertices : [multiconvexmeshvertexdata](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/multiconvexmeshvertexdata.markdown)
+ #  Vertices : [multiconvexmeshvertexdata](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/multiconvexmeshvertexdata.markdown)
 
  `read-only`
 
@@ -60,7 +60,7 @@
 
 
 ---  
- #  CreateRuntime : [multiconvexmesh](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/multiconvexmesh.markdown)
+ #  CreateRuntime : [multiconvexmesh](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/multiconvexmesh.markdown)
 
  `static`
 
@@ -73,7 +73,7 @@
 
 
 ---  
- #  RuntimeClone : [multiconvexmesh](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/multiconvexmesh.markdown)
+ #  RuntimeClone : [multiconvexmesh](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/multiconvexmesh.markdown)
 
 > Creates a clone of this mesh for run-time modifications.
 > |Name|Type|Description|
@@ -95,12 +95,12 @@
 
 
 ---  
- #  Validate : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/boolean.markdown)
+ #  Validate : [boolean](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.markdown)
 
 > Check if the mesh is valid. Optionally throw a script exception if it is invalid.
 > |Name|Type|Description|
 > |---|---|---|
-> |throwExceptionIfInvalid|[boolean](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/boolean.markdown)| |
+> |throwExceptionIfInvalid|[boolean](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.markdown)| |
 > ``` lang=cpp, name=Lightning
 > function Validate(throwExceptionIfInvalid : Boolean) : Boolean
 > ``` 

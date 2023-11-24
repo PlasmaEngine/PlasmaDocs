@@ -47,10 +47,10 @@ class ExampleComponent : LightningComponent
 ## Default Components of LevelSettings
 
 ### GravityEffect & DragEffect
-Physics Effects are built in components that implement a piece of common physics-based functionality such as the [GravityEffect](https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/physics/physicseffectsandregions/forceeffect.markdown) or the [DragEffect](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/drageffect.markdown) components that are attached to the LevelSettings by default. Each physics effect component may perform the logic on different spatial scopes depending on which object is attached to. When a physics effect component is attached to the LevelSettings object it is applied to all objects in that level. This allows one to implement level wide effects with any of the built in physics effects as is done by default with GravityEffect and DragEffect.
+Physics Effects are built in components that implement a piece of common physics-based functionality such as the [GravityEffect](https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/physics/physicseffectsandregions/forceeffect.markdown) or the [DragEffect](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/drageffect.markdown) components that are attached to the LevelSettings by default. Each physics effect component may perform the logic on different spatial scopes depending on which object is attached to. When a physics effect component is attached to the LevelSettings object it is applied to all objects in that level. This allows one to implement level wide effects with any of the built in physics effects as is done by default with GravityEffect and DragEffect.
 
 ### GridDraw
-The [griddraw](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/griddraw.markdown) component is a simple debug drawing component. It uses Plasma's buit in GridDraw component is a simple debug drawing component. It uses Plasma's buit in [debugdrawing](https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/scripting/debugdrawing.markdown) to create a customizable unit grid in the Level Window.
+The [griddraw](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/griddraw.markdown) component is a simple debug drawing component. It uses Plasma's buit in GridDraw component is a simple debug drawing component. It uses Plasma's buit in [debugdrawing](https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/scripting/debugdrawing.markdown) to create a customizable unit grid in the Level Window.
 
 ## Custom Components
 The LevelSettings object is often a very convenient object on which to attach certain custom Lightning components. Imagine a scenario in which a function is implemented for a friendly AI which needs to return an enemy to attack. If all the enemies exist independent of any other object or component, there may be no immediate path from which to access all enemies from the AI.
@@ -64,8 +64,8 @@ While the above example may not be applicable to all games, it demonstrates the 
 
 | Event Name       | Type                                | Description                                                       |
 |------------------|-------------------------------------|-------------------------------------------------------------------|
-| EnterView        | [graphicalevent](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/graphicalevent.markdown) | Dispatched if [cameraviewport](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/cameraviewport.markdown) is attached to the LevelSettings object. |
-| ExitView         | [graphicalevent](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/graphicalevent.markdown) | Dispatched if [cameraviewport](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/cameraviewport.markdown) is attached to the |
+| EnterView        | [graphicalevent](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/graphicalevent.markdown) | Dispatched if [cameraviewport](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/cameraviewport.markdown) is attached to the LevelSettings object. |
+| ExitView         | [graphicalevent](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/graphicalevent.markdown) | Dispatched if [cameraviewport](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/cameraviewport.markdown) is attached to the |
 
 ---
 
@@ -77,9 +77,9 @@ While the above example may not be applicable to all games, it demonstrates the 
 - [physics effects](https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/physics/physicseffectsandregions.markdown)
 
 ## Code Reference
-- [GravityEffect](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/gravityeffect.markdown) 
-- [DragEffect](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/drageffect.markdown) 
-- [GridDraw](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/griddraw.markdown) 
+- [GravityEffect](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/gravityeffect.markdown) 
+- [DragEffect](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/drageffect.markdown) 
+- [GridDraw](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/griddraw.markdown) 
  
 
  

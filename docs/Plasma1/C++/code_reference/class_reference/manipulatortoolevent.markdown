@@ -4,18 +4,18 @@
 
 |Methods|Properties|Base Classes|Derived Classes|
 |---|---|---|---|
-| |[ EndWorldRectangle](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/manipulatortoolevent.markdown#endworldrectangle-plasma-e)|[viewportmouseevent](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/viewportmouseevent.markdown)| |
-| |[ Finished](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/manipulatortoolevent.markdown#finished-plasma-engine-doc)| | |
-| |[ GrabLocation](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/manipulatortoolevent.markdown#grablocation-plasma-engine)| | |
-| |[ OperationQueue](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/manipulatortoolevent.markdown#operationqueue-plasma-engi)| | |
-| |[ StartWorldRectangle](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/manipulatortoolevent.markdown#startworldrectangle-plasma)| | |
+| |[ EndWorldRectangle](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/manipulatortoolevent.markdown#endworldrectangle-plasma-e)|[viewportmouseevent](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/viewportmouseevent.markdown)| |
+| |[ Finished](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/manipulatortoolevent.markdown#finished-plasma-engine-doc)| | |
+| |[ GrabLocation](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/manipulatortoolevent.markdown#grablocation-plasma-engine)| | |
+| |[ OperationQueue](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/manipulatortoolevent.markdown#operationqueue-plasma-engi)| | |
+| |[ StartWorldRectangle](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/manipulatortoolevent.markdown#startworldrectangle-plasma)| | |
 
 
  #  Properties
 
 
 ---  
- #  EndWorldRectangle : [rectangle](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/rectangle.markdown)
+ #  EndWorldRectangle : [rectangle](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/rectangle.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -23,7 +23,7 @@
 
 
 ---  
- #  Finished : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/boolean.markdown)
+ #  Finished : [boolean](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.markdown)
 
  `read-only`
 
@@ -33,7 +33,7 @@
 
 
 ---  
- #  GrabLocation : [Location](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/enum_reference.markdown#location)
+ #  GrabLocation : [Location](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/enum_reference.markdown#location)
 
  `read-only`
 
@@ -43,7 +43,7 @@
 
 
 ---  
- #  OperationQueue : [operationqueue](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/operationqueue.markdown)
+ #  OperationQueue : [operationqueue](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/operationqueue.markdown)
 
  `read-only`
 
@@ -53,7 +53,7 @@
 
 
 ---  
- #  StartWorldRectangle : [rectangle](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/rectangle.markdown)
+ #  StartWorldRectangle : [rectangle](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/rectangle.markdown)
 
  `read-only`
 

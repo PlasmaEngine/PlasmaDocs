@@ -2,7 +2,7 @@
 
 NOTE: It is highly suggested you read [conditionals](https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/Lightning/conditionals.markdown) before this page, as the concepts of conditionals are used through out to demonstrate Boolean Operators.
 
-The [boolean](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/boolean.markdown) type has special operators that work with it.
+The [boolean](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.markdown) type has special operators that work with it.
 
 # The Negation Operator `!`
 The `!` operator, called the negation operator, is typically the simplest of the boolean operators as it changes the value of its operand to `true` if it was `false`, and changes the value to `false` if it was `true`.
@@ -226,6 +226,6 @@ Either i or j is true
 - [conditionals](https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/Lightning/conditionals.markdown)
 
 ## Code Reference
-- [boolean](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/boolean.markdown) 
+- [boolean](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.markdown) 
 
  

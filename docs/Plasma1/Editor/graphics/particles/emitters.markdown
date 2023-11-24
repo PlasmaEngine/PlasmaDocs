@@ -1,5 +1,5 @@
 # Emitters
-Emitters are necessary components for a particle system that define the properties of a particle as it's created.  One of those properties is the spawn position, which is in part defined by the component itself.  The emitter types are [BoxParticleEmitter](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/boxparticleemitter.markdown), [SphericalParticleEmitter](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/sphericalparticleemitter.markdown), and [MeshParticleEmitter](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/meshparticleemitter.markdown), and each one defines a surface or curve that particles emit from.
+Emitters are necessary components for a particle system that define the properties of a particle as it's created.  One of those properties is the spawn position, which is in part defined by the component itself.  The emitter types are [BoxParticleEmitter](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/boxparticleemitter.markdown), [SphericalParticleEmitter](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/sphericalparticleemitter.markdown), and [MeshParticleEmitter](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/meshparticleemitter.markdown), and each one defines a surface or curve that particles emit from.
 
 NOTE: By default the shape isn't apparent on the Box or Sphere particle emitter.  This is because the EmitterSize  is zeroed out by default.
 
@@ -17,9 +17,9 @@ When an object is moving fast, the fact that its motion is an illusion becomes m
 
 ## Code Reference
 - [SpriteParticleSystem](https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/code_reference/class_reference/spriteparticlesystem.markdown)
-- [BoxParticleEmitter](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/boxparticleemitter.markdown)
-- [SphericalParticleEmitter](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/sphericalparticleemitter.markdown)
-- [MeshParticleEmitter](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/meshparticleemitter.markdown)
+- [BoxParticleEmitter](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/boxparticleemitter.markdown)
+- [SphericalParticleEmitter](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/sphericalparticleemitter.markdown)
+- [MeshParticleEmitter](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/meshparticleemitter.markdown)
  
 
  

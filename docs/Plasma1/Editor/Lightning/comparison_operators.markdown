@@ -118,7 +118,7 @@ In this case, the `ReferenceObj` instances are constructed and compared by refer
 
 # Floating-Point Comparison
 
-Due to floating-point error, it is best to avoid comparing two extremely precise or large values of floating-point types (such as [ Real](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real.markdown)) with the `==` and `!=` operators. Consider:
+Due to floating-point error, it is best to avoid comparing two extremely precise or large values of floating-point types (such as [ Real](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.markdown)) with the `==` and `!=` operators. Consider:
 
 <pre><code class="language-csharp" name="Floating-Point Comparison, Example 1">
 Console.WriteLine(2000000000.0 == 2000000042.0);

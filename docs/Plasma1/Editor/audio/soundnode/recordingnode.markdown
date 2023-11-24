@@ -1,5 +1,5 @@
 # Recording Node
-The [ RecordingNode ](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/recordingnode.markdown) collects audio data from its inputs and writes that data to a file. The audio data is then passed along to its outputs with no changes. 
+The [ RecordingNode ](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/recordingnode.markdown) collects audio data from its inputs and writes that data to a file. The audio data is then passed along to its outputs with no changes. 
 
 # Common Uses
 
@@ -24,6 +24,6 @@ this.MyRecorder.FileName = FilePath.CombineDirectoriesAndFile(FilePath.UserDocum
 - [soudnode_overview](https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/audio/soundnode/soudnode_overview.markdown)
 
 ## Code Reference
-- [ RecordingNode ](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/recordingnode.markdown) 
+- [ RecordingNode ](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/recordingnode.markdown) 
 
  

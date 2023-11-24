@@ -1,6 +1,6 @@
 # Joints
 
-[Joints](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/joint.markdown) are a representation of a physics concept known as [constraints](https://en.wikipedia.org/wiki/Constraint_(mathematics) ). A constraint is a mathematical rule that defines (or constrains) how objects are allowed to move. A Joint is a collection of one or more constraints that define a more common interaction. In Plasma, a Joint is typically an independent object that connects two [ObjectLink](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/objectlink.markdown).
+[Joints](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/joint.markdown) are a representation of a physics concept known as [constraints](https://en.wikipedia.org/wiki/Constraint_(mathematics) ). A constraint is a mathematical rule that defines (or constrains) how objects are allowed to move. A Joint is a collection of one or more constraints that define a more common interaction. In Plasma, a Joint is typically an independent object that connects two [ObjectLink](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/objectlink.markdown).
 
 # Shared Properties
 
@@ -14,16 +14,16 @@ Before looking at individual joints, there's a few useful shared properties:
 
 Before discussing each individual Joint, there's several helper components that are important to understand. These components affect how a joint will affect the connected objects. These components can be added to any Joint, but may not always make sense for a specific one.
 
-### [JointLimit](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/jointlimit.markdown)
+### [JointLimit](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/jointlimit.markdown)
 
 A limit restricts a certain portion of the joint to only be active part of the time. This is typically sets some min/max distance/angle where the joint will allow free movement.
 NOTE: When the limit is for angles it is specified in radians.
 
-### [JointMotor](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/jointmotor.markdown)
+### [JointMotor](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/jointmotor.markdown)
 
 A motor takes a portion of the joint and adds energy to it. This is often used to drive a portion of the joint when no external forces are acting upon it. A motor allows setting a target speed and a max impulse it can use to try and achieve this.
 
-### [JointSpring](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/jointspring.markdown)
+### [JointSpring](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/jointspring.markdown)
 
 A spring takes a portion of the joint and makes it soft, or non-rigid. This can be useful to simulate a spring or make the limits of a joint springy. Springs are defined by a frequency in Hertz (oscillations per second) and a damping ratio. The damping ratio defines how much energy should be damped out of the system where 0 means no damping and 1 is critical (perfect) damping.
 
@@ -31,11 +31,11 @@ A spring takes a portion of the joint and makes it soft, or non-rigid. This can 
 
 There are a few extra joint add-ons that are less frequently used.
 
-### [JointConfigOverride](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/jointconfigoverride.markdown)
+### [JointConfigOverride](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/jointconfigoverride.markdown)
 
 This allows configuring individual joint properties for solving. Typically you shouldn't touch this if you don't understand it.
 
-### [JointDebugDrawConfig](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/jointdebugdrawconfig.markdown)
+### [JointDebugDrawConfig](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/jointdebugdrawconfig.markdown)
 
 The debug draw config is used to give additional debug drawing information to the joint. This is mostly to allow configuring which object's perspective to draw information from. Not all joints currently observe this component.
 
@@ -96,30 +96,30 @@ A few joints have 2D versions that should be used when making a 2D game instead 
 - [colliders.markdown](https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/physics/colliders.markdown)
 
 ### Reference
- - [Joint](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/joint.markdown)
- - [StickJoint](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/stickjoint.markdown)
- - [PositionJoint](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/positionjoint.markdown)
- - [WeldJoint](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/weldjoint.markdown)
- - [PrismaticJoint](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/prismaticjoint.markdown)
- - [PrismaticJoint2d](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/prismaticjoint2d.markdown)
- - [RevoluteJoint](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/revolutejoint.markdown)
- - [RevoluteJoint2d](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/revolutejoint2d.markdown)
- - [WheelJoint](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/wheeljoint.markdown)
- - [WheelJoint2d](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/wheeljoint2d.markdown)
- - [UniversalJoint](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/universaljoint.markdown)
- - [UprightJoint](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/uprightjoint.markdown)
- - [GearJoint](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/gearjoint.markdown)
- - [PulleyJoint](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/pulleyjoint.markdown)
- - [CustomJoint](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/customjoint.markdown)
- - [JointEvent](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/jointevent.markdown)
- - [CustomJointEvent](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/customjointevent.markdown)
- - [JointLimit](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/jointlimit.markdown)
- - [JointMotor](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/jointmotor.markdown)
- - [JointSpring](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/jointspring.markdown)
- - [JointDebugDrawConfig](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/jointdebugdrawconfig.markdown)
- - [JointConfigOverride](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/jointconfigoverride.markdown)
- - [CustomConstraintInfo](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/customconstraintinfo.markdown)
- - [Collider](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/collider.markdown)
+ - [Joint](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/joint.markdown)
+ - [StickJoint](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/stickjoint.markdown)
+ - [PositionJoint](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/positionjoint.markdown)
+ - [WeldJoint](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/weldjoint.markdown)
+ - [PrismaticJoint](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/prismaticjoint.markdown)
+ - [PrismaticJoint2d](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/prismaticjoint2d.markdown)
+ - [RevoluteJoint](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/revolutejoint.markdown)
+ - [RevoluteJoint2d](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/revolutejoint2d.markdown)
+ - [WheelJoint](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/wheeljoint.markdown)
+ - [WheelJoint2d](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/wheeljoint2d.markdown)
+ - [UniversalJoint](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/universaljoint.markdown)
+ - [UprightJoint](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/uprightjoint.markdown)
+ - [GearJoint](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/gearjoint.markdown)
+ - [PulleyJoint](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/pulleyjoint.markdown)
+ - [CustomJoint](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/customjoint.markdown)
+ - [JointEvent](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/jointevent.markdown)
+ - [CustomJointEvent](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/customjointevent.markdown)
+ - [JointLimit](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/jointlimit.markdown)
+ - [JointMotor](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/jointmotor.markdown)
+ - [JointSpring](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/jointspring.markdown)
+ - [JointDebugDrawConfig](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/jointdebugdrawconfig.markdown)
+ - [JointConfigOverride](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/jointconfigoverride.markdown)
+ - [CustomConstraintInfo](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/customconstraintinfo.markdown)
+ - [Collider](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/collider.markdown)
  
 
  

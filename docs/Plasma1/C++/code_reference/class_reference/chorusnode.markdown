@@ -4,19 +4,19 @@
 
 |Methods|Properties|Base Classes|Derived Classes|
 |---|---|---|---|
-| |[ FeedbackPercent](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/chorusnode.markdown#feedbackpercent-plasma-eng)|[soundnode](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/soundnode.markdown)| |
-| |[ FeedbackValue](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/chorusnode.markdown#feedbackvalue-plasma-engin)| | |
-| |[ MaxDelayMillisec](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/chorusnode.markdown#maxdelaymillisec-plasma-en)| | |
-| |[ MinDelayMillisec](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/chorusnode.markdown#mindelaymillisec-plasma-en)| | |
-| |[ ModulationFrequency](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/chorusnode.markdown#modulationfrequency-plasma)| | |
-| |[ OffsetMillisec](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/chorusnode.markdown#offsetmillisec-plasma-engi)| | |
+| |[ FeedbackPercent](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/chorusnode.markdown#feedbackpercent-plasma-eng)|[soundnode](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/soundnode.markdown)| |
+| |[ FeedbackValue](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/chorusnode.markdown#feedbackvalue-plasma-engin)| | |
+| |[ MaxDelayMillisec](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/chorusnode.markdown#maxdelaymillisec-plasma-en)| | |
+| |[ MinDelayMillisec](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/chorusnode.markdown#mindelaymillisec-plasma-en)| | |
+| |[ ModulationFrequency](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/chorusnode.markdown#modulationfrequency-plasma)| | |
+| |[ OffsetMillisec](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/chorusnode.markdown#offsetmillisec-plasma-engi)| | |
 
 
  #  Properties
 
 
 ---  
- #  FeedbackPercent : [real](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real.markdown)
+ #  FeedbackPercent : [real](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.markdown)
 
 > DEPRECATED The FeedbackValue property should be used instead.
 > ``` lang=cpp, name=Lightning
@@ -24,7 +24,7 @@
 
 
 ---  
- #  FeedbackValue : [real](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real.markdown)
+ #  FeedbackValue : [real](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.markdown)
 
 > The percentage of output (0 - 1.0) which is fed back into the filter as input.
 > ``` lang=cpp, name=Lightning
@@ -32,7 +32,7 @@
 
 
 ---  
- #  MaxDelayMillisec : [real](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real.markdown)
+ #  MaxDelayMillisec : [real](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.markdown)
 
 > The maximum delay reached by the modulation. It will oscillate between the MinDelayMillisec value and this value at the frequency set by the ModulationFrequency property.
 > ``` lang=cpp, name=Lightning
@@ -40,7 +40,7 @@
 
 
 ---  
- #  MinDelayMillisec : [real](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real.markdown)
+ #  MinDelayMillisec : [real](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.markdown)
 
 > The minimum delay reached by the modulation. It will oscillate between the this value and the MaxDelayMillisec value at the frequency set by the ModulationFrequency property.
 > ``` lang=cpp, name=Lightning
@@ -48,7 +48,7 @@
 
 
 ---  
- #  ModulationFrequency : [real](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real.markdown)
+ #  ModulationFrequency : [real](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.markdown)
 
 > The frequency of the oscillator which varies the modulation.
 > ``` lang=cpp, name=Lightning
@@ -56,7 +56,7 @@
 
 
 ---  
- #  OffsetMillisec : [real](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real.markdown)
+ #  OffsetMillisec : [real](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.markdown)
 
 > The offset value of the chorus filter, in milliseconds.
 > ``` lang=cpp, name=Lightning

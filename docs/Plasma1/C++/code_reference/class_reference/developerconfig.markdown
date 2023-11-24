@@ -6,16 +6,16 @@
 
 |Methods|Properties|Base Classes|Derived Classes|
 |---|---|---|---|
-|[ Constructor](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/developerconfig.markdown#developerconfig-void)|[ CanModifyReadOnlyResources](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/developerconfig.markdown#canmodifyreadonlyresourc)|[component](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/component.markdown)| |
-| |[ DoubleEscapeQuit](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/developerconfig.markdown#doubleescapequit-plasma-en)| | |
-| |[ ProxyObjectsInPreviews](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/developerconfig.markdown#proxyobjectsinpreviews-z)| | |
+|[ Constructor](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/developerconfig.markdown#developerconfig-void)|[ CanModifyReadOnlyResources](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/developerconfig.markdown#canmodifyreadonlyresourc)|[component](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/component.markdown)| |
+| |[ DoubleEscapeQuit](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/developerconfig.markdown#doubleescapequit-plasma-en)| | |
+| |[ ProxyObjectsInPreviews](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/developerconfig.markdown#proxyobjectsinpreviews-z)| | |
 
 
  #  Properties
 
 
 ---  
- #  CanModifyReadOnlyResources : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/boolean.markdown)
+ #  CanModifyReadOnlyResources : [boolean](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.markdown)
 
 > Allows editing and saving of read only resources.
 > ``` lang=cpp, name=Lightning
@@ -23,7 +23,7 @@
 
 
 ---  
- #  DoubleEscapeQuit : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/boolean.markdown)
+ #  DoubleEscapeQuit : [boolean](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.markdown)
 
 > Double escape to close the engine.
 > ``` lang=cpp, name=Lightning
@@ -31,7 +31,7 @@
 
 
 ---  
- #  ProxyObjectsInPreviews : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/boolean.markdown)
+ #  ProxyObjectsInPreviews : [boolean](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.markdown)
 
 > Whether or not script objects are proxied in the preview windows.
 > ``` lang=cpp, name=Lightning

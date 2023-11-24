@@ -1,5 +1,5 @@
 # Sound Tags
-[ SoundTags ](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/soundtag.markdown) are resources that allow users to pause, resume, and stop a group of [SoundInstances ](https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/audio/soundinstance.markdown); control their volume, EQ, and compression; and get a list of tagged SoundInstances to change other properties in LightningScripts. 
+[ SoundTags ](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/soundtag.markdown) are resources that allow users to pause, resume, and stop a group of [SoundInstances ](https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/audio/soundinstance.markdown); control their volume, EQ, and compression; and get a list of tagged SoundInstances to change other properties in LightningScripts. 
 
 # Common Uses
 
@@ -31,7 +31,7 @@ If the `TagForDucking` property is set to another SoundTag that tag's volume lev
 
 ## Lightning Events
 
-- The `AddedInstanceToTag` [ SoundEvent ](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/soundevent.markdown) is sent when a new SoundInstance is added to the SoundTag.
+- The `AddedInstanceToTag` [ SoundEvent ](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/soundevent.markdown) is sent when a new SoundInstance is added to the SoundTag.
 - The `TagHasNoInstances` SoundEvent is sent when all SoundInstances have been removed from the SoundTag.
 
 # Resources
@@ -46,7 +46,7 @@ If the `TagForDucking` property is set to another SoundTag that tag's volume lev
 - [CompressorNode ](https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/audio/soundnode/compressornode.markdown)
 
 ## Reference
-- [ SoundTag ](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/soundtag.markdown)
-- [ SoundEvent ](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/soundevent.markdown) 
+- [ SoundTag ](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/soundtag.markdown)
+- [ SoundEvent ](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/soundevent.markdown) 
 
  

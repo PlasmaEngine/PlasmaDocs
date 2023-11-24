@@ -24,15 +24,15 @@ Components found on the Project object cog are unique to it, and cannot be attac
 
 ##  ProjectSettings
 
-The [ ProjectSettings](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/projectsettings.markdown) component allows the user to specify an owner for the project.
+The [ ProjectSettings](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/projectsettings.markdown) component allows the user to specify an owner for the project.
 
 ##  WindowLaunchSettings
 
-The [ WindowLaunchSettings](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/windowlaunchsettings.markdown) component allows the user to specify settings pertinent to the window and resolution of the exported executable of the project.
+The [ WindowLaunchSettings](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/windowlaunchsettings.markdown) component allows the user to specify settings pertinent to the window and resolution of the exported executable of the project.
 
 ##  FrameRateSettings
 
-The [ FrameRateSettings](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/frameratesettings.markdown) component allows the user to configure settings related to the project's frame rate.
+The [ FrameRateSettings](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/frameratesettings.markdown) component allows the user to configure settings related to the project's frame rate.
 
 ##  LauncherProjectInfo
 
@@ -45,8 +45,8 @@ The **LauncherProjectInfo** component is a proxy of a component used by the [ Pl
 - [ The Plasma Launcher](https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/editor/launcher.markdown)
 
 ##  Code Reference
-- [ ProjectSettings](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/projectsettings.markdown)
-- [ WindowLaunchSettings](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/windowlaunchsettings.markdown)
-- [ FrameRateSettings](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/frameratesettings.markdown) 
+- [ ProjectSettings](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/projectsettings.markdown)
+- [ WindowLaunchSettings](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/windowlaunchsettings.markdown)
+- [ FrameRateSettings](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/frameratesettings.markdown) 
 
  

@@ -6,14 +6,14 @@
 
 |Methods|Properties|Base Classes|Derived Classes|
 |---|---|---|---|
-|[ Constructor](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/splineevent.markdown#splineevent-void)|[ Spline](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/splineevent.markdown#spline-plasma-engine-docum)|[event](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/event.markdown)| |
+|[ Constructor](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/splineevent.markdown#splineevent-void)|[ Spline](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/splineevent.markdown#spline-plasma-engine-docum)|[event](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/event.markdown)| |
 
 
  #  Properties
 
 
 ---  
- #  Spline : [spline](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/spline.markdown)
+ #  Spline : [spline](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/spline.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -45,7 +45,7 @@
 > 
 > |Name|Type|Description|
 > |---|---|---|
-> |spline|[spline](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/spline.markdown)| |
+> |spline|[spline](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/spline.markdown)| |
 > ``` lang=cpp, name=Lightning
 > function SplineEvent(spline : Spline)
 > ``` 
@@ -59,7 +59,7 @@
 > 
 > |Name|Type|Description|
 > |---|---|---|
-> ||[splineevent](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/splineevent.markdown)| |
+> ||[splineevent](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/splineevent.markdown)| |
 > ``` lang=cpp, name=Lightning
 > function SplineEvent( : SplineEvent)
 > ``` 

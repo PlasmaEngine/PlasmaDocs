@@ -1,6 +1,6 @@
 # Importing 3D Assets & Textures
 
-3D assets, such as models, model animations, and images to be used on a [Material](https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/graphics/materials/materials_overview.markdown), are added as [Resources](https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/architecture/resources.markdown) in the form of [meshes](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/mesh.markdown), [animations](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/animation.markdown), and [textures](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/texture.markdown). The preferred file format for 3D assets is `.fbx` for models and animations (though Plasma does accept a number of other formats such as`.obj`, `.3ds`, `.blend`, etc...) and `.png` for textures. See [resourceadding](https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/editor/editorcommands/resourceadding.markdown) for how to import data files into Plasma.
+3D assets, such as models, model animations, and images to be used on a [Material](https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/graphics/materials/materials_overview.markdown), are added as [Resources](https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/architecture/resources.markdown) in the form of [meshes](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/mesh.markdown), [animations](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/animation.markdown), and [textures](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/texture.markdown). The preferred file format for 3D assets is `.fbx` for models and animations (though Plasma does accept a number of other formats such as`.obj`, `.3ds`, `.blend`, etc...) and `.png` for textures. See [resourceadding](https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/editor/editorcommands/resourceadding.markdown) for how to import data files into Plasma.
 
 # Models and Model Animations
 
@@ -43,7 +43,7 @@ Setting this property will offset the mesh from it's origin by the value specifi
 
 ### ScaleConversion and ScaleFactor
 
-[ScaleConversion](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/enum_reference.markdown#scaleconversion) changes the mesh's scaling convention from one unit of measurement to another. For example, if a modeling program exported using centimeters as the unit of measurement, but the rest of the game has been using meters, choosing `CentimetersToMeters` would scale the mesh to match the units of measurement used throughout the game. The factor by which each option scales an incoming mesh are listed here:
+[ScaleConversion](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/enum_reference.markdown#scaleconversion) changes the mesh's scaling convention from one unit of measurement to another. For example, if a modeling program exported using centimeters as the unit of measurement, but the rest of the game has been using meters, choosing `CentimetersToMeters` would scale the mesh to match the units of measurement used throughout the game. The factor by which each option scales an incoming mesh are listed here:
 
 | ScaleConversion | Factor |
 |---|---|
@@ -89,15 +89,15 @@ TextureBuilder, on the other hand, is comprised of a number of modifiable proper
 
 ### Interpretation
 
-[Type](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/enum_reference.markdown#texturetype) sets whether a texture should be interpreted as a `Texture2D` or as a `TextureCube`. `TextureCube` is the [TextureType](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/enum_reference.markdown#texturetype) that should be chosen when the image should be used as a skybox in the [renderer](https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/graphics/renderer.markdown). For any possible use, `Texture2D` should be chosen.
+[Type](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/enum_reference.markdown#texturetype) sets whether a texture should be interpreted as a `Texture2D` or as a `TextureCube`. `TextureCube` is the [TextureType](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/enum_reference.markdown#texturetype) that should be chosen when the image should be used as a skybox in the [renderer](https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/graphics/renderer.markdown). For any possible use, `Texture2D` should be chosen.
 
 ### Compression
 
-[Compression](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/enum_reference.markdown#texturecompression) sets the lossy, hardware-supported format to convert the texture to, if any. For a more detailed explanation, see [compression.markdown](https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/graphics/adding_assets/adding_3d_assets/compression.markdown).
+[Compression](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/enum_reference.markdown#texturecompression) sets the lossy, hardware-supported format to convert the texture to, if any. For a more detailed explanation, see [compression.markdown](https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/graphics/adding_assets/adding_3d_assets/compression.markdown).
 
 ### Addressing
 
-[AddressingX and AddressingY](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/enum_reference.markdown#textureaddressing) set how to address the texture whose uv fall outside of the range [0, 1]. The choices available are described in the table below:
+[AddressingX and AddressingY](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/enum_reference.markdown#textureaddressing) set how to address the texture whose uv fall outside of the range [0, 1]. The choices available are described in the table below:
 
 | Enum Value | Description
 | -- | --
@@ -105,13 +105,13 @@ TextureBuilder, on the other hand, is comprised of a number of modifiable proper
 | Repeat | Wraps to the other side and continues to sample the image
 | Mirror | The texture is mirrored at the range boundaries
 
-[Compression](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/enum_reference.markdown#texturecompression), [Anisotropy](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/enum_reference.markdown#textureanisotropy), and so on. Once imported, check these settings to make sure they have been set correctly.
+[Compression](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/enum_reference.markdown#texturecompression), [Anisotropy](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/enum_reference.markdown#textureanisotropy), and so on. Once imported, check these settings to make sure they have been set correctly.
 
 ### Sampling and Filtering
 
 Texture sampling is the process by which data is accessed from a texture. Given the near-infinite amount of positions, angles, and distance a texture may be viewed when placed on mesh within a level, as well as the computational limits of a real-time simulation, a number of different algorithms for how this data is accessed have been developed. These algorithms are the different methods of texture filtering.
 
-[Filtering](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/enum_reference.markdown#texturefiltering) describes how pixels from the texture are sampled when viewing the texture from different sizes. Filtering enum sets the algorithm by which to sample the texture. The choices available are:
+[Filtering](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/enum_reference.markdown#texturefiltering) describes how pixels from the texture are sampled when viewing the texture from different sizes. Filtering enum sets the algorithm by which to sample the texture. The choices available are:
  - `Nearest` - Gets the closest pixel 
  - `Bilinear` - Get the four closest pixels and linearly blends between them
  - `Trilinear` - The same as Bilinear, but with an additional linear blend between mip levels.

@@ -6,71 +6,71 @@
 
 |Methods|Properties|Base Classes|Derived Classes|
 |---|---|---|---|
-| |[ ActiveConvergenceWeight](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netpropertyconfig.markdown#activeconvergenceweight)|[dataresource](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/dataresource.markdown)| |
-| |[ BasicNetType](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netpropertyconfig.markdown#basicnettype-plasma-engine)| | |
-| |[ ConvergenceInterval](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netpropertyconfig.markdown#convergenceinterval-plasma)| | |
-| |[ DeltaThresholdDoubleInteger](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netpropertyconfig.markdown#deltathresholddoubleinte)| | |
-| |[ DeltaThresholdDoubleReal](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netpropertyconfig.markdown#deltathresholddoublereal)| | |
-| |[ DeltaThresholdInteger](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netpropertyconfig.markdown#deltathresholdinteger-ze)| | |
-| |[ DeltaThresholdInteger2](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netpropertyconfig.markdown#deltathresholdinteger2-z)| | |
-| |[ DeltaThresholdInteger3](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netpropertyconfig.markdown#deltathresholdinteger3-z)| | |
-| |[ DeltaThresholdInteger4](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netpropertyconfig.markdown#deltathresholdinteger4-z)| | |
-| |[ DeltaThresholdQuaternion](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netpropertyconfig.markdown#deltathresholdquaternion)| | |
-| |[ DeltaThresholdReal](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netpropertyconfig.markdown#deltathresholdreal-plasma)| | |
-| |[ DeltaThresholdReal2](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netpropertyconfig.markdown#deltathresholdreal2-plasma)| | |
-| |[ DeltaThresholdReal3](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netpropertyconfig.markdown#deltathresholdreal3-plasma)| | |
-| |[ DeltaThresholdReal4](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netpropertyconfig.markdown#deltathresholdreal4-plasma)| | |
-| |[ EventOnConvergenceStateChange](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netpropertyconfig.markdown#eventonconvergencestatec)| | |
-| |[ ExtrapolationLimit](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netpropertyconfig.markdown#extrapolationlimit-plasma)| | |
-| |[ InterpolationCurve](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netpropertyconfig.markdown#interpolationcurve-plasma)| | |
-| |[ QuantizationRangeMaxDoubleInteger](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netpropertyconfig.markdown#quantizationrangemaxdoub)| | |
-| |[ QuantizationRangeMaxDoubleReal](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netpropertyconfig.markdown#quantizationrangemaxdoub)| | |
-| |[ QuantizationRangeMaxInteger](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netpropertyconfig.markdown#quantizationrangemaxinte)| | |
-| |[ QuantizationRangeMaxInteger2](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netpropertyconfig.markdown#quantizationrangemaxinte)| | |
-| |[ QuantizationRangeMaxInteger3](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netpropertyconfig.markdown#quantizationrangemaxinte)| | |
-| |[ QuantizationRangeMaxInteger4](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netpropertyconfig.markdown#quantizationrangemaxinte)| | |
-| |[ QuantizationRangeMaxQuaternion](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netpropertyconfig.markdown#quantizationrangemaxquat)| | |
-| |[ QuantizationRangeMaxReal](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netpropertyconfig.markdown#quantizationrangemaxreal)| | |
-| |[ QuantizationRangeMaxReal2](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netpropertyconfig.markdown#quantizationrangemaxreal)| | |
-| |[ QuantizationRangeMaxReal3](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netpropertyconfig.markdown#quantizationrangemaxreal)| | |
-| |[ QuantizationRangeMaxReal4](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netpropertyconfig.markdown#quantizationrangemaxreal)| | |
-| |[ QuantizationRangeMinDoubleInteger](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netpropertyconfig.markdown#quantizationrangemindoub)| | |
-| |[ QuantizationRangeMinDoubleReal](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netpropertyconfig.markdown#quantizationrangemindoub)| | |
-| |[ QuantizationRangeMinInteger](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netpropertyconfig.markdown#quantizationrangemininte)| | |
-| |[ QuantizationRangeMinInteger2](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netpropertyconfig.markdown#quantizationrangemininte)| | |
-| |[ QuantizationRangeMinInteger3](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netpropertyconfig.markdown#quantizationrangemininte)| | |
-| |[ QuantizationRangeMinInteger4](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netpropertyconfig.markdown#quantizationrangemininte)| | |
-| |[ QuantizationRangeMinQuaternion](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netpropertyconfig.markdown#quantizationrangeminquat)| | |
-| |[ QuantizationRangeMinReal](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netpropertyconfig.markdown#quantizationrangeminreal)| | |
-| |[ QuantizationRangeMinReal2](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netpropertyconfig.markdown#quantizationrangeminreal)| | |
-| |[ QuantizationRangeMinReal3](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netpropertyconfig.markdown#quantizationrangeminreal)| | |
-| |[ QuantizationRangeMinReal4](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netpropertyconfig.markdown#quantizationrangeminreal)| | |
-| |[ RestingConvergenceDuration](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netpropertyconfig.markdown#restingconvergencedurati)| | |
-| |[ SampleTimeOffset](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netpropertyconfig.markdown#sampletimeoffset-plasma-en)| | |
-| |[ SerializationMode](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netpropertyconfig.markdown#serializationmode-plasma-e)| | |
-| |[ SnapThresholdDoubleInteger](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netpropertyconfig.markdown#snapthresholddoubleinteg)| | |
-| |[ SnapThresholdDoubleReal](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netpropertyconfig.markdown#snapthresholddoublereal)| | |
-| |[ SnapThresholdInteger](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netpropertyconfig.markdown#snapthresholdinteger-zer)| | |
-| |[ SnapThresholdInteger2](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netpropertyconfig.markdown#snapthresholdinteger2-ze)| | |
-| |[ SnapThresholdInteger3](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netpropertyconfig.markdown#snapthresholdinteger3-ze)| | |
-| |[ SnapThresholdInteger4](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netpropertyconfig.markdown#snapthresholdinteger4-ze)| | |
-| |[ SnapThresholdQuaternion](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netpropertyconfig.markdown#snapthresholdquaternion)| | |
-| |[ SnapThresholdReal](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netpropertyconfig.markdown#snapthresholdreal-plasma-e)| | |
-| |[ SnapThresholdReal2](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netpropertyconfig.markdown#snapthresholdreal2-plasma)| | |
-| |[ SnapThresholdReal3](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netpropertyconfig.markdown#snapthresholdreal3-plasma)| | |
-| |[ SnapThresholdReal4](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netpropertyconfig.markdown#snapthresholdreal4-plasma)| | |
-| |[ UseConvergence](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netpropertyconfig.markdown#useconvergence-plasma-engi)| | |
-| |[ UseDeltaThreshold](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netpropertyconfig.markdown#usedeltathreshold-plasma-e)| | |
-| |[ UseHalfFloats](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netpropertyconfig.markdown#usehalffloats-plasma-engin)| | |
-| |[ UseInterpolation](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netpropertyconfig.markdown#useinterpolation-plasma-en)| | |
-| |[ UseQuantization](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netpropertyconfig.markdown#usequantization-plasma-eng)| | |
+| |[ ActiveConvergenceWeight](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/netpropertyconfig.markdown#activeconvergenceweight)|[dataresource](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/dataresource.markdown)| |
+| |[ BasicNetType](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/netpropertyconfig.markdown#basicnettype-plasma-engine)| | |
+| |[ ConvergenceInterval](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/netpropertyconfig.markdown#convergenceinterval-plasma)| | |
+| |[ DeltaThresholdDoubleInteger](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/netpropertyconfig.markdown#deltathresholddoubleinte)| | |
+| |[ DeltaThresholdDoubleReal](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/netpropertyconfig.markdown#deltathresholddoublereal)| | |
+| |[ DeltaThresholdInteger](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/netpropertyconfig.markdown#deltathresholdinteger-ze)| | |
+| |[ DeltaThresholdInteger2](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/netpropertyconfig.markdown#deltathresholdinteger2-z)| | |
+| |[ DeltaThresholdInteger3](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/netpropertyconfig.markdown#deltathresholdinteger3-z)| | |
+| |[ DeltaThresholdInteger4](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/netpropertyconfig.markdown#deltathresholdinteger4-z)| | |
+| |[ DeltaThresholdQuaternion](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/netpropertyconfig.markdown#deltathresholdquaternion)| | |
+| |[ DeltaThresholdReal](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/netpropertyconfig.markdown#deltathresholdreal-plasma)| | |
+| |[ DeltaThresholdReal2](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/netpropertyconfig.markdown#deltathresholdreal2-plasma)| | |
+| |[ DeltaThresholdReal3](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/netpropertyconfig.markdown#deltathresholdreal3-plasma)| | |
+| |[ DeltaThresholdReal4](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/netpropertyconfig.markdown#deltathresholdreal4-plasma)| | |
+| |[ EventOnConvergenceStateChange](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/netpropertyconfig.markdown#eventonconvergencestatec)| | |
+| |[ ExtrapolationLimit](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/netpropertyconfig.markdown#extrapolationlimit-plasma)| | |
+| |[ InterpolationCurve](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/netpropertyconfig.markdown#interpolationcurve-plasma)| | |
+| |[ QuantizationRangeMaxDoubleInteger](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/netpropertyconfig.markdown#quantizationrangemaxdoub)| | |
+| |[ QuantizationRangeMaxDoubleReal](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/netpropertyconfig.markdown#quantizationrangemaxdoub)| | |
+| |[ QuantizationRangeMaxInteger](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/netpropertyconfig.markdown#quantizationrangemaxinte)| | |
+| |[ QuantizationRangeMaxInteger2](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/netpropertyconfig.markdown#quantizationrangemaxinte)| | |
+| |[ QuantizationRangeMaxInteger3](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/netpropertyconfig.markdown#quantizationrangemaxinte)| | |
+| |[ QuantizationRangeMaxInteger4](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/netpropertyconfig.markdown#quantizationrangemaxinte)| | |
+| |[ QuantizationRangeMaxQuaternion](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/netpropertyconfig.markdown#quantizationrangemaxquat)| | |
+| |[ QuantizationRangeMaxReal](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/netpropertyconfig.markdown#quantizationrangemaxreal)| | |
+| |[ QuantizationRangeMaxReal2](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/netpropertyconfig.markdown#quantizationrangemaxreal)| | |
+| |[ QuantizationRangeMaxReal3](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/netpropertyconfig.markdown#quantizationrangemaxreal)| | |
+| |[ QuantizationRangeMaxReal4](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/netpropertyconfig.markdown#quantizationrangemaxreal)| | |
+| |[ QuantizationRangeMinDoubleInteger](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/netpropertyconfig.markdown#quantizationrangemindoub)| | |
+| |[ QuantizationRangeMinDoubleReal](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/netpropertyconfig.markdown#quantizationrangemindoub)| | |
+| |[ QuantizationRangeMinInteger](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/netpropertyconfig.markdown#quantizationrangemininte)| | |
+| |[ QuantizationRangeMinInteger2](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/netpropertyconfig.markdown#quantizationrangemininte)| | |
+| |[ QuantizationRangeMinInteger3](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/netpropertyconfig.markdown#quantizationrangemininte)| | |
+| |[ QuantizationRangeMinInteger4](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/netpropertyconfig.markdown#quantizationrangemininte)| | |
+| |[ QuantizationRangeMinQuaternion](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/netpropertyconfig.markdown#quantizationrangeminquat)| | |
+| |[ QuantizationRangeMinReal](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/netpropertyconfig.markdown#quantizationrangeminreal)| | |
+| |[ QuantizationRangeMinReal2](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/netpropertyconfig.markdown#quantizationrangeminreal)| | |
+| |[ QuantizationRangeMinReal3](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/netpropertyconfig.markdown#quantizationrangeminreal)| | |
+| |[ QuantizationRangeMinReal4](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/netpropertyconfig.markdown#quantizationrangeminreal)| | |
+| |[ RestingConvergenceDuration](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/netpropertyconfig.markdown#restingconvergencedurati)| | |
+| |[ SampleTimeOffset](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/netpropertyconfig.markdown#sampletimeoffset-plasma-en)| | |
+| |[ SerializationMode](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/netpropertyconfig.markdown#serializationmode-plasma-e)| | |
+| |[ SnapThresholdDoubleInteger](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/netpropertyconfig.markdown#snapthresholddoubleinteg)| | |
+| |[ SnapThresholdDoubleReal](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/netpropertyconfig.markdown#snapthresholddoublereal)| | |
+| |[ SnapThresholdInteger](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/netpropertyconfig.markdown#snapthresholdinteger-zer)| | |
+| |[ SnapThresholdInteger2](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/netpropertyconfig.markdown#snapthresholdinteger2-ze)| | |
+| |[ SnapThresholdInteger3](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/netpropertyconfig.markdown#snapthresholdinteger3-ze)| | |
+| |[ SnapThresholdInteger4](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/netpropertyconfig.markdown#snapthresholdinteger4-ze)| | |
+| |[ SnapThresholdQuaternion](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/netpropertyconfig.markdown#snapthresholdquaternion)| | |
+| |[ SnapThresholdReal](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/netpropertyconfig.markdown#snapthresholdreal-plasma-e)| | |
+| |[ SnapThresholdReal2](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/netpropertyconfig.markdown#snapthresholdreal2-plasma)| | |
+| |[ SnapThresholdReal3](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/netpropertyconfig.markdown#snapthresholdreal3-plasma)| | |
+| |[ SnapThresholdReal4](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/netpropertyconfig.markdown#snapthresholdreal4-plasma)| | |
+| |[ UseConvergence](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/netpropertyconfig.markdown#useconvergence-plasma-engi)| | |
+| |[ UseDeltaThreshold](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/netpropertyconfig.markdown#usedeltathreshold-plasma-e)| | |
+| |[ UseHalfFloats](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/netpropertyconfig.markdown#usehalffloats-plasma-engin)| | |
+| |[ UseInterpolation](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/netpropertyconfig.markdown#useinterpolation-plasma-en)| | |
+| |[ UseQuantization](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/netpropertyconfig.markdown#usequantization-plasma-eng)| | |
 
 
  #  Properties
 
 
 ---  
- #  ActiveConvergenceWeight : [real](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real.markdown)
+ #  ActiveConvergenceWeight : [real](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.markdown)
 
 > Active convergence weight applied every convergence interval.
 > ``` lang=cpp, name=Lightning
@@ -78,7 +78,7 @@
 
 
 ---  
- #  BasicNetType : [BasicNetType](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/enum_reference.markdown#basicnettype)
+ #  BasicNetType : [BasicNetType](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/enum_reference.markdown#basicnettype)
 
 > Target basic property type.
 > ``` lang=cpp, name=Lightning
@@ -86,7 +86,7 @@
 
 
 ---  
- #  ConvergenceInterval : [integer](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/integer.markdown)
+ #  ConvergenceInterval : [integer](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer.markdown)
 
 > Convergence interval.
 > ``` lang=cpp, name=Lightning
@@ -94,7 +94,7 @@
 
 
 ---  
- #  DeltaThresholdDoubleInteger : [doubleinteger](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/doubleinteger.markdown)
+ #  DeltaThresholdDoubleInteger : [doubleinteger](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/doubleinteger.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -102,7 +102,7 @@
 
 
 ---  
- #  DeltaThresholdDoubleReal : [doublereal](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/doublereal.markdown)
+ #  DeltaThresholdDoubleReal : [doublereal](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/doublereal.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -110,7 +110,7 @@
 
 
 ---  
- #  DeltaThresholdInteger : [integer](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/integer.markdown)
+ #  DeltaThresholdInteger : [integer](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -118,7 +118,7 @@
 
 
 ---  
- #  DeltaThresholdInteger2 : [integer2](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/integer2.markdown)
+ #  DeltaThresholdInteger2 : [integer2](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer2.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -126,7 +126,7 @@
 
 
 ---  
- #  DeltaThresholdInteger3 : [integer3](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/integer3.markdown)
+ #  DeltaThresholdInteger3 : [integer3](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer3.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -134,7 +134,7 @@
 
 
 ---  
- #  DeltaThresholdInteger4 : [integer4](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/integer4.markdown)
+ #  DeltaThresholdInteger4 : [integer4](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer4.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -142,7 +142,7 @@
 
 
 ---  
- #  DeltaThresholdQuaternion : [quaternion](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/quaternion.markdown)
+ #  DeltaThresholdQuaternion : [quaternion](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/quaternion.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -150,7 +150,7 @@
 
 
 ---  
- #  DeltaThresholdReal : [real](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real.markdown)
+ #  DeltaThresholdReal : [real](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -158,7 +158,7 @@
 
 
 ---  
- #  DeltaThresholdReal2 : [real2](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real2.markdown)
+ #  DeltaThresholdReal2 : [real2](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real2.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -166,7 +166,7 @@
 
 
 ---  
- #  DeltaThresholdReal3 : [real3](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real3.markdown)
+ #  DeltaThresholdReal3 : [real3](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real3.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -174,7 +174,7 @@
 
 
 ---  
- #  DeltaThresholdReal4 : [real4](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real4.markdown)
+ #  DeltaThresholdReal4 : [real4](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real4.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -182,7 +182,7 @@
 
 
 ---  
- #  EventOnConvergenceStateChange : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/boolean.markdown)
+ #  EventOnConvergenceStateChange : [boolean](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.markdown)
 
 > Event on convergence state change?
 > ``` lang=cpp, name=Lightning
@@ -190,7 +190,7 @@
 
 
 ---  
- #  ExtrapolationLimit : [real](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real.markdown)
+ #  ExtrapolationLimit : [real](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.markdown)
 
 > Extrapolation time limit.
 > ``` lang=cpp, name=Lightning
@@ -198,7 +198,7 @@
 
 
 ---  
- #  InterpolationCurve : [CurveType](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/enum_reference.markdown#curvetype)
+ #  InterpolationCurve : [CurveType](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/enum_reference.markdown#curvetype)
 
 > Interpolation curve type.
 > ``` lang=cpp, name=Lightning
@@ -206,7 +206,7 @@
 
 
 ---  
- #  QuantizationRangeMaxDoubleInteger : [doubleinteger](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/doubleinteger.markdown)
+ #  QuantizationRangeMaxDoubleInteger : [doubleinteger](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/doubleinteger.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -214,7 +214,7 @@
 
 
 ---  
- #  QuantizationRangeMaxDoubleReal : [doublereal](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/doublereal.markdown)
+ #  QuantizationRangeMaxDoubleReal : [doublereal](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/doublereal.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -222,7 +222,7 @@
 
 
 ---  
- #  QuantizationRangeMaxInteger : [integer](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/integer.markdown)
+ #  QuantizationRangeMaxInteger : [integer](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -230,7 +230,7 @@
 
 
 ---  
- #  QuantizationRangeMaxInteger2 : [integer2](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/integer2.markdown)
+ #  QuantizationRangeMaxInteger2 : [integer2](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer2.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -238,7 +238,7 @@
 
 
 ---  
- #  QuantizationRangeMaxInteger3 : [integer3](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/integer3.markdown)
+ #  QuantizationRangeMaxInteger3 : [integer3](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer3.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -246,7 +246,7 @@
 
 
 ---  
- #  QuantizationRangeMaxInteger4 : [integer4](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/integer4.markdown)
+ #  QuantizationRangeMaxInteger4 : [integer4](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer4.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -254,7 +254,7 @@
 
 
 ---  
- #  QuantizationRangeMaxQuaternion : [quaternion](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/quaternion.markdown)
+ #  QuantizationRangeMaxQuaternion : [quaternion](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/quaternion.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -262,7 +262,7 @@
 
 
 ---  
- #  QuantizationRangeMaxReal : [real](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real.markdown)
+ #  QuantizationRangeMaxReal : [real](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -270,7 +270,7 @@
 
 
 ---  
- #  QuantizationRangeMaxReal2 : [real2](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real2.markdown)
+ #  QuantizationRangeMaxReal2 : [real2](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real2.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -278,7 +278,7 @@
 
 
 ---  
- #  QuantizationRangeMaxReal3 : [real3](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real3.markdown)
+ #  QuantizationRangeMaxReal3 : [real3](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real3.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -286,7 +286,7 @@
 
 
 ---  
- #  QuantizationRangeMaxReal4 : [real4](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real4.markdown)
+ #  QuantizationRangeMaxReal4 : [real4](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real4.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -294,7 +294,7 @@
 
 
 ---  
- #  QuantizationRangeMinDoubleInteger : [doubleinteger](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/doubleinteger.markdown)
+ #  QuantizationRangeMinDoubleInteger : [doubleinteger](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/doubleinteger.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -302,7 +302,7 @@
 
 
 ---  
- #  QuantizationRangeMinDoubleReal : [doublereal](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/doublereal.markdown)
+ #  QuantizationRangeMinDoubleReal : [doublereal](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/doublereal.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -310,7 +310,7 @@
 
 
 ---  
- #  QuantizationRangeMinInteger : [integer](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/integer.markdown)
+ #  QuantizationRangeMinInteger : [integer](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -318,7 +318,7 @@
 
 
 ---  
- #  QuantizationRangeMinInteger2 : [integer2](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/integer2.markdown)
+ #  QuantizationRangeMinInteger2 : [integer2](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer2.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -326,7 +326,7 @@
 
 
 ---  
- #  QuantizationRangeMinInteger3 : [integer3](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/integer3.markdown)
+ #  QuantizationRangeMinInteger3 : [integer3](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer3.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -334,7 +334,7 @@
 
 
 ---  
- #  QuantizationRangeMinInteger4 : [integer4](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/integer4.markdown)
+ #  QuantizationRangeMinInteger4 : [integer4](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer4.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -342,7 +342,7 @@
 
 
 ---  
- #  QuantizationRangeMinQuaternion : [quaternion](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/quaternion.markdown)
+ #  QuantizationRangeMinQuaternion : [quaternion](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/quaternion.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -350,7 +350,7 @@
 
 
 ---  
- #  QuantizationRangeMinReal : [real](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real.markdown)
+ #  QuantizationRangeMinReal : [real](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -358,7 +358,7 @@
 
 
 ---  
- #  QuantizationRangeMinReal2 : [real2](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real2.markdown)
+ #  QuantizationRangeMinReal2 : [real2](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real2.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -366,7 +366,7 @@
 
 
 ---  
- #  QuantizationRangeMinReal3 : [real3](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real3.markdown)
+ #  QuantizationRangeMinReal3 : [real3](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real3.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -374,7 +374,7 @@
 
 
 ---  
- #  QuantizationRangeMinReal4 : [real4](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real4.markdown)
+ #  QuantizationRangeMinReal4 : [real4](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real4.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -382,7 +382,7 @@
 
 
 ---  
- #  RestingConvergenceDuration : [real](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real.markdown)
+ #  RestingConvergenceDuration : [real](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.markdown)
 
 > Resting convergence duration handled every convergence interval.
 > ``` lang=cpp, name=Lightning
@@ -390,7 +390,7 @@
 
 
 ---  
- #  SampleTimeOffset : [real](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real.markdown)
+ #  SampleTimeOffset : [real](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.markdown)
 
 > Sample time offset from now.
 > ``` lang=cpp, name=Lightning
@@ -398,7 +398,7 @@
 
 
 ---  
- #  SerializationMode : [SerializationMode](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/enum_reference.markdown#serializationmode)
+ #  SerializationMode : [SerializationMode](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/enum_reference.markdown#serializationmode)
 
 > Serialization mode.
 > ``` lang=cpp, name=Lightning
@@ -406,7 +406,7 @@
 
 
 ---  
- #  SnapThresholdDoubleInteger : [doubleinteger](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/doubleinteger.markdown)
+ #  SnapThresholdDoubleInteger : [doubleinteger](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/doubleinteger.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -414,7 +414,7 @@
 
 
 ---  
- #  SnapThresholdDoubleReal : [doublereal](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/doublereal.markdown)
+ #  SnapThresholdDoubleReal : [doublereal](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/doublereal.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -422,7 +422,7 @@
 
 
 ---  
- #  SnapThresholdInteger : [integer](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/integer.markdown)
+ #  SnapThresholdInteger : [integer](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -430,7 +430,7 @@
 
 
 ---  
- #  SnapThresholdInteger2 : [integer2](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/integer2.markdown)
+ #  SnapThresholdInteger2 : [integer2](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer2.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -438,7 +438,7 @@
 
 
 ---  
- #  SnapThresholdInteger3 : [integer3](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/integer3.markdown)
+ #  SnapThresholdInteger3 : [integer3](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer3.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -446,7 +446,7 @@
 
 
 ---  
- #  SnapThresholdInteger4 : [integer4](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/integer4.markdown)
+ #  SnapThresholdInteger4 : [integer4](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer4.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -454,7 +454,7 @@
 
 
 ---  
- #  SnapThresholdQuaternion : [quaternion](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/quaternion.markdown)
+ #  SnapThresholdQuaternion : [quaternion](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/quaternion.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -462,7 +462,7 @@
 
 
 ---  
- #  SnapThresholdReal : [real](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real.markdown)
+ #  SnapThresholdReal : [real](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -470,7 +470,7 @@
 
 
 ---  
- #  SnapThresholdReal2 : [real2](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real2.markdown)
+ #  SnapThresholdReal2 : [real2](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real2.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -478,7 +478,7 @@
 
 
 ---  
- #  SnapThresholdReal3 : [real3](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real3.markdown)
+ #  SnapThresholdReal3 : [real3](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real3.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -486,7 +486,7 @@
 
 
 ---  
- #  SnapThresholdReal4 : [real4](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real4.markdown)
+ #  SnapThresholdReal4 : [real4](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real4.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -494,7 +494,7 @@
 
 
 ---  
- #  UseConvergence : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/boolean.markdown)
+ #  UseConvergence : [boolean](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.markdown)
 
 > Use convergence?
 > ``` lang=cpp, name=Lightning
@@ -502,7 +502,7 @@
 
 
 ---  
- #  UseDeltaThreshold : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/boolean.markdown)
+ #  UseDeltaThreshold : [boolean](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.markdown)
 
 > Use delta threshold?
 > ``` lang=cpp, name=Lightning
@@ -510,7 +510,7 @@
 
 
 ---  
- #  UseHalfFloats : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/boolean.markdown)
+ #  UseHalfFloats : [boolean](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.markdown)
 
 > Use half floats?
 > ``` lang=cpp, name=Lightning
@@ -518,7 +518,7 @@
 
 
 ---  
- #  UseInterpolation : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/boolean.markdown)
+ #  UseInterpolation : [boolean](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.markdown)
 
 > Use interpolation?
 > ``` lang=cpp, name=Lightning
@@ -526,7 +526,7 @@
 
 
 ---  
- #  UseQuantization : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/boolean.markdown)
+ #  UseQuantization : [boolean](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.markdown)
 
 > Use quantization?
 > ``` lang=cpp, name=Lightning

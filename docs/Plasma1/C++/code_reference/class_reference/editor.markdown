@@ -2,33 +2,33 @@
 
 |Methods|Properties|Base Classes|Derived Classes|
 |---|---|---|---|
-|[ AddResource](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/editor.markdown#addresource-void)|[ Actions](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/editor.markdown#actions-plasma-engine-docu)|[multidock](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/multidock.markdown)|[editormain](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/editormain.markdown)|
-|[ AddResourceType](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/editor.markdown#addresourcetype-void)|[ EditGameSession](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/editor.markdown#editgamesession-plasma-eng)| | |
-|[ CreateDockableWindow](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/editor.markdown#createdockablewindow-voi)|[ EditLevel](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/editor.markdown#editlevel-plasma-engine-do)| | |
-|[ DisplayGameSession](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/editor.markdown#displaygamesession-void)|[ EditSpace](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/editor.markdown#editspace-plasma-engine-do)| | |
-|[ EditGameSpaces](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/editor.markdown#editgamespaces-void)|[ OperationQueue](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/editor.markdown#operationqueue-plasma-engi)| | |
-|[ EditResource](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/editor.markdown#editresource-void)|[ ProjectCog](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/editor.markdown#projectcog-plasma-engine-d)| | |
-|[ ExecuteCommand](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/editor.markdown#executecommand-void)|[ Selection](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/editor.markdown#selection-plasma-engine-do)| | |
-|[ PauseGame](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/editor.markdown#pausegame-void)| | | |
-|[ PlayGame](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/editor.markdown#playgame-plasma-engine-doc)| | | |
-|[ PlayNewGame](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/editor.markdown#playnewgame-plasma-engine)| | | |
-|[ PlaySingleGame](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/editor.markdown#playsinglegame-plasma-engi)| | | |
-|[ SelectPrimary](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/editor.markdown#selectprimary-void)| | | |
-|[ SelectTool](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/editor.markdown#selecttool-void)| | | |
-|[ SetFocus](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/editor.markdown#setfocus-void)| | | |
-|[ SetGamePaused](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/editor.markdown#setgamepaused-void)| | | |
-|[ SetMainPropertyViewObject](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/editor.markdown#setmainpropertyviewobjec)| | | |
-|[ StepGame](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/editor.markdown#stepgame-void)| | | |
-|[ StopGame](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/editor.markdown#stopgame-void)| | | |
-|[ ToggleGamePaused](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/editor.markdown#togglegamepaused-void)| | | |
-|[ ZoomOnGame](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/editor.markdown#zoomongame-void)| | | |
+|[ AddResource](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/editor.markdown#addresource-void)|[ Actions](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/editor.markdown#actions-plasma-engine-docu)|[multidock](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/multidock.markdown)|[editormain](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/editormain.markdown)|
+|[ AddResourceType](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/editor.markdown#addresourcetype-void)|[ EditGameSession](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/editor.markdown#editgamesession-plasma-eng)| | |
+|[ CreateDockableWindow](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/editor.markdown#createdockablewindow-voi)|[ EditLevel](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/editor.markdown#editlevel-plasma-engine-do)| | |
+|[ DisplayGameSession](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/editor.markdown#displaygamesession-void)|[ EditSpace](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/editor.markdown#editspace-plasma-engine-do)| | |
+|[ EditGameSpaces](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/editor.markdown#editgamespaces-void)|[ OperationQueue](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/editor.markdown#operationqueue-plasma-engi)| | |
+|[ EditResource](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/editor.markdown#editresource-void)|[ ProjectCog](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/editor.markdown#projectcog-plasma-engine-d)| | |
+|[ ExecuteCommand](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/editor.markdown#executecommand-void)|[ Selection](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/editor.markdown#selection-plasma-engine-do)| | |
+|[ PauseGame](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/editor.markdown#pausegame-void)| | | |
+|[ PlayGame](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/editor.markdown#playgame-plasma-engine-doc)| | | |
+|[ PlayNewGame](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/editor.markdown#playnewgame-plasma-engine)| | | |
+|[ PlaySingleGame](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/editor.markdown#playsinglegame-plasma-engi)| | | |
+|[ SelectPrimary](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/editor.markdown#selectprimary-void)| | | |
+|[ SelectTool](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/editor.markdown#selecttool-void)| | | |
+|[ SetFocus](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/editor.markdown#setfocus-void)| | | |
+|[ SetGamePaused](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/editor.markdown#setgamepaused-void)| | | |
+|[ SetMainPropertyViewObject](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/editor.markdown#setmainpropertyviewobjec)| | | |
+|[ StepGame](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/editor.markdown#stepgame-void)| | | |
+|[ StopGame](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/editor.markdown#stopgame-void)| | | |
+|[ ToggleGamePaused](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/editor.markdown#togglegamepaused-void)| | | |
+|[ ZoomOnGame](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/editor.markdown#zoomongame-void)| | | |
 
 
  #  Properties
 
 
 ---  
- #  Actions : [actions](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/actions.markdown)
+ #  Actions : [actions](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/actions.markdown)
 
  `read-only`
 
@@ -38,7 +38,7 @@
 
 
 ---  
- #  EditGameSession : [gamesession](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/gamesession.markdown)
+ #  EditGameSession : [gamesession](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/gamesession.markdown)
 
  `read-only`
 
@@ -48,7 +48,7 @@
 
 
 ---  
- #  EditLevel : [level](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/level.markdown)
+ #  EditLevel : [level](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/level.markdown)
 
  `read-only`
 
@@ -58,7 +58,7 @@
 
 
 ---  
- #  EditSpace : [space](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/space.markdown)
+ #  EditSpace : [space](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/space.markdown)
 
  `read-only`
 
@@ -68,7 +68,7 @@
 
 
 ---  
- #  OperationQueue : [operationqueue](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/operationqueue.markdown)
+ #  OperationQueue : [operationqueue](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/operationqueue.markdown)
 
  `read-only`
 
@@ -78,7 +78,7 @@
 
 
 ---  
- #  ProjectCog : [cog](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/cog.markdown)
+ #  ProjectCog : [cog](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/cog.markdown)
 
  `read-only`
 
@@ -88,7 +88,7 @@
 
 
 ---  
- #  Selection : [metaselection](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/metaselection.markdown)
+ #  Selection : [metaselection](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/metaselection.markdown)
 
  `read-only`
 
@@ -118,8 +118,8 @@
 > 
 > |Name|Type|Description|
 > |---|---|---|
-> |p0|[boundtype](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/boundtype.markdown)| |
-> |p1|[string](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/string.markdown)| |
+> |p0|[boundtype](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boundtype.markdown)| |
+> |p1|[string](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/string.markdown)| |
 > ``` lang=cpp, name=Lightning
 > function AddResourceType(p0 : BoundType, p1 : String)
 > ``` 
@@ -131,11 +131,11 @@
 > 
 > |Name|Type|Description|
 > |---|---|---|
-> |p0|[string](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/string.markdown)| |
-> |p1|[cameraviewport](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/cameraviewport.markdown)| |
-> |p2|[real2](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real2.markdown)| |
-> |p3|[boolean](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/boolean.markdown)| |
-> |p4|[DockArea](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/enum_reference.markdown#dockarea)| |
+> |p0|[string](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/string.markdown)| |
+> |p1|[cameraviewport](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/cameraviewport.markdown)| |
+> |p2|[real2](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real2.markdown)| |
+> |p3|[boolean](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.markdown)| |
+> |p4|[DockArea](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/enum_reference.markdown#dockarea)| |
 > ``` lang=cpp, name=Lightning
 > function CreateDockableWindow(p0 : String, p1 : CameraViewport, p2 : Real2, p3 : Boolean, p4 : DockArea)
 > ``` 
@@ -147,8 +147,8 @@
 > 
 > |Name|Type|Description|
 > |---|---|---|
-> |p0|[string](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/string.markdown)| |
-> |p1|[gamesession](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/gamesession.markdown)| |
+> |p0|[string](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/string.markdown)| |
+> |p1|[gamesession](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/gamesession.markdown)| |
 > ``` lang=cpp, name=Lightning
 > function DisplayGameSession(p0 : String, p1 : GameSession)
 > ``` 
@@ -183,7 +183,7 @@
 > 
 > |Name|Type|Description|
 > |---|---|---|
-> |p0|[string](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/string.markdown)| |
+> |p0|[string](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/string.markdown)| |
 > ``` lang=cpp, name=Lightning
 > function ExecuteCommand(p0 : String)
 > ``` 
@@ -201,21 +201,21 @@
 
 
 ---  
- #  PlayGame : [gamesession](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/gamesession.markdown)
+ #  PlayGame : [gamesession](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/gamesession.markdown)
 
 > 
 > |Name|Type|Description|
 > |---|---|---|
-> |p0|[PlayGameOptions](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/enum_reference.markdown#playgameoptions)| |
-> |p1|[boolean](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/boolean.markdown)| |
-> |p2|[boolean](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/boolean.markdown)| |
+> |p0|[PlayGameOptions](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/enum_reference.markdown#playgameoptions)| |
+> |p1|[boolean](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.markdown)| |
+> |p2|[boolean](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.markdown)| |
 > ``` lang=cpp, name=Lightning
 > function PlayGame(p0 : PlayGameOptions, p1 : Boolean, p2 : Boolean) : GameSession
 > ``` 
 
 
 ---  
- #  PlayNewGame : [gamesession](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/gamesession.markdown)
+ #  PlayNewGame : [gamesession](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/gamesession.markdown)
 
 > 
 > |Name|Type|Description|
@@ -226,7 +226,7 @@
 
 
 ---  
- #  PlaySingleGame : [gamesession](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/gamesession.markdown)
+ #  PlaySingleGame : [gamesession](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/gamesession.markdown)
 
 > 
 > |Name|Type|Description|
@@ -242,7 +242,7 @@
 > 
 > |Name|Type|Description|
 > |---|---|---|
-> |p0|[anyhandle](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/anyhandle.markdown)| |
+> |p0|[anyhandle](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/anyhandle.markdown)| |
 > ``` lang=cpp, name=Lightning
 > function SelectPrimary(p0 : AnyHandle)
 > ``` 
@@ -254,7 +254,7 @@
 > 
 > |Name|Type|Description|
 > |---|---|---|
-> |p0|[string](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/string.markdown)| |
+> |p0|[string](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/string.markdown)| |
 > ``` lang=cpp, name=Lightning
 > function SelectTool(p0 : String)
 > ``` 
@@ -266,7 +266,7 @@
 > 
 > |Name|Type|Description|
 > |---|---|---|
-> |p0|[space](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/space.markdown)| |
+> |p0|[space](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/space.markdown)| |
 > ``` lang=cpp, name=Lightning
 > function SetFocus(p0 : Space)
 > ``` 
@@ -278,7 +278,7 @@
 > 
 > |Name|Type|Description|
 > |---|---|---|
-> |p0|[boolean](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/boolean.markdown)| |
+> |p0|[boolean](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.markdown)| |
 > ``` lang=cpp, name=Lightning
 > function SetGamePaused(p0 : Boolean)
 > ``` 
@@ -335,7 +335,7 @@
 > 
 > |Name|Type|Description|
 > |---|---|---|
-> |p0|[gamesession](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/gamesession.markdown)| |
+> |p0|[gamesession](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/gamesession.markdown)| |
 > ``` lang=cpp, name=Lightning
 > function ZoomOnGame(p0 : GameSession)
 > ``` 

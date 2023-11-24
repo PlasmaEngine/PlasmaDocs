@@ -6,9 +6,9 @@
 
 |Methods|Properties|Base Classes|Derived Classes|
 |---|---|---|---|
-|[ Constructor](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/convexmesh.markdown#convexmesh-void)| |[genericphysicsmesh](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/genericphysicsmesh.markdown)| |
-|[ CreateRuntime](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/convexmesh.markdown#createruntime-plasma-engin)| | | |
-|[ RuntimeClone](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/convexmesh.markdown#runtimeclone-plasma-engine)| | | |
+|[ Constructor](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/convexmesh.markdown#convexmesh-void)| |[genericphysicsmesh](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/genericphysicsmesh.markdown)| |
+|[ CreateRuntime](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/convexmesh.markdown#createruntime-plasma-engin)| | | |
+|[ RuntimeClone](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/convexmesh.markdown#runtimeclone-plasma-engine)| | | |
 
 
  #  Properties
@@ -32,7 +32,7 @@
 
 
 ---  
- #  CreateRuntime : [convexmesh](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/convexmesh.markdown)
+ #  CreateRuntime : [convexmesh](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/convexmesh.markdown)
 
  `static`
 
@@ -45,7 +45,7 @@
 
 
 ---  
- #  RuntimeClone : [convexmesh](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/convexmesh.markdown)
+ #  RuntimeClone : [convexmesh](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/convexmesh.markdown)
 
 > Creates a clone of this mesh for run-time modifications.
 > |Name|Type|Description|

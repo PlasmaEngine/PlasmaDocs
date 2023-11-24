@@ -6,14 +6,14 @@
 
 |Methods|Properties|Base Classes|Derived Classes|
 |---|---|---|---|
-| |[ StoredType](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/archetype.markdown#storedtype-plasma-engine-d)|Resource| |
+| |[ StoredType](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/archetype.markdown#storedtype-plasma-engine-d)|Resource| |
 
 
  #  Properties
 
 
 ---  
- #  StoredType : [boundtype](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/boundtype.markdown)
+ #  StoredType : [boundtype](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boundtype.markdown)
 
 > An Archetype can be a Cog, Space, or GameSession. It's okay for this to be a raw BoundType* because native types will never be destructed.
 > ``` lang=cpp, name=Lightning

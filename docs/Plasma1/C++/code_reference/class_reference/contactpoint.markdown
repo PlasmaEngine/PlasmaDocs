@@ -6,22 +6,22 @@
 
 |Methods|Properties|Base Classes|Derived Classes|
 |---|---|---|---|
-|[ Constructor](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/contactpoint.markdown#contactpoint-void)|[ ComplexImpulse](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/contactpoint.markdown#compleximpulse-plasma-engi)| | |
-| |[ FrictionImpulse](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/contactpoint.markdown#frictionimpulse-plasma-eng)| | |
-| |[ LocalPoint](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/contactpoint.markdown#localpoint-plasma-engine-d)| | |
-| |[ NormalImpulse](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/contactpoint.markdown#normalimpulse-plasma-engin)| | |
-| |[ OtherLocalPoint](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/contactpoint.markdown#otherlocalpoint-plasma-eng)| | |
-| |[ Penetration](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/contactpoint.markdown#penetration-plasma-engine)| | |
-| |[ RelativeVelocity](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/contactpoint.markdown#relativevelocity-plasma-en)| | |
-| |[ WorldNormalTowardsOther](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/contactpoint.markdown#worldnormaltowardsother)| | |
-| |[ WorldPoint](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/contactpoint.markdown#worldpoint-plasma-engine-d)| | |
+|[ Constructor](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/contactpoint.markdown#contactpoint-void)|[ ComplexImpulse](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/contactpoint.markdown#compleximpulse-plasma-engi)| | |
+| |[ FrictionImpulse](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/contactpoint.markdown#frictionimpulse-plasma-eng)| | |
+| |[ LocalPoint](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/contactpoint.markdown#localpoint-plasma-engine-d)| | |
+| |[ NormalImpulse](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/contactpoint.markdown#normalimpulse-plasma-engin)| | |
+| |[ OtherLocalPoint](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/contactpoint.markdown#otherlocalpoint-plasma-eng)| | |
+| |[ Penetration](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/contactpoint.markdown#penetration-plasma-engine)| | |
+| |[ RelativeVelocity](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/contactpoint.markdown#relativevelocity-plasma-en)| | |
+| |[ WorldNormalTowardsOther](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/contactpoint.markdown#worldnormaltowardsother)| | |
+| |[ WorldPoint](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/contactpoint.markdown#worldpoint-plasma-engine-d)| | |
 
 
  #  Properties
 
 
 ---  
- #  ComplexImpulse : [real3](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real3.markdown)
+ #  ComplexImpulse : [real3](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real3.markdown)
 
  `read-only`
 
@@ -31,7 +31,7 @@
 
 
 ---  
- #  FrictionImpulse : [real](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real.markdown)
+ #  FrictionImpulse : [real](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.markdown)
 
  `read-only`
 
@@ -41,7 +41,7 @@
 
 
 ---  
- #  LocalPoint : [real3](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real3.markdown)
+ #  LocalPoint : [real3](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real3.markdown)
 
  `read-only`
 
@@ -51,7 +51,7 @@
 
 
 ---  
- #  NormalImpulse : [real](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real.markdown)
+ #  NormalImpulse : [real](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.markdown)
 
  `read-only`
 
@@ -61,7 +61,7 @@
 
 
 ---  
- #  OtherLocalPoint : [real3](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real3.markdown)
+ #  OtherLocalPoint : [real3](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real3.markdown)
 
  `read-only`
 
@@ -71,7 +71,7 @@
 
 
 ---  
- #  Penetration : [real](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real.markdown)
+ #  Penetration : [real](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.markdown)
 
  `read-only`
 
@@ -81,7 +81,7 @@
 
 
 ---  
- #  RelativeVelocity : [real](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real.markdown)
+ #  RelativeVelocity : [real](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.markdown)
 
  `read-only`
 
@@ -91,7 +91,7 @@
 
 
 ---  
- #  WorldNormalTowardsOther : [real3](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real3.markdown)
+ #  WorldNormalTowardsOther : [real3](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real3.markdown)
 
  `read-only`
 
@@ -101,7 +101,7 @@
 
 
 ---  
- #  WorldPoint : [real3](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real3.markdown)
+ #  WorldPoint : [real3](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real3.markdown)
 
  `read-only`
 
@@ -135,7 +135,7 @@
 > 
 > |Name|Type|Description|
 > |---|---|---|
-> ||[contactpoint](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/contactpoint.markdown)| |
+> ||[contactpoint](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/contactpoint.markdown)| |
 > ``` lang=cpp, name=Lightning
 > function ContactPoint( : ContactPoint)
 > ``` 

@@ -10,7 +10,7 @@ var Sum : Real = 1 + 2;
 var Up : Real3 = Real3(0,1,0);
 </code></pre>
 
-`var` is the keyword used to indicate that the statement on this line declares a variable. `Greeting` is the **name** of the first variable, an identifier used to reference the [string](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/string.markdown) type value `"Hello"`. 
+`var` is the keyword used to indicate that the statement on this line declares a variable. `Greeting` is the **name** of the first variable, an identifier used to reference the [string](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/string.markdown) type value `"Hello"`. 
 
 Both `Greeting` and `Sum` follow the following format: `var` `Name` `:` `Type` `=` `"Value"``;`.
 
@@ -23,11 +23,11 @@ Both `Greeting` and `Sum` follow the following format: `var` `Name` `:` `Type` `
 | `"Value"` | Value for the variable to be initialized to. |
 | `;` | Delimiter indicating the end of the statement. |
 
-NOTE: Identifier names must be alphanumeric and may include underscores. They cannot start with a number, and no other symbols are allowed. Remember to choose identifier names that don't clash with the [Keywords](https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/Lightning/keywords.markdown) or [Lightning Base Types](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types.markdown).
+NOTE: Identifier names must be alphanumeric and may include underscores. They cannot start with a number, and no other symbols are allowed. Remember to choose identifier names that don't clash with the [Keywords](https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/Lightning/keywords.markdown) or [Lightning Base Types](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types.markdown).
 
 Depending on the context, or [Scope](https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/Lightning/variables_and_data_types.markdown#scope), the required syntax for instantiating and initializing a variable can vary.  The codeblock above will only compile if placed at the scope of a class or struct.
 
-(NOTE)**Literal Types**: Literal values are values explicitly defined by the user in script.  `1 + 2` is an example of two literal values that evaluate to the non-literal value `3`.  Below is a table of more literal values and their associated [lightning_base_types](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types.markdown).
+(NOTE)**Literal Types**: Literal values are values explicitly defined by the user in script.  `1 + 2` is an example of two literal values that evaluate to the non-literal value `3`.  Below is a table of more literal values and their associated [lightning_base_types](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types.markdown).
 
  | Literal Value(s) | Type |
  | -- | -- |
@@ -43,7 +43,7 @@ Depending on the context, or [Scope](https://plasmaengine.github.io/PlasmaDocs/P
 A scope is a region in which certain elements of the language, such as variables and functions, are defined.  Any scope can contain multiple nested scopes.  A real-life example of scope could be a building and the rooms inside it.  Whatever is *in* the scope of a room is also *in*, but not *at*, the scope of the building, because the room's scope exists inside the scope of the building. In Lightning, the three most common levels of scope are global, object, and block.
 
  ## Global Scope
-Everything in script exists *in* the **global scope**; however, not everything is created *at* the **global scope**. Libraries such as `Plasma` and `Math` exist //at// the **global scope** and are therefore accessible from any scope in script.  The [plasma](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/plasma.markdown) and [Math](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/math.markdown) libraries are objects defined at the global scope. [Classes and Structs](https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/Lightning/classes.markdown) are the only Lightning constructs that can be defined //at* the **global scope**.
+Everything in script exists *in* the **global scope**; however, not everything is created *at* the **global scope**. Libraries such as `Plasma` and `Math` exist //at// the **global scope** and are therefore accessible from any scope in script.  The [plasma](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/plasma.markdown) and [Math](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/math.markdown) libraries are objects defined at the global scope. [Classes and Structs](https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/Lightning/classes.markdown) are the only Lightning constructs that can be defined //at* the **global scope**.
 
 <pre><code class="language-csharp">
 var R1 : Real; //Error, can not declare variables at the global scope
@@ -71,10 +71,10 @@ class MyClass
 Notice in the example above that `Math` *in// the **global scope** is accessed //from* the **class scope** while initializing `MyClass.Pi`.
 
  ### Implicit Initialization
-Notice above that `MyClass.Theta` is not given an **explicit** initial value. This means that **implicit** initialization will take place, assigning `Theta` an initial value of the default type value of the type [real](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real.markdown), which in this case is `0`. Implicit initialization of a variable is only possible when defining a **member** variable. The final restriction for member variables is that they must begin with an upper case letter.
+Notice above that `MyClass.Theta` is not given an **explicit** initial value. This means that **implicit** initialization will take place, assigning `Theta` an initial value of the default type value of the type [real](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.markdown), which in this case is `0`. Implicit initialization of a variable is only possible when defining a **member** variable. The final restriction for member variables is that they must begin with an upper case letter.
 
  ### Inferred Typing
-In the code block above `MyClass.A` is not given an explcit type. In this situation the type [real](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real.markdown) is **inferred** from the the type of its initialization value `4.0`. Only literal, type casted, or manually constructed values may be use for inferred typing when initializing a member variable. Statements such as `var B = -5.0;` will not compile because they contain an expression.
+In the code block above `MyClass.A` is not given an explcit type. In this situation the type [real](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.markdown) is **inferred** from the the type of its initialization value `4.0`. Only literal, type casted, or manually constructed values may be use for inferred typing when initializing a member variable. Statements such as `var B = -5.0;` will not compile because they contain an expression.
 
 NOTE: You can not use implicit initialization and inferred typing on the same variable.
 
@@ -109,7 +109,7 @@ Inside the inner block scope is the line `var r2 = r1;`. Because `r1` is declare
 
 The line `var r3 = r1;` follows the closing `}` of the inner block scope. Because `r1` was declared at the same scope as `r3`, it can be used as `r3`'s initialization value. However, the next line, `r3 = r2;`, will result in an error. `r2` was declared in the inner block scope. When that scope closes, `r2` is destroyed. As a result, `r2` is no longer a valid variable, and so it cannot be used to initialize `r3`.
 
-(NOTE)**Data Lifetimes**: It should be noted that when most variables go out of the scope they are declared in they stop existing. This is true for value types such as [real](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real.markdown) and [Structs](https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/Lightning/classes.markdown). However, if a reference type such as a constructed [Class](https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/Lightning/classes.markdown) instance still has a valid reference being held outside of the instantiation scope it will remain alive in memory.
+(NOTE)**Data Lifetimes**: It should be noted that when most variables go out of the scope they are declared in they stop existing. This is true for value types such as [real](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.markdown) and [Structs](https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/Lightning/classes.markdown). However, if a reference type such as a constructed [Class](https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/Lightning/classes.markdown) instance still has a valid reference being held outside of the instantiation scope it will remain alive in memory.
 
  # Caching Variables
 Caching accessed data into locally scoped variables is a common practice that can improve the efficiency, readability, and flexibility of code. Often users may find themselves needing a value that will be used multiple times throughout the scope it is calculated/accessed in.
@@ -178,10 +178,10 @@ This example implements the exact same behavior as the previous `OnLogicUdpate` 
 - [Loops](https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/Lightning/looping.markdown)
 
  ## Code Reference
-- [lightning_base_types](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types.markdown)
-- [real](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real.markdown)
-- [string](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/string.markdown)
-- [Plasma](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/plasma.markdown)
-- [Math](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/math.markdown) 
+- [lightning_base_types](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types.markdown)
+- [real](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.markdown)
+- [string](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/string.markdown)
+- [Plasma](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/plasma.markdown)
+- [Math](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/math.markdown) 
 
  

@@ -26,14 +26,14 @@ Components found on EditorConfig object are unique to it, and cannot be attached
 
 ##  MainConfig
 
-The [ MainConfig](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/mainconfig.markdown) component shows details about the current version of the editor. *Its fields are read-only.*
+The [ MainConfig](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/mainconfig.markdown) component shows details about the current version of the editor. *Its fields are read-only.*
 
 
 
 **ADD IMAGE**
 
 
-*The [ MainConfig](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/mainconfig.markdown) component*
+*The [ MainConfig](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/mainconfig.markdown) component*
 
 
 ##  ContentConfig
@@ -44,7 +44,7 @@ The **ContentConfig** component contains settings controlling the loading of add
 
 ##  TextEditorConfig
 
-The [ TextEditorConfig](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/texteditorconfig.markdown) component allows the user to view and modify various settings of Plasma's text editor.
+The [ TextEditorConfig](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/texteditorconfig.markdown) component allows the user to view and modify various settings of Plasma's text editor.
 
 ###  TabWidth
 The text editor may be configured to insert either two or four spaces when the `Tab` key is pressed.
@@ -94,7 +94,7 @@ This defines the initial font size used for text files when they are opened in t
 
 ##  EditorSettings
 
-The [editorsettings](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/editorsettings.markdown) component allows the user to view and modify various general editor settings.
+The [editorsettings](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/editorsettings.markdown) component allows the user to view and modify various general editor settings.
 
 WARNING: Some of the settings in this component should not be modified by the user, as noted below.
 
@@ -128,9 +128,9 @@ NOTE: The data from EditorConfig object is read from and written to a config fil
 - [ Tab Completion](https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/editor/texteditor/tab_completion.markdown)
 
 ##  Reference
-- [ MainConfig](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/mainconfig.markdown)
-- [ TextEditorConfig](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/texteditorconfig.markdown)
-- [editorsettings](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/editorsettings.markdown)
-- [ TabWidth](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/enum_reference.markdown#tabwidth) 
+- [ MainConfig](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/mainconfig.markdown)
+- [ TextEditorConfig](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/texteditorconfig.markdown)
+- [editorsettings](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/editorsettings.markdown)
+- [ TabWidth](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/enum_reference.markdown#tabwidth) 
 
  

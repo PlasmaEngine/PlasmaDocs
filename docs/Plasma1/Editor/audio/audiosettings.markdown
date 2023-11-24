@@ -1,5 +1,5 @@
 # Audio Settings
-The [ AudioSettings ](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/audiosettings.markdown) component can be added to Plasma Engine's project settings to control project-wide audio settings. Some of these settings are advanced and must be used with caution.
+The [ AudioSettings ](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/audiosettings.markdown) component can be added to Plasma Engine's project settings to control project-wide audio settings. Some of these settings are advanced and must be used with caution.
 
 # Using the AudioSettings Component
 

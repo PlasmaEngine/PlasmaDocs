@@ -1,5 +1,5 @@
 # Box Collider
-[BoxCollider](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/boxcollider.markdown) defines a rectangular box shape ([cuboid](https://en.wikipedia.org/wiki/Cuboid )) for collision. The size of the box is determined by the combination of the box's Size  property and the Transform's Scale .
+[BoxCollider](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/boxcollider.markdown) defines a rectangular box shape ([cuboid](https://en.wikipedia.org/wiki/Cuboid )) for collision. The size of the box is determined by the combination of the box's Size  property and the Transform's Scale .
 
 (NOTE) **Recommended Reading:** The [Collider](https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/physics/colliders.markdown) page should be read before this page.
 
@@ -11,7 +11,7 @@ A BoxCollider exposes the Size  property to determine the pre-transform size of 
 - [colliders.markdown](https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/physics/colliders.markdown)
 
 ## Reference
-- [BoxCollider](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/boxcollider.markdown)
-- [Collider](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/collider.markdown) 
+- [BoxCollider](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/boxcollider.markdown)
+- [Collider](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/collider.markdown) 
 
  

@@ -6,20 +6,20 @@
 
 |Methods|Properties|Base Classes|Derived Classes|
 |---|---|---|---|
-|[ Constructor](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/selectionicon.markdown#selectionicon-void)|[ Material](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/selectionicon.markdown#material-plasma-engine-doc)|[component](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/component.markdown)| |
-| |[ OverrideSelections](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/selectionicon.markdown#overrideselections-plasma)| | |
-| |[ ShaderInputs](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/selectionicon.markdown#shaderinputs-plasma-engine)| | |
-| |[ SpriteSource](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/selectionicon.markdown#spritesource-plasma-engine)| | |
-| |[ ViewScale](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/selectionicon.markdown#viewscale-plasma-engine-do)| | |
-| |[ VisibilityEvents](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/selectionicon.markdown#visibilityevents-plasma-en)| | |
-| |[ Visible](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/selectionicon.markdown#visible-plasma-engine-docu)| | |
+|[ Constructor](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/selectionicon.markdown#selectionicon-void)|[ Material](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/selectionicon.markdown#material-plasma-engine-doc)|[component](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/component.markdown)| |
+| |[ OverrideSelections](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/selectionicon.markdown#overrideselections-plasma)| | |
+| |[ ShaderInputs](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/selectionicon.markdown#shaderinputs-plasma-engine)| | |
+| |[ SpriteSource](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/selectionicon.markdown#spritesource-plasma-engine)| | |
+| |[ ViewScale](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/selectionicon.markdown#viewscale-plasma-engine-do)| | |
+| |[ VisibilityEvents](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/selectionicon.markdown#visibilityevents-plasma-en)| | |
+| |[ Visible](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/selectionicon.markdown#visible-plasma-engine-docu)| | |
 
 
  #  Properties
 
 
 ---  
- #  Material : [material](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/material.markdown)
+ #  Material : [material](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/material.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -27,7 +27,7 @@
 
 
 ---  
- #  OverrideSelections : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/boolean.markdown)
+ #  OverrideSelections : [boolean](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.markdown)
 
 > If collider/graphical or other selection logic should be disabled and only selectable via this icon.
 > ``` lang=cpp, name=Lightning
@@ -35,7 +35,7 @@
 
 
 ---  
- #  ShaderInputs : [shaderinputs](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/shaderinputs.markdown)
+ #  ShaderInputs : [shaderinputs](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/shaderinputs.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -43,7 +43,7 @@
 
 
 ---  
- #  SpriteSource : [spritesource](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/spritesource.markdown)
+ #  SpriteSource : [spritesource](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/spritesource.markdown)
 
 > Sprite based image to use for icon, will not animate.
 > ``` lang=cpp, name=Lightning
@@ -51,7 +51,7 @@
 
 
 ---  
- #  ViewScale : [real](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real.markdown)
+ #  ViewScale : [real](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.markdown)
 
 > Scalar for how big the icon should appear in the viewport.
 > ``` lang=cpp, name=Lightning
@@ -59,7 +59,7 @@
 
 
 ---  
- #  VisibilityEvents : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/boolean.markdown)
+ #  VisibilityEvents : [boolean](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -67,7 +67,7 @@
 
 
 ---  
- #  Visible : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/boolean.markdown)
+ #  Visible : [boolean](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning

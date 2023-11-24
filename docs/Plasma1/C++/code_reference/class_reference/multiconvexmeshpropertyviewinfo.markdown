@@ -4,22 +4,22 @@
 
 |Methods|Properties|Base Classes|Derived Classes|
 |---|---|---|---|
-|[ AutoCompute](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/multiconvexmeshpropertyviewinfo.markdown#autocompute-void)|[ AutoComputeMethod](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/multiconvexmeshpropertyviewinfo.markdown#autocomputemethod-plasma-e)|[eventobject](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/eventobject.markdown)| |
-|[ Constructor](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/multiconvexmeshpropertyviewinfo.markdown#multiconvexmeshpropertyv)|[ AutoComputeMode](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/multiconvexmeshpropertyviewinfo.markdown#autocomputemode-plasma-eng)| | |
-| |[ ClearColor](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/multiconvexmeshpropertyviewinfo.markdown#clearcolor-plasma-engine-d)| | |
-| |[ DrawMode](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/multiconvexmeshpropertyviewinfo.markdown#drawmode-plasma-engine-doc)| | |
-| |[ MeshThickness](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/multiconvexmeshpropertyviewinfo.markdown#meshthickness-plasma-engin)| | |
-| |[ OuterContourColor](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/multiconvexmeshpropertyviewinfo.markdown#outercontourcolor-plasma-e)| | |
-| |[ SimplificationThreshold](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/multiconvexmeshpropertyviewinfo.markdown#simplificationthreshold)| | |
-| |[ SpriteSource](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/multiconvexmeshpropertyviewinfo.markdown#spritesource-plasma-engine)| | |
-| |[ SurfaceLevelThreshold](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/multiconvexmeshpropertyviewinfo.markdown#surfacelevelthreshold-ze)| | |
+|[ AutoCompute](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/multiconvexmeshpropertyviewinfo.markdown#autocompute-void)|[ AutoComputeMethod](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/multiconvexmeshpropertyviewinfo.markdown#autocomputemethod-plasma-e)|[eventobject](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/eventobject.markdown)| |
+|[ Constructor](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/multiconvexmeshpropertyviewinfo.markdown#multiconvexmeshpropertyv)|[ AutoComputeMode](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/multiconvexmeshpropertyviewinfo.markdown#autocomputemode-plasma-eng)| | |
+| |[ ClearColor](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/multiconvexmeshpropertyviewinfo.markdown#clearcolor-plasma-engine-d)| | |
+| |[ DrawMode](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/multiconvexmeshpropertyviewinfo.markdown#drawmode-plasma-engine-doc)| | |
+| |[ MeshThickness](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/multiconvexmeshpropertyviewinfo.markdown#meshthickness-plasma-engin)| | |
+| |[ OuterContourColor](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/multiconvexmeshpropertyviewinfo.markdown#outercontourcolor-plasma-e)| | |
+| |[ SimplificationThreshold](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/multiconvexmeshpropertyviewinfo.markdown#simplificationthreshold)| | |
+| |[ SpriteSource](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/multiconvexmeshpropertyviewinfo.markdown#spritesource-plasma-engine)| | |
+| |[ SurfaceLevelThreshold](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/multiconvexmeshpropertyviewinfo.markdown#surfacelevelthreshold-ze)| | |
 
 
  #  Properties
 
 
 ---  
- #  AutoComputeMethod : [MultiConvexMeshAutoComputeMethod](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/enum_reference.markdown#multiconvexmeshautocomputemethod)
+ #  AutoComputeMethod : [MultiConvexMeshAutoComputeMethod](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/enum_reference.markdown#multiconvexmeshautocomputemethod)
 
 > What method of auto-computing should be used? Most likely 'pixel' is the mode that should be used.
 > ``` lang=cpp, name=Lightning
@@ -27,7 +27,7 @@
 
 
 ---  
- #  AutoComputeMode : [MultiConvexMeshAutoComputeMode](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/enum_reference.markdown#multiconvexmeshautocomputemode)
+ #  AutoComputeMode : [MultiConvexMeshAutoComputeMode](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/enum_reference.markdown#multiconvexmeshautocomputemode)
 
 > Should the auto-computed mesh be calculated from the alpha or the intensity of the sprite?
 > ``` lang=cpp, name=Lightning
@@ -35,7 +35,7 @@
 
 
 ---  
- #  ClearColor : [real4](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real4.markdown)
+ #  ClearColor : [real4](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real4.markdown)
 
 > The clear color of the viewport used to render.
 > ``` lang=cpp, name=Lightning
@@ -43,7 +43,7 @@
 
 
 ---  
- #  DrawMode : [MultiConvexMeshDrawMode](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/enum_reference.markdown#multiconvexmeshdrawmode)
+ #  DrawMode : [MultiConvexMeshDrawMode](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/enum_reference.markdown#multiconvexmeshdrawmode)
 
 > How should the collection of meshes be drawn?
 > ``` lang=cpp, name=Lightning
@@ -51,7 +51,7 @@
 
 
 ---  
- #  MeshThickness : [real](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real.markdown)
+ #  MeshThickness : [real](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.markdown)
 
 > Since the mesh is on a 2d plane, they need some thickness for their z-depth. This controls how thick the meshes are.
 > ``` lang=cpp, name=Lightning
@@ -59,7 +59,7 @@
 
 
 ---  
- #  OuterContourColor : [real4](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real4.markdown)
+ #  OuterContourColor : [real4](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real4.markdown)
 
 > The color to draw edges with.
 > ``` lang=cpp, name=Lightning
@@ -67,7 +67,7 @@
 
 
 ---  
- #  SimplificationThreshold : [real](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real.markdown)
+ #  SimplificationThreshold : [real](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.markdown)
 
 > A threshold to control when vertices should be removed (simplified). This value is related to the area of a triangle.
 > ``` lang=cpp, name=Lightning
@@ -75,7 +75,7 @@
 
 
 ---  
- #  SpriteSource : [spritesource](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/spritesource.markdown)
+ #  SpriteSource : [spritesource](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/spritesource.markdown)
 
 > The sprite source used as a reference for drawing the mesh. Note: this is not always what's visible as the user can drag in archetypes to view as well.
 > ``` lang=cpp, name=Lightning
@@ -83,7 +83,7 @@
 
 
 ---  
- #  SurfaceLevelThreshold : [real](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real.markdown)
+ #  SurfaceLevelThreshold : [real](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.markdown)
 
 > When the sprite is sampled using the AutoComputeMode, what value should be used to determine where a surface is.
 > ``` lang=cpp, name=Lightning

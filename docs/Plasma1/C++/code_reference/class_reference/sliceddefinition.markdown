@@ -4,7 +4,7 @@
 
 |Methods|Properties|Base Classes|Derived Classes|
 |---|---|---|---|
-| | |Resource|[imagedefinition](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/imagedefinition.markdown)|
+| | |Resource|[imagedefinition](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/imagedefinition.markdown)|
 
 
  #  Properties

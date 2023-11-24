@@ -2,15 +2,15 @@
 
 |Methods|Properties|Base Classes|Derived Classes|
 |---|---|---|---|
-| |[ Animation](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/basicanimation.markdown#animation-plasma-engine-do)|[animationnode](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/animationnode.markdown)| |
-| |[ PlayMode](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/basicanimation.markdown#playmode-plasma-engine-doc)| | |
+| |[ Animation](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/basicanimation.markdown#animation-plasma-engine-do)|[animationnode](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/animationnode.markdown)| |
+| |[ PlayMode](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/basicanimation.markdown#playmode-plasma-engine-doc)| | |
 
 
  #  Properties
 
 
 ---  
- #  Animation : [animation](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/animation.markdown)
+ #  Animation : [animation](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/animation.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -18,7 +18,7 @@
 
 
 ---  
- #  PlayMode : [AnimationPlayMode](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/enum_reference.markdown#animationplaymode)
+ #  PlayMode : [AnimationPlayMode](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/enum_reference.markdown#animationplaymode)
 
 > 
 > ``` lang=cpp, name=Lightning

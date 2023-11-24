@@ -16,7 +16,7 @@ NOTE: In 2D Mode, objects can still have their Z Translation set to a value othe
 ## Can I change my 2D project to 3D?
 
 
-The setting is just defaults, so you can change any setting back. You can also use the [Command ](https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/editor/editorcommands/commands.markdown) : [Mode3D](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/command_reference.markdown#mode3d)/[Mode2D](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/command_reference.markdown#mode2d). You can also click the **ADD IMAGE** **ADD IMAGE** buttons in the top left corner of the `name=Level Window, icon=window-restore`.
+The setting is just defaults, so you can change any setting back. You can also use the [Command ](https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/editor/editorcommands/commands.markdown) : [Mode3D](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/command_reference.markdown#mode3d)/[Mode2D](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/command_reference.markdown#mode2d). You can also click the **ADD IMAGE** **ADD IMAGE** buttons in the top left corner of the `name=Level Window, icon=window-restore`.
 
 (NOTE)**Physics when switching to 3D mode:** Keep in mind that the  [PhysicsSpace](https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/physics/physicsspace.markdown)  will not change mode when you use the `Mode2D` or `Mode3D` command. These commands are intended to help with editing not change the foundation of a project.
 
@@ -30,7 +30,7 @@ The engine and collision detection are still 3D. This z dimension is a nice way 
 - [PhysicsSpace](https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/physics/physicsspace.markdown)
 - [Command ](https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/editor/editorcommands/commands.markdown)
 ## Code Reference
-- [Mode2D](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/command_reference.markdown#mode2d)
-- [Mode3D](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/command_reference.markdown#mode3d) 
+- [Mode2D](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/command_reference.markdown#mode2d)
+- [Mode3D](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/command_reference.markdown#mode3d) 
 
  

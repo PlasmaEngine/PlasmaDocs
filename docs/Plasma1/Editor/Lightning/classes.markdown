@@ -131,7 +131,7 @@ class Driver
 }
 </code></pre>
 
-The class `ExplicitCustom` defines a single constructor that takes a single [real](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real.markdown).  This means that `ExplicitCustom` cannot be default constructed, therefore the statement `ExplicitCustom();` fails to compile.  The default constructor can still be readded by explicitly defining it alongside other constructors, as shown in the class `ExplicitCustomAndDefault`.
+The class `ExplicitCustom` defines a single constructor that takes a single [real](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.markdown).  This means that `ExplicitCustom` cannot be default constructed, therefore the statement `ExplicitCustom();` fails to compile.  The default constructor can still be readded by explicitly defining it alongside other constructors, as shown in the class `ExplicitCustomAndDefault`.
 
 NOTE: Explcitly defining a constructor is **not required** in Lightning as long as every data member of the class has a default constructor.
 
@@ -184,6 +184,6 @@ In the example above, `MyClass` [inherits](https://plasmaengine.github.io/Plasma
 - [Static](https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/Lightning/attributes.markdown#static)
 
 ## Code Reference
-- [real](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real.markdown) 
+- [real](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.markdown) 
 
  

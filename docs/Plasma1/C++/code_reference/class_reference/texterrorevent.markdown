@@ -4,7 +4,7 @@
 
 |Methods|Properties|Base Classes|Derived Classes|
 |---|---|---|---|
-| | |[textevent](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/textevent.markdown)| |
+| | |[textevent](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/textevent.markdown)| |
 
 
  #  Properties

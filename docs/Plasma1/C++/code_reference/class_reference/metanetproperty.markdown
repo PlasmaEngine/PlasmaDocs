@@ -2,15 +2,15 @@
 
 |Methods|Properties|Base Classes|Derived Classes|
 |---|---|---|---|
-| |[ NetChannelConfig](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/metanetproperty.markdown#netchannelconfig-plasma-en)|[metaattribute](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/metaattribute.markdown)| |
-| |[ NetPropertyConfig](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/metanetproperty.markdown#netpropertyconfig-plasma-e)| | |
+| |[ NetChannelConfig](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/metanetproperty.markdown#netchannelconfig-plasma-en)|[metaattribute](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/metaattribute.markdown)| |
+| |[ NetPropertyConfig](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/metanetproperty.markdown#netpropertyconfig-plasma-e)| | |
 
 
  #  Properties
 
 
 ---  
- #  NetChannelConfig : [string](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/string.markdown)
+ #  NetChannelConfig : [string](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/string.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -18,7 +18,7 @@
 
 
 ---  
- #  NetPropertyConfig : [string](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/string.markdown)
+ #  NetPropertyConfig : [string](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/string.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning

@@ -1,6 +1,6 @@
 # Cylinder Collider
 
-[CylinderCollider](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/cylindercollider.markdown) defines a [cylindrical](https://en.wikipedia.org/wiki/Cylinder ) shape for collision. The base size of the cylinder is determined by the Radius  and Height  properties. Scale is applied afterwards to determine the final cylinder's size.
+[CylinderCollider](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/cylindercollider.markdown) defines a [cylindrical](https://en.wikipedia.org/wiki/Cylinder ) shape for collision. The base size of the cylinder is determined by the Radius  and Height  properties. Scale is applied afterwards to determine the final cylinder's size.
 
 (NOTE) **Recommended Reading:** The [Collider](https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/physics/colliders.markdown) page should be read before this page.
 
@@ -21,7 +21,7 @@ When non-uniform scale is applied, the CylinderCollider will always stay a perfe
 - [colliders.markdown](https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/physics/colliders.markdown)
 
 ## Reference
-- [CylinderCollider](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/cylindercollider.markdown)
-- [Collider](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/collider.markdown) 
+- [CylinderCollider](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/cylindercollider.markdown)
+- [Collider](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/collider.markdown) 
 
  

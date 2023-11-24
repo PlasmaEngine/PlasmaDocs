@@ -4,15 +4,15 @@
 
 |Methods|Properties|Base Classes|Derived Classes|
 |---|---|---|---|
-|[ Constructor](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/reactivespace.markdown#reactivespace-void)|[ Over](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/reactivespace.markdown#over-plasma-engine-documen)|[component](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/component.markdown)| |
-| |[ Raycaster](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/reactivespace.markdown#raycaster-plasma-engine-do)| | |
+|[ Constructor](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/reactivespace.markdown#reactivespace-void)|[ Over](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/reactivespace.markdown#over-plasma-engine-documen)|[component](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/component.markdown)| |
+| |[ Raycaster](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/reactivespace.markdown#raycaster-plasma-engine-do)| | |
 
 
  #  Properties
 
 
 ---  
- #  Over : [cog](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/cog.markdown)
+ #  Over : [cog](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/cog.markdown)
 
  `read-only`
 
@@ -22,7 +22,7 @@
 
 
 ---  
- #  Raycaster : [raycaster](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/raycaster.markdown)
+ #  Raycaster : [raycaster](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/raycaster.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning

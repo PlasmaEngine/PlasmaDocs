@@ -4,16 +4,16 @@
 
 |Methods|Properties|Base Classes|Derived Classes|
 |---|---|---|---|
-|[ Constructor](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/objecttransformtool.markdown#objecttransformtool-void)|[ Basis](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/objecttransformtool.markdown#basis-plasma-engine-docume)|[component](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/component.markdown)|[objectrotatetool](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/objectrotatetool.markdown)|
-| |[ Grab](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/objecttransformtool.markdown#grab-plasma-engine-documen)| |[objectscaletool](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/objectscaletool.markdown)|
-| |[ Pivot](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/objecttransformtool.markdown#pivot-plasma-engine-docume)| |[objecttranslatetool](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/objecttranslatetool.markdown)|
+|[ Constructor](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/objecttransformtool.markdown#objecttransformtool-void)|[ Basis](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/objecttransformtool.markdown#basis-plasma-engine-docume)|[component](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/component.markdown)|[objectrotatetool](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/objectrotatetool.markdown)|
+| |[ Grab](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/objecttransformtool.markdown#grab-plasma-engine-documen)| |[objectscaletool](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/objectscaletool.markdown)|
+| |[ Pivot](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/objecttransformtool.markdown#pivot-plasma-engine-docume)| |[objecttranslatetool](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/objecttranslatetool.markdown)|
 
 
  #  Properties
 
 
 ---  
- #  Basis : [GizmoBasis](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/enum_reference.markdown#gizmobasis)
+ #  Basis : [GizmoBasis](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/enum_reference.markdown#gizmobasis)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -21,7 +21,7 @@
 
 
 ---  
- #  Grab : [GizmoGrabMode](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/enum_reference.markdown#gizmograbmode)
+ #  Grab : [GizmoGrabMode](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/enum_reference.markdown#gizmograbmode)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -29,7 +29,7 @@
 
 
 ---  
- #  Pivot : [GizmoPivot](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/enum_reference.markdown#gizmopivot)
+ #  Pivot : [GizmoPivot](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/enum_reference.markdown#gizmopivot)
 
 > 
 > ``` lang=cpp, name=Lightning

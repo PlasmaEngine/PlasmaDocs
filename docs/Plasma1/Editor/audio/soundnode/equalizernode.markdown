@@ -1,5 +1,5 @@
 # Equalizer Node
-The [ EqualizerNode ](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/equalizernode.markdown) collects audio data from all of its inputs and applies several filters to it before passing it along to its outputs, allowing the user to control the loudness of frequencies in specific ranges. 
+The [ EqualizerNode ](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/equalizernode.markdown) collects audio data from all of its inputs and applies several filters to it before passing it along to its outputs, allowing the user to control the loudness of frequencies in specific ranges. 
 
 # Common Uses
 
@@ -16,6 +16,6 @@ All five properties can be smoothly changed over time using the `InterpolateAllB
 - [soudnode_overview](https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/audio/soundnode/soudnode_overview.markdown)
 
 ## Code Reference
-- [ EqualizerNode ](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/equalizernode.markdown) 
+- [ EqualizerNode ](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/equalizernode.markdown) 
 
  

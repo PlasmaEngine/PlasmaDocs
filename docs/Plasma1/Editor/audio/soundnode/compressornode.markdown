@@ -1,5 +1,5 @@
 # Compressor Node
-The [ CompressorNode ](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/compressornode.markdown) collects audio data from all of its inputs and applies a compressor filter before passing the data along to its outputs. 
+The [ CompressorNode ](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/compressornode.markdown) collects audio data from all of its inputs and applies a compressor filter before passing the data along to its outputs. 
 
 # Common Uses
 
@@ -21,6 +21,6 @@ The `AttackMillisec` and `ReleaseMillisec` properties control how quickly the fi
 - [expandernode](https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/audio/soundnode/expandernode.markdown)
 
 ## Code Reference
-- [ CompressorNode ](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/compressornode.markdown) 
+- [ CompressorNode ](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/compressornode.markdown) 
 
  

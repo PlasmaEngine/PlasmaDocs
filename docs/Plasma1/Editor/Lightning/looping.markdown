@@ -101,7 +101,7 @@ for(var i = 0; i < 3; ++i)
 1
 3
 </code></pre>
-Notice how the above code snippet and the `While` code snippet loops produce the same result: `0`, `1`, and `3`.  First `i` is **initialized** to `0`.  Then in a loop, the `i < 3` **condition** is checked, `sum` is increased and printed, and `i` is incremented at the end of the **iteration**.  The `for` loop follows the format `for(<initialization>; <condition>; <iteration>)`.  In addition, the above code snippet uses an [array](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/array_t.markdown). An array is a container with the *indexable* quality, which means the i-th element can be directly accessed.  This access is done by calling the function `myArray.Get`.
+Notice how the above code snippet and the `While` code snippet loops produce the same result: `0`, `1`, and `3`.  First `i` is **initialized** to `0`.  Then in a loop, the `i < 3` **condition** is checked, `sum` is increased and printed, and `i` is incremented at the end of the **iteration**.  The `for` loop follows the format `for(<initialization>; <condition>; <iteration>)`.  In addition, the above code snippet uses an [array](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/array_t.markdown). An array is a container with the *indexable* quality, which means the i-th element can be directly accessed.  This access is done by calling the function `myArray.Get`.
 
  # For Each loop
 The `foreach` loop is reserved for iterating over containers, and is shorter than its equivalent `for` loop.
@@ -215,6 +215,6 @@ Here you can see that the second instance of `Console.WriteLine(i);` is only exe
 - [strings](https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/Lightning/strings.markdown)
 
  ## Code Reference
-- [array_t](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/array_t.markdown) 
+- [array_t](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/array_t.markdown) 
 
  

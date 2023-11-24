@@ -2,7 +2,7 @@
 
 |Methods|Properties|Base Classes|Derived Classes|
 |---|---|---|---|
-|[ Constructor](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/lightningpluginbuilder.markdown#lightningpluginbuilder-void)| |[databuilder](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/databuilder.markdown)| |
+|[ Constructor](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/lightningpluginbuilder.markdown#lightningpluginbuilder-void)| |[databuilder](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/databuilder.markdown)| |
 
 
  #  Properties

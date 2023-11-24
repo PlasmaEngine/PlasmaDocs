@@ -1,5 +1,5 @@
 # Model Component
-The Model component allows the user to assign a [Mesh](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/mesh.markdown) and a [ Material](https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/graphics/materials/materials_overview.markdown) to an object.
+The Model component allows the user to assign a [Mesh](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/mesh.markdown) and a [ Material](https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/graphics/materials/materials_overview.markdown) to an object.
 
 # Material and Mesh
 

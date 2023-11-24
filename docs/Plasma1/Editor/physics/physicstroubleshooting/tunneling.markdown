@@ -37,6 +37,6 @@ NOTE: Continuous collision detection is significantly more computationally expen
 - [physicsspace.markdown](https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/physics/physicstroubleshooting/physicsspace.markdown)
 
 ## Reference
-- [PhysicsSpace](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/physicsspace.markdown) 
+- [PhysicsSpace](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/physicsspace.markdown) 
 
  

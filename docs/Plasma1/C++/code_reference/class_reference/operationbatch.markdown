@@ -2,7 +2,7 @@
 
 |Methods|Properties|Base Classes|Derived Classes|
 |---|---|---|---|
-| | |[operation](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/operation.markdown)| |
+| | |[operation](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/operation.markdown)| |
 
 
  #  Properties

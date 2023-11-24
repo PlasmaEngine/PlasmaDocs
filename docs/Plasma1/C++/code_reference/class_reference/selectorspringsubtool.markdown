@@ -2,8 +2,8 @@
 
 |Methods|Properties|Base Classes|Derived Classes|
 |---|---|---|---|
-| | |[dragselectsubtool](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/dragselectsubtool.markdown)|[pointmassselectorsubtool](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/pointmassselectorsubtool.markdown)|
-| | | |[springselectorsubtool](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/springselectorsubtool.markdown)|
+| | |[dragselectsubtool](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/dragselectsubtool.markdown)|[pointmassselectorsubtool](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/pointmassselectorsubtool.markdown)|
+| | | |[springselectorsubtool](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/springselectorsubtool.markdown)|
 
 
  #  Properties

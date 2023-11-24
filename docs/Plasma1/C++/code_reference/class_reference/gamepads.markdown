@@ -4,16 +4,16 @@
 
 |Methods|Properties|Base Classes|Derived Classes|
 |---|---|---|---|
-|[ GetGamePad](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/gamepads.markdown#getgamepad-plasma-engine-d)|[ MaxGamepadCount](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/gamepads.markdown#maxgamepadcount-plasma-eng)|[eventobject](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/eventobject.markdown)| |
-|[ PauseVibration](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/gamepads.markdown#pausevibration-void)| | | |
-|[ ResumeVibration](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/gamepads.markdown#resumevibration-void)| | | |
+|[ GetGamePad](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/gamepads.markdown#getgamepad-plasma-engine-d)|[ MaxGamepadCount](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/gamepads.markdown#maxgamepadcount-plasma-eng)|[eventobject](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/eventobject.markdown)| |
+|[ PauseVibration](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/gamepads.markdown#pausevibration-void)| | | |
+|[ ResumeVibration](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/gamepads.markdown#resumevibration-void)| | | |
 
 
  #  Properties
 
 
 ---  
- #  MaxGamepadCount : [integer](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/integer.markdown)
+ #  MaxGamepadCount : [integer](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer.markdown)
 
  `read-only`
 
@@ -27,12 +27,12 @@
 
 
 ---  
- #  GetGamePad : [gamepad](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/gamepad.markdown)
+ #  GetGamePad : [gamepad](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/gamepad.markdown)
 
 > Get the gamepad for a given index from [0, GamepadCount].
 > |Name|Type|Description|
 > |---|---|---|
-> |gamepadIndex|[integer](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/integer.markdown)| |
+> |gamepadIndex|[integer](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer.markdown)| |
 > ``` lang=cpp, name=Lightning
 > function GetGamePad(gamepadIndex : Integer) : Gamepad
 > ``` 

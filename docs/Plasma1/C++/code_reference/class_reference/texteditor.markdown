@@ -2,8 +2,8 @@
 
 |Methods|Properties|Base Classes|Derived Classes|
 |---|---|---|---|
-| | |[basescrollarea](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/basescrollarea.markdown)|[consoleui](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/consoleui.markdown)|
-| | | |[documenteditor](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/documenteditor.markdown)|
+| | |[basescrollarea](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/basescrollarea.markdown)|[consoleui](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/consoleui.markdown)|
+| | | |[documenteditor](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/documenteditor.markdown)|
 
 
  #  Properties

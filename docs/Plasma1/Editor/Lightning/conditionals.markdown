@@ -3,7 +3,7 @@
 Conditionals allow programs to ask questions and act or not act based of the results.
 
 # if
-An `if` conditional evaluates a given statement that evaluates to a [boolean](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/boolean.markdown) value and executes code in a block scope defined underneath if it evaluates to `true`.
+An `if` conditional evaluates a given statement that evaluates to a [boolean](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.markdown) value and executes code in a block scope defined underneath if it evaluates to `true`.
 
 <pre><code class="language-csharp" name="if Conditional">
 var boolValue = true;
@@ -162,4 +162,4 @@ While conditionals a useful their real power comes when used in combination with
 - [boolean_operators](https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/Lightning/boolean_operators.markdown)
 
 ## Code Reference
-- [boolean](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/boolean.markdown) 
+- [boolean](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.markdown) 
