@@ -1,5 +1,5 @@
 # mesh
-Imported meshes may be used to apply to a [Model](https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/graphics/models/model_component.markdown) or [SkinnedModel](https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/graphics/models/model_component.markdown#skinned-model) component as well as to create a [PhysicsMesh](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/physicsmesh.markdown) for that object. This page focuses solely on using a mesh for a Model and SkinnedModel. Clicking on a particular mesh in the Library window will open up the ContentComponents of that mesh in the Properties window:
+Imported meshes may be used to apply to a [Model](https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/graphics/models/model_component.markdown) or [SkinnedModel](https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/graphics/models/model_component.markdown#skinned-model) component as well as to create a [PhysicsMesh](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/physicsmesh.markdown) for that object. This page focuses solely on using a mesh for a Model and SkinnedModel. Clicking on a particular mesh in the Library window will open up the ContentComponents of that mesh in the Properties window:
 
 # ContentComponents for a Sample Mesh
 
@@ -28,8 +28,8 @@ These components have no properties and are there only if `ImportTextures` and `
 - [adding_scene_assets](https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/graphics/adding_assets/adding_scene_assets.markdown)
 
 ## Reference
-- [model](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/model.markdown)
-- [skinnedmodel](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/skinnedmodel.markdown)
-- [PhysicsMesh](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/physicsmesh.markdown) 
+- [model](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/model.markdown)
+- [skinnedmodel](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/skinnedmodel.markdown)
+- [PhysicsMesh](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/physicsmesh.markdown) 
 
  

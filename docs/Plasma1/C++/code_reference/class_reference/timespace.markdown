@@ -6,26 +6,26 @@
 
 |Methods|Properties|Base Classes|Derived Classes|
 |---|---|---|---|
-|[ Step](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/timespace.markdown#step-void)|[ Dt](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/timespace.markdown#dt-plasma-engine-documenta)|[component](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/component.markdown)| |
-|[ Constructor](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/timespace.markdown#timespace-void)|[ DtOrZero](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/timespace.markdown#dtorplasma-plasma-engine-doc)| | |
-|[ TogglePause](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/timespace.markdown#togglepause-void)|[ Frame](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/timespace.markdown#frame-plasma-engine-docume)| | |
-| |[ GloballyPaused](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/timespace.markdown#globallypaused-plasma-engi)| | |
-| |[ MaxDt](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/timespace.markdown#maxdt-plasma-engine-docume)| | |
-| |[ MinDt](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/timespace.markdown#mindt-plasma-engine-docume)| | |
-| |[ Paused](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/timespace.markdown#paused-plasma-engine-docum)| | |
-| |[ RealDt](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/timespace.markdown#realdt-plasma-engine-docum)| | |
-| |[ RealTimePassed](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/timespace.markdown#realtimepassed-plasma-engi)| | |
-| |[ StepCount](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/timespace.markdown#stepcount-plasma-engine-do)| | |
-| |[ TimeMode](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/timespace.markdown#timemode-plasma-engine-doc)| | |
-| |[ TimePassed](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/timespace.markdown#timepassed-plasma-engine-d)| | |
-| |[ TimeScale](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/timespace.markdown#timescale-plasma-engine-do)| | |
+|[ Step](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/timespace.markdown#step-void)|[ Dt](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/timespace.markdown#dt-plasma-engine-documenta)|[component](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/component.markdown)| |
+|[ Constructor](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/timespace.markdown#timespace-void)|[ DtOrZero](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/timespace.markdown#dtorplasma-plasma-engine-doc)| | |
+|[ TogglePause](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/timespace.markdown#togglepause-void)|[ Frame](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/timespace.markdown#frame-plasma-engine-docume)| | |
+| |[ GloballyPaused](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/timespace.markdown#globallypaused-plasma-engi)| | |
+| |[ MaxDt](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/timespace.markdown#maxdt-plasma-engine-docume)| | |
+| |[ MinDt](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/timespace.markdown#mindt-plasma-engine-docume)| | |
+| |[ Paused](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/timespace.markdown#paused-plasma-engine-docum)| | |
+| |[ RealDt](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/timespace.markdown#realdt-plasma-engine-docum)| | |
+| |[ RealTimePassed](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/timespace.markdown#realtimepassed-plasma-engi)| | |
+| |[ StepCount](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/timespace.markdown#stepcount-plasma-engine-do)| | |
+| |[ TimeMode](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/timespace.markdown#timemode-plasma-engine-doc)| | |
+| |[ TimePassed](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/timespace.markdown#timepassed-plasma-engine-d)| | |
+| |[ TimeScale](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/timespace.markdown#timescale-plasma-engine-do)| | |
 
 
  #  Properties
 
 
 ---  
- #  Dt : [real](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real.markdown)
+ #  Dt : [real](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.markdown)
 
  `read-only`
 
@@ -35,7 +35,7 @@
 
 
 ---  
- #  DtOrZero : [real](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real.markdown)
+ #  DtOrZero : [real](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.markdown)
 
  `read-only`
 
@@ -45,7 +45,7 @@
 
 
 ---  
- #  Frame : [integer](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/integer.markdown)
+ #  Frame : [integer](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer.markdown)
 
 > The current frame we are on (starts at 0 and counts up for every frame that is run) This value counts up regardless of if the space is paused.
 > ``` lang=cpp, name=Lightning
@@ -53,7 +53,7 @@
 
 
 ---  
- #  GloballyPaused : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/boolean.markdown)
+ #  GloballyPaused : [boolean](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.markdown)
 
  `read-only`
 
@@ -63,7 +63,7 @@
 
 
 ---  
- #  MaxDt : [real](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real.markdown)
+ #  MaxDt : [real](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.markdown)
 
 > The maximum amount of time we send when running in 'ActualFrametime' mode If this value is set too high and the user does anything to pause their system or the game (example grabbing the window) then a large frame time will be sent out and physics objects will jump very far (causing tunneling and random bounces)
 > ``` lang=cpp, name=Lightning
@@ -71,7 +71,7 @@
 
 
 ---  
- #  MinDt : [real](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real.markdown)
+ #  MinDt : [real](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.markdown)
 
 > The minimum amount of time we send when running in 'ActualFrametime' mode Ideally this is set to a very small non-plasma value to prevent any division by plasma errors.
 > ``` lang=cpp, name=Lightning
@@ -79,7 +79,7 @@
 
 
 ---  
- #  Paused : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/boolean.markdown)
+ #  Paused : [boolean](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.markdown)
 
 > If the time space is paused then we cease sending out logic update events When paused, the Dt will remain at whatever it was (it will NOT be set to 0)
 > ``` lang=cpp, name=Lightning
@@ -87,7 +87,7 @@
 
 
 ---  
- #  RealDt : [real](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real.markdown)
+ #  RealDt : [real](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.markdown)
 
  `read-only`
 
@@ -97,7 +97,7 @@
 
 
 ---  
- #  RealTimePassed : [real](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real.markdown)
+ #  RealTimePassed : [real](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -105,7 +105,7 @@
 
 
 ---  
- #  StepCount : [integer](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/integer.markdown)
+ #  StepCount : [integer](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer.markdown)
 
 > Causes the engine to update multiple times before rendering a frame.
 > ``` lang=cpp, name=Lightning
@@ -113,7 +113,7 @@
 
 
 ---  
- #  TimeMode : [TimeMode](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/enum_reference.markdown#timemode)
+ #  TimeMode : [TimeMode](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/enum_reference.markdown#timemode)
 
 > When set to fixed framerate the Dt/frame time will never change (it will send whatever the project frame-rate-limiter is set to) This means it is important to run with a frame-rate limiter of some kind otherwise the game will appear to run much faster/slower Note: For determinism, you should always run in FixedFrametime mode When set to actual framerate we will send out the real time that the engine is encountering (clamped by MinDt / MaxDt)
 > ``` lang=cpp, name=Lightning
@@ -121,7 +121,7 @@
 
 
 ---  
- #  TimePassed : [real](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real.markdown)
+ #  TimePassed : [real](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -129,7 +129,7 @@
 
 
 ---  
- #  TimeScale : [real](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real.markdown)
+ #  TimeScale : [real](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.markdown)
 
 > Scale the speed of time for interesting effects like bullet time or fast paced gameplay. TimeScale is clamped to be positive.
 > ``` lang=cpp, name=Lightning

@@ -4,17 +4,17 @@
 
 |Methods|Properties|Base Classes|Derived Classes|
 |---|---|---|---|
-|[ ActivateAsGizmo](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/rotationbasisgizmo.markdown#activateasgizmo-void)|[ WorldRotation](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/rotationbasisgizmo.markdown#worldrotation-plasma-engin)|[component](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/component.markdown)| |
-|[ Constructor](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/rotationbasisgizmo.markdown#rotationbasisgizmo-void)|[ XAxisName](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/rotationbasisgizmo.markdown#xaxisname-plasma-engine-do)| | |
-| |[ YAxisName](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/rotationbasisgizmo.markdown#yaxisname-plasma-engine-do)| | |
-| |[ ZAxisName](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/rotationbasisgizmo.markdown#zaxisname-plasma-engine-do)| | |
+|[ ActivateAsGizmo](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/rotationbasisgizmo.markdown#activateasgizmo-void)|[ WorldRotation](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/rotationbasisgizmo.markdown#worldrotation-plasma-engin)|[component](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/component.markdown)| |
+|[ Constructor](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/rotationbasisgizmo.markdown#rotationbasisgizmo-void)|[ XAxisName](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/rotationbasisgizmo.markdown#xaxisname-plasma-engine-do)| | |
+| |[ YAxisName](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/rotationbasisgizmo.markdown#yaxisname-plasma-engine-do)| | |
+| |[ ZAxisName](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/rotationbasisgizmo.markdown#zaxisname-plasma-engine-do)| | |
 
 
  #  Properties
 
 
 ---  
- #  WorldRotation : [quaternion](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/quaternion.markdown)
+ #  WorldRotation : [quaternion](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/quaternion.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -22,7 +22,7 @@
 
 
 ---  
- #  XAxisName : [string](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/string.markdown)
+ #  XAxisName : [string](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/string.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -30,7 +30,7 @@
 
 
 ---  
- #  YAxisName : [string](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/string.markdown)
+ #  YAxisName : [string](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/string.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -38,7 +38,7 @@
 
 
 ---  
- #  ZAxisName : [string](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/string.markdown)
+ #  ZAxisName : [string](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/string.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning

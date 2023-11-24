@@ -1,6 +1,6 @@
 # Vortex Effect
 
-The [VortexEffect](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/vortexeffect.markdown) component applies two forces to an object to simulate a spinning vortex.
+The [VortexEffect](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/vortexeffect.markdown) component applies two forces to an object to simulate a spinning vortex.
  - An attractive linear force pulls objects towards the center of the disc.
  - A perpendicular  linear force twists objects around the center of the disc.
 
@@ -15,9 +15,9 @@ VortexEffect is only expected to work as a Region effect. All other application 
 - [pointforceeffect.markdown](https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/physics/physicseffectsandregions/pointforceeffect.markdown)
 
 ## Reference
-- [VortexEffect](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/vortexeffect.markdown)
-- [PointForceEffect](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/pointforceeffect.markdown)
-- [PhysicsEffect](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/physicseffect.markdown)
-- [Region](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/region.markdown) 
+- [VortexEffect](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/vortexeffect.markdown)
+- [PointForceEffect](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/pointforceeffect.markdown)
+- [PhysicsEffect](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/physicseffect.markdown)
+- [Region](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/region.markdown) 
 
  

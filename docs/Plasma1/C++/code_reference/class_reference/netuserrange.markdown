@@ -2,17 +2,17 @@
 
 |Methods|Properties|Base Classes|Derived Classes|
 |---|---|---|---|
-|[ MoveNext](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netuserrange.markdown#movenext-void)|[ All](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netuserrange.markdown#all-plasma-engine-document)| | |
-|[ Constructor](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netuserrange.markdown#netuserrange-void)|[ Current](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netuserrange.markdown#current-plasma-engine-docu)| | |
-| |[ IsEmpty](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netuserrange.markdown#isempty-plasma-engine-docu)| | |
-| |[ IsNotEmpty](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netuserrange.markdown#isnotempty-plasma-engine-d)| | |
+|[ MoveNext](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/netuserrange.markdown#movenext-void)|[ All](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/netuserrange.markdown#all-plasma-engine-document)| | |
+|[ Constructor](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/netuserrange.markdown#netuserrange-void)|[ Current](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/netuserrange.markdown#current-plasma-engine-docu)| | |
+| |[ IsEmpty](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/netuserrange.markdown#isempty-plasma-engine-docu)| | |
+| |[ IsNotEmpty](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/netuserrange.markdown#isnotempty-plasma-engine-d)| | |
 
 
  #  Properties
 
 
 ---  
- #  All : [netuserrange](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netuserrange.markdown)
+ #  All : [netuserrange](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/netuserrange.markdown)
 
  `read-only`
 
@@ -22,7 +22,7 @@
 
 
 ---  
- #  Current : [cog](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/cog.markdown)
+ #  Current : [cog](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/cog.markdown)
 
  `read-only`
 
@@ -32,7 +32,7 @@
 
 
 ---  
- #  IsEmpty : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/boolean.markdown)
+ #  IsEmpty : [boolean](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.markdown)
 
  `read-only`
 
@@ -42,7 +42,7 @@
 
 
 ---  
- #  IsNotEmpty : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/boolean.markdown)
+ #  IsNotEmpty : [boolean](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.markdown)
 
  `read-only`
 
@@ -87,7 +87,7 @@
 > 
 > |Name|Type|Description|
 > |---|---|---|
-> |p0|[netuserrange](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netuserrange.markdown)| |
+> |p0|[netuserrange](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/netuserrange.markdown)| |
 > ``` lang=cpp, name=Lightning
 > function NetUserRange(p0 : NetUserRange)
 > ``` 

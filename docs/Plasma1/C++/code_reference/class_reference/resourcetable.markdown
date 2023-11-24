@@ -6,31 +6,31 @@
 
 |Methods|Properties|Base Classes|Derived Classes|
 |---|---|---|---|
-|[ AddOrError](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/resourcetable.markdown#addorerror-void)|[ All](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/resourcetable.markdown#all-plasma-engine-document)|[dataresource](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/dataresource.markdown)| |
-|[ AddOrIgnore](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/resourcetable.markdown#addorignore-plasma-engine)|[ Count](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/resourcetable.markdown#count-plasma-engine-docume)| | |
-|[ AddOrOverwrite](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/resourcetable.markdown#addoroverwrite-plasma-engi)|[ MaxWeight](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/resourcetable.markdown#maxweight-plasma-engine-do)| | |
-|[ Clear](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/resourcetable.markdown#clear-void)|[ ResourceType](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/resourcetable.markdown#resourcetype-plasma-engine)| | |
-|[ Contains](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/resourcetable.markdown#contains-plasma-engine-doc)| | | |
-|[ CreateRuntime](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/resourcetable.markdown#createruntime-plasma-engin)| | | |
-|[ ForceRebuild](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/resourcetable.markdown#forcerebuild-void)| | | |
-|[ Get](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/resourcetable.markdown#get-plasma-engine-document)| | | |
-|[ GetOrDefault](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/resourcetable.markdown#getordefault-plasma-engine)| | | |
-|[ GetOrError](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/resourcetable.markdown#getorerror-plasma-engine-d)| | | |
-|[ GetOrNull](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/resourcetable.markdown#getornull-plasma-engine-do)| | | |
-|[ RemoveAt](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/resourcetable.markdown#removeat-void)| | | |
-|[ RemoveOrError](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/resourcetable.markdown#removeorerror-void)| | | |
-|[ RemoveOrIgnore](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/resourcetable.markdown#removeorignore-plasma-engi)| | | |
-|[ RuntimeClone](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/resourcetable.markdown#runtimeclone-plasma-engine)| | | |
-|[ Sample](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/resourcetable.markdown#sample-plasma-engine-docum)| | | |
-|[ SampleIndex](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/resourcetable.markdown#sampleindex-plasma-engine)| | | |
-|[ Set](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/resourcetable.markdown#set-void)| | | |
+|[ AddOrError](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/resourcetable.markdown#addorerror-void)|[ All](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/resourcetable.markdown#all-plasma-engine-document)|[dataresource](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/dataresource.markdown)| |
+|[ AddOrIgnore](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/resourcetable.markdown#addorignore-plasma-engine)|[ Count](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/resourcetable.markdown#count-plasma-engine-docume)| | |
+|[ AddOrOverwrite](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/resourcetable.markdown#addoroverwrite-plasma-engi)|[ MaxWeight](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/resourcetable.markdown#maxweight-plasma-engine-do)| | |
+|[ Clear](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/resourcetable.markdown#clear-void)|[ ResourceType](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/resourcetable.markdown#resourcetype-plasma-engine)| | |
+|[ Contains](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/resourcetable.markdown#contains-plasma-engine-doc)| | | |
+|[ CreateRuntime](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/resourcetable.markdown#createruntime-plasma-engin)| | | |
+|[ ForceRebuild](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/resourcetable.markdown#forcerebuild-void)| | | |
+|[ Get](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/resourcetable.markdown#get-plasma-engine-document)| | | |
+|[ GetOrDefault](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/resourcetable.markdown#getordefault-plasma-engine)| | | |
+|[ GetOrError](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/resourcetable.markdown#getorerror-plasma-engine-d)| | | |
+|[ GetOrNull](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/resourcetable.markdown#getornull-plasma-engine-do)| | | |
+|[ RemoveAt](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/resourcetable.markdown#removeat-void)| | | |
+|[ RemoveOrError](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/resourcetable.markdown#removeorerror-void)| | | |
+|[ RemoveOrIgnore](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/resourcetable.markdown#removeorignore-plasma-engi)| | | |
+|[ RuntimeClone](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/resourcetable.markdown#runtimeclone-plasma-engine)| | | |
+|[ Sample](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/resourcetable.markdown#sample-plasma-engine-docum)| | | |
+|[ SampleIndex](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/resourcetable.markdown#sampleindex-plasma-engine)| | | |
+|[ Set](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/resourcetable.markdown#set-void)| | | |
 
 
  #  Properties
 
 
 ---  
- #  All : [resourcetableentryrange](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/resourcetableentryrange.markdown)
+ #  All : [resourcetableentryrange](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/resourcetableentryrange.markdown)
 
  `read-only`
 
@@ -40,7 +40,7 @@
 
 
 ---  
- #  Count : [integer](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/integer.markdown)
+ #  Count : [integer](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer.markdown)
 
  `read-only`
 
@@ -50,7 +50,7 @@
 
 
 ---  
- #  MaxWeight : [real](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real.markdown)
+ #  MaxWeight : [real](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.markdown)
 
 > The maximum probability weight value that can be stored in the table. Setting this will clamp all weight values.
 > ``` lang=cpp, name=Lightning
@@ -58,7 +58,7 @@
 
 
 ---  
- #  ResourceType : [string](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/string.markdown)
+ #  ResourceType : [string](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/string.markdown)
 
 > The kind of resource contained in this table. This is either a resource type or "String".
 > ``` lang=cpp, name=Lightning
@@ -75,31 +75,31 @@
 > Add the given entry. If another entry with the same name exists then an error is thrown.
 > |Name|Type|Description|
 > |---|---|---|
-> |entry|[resourcetableentry](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/resourcetableentry.markdown)| |
+> |entry|[resourcetableentry](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/resourcetableentry.markdown)| |
 > ``` lang=cpp, name=Lightning
 > function AddOrError(entry : ResourceTableEntry)
 > ``` 
 
 
 ---  
- #  AddOrIgnore : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/boolean.markdown)
+ #  AddOrIgnore : [boolean](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.markdown)
 
 > Add the given entry. If another entry with the same name exists then no operation is performed.
 > |Name|Type|Description|
 > |---|---|---|
-> |entry|[resourcetableentry](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/resourcetableentry.markdown)| |
+> |entry|[resourcetableentry](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/resourcetableentry.markdown)| |
 > ``` lang=cpp, name=Lightning
 > function AddOrIgnore(entry : ResourceTableEntry) : Boolean
 > ``` 
 
 
 ---  
- #  AddOrOverwrite : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/boolean.markdown)
+ #  AddOrOverwrite : [boolean](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.markdown)
 
 > Add the given entry. If another entry with the same name exists then it is overwritten.
 > |Name|Type|Description|
 > |---|---|---|
-> |entry|[resourcetableentry](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/resourcetableentry.markdown)| |
+> |entry|[resourcetableentry](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/resourcetableentry.markdown)| |
 > ``` lang=cpp, name=Lightning
 > function AddOrOverwrite(entry : ResourceTableEntry) : Boolean
 > ``` 
@@ -117,19 +117,19 @@
 
 
 ---  
- #  Contains : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/boolean.markdown)
+ #  Contains : [boolean](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.markdown)
 
 > Returns if the given key is contained.
 > |Name|Type|Description|
 > |---|---|---|
-> |key|[string](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/string.markdown)| |
+> |key|[string](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/string.markdown)| |
 > ``` lang=cpp, name=Lightning
 > function Contains(key : String) : Boolean
 > ``` 
 
 
 ---  
- #  CreateRuntime : [resourcetable](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/resourcetable.markdown)
+ #  CreateRuntime : [resourcetable](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/resourcetable.markdown)
 
  `static`
 
@@ -153,73 +153,73 @@
 
 
 ---  
- #  Get : [resourcetableentry](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/resourcetableentry.markdown)
+ #  Get : [resourcetableentry](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/resourcetableentry.markdown)
 
 > Access an item at the given index.
 > |Name|Type|Description|
 > |---|---|---|
-> |index|[integer](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/integer.markdown)| |
+> |index|[integer](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer.markdown)| |
 > ``` lang=cpp, name=Lightning
 > function Get(index : Integer) : ResourceTableEntry
 > ``` 
 
 
 ---  
- #  Get : [resourcetableentry](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/resourcetableentry.markdown)
+ #  Get : [resourcetableentry](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/resourcetableentry.markdown)
 
 > Hash-Set interface. Gets the item with the same name as the entry.
 > |Name|Type|Description|
 > |---|---|---|
-> |entry|[resourcetableentry](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/resourcetableentry.markdown)| |
+> |entry|[resourcetableentry](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/resourcetableentry.markdown)| |
 > ``` lang=cpp, name=Lightning
 > function Get(entry : ResourceTableEntry) : ResourceTableEntry
 > ``` 
 
 
 ---  
- #  Get : [resourcetableentry](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/resourcetableentry.markdown)
+ #  Get : [resourcetableentry](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/resourcetableentry.markdown)
 
 > Hash-Map interface. Gets via the provided key.
 > |Name|Type|Description|
 > |---|---|---|
-> |key|[string](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/string.markdown)| |
+> |key|[string](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/string.markdown)| |
 > ``` lang=cpp, name=Lightning
 > function Get(key : String) : ResourceTableEntry
 > ``` 
 
 
 ---  
- #  GetOrDefault : [resourcetableentry](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/resourcetableentry.markdown)
+ #  GetOrDefault : [resourcetableentry](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/resourcetableentry.markdown)
 
 > Returns the entry associated with the given key. If no entry matches the key then the provided default is returned.
 > |Name|Type|Description|
 > |---|---|---|
-> |key|[string](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/string.markdown)| |
-> |defaultValue|[resourcetableentry](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/resourcetableentry.markdown)| |
+> |key|[string](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/string.markdown)| |
+> |defaultValue|[resourcetableentry](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/resourcetableentry.markdown)| |
 > ``` lang=cpp, name=Lightning
 > function GetOrDefault(key : String, defaultValue : ResourceTableEntry) : ResourceTableEntry
 > ``` 
 
 
 ---  
- #  GetOrError : [resourcetableentry](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/resourcetableentry.markdown)
+ #  GetOrError : [resourcetableentry](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/resourcetableentry.markdown)
 
 > Returns the entry associated with the given key. If no entry matches the key then an exception is thrown.
 > |Name|Type|Description|
 > |---|---|---|
-> |key|[string](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/string.markdown)| |
+> |key|[string](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/string.markdown)| |
 > ``` lang=cpp, name=Lightning
 > function GetOrError(key : String) : ResourceTableEntry
 > ``` 
 
 
 ---  
- #  GetOrNull : [resourcetableentry](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/resourcetableentry.markdown)
+ #  GetOrNull : [resourcetableentry](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/resourcetableentry.markdown)
 
 > Returns the entry associated with the given key. If no entry matches then null is returned.
 > |Name|Type|Description|
 > |---|---|---|
-> |key|[string](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/string.markdown)| |
+> |key|[string](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/string.markdown)| |
 > ``` lang=cpp, name=Lightning
 > function GetOrNull(key : String) : ResourceTableEntry
 > ``` 
@@ -231,7 +231,7 @@
 > Removes the item at the given index.
 > |Name|Type|Description|
 > |---|---|---|
-> |index|[integer](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/integer.markdown)| |
+> |index|[integer](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer.markdown)| |
 > ``` lang=cpp, name=Lightning
 > function RemoveAt(index : Integer)
 > ``` 
@@ -243,26 +243,26 @@
 > Removes the entry associated with the given key. If no entry matches an exception is thrown.
 > |Name|Type|Description|
 > |---|---|---|
-> |key|[string](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/string.markdown)| |
+> |key|[string](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/string.markdown)| |
 > ``` lang=cpp, name=Lightning
 > function RemoveOrError(key : String)
 > ``` 
 
 
 ---  
- #  RemoveOrIgnore : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/boolean.markdown)
+ #  RemoveOrIgnore : [boolean](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.markdown)
 
 > Removes the entry associated with the given key. If no entry matches then no operation is performed.
 > |Name|Type|Description|
 > |---|---|---|
-> |key|[string](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/string.markdown)| |
+> |key|[string](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/string.markdown)| |
 > ``` lang=cpp, name=Lightning
 > function RemoveOrIgnore(key : String) : Boolean
 > ``` 
 
 
 ---  
- #  RuntimeClone : [resourcetable](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/resourcetable.markdown)
+ #  RuntimeClone : [resourcetable](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/resourcetable.markdown)
 
 > Creates a clone of this table for run-time modifications.
 > |Name|Type|Description|
@@ -273,26 +273,26 @@
 
 
 ---  
- #  Sample : [resourcetableentry](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/resourcetableentry.markdown)
+ #  Sample : [resourcetableentry](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/resourcetableentry.markdown)
 
 > Samples the table to return a random entry. Takes two (different) random floats from [0,1) in order to sample. Returns an empty string if the table is empty.
 > |Name|Type|Description|
 > |---|---|---|
-> |random1|[real](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real.markdown)| |
-> |random2|[real](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real.markdown)| |
+> |random1|[real](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.markdown)| |
+> |random2|[real](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.markdown)| |
 > ``` lang=cpp, name=Lightning
 > function Sample(random1 : Real, random2 : Real) : ResourceTableEntry
 > ``` 
 
 
 ---  
- #  SampleIndex : [integer](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/integer.markdown)
+ #  SampleIndex : [integer](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer.markdown)
 
 > Samples the table to return a random index into the table. Takes two (different) random floats from [0,1) in order to sample.
 > |Name|Type|Description|
 > |---|---|---|
-> |random1|[real](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real.markdown)| |
-> |random2|[real](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real.markdown)| |
+> |random1|[real](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.markdown)| |
+> |random2|[real](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.markdown)| |
 > ``` lang=cpp, name=Lightning
 > function SampleIndex(random1 : Real, random2 : Real) : Integer
 > ``` 
@@ -304,8 +304,8 @@
 > Access an item at the given index.
 > |Name|Type|Description|
 > |---|---|---|
-> |index|[integer](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/integer.markdown)| |
-> |entry|[resourcetableentry](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/resourcetableentry.markdown)| |
+> |index|[integer](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer.markdown)| |
+> |entry|[resourcetableentry](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/resourcetableentry.markdown)| |
 > ``` lang=cpp, name=Lightning
 > function Set(index : Integer, entry : ResourceTableEntry)
 > ``` 
@@ -317,7 +317,7 @@
 > Hash-Set interface. Sets the item with the same name as the entry.
 > |Name|Type|Description|
 > |---|---|---|
-> |entry|[resourcetableentry](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/resourcetableentry.markdown)| |
+> |entry|[resourcetableentry](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/resourcetableentry.markdown)| |
 > ``` lang=cpp, name=Lightning
 > function Set(entry : ResourceTableEntry)
 > ``` 
@@ -329,8 +329,8 @@
 > Hash-Map interface. Sets via the provided key.
 > |Name|Type|Description|
 > |---|---|---|
-> |key|[string](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/string.markdown)| |
-> |entry|[resourcetableentry](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/resourcetableentry.markdown)| |
+> |key|[string](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/string.markdown)| |
+> |entry|[resourcetableentry](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/resourcetableentry.markdown)| |
 > ``` lang=cpp, name=Lightning
 > function Set(key : String, entry : ResourceTableEntry)
 > ``` 

@@ -4,18 +4,18 @@
 
 |Methods|Properties|Base Classes|Derived Classes|
 |---|---|---|---|
-|[ All](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/multisprite.markdown#all-plasma-engine-document)|[ AnimationActive](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/multisprite.markdown#animationactive-plasma-eng)|[basesprite](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/basesprite.markdown)| |
-|[ Clear](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/multisprite.markdown#clear-void)|[ AnimationSpeed](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/multisprite.markdown#animationspeed-plasma-engi)| | |
-|[ Get](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/multisprite.markdown#get-plasma-engine-document)| | | |
-|[ Constructor](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/multisprite.markdown#multisprite-void)| | | |
-|[ Set](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/multisprite.markdown#set-void)| | | |
+|[ All](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/multisprite.markdown#all-plasma-engine-document)|[ AnimationActive](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/multisprite.markdown#animationactive-plasma-eng)|[basesprite](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/basesprite.markdown)| |
+|[ Clear](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/multisprite.markdown#clear-void)|[ AnimationSpeed](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/multisprite.markdown#animationspeed-plasma-engi)| | |
+|[ Get](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/multisprite.markdown#get-plasma-engine-document)| | | |
+|[ Constructor](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/multisprite.markdown#multisprite-void)| | | |
+|[ Set](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/multisprite.markdown#set-void)| | | |
 
 
  #  Properties
 
 
 ---  
- #  AnimationActive : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/boolean.markdown)
+ #  AnimationActive : [boolean](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -23,7 +23,7 @@
 
 
 ---  
- #  AnimationSpeed : [real](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real.markdown)
+ #  AnimationSpeed : [real](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -35,7 +35,7 @@
 
 
 ---  
- #  All : [multispriteentryrange](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/multispriteentryrange.markdown)
+ #  All : [multispriteentryrange](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/multispriteentryrange.markdown)
 
 > 
 > |Name|Type|Description|
@@ -57,12 +57,12 @@
 
 
 ---  
- #  Get : [multispriteentry](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/multispriteentry.markdown)
+ #  Get : [multispriteentry](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/multispriteentry.markdown)
 
 > 
 > |Name|Type|Description|
 > |---|---|---|
-> |p0|[integer2](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/integer2.markdown)| |
+> |p0|[integer2](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer2.markdown)| |
 > ``` lang=cpp, name=Lightning
 > function Get(p0 : Integer2) : MultiSpriteEntry
 > ``` 
@@ -87,8 +87,8 @@
 > 
 > |Name|Type|Description|
 > |---|---|---|
-> |p0|[integer2](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/integer2.markdown)| |
-> |p1|[spritesource](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/spritesource.markdown)| |
+> |p0|[integer2](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer2.markdown)| |
+> |p1|[spritesource](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/spritesource.markdown)| |
 > ``` lang=cpp, name=Lightning
 > function Set(p0 : Integer2, p1 : SpriteSource)
 > ``` 

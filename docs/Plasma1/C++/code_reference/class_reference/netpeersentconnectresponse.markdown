@@ -6,20 +6,20 @@
 
 |Methods|Properties|Base Classes|Derived Classes|
 |---|---|---|---|
-| |[ OurConnectResponse](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netpeersentconnectresponse.markdown#ourconnectresponse-plasma)|[event](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/event.markdown)| |
-| |[ OurIpAddress](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netpeersentconnectresponse.markdown#ouripaddress-plasma-engine)| | |
-| |[ OurResponseBundle](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netpeersentconnectresponse.markdown#ourresponsebundle-plasma-e)| | |
-| |[ TheirIpAddress](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netpeersentconnectresponse.markdown#theiripaddress-plasma-engi)| | |
-| |[ TheirNetPeerId](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netpeersentconnectresponse.markdown#theirnetpeerid-plasma-engi)| | |
-| |[ TheirPendingUserAddRequestCount](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netpeersentconnectresponse.markdown#theirpendinguseraddreque)| | |
-| |[ TheirRequestBundle](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netpeersentconnectresponse.markdown#theirrequestbundle-plasma)| | |
+| |[ OurConnectResponse](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/netpeersentconnectresponse.markdown#ourconnectresponse-plasma)|[event](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/event.markdown)| |
+| |[ OurIpAddress](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/netpeersentconnectresponse.markdown#ouripaddress-plasma-engine)| | |
+| |[ OurResponseBundle](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/netpeersentconnectresponse.markdown#ourresponsebundle-plasma-e)| | |
+| |[ TheirIpAddress](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/netpeersentconnectresponse.markdown#theiripaddress-plasma-engi)| | |
+| |[ TheirNetPeerId](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/netpeersentconnectresponse.markdown#theirnetpeerid-plasma-engi)| | |
+| |[ TheirPendingUserAddRequestCount](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/netpeersentconnectresponse.markdown#theirpendinguseraddreque)| | |
+| |[ TheirRequestBundle](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/netpeersentconnectresponse.markdown#theirrequestbundle-plasma)| | |
 
 
  #  Properties
 
 
 ---  
- #  OurConnectResponse : [ConnectResponse](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/enum_reference.markdown#connectresponse)
+ #  OurConnectResponse : [ConnectResponse](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/enum_reference.markdown#connectresponse)
 
  `read-only`
 
@@ -29,7 +29,7 @@
 
 
 ---  
- #  OurIpAddress : [ipaddress](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/ipaddress.markdown)
+ #  OurIpAddress : [ipaddress](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/ipaddress.markdown)
 
  `read-only`
 
@@ -39,7 +39,7 @@
 
 
 ---  
- #  OurResponseBundle : [eventbundle](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/eventbundle.markdown)
+ #  OurResponseBundle : [eventbundle](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/eventbundle.markdown)
 
  `read-only`
 
@@ -49,7 +49,7 @@
 
 
 ---  
- #  TheirIpAddress : [ipaddress](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/ipaddress.markdown)
+ #  TheirIpAddress : [ipaddress](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/ipaddress.markdown)
 
  `read-only`
 
@@ -59,7 +59,7 @@
 
 
 ---  
- #  TheirNetPeerId : [integer](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/integer.markdown)
+ #  TheirNetPeerId : [integer](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer.markdown)
 
  `read-only`
 
@@ -69,7 +69,7 @@
 
 
 ---  
- #  TheirPendingUserAddRequestCount : [integer](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/integer.markdown)
+ #  TheirPendingUserAddRequestCount : [integer](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer.markdown)
 
  `read-only`
 
@@ -79,7 +79,7 @@
 
 
 ---  
- #  TheirRequestBundle : [eventbundle](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/eventbundle.markdown)
+ #  TheirRequestBundle : [eventbundle](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/eventbundle.markdown)
 
  `read-only`
 

@@ -6,7 +6,7 @@
 
 |Methods|Properties|Base Classes|Derived Classes|
 |---|---|---|---|
-|[ Constructor](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/pointforceeffect.markdown#pointforceeffect-void)| |[basicpointeffect](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/basicpointeffect.markdown)| |
+|[ Constructor](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/pointforceeffect.markdown#pointforceeffect-void)| |[basicpointeffect](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/basicpointeffect.markdown)| |
 
 
  #  Properties

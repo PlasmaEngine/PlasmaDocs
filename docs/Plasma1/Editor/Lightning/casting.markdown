@@ -1,5 +1,5 @@
 # Casting
-Fundamentally, casting is converting from one type to another.  As demonstrated in the code snippet below, a [Function](https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/Lightning/functions.markdown) that takes a grade and returns pass/fail can be thought of as a conversion from a [real](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real.markdown) to a [boolean](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/boolean.markdown).
+Fundamentally, casting is converting from one type to another.  As demonstrated in the code snippet below, a [Function](https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/Lightning/functions.markdown) that takes a grade and returns pass/fail can be thought of as a conversion from a [real](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.markdown) to a [boolean](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.markdown).
 <pre><code class="language-csharp" name="Conversion Function">
 function IsPassing(grade : Real) : Boolean
 {
@@ -22,17 +22,17 @@ var myReal : Real = 1.0;
 var myDoubleReal : DoubleReal = myReal; // implicit casting
 var myInteger : Integer = myReal as Integer; // explicit casting
 </code></pre>
-In the example above, `myDoubleReal` is being set to `myReal`, which invokes an implicit cast from [real](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real.markdown) to [doublereal](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/doublereal.markdown).  When `myReal as Integer` is evaluated, explicit casting is invoked to convert a [real](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real.markdown) to an [integer](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/integer.markdown).  The format for explicit casting is `<value> as <new type>`.
+In the example above, `myDoubleReal` is being set to `myReal`, which invokes an implicit cast from [real](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.markdown) to [doublereal](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/doublereal.markdown).  When `myReal as Integer` is evaluated, explicit casting is invoked to convert a [real](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.markdown) to an [integer](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer.markdown).  The format for explicit casting is `<value> as <new type>`.
 
 NOTE: Explicit casting should only be used when one is aware of all of the nuances of the cast.
 
 # Casting Between Numeric and Boolean Types
 The following base data types are considerered Numeric and Boolean:
-| [integer](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/integer.markdown) |
-| [doubleinteger](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/doubleinteger.markdown) |
-| [real](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real.markdown) |
-| [doublereal](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/doublereal.markdown) |
-| [boolean](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/boolean.markdown) |
+| [integer](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer.markdown) |
+| [doubleinteger](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/doubleinteger.markdown) |
+| [real](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.markdown) |
+| [doublereal](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/doublereal.markdown) |
+| [boolean](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.markdown) |
 
 All *cast operations* using only these types are valid, meaning either explicit or implicit.  The code snippit below demonstates implicit casting between numeric types.
 
@@ -47,7 +47,7 @@ var myDoubleReal2 : DoubleReal = myDoubleInteger;
 var myDoubleReal3 : DoubleReal = myReal;
 </code></pre>
 
-Notice that implicit casting is allowed when converting to a numeric set, from a smaller data size to a larger one.  The value of `myInteger` can be implicitly casted to a [doubleinteger](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/doubleinteger.markdown), which holds twice the number of bits as an [integer](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/integer.markdown).  The value of `myInteger` can also be implicitly casted to a [real](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real.markdown).  Real values can hold whole numbers and a decimal portion, whereas integers can only be whole numbers.
+Notice that implicit casting is allowed when converting to a numeric set, from a smaller data size to a larger one.  The value of `myInteger` can be implicitly casted to a [doubleinteger](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/doubleinteger.markdown), which holds twice the number of bits as an [integer](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer.markdown).  The value of `myInteger` can also be implicitly casted to a [real](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.markdown).  Real values can hold whole numbers and a decimal portion, whereas integers can only be whole numbers.
 
 (NOTE)**From a Mathematics Perspective** The integer set is a subset of the real set.  For more information on mathematical sets, visit the [Wikipedia Set (Mathematics)](https://en.wikipedia.org/wiki/Set_(mathematics)) page.
 
@@ -120,14 +120,14 @@ var a2 : A = null as A; // explicit cast (unnecessary)
 NOTE: Interpreting `null` as an invalid state for object references is a common pattern in programming.
 
  # Any Casts
-Any type can be cast implicitly to an [any](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/any.markdown), and an [any](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/any.markdown) value can be implicitly cast to any type.  The [any](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/any.markdown) type is used as a generic reference to any instantiated class or struct.
+Any type can be cast implicitly to an [any](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/any.markdown), and an [any](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/any.markdown) value can be implicitly cast to any type.  The [any](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/any.markdown) type is used as a generic reference to any instantiated class or struct.
 <pre><code class="language-csharp" name="Any Casting">
 var integerOne : any = 1;
 var myInteger : Integer = integerOne; // any cast
 var myReal : Real = integerOne; // runtime exception
 </code></pre>
 
-Notice how the attempt to cast `integerOne`, which is an [any](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/any.markdown), to a [real](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real.markdown) results in a runtime exception.  An [any](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/any.markdown) must first be cast to the type of the value it holds, even before other implicit conversions.
+Notice how the attempt to cast `integerOne`, which is an [any](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/any.markdown), to a [real](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.markdown) results in a runtime exception.  An [any](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/any.markdown) must first be cast to the type of the value it holds, even before other implicit conversions.
 
 # Same Casts
 Same casts are casts that convert a value of one type to the same type.  All same casts can be done implicitly and are unnecessary.
@@ -143,11 +143,11 @@ var myInteger : Integer = 1 as Integer; // explicit same cast
 - [inheritance](https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/Lightning/inheritance.markdown)
 
 ## Code Reference
-- [integer](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/integer.markdown)
-- [doubleinteger](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/doubleinteger.markdown)
-- [real](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real.markdown)
-- [doublereal](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/doublereal.markdown)
-- [boolean](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/boolean.markdown)
-- [any](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/any.markdown) 
+- [integer](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer.markdown)
+- [doubleinteger](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/doubleinteger.markdown)
+- [real](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.markdown)
+- [doublereal](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/doublereal.markdown)
+- [boolean](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.markdown)
+- [any](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/any.markdown) 
 
  

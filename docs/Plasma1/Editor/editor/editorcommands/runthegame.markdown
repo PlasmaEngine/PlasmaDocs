@@ -9,7 +9,7 @@ Running the game will and should be done often. You can run the game in one of f
 
 *The standard right-pointing triangle plays the game*
 
-- [ Command](https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/editor/editorcommands/commands.markdown) : [ PlayGame](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/command_reference.markdown#playgame)
+- [ Command](https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/editor/editorcommands/commands.markdown) : [ PlayGame](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/command_reference.markdown#playgame)
 
  Select Menu `Project  > Play Game`
  

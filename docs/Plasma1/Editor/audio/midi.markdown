@@ -1,5 +1,5 @@
 # MIDI
-If a MIDI device is connected when the Plasma Engine starts up it will listen for messages from that device and send corresponding [ MidiEvents ](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/midievent.markdown). It does not keep track of device changes, so if a MIDI keyboard is plugged in after the editor or the game is running it won't respond to that device.
+If a MIDI device is connected when the Plasma Engine starts up it will listen for messages from that device and send corresponding [ MidiEvents ](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/midievent.markdown). It does not keep track of device changes, so if a MIDI keyboard is plugged in after the editor or the game is running it won't respond to that device.
 
 # Common Uses
 
@@ -38,6 +38,6 @@ The following events will be sent whenever a corresponding MIDI message is recei
 - [AdditiveSynthNode ](https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/audio/soundnode/additivesynthnode.markdown)
 
 ## Reference
-- [ MIDIEvent ](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/midievent.markdown) 
+- [ MIDIEvent ](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/midievent.markdown) 
 
  

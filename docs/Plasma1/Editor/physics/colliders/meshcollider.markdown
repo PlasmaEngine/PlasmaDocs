@@ -1,7 +1,7 @@
 # Mesh Collider
 (NOTE) **Recommended Reading:** The [Collider](https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/physics/colliders.markdown) page should be read before this page.
 
-[MeshCollider](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/meshcollider.markdown) defines a surface mesh for world geometry based upon a [PhysicsMesh](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/physicsmesh.markdown) resource.
+[MeshCollider](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/meshcollider.markdown) defines a surface mesh for world geometry based upon a [PhysicsMesh](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/physicsmesh.markdown) resource.
 
 WARNING: A future version will likely combine all physics mesh types together.
 
@@ -15,8 +15,8 @@ NOTE: As MeshCollider is assumed to be static, collision detection is not perfor
 - [rigidbody.markdown](https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/physics/colliders/rigidbody.markdown)
 
 ## Reference
-- [MeshCollider](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/meshcollider.markdown)
-- [Collider](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/collider.markdown)
-- [RigidBody](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/rigidbody.markdown) 
+- [MeshCollider](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/meshcollider.markdown)
+- [Collider](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/collider.markdown)
+- [RigidBody](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/rigidbody.markdown) 
 
  

@@ -1,5 +1,5 @@
 # Low Pass Node
-The [ LowPassNode ](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/lowpassnode.markdown) collects audio data from all of its inputs and applies a low pass filter to it before passing it along to its outputs.
+The [ LowPassNode ](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/lowpassnode.markdown) collects audio data from all of its inputs and applies a low pass filter to it before passing it along to its outputs.
 
 # Common Uses
 
@@ -17,6 +17,6 @@ Low pass filters leave low frequencies untouched while silencing high frequencie
 - [highpassnode](https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/audio/soundnode/highpassnode.markdown)
 
 ## Code Reference
-- [ LowPassNode ](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/lowpassnode.markdown) 
+- [ LowPassNode ](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/lowpassnode.markdown) 
 
  

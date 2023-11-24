@@ -4,19 +4,19 @@
 
 |Methods|Properties|Base Classes|Derived Classes|
 |---|---|---|---|
-|[ Close](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/asyncprocess.markdown#close-void)|[ StandardError](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/asyncprocess.markdown#standarderror-plasma-engin)|[referencecountedeventobject](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/referencecountedeventobject.markdown)| |
-|[ Create](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/asyncprocess.markdown#create-plasma-engine-docum)|[ StandardInput](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/asyncprocess.markdown#standardinput-plasma-engin)| | |
-|[ IsRunning](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/asyncprocess.markdown#isrunning-plasma-engine-do)|[ StandardOutput](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/asyncprocess.markdown#standardoutput-plasma-engi)| | |
-|[ Start](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/asyncprocess.markdown#start-plasma-engine-docume)|[ StoreStandardErrorData](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/asyncprocess.markdown#storestandarderrordata-z)| | |
-|[ Terminate](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/asyncprocess.markdown#terminate-void)|[ StoreStandardOutputData](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/asyncprocess.markdown#storestandardoutputdata)| | |
-|[ WaitForClose](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/asyncprocess.markdown#waitforclose-plasma-engine)| | | |
+|[ Close](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/asyncprocess.markdown#close-void)|[ StandardError](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/asyncprocess.markdown#standarderror-plasma-engin)|[referencecountedeventobject](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/referencecountedeventobject.markdown)| |
+|[ Create](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/asyncprocess.markdown#create-plasma-engine-docum)|[ StandardInput](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/asyncprocess.markdown#standardinput-plasma-engin)| | |
+|[ IsRunning](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/asyncprocess.markdown#isrunning-plasma-engine-do)|[ StandardOutput](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/asyncprocess.markdown#standardoutput-plasma-engi)| | |
+|[ Start](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/asyncprocess.markdown#start-plasma-engine-docume)|[ StoreStandardErrorData](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/asyncprocess.markdown#storestandarderrordata-z)| | |
+|[ Terminate](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/asyncprocess.markdown#terminate-void)|[ StoreStandardOutputData](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/asyncprocess.markdown#storestandardoutputdata)| | |
+|[ WaitForClose](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/asyncprocess.markdown#waitforclose-plasma-engine)| | | |
 
 
  #  Properties
 
 
 ---  
- #  StandardError : [string](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/string.markdown)
+ #  StandardError : [string](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/string.markdown)
 
  `read-only`
 
@@ -26,7 +26,7 @@
 
 
 ---  
- #  StandardInput : [filestream](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/filestream.markdown)
+ #  StandardInput : [filestream](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/filestream.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -34,7 +34,7 @@
 
 
 ---  
- #  StandardOutput : [string](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/string.markdown)
+ #  StandardOutput : [string](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/string.markdown)
 
  `read-only`
 
@@ -44,7 +44,7 @@
 
 
 ---  
- #  StoreStandardErrorData : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/boolean.markdown)
+ #  StoreStandardErrorData : [boolean](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.markdown)
 
 > Should the results from standard error be accumulated and stored? If a lot of data is output it may be good to turn this off and use the partial data callback events instead.
 > ``` lang=cpp, name=Lightning
@@ -52,7 +52,7 @@
 
 
 ---  
- #  StoreStandardOutputData : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/boolean.markdown)
+ #  StoreStandardOutputData : [boolean](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.markdown)
 
 > Should the results from standard output be accumulated and stored? If a lot of data is output it may be good to turn this off and use the partial data callback events instead.
 > ``` lang=cpp, name=Lightning
@@ -75,7 +75,7 @@
 
 
 ---  
- #  Create : [asyncprocess](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/asyncprocess.markdown)
+ #  Create : [asyncprocess](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/asyncprocess.markdown)
 
  `static`
 
@@ -88,7 +88,7 @@
 
 
 ---  
- #  IsRunning : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/boolean.markdown)
+ #  IsRunning : [boolean](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.markdown)
 
 > Returns true if the process is still running, false otherwise.
 > |Name|Type|Description|
@@ -99,12 +99,12 @@
 
 
 ---  
- #  Start : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/boolean.markdown)
+ #  Start : [boolean](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.markdown)
 
 > Begins the execution of another process using the given parameters. Throws an exception if the process cannot be started.
 > |Name|Type|Description|
 > |---|---|---|
-> |startInfo|[processstartinfo](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/processstartinfo.markdown)| |
+> |startInfo|[processstartinfo](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/processstartinfo.markdown)| |
 > ``` lang=cpp, name=Lightning
 > function Start(startInfo : ProcessStartInfo) : Boolean
 > ``` 
@@ -122,7 +122,7 @@
 
 
 ---  
- #  WaitForClose : [integer](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/integer.markdown)
+ #  WaitForClose : [integer](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer.markdown)
 
 > Waits for a process to close, this will block until the process closes.
 > |Name|Type|Description|
@@ -133,12 +133,12 @@
 
 
 ---  
- #  WaitForClose : [integer](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/integer.markdown)
+ #  WaitForClose : [integer](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer.markdown)
 
 > Waits for a process to close up to a given number of milliseconds. This can take up to 3 * milliseconds due to waiting for the output streams to close.
 > |Name|Type|Description|
 > |---|---|---|
-> |milliseconds|[integer](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/integer.markdown)| |
+> |milliseconds|[integer](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer.markdown)| |
 > ``` lang=cpp, name=Lightning
 > function WaitForClose(milliseconds : Integer) : Integer
 > ``` 

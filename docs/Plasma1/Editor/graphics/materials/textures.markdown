@@ -1,5 +1,5 @@
 # Textures
-[Textures](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/texture.markdown) are a special type of image used to render 3D graphics. It's commonly mapped to [meshes](https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/graphics/models/mesh.markdown), [particles](https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/tutorials/graphics/particles.markdown) and surfaces and it controls different aspects of rendering through colors, normals and masks and more.
+[Textures](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/texture.markdown) are a special type of image used to render 3D graphics. It's commonly mapped to [meshes](https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/graphics/models/mesh.markdown), [particles](https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/tutorials/graphics/particles.markdown) and surfaces and it controls different aspects of rendering through colors, normals and masks and more.
 
 Textures are not a final picture of the object; they are inputs that, when combined with lighting and other visual effects, produce a variety of graphical results. One of the most important aspects of textures is the ability to be drawn at different sizes efficiently. This is accomplished through [Mipmapping ](http://en.wikipedia.org/wiki/Mipmap) and anisotropic filtering.
 
@@ -34,6 +34,6 @@ By default, Plasma performs an operation called [block_compression](https://plas
 - [particles](https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/tutorials/graphics/particles.markdown)
 
 ## Code Reference
-- [texture](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/texture.markdown)  
+- [texture](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/texture.markdown)  
 
  

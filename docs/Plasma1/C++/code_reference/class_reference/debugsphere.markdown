@@ -2,21 +2,21 @@
 
 |Methods|Properties|Base Classes|Derived Classes|
 |---|---|---|---|
-|[ Constructor](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/debugsphere.markdown#debugsphere-void)|[ Color](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/debugsphere.markdown#color-plasma-engine-docume)| | |
-| |[ Colored](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/debugsphere.markdown#colored-plasma-engine-docu)| | |
-| |[ OnTop](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/debugsphere.markdown#ontop-plasma-engine-docume)| | |
-| |[ Position](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/debugsphere.markdown#position-plasma-engine-doc)| | |
-| |[ Radius](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/debugsphere.markdown#radius-plasma-engine-docum)| | |
-| |[ ViewAligned](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/debugsphere.markdown#viewaligned-plasma-engine)| | |
-| |[ ViewScaled](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/debugsphere.markdown#viewscaled-plasma-engine-d)| | |
-| |[ ViewScaleOffset](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/debugsphere.markdown#viewscaleoffset-plasma-eng)| | |
+|[ Constructor](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/debugsphere.markdown#debugsphere-void)|[ Color](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/debugsphere.markdown#color-plasma-engine-docume)| | |
+| |[ Colored](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/debugsphere.markdown#colored-plasma-engine-docu)| | |
+| |[ OnTop](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/debugsphere.markdown#ontop-plasma-engine-docume)| | |
+| |[ Position](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/debugsphere.markdown#position-plasma-engine-doc)| | |
+| |[ Radius](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/debugsphere.markdown#radius-plasma-engine-docum)| | |
+| |[ ViewAligned](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/debugsphere.markdown#viewaligned-plasma-engine)| | |
+| |[ ViewScaled](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/debugsphere.markdown#viewscaled-plasma-engine-d)| | |
+| |[ ViewScaleOffset](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/debugsphere.markdown#viewscaleoffset-plasma-eng)| | |
 
 
  #  Properties
 
 
 ---  
- #  Color : [real4](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real4.markdown)
+ #  Color : [real4](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real4.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -24,7 +24,7 @@
 
 
 ---  
- #  Colored : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/boolean.markdown)
+ #  Colored : [boolean](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -32,7 +32,7 @@
 
 
 ---  
- #  OnTop : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/boolean.markdown)
+ #  OnTop : [boolean](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -40,7 +40,7 @@
 
 
 ---  
- #  Position : [real3](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real3.markdown)
+ #  Position : [real3](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real3.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -48,7 +48,7 @@
 
 
 ---  
- #  Radius : [real](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real.markdown)
+ #  Radius : [real](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -56,7 +56,7 @@
 
 
 ---  
- #  ViewAligned : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/boolean.markdown)
+ #  ViewAligned : [boolean](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -64,7 +64,7 @@
 
 
 ---  
- #  ViewScaled : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/boolean.markdown)
+ #  ViewScaled : [boolean](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -72,7 +72,7 @@
 
 
 ---  
- #  ViewScaleOffset : [real3](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real3.markdown)
+ #  ViewScaleOffset : [real3](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real3.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -104,7 +104,7 @@
 > 
 > |Name|Type|Description|
 > |---|---|---|
-> |sphere|[debugsphere](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/debugsphere.markdown)| |
+> |sphere|[debugsphere](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/debugsphere.markdown)| |
 > ``` lang=cpp, name=Lightning
 > function DebugSphere(sphere : DebugSphere)
 > ``` 
@@ -118,8 +118,8 @@
 > 
 > |Name|Type|Description|
 > |---|---|---|
-> |position|[real3](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real3.markdown)| |
-> |radius|[real](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real.markdown)| |
+> |position|[real3](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real3.markdown)| |
+> |radius|[real](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.markdown)| |
 > ``` lang=cpp, name=Lightning
 > function DebugSphere(position : Real3, radius : Real)
 > ``` 

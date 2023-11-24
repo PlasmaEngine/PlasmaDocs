@@ -1,4 +1,4 @@
-The [ SoundEmitter ](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/soundemitter.markdown) component handles the 3D positioning of sounds in a level. For instance, if the SoundEmitter's object is to the left of a [SoundListener ](https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/audio/soundlistener.markdown), it will reduce the amount of sound going to the right speaker, so that the player hears the sound to their left. 
+The [ SoundEmitter ](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/soundemitter.markdown) component handles the 3D positioning of sounds in a level. For instance, if the SoundEmitter's object is to the left of a [SoundListener ](https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/audio/soundlistener.markdown), it will reduce the amount of sound going to the right speaker, so that the player hears the sound to their left. 
 
  # Using SoundEmitters
 
@@ -32,8 +32,8 @@ The `InputNode` property should be used for attaching other SoundNodes to the in
 
  ##  Lightning Events
 
-- The `SoundInstancePlayed` [ SoundInstanceEvent  ](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/soundinstanceevent.markdown) will be sent when a SoundCue is played using either the `PlayCue` or `PlayCuePaused` methods. 
-- The `AudioInterpolationDone` [ SoundEvent  ](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/soundevent.markdown) is sent whenever a volume or pitch interpolation has finished.
+- The `SoundInstancePlayed` [ SoundInstanceEvent  ](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/soundinstanceevent.markdown) will be sent when a SoundCue is played using either the `PlayCue` or `PlayCuePaused` methods. 
+- The `AudioInterpolationDone` [ SoundEvent  ](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/soundevent.markdown) is sent whenever a volume or pitch interpolation has finished.
 
 ---
  # Related Materials
@@ -50,8 +50,8 @@ The `InputNode` property should be used for attaching other SoundNodes to the in
 
  ## Reference
 
-- [ SoundEmitter ](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/soundemitter.markdown)
-- [ SoundInstanceEvent  ](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/soundinstanceevent.markdown) 
-- [ SoundEvent  ](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/soundevent.markdown)  
+- [ SoundEmitter ](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/soundemitter.markdown)
+- [ SoundInstanceEvent  ](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/soundinstanceevent.markdown) 
+- [ SoundEvent  ](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/soundevent.markdown)  
 
  

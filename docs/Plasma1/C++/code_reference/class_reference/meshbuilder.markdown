@@ -2,19 +2,19 @@
 
 |Methods|Properties|Base Classes|Derived Classes|
 |---|---|---|---|
-|[ Constructor](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/meshbuilder.markdown#meshbuilder-void)|[ FlipNormals](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/meshbuilder.markdown#flipnormals-plasma-engine)|[buildercomponent](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/buildercomponent.markdown)| |
-| |[ FlipWindingOrder](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/meshbuilder.markdown#flipwindingorder-plasma-en)| | |
-| |[ GenerateSmoothNormals](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/meshbuilder.markdown#generatesmoothnormals-ze)| | |
-| |[ GenerateTangentSpace](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/meshbuilder.markdown#generatetangentspace-zer)| | |
-| |[ InvertUvYAxis](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/meshbuilder.markdown#invertuvyaxis-plasma-engin)| | |
-| |[ SmoothingAngleDegreesThreshold](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/meshbuilder.markdown#smoothingangledegreesthr)| | |
+|[ Constructor](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/meshbuilder.markdown#meshbuilder-void)|[ FlipNormals](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/meshbuilder.markdown#flipnormals-plasma-engine)|[buildercomponent](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/buildercomponent.markdown)| |
+| |[ FlipWindingOrder](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/meshbuilder.markdown#flipwindingorder-plasma-en)| | |
+| |[ GenerateSmoothNormals](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/meshbuilder.markdown#generatesmoothnormals-ze)| | |
+| |[ GenerateTangentSpace](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/meshbuilder.markdown#generatetangentspace-zer)| | |
+| |[ InvertUvYAxis](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/meshbuilder.markdown#invertuvyaxis-plasma-engin)| | |
+| |[ SmoothingAngleDegreesThreshold](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/meshbuilder.markdown#smoothingangledegreesthr)| | |
 
 
  #  Properties
 
 
 ---  
- #  FlipNormals : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/boolean.markdown)
+ #  FlipNormals : [boolean](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -22,7 +22,7 @@
 
 
 ---  
- #  FlipWindingOrder : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/boolean.markdown)
+ #  FlipWindingOrder : [boolean](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -30,7 +30,7 @@
 
 
 ---  
- #  GenerateSmoothNormals : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/boolean.markdown)
+ #  GenerateSmoothNormals : [boolean](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -38,7 +38,7 @@
 
 
 ---  
- #  GenerateTangentSpace : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/boolean.markdown)
+ #  GenerateTangentSpace : [boolean](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -46,7 +46,7 @@
 
 
 ---  
- #  InvertUvYAxis : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/boolean.markdown)
+ #  InvertUvYAxis : [boolean](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -54,7 +54,7 @@
 
 
 ---  
- #  SmoothingAngleDegreesThreshold : [real](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real.markdown)
+ #  SmoothingAngleDegreesThreshold : [real](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning

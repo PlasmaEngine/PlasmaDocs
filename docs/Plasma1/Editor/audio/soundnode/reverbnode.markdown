@@ -1,5 +1,5 @@
 # Reverb Node
-The [ ReverbNode ](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/reverbnode.markdown) collects audio data from all its inputs and applies a simple reverb filter before passing it off to its outputs. 
+The [ ReverbNode ](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/reverbnode.markdown) collects audio data from all its inputs and applies a simple reverb filter before passing it off to its outputs. 
 
 # Common Uses
 
@@ -16,6 +16,6 @@ The `Length` property sets the length of the reverb tail (the number of seconds 
 - [soudnode_overview](https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/audio/soundnode/soudnode_overview.markdown)
 
 ## Code Reference
-- [ ReverbNode ](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/reverbnode.markdown) 
+- [ ReverbNode ](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/reverbnode.markdown) 
 
  

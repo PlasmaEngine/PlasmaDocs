@@ -4,20 +4,20 @@
 
 |Methods|Properties|Base Classes|Derived Classes|
 |---|---|---|---|
-|[ Constructor](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/arrowgizmo.markdown#arrowgizmo-void)|[ DualHeads](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/arrowgizmo.markdown#dualheads-plasma-engine-do)|[simplegizmobase](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/simplegizmobase.markdown)| |
-| |[ FilledHeads](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/arrowgizmo.markdown#filledheads-plasma-engine)| | |
-| |[ HeadSize](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/arrowgizmo.markdown#headsize-plasma-engine-doc)| | |
-| |[ HeadType](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/arrowgizmo.markdown#headtype-plasma-engine-doc)| | |
-| |[ Length](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/arrowgizmo.markdown#length-plasma-engine-docum)| | |
-| |[ LineDrawWidth](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/arrowgizmo.markdown#linedrawwidth-plasma-engin)| | |
-| |[ SelectRadius](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/arrowgizmo.markdown#selectradius-plasma-engine)| | |
+|[ Constructor](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/arrowgizmo.markdown#arrowgizmo-void)|[ DualHeads](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/arrowgizmo.markdown#dualheads-plasma-engine-do)|[simplegizmobase](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/simplegizmobase.markdown)| |
+| |[ FilledHeads](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/arrowgizmo.markdown#filledheads-plasma-engine)| | |
+| |[ HeadSize](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/arrowgizmo.markdown#headsize-plasma-engine-doc)| | |
+| |[ HeadType](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/arrowgizmo.markdown#headtype-plasma-engine-doc)| | |
+| |[ Length](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/arrowgizmo.markdown#length-plasma-engine-docum)| | |
+| |[ LineDrawWidth](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/arrowgizmo.markdown#linedrawwidth-plasma-engin)| | |
+| |[ SelectRadius](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/arrowgizmo.markdown#selectradius-plasma-engine)| | |
 
 
  #  Properties
 
 
 ---  
- #  DualHeads : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/boolean.markdown)
+ #  DualHeads : [boolean](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -25,7 +25,7 @@
 
 
 ---  
- #  FilledHeads : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/boolean.markdown)
+ #  FilledHeads : [boolean](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -33,7 +33,7 @@
 
 
 ---  
- #  HeadSize : [real](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real.markdown)
+ #  HeadSize : [real](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -41,7 +41,7 @@
 
 
 ---  
- #  HeadType : [ArrowHeadType](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/enum_reference.markdown#arrowheadtype)
+ #  HeadType : [ArrowHeadType](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/enum_reference.markdown#arrowheadtype)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -49,7 +49,7 @@
 
 
 ---  
- #  Length : [real](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real.markdown)
+ #  Length : [real](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -57,7 +57,7 @@
 
 
 ---  
- #  LineDrawWidth : [real](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real.markdown)
+ #  LineDrawWidth : [real](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -65,7 +65,7 @@
 
 
 ---  
- #  SelectRadius : [real](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real.markdown)
+ #  SelectRadius : [real](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning

@@ -4,19 +4,19 @@
 
 |Methods|Properties|Base Classes|Derived Classes|
 |---|---|---|---|
-|[ Constructor](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/contactgraphedge.markdown#contactgraphedge-void)|[ ContactPointCount](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/contactgraphedge.markdown#contactpointcount-plasma-e)|BaseConstraintGraphEdge<Physics::Contact,Physics::ContactEdge>| |
-| |[ ContactPoints](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/contactgraphedge.markdown#contactpoints-plasma-engin)| | |
-| |[ FirstPoint](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/contactgraphedge.markdown#firstpoint-plasma-engine-d)| | |
-| |[ IsGhost](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/contactgraphedge.markdown#isghost-plasma-engine-docu)| | |
-| |[ Object](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/contactgraphedge.markdown#object-plasma-engine-docum)| | |
-| |[ OtherObject](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/contactgraphedge.markdown#otherobject-plasma-engine)| | |
+|[ Constructor](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/contactgraphedge.markdown#contactgraphedge-void)|[ ContactPointCount](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/contactgraphedge.markdown#contactpointcount-plasma-e)|BaseConstraintGraphEdge<Physics::Contact,Physics::ContactEdge>| |
+| |[ ContactPoints](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/contactgraphedge.markdown#contactpoints-plasma-engin)| | |
+| |[ FirstPoint](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/contactgraphedge.markdown#firstpoint-plasma-engine-d)| | |
+| |[ IsGhost](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/contactgraphedge.markdown#isghost-plasma-engine-docu)| | |
+| |[ Object](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/contactgraphedge.markdown#object-plasma-engine-docum)| | |
+| |[ OtherObject](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/contactgraphedge.markdown#otherobject-plasma-engine)| | |
 
 
  #  Properties
 
 
 ---  
- #  ContactPointCount : [integer](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/integer.markdown)
+ #  ContactPointCount : [integer](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer.markdown)
 
  `read-only`
 
@@ -26,7 +26,7 @@
 
 
 ---  
- #  ContactPoints : [contactpointrange](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/contactpointrange.markdown)
+ #  ContactPoints : [contactpointrange](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/contactpointrange.markdown)
 
  `read-only`
 
@@ -36,7 +36,7 @@
 
 
 ---  
- #  FirstPoint : [contactpoint](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/contactpoint.markdown)
+ #  FirstPoint : [contactpoint](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/contactpoint.markdown)
 
  `read-only`
 
@@ -46,7 +46,7 @@
 
 
 ---  
- #  IsGhost : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/boolean.markdown)
+ #  IsGhost : [boolean](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.markdown)
 
  `read-only`
 
@@ -56,7 +56,7 @@
 
 
 ---  
- #  Object : [cog](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/cog.markdown)
+ #  Object : [cog](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/cog.markdown)
 
  `read-only`
 
@@ -66,7 +66,7 @@
 
 
 ---  
- #  OtherObject : [cog](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/cog.markdown)
+ #  OtherObject : [cog](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/cog.markdown)
 
  `read-only`
 
@@ -100,7 +100,7 @@
 > 
 > |Name|Type|Description|
 > |---|---|---|
-> ||[contactgraphedge](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/contactgraphedge.markdown)| |
+> ||[contactgraphedge](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/contactgraphedge.markdown)| |
 > ``` lang=cpp, name=Lightning
 > function ContactGraphEdge( : ContactGraphEdge)
 > ``` 

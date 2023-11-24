@@ -6,15 +6,15 @@
 
 |Methods|Properties|Base Classes|Derived Classes|
 |---|---|---|---|
-|[ Constructor](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/ellipsoidcollider.markdown#ellipsoidcollider-void)|[ Radii](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/ellipsoidcollider.markdown#radii-plasma-engine-docume)|[collider](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/collider.markdown)| |
-| |[ WorldRadii](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/ellipsoidcollider.markdown#worldradii-plasma-engine-d)| | |
+|[ Constructor](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/ellipsoidcollider.markdown#ellipsoidcollider-void)|[ Radii](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/ellipsoidcollider.markdown#radii-plasma-engine-docume)|[collider](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/collider.markdown)| |
+| |[ WorldRadii](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/ellipsoidcollider.markdown#worldradii-plasma-engine-d)| | |
 
 
  #  Properties
 
 
 ---  
- #  Radii : [real3](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real3.markdown)
+ #  Radii : [real3](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real3.markdown)
 
 > The x, y, and z radius of the ellipsoid.
 > ``` lang=cpp, name=Lightning
@@ -22,7 +22,7 @@
 
 
 ---  
- #  WorldRadii : [real3](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real3.markdown)
+ #  WorldRadii : [real3](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real3.markdown)
 
  `read-only`
 

@@ -2,18 +2,18 @@
 
 |Methods|Properties|Base Classes|Derived Classes|
 |---|---|---|---|
-|[ Add](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/quickhull3d.markdown#add-void)|[ Index](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/quickhull3d.markdown#index-plasma-engine-docume)| | |
-|[ Build](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/quickhull3d.markdown#build-plasma-engine-docume)|[ Mesh](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/quickhull3d.markdown#mesh-plasma-engine-documen)| | |
-|[ Clear](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/quickhull3d.markdown#clear-void)|[ ShowDebugDraw](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/quickhull3d.markdown#showdebugdraw-plasma-engin)| | |
-|[ Draw](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/quickhull3d.markdown#draw-void)| | | |
-|[ Constructor](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/quickhull3d.markdown#quickhull3d-void)| | | |
+|[ Add](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/quickhull3d.markdown#add-void)|[ Index](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/quickhull3d.markdown#index-plasma-engine-docume)| | |
+|[ Build](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/quickhull3d.markdown#build-plasma-engine-docume)|[ Mesh](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/quickhull3d.markdown#mesh-plasma-engine-documen)| | |
+|[ Clear](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/quickhull3d.markdown#clear-void)|[ ShowDebugDraw](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/quickhull3d.markdown#showdebugdraw-plasma-engin)| | |
+|[ Draw](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/quickhull3d.markdown#draw-void)| | | |
+|[ Constructor](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/quickhull3d.markdown#quickhull3d-void)| | | |
 
 
  #  Properties
 
 
 ---  
- #  Index : [integer](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/integer.markdown)
+ #  Index : [integer](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -21,7 +21,7 @@
 
 
 ---  
- #  Mesh : [indexedhalfedgemesh](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/indexedhalfedgemesh.markdown)
+ #  Mesh : [indexedhalfedgemesh](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/indexedhalfedgemesh.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -29,7 +29,7 @@
 
 
 ---  
- #  ShowDebugDraw : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/boolean.markdown)
+ #  ShowDebugDraw : [boolean](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -46,14 +46,14 @@
 > 
 > |Name|Type|Description|
 > |---|---|---|
-> |p0|[real3](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real3.markdown)| |
+> |p0|[real3](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real3.markdown)| |
 > ``` lang=cpp, name=Lightning
 > function Add(p0 : Real3)
 > ``` 
 
 
 ---  
- #  Build : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/boolean.markdown)
+ #  Build : [boolean](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.markdown)
 
 > 
 > |Name|Type|Description|
@@ -106,7 +106,7 @@
 > 
 > |Name|Type|Description|
 > |---|---|---|
-> |p0|[quickhull3d](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/quickhull3d.markdown)| |
+> |p0|[quickhull3d](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/quickhull3d.markdown)| |
 > ``` lang=cpp, name=Lightning
 > function QuickHull3D(p0 : QuickHull3D)
 > ``` 

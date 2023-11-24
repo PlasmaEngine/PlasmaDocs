@@ -2,20 +2,20 @@
 
 |Methods|Properties|Base Classes|Derived Classes|
 |---|---|---|---|
-|[ Constructor](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/geometryimport.markdown#geometryimport-void)|[ ChangeBasis](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/geometryimport.markdown#changebasis-plasma-engine)|[contentcomponent](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/contentcomponent.markdown)| |
-| |[ CollapsePivots](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/geometryimport.markdown#collapsepivots-plasma-engi)| | |
-| |[ OriginOffset](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/geometryimport.markdown#originoffset-plasma-engine)| | |
-| |[ ScaleFactor](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/geometryimport.markdown#scalefactor-plasma-engine)| | |
-| |[ XBasisTo](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/geometryimport.markdown#xbasisto-plasma-engine-doc)| | |
-| |[ YBasisTo](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/geometryimport.markdown#ybasisto-plasma-engine-doc)| | |
-| |[ ZBasisTo](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/geometryimport.markdown#zbasisto-plasma-engine-doc)| | |
+|[ Constructor](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/geometryimport.markdown#geometryimport-void)|[ ChangeBasis](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/geometryimport.markdown#changebasis-plasma-engine)|[contentcomponent](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/contentcomponent.markdown)| |
+| |[ CollapsePivots](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/geometryimport.markdown#collapsepivots-plasma-engi)| | |
+| |[ OriginOffset](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/geometryimport.markdown#originoffset-plasma-engine)| | |
+| |[ ScaleFactor](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/geometryimport.markdown#scalefactor-plasma-engine)| | |
+| |[ XBasisTo](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/geometryimport.markdown#xbasisto-plasma-engine-doc)| | |
+| |[ YBasisTo](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/geometryimport.markdown#ybasisto-plasma-engine-doc)| | |
+| |[ ZBasisTo](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/geometryimport.markdown#zbasisto-plasma-engine-doc)| | |
 
 
  #  Properties
 
 
 ---  
- #  ChangeBasis : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/boolean.markdown)
+ #  ChangeBasis : [boolean](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -23,7 +23,7 @@
 
 
 ---  
- #  CollapsePivots : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/boolean.markdown)
+ #  CollapsePivots : [boolean](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -31,7 +31,7 @@
 
 
 ---  
- #  OriginOffset : [real3](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real3.markdown)
+ #  OriginOffset : [real3](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real3.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -39,7 +39,7 @@
 
 
 ---  
- #  ScaleFactor : [real](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real.markdown)
+ #  ScaleFactor : [real](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -47,7 +47,7 @@
 
 
 ---  
- #  XBasisTo : [BasisType](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/enum_reference.markdown#basistype)
+ #  XBasisTo : [BasisType](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/enum_reference.markdown#basistype)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -55,7 +55,7 @@
 
 
 ---  
- #  YBasisTo : [BasisType](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/enum_reference.markdown#basistype)
+ #  YBasisTo : [BasisType](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/enum_reference.markdown#basistype)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -63,7 +63,7 @@
 
 
 ---  
- #  ZBasisTo : [BasisType](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/enum_reference.markdown#basistype)
+ #  ZBasisTo : [BasisType](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/enum_reference.markdown#basistype)
 
 > 
 > ``` lang=cpp, name=Lightning

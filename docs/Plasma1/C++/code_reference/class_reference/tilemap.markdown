@@ -4,15 +4,15 @@
 
 |Methods|Properties|Base Classes|Derived Classes|
 |---|---|---|---|
-|[ Constructor](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/tilemap.markdown#tilemap-void)|[ MeshThickness](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/tilemap.markdown#meshthickness-plasma-engin)|[component](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/component.markdown)| |
-| |[ Source](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/tilemap.markdown#source-plasma-engine-docum)| | |
+|[ Constructor](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/tilemap.markdown#tilemap-void)|[ MeshThickness](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/tilemap.markdown#meshthickness-plasma-engin)|[component](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/component.markdown)| |
+| |[ Source](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/tilemap.markdown#source-plasma-engine-docum)| | |
 
 
  #  Properties
 
 
 ---  
- #  MeshThickness : [real](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real.markdown)
+ #  MeshThickness : [real](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -20,7 +20,7 @@
 
 
 ---  
- #  Source : [tilemapsource](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/tilemapsource.markdown)
+ #  Source : [tilemapsource](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/tilemapsource.markdown)
 
  `read-only`
 

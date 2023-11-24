@@ -2,18 +2,18 @@
 
 |Methods|Properties|Base Classes|Derived Classes|
 |---|---|---|---|
-| |[ IsStatic](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/member.markdown#isstatic-plasma-engine-doc)|[reflectionobject](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/reflectionobject.markdown)|[function](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/function.markdown)|
-| |[ Library](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/member.markdown#library-plasma-engine-docu)| | |
-| |[ Name](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/member.markdown#name-plasma-engine-documen)| | |
-| |[ Owner](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/member.markdown#owner-plasma-engine-docume)| | |
-| |[ Type](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/member.markdown#type-plasma-engine-documen)| | |
+| |[ IsStatic](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/member.markdown#isstatic-plasma-engine-doc)|[reflectionobject](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/reflectionobject.markdown)|[function](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/function.markdown)|
+| |[ Library](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/member.markdown#library-plasma-engine-docu)| | |
+| |[ Name](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/member.markdown#name-plasma-engine-documen)| | |
+| |[ Owner](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/member.markdown#owner-plasma-engine-docume)| | |
+| |[ Type](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/member.markdown#type-plasma-engine-documen)| | |
 
 
  #  Properties
 
 
 ---  
- #  IsStatic : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/boolean.markdown)
+ #  IsStatic : [boolean](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.markdown)
 
  `read-only`
 
@@ -23,7 +23,7 @@
 
 
 ---  
- #  Library : [library](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/library.markdown)
+ #  Library : [library](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/library.markdown)
 
  `read-only`
 
@@ -33,7 +33,7 @@
 
 
 ---  
- #  Name : [string](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/string.markdown)
+ #  Name : [string](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/string.markdown)
 
  `read-only`
 
@@ -43,7 +43,7 @@
 
 
 ---  
- #  Owner : [boundtype](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/boundtype.markdown)
+ #  Owner : [boundtype](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boundtype.markdown)
 
  `read-only`
 
@@ -53,7 +53,7 @@
 
 
 ---  
- #  Type : [type](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/type.markdown)
+ #  Type : [type](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/type.markdown)
 
  `read-only`
 

@@ -4,18 +4,18 @@
 
 |Methods|Properties|Base Classes|Derived Classes|
 |---|---|---|---|
-|[ InterpolateWetPercent](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/delaynode.markdown#interpolatewetpercent-vo)|[ Delay](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/delaynode.markdown#delay-plasma-engine-docume)|[soundnode](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/soundnode.markdown)| |
-|[ InterpolateWetValue](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/delaynode.markdown#interpolatewetvalue-void)|[ FeedbackPercent](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/delaynode.markdown#feedbackpercent-plasma-eng)| | |
-| |[ FeedbackValue](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/delaynode.markdown#feedbackvalue-plasma-engin)| | |
-| |[ WetPercent](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/delaynode.markdown#wetpercent-plasma-engine-d)| | |
-| |[ WetValue](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/delaynode.markdown#wetvalue-plasma-engine-doc)| | |
+|[ InterpolateWetPercent](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/delaynode.markdown#interpolatewetpercent-vo)|[ Delay](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/delaynode.markdown#delay-plasma-engine-docume)|[soundnode](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/soundnode.markdown)| |
+|[ InterpolateWetValue](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/delaynode.markdown#interpolatewetvalue-void)|[ FeedbackPercent](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/delaynode.markdown#feedbackpercent-plasma-eng)| | |
+| |[ FeedbackValue](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/delaynode.markdown#feedbackvalue-plasma-engin)| | |
+| |[ WetPercent](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/delaynode.markdown#wetpercent-plasma-engine-d)| | |
+| |[ WetValue](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/delaynode.markdown#wetvalue-plasma-engine-doc)| | |
 
 
  #  Properties
 
 
 ---  
- #  Delay : [real](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real.markdown)
+ #  Delay : [real](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.markdown)
 
 > The length of the delay, in seconds.
 > ``` lang=cpp, name=Lightning
@@ -23,7 +23,7 @@
 
 
 ---  
- #  FeedbackPercent : [real](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real.markdown)
+ #  FeedbackPercent : [real](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.markdown)
 
 > DEPRECATED The FeedbackValue property should be used instead.
 > ``` lang=cpp, name=Lightning
@@ -31,7 +31,7 @@
 
 
 ---  
- #  FeedbackValue : [real](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real.markdown)
+ #  FeedbackValue : [real](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.markdown)
 
 > The percentage of output (from 0 to 1.0f) which is fed back into the filter as input, creating an echo-like effect.
 > ``` lang=cpp, name=Lightning
@@ -39,7 +39,7 @@
 
 
 ---  
- #  WetPercent : [real](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real.markdown)
+ #  WetPercent : [real](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.markdown)
 
 > DEPRECATED The WetValue property should be used instead.
 > ``` lang=cpp, name=Lightning
@@ -47,7 +47,7 @@
 
 
 ---  
- #  WetValue : [real](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real.markdown)
+ #  WetValue : [real](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.markdown)
 
 > The percentage of the node's output (0 - 1.0) which has the delay filter applied to it.
 > ``` lang=cpp, name=Lightning
@@ -64,8 +64,8 @@
 > DEPRECATED The InterpolateWetValue method should be used instead.
 > |Name|Type|Description|
 > |---|---|---|
-> |wetPercent|[real](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real.markdown)| |
-> |time|[real](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real.markdown)| |
+> |wetPercent|[real](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.markdown)| |
+> |time|[real](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.markdown)| |
 > ``` lang=cpp, name=Lightning
 > function InterpolateWetPercent(wetPercent : Real, time : Real)
 > ``` 
@@ -77,8 +77,8 @@
 > Interpolates the WetValue property from its current value to the value passed in as the first parameter, over the number of seconds passed in as the second parameter.
 > |Name|Type|Description|
 > |---|---|---|
-> |wetPercent|[real](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real.markdown)| |
-> |time|[real](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real.markdown)| |
+> |wetPercent|[real](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.markdown)| |
+> |time|[real](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.markdown)| |
 > ``` lang=cpp, name=Lightning
 > function InterpolateWetValue(wetPercent : Real, time : Real)
 > ``` 

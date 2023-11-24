@@ -2,11 +2,11 @@
 
 |Methods|Properties|Base Classes|Derived Classes|
 |---|---|---|---|
-|[ Clear](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/stringbuilder.markdown#clear-void)| | | |
-|[ Constructor](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/stringbuilder.markdown#stringbuilder-void)| | | |
-|[ ToString](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/stringbuilder.markdown#tostring-plasma-engine-doc)| | | |
-|[ Write](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/stringbuilder.markdown#write-void)| | | |
-|[ WriteLine](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/stringbuilder.markdown#writeline-void)| | | |
+|[ Clear](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/stringbuilder.markdown#clear-void)| | | |
+|[ Constructor](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/stringbuilder.markdown#stringbuilder-void)| | | |
+|[ ToString](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/stringbuilder.markdown#tostring-plasma-engine-doc)| | | |
+|[ Write](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/stringbuilder.markdown#write-void)| | | |
+|[ WriteLine](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/stringbuilder.markdown#writeline-void)| | | |
 
 
  #  Properties
@@ -41,7 +41,7 @@
 
 
 ---  
- #  ToString : [string](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/string.markdown)
+ #  ToString : [string](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/string.markdown)
 
 > 
 > |Name|Type|Description|

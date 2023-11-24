@@ -2,10 +2,10 @@
 
 |Methods|Properties|Base Classes|Derived Classes|
 |---|---|---|---|
-| | |[referencecountedeventobject](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/referencecountedeventobject.markdown)|[cogmetaoperations](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/cogmetaoperations.markdown)|
+| | |[referencecountedeventobject](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/referencecountedeventobject.markdown)|[cogmetaoperations](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/cogmetaoperations.markdown)|
 | | | |ComponentMetaOperations|
-| | | |[contentitemmetaoperations](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/contentitemmetaoperations.markdown)|
-| | | |[resourcemetaoperations](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/resourcemetaoperations.markdown)|
+| | | |[contentitemmetaoperations](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/contentitemmetaoperations.markdown)|
+| | | |[resourcemetaoperations](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/resourcemetaoperations.markdown)|
 
 
  #  Properties

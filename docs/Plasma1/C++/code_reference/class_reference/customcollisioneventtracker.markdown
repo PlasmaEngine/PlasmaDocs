@@ -6,9 +6,9 @@
 
 |Methods|Properties|Base Classes|Derived Classes|
 |---|---|---|---|
-|[ AddCollision](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/customcollisioneventtracker.markdown#addcollision-void)| |[component](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/component.markdown)| |
-|[ Constructor](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/customcollisioneventtracker.markdown#customcollisioneventtrac)| | | |
-|[ SendEvents](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/customcollisioneventtracker.markdown#sendevents-void)| | | |
+|[ AddCollision](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/customcollisioneventtracker.markdown#addcollision-void)| |[component](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/component.markdown)| |
+|[ Constructor](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/customcollisioneventtracker.markdown#customcollisioneventtrac)| | | |
+|[ SendEvents](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/customcollisioneventtracker.markdown#sendevents-void)| | | |
 
 
  #  Properties
@@ -24,9 +24,9 @@
 > Add a collision for this frame between ourself and the passed in collider.
 > |Name|Type|Description|
 > |---|---|---|
-> |otherCollider|[collider](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/collider.markdown)| |
-> |worldPoint|[real3](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real3.markdown)| |
-> |worldNormalTowardsOther|[real3](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real3.markdown)| |
+> |otherCollider|[collider](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/collider.markdown)| |
+> |worldPoint|[real3](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real3.markdown)| |
+> |worldNormalTowardsOther|[real3](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real3.markdown)| |
 > ``` lang=cpp, name=Lightning
 > function AddCollision(otherCollider : Collider, worldPoint : Real3, worldNormalTowardsOther : Real3)
 > ``` 
@@ -51,7 +51,7 @@
 > Send out all of the events that have been queued up. This includes determining what should be started/persisted/ended events. These events are sent with the prefix that is passed in, e.g. if you pass in 'Collision' then CollisionStarted, CollisionPersisted, and CollisionEnded will be the event names.
 > |Name|Type|Description|
 > |---|---|---|
-> |eventPrefix|[string](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/string.markdown)| |
+> |eventPrefix|[string](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/string.markdown)| |
 > ``` lang=cpp, name=Lightning
 > function SendEvents(eventPrefix : String)
 > ``` 

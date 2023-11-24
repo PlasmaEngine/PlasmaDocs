@@ -3,7 +3,7 @@ A level is resource that stores a set of objects which will then be created late
 
 ## Using Levels
 ### Creating a Level
-A new level can be added by using the Add command ([Command](https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/editor/editorcommands/commands.markdown) : [Add](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/command_reference.markdown#add) or clicking on the Add button button) followed by selecting Level drop-down menu. The newly-created level will open in the Level Window and allow for the manipulation of objects to build game levels. At creation the level will only have the default objects inside it: `LevelSettings` and a few other object from the level template you select.
+A new level can be added by using the Add command ([Command](https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/editor/editorcommands/commands.markdown) : [Add](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/command_reference.markdown#add) or clicking on the Add button button) followed by selecting Level drop-down menu. The newly-created level will open in the Level Window and allow for the manipulation of objects to build game levels. At creation the level will only have the default objects inside it: `LevelSettings` and a few other object from the level template you select.
 
 
  - The [LevelSettings](https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/architecture/objects/levelsettings.markdown) object is a cog that has a single unique instance per level that cannot be deleted or duplicated. It has several components attached in order to run various effects in the level, such as gravity.

@@ -2,14 +2,14 @@
 
 |Methods|Properties|Base Classes|Derived Classes|
 |---|---|---|---|
-|[ ExecuteStatement](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/executablestate.markdown#executestatement-plasma-en)|[ CallingState](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/executablestate.markdown#callingstate-plasma-engine)|[eventhandler](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/eventhandler.markdown)| |
+|[ ExecuteStatement](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/executablestate.markdown#executestatement-plasma-en)|[ CallingState](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/executablestate.markdown#callingstate-plasma-engine)|[eventhandler](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/eventhandler.markdown)| |
 
 
  #  Properties
 
 
 ---  
- #  CallingState : [executablestate](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/executablestate.markdown)
+ #  CallingState : [executablestate](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/executablestate.markdown)
 
  `read-only` `static`
 
@@ -28,7 +28,7 @@
 > 
 > |Name|Type|Description|
 > |---|---|---|
-> |p0|[string](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/string.markdown)| |
+> |p0|[string](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/string.markdown)| |
 > ``` lang=cpp, name=Lightning
 > function ExecuteStatement(p0 : String) : T
 > ``` 

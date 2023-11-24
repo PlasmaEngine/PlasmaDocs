@@ -1,5 +1,5 @@
 # Flanger Node
-The [ FlangerNode ](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/flangernode.markdown) collects audio data from all of its inputs and applies a flanger filter before passing it along to its outputs. 
+The [ FlangerNode ](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/flangernode.markdown) collects audio data from all of its inputs and applies a flanger filter before passing it along to its outputs. 
 
 # Common Uses
 
@@ -14,6 +14,6 @@ Flanger filters apply an oscillating delay filter to the audio. The delay will i
 - [soudnode_overview](https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/audio/soundnode/soudnode_overview.markdown)
 
 ## Code Reference
-- [ FlangerNode ](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/flangernode.markdown) 
+- [ FlangerNode ](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/flangernode.markdown) 
 
  

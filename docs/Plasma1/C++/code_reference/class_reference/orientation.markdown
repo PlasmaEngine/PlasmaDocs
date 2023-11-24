@@ -6,32 +6,32 @@
 
 |Methods|Properties|Base Classes|Derived Classes|
 |---|---|---|---|
-|[ ComputeSignedAngle](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/orientation.markdown#computesignedangle-plasma)|[ AbsoluteAngle](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/orientation.markdown#absoluteangle-plasma-engin)|[component](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/component.markdown)| |
-|[ DebugDrawBases](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/orientation.markdown#debugdrawbases-void)|[ DefaultOrientationBases](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/orientation.markdown#defaultorientationbases)| | |
-|[ GetLookAtDirectionRotation](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/orientation.markdown#getlookatdirectionrotati)|[ GlobalUp](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/orientation.markdown#globalup-plasma-engine-doc)| | |
-|[ GetLookAtDirectionWithUpRotation](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/orientation.markdown#getlookatdirectionwithup)|[ LocalForward](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/orientation.markdown#localforward-plasma-engine)| | |
-|[ GetLookAtPointRotation](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/orientation.markdown#getlookatpointrotation-z)|[ LocalOrientationBasis](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/orientation.markdown#localorientationbasis-ze)| | |
-|[ GetLookAtPointWithUpRotation](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/orientation.markdown#getlookatpointwithuprota)|[ LocalRight](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/orientation.markdown#localright-plasma-engine-d)| | |
-|[ LookAtDirection](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/orientation.markdown#lookatdirection-void)|[ LocalToOrientationRotation](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/orientation.markdown#localtoorientationrotati)| | |
-|[ LookAtDirectionWithUp](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/orientation.markdown#lookatdirectionwithup-vo)|[ LocalToWorldRotation](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/orientation.markdown#localtoworldrotation-zer)| | |
-|[ LookAtPoint](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/orientation.markdown#lookatpoint-void)|[ LocalUp](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/orientation.markdown#localup-plasma-engine-docu)| | |
-|[ LookAtPointWithUp](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/orientation.markdown#lookatpointwithup-void)|[ OrientationForward](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/orientation.markdown#orientationforward-plasma)| | |
-|[ Constructor](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/orientation.markdown#orientation-void)|[ OrientationRight](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/orientation.markdown#orientationright-plasma-en)| | |
-|[ SetLocalLookAtRotation](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/orientation.markdown#setlocallookatrotation-v)|[ OrientationToLocalRotation](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/orientation.markdown#orientationtolocalrotati)| | |
-|[ SetWorldLookAtRotation](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/orientation.markdown#setworldlookatrotation-v)|[ OrientationToWorldRotation](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/orientation.markdown#orientationtoworldrotati)| | |
-| |[ OrientationUp](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/orientation.markdown#orientationup-plasma-engin)| | |
-| |[ WorldForward](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/orientation.markdown#worldforward-plasma-engine)| | |
-| |[ WorldRight](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/orientation.markdown#worldright-plasma-engine-d)| | |
-| |[ WorldToLocalRotation](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/orientation.markdown#worldtolocalrotation-zer)| | |
-| |[ WorldToOrientationRotation](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/orientation.markdown#worldtoorientationrotati)| | |
-| |[ WorldUp](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/orientation.markdown#worldup-plasma-engine-docu)| | |
+|[ ComputeSignedAngle](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/orientation.markdown#computesignedangle-plasma)|[ AbsoluteAngle](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/orientation.markdown#absoluteangle-plasma-engin)|[component](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/component.markdown)| |
+|[ DebugDrawBases](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/orientation.markdown#debugdrawbases-void)|[ DefaultOrientationBases](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/orientation.markdown#defaultorientationbases)| | |
+|[ GetLookAtDirectionRotation](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/orientation.markdown#getlookatdirectionrotati)|[ GlobalUp](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/orientation.markdown#globalup-plasma-engine-doc)| | |
+|[ GetLookAtDirectionWithUpRotation](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/orientation.markdown#getlookatdirectionwithup)|[ LocalForward](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/orientation.markdown#localforward-plasma-engine)| | |
+|[ GetLookAtPointRotation](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/orientation.markdown#getlookatpointrotation-z)|[ LocalOrientationBasis](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/orientation.markdown#localorientationbasis-ze)| | |
+|[ GetLookAtPointWithUpRotation](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/orientation.markdown#getlookatpointwithuprota)|[ LocalRight](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/orientation.markdown#localright-plasma-engine-d)| | |
+|[ LookAtDirection](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/orientation.markdown#lookatdirection-void)|[ LocalToOrientationRotation](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/orientation.markdown#localtoorientationrotati)| | |
+|[ LookAtDirectionWithUp](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/orientation.markdown#lookatdirectionwithup-vo)|[ LocalToWorldRotation](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/orientation.markdown#localtoworldrotation-zer)| | |
+|[ LookAtPoint](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/orientation.markdown#lookatpoint-void)|[ LocalUp](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/orientation.markdown#localup-plasma-engine-docu)| | |
+|[ LookAtPointWithUp](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/orientation.markdown#lookatpointwithup-void)|[ OrientationForward](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/orientation.markdown#orientationforward-plasma)| | |
+|[ Constructor](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/orientation.markdown#orientation-void)|[ OrientationRight](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/orientation.markdown#orientationright-plasma-en)| | |
+|[ SetLocalLookAtRotation](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/orientation.markdown#setlocallookatrotation-v)|[ OrientationToLocalRotation](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/orientation.markdown#orientationtolocalrotati)| | |
+|[ SetWorldLookAtRotation](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/orientation.markdown#setworldlookatrotation-v)|[ OrientationToWorldRotation](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/orientation.markdown#orientationtoworldrotati)| | |
+| |[ OrientationUp](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/orientation.markdown#orientationup-plasma-engin)| | |
+| |[ WorldForward](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/orientation.markdown#worldforward-plasma-engine)| | |
+| |[ WorldRight](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/orientation.markdown#worldright-plasma-engine-d)| | |
+| |[ WorldToLocalRotation](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/orientation.markdown#worldtolocalrotation-zer)| | |
+| |[ WorldToOrientationRotation](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/orientation.markdown#worldtoorientationrotati)| | |
+| |[ WorldUp](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/orientation.markdown#worldup-plasma-engine-docu)| | |
 
 
  #  Properties
 
 
 ---  
- #  AbsoluteAngle : [real](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real.markdown)
+ #  AbsoluteAngle : [real](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.markdown)
 
  `read-only`
 
@@ -41,7 +41,7 @@
 
 
 ---  
- #  DefaultOrientationBases : [OrientationBases](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/enum_reference.markdown#orientationbases)
+ #  DefaultOrientationBases : [OrientationBases](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/enum_reference.markdown#orientationbases)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -49,7 +49,7 @@
 
 
 ---  
- #  GlobalUp : [real3](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real3.markdown)
+ #  GlobalUp : [real3](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real3.markdown)
 
 > The world-space up vector to use for LookAt operations that don't take an up vector.
 > ``` lang=cpp, name=Lightning
@@ -57,7 +57,7 @@
 
 
 ---  
- #  LocalForward : [real3](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real3.markdown)
+ #  LocalForward : [real3](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real3.markdown)
 
  `read-only`
 
@@ -67,7 +67,7 @@
 
 
 ---  
- #  LocalOrientationBasis : [quaternion](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/quaternion.markdown)
+ #  LocalOrientationBasis : [quaternion](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/quaternion.markdown)
 
 > A local-space basis that represents this orientation. If you build a basis from an up of (0, 1, 0), and a forward of (0, 0, -1) then this should result in the identity rotation.
 > ``` lang=cpp, name=Lightning
@@ -75,7 +75,7 @@
 
 
 ---  
- #  LocalRight : [real3](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real3.markdown)
+ #  LocalRight : [real3](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real3.markdown)
 
  `read-only`
 
@@ -85,7 +85,7 @@
 
 
 ---  
- #  LocalToOrientationRotation : [quaternion](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/quaternion.markdown)
+ #  LocalToOrientationRotation : [quaternion](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/quaternion.markdown)
 
  `read-only`
 
@@ -95,7 +95,7 @@
 
 
 ---  
- #  LocalToWorldRotation : [quaternion](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/quaternion.markdown)
+ #  LocalToWorldRotation : [quaternion](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/quaternion.markdown)
 
  `read-only`
 
@@ -105,7 +105,7 @@
 
 
 ---  
- #  LocalUp : [real3](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real3.markdown)
+ #  LocalUp : [real3](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real3.markdown)
 
  `read-only`
 
@@ -115,7 +115,7 @@
 
 
 ---  
- #  OrientationForward : [real3](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real3.markdown)
+ #  OrientationForward : [real3](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real3.markdown)
 
  `read-only`
 
@@ -125,7 +125,7 @@
 
 
 ---  
- #  OrientationRight : [real3](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real3.markdown)
+ #  OrientationRight : [real3](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real3.markdown)
 
  `read-only`
 
@@ -135,7 +135,7 @@
 
 
 ---  
- #  OrientationToLocalRotation : [quaternion](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/quaternion.markdown)
+ #  OrientationToLocalRotation : [quaternion](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/quaternion.markdown)
 
  `read-only`
 
@@ -145,7 +145,7 @@
 
 
 ---  
- #  OrientationToWorldRotation : [quaternion](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/quaternion.markdown)
+ #  OrientationToWorldRotation : [quaternion](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/quaternion.markdown)
 
  `read-only`
 
@@ -155,7 +155,7 @@
 
 
 ---  
- #  OrientationUp : [real3](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real3.markdown)
+ #  OrientationUp : [real3](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real3.markdown)
 
  `read-only`
 
@@ -165,7 +165,7 @@
 
 
 ---  
- #  WorldForward : [real3](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real3.markdown)
+ #  WorldForward : [real3](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real3.markdown)
 
  `read-only`
 
@@ -175,7 +175,7 @@
 
 
 ---  
- #  WorldRight : [real3](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real3.markdown)
+ #  WorldRight : [real3](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real3.markdown)
 
  `read-only`
 
@@ -185,7 +185,7 @@
 
 
 ---  
- #  WorldToLocalRotation : [quaternion](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/quaternion.markdown)
+ #  WorldToLocalRotation : [quaternion](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/quaternion.markdown)
 
  `read-only`
 
@@ -195,7 +195,7 @@
 
 
 ---  
- #  WorldToOrientationRotation : [quaternion](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/quaternion.markdown)
+ #  WorldToOrientationRotation : [quaternion](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/quaternion.markdown)
 
  `read-only`
 
@@ -205,7 +205,7 @@
 
 
 ---  
- #  WorldUp : [real3](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real3.markdown)
+ #  WorldUp : [real3](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real3.markdown)
 
  `read-only`
 
@@ -219,14 +219,14 @@
 
 
 ---  
- #  ComputeSignedAngle : [real](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real.markdown)
+ #  ComputeSignedAngle : [real](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.markdown)
 
 > Compute the rotation angle between two vectors (in radians)
 > |Name|Type|Description|
 > |---|---|---|
-> |up|[real3](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real3.markdown)| |
-> |forward|[real3](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real3.markdown)| |
-> |newVector|[real3](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real3.markdown)| |
+> |up|[real3](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real3.markdown)| |
+> |forward|[real3](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real3.markdown)| |
+> |newVector|[real3](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real3.markdown)| |
 > ``` lang=cpp, name=Lightning
 > function ComputeSignedAngle(up : Real3, forward : Real3, newVector : Real3) : Real
 > ``` 
@@ -244,50 +244,50 @@
 
 
 ---  
- #  GetLookAtDirectionRotation : [quaternion](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/quaternion.markdown)
+ #  GetLookAtDirectionRotation : [quaternion](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/quaternion.markdown)
 
 > Gets the forward to look in the given direction. Keeps the current world up.
 > |Name|Type|Description|
 > |---|---|---|
-> |lookDir|[real3](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real3.markdown)| |
+> |lookDir|[real3](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real3.markdown)| |
 > ``` lang=cpp, name=Lightning
 > function GetLookAtDirectionRotation(lookDir : Real3) : Quaternion
 > ``` 
 
 
 ---  
- #  GetLookAtDirectionWithUpRotation : [quaternion](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/quaternion.markdown)
+ #  GetLookAtDirectionWithUpRotation : [quaternion](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/quaternion.markdown)
 
 > Same as GetLookAtDirectionRotation but allows the user to specify the up vector.
 > |Name|Type|Description|
 > |---|---|---|
-> |lookDir|[real3](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real3.markdown)| |
-> |up|[real3](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real3.markdown)| |
+> |lookDir|[real3](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real3.markdown)| |
+> |up|[real3](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real3.markdown)| |
 > ``` lang=cpp, name=Lightning
 > function GetLookAtDirectionWithUpRotation(lookDir : Real3, up : Real3) : Quaternion
 > ``` 
 
 
 ---  
- #  GetLookAtPointRotation : [quaternion](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/quaternion.markdown)
+ #  GetLookAtPointRotation : [quaternion](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/quaternion.markdown)
 
 > Get the rotation so that the forward will look at the given point. Keeps the current world up.
 > |Name|Type|Description|
 > |---|---|---|
-> |lookPoint|[real3](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real3.markdown)| |
+> |lookPoint|[real3](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real3.markdown)| |
 > ``` lang=cpp, name=Lightning
 > function GetLookAtPointRotation(lookPoint : Real3) : Quaternion
 > ``` 
 
 
 ---  
- #  GetLookAtPointWithUpRotation : [quaternion](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/quaternion.markdown)
+ #  GetLookAtPointWithUpRotation : [quaternion](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/quaternion.markdown)
 
 > Same as GetLookAtPointRotation but allows the user to specify the up vector.
 > |Name|Type|Description|
 > |---|---|---|
-> |lookPoint|[real3](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real3.markdown)| |
-> |up|[real3](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real3.markdown)| |
+> |lookPoint|[real3](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real3.markdown)| |
+> |up|[real3](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real3.markdown)| |
 > ``` lang=cpp, name=Lightning
 > function GetLookAtPointWithUpRotation(lookPoint : Real3, up : Real3) : Quaternion
 > ``` 
@@ -299,7 +299,7 @@
 > Sets the forward to look in the given direction. Keeps the current world up.
 > |Name|Type|Description|
 > |---|---|---|
-> |lookDir|[real3](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real3.markdown)| |
+> |lookDir|[real3](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real3.markdown)| |
 > ``` lang=cpp, name=Lightning
 > function LookAtDirection(lookDir : Real3)
 > ``` 
@@ -311,8 +311,8 @@
 > Same as LookAtDirection but allows the user to specify the up vector.
 > |Name|Type|Description|
 > |---|---|---|
-> |lookDir|[real3](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real3.markdown)| |
-> |up|[real3](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real3.markdown)| |
+> |lookDir|[real3](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real3.markdown)| |
+> |up|[real3](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real3.markdown)| |
 > ``` lang=cpp, name=Lightning
 > function LookAtDirectionWithUp(lookDir : Real3, up : Real3)
 > ``` 
@@ -324,7 +324,7 @@
 > Sets the forward to look at the given point. Keeps the current world up.
 > |Name|Type|Description|
 > |---|---|---|
-> |lookPoint|[real3](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real3.markdown)| |
+> |lookPoint|[real3](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real3.markdown)| |
 > ``` lang=cpp, name=Lightning
 > function LookAtPoint(lookPoint : Real3)
 > ``` 
@@ -336,8 +336,8 @@
 > Same as LookAtPoint but allows the user to specify the up vector.
 > |Name|Type|Description|
 > |---|---|---|
-> |lookPoint|[real3](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real3.markdown)| |
-> |up|[real3](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real3.markdown)| |
+> |lookPoint|[real3](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real3.markdown)| |
+> |up|[real3](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real3.markdown)| |
 > ``` lang=cpp, name=Lightning
 > function LookAtPointWithUp(lookPoint : Real3, up : Real3)
 > ``` 
@@ -362,7 +362,7 @@
 > Set the transform's local rotation such that the orientation's basis vectors will be aligned with the given rotation (assumed to be a look-at rotation constructed from a right, up, and forward)
 > |Name|Type|Description|
 > |---|---|---|
-> |localLookAtRotation|[quaternion](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/quaternion.markdown)| |
+> |localLookAtRotation|[quaternion](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/quaternion.markdown)| |
 > ``` lang=cpp, name=Lightning
 > function SetLocalLookAtRotation(localLookAtRotation : Quaternion)
 > ``` 
@@ -374,7 +374,7 @@
 > Set the transform's world rotation such that the orientation's basis vectors will be aligned with the given rotation (assumed to be a look-at rotation constructed from a right, up, and forward)
 > |Name|Type|Description|
 > |---|---|---|
-> |worldLookAtRotation|[quaternion](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/quaternion.markdown)| |
+> |worldLookAtRotation|[quaternion](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/quaternion.markdown)| |
 > ``` lang=cpp, name=Lightning
 > function SetWorldLookAtRotation(worldLookAtRotation : Quaternion)
 > ``` 

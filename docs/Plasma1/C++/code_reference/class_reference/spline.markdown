@@ -4,20 +4,20 @@
 
 |Methods|Properties|Base Classes|Derived Classes|
 |---|---|---|---|
-|[ Clone](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/spline.markdown#clone-plasma-engine-docume)|[ BakedPoints](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/spline.markdown#bakedpoints-plasma-engine)|[referencecountedeventobject](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/referencecountedeventobject.markdown)| |
-|[ Create](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/spline.markdown#create-plasma-engine-docum)|[ Closed](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/spline.markdown#closed-plasma-engine-docum)| | |
-|[ DebugDraw](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/spline.markdown#debugdraw-void)|[ ControlPoints](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/spline.markdown#controlpoints-plasma-engin)| | |
-|[ ForceRebuild](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/spline.markdown#forcerebuild-void)|[ Error](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/spline.markdown#error-plasma-engine-docume)| | |
-|[ RebuildIfModified](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/spline.markdown#rebuildifmodified-void)|[ SplineType](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/spline.markdown#splinetype-plasma-engine-d)| | |
-|[ SampleDistance](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/spline.markdown#sampledistance-plasma-engi)|[ TotalDistance](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/spline.markdown#totaldistance-plasma-engin)| | |
-|[ SampleNormalized](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/spline.markdown#samplenormalized-plasma-en)| | | |
+|[ Clone](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/spline.markdown#clone-plasma-engine-docume)|[ BakedPoints](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/spline.markdown#bakedpoints-plasma-engine)|[referencecountedeventobject](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/referencecountedeventobject.markdown)| |
+|[ Create](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/spline.markdown#create-plasma-engine-docum)|[ Closed](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/spline.markdown#closed-plasma-engine-docum)| | |
+|[ DebugDraw](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/spline.markdown#debugdraw-void)|[ ControlPoints](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/spline.markdown#controlpoints-plasma-engin)| | |
+|[ ForceRebuild](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/spline.markdown#forcerebuild-void)|[ Error](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/spline.markdown#error-plasma-engine-docume)| | |
+|[ RebuildIfModified](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/spline.markdown#rebuildifmodified-void)|[ SplineType](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/spline.markdown#splinetype-plasma-engine-d)| | |
+|[ SampleDistance](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/spline.markdown#sampledistance-plasma-engi)|[ TotalDistance](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/spline.markdown#totaldistance-plasma-engin)| | |
+|[ SampleNormalized](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/spline.markdown#samplenormalized-plasma-en)| | | |
 
 
  #  Properties
 
 
 ---  
- #  BakedPoints : [splinebakedpoints](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/splinebakedpoints.markdown)
+ #  BakedPoints : [splinebakedpoints](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/splinebakedpoints.markdown)
 
  `read-only`
 
@@ -27,7 +27,7 @@
 
 
 ---  
- #  Closed : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/boolean.markdown)
+ #  Closed : [boolean](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.markdown)
 
 > Does the spline loop back on itself?
 > ``` lang=cpp, name=Lightning
@@ -35,7 +35,7 @@
 
 
 ---  
- #  ControlPoints : [splinecontrolpoints](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/splinecontrolpoints.markdown)
+ #  ControlPoints : [splinecontrolpoints](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/splinecontrolpoints.markdown)
 
  `read-only`
 
@@ -45,7 +45,7 @@
 
 
 ---  
- #  Error : [real](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real.markdown)
+ #  Error : [real](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.markdown)
 
 > The max number of units that a line segment is allowed to deviate from the curve.
 > ``` lang=cpp, name=Lightning
@@ -53,7 +53,7 @@
 
 
 ---  
- #  SplineType : [SplineType](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/enum_reference.markdown#splinetype)
+ #  SplineType : [SplineType](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/enum_reference.markdown#splinetype)
 
 > The kind of spline (Linear, BSpline, CatmullRom). Determines how the control points affect the curve.
 > ``` lang=cpp, name=Lightning
@@ -61,7 +61,7 @@
 
 
 ---  
- #  TotalDistance : [real](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real.markdown)
+ #  TotalDistance : [real](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.markdown)
 
  `read-only`
 
@@ -75,7 +75,7 @@
 
 
 ---  
- #  Clone : [spline](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/spline.markdown)
+ #  Clone : [spline](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/spline.markdown)
 
 > Create a new copy of this spline.
 > |Name|Type|Description|
@@ -86,7 +86,7 @@
 
 
 ---  
- #  Create : [spline](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/spline.markdown)
+ #  Create : [spline](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/spline.markdown)
 
  `static`
 
@@ -104,7 +104,7 @@
 > Draw the baked points of the curve with the provided color.
 > |Name|Type|Description|
 > |---|---|---|
-> |color|[real4](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real4.markdown)| |
+> |color|[real4](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real4.markdown)| |
 > ``` lang=cpp, name=Lightning
 > function DebugDraw(color : Real4)
 > ``` 
@@ -133,24 +133,24 @@
 
 
 ---  
- #  SampleDistance : [splinesampledata](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/splinesampledata.markdown)
+ #  SampleDistance : [splinesampledata](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/splinesampledata.markdown)
 
 > Samples the curve at a given arc-length distance.
 > |Name|Type|Description|
 > |---|---|---|
-> |distance|[real](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real.markdown)| |
+> |distance|[real](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.markdown)| |
 > ``` lang=cpp, name=Lightning
 > function SampleDistance(distance : Real) : SplineSampleData
 > ``` 
 
 
 ---  
- #  SampleNormalized : [splinesampledata](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/splinesampledata.markdown)
+ #  SampleNormalized : [splinesampledata](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/splinesampledata.markdown)
 
 > Samples the curve with a time in the range of [0, 1].
 > |Name|Type|Description|
 > |---|---|---|
-> |time|[real](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real.markdown)| |
+> |time|[real](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.markdown)| |
 > ``` lang=cpp, name=Lightning
 > function SampleNormalized(time : Real) : SplineSampleData
 > ``` 

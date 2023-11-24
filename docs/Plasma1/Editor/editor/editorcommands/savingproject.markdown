@@ -6,7 +6,7 @@ Saving the project will and should be done often. You can save your project in o
 
 - Clicking the **ADD IMAGE** button in the top left corner of the editor.
 
-- [ Command](https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/editor/editorcommands/commands.markdown) : [ SaveProject](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/command_reference.markdown#saveproject)
+- [ Command](https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/editor/editorcommands/commands.markdown) : [ SaveProject](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/command_reference.markdown#saveproject)
 
 - Select Menu `Project > Save Project`
  

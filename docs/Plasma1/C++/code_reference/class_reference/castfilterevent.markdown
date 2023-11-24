@@ -6,15 +6,15 @@
 
 |Methods|Properties|Base Classes|Derived Classes|
 |---|---|---|---|
-| |[ FilterState](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/castfilterevent.markdown#filterstate-plasma-engine)|[event](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/event.markdown)| |
-| |[ Object](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/castfilterevent.markdown#object-plasma-engine-docum)| | |
+| |[ FilterState](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/castfilterevent.markdown#filterstate-plasma-engine)|[event](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/event.markdown)| |
+| |[ Object](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/castfilterevent.markdown#object-plasma-engine-docum)| | |
 
 
  #  Properties
 
 
 ---  
- #  FilterState : [CastFilterState](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/enum_reference.markdown#castfilterstate)
+ #  FilterState : [CastFilterState](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/enum_reference.markdown#castfilterstate)
 
 > When filtering should we accept or reject this cog? Alternatively we can let the default cast filter logic run.
 > ``` lang=cpp, name=Lightning
@@ -22,7 +22,7 @@
 
 
 ---  
- #  Object : [cog](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/cog.markdown)
+ #  Object : [cog](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/cog.markdown)
 
  `read-only`
 

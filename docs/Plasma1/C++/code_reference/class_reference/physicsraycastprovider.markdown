@@ -4,18 +4,18 @@
 
 |Methods|Properties|Base Classes|Derived Classes|
 |---|---|---|---|
-|[ Constructor](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/physicsraycastprovider.markdown#physicsraycastprovider-v)|[ DynamicColliders](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/physicsraycastprovider.markdown#dynamiccolliders-plasma-en)|[raycastprovider](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/raycastprovider.markdown)| |
-| |[ MultiSelectKinematic](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/physicsraycastprovider.markdown#multiselectkinematic-zer)| | |
-| |[ MultiSelectStatic](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/physicsraycastprovider.markdown#multiselectstatic-plasma-e)| | |
-| |[ SelectGhosts](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/physicsraycastprovider.markdown#selectghosts-plasma-engine)| | |
-| |[ StaticColliders](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/physicsraycastprovider.markdown#staticcolliders-plasma-eng)| | |
+|[ Constructor](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/physicsraycastprovider.markdown#physicsraycastprovider-v)|[ DynamicColliders](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/physicsraycastprovider.markdown#dynamiccolliders-plasma-en)|[raycastprovider](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/raycastprovider.markdown)| |
+| |[ MultiSelectKinematic](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/physicsraycastprovider.markdown#multiselectkinematic-zer)| | |
+| |[ MultiSelectStatic](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/physicsraycastprovider.markdown#multiselectstatic-plasma-e)| | |
+| |[ SelectGhosts](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/physicsraycastprovider.markdown#selectghosts-plasma-engine)| | |
+| |[ StaticColliders](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/physicsraycastprovider.markdown#staticcolliders-plasma-eng)| | |
 
 
  #  Properties
 
 
 ---  
- #  DynamicColliders : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/boolean.markdown)
+ #  DynamicColliders : [boolean](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.markdown)
 
 > Should dynamic colliders (those with rigid bodies) be selected?
 > ``` lang=cpp, name=Lightning
@@ -23,7 +23,7 @@
 
 
 ---  
- #  MultiSelectKinematic : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/boolean.markdown)
+ #  MultiSelectKinematic : [boolean](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.markdown)
 
 > Should multi-selection work with kinematic objects?
 > ``` lang=cpp, name=Lightning
@@ -31,7 +31,7 @@
 
 
 ---  
- #  MultiSelectStatic : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/boolean.markdown)
+ #  MultiSelectStatic : [boolean](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.markdown)
 
 > Should multi-selection work with static objects?
 > ``` lang=cpp, name=Lightning
@@ -39,7 +39,7 @@
 
 
 ---  
- #  SelectGhosts : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/boolean.markdown)
+ #  SelectGhosts : [boolean](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.markdown)
 
 > Should ghost colliders be selected?
 > ``` lang=cpp, name=Lightning
@@ -47,7 +47,7 @@
 
 
 ---  
- #  StaticColliders : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/boolean.markdown)
+ #  StaticColliders : [boolean](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.markdown)
 
 > Should static colliders (those without rigid bodies) be selected?
 > ``` lang=cpp, name=Lightning

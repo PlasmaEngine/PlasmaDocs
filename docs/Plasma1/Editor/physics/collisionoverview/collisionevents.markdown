@@ -1,5 +1,5 @@
 # Collision Events
-[ CollisionEvents](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/collisionevent.markdown) are the primary way that physics sends collision information to users. Three main event types are sent out for collisions: starting, persisting, and ending.
+[ CollisionEvents](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/collisionevent.markdown) are the primary way that physics sends collision information to users. Three main event types are sent out for collisions: starting, persisting, and ending.
 
 Collision events are often used in gameplay, such as applying damage if an impact was large enough. Sometimes it is necessary to alter information about the two objects involved in a collision, such as their velocity. Other common examples include creating audio effects or graphics effects in response to a collision, such as a scraping sound and sparks of a sliding metal object.
 
@@ -11,7 +11,7 @@ There are three primary collision events sent out. These events are typically se
 - **CollisionEnded** is sent the frame that contact is broken. At this point the two objects are no longer in contact. This event is also sent if an object is destroyed.
 
 # CollisionEvents Order
-The physics system will send out all CollisionEvents after resolving all collisions in the space. This means that some of the information in the event is //old//. This is most obvious when inspecting an object's position and velocity as both will reflect the post-collision resolution information. This is necessary to give final collision information like the final applied impulse. If pre-collision resolution information is desired, see [PreSolveEvent](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/presolveevent.markdown) of [CollisionTables](https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/physics/collisionoverview/collisiongroupsandtables.markdown).
+The physics system will send out all CollisionEvents after resolving all collisions in the space. This means that some of the information in the event is //old//. This is most obvious when inspecting an object's position and velocity as both will reflect the post-collision resolution information. This is necessary to give final collision information like the final applied impulse. If pre-collision resolution information is desired, see [PreSolveEvent](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/presolveevent.markdown) of [CollisionTables](https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/physics/collisionoverview/collisiongroupsandtables.markdown).
 
 # Properties
 There's a few properties worth discussing in detail on CollisionEvents.
@@ -20,7 +20,7 @@ There's a few properties worth discussing in detail on CollisionEvents.
 A collision event is sent with one object as the focus; that is to say that most information will have a primary object and a secondary object. This is necessary to know what direction other properties, such as the collision normal, face. If the event is received from the physics space then this ordering is not defined.
 
 ## ContactPoints
-A CollisionEvent exposes a range of contact points. For physics to solve a collision, several points of contact may be necessary. Often in game logic, one contact point is sufficient; for convenience, the FirstPoint  property is exposed. [ ContactPoints](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/contactpoint.markdown) expose information about what happened in a collision:
+A CollisionEvent exposes a range of contact points. For physics to solve a collision, several points of contact may be necessary. Often in game logic, one contact point is sufficient; for convenience, the FirstPoint  property is exposed. [ ContactPoints](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/contactpoint.markdown) expose information about what happened in a collision:
 
 **Local and World Points:** Contact points expose both a local and world space point on each object.
 
@@ -39,7 +39,7 @@ The two friction impulses are applied in tangential directions to the normal imp
 - [collisiongroupsandtables.markdown](https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/physics/collisionoverview/collisiongroupsandtables.markdown)
 
 ## Reference
-- [CollisionEvent](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/collisionevent.markdown)
-- [ContactPoint](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/contactpoint.markdown)
-- [PreSolveEvent](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/presolveevent.markdown)
-- [PhysicsSpace](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/physicsspace.markdown) 
+- [CollisionEvent](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/collisionevent.markdown)
+- [ContactPoint](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/contactpoint.markdown)
+- [PreSolveEvent](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/presolveevent.markdown)
+- [PhysicsSpace](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/physicsspace.markdown) 

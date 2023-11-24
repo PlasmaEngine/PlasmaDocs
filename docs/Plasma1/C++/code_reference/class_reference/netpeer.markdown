@@ -6,46 +6,46 @@
 
 |Methods|Properties|Base Classes|Derived Classes|
 |---|---|---|---|
-|[ AddUser](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netpeer.markdown#adduser-plasma-engine-docu)|[ BasicHostInfoTimeout](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netpeer.markdown#basichostinfotimeout-zer)|[netobject](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netobject.markdown)| |
-|[ CancelHostRequests](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netpeer.markdown#cancelhostrequests-void)|[ ExtraHostInfoTimeout](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netpeer.markdown#extrahostinfotimeout-zer)| | |
-|[ ClearHostList](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netpeer.markdown#clearhostlist-void)|[ FrameFillSkip](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netpeer.markdown#framefillskip-plasma-engin)| | |
-|[ ClearHostLists](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netpeer.markdown#clearhostlists-void)|[ FrameFillWarning](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netpeer.markdown#framefillwarning-plasma-en)| | |
-|[ Close](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netpeer.markdown#close-void)|[ HostPingInterval](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netpeer.markdown#hostpinginterval-plasma-en)| | |
-|[ ConnectLink](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netpeer.markdown#connectlink-plasma-engine)|[ HostPortRangeEnd](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netpeer.markdown#hostportrangeend-plasma-en)| | |
-|[ DisconnectAllLinks](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netpeer.markdown#disconnectalllinks-plasma)|[ HostPortRangeStart](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netpeer.markdown#hostportrangestart-plasma)| | |
-|[ DisconnectLink](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netpeer.markdown#disconnectlink-plasma-engi)|[ Info](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netpeer.markdown#info-plasma-engine-documen)| | |
-|[ DiscoverHostList](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netpeer.markdown#discoverhostlist-plasma-en)|[ InternetDiscoverable](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netpeer.markdown#internetdiscoverable-zer)| | |
-|[ GetHostByAddress](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netpeer.markdown#gethostbyaddress-plasma-en)|[ InternetHostListTimeout](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netpeer.markdown#internethostlisttimeout)| | |
-|[ GetHostByIndex](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netpeer.markdown#gethostbyindex-plasma-engi)|[ InternetHostPublishInterval](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netpeer.markdown#internethostpublishinter)| | |
-|[ GetHostList](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netpeer.markdown#gethostlist-plasma-engine)|[ InternetHostRecordLifetime](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netpeer.markdown#internethostrecordlifeti)| | |
-|[ GetLinkCreationDirection](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netpeer.markdown#getlinkcreationdirection)|[ InternetSameIpHostRecordLimit](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netpeer.markdown#internetsameiphostrecord)| | |
-|[ GetLinkInternetProtocol](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netpeer.markdown#getlinkinternetprotocol)|[ Ipv4Address](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netpeer.markdown#ipv4address-plasma-engine)| | |
-|[ GetLinkIpAddress](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netpeer.markdown#getlinkipaddress-plasma-en)|[ Ipv4Host](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netpeer.markdown#ipv4host-plasma-engine-doc)| | |
-|[ GetLinkNetPeerId](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netpeer.markdown#getlinknetpeerid-plasma-en)|[ Ipv4Port](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netpeer.markdown#ipv4port-plasma-engine-doc)| | |
-|[ GetLinkState](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netpeer.markdown#getlinkstate-plasma-engine)|[ IsOpen](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netpeer.markdown#isopen-plasma-engine-docum)| | |
-|[ GetLinkStatus](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netpeer.markdown#getlinkstatus-plasma-engin)|[ LanDiscoverable](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netpeer.markdown#landiscoverable-plasma-eng)| | |
-|[ GetNetObject](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netpeer.markdown#getnetobject-plasma-engine)|[ LinkCount](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netpeer.markdown#linkcount-plasma-engine-do)| | |
-|[ GetNetSpace](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netpeer.markdown#getnetspace-plasma-engine)|[ NetObjectCount](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netpeer.markdown#netobjectcount-plasma-engi)| | |
-|[ GetOurIpAddressFromLink](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netpeer.markdown#getouripaddressfromlink)|[ NetPeerId](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netpeer.markdown#netpeerid-plasma-engine-do)| | |
-|[ GetUser](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netpeer.markdown#getuser-plasma-engine-docu)|[ NetSpaceCount](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netpeer.markdown#netspacecount-plasma-engin)| | |
-|[ GetUsersAddedByPeer](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netpeer.markdown#getusersaddedbypeer-plasma)|[ NetUserCount](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netpeer.markdown#netusercount-plasma-engine)| | |
-|[ Constructor](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netpeer.markdown#netpeer-void)|[ UserCount](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netpeer.markdown#usercount-plasma-engine-do)| | |
-|[ Open](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netpeer.markdown#open-plasma-engine-documen)|[ Users](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netpeer.markdown#users-plasma-engine-docume)| | |
-|[ OpenClient](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netpeer.markdown#openclient-plasma-engine-d)|[ UsersAddedByMyPeer](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netpeer.markdown#usersaddedbymypeer-plasma)| | |
-|[ OpenOffline](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netpeer.markdown#openoffline-plasma-engine)| | | |
-|[ OpenServer](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netpeer.markdown#openserver-plasma-engine-d)| | | |
-|[ RefreshHost](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netpeer.markdown#refreshhost-plasma-engine)| | | |
-|[ RefreshHostList](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netpeer.markdown#refreshhostlist-plasma-eng)| | | |
-|[ RemoveUser](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netpeer.markdown#removeuser-plasma-engine-d)| | | |
-|[ SubscribeToMasterServer](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netpeer.markdown#subscribetomasterserver)| | | |
-|[ UnsubscribeFromMasterServer](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netpeer.markdown#unsubscribefrommasterser)| | | |
+|[ AddUser](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/netpeer.markdown#adduser-plasma-engine-docu)|[ BasicHostInfoTimeout](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/netpeer.markdown#basichostinfotimeout-zer)|[netobject](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/netobject.markdown)| |
+|[ CancelHostRequests](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/netpeer.markdown#cancelhostrequests-void)|[ ExtraHostInfoTimeout](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/netpeer.markdown#extrahostinfotimeout-zer)| | |
+|[ ClearHostList](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/netpeer.markdown#clearhostlist-void)|[ FrameFillSkip](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/netpeer.markdown#framefillskip-plasma-engin)| | |
+|[ ClearHostLists](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/netpeer.markdown#clearhostlists-void)|[ FrameFillWarning](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/netpeer.markdown#framefillwarning-plasma-en)| | |
+|[ Close](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/netpeer.markdown#close-void)|[ HostPingInterval](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/netpeer.markdown#hostpinginterval-plasma-en)| | |
+|[ ConnectLink](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/netpeer.markdown#connectlink-plasma-engine)|[ HostPortRangeEnd](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/netpeer.markdown#hostportrangeend-plasma-en)| | |
+|[ DisconnectAllLinks](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/netpeer.markdown#disconnectalllinks-plasma)|[ HostPortRangeStart](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/netpeer.markdown#hostportrangestart-plasma)| | |
+|[ DisconnectLink](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/netpeer.markdown#disconnectlink-plasma-engi)|[ Info](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/netpeer.markdown#info-plasma-engine-documen)| | |
+|[ DiscoverHostList](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/netpeer.markdown#discoverhostlist-plasma-en)|[ InternetDiscoverable](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/netpeer.markdown#internetdiscoverable-zer)| | |
+|[ GetHostByAddress](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/netpeer.markdown#gethostbyaddress-plasma-en)|[ InternetHostListTimeout](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/netpeer.markdown#internethostlisttimeout)| | |
+|[ GetHostByIndex](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/netpeer.markdown#gethostbyindex-plasma-engi)|[ InternetHostPublishInterval](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/netpeer.markdown#internethostpublishinter)| | |
+|[ GetHostList](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/netpeer.markdown#gethostlist-plasma-engine)|[ InternetHostRecordLifetime](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/netpeer.markdown#internethostrecordlifeti)| | |
+|[ GetLinkCreationDirection](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/netpeer.markdown#getlinkcreationdirection)|[ InternetSameIpHostRecordLimit](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/netpeer.markdown#internetsameiphostrecord)| | |
+|[ GetLinkInternetProtocol](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/netpeer.markdown#getlinkinternetprotocol)|[ Ipv4Address](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/netpeer.markdown#ipv4address-plasma-engine)| | |
+|[ GetLinkIpAddress](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/netpeer.markdown#getlinkipaddress-plasma-en)|[ Ipv4Host](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/netpeer.markdown#ipv4host-plasma-engine-doc)| | |
+|[ GetLinkNetPeerId](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/netpeer.markdown#getlinknetpeerid-plasma-en)|[ Ipv4Port](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/netpeer.markdown#ipv4port-plasma-engine-doc)| | |
+|[ GetLinkState](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/netpeer.markdown#getlinkstate-plasma-engine)|[ IsOpen](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/netpeer.markdown#isopen-plasma-engine-docum)| | |
+|[ GetLinkStatus](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/netpeer.markdown#getlinkstatus-plasma-engin)|[ LanDiscoverable](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/netpeer.markdown#landiscoverable-plasma-eng)| | |
+|[ GetNetObject](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/netpeer.markdown#getnetobject-plasma-engine)|[ LinkCount](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/netpeer.markdown#linkcount-plasma-engine-do)| | |
+|[ GetNetSpace](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/netpeer.markdown#getnetspace-plasma-engine)|[ NetObjectCount](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/netpeer.markdown#netobjectcount-plasma-engi)| | |
+|[ GetOurIpAddressFromLink](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/netpeer.markdown#getouripaddressfromlink)|[ NetPeerId](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/netpeer.markdown#netpeerid-plasma-engine-do)| | |
+|[ GetUser](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/netpeer.markdown#getuser-plasma-engine-docu)|[ NetSpaceCount](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/netpeer.markdown#netspacecount-plasma-engin)| | |
+|[ GetUsersAddedByPeer](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/netpeer.markdown#getusersaddedbypeer-plasma)|[ NetUserCount](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/netpeer.markdown#netusercount-plasma-engine)| | |
+|[ Constructor](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/netpeer.markdown#netpeer-void)|[ UserCount](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/netpeer.markdown#usercount-plasma-engine-do)| | |
+|[ Open](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/netpeer.markdown#open-plasma-engine-documen)|[ Users](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/netpeer.markdown#users-plasma-engine-docume)| | |
+|[ OpenClient](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/netpeer.markdown#openclient-plasma-engine-d)|[ UsersAddedByMyPeer](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/netpeer.markdown#usersaddedbymypeer-plasma)| | |
+|[ OpenOffline](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/netpeer.markdown#openoffline-plasma-engine)| | | |
+|[ OpenServer](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/netpeer.markdown#openserver-plasma-engine-d)| | | |
+|[ RefreshHost](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/netpeer.markdown#refreshhost-plasma-engine)| | | |
+|[ RefreshHostList](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/netpeer.markdown#refreshhostlist-plasma-eng)| | | |
+|[ RemoveUser](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/netpeer.markdown#removeuser-plasma-engine-d)| | | |
+|[ SubscribeToMasterServer](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/netpeer.markdown#subscribetomasterserver)| | | |
+|[ UnsubscribeFromMasterServer](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/netpeer.markdown#unsubscribefrommasterser)| | | |
 
 
  #  Properties
 
 
 ---  
- #  BasicHostInfoTimeout : [real](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real.markdown)
+ #  BasicHostInfoTimeout : [real](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.markdown)
 
 > [Client/Server] Determines the amount of time the client is willing to wait for.
 > ``` lang=cpp, name=Lightning
@@ -53,7 +53,7 @@
 
 
 ---  
- #  ExtraHostInfoTimeout : [real](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real.markdown)
+ #  ExtraHostInfoTimeout : [real](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.markdown)
 
 > [Client/Server] Determines the amount of time the client will wait for extra host info from a server.
 > ``` lang=cpp, name=Lightning
@@ -61,7 +61,7 @@
 
 
 ---  
- #  FrameFillSkip : [real](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real.markdown)
+ #  FrameFillSkip : [real](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.markdown)
 
 > Controls when to skip change replication for the current frame because of remaining outgoing bandwidth utilization ratio on any given link.
 > ``` lang=cpp, name=Lightning
@@ -69,7 +69,7 @@
 
 
 ---  
- #  FrameFillWarning : [real](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real.markdown)
+ #  FrameFillWarning : [real](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.markdown)
 
 > Controls when the user will be warned of their current frame's outgoing bandwidth utilization ratio on any given link.
 > ``` lang=cpp, name=Lightning
@@ -77,7 +77,7 @@
 
 
 ---  
- #  HostPingInterval : [real](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real.markdown)
+ #  HostPingInterval : [real](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.markdown)
 
 > [Client/Server] The time between (potentially) redundant pings from a net peer.
 > ``` lang=cpp, name=Lightning
@@ -85,7 +85,7 @@
 
 
 ---  
- #  HostPortRangeEnd : [integer](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/integer.markdown)
+ #  HostPortRangeEnd : [integer](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer.markdown)
 
 > Configures the inclusive range of ports used to host this game.
 > ``` lang=cpp, name=Lightning
@@ -93,7 +93,7 @@
 
 
 ---  
- #  HostPortRangeStart : [integer](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/integer.markdown)
+ #  HostPortRangeStart : [integer](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer.markdown)
 
 > Configures the inclusive range of ports used to host this game.
 > ``` lang=cpp, name=Lightning
@@ -101,7 +101,7 @@
 
 
 ---  
- #  Info : [string](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/string.markdown)
+ #  Info : [string](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/string.markdown)
 
  `read-only`
 
@@ -111,7 +111,7 @@
 
 
 ---  
- #  InternetDiscoverable : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/boolean.markdown)
+ #  InternetDiscoverable : [boolean](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.markdown)
 
 > Configures the server peer to be discoverable on the internet.
 > ``` lang=cpp, name=Lightning
@@ -119,7 +119,7 @@
 
 
 ---  
- #  InternetHostListTimeout : [real](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real.markdown)
+ #  InternetHostListTimeout : [real](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.markdown)
 
 > [Client/Server] Determines the amount of time the client is willing to wait to get a host list from master server.
 > ``` lang=cpp, name=Lightning
@@ -127,7 +127,7 @@
 
 
 ---  
- #  InternetHostPublishInterval : [real](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real.markdown)
+ #  InternetHostPublishInterval : [real](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.markdown)
 
 > Controls how often the internet discoverable peer sends a host record message to its master server subscriptions.
 > ``` lang=cpp, name=Lightning
@@ -135,7 +135,7 @@
 
 
 ---  
- #  InternetHostRecordLifetime : [real](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real.markdown)
+ #  InternetHostRecordLifetime : [real](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.markdown)
 
 > Controls the lifetime of every host record stored on the master server.
 > ``` lang=cpp, name=Lightning
@@ -143,7 +143,7 @@
 
 
 ---  
- #  InternetSameIpHostRecordLimit : [integer](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/integer.markdown)
+ #  InternetSameIpHostRecordLimit : [integer](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer.markdown)
 
 > Controls how many host records from the same IP address may be stored on the master server (used to prevent flood attacks).
 > ``` lang=cpp, name=Lightning
@@ -151,7 +151,7 @@
 
 
 ---  
- #  Ipv4Address : [ipaddress](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/ipaddress.markdown)
+ #  Ipv4Address : [ipaddress](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/ipaddress.markdown)
 
  `read-only`
 
@@ -161,7 +161,7 @@
 
 
 ---  
- #  Ipv4Host : [string](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/string.markdown)
+ #  Ipv4Host : [string](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/string.markdown)
 
  `read-only`
 
@@ -171,7 +171,7 @@
 
 
 ---  
- #  Ipv4Port : [integer](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/integer.markdown)
+ #  Ipv4Port : [integer](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer.markdown)
 
  `read-only`
 
@@ -181,7 +181,7 @@
 
 
 ---  
- #  IsOpen : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/boolean.markdown)
+ #  IsOpen : [boolean](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.markdown)
 
  `read-only`
 
@@ -191,7 +191,7 @@
 
 
 ---  
- #  LanDiscoverable : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/boolean.markdown)
+ #  LanDiscoverable : [boolean](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.markdown)
 
 > Configures the server peer to be discoverable on the local area network.
 > ``` lang=cpp, name=Lightning
@@ -199,7 +199,7 @@
 
 
 ---  
- #  LinkCount : [integer](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/integer.markdown)
+ #  LinkCount : [integer](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer.markdown)
 
  `read-only`
 
@@ -209,7 +209,7 @@
 
 
 ---  
- #  NetObjectCount : [integer](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/integer.markdown)
+ #  NetObjectCount : [integer](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer.markdown)
 
  `read-only`
 
@@ -219,7 +219,7 @@
 
 
 ---  
- #  NetPeerId : [integer](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/integer.markdown)
+ #  NetPeerId : [integer](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer.markdown)
 
  `read-only`
 
@@ -229,7 +229,7 @@
 
 
 ---  
- #  NetSpaceCount : [integer](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/integer.markdown)
+ #  NetSpaceCount : [integer](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer.markdown)
 
  `read-only`
 
@@ -239,7 +239,7 @@
 
 
 ---  
- #  NetUserCount : [integer](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/integer.markdown)
+ #  NetUserCount : [integer](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer.markdown)
 
  `read-only`
 
@@ -249,7 +249,7 @@
 
 
 ---  
- #  UserCount : [integer](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/integer.markdown)
+ #  UserCount : [integer](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer.markdown)
 
  `read-only`
 
@@ -259,7 +259,7 @@
 
 
 ---  
- #  Users : [netuserrange](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netuserrange.markdown)
+ #  Users : [netuserrange](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/netuserrange.markdown)
 
  `read-only`
 
@@ -269,7 +269,7 @@
 
 
 ---  
- #  UsersAddedByMyPeer : [netuserrange](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netuserrange.markdown)
+ #  UsersAddedByMyPeer : [netuserrange](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/netuserrange.markdown)
 
  `read-only`
 
@@ -283,7 +283,7 @@
 
 
 ---  
- #  AddUser : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/boolean.markdown)
+ #  AddUser : [boolean](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.markdown)
 
 > Initiates a network user add request to add a new user belonging to our local peer (delayed until end of frame). Listen to the NetUser event interface to handle the results. Returns true if the request was successfully initiated, else false.
 > |Name|Type|Description|
@@ -294,24 +294,24 @@
 
 
 ---  
- #  AddUser : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/boolean.markdown)
+ #  AddUser : [boolean](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.markdown)
 
 > Initiates a network user add request to add a new user belonging to our local peer (delayed until end of frame). Listen to the NetUser event interface to handle the results. Returns true if the request was successfully initiated, else false.
 > |Name|Type|Description|
 > |---|---|---|
-> |requestEvent|[event](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/event.markdown)| |
+> |requestEvent|[event](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/event.markdown)| |
 > ``` lang=cpp, name=Lightning
 > function AddUser(requestEvent : Event) : Boolean
 > ``` 
 
 
 ---  
- #  AddUser : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/boolean.markdown)
+ #  AddUser : [boolean](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.markdown)
 
 > Initiates a network user add request to add a new user belonging to our local peer (delayed until end of frame). Listen to the NetUser event interface to handle the results. Returns true if the request was successfully initiated, else false.
 > |Name|Type|Description|
 > |---|---|---|
-> |requestBundle|[eventbundle](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/eventbundle.markdown)| |
+> |requestBundle|[eventbundle](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/eventbundle.markdown)| |
 > ``` lang=cpp, name=Lightning
 > function AddUser(requestBundle : EventBundle) : Boolean
 > ``` 
@@ -334,7 +334,7 @@
 > Clears the given network's host list.
 > |Name|Type|Description|
 > |---|---|---|
-> |network|[Network](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/enum_reference.markdown#network)| |
+> |network|[Network](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/enum_reference.markdown#network)| |
 > ``` lang=cpp, name=Lightning
 > function ClearHostList(network : Network)
 > ``` 
@@ -363,45 +363,45 @@
 
 
 ---  
- #  ConnectLink : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/boolean.markdown)
+ #  ConnectLink : [boolean](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.markdown)
 
 > [Client] Initiates a connect attempt with the remote peer (delayed until end of frame). Listen to the NetLink event interface to handle the results. Returns true if a connect request was successfully initiated, else false.
 > |Name|Type|Description|
 > |---|---|---|
-> |ipAddress|[ipaddress](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/ipaddress.markdown)| |
+> |ipAddress|[ipaddress](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/ipaddress.markdown)| |
 > ``` lang=cpp, name=Lightning
 > function ConnectLink(ipAddress : IpAddress) : Boolean
 > ``` 
 
 
 ---  
- #  ConnectLink : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/boolean.markdown)
+ #  ConnectLink : [boolean](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.markdown)
 
 > [Client] Initiates a connect attempt with the remote peer (delayed until end of frame). Listen to the NetLink event interface to handle the results. Returns true if a connect request was successfully initiated, else false.
 > |Name|Type|Description|
 > |---|---|---|
-> |ipAddress|[ipaddress](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/ipaddress.markdown)| |
-> |requestEvent|[event](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/event.markdown)| |
+> |ipAddress|[ipaddress](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/ipaddress.markdown)| |
+> |requestEvent|[event](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/event.markdown)| |
 > ``` lang=cpp, name=Lightning
 > function ConnectLink(ipAddress : IpAddress, requestEvent : Event) : Boolean
 > ``` 
 
 
 ---  
- #  ConnectLink : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/boolean.markdown)
+ #  ConnectLink : [boolean](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.markdown)
 
 > [Client] Initiates a connect attempt with the remote peer (delayed until end of frame). Listen to the NetLink event interface to handle the results. Returns true if a connect request was successfully initiated, else false.
 > |Name|Type|Description|
 > |---|---|---|
-> |ipAddress|[ipaddress](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/ipaddress.markdown)| |
-> |requestBundle|[eventbundle](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/eventbundle.markdown)| |
+> |ipAddress|[ipaddress](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/ipaddress.markdown)| |
+> |requestBundle|[eventbundle](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/eventbundle.markdown)| |
 > ``` lang=cpp, name=Lightning
 > function ConnectLink(ipAddress : IpAddress, requestBundle : EventBundle) : Boolean
 > ``` 
 
 
 ---  
- #  DisconnectAllLinks : [integer](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/integer.markdown)
+ #  DisconnectAllLinks : [integer](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer.markdown)
 
 > [Client/Server] Disconnects by request from all remote peers. Listen to the NetLink event interface to handle the results. Returns the number of links disconnected.
 > |Name|Type|Description|
@@ -412,295 +412,295 @@
 
 
 ---  
- #  DisconnectAllLinks : [integer](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/integer.markdown)
+ #  DisconnectAllLinks : [integer](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer.markdown)
 
 > [Client/Server] Disconnects by request from all remote peers. Listen to the NetLink event interface to handle the results. Returns the number of links disconnected.
 > |Name|Type|Description|
 > |---|---|---|
-> |requestEvent|[event](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/event.markdown)| |
+> |requestEvent|[event](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/event.markdown)| |
 > ``` lang=cpp, name=Lightning
 > function DisconnectAllLinks(requestEvent : Event) : Integer
 > ``` 
 
 
 ---  
- #  DisconnectAllLinks : [integer](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/integer.markdown)
+ #  DisconnectAllLinks : [integer](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer.markdown)
 
 > [Client/Server] Disconnects by request from all remote peers. Listen to the NetLink event interface to handle the results. Returns the number of links disconnected.
 > |Name|Type|Description|
 > |---|---|---|
-> |requestBundle|[eventbundle](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/eventbundle.markdown)| |
+> |requestBundle|[eventbundle](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/eventbundle.markdown)| |
 > ``` lang=cpp, name=Lightning
 > function DisconnectAllLinks(requestBundle : EventBundle) : Integer
 > ``` 
 
 
 ---  
- #  DisconnectLink : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/boolean.markdown)
+ #  DisconnectLink : [boolean](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.markdown)
 
 > [Client/Server] Disconnects by request from the remote peer. Listen to the NetLink event interface to handle the results. Returns true if a disconnect notice was successfully initiated, else false.
 > |Name|Type|Description|
 > |---|---|---|
-> |netPeerId|[integer](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/integer.markdown)| |
+> |netPeerId|[integer](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer.markdown)| |
 > ``` lang=cpp, name=Lightning
 > function DisconnectLink(netPeerId : Integer) : Boolean
 > ``` 
 
 
 ---  
- #  DisconnectLink : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/boolean.markdown)
+ #  DisconnectLink : [boolean](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.markdown)
 
 > [Client/Server] Disconnects by request from the remote peer. Listen to the NetLink event interface to handle the results. Returns true if a disconnect notice was successfully initiated, else false.
 > |Name|Type|Description|
 > |---|---|---|
-> |netPeerId|[integer](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/integer.markdown)| |
-> |requestEvent|[event](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/event.markdown)| |
+> |netPeerId|[integer](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer.markdown)| |
+> |requestEvent|[event](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/event.markdown)| |
 > ``` lang=cpp, name=Lightning
 > function DisconnectLink(netPeerId : Integer, requestEvent : Event) : Boolean
 > ``` 
 
 
 ---  
- #  DisconnectLink : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/boolean.markdown)
+ #  DisconnectLink : [boolean](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.markdown)
 
 > [Client/Server] Disconnects by request from the remote peer. Listen to the NetLink event interface to handle the results. Returns true if a disconnect notice was successfully initiated, else false.
 > |Name|Type|Description|
 > |---|---|---|
-> |netPeerId|[integer](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/integer.markdown)| |
-> |requestBundle|[eventbundle](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/eventbundle.markdown)| |
+> |netPeerId|[integer](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer.markdown)| |
+> |requestBundle|[eventbundle](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/eventbundle.markdown)| |
 > ``` lang=cpp, name=Lightning
 > function DisconnectLink(netPeerId : Integer, requestBundle : EventBundle) : Boolean
 > ``` 
 
 
 ---  
- #  DisconnectLink : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/boolean.markdown)
+ #  DisconnectLink : [boolean](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.markdown)
 
 > [Client/Server] Disconnects by request from the remote peer. Listen to the NetLink event interface to handle the results. Returns true if a disconnect notice was successfully initiated, else false.
 > |Name|Type|Description|
 > |---|---|---|
-> |ipAddress|[ipaddress](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/ipaddress.markdown)| |
+> |ipAddress|[ipaddress](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/ipaddress.markdown)| |
 > ``` lang=cpp, name=Lightning
 > function DisconnectLink(ipAddress : IpAddress) : Boolean
 > ``` 
 
 
 ---  
- #  DisconnectLink : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/boolean.markdown)
+ #  DisconnectLink : [boolean](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.markdown)
 
 > [Client/Server] Disconnects by request from the remote peer. Listen to the NetLink event interface to handle the results. Returns true if a disconnect notice was successfully initiated, else false.
 > |Name|Type|Description|
 > |---|---|---|
-> |ipAddress|[ipaddress](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/ipaddress.markdown)| |
-> |requestEvent|[event](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/event.markdown)| |
+> |ipAddress|[ipaddress](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/ipaddress.markdown)| |
+> |requestEvent|[event](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/event.markdown)| |
 > ``` lang=cpp, name=Lightning
 > function DisconnectLink(ipAddress : IpAddress, requestEvent : Event) : Boolean
 > ``` 
 
 
 ---  
- #  DisconnectLink : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/boolean.markdown)
+ #  DisconnectLink : [boolean](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.markdown)
 
 > [Client/Server] Disconnects by request from the remote peer. Listen to the NetLink event interface to handle the results. Returns true if a disconnect notice was successfully initiated, else false.
 > |Name|Type|Description|
 > |---|---|---|
-> |ipAddress|[ipaddress](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/ipaddress.markdown)| |
-> |requestBundle|[eventbundle](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/eventbundle.markdown)| |
+> |ipAddress|[ipaddress](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/ipaddress.markdown)| |
+> |requestBundle|[eventbundle](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/eventbundle.markdown)| |
 > ``` lang=cpp, name=Lightning
 > function DisconnectLink(ipAddress : IpAddress, requestBundle : EventBundle) : Boolean
 > ``` 
 
 
 ---  
- #  DiscoverHostList : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/boolean.markdown)
+ #  DiscoverHostList : [boolean](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.markdown)
 
 > Discovers the given network's host list. Listen to the NetHost event interface to handle the results. Returns true if the discovery was successfully started, else false.
 > |Name|Type|Description|
 > |---|---|---|
-> |network|[Network](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/enum_reference.markdown#network)| |
-> |removeStaleHosts|[boolean](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/boolean.markdown)| |
+> |network|[Network](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/enum_reference.markdown#network)| |
+> |removeStaleHosts|[boolean](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.markdown)| |
 > ``` lang=cpp, name=Lightning
 > function DiscoverHostList(network : Network, removeStaleHosts : Boolean) : Boolean
 > ``` 
 
 
 ---  
- #  GetHostByAddress : [nethost](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/nethost.markdown)
+ #  GetHostByAddress : [nethost](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/nethost.markdown)
 
 > 
 > |Name|Type|Description|
 > |---|---|---|
-> |ipAddress|[ipaddress](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/ipaddress.markdown)| |
+> |ipAddress|[ipaddress](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/ipaddress.markdown)| |
 > ``` lang=cpp, name=Lightning
 > function GetHostByAddress(ipAddress : IpAddress) : NetHost
 > ``` 
 
 
 ---  
- #  GetHostByAddress : [nethost](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/nethost.markdown)
+ #  GetHostByAddress : [nethost](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/nethost.markdown)
 
 > 
 > |Name|Type|Description|
 > |---|---|---|
-> |network|[Network](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/enum_reference.markdown#network)| |
-> |ipAddress|[ipaddress](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/ipaddress.markdown)| |
+> |network|[Network](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/enum_reference.markdown#network)| |
+> |ipAddress|[ipaddress](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/ipaddress.markdown)| |
 > ``` lang=cpp, name=Lightning
 > function GetHostByAddress(network : Network, ipAddress : IpAddress) : NetHost
 > ``` 
 
 
 ---  
- #  GetHostByIndex : [nethost](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/nethost.markdown)
+ #  GetHostByIndex : [nethost](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/nethost.markdown)
 
 > Returns the first equivalent host found in the given network's host list, else nullptr.
 > |Name|Type|Description|
 > |---|---|---|
-> |network|[Network](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/enum_reference.markdown#network)| |
-> |index|[integer](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/integer.markdown)| |
+> |network|[Network](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/enum_reference.markdown#network)| |
+> |index|[integer](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer.markdown)| |
 > ``` lang=cpp, name=Lightning
 > function GetHostByIndex(network : Network, index : Integer) : NetHost
 > ``` 
 
 
 ---  
- #  GetHostList : [nethostrange](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/nethostrange.markdown)
+ #  GetHostList : [nethostrange](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/nethostrange.markdown)
 
 > Returns the given network's host list.
 > |Name|Type|Description|
 > |---|---|---|
-> |network|[Network](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/enum_reference.markdown#network)| |
+> |network|[Network](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/enum_reference.markdown#network)| |
 > ``` lang=cpp, name=Lightning
 > function GetHostList(network : Network) : NetHostRange
 > ``` 
 
 
 ---  
- #  GetLinkCreationDirection : [TransmissionDirection](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/enum_reference.markdown#transmissiondirection)
+ #  GetLinkCreationDirection : [TransmissionDirection](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/enum_reference.markdown#transmissiondirection)
 
 > [Client/Server] Returns the direction in which the link was created (which peer initiated the connection), else TransmissionDirection::Unspecified.
 > |Name|Type|Description|
 > |---|---|---|
-> |netPeerId|[integer](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/integer.markdown)| |
+> |netPeerId|[integer](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer.markdown)| |
 > ``` lang=cpp, name=Lightning
 > function GetLinkCreationDirection(netPeerId : Integer) : TransmissionDirection
 > ``` 
 
 
 ---  
- #  GetLinkInternetProtocol : [InternetProtocol](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/enum_reference.markdown#internetprotocol)
+ #  GetLinkInternetProtocol : [InternetProtocol](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/enum_reference.markdown#internetprotocol)
 
 > [Client/Server] Returns the link's IP address protocol version, else InternetProtocol::Unspecified. This IP address protocol will never change for the lifetime of this link.
 > |Name|Type|Description|
 > |---|---|---|
-> |netPeerId|[integer](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/integer.markdown)| |
+> |netPeerId|[integer](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer.markdown)| |
 > ``` lang=cpp, name=Lightning
 > function GetLinkInternetProtocol(netPeerId : Integer) : InternetProtocol
 > ``` 
 
 
 ---  
- #  GetLinkIpAddress : [ipaddress](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/ipaddress.markdown)
+ #  GetLinkIpAddress : [ipaddress](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/ipaddress.markdown)
 
 > [Client/Server] Returns the remote peer's IP address (as seen from our perspective), else IpAddress(). For outgoing links this is the same IP address specified in our connect call. This IP address will never change for the lifetime of this link.
 > |Name|Type|Description|
 > |---|---|---|
-> |netPeerId|[integer](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/integer.markdown)| |
+> |netPeerId|[integer](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer.markdown)| |
 > ``` lang=cpp, name=Lightning
 > function GetLinkIpAddress(netPeerId : Integer) : IpAddress
 > ``` 
 
 
 ---  
- #  GetLinkNetPeerId : [integer](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/integer.markdown)
+ #  GetLinkNetPeerId : [integer](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer.markdown)
 
 > Returns the remote peer's unique network identifier, else 0. [Server] This will be non-plasma if the client is connected, else plasma. [Client] This will always be plasma.
 > |Name|Type|Description|
 > |---|---|---|
-> |ipAddress|[ipaddress](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/ipaddress.markdown)| |
+> |ipAddress|[ipaddress](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/ipaddress.markdown)| |
 > ``` lang=cpp, name=Lightning
 > function GetLinkNetPeerId(ipAddress : IpAddress) : Integer
 > ``` 
 
 
 ---  
- #  GetLinkState : [LinkState](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/enum_reference.markdown#linkstate)
+ #  GetLinkState : [LinkState](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/enum_reference.markdown#linkstate)
 
 > [Client/Server] Returns the link's specific state, else LinkState::Unspecified.
 > |Name|Type|Description|
 > |---|---|---|
-> |netPeerId|[integer](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/integer.markdown)| |
+> |netPeerId|[integer](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer.markdown)| |
 > ``` lang=cpp, name=Lightning
 > function GetLinkState(netPeerId : Integer) : LinkState
 > ``` 
 
 
 ---  
- #  GetLinkStatus : [LinkStatus](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/enum_reference.markdown#linkstatus)
+ #  GetLinkStatus : [LinkStatus](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/enum_reference.markdown#linkstatus)
 
 > [Client/Server] Returns the link's overall status, else LinkStatus::Unspecified.
 > |Name|Type|Description|
 > |---|---|---|
-> |netPeerId|[integer](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/integer.markdown)| |
+> |netPeerId|[integer](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer.markdown)| |
 > ``` lang=cpp, name=Lightning
 > function GetLinkStatus(netPeerId : Integer) : LinkStatus
 > ``` 
 
 
 ---  
- #  GetNetObject : [cog](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/cog.markdown)
+ #  GetNetObject : [cog](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/cog.markdown)
 
 > Returns the live net object specified if it is known locally, else nullptr.
 > |Name|Type|Description|
 > |---|---|---|
-> |netObjectId|[integer](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/integer.markdown)| |
+> |netObjectId|[integer](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer.markdown)| |
 > ``` lang=cpp, name=Lightning
 > function GetNetObject(netObjectId : Integer) : Cog
 > ``` 
 
 
 ---  
- #  GetNetSpace : [space](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/space.markdown)
+ #  GetNetSpace : [space](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/space.markdown)
 
 > Returns the live net space specified if it is known locally, else nullptr.
 > |Name|Type|Description|
 > |---|---|---|
-> |netObjectId|[integer](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/integer.markdown)| |
+> |netObjectId|[integer](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer.markdown)| |
 > ``` lang=cpp, name=Lightning
 > function GetNetSpace(netObjectId : Integer) : Space
 > ``` 
 
 
 ---  
- #  GetOurIpAddressFromLink : [ipaddress](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/ipaddress.markdown)
+ #  GetOurIpAddressFromLink : [ipaddress](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/ipaddress.markdown)
 
 > [Client/Server] Returns our peer's IP address (as seen from their perspective), else IpAddress(). For incoming links this is the same IP address specified in their connect call. (Available if the link is connected or incoming and attempting connection) It is absolutely possible that this does not match our local IP address.
 > |Name|Type|Description|
 > |---|---|---|
-> |netPeerId|[integer](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/integer.markdown)| |
+> |netPeerId|[integer](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer.markdown)| |
 > ``` lang=cpp, name=Lightning
 > function GetOurIpAddressFromLink(netPeerId : Integer) : IpAddress
 > ``` 
 
 
 ---  
- #  GetUser : [cog](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/cog.markdown)
+ #  GetUser : [cog](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/cog.markdown)
 
 > Returns the specified network user, else nullptr.
 > |Name|Type|Description|
 > |---|---|---|
-> |netUserId|[integer](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/integer.markdown)| |
+> |netUserId|[integer](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer.markdown)| |
 > ``` lang=cpp, name=Lightning
 > function GetUser(netUserId : Integer) : Cog
 > ``` 
 
 
 ---  
- #  GetUsersAddedByPeer : [netuserrange](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netuserrange.markdown)
+ #  GetUsersAddedByPeer : [netuserrange](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/netuserrange.markdown)
 
 > Returns the network users added by the specified peer.
 > |Name|Type|Description|
 > |---|---|---|
-> |netPeerId|[integer](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/integer.markdown)| |
+> |netPeerId|[integer](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer.markdown)| |
 > ``` lang=cpp, name=Lightning
 > function GetUsersAddedByPeer(netPeerId : Integer) : NetUserRange
 > ``` 
@@ -720,46 +720,46 @@
 
 
 ---  
- #  Open : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/boolean.markdown)
+ #  Open : [boolean](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.markdown)
 
 > Opens the peer with the specified network role on any available port. Returns true if successful, else false.
 > |Name|Type|Description|
 > |---|---|---|
-> |role|[NetRole](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/enum_reference.markdown#netrole)| |
+> |role|[NetRole](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/enum_reference.markdown#netrole)| |
 > ``` lang=cpp, name=Lightning
 > function Open(role : NetRole) : Boolean
 > ``` 
 
 
 ---  
- #  Open : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/boolean.markdown)
+ #  Open : [boolean](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.markdown)
 
 > Opens the peer with the specified network role and port settings. Specify port 0 to indicate any available port should be used. Returns true if successful, else false.
 > |Name|Type|Description|
 > |---|---|---|
-> |role|[NetRole](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/enum_reference.markdown#netrole)| |
-> |port|[integer](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/integer.markdown)| |
+> |role|[NetRole](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/enum_reference.markdown#netrole)| |
+> |port|[integer](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer.markdown)| |
 > ``` lang=cpp, name=Lightning
 > function Open(role : NetRole, port : Integer) : Boolean
 > ``` 
 
 
 ---  
- #  Open : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/boolean.markdown)
+ #  Open : [boolean](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.markdown)
 
 > Opens the peer with the specified network role, port, and retry settings. For the given number of retries, if binding is unsuccessful, the port number is incremented and binding is attempted again. Specify port 0 to indicate any available port should be used. Returns true if successful, else false.
 > |Name|Type|Description|
 > |---|---|---|
-> |role|[NetRole](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/enum_reference.markdown#netrole)| |
-> |port|[integer](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/integer.markdown)| |
-> |retries|[integer](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/integer.markdown)| |
+> |role|[NetRole](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/enum_reference.markdown#netrole)| |
+> |port|[integer](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer.markdown)| |
+> |retries|[integer](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer.markdown)| |
 > ``` lang=cpp, name=Lightning
 > function Open(role : NetRole, port : Integer, retries : Integer) : Boolean
 > ``` 
 
 
 ---  
- #  OpenClient : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/boolean.markdown)
+ #  OpenClient : [boolean](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.markdown)
 
 > Opens the peer as a client on any available port. Returns true if successful, else false.
 > |Name|Type|Description|
@@ -770,32 +770,32 @@
 
 
 ---  
- #  OpenClient : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/boolean.markdown)
+ #  OpenClient : [boolean](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.markdown)
 
 > Opens the peer as a client with the specified network port. Specify port 0 to indicate any available port should be used. Returns true if successful, else false.
 > |Name|Type|Description|
 > |---|---|---|
-> |port|[integer](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/integer.markdown)| |
+> |port|[integer](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer.markdown)| |
 > ``` lang=cpp, name=Lightning
 > function OpenClient(port : Integer) : Boolean
 > ``` 
 
 
 ---  
- #  OpenClient : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/boolean.markdown)
+ #  OpenClient : [boolean](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.markdown)
 
 > Opens the peer as a client with the specified network port and retry settings. For the given number of retries, if binding is unsuccessful, the port number is incremented and binding is attempted again. Specify port 0 to indicate any available port should be used. Returns true if successful, else false.
 > |Name|Type|Description|
 > |---|---|---|
-> |port|[integer](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/integer.markdown)| |
-> |retries|[integer](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/integer.markdown)| |
+> |port|[integer](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer.markdown)| |
+> |retries|[integer](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer.markdown)| |
 > ``` lang=cpp, name=Lightning
 > function OpenClient(port : Integer, retries : Integer) : Boolean
 > ``` 
 
 
 ---  
- #  OpenOffline : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/boolean.markdown)
+ #  OpenOffline : [boolean](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.markdown)
 
 > Opens the peer in offline mode. In offline mode, the peer will act as a pass-through and simulate all applicable network events locally. Always succeeds and returns true.
 > |Name|Type|Description|
@@ -806,7 +806,7 @@
 
 
 ---  
- #  OpenServer : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/boolean.markdown)
+ #  OpenServer : [boolean](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.markdown)
 
 > Opens the peer as a server on any available port. Returns true if successful, else false.
 > |Name|Type|Description|
@@ -817,81 +817,81 @@
 
 
 ---  
- #  OpenServer : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/boolean.markdown)
+ #  OpenServer : [boolean](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.markdown)
 
 > Opens the peer as a server with the specified network port. Specify port 0 to indicate any available port should be used. Returns true if successful, else false.
 > |Name|Type|Description|
 > |---|---|---|
-> |port|[integer](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/integer.markdown)| |
+> |port|[integer](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer.markdown)| |
 > ``` lang=cpp, name=Lightning
 > function OpenServer(port : Integer) : Boolean
 > ``` 
 
 
 ---  
- #  RefreshHost : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/boolean.markdown)
+ #  RefreshHost : [boolean](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.markdown)
 
 > Refreshes the specified host in the given network's host list. Allowing discovery will enable the host to be discovered if it is not an already known host. Listen to the NetHost event interface to handle the results. Returns true if the host was found and the refresh successfully started, else false (the host could not be found).
 > |Name|Type|Description|
 > |---|---|---|
-> |network|[Network](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/enum_reference.markdown#network)| |
-> |ipAddress|[ipaddress](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/ipaddress.markdown)| |
-> |getExtraHostInfo|[boolean](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/boolean.markdown)| |
-> |allowDiscovery|[boolean](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/boolean.markdown)| |
-> |removeStaleHosts|[boolean](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/boolean.markdown)| |
+> |network|[Network](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/enum_reference.markdown#network)| |
+> |ipAddress|[ipaddress](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/ipaddress.markdown)| |
+> |getExtraHostInfo|[boolean](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.markdown)| |
+> |allowDiscovery|[boolean](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.markdown)| |
+> |removeStaleHosts|[boolean](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.markdown)| |
 > ``` lang=cpp, name=Lightning
 > function RefreshHost(network : Network, ipAddress : IpAddress, getExtraHostInfo : Boolean, allowDiscovery : Boolean, removeStaleHosts : Boolean) : Boolean
 > ``` 
 
 
 ---  
- #  RefreshHostList : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/boolean.markdown)
+ #  RefreshHostList : [boolean](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.markdown)
 
 > Refreshes all hosts in the given network's host list. Allowing discovery will enable new hosts to be discovered in the process of refreshing. Listen to the NetHost event interface to handle the results. Returns true if the refresh was successfully started, else false.
 > |Name|Type|Description|
 > |---|---|---|
-> |network|[Network](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/enum_reference.markdown#network)| |
-> |getExtraHostInfo|[boolean](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/boolean.markdown)| |
-> |allowDiscovery|[boolean](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/boolean.markdown)| |
-> |removeStaleHosts|[boolean](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/boolean.markdown)| |
+> |network|[Network](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/enum_reference.markdown#network)| |
+> |getExtraHostInfo|[boolean](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.markdown)| |
+> |allowDiscovery|[boolean](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.markdown)| |
+> |removeStaleHosts|[boolean](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.markdown)| |
 > ``` lang=cpp, name=Lightning
 > function RefreshHostList(network : Network, getExtraHostInfo : Boolean, allowDiscovery : Boolean, removeStaleHosts : Boolean) : Boolean
 > ``` 
 
 
 ---  
- #  RemoveUser : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/boolean.markdown)
+ #  RemoveUser : [boolean](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.markdown)
 
 > 
 > |Name|Type|Description|
 > |---|---|---|
-> |cog|[cog](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/cog.markdown)| |
+> |cog|[cog](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/cog.markdown)| |
 > ``` lang=cpp, name=Lightning
 > function RemoveUser(cog : Cog) : Boolean
 > ``` 
 
 
 ---  
- #  RemoveUser : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/boolean.markdown)
+ #  RemoveUser : [boolean](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.markdown)
 
 > 
 > |Name|Type|Description|
 > |---|---|---|
-> |cog|[cog](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/cog.markdown)| |
-> |requestEvent|[event](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/event.markdown)| |
+> |cog|[cog](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/cog.markdown)| |
+> |requestEvent|[event](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/event.markdown)| |
 > ``` lang=cpp, name=Lightning
 > function RemoveUser(cog : Cog, requestEvent : Event) : Boolean
 > ``` 
 
 
 ---  
- #  RemoveUser : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/boolean.markdown)
+ #  RemoveUser : [boolean](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.markdown)
 
 > 
 > |Name|Type|Description|
 > |---|---|---|
-> |cog|[cog](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/cog.markdown)| |
-> |requestBundle|[eventbundle](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/eventbundle.markdown)| |
+> |cog|[cog](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/cog.markdown)| |
+> |requestBundle|[eventbundle](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/eventbundle.markdown)| |
 > ``` lang=cpp, name=Lightning
 > function RemoveUser(cog : Cog, requestBundle : EventBundle) : Boolean
 > ``` 
@@ -903,7 +903,7 @@
 > Subscribes to the master server located at the specified IP address. All internet host discovery, record publishing, connection facilitation (NAT punch-through) requests are performed on these master server subscriptions in the order they were subscribed.
 > |Name|Type|Description|
 > |---|---|---|
-> |ipAddress|[ipaddress](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/ipaddress.markdown)| |
+> |ipAddress|[ipaddress](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/ipaddress.markdown)| |
 > ``` lang=cpp, name=Lightning
 > function SubscribeToMasterServer(ipAddress : IpAddress)
 > ``` 
@@ -915,7 +915,7 @@
 > Unsubscribes from the master server located at the specified IP address (if subscribed).
 > |Name|Type|Description|
 > |---|---|---|
-> |ipAddress|[ipaddress](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/ipaddress.markdown)| |
+> |ipAddress|[ipaddress](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/ipaddress.markdown)| |
 > ``` lang=cpp, name=Lightning
 > function UnsubscribeFromMasterServer(ipAddress : IpAddress)
 > ``` 

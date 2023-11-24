@@ -4,18 +4,18 @@
 
 |Methods|Properties|Base Classes|Derived Classes|
 |---|---|---|---|
-|[ Constructor](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/squaregizmo.markdown#squaregizmo-void)|[ Bordered](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/squaregizmo.markdown#bordered-plasma-engine-doc)|[simplegizmobase](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/simplegizmobase.markdown)| |
-| |[ Filled](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/squaregizmo.markdown#filled-plasma-engine-docum)| | |
-| |[ Size](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/squaregizmo.markdown#size-plasma-engine-documen)| | |
-| |[ SnapDistance](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/squaregizmo.markdown#snapdistance-plasma-engine)| | |
-| |[ ViewAligned](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/squaregizmo.markdown#viewaligned-plasma-engine)| | |
+|[ Constructor](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/squaregizmo.markdown#squaregizmo-void)|[ Bordered](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/squaregizmo.markdown#bordered-plasma-engine-doc)|[simplegizmobase](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/simplegizmobase.markdown)| |
+| |[ Filled](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/squaregizmo.markdown#filled-plasma-engine-docum)| | |
+| |[ Size](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/squaregizmo.markdown#size-plasma-engine-documen)| | |
+| |[ SnapDistance](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/squaregizmo.markdown#snapdistance-plasma-engine)| | |
+| |[ ViewAligned](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/squaregizmo.markdown#viewaligned-plasma-engine)| | |
 
 
  #  Properties
 
 
 ---  
- #  Bordered : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/boolean.markdown)
+ #  Bordered : [boolean](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -23,7 +23,7 @@
 
 
 ---  
- #  Filled : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/boolean.markdown)
+ #  Filled : [boolean](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -31,7 +31,7 @@
 
 
 ---  
- #  Size : [real3](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real3.markdown)
+ #  Size : [real3](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real3.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -39,7 +39,7 @@
 
 
 ---  
- #  SnapDistance : [real](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real.markdown)
+ #  SnapDistance : [real](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -47,7 +47,7 @@
 
 
 ---  
- #  ViewAligned : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/boolean.markdown)
+ #  ViewAligned : [boolean](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning

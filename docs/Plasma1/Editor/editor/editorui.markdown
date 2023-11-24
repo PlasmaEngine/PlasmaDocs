@@ -6,7 +6,7 @@ This page introduces the Plasma Engine editor and user interface. It covers edit
 ## Create a New Project
 
 (NOTE)**COMMANDS:**  
-[Commands](https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/editor/editorcommands/commands.markdown) represent all actions you can perform as a user in the Plasma Editor (such as [CreateSpriteText](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/command_reference.markdown#createspritetext), [BackupProject](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/command_reference.markdown#backupproject), and [ExportGame](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/command_reference.markdown#exportgame)).  Links are used throughout the lesson for refreshing your knowledge on how to do common essential tasks. View how to enter Commands in Plasma by following the link provided in the tutorial!
+[Commands](https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/editor/editorcommands/commands.markdown) represent all actions you can perform as a user in the Plasma Editor (such as [CreateSpriteText](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/command_reference.markdown#createspritetext), [BackupProject](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/command_reference.markdown#backupproject), and [ExportGame](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/command_reference.markdown#exportgame)).  Links are used throughout the lesson for refreshing your knowledge on how to do common essential tasks. View how to enter Commands in Plasma by following the link provided in the tutorial!
 
 It is recommended that you create a new project. If this is the first time you have run the Plasma Engine you will already be in the Projects screen and can simply type in a name for your project.  If you are not on the new Projects screen, you can access it using the Project menu.  See the section [The Plasma Launcher](https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/editor/launcher.markdown)) for more information.
 
@@ -95,7 +95,7 @@ This window contains several useful tools for managing various objects within th
 **ADD IMAGE** *`Library Window`*
 
 
-Anything you add to the game using the [Add](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/command_reference.markdown#add) command or through drag-and-drop importing is stored as a [Resource](https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/architecture/resources.markdown). All resources added to your project can be found in the `Library Window`.
+Anything you add to the game using the [Add](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/command_reference.markdown#add) command or through drag-and-drop importing is stored as a [Resource](https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/architecture/resources.markdown). All resources added to your project can be found in the `Library Window`.
 
 
 ### Objects Window
@@ -151,7 +151,7 @@ To be "in" a window requires that the window has "focus". To gain focus you need
 ### Game Window
 
 The `Game Window` is where your game actually runs inside the editor. You can test or play your game (or specific levels) here without having to create an executable. 
-* [Command](https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/editor/editorcommands/commands.markdown): [PlayGame](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/command_reference.markdown#playgame)
+* [Command](https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/editor/editorcommands/commands.markdown): [PlayGame](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/command_reference.markdown#playgame)
 
 The `Game Window` should appear with its tab next to the `Level Window` tab:
 
@@ -160,7 +160,7 @@ The `Game Window` should appear with its tab next to the `Level Window` tab:
 
 
 * Close the `Game Window` by pressing the `X button` on the Game tab
-* You can also press `Esc` or use [Command](https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/editor/editorcommands/commands.markdown): [StopGame](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/command_reference.markdown#stopgame)
+* You can also press `Esc` or use [Command](https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/editor/editorcommands/commands.markdown): [StopGame](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/command_reference.markdown#stopgame)
 
 WARNING:
 It is a good practice to close the game window while editing levels.  There are some assets in the Plasma Engine that can be changed by scripts running in the game session.
@@ -223,12 +223,12 @@ The `Plasma Search Window` can be used to reopen closed windows and tabs.  Once 
 - [Resource](https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/architecture/resources.markdown)
 
 ### Code Reference
-- [CreateSpriteText](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/command_reference.markdown#createspritetext)
-- [BackupProject](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/command_reference.markdown#backupproject)
-- [ExportGame](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/command_reference.markdown#exportgame)
-- [NewProject](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/command_reference.markdown#newproject)
-- [Add](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/command_reference.markdown#add)
-- [PlayGame](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/command_reference.markdown#playgame)
-- [StopGame](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/command_reference.markdown#stopgame) 
+- [CreateSpriteText](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/command_reference.markdown#createspritetext)
+- [BackupProject](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/command_reference.markdown#backupproject)
+- [ExportGame](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/command_reference.markdown#exportgame)
+- [NewProject](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/command_reference.markdown#newproject)
+- [Add](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/command_reference.markdown#add)
+- [PlayGame](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/command_reference.markdown#playgame)
+- [StopGame](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/command_reference.markdown#stopgame) 
 
  

@@ -2,10 +2,10 @@
 
 |Methods|Properties|Base Classes|Derived Classes|
 |---|---|---|---|
-| | |[metaattribute](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/metaattribute.markdown)|[cogarchetypepropertyfilter](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/cogarchetypepropertyfilter.markdown)|
-| | | |[editingamefilter](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/editingamefilter.markdown)|
-| | | |[hidebasefilter](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/hidebasefilter.markdown)|
-| | | |[metapropertybasicfilter](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/metapropertybasicfilter.markdown)|
+| | |[metaattribute](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/metaattribute.markdown)|[cogarchetypepropertyfilter](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/cogarchetypepropertyfilter.markdown)|
+| | | |[editingamefilter](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/editingamefilter.markdown)|
+| | | |[hidebasefilter](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/hidebasefilter.markdown)|
+| | | |[metapropertybasicfilter](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/metapropertybasicfilter.markdown)|
 | | | |PropertyFilterArithmeticTypes|
 | | | |PropertyFilterBoolean|
 | | | |PropertyFilterDoubleInteger|
@@ -23,9 +23,9 @@
 | | | |PropertyFilterReal3|
 | | | |PropertyFilterReal4|
 | | | |PropertyFilterString|
-| | | |[showgammacorrectionfilter](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/showgammacorrectionfilter.markdown)|
-| | | |[shownormalgenerationoptionsfilter](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/shownormalgenerationoptionsfilter.markdown)|
-| | | |[showpremultipliedalphafilter](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/showpremultipliedalphafilter.markdown)|
+| | | |[showgammacorrectionfilter](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/showgammacorrectionfilter.markdown)|
+| | | |[shownormalgenerationoptionsfilter](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/shownormalgenerationoptionsfilter.markdown)|
+| | | |[showpremultipliedalphafilter](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/showpremultipliedalphafilter.markdown)|
 
 
  #  Properties

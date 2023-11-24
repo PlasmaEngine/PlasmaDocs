@@ -2,7 +2,7 @@
 
 |Methods|Properties|Base Classes|Derived Classes|
 |---|---|---|---|
-| | |[springsubtool](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/springsubtool.markdown)|[selectorspringsubtool](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/selectorspringsubtool.markdown)|
+| | |[springsubtool](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/springsubtool.markdown)|[selectorspringsubtool](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/selectorspringsubtool.markdown)|
 
 
  #  Properties

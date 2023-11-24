@@ -6,15 +6,15 @@
 
 |Methods|Properties|Base Classes|Derived Classes|
 |---|---|---|---|
-| |[ Device](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/inputdeviceevent.markdown#device-plasma-engine-docum)|[event](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/event.markdown)| |
-| |[ LastDevice](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/inputdeviceevent.markdown#lastdevice-plasma-engine-d)| | |
+| |[ Device](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/inputdeviceevent.markdown#device-plasma-engine-docum)|[event](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/event.markdown)| |
+| |[ LastDevice](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/inputdeviceevent.markdown#lastdevice-plasma-engine-d)| | |
 
 
  #  Properties
 
 
 ---  
- #  Device : [InputDevice](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/enum_reference.markdown#inputdevice)
+ #  Device : [InputDevice](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/enum_reference.markdown#inputdevice)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -22,7 +22,7 @@
 
 
 ---  
- #  LastDevice : [InputDevice](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/enum_reference.markdown#inputdevice)
+ #  LastDevice : [InputDevice](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/enum_reference.markdown#inputdevice)
 
 > 
 > ``` lang=cpp, name=Lightning

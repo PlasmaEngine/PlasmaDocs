@@ -2,22 +2,22 @@
 
 |Methods|Properties|Base Classes|Derived Classes|
 |---|---|---|---|
-| |[ Color](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/particle.markdown#color-plasma-engine-docume)| | |
-| |[ Lifetime](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/particle.markdown#lifetime-plasma-engine-doc)| | |
-| |[ Position](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/particle.markdown#position-plasma-engine-doc)| | |
-| |[ Rotation](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/particle.markdown#rotation-plasma-engine-doc)| | |
-| |[ RotationalVelocity](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/particle.markdown#rotationalvelocity-plasma)| | |
-| |[ Size](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/particle.markdown#size-plasma-engine-documen)| | |
-| |[ Time](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/particle.markdown#time-plasma-engine-documen)| | |
-| |[ Velocity](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/particle.markdown#velocity-plasma-engine-doc)| | |
-| |[ WanderAngle](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/particle.markdown#wanderangle-plasma-engine)| | |
+| |[ Color](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/particle.markdown#color-plasma-engine-docume)| | |
+| |[ Lifetime](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/particle.markdown#lifetime-plasma-engine-doc)| | |
+| |[ Position](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/particle.markdown#position-plasma-engine-doc)| | |
+| |[ Rotation](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/particle.markdown#rotation-plasma-engine-doc)| | |
+| |[ RotationalVelocity](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/particle.markdown#rotationalvelocity-plasma)| | |
+| |[ Size](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/particle.markdown#size-plasma-engine-documen)| | |
+| |[ Time](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/particle.markdown#time-plasma-engine-documen)| | |
+| |[ Velocity](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/particle.markdown#velocity-plasma-engine-doc)| | |
+| |[ WanderAngle](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/particle.markdown#wanderangle-plasma-engine)| | |
 
 
  #  Properties
 
 
 ---  
- #  Color : [real4](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real4.markdown)
+ #  Color : [real4](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real4.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -25,7 +25,7 @@
 
 
 ---  
- #  Lifetime : [real](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real.markdown)
+ #  Lifetime : [real](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -33,7 +33,7 @@
 
 
 ---  
- #  Position : [real3](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real3.markdown)
+ #  Position : [real3](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real3.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -41,7 +41,7 @@
 
 
 ---  
- #  Rotation : [real](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real.markdown)
+ #  Rotation : [real](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -49,7 +49,7 @@
 
 
 ---  
- #  RotationalVelocity : [real](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real.markdown)
+ #  RotationalVelocity : [real](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -57,7 +57,7 @@
 
 
 ---  
- #  Size : [real](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real.markdown)
+ #  Size : [real](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -65,7 +65,7 @@
 
 
 ---  
- #  Time : [real](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real.markdown)
+ #  Time : [real](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -73,7 +73,7 @@
 
 
 ---  
- #  Velocity : [real3](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real3.markdown)
+ #  Velocity : [real3](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real3.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -81,7 +81,7 @@
 
 
 ---  
- #  WanderAngle : [real](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real.markdown)
+ #  WanderAngle : [real](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning

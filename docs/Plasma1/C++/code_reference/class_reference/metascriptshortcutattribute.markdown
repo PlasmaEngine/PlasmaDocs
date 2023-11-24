@@ -2,17 +2,17 @@
 
 |Methods|Properties|Base Classes|Derived Classes|
 |---|---|---|---|
-| |[ Alt](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/metascriptshortcutattribute.markdown#alt-plasma-engine-document)|[metaattribute](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/metaattribute.markdown)| |
-| |[ Ctrl](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/metascriptshortcutattribute.markdown#ctrl-plasma-engine-documen)| | |
-| |[ Key](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/metascriptshortcutattribute.markdown#key-plasma-engine-document)| | |
-| |[ Shift](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/metascriptshortcutattribute.markdown#shift-plasma-engine-docume)| | |
+| |[ Alt](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/metascriptshortcutattribute.markdown#alt-plasma-engine-document)|[metaattribute](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/metaattribute.markdown)| |
+| |[ Ctrl](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/metascriptshortcutattribute.markdown#ctrl-plasma-engine-documen)| | |
+| |[ Key](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/metascriptshortcutattribute.markdown#key-plasma-engine-document)| | |
+| |[ Shift](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/metascriptshortcutattribute.markdown#shift-plasma-engine-docume)| | |
 
 
  #  Properties
 
 
 ---  
- #  Alt : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/boolean.markdown)
+ #  Alt : [boolean](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -20,7 +20,7 @@
 
 
 ---  
- #  Ctrl : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/boolean.markdown)
+ #  Ctrl : [boolean](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -28,7 +28,7 @@
 
 
 ---  
- #  Key : [string](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/string.markdown)
+ #  Key : [string](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/string.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -36,7 +36,7 @@
 
 
 ---  
- #  Shift : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/boolean.markdown)
+ #  Shift : [boolean](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning

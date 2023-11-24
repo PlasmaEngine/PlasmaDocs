@@ -1,5 +1,5 @@
 # Point Gravity Effect
-[PointGravityEffect](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/pointgravityeffect.markdown) and [PointForceEffect](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/pointforceeffect.markdown) are effects that apply linear forces towards a central point based upon an inner and outer strength. This is commonly used to create spherical effects such as planetary gravity or explosive shockwaves.
+[PointGravityEffect](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/pointgravityeffect.markdown) and [PointForceEffect](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/pointforceeffect.markdown) are effects that apply linear forces towards a central point based upon an inner and outer strength. This is commonly used to create spherical effects such as planetary gravity or explosive shockwaves.
 
 ![image](https://raw.githubusercontent.com/PlasmaEngine/PlasmaDocs/master/media/46383.png)
 
@@ -45,8 +45,8 @@ Point effects are only expected to be used as Region effects. Other application 
 - [physicseffectsandregions.markdown](https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/physics/physicseffectsandregions.markdown)
 
 ## Reference
-- [PointForceEffect](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/pointforceeffect.markdown)
-- [PointGravityEffect](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/pointgravityeffect.markdown)
-- [PhysicsEffect](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/physicseffect.markdown)
-- [Region](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/region.markdown)
-- [PhysicsEffectInterpolationType](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/enum_reference.markdown#physicseffectinterpolationtype) 
+- [PointForceEffect](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/pointforceeffect.markdown)
+- [PointGravityEffect](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/pointgravityeffect.markdown)
+- [PhysicsEffect](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/physicseffect.markdown)
+- [Region](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/region.markdown)
+- [PhysicsEffectInterpolationType](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/enum_reference.markdown#physicseffectinterpolationtype) 

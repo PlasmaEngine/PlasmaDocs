@@ -6,17 +6,17 @@
 
 |Methods|Properties|Base Classes|Derived Classes|
 |---|---|---|---|
-|[ Constructor](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/gizmo.markdown#gizmo-void)|[ Active](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/gizmo.markdown#active-plasma-engine-docum)|[component](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/component.markdown)| |
-| |[ EditingObject](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/gizmo.markdown#editingobject-plasma-engin)| | |
-| |[ ForwardEventsToChildren](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/gizmo.markdown#forwardeventstochildren)| | |
-| |[ MouseOver](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/gizmo.markdown#mouseover-plasma-engine-do)| | |
+|[ Constructor](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/gizmo.markdown#gizmo-void)|[ Active](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/gizmo.markdown#active-plasma-engine-docum)|[component](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/component.markdown)| |
+| |[ EditingObject](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/gizmo.markdown#editingobject-plasma-engin)| | |
+| |[ ForwardEventsToChildren](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/gizmo.markdown#forwardeventstochildren)| | |
+| |[ MouseOver](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/gizmo.markdown#mouseover-plasma-engine-do)| | |
 
 
  #  Properties
 
 
 ---  
- #  Active : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/boolean.markdown)
+ #  Active : [boolean](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.markdown)
 
 > If set to false, it will not receive input events.
 > ``` lang=cpp, name=Lightning
@@ -24,7 +24,7 @@
 
 
 ---  
- #  EditingObject : [cog](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/cog.markdown)
+ #  EditingObject : [cog](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/cog.markdown)
 
  `read-only`
 
@@ -34,7 +34,7 @@
 
 
 ---  
- #  ForwardEventsToChildren : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/boolean.markdown)
+ #  ForwardEventsToChildren : [boolean](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.markdown)
 
 > You may want to manually forward the input events to specific children.
 > ``` lang=cpp, name=Lightning
@@ -42,7 +42,7 @@
 
 
 ---  
- #  MouseOver : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/boolean.markdown)
+ #  MouseOver : [boolean](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.markdown)
 
  `read-only`
 

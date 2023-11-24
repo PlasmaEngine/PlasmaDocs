@@ -2,17 +2,17 @@
 
 |Methods|Properties|Base Classes|Derived Classes|
 |---|---|---|---|
-| |[ Author](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/contentpackage.markdown#author-plasma-engine-docum)|[eventobject](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/eventobject.markdown)| |
-| |[ Description](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/contentpackage.markdown#description-plasma-engine)| | |
-| |[ Name](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/contentpackage.markdown#name-plasma-engine-documen)| | |
-| |[ Tags](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/contentpackage.markdown#tags-plasma-engine-documen)| | |
+| |[ Author](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/contentpackage.markdown#author-plasma-engine-docum)|[eventobject](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/eventobject.markdown)| |
+| |[ Description](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/contentpackage.markdown#description-plasma-engine)| | |
+| |[ Name](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/contentpackage.markdown#name-plasma-engine-documen)| | |
+| |[ Tags](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/contentpackage.markdown#tags-plasma-engine-documen)| | |
 
 
  #  Properties
 
 
 ---  
- #  Author : [string](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/string.markdown)
+ #  Author : [string](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/string.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -20,7 +20,7 @@
 
 
 ---  
- #  Description : [string](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/string.markdown)
+ #  Description : [string](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/string.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -28,7 +28,7 @@
 
 
 ---  
- #  Name : [string](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/string.markdown)
+ #  Name : [string](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/string.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -36,7 +36,7 @@
 
 
 ---  
- #  Tags : [string](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/string.markdown)
+ #  Tags : [string](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/string.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning

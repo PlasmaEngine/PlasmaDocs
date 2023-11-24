@@ -8,7 +8,7 @@ The `Add a Resource` window is the interface by which all new Resources added. T
 
 The Add command can be invoked in two different ways:
 
-1. [ Command](https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/editor/editorcommands/commands.markdown) : [ Add Resource](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/command_reference.markdown#add)
+1. [ Command](https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/editor/editorcommands/commands.markdown) : [ Add Resource](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/command_reference.markdown#add)
 
 2. In the Menu bar `Resource  > Add`
 
@@ -44,6 +44,6 @@ When using the Add Command, however, the type of Resource desired must first be 
 
 ## Reference
 ### Commands
-- [ Add](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/command_reference.markdown#add) 
+- [ Add](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/command_reference.markdown#add) 
 
  

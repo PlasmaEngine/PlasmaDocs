@@ -6,32 +6,32 @@
 
 |Methods|Properties|Base Classes|Derived Classes|
 |---|---|---|---|
-|[ EQSetAllBands](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/soundtag.markdown#eqsetallbands-void)|[ CompressorAttack](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/soundtag.markdown#compressorattack-plasma-en)|[dataresource](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/dataresource.markdown)| |
-|[ InterpolateDecibels](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/soundtag.markdown#interpolatedecibels-void)|[ CompressorKneeWidth](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/soundtag.markdown#compressorkneewidth-plasma)| | |
-|[ InterpolateVolume](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/soundtag.markdown#interpolatevolume-void)|[ CompressorRatio](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/soundtag.markdown#compressorratio-plasma-eng)| | |
-|[ StopSounds](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/soundtag.markdown#stopsounds-void)|[ CompressorRelease](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/soundtag.markdown#compressorrelease-plasma-e)| | |
-|[ TagSound](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/soundtag.markdown#tagsound-void)|[ CompressorThreshold](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/soundtag.markdown#compressorthreshold-plasma)| | |
-|[ UnTagSound](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/soundtag.markdown#untagsound-void)|[ Decibels](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/soundtag.markdown#decibels-plasma-engine-doc)| | |
-| |[ EQBand1Gain](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/soundtag.markdown#eqband1gain-plasma-engine)| | |
-| |[ EQBand2Gain](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/soundtag.markdown#eqband2gain-plasma-engine)| | |
-| |[ EQBand3Gain](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/soundtag.markdown#eqband3gain-plasma-engine)| | |
-| |[ EQHighPassGain](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/soundtag.markdown#eqhighpassgain-plasma-engi)| | |
-| |[ EQLowPassGain](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/soundtag.markdown#eqlowpassgain-plasma-engin)| | |
-| |[ InstanceCount](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/soundtag.markdown#instancecount-plasma-engin)| | |
-| |[ InstanceLimit](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/soundtag.markdown#instancelimit-plasma-engin)| | |
-| |[ Instances](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/soundtag.markdown#instances-plasma-engine-do)| | |
-| |[ Paused](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/soundtag.markdown#paused-plasma-engine-docum)| | |
-| |[ TagForDucking](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/soundtag.markdown#tagforducking-plasma-engin)| | |
-| |[ UseCompressor](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/soundtag.markdown#usecompressor-plasma-engin)| | |
-| |[ UseEqualizer](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/soundtag.markdown#useequalizer-plasma-engine)| | |
-| |[ Volume](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/soundtag.markdown#volume-plasma-engine-docum)| | |
+|[ EQSetAllBands](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/soundtag.markdown#eqsetallbands-void)|[ CompressorAttack](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/soundtag.markdown#compressorattack-plasma-en)|[dataresource](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/dataresource.markdown)| |
+|[ InterpolateDecibels](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/soundtag.markdown#interpolatedecibels-void)|[ CompressorKneeWidth](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/soundtag.markdown#compressorkneewidth-plasma)| | |
+|[ InterpolateVolume](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/soundtag.markdown#interpolatevolume-void)|[ CompressorRatio](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/soundtag.markdown#compressorratio-plasma-eng)| | |
+|[ StopSounds](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/soundtag.markdown#stopsounds-void)|[ CompressorRelease](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/soundtag.markdown#compressorrelease-plasma-e)| | |
+|[ TagSound](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/soundtag.markdown#tagsound-void)|[ CompressorThreshold](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/soundtag.markdown#compressorthreshold-plasma)| | |
+|[ UnTagSound](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/soundtag.markdown#untagsound-void)|[ Decibels](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/soundtag.markdown#decibels-plasma-engine-doc)| | |
+| |[ EQBand1Gain](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/soundtag.markdown#eqband1gain-plasma-engine)| | |
+| |[ EQBand2Gain](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/soundtag.markdown#eqband2gain-plasma-engine)| | |
+| |[ EQBand3Gain](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/soundtag.markdown#eqband3gain-plasma-engine)| | |
+| |[ EQHighPassGain](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/soundtag.markdown#eqhighpassgain-plasma-engi)| | |
+| |[ EQLowPassGain](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/soundtag.markdown#eqlowpassgain-plasma-engin)| | |
+| |[ InstanceCount](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/soundtag.markdown#instancecount-plasma-engin)| | |
+| |[ InstanceLimit](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/soundtag.markdown#instancelimit-plasma-engin)| | |
+| |[ Instances](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/soundtag.markdown#instances-plasma-engine-do)| | |
+| |[ Paused](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/soundtag.markdown#paused-plasma-engine-docum)| | |
+| |[ TagForDucking](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/soundtag.markdown#tagforducking-plasma-engin)| | |
+| |[ UseCompressor](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/soundtag.markdown#usecompressor-plasma-engin)| | |
+| |[ UseEqualizer](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/soundtag.markdown#useequalizer-plasma-engine)| | |
+| |[ Volume](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/soundtag.markdown#volume-plasma-engine-docum)| | |
 
 
  #  Properties
 
 
 ---  
- #  CompressorAttack : [real](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real.markdown)
+ #  CompressorAttack : [real](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.markdown)
 
 > The time, in milliseconds, for the filter to ramp to full effect after the input reaches the threshold.
 > ``` lang=cpp, name=Lightning
@@ -39,7 +39,7 @@
 
 
 ---  
- #  CompressorKneeWidth : [real](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real.markdown)
+ #  CompressorKneeWidth : [real](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.markdown)
 
 > The knee width of the filter, in decibels.
 > ``` lang=cpp, name=Lightning
@@ -47,7 +47,7 @@
 
 
 ---  
- #  CompressorRatio : [real](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real.markdown)
+ #  CompressorRatio : [real](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.markdown)
 
 > The ratio of the compression applied by the filter.
 > ``` lang=cpp, name=Lightning
@@ -55,7 +55,7 @@
 
 
 ---  
- #  CompressorRelease : [real](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real.markdown)
+ #  CompressorRelease : [real](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.markdown)
 
 > The time, in milliseconds, for the filter to ramp from full effect to off after the input drops below the threshold.
 > ``` lang=cpp, name=Lightning
@@ -63,7 +63,7 @@
 
 
 ---  
- #  CompressorThreshold : [real](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real.markdown)
+ #  CompressorThreshold : [real](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.markdown)
 
 > The threshold, in decibels, at which the volume is affected by the filter.
 > ``` lang=cpp, name=Lightning
@@ -71,7 +71,7 @@
 
 
 ---  
- #  Decibels : [real](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real.markdown)
+ #  Decibels : [real](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.markdown)
 
 > The volume adjustment, in decibels, applied to all tagged instances.
 > ``` lang=cpp, name=Lightning
@@ -79,7 +79,7 @@
 
 
 ---  
- #  EQBand1Gain : [real](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real.markdown)
+ #  EQBand1Gain : [real](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.markdown)
 
 > The volume adjustment applied to frequencies within the band centered at 150 Hz. Positive values will boost these frequencies while negative values will reduce them.
 > ``` lang=cpp, name=Lightning
@@ -87,7 +87,7 @@
 
 
 ---  
- #  EQBand2Gain : [real](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real.markdown)
+ #  EQBand2Gain : [real](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.markdown)
 
 > The volume adjustment applied to frequencies within the band centered at 600 Hz. Positive values will boost these frequencies while negative values will reduce them.
 > ``` lang=cpp, name=Lightning
@@ -95,7 +95,7 @@
 
 
 ---  
- #  EQBand3Gain : [real](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real.markdown)
+ #  EQBand3Gain : [real](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.markdown)
 
 > The volume adjustment applied to frequencies within the band centered at 2500 Hz. Positive values will boost these frequencies while negative values will reduce them.
 > ``` lang=cpp, name=Lightning
@@ -103,7 +103,7 @@
 
 
 ---  
- #  EQHighPassGain : [real](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real.markdown)
+ #  EQHighPassGain : [real](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.markdown)
 
 > The volume adjustment applied to frequencies above 5000 Hz. Positive values will boost these frequencies while negative values will reduce them.
 > ``` lang=cpp, name=Lightning
@@ -111,7 +111,7 @@
 
 
 ---  
- #  EQLowPassGain : [real](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real.markdown)
+ #  EQLowPassGain : [real](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.markdown)
 
 > The volume adjustment applied to frequencies below 80 Hz. Positive values will boost these frequencies while negative values will reduce them.
 > ``` lang=cpp, name=Lightning
@@ -119,7 +119,7 @@
 
 
 ---  
- #  InstanceCount : [integer](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/integer.markdown)
+ #  InstanceCount : [integer](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer.markdown)
 
  `read-only`
 
@@ -129,7 +129,7 @@
 
 
 ---  
- #  InstanceLimit : [real](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real.markdown)
+ #  InstanceLimit : [real](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.markdown)
 
 > If this value is greater than plasma, SoundCues with this SoundTag will only play if the number of tagged SoundInstances is less than this number.
 > ``` lang=cpp, name=Lightning
@@ -137,7 +137,7 @@
 
 
 ---  
- #  Instances : [soundinstancerange](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/soundinstancerange.markdown)
+ #  Instances : [soundinstancerange](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/soundinstancerange.markdown)
 
  `read-only`
 
@@ -147,7 +147,7 @@
 
 
 ---  
- #  Paused : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/boolean.markdown)
+ #  Paused : [boolean](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.markdown)
 
 > Setting this property to true will pause all tagged instances. Setting it to false will resume playback.
 > ``` lang=cpp, name=Lightning
@@ -155,7 +155,7 @@
 
 
 ---  
- #  TagForDucking : [soundtag](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/soundtag.markdown)
+ #  TagForDucking : [soundtag](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/soundtag.markdown)
 
 > If this property is not null, the selected SoundTag will be used to trigger this SoundTag's compressor.
 > ``` lang=cpp, name=Lightning
@@ -163,7 +163,7 @@
 
 
 ---  
- #  UseCompressor : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/boolean.markdown)
+ #  UseCompressor : [boolean](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.markdown)
 
 > If true, the SoundTag's compressor settings will be applied to the tagged SoundInstances.
 > ``` lang=cpp, name=Lightning
@@ -171,7 +171,7 @@
 
 
 ---  
- #  UseEqualizer : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/boolean.markdown)
+ #  UseEqualizer : [boolean](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.markdown)
 
 > If true, the SoundTag's equalizer settings will be applied to the tagged SoundInstances.
 > ``` lang=cpp, name=Lightning
@@ -179,7 +179,7 @@
 
 
 ---  
- #  Volume : [real](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real.markdown)
+ #  Volume : [real](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.markdown)
 
 > The volume adjustment applied to all tagged instances.
 > ``` lang=cpp, name=Lightning
@@ -196,12 +196,12 @@
 > Sets all equalizer band gain values at once. The parameters are in order from the lowest band to the highest. The last parameter is the number of seconds to interpolate the values over.
 > |Name|Type|Description|
 > |---|---|---|
-> |lowPass|[real](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real.markdown)| |
-> |band1|[real](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real.markdown)| |
-> |band2|[real](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real.markdown)| |
-> |band3|[real](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real.markdown)| |
-> |highPass|[real](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real.markdown)| |
-> |timeToInterpolate|[real](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real.markdown)| |
+> |lowPass|[real](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.markdown)| |
+> |band1|[real](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.markdown)| |
+> |band2|[real](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.markdown)| |
+> |band3|[real](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.markdown)| |
+> |highPass|[real](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.markdown)| |
+> |timeToInterpolate|[real](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.markdown)| |
 > ``` lang=cpp, name=Lightning
 > function EQSetAllBands(lowPass : Real, band1 : Real, band2 : Real, band3 : Real, highPass : Real, timeToInterpolate : Real)
 > ``` 
@@ -213,8 +213,8 @@
 > Interpolates the SoundTag's Decibels property from its current value to the value passed in as the first parameter, over the number of seconds passed in as the second parameter.
 > |Name|Type|Description|
 > |---|---|---|
-> |decibels|[real](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real.markdown)| |
-> |interpolationTime|[real](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real.markdown)| |
+> |decibels|[real](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.markdown)| |
+> |interpolationTime|[real](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.markdown)| |
 > ``` lang=cpp, name=Lightning
 > function InterpolateDecibels(decibels : Real, interpolationTime : Real)
 > ``` 
@@ -226,8 +226,8 @@
 > Interpolates the SoundTag's Volume property from its current value to the value passed in as the first parameter, over the number of seconds passed in as the second parameter.
 > |Name|Type|Description|
 > |---|---|---|
-> |value|[real](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real.markdown)| |
-> |interpolationTime|[real](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real.markdown)| |
+> |value|[real](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.markdown)| |
+> |interpolationTime|[real](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.markdown)| |
 > ``` lang=cpp, name=Lightning
 > function InterpolateVolume(value : Real, interpolationTime : Real)
 > ``` 
@@ -250,7 +250,7 @@
 > Adds a new SoundInstance to this SoundTag.
 > |Name|Type|Description|
 > |---|---|---|
-> |instance|[soundinstance](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/soundinstance.markdown)| |
+> |instance|[soundinstance](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/soundinstance.markdown)| |
 > ``` lang=cpp, name=Lightning
 > function TagSound(instance : SoundInstance)
 > ``` 
@@ -262,7 +262,7 @@
 > Removes a SoundInstance from this SoundTag.
 > |Name|Type|Description|
 > |---|---|---|
-> |instance|[soundinstance](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/soundinstance.markdown)| |
+> |instance|[soundinstance](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/soundinstance.markdown)| |
 > ``` lang=cpp, name=Lightning
 > function UnTagSound(instance : SoundInstance)
 > ``` 

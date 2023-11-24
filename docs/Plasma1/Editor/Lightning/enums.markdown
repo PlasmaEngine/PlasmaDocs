@@ -5,7 +5,7 @@ An enum, or enumerated type, is a set custom identifiers that are enumerated. An
 enum ControllerButtons {Start, Select, Up=0, Down, Left, Right, A=0, B=1} // no semicolon
 </code></pre>
 
-The names line up with incrementing [Integers](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/integer.markdown) where the default starting value is 0. The values can be manually set in which case the following values will increment off of that manually defined value. Note that to access these Integer values, the enum must be [casted](https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/Lightning/casting.markdown) to an Integer:
+The names line up with incrementing [Integers](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer.markdown) where the default starting value is 0. The values can be manually set in which case the following values will increment off of that manually defined value. Note that to access these Integer values, the enum must be [casted](https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/Lightning/casting.markdown) to an Integer:
 <pre><code class="language-csharp">
 Console.WriteLine("ControllerButtons.Start  = `ControllerButtons.Start  as Integer`  " );
 Console.WriteLine("ControllerButtons.Select = `ControllerButtons.Select as Integer`  " );
@@ -222,7 +222,7 @@ The binary '+' operator 'Positive / Add' is not valid with 'ControllerButtons' a
 - [functions](https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/Lightning/functions.markdown)
 
  ## Code Reference
-- [enum_reference](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/enum_reference.markdown)
-- [integer](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/integer.markdown) 
+- [enum_reference](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/enum_reference.markdown)
+- [integer](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer.markdown) 
 
  

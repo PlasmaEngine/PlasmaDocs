@@ -1,6 +1,6 @@
 # Hierarchies
 
-[Hierarchies](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/hierarchy.markdown) allows physics to building complicated objects from simpler pieces
+[Hierarchies](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/hierarchy.markdown) allows physics to building complicated objects from simpler pieces
 
 ## Basic understanding
 
@@ -23,7 +23,7 @@ In this hierarchy, the root has a RigidBody and Collider which implies that the 
 
 # Advanced Hierarchies: Nested RigidBodies
 
-From here a larger nested tree can be built with the same basic structure to make a more complicated object. The tree can even have Cogs in the middle without a Collider. The real question is how do nested RigidBodies affect physics? This ends up depending on the [DynamicState](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/enum_reference.markdown#rigidbodydynamicstate) of the RigidBody.
+From here a larger nested tree can be built with the same basic structure to make a more complicated object. The tree can even have Cogs in the middle without a Collider. The real question is how do nested RigidBodies affect physics? This ends up depending on the [DynamicState](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/enum_reference.markdown#rigidbodydynamicstate) of the RigidBody.
 
 ### Dynamic RigidBodies
 
@@ -56,11 +56,11 @@ When building a larger hierarchy, each Collider is still treated as a distinct o
 - [physicsmaterial.markdown](https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/physics/physicsmaterial.markdown)
 
 ## Reference
-- [Hierarchy](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/hierarchy.markdown)
-- [RigidBody](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/rigidbody.markdown)
-- [Collider](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/collider.markdown)
-- [PhysicsMaterial](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/physicsmaterial.markdown)
-- [RigidBodyDynamicState](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/enum_reference.markdown#rigidbodydynamicstate)
+- [Hierarchy](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/hierarchy.markdown)
+- [RigidBody](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/rigidbody.markdown)
+- [Collider](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/collider.markdown)
+- [PhysicsMaterial](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/physicsmaterial.markdown)
+- [RigidBodyDynamicState](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/enum_reference.markdown#rigidbodydynamicstate)
   
 
  

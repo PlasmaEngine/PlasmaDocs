@@ -1,5 +1,5 @@
 # Sound
-A [ Sound ](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/sound.markdown) resource is created for every imported audio file. Sounds can be attached to any number of [SoundCues](https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/audio/soundcue.markdown), allowing the user to play the same sound multiple ways while only storing the file once.
+A [ Sound ](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/sound.markdown) resource is created for every imported audio file. Sounds can be attached to any number of [SoundCues](https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/audio/soundcue.markdown), allowing the user to play the same sound multiple ways while only storing the file once.
 
 # Using Sounds
 
@@ -15,7 +15,7 @@ Once files are imported, they will be resampled to 48000 Hz and stored in a cust
 
 # SoundBuilder Options
 
-When a Sound resource is selected, the [ SoundBuilder ](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/soundbuilder.markdown) properties will be shown in the Property window.
+When a Sound resource is selected, the [ SoundBuilder ](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/soundbuilder.markdown) properties will be shown in the Property window.
 
 NOTE: When changing these properties for an existing resource the user must click on the Reload button before the settings will take effect.
 
@@ -39,7 +39,7 @@ If the Normalize checkBox property is checked the MaxVolume  property will be sh
 - [SoundEntry ](https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/audio/soundcue.markdown#soundentries)
 
 ## Reference
-- [ Sound ](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/sound.markdown)
-- [ SoundBuilder ](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/soundbuilder.markdown) 
+- [ Sound ](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/sound.markdown)
+- [ SoundBuilder ](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/soundbuilder.markdown) 
 
  

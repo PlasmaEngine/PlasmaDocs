@@ -2,7 +2,7 @@
 
 |Methods|Properties|Base Classes|Derived Classes|
 |---|---|---|---|
-| | |[texteditor](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/texteditor.markdown)| |
+| | |[texteditor](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/texteditor.markdown)| |
 
 
  #  Properties

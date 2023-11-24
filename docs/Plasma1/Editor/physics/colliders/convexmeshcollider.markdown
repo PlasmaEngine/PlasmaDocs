@@ -1,7 +1,7 @@
 # Convex Mesh Collider
 (NOTE) **Recommended Reading:** The [Collider](https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/physics/colliders.markdown) page should be read before this page.
 
-[ConvexMeshCollider](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/convexmeshcollider.markdown) defines a [convex hull](https://en.wikipedia.org/wiki/Convex_hull ) for collision detection based upon a [ConvexMesh](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/convexmesh.markdown) resource.
+[ConvexMeshCollider](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/convexmeshcollider.markdown) defines a [convex hull](https://en.wikipedia.org/wiki/Convex_hull ) for collision detection based upon a [ConvexMesh](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/convexmesh.markdown) resource.
 
 WARNING: A future version will likely combine all physics mesh types together.
 
@@ -15,9 +15,9 @@ If a mesh is non-convex, the convex hull of the shape is used for collision dete
 - [meshcollider.markdown](https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/physics/colliders/meshcollider.markdown)
 
 ## Reference
-- [ConvexMeshCollider](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/convexmeshcollider.markdown)
-- [ConvexMesh](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/convexmesh.markdown)
-- [MeshCollider](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/meshcollider.markdown)
-- [Collider](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/collider.markdown) 
+- [ConvexMeshCollider](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/convexmeshcollider.markdown)
+- [ConvexMesh](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/convexmesh.markdown)
+- [MeshCollider](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/meshcollider.markdown)
+- [Collider](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/collider.markdown) 
 
  

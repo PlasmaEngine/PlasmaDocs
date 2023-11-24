@@ -6,16 +6,16 @@
 
 |Methods|Properties|Base Classes|Derived Classes|
 |---|---|---|---|
-|[ Constructor](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/particlecoloranimator.markdown#particlecoloranimator-vo)|[ MaxParticleSpeed](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/particlecoloranimator.markdown#maxparticlespeed-plasma-en)|[particleanimator](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/particleanimator.markdown)| |
-| |[ TimeGradient](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/particlecoloranimator.markdown#timegradient-plasma-engine)| | |
-| |[ VelocityGradient](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/particlecoloranimator.markdown#velocitygradient-plasma-en)| | |
+|[ Constructor](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/particlecoloranimator.markdown#particlecoloranimator-vo)|[ MaxParticleSpeed](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/particlecoloranimator.markdown#maxparticlespeed-plasma-en)|[particleanimator](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/particleanimator.markdown)| |
+| |[ TimeGradient](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/particlecoloranimator.markdown#timegradient-plasma-engine)| | |
+| |[ VelocityGradient](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/particlecoloranimator.markdown#velocitygradient-plasma-en)| | |
 
 
  #  Properties
 
 
 ---  
- #  MaxParticleSpeed : [real](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real.markdown)
+ #  MaxParticleSpeed : [real](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -23,7 +23,7 @@
 
 
 ---  
- #  TimeGradient : [colorgradient](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/colorgradient.markdown)
+ #  TimeGradient : [colorgradient](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/colorgradient.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -31,7 +31,7 @@
 
 
 ---  
- #  VelocityGradient : [colorgradient](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/colorgradient.markdown)
+ #  VelocityGradient : [colorgradient](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/colorgradient.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning

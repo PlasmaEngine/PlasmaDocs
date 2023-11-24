@@ -1,6 +1,6 @@
 # Multi Convex Mesh Editor
 
-The MultiConvexMesh Editor is a tool that allows the user to create a MultiConvexMesh Resource to use as the [Mesh](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/mesh.markdown) in a [MultiConvexMeshCollilder](https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/physics/collision/multiconvexmeshcollider.markdown). The Editor provides a number of different methods for creating the Mesh allowing the user a great of customizability.
+The MultiConvexMesh Editor is a tool that allows the user to create a MultiConvexMesh Resource to use as the [Mesh](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/mesh.markdown) in a [MultiConvexMeshCollilder](https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/physics/collision/multiconvexmeshcollider.markdown). The Editor provides a number of different methods for creating the Mesh allowing the user a great of customizability.
 
 # Using the MultiConvexMesh Editor
 The following section will be split up into two main sections: the In-Editor properties and methods of the MultiConvexMesh Editor and creating a MultiConvexMesh using the Editor.
@@ -107,7 +107,7 @@ As the value of SurfaceThreshold  is lowered, and `Intensity` is selected as the
 - [Add Resource](https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/editor/editorcommands/resourceadding.markdown)
 
 ## Reference
-- [MultiConvexMesh](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/multiconvexmesh.markdown)
-- [Mesh](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/mesh.markdown) 
+- [MultiConvexMesh](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/multiconvexmesh.markdown)
+- [Mesh](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/mesh.markdown) 
 
  

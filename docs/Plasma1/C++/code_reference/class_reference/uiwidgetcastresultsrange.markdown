@@ -2,10 +2,10 @@
 
 |Methods|Properties|Base Classes|Derived Classes|
 |---|---|---|---|
-|[ Empty](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/uiwidgetcastresultsrange.markdown#empty-plasma-engine-docume)| | | |
-|[ Front](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/uiwidgetcastresultsrange.markdown#front-plasma-engine-docume)| | | |
-|[ PopFront](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/uiwidgetcastresultsrange.markdown#popfront-void)| | | |
-|[ Size](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/uiwidgetcastresultsrange.markdown#size-plasma-engine-documen)| | | |
+|[ Empty](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/uiwidgetcastresultsrange.markdown#empty-plasma-engine-docume)| | | |
+|[ Front](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/uiwidgetcastresultsrange.markdown#front-plasma-engine-docume)| | | |
+|[ PopFront](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/uiwidgetcastresultsrange.markdown#popfront-void)| | | |
+|[ Size](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/uiwidgetcastresultsrange.markdown#size-plasma-engine-documen)| | | |
 
 
  #  Properties
@@ -16,7 +16,7 @@
 
 
 ---  
- #  Empty : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/boolean.markdown)
+ #  Empty : [boolean](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.markdown)
 
 > Range Interface.
 > |Name|Type|Description|
@@ -27,7 +27,7 @@
 
 
 ---  
- #  Front : [uiwidget](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/uiwidget.markdown)
+ #  Front : [uiwidget](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/uiwidget.markdown)
 
 > 
 > |Name|Type|Description|
@@ -49,7 +49,7 @@
 
 
 ---  
- #  Size : [integer](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/integer.markdown)
+ #  Size : [integer](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer.markdown)
 
 > 
 > |Name|Type|Description|

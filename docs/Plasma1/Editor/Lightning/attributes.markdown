@@ -227,7 +227,7 @@ class CreateArchetype : LightningComponent
 
 
 ## [ComponentInterface]
-The ComponentInterface attribute allows the user to define a class as a generic interface for its derived types. One common example of this is [collider](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/collider.markdown), which acts as a component interface for all collider types, such as [boxcollider](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/boxcollider.markdown), [capsulecollider](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/capsulecollider.markdown), and more. Defining an interface using this attribute allows the user to access the members of a derived class using the component name of the base class.
+The ComponentInterface attribute allows the user to define a class as a generic interface for its derived types. One common example of this is [collider](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/collider.markdown), which acts as a component interface for all collider types, such as [boxcollider](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/boxcollider.markdown), [capsulecollider](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/capsulecollider.markdown), and more. Defining an interface using this attribute allows the user to access the members of a derived class using the component name of the base class.
 
 <pre><code class="language-csharp" name="Component Interface Access Example">
 var collisionGroup = this.Owner.BoxCollider.CollisionGroup;

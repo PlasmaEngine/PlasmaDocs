@@ -1,5 +1,5 @@
 # Simple Sound
-The [ SimpleSound ](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/simplesound.markdown) component, like its name suggests, is a simple way to play a sound. Choose a [SoundCue](https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/audio/soundcue.markdown), set the StartPlaying checkBox property to true, and the sound will play as soon as its object is created in an active level. 
+The [ SimpleSound ](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/simplesound.markdown) component, like its name suggests, is a simple way to play a sound. Choose a [SoundCue](https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/audio/soundcue.markdown), set the StartPlaying checkBox property to true, and the sound will play as soon as its object is created in an active level. 
 
 # Common Uses
 
@@ -30,6 +30,6 @@ When the Positional checkBox property is not checked the SoundCue will play dire
 - [SoundSpace ](https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/audio/soundspace.markdown)
 
 ## Reference
-- [ SimpleSound ](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/simplesound.markdown) 
+- [ SimpleSound ](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/simplesound.markdown) 
 
  

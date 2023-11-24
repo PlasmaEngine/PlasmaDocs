@@ -2,17 +2,17 @@
 
 |Methods|Properties|Base Classes|Derived Classes|
 |---|---|---|---|
-|[ MoveNext](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/nodeinfolistrange.markdown#movenext-void)|[ All](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/nodeinfolistrange.markdown#all-plasma-engine-document)| | |
-|[ Constructor](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/nodeinfolistrange.markdown#nodeinfolistrange-void)|[ Current](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/nodeinfolistrange.markdown#current-plasma-engine-docu)| | |
-| |[ IsEmpty](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/nodeinfolistrange.markdown#isempty-plasma-engine-docu)| | |
-| |[ IsNotEmpty](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/nodeinfolistrange.markdown#isnotempty-plasma-engine-d)| | |
+|[ MoveNext](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/nodeinfolistrange.markdown#movenext-void)|[ All](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/nodeinfolistrange.markdown#all-plasma-engine-document)| | |
+|[ Constructor](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/nodeinfolistrange.markdown#nodeinfolistrange-void)|[ Current](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/nodeinfolistrange.markdown#current-plasma-engine-docu)| | |
+| |[ IsEmpty](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/nodeinfolistrange.markdown#isempty-plasma-engine-docu)| | |
+| |[ IsNotEmpty](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/nodeinfolistrange.markdown#isnotempty-plasma-engine-d)| | |
 
 
  #  Properties
 
 
 ---  
- #  All : [nodeinfolistrange](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/nodeinfolistrange.markdown)
+ #  All : [nodeinfolistrange](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/nodeinfolistrange.markdown)
 
  `read-only`
 
@@ -22,7 +22,7 @@
 
 
 ---  
- #  Current : [nodeprintinfo](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/nodeprintinfo.markdown)
+ #  Current : [nodeprintinfo](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/nodeprintinfo.markdown)
 
  `read-only`
 
@@ -32,7 +32,7 @@
 
 
 ---  
- #  IsEmpty : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/boolean.markdown)
+ #  IsEmpty : [boolean](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.markdown)
 
  `read-only`
 
@@ -42,7 +42,7 @@
 
 
 ---  
- #  IsNotEmpty : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/boolean.markdown)
+ #  IsNotEmpty : [boolean](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.markdown)
 
  `read-only`
 
@@ -87,7 +87,7 @@
 > 
 > |Name|Type|Description|
 > |---|---|---|
-> |p0|[nodeinfolistrange](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/nodeinfolistrange.markdown)| |
+> |p0|[nodeinfolistrange](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/nodeinfolistrange.markdown)| |
 > ``` lang=cpp, name=Lightning
 > function NodeInfoListRange(p0 : NodeInfoListRange)
 > ``` 

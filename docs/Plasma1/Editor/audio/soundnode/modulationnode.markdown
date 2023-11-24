@@ -1,5 +1,5 @@
 # Modulation Node
-The [ ModulationNode ](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/modulationnode.markdown) collects audio data from all of its inputs and applies either amplitude or ring modulation to the audio before passing it along to its outputs. 
+The [ ModulationNode ](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/modulationnode.markdown) collects audio data from all of its inputs and applies either amplitude or ring modulation to the audio before passing it along to its outputs. 
 
 # Common Uses
 
@@ -17,6 +17,6 @@ Ring modulation will directly alter the frequencies of the sound, with stronger 
 - [soudnode_overview](https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/audio/soundnode/soudnode_overview.markdown)
 
 ## Code Reference
-- [ ModulationNode ](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/modulationnode.markdown) 
+- [ ModulationNode ](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/modulationnode.markdown) 
 
  

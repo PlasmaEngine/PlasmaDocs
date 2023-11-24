@@ -2,14 +2,14 @@
 
 |Methods|Properties|Base Classes|Derived Classes|
 |---|---|---|---|
-|[ Constructor](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/rune.markdown#rune-void)|[ Value](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/rune.markdown#value-plasma-engine-docume)| | |
+|[ Constructor](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/rune.markdown#rune-void)|[ Value](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/rune.markdown#value-plasma-engine-docume)| | |
 
 
  #  Properties
 
 
 ---  
- #  Value : [integer](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/integer.markdown)
+ #  Value : [integer](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -41,7 +41,7 @@
 > 
 > |Name|Type|Description|
 > |---|---|---|
-> |value|[integer](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/integer.markdown)| |
+> |value|[integer](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer.markdown)| |
 > ``` lang=cpp, name=Lightning
 > function Rune(value : Integer)
 > ``` 

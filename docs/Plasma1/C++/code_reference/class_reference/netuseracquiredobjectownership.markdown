@@ -6,15 +6,15 @@
 
 |Methods|Properties|Base Classes|Derived Classes|
 |---|---|---|---|
-| |[ AcquiredObject](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netuseracquiredobjectownership.markdown#acquiredobject-plasma-engi)|[event](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/event.markdown)| |
-| |[ PreviousNetUserOwner](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netuseracquiredobjectownership.markdown#previousnetuserowner-zer)| | |
+| |[ AcquiredObject](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/netuseracquiredobjectownership.markdown#acquiredobject-plasma-engi)|[event](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/event.markdown)| |
+| |[ PreviousNetUserOwner](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/netuseracquiredobjectownership.markdown#previousnetuserowner-zer)| | |
 
 
  #  Properties
 
 
 ---  
- #  AcquiredObject : [cog](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/cog.markdown)
+ #  AcquiredObject : [cog](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/cog.markdown)
 
  `read-only`
 
@@ -24,7 +24,7 @@
 
 
 ---  
- #  PreviousNetUserOwner : [cog](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/cog.markdown)
+ #  PreviousNetUserOwner : [cog](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/cog.markdown)
 
  `read-only`
 

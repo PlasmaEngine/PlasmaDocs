@@ -2,17 +2,17 @@
 
 |Methods|Properties|Base Classes|Derived Classes|
 |---|---|---|---|
-|[ Constructor](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/indexedhalfedgemeshedgearrayrange.markdown#indexedhalfedgemeshedgea)|[ All](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/indexedhalfedgemeshedgearrayrange.markdown#all-plasma-engine-document)| | |
-|[ MoveNext](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/indexedhalfedgemeshedgearrayrange.markdown#movenext-void)|[ Current](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/indexedhalfedgemeshedgearrayrange.markdown#current-plasma-engine-docu)| | |
-| |[ IsEmpty](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/indexedhalfedgemeshedgearrayrange.markdown#isempty-plasma-engine-docu)| | |
-| |[ IsNotEmpty](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/indexedhalfedgemeshedgearrayrange.markdown#isnotempty-plasma-engine-d)| | |
+|[ Constructor](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/indexedhalfedgemeshedgearrayrange.markdown#indexedhalfedgemeshedgea)|[ All](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/indexedhalfedgemeshedgearrayrange.markdown#all-plasma-engine-document)| | |
+|[ MoveNext](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/indexedhalfedgemeshedgearrayrange.markdown#movenext-void)|[ Current](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/indexedhalfedgemeshedgearrayrange.markdown#current-plasma-engine-docu)| | |
+| |[ IsEmpty](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/indexedhalfedgemeshedgearrayrange.markdown#isempty-plasma-engine-docu)| | |
+| |[ IsNotEmpty](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/indexedhalfedgemeshedgearrayrange.markdown#isnotempty-plasma-engine-d)| | |
 
 
  #  Properties
 
 
 ---  
- #  All : [indexedhalfedgemeshedgearrayrange](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/indexedhalfedgemeshedgearrayrange.markdown)
+ #  All : [indexedhalfedgemeshedgearrayrange](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/indexedhalfedgemeshedgearrayrange.markdown)
 
  `read-only`
 
@@ -22,7 +22,7 @@
 
 
 ---  
- #  Current : [indexedhalfedge](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/indexedhalfedge.markdown)
+ #  Current : [indexedhalfedge](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/indexedhalfedge.markdown)
 
  `read-only`
 
@@ -32,7 +32,7 @@
 
 
 ---  
- #  IsEmpty : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/boolean.markdown)
+ #  IsEmpty : [boolean](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.markdown)
 
  `read-only`
 
@@ -42,7 +42,7 @@
 
 
 ---  
- #  IsNotEmpty : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/boolean.markdown)
+ #  IsNotEmpty : [boolean](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.markdown)
 
  `read-only`
 
@@ -76,7 +76,7 @@
 > 
 > |Name|Type|Description|
 > |---|---|---|
-> |p0|[indexedhalfedgemeshedgearrayrange](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/indexedhalfedgemeshedgearrayrange.markdown)| |
+> |p0|[indexedhalfedgemeshedgearrayrange](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/indexedhalfedgemeshedgearrayrange.markdown)| |
 > ``` lang=cpp, name=Lightning
 > function IndexedHalfEdgeMeshEdgeArrayRange(p0 : IndexedHalfEdgeMeshEdgeArrayRange)
 > ``` 

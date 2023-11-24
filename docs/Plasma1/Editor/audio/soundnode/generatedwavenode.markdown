@@ -1,5 +1,5 @@
 # Generated Wave Node
-The [ GeneratedWaveNode](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/generatedwavenode.markdown) will generate audio using a specified wave type and frequency. Since it is a generating node, it will ignore any input connections.
+The [ GeneratedWaveNode](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/generatedwavenode.markdown) will generate audio using a specified wave type and frequency. Since it is a generating node, it will ignore any input connections.
 
 # Common Uses
 
@@ -75,6 +75,6 @@ class SimpleSiren : LightningComponent
 - [soudnode_overview](https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/audio/soundnode/soudnode_overview.markdown)
 
 ## Code Reference
-- [ GeneratedWaveNode ](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/generatedwavenode.markdown) 
+- [ GeneratedWaveNode ](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/generatedwavenode.markdown) 
 
  

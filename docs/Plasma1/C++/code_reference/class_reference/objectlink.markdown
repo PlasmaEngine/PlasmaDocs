@@ -6,21 +6,21 @@
 
 |Methods|Properties|Base Classes|Derived Classes|
 |---|---|---|---|
-|[ Constructor](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/objectlink.markdown#objectlink-void)|[ LocalPointA](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/objectlink.markdown#localpointa-plasma-engine)|[component](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/component.markdown)| |
-| |[ LocalPointB](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/objectlink.markdown#localpointb-plasma-engine)| | |
-| |[ ObjectA](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/objectlink.markdown#objecta-plasma-engine-docu)| | |
-| |[ ObjectAPath](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/objectlink.markdown#objectapath-plasma-engine)| | |
-| |[ ObjectB](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/objectlink.markdown#objectb-plasma-engine-docu)| | |
-| |[ ObjectBPath](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/objectlink.markdown#objectbpath-plasma-engine)| | |
-| |[ WorldPointA](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/objectlink.markdown#worldpointa-plasma-engine)| | |
-| |[ WorldPointB](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/objectlink.markdown#worldpointb-plasma-engine)| | |
+|[ Constructor](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/objectlink.markdown#objectlink-void)|[ LocalPointA](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/objectlink.markdown#localpointa-plasma-engine)|[component](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/component.markdown)| |
+| |[ LocalPointB](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/objectlink.markdown#localpointb-plasma-engine)| | |
+| |[ ObjectA](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/objectlink.markdown#objecta-plasma-engine-docu)| | |
+| |[ ObjectAPath](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/objectlink.markdown#objectapath-plasma-engine)| | |
+| |[ ObjectB](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/objectlink.markdown#objectb-plasma-engine-docu)| | |
+| |[ ObjectBPath](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/objectlink.markdown#objectbpath-plasma-engine)| | |
+| |[ WorldPointA](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/objectlink.markdown#worldpointa-plasma-engine)| | |
+| |[ WorldPointB](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/objectlink.markdown#worldpointb-plasma-engine)| | |
 
 
  #  Properties
 
 
 ---  
- #  LocalPointA : [real3](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real3.markdown)
+ #  LocalPointA : [real3](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real3.markdown)
 
 > The Point on Object A in local space.
 > ``` lang=cpp, name=Lightning
@@ -28,7 +28,7 @@
 
 
 ---  
- #  LocalPointB : [real3](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real3.markdown)
+ #  LocalPointB : [real3](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real3.markdown)
 
 > The Point on Object B in local space.
 > ``` lang=cpp, name=Lightning
@@ -36,7 +36,7 @@
 
 
 ---  
- #  ObjectA : [cog](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/cog.markdown)
+ #  ObjectA : [cog](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/cog.markdown)
 
 > The first object that is being connected to. Set this to null to clear the link.
 > ``` lang=cpp, name=Lightning
@@ -44,7 +44,7 @@
 
 
 ---  
- #  ObjectAPath : [cogpath](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/cogpath.markdown)
+ #  ObjectAPath : [cogpath](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/cogpath.markdown)
 
 > CogPath to object A.
 > ``` lang=cpp, name=Lightning
@@ -52,7 +52,7 @@
 
 
 ---  
- #  ObjectB : [cog](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/cog.markdown)
+ #  ObjectB : [cog](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/cog.markdown)
 
 > The second object that is being connected to. Set this to null to clear the link.
 > ``` lang=cpp, name=Lightning
@@ -60,7 +60,7 @@
 
 
 ---  
- #  ObjectBPath : [cogpath](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/cogpath.markdown)
+ #  ObjectBPath : [cogpath](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/cogpath.markdown)
 
 > CogPath to object B.
 > ``` lang=cpp, name=Lightning
@@ -68,7 +68,7 @@
 
 
 ---  
- #  WorldPointA : [real3](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real3.markdown)
+ #  WorldPointA : [real3](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real3.markdown)
 
 > The point on object A in world space.
 > ``` lang=cpp, name=Lightning
@@ -76,7 +76,7 @@
 
 
 ---  
- #  WorldPointB : [real3](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real3.markdown)
+ #  WorldPointB : [real3](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real3.markdown)
 
 > The point on object B in world space.
 > ``` lang=cpp, name=Lightning

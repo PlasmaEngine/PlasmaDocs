@@ -2,8 +2,8 @@
 
 |Methods|Properties|Base Classes|Derived Classes|
 |---|---|---|---|
-|[ Close](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/filestream.markdown#close-void)| |[istream](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/istream.markdown)| |
-|[ Constructor](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/filestream.markdown#filestream-void)| | | |
+|[ Close](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/filestream.markdown#close-void)| |[istream](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/istream.markdown)| |
+|[ Constructor](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/filestream.markdown#filestream-void)| | | |
 
 
  #  Properties
@@ -45,7 +45,7 @@
 > 
 > |Name|Type|Description|
 > |---|---|---|
-> |p0|[filestream](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/filestream.markdown)| |
+> |p0|[filestream](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/filestream.markdown)| |
 > ``` lang=cpp, name=Lightning
 > function FileStream(p0 : FileStream)
 > ``` 
@@ -59,8 +59,8 @@
 > 
 > |Name|Type|Description|
 > |---|---|---|
-> |filePath|[string](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/string.markdown)| |
-> |mode|[FileMode](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/flags_reference.markdown#filemode)| |
+> |filePath|[string](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/string.markdown)| |
+> |mode|[FileMode](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/flags_reference.markdown#filemode)| |
 > ``` lang=cpp, name=Lightning
 > function FileStream(filePath : String, mode : FileMode)
 > ``` 

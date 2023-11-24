@@ -3,7 +3,7 @@ A HashMap is a templated data structure that can map unique keys of type A to va
 
  # Declaration
 
-NOTE: The types `HashMap` and `KeyValue` not currently appear in the [lightning_base_types](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types.markdown) list and does not currently show up in code completion suggestions (T552) during initial declaration.
+NOTE: The types `HashMap` and `KeyValue` not currently appear in the [lightning_base_types](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types.markdown) list and does not currently show up in code completion suggestions (T552) during initial declaration.
 
 HashMap declaration is similiar to the declaration of any templated type in Lightning. When a HashMap is created, by default, it has no elements.
 
@@ -14,7 +14,7 @@ var spawnerToEnemyType = HashMap[Cog, Archetype]();
 var enemyType = HashMap[Archetype, Integer]();
 </code></pre>
 
-HashMaps have a variety of uses. One may use them to keep track of objects at runtime by an alternate name, or to keep count of how many of each enemy archetype a spawner has created at runtime. Below are some simple example of HashMap functionality which map unique [integer](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/integer.markdown) keys to non-unique [string](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/string.markdown) values.
+HashMaps have a variety of uses. One may use them to keep track of objects at runtime by an alternate name, or to keep count of how many of each enemy archetype a spawner has created at runtime. Below are some simple example of HashMap functionality which map unique [integer](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer.markdown) keys to non-unique [string](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/string.markdown) values.
 
  ## Initialization
 It is common for a HashMap to be populated at runtime, but it is also possible to define elements within an initializer list.
@@ -37,7 +37,7 @@ HashMap[Integer, String] (20744110)
 }
 </code></pre>
 
-Notice that the order in which the elements are printed is not the order in which they were added to the HashMap. This is due to HashMaps having no inherent order, unlike [Arrays](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/array_t.markdown). Instead of the pairs being printed in an indexed order they are printed in an arbitrary order based on the hash of the pair.
+Notice that the order in which the elements are printed is not the order in which they were added to the HashMap. This is due to HashMaps having no inherent order, unlike [Arrays](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/array_t.markdown). Instead of the pairs being printed in an indexed order they are printed in an arbitrary order based on the hash of the pair.
 
 NOTE: The HashMap templated type is currently lacking templated print functionality similiar to [Arrays](https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/Lightning/arrays.markdown). The `PrintHashMap` function used in this page is implemented below:
 
@@ -289,7 +289,7 @@ The `PrintHashMap` function is an excellent example of how one may use `All`.
  ## Manual
 - [Arrays](https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/Lightning/arrays.markdown)
  ## Reference
-- [Arrays](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/array_t.markdown)
-- [integer](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/integer.markdown)
-- [string](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/string.markdown)
+- [Arrays](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/array_t.markdown)
+- [integer](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer.markdown)
+- [string](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/string.markdown)
  

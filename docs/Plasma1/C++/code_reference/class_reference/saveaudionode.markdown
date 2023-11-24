@@ -4,16 +4,16 @@
 
 |Methods|Properties|Base Classes|Derived Classes|
 |---|---|---|---|
-|[ ClearSavedAudio](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/saveaudionode.markdown#clearsavedaudio-void)|[ SaveAudio](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/saveaudionode.markdown#saveaudio-plasma-engine-do)|[soundnode](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/soundnode.markdown)| |
-|[ PlaySavedAudio](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/saveaudionode.markdown#playsavedaudio-void)| | | |
-|[ StopPlaying](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/saveaudionode.markdown#stopplaying-void)| | | |
+|[ ClearSavedAudio](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/saveaudionode.markdown#clearsavedaudio-void)|[ SaveAudio](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/saveaudionode.markdown#saveaudio-plasma-engine-do)|[soundnode](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/soundnode.markdown)| |
+|[ PlaySavedAudio](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/saveaudionode.markdown#playsavedaudio-void)| | | |
+|[ StopPlaying](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/saveaudionode.markdown#stopplaying-void)| | | |
 
 
  #  Properties
 
 
 ---  
- #  SaveAudio : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/boolean.markdown)
+ #  SaveAudio : [boolean](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.markdown)
 
 > When true, audio from input SoundNodes will be saved. Setting this to true will remove any existing saved audio before saving more.
 > ``` lang=cpp, name=Lightning

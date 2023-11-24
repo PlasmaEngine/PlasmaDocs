@@ -18,7 +18,7 @@ The `TextEditorConfig` component which manages the editable properties of the Pl
 - [Tab Completion](https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/editor/texteditor/tab_completion.markdown)
 
 ## Code Reference
-- [texteditorconfig](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/texteditorconfig.markdown) 
+- [texteditorconfig](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/texteditorconfig.markdown) 
  
 
  

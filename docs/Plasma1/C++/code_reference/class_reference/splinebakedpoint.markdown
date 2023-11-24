@@ -4,15 +4,15 @@
 
 |Methods|Properties|Base Classes|Derived Classes|
 |---|---|---|---|
-|[ Constructor](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/splinebakedpoint.markdown#splinebakedpoint-void)|[ Position](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/splinebakedpoint.markdown#position-plasma-engine-doc)| | |
-| |[ WorldPosition](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/splinebakedpoint.markdown#worldposition-plasma-engin)| | |
+|[ Constructor](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/splinebakedpoint.markdown#splinebakedpoint-void)|[ Position](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/splinebakedpoint.markdown#position-plasma-engine-doc)| | |
+| |[ WorldPosition](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/splinebakedpoint.markdown#worldposition-plasma-engin)| | |
 
 
  #  Properties
 
 
 ---  
- #  Position : [real3](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real3.markdown)
+ #  Position : [real3](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real3.markdown)
 
 > The position of a baked point.
 > ``` lang=cpp, name=Lightning
@@ -20,7 +20,7 @@
 
 
 ---  
- #  WorldPosition : [real3](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real3.markdown)
+ #  WorldPosition : [real3](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real3.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -52,7 +52,7 @@
 > 
 > |Name|Type|Description|
 > |---|---|---|
-> |position|[real3](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real3.markdown)| |
+> |position|[real3](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real3.markdown)| |
 > ``` lang=cpp, name=Lightning
 > function SplineBakedPoint(position : Real3)
 > ``` 

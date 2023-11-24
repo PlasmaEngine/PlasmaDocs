@@ -6,51 +6,51 @@
 
 |Methods|Properties|Base Classes|Derived Classes|
 |---|---|---|---|
-|[ DispatchBroadcast](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netobject.markdown#dispatchbroadcast-void)|[ AcceptIncomingChanges](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netobject.markdown#acceptincomingchanges-ze)|[component](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/component.markdown)|[netpeer](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netpeer.markdown)|
-|[ DispatchLocal](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netobject.markdown#dispatchlocal-void)|[ AccurateTimestampOnChange](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netobject.markdown#accuratetimestamponchang)| |[netspace](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netspace.markdown)|
-|[ DispatchLocalAndBroadcast](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netobject.markdown#dispatchlocalandbroadcas)|[ AccurateTimestampOnOffline](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netobject.markdown#accuratetimestamponoffli)| |[netuser](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netuser.markdown)|
-|[ DispatchLocalAndRemote](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netobject.markdown#dispatchlocalandremote-v)|[ AccurateTimestampOnOnline](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netobject.markdown#accuratetimestampononlin)| | |
-|[ DispatchRemote](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netobject.markdown#dispatchremote-void)|[ AllowNapping](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netobject.markdown#allownapping-plasma-engine)| | |
-|[ Forget](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netobject.markdown#forget-plasma-engine-docum)|[ AutomaticChannel](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netobject.markdown#automaticchannel-plasma-en)| | |
-|[ GetNetChannel](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netobject.markdown#getnetchannel-plasma-engin)|[ DetectOutgoingChanges](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netobject.markdown#detectoutgoingchanges-ze)| | |
-|[ HasNetChannel](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netobject.markdown#hasnetchannel-plasma-engin)|[ IsClient](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netobject.markdown#isclient-plasma-engine-doc)| | |
-|[ IsOwnedByPeer](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netobject.markdown#isownedbypeer-plasma-engin)|[ IsClientAndMine](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netobject.markdown#isclientandmine-plasma-eng)| | |
-|[ IsOwnedByUser](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netobject.markdown#isownedbyuser-plasma-engin)|[ IsClientButNotMine](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netobject.markdown#isclientbutnotmine-plasma)| | |
-|[ Constructor](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netobject.markdown#netobject-void)|[ IsClientOrOffline](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netobject.markdown#isclientoroffline-plasma-e)| | |
-|[ ReplicateNow](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netobject.markdown#replicatenow-plasma-engine)|[ IsClientOrServer](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netobject.markdown#isclientorserver-plasma-en)| | |
-|[ SelectRemote](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netobject.markdown#selectremote-plasma-engine)|[ IsMine](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netobject.markdown#ismine-plasma-engine-docum)| | |
-|[ SetNetUserOwnerDown](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netobject.markdown#setnetuserownerdown-void)|[ IsNapping](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netobject.markdown#isnapping-plasma-engine-do)| | |
-|[ SetNetUserOwnerUp](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netobject.markdown#setnetuserownerup-void)|[ IsNotMine](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netobject.markdown#isnotmine-plasma-engine-do)| | |
-|[ TakeNap](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netobject.markdown#takenap-void)|[ IsNotOwnedByAUser](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netobject.markdown#isnotownedbyauser-plasma-e)| | |
-|[ WakeUp](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netobject.markdown#wakeup-void)|[ IsOffline](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netobject.markdown#isoffline-plasma-engine-do)| | |
-| |[ IsOfflineAndMine](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netobject.markdown#isofflineandmine-plasma-en)| | |
-| |[ IsOfflineButNotMine](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netobject.markdown#isofflinebutnotmine-plasma)| | |
-| |[ IsOnline](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netobject.markdown#isonline-plasma-engine-doc)| | |
-| |[ IsOwnedByAUser](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netobject.markdown#isownedbyauser-plasma-engi)| | |
-| |[ IsServer](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netobject.markdown#isserver-plasma-engine-doc)| | |
-| |[ IsServerAndMine](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netobject.markdown#isserverandmine-plasma-eng)| | |
-| |[ IsServerButNotMine](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netobject.markdown#isserverbutnotmine-plasma)| | |
-| |[ IsServerOrOffline](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netobject.markdown#isserveroroffline-plasma-e)| | |
-| |[ LastChangeTimePassed](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netobject.markdown#lastchangetimepassed-zer)| | |
-| |[ LastChangeTimestamp](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netobject.markdown#lastchangetimestamp-plasma)| | |
-| |[ NetObjectId](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netobject.markdown#netobjectid-plasma-engine)| | |
-| |[ NetPropertyInfos](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netobject.markdown#netpropertyinfos-plasma-en)| | |
-| |[ NetUserOwner](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netobject.markdown#netuserowner-plasma-engine)| | |
-| |[ NetUserOwnerPath](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netobject.markdown#netuserownerpath-plasma-en)| | |
-| |[ NetUserOwnerPeerId](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netobject.markdown#netuserownerpeerid-plasma)| | |
-| |[ NetUserOwnerUserId](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netobject.markdown#netuserowneruserid-plasma)| | |
-| |[ OfflineTimePassed](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netobject.markdown#offlinetimepassed-plasma-e)| | |
-| |[ OfflineTimestamp](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netobject.markdown#offlinetimestamp-plasma-en)| | |
-| |[ OnlineTimePassed](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netobject.markdown#onlinetimepassed-plasma-en)| | |
-| |[ OnlineTimestamp](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netobject.markdown#onlinetimestamp-plasma-eng)| | |
-| |[ Role](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netobject.markdown#role-plasma-engine-documen)| | |
+|[ DispatchBroadcast](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/netobject.markdown#dispatchbroadcast-void)|[ AcceptIncomingChanges](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/netobject.markdown#acceptincomingchanges-ze)|[component](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/component.markdown)|[netpeer](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/netpeer.markdown)|
+|[ DispatchLocal](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/netobject.markdown#dispatchlocal-void)|[ AccurateTimestampOnChange](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/netobject.markdown#accuratetimestamponchang)| |[netspace](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/netspace.markdown)|
+|[ DispatchLocalAndBroadcast](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/netobject.markdown#dispatchlocalandbroadcas)|[ AccurateTimestampOnOffline](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/netobject.markdown#accuratetimestamponoffli)| |[netuser](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/netuser.markdown)|
+|[ DispatchLocalAndRemote](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/netobject.markdown#dispatchlocalandremote-v)|[ AccurateTimestampOnOnline](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/netobject.markdown#accuratetimestampononlin)| | |
+|[ DispatchRemote](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/netobject.markdown#dispatchremote-void)|[ AllowNapping](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/netobject.markdown#allownapping-plasma-engine)| | |
+|[ Forget](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/netobject.markdown#forget-plasma-engine-docum)|[ AutomaticChannel](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/netobject.markdown#automaticchannel-plasma-en)| | |
+|[ GetNetChannel](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/netobject.markdown#getnetchannel-plasma-engin)|[ DetectOutgoingChanges](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/netobject.markdown#detectoutgoingchanges-ze)| | |
+|[ HasNetChannel](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/netobject.markdown#hasnetchannel-plasma-engin)|[ IsClient](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/netobject.markdown#isclient-plasma-engine-doc)| | |
+|[ IsOwnedByPeer](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/netobject.markdown#isownedbypeer-plasma-engin)|[ IsClientAndMine](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/netobject.markdown#isclientandmine-plasma-eng)| | |
+|[ IsOwnedByUser](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/netobject.markdown#isownedbyuser-plasma-engin)|[ IsClientButNotMine](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/netobject.markdown#isclientbutnotmine-plasma)| | |
+|[ Constructor](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/netobject.markdown#netobject-void)|[ IsClientOrOffline](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/netobject.markdown#isclientoroffline-plasma-e)| | |
+|[ ReplicateNow](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/netobject.markdown#replicatenow-plasma-engine)|[ IsClientOrServer](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/netobject.markdown#isclientorserver-plasma-en)| | |
+|[ SelectRemote](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/netobject.markdown#selectremote-plasma-engine)|[ IsMine](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/netobject.markdown#ismine-plasma-engine-docum)| | |
+|[ SetNetUserOwnerDown](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/netobject.markdown#setnetuserownerdown-void)|[ IsNapping](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/netobject.markdown#isnapping-plasma-engine-do)| | |
+|[ SetNetUserOwnerUp](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/netobject.markdown#setnetuserownerup-void)|[ IsNotMine](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/netobject.markdown#isnotmine-plasma-engine-do)| | |
+|[ TakeNap](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/netobject.markdown#takenap-void)|[ IsNotOwnedByAUser](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/netobject.markdown#isnotownedbyauser-plasma-e)| | |
+|[ WakeUp](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/netobject.markdown#wakeup-void)|[ IsOffline](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/netobject.markdown#isoffline-plasma-engine-do)| | |
+| |[ IsOfflineAndMine](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/netobject.markdown#isofflineandmine-plasma-en)| | |
+| |[ IsOfflineButNotMine](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/netobject.markdown#isofflinebutnotmine-plasma)| | |
+| |[ IsOnline](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/netobject.markdown#isonline-plasma-engine-doc)| | |
+| |[ IsOwnedByAUser](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/netobject.markdown#isownedbyauser-plasma-engi)| | |
+| |[ IsServer](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/netobject.markdown#isserver-plasma-engine-doc)| | |
+| |[ IsServerAndMine](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/netobject.markdown#isserverandmine-plasma-eng)| | |
+| |[ IsServerButNotMine](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/netobject.markdown#isserverbutnotmine-plasma)| | |
+| |[ IsServerOrOffline](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/netobject.markdown#isserveroroffline-plasma-e)| | |
+| |[ LastChangeTimePassed](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/netobject.markdown#lastchangetimepassed-zer)| | |
+| |[ LastChangeTimestamp](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/netobject.markdown#lastchangetimestamp-plasma)| | |
+| |[ NetObjectId](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/netobject.markdown#netobjectid-plasma-engine)| | |
+| |[ NetPropertyInfos](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/netobject.markdown#netpropertyinfos-plasma-en)| | |
+| |[ NetUserOwner](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/netobject.markdown#netuserowner-plasma-engine)| | |
+| |[ NetUserOwnerPath](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/netobject.markdown#netuserownerpath-plasma-en)| | |
+| |[ NetUserOwnerPeerId](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/netobject.markdown#netuserownerpeerid-plasma)| | |
+| |[ NetUserOwnerUserId](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/netobject.markdown#netuserowneruserid-plasma)| | |
+| |[ OfflineTimePassed](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/netobject.markdown#offlinetimepassed-plasma-e)| | |
+| |[ OfflineTimestamp](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/netobject.markdown#offlinetimestamp-plasma-en)| | |
+| |[ OnlineTimePassed](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/netobject.markdown#onlinetimepassed-plasma-en)| | |
+| |[ OnlineTimestamp](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/netobject.markdown#onlinetimestamp-plasma-eng)| | |
+| |[ Role](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/netobject.markdown#role-plasma-engine-documen)| | |
 
 
  #  Properties
 
 
 ---  
- #  AcceptIncomingChanges : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/boolean.markdown)
+ #  AcceptIncomingChanges : [boolean](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.markdown)
 
 > Controls whether or not net channels on this net object may accept incoming changes.
 > ``` lang=cpp, name=Lightning
@@ -58,7 +58,7 @@
 
 
 ---  
- #  AccurateTimestampOnChange : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/boolean.markdown)
+ #  AccurateTimestampOnChange : [boolean](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.markdown)
 
 > Controls whether or not the net object will serialize an accurate timestamp value when changed (on any net channel), or will instead accept an estimated timestamp value. (Enabling this will override the corresponding net channel type setting for all net channels added to this net object)
 > ``` lang=cpp, name=Lightning
@@ -66,7 +66,7 @@
 
 
 ---  
- #  AccurateTimestampOnOffline : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/boolean.markdown)
+ #  AccurateTimestampOnOffline : [boolean](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.markdown)
 
 > Controls whether or not the net object will serialize an accurate timestamp value when taken offline, or will instead accept an estimated timestamp value.
 > ``` lang=cpp, name=Lightning
@@ -74,7 +74,7 @@
 
 
 ---  
- #  AccurateTimestampOnOnline : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/boolean.markdown)
+ #  AccurateTimestampOnOnline : [boolean](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.markdown)
 
 > Controls whether or not the net object will serialize an accurate timestamp value when brought online, or will instead accept an estimated timestamp value.
 > ``` lang=cpp, name=Lightning
@@ -82,7 +82,7 @@
 
 
 ---  
- #  AllowNapping : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/boolean.markdown)
+ #  AllowNapping : [boolean](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.markdown)
 
 > Controls whether or not net channels on this net object may nap (perform change detection on longer intervals) if they haven't changed in a while.
 > ``` lang=cpp, name=Lightning
@@ -90,7 +90,7 @@
 
 
 ---  
- #  AutomaticChannel : [netchannelconfig](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netchannelconfig.markdown)
+ #  AutomaticChannel : [netchannelconfig](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/netchannelconfig.markdown)
 
 > Returns the automatic net channel configuration resource (assigned to net properties unless another channel is specified).
 > ``` lang=cpp, name=Lightning
@@ -98,7 +98,7 @@
 
 
 ---  
- #  DetectOutgoingChanges : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/boolean.markdown)
+ #  DetectOutgoingChanges : [boolean](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.markdown)
 
 > Controls whether or not net channels on this net object may detect outgoing changes.
 > ``` lang=cpp, name=Lightning
@@ -106,7 +106,7 @@
 
 
 ---  
- #  IsClient : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/boolean.markdown)
+ #  IsClient : [boolean](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.markdown)
 
  `read-only`
 
@@ -116,7 +116,7 @@
 
 
 ---  
- #  IsClientAndMine : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/boolean.markdown)
+ #  IsClientAndMine : [boolean](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.markdown)
 
  `read-only`
 
@@ -126,7 +126,7 @@
 
 
 ---  
- #  IsClientButNotMine : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/boolean.markdown)
+ #  IsClientButNotMine : [boolean](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.markdown)
 
  `read-only`
 
@@ -136,7 +136,7 @@
 
 
 ---  
- #  IsClientOrOffline : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/boolean.markdown)
+ #  IsClientOrOffline : [boolean](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.markdown)
 
  `read-only`
 
@@ -146,7 +146,7 @@
 
 
 ---  
- #  IsClientOrServer : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/boolean.markdown)
+ #  IsClientOrServer : [boolean](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.markdown)
 
  `read-only`
 
@@ -156,7 +156,7 @@
 
 
 ---  
- #  IsMine : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/boolean.markdown)
+ #  IsMine : [boolean](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.markdown)
 
  `read-only`
 
@@ -166,7 +166,7 @@
 
 
 ---  
- #  IsNapping : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/boolean.markdown)
+ #  IsNapping : [boolean](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.markdown)
 
  `read-only`
 
@@ -176,7 +176,7 @@
 
 
 ---  
- #  IsNotMine : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/boolean.markdown)
+ #  IsNotMine : [boolean](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.markdown)
 
  `read-only`
 
@@ -186,7 +186,7 @@
 
 
 ---  
- #  IsNotOwnedByAUser : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/boolean.markdown)
+ #  IsNotOwnedByAUser : [boolean](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.markdown)
 
  `read-only`
 
@@ -196,7 +196,7 @@
 
 
 ---  
- #  IsOffline : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/boolean.markdown)
+ #  IsOffline : [boolean](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.markdown)
 
  `read-only`
 
@@ -206,7 +206,7 @@
 
 
 ---  
- #  IsOfflineAndMine : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/boolean.markdown)
+ #  IsOfflineAndMine : [boolean](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.markdown)
 
  `read-only`
 
@@ -216,7 +216,7 @@
 
 
 ---  
- #  IsOfflineButNotMine : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/boolean.markdown)
+ #  IsOfflineButNotMine : [boolean](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.markdown)
 
  `read-only`
 
@@ -226,7 +226,7 @@
 
 
 ---  
- #  IsOnline : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/boolean.markdown)
+ #  IsOnline : [boolean](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.markdown)
 
  `read-only`
 
@@ -236,7 +236,7 @@
 
 
 ---  
- #  IsOwnedByAUser : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/boolean.markdown)
+ #  IsOwnedByAUser : [boolean](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.markdown)
 
  `read-only`
 
@@ -246,7 +246,7 @@
 
 
 ---  
- #  IsServer : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/boolean.markdown)
+ #  IsServer : [boolean](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.markdown)
 
  `read-only`
 
@@ -256,7 +256,7 @@
 
 
 ---  
- #  IsServerAndMine : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/boolean.markdown)
+ #  IsServerAndMine : [boolean](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.markdown)
 
  `read-only`
 
@@ -266,7 +266,7 @@
 
 
 ---  
- #  IsServerButNotMine : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/boolean.markdown)
+ #  IsServerButNotMine : [boolean](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.markdown)
 
  `read-only`
 
@@ -276,7 +276,7 @@
 
 
 ---  
- #  IsServerOrOffline : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/boolean.markdown)
+ #  IsServerOrOffline : [boolean](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.markdown)
 
  `read-only`
 
@@ -286,7 +286,7 @@
 
 
 ---  
- #  LastChangeTimePassed : [real](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real.markdown)
+ #  LastChangeTimePassed : [real](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.markdown)
 
  `read-only`
 
@@ -296,7 +296,7 @@
 
 
 ---  
- #  LastChangeTimestamp : [real](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real.markdown)
+ #  LastChangeTimestamp : [real](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.markdown)
 
  `read-only`
 
@@ -306,7 +306,7 @@
 
 
 ---  
- #  NetObjectId : [integer](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/integer.markdown)
+ #  NetObjectId : [integer](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer.markdown)
 
  `read-only`
 
@@ -316,7 +316,7 @@
 
 
 ---  
- #  NetPropertyInfos : [netpropertyinfos](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netpropertyinfos.markdown)
+ #  NetPropertyInfos : [netpropertyinfos](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/netpropertyinfos.markdown)
 
 > Net property infos added through the property grid.
 > ``` lang=cpp, name=Lightning
@@ -324,7 +324,7 @@
 
 
 ---  
- #  NetUserOwner : [cog](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/cog.markdown)
+ #  NetUserOwner : [cog](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/cog.markdown)
 
 > Returns the network user this object conceptually belongs to, else nullptr.
 > ``` lang=cpp, name=Lightning
@@ -332,7 +332,7 @@
 
 
 ---  
- #  NetUserOwnerPath : [cogpath](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/cogpath.markdown)
+ #  NetUserOwnerPath : [cogpath](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/cogpath.markdown)
 
  `read-only`
 
@@ -342,7 +342,7 @@
 
 
 ---  
- #  NetUserOwnerPeerId : [integer](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/integer.markdown)
+ #  NetUserOwnerPeerId : [integer](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer.markdown)
 
  `read-only`
 
@@ -352,7 +352,7 @@
 
 
 ---  
- #  NetUserOwnerUserId : [integer](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/integer.markdown)
+ #  NetUserOwnerUserId : [integer](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer.markdown)
 
  `read-only`
 
@@ -362,7 +362,7 @@
 
 
 ---  
- #  OfflineTimePassed : [real](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real.markdown)
+ #  OfflineTimePassed : [real](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.markdown)
 
  `read-only`
 
@@ -372,7 +372,7 @@
 
 
 ---  
- #  OfflineTimestamp : [real](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real.markdown)
+ #  OfflineTimestamp : [real](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.markdown)
 
  `read-only`
 
@@ -382,7 +382,7 @@
 
 
 ---  
- #  OnlineTimePassed : [real](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real.markdown)
+ #  OnlineTimePassed : [real](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.markdown)
 
  `read-only`
 
@@ -392,7 +392,7 @@
 
 
 ---  
- #  OnlineTimestamp : [real](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real.markdown)
+ #  OnlineTimestamp : [real](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.markdown)
 
  `read-only`
 
@@ -402,7 +402,7 @@
 
 
 ---  
- #  Role : [NetRole](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/enum_reference.markdown#netrole)
+ #  Role : [NetRole](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/enum_reference.markdown#netrole)
 
  `read-only`
 
@@ -421,8 +421,8 @@
 > Dispatches the net event on the net object for all remote peers. In Offline mode, this calls DispatchLocal only.
 > |Name|Type|Description|
 > |---|---|---|
-> |eventId|[string](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/string.markdown)| |
-> |event|[event](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/event.markdown)| |
+> |eventId|[string](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/string.markdown)| |
+> |event|[event](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/event.markdown)| |
 > ``` lang=cpp, name=Lightning
 > function DispatchBroadcast(eventId : String, event : Event)
 > ``` 
@@ -434,8 +434,8 @@
 > Dispatches the net event on the net object for the local peer.
 > |Name|Type|Description|
 > |---|---|---|
-> |eventId|[string](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/string.markdown)| |
-> |event|[event](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/event.markdown)| |
+> |eventId|[string](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/string.markdown)| |
+> |event|[event](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/event.markdown)| |
 > ``` lang=cpp, name=Lightning
 > function DispatchLocal(eventId : String, event : Event)
 > ``` 
@@ -447,8 +447,8 @@
 > Dispatches the net event on the net object for the local peer and for all remote peers. In Offline mode, this calls DispatchLocal only.
 > |Name|Type|Description|
 > |---|---|---|
-> |eventId|[string](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/string.markdown)| |
-> |event|[event](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/event.markdown)| |
+> |eventId|[string](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/string.markdown)| |
+> |event|[event](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/event.markdown)| |
 > ``` lang=cpp, name=Lightning
 > function DispatchLocalAndBroadcast(eventId : String, event : Event)
 > ``` 
@@ -460,9 +460,9 @@
 > Dispatches the net event on the net object for the local peer and for the remote peer. In Offline mode, this calls DispatchLocal only.
 > |Name|Type|Description|
 > |---|---|---|
-> |eventId|[string](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/string.markdown)| |
-> |event|[event](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/event.markdown)| |
-> |netPeerId|[integer](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/integer.markdown)| |
+> |eventId|[string](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/string.markdown)| |
+> |event|[event](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/event.markdown)| |
+> |netPeerId|[integer](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer.markdown)| |
 > ``` lang=cpp, name=Lightning
 > function DispatchLocalAndRemote(eventId : String, event : Event, netPeerId : Integer)
 > ``` 
@@ -474,16 +474,16 @@
 > Dispatches the net event on the net object for the remote peer. In Offline mode, this calls DispatchLocal only.
 > |Name|Type|Description|
 > |---|---|---|
-> |eventId|[string](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/string.markdown)| |
-> |event|[event](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/event.markdown)| |
-> |netPeerId|[integer](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/integer.markdown)| |
+> |eventId|[string](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/string.markdown)| |
+> |event|[event](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/event.markdown)| |
+> |netPeerId|[integer](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer.markdown)| |
 > ``` lang=cpp, name=Lightning
 > function DispatchRemote(eventId : String, event : Event, netPeerId : Integer)
 > ``` 
 
 
 ---  
- #  Forget : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/boolean.markdown)
+ #  Forget : [boolean](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.markdown)
 
 > [Client] Forgets the online net object locally. [Server] Forgets the online net object locally and remotely for all relevant peers. Effectively removes the net object from the network system without destroying it. Returns true if successful, else false.
 > |Name|Type|Description|
@@ -494,48 +494,48 @@
 
 
 ---  
- #  GetNetChannel : [netchannel](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netchannel.markdown)
+ #  GetNetChannel : [netchannel](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/netchannel.markdown)
 
 > [Client/Server] Returns the specified net channel, else nullptr.
 > |Name|Type|Description|
 > |---|---|---|
-> |netChannelName|[string](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/string.markdown)| |
+> |netChannelName|[string](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/string.markdown)| |
 > ``` lang=cpp, name=Lightning
 > function GetNetChannel(netChannelName : String) : NetChannel
 > ``` 
 
 
 ---  
- #  HasNetChannel : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/boolean.markdown)
+ #  HasNetChannel : [boolean](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.markdown)
 
 > [Client/Server] Returns true if the net object has the specified net channel, else false.
 > |Name|Type|Description|
 > |---|---|---|
-> |netChannelName|[string](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/string.markdown)| |
+> |netChannelName|[string](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/string.markdown)| |
 > ``` lang=cpp, name=Lightning
 > function HasNetChannel(netChannelName : String) : Boolean
 > ``` 
 
 
 ---  
- #  IsOwnedByPeer : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/boolean.markdown)
+ #  IsOwnedByPeer : [boolean](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.markdown)
 
 > Returns true if the net object is conceptually owned by a user added by the specified peer, else false.
 > |Name|Type|Description|
 > |---|---|---|
-> |netPeerId|[integer](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/integer.markdown)| |
+> |netPeerId|[integer](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer.markdown)| |
 > ``` lang=cpp, name=Lightning
 > function IsOwnedByPeer(netPeerId : Integer) : Boolean
 > ``` 
 
 
 ---  
- #  IsOwnedByUser : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/boolean.markdown)
+ #  IsOwnedByUser : [boolean](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.markdown)
 
 > Returns true if the net object is conceptually owned by the specified user, else false.
 > |Name|Type|Description|
 > |---|---|---|
-> |cog|[cog](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/cog.markdown)| |
+> |cog|[cog](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/cog.markdown)| |
 > ``` lang=cpp, name=Lightning
 > function IsOwnedByUser(cog : Cog) : Boolean
 > ``` 
@@ -555,7 +555,7 @@
 
 
 ---  
- #  ReplicateNow : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/boolean.markdown)
+ #  ReplicateNow : [boolean](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.markdown)
 
 > [Client/Server] Replicates all net channels' property changes immediately (only where changes are detected). Will also update nap state as configured. Returns true if changes were replicated, else false.
 > |Name|Type|Description|
@@ -566,7 +566,7 @@
 
 
 ---  
- #  SelectRemote : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/boolean.markdown)
+ #  SelectRemote : [boolean](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.markdown)
 
 > [Client/Server] Selects the remote net object on the first opposite-role peer found running in another game session instance on the engine. Will fail if the net object is not online, or not found remotely. Returns true if successful, else false.
 > |Name|Type|Description|
@@ -582,7 +582,7 @@
 > [Server/Offline] Sets the owning network user on this object and down the tree on all children recursively (pre-order traversal).
 > |Name|Type|Description|
 > |---|---|---|
-> |cog|[cog](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/cog.markdown)| |
+> |cog|[cog](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/cog.markdown)| |
 > ``` lang=cpp, name=Lightning
 > function SetNetUserOwnerDown(cog : Cog)
 > ``` 
@@ -594,7 +594,7 @@
 > [Server/Offline] Sets the owning network user on this object and up the tree on each parent recursively (pre-order traversal).
 > |Name|Type|Description|
 > |---|---|---|
-> |cog|[cog](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/cog.markdown)| |
+> |cog|[cog](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/cog.markdown)| |
 > ``` lang=cpp, name=Lightning
 > function SetNetUserOwnerUp(cog : Cog)
 > ``` 

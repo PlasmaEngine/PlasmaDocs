@@ -1,5 +1,5 @@
 # Buoyancy Effect
-The [BuoyancyEffect](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/buoyancyeffect.markdown) component applies a [buoyancy force](https://en.wikipedia.org/wiki/Buoyancy ) to an object. Buoyancy is approximately defined as: 
+The [BuoyancyEffect](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/buoyancyeffect.markdown) component applies a [buoyancy force](https://en.wikipedia.org/wiki/Buoyancy ) to an object. Buoyancy is approximately defined as: 
 
 (NOTE) F = -G * (V/p)
 
@@ -13,8 +13,8 @@ BuoyancyEffect can only be applied as a Region effect.
 - [physicseffectsandregions.markdown](https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/physics/physicseffectsandregions.markdown)
 
 ## Reference
-- [BuoyancyEffect](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/buoyancyeffect.markdown)
-- [PhysicsEffect](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/physicseffect.markdown)
-- [Region](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/region.markdown) 
+- [BuoyancyEffect](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/buoyancyeffect.markdown)
+- [PhysicsEffect](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/physicseffect.markdown)
+- [Region](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/region.markdown) 
 
  

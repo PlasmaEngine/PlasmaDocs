@@ -1,5 +1,5 @@
 # Sound Instances
-[ SoundInstances ](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/soundinstance.markdown) are created at runtime whenever a [SoundCue](https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/audio/soundcue.markdown) is played. Their properties are initially set by the SoundCue, but the user can then manipulate the SoundInstance's properties without affecting the SoundCue or any other SoundInstances created by it. 
+[ SoundInstances ](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/soundinstance.markdown) are created at runtime whenever a [SoundCue](https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/audio/soundcue.markdown) is played. Their properties are initially set by the SoundCue, but the user can then manipulate the SoundInstance's properties without affecting the SoundCue or any other SoundInstances created by it. 
 
 #  Using SoundInstances
 
@@ -62,7 +62,7 @@ function OnSoundLoop(event : SoundInstanceEvent)
 
 ## Events
 
-The following [ SoundInstanceEvents ](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/soundinstanceevent.markdown) will be sent out by all SoundInstance objects:
+The following [ SoundInstanceEvents ](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/soundinstanceevent.markdown) will be sent out by all SoundInstance objects:
 
 - `SoundLooped` is sent by looping SoundInstances each time they reach their LoopEndTime  and jump back to their LoopStartTime .
 - `SoundStopped` is sent when a SoundInstance has completely finished playing audio.
@@ -91,7 +91,7 @@ If the  CustomEventTime checkBox property is set, the SoundInstance will also se
 - [SoundTag ](https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/audio/soundtag.markdown)
 
 ## Reference
-- [ SoundInstance ](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/soundinstance.markdown)
-- [ SoundInstanceEvents ](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/soundinstanceevent.markdown)  
+- [ SoundInstance ](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/soundinstance.markdown)
+- [ SoundInstanceEvents ](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/soundinstanceevent.markdown)  
 
  

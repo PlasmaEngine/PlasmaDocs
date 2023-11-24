@@ -2,10 +2,10 @@
 
 |Methods|Properties|Base Classes|Derived Classes|
 |---|---|---|---|
-| | |[referencecountedeventobject](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/referencecountedeventobject.markdown)|[cogmetaserialization](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/cogmetaserialization.markdown)|
-| | | |[cogpathmetaserialization](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/cogpathmetaserialization.markdown)|
+| | |[referencecountedeventobject](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/referencecountedeventobject.markdown)|[cogmetaserialization](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/cogmetaserialization.markdown)|
+| | | |[cogpathmetaserialization](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/cogpathmetaserialization.markdown)|
 | | | |EnumMetaSerialization|
-| | | |[metastringserialization](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/metastringserialization.markdown)|
+| | | |[metastringserialization](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/metastringserialization.markdown)|
 | | | |PrimitiveMetaSerializationBoolean|
 | | | |PrimitiveMetaSerializationInteger|
 | | | |PrimitiveMetaSerializationInteger2|
@@ -20,7 +20,7 @@
 | | | |PrimitiveMetaSerializationReal3|
 | | | |PrimitiveMetaSerializationReal4|
 | | | |PrimitiveMetaSerializationString|
-| | | |[resourcemetaserialization](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/resourcemetaserialization.markdown)|
+| | | |[resourcemetaserialization](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/resourcemetaserialization.markdown)|
 
 
  #  Properties

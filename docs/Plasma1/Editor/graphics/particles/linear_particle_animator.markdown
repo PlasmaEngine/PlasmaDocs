@@ -1,5 +1,5 @@
 # Linear Particle Animator
-The linear particle animator give particles the ability to move.  It adds an integration step which allows particles to have some physically based motion.  The [LinearParticleAnimator](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/linearparticleanimator.markdown) component is required to generate particles and and to move them.
+The linear particle animator give particles the ability to move.  It adds an integration step which allows particles to have some physically based motion.  The [LinearParticleAnimator](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/linearparticleanimator.markdown) component is required to generate particles and and to move them.
 
 (NOTE)**Where to set particle velocity?** Properties relating to velocity are not found on the `LinearParticleAnimator`, but are instead on the emitter component.  The reason for this property placement is that all properties on the [emitter](https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/graphics/particles/emitters.markdown) component are applied when a particle is created, whereas the properties from `LinearParticleAnimator` are applied every frame.
 
@@ -17,6 +17,6 @@ The Growth  property can change the size of particles over time.  Set Growth  to
 
 ## Code Reference
 - [SpriteParticleSystem](https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/code_reference/class_reference/spriteparticlesystem.markdown)
-- [LinearParticleAnimator](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/linearparticleanimator.markdown) 
+- [LinearParticleAnimator](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/linearparticleanimator.markdown) 
 
  

@@ -4,16 +4,16 @@
 
 |Methods|Properties|Base Classes|Derived Classes|
 |---|---|---|---|
-|[ InterpolateWetPercent](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/reverbnode.markdown#interpolatewetpercent-vo)|[ Length](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/reverbnode.markdown#length-plasma-engine-docum)|[soundnode](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/soundnode.markdown)| |
-|[ InterpolateWetValue](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/reverbnode.markdown#interpolatewetvalue-void)|[ WetPercent](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/reverbnode.markdown#wetpercent-plasma-engine-d)| | |
-| |[ WetValue](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/reverbnode.markdown#wetvalue-plasma-engine-doc)| | |
+|[ InterpolateWetPercent](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/reverbnode.markdown#interpolatewetpercent-vo)|[ Length](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/reverbnode.markdown#length-plasma-engine-docum)|[soundnode](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/soundnode.markdown)| |
+|[ InterpolateWetValue](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/reverbnode.markdown#interpolatewetvalue-void)|[ WetPercent](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/reverbnode.markdown#wetpercent-plasma-engine-d)| | |
+| |[ WetValue](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/reverbnode.markdown#wetvalue-plasma-engine-doc)| | |
 
 
  #  Properties
 
 
 ---  
- #  Length : [real](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real.markdown)
+ #  Length : [real](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.markdown)
 
 > The length of the reverb tail, in seconds. The default value is 0.1.
 > ``` lang=cpp, name=Lightning
@@ -21,7 +21,7 @@
 
 
 ---  
- #  WetPercent : [real](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real.markdown)
+ #  WetPercent : [real](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.markdown)
 
 > DEPRECATED The WetValue property should be used instead.
 > ``` lang=cpp, name=Lightning
@@ -29,7 +29,7 @@
 
 
 ---  
- #  WetValue : [real](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real.markdown)
+ #  WetValue : [real](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.markdown)
 
 > The percentage of the node's output (0 - 1.0) which has the reverb filter applied to it. Setting this property to 0 will stop all reverb calculations.
 > ``` lang=cpp, name=Lightning
@@ -46,8 +46,8 @@
 > DEPRECATED The InterpolateWetValue method should be used instead.
 > |Name|Type|Description|
 > |---|---|---|
-> |percent|[real](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real.markdown)| |
-> |time|[real](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real.markdown)| |
+> |percent|[real](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.markdown)| |
+> |time|[real](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.markdown)| |
 > ``` lang=cpp, name=Lightning
 > function InterpolateWetPercent(percent : Real, time : Real)
 > ``` 
@@ -59,8 +59,8 @@
 > Interpolates the WetValue property from its current value to the value passed in as the first parameter, over the number of seconds passed in as the second parameter.
 > |Name|Type|Description|
 > |---|---|---|
-> |value|[real](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real.markdown)| |
-> |time|[real](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real.markdown)| |
+> |value|[real](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.markdown)| |
+> |time|[real](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.markdown)| |
 > ``` lang=cpp, name=Lightning
 > function InterpolateWetValue(value : Real, time : Real)
 > ``` 

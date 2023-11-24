@@ -4,14 +4,14 @@
 
 |Methods|Properties|Base Classes|Derived Classes|
 |---|---|---|---|
-|[ Constructor](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/uidocklayout.markdown#uidocklayout-void)|[ Spacing](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/uidocklayout.markdown#spacing-plasma-engine-docu)|[uilayout](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/uilayout.markdown)| |
+|[ Constructor](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/uidocklayout.markdown#uidocklayout-void)|[ Spacing](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/uidocklayout.markdown#spacing-plasma-engine-docu)|[uilayout](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/uilayout.markdown)| |
 
 
  #  Properties
 
 
 ---  
- #  Spacing : [real2](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real2.markdown)
+ #  Spacing : [real2](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real2.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning

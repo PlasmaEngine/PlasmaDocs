@@ -2,16 +2,16 @@
 
 |Methods|Properties|Base Classes|Derived Classes|
 |---|---|---|---|
-| |[ GenerateCue](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/audiooptions.markdown#generatecue-plasma-engine)|Object| |
-| |[ GroupCueName](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/audiooptions.markdown#groupcuename-plasma-engine)| | |
-| |[ StreamingMode](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/audiooptions.markdown#streamingmode-plasma-engin)| | |
+| |[ GenerateCue](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/audiooptions.markdown#generatecue-plasma-engine)|Object| |
+| |[ GroupCueName](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/audiooptions.markdown#groupcuename-plasma-engine)| | |
+| |[ StreamingMode](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/audiooptions.markdown#streamingmode-plasma-engin)| | |
 
 
  #  Properties
 
 
 ---  
- #  GenerateCue : [AudioCueImport](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/enum_reference.markdown#audiocueimport)
+ #  GenerateCue : [AudioCueImport](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/enum_reference.markdown#audiocueimport)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -19,7 +19,7 @@
 
 
 ---  
- #  GroupCueName : [string](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/string.markdown)
+ #  GroupCueName : [string](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/string.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -27,7 +27,7 @@
 
 
 ---  
- #  StreamingMode : [AudioFileLoadType](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/enum_reference.markdown#audiofileloadtype)
+ #  StreamingMode : [AudioFileLoadType](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/enum_reference.markdown#audiofileloadtype)
 
 > 
 > ``` lang=cpp, name=Lightning

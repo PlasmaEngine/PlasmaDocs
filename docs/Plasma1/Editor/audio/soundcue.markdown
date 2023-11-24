@@ -1,5 +1,5 @@
 # Sound Cues
-[ SoundCues ](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/soundcue.markdown) are a fundamental part of playing audio in the Plasma Engine. However the user chooses to play a sound, they will need to use a SoundCue to play it. SoundCues allow the user to modify various properties without affecting the original [Sound ](https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/audio/sound.markdown) resource: the same Sound can be applied to different SoundCues, have different property values on the SoundCue, and end up sounding completely different. 
+[ SoundCues ](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/soundcue.markdown) are a fundamental part of playing audio in the Plasma Engine. However the user chooses to play a sound, they will need to use a SoundCue to play it. SoundCues allow the user to modify various properties without affecting the original [Sound ](https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/audio/sound.markdown) resource: the same Sound can be applied to different SoundCues, have different property values on the SoundCue, and end up sounding completely different. 
 
 # Common Uses
 
@@ -39,7 +39,7 @@ If all three of the fields are set to values other than plasma, whenever the Sou
 
 ## SoundEntries 
 
-Each [ SoundEntry ](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/soundentry.markdown) holds a Sound which can be played by the SoundCue. SoundEntries have properties to control when the audio file starts and stops, when it starts looping and stops looping, and whether it should cross-fade audio after it loops.
+Each [ SoundEntry ](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/soundentry.markdown) holds a Sound which can be played by the SoundCue. SoundEntries have properties to control when the audio file starts and stops, when it starts looping and stops looping, and whether it should cross-fade audio after it loops.
 
 ## SoundTagEntries
 
@@ -47,7 +47,7 @@ Every [ SoundTag ](https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/audi
 
 ##  Lightning Events
 
-- The `SoundCuePrePlay` [ SoundInstanceEvent  ](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/soundinstanceevent.markdown) is sent just before a SoundInstance is played. 
+- The `SoundCuePrePlay` [ SoundInstanceEvent  ](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/soundinstanceevent.markdown) is sent just before a SoundInstance is played. 
 - The `SoundCuePostPlay` SoundInstanceEvent is sent immediately afterward. 
 
 The following code block shows how to connect to the `SoundCuePrePlay` event and change the SoundInstance's volume before it plays.
@@ -81,9 +81,9 @@ function OnCuePlay(event : SoundInstanceEvent)
 - [SoundListener ](https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/audio/soundlistener.markdown)
 
  ## Reference
-- [ SoundCue ](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/soundcue.markdown)
-- [ SoundEntry ](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/soundentry.markdown)
-- [ SoundTag ](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/soundtag.markdown)
-- [ SoundInstanceEvent ](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/soundinstanceevent.markdown) 
+- [ SoundCue ](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/soundcue.markdown)
+- [ SoundEntry ](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/soundentry.markdown)
+- [ SoundTag ](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/soundtag.markdown)
+- [ SoundInstanceEvent ](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/soundinstanceevent.markdown) 
 
  

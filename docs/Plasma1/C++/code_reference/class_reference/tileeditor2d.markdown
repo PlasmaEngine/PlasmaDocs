@@ -4,20 +4,20 @@
 
 |Methods|Properties|Base Classes|Derived Classes|
 |---|---|---|---|
-|[ CreateTileMap](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/tileeditor2d.markdown#createtilemap-void)|[ ShowArchetype](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/tileeditor2d.markdown#showarchetype-plasma-engin)|[component](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/component.markdown)| |
-|[ Constructor](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/tileeditor2d.markdown#tileeditor2d-void)|[ ShowCollision](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/tileeditor2d.markdown#showcollision-plasma-engin)| | |
-| |[ ShowCoordinates](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/tileeditor2d.markdown#showcoordinates-plasma-eng)| | |
-| |[ ShowGrid](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/tileeditor2d.markdown#showgrid-plasma-engine-doc)| | |
-| |[ ShowInvalid](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/tileeditor2d.markdown#showinvalid-plasma-engine)| | |
-| |[ TiledDrawing](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/tileeditor2d.markdown#tileddrawing-plasma-engine)| | |
-| |[ ToolType](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/tileeditor2d.markdown#tooltype-plasma-engine-doc)| | |
+|[ CreateTileMap](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/tileeditor2d.markdown#createtilemap-void)|[ ShowArchetype](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/tileeditor2d.markdown#showarchetype-plasma-engin)|[component](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/component.markdown)| |
+|[ Constructor](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/tileeditor2d.markdown#tileeditor2d-void)|[ ShowCollision](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/tileeditor2d.markdown#showcollision-plasma-engin)| | |
+| |[ ShowCoordinates](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/tileeditor2d.markdown#showcoordinates-plasma-eng)| | |
+| |[ ShowGrid](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/tileeditor2d.markdown#showgrid-plasma-engine-doc)| | |
+| |[ ShowInvalid](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/tileeditor2d.markdown#showinvalid-plasma-engine)| | |
+| |[ TiledDrawing](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/tileeditor2d.markdown#tileddrawing-plasma-engine)| | |
+| |[ ToolType](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/tileeditor2d.markdown#tooltype-plasma-engine-doc)| | |
 
 
  #  Properties
 
 
 ---  
- #  ShowArchetype : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/boolean.markdown)
+ #  ShowArchetype : [boolean](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -25,7 +25,7 @@
 
 
 ---  
- #  ShowCollision : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/boolean.markdown)
+ #  ShowCollision : [boolean](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -33,7 +33,7 @@
 
 
 ---  
- #  ShowCoordinates : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/boolean.markdown)
+ #  ShowCoordinates : [boolean](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -41,7 +41,7 @@
 
 
 ---  
- #  ShowGrid : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/boolean.markdown)
+ #  ShowGrid : [boolean](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -49,7 +49,7 @@
 
 
 ---  
- #  ShowInvalid : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/boolean.markdown)
+ #  ShowInvalid : [boolean](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -57,7 +57,7 @@
 
 
 ---  
- #  TiledDrawing : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/boolean.markdown)
+ #  TiledDrawing : [boolean](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -65,7 +65,7 @@
 
 
 ---  
- #  ToolType : [TileEditor2DSubToolType](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/enum_reference.markdown#tileeditor2dsubtooltype)
+ #  ToolType : [TileEditor2DSubToolType](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/enum_reference.markdown#tileeditor2dsubtooltype)
 
 > 
 > ``` lang=cpp, name=Lightning

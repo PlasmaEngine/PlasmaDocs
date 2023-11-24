@@ -114,7 +114,7 @@ Cookie.Sugar          as Integer: 3
 </code></pre>
 *Notice how after MacadamiaNuts is set to 3, the increment is no longer on powers of 2*
 
-The underlying structure is [integer](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/integer.markdown); therefore, you could interpret Integers as a flags type:
+The underlying structure is [integer](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer.markdown); therefore, you could interpret Integers as a flags type:
 
 <pre><code class="language-csharp">
 var random: Pizza = 583 as Pizza;
@@ -302,7 +302,7 @@ The binary '+' operator 'Positive / Add' is not valid with 'Pizza' and 'Cookie'.
 - [enums](https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/Lightning/enums.markdown)
 
  ## Code Reference
-- [flags_reference](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/flags_reference.markdown)
-- [integer](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/integer.markdown) 
+- [flags_reference](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/flags_reference.markdown)
+- [integer](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer.markdown) 
 
  

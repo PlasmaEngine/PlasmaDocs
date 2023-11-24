@@ -1,5 +1,5 @@
 # Capsule Collider
-[CapsuleCollider](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/capsulecollider.markdown) defines a [capsule](https://en.wikipedia.org/wiki/Capsule_(geometry) ) shape for collision. The base size of the capsule is determined by the Radius  and Height  properties. Scale is applied afterwards to determine the final capsule's size.
+[CapsuleCollider](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/capsulecollider.markdown) defines a [capsule](https://en.wikipedia.org/wiki/Capsule_(geometry) ) shape for collision. The base size of the capsule is determined by the Radius  and Height  properties. Scale is applied afterwards to determine the final capsule's size.
 
 Capsules are often used as a combination of [cylinders](https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/physics/colliders/cylindercollider.markdown) and [ellipsoids](https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/physics/colliders/ellipsoidcollider.markdown) for collision, primarily for long thin shapes.  An ellipsoid tends to be undesired when stretched on one axis due its curved sides. A cylinder fixes this but loses the curved caps of the ellipsoid. A capsule combines these by having a cylinder that can be scaled in one axis while containing smooth edge caps.
 
@@ -42,10 +42,10 @@ This mode is often desired when a model is attached to a cog that should match t
 - [edgecatching.markdown](https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/physics/colliders/physicstroubleshooting/edgecatching.markdown)
 
 ## Reference
-- [CapsuleCollider](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/capsulecollider.markdown)
-- [CylinderCollider](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/cylindercollider.markdown)
-- [EllipsoidCollider](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/ellipsoidcollider.markdown)
-- [Collider](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/collider.markdown)
+- [CapsuleCollider](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/capsulecollider.markdown)
+- [CylinderCollider](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/cylindercollider.markdown)
+- [EllipsoidCollider](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/ellipsoidcollider.markdown)
+- [Collider](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/collider.markdown)
  
 
  

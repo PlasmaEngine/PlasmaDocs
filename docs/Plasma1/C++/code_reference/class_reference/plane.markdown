@@ -2,16 +2,16 @@
 
 |Methods|Properties|Base Classes|Derived Classes|
 |---|---|---|---|
-|[ Constructor](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/plane.markdown#plane-void)|[ Data](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/plane.markdown#data-plasma-engine-documen)| | |
-|[ Set](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/plane.markdown#set-void)|[ Distance](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/plane.markdown#distance-plasma-engine-doc)| | |
-| |[ Normal](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/plane.markdown#normal-plasma-engine-docum)| | |
+|[ Constructor](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/plane.markdown#plane-void)|[ Data](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/plane.markdown#data-plasma-engine-documen)| | |
+|[ Set](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/plane.markdown#set-void)|[ Distance](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/plane.markdown#distance-plasma-engine-doc)| | |
+| |[ Normal](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/plane.markdown#normal-plasma-engine-docum)| | |
 
 
  #  Properties
 
 
 ---  
- #  Data : [real4](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real4.markdown)
+ #  Data : [real4](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real4.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning
@@ -19,7 +19,7 @@
 
 
 ---  
- #  Distance : [real](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real.markdown)
+ #  Distance : [real](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.markdown)
 
  `read-only`
 
@@ -29,7 +29,7 @@
 
 
 ---  
- #  Normal : [real3](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real3.markdown)
+ #  Normal : [real3](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real3.markdown)
 
  `read-only`
 
@@ -63,7 +63,7 @@
 > 
 > |Name|Type|Description|
 > |---|---|---|
-> |p0|[plane](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/plane.markdown)| |
+> |p0|[plane](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/plane.markdown)| |
 > ``` lang=cpp, name=Lightning
 > function Plane(p0 : Plane)
 > ``` 
@@ -77,8 +77,8 @@
 > 
 > |Name|Type|Description|
 > |---|---|---|
-> |normal|[real3](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real3.markdown)| |
-> |point|[real3](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real3.markdown)| |
+> |normal|[real3](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real3.markdown)| |
+> |point|[real3](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real3.markdown)| |
 > ``` lang=cpp, name=Lightning
 > function Plane(normal : Real3, point : Real3)
 > ``` 
@@ -92,7 +92,7 @@
 > 
 > |Name|Type|Description|
 > |---|---|---|
-> |data|[real4](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real4.markdown)| |
+> |data|[real4](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real4.markdown)| |
 > ``` lang=cpp, name=Lightning
 > function Plane(data : Real4)
 > ``` 
@@ -104,8 +104,8 @@
 > 
 > |Name|Type|Description|
 > |---|---|---|
-> |normal|[real3](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real3.markdown)| |
-> |point|[real3](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real3.markdown)| |
+> |normal|[real3](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real3.markdown)| |
+> |point|[real3](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real3.markdown)| |
 > ``` lang=cpp, name=Lightning
 > function Set(normal : Real3, point : Real3)
 > ``` 
@@ -117,7 +117,7 @@
 > 
 > |Name|Type|Description|
 > |---|---|---|
-> |data|[real4](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/real4.markdown)| |
+> |data|[real4](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real4.markdown)| |
 > ``` lang=cpp, name=Lightning
 > function Set(data : Real4)
 > ``` 

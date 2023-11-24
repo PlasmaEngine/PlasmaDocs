@@ -1,24 +1,24 @@
 |Lightning Attributes|C++ Attributes|
 |---|---|
-|[ Dependency](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/attribute_reference/property_attribute_reference.markdown#dependency)| |
-|[ Display](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/attribute_reference/property_attribute_reference.markdown#display)| |
-|[ Editable](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/attribute_reference/property_attribute_reference.markdown#editable)| |
-|[ Group](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/attribute_reference/property_attribute_reference.markdown#group)| |
-|[ LocalModificationOverride](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/attribute_reference/property_attribute_reference.markdown#localmodificationoverrid)| |
-|[ NetPeerId](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/attribute_reference/property_attribute_reference.markdown#netpeerid)| |
-|[ NetProperty](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/attribute_reference/property_attribute_reference.markdown#netproperty)| |
-|[ Override](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/attribute_reference/property_attribute_reference.markdown#override)| |
-|[ Property](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/attribute_reference/property_attribute_reference.markdown#property)| |
-|[ Range](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/attribute_reference/property_attribute_reference.markdown#range)| |
-|[ RenamedFrom](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/attribute_reference/property_attribute_reference.markdown#renamedfrom)| |
-|[ ResourceProperty](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/attribute_reference/property_attribute_reference.markdown#resourceproperty)| |
-|[ RuntimeClone](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/attribute_reference/property_attribute_reference.markdown#runtimeclone)| |
-|[ Serialize](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/attribute_reference/property_attribute_reference.markdown#serialize)| |
-|[ Serialized](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/attribute_reference/property_attribute_reference.markdown#serialized)| |
-|[ ShaderInput](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/attribute_reference/property_attribute_reference.markdown#shaderinput)| |
-|[ Slider](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/attribute_reference/property_attribute_reference.markdown#slider)| |
-|[ Static](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/attribute_reference/property_attribute_reference.markdown#static)| |
-|[ Virtual](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/attribute_reference/property_attribute_reference.markdown#virtual)| |
+|[ Dependency](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/attribute_reference/property_attribute_reference.markdown#dependency)| |
+|[ Display](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/attribute_reference/property_attribute_reference.markdown#display)| |
+|[ Editable](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/attribute_reference/property_attribute_reference.markdown#editable)| |
+|[ Group](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/attribute_reference/property_attribute_reference.markdown#group)| |
+|[ LocalModificationOverride](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/attribute_reference/property_attribute_reference.markdown#localmodificationoverrid)| |
+|[ NetPeerId](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/attribute_reference/property_attribute_reference.markdown#netpeerid)| |
+|[ NetProperty](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/attribute_reference/property_attribute_reference.markdown#netproperty)| |
+|[ Override](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/attribute_reference/property_attribute_reference.markdown#override)| |
+|[ Property](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/attribute_reference/property_attribute_reference.markdown#property)| |
+|[ Range](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/attribute_reference/property_attribute_reference.markdown#range)| |
+|[ RenamedFrom](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/attribute_reference/property_attribute_reference.markdown#renamedfrom)| |
+|[ ResourceProperty](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/attribute_reference/property_attribute_reference.markdown#resourceproperty)| |
+|[ RuntimeClone](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/attribute_reference/property_attribute_reference.markdown#runtimeclone)| |
+|[ Serialize](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/attribute_reference/property_attribute_reference.markdown#serialize)| |
+|[ Serialized](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/attribute_reference/property_attribute_reference.markdown#serialized)| |
+|[ ShaderInput](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/attribute_reference/property_attribute_reference.markdown#shaderinput)| |
+|[ Slider](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/attribute_reference/property_attribute_reference.markdown#slider)| |
+|[ Static](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/attribute_reference/property_attribute_reference.markdown#static)| |
+|[ Virtual](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/attribute_reference/property_attribute_reference.markdown#virtual)| |
 
 
 

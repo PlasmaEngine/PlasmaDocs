@@ -2,25 +2,25 @@
 
 |Methods|Properties|Base Classes|Derived Classes|
 |---|---|---|---|
-|[ GetConstructor](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/boundtype.markdown#getconstructor-plasma-engi)|[ BaseType](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/boundtype.markdown#basetype-plasma-engine-doc)|[type](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/type.markdown)| |
-|[ GetField](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/boundtype.markdown#getfield-plasma-engine-doc)|[ DefaultConstructor](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/boundtype.markdown#defaultconstructor-plasma)| | |
-|[ GetFunction](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/boundtype.markdown#getfunction-plasma-engine)|[ Destructor](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/boundtype.markdown#destructor-plasma-engine-d)| | |
-|[ GetGetterSetter](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/boundtype.markdown#getgettersetter-plasma-eng)|[ Fields](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/boundtype.markdown#fields-plasma-engine-docum)| | |
-|[ GetMember](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/boundtype.markdown#getmember-plasma-engine-do)|[ Functions](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/boundtype.markdown#functions-plasma-engine-do)| | |
-|[ GetProperty](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/boundtype.markdown#getproperty-plasma-engine)|[ GetterSetters](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/boundtype.markdown#gettersetters-plasma-engin)| | |
-|[ InstantiatePreConstructedObject](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/boundtype.markdown#instantiatepreconstructe)|[ IsNative](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/boundtype.markdown#isnative-plasma-engine-doc)| | |
-| |[ IsTypeOrBaseNative](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/boundtype.markdown#istypeorbasenative-plasma)| | |
-| |[ Members](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/boundtype.markdown#members-plasma-engine-docu)| | |
-| |[ PreConstructor](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/boundtype.markdown#preconstructor-plasma-engi)| | |
-| |[ Properties](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/boundtype.markdown#properties-plasma-engine-d)| | |
-| |[ TemplateBaseName](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/boundtype.markdown#templatebasename-plasma-en)| | |
+|[ GetConstructor](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boundtype.markdown#getconstructor-plasma-engi)|[ BaseType](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boundtype.markdown#basetype-plasma-engine-doc)|[type](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/type.markdown)| |
+|[ GetField](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boundtype.markdown#getfield-plasma-engine-doc)|[ DefaultConstructor](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boundtype.markdown#defaultconstructor-plasma)| | |
+|[ GetFunction](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boundtype.markdown#getfunction-plasma-engine)|[ Destructor](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boundtype.markdown#destructor-plasma-engine-d)| | |
+|[ GetGetterSetter](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boundtype.markdown#getgettersetter-plasma-eng)|[ Fields](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boundtype.markdown#fields-plasma-engine-docum)| | |
+|[ GetMember](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boundtype.markdown#getmember-plasma-engine-do)|[ Functions](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boundtype.markdown#functions-plasma-engine-do)| | |
+|[ GetProperty](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boundtype.markdown#getproperty-plasma-engine)|[ GetterSetters](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boundtype.markdown#gettersetters-plasma-engin)| | |
+|[ InstantiatePreConstructedObject](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boundtype.markdown#instantiatepreconstructe)|[ IsNative](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boundtype.markdown#isnative-plasma-engine-doc)| | |
+| |[ IsTypeOrBaseNative](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boundtype.markdown#istypeorbasenative-plasma)| | |
+| |[ Members](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boundtype.markdown#members-plasma-engine-docu)| | |
+| |[ PreConstructor](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boundtype.markdown#preconstructor-plasma-engi)| | |
+| |[ Properties](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boundtype.markdown#properties-plasma-engine-d)| | |
+| |[ TemplateBaseName](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boundtype.markdown#templatebasename-plasma-en)| | |
 
 
  #  Properties
 
 
 ---  
- #  BaseType : [boundtype](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/boundtype.markdown)
+ #  BaseType : [boundtype](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boundtype.markdown)
 
  `read-only`
 
@@ -30,7 +30,7 @@
 
 
 ---  
- #  DefaultConstructor : [function](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/function.markdown)
+ #  DefaultConstructor : [function](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/function.markdown)
 
  `read-only`
 
@@ -40,7 +40,7 @@
 
 
 ---  
- #  Destructor : [function](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/function.markdown)
+ #  Destructor : [function](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/function.markdown)
 
  `read-only`
 
@@ -50,7 +50,7 @@
 
 
 ---  
- #  Fields : [fieldrange](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/fieldrange.markdown)
+ #  Fields : [fieldrange](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/fieldrange.markdown)
 
  `read-only`
 
@@ -60,7 +60,7 @@
 
 
 ---  
- #  Functions : [functionrange](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/functionrange.markdown)
+ #  Functions : [functionrange](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/functionrange.markdown)
 
  `read-only`
 
@@ -70,7 +70,7 @@
 
 
 ---  
- #  GetterSetters : [gettersetterrange](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/gettersetterrange.markdown)
+ #  GetterSetters : [gettersetterrange](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/gettersetterrange.markdown)
 
  `read-only`
 
@@ -80,7 +80,7 @@
 
 
 ---  
- #  IsNative : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/boolean.markdown)
+ #  IsNative : [boolean](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.markdown)
 
  `read-only`
 
@@ -90,7 +90,7 @@
 
 
 ---  
- #  IsTypeOrBaseNative : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/boolean.markdown)
+ #  IsTypeOrBaseNative : [boolean](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.markdown)
 
  `read-only`
 
@@ -100,7 +100,7 @@
 
 
 ---  
- #  Members : [memberrange](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/memberrange.markdown)
+ #  Members : [memberrange](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/memberrange.markdown)
 
  `read-only`
 
@@ -110,7 +110,7 @@
 
 
 ---  
- #  PreConstructor : [function](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/function.markdown)
+ #  PreConstructor : [function](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/function.markdown)
 
  `read-only`
 
@@ -120,7 +120,7 @@
 
 
 ---  
- #  Properties : [propertyrange](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/propertyrange.markdown)
+ #  Properties : [propertyrange](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/propertyrange.markdown)
 
  `read-only`
 
@@ -130,7 +130,7 @@
 
 
 ---  
- #  TemplateBaseName : [string](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/string.markdown)
+ #  TemplateBaseName : [string](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/string.markdown)
 
  `read-only`
 
@@ -144,169 +144,169 @@
 
 
 ---  
- #  GetConstructor : [function](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/function.markdown)
+ #  GetConstructor : [function](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/function.markdown)
 
 > 
 > |Name|Type|Description|
 > |---|---|---|
-> |signatureType|[delegatetype](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/delegatetype.markdown)| |
-> |inherited|[boolean](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/boolean.markdown)| |
+> |signatureType|[delegatetype](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/delegatetype.markdown)| |
+> |inherited|[boolean](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.markdown)| |
 > ``` lang=cpp, name=Lightning
 > function GetConstructor(signatureType : DelegateType, inherited : Boolean) : Function
 > ``` 
 
 
 ---  
- #  GetField : [field](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/field.markdown)
+ #  GetField : [field](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/field.markdown)
 
 > 
 > |Name|Type|Description|
 > |---|---|---|
-> |name|[string](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/string.markdown)| |
+> |name|[string](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/string.markdown)| |
 > ``` lang=cpp, name=Lightning
 > function GetField(name : String) : Field
 > ``` 
 
 
 ---  
- #  GetField : [field](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/field.markdown)
+ #  GetField : [field](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/field.markdown)
 
 > 
 > |Name|Type|Description|
 > |---|---|---|
-> |name|[string](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/string.markdown)| |
-> |options|[Members](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/flags_reference.markdown#members)| |
+> |name|[string](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/string.markdown)| |
+> |options|[Members](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/flags_reference.markdown#members)| |
 > ``` lang=cpp, name=Lightning
 > function GetField(name : String, options : Members) : Field
 > ``` 
 
 
 ---  
- #  GetField : [field](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/field.markdown)
+ #  GetField : [field](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/field.markdown)
 
 > 
 > |Name|Type|Description|
 > |---|---|---|
-> |name|[string](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/string.markdown)| |
-> |declaredType|[type](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/type.markdown)| |
-> |options|[Members](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/flags_reference.markdown#members)| |
+> |name|[string](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/string.markdown)| |
+> |declaredType|[type](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/type.markdown)| |
+> |options|[Members](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/flags_reference.markdown#members)| |
 > ``` lang=cpp, name=Lightning
 > function GetField(name : String, declaredType : Type, options : Members) : Field
 > ``` 
 
 
 ---  
- #  GetFunction : [function](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/function.markdown)
+ #  GetFunction : [function](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/function.markdown)
 
 > 
 > |Name|Type|Description|
 > |---|---|---|
-> |name|[string](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/string.markdown)| |
+> |name|[string](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/string.markdown)| |
 > ``` lang=cpp, name=Lightning
 > function GetFunction(name : String) : Function
 > ``` 
 
 
 ---  
- #  GetFunction : [function](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/function.markdown)
+ #  GetFunction : [function](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/function.markdown)
 
 > 
 > |Name|Type|Description|
 > |---|---|---|
-> |name|[string](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/string.markdown)| |
-> |signatureType|[delegatetype](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/delegatetype.markdown)| |
-> |options|[Members](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/flags_reference.markdown#members)| |
+> |name|[string](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/string.markdown)| |
+> |signatureType|[delegatetype](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/delegatetype.markdown)| |
+> |options|[Members](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/flags_reference.markdown#members)| |
 > ``` lang=cpp, name=Lightning
 > function GetFunction(name : String, signatureType : DelegateType, options : Members) : Function
 > ``` 
 
 
 ---  
- #  GetFunction : [function](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/function.markdown)
+ #  GetFunction : [function](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/function.markdown)
 
 > 
 > |Name|Type|Description|
 > |---|---|---|
-> |name|[string](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/string.markdown)| |
-> |options|[Members](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/flags_reference.markdown#members)| |
+> |name|[string](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/string.markdown)| |
+> |options|[Members](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/flags_reference.markdown#members)| |
 > ``` lang=cpp, name=Lightning
 > function GetFunction(name : String, options : Members) : Function
 > ``` 
 
 
 ---  
- #  GetGetterSetter : [gettersetter](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/gettersetter.markdown)
+ #  GetGetterSetter : [gettersetter](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/gettersetter.markdown)
 
 > 
 > |Name|Type|Description|
 > |---|---|---|
-> |name|[string](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/string.markdown)| |
+> |name|[string](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/string.markdown)| |
 > ``` lang=cpp, name=Lightning
 > function GetGetterSetter(name : String) : GetterSetter
 > ``` 
 
 
 ---  
- #  GetGetterSetter : [gettersetter](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/gettersetter.markdown)
+ #  GetGetterSetter : [gettersetter](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/gettersetter.markdown)
 
 > 
 > |Name|Type|Description|
 > |---|---|---|
-> |name|[string](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/string.markdown)| |
-> |options|[Members](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/flags_reference.markdown#members)| |
+> |name|[string](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/string.markdown)| |
+> |options|[Members](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/flags_reference.markdown#members)| |
 > ``` lang=cpp, name=Lightning
 > function GetGetterSetter(name : String, options : Members) : GetterSetter
 > ``` 
 
 
 ---  
- #  GetGetterSetter : [gettersetter](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/gettersetter.markdown)
+ #  GetGetterSetter : [gettersetter](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/gettersetter.markdown)
 
 > 
 > |Name|Type|Description|
 > |---|---|---|
-> |name|[string](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/string.markdown)| |
-> |declaredType|[type](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/type.markdown)| |
-> |options|[Members](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/flags_reference.markdown#members)| |
+> |name|[string](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/string.markdown)| |
+> |declaredType|[type](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/type.markdown)| |
+> |options|[Members](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/flags_reference.markdown#members)| |
 > ``` lang=cpp, name=Lightning
 > function GetGetterSetter(name : String, declaredType : Type, options : Members) : GetterSetter
 > ``` 
 
 
 ---  
- #  GetMember : [member](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/member.markdown)
+ #  GetMember : [member](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/member.markdown)
 
 > 
 > |Name|Type|Description|
 > |---|---|---|
-> |name|[string](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/string.markdown)| |
+> |name|[string](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/string.markdown)| |
 > ``` lang=cpp, name=Lightning
 > function GetMember(name : String) : Member
 > ``` 
 
 
 ---  
- #  GetMember : [member](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/member.markdown)
+ #  GetMember : [member](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/member.markdown)
 
 > 
 > |Name|Type|Description|
 > |---|---|---|
-> |name|[string](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/string.markdown)| |
-> |options|[Members](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/flags_reference.markdown#members)| |
+> |name|[string](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/string.markdown)| |
+> |options|[Members](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/flags_reference.markdown#members)| |
 > ``` lang=cpp, name=Lightning
 > function GetMember(name : String, options : Members) : Member
 > ``` 
 
 
 ---  
- #  GetMember : [member](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/member.markdown)
+ #  GetMember : [member](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/member.markdown)
 
 > 
 > |Name|Type|Description|
 > |---|---|---|
-> |name|[string](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/string.markdown)| |
-> |declaredType|[type](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/type.markdown)| |
-> |options|[Members](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/flags_reference.markdown#members)| |
+> |name|[string](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/string.markdown)| |
+> |declaredType|[type](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/type.markdown)| |
+> |options|[Members](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/flags_reference.markdown#members)| |
 > ``` lang=cpp, name=Lightning
 > function GetMember(name : String, declaredType : Type, options : Members) : Member
 > ``` 
@@ -318,7 +318,7 @@
 > 
 > |Name|Type|Description|
 > |---|---|---|
-> |name|[string](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/string.markdown)| |
+> |name|[string](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/string.markdown)| |
 > ``` lang=cpp, name=Lightning
 > function GetProperty(name : String) : Property
 > ``` 
@@ -330,8 +330,8 @@
 > 
 > |Name|Type|Description|
 > |---|---|---|
-> |name|[string](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/string.markdown)| |
-> |options|[Members](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/flags_reference.markdown#members)| |
+> |name|[string](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/string.markdown)| |
+> |options|[Members](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/flags_reference.markdown#members)| |
 > ``` lang=cpp, name=Lightning
 > function GetProperty(name : String, options : Members) : Property
 > ``` 
@@ -343,9 +343,9 @@
 > 
 > |Name|Type|Description|
 > |---|---|---|
-> |name|[string](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/string.markdown)| |
-> |declaredType|[type](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/type.markdown)| |
-> |options|[Members](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/flags_reference.markdown#members)| |
+> |name|[string](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/string.markdown)| |
+> |declaredType|[type](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/type.markdown)| |
+> |options|[Members](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/flags_reference.markdown#members)| |
 > ``` lang=cpp, name=Lightning
 > function GetProperty(name : String, declaredType : Type, options : Members) : Property
 > ``` 

@@ -4,14 +4,14 @@
 
 |Methods|Properties|Base Classes|Derived Classes|
 |---|---|---|---|
-|[ Constructor](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/gizmocreator.markdown#gizmocreator-void)|[ GizmoArchetype](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/gizmocreator.markdown#gizmoarchetype-plasma-engi)|[component](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/component.markdown)| |
+|[ Constructor](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/gizmocreator.markdown#gizmocreator-void)|[ GizmoArchetype](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/gizmocreator.markdown#gizmoarchetype-plasma-engi)|[component](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/component.markdown)| |
 
 
  #  Properties
 
 
 ---  
- #  GizmoArchetype : [archetype](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/archetype.markdown)
+ #  GizmoArchetype : [archetype](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/archetype.markdown)
 
 > 
 > ``` lang=cpp, name=Lightning

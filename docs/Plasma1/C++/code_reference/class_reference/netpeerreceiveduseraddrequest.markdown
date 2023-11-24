@@ -6,20 +6,20 @@
 
 |Methods|Properties|Base Classes|Derived Classes|
 |---|---|---|---|
-| |[ ReturnOurAddResponse](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netpeerreceiveduseraddrequest.markdown#returnouraddresponse-zer)|[event](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/event.markdown)| |
-| |[ ReturnOurResponseBundle](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netpeerreceiveduseraddrequest.markdown#returnourresponsebundle)| | |
-| |[ ReturnTheirNetUser](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netpeerreceiveduseraddrequest.markdown#returntheirnetuser-plasma)| | |
-| |[ TheirIpAddress](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netpeerreceiveduseraddrequest.markdown#theiripaddress-plasma-engi)| | |
-| |[ TheirNetPeerId](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netpeerreceiveduseraddrequest.markdown#theirnetpeerid-plasma-engi)| | |
-| |[ TheirNetUserId](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netpeerreceiveduseraddrequest.markdown#theirnetuserid-plasma-engi)| | |
-| |[ TheirRequestBundle](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/netpeerreceiveduseraddrequest.markdown#theirrequestbundle-plasma)| | |
+| |[ ReturnOurAddResponse](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/netpeerreceiveduseraddrequest.markdown#returnouraddresponse-zer)|[event](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/event.markdown)| |
+| |[ ReturnOurResponseBundle](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/netpeerreceiveduseraddrequest.markdown#returnourresponsebundle)| | |
+| |[ ReturnTheirNetUser](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/netpeerreceiveduseraddrequest.markdown#returntheirnetuser-plasma)| | |
+| |[ TheirIpAddress](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/netpeerreceiveduseraddrequest.markdown#theiripaddress-plasma-engi)| | |
+| |[ TheirNetPeerId](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/netpeerreceiveduseraddrequest.markdown#theirnetpeerid-plasma-engi)| | |
+| |[ TheirNetUserId](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/netpeerreceiveduseraddrequest.markdown#theirnetuserid-plasma-engi)| | |
+| |[ TheirRequestBundle](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/netpeerreceiveduseraddrequest.markdown#theirrequestbundle-plasma)| | |
 
 
  #  Properties
 
 
 ---  
- #  ReturnOurAddResponse : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/boolean.markdown)
+ #  ReturnOurAddResponse : [boolean](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.markdown)
 
 > Return: Our add response (accept the add request?).
 > ``` lang=cpp, name=Lightning
@@ -27,7 +27,7 @@
 
 
 ---  
- #  ReturnOurResponseBundle : [eventbundle](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/eventbundle.markdown)
+ #  ReturnOurResponseBundle : [eventbundle](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/eventbundle.markdown)
 
 > Return: Our bundled response event data.
 > ``` lang=cpp, name=Lightning
@@ -35,7 +35,7 @@
 
 
 ---  
- #  ReturnTheirNetUser : [cog](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/cog.markdown)
+ #  ReturnTheirNetUser : [cog](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/cog.markdown)
 
 > Return: Their network user object (must have a NetUser component).
 > ``` lang=cpp, name=Lightning
@@ -43,7 +43,7 @@
 
 
 ---  
- #  TheirIpAddress : [ipaddress](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/ipaddress.markdown)
+ #  TheirIpAddress : [ipaddress](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/ipaddress.markdown)
 
  `read-only`
 
@@ -53,7 +53,7 @@
 
 
 ---  
- #  TheirNetPeerId : [integer](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/integer.markdown)
+ #  TheirNetPeerId : [integer](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer.markdown)
 
  `read-only`
 
@@ -63,7 +63,7 @@
 
 
 ---  
- #  TheirNetUserId : [integer](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/integer.markdown)
+ #  TheirNetUserId : [integer](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer.markdown)
 
  `read-only`
 
@@ -73,7 +73,7 @@
 
 
 ---  
- #  TheirRequestBundle : [eventbundle](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/eventbundle.markdown)
+ #  TheirRequestBundle : [eventbundle](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/eventbundle.markdown)
 
  `read-only`
 

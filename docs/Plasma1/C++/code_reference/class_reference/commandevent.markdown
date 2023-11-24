@@ -4,14 +4,14 @@
 
 |Methods|Properties|Base Classes|Derived Classes|
 |---|---|---|---|
-| |[ Space](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/commandevent.markdown#space-plasma-engine-docume)|[objectevent](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/objectevent.markdown)| |
+| |[ Space](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/commandevent.markdown#space-plasma-engine-docume)|[objectevent](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/objectevent.markdown)| |
 
 
  #  Properties
 
 
 ---  
- #  Space : [space](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/space.markdown)
+ #  Space : [space](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/space.markdown)
 
  `read-only`
 

@@ -1,5 +1,5 @@
 # Sound Listeners
-[ SoundListeners ](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/soundlistener.markdown), along with [SoundEmitters ](https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/audio/soundemitter.markdown), are responsible for all positional audio in the Plasma Engine.
+[ SoundListeners ](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/soundlistener.markdown), along with [SoundEmitters ](https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/audio/soundemitter.markdown), are responsible for all positional audio in the Plasma Engine.
 
 # Using SoundListeners
 
@@ -20,6 +20,6 @@ If the SoundListener's Active checkBox property is set to `false` in a Lightning
 - [SoundAttenuator ](https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/audio/soundattenuator.markdown)
 
 ## Reference
-- [ SoundListener ](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/soundlistener.markdown) 
+- [ SoundListener ](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/soundlistener.markdown) 
 
  

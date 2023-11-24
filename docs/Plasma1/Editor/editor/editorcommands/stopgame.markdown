@@ -6,7 +6,7 @@ Ways to close out of the `Game Window` include:
 
 1. Press `Esc`
 
-2. [Command](https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/editor/editorcommands/commands.markdown) : [ StopGame ](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/command_reference.markdown#stopgame)
+2. [Command](https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/editor/editorcommands/commands.markdown) : [ StopGame ](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/command_reference.markdown#stopgame)
 
 3. Click `x` on the `name=Game Window, icon=window-restore` tab
 **ADD IMAGE**
@@ -15,6 +15,6 @@ Ways to close out of the `Game Window` include:
 
 # Related Materials
 ## Code Reference
-- [ StopGame ](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/command_reference.markdown#stopgame) 
+- [ StopGame ](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/command_reference.markdown#stopgame) 
 
  

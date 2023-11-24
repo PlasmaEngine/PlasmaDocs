@@ -4,16 +4,16 @@
 
 |Methods|Properties|Base Classes|Derived Classes|
 |---|---|---|---|
-|[ Cancel](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/action.markdown#cancel-void)|[ Active](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/action.markdown#active-plasma-engine-docum)|[referencecountedeventobject](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/referencecountedeventobject.markdown)|[actiondelay](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/actiondelay.markdown)|
-| |[ Completed](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/action.markdown#completed-plasma-engine-do)| |[actionset](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/actionset.markdown)|
-| |[ Started](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/action.markdown#started-plasma-engine-docu)| | |
+|[ Cancel](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/action.markdown#cancel-void)|[ Active](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/action.markdown#active-plasma-engine-docum)|[referencecountedeventobject](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/referencecountedeventobject.markdown)|[actiondelay](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/actiondelay.markdown)|
+| |[ Completed](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/action.markdown#completed-plasma-engine-do)| |[actionset](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/actionset.markdown)|
+| |[ Started](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/action.markdown#started-plasma-engine-docu)| | |
 
 
  #  Properties
 
 
 ---  
- #  Active : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/boolean.markdown)
+ #  Active : [boolean](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.markdown)
 
  `read-only`
 
@@ -23,7 +23,7 @@
 
 
 ---  
- #  Completed : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/boolean.markdown)
+ #  Completed : [boolean](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.markdown)
 
  `read-only`
 
@@ -33,7 +33,7 @@
 
 
 ---  
- #  Started : [boolean](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/lightning_base_types/boolean.markdown)
+ #  Started : [boolean](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.markdown)
 
  `read-only`
 

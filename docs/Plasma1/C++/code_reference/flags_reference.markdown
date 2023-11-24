@@ -1,8 +1,8 @@
 |Flags||
 |---|
-|[ FileMode](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/flags_reference.markdown#filemode)|
-|[ Members](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/flags_reference.markdown#members)|
-|[ StreamCapabilities](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/flags_reference.markdown#streamcapabilities)|
+|[ FileMode](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/flags_reference.markdown#filemode)|
+|[ Members](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/flags_reference.markdown#members)|
+|[ StreamCapabilities](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/flags_reference.markdown#streamcapabilities)|
 
 
 

@@ -4,15 +4,15 @@
 
 |Methods|Properties|Base Classes|Derived Classes|
 |---|---|---|---|
-| |[ LostFocus](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/uifocusevent.markdown#lostfocus-plasma-engine-do)|[event](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/event.markdown)| |
-| |[ ReceivedFocus](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/uifocusevent.markdown#receivedfocus-plasma-engin)| | |
+| |[ LostFocus](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/uifocusevent.markdown#lostfocus-plasma-engine-do)|[event](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/event.markdown)| |
+| |[ ReceivedFocus](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/uifocusevent.markdown#receivedfocus-plasma-engin)| | |
 
 
  #  Properties
 
 
 ---  
- #  LostFocus : [uiwidget](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/uiwidget.markdown)
+ #  LostFocus : [uiwidget](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/uiwidget.markdown)
 
  `read-only`
 
@@ -22,7 +22,7 @@
 
 
 ---  
- #  ReceivedFocus : [uiwidget](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/class_reference/uiwidget.markdown)
+ #  ReceivedFocus : [uiwidget](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/uiwidget.markdown)
 
  `read-only`
 

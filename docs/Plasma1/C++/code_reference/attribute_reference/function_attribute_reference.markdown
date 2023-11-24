@@ -1,9 +1,9 @@
 |Lightning Attributes|C++ Attributes|
 |---|---|
-|[ Display](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/attribute_reference/function_attribute_reference.markdown#display)| |
-|[ Override](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/attribute_reference/function_attribute_reference.markdown#override)| |
-|[ Static](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/attribute_reference/function_attribute_reference.markdown#static)| |
-|[ Virtual](https://github.com/PlasmaEngine/PlasmaDocs/tree/master/docs/C%2B%2B/code_reference/attribute_reference/function_attribute_reference.markdown#virtual)| |
+|[ Display](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/attribute_reference/function_attribute_reference.markdown#display)| |
+|[ Override](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/attribute_reference/function_attribute_reference.markdown#override)| |
+|[ Static](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/attribute_reference/function_attribute_reference.markdown#static)| |
+|[ Virtual](https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/attribute_reference/function_attribute_reference.markdown#virtual)| |
 
 
 
