@@ -1,4 +1,4 @@
-![Navmesh](../assets/PlasmaLogo.png)
+![Logo](https://raw.githubusercontent.com/PlasmaEngine/PlasmaDocs/master/assets/PlasmaLogo.png)
 
 # Welcome
 
