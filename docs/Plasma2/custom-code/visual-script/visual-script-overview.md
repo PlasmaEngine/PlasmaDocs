@@ -1,13 +1,30 @@
 # Custom Code with Visual Scripts
 
-There is a visual scripting system, which can be used to write a form of custom components. However, at this point it makes no sense to write documentation for the system.
+The engine supports visual scripting as a way to execute custom logic without writing code. Visual scripting aims to be quick and easy to use, while providing a subset of the engine's features that is most useful for the intended use cases.
 
-The [TypeScript integration](../typescript/typescript-overview.md) is far superior in functionality and tooling. The core team behind Plasma Engine has no intention of investing further time into the visual scripting system, as time spent on improving the TypeScript integration has the much bigger benefit.
+![Visual Script](media/vs-state.png)
 
-That said, the system exists, and the code is not too bad. If anyone has interest to develop it further, contact the team to get a detailed introduction into how the code works, what needs improvement and to discuss how far this could go. There are a couple of improvements that would be easy to do. However, the main problem with visual scripting is the tooling. If you look at what crazy amount of work other engines put into their visual script tools, you'll see that this is the main area of work. If you intend to take this on, you should have a decent understanding of Qt.
+## Visual Script Use Cases
 
-Another option is to scrap the whole thing and replace it with a completely different implementation. We are open to all suggestions.
+Visual scripting is meant for **small scripts** that deal with simple tasks. Often they act as glue code between other systems. For example to wait for an event from one component and then instruct another component to do something. Such logic would be overly cumbersome to set up in C++, and the performance difference is negligible.
+
+Visual script code may also be used to quickly prototype behavior to get an idea how something might work. However, dealing with edge-cases and errors typically involves a lot of complex code, and once the stage is reached where a feature should be fully fledged out and polished, it might be better to migrate to C++.
+
+In general, visual scripting is **no substitue for C++**. It only provides a subset of the features. A lot of functionality is deliberately left inaccessible, such as working with [resources (TODO)](../../runtime/resource-management.md) or [game states](../../runtime/application/game-state.md). If you need to access them, you definitely should [use C++](../cpp/cpp-overview.md).
+
+### Custom Components
+
+The [Visual Script Class Asset](visual-script-class-asset.md) allows you to write custom [components](../../runtime/world/components.md) to interface with other components within the same object hierarchy.
+
+### Custom State Machine States
+
+The [Visual Script Class Asset](visual-script-class-asset.md) may also be used to write custom [state machine states](../game-logic/state-machine-asset.md#state-types). In this case the script code is executed by a state machine whenever the state is active.
+
+## Performance Considerations
+
+Most visual script code actually calls existing C++ functions. A custom virtual machine ministrates those calls. The execution is relatively fast and shouldn't be a concern for the intended use cases. It is more likely that you run into the limitations of *editing the script*, than performance bottlenecks.
 
 ## See Also
 
 * [Custom Code](../custom-code-overview.md)
+* [Visual Script Class Asset](visual-script-class-asset.md)em, you definitely should use C++.
