@@ -70,10 +70,6 @@ ImGui::End();
 ```
 <!-- END-DOCS-CODE-SNIPPET -->
 
-## Samples
-
-The [RTS Sample](../../samples/rts.md) and the [Sample Game Plugin](../../samples/sample-game-plugin.md) demonstrate how to use ImGui.
-
 ## Limitations
 
 It is very difficult to adjust the appearance of ImGui elements. Use ImGui for developer tools and to prototype ideas quickly. Prefer to use [RmlUi](rmlui.md) once you need more control over the look and feel.

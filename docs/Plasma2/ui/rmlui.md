@@ -10,16 +10,6 @@ The documentation for RmlUi [can be found here](https://mikke89.github.io/RmlUiD
 
 Please refer to that documenation for any questions around how to use RmlUi.
 
-## Sample
-
-The [RTS Sample](../../samples/rts.md) shows how to use RmlUi. Have a look at it the project in the editor, it contains Rml assets. The editor shows a live preview for Rml canvases, and you can edit the respective `.rml` files to see the effect:
-
-![Edit RmlUi](media/rml-edit.jpg)
-
-The sample uses multiple *RmlUi Canvas 2D* components in its scene to place the UI elements. At runtime the RTS sample's game code accesses the RmlUi functionality through the `plRmlUiCanvas2DComponent`. Search the sample's code for those places to see how to interact with the GUI.
-
-Using `plRmlUiCanvas2DComponent::GetRmlContext()` you get access to the `plRmlUiContext`. This class implements `Rml::Core::Context`. This gives you access to all the RmlUi features. See the RmlUi [documentation](https://mikke89.github.io/RmlUiDoc/index.html) for details.
-
 ## Work in Progress
 
 The integration of RmlUi into Plasma Engine is functional, but still a work-in-progress. At the moment you can only build 2D GUIs that appear on top of the screen. In the future we plan to also support placing GUI elements inside the 3D environment.
