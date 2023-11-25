@@ -1,4 +1,4 @@
-![PlasmaLogo.png](..%2Fassets%2FPlasmaLogo.png)
+![PlasmaLogo.png](https://raw.githubusercontent.com/PlasmaEngine/PlasmaDocs/master/assets/PlasmaLogo.png)
 
 # Welcome
 
