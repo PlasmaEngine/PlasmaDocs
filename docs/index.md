@@ -1,4 +1,4 @@
-![Navmesh](../Assets/PlasmaLogo.png)
+![Navmesh](../assets/PlasmaLogo.png)
 
 # Welcome
 
