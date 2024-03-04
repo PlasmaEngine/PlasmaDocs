@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="author" content="PlasmaDev">
+    <link rel="canonical" href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/physics/physicseffectsandregions/pointforceeffect/">
+    <link rel="shortcut icon" href="../../../../../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Point Gravity Effect - PlasmaDocs</title>
+    <link href="../../../../../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../../../../../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../../../../../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../../../../css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../../../../../js/jquery-3.2.1.min.js"></script>
+    <script src="../../../../../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../../../../../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '../../../../..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "Point Gravity Effect", url: "#_top", children: [
+          ]},
+          {title: "Effect Interpolation", url: "#effect-interpolation", children: [
+          ]},
+          {title: "Application Modes", url: "#application-modes", children: [
+          ]},
+          {title: "Related Materials", url: "#related-materials", children: [
+              {title: "Manual", url: "#manual" },
+              {title: "Reference", url: "#reference" },
+          ]},
+        ];
+
+    </script>
+    <script src="../../../../../js/base.js"></script>
+      <script src="../../../../../search/main.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../thrusteffect/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../thrusteffect/" class="btn btn-xs btn-link">
+        Thrust Effect
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../forceeffect/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../forceeffect/" class="btn btn-xs btn-link">
+        Force Effect
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <h1 id="point-gravity-effect">Point Gravity Effect</h1>
+<p><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/pointgravityeffect.md">PointGravityEffect</a> and <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/pointforceeffect.md">PointForceEffect</a> are effects that apply linear forces towards a central point based upon an inner and outer strength. This is commonly used to create spherical effects such as planetary gravity or explosive shockwaves.</p>
+<p><img alt="image" src="https://raw.githubusercontent.com/PlasmaEngine/PlasmaDocs/master/media/46383.png" /></p>
+<p>There's two main differences between the PointGravityEffect and PointForceEffect. The first is whether a positive strength points inwards or outwards. PointGravityEffect points inwards with a positive strength while PointForceEffect points outwards. The other difference is whether the applied <em>force// is actually a force or an acceleration. PointGravityEffect applies an acceleration to objects, i.e. the resultant acceleration is independent of the object's mass. PointForceEffect applies a force to object, i.e. the object's mass is taken into account. The rest of this page will use //force</em> to refer to the acceleration or force depending on the effect type attached.</p>
+<p>The center of a point force's effect is the object's translation by default. This position can be moved with {nav icon=pencil-square-o, name="LocalPositionOffset"}, typically to align the position with some visual center on the object.</p>
+<h1 id="effect-interpolation">Effect Interpolation</h1>
+<p>The <em>force</em> applied to an object is always linear (no angular //force//) and is computed as an interpolation between the two strength values based upon the object's distance from the effect's center. This is best illustrated with some graphs.</p>
+<p><img alt="image" src="https://raw.githubusercontent.com/PlasmaEngine/PlasmaDocs/master/media/46385.png" /></p>
+<p>When the distance is less than {nav icon=pencil-square-o, name="MinDistance"}, the effect will always apply {nav icon=pencil-square-o, name="MinStrength"} as a constant <em>force// value. When in-between the min and max distance values, the //force</em> will be an interpolation between the min and max strength values. Linear interpolation is pictured above. </p>
+<p><img alt="QuadraticNoEffect" src="https://raw.githubusercontent.com/PlasmaEngine/PlasmaDocs/master/media/46390.png" /></p>
+<p>Quadratic interpolation can also be used for smoother interpolation.</p>
+<p><img alt="QuadraticNoEffect" src="https://raw.githubusercontent.com/PlasmaEngine/PlasmaDocs/master/media/46390.png" /></p>
+<p>When the distance from the effect center is beyond {nav icon=pencil-square-o, name="MaxDistance"}, how the effect is computed is based upon the {nav icon=list, name="EndCondition"} property. The <code>NoEffect</code> value will not apply any <em>force</em> beyond {nav icon=pencil-square-o, name="MaxDistance"}.</p>
+<p><img alt="QuadraticClampToMax" src="https://raw.githubusercontent.com/PlasmaEngine/PlasmaDocs/master/media/46389.png" /></p>
+<p><code>ClampToMax</code> will always apply {nav icon=pencil-square-o, name="MaxStrength"} regardless of how far away the object is.</p>
+<p><img alt="QuadraticContinueFalloff" src="https://raw.githubusercontent.com/PlasmaEngine/PlasmaDocs/master/media/46392.png" /></p>
+<p><code>ContinueFalloff</code> will extrapolate the curve beyond {nav icon=pencil-square-o, name="MaxDistance"} using the interpolation method specified by {nav icon=list, name="InterpolationMode"}.</p>
+<p>NOTE: a <em>force</em> is only computed if the effect's Collider has collision, regardless of {nav icon=list, name="EndCondition's"} value.</p>
+<p>With the two ring strength values it's possible to make a wide variety of point effects. Some possibilities include:
+ - A standard gravity can be made by setting the inner strength larger than the outer strength.
+ - The two effects can be set with opposite signs so as to attract to the center of the ring instead of the effect's center. 
+ - An explosion can be made by setting the inner ring's strength large than the other ring's.</p>
+<h1 id="application-modes">Application Modes</h1>
+<p>Point effects are only expected to be used as Region effects. Other application modes are undefined.</p>
+<h1 id="related-materials">Related Materials</h1>
+<h3 id="manual">Manual</h3>
+<ul>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/physics/physicseffectsandregions.md">physicseffectsandregions.md</a></li>
+</ul>
+<h2 id="reference">Reference</h2>
+<ul>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/pointforceeffect.md">PointForceEffect</a></li>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/pointgravityeffect.md">PointGravityEffect</a></li>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/physicseffect.md">PhysicsEffect</a></li>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/region.md">Region</a></li>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/enum_reference.md#physicseffectinterpolationtype">PhysicsEffectInterpolationType</a> </li>
+</ul>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../thrusteffect/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../thrusteffect/" class="btn btn-xs btn-link">
+        Thrust Effect
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../forceeffect/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../forceeffect/" class="btn btn-xs btn-link">
+        Force Effect
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="col-md-12 wm-page-content">
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/noraj/mkdocs-windmill-dark">Windmill Dark</a> theme by Alexandre ZANNI (noraj).</p>
+</footer>
+
+</body>
+</html>

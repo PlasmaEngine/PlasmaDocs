@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="author" content="PlasmaDev">
+    <link rel="canonical" href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/graphics/materials/albedo/">
+    <link rel="shortcut icon" href="../../../../../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Albedo - PlasmaDocs</title>
+    <link href="../../../../../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../../../../../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../../../../../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../../../../css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../../../../../js/jquery-3.2.1.min.js"></script>
+    <script src="../../../../../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../../../../../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '../../../../..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "Albedo", url: "#_top", children: [
+          ]},
+          {title: "Using the Albedo Fragment", url: "#using-the-albedo-fragment", children: [
+              {title: "AlbedoValue", url: "#albedovalue" },
+          ]},
+          {title: "AlbedoMap", url: "#albedomap", children: [
+              {title: "Tileable Texture", url: "#tileable-texture" },
+              {title: "Model-Specific Textures", url: "#model-specific-textures" },
+              {title: "Reference Pages", url: "#reference-pages" },
+          ]},
+        ];
+
+    </script>
+    <script src="../../../../../js/base.js"></script>
+      <script src="../../../../../search/main.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../materials_overview/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../materials_overview/" class="btn btn-xs btn-link">
+        Materials
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../../lighting/direct_lighting/point_light/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../../lighting/direct_lighting/point_light/" class="btn btn-xs btn-link">
+        point light
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <h1 id="albedo">Albedo</h1>
+<p>In Plasma, albedo refers to the color of a <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/graphics/materials.md">Material</a> as defined by the reflected light an object should realistically reflect. In the case of non-metals, or dielectrics, the vast majority reflect almost all light as diffuse. In the case of metals, or conductors, almost all light is reflected, rendering a reflection of its surroundings if the metal is polished or smooth. The rougher the surface is, however, the more blurred the reflection will become. Metals also tint the light they reflect leading to the different colors of metals such as gold, copper, and silver.</p>
+<p>The albedo fragments in Plasma handle both of these cases depending on the values of other fragments, such as metallic, roughness, and specular. Other frameworks and engines may refer to this as the base color or diffuse map. When setting this property by map or by value, there are other considerations to take into account when visualizing how the final material will appear.</p>
+<p>For a quick example of this difference, compare the following three screenshots. They all have the same albedo value of <code>R:255 G:226 R:155</code>, which should appear as gold when seen as a metal. The first image shows a sphere with only the AlbedoValue fragment on it. The second also has a SpecularValue fragment set to <code>1.0</code>. The third has a MetallicValue fragment set to <code>1.0</code> instead of specular. </p>
+<p><img alt="JustAlbedoSphere" src="https://raw.githubusercontent.com/PlasmaEngine/PlasmaDocs/master/media/2941.png" /> <img alt="MetalSphere" src="https://raw.githubusercontent.com/PlasmaEngine/PlasmaDocs/master/media/2943.png" /> <img alt="SpecSphere" src="https://raw.githubusercontent.com/PlasmaEngine/PlasmaDocs/master/media/2945.png" /></p>
+<p>The following page will first cover the differences between the AlbedoValue fragment and AlbedoMap fragment, with demonstrations designed to show different albedo settings in conjunction with other material shader fragments as well as in different environments that have notably different indirect and direct lighting schemes.</p>
+<h1 id="using-the-albedo-fragment">Using the Albedo Fragment</h1>
+<p>The albedo of a material may be set using either a map or by value. Setting albedo by value will apply a particular color uniformly across the material, while using an artist-produced albedo texture map allows the user to have precise control over the color at every point on the material. If there is no albedo map or value fragment on a material, the material will appear red by default.</p>
+<h2 id="albedovalue">AlbedoValue</h2>
+<p>When an AlbedoValue fragment is added to a material, the user may set a color value to be uniformly applied to the material.  To add an AlbedoValue fragment to a material, click on the <code>Add LightningFragment</code> button in the Properties window:</p>
+<p><img alt="AddAlbedoVal" src="https://raw.githubusercontent.com/PlasmaEngine/PlasmaDocs/master/media/47689.png" /></p>
+<p>Before getting into how albedo is affected by material fragments, let's look at how a material appears with only an AlbedoValue fragment on it. The following screenshots show a range of albedo values applied to spheres with no other fragments applied to the material:</p>
+<p><img alt="AlbedoRange" src="https://raw.githubusercontent.com/PlasmaEngine/PlasmaDocs/master/media/2947.png" /></p>
+<p>Using the [ShaderInput] attribute to access the AlbedoValue fragment within a LightningScript, one may change the albedo value during runtime. The following gif shows this effect in engine (all other shader inputs are at default values):</p>
+<p><img alt="ChangeAlbedoValueVer2" src="https://raw.githubusercontent.com/PlasmaEngine/PlasmaDocs/master/media/2949.gif" /></p>
+<p>The following script used to achieve the above effect must be placed on an object that is using a material with <em>at least</em> an AlbedoValue LightningFragment.</p>
+<pre><code class="language-csharp">
+class ChangeAlbedo : LightningComponent
+{
+  // The shader input for Albedo value (necessary to change value at run-time)
+  [ShaderInput] var AlbedoValue : Real4 = Real4(0,0,0,0);
+
+  // User-defined albedo values
+  [Property] var AlbedoValue1 : Real4 = Real4();
+  [Property] var AlbedoValue2 : Real4 = Real4();
+  [Property] var AlbedoValue3 : Real4 = Real4();
+  [Property] var AlbedoValue4 : Real4 = Real4();
+  [Property] var AlbedoValue5 : Real4 = Real4();
+
+  // Time and Ease properties for Actions
+  [Property] var Time : Real = 1.0;
+  [Property] var Ease : Ease = Ease.QuadInOut;
+
+  function Initialize(init : CogInitializer)
+  {
+    // Call the function that contains the action loop
+    this.AlbedoOne();
+  }
+
+  function AlbedoOne()
+  {
+    // Action sequence changing albedo value from one 
+    // user-defined value to the next
+    var seq = Action.Sequence(this.Owner.Actions);
+    Action.Property(seq, @this.AlbedoValue, this.AlbedoValue1, this.Time, this.Ease);
+    Action.Property(seq, @this.AlbedoValue, this.AlbedoValue2, this.Time, this.Ease);
+    Action.Property(seq, @this.AlbedoValue, this.AlbedoValue3, this.Time, this.Ease);
+    Action.Property(seq, @this.AlbedoValue, this.AlbedoValue4, this.Time, this.Ease);
+    Action.Property(seq, @this.AlbedoValue, this.AlbedoValue5, this.Time, this.Ease);
+    // Action call back to this function, creating an infinite loop
+    Action.Call(seq, this.AlbedoOne);
+  }
+}
+</code></pre>
+
+<p>Note that in the previous two examples there were no other fragments on the material other than AlbedoValue, leaving the default values for roughness, specular, and metallic intact. Changing the values of the other default fragments can significantly alter how the albedo appears. To see some of these effects, the next set of screenshots will show one line of spheres that has roughness values increasing from <code>0</code> to <code>1</code> and another line that has metallic values increasing from <code>0</code> to <code>1</code>. Specular will remain constant at the default value of <code>0.5</code>. The albedo value will remain constant at <code>R:244 G:162 B:137</code>, or Copper, so as to focus on the change brought by the roughness and metallic fragments:</p>
+<p><img alt="AlbedoMetalLine3" src="https://raw.githubusercontent.com/PlasmaEngine/PlasmaDocs/master/media/2930.png" /> <img alt="AlbedoMetalLine" src="https://raw.githubusercontent.com/PlasmaEngine/PlasmaDocs/master/media/2935.png" /> <img alt="AlbedoMetalLine2" src="https://raw.githubusercontent.com/PlasmaEngine/PlasmaDocs/master/media/2934.png" /></p>
+<h1 id="albedomap">AlbedoMap</h1>
+<p>An albedo map is a texture provided by an artist for use on a <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/graphics/models/model_component.md">Model</a>. While most of these textures will be unique to the model for which they were made, others, such as tileable textures, may be applied to the materials on a number of geometric primitives and look completely natural. To apply an AlbedoMap fragment to a material, click on the <code>Add LightningFragment</code> button in the Properties window:</p>
+<p><img alt="AddAlbedoValue" src="https://raw.githubusercontent.com/PlasmaEngine/PlasmaDocs/master/media/47687.png" /></p>
+<h2 id="tileable-texture">Tileable Texture</h2>
+<p>Before moving on to unique, artist-crafted models, let's take a look at how professionally-made tileable textures, complete with Normal, Metallic, Roughness, and Specular maps, appear when applied to some primitive shapes. The following screenshot shows the Properties window window of a material using a tileable, metal box texture:</p>
+<p><img alt="MetalBoxMat" src="https://raw.githubusercontent.com/PlasmaEngine/PlasmaDocs/master/media/47710.png" /></p>
+<p>Using all of the maps made available by the artist, a simple cube becomes a PBR-ready object to use in a level environment:</p>
+<p><img alt="MetalBox3" src="https://raw.githubusercontent.com/PlasmaEngine/PlasmaDocs/master/media/2978.png" /> <img alt="MetalBox1" src="https://raw.githubusercontent.com/PlasmaEngine/PlasmaDocs/master/media/2980.png" /> <img alt="MetalBox2" src="https://raw.githubusercontent.com/PlasmaEngine/PlasmaDocs/master/media/2982.png" /></p>
+<p>By changing the scale of the object slightly (e.g. <code>[4, 1, 4]</code>), it's a quick jump to creating the floor for a level using only this object:</p>
+<p><img alt="MetalBoxLevel" src="https://raw.githubusercontent.com/PlasmaEngine/PlasmaDocs/master/media/2984.png" /></p>
+<p>As this particular material has maps for all of the default fragments included in a new Material, it presents an ideal case to see how the Material's appearance, specifically the albedo, changes when one or more of these maps is removed. </p>
+<p><img alt="MetalBoxLevelNoAlbedo" src="https://raw.githubusercontent.com/PlasmaEngine/PlasmaDocs/master/media/2986.png" /></p>
+<h2 id="model-specific-textures">Model-Specific Textures</h2>
+<p>In a game with many artist-crafted, unique models, these will make up the majority of the texture maps. Just as was shown with the tileable textures directly above, even though it does provide the color of the object, it is only one part of a whole that is significantly altered when one or more of the other texture maps is removed.</p>
+<p>Let's take a look at how model-specific textures are applied to unique models.</p>
+<p><img alt="SpaceFighterAlbedo" src="https://raw.githubusercontent.com/PlasmaEngine/PlasmaDocs/master/media/2988.png" /> <em>The albedo map that will be applied to the material before being imported into Plasma</em></p>
+<p><img alt="SpaceFighterAlbedoGammaCorrected" src="https://raw.githubusercontent.com/PlasmaEngine/PlasmaDocs/master/media/2990.png" /> <em>The albedo map after being imported into Plasma and gamma corrected</em></p>
+<p><img alt="SpaceshipAlbedoA" src="https://raw.githubusercontent.com/PlasmaEngine/PlasmaDocs/master/media/47704.png" /> <img alt="SpaceshipAlbedoB" src="https://raw.githubusercontent.com/PlasmaEngine/PlasmaDocs/master/media/47706.png" /> <img alt="SpaceshipAlbedoC" src="https://raw.githubusercontent.com/PlasmaEngine/PlasmaDocs/master/media/47708.png" /></p>
+<p><em>The AlbedoMap fragment has been added to a Material and applied to the Model</em></p>
+<p><img alt="SpaceshipFinalA" src="https://raw.githubusercontent.com/PlasmaEngine/PlasmaDocs/master/media/47698.png" /> <img alt="SpaceshipFinalB" src="https://raw.githubusercontent.com/PlasmaEngine/PlasmaDocs/master/media/47700.png" /> <img alt="SpaceshipFinalC" src="https://raw.githubusercontent.com/PlasmaEngine/PlasmaDocs/master/media/47702.png" /></p>
+<p><em>The finished object with all texture maps applied to the Material</em></p>
+<h3 id="lighting-and-albedo">Lighting and Albedo</h3>
+<p>As may have been obvious from the screenshots above, lighting has a direct effect on the Albedo of a Material. In all of the examples above, it is indirect lighting that bears the most influence on the apparent color of the Material.</p>
+<h4 id="indirect-lighting">Indirect Lighting</h4>
+<p>Indirect lighting, or image-based lighting, refers primarily to the skybox that encircles the scene. The following screenshots will show different angles of gold spheres that have a constant Metallic value of <code>1.0</code> and an increasing Roughness value in the range <code>0.0</code> - <code>0.6</code>:</p>
+<p><img alt="GoldSkybox1A" src="https://raw.githubusercontent.com/PlasmaEngine/PlasmaDocs/master/media/3012.png" /> <img alt="GoldSkybox1B" src="https://raw.githubusercontent.com/PlasmaEngine/PlasmaDocs/master/media/3015.png" /> <img alt="GoldSkybox1C" src="https://raw.githubusercontent.com/PlasmaEngine/PlasmaDocs/master/media/3017.png" /></p>
+<p>If you change the skybox, however, the overall color will change as a result of the indirect lighting the skybox provides. To demonstrate this, the following screenshots are of the exact same spheres but with a significantly brighter skybox:</p>
+<p><img alt="GoldSkybox2A" src="https://raw.githubusercontent.com/PlasmaEngine/PlasmaDocs/master/media/3019.png" /> <img alt="GoldSkybox2B" src="https://raw.githubusercontent.com/PlasmaEngine/PlasmaDocs/master/media/3021.png" /> <img alt="GoldSkybox2C" src="https://raw.githubusercontent.com/PlasmaEngine/PlasmaDocs/master/media/3023.png" /></p>
+<p>The difference may be subtle or pronounced depending on the degree of change between skyboxes. It should be apparent, however, how much of an influence indirect lighting, through the influence of the skybox, has on a PBR material.</p>
+<h2 id="reference-pages">Reference Pages</h2>
+<h3 id="manual">Manual</h3>
+<ul>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/graphics/models/model_component.md">model_component</a></li>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/graphics/materials.md">materials</a></li>
+</ul>
+<h3 id="code-reference">Code Reference</h3>
+<ul>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/model.md">model</a></li>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/material.md">material</a> </li>
+</ul>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../materials_overview/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../materials_overview/" class="btn btn-xs btn-link">
+        Materials
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../../lighting/direct_lighting/point_light/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../../lighting/direct_lighting/point_light/" class="btn btn-xs btn-link">
+        point light
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="col-md-12 wm-page-content">
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/noraj/mkdocs-windmill-dark">Windmill Dark</a> theme by Alexandre ZANNI (noraj).</p>
+</footer>
+
+</body>
+</html>

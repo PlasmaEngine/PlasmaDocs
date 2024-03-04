@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="author" content="PlasmaDev">
+    <link rel="canonical" href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/physics/physicsmaterial/">
+    <link rel="shortcut icon" href="../../../../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Physics Material - PlasmaDocs</title>
+    <link href="../../../../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../../../../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../../../../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../../../css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../../../../js/jquery-3.2.1.min.js"></script>
+    <script src="../../../../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../../../../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '../../../..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "Physics Material", url: "#_top", children: [
+          ]},
+          {title: "Density", url: "#density", children: [
+          ]},
+          {title: "Restitution", url: "#restitution", children: [
+          ]},
+          {title: "Friction", url: "#friction", children: [
+          ]},
+          {title: "Restitution Importance", url: "#restitution-importance", children: [
+          ]},
+          {title: "Friction Importance", url: "#friction-importance", children: [
+          ]},
+          {title: "Related Materials", url: "#related-materials", children: [
+              {title: "Manual", url: "#manual" },
+              {title: "Reference", url: "#reference" },
+          ]},
+        ];
+
+    </script>
+    <script src="../../../../js/base.js"></script>
+      <script src="../../../../search/main.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../physicssolverconfig/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../physicssolverconfig/" class="btn btn-xs btn-link">
+        Physics Solver Config
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../physicscasting/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../physicscasting/" class="btn btn-xs btn-link">
+        PhysicsCasting
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <h1 id="physics-material">Physics Material</h1>
+<p>A <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/physicsmaterial.md">PhysicsMaterial</a> describes material properties to use for a <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/physics/colliders.md">Collider</a>. These properties affect how collisions are resolved between collider types.</p>
+<p>Some PhysicsMaterial properties are used to define the surface of an object. In reality, these surface properties are not defined per object, but per object pair. The physics system computes a combined value for these properties as an approximation of the real life values.</p>
+<h1 id="density">Density</h1>
+<p>Density  is used to compute a Collider's mass. This mass contributes to a {icon university}[[../RigidBody | RigidBody's]] total mass. Mass is computed as:</p>
+<p>(NOTE) mass = density * volume</p>
+<p>Physics uses density so mass is auto-computed when colliders change size. This is partially due to people having bad intuition for how mass scales.</p>
+<p>Sometimes a Collider should not contribute a mass for accumulation on a RigidBody. In this case the density can be manually set to <code>0</code>.</p>
+<h1 id="restitution">Restitution</h1>
+<p>Restitution  is a value typically in the range of <code>0</code> to <code>1</code> that determines how much energy in a collision is lost in the direction of the normal. Commonly this is thought of as how <em>bouncy</em> a surface is. A restitution of <code>0</code> signifies that all energy should be lost, i.e. no bounce. A restitution of <code>1</code> signifies that no energy should be lost, i.e. a perfect bounce. Values larger than <code>1</code> can be set to add energy but is not recommended.</p>
+<p>The combined restitution is computed as the max of the two restitution values.</p>
+<h1 id="friction">Friction</h1>
+<p>Friction  determines how much energy in a collision is lost in the plane of the collision (the plane tangent to the collision normal). The upper bound of the friction force is computed as: <code>F=u*N</code></p>
+<p>where <code>N</code> is the total force in the normal direction and <code>u</code> is the friction scalar. Currently, dynamic and static friction are set to be equal.</p>
+<p>The <strong>combined friction</strong> is computed as the square-root of the product of the two values, i.e. <code>F=sqrt(Fa*Fb)</code>.</p>
+<h1 id="restitution-importance">Restitution Importance</h1>
+<p>RestitutionImportance  determines which object's restitution should be used in collision resolution. When two objects are colliding, the restitution of the object with the higher importance value will be used. If both objects have the same importance value, the max of the two restitutions is applied.</p>
+<h1 id="friction-importance">Friction Importance</h1>
+<p>FrictionImportance  determines which object's friction should be used in collision resolution. When two objects are colliding, the friction of the object with the higher importance value will be used. If both objects have the same importance value, the combined friction is used (see <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/physics/physicsmaterial/.md#friction">above</a>).</p>
+<h1 id="related-materials">Related Materials</h1>
+<h2 id="manual">Manual</h2>
+<ul>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/physics/rigidbody.md">rigidbody.md</a></li>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/physics/colliders.md">colliders.md</a></li>
+</ul>
+<h2 id="reference">Reference</h2>
+<ul>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/physicsmaterial.md">PhysicsMaterial</a></li>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/rigidbody.md">RigidBody</a></li>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/collider.md">Collider</a></li>
+</ul>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../physicssolverconfig/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../physicssolverconfig/" class="btn btn-xs btn-link">
+        Physics Solver Config
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../physicscasting/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../physicscasting/" class="btn btn-xs btn-link">
+        PhysicsCasting
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="col-md-12 wm-page-content">
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/noraj/mkdocs-windmill-dark">Windmill Dark</a> theme by Alexandre ZANNI (noraj).</p>
+</footer>
+
+</body>
+</html>

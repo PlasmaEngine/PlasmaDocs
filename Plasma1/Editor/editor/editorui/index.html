@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="author" content="PlasmaDev">
+    <link rel="canonical" href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/editor/editorui/">
+    <link rel="shortcut icon" href="../../../../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Editor UI - PlasmaDocs</title>
+    <link href="../../../../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../../../../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../../../../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../../../css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../../../../js/jquery-3.2.1.min.js"></script>
+    <script src="../../../../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../../../../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '../../../..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "Editor UI", url: "#_top", children: [
+              {title: "Create a New Project", url: "#create-a-new-project" },
+              {title: "Windows Overview", url: "#windows-overview" },
+              {title: "Other Windows and Bars", url: "#other-windows-and-bars" },
+              {title: "Reopening Windows \u0026amp; Docking", url: "#reopening-windows-docking" },
+              {title: "Related Materials", url: "#related-materials" },
+          ]},
+        ];
+
+    </script>
+    <script src="../../../../js/base.js"></script>
+      <script src="../../../../search/main.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../exportanproject/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../exportanproject/" class="btn btn-xs btn-link">
+        Export a Project
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../editor_configuration/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../editor_configuration/" class="btn btn-xs btn-link">
+        Editor Configuration
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <h1 id="editor-ui">Editor UI</h1>
+<p>This page introduces the Plasma Engine editor and user interface. It covers editor windows such as the <code>Objects Window</code>, <code>Properties Window</code>, <code>Library Window</code>, <code>Level Window</code>, and <code>Search Window</code>.</p>
+<h2 id="create-a-new-project">Create a New Project</h2>
+<p>(NOTE)<strong>COMMANDS:</strong><br />
+<a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/editor/editorcommands/commands.md">Commands</a> represent all actions you can perform as a user in the Plasma Editor (such as <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/command_reference.md#createspritetext">CreateSpriteText</a>, <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/command_reference.md#backupproject">BackupProject</a>, and <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/command_reference.md#exportgame">ExportGame</a>).  Links are used throughout the lesson for refreshing your knowledge on how to do common essential tasks. View how to enter Commands in Plasma by following the link provided in the tutorial!</p>
+<p>It is recommended that you create a new project. If this is the first time you have run the Plasma Engine you will already be in the Projects screen and can simply type in a name for your project.  If you are not on the new Projects screen, you can access it using the Project menu.  See the section <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/editor/launcher.md">The Plasma Launcher</a>) for more information.</p>
+<p><img alt="Launcher" src="https://raw.githubusercontent.com/PlasmaEngine/PlasmaDocs/master/media/LauncherDiscover.PNG" /></p>
+<ul>
+<li>In the launcher</li>
+<li>Select <code>EMPTY 2D PROJECT</code> template</li>
+<li>Enter a NAME  for the project</li>
+<li>Enter a Project Folder directory (if the default is not sufficient) by either typing out you're preferred folder path or <code>left clicking</code> the <strong>ADD IMAGE</strong> button to the right of LOCATION .</li>
+<li><code>Left click</code> on the <code>CREATE PROJECT</code> button.</li>
+</ul>
+<h2 id="windows-overview">Windows Overview</h2>
+<p>After creating a new project, the editor should look something like this:</p>
+<p><strong>ADD IMAGE</strong> <em>The first, default view as the Plasma Editor is opened</em></p>
+<h3 id="level-window">Level Window</h3>
+<p>The <code>Level Window</code> (located in the center of the editor as seen in the image above) is where you will manipulate objects to build levels.  The visible grid is a customizable visual to help place objects within the level editor view, but isn't visible in actual gameplay.</p>
+<p><strong>ADD IMAGE</strong> <em>This is located in the top left corner of the <code>Level Window</code></em> </p>
+<p>In a collapsible toolbar at the top of the <code>Level Window</code> are a few buttons for altering the view.
+| Buttons | Purpose |
+|-----------------------------|---------------------------------------------|
+| <strong>ADD IMAGE</strong> <strong>ADD IMAGE</strong> | Toggles between 2D &amp; 3D camera controls. |
+| <strong>ADD IMAGE</strong> <strong>ADD IMAGE</strong> | Toggles the editor camera's rendering mode between Orthographic and Perspective Projection. |
+| <strong>ADD IMAGE</strong> <strong>ADD IMAGE</strong> | With the camera options you can either reset the editor camera to its default settings, or align a selected camera with the editor's camera. |
+| <strong>ADD IMAGE</strong> <strong>ADD IMAGE</strong> | Toggles the grid line visuals in the editor. |</p>
+<h3 id="properties-window">Properties Window</h3>
+<p>When an object is selected, the properties of that object are accessible from the <code>Properties Window</code>.</p>
+<p><strong>ADD IMAGE</strong> <em>The <code>Properties Window</code> showing the Components of the LevelSettings object</em></p>
+<p>The <code>Properties Window</code> is the primary means for editing or building objects and their <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/architecture/components.md">Components</a>.</p>
+<p><strong>ADD IMAGE</strong> <em>This is located directly under the Properties tab in the <code>Properties Window</code></em></p>
+<p>The Properties Navigational buttons allow for quick and efficient editing.
+| <strong>ADD IMAGE</strong> <strong>ADD IMAGE</strong> | These arrows allow you to navigate back and forth between recently selected items that have been shown in the <code>Properties Window</code>. |
+| <strong>ADD IMAGE</strong> | The Show Selection button, on first click, pans the camera to the object and on second click, zooms in the camera to frame the selected object in the <code>Level Window</code>. |
+| <strong>ADD IMAGE</strong> | The recent button pulls up a drop down list of the recently accessed items for selection. |</p>
+<h3 id="tools-window">Tools Window</h3>
+<p>This window contains several useful tools for managing various objects within the level. Settings for the current tool being used are also available here. You can switch tools from the drop-down selection or by using hotkeys <code>1</code> through <code>9</code>.</p>
+<p><strong>ADD IMAGE</strong> <em><code>Tools Window</code></em></p>
+<p><strong>ADD IMAGE</strong> <em>Tools drop-down selection</em></p>
+<h3 id="library-window">Library Window</h3>
+<p><strong>ADD IMAGE</strong> <em><code>Library Window</code></em></p>
+<p>Anything you add to the game using the <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/command_reference.md#add">Add</a> command or through drag-and-drop importing is stored as a <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/architecture/resources.md">Resource</a>. All resources added to your project can be found in the <code>Library Window</code>.</p>
+<h3 id="objects-window">Objects Window</h3>
+<p>Every level contains objects. An object can represent the floor, a wall, enemies, the player, and many other things. There are a few different buttons in the <code>Objects Window</code> that you should know about:</p>
+<ul>
+<li><strong>Eyeball:</strong> Toggles visibility of an object <em>only while in the editor.</em> Objects with the eye button disabled will be invisible in the editor, but still visible when the level is played.</li>
+<li><strong>Selection Lock:</strong> The small lock button can be turned on and off to toggle the ability to select an object from within the editor. This is especially helpful if you do not want to accidentally move an object.</li>
+</ul>
+<p><strong>ADD IMAGE</strong> <em>View of the eye and lock button in the <code>Objects Window</code></em></p>
+<p>The objects in the <code>Objects Window</code> can be searched for by name using the search bar. This feature can be invaluable if you have a level populated with dozens, or even hundreds, of objects.  Each level has three objects by default:</p>
+<p><strong>ADD IMAGE</strong> <em>Visible objects in the level by default</em></p>
+<h2 id="other-windows-and-bars">Other Windows and Bars</h2>
+<h3 id="search-window">Search Window</h3>
+<p>This powerful tool allows you to search for various things within the editor.  It also has several other uses such as selecting objects, opening archetypes, viewing properties, etc., that are accessible from here. For example, if you wanted to quickly access a script file, you can just open the search view and type in the name of the script to find it and begin editing.  Another important use of the <code>Plasma Search Window</code> is for performing commands. See <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/editor/editorcommands/commands.md">Commands</a> for more information.</p>
+<p><strong>ADD IMAGE</strong> <em>The <code>Plasma Search Window</code> for performing commands</em></p>
+<p>There are three ways to pull up the <code>Plasma Search Window</code>:</p>
+<ol>
+<li>Click anywhere in the <code>Level Window</code> and press <code>Space</code></li>
+<li>From <strong>any</strong> window press <code>Ctrl + Shift + Space</code></li>
+<li>Click the <code>Plasma drop-down</code> in the upper left-hand corner</li>
+</ol>
+<h3 id="console-window">Console Window</h3>
+<p>Pressing <code>~</code> will open the <code>Console Window</code>. It should appear directly below the <code>Level Window</code>.  The console can also be cleared out by pressing <code>Ctrl + Delete</code> while in focus.</p>
+<p><strong>ADD IMAGE</strong> <em><code>Console Window</code></em></p>
+<p>(NOTE)<strong>"In Focus"</strong>:
+To be "in" a window requires that the window has "focus". To gain focus you need to click on the window itself. This ensures that all your keyboard input works as intended.</p>
+<h3 id="game-window">Game Window</h3>
+<p>The <code>Game Window</code> is where your game actually runs inside the editor. You can test or play your game (or specific levels) here without having to create an executable. 
+* <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/editor/editorcommands/commands.md">Command</a>: <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/command_reference.md#playgame">PlayGame</a></p>
+<p>The <code>Game Window</code> should appear with its tab next to the <code>Level Window</code> tab:</p>
+<p><strong>ADD IMAGE</strong> <em><code>Game Window</code> displaying empty level</em></p>
+<ul>
+<li>Close the <code>Game Window</code> by pressing the <code>X button</code> on the Game tab</li>
+<li>You can also press <code>Esc</code> or use <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/editor/editorcommands/commands.md">Command</a>: <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/command_reference.md#stopgame">StopGame</a></li>
+</ul>
+<p>WARNING:
+It is a good practice to close the game window while editing levels.  There are some assets in the Plasma Engine that can be changed by scripts running in the game session.</p>
+<h3 id="tool-bar">Tool Bar</h3>
+<p><strong>ADD IMAGE</strong></p>
+<p>The tool bar is located at the top left of the entire editor. Various buttons to perform common actions are located here.
+| <strong>ADD IMAGE</strong> | Saves the project and all the resources in your Library |
+| <strong>ADD IMAGE</strong> | These buttons line up with hotkeys <code>1</code> to <code>5</code> and they represent the some of the most commonly used tools for editing objects in the <code>Level Window</code>. |
+| <strong>ADD IMAGE</strong> | These are correspond to other less common Tools that are available. |
+| <strong>ADD IMAGE</strong> | These open windows in the Editor, such as  the <code>Library Window</code> and the Add Window. |
+| <strong>ADD IMAGE</strong> | These buttons allow you to run your game from the current level, pause, step through frame by frame, or stop executing the game, covering keys <code>F5</code> to <code>F8</code>. |
+| <strong>ADD IMAGE</strong> | These buttons are for downloading content and reporting bugs. |</p>
+<p>In order to find out more about the function of each button, you can hover over them to get a pop-up tool tip. </p>
+<p><strong>ADD IMAGE</strong></p>
+<p>All Tool Bar buttons have equivalent commands in the <code>Plasma Search Window</code>.</p>
+<p><strong>ADD IMAGE</strong></p>
+<p>The game session can be played, paused, stepped through, and stopped with the keys <code>F5</code> through <code>F8</code>. <code>F9</code>, <code>F10</code>, and <code>F11</code> are also engine specific hotkeys. <code>F9</code> will open the edit in game window for the first space, allowing objects to be edited in the scene while the game is running. <code>F10</code> will toggle whether the cursor is trapped, meaning it is made invisible and locked to the center of the screen. <code>F11</code> toggles fullscreen mode for the currently focused window.</p>
+<h3 id="menu-bar">Menu Bar</h3>
+<p><strong>ADD IMAGE</strong></p>
+<p>The menu bar includes a catagorized set of commands in the form of drop-down menus.</p>
+<h2 id="reopening-windows-docking">Reopening Windows &amp; Docking</h2>
+<p>The <code>Plasma Search Window</code> can be used to reopen closed windows and tabs.  Once reopened, a window can dragged onto another location, a process known as "docking". Docking location options are indicated by the editor with light blue regions as another window is hovered over that location.</p>
+<p><strong>ADD IMAGE</strong> <em>Docking the <code>Library Window</code> to the upper right-hand corner</em></p>
+<h2 id="related-materials">Related Materials</h2>
+<h3 id="manual">Manual</h3>
+<ul>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/editor/launcher.md">The Plasma Launcher</a></li>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/architecture/components.md">Components</a></li>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/architecture/resources.md">Resource</a></li>
+</ul>
+<h3 id="code-reference">Code Reference</h3>
+<ul>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/command_reference.md#createspritetext">CreateSpriteText</a></li>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/command_reference.md#backupproject">BackupProject</a></li>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/command_reference.md#exportgame">ExportGame</a></li>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/command_reference.md#newproject">NewProject</a></li>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/command_reference.md#add">Add</a></li>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/command_reference.md#playgame">PlayGame</a></li>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/command_reference.md#stopgame">StopGame</a> </li>
+</ul>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../exportanproject/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../exportanproject/" class="btn btn-xs btn-link">
+        Export a Project
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../editor_configuration/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../editor_configuration/" class="btn btn-xs btn-link">
+        Editor Configuration
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="col-md-12 wm-page-content">
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/noraj/mkdocs-windmill-dark">Windmill Dark</a> theme by Alexandre ZANNI (noraj).</p>
+</footer>
+
+</body>
+</html>

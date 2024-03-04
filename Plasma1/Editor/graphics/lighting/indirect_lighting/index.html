@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="author" content="PlasmaDev">
+    <link rel="canonical" href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/graphics/lighting/indirect_lighting/">
+    <link rel="shortcut icon" href="../../../../../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Indirect lighting - PlasmaDocs</title>
+    <link href="../../../../../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../../../../../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../../../../../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../../../../css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../../../../../js/jquery-3.2.1.min.js"></script>
+    <script src="../../../../../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../../../../../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '../../../../..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "Indirect lighting", url: "#_top", children: [
+          ]},
+        ];
+
+    </script>
+    <script src="../../../../../js/base.js"></script>
+      <script src="../../../../../search/main.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../direct_lighting/directional_light/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../direct_lighting/directional_light/" class="btn btn-xs btn-link">
+        directional light
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../direct_lighting/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../direct_lighting/" class="btn btn-xs btn-link">
+        Direct lighting
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <h1 id="indirect-lighting">Indirect lighting</h1>
+<p>Indirect lighting in Plasma takes the form of image-based lighting, where an image--primarily a skybox--provides environmental ambient lighting throughout a scene. Whether a skybox is artist-created or derived from HDR images, is often used to give a scene an ambient light associated with a certain time of day (e.g. dusk, noon, dawn) or certain types of weather (e.g. clear skies, threatening clouds). In the case of interior scenes, it may just provide a static ambient light so that no matter where in the scene a player is, objects maintain some level of visibility.</p>
+<p>When using a skybox, it may be either visible, providing a static background for a scene (e.g. clouds in a sky) or invisible, in which the skybox provides ambient light for an interior scene (e.g. a cave that needs to have a constant source of ambient light not provided by <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/graphics/renderer/deferred_renderer.md">deferred or forward renderer</a>.</p>
+<p>NOTE: If a skybox is used and is visible, <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/enum_reference.md#texturemipmapping">MipMapping</a> on the skybox <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/graphics/adding_assets/adding_textures_and_sprites.md">TextureBuilder</a> ContentComponent must be set to <code>PreGenerated</code>.</p>
+<p>When applying indirect lighting to scene, the math used is the same as is used when applying <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/graphics/lighting/direct_lighting.md">direct lighting</a>. The only difference between the two is that much of the math is pre-calculated for indirect lighting. </p>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../direct_lighting/directional_light/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../direct_lighting/directional_light/" class="btn btn-xs btn-link">
+        directional light
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../direct_lighting/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../direct_lighting/" class="btn btn-xs btn-link">
+        Direct lighting
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="col-md-12 wm-page-content">
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/noraj/mkdocs-windmill-dark">Windmill Dark</a> theme by Alexandre ZANNI (noraj).</p>
+</footer>
+
+</body>
+</html>

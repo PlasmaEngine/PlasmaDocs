@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="author" content="PlasmaDev">
+    <link rel="canonical" href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/audio/sound/">
+    <link rel="shortcut icon" href="../../../../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Sound - PlasmaDocs</title>
+    <link href="../../../../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../../../../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../../../../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../../../css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../../../../js/jquery-3.2.1.min.js"></script>
+    <script src="../../../../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../../../../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '../../../..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "Sound", url: "#_top", children: [
+          ]},
+          {title: "Using Sounds", url: "#using-sounds", children: [
+              {title: "Supported Audio Formats", url: "#supported-audio-formats" },
+              {title: "Importing Audio Files", url: "#importing-audio-files" },
+          ]},
+          {title: "SoundBuilder Options", url: "#soundbuilder-options", children: [
+              {title: "Streaming Files", url: "#streaming-files" },
+              {title: "Normalizing", url: "#normalizing" },
+          ]},
+          {title: "Related Materials", url: "#related-materials", children: [
+              {title: "Manual", url: "#manual" },
+              {title: "Reference", url: "#reference" },
+          ]},
+        ];
+
+    </script>
+    <script src="../../../../js/base.js"></script>
+      <script src="../../../../search/main.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../soundattenuator/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../soundattenuator/" class="btn btn-xs btn-link">
+        Sound Attenuators
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../soudnode_overview/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../soudnode_overview/" class="btn btn-xs btn-link">
+        Sound Node Overview
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <h1 id="sound">Sound</h1>
+<p>A <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/sound.md"> Sound </a> resource is created for every imported audio file. Sounds can be attached to any number of <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/audio/soundcue.md">SoundCues</a>, allowing the user to play the same sound multiple ways while only storing the file once.</p>
+<h1 id="using-sounds">Using Sounds</h1>
+<h2 id="supported-audio-formats">Supported Audio Formats</h2>
+<p>The Plasma Engine supports audio files in both PCM WAV format (16 or 24 bit) and Ogg format, with up to eight audio channels, at almost any sample rate. (Note that audio output is usually at a sample rate of 44100 Hz or 48000 Hz, depending on the computer's output device, so it is best to use audio files with similar sample rates.) </p>
+<h2 id="importing-audio-files">Importing Audio Files</h2>
+<p>The easiest way to import audio files is to drag them directly onto a level. The Add window can also be used to choose the audio file. Both of these methods will then open a window with options for creating a SoundCue that will contain this Sound resource.</p>
+<p>Once files are imported, they will be resampled to 48000 Hz and stored in a custom format using the Opus codec. Opus is a high-quality, low-latency compression format which can be quickly decoded at runtime. Using this format has little to no effect on what the user hears and significantly reduces the size of the project's audio.</p>
+<h1 id="soundbuilder-options">SoundBuilder Options</h1>
+<p>When a Sound resource is selected, the <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/soundbuilder.md"> SoundBuilder </a> properties will be shown in the Property window.</p>
+<p>NOTE: When changing these properties for an existing resource the user must click on the Reload button before the settings will take effect.</p>
+<h2 id="streaming-files">Streaming Files</h2>
+<p>When the Streamed checkBox property is un-checked the entire audio file is loaded into memory as soon as the resource is loaded. This simplifies the audio decoding, as all the data is stored and only decoded once. If Streamed checkBox is checked only a small piece of the file will be held in memory at any one time; these pieces will be repeatedly read from the disk as needed to play the file. This means that audio decoding will be happening continuously and repeatedly. Streaming files can negatively affect performance in some cases since they are repeatedly reading from disk while playing. </p>
+<p>In general the only audio that should be streamed are long files, such as background music, and only when worried about memory usage.</p>
+<p>NOTE: Streaming files can't be played multiple times simultaneously, can't have their playback position set directly, and can't use the LoopTailLength  property on <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/audio/soundcue.md#soundentries">SoundEntries</a>.</p>
+<h2 id="normalizing">Normalizing</h2>
+<p>If the Normalize checkBox property is checked the MaxVolume  property will be shown and the volume of the audio file will be adjusted when it is processed and encoded. The volume of the entire audio file will be changed equally so that the highest volume peak will match the MaxVolume  property value. This can be used to either raise or lower the volume of an audio file.</p>
+<h1 id="related-materials">Related Materials</h1>
+<h2 id="manual">Manual</h2>
+<ul>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/audio/soundcue.md">SoundCue </a></li>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/audio/soundcue.md#soundentries">SoundEntry </a></li>
+</ul>
+<h2 id="reference">Reference</h2>
+<ul>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/sound.md"> Sound </a></li>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/soundbuilder.md"> SoundBuilder </a> </li>
+</ul>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../soundattenuator/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../soundattenuator/" class="btn btn-xs btn-link">
+        Sound Attenuators
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../soudnode_overview/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../soudnode_overview/" class="btn btn-xs btn-link">
+        Sound Node Overview
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="col-md-12 wm-page-content">
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/noraj/mkdocs-windmill-dark">Windmill Dark</a> theme by Alexandre ZANNI (noraj).</p>
+</footer>
+
+</body>
+</html>

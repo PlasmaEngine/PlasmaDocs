@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="author" content="PlasmaDev">
+    <link rel="canonical" href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C%2B%2B/code_reference/class_reference/cameraviewport/">
+    <link rel="shortcut icon" href="../../../../../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Cameraviewport - PlasmaDocs</title>
+    <link href="../../../../../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../../../../../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../../../../../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../../../../css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../../../../../js/jquery-3.2.1.min.js"></script>
+    <script src="../../../../../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../../../../../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '../../../../..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+        ];
+
+    </script>
+    <script src="../../../../../js/base.js"></script>
+      <script src="../../../../../search/main.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../capsulecollider/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../capsulecollider/" class="btn btn-xs btn-link">
+        Capsulecollider
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../camera/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../camera/" class="btn btn-xs btn-link">
+        Camera
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <p><code>Component</code> <code>Gameplay</code></p>
+<p>(NOTE) Manages all setup between Camera, Renderer, and viewport UI that is required to define how anything is to be rendered.</p>
+<table>
+<thead>
+<tr>
+<th>Methods</th>
+<th>Properties</th>
+<th>Base Classes</th>
+<th>Derived Classes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/cameraviewport.md#cameraviewport-void"> Constructor</a></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/cameraviewport.md#camera-plasma-engine-docum"> Camera</a></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/component.md">component</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/cameraviewport.md#screentoviewport-plasma-en"> ScreenToViewport</a></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/cameraviewport.md#camerapath-plasma-engine-d"> CameraPath</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/cameraviewport.md#screentoworldplane-plasma"> ScreenToWorldPlane</a></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/cameraviewport.md#finaltexture-plasma-engine"> FinalTexture</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/cameraviewport.md#screentoworldray-plasma-en"> ScreenToWorldRay</a></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/cameraviewport.md#forwardviewportevents-ze"> ForwardViewportEvents</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/cameraviewport.md#screentoworldviewplane-z"> ScreenToWorldViewPlane</a></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/cameraviewport.md#frustum-plasma-engine-docu"> Frustum</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/cameraviewport.md#screentoworldzplane-plasma"> ScreenToWorldZPlane</a></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/cameraviewport.md#margincolor-plasma-engine"> MarginColor</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/cameraviewport.md#viewplanesize-plasma-engin"> ViewPlaneSize</a></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/cameraviewport.md#mouseworldray-plasma-engin"> MouseWorldRay</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/cameraviewport.md#viewporttakefocus-plasma-e"> ViewportTakeFocus</a></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/cameraviewport.md#normalizedoffset-plasma-en"> NormalizedOffset</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/cameraviewport.md#viewporttoscreen-plasma-en"> ViewportToScreen</a></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/cameraviewport.md#normalizedsize-plasma-engi"> NormalizedSize</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/cameraviewport.md#worldtoscreen-plasma-engin"> WorldToScreen</a></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/cameraviewport.md#rendererpath-plasma-engine"> RendererPath</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/cameraviewport.md#renderineditor-plasma-engi"> RenderInEditor</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/cameraviewport.md#renderingame-plasma-engine"> RenderInGame</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/cameraviewport.md#renderorder-plasma-engine"> RenderOrder</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/cameraviewport.md#rendertoviewport-plasma-en"> RenderToViewport</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/cameraviewport.md#resolutionoraspect-plasma"> ResolutionOrAspect</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/cameraviewport.md#viewporthasfocus-plasma-en"> ViewportHasFocus</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/cameraviewport.md#viewportoffset-plasma-engi"> ViewportOffset</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/cameraviewport.md#viewportoffsetwithmargin"> ViewportOffsetWithMargin</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/cameraviewport.md#viewportresolution-plasma"> ViewportResolution</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/cameraviewport.md#viewportresolutionwithma"> ViewportResolutionWithMargin</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/cameraviewport.md#viewportscaling-plasma-eng"> ViewportScaling</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/cameraviewport.md#viewtoperspective-plasma-e"> ViewToPerspective</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/cameraviewport.md#worldtoperspective-plasma"> WorldToPerspective</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/cameraviewport.md#worldtoview-plasma-engine"> WorldToView</a></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>#  Properties</p>
+<hr />
+<p>#  Camera : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/camera.md">camera</a></p>
+<p><code>read-only</code></p>
+<blockquote>
+<p>Find the Camera component from the CameraPath (or null if it doesn't exist).
+``` lang=cpp, name=Lightning
+var Camera : Camera</p>
+</blockquote>
+<hr />
+<p>#  CameraPath : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/cogpath.md">cogpath</a></p>
+<blockquote>
+<p>Object with the Camera component to be used for rendering. A Camera can only be used by one CameraViewport, if already used by another usage will be stolen when assigned.
+``` lang=cpp, name=Lightning
+var CameraPath : CogPath</p>
+</blockquote>
+<hr />
+<p>#  FinalTexture : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/texture.md">texture</a></p>
+<p><code>read-only</code></p>
+<blockquote>
+<p>Texture that contains the end result of this CameraViewport's rendering. Must be explicitly written to in renderer script.
+``` lang=cpp, name=Lightning
+var FinalTexture : Texture</p>
+</blockquote>
+<hr />
+<p>#  ForwardViewportEvents : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.md">boolean</a></p>
+<blockquote>
+<p>Forwards mouse events to viewports underneath this viewport.
+``` lang=cpp, name=Lightning
+var ForwardViewportEvents : Boolean</p>
+</blockquote>
+<hr />
+<p>#  Frustum : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/frustum.md">frustum</a></p>
+<p><code>read-only</code></p>
+<blockquote>
+<p>Creates a frustum using the CameraViewport's settings (including aspect ratio). If the Camera is null, then this will throw an exception.
+``` lang=cpp, name=Lightning
+var Frustum : Frustum</p>
+</blockquote>
+<hr />
+<p>#  MarginColor : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real4.md">real4</a></p>
+<blockquote>
+<p>Color to used for letterbox/scaling margins.
+``` lang=cpp, name=Lightning
+var MarginColor : Real4</p>
+</blockquote>
+<hr />
+<p>#  MouseWorldRay : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/ray.md">ray</a></p>
+<p><code>read-only</code></p>
+<blockquote>
+<p>Get the world ray starting from the mouse.
+``` lang=cpp, name=Lightning
+var MouseWorldRay : Ray</p>
+</blockquote>
+<hr />
+<p>#  NormalizedOffset : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real2.md">real2</a></p>
+<blockquote>
+<p>Offset of the viewport in normalized UI coordinates.
+``` lang=cpp, name=Lightning
+var NormalizedOffset : Real2</p>
+</blockquote>
+<hr />
+<p>#  NormalizedSize : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real2.md">real2</a></p>
+<blockquote>
+<p>Size of viewport in normalized UI coordinates.
+``` lang=cpp, name=Lightning
+var NormalizedSize : Real2</p>
+</blockquote>
+<hr />
+<p>#  RendererPath : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/cogpath.md">cogpath</a></p>
+<blockquote>
+<p>Object with renderer script that connects to RenderTasksUpdate that determines what rendering will be done.
+``` lang=cpp, name=Lightning
+var RendererPath : CogPath</p>
+</blockquote>
+<hr />
+<p>#  RenderInEditor : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.md">boolean</a></p>
+<blockquote>
+<p>If rendering will be ran in edit mode.
+``` lang=cpp, name=Lightning
+var RenderInEditor : Boolean</p>
+</blockquote>
+<hr />
+<p>#  RenderInGame : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.md">boolean</a></p>
+<blockquote>
+<p>If rendering will be ran in play game mode.
+``` lang=cpp, name=Lightning
+var RenderInGame : Boolean</p>
+</blockquote>
+<hr />
+<p>#  RenderOrder : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer.md">integer</a></p>
+<blockquote>
+<p>The order that rendering should be done relative to other CameraViewports, lowest to highest.
+``` lang=cpp, name=Lightning
+var RenderOrder : Integer</p>
+</blockquote>
+<hr />
+<p>#  RenderToViewport : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.md">boolean</a></p>
+<blockquote>
+<p>If the rendering result in FinalTexture should also be placed on the UI viewport.
+``` lang=cpp, name=Lightning
+var RenderToViewport : Boolean</p>
+</blockquote>
+<hr />
+<p>#  ResolutionOrAspect : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer2.md">integer2</a></p>
+<blockquote>
+<p>``` lang=cpp, name=Lightning
+var ResolutionOrAspect : Integer2</p>
+</blockquote>
+<hr />
+<p>#  ViewportHasFocus : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.md">boolean</a></p>
+<p><code>read-only</code></p>
+<blockquote>
+<p>If the viewport created by this CameraViewport, if rendering to one, has focus.
+``` lang=cpp, name=Lightning
+var ViewportHasFocus : Boolean</p>
+</blockquote>
+<hr />
+<p>#  ViewportOffset : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real2.md">real2</a></p>
+<p><code>read-only</code></p>
+<blockquote>
+<p>The current offset of the viewport, in pixels.
+``` lang=cpp, name=Lightning
+var ViewportOffset : Real2</p>
+</blockquote>
+<hr />
+<p>#  ViewportOffsetWithMargin : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real2.md">real2</a></p>
+<p><code>read-only</code></p>
+<blockquote>
+<p>The current offset of the viewport's margin, in pixels.
+``` lang=cpp, name=Lightning
+var ViewportOffsetWithMargin : Real2</p>
+</blockquote>
+<hr />
+<p>#  ViewportResolution : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real2.md">real2</a></p>
+<p><code>read-only</code></p>
+<blockquote>
+<p>The current resolution of the viewport.
+``` lang=cpp, name=Lightning
+var ViewportResolution : Real2</p>
+</blockquote>
+<hr />
+<p>#  ViewportResolutionWithMargin : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real2.md">real2</a></p>
+<p><code>read-only</code></p>
+<blockquote>
+<p>The current resolution of the viewport including margin.
+``` lang=cpp, name=Lightning
+var ViewportResolutionWithMargin : Real2</p>
+</blockquote>
+<hr />
+<p>#  ViewportScaling : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/enum_reference.md#viewportscaling">ViewportScaling</a></p>
+<blockquote>
+<p>Method to use for sizing the viewport.
+``` lang=cpp, name=Lightning
+var ViewportScaling : ViewportScaling</p>
+</blockquote>
+<hr />
+<p>#  ViewToPerspective : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real4x4.md">real4x4</a></p>
+<p><code>read-only</code></p>
+<blockquote>
+<p>Transformation that defines how the view frustum is mapped to normalized coordinates, pre W divide.
+``` lang=cpp, name=Lightning
+var ViewToPerspective : Real4x4</p>
+</blockquote>
+<hr />
+<p>#  WorldToPerspective : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real4x4.md">real4x4</a></p>
+<p><code>read-only</code></p>
+<blockquote>
+<p>Concatenation of the WorldToView and ViewToPerspective transformations.
+``` lang=cpp, name=Lightning
+var WorldToPerspective : Real4x4</p>
+</blockquote>
+<hr />
+<p>#  WorldToView : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real4x4.md">real4x4</a></p>
+<p><code>read-only</code></p>
+<blockquote>
+<p>Transformation that defines view space as the Camera at the origin and the view direction as -Z.
+``` lang=cpp, name=Lightning
+var WorldToView : Real4x4</p>
+</blockquote>
+<hr />
+<p>#  Methods</p>
+<hr />
+<p>#  CameraViewport : Void</p>
+<p><code>constructor</code></p>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>``` lang=cpp, name=Lightning</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>function CameraViewport()</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>```</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<hr />
+<p>#  ScreenToViewport : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real2.md">real2</a></p>
+<blockquote>
+<p>Convert a screen point to a point relative to the viewport.
+|Name|Type|Description|
+|---|---|---|
+|screenPoint|<a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real2.md">real2</a>| |
+<code>lang=cpp, name=Lightning
+function ScreenToViewport(screenPoint : Real2) : Real2</code> </p>
+</blockquote>
+<hr />
+<p>#  ScreenToWorldPlane : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real3.md">real3</a></p>
+<blockquote>
+<p>Convert the screen point to a position on a given plane.
+|Name|Type|Description|
+|---|---|---|
+|screenPoint|<a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real2.md">real2</a>| |
+|worldPlaneNormal|<a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real3.md">real3</a>| |
+|worldPlanePosition|<a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real3.md">real3</a>| |
+<code>lang=cpp, name=Lightning
+function ScreenToWorldPlane(screenPoint : Real2, worldPlaneNormal : Real3, worldPlanePosition : Real3) : Real3</code> </p>
+</blockquote>
+<hr />
+<p>#  ScreenToWorldRay : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/ray.md">ray</a></p>
+<blockquote>
+<p>Convert a screen point to a ray.
+|Name|Type|Description|
+|---|---|---|
+|screenPoint|<a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real2.md">real2</a>| |
+<code>lang=cpp, name=Lightning
+function ScreenToWorldRay(screenPoint : Real2) : Ray</code> </p>
+</blockquote>
+<hr />
+<p>#  ScreenToWorldViewPlane : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real3.md">real3</a></p>
+<blockquote>
+<p>Convert the screen point to a position on the view plane at a given depth.
+|Name|Type|Description|
+|---|---|---|
+|screenPoint|<a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real2.md">real2</a>| |
+|viewDepth|<a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.md">real</a>| |
+<code>lang=cpp, name=Lightning
+function ScreenToWorldViewPlane(screenPoint : Real2, viewDepth : Real) : Real3</code> </p>
+</blockquote>
+<hr />
+<p>#  ScreenToWorldZPlane : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real3.md">real3</a></p>
+<blockquote>
+<p>Convert the screen point to a position on the z plane at a given depth.
+|Name|Type|Description|
+|---|---|---|
+|screenPoint|<a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real2.md">real2</a>| |
+|worldDepth|<a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.md">real</a>| |
+<code>lang=cpp, name=Lightning
+function ScreenToWorldZPlane(screenPoint : Real2, worldDepth : Real) : Real3</code> </p>
+</blockquote>
+<hr />
+<p>#  ViewPlaneSize : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real2.md">real2</a></p>
+<blockquote>
+<p>Size of the screen at a Depth.
+|Name|Type|Description|
+|---|---|---|
+|viewDepth|<a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.md">real</a>| |
+<code>lang=cpp, name=Lightning
+function ViewPlaneSize(viewDepth : Real) : Real2</code> </p>
+</blockquote>
+<hr />
+<p>#  ViewportTakeFocus : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.md">boolean</a></p>
+<blockquote>
+<p>Returns whether or not it succeeded in taking focus. Will always fail if RenderToViewport is false.
+|Name|Type|Description|
+|---|---|---|
+<code>lang=cpp, name=Lightning
+function ViewportTakeFocus() : Boolean</code> </p>
+</blockquote>
+<hr />
+<p>#  ViewportToScreen : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real2.md">real2</a></p>
+<blockquote>
+<p>Convert a viewport point to a screen point.
+|Name|Type|Description|
+|---|---|---|
+|viewportPoint|<a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real2.md">real2</a>| |
+<code>lang=cpp, name=Lightning
+function ViewportToScreen(viewportPoint : Real2) : Real2</code> </p>
+</blockquote>
+<hr />
+<p>#  WorldToScreen : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real2.md">real2</a></p>
+<blockquote>
+<p>Convert a world point to a screen point.
+|Name|Type|Description|
+|---|---|---|
+|worldPoint|<a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real3.md">real3</a>| |
+<code>lang=cpp, name=Lightning
+function WorldToScreen(worldPoint : Real3) : Real2</code> </p>
+</blockquote>
+<hr />
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../capsulecollider/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../capsulecollider/" class="btn btn-xs btn-link">
+        Capsulecollider
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../camera/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../camera/" class="btn btn-xs btn-link">
+        Camera
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="col-md-12 wm-page-content">
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/noraj/mkdocs-windmill-dark">Windmill Dark</a> theme by Alexandre ZANNI (noraj).</p>
+</footer>
+
+</body>
+</html>

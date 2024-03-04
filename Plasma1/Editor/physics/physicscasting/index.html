@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="author" content="PlasmaDev">
+    <link rel="canonical" href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/physics/physicscasting/">
+    <link rel="shortcut icon" href="../../../../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>PhysicsCasting - PlasmaDocs</title>
+    <link href="../../../../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../../../../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../../../../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../../../css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../../../../js/jquery-3.2.1.min.js"></script>
+    <script src="../../../../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../../../../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '../../../..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "PhysicsCasting", url: "#_top", children: [
+              {title: "Ray Casting", url: "#ray-casting" },
+              {title: "Segment Casting", url: "#segment-casting" },
+              {title: "Sphere Casting", url: "#sphere-casting" },
+              {title: "Aabb Casting", url: "#aabb-casting" },
+              {title: "Frustum Casting", url: "#frustum-casting" },
+              {title: "Collider Casting", url: "#collider-casting" },
+              {title: "CastFirst", url: "#castfirst" },
+          ]},
+          {title: "DispatchWithin", url: "#dispatchwithin", children: [
+          ]},
+          {title: "Sweeping", url: "#sweeping", children: [
+          ]},
+          {title: "Related Materials", url: "#related-materials", children: [
+              {title: "Manual", url: "#manual" },
+          ]},
+        ];
+
+    </script>
+    <script src="../../../../js/base.js"></script>
+      <script src="../../../../search/main.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../physicsmaterial/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../physicsmaterial/" class="btn btn-xs btn-link">
+        Physics Material
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../massoverride/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../massoverride/" class="btn btn-xs btn-link">
+        Mass Override
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <h1 id="physicscasting">PhysicsCasting</h1>
+<p>One of the most common run-time interactions with a <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/physics/physicsspace.md">PhysicsSpace</a> is casting, which queries for all objects within a region of space. This allows common operations such as line-of-sight queries, volume queries, and so on.</p>
+<p>Typically a cast will take 3 arguments:
+  - The shape to cast
+  - How many results to receive at max. This is needed for internal optimizations in physics. For Ray/Segments, the results will be sorted by the t-value.
+  - The <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/castfilter.md">CastFilter</a> describes how to filter out results when casting. Common operations include skipping objects of certain configurations (Static, Kinematic, <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/physics/collisionoverview/collisiongroupsandtables.md">CollisionGroups</a>, etc...).</p>
+<p>Currently, the physics systems supports a few common casting types:</p>
+<h2 id="ray-casting">Ray Casting</h2>
+<p><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/ray.md">ray</a> casting checks for all shapes in a direction. Ray casts are common for things like line-of-sight tests.</p>
+<h2 id="segment-casting">Segment Casting</h2>
+<p>A <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/segment.md">segment</a> cast is like a ray cast except it has an end position. Segment casts are used when there is a known max distance for the cast.</p>
+<h2 id="sphere-casting">Sphere Casting</h2>
+<p><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/sphere.md">sphere</a> casting checks to see what objects are within a sphere. Useful for simple volume queries such as finding all objects within an explosion radius.</p>
+<h2 id="aabb-casting">Aabb Casting</h2>
+<p><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/aabb.md">aabb</a> casting checks what objects are within an axis-aligned box. Sometimes a box is a better shape for casting, especially when the query area is long an thin.</p>
+<h2 id="frustum-casting">Frustum Casting</h2>
+<p><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/frustum.md">frustum</a> casting checks what objects are within a frustum. Useful for queries that come from a camera where perspective should be taken into account.</p>
+<h2 id="collider-casting">Collider Casting</h2>
+<p>Sometimes a more complicated shape query is desired. <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/collider.md">Collider</a> casting allows the user to say: "What if this collider was over there". This is commonly used for a simple preventative collision check.</p>
+<h2 id="castfirst">CastFirst</h2>
+<p>Ray and Segments have an additional "CastFirst" operation for convenience. These cast functions implicitly have a max object count of <code>1</code>.</p>
+<h1 id="dispatchwithin">DispatchWithin</h1>
+<p>In addition to regular casting, the <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/physics/physicsspace.md">physicsspace.md</a> contains other common cast related functions. Sometimes casts are performed just to send events to all shapes within a region. This is common for a generic interaction system where each object may or may-not handle some event. Instead of casting and iterating over all results, the PhysicsSpace has the "DispatchWithin" functions. Currently only Sphere and Aabb dispatch functions exist.</p>
+<h1 id="sweeping">Sweeping</h1>
+<p>While a cast can be used as a preventative check, sometimes the accuracy is not enough. This is where the <code>SweepCollider</code> function comes in. Sweeping can be thought of as extending a collider's volume in a direction to find the exact times that a collision would happen with static objects. This allows writing Time-of-Impact logic to avoid missing any collisions.</p>
+<p>NOTE: Swept casts are expensive operations and should be used only when important, such as a player.</p>
+<h1 id="related-materials">Related Materials</h1>
+<h2 id="manual">Manual</h2>
+<ul>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/physics/physicsspace.md">physicsspace.md</a></li>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/physics/colliders.md">colliders.md</a></li>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/physics/collisionoverview/collisiongroupsandtables.md">collisiongroupsandtables.md</a></li>
+</ul>
+<h3 id="reference">Reference</h3>
+<ul>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/castfilter.md">CastFilter</a></li>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/castresult.md">CastResult</a></li>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/sweepresult.md">SweepResult</a></li>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/ray.md">Ray</a></li>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/segment.md">Segment</a></li>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/aabb.md">Aabb</a></li>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/sphere.md">Sphere</a></li>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/frustum.md">Frustum</a></li>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/physicsspace.md">PhysicsSpace</a></li>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/collisiongroup.md">CollisionGroup</a></li>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/collider.md">Collider</a> </li>
+</ul>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../physicsmaterial/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../physicsmaterial/" class="btn btn-xs btn-link">
+        Physics Material
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../massoverride/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../massoverride/" class="btn btn-xs btn-link">
+        Mass Override
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="col-md-12 wm-page-content">
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/noraj/mkdocs-windmill-dark">Windmill Dark</a> theme by Alexandre ZANNI (noraj).</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="author" content="PlasmaDev">
+    <link rel="canonical" href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C%2B%2B/code_reference/class_reference/asyncprocess/">
+    <link rel="shortcut icon" href="../../../../../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Asyncprocess - PlasmaDocs</title>
+    <link href="../../../../../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../../../../../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../../../../../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../../../../css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../../../../../js/jquery-3.2.1.min.js"></script>
+    <script src="../../../../../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../../../../../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '../../../../..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+        ];
+
+    </script>
+    <script src="../../../../../js/base.js"></script>
+      <script src="../../../../../search/main.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../asyncprocessevent/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../asyncprocessevent/" class="btn btn-xs btn-link">
+        Asyncprocessevent
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../arrowgizmo/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../arrowgizmo/" class="btn btn-xs btn-link">
+        Arrowgizmo
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <p><code>Engine</code></p>
+<p>(NOTE) A process class that asynchronously reads from standard output and standard error and sends out partial read events. Additionally, the full buffer can be stored for each stream. This makes it possible to read the output of a process in a single-threaded context without having to block on output.</p>
+<table>
+<thead>
+<tr>
+<th>Methods</th>
+<th>Properties</th>
+<th>Base Classes</th>
+<th>Derived Classes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/asyncprocess.md#close-void"> Close</a></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/asyncprocess.md#standarderror-plasma-engin"> StandardError</a></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/referencecountedeventobject.md">referencecountedeventobject</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/asyncprocess.md#create-plasma-engine-docum"> Create</a></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/asyncprocess.md#standardinput-plasma-engin"> StandardInput</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/asyncprocess.md#isrunning-plasma-engine-do"> IsRunning</a></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/asyncprocess.md#standardoutput-plasma-engi"> StandardOutput</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/asyncprocess.md#start-plasma-engine-docume"> Start</a></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/asyncprocess.md#storestandarderrordata-z"> StoreStandardErrorData</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/asyncprocess.md#terminate-void"> Terminate</a></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/asyncprocess.md#storestandardoutputdata"> StoreStandardOutputData</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/asyncprocess.md#waitforclose-plasma-engine"> WaitForClose</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>#  Properties</p>
+<hr />
+<p>#  StandardError : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/string.md">string</a></p>
+<p><code>read-only</code></p>
+<blockquote>
+<p>The cached total results from standard error. Will be empty if StoreStandardErrorData is false.
+``` lang=cpp, name=Lightning
+var StandardError : String</p>
+</blockquote>
+<hr />
+<p>#  StandardInput : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/filestream.md">filestream</a></p>
+<blockquote>
+<p>``` lang=cpp, name=Lightning
+var StandardInput : FileStream</p>
+</blockquote>
+<hr />
+<p>#  StandardOutput : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/string.md">string</a></p>
+<p><code>read-only</code></p>
+<blockquote>
+<p>The cached total results from standard output. Will be empty if StoreStandardOutputData is false.
+``` lang=cpp, name=Lightning
+var StandardOutput : String</p>
+</blockquote>
+<hr />
+<p>#  StoreStandardErrorData : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.md">boolean</a></p>
+<blockquote>
+<p>Should the results from standard error be accumulated and stored? If a lot of data is output it may be good to turn this off and use the partial data callback events instead.
+``` lang=cpp, name=Lightning
+var StoreStandardErrorData : Boolean</p>
+</blockquote>
+<hr />
+<p>#  StoreStandardOutputData : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.md">boolean</a></p>
+<blockquote>
+<p>Should the results from standard output be accumulated and stored? If a lot of data is output it may be good to turn this off and use the partial data callback events instead.
+``` lang=cpp, name=Lightning
+var StoreStandardOutputData : Boolean</p>
+</blockquote>
+<hr />
+<p>#  Methods</p>
+<hr />
+<p>#  Close : Void</p>
+<blockquote>
+<p>Closes the wrapper around the process, does not close the process launched.
+|Name|Type|Description|
+|---|---|---|
+<code>lang=cpp, name=Lightning
+function Close()</code> </p>
+</blockquote>
+<hr />
+<p>#  Create : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/asyncprocess.md">asyncprocess</a></p>
+<p><code>static</code></p>
+<blockquote>
+<p>Construct a new process. This does not start the process.
+|Name|Type|Description|
+|---|---|---|
+<code>lang=cpp, name=Lightning
+function Create() : AsyncProcess</code> </p>
+</blockquote>
+<hr />
+<p>#  IsRunning : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.md">boolean</a></p>
+<blockquote>
+<p>Returns true if the process is still running, false otherwise.
+|Name|Type|Description|
+|---|---|---|
+<code>lang=cpp, name=Lightning
+function IsRunning() : Boolean</code> </p>
+</blockquote>
+<hr />
+<p>#  Start : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.md">boolean</a></p>
+<blockquote>
+<p>Begins the execution of another process using the given parameters. Throws an exception if the process cannot be started.
+|Name|Type|Description|
+|---|---|---|
+|startInfo|<a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/processstartinfo.md">processstartinfo</a>| |
+<code>lang=cpp, name=Lightning
+function Start(startInfo : ProcessStartInfo) : Boolean</code> </p>
+</blockquote>
+<hr />
+<p>#  Terminate : Void</p>
+<blockquote>
+<p>Attempts to manually shut down the process. This is not safe for the other process or what it's handling.
+|Name|Type|Description|
+|---|---|---|
+<code>lang=cpp, name=Lightning
+function Terminate()</code> </p>
+</blockquote>
+<hr />
+<p>#  WaitForClose : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer.md">integer</a></p>
+<blockquote>
+<p>Waits for a process to close, this will block until the process closes.
+|Name|Type|Description|
+|---|---|---|
+<code>lang=cpp, name=Lightning
+function WaitForClose() : Integer</code> </p>
+</blockquote>
+<hr />
+<p>#  WaitForClose : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer.md">integer</a></p>
+<blockquote>
+<p>Waits for a process to close up to a given number of milliseconds. This can take up to 3 * milliseconds due to waiting for the output streams to close.
+|Name|Type|Description|
+|---|---|---|
+|milliseconds|<a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer.md">integer</a>| |
+<code>lang=cpp, name=Lightning
+function WaitForClose(milliseconds : Integer) : Integer</code> </p>
+</blockquote>
+<hr />
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../asyncprocessevent/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../asyncprocessevent/" class="btn btn-xs btn-link">
+        Asyncprocessevent
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../arrowgizmo/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../arrowgizmo/" class="btn btn-xs btn-link">
+        Arrowgizmo
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="col-md-12 wm-page-content">
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/noraj/mkdocs-windmill-dark">Windmill Dark</a> theme by Alexandre ZANNI (noraj).</p>
+</footer>
+
+</body>
+</html>

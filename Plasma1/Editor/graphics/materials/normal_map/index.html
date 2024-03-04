@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="author" content="PlasmaDev">
+    <link rel="canonical" href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/graphics/materials/normal_map/">
+    <link rel="shortcut icon" href="../../../../../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Normal maps - PlasmaDocs</title>
+    <link href="../../../../../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../../../../../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../../../../../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../../../../css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../../../../../js/jquery-3.2.1.min.js"></script>
+    <script src="../../../../../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../../../../../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '../../../../..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "Normal maps", url: "#_top", children: [
+          ]},
+          {title: "NormalMap Material Block", url: "#normalmap-material-block", children: [
+              {title: "Related Materials", url: "#related-materials" },
+          ]},
+        ];
+
+    </script>
+    <script src="../../../../../js/base.js"></script>
+      <script src="../../../../../search/main.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../roughness/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../roughness/" class="btn btn-xs btn-link">
+        Roughness
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../metallic/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../metallic/" class="btn btn-xs btn-link">
+        Metallic
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <h1 id="normal-maps">Normal maps</h1>
+<p>Normal maps give texture to objects.  The idea of normal maps isn't to necessarily deform the model (though that is certainly possible), but to change the way that light interacts with the model`s surface.  Normal maps represent minor deformities on a surface, such as the notches on a wooden plank.  The three colors that store the values in a normal map are red, green, and blue.  Each color is interpreted as X, Y, and Z respectively, to makeup a vector.  These vectors represent the direction that is normal to the surface, hence the name NormalMap.</p>
+<p><img alt="image" src="https://raw.githubusercontent.com/PlasmaEngine/PlasmaDocs/master/media/46703.png" /> <em>Normal map for decals</em></p>
+<p>Most of the color on a normal map ends up blue because most of the direction vectors on a normal map are in the Z direction.  In the space of the normal map, otherwise known as tangent space, X and Y point in the U and V directions of the texture, while Z points away from the texture.  Z can also be thought of as the direction away from the surface, and so the more blue a pixel is, the more outward a normal will be.  It then follows that redder pixels represent horizontal normals, and greener pixels represent vertical normals, which would both be tangent to the surface.</p>
+<p>NOTE: If the normal map seems like a mix of green and yellow, it's probably because the textures been compressed with <code>BC5</code>.  For more on block compression, visit <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/graphics/adding_assets/block_compression.md">Block Compression</a>.</p>
+<h1 id="normalmap-material-block">NormalMap Material Block</h1>
+<p>The NormalMap resource material block contains a few additional properties vs other mapping material blocks.  RedLeft checkBox and GreenDown checkBox can be used to reorient the normal map to the desired direction.  In addition, Bumpiness checkBox will change the amount a normal map will effect a surface.</p>
+<h2 id="related-materials">Related Materials</h2>
+<h3 id="manual">Manual</h3>
+<ul>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/graphics/adding_assets/block_compression.md">Block Compression</a> </li>
+</ul>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../roughness/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../roughness/" class="btn btn-xs btn-link">
+        Roughness
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../metallic/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../metallic/" class="btn btn-xs btn-link">
+        Metallic
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="col-md-12 wm-page-content">
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/noraj/mkdocs-windmill-dark">Windmill Dark</a> theme by Alexandre ZANNI (noraj).</p>
+</footer>
+
+</body>
+</html>

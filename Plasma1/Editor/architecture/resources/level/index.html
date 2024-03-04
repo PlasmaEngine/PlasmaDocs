@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="author" content="PlasmaDev">
+    <link rel="canonical" href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/architecture/resources/level/">
+    <link rel="shortcut icon" href="../../../../../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Level - PlasmaDocs</title>
+    <link href="../../../../../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../../../../../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../../../../../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../../../../css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../../../../../js/jquery-3.2.1.min.js"></script>
+    <script src="../../../../../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../../../../../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '../../../../..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "Levels", url: "#_top", children: [
+              {title: "Using Levels", url: "#using-levels" },
+              {title: "Levels vs. Spaces", url: "#levels-vs-spaces" },
+          ]},
+          {title: "Related Materials", url: "#related-materials", children: [
+              {title: "Manual", url: "#manual" },
+          ]},
+        ];
+
+    </script>
+    <script src="../../../../../js/base.js"></script>
+      <script src="../../../../../search/main.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../resourcetable/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../resourcetable/" class="btn btn-xs btn-link">
+        Resource Table
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../font/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../font/" class="btn btn-xs btn-link">
+        Font
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <p>A level is resource that stores a set of objects which will then be created later when the level is loaded. Levels can be loaded into a space in order to create all objects saved to the resource. Levels can be edited using several tools, especially those found via the <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/editor/editorui.md">Editor UI</a>.</p>
+<h1 id="levels">Levels</h1>
+<h2 id="using-levels">Using Levels</h2>
+<h3 id="creating-a-level">Creating a Level</h3>
+<p>A new level can be added by using the Add command (<a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/editor/editorcommands/commands.md">Command</a> : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/command_reference.md#add">Add</a> or clicking on the Add button button) followed by selecting Level drop-down menu. The newly-created level will open in the Level Window and allow for the manipulation of objects to build game levels. At creation the level will only have the default objects inside it: <code>LevelSettings</code> and a few other object from the level template you select.</p>
+<ul>
+<li>The <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/architecture/objects/levelsettings.md">LevelSettings</a> object is a cog that has a single unique instance per level that cannot be deleted or duplicated. It has several components attached in order to run various effects in the level, such as gravity.</li>
+</ul>
+<p>The background grid will also be turned on. The grid is there to help place objects within the level editor but will not be visible during gameplay, and can be turned on and off by using the toolbar in the top left corner of the Level Window.</p>
+<p><img alt="image" src="https://raw.githubusercontent.com/PlasmaEngine/PlasmaDocs/master/media/levelTools.PNG" /> <em>The collapsible toolbar has a few buttons for altering the view.</em></p>
+<table>
+<thead>
+<tr>
+<th>Buttons</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img alt="image" src="https://raw.githubusercontent.com/PlasmaEngine/PlasmaDocs/master/media/2DToggle.png" /> <img alt="image" src="https://raw.githubusercontent.com/PlasmaEngine/PlasmaDocs/master/media/3DToggle.png" /></td>
+<td>Toggles between 2D &amp; 3D camera controls.</td>
+</tr>
+<tr>
+<td><img alt="image" src="https://raw.githubusercontent.com/PlasmaEngine/PlasmaDocs/master/media/OrthographicToggle.png" /> <img alt="image" src="https://raw.githubusercontent.com/PlasmaEngine/PlasmaDocs/master/media/PerspectiveToggle.png" /></td>
+<td>Toggles the editor camera's rendering mode between Orthographic and Perspective Projection.</td>
+</tr>
+<tr>
+<td><img alt="image" src="https://raw.githubusercontent.com/PlasmaEngine/PlasmaDocs/master/media/GridOn.PNG" /> <img alt="image" src="https://raw.githubusercontent.com/PlasmaEngine/PlasmaDocs/master/media/GridOff.PNG" /></td>
+<td>Toggles the grid line visuals in the editor.</td>
+</tr>
+<tr>
+<td><img alt="image" src="https://raw.githubusercontent.com/PlasmaEngine/PlasmaDocs/master/media/DebugViews.png" /></td>
+<td>With the debug views option you can preview diffrent rendering buffers, this is useful for debugging issues with materials.</td>
+</tr>
+<tr>
+<td><img alt="image" src="https://raw.githubusercontent.com/PlasmaEngine/PlasmaDocs/master/media/CameraOptions.png" /></td>
+<td>With the camera options you can either reset the editor camera to its default settings, or align a selected camera with the editor's camera.</td>
+</tr>
+<tr>
+<td><img alt="image" src="https://raw.githubusercontent.com/PlasmaEngine/PlasmaDocs/master/media/Speed.png" /></td>
+<td>This option allows you to change the speed of the editor movement.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="levels-vs-spaces">Levels vs. Spaces</h2>
+<p>While levels are resources that store object data to later be loaded, spaces are where those objects are placed upon creation. This allows multiple spaces to load multiple levels at once, which is used to create HUD or UI elements, or to pause the main game while still allowing pause menus to function properly. </p>
+<pre><code>// The level made with all the Pause Menu UI elements
+[Property]
+var PauseLevel : Level;
+
+// A property to hold a Space archetype used to create the Pause level
+[Property]
+var PauseSpaceArchetype : Archetype;
+
+// A variable used as a reference for the Space holding the pause menu
+var PauseSpace : Space = null;
+
+function Initialize(init : CogInitializer)
+{
+}
+
+function Pause()
+{
+    // Create a new named Space for the Pause Menu
+    this.PauseSpace = this.GameSession.CreateNamedSpace(&quot;PauseSpace&quot;, this.PauseSpaceArchetype);
+     // Load the Pause Menu level in the newly created Space
+    this.PauseSpace.LoadLevel(this.PauseLevel);
+}
+
+function UnPause()
+{
+    // If the PauseSpace exists, destroy it along with the Pause level
+    if (this.PauseSpace != null)
+        this.PauseSpace.Destroy();
+}
+</code></pre>
+<p>This code snippet gives an example of having two levels exist at once. By giving it a <code>Space</code> archetype and <code>level</code> to load and then calling the <code>Pause()</code> function in a LightningScript, it will create a new Space and load the new level without destroying the currently existing one. The <code>Unpause()</code> function will do the reverse, and destroy the level and Space. </p>
+<h1 id="related-materials">Related Materials</h1>
+<h2 id="manual">Manual</h2>
+<ul>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/editor/editorui.md">Editor UI</a></li>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/architecture/objects/spaces.md">Spaces</a></li>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/graphics/camerasviewportsrenderers.md">CamerasViewportsRenderers</a></li>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/architecture/objects/levelsettings.md">Level Settings</a></li>
+</ul>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../resourcetable/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../resourcetable/" class="btn btn-xs btn-link">
+        Resource Table
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../font/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../font/" class="btn btn-xs btn-link">
+        Font
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="col-md-12 wm-page-content">
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/noraj/mkdocs-windmill-dark">Windmill Dark</a> theme by Alexandre ZANNI (noraj).</p>
+</footer>
+
+</body>
+</html>

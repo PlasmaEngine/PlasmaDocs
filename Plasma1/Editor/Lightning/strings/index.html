@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="author" content="PlasmaDev">
+    <link rel="canonical" href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/Lightning/strings/">
+    <link rel="shortcut icon" href="../../../../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Strings - PlasmaDocs</title>
+    <link href="../../../../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../../../../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../../../../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../../../css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../../../../js/jquery-3.2.1.min.js"></script>
+    <script src="../../../../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../../../../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '../../../..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "Strings", url: "#_top", children: [
+          ]},
+        ];
+
+    </script>
+    <script src="../../../../js/base.js"></script>
+      <script src="../../../../search/main.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../swizzle/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../swizzle/" class="btn btn-xs btn-link">
+        Swizzle
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../reflection/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../reflection/" class="btn btn-xs btn-link">
+        Reflection
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <h1 id="strings">Strings</h1>
+<p><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/string.md"> String</a> is a Lightning type used to represent text as a sequence of characters.</p>
+<p>#  Making Strings</p>
+<p>In Lightning, a string literal is made by enclosing plasma or more characters in double quotation marks:</p>
+<pre><code class="language-csharp">
+var greeting = "hello world";
+var colorCode = "#F9EF1A";
+var empty = "";
+</code></pre>
+
+<p>#  String Interpolation</p>
+<p><em>String interpolation</em> is a way of evaluating an expression and inserting it directly into a string literal. In Lightning, string interpolation is done using the <strong>grave accent</strong> character, ##<code>##. Anything in a string literal that is entered between two ##</code>##s is evaluated, and the result of that evaluation is used instead. For example:</p>
+<pre><code class="language-csharp">
+var xp = Integer.PositiveMax;
+var message = "Gained `xp` experience points.";
+Console.WriteLine(message);
+
+message = "Turn `Math.ToDegrees(Math.ACos(0.2)) - 15.0` degrees to starboard.";
+Console.WriteLine(message);
+
+message = "This component is attached to `this.Owner`.";
+Console.WriteLine(message);
+</code></pre>
+<pre><code class="language-csharp">
+Gained 2147483647 experience points.
+Turn 63.463 degrees to starboard.
+This component is attached to "Cog 'LevelSettings' [425]".
+</code></pre>
+
+<p>String interpolation presents a handy means of joining two strings:</p>
+<pre><code class="language-csharp">
+var str0 = "GAME";
+var str1 = "OVER";
+Console.WriteLine("`str0` `str1`");
+</code></pre>
+<pre><code class="language-csharp">
+GAME OVER
+</code></pre>
+
+<p>It can also be used to effectively "append" to a string:</p>
+<pre><code class="language-csharp">
+var evenDigits = "";
+var oddDigits = "";
+
+for (var i = 0; i < 10; ++i)
+{
+  if (i % 2 == 0)
+    evenDigits = "`evenDigits` `i`";
+  else
+    oddDigits = "`oddDigits` `i`";
+}
+
+Console.WriteLine("Even base-ten digits: `evenDigits`");
+Console.WriteLine("Odd base-ten digits: `oddDigits`");
+</code></pre>
+<pre><code class="language-csharp">
+Even base-ten digits:  0 2 4 6 8
+Odd base-ten digits:  1 3 5 7 9
+</code></pre>
+
+<p>Note that strings in Lightning are <strong>immutable</strong>, which means they cannot be altered after they have been created. Thus, strictly speaking, no true <em>appending</em> takes place. In the above code block, where it appears that <code>evenDigits</code> is being appended via string interpolation, a new string is actually created using the previous value of <code>evenDigits</code> and the value of <code>i</code>, and that new string is assigned back to the <code>evenDigits</code> variable.</p>
+<p>(NOTE) Since this means of string appending involves the creation of another new string each time it occurs, it is less efficient than using a <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/stringbuilder.md"> StringBuilder</a>, which is intended for just this purpose. In certain situations, such as a deeply nested loop, this performance difference may be significant.</p>
+<p>#  Escape Sequences</p>
+<p>Some characters are entered in a string literal via special sequences of characters called //escape sequences//. In Lightning, all escape sequences consist of a backslash followed by another character.</p>
+<pre><code class="language-csharp">
+// \" -- double quotation marks
+Console.WriteLine("Say \"hello\" to Dr. Cosmo for me.");
+Console.WriteLine();
+
+// \` -- grave accent
+Console.WriteLine("Press the \` key to open the console");
+Console.WriteLine();
+
+// \\ -- backslash
+Console.WriteLine("C:\\Logs\\Analytics\\ForestLevel.Analytics.gamedata");
+Console.WriteLine();
+
+// \n or \r -- newline
+Console.WriteLine("BEWARE\n  OF\r DOUG");
+Console.WriteLine();
+
+// \t -- horizontal tab
+Console.WriteLine("+---+---+---+");
+Console.WriteLine("1\t12\t123\t|");
+Console.WriteLine("+---+---+---+");
+</code></pre>
+<pre><code class="language-csharp">
+Say "hello" to Dr. Cosmo for me.
+
+Press the ` key to open the console
+
+C:\Logs\Analytics\ForestLevel.Analytics.gamedata
+
+BEWARE
+  OF
+ DOUG
+
++---+---+---+
+1   12  123 |
++---+---+---+
+</code></pre>
+
+<p>#  Strings and StringRanges</p>
+<p><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/stringrange.md"> StringRange</a> is a separate but related class to <strong>String</strong>. It is an iterable range that can be used in a <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/Lightning/looping.md#for-each-loop"> For Each loop</a>. A string can be <strong>implicitly cast</strong> to StringRange, so a string can be passed into any function that expects a StringRange. However, a StringRange <em>cannot</em> be implicitly cast to String:</p>
+<pre><code class="language-csharp">
+  var string = "";
+  var stringRange = StringRange();
+
+  this.FunctionTakingString(string);                  // okay
+*this.FunctionTakingString(stringRange);             * error
+  this.FunctionTakingString(stringRange.ToString());  // okay
+  this.FunctionTakingStringRange(string);             // okay
+  this.FunctionTakingStringRange(stringRange);        // okay
+</code></pre>
+
+<p>#  Static String Functions</p>
+<p><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/Lightning/attributes.md#static"> As with all static functions</a>, the static functions of the String class are not invoked from instances of the class, but instead are found in the String namespace itself.</p>
+<p>##  Compare</p>
+<p><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/string.md#compare-plasma-engine-docu"> Compare</a> returns an Integer indicating the <em>relative sort order</em> of the two given strings; that is, whether one string would be sorted before another when comparing the character codes of the two strings:</p>
+<pre><code class="language-csharp">
+var str0 = "abc";
+var str1 = "def";
+
+Console.WriteLine(String.Compare(str0, str1));
+Console.WriteLine(String.Compare(str1, str0));
+Console.WriteLine(String.Compare(str0, str0));
+</code></pre>
+<pre><code class="language-csharp">
+-1
+1
+0
+</code></pre>
+
+<p>This results in more or less the same ordering as one would use to sort entries in an English dictionary, except that because it goes by character codes, uppercase letters are sorted before lowercase letters, etc.:</p>
+<pre><code class="language-csharp">
+var str0 = "cat";
+var str1 = "dog";
+var str2 = "DOG";
+
+Console.WriteLine(String.Compare(str0, str1));
+Console.WriteLine(String.Compare(str0, str2));
+</code></pre>
+<pre><code class="language-csharp">
+-1
+1
+</code></pre>
+
+<p>This method is handy for sorting arrays of strings. <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/array_t.md#sort-void"> Sort</a> is an <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/array_t.md"> Array</a> method that sorts an array in place using a given comparison function:</p>
+<pre><code class="language-csharp">
+var strings = Array[String]();
+
+strings.Add("hi");
+strings.Add("greetings");
+strings.Add("nice to see you");
+strings.Add("good morning");
+
+Console.WriteLine(strings);
+
+strings.Sort(String.Compare); // the Compare function is passed as a delegate
+
+Console.WriteLine(strings);
+</code></pre>
+<pre><code class="language-csharp">
+{hi, greetings, nice to see you, good morning}
+{good morning, greetings, hi, nice to see you}
+</code></pre>
+
+<p>##  Concatenate</p>
+<p><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/string.md#concatenate-plasma-engine"> Concatenate</a> can be used to join two existing strings:</p>
+<pre><code class="language-csharp">
+Console.WriteLine(String.Concatenate("exa", "mple"));
+</code></pre>
+<pre><code class="language-csharp">
+example
+</code></pre>
+
+<p>##  FormatC</p>
+<p><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/string.md#formatc-plasma-engine-docu"> FormatC</a> produces a string using C-style string formatting syntax:</p>
+<pre><code class="language-csharp">
+var score = 12340;
+Console.WriteLine(String.FormatC("Score: %08d", score));
+var hull = 100.0 * 43.0 / 64.0; // actual value 67.1875
+Console.WriteLine(String.FormatC("Hull integrity at %.2f percent", hull));
+</code></pre>
+<pre><code class="language-csharp">
+Score: 00012340
+Hull integrity at 67.19 percent
+</code></pre>
+
+<p><strong>FormatC</strong> uses the same syntax as <a href="http://www.cplusplus.com/reference/cstdio/printf/">the C printf function</a>, with the following notes:
+- the <code>p</code> format specifier can only be used with references to objects of reference types
+- the <code>n</code> format specifier cannot be used
+- the <code>#</code> flag can only be used with the <code>o</code>, <code>x</code>, and <code>X</code> specifiers
+- the <code>.</code> precision marker must have its precision value specified</p>
+<p>##  FromRune</p>
+<p><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/string.md#fromrune-plasma-engine-doc"> FromRune</a> returns a one-character string that consists of the given rune, which can either be passed in directly, or be specified by its code point:</p>
+<pre><code class="language-csharp">
+Console.WriteLine(String.FromRune(65));
+Console.WriteLine(String.FromRune(Rune(90)));
+</code></pre>
+<pre><code class="language-csharp">
+A
+Z
+</code></pre>
+
+<p>##  IsNullOrEmpty and IsNullOrWhitespace</p>
+<p><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/string.md#isnullorempty-plasma-engin"> IsNullOrEmpty</a> returns true if the given string is either <strong>null</strong> or the empty string, <code>""</code>, and false otherwise. <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/string.md#isnullorwhitespace-plasma"> IsNullOrWhitespace</a> works just the same way, except that it also returns true if the given string consists only of <strong>whitespace</strong> characters:</p>
+<pre><code class="language-csharp">
+Console.WriteLine(String.IsNullOrWhitespace("  \n  \t  "));
+</code></pre>
+<pre><code class="language-csharp">
+true
+</code></pre>
+
+<p>##  Join</p>
+<p><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/string.md#join-plasma-engine-documen"> Join</a> combines two, three, or four strings into one, placing a given separator string between them in the result:</p>
+<pre><code class="language-csharp">
+var word0 = "Eeny";
+var word1 = "Meeny";
+var word2 = "Miney";
+var word3 = "Moe";
+var separator = ", ";
+Console.WriteLine(String.Join(separator, word0, word1, word2, word3));
+</code></pre>
+<pre><code class="language-csharp">
+Eeny, Meeny, Miney, Moe
+</code></pre>
+
+<p>#  String Properties</p>
+<p>##  All</p>
+<p><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/string.md#all-plasma-engine-document"> All</a> converts the string into a StringRange. In Lightning, strings can be implicitly cast to StringRanges, so it is typically not necessary to use this property:</p>
+<pre><code class="language-csharp">
+// Contains takes a StringRange
+Console.WriteLine("homeowner".Contains("meow"));
+Console.WriteLine("homeowner".Contains("meow".All));
+</code></pre>
+<pre><code class="language-csharp">
+true
+true
+</code></pre>
+
+<p>##  Begin and End</p>
+<p><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/string.md#begin-plasma-engine-docume"> Begin</a> gets the RuneIterator at the start of the string, and <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/string.md#end-plasma-engine-document"> End</a> gets the RuneIterator at the end of it:</p>
+<pre><code class="language-csharp">
+var fileName = "SnowLevel.Analytics.gamedata";
+var levelName = fileName.SubString(fileName.Begin, fileName.FindFirstOf(".").Begin);
+var extension = fileName.SubString(fileName.FindLastOf(".").End, fileName.End);
+Console.WriteLine(levelName);
+Console.WriteLine(extension);
+</code></pre>
+<pre><code class="language-csharp">
+SnowLevel
+gamedata
+</code></pre>
+
+<p>##  ByteCount and Count</p>
+<p><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/string.md#bytecount-plasma-engine-do"> ByteCount</a> gets the number of bytes in the string. For a string that contains one or more characters outside of the ASCII range, this will be different from the number of runes represented by the string (see <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/Lightning/strings/.md#computerunecount">ComputeRuneCount</a> below). Consider the following code example, attached to a cog that has a SpriteText component whose Text property is set to the French word //gar'on//:</p>
+<pre><code class="language-csharp">
+var englishString = "string";
+var frenchString = this.Owner.SpriteText.Text;
+
+Console.WriteLine("The English string has `englishString.ByteCount` bytes");
+Console.WriteLine("The French string has `frenchString.ByteCount` bytes");
+</code></pre>
+<pre><code class="language-csharp">
+The English string has 6 bytes
+The French string has 7 bytes
+</code></pre>
+
+<p>The <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/string.md#count-plasma-engine-docume"> Count</a> property gets the same value as <strong>ByteCount</strong>, and exists for legacy purposes.</p>
+<p>##  Empty and IsNotEmpty</p>
+<p><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/string.md#empty-plasma-engine-docume"> Empty</a> gets whether the string contains any characters at all:</p>
+<pre><code class="language-csharp">
+var userNameInput = "";
+
+if (userNameInput.Empty)
+  Console.WriteLine("Please enter a name.");
+else
+  Console.WriteLine("Welcome, `userNameInput`.");
+</code></pre>
+<pre><code class="language-csharp">
+Please enter a name.
+</code></pre>
+
+<p><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/string.md#isnotempty-plasma-engine-d"> IsNotEmpty</a> is always the exact opposite of <strong>Empty</strong>.</p>
+<p>#  String Methods</p>
+<p>String methods are found on string instances, including literals:</p>
+<pre><code class="language-csharp">
+Console.WriteLine("hello world".ToUpper());
+</code></pre>
+<pre><code class="language-csharp">
+HELLO WORLD
+</code></pre>
+
+<p>##  CompareTo</p>
+<p>A string's <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/string.md#compareto-plasma-engine-do"> CompareTo</a> method returns an Integer indicating its relative sort order when compared with a given StringRange. It works much like the static <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/Lightning/strings/.md#compare">Compare</a> function seen above, except that it compares a given StringRange to the string on which this method is being invoked.</p>
+<p>##  ComputeRuneCount</p>
+<p>The <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/string.md#computerunecount-plasma-en"> ComputeRuneCount</a> method calculates the number of runes represented by the string by iterating through it from its <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/Lightning/strings/.md#begin-and-end">Begin iterator to its End</a>. As noted <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/Lightning/strings/.md#bytecount-and-count">above</a>, a string that contains one or more characters outside of the ASCII range will have a different rune count from its byte count:</p>
+<pre><code class="language-csharp">
+var englishString = "string";
+var frenchString = this.Owner.SpriteText.Text;
+
+Console.WriteLine("The English string has `englishString.ComputeRuneCount()` runes");
+Console.WriteLine("The French string has `frenchString.ComputeRuneCount()` runes");
+</code></pre>
+<pre><code class="language-csharp">
+The English string has 6 runes
+The French string has 6 runes
+</code></pre>
+
+<p>##  Contains</p>
+<p>The <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/string.md#contains-plasma-engine-doc"> Contains</a> method checks whether a string contains a given substring:</p>
+<pre><code class="language-csharp">
+var sentence = "DR. COSMO: \"I'm looking for a person named Brianna.\"";
+var name0 = "Brian";
+var name1 = "Anna";
+
+Console.WriteLine(sentence);
+
+if (sentence.Contains(name0))
+  Console.WriteLine("* BRIAN: \"Did someone mention me?\"");
+if (sentence.Contains(name1))
+  Console.WriteLine("* ANNA: \"My ears are burning.\"");
+</code></pre>
+<pre><code class="language-csharp">
+DR. COSMO: "I'm looking for a person named Brianna."
+* BRIAN: "Did someone mention me?"
+</code></pre>
+
+<p>As this example shows, <strong>Contains</strong> is case-sensitive, but it does <em>not</em> match only complete words. <code>Brianna</code> contains <code>Brian</code>, and it does contain <code>anna</code>, but not <code>Anna</code>.</p>
+<p>##  EndsWith and StartsWith</p>
+<p>The <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/string.md#endswith-plasma-engine-doc"> EndsWith</a> method checks whether a string ends with a given substring:</p>
+<pre><code class="language-csharp">
+var fileNameToOpen = "DesertLevel.Analytics.gamedata";
+
+var validFileExtension = ".gamedata";
+
+if (fileNameToOpen.EndsWith(validFileExtension))
+  Console.WriteLine("Opening `fileNameToOpen`....");
+else
+  Console.WriteLine("`fileNameToOpen` is not a valid file");
+</code></pre>
+<pre><code class="language-csharp">
+Opening DesertLevel.Analytics.gamedata....
+</code></pre>
+
+<p>The <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/string.md#startswith-plasma-engine-d"> StartsWith</a> method works the same way, except that it checks the beginning of the string instead the end.</p>
+<p>##  Replace</p>
+<p>The <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/string.md#replace-plasma-engine-docu"> Replace</a> method returns a new string, with all occurrences of a given old substring replaced with a given new substring:</p>
+<pre><code class="language-csharp">
+var dialogueFromFile = "Oh, [HERO_NAME]! Your friend [VILLAIN_NAME] was looking for you.";
+
+var heroName = "Brianna";
+var villainName = "Dr. Cosmo";
+
+var dialogue = dialogueFromFile.Replace("[HERO_NAME]", heroName);
+dialogue = dialogue.Replace("[VILLAIN_NAME]", villainName);
+
+Console.WriteLine(dialogue);
+</code></pre>
+<pre><code class="language-csharp">
+Oh, Brianna! Your friend Dr. Cosmo was looking for you.
+</code></pre>
+
+<p>##  Split</p>
+<p>The <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/string.md#split-plasma-engine-docume"> Split</a> method scans a string for a given delimiter StringRange of one or more characters. The substrings that were found separated by occurrences of that delimiter, if any, are returned as an iterable range. The delimiter itself is not present in the split results:</p>
+<pre><code class="language-csharp">
+var dataFromFile = "0,0,2,0,5,4,1,1,0,0,0,1,1,3,5,1";
+var splitResults = dataFromFile.Split(",");
+
+// splitResults now contains "0", "0", "2", "0", "5", "4", and so on
+
+var total = 0;
+
+foreach (var result in splitResults)
+  total += Integer.Parse(result);
+
+Console.WriteLine("Data Total: `total`");
+</code></pre>
+<pre><code class="language-csharp">
+Data Total: 24
+</code></pre>
+
+<p>NOTE: <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer.md#parse-plasma-engine-docume"> Parse</a> is a static <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer.md"> Integer</a> function. It takes a StringRange and interprets it as if it were an Integer, and returns that value. Equivalent static functions exist in other classes, such as <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.md"> Real</a>, <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/doubleinteger.md"> DoubleInteger</a>, etc.</p>
+<p>##  SubString, SubStringBytes, and SubStringFromRuneIndices</p>
+<p>The <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/string.md#substring-plasma-engine-do"> SubString</a> method returns the snippet of a string that is bounded by the two given RuneIterators. This may be the entire string itself, or it may be a smaller portion thereof:</p>
+<pre><code class="language-csharp">
+var name = "The Evil Dr. Cosmo";
+
+var firstSpace = name.FindFirstOf(" ");
+// firstSpace refers to the space directly after "The"
+var title = name.FindFirstOf("Dr.");
+// title refers to the "Dr." between "Evil" and "Cosmo"
+var lastSpace = name.FindLastOf(" ");
+// lastSpace refers to the space directly before "Cosmo"
+
+var part0 = name.SubString(name.Begin, firstSpace.Begin); // "The"
+var part1 = "Handsome but Misunderstood";
+var part2 = name.SubString(title.Begin, title.End);       // "Dr."
+var part3 = "Eugene";
+var part4 = name.SubString(lastSpace.End, name.End);      // "Cosmo"
+var part5 = "IV";
+
+var revisedName = "`part0` `part1` `part2` `part3` `part4` `part5`";
+
+Console.WriteLine(revisedName);
+</code></pre>
+<pre><code class="language-csharp">
+The Handsome but Misunderstood Dr. Eugene Cosmo IV
+</code></pre>
+
+<ul>
+<li>See also <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/Lightning/strings/.md#findfirstof">FindFirstOf</a></li>
+<li>See also <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/Lightning/strings/.md#findfirstof">FindLastOf</a></li>
+</ul>
+<p>Besides <strong>SubString</strong>, there are two other String methods that return substrings:</p>
+<ul>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/string.md#substringbytes-plasma-engi"> SubStringBytes</a> returns a string's substring that starts at the given byte index and runs for the given byte length:</li>
+</ul>
+<pre><code class="language-csharp">
+var str = "abcdefghij";
+//         0123456789
+//      start ^
+//            12345
+//                ^ 5 bytes long
+var sub = str.SubStringBytes(3, 5);
+Console.WriteLine(sub);
+</code></pre>
+<pre><code class="language-csharp">
+defgh
+</code></pre>
+
+<p>IMPORTANT: A string that contains characters that are outside of the ASCII range will not have a matching rune count and byte count. Using <strong>SubStringBytes</strong> on such a string may produce undesired behavior.</p>
+<ul>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/string.md#substringfromruneindices"> SubStringFromRuneIndices</a> returns a string's substring that starts at the given starting rune index and ends one past the given ending rune index:</li>
+</ul>
+<pre><code class="language-csharp">
+var str = "abcdefghij";
+//         0123456789
+//     start ^      ^ one past the end
+var sub = str.SubStringFromRuneIndices(2, 9);
+Console.WriteLine(sub);
+</code></pre>
+<pre><code class="language-csharp">
+cdefghi
+</code></pre>
+
+<p>NOTE: Finding a given rune by its index requires a linear search through a string. Because <strong>SubStringFromRuneIndices</strong> requires two such searches, this method can be slower than <strong>SubString</strong>. In certain situations, such as a deeply nested loop, this performance difference may be significant.</p>
+<p>##  ToLower and ToUpper</p>
+<p>The <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/string.md#tolower-plasma-engine-docu"> ToLower</a> method returns a copy of the original string with all of its letters converted to lowercase. Any character that is not an uppercase alphabetical character is unchanged:</p>
+<pre><code class="language-csharp">
+var sentence = "gEt ReKT scRUb";
+var forbiddenWord = "scrub";
+
+var lower = sentence.ToLower();
+
+if (lower.Contains(forbiddenWord))
+  Console.WriteLine("You have been reported for bad manners.");
+else
+  Console.WriteLine(sentence);
+</code></pre>
+<pre><code class="language-csharp">
+You have been reported for bad manners.
+</code></pre>
+
+<p>The <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/string.md#toupper-plasma-engine-docu"> ToUpper</a> method is just like ToLower, except that it converts letters to uppercase:</p>
+<pre><code class="language-csharp">
+var name = "Johnny";
+var upperName = name.ToUpper();
+var dialogue = "`upperName`: \"This is `name`.\"";
+Console.WriteLine(dialogue);
+</code></pre>
+<pre><code class="language-csharp">
+JOHNNY: "This is Johnny."
+</code></pre>
+
+<p>##  Trim, TrimEnd, and TrimStart</p>
+<p>The <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/string.md#trim-plasma-engine-documen"> Trim</a> method returns a copy of the original string with all of its whitespace characters removed from its beginning and end:</p>
+<pre><code class="language-csharp">
+var untrimmedID = "    f08b47e1            ";
+Console.WriteLine("Your ID is `untrimmedID`. Write it down.");
+
+var trimmedID = untrimmedID.Trim();
+Console.WriteLine("Your ID is `trimmedID`. Write it down.");
+</code></pre>
+<pre><code class="language-csharp">
+Your ID is     f08b47e1            . Write it down.
+Your ID is f08b47e1. Write it down.
+</code></pre>
+
+<p><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/string.md#trimend-plasma-engine-docu"> TrimEnd</a> and <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/string.md#trimstart-plasma-engine-do"> TrimStart</a> work just the same as <strong>Trim</strong>, except that <strong>TrimEnd</strong> only trims whitespace characters from the end of the string, and <strong>TrimStart</strong> only trims from the start of the string.</p>
+<p>#  Related Materials
+ ##  Manual
+- <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/Lightning/looping.md"> Looping</a></p>
+<p>##  Code Reference
+- <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/string.md"> String</a>
+- <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/stringrange.md"> StringRange</a>
+- <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/stringbuilder.md"> StringBuilder</a>
+- <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/stringsplitrange.md"> StringSplitRange</a>
+- <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/rune.md"> Rune</a>
+- <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/runeiterator.md"> RuneIterator</a> </p>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../swizzle/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../swizzle/" class="btn btn-xs btn-link">
+        Swizzle
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../reflection/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../reflection/" class="btn btn-xs btn-link">
+        Reflection
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="col-md-12 wm-page-content">
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/noraj/mkdocs-windmill-dark">Windmill Dark</a> theme by Alexandre ZANNI (noraj).</p>
+</footer>
+
+</body>
+</html>

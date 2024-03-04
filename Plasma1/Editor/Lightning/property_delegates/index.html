@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="author" content="PlasmaDev">
+    <link rel="canonical" href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/Lightning/property_delegates/">
+    <link rel="shortcut icon" href="../../../../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Property Delegate - PlasmaDocs</title>
+    <link href="../../../../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../../../../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../../../../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../../../css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../../../../js/jquery-3.2.1.min.js"></script>
+    <script src="../../../../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../../../../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '../../../..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "Property Delegate", url: "#_top", children: [
+          ]},
+        ];
+
+    </script>
+    <script src="../../../../js/base.js"></script>
+      <script src="../../../../search/main.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../reflection/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../reflection/" class="btn btn-xs btn-link">
+        Reflection
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../properties/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../properties/" class="btn btn-xs btn-link">
+        Properties
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <h1 id="property-delegate">Property Delegate</h1>
+<p>Property Delegates can be generated from any field using the <code>@</code> symbol. Fields are variables, but not all variables are fields. Local variables do not have the ability to be accessed via a property and they cannot be used in conjunction with the property delegate operator like fields can.</p>
+<pre><code class="language-csharp">
+class Cat
+{
+  var Lives: Integer = 9;
+
+  function Example()
+  {
+    // @, the property delegate operator, takes this.Lives
+    // and creates a property delegate from it.
+    var prop = @this.Lives;
+
+    Console.WriteLine(typeid(prop).Name); // Property[Integer]
+    Console.WriteLine(prop.Get());        // 9
+
+    prop.Set(7);
+    Console.WriteLine(prop.Get());        // 7
+    Console.WriteLine(this.Lives);        // 7
+  }
+}
+</code></pre>
+<pre><code class="language-csharp">
+Property[Integer]
+9
+7
+7
+</code></pre>
+
+<p># Property Delegates as Function Parameters
+Choosing to take a property delegate as a parameter allows the user to propagate side-effects to the parameters that would otherwise be lost on copies passed in by-value.</p>
+<pre><code class="language-csharp">
+class PropertyDelegateTest : LightningComponent
+{
+  [Property]
+  var MyProperty : Real = 5.0;
+
+  function Initialize(init : CogInitializer)
+  {
+    Console.WriteLine("Before Drivers: `this.MyProperty`") //
+    this.DriverControl(this.MyProperty);
+    Console.WriteLine("Between Drivers: `this.MyProperty`")
+    this.Driver(@this.MyProperty);
+    Console.WriteLine("After Drivers: `this.MyProperty`")
+  }
+
+  function Driver(prop : Property[Integer])
+  {
+    prop.Set(15);
+    Console.WriteLine("Inside Driver: `prop.Get()`);
+  }
+
+  function DriverControl(prop : Integer)
+  {
+    prop = 2;
+    Console.WriteLine("Inside DriverControl: `prop`);
+  }
+}
+</code></pre>
+<pre><code class="language-csharp">
+Before Drivers: 5.0
+Inside Driver: 15.0
+Between Drivers: 15.0
+Inside DriverControl: 2.0
+After Drivers: 15.0
+</code></pre>
+<p>In this example it can be seen that when the property delegate of <code>MyProperty</code> is passed into the function <code>Driver()</code> it can be used to set the value of the member variable. This is because desprite the delegate itself being passed by value into the function it still contains a reference to <code>MyProperty</code>. However, when <code>MyProperty</code> is passed directly into the function <code>DriverControl()</code> it is also passed by value. The assignment of <code>prop</code> in <code>DriverControl()</code> is actually setting the value of the a local copy of <code>MyProperty</code>. When the function completes and reaches the end of its scope <code>prop</code> will cease to exist.  </p>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../reflection/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../reflection/" class="btn btn-xs btn-link">
+        Reflection
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../properties/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../properties/" class="btn btn-xs btn-link">
+        Properties
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="col-md-12 wm-page-content">
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/noraj/mkdocs-windmill-dark">Windmill Dark</a> theme by Alexandre ZANNI (noraj).</p>
+</footer>
+
+</body>
+</html>

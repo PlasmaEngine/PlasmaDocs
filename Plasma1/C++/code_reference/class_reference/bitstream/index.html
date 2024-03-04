@@ -1,0 +1,6958 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="author" content="PlasmaDev">
+    <link rel="canonical" href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C%2B%2B/code_reference/class_reference/bitstream/">
+    <link rel="shortcut icon" href="../../../../../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Bitstream - PlasmaDocs</title>
+    <link href="../../../../../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../../../../../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../../../../../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../../../../css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../../../../../js/jquery-3.2.1.min.js"></script>
+    <script src="../../../../../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../../../../../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '../../../../..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+        ];
+
+    </script>
+    <script src="../../../../../js/base.js"></script>
+      <script src="../../../../../search/main.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../blendsettings/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../blendsettings/" class="btn btn-xs btn-link">
+        Blendsettings
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../binarycontent/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../binarycontent/" class="btn btn-xs btn-link">
+        Binarycontent
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <p><code>Networking</code></p>
+<p>(NOTE) Bit-packed data stream.</p>
+<table>
+<thead>
+<tr>
+<th>Methods</th>
+<th>Properties</th>
+<th>Base Classes</th>
+<th>Derived Classes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/bitstream.md#bitstream-void"> Constructor</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/bitstream.md#canreadboolean-plasma-engi"> CanReadBoolean</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/bitstream.md#canreaddoubleinteger-zer"> CanReadDoubleInteger</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/bitstream.md#canreaddoubleintegerquan"> CanReadDoubleIntegerQuantized</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/bitstream.md#canreaddoublereal-plasma-e"> CanReadDoubleReal</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/bitstream.md#canreaddoublerealquantiz"> CanReadDoubleRealQuantized</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/bitstream.md#canreadinteger-plasma-engi"> CanReadInteger</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/bitstream.md#canreadinteger2-plasma-eng"> CanReadInteger2</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/bitstream.md#canreadinteger2quantized"> CanReadInteger2Quantized</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/bitstream.md#canreadinteger3-plasma-eng"> CanReadInteger3</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/bitstream.md#canreadinteger3quantized"> CanReadInteger3Quantized</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/bitstream.md#canreadinteger4-plasma-eng"> CanReadInteger4</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/bitstream.md#canreadinteger4quantized"> CanReadInteger4Quantized</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/bitstream.md#canreadintegerquantized"> CanReadIntegerQuantized</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/bitstream.md#canreadquaternion-plasma-e"> CanReadQuaternion</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/bitstream.md#canreadreal-plasma-engine"> CanReadReal</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/bitstream.md#canreadreal2-plasma-engine"> CanReadReal2</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/bitstream.md#canreadreal2half-plasma-en"> CanReadReal2Half</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/bitstream.md#canreadreal2quantized-ze"> CanReadReal2Quantized</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/bitstream.md#canreadreal3-plasma-engine"> CanReadReal3</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/bitstream.md#canreadreal3half-plasma-en"> CanReadReal3Half</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/bitstream.md#canreadreal3quantized-ze"> CanReadReal3Quantized</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/bitstream.md#canreadreal4-plasma-engine"> CanReadReal4</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/bitstream.md#canreadreal4half-plasma-en"> CanReadReal4Half</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/bitstream.md#canreadreal4quantized-ze"> CanReadReal4Quantized</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/bitstream.md#canreadrealhalf-plasma-eng"> CanReadRealHalf</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/bitstream.md#canreadrealquantized-zer"> CanReadRealQuantized</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/bitstream.md#canreadstring-plasma-engin"> CanReadString</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/bitstream.md#clear-void"> Clear</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/bitstream.md#clearbitsread-void"> ClearBitsRead</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/bitstream.md#clearbitswritten-void"> ClearBitsWritten</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/bitstream.md#getbitcapacity-plasma-engi"> GetBitCapacity</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/bitstream.md#getbitsread-plasma-engine"> GetBitsRead</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/bitstream.md#getbitsunread-plasma-engin"> GetBitsUnread</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/bitstream.md#getbitsunwritten-plasma-en"> GetBitsUnwritten</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/bitstream.md#getbitswritten-plasma-engi"> GetBitsWritten</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/bitstream.md#getbytecapacity-plasma-eng"> GetByteCapacity</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/bitstream.md#getbytesread-plasma-engine"> GetBytesRead</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/bitstream.md#getbytesunread-plasma-engi"> GetBytesUnread</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/bitstream.md#getbytesunwritten-plasma-e"> GetBytesUnwritten</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/bitstream.md#getbyteswritten-plasma-eng"> GetBytesWritten</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/bitstream.md#isempty-plasma-engine-docu"> IsEmpty</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/bitstream.md#measureboolean-plasma-engi"> MeasureBoolean</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/bitstream.md#measuredoubleinteger-zer"> MeasureDoubleInteger</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/bitstream.md#measuredoubleintegerquan"> MeasureDoubleIntegerQuantized</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/bitstream.md#measuredoublereal-plasma-e"> MeasureDoubleReal</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/bitstream.md#measuredoublerealquantiz"> MeasureDoubleRealQuantized</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/bitstream.md#measureinteger-plasma-engi"> MeasureInteger</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/bitstream.md#measureinteger2-plasma-eng"> MeasureInteger2</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/bitstream.md#measureinteger2quantized"> MeasureInteger2Quantized</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/bitstream.md#measureinteger3-plasma-eng"> MeasureInteger3</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/bitstream.md#measureinteger3quantized"> MeasureInteger3Quantized</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/bitstream.md#measureinteger4-plasma-eng"> MeasureInteger4</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/bitstream.md#measureinteger4quantized"> MeasureInteger4Quantized</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/bitstream.md#measureintegerquantized"> MeasureIntegerQuantized</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/bitstream.md#measurequaternion-plasma-e"> MeasureQuaternion</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/bitstream.md#measurereal-plasma-engine"> MeasureReal</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/bitstream.md#measurereal2-plasma-engine"> MeasureReal2</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/bitstream.md#measurereal2half-plasma-en"> MeasureReal2Half</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/bitstream.md#measurereal2quantized-ze"> MeasureReal2Quantized</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/bitstream.md#measurereal3-plasma-engine"> MeasureReal3</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/bitstream.md#measurereal3half-plasma-en"> MeasureReal3Half</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/bitstream.md#measurereal3quantized-ze"> MeasureReal3Quantized</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/bitstream.md#measurereal4-plasma-engine"> MeasureReal4</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/bitstream.md#measurereal4half-plasma-en"> MeasureReal4Half</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/bitstream.md#measurereal4quantized-ze"> MeasureReal4Quantized</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/bitstream.md#measurerealhalf-plasma-eng"> MeasureRealHalf</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/bitstream.md#measurerealquantized-zer"> MeasureRealQuantized</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/bitstream.md#measurestring-plasma-engin"> MeasureString</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/bitstream.md#readboolean-plasma-engine"> ReadBoolean</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/bitstream.md#readdoubleinteger-plasma-e"> ReadDoubleInteger</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/bitstream.md#readdoubleintegerquantiz"> ReadDoubleIntegerQuantized</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/bitstream.md#readdoublereal-plasma-engi"> ReadDoubleReal</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/bitstream.md#readdoublerealquantized"> ReadDoubleRealQuantized</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/bitstream.md#readinteger-plasma-engine"> ReadInteger</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/bitstream.md#readinteger2-plasma-engine"> ReadInteger2</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/bitstream.md#readinteger2quantized-ze"> ReadInteger2Quantized</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/bitstream.md#readinteger3-plasma-engine"> ReadInteger3</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/bitstream.md#readinteger3quantized-ze"> ReadInteger3Quantized</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/bitstream.md#readinteger4-plasma-engine"> ReadInteger4</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/bitstream.md#readinteger4quantized-ze"> ReadInteger4Quantized</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/bitstream.md#readintegerquantized-zer"> ReadIntegerQuantized</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/bitstream.md#readquaternion-plasma-engi"> ReadQuaternion</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/bitstream.md#readreal-plasma-engine-doc"> ReadReal</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/bitstream.md#readreal2-plasma-engine-do"> ReadReal2</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/bitstream.md#readreal2half-plasma-engin"> ReadReal2Half</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/bitstream.md#readreal2quantized-plasma"> ReadReal2Quantized</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/bitstream.md#readreal3-plasma-engine-do"> ReadReal3</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/bitstream.md#readreal3half-plasma-engin"> ReadReal3Half</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/bitstream.md#readreal3quantized-plasma"> ReadReal3Quantized</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/bitstream.md#readreal4-plasma-engine-do"> ReadReal4</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/bitstream.md#readreal4half-plasma-engin"> ReadReal4Half</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/bitstream.md#readreal4quantized-plasma"> ReadReal4Quantized</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/bitstream.md#readrealhalf-plasma-engine"> ReadRealHalf</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/bitstream.md#readrealquantized-plasma-e"> ReadRealQuantized</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/bitstream.md#readstring-plasma-engine-d"> ReadString</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/bitstream.md#reserve-void"> Reserve</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/bitstream.md#setbitsread-void"> SetBitsRead</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/bitstream.md#setbitswritten-void"> SetBitsWritten</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/bitstream.md#setbytesread-void"> SetBytesRead</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/bitstream.md#setbyteswritten-void"> SetBytesWritten</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/bitstream.md#unread-void"> Unread</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/bitstream.md#writeboolean-void"> WriteBoolean</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/bitstream.md#writedoubleinteger-void"> WriteDoubleInteger</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/bitstream.md#writedoubleintegerquanti"> WriteDoubleIntegerQuantized</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/bitstream.md#writedoublereal-void"> WriteDoubleReal</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/bitstream.md#writedoublerealquantized"> WriteDoubleRealQuantized</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/bitstream.md#writeinteger-void"> WriteInteger</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/bitstream.md#writeinteger2-void"> WriteInteger2</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/bitstream.md#writeinteger2quantized-v"> WriteInteger2Quantized</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/bitstream.md#writeinteger3-void"> WriteInteger3</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/bitstream.md#writeinteger3quantized-v"> WriteInteger3Quantized</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/bitstream.md#writeinteger4-void"> WriteInteger4</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/bitstream.md#writeinteger4quantized-v"> WriteInteger4Quantized</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/bitstream.md#writeintegerquantized-vo"> WriteIntegerQuantized</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/bitstream.md#writequaternion-void"> WriteQuaternion</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/bitstream.md#writereal-void"> WriteReal</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/bitstream.md#writereal2-void"> WriteReal2</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/bitstream.md#writereal2half-void"> WriteReal2Half</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/bitstream.md#writereal2quantized-void"> WriteReal2Quantized</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/bitstream.md#writereal3-void"> WriteReal3</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/bitstream.md#writereal3half-void"> WriteReal3Half</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/bitstream.md#writereal3quantized-void"> WriteReal3Quantized</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/bitstream.md#writereal4-void"> WriteReal4</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/bitstream.md#writereal4half-void"> WriteReal4Half</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/bitstream.md#writereal4quantized-void"> WriteReal4Quantized</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/bitstream.md#writerealhalf-void"> WriteRealHalf</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/bitstream.md#writerealquantized-void"> WriteRealQuantized</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/bitstream.md#writestring-void"> WriteString</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>#  Properties</p>
+<hr />
+<p>#  Methods</p>
+<hr />
+<p>#  BitStream : Void</p>
+<p><code>constructor</code></p>
+<blockquote>
+<p>Default Constructor.
+|Name|Type|Description|
+|---|---|---|
+<code>lang=cpp, name=Lightning
+function BitStream()</code> </p>
+</blockquote>
+<hr />
+<p>#  CanReadBoolean : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.md">boolean</a></p>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>``` lang=cpp, name=Lightning</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>function CanReadBoolean() : Boolean</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>```</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<hr />
+<p>#  CanReadDoubleInteger : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.md">boolean</a></p>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>``` lang=cpp, name=Lightning</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>function CanReadDoubleInteger() : Boolean</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>```</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<hr />
+<p>#  CanReadDoubleIntegerQuantized : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.md">boolean</a></p>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/doubleinteger.md">doubleinteger</a></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/doubleinteger.md">doubleinteger</a></td>
+<td></td>
+</tr>
+<tr>
+<td>``` lang=cpp, name=Lightning</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>function CanReadDoubleIntegerQuantized( : DoubleInteger,  : DoubleInteger) : Boolean</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>```</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<hr />
+<p>#  CanReadDoubleIntegerQuantized : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.md">boolean</a></p>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/doubleinteger.md">doubleinteger</a></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/doubleinteger.md">doubleinteger</a></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/doubleinteger.md">doubleinteger</a></td>
+<td></td>
+</tr>
+<tr>
+<td>``` lang=cpp, name=Lightning</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>function CanReadDoubleIntegerQuantized( : DoubleInteger,  : DoubleInteger,  : DoubleInteger) : Boolean</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>```</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<hr />
+<p>#  CanReadDoubleReal : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.md">boolean</a></p>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>``` lang=cpp, name=Lightning</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>function CanReadDoubleReal() : Boolean</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>```</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<hr />
+<p>#  CanReadDoubleRealQuantized : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.md">boolean</a></p>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/doublereal.md">doublereal</a></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/doublereal.md">doublereal</a></td>
+<td></td>
+</tr>
+<tr>
+<td>``` lang=cpp, name=Lightning</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>function CanReadDoubleRealQuantized( : DoubleReal,  : DoubleReal) : Boolean</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>```</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<hr />
+<p>#  CanReadDoubleRealQuantized : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.md">boolean</a></p>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/doublereal.md">doublereal</a></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/doublereal.md">doublereal</a></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/doublereal.md">doublereal</a></td>
+<td></td>
+</tr>
+<tr>
+<td>``` lang=cpp, name=Lightning</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>function CanReadDoubleRealQuantized( : DoubleReal,  : DoubleReal,  : DoubleReal) : Boolean</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>```</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<hr />
+<p>#  CanReadInteger : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.md">boolean</a></p>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>``` lang=cpp, name=Lightning</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>function CanReadInteger() : Boolean</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>```</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<hr />
+<p>#  CanReadInteger2 : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.md">boolean</a></p>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>``` lang=cpp, name=Lightning</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>function CanReadInteger2() : Boolean</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>```</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<hr />
+<p>#  CanReadInteger2Quantized : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.md">boolean</a></p>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer2.md">integer2</a></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer2.md">integer2</a></td>
+<td></td>
+</tr>
+<tr>
+<td>``` lang=cpp, name=Lightning</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>function CanReadInteger2Quantized( : Integer2,  : Integer2) : Boolean</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>```</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<hr />
+<p>#  CanReadInteger2Quantized : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.md">boolean</a></p>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer2.md">integer2</a></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer2.md">integer2</a></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer2.md">integer2</a></td>
+<td></td>
+</tr>
+<tr>
+<td>``` lang=cpp, name=Lightning</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>function CanReadInteger2Quantized( : Integer2,  : Integer2,  : Integer2) : Boolean</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>```</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<hr />
+<p>#  CanReadInteger3 : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.md">boolean</a></p>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>``` lang=cpp, name=Lightning</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>function CanReadInteger3() : Boolean</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>```</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<hr />
+<p>#  CanReadInteger3Quantized : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.md">boolean</a></p>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer3.md">integer3</a></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer3.md">integer3</a></td>
+<td></td>
+</tr>
+<tr>
+<td>``` lang=cpp, name=Lightning</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>function CanReadInteger3Quantized( : Integer3,  : Integer3) : Boolean</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>```</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<hr />
+<p>#  CanReadInteger3Quantized : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.md">boolean</a></p>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer3.md">integer3</a></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer3.md">integer3</a></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer3.md">integer3</a></td>
+<td></td>
+</tr>
+<tr>
+<td>``` lang=cpp, name=Lightning</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>function CanReadInteger3Quantized( : Integer3,  : Integer3,  : Integer3) : Boolean</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>```</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<hr />
+<p>#  CanReadInteger4 : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.md">boolean</a></p>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>``` lang=cpp, name=Lightning</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>function CanReadInteger4() : Boolean</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>```</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<hr />
+<p>#  CanReadInteger4Quantized : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.md">boolean</a></p>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer4.md">integer4</a></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer4.md">integer4</a></td>
+<td></td>
+</tr>
+<tr>
+<td>``` lang=cpp, name=Lightning</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>function CanReadInteger4Quantized( : Integer4,  : Integer4) : Boolean</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>```</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<hr />
+<p>#  CanReadInteger4Quantized : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.md">boolean</a></p>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer4.md">integer4</a></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer4.md">integer4</a></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer4.md">integer4</a></td>
+<td></td>
+</tr>
+<tr>
+<td>``` lang=cpp, name=Lightning</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>function CanReadInteger4Quantized( : Integer4,  : Integer4,  : Integer4) : Boolean</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>```</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<hr />
+<p>#  CanReadIntegerQuantized : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.md">boolean</a></p>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer.md">integer</a></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer.md">integer</a></td>
+<td></td>
+</tr>
+<tr>
+<td>``` lang=cpp, name=Lightning</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>function CanReadIntegerQuantized( : Integer,  : Integer) : Boolean</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>```</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<hr />
+<p>#  CanReadIntegerQuantized : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.md">boolean</a></p>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer.md">integer</a></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer.md">integer</a></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer.md">integer</a></td>
+<td></td>
+</tr>
+<tr>
+<td>``` lang=cpp, name=Lightning</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>function CanReadIntegerQuantized( : Integer,  : Integer,  : Integer) : Boolean</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>```</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<hr />
+<p>#  CanReadQuaternion : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.md">boolean</a></p>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>``` lang=cpp, name=Lightning</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>function CanReadQuaternion() : Boolean</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>```</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<hr />
+<p>#  CanReadReal : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.md">boolean</a></p>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>``` lang=cpp, name=Lightning</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>function CanReadReal() : Boolean</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>```</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<hr />
+<p>#  CanReadReal2 : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.md">boolean</a></p>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>``` lang=cpp, name=Lightning</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>function CanReadReal2() : Boolean</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>```</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<hr />
+<p>#  CanReadReal2Half : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.md">boolean</a></p>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>``` lang=cpp, name=Lightning</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>function CanReadReal2Half() : Boolean</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>```</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<hr />
+<p>#  CanReadReal2Quantized : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.md">boolean</a></p>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real2.md">real2</a></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real2.md">real2</a></td>
+<td></td>
+</tr>
+<tr>
+<td>``` lang=cpp, name=Lightning</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>function CanReadReal2Quantized( : Real2,  : Real2) : Boolean</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>```</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<hr />
+<p>#  CanReadReal2Quantized : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.md">boolean</a></p>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real2.md">real2</a></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real2.md">real2</a></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real2.md">real2</a></td>
+<td></td>
+</tr>
+<tr>
+<td>``` lang=cpp, name=Lightning</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>function CanReadReal2Quantized( : Real2,  : Real2,  : Real2) : Boolean</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>```</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<hr />
+<p>#  CanReadReal3 : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.md">boolean</a></p>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>``` lang=cpp, name=Lightning</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>function CanReadReal3() : Boolean</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>```</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<hr />
+<p>#  CanReadReal3Half : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.md">boolean</a></p>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>``` lang=cpp, name=Lightning</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>function CanReadReal3Half() : Boolean</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>```</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<hr />
+<p>#  CanReadReal3Quantized : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.md">boolean</a></p>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real3.md">real3</a></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real3.md">real3</a></td>
+<td></td>
+</tr>
+<tr>
+<td>``` lang=cpp, name=Lightning</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>function CanReadReal3Quantized( : Real3,  : Real3) : Boolean</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>```</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<hr />
+<p>#  CanReadReal3Quantized : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.md">boolean</a></p>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real3.md">real3</a></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real3.md">real3</a></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real3.md">real3</a></td>
+<td></td>
+</tr>
+<tr>
+<td>``` lang=cpp, name=Lightning</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>function CanReadReal3Quantized( : Real3,  : Real3,  : Real3) : Boolean</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>```</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<hr />
+<p>#  CanReadReal4 : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.md">boolean</a></p>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>``` lang=cpp, name=Lightning</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>function CanReadReal4() : Boolean</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>```</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<hr />
+<p>#  CanReadReal4Half : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.md">boolean</a></p>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>``` lang=cpp, name=Lightning</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>function CanReadReal4Half() : Boolean</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>```</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<hr />
+<p>#  CanReadReal4Quantized : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.md">boolean</a></p>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real4.md">real4</a></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real4.md">real4</a></td>
+<td></td>
+</tr>
+<tr>
+<td>``` lang=cpp, name=Lightning</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>function CanReadReal4Quantized( : Real4,  : Real4) : Boolean</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>```</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<hr />
+<p>#  CanReadReal4Quantized : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.md">boolean</a></p>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real4.md">real4</a></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real4.md">real4</a></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real4.md">real4</a></td>
+<td></td>
+</tr>
+<tr>
+<td>``` lang=cpp, name=Lightning</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>function CanReadReal4Quantized( : Real4,  : Real4,  : Real4) : Boolean</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>```</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<hr />
+<p>#  CanReadRealHalf : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.md">boolean</a></p>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>``` lang=cpp, name=Lightning</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>function CanReadRealHalf() : Boolean</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>```</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<hr />
+<p>#  CanReadRealQuantized : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.md">boolean</a></p>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.md">real</a></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.md">real</a></td>
+<td></td>
+</tr>
+<tr>
+<td>``` lang=cpp, name=Lightning</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>function CanReadRealQuantized( : Real,  : Real) : Boolean</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>```</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<hr />
+<p>#  CanReadRealQuantized : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.md">boolean</a></p>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.md">real</a></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.md">real</a></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.md">real</a></td>
+<td></td>
+</tr>
+<tr>
+<td>``` lang=cpp, name=Lightning</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>function CanReadRealQuantized( : Real,  : Real,  : Real) : Boolean</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>```</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<hr />
+<p>#  CanReadString : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.md">boolean</a></p>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>``` lang=cpp, name=Lightning</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>function CanReadString() : Boolean</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>```</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<hr />
+<p>#  Clear : Void</p>
+<blockquote>
+<p>Clears all data written and resets the bitstream, optionally freeing reserved memory.
+|Name|Type|Description|
+|---|---|---|
+|freeMemory|<a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.md">boolean</a>| |
+<code>lang=cpp, name=Lightning
+function Clear(freeMemory : Boolean)</code> </p>
+</blockquote>
+<hr />
+<p>#  ClearBitsRead : Void</p>
+<blockquote>
+<p>Clears the number of bits read.
+|Name|Type|Description|
+|---|---|---|
+<code>lang=cpp, name=Lightning
+function ClearBitsRead()</code> </p>
+</blockquote>
+<hr />
+<p>#  ClearBitsWritten : Void</p>
+<blockquote>
+<p>Clears the number of bits written.
+|Name|Type|Description|
+|---|---|---|
+<code>lang=cpp, name=Lightning
+function ClearBitsWritten()</code> </p>
+</blockquote>
+<hr />
+<p>#  GetBitCapacity : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer.md">integer</a></p>
+<blockquote>
+<p>Returns the data array capacity in bits.
+|Name|Type|Description|
+|---|---|---|
+<code>lang=cpp, name=Lightning
+function GetBitCapacity() : Integer</code> </p>
+</blockquote>
+<hr />
+<p>#  GetBitsRead : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer.md">integer</a></p>
+<blockquote>
+<p>Returns the number of bits read.
+|Name|Type|Description|
+|---|---|---|
+<code>lang=cpp, name=Lightning
+function GetBitsRead() : Integer</code> </p>
+</blockquote>
+<hr />
+<p>#  GetBitsUnread : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer.md">integer</a></p>
+<blockquote>
+<p>Returns the number of bits unread.
+|Name|Type|Description|
+|---|---|---|
+<code>lang=cpp, name=Lightning
+function GetBitsUnread() : Integer</code> </p>
+</blockquote>
+<hr />
+<p>#  GetBitsUnwritten : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer.md">integer</a></p>
+<blockquote>
+<p>Returns the number of bits unwritten.
+|Name|Type|Description|
+|---|---|---|
+<code>lang=cpp, name=Lightning
+function GetBitsUnwritten() : Integer</code> </p>
+</blockquote>
+<hr />
+<p>#  GetBitsWritten : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer.md">integer</a></p>
+<blockquote>
+<p>Returns the number of bits written.
+|Name|Type|Description|
+|---|---|---|
+<code>lang=cpp, name=Lightning
+function GetBitsWritten() : Integer</code> </p>
+</blockquote>
+<hr />
+<p>#  GetByteCapacity : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer.md">integer</a></p>
+<blockquote>
+<p>Returns the data array capacity in bytes.
+|Name|Type|Description|
+|---|---|---|
+<code>lang=cpp, name=Lightning
+function GetByteCapacity() : Integer</code> </p>
+</blockquote>
+<hr />
+<p>#  GetBytesRead : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer.md">integer</a></p>
+<blockquote>
+<p>Returns the number of bytes read (Rounded up, ex. 12 bits = 2 bytes)
+|Name|Type|Description|
+|---|---|---|
+<code>lang=cpp, name=Lightning
+function GetBytesRead() : Integer</code> </p>
+</blockquote>
+<hr />
+<p>#  GetBytesUnread : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer.md">integer</a></p>
+<blockquote>
+<p>Returns the number of bytes unread (Rounded up, ex. 12 bits = 2 bytes)
+|Name|Type|Description|
+|---|---|---|
+<code>lang=cpp, name=Lightning
+function GetBytesUnread() : Integer</code> </p>
+</blockquote>
+<hr />
+<p>#  GetBytesUnwritten : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer.md">integer</a></p>
+<blockquote>
+<p>Returns the number of bytes unwritten (Rounded up, ex. 12 bits = 2 bytes)
+|Name|Type|Description|
+|---|---|---|
+<code>lang=cpp, name=Lightning
+function GetBytesUnwritten() : Integer</code> </p>
+</blockquote>
+<hr />
+<p>#  GetBytesWritten : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer.md">integer</a></p>
+<blockquote>
+<p>Returns the number of bytes written (Rounded up, ex. 12 bits = 2 bytes)
+|Name|Type|Description|
+|---|---|---|
+<code>lang=cpp, name=Lightning
+function GetBytesWritten() : Integer</code> </p>
+</blockquote>
+<hr />
+<p>#  IsEmpty : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.md">boolean</a></p>
+<blockquote>
+<p>Returns true if the BitStream is empty (0 bits written), else false.
+|Name|Type|Description|
+|---|---|---|
+<code>lang=cpp, name=Lightning
+function IsEmpty() : Boolean</code> </p>
+</blockquote>
+<hr />
+<p>#  MeasureBoolean : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer.md">integer</a></p>
+<p><code>static</code></p>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>``` lang=cpp, name=Lightning</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>function MeasureBoolean() : Integer</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>```</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<hr />
+<p>#  MeasureDoubleInteger : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer.md">integer</a></p>
+<p><code>static</code></p>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>``` lang=cpp, name=Lightning</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>function MeasureDoubleInteger() : Integer</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>```</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<hr />
+<p>#  MeasureDoubleIntegerQuantized : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer.md">integer</a></p>
+<p><code>static</code></p>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/doubleinteger.md">doubleinteger</a></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/doubleinteger.md">doubleinteger</a></td>
+<td></td>
+</tr>
+<tr>
+<td>``` lang=cpp, name=Lightning</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>function MeasureDoubleIntegerQuantized( : DoubleInteger,  : DoubleInteger) : Integer</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>```</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<hr />
+<p>#  MeasureDoubleIntegerQuantized : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer.md">integer</a></p>
+<p><code>static</code></p>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/doubleinteger.md">doubleinteger</a></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/doubleinteger.md">doubleinteger</a></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/doubleinteger.md">doubleinteger</a></td>
+<td></td>
+</tr>
+<tr>
+<td>``` lang=cpp, name=Lightning</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>function MeasureDoubleIntegerQuantized( : DoubleInteger,  : DoubleInteger,  : DoubleInteger) : Integer</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>```</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<hr />
+<p>#  MeasureDoubleReal : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer.md">integer</a></p>
+<p><code>static</code></p>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>``` lang=cpp, name=Lightning</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>function MeasureDoubleReal() : Integer</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>```</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<hr />
+<p>#  MeasureDoubleRealQuantized : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer.md">integer</a></p>
+<p><code>static</code></p>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/doublereal.md">doublereal</a></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/doublereal.md">doublereal</a></td>
+<td></td>
+</tr>
+<tr>
+<td>``` lang=cpp, name=Lightning</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>function MeasureDoubleRealQuantized( : DoubleReal,  : DoubleReal) : Integer</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>```</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<hr />
+<p>#  MeasureDoubleRealQuantized : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer.md">integer</a></p>
+<p><code>static</code></p>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/doublereal.md">doublereal</a></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/doublereal.md">doublereal</a></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/doublereal.md">doublereal</a></td>
+<td></td>
+</tr>
+<tr>
+<td>``` lang=cpp, name=Lightning</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>function MeasureDoubleRealQuantized( : DoubleReal,  : DoubleReal,  : DoubleReal) : Integer</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>```</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<hr />
+<p>#  MeasureInteger : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer.md">integer</a></p>
+<p><code>static</code></p>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>``` lang=cpp, name=Lightning</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>function MeasureInteger() : Integer</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>```</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<hr />
+<p>#  MeasureInteger2 : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer.md">integer</a></p>
+<p><code>static</code></p>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>``` lang=cpp, name=Lightning</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>function MeasureInteger2() : Integer</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>```</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<hr />
+<p>#  MeasureInteger2Quantized : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer.md">integer</a></p>
+<p><code>static</code></p>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer2.md">integer2</a></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer2.md">integer2</a></td>
+<td></td>
+</tr>
+<tr>
+<td>``` lang=cpp, name=Lightning</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>function MeasureInteger2Quantized( : Integer2,  : Integer2) : Integer</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>```</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<hr />
+<p>#  MeasureInteger2Quantized : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer.md">integer</a></p>
+<p><code>static</code></p>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer2.md">integer2</a></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer2.md">integer2</a></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer2.md">integer2</a></td>
+<td></td>
+</tr>
+<tr>
+<td>``` lang=cpp, name=Lightning</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>function MeasureInteger2Quantized( : Integer2,  : Integer2,  : Integer2) : Integer</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>```</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<hr />
+<p>#  MeasureInteger3 : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer.md">integer</a></p>
+<p><code>static</code></p>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>``` lang=cpp, name=Lightning</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>function MeasureInteger3() : Integer</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>```</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<hr />
+<p>#  MeasureInteger3Quantized : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer.md">integer</a></p>
+<p><code>static</code></p>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer3.md">integer3</a></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer3.md">integer3</a></td>
+<td></td>
+</tr>
+<tr>
+<td>``` lang=cpp, name=Lightning</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>function MeasureInteger3Quantized( : Integer3,  : Integer3) : Integer</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>```</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<hr />
+<p>#  MeasureInteger3Quantized : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer.md">integer</a></p>
+<p><code>static</code></p>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer3.md">integer3</a></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer3.md">integer3</a></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer3.md">integer3</a></td>
+<td></td>
+</tr>
+<tr>
+<td>``` lang=cpp, name=Lightning</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>function MeasureInteger3Quantized( : Integer3,  : Integer3,  : Integer3) : Integer</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>```</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<hr />
+<p>#  MeasureInteger4 : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer.md">integer</a></p>
+<p><code>static</code></p>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>``` lang=cpp, name=Lightning</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>function MeasureInteger4() : Integer</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>```</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<hr />
+<p>#  MeasureInteger4Quantized : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer.md">integer</a></p>
+<p><code>static</code></p>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer4.md">integer4</a></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer4.md">integer4</a></td>
+<td></td>
+</tr>
+<tr>
+<td>``` lang=cpp, name=Lightning</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>function MeasureInteger4Quantized( : Integer4,  : Integer4) : Integer</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>```</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<hr />
+<p>#  MeasureInteger4Quantized : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer.md">integer</a></p>
+<p><code>static</code></p>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer4.md">integer4</a></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer4.md">integer4</a></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer4.md">integer4</a></td>
+<td></td>
+</tr>
+<tr>
+<td>``` lang=cpp, name=Lightning</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>function MeasureInteger4Quantized( : Integer4,  : Integer4,  : Integer4) : Integer</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>```</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<hr />
+<p>#  MeasureIntegerQuantized : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer.md">integer</a></p>
+<p><code>static</code></p>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer.md">integer</a></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer.md">integer</a></td>
+<td></td>
+</tr>
+<tr>
+<td>``` lang=cpp, name=Lightning</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>function MeasureIntegerQuantized( : Integer,  : Integer) : Integer</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>```</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<hr />
+<p>#  MeasureIntegerQuantized : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer.md">integer</a></p>
+<p><code>static</code></p>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer.md">integer</a></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer.md">integer</a></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer.md">integer</a></td>
+<td></td>
+</tr>
+<tr>
+<td>``` lang=cpp, name=Lightning</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>function MeasureIntegerQuantized( : Integer,  : Integer,  : Integer) : Integer</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>```</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<hr />
+<p>#  MeasureQuaternion : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer.md">integer</a></p>
+<p><code>static</code></p>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>``` lang=cpp, name=Lightning</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>function MeasureQuaternion() : Integer</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>```</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<hr />
+<p>#  MeasureReal : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer.md">integer</a></p>
+<p><code>static</code></p>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>``` lang=cpp, name=Lightning</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>function MeasureReal() : Integer</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>```</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<hr />
+<p>#  MeasureReal2 : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer.md">integer</a></p>
+<p><code>static</code></p>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>``` lang=cpp, name=Lightning</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>function MeasureReal2() : Integer</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>```</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<hr />
+<p>#  MeasureReal2Half : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer.md">integer</a></p>
+<p><code>static</code></p>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>``` lang=cpp, name=Lightning</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>function MeasureReal2Half() : Integer</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>```</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<hr />
+<p>#  MeasureReal2Quantized : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer.md">integer</a></p>
+<p><code>static</code></p>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real2.md">real2</a></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real2.md">real2</a></td>
+<td></td>
+</tr>
+<tr>
+<td>``` lang=cpp, name=Lightning</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>function MeasureReal2Quantized( : Real2,  : Real2) : Integer</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>```</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<hr />
+<p>#  MeasureReal2Quantized : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer.md">integer</a></p>
+<p><code>static</code></p>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real2.md">real2</a></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real2.md">real2</a></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real2.md">real2</a></td>
+<td></td>
+</tr>
+<tr>
+<td>``` lang=cpp, name=Lightning</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>function MeasureReal2Quantized( : Real2,  : Real2,  : Real2) : Integer</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>```</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<hr />
+<p>#  MeasureReal3 : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer.md">integer</a></p>
+<p><code>static</code></p>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>``` lang=cpp, name=Lightning</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>function MeasureReal3() : Integer</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>```</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<hr />
+<p>#  MeasureReal3Half : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer.md">integer</a></p>
+<p><code>static</code></p>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>``` lang=cpp, name=Lightning</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>function MeasureReal3Half() : Integer</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>```</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<hr />
+<p>#  MeasureReal3Quantized : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer.md">integer</a></p>
+<p><code>static</code></p>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real3.md">real3</a></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real3.md">real3</a></td>
+<td></td>
+</tr>
+<tr>
+<td>``` lang=cpp, name=Lightning</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>function MeasureReal3Quantized( : Real3,  : Real3) : Integer</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>```</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<hr />
+<p>#  MeasureReal3Quantized : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer.md">integer</a></p>
+<p><code>static</code></p>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real3.md">real3</a></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real3.md">real3</a></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real3.md">real3</a></td>
+<td></td>
+</tr>
+<tr>
+<td>``` lang=cpp, name=Lightning</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>function MeasureReal3Quantized( : Real3,  : Real3,  : Real3) : Integer</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>```</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<hr />
+<p>#  MeasureReal4 : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer.md">integer</a></p>
+<p><code>static</code></p>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>``` lang=cpp, name=Lightning</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>function MeasureReal4() : Integer</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>```</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<hr />
+<p>#  MeasureReal4Half : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer.md">integer</a></p>
+<p><code>static</code></p>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>``` lang=cpp, name=Lightning</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>function MeasureReal4Half() : Integer</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>```</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<hr />
+<p>#  MeasureReal4Quantized : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer.md">integer</a></p>
+<p><code>static</code></p>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real4.md">real4</a></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real4.md">real4</a></td>
+<td></td>
+</tr>
+<tr>
+<td>``` lang=cpp, name=Lightning</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>function MeasureReal4Quantized( : Real4,  : Real4) : Integer</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>```</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<hr />
+<p>#  MeasureReal4Quantized : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer.md">integer</a></p>
+<p><code>static</code></p>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real4.md">real4</a></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real4.md">real4</a></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real4.md">real4</a></td>
+<td></td>
+</tr>
+<tr>
+<td>``` lang=cpp, name=Lightning</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>function MeasureReal4Quantized( : Real4,  : Real4,  : Real4) : Integer</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>```</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<hr />
+<p>#  MeasureRealHalf : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer.md">integer</a></p>
+<p><code>static</code></p>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>``` lang=cpp, name=Lightning</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>function MeasureRealHalf() : Integer</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>```</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<hr />
+<p>#  MeasureRealQuantized : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer.md">integer</a></p>
+<p><code>static</code></p>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.md">real</a></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.md">real</a></td>
+<td></td>
+</tr>
+<tr>
+<td>``` lang=cpp, name=Lightning</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>function MeasureRealQuantized( : Real,  : Real) : Integer</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>```</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<hr />
+<p>#  MeasureRealQuantized : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer.md">integer</a></p>
+<p><code>static</code></p>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.md">real</a></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.md">real</a></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.md">real</a></td>
+<td></td>
+</tr>
+<tr>
+<td>``` lang=cpp, name=Lightning</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>function MeasureRealQuantized( : Real,  : Real,  : Real) : Integer</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>```</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<hr />
+<p>#  MeasureString : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer.md">integer</a></p>
+<p><code>static</code></p>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>``` lang=cpp, name=Lightning</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>function MeasureString() : Integer</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>```</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<hr />
+<p>#  MeasureString : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer.md">integer</a></p>
+<p><code>static</code></p>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/string.md">string</a></td>
+<td></td>
+</tr>
+<tr>
+<td>``` lang=cpp, name=Lightning</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>function MeasureString( : String) : Integer</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>```</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<hr />
+<p>#  ReadBoolean : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.md">boolean</a></p>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>``` lang=cpp, name=Lightning</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>function ReadBoolean() : Boolean</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>```</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<hr />
+<p>#  ReadDoubleInteger : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/doubleinteger.md">doubleinteger</a></p>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>``` lang=cpp, name=Lightning</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>function ReadDoubleInteger() : DoubleInteger</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>```</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<hr />
+<p>#  ReadDoubleIntegerQuantized : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/doubleinteger.md">doubleinteger</a></p>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/doubleinteger.md">doubleinteger</a></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/doubleinteger.md">doubleinteger</a></td>
+<td></td>
+</tr>
+<tr>
+<td>``` lang=cpp, name=Lightning</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>function ReadDoubleIntegerQuantized( : DoubleInteger,  : DoubleInteger) : DoubleInteger</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>```</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<hr />
+<p>#  ReadDoubleIntegerQuantized : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/doubleinteger.md">doubleinteger</a></p>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/doubleinteger.md">doubleinteger</a></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/doubleinteger.md">doubleinteger</a></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/doubleinteger.md">doubleinteger</a></td>
+<td></td>
+</tr>
+<tr>
+<td>``` lang=cpp, name=Lightning</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>function ReadDoubleIntegerQuantized( : DoubleInteger,  : DoubleInteger,  : DoubleInteger) : DoubleInteger</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>```</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<hr />
+<p>#  ReadDoubleReal : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/doublereal.md">doublereal</a></p>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>``` lang=cpp, name=Lightning</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>function ReadDoubleReal() : DoubleReal</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>```</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<hr />
+<p>#  ReadDoubleRealQuantized : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/doublereal.md">doublereal</a></p>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/doublereal.md">doublereal</a></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/doublereal.md">doublereal</a></td>
+<td></td>
+</tr>
+<tr>
+<td>``` lang=cpp, name=Lightning</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>function ReadDoubleRealQuantized( : DoubleReal,  : DoubleReal) : DoubleReal</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>```</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<hr />
+<p>#  ReadDoubleRealQuantized : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/doublereal.md">doublereal</a></p>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/doublereal.md">doublereal</a></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/doublereal.md">doublereal</a></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/doublereal.md">doublereal</a></td>
+<td></td>
+</tr>
+<tr>
+<td>``` lang=cpp, name=Lightning</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>function ReadDoubleRealQuantized( : DoubleReal,  : DoubleReal,  : DoubleReal) : DoubleReal</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>```</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<hr />
+<p>#  ReadInteger : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer.md">integer</a></p>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>``` lang=cpp, name=Lightning</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>function ReadInteger() : Integer</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>```</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<hr />
+<p>#  ReadInteger2 : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer2.md">integer2</a></p>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>``` lang=cpp, name=Lightning</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>function ReadInteger2() : Integer2</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>```</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<hr />
+<p>#  ReadInteger2Quantized : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer2.md">integer2</a></p>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer2.md">integer2</a></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer2.md">integer2</a></td>
+<td></td>
+</tr>
+<tr>
+<td>``` lang=cpp, name=Lightning</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>function ReadInteger2Quantized( : Integer2,  : Integer2) : Integer2</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>```</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<hr />
+<p>#  ReadInteger2Quantized : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer2.md">integer2</a></p>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer2.md">integer2</a></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer2.md">integer2</a></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer2.md">integer2</a></td>
+<td></td>
+</tr>
+<tr>
+<td>``` lang=cpp, name=Lightning</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>function ReadInteger2Quantized( : Integer2,  : Integer2,  : Integer2) : Integer2</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>```</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<hr />
+<p>#  ReadInteger3 : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer3.md">integer3</a></p>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>``` lang=cpp, name=Lightning</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>function ReadInteger3() : Integer3</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>```</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<hr />
+<p>#  ReadInteger3Quantized : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer3.md">integer3</a></p>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer3.md">integer3</a></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer3.md">integer3</a></td>
+<td></td>
+</tr>
+<tr>
+<td>``` lang=cpp, name=Lightning</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>function ReadInteger3Quantized( : Integer3,  : Integer3) : Integer3</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>```</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<hr />
+<p>#  ReadInteger3Quantized : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer3.md">integer3</a></p>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer3.md">integer3</a></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer3.md">integer3</a></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer3.md">integer3</a></td>
+<td></td>
+</tr>
+<tr>
+<td>``` lang=cpp, name=Lightning</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>function ReadInteger3Quantized( : Integer3,  : Integer3,  : Integer3) : Integer3</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>```</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<hr />
+<p>#  ReadInteger4 : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer4.md">integer4</a></p>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>``` lang=cpp, name=Lightning</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>function ReadInteger4() : Integer4</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>```</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<hr />
+<p>#  ReadInteger4Quantized : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer4.md">integer4</a></p>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer4.md">integer4</a></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer4.md">integer4</a></td>
+<td></td>
+</tr>
+<tr>
+<td>``` lang=cpp, name=Lightning</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>function ReadInteger4Quantized( : Integer4,  : Integer4) : Integer4</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>```</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<hr />
+<p>#  ReadInteger4Quantized : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer4.md">integer4</a></p>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer4.md">integer4</a></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer4.md">integer4</a></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer4.md">integer4</a></td>
+<td></td>
+</tr>
+<tr>
+<td>``` lang=cpp, name=Lightning</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>function ReadInteger4Quantized( : Integer4,  : Integer4,  : Integer4) : Integer4</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>```</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<hr />
+<p>#  ReadIntegerQuantized : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer.md">integer</a></p>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer.md">integer</a></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer.md">integer</a></td>
+<td></td>
+</tr>
+<tr>
+<td>``` lang=cpp, name=Lightning</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>function ReadIntegerQuantized( : Integer,  : Integer) : Integer</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>```</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<hr />
+<p>#  ReadIntegerQuantized : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer.md">integer</a></p>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer.md">integer</a></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer.md">integer</a></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer.md">integer</a></td>
+<td></td>
+</tr>
+<tr>
+<td>``` lang=cpp, name=Lightning</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>function ReadIntegerQuantized( : Integer,  : Integer,  : Integer) : Integer</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>```</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<hr />
+<p>#  ReadQuaternion : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/quaternion.md">quaternion</a></p>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>``` lang=cpp, name=Lightning</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>function ReadQuaternion() : Quaternion</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>```</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<hr />
+<p>#  ReadReal : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.md">real</a></p>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>``` lang=cpp, name=Lightning</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>function ReadReal() : Real</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>```</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<hr />
+<p>#  ReadReal2 : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real2.md">real2</a></p>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>``` lang=cpp, name=Lightning</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>function ReadReal2() : Real2</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>```</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<hr />
+<p>#  ReadReal2Half : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real2.md">real2</a></p>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>``` lang=cpp, name=Lightning</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>function ReadReal2Half() : Real2</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>```</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<hr />
+<p>#  ReadReal2Quantized : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real2.md">real2</a></p>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real2.md">real2</a></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real2.md">real2</a></td>
+<td></td>
+</tr>
+<tr>
+<td>``` lang=cpp, name=Lightning</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>function ReadReal2Quantized( : Real2,  : Real2) : Real2</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>```</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<hr />
+<p>#  ReadReal2Quantized : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real2.md">real2</a></p>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real2.md">real2</a></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real2.md">real2</a></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real2.md">real2</a></td>
+<td></td>
+</tr>
+<tr>
+<td>``` lang=cpp, name=Lightning</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>function ReadReal2Quantized( : Real2,  : Real2,  : Real2) : Real2</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>```</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<hr />
+<p>#  ReadReal3 : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real3.md">real3</a></p>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>``` lang=cpp, name=Lightning</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>function ReadReal3() : Real3</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>```</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<hr />
+<p>#  ReadReal3Half : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real3.md">real3</a></p>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>``` lang=cpp, name=Lightning</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>function ReadReal3Half() : Real3</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>```</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<hr />
+<p>#  ReadReal3Quantized : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real3.md">real3</a></p>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real3.md">real3</a></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real3.md">real3</a></td>
+<td></td>
+</tr>
+<tr>
+<td>``` lang=cpp, name=Lightning</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>function ReadReal3Quantized( : Real3,  : Real3) : Real3</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>```</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<hr />
+<p>#  ReadReal3Quantized : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real3.md">real3</a></p>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real3.md">real3</a></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real3.md">real3</a></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real3.md">real3</a></td>
+<td></td>
+</tr>
+<tr>
+<td>``` lang=cpp, name=Lightning</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>function ReadReal3Quantized( : Real3,  : Real3,  : Real3) : Real3</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>```</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<hr />
+<p>#  ReadReal4 : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real4.md">real4</a></p>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>``` lang=cpp, name=Lightning</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>function ReadReal4() : Real4</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>```</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<hr />
+<p>#  ReadReal4Half : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real4.md">real4</a></p>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>``` lang=cpp, name=Lightning</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>function ReadReal4Half() : Real4</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>```</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<hr />
+<p>#  ReadReal4Quantized : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real4.md">real4</a></p>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real4.md">real4</a></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real4.md">real4</a></td>
+<td></td>
+</tr>
+<tr>
+<td>``` lang=cpp, name=Lightning</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>function ReadReal4Quantized( : Real4,  : Real4) : Real4</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>```</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<hr />
+<p>#  ReadReal4Quantized : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real4.md">real4</a></p>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real4.md">real4</a></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real4.md">real4</a></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real4.md">real4</a></td>
+<td></td>
+</tr>
+<tr>
+<td>``` lang=cpp, name=Lightning</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>function ReadReal4Quantized( : Real4,  : Real4,  : Real4) : Real4</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>```</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<hr />
+<p>#  ReadRealHalf : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.md">real</a></p>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>``` lang=cpp, name=Lightning</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>function ReadRealHalf() : Real</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>```</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<hr />
+<p>#  ReadRealQuantized : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.md">real</a></p>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.md">real</a></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.md">real</a></td>
+<td></td>
+</tr>
+<tr>
+<td>``` lang=cpp, name=Lightning</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>function ReadRealQuantized( : Real,  : Real) : Real</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>```</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<hr />
+<p>#  ReadRealQuantized : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.md">real</a></p>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.md">real</a></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.md">real</a></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.md">real</a></td>
+<td></td>
+</tr>
+<tr>
+<td>``` lang=cpp, name=Lightning</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>function ReadRealQuantized( : Real,  : Real,  : Real) : Real</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>```</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<hr />
+<p>#  ReadString : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/string.md">string</a></p>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>``` lang=cpp, name=Lightning</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>function ReadString() : String</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>```</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<hr />
+<p>#  Reserve : Void</p>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer.md">integer</a></td>
+<td></td>
+</tr>
+<tr>
+<td>``` lang=cpp, name=Lightning</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>function Reserve( : Integer)</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>```</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<hr />
+<p>#  SetBitsRead : Void</p>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer.md">integer</a></td>
+<td></td>
+</tr>
+<tr>
+<td>``` lang=cpp, name=Lightning</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>function SetBitsRead( : Integer)</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>```</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<hr />
+<p>#  SetBitsWritten : Void</p>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer.md">integer</a></td>
+<td></td>
+</tr>
+<tr>
+<td>``` lang=cpp, name=Lightning</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>function SetBitsWritten( : Integer)</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>```</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<hr />
+<p>#  SetBytesRead : Void</p>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer.md">integer</a></td>
+<td></td>
+</tr>
+<tr>
+<td>``` lang=cpp, name=Lightning</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>function SetBytesRead( : Integer)</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>```</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<hr />
+<p>#  SetBytesWritten : Void</p>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer.md">integer</a></td>
+<td></td>
+</tr>
+<tr>
+<td>``` lang=cpp, name=Lightning</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>function SetBytesWritten( : Integer)</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>```</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<hr />
+<p>#  Unread : Void</p>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer.md">integer</a></td>
+<td></td>
+</tr>
+<tr>
+<td>``` lang=cpp, name=Lightning</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>function Unread( : Integer)</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>```</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<hr />
+<p>#  WriteBoolean : Void</p>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.md">boolean</a></td>
+<td></td>
+</tr>
+<tr>
+<td>``` lang=cpp, name=Lightning</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>function WriteBoolean( : Boolean)</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>```</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<hr />
+<p>#  WriteDoubleInteger : Void</p>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/doubleinteger.md">doubleinteger</a></td>
+<td></td>
+</tr>
+<tr>
+<td>``` lang=cpp, name=Lightning</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>function WriteDoubleInteger( : DoubleInteger)</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>```</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<hr />
+<p>#  WriteDoubleIntegerQuantized : Void</p>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/doubleinteger.md">doubleinteger</a></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/doubleinteger.md">doubleinteger</a></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/doubleinteger.md">doubleinteger</a></td>
+<td></td>
+</tr>
+<tr>
+<td>``` lang=cpp, name=Lightning</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>function WriteDoubleIntegerQuantized( : DoubleInteger,  : DoubleInteger,  : DoubleInteger)</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>```</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<hr />
+<p>#  WriteDoubleIntegerQuantized : Void</p>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/doubleinteger.md">doubleinteger</a></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/doubleinteger.md">doubleinteger</a></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/doubleinteger.md">doubleinteger</a></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/doubleinteger.md">doubleinteger</a></td>
+<td></td>
+</tr>
+<tr>
+<td>``` lang=cpp, name=Lightning</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>function WriteDoubleIntegerQuantized( : DoubleInteger,  : DoubleInteger,  : DoubleInteger,  : DoubleInteger)</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>```</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<hr />
+<p>#  WriteDoubleReal : Void</p>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/doublereal.md">doublereal</a></td>
+<td></td>
+</tr>
+<tr>
+<td>``` lang=cpp, name=Lightning</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>function WriteDoubleReal( : DoubleReal)</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>```</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<hr />
+<p>#  WriteDoubleRealQuantized : Void</p>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/doublereal.md">doublereal</a></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/doublereal.md">doublereal</a></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/doublereal.md">doublereal</a></td>
+<td></td>
+</tr>
+<tr>
+<td>``` lang=cpp, name=Lightning</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>function WriteDoubleRealQuantized( : DoubleReal,  : DoubleReal,  : DoubleReal)</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>```</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<hr />
+<p>#  WriteDoubleRealQuantized : Void</p>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/doublereal.md">doublereal</a></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/doublereal.md">doublereal</a></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/doublereal.md">doublereal</a></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/doublereal.md">doublereal</a></td>
+<td></td>
+</tr>
+<tr>
+<td>``` lang=cpp, name=Lightning</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>function WriteDoubleRealQuantized( : DoubleReal,  : DoubleReal,  : DoubleReal,  : DoubleReal)</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>```</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<hr />
+<p>#  WriteInteger : Void</p>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer.md">integer</a></td>
+<td></td>
+</tr>
+<tr>
+<td>``` lang=cpp, name=Lightning</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>function WriteInteger( : Integer)</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>```</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<hr />
+<p>#  WriteInteger2 : Void</p>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer2.md">integer2</a></td>
+<td></td>
+</tr>
+<tr>
+<td>``` lang=cpp, name=Lightning</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>function WriteInteger2( : Integer2)</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>```</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<hr />
+<p>#  WriteInteger2Quantized : Void</p>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer2.md">integer2</a></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer2.md">integer2</a></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer2.md">integer2</a></td>
+<td></td>
+</tr>
+<tr>
+<td>``` lang=cpp, name=Lightning</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>function WriteInteger2Quantized( : Integer2,  : Integer2,  : Integer2)</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>```</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<hr />
+<p>#  WriteInteger2Quantized : Void</p>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer2.md">integer2</a></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer2.md">integer2</a></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer2.md">integer2</a></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer2.md">integer2</a></td>
+<td></td>
+</tr>
+<tr>
+<td>``` lang=cpp, name=Lightning</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>function WriteInteger2Quantized( : Integer2,  : Integer2,  : Integer2,  : Integer2)</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>```</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<hr />
+<p>#  WriteInteger3 : Void</p>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer3.md">integer3</a></td>
+<td></td>
+</tr>
+<tr>
+<td>``` lang=cpp, name=Lightning</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>function WriteInteger3( : Integer3)</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>```</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<hr />
+<p>#  WriteInteger3Quantized : Void</p>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer3.md">integer3</a></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer3.md">integer3</a></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer3.md">integer3</a></td>
+<td></td>
+</tr>
+<tr>
+<td>``` lang=cpp, name=Lightning</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>function WriteInteger3Quantized( : Integer3,  : Integer3,  : Integer3)</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>```</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<hr />
+<p>#  WriteInteger3Quantized : Void</p>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer3.md">integer3</a></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer3.md">integer3</a></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer3.md">integer3</a></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer3.md">integer3</a></td>
+<td></td>
+</tr>
+<tr>
+<td>``` lang=cpp, name=Lightning</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>function WriteInteger3Quantized( : Integer3,  : Integer3,  : Integer3,  : Integer3)</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>```</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<hr />
+<p>#  WriteInteger4 : Void</p>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer4.md">integer4</a></td>
+<td></td>
+</tr>
+<tr>
+<td>``` lang=cpp, name=Lightning</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>function WriteInteger4( : Integer4)</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>```</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<hr />
+<p>#  WriteInteger4Quantized : Void</p>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer4.md">integer4</a></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer4.md">integer4</a></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer4.md">integer4</a></td>
+<td></td>
+</tr>
+<tr>
+<td>``` lang=cpp, name=Lightning</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>function WriteInteger4Quantized( : Integer4,  : Integer4,  : Integer4)</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>```</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<hr />
+<p>#  WriteInteger4Quantized : Void</p>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer4.md">integer4</a></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer4.md">integer4</a></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer4.md">integer4</a></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer4.md">integer4</a></td>
+<td></td>
+</tr>
+<tr>
+<td>``` lang=cpp, name=Lightning</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>function WriteInteger4Quantized( : Integer4,  : Integer4,  : Integer4,  : Integer4)</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>```</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<hr />
+<p>#  WriteIntegerQuantized : Void</p>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer.md">integer</a></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer.md">integer</a></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer.md">integer</a></td>
+<td></td>
+</tr>
+<tr>
+<td>``` lang=cpp, name=Lightning</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>function WriteIntegerQuantized( : Integer,  : Integer,  : Integer)</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>```</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<hr />
+<p>#  WriteIntegerQuantized : Void</p>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer.md">integer</a></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer.md">integer</a></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer.md">integer</a></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer.md">integer</a></td>
+<td></td>
+</tr>
+<tr>
+<td>``` lang=cpp, name=Lightning</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>function WriteIntegerQuantized( : Integer,  : Integer,  : Integer,  : Integer)</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>```</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<hr />
+<p>#  WriteQuaternion : Void</p>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/quaternion.md">quaternion</a></td>
+<td></td>
+</tr>
+<tr>
+<td>``` lang=cpp, name=Lightning</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>function WriteQuaternion( : Quaternion)</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>```</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<hr />
+<p>#  WriteReal : Void</p>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.md">real</a></td>
+<td></td>
+</tr>
+<tr>
+<td>``` lang=cpp, name=Lightning</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>function WriteReal( : Real)</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>```</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<hr />
+<p>#  WriteReal2 : Void</p>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real2.md">real2</a></td>
+<td></td>
+</tr>
+<tr>
+<td>``` lang=cpp, name=Lightning</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>function WriteReal2( : Real2)</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>```</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<hr />
+<p>#  WriteReal2Half : Void</p>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real2.md">real2</a></td>
+<td></td>
+</tr>
+<tr>
+<td>``` lang=cpp, name=Lightning</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>function WriteReal2Half( : Real2)</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>```</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<hr />
+<p>#  WriteReal2Quantized : Void</p>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real2.md">real2</a></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real2.md">real2</a></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real2.md">real2</a></td>
+<td></td>
+</tr>
+<tr>
+<td>``` lang=cpp, name=Lightning</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>function WriteReal2Quantized( : Real2,  : Real2,  : Real2)</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>```</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<hr />
+<p>#  WriteReal2Quantized : Void</p>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real2.md">real2</a></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real2.md">real2</a></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real2.md">real2</a></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real2.md">real2</a></td>
+<td></td>
+</tr>
+<tr>
+<td>``` lang=cpp, name=Lightning</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>function WriteReal2Quantized( : Real2,  : Real2,  : Real2,  : Real2)</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>```</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<hr />
+<p>#  WriteReal3 : Void</p>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real3.md">real3</a></td>
+<td></td>
+</tr>
+<tr>
+<td>``` lang=cpp, name=Lightning</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>function WriteReal3( : Real3)</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>```</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<hr />
+<p>#  WriteReal3Half : Void</p>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real3.md">real3</a></td>
+<td></td>
+</tr>
+<tr>
+<td>``` lang=cpp, name=Lightning</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>function WriteReal3Half( : Real3)</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>```</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<hr />
+<p>#  WriteReal3Quantized : Void</p>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real3.md">real3</a></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real3.md">real3</a></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real3.md">real3</a></td>
+<td></td>
+</tr>
+<tr>
+<td>``` lang=cpp, name=Lightning</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>function WriteReal3Quantized( : Real3,  : Real3,  : Real3)</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>```</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<hr />
+<p>#  WriteReal3Quantized : Void</p>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real3.md">real3</a></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real3.md">real3</a></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real3.md">real3</a></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real3.md">real3</a></td>
+<td></td>
+</tr>
+<tr>
+<td>``` lang=cpp, name=Lightning</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>function WriteReal3Quantized( : Real3,  : Real3,  : Real3,  : Real3)</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>```</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<hr />
+<p>#  WriteReal4 : Void</p>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real4.md">real4</a></td>
+<td></td>
+</tr>
+<tr>
+<td>``` lang=cpp, name=Lightning</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>function WriteReal4( : Real4)</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>```</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<hr />
+<p>#  WriteReal4Half : Void</p>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real4.md">real4</a></td>
+<td></td>
+</tr>
+<tr>
+<td>``` lang=cpp, name=Lightning</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>function WriteReal4Half( : Real4)</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>```</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<hr />
+<p>#  WriteReal4Quantized : Void</p>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real4.md">real4</a></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real4.md">real4</a></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real4.md">real4</a></td>
+<td></td>
+</tr>
+<tr>
+<td>``` lang=cpp, name=Lightning</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>function WriteReal4Quantized( : Real4,  : Real4,  : Real4)</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>```</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<hr />
+<p>#  WriteReal4Quantized : Void</p>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real4.md">real4</a></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real4.md">real4</a></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real4.md">real4</a></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real4.md">real4</a></td>
+<td></td>
+</tr>
+<tr>
+<td>``` lang=cpp, name=Lightning</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>function WriteReal4Quantized( : Real4,  : Real4,  : Real4,  : Real4)</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>```</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<hr />
+<p>#  WriteRealHalf : Void</p>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.md">real</a></td>
+<td></td>
+</tr>
+<tr>
+<td>``` lang=cpp, name=Lightning</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>function WriteRealHalf( : Real)</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>```</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<hr />
+<p>#  WriteRealQuantized : Void</p>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.md">real</a></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.md">real</a></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.md">real</a></td>
+<td></td>
+</tr>
+<tr>
+<td>``` lang=cpp, name=Lightning</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>function WriteRealQuantized( : Real,  : Real,  : Real)</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>```</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<hr />
+<p>#  WriteRealQuantized : Void</p>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.md">real</a></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.md">real</a></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.md">real</a></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.md">real</a></td>
+<td></td>
+</tr>
+<tr>
+<td>``` lang=cpp, name=Lightning</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>function WriteRealQuantized( : Real,  : Real,  : Real,  : Real)</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>```</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<hr />
+<p>#  WriteString : Void</p>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/string.md">string</a></td>
+<td></td>
+</tr>
+<tr>
+<td>``` lang=cpp, name=Lightning</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>function WriteString( : String)</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>```</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<hr />
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../blendsettings/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../blendsettings/" class="btn btn-xs btn-link">
+        Blendsettings
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../binarycontent/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../binarycontent/" class="btn btn-xs btn-link">
+        Binarycontent
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="col-md-12 wm-page-content">
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/noraj/mkdocs-windmill-dark">Windmill Dark</a> theme by Alexandre ZANNI (noraj).</p>
+</footer>
+
+</body>
+</html>

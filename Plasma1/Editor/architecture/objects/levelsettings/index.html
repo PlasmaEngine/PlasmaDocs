@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="author" content="PlasmaDev">
+    <link rel="canonical" href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/architecture/objects/levelsettings/">
+    <link rel="shortcut icon" href="../../../../../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Level Settings - PlasmaDocs</title>
+    <link href="../../../../../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../../../../../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../../../../../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../../../../css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../../../../../js/jquery-3.2.1.min.js"></script>
+    <script src="../../../../../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../../../../../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '../../../../..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "Level Settings", url: "#_top", children: [
+          ]},
+          {title: "Common Uses", url: "#common-uses", children: [
+          ]},
+          {title: "Using the LevelSettings Object", url: "#using-the-levelsettings-object", children: [
+              {title: "Accessing the LevelSettings Object In Editor", url: "#accessing-the-levelsettings-object-in-editor" },
+              {title: "Accessing the LevelSettings Object In Script", url: "#accessing-the-levelsettings-object-in-script" },
+              {title: "Default Components of LevelSettings", url: "#default-components-of-levelsettings" },
+              {title: "Custom Components", url: "#custom-components" },
+              {title: "Events Dispatched On The LevelSettings Object", url: "#events-dispatched-on-the-levelsettings-object" },
+          ]},
+          {title: "Related Materials", url: "#related-materials", children: [
+              {title: "Manual Pages", url: "#manual-pages" },
+              {title: "Code Reference", url: "#code-reference" },
+          ]},
+        ];
+
+    </script>
+    <script src="../../../../../js/base.js"></script>
+      <script src="../../../../../search/main.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../spaces/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../spaces/" class="btn btn-xs btn-link">
+        Spaces
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../gamesession/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../gamesession/" class="btn btn-xs btn-link">
+        Game Session
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <h1 id="level-settings">Level Settings</h1>
+<p>The LevelSettings object is a <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/architecture/cogs.md">Cog</a> of which there is one unique instance per Level. It serves as a globally accessible object from a variety of object types such as Components or other Cog. Unlike any other Cog there is no way to instantiate a LevelSettings object.</p>
+<h1 id="common-uses">Common Uses</h1>
+<ul>
+<li>Adding level specific <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/physics/physicseffectsandregions.md">physics effects</a>.</li>
+<li>Adding custom components which need to be globally accessible in a level by any other components that exist in the level.</li>
+</ul>
+<h1 id="using-the-levelsettings-object">Using the LevelSettings Object</h1>
+<h2 id="accessing-the-levelsettings-object-in-editor">Accessing the LevelSettings Object In Editor</h2>
+<p>NOTE: <strong>Initialization Order</strong> Notice that because the LevelSettings object is always the first object in the <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/editor/editorui.md">Object Window</a> (and cannot be reordered) it will always be the first object to be created and initialized when the level is loaded into the Space. This can be very useful when implementing logic which depends on being initialized before related components on other objects in the level.</p>
+<p>The LevelSettings object will always be the first object in the Object Window making it easy to find in editor.
+Since the LevelSettings object lacks any Graphics or Physics based representation in the level, the only way to select and modify its components in the editor is through the Object Window.</p>
+<p>NOTE: <strong>LevelSettings &amp; Hierarchies</strong>  While parenting can often be useful with objects that do not have transforms, in the case of the LevelSettings object, parenting has been deactivated.</p>
+<h2 id="accessing-the-levelsettings-object-in-script">Accessing the LevelSettings Object In Script</h2>
+<p>The LevelSettings object may be accessed from scripts via any component or Cog:</p>
+<pre><code class="language-csharp" name="LevelSettings Access Example">
+class ExampleComponent : LightningComponent
+{
+  function Initialize(init : CogInitializer)
+  {
+    // Accessing the LevelSettings object through the component
+    var thisLevelSettings = this.LevelSettings;
+    // Accessing the LevelSettings object through the component's object
+    var ownerLevelSettings = this.Owner.LevelSettings;
+    // Accessing the LevelSettings object through the Space object
+    var spaceLevelSettings = this.Space.LevelSettings;
+
+    // If we compare the values of the properties which access the LevelSettings
+    // object through different objects (component, component's object, and 
+    // space), we can prove that they are accessing the same LevelSettings object.
+    if(thisLevelSettings == ownerLevelSettings
+    && ownerLevelSettings == spaceLevelSettings)
+    {
+      Console.WriteLine("These variables reference the same LevelSettings object.");
+    }
+  }
+}
+</code></pre>
+
+<h2 id="default-components-of-levelsettings">Default Components of LevelSettings</h2>
+<h3 id="gravityeffect-drageffect">GravityEffect &amp; DragEffect</h3>
+<p>Physics Effects are built in components that implement a piece of common physics-based functionality such as the <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/physics/physicseffectsandregions/forceeffect.md">GravityEffect</a> or the <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/drageffect.md">DragEffect</a> components that are attached to the LevelSettings by default. Each physics effect component may perform the logic on different spatial scopes depending on which object is attached to. When a physics effect component is attached to the LevelSettings object it is applied to all objects in that level. This allows one to implement level wide effects with any of the built in physics effects as is done by default with GravityEffect and DragEffect.</p>
+<h3 id="griddraw">GridDraw</h3>
+<p>The <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/griddraw.md">griddraw</a> component is a simple debug drawing component. It uses Plasma's buit in GridDraw component is a simple debug drawing component. It uses Plasma's buit in <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/scripting/debugdrawing.md">debugdrawing</a> to create a customizable unit grid in the Level Window.</p>
+<h2 id="custom-components">Custom Components</h2>
+<p>The LevelSettings object is often a very convenient object on which to attach certain custom Lightning components. Imagine a scenario in which a function is implemented for a friendly AI which needs to return an enemy to attack. If all the enemies exist independent of any other object or component, there may be no immediate path from which to access all enemies from the AI.</p>
+<p>A common technique is to add an <code>EnemyManager</code> component to the LevelSettings object which has a member of type <code>Array[Cog]</code> called <code>EnemyList</code>. By attaching this component to the LevelSettings object all objects, including the enemies, are given access to the <code>EnemyManager</code> component. If the enemies are implemented so that they add themselves to the <code>EnemyList</code> when they are initialized and remove themselves when they are destroyed, there now exists a reliable way of accessing a complete list of all existing enemies.</p>
+<p>While the above example may not be applicable to all games, it demonstrates the usefulness and flexibility that the LevelSettings object may grant.</p>
+<h2 id="events-dispatched-on-the-levelsettings-object">Events Dispatched On The LevelSettings Object</h2>
+<table>
+<thead>
+<tr>
+<th>Event Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>EnterView</td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/graphicalevent.md">graphicalevent</a></td>
+<td>Dispatched if <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/cameraviewport.md">cameraviewport</a> is attached to the LevelSettings object.</td>
+</tr>
+<tr>
+<td>ExitView</td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/graphicalevent.md">graphicalevent</a></td>
+<td>Dispatched if <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/cameraviewport.md">cameraviewport</a> is attached to the</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h1 id="related-materials">Related Materials</h1>
+<h2 id="manual-pages">Manual Pages</h2>
+<ul>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/architecture/cogs.md">Cog</a></li>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/editor/editorui.md">Editor UI</a></li>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/scripting/debugdrawing.md">Debug Drawing</a></li>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/physics/physicseffectsandregions.md">physics effects</a></li>
+</ul>
+<h2 id="code-reference">Code Reference</h2>
+<ul>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/gravityeffect.md">GravityEffect</a> </li>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/drageffect.md">DragEffect</a> </li>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/griddraw.md">GridDraw</a> </li>
+</ul>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../spaces/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../spaces/" class="btn btn-xs btn-link">
+        Spaces
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../gamesession/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../gamesession/" class="btn btn-xs btn-link">
+        Game Session
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="col-md-12 wm-page-content">
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/noraj/mkdocs-windmill-dark">Windmill Dark</a> theme by Alexandre ZANNI (noraj).</p>
+</footer>
+
+</body>
+</html>

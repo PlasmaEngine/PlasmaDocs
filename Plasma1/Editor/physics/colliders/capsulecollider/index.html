@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="author" content="PlasmaDev">
+    <link rel="canonical" href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/physics/colliders/capsulecollider/">
+    <link rel="shortcut icon" href="../../../../../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Capsule Collider - PlasmaDocs</title>
+    <link href="../../../../../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../../../../../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../../../../../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../../../../css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../../../../../js/jquery-3.2.1.min.js"></script>
+    <script src="../../../../../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../../../../../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '../../../../..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "Capsule Collider", url: "#_top", children: [
+              {title: "Radius", url: "#radius" },
+              {title: "Height", url: "#height" },
+              {title: "Direction", url: "#direction" },
+              {title: "Scaling Mode and Non-Uniform Scale", url: "#scaling-mode-and-non-uniform-scale" },
+          ]},
+          {title: "Related Materials", url: "#related-materials", children: [
+              {title: "Manual", url: "#manual" },
+              {title: "Reference", url: "#reference" },
+          ]},
+        ];
+
+    </script>
+    <script src="../../../../../js/base.js"></script>
+      <script src="../../../../../search/main.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../convexmeshcollider/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../convexmeshcollider/" class="btn btn-xs btn-link">
+        Convex Mesh Collider
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../boxcollider/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../boxcollider/" class="btn btn-xs btn-link">
+        Box Collider
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <h1 id="capsule-collider">Capsule Collider</h1>
+<p><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/capsulecollider.md">CapsuleCollider</a> defines a <a href="https://en.wikipedia.org/wiki/Capsule_(geometry)">capsule</a> shape for collision. The base size of the capsule is determined by the Radius  and Height  properties. Scale is applied afterwards to determine the final capsule's size.</p>
+<p>Capsules are often used as a combination of <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/physics/colliders/cylindercollider.md">cylinders</a> and <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/physics/colliders/ellipsoidcollider.md">ellipsoids</a> for collision, primarily for long thin shapes.  An ellipsoid tends to be undesired when stretched on one axis due its curved sides. A cylinder fixes this but loses the curved caps of the ellipsoid. A capsule combines these by having a cylinder that can be scaled in one axis while containing smooth edge caps.</p>
+<p>Capsules are also commonly used for a player. The player's height can be scaled without affecting its width. Additionally, the curved caps help to avoid <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/physics/colliders/physicstroubleshooting/edgecatching.md">edge catching</a> issues.</p>
+<p>(NOTE) <strong>Recommended Reading:</strong> The <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/physics/colliders.md">Collider</a> page should be read before this page.</p>
+<h2 id="radius">Radius</h2>
+<p>Radius  defines the radius of the capsule in local space.</p>
+<h2 id="height">Height</h2>
+<p>Height  defines the local space height of the cylinder. The height is defined as the distance from the center of the bottom sphere to the center of the top sphere.</p>
+<h2 id="direction">Direction</h2>
+<p>Direction enum is used to configure which local-space axis the height of the capsule runs along. This allows aligning a capsule with an asset that was configured about a different axis.</p>
+<h2 id="scaling-mode-and-non-uniform-scale">Scaling Mode and Non-Uniform Scale</h2>
+<p>Like most other Collider types, CapsuleCollider will maintain a perfect capsule shape when non-uniform scale is present. That is to say that the spherical caps on the end of the capsule will always be perfect spheres, never ellipsoids. This creates a dilemma when non-uniform scale is applied to the height axis. There's two different behaviors that a user could expect that is controlled via ScalingMode enum:</p>
+<h3 id="scalingmodepreservescale">ScalingMode.PreserveScale</h3>
+<p><code>PreserveScale</code> applies scale to the full height of the capsule (including the end caps). The easiest way to understand this mode is by comparing it to a cylinder with the same total height as the capsule, both of which are pictured on the left. After scaling both objects their total heights should be the same as pictured on the right.</p>
+<p>To fully understand what this is doing requires a numerical example. In the above picture, the capsule has a height of <code>1</code> and a radius of <code>0.5</code>. The capsule's total height is <code>2 (height + 2 * radius)</code>. After scaling, the total height should now be <code>4</code>, however no scale was applied in the y-axis so the radius must stay at <code>0.5</code>. This means that the capsule's world height must be <code>3</code> after scaling <code>(height = 4 - 2 * radius)</code>.</p>
+<h3 id="scalingmodepreserveheight">ScalingMode.PreserveHeight</h3>
+<p><code>PreserveHeight</code> applies scale just to the capsule's height (not including the end caps). The easiest way to understand this is to compare to a cylinder with the same height as the capsule (pictured on the left). After scaling, the internal cylinder of the capsule matches the scaled cylinder (pictured on the right).</p>
+<p>This mode does not preserve the total scale of the capsule though. The original capsule had a total height of <code>2</code>. Since no scale was applied in the y-axis, the radius has to stay at <code>0.5</code>. Now the scaled capsule has a height of <code>2</code> with a radius of <code>0.5</code> which produces a total height of <code>3</code>.</p>
+<p>This mode is often desired when a model is attached to a cog that should match the inner cylinder. Additionally, this can be useful when game-logic cares about the positioning of the cap centers as opposed to the tips of the capsule.</p>
+<h1 id="related-materials">Related Materials</h1>
+<h2 id="manual">Manual</h2>
+<ul>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/physics/colliders.md">colliders.md</a></li>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/physics/colliders/cylindercollider.md">cylindercollider.md</a></li>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/physics/colliders/ellipsoidcollider.md">ellipsoidcollider.md</a></li>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/physics/colliders/physicstroubleshooting/edgecatching.md">edgecatching.md</a></li>
+</ul>
+<h2 id="reference">Reference</h2>
+<ul>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/capsulecollider.md">CapsuleCollider</a></li>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/cylindercollider.md">CylinderCollider</a></li>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/ellipsoidcollider.md">EllipsoidCollider</a></li>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/collider.md">Collider</a></li>
+</ul>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../convexmeshcollider/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../convexmeshcollider/" class="btn btn-xs btn-link">
+        Convex Mesh Collider
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../boxcollider/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../boxcollider/" class="btn btn-xs btn-link">
+        Box Collider
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="col-md-12 wm-page-content">
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/noraj/mkdocs-windmill-dark">Windmill Dark</a> theme by Alexandre ZANNI (noraj).</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="author" content="PlasmaDev">
+    <link rel="canonical" href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C%2B%2B/code_reference/class_reference/aabb/">
+    <link rel="shortcut icon" href="../../../../../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Aabb - PlasmaDocs</title>
+    <link href="../../../../../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../../../../../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../../../../../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../../../../css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../../../../../js/jquery-3.2.1.min.js"></script>
+    <script src="../../../../../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../../../../../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '../../../../..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+        ];
+
+    </script>
+    <script src="../../../../../js/base.js"></script>
+      <script src="../../../../../search/main.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../acquirenethostinfo/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../acquirenethostinfo/" class="btn btn-xs btn-link">
+        Acquirenethostinfo
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../../attribute_reference/property_attribute_reference/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../../attribute_reference/property_attribute_reference/" class="btn btn-xs btn-link">
+        Property attribute reference
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <p><code>Geometry</code></p>
+<table>
+<thead>
+<tr>
+<th>Methods</th>
+<th>Properties</th>
+<th>Base Classes</th>
+<th>Derived Classes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/aabb.md#aabb-void"> Constructor</a></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/aabb.md#center-plasma-engine-docum"> Center</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/aabb.md#containspoint-plasma-engin"> ContainsPoint</a></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/aabb.md#extents-plasma-engine-docu"> Extents</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/aabb.md#expand-void"> Expand</a></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/aabb.md#halfextents-plasma-engine"> HalfExtents</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/aabb.md#overlap-plasma-engine-docu"> Overlap</a></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/aabb.md#max-plasma-engine-document"> Max</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/aabb.md#overlaps-plasma-engine-doc"> Overlaps</a></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/aabb.md#min-plasma-engine-document"> Min</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/aabb.md#set-void"> Set</a></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/aabb.md#surfacearea-plasma-engine"> SurfaceArea</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/aabb.md#setinvalid-void"> SetInvalid</a></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/aabb.md#volume-plasma-engine-docum"> Volume</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/aabb.md#plasmaout-void"> ZeroOut</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>#  Properties</p>
+<hr />
+<p>#  Center : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real3.md">real3</a></p>
+<blockquote>
+<p>``` lang=cpp, name=Lightning
+var Center : Real3</p>
+</blockquote>
+<hr />
+<p>#  Extents : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real3.md">real3</a></p>
+<blockquote>
+<p>``` lang=cpp, name=Lightning
+var Extents : Real3</p>
+</blockquote>
+<hr />
+<p>#  HalfExtents : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real3.md">real3</a></p>
+<blockquote>
+<p>``` lang=cpp, name=Lightning
+var HalfExtents : Real3</p>
+</blockquote>
+<hr />
+<p>#  Max : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real3.md">real3</a></p>
+<blockquote>
+<p>``` lang=cpp, name=Lightning
+var Max : Real3</p>
+</blockquote>
+<hr />
+<p>#  Min : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real3.md">real3</a></p>
+<blockquote>
+<p>``` lang=cpp, name=Lightning
+var Min : Real3</p>
+</blockquote>
+<hr />
+<p>#  SurfaceArea : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.md">real</a></p>
+<p><code>read-only</code></p>
+<blockquote>
+<p>``` lang=cpp, name=Lightning
+var SurfaceArea : Real</p>
+</blockquote>
+<hr />
+<p>#  Volume : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.md">real</a></p>
+<p><code>read-only</code></p>
+<blockquote>
+<p>``` lang=cpp, name=Lightning
+var Volume : Real</p>
+</blockquote>
+<hr />
+<p>#  Methods</p>
+<hr />
+<p>#  Aabb : Void</p>
+<p><code>constructor</code></p>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>``` lang=cpp, name=Lightning</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>function Aabb()</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>```</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<hr />
+<p>#  Aabb : Void</p>
+<p><code>constructor</code></p>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>p0</td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/aabb.md">aabb</a></td>
+<td></td>
+</tr>
+<tr>
+<td>``` lang=cpp, name=Lightning</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>function Aabb(p0 : Aabb)</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>```</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<hr />
+<p>#  Aabb : Void</p>
+<p><code>constructor</code></p>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>center</td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real3.md">real3</a></td>
+<td></td>
+</tr>
+<tr>
+<td>halfExtents</td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real3.md">real3</a></td>
+<td></td>
+</tr>
+<tr>
+<td>``` lang=cpp, name=Lightning</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>function Aabb(center : Real3, halfExtents : Real3)</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>```</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<hr />
+<p>#  ContainsPoint : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.md">boolean</a></p>
+<blockquote>
+<p>Does this aabb contain the given point?
+|Name|Type|Description|
+|---|---|---|
+|p0|<a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real3.md">real3</a>| |
+<code>lang=cpp, name=Lightning
+function ContainsPoint(p0 : Real3) : Boolean</code> </p>
+</blockquote>
+<hr />
+<p>#  Expand : Void</p>
+<blockquote>
+<p>Expand this aabb to contain the given aabb.
+|Name|Type|Description|
+|---|---|---|
+|p0|<a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/aabb.md">aabb</a>| |
+<code>lang=cpp, name=Lightning
+function Expand(p0 : Aabb)</code> </p>
+</blockquote>
+<hr />
+<p>#  Expand : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/aabb.md">aabb</a></p>
+<p><code>static</code></p>
+<blockquote>
+<p>Creates an aabb that contains the two given aabbs.
+|Name|Type|Description|
+|---|---|---|
+|p0|<a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/aabb.md">aabb</a>| |
+|p1|<a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/aabb.md">aabb</a>| |
+<code>lang=cpp, name=Lightning
+function Expand(p0 : Aabb, p1 : Aabb) : Aabb</code> </p>
+</blockquote>
+<hr />
+<p>#  Expand : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/aabb.md">aabb</a></p>
+<p><code>static</code></p>
+<blockquote>
+<p>Creates an aabb that contains the given aabb and point.
+|Name|Type|Description|
+|---|---|---|
+|p0|<a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/aabb.md">aabb</a>| |
+|p1|<a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real3.md">real3</a>| |
+<code>lang=cpp, name=Lightning
+function Expand(p0 : Aabb, p1 : Real3) : Aabb</code> </p>
+</blockquote>
+<hr />
+<p>#  Expand : Void</p>
+<blockquote>
+<p>Expand this aabb to contain the given point.
+|Name|Type|Description|
+|---|---|---|
+|p0|<a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real3.md">real3</a>| |
+<code>lang=cpp, name=Lightning
+function Expand(p0 : Real3)</code> </p>
+</blockquote>
+<hr />
+<p>#  Overlap : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.md">boolean</a></p>
+<blockquote>
+<p>This function is deprecated. Use Overlaps instead
+|Name|Type|Description|
+|---|---|---|
+|p0|<a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/aabb.md">aabb</a>| |
+<code>lang=cpp, name=Lightning
+function Overlap(p0 : Aabb) : Boolean</code> </p>
+</blockquote>
+<hr />
+<p>#  Overlaps : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.md">boolean</a></p>
+<blockquote>
+<p>Does this aabb overlap/intersect the given aabb?
+|Name|Type|Description|
+|---|---|---|
+|p0|<a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/aabb.md">aabb</a>| |
+<code>lang=cpp, name=Lightning
+function Overlaps(p0 : Aabb) : Boolean</code> </p>
+</blockquote>
+<hr />
+<p>#  Set : Void</p>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>point</td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real3.md">real3</a></td>
+<td></td>
+</tr>
+<tr>
+<td>``` lang=cpp, name=Lightning</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>function Set(point : Real3)</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>```</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<hr />
+<p>#  Set : Void</p>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>center</td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real3.md">real3</a></td>
+<td></td>
+</tr>
+<tr>
+<td>halfExtents</td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real3.md">real3</a></td>
+<td></td>
+</tr>
+<tr>
+<td>``` lang=cpp, name=Lightning</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>function Set(center : Real3, halfExtents : Real3)</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>```</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<hr />
+<p>#  SetInvalid : Void</p>
+<blockquote>
+<p>Sets this aabb to an invalid aabb (Real3.PositiveMax, Real3.NegativeMin)). This also makes expansion easier.
+|Name|Type|Description|
+|---|---|---|
+<code>lang=cpp, name=Lightning
+function SetInvalid()</code> </p>
+</blockquote>
+<hr />
+<p>#  ZeroOut : Void</p>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>``` lang=cpp, name=Lightning</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>function ZeroOut()</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>```</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<hr />
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../acquirenethostinfo/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../acquirenethostinfo/" class="btn btn-xs btn-link">
+        Acquirenethostinfo
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../../attribute_reference/property_attribute_reference/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../../attribute_reference/property_attribute_reference/" class="btn btn-xs btn-link">
+        Property attribute reference
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="col-md-12 wm-page-content">
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/noraj/mkdocs-windmill-dark">Windmill Dark</a> theme by Alexandre ZANNI (noraj).</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="author" content="PlasmaDev">
+    <link rel="canonical" href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/gameplay/handlingquitmessage/">
+    <link rel="shortcut icon" href="../../../../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Quit Messages - PlasmaDocs</title>
+    <link href="../../../../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../../../../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../../../../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../../../css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../../../../js/jquery-3.2.1.min.js"></script>
+    <script src="../../../../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../../../../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '../../../..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "Quit Messages", url: "#_top", children: [
+          ]},
+          {title: "Common Uses", url: "#common-uses", children: [
+          ]},
+          {title: "How to Use the GameRequestQuit Event", url: "#how-to-use-the-gamerequestquit-event", children: [
+              {title: "Connecting to the GameRequestQuit Event", url: "#connecting-to-the-gamerequestquit-event" },
+              {title: "The GameRequestQuit Response Function", url: "#the-gamerequestquit-response-function" },
+          ]},
+          {title: "Related Materials", url: "#related-materials", children: [
+              {title: "Manual Pages", url: "#manual-pages" },
+              {title: "Code Reference", url: "#code-reference" },
+          ]},
+        ];
+
+    </script>
+    <script src="../../../../js/base.js"></script>
+      <script src="../../../../search/main.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../interpolation/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../interpolation/" class="btn btn-xs btn-link">
+        Interpolation
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../../editor/tools/multiconvexmesheditor/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../../editor/tools/multiconvexmesheditor/" class="btn btn-xs btn-link">
+        Multi Convex Mesh Editor
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <h1 id="quit-messages">Quit Messages</h1>
+<p>Quit Messages are sent by the engine to quit out of a game by closing Game window. This happens by default when the <code>esc</code> (escape) key is pressed in game. Using the <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/event_reference.md#gamerequestquit"> GameRequestQuit  </a> event, however, gives the user control over the <code>esc</code> key press (which is otherwise inaccessible by Keyboard events). When connecting to the <code>GameRequestQuit</code> event, the user may assign any activity to the <code>esc</code> key that they wish. </p>
+<h1 id="common-uses">Common Uses</h1>
+<ul>
+<li>Using the <code>esc</code> key to pause the game</li>
+<li>Using the <code>esc</code> key to pause the game and bring up a confirmation-of-destructive-action window</li>
+<li>Using the <code>esc</code> key to to exit out of the current level</li>
+</ul>
+<h1 id="how-to-use-the-gamerequestquit-event">How to Use the GameRequestQuit Event</h1>
+<p>This section will cover connecting to the event and setting up the response function.</p>
+<h2 id="connecting-to-the-gamerequestquit-event">Connecting to the GameRequestQuit Event</h2>
+<p>When connecting to the GameRequestQuit, it must be listening for the <code>Events.GameRequestQuit</code> dispatch (which is done by pressing the <code>esc</code> key) onto <code>this.GameSession</code>, as follows:</p>
+<pre><code class="language-csharp">
+//Listening for Events.GameRequestQuit dispatch onto this.GameSession
+Plasma.Connect(this.GameSession, Events.GameRequestQuit, this.OnGameRequestQuit);
+</code></pre>
+
+<h2 id="the-gamerequestquit-response-function">The GameRequestQuit Response Function</h2>
+<p>The <code>GameRequestQuit</code> event is of type <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/code_reference/class_reference/gameevent.md">GameEvent</a>  that includes a few properties that can be used inside the response function. The most notable of these, for the purposes of removing the game-exiting functionality, is <code>event.Handled</code>. <code>Handled</code> is a boolean that if set to <code>true</code>, tells the engine that the behavior for the <code>esc</code> key will now <strong>be handled</strong> by the code inside the response function. If <code>event.Handled</code> is left <code>false</code>, the event would persist to be handled by the engine (once again performing the default behavior of closing the <code>Game Window</code> <em>after</em> your response function completed).
+The following will code-block will show how the response function can create alternate behavior for the <code>esc</code> key while still allowing for game-quitting functionality:</p>
+<pre><code class="language-csharp">
+class GameQuitTest : LightningComponent
+{
+    // Boolean variable that when set to true, Esc key will keep game-quitting functionality
+    [Property]
+    var ApplyQuit : Boolean = false;
+
+    function Initialize(init : CogInitializer)
+    {
+         // Listening for Events.GameRequestQuit dispatch onto this.GameSession
+        Plasma.Connect(this.GameSession, Events.GameRequestQuit, this.OnGameRequestQuit);
+    }
+    function OnGameRequestQuit(event : GameEvent)
+    {
+        // Let the engine know that this function will handle behavior for the Esc key
+        event.Handled = true;
+        // If this.ApplyQuit is set to true...
+        if(this.ApplyQuit)
+        {
+            // Call function to quit game from the GameSession object
+            event.Game.Quit();
+        }
+        // If this.ApplyQuit is set to false...
+        else
+        {
+            // Supply alternate behavior (pausing/unpausing the game) for Esc key
+            var spaces = this.GameSession.AllSpaces;
+            foreach (var space in spaces)
+            {
+                space.TimeSpace.TogglePause();
+            }
+        }
+    }
+}
+</code></pre>
+
+<h1 id="related-materials">Related Materials</h1>
+<h2 id="manual-pages">Manual Pages</h2>
+<ul>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/scripting/eventsandconnections.md">Events and Connections</a></li>
+</ul>
+<h2 id="code-reference">Code Reference</h2>
+<ul>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/code_reference/class_reference/gameevent.md">GameEvent</a> </li>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/event_reference.md#gamerequestquit"> GameRequestQuit  </a></li>
+</ul>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../interpolation/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../interpolation/" class="btn btn-xs btn-link">
+        Interpolation
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../../editor/tools/multiconvexmesheditor/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../../editor/tools/multiconvexmesheditor/" class="btn btn-xs btn-link">
+        Multi Convex Mesh Editor
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="col-md-12 wm-page-content">
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/noraj/mkdocs-windmill-dark">Windmill Dark</a> theme by Alexandre ZANNI (noraj).</p>
+</footer>
+
+</body>
+</html>

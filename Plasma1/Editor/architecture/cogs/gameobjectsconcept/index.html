@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="author" content="PlasmaDev">
+    <link rel="canonical" href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/architecture/cogs/gameobjectsconcept/">
+    <link rel="shortcut icon" href="../../../../../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Game Objects - PlasmaDocs</title>
+    <link href="../../../../../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../../../../../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../../../../../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../../../../css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../../../../../js/jquery-3.2.1.min.js"></script>
+    <script src="../../../../../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../../../../../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '../../../../..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "Game Objects", url: "#_top", children: [
+              {title: "Creating a Cog", url: "#creating-a-cog" },
+              {title: "Copy \u0026amp; Paste", url: "#copy-paste" },
+          ]},
+          {title: "Related Materials", url: "#related-materials", children: [
+              {title: "Code Reference", url: "#code-reference" },
+              {title: "Manual", url: "#manual" },
+          ]},
+        ];
+
+    </script>
+    <script src="../../../../../js/base.js"></script>
+      <script src="../../../../../search/main.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../objectstore/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../objectstore/" class="btn btn-xs btn-link">
+        Object Store
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../../archetypes/archetype_basics/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../../archetypes/archetype_basics/" class="btn btn-xs btn-link">
+        Archetypes
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <h1 id="game-objects">Game Objects</h1>
+<p>Game objects in the Plasma Engine (game object compositions, or COGs) are not defined using classes. Instead they are collections of components, each of which provide a certain functionality to the object. A component can be data, behavior, and/or a link to a system. For example, an Cog called "Ball" might be a composition that includes the <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/transform.md"> Transform  </a> (position, rotation, etc.), <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/graphics/models.md"> Model  </a> (geometry, textures, etc.), <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/physics/rigidbody.md"> RigidBody  </a> (movement), and Collider (shape, collision, etc.) components, while a "Main Camera" object would include Transform, Controller (mouse or keyboard input, etc.), and Camera (field of view, zoom, etc.). Or you could create a "Ball Camera," with Transform, Model, Rigid Body, Collider, Controller, and Camera.</p>
+<p>One of the keys to working with a component based engine is to think of objects in terms of what they do, not what they are. If you have a hospital, a soldier, and a medic, the hospital and the medic have a healing component, while the soldier and the medic have a mobility component, but you don't need to group one as a building and the other two as infantry. All the game engine cares about is what the object can do. You might see a ball and a car as different types of things, but to the game engine they are both objects composed of Transform, Model, Rigid Body and Collider. They have the same functionality: the only difference is their data.</p>
+<h2 id="creating-a-cog">Creating a Cog</h2>
+<p>The easiest way to start creating your own cog is to start with a command that generates one for you, e.g. <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/command_reference.md#createsprite"> CreateSprite </a>, <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/command_reference.md#createcube"> CreateCube </a>, <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/command_reference.md#createtransform"> CreateTransform </a>, etc. These create cogs that you can then customize by adding or removing components and setting their properties in the Properties Window.</p>
+<h2 id="copy-paste">Copy &amp; Paste</h2>
+<p>When creating a new object, you can always copy and paste other objects and alter their properties from there. The copy and paste functionality places the same information on the clipboard that it does when saving.</p>
+<p>Here is what we see when copy our Sprite generated from CreateSprite into a text editor:</p>
+<pre><code>Selection selection = 
+{
+    Cog = 
+    {
+        LinkId = 
+        {
+            uint Id = 1,
+        },
+        Named = 
+        {
+            string Name = &quot;Sprite&quot;,
+        },
+        Transform = 
+        {
+            Vec3 Translation = [1.97043, 6.45429, 0],
+            Vec3 Scale = [1, 1, 1],
+            Quat Rotation = [0, 0, 0, 1],
+        },
+        Sprite = 
+        {
+            string SpriteSource = &quot;5275aa4d802dd6dc:Square&quot;,
+            bool FlipX = false,
+            bool FlipY = false,
+            Vec4 Color = [1, 1, 1, 1],
+            bool Visible = true,
+            bool OnTop = false,
+            bool AnimationActive = true,
+            float AnimationSpeed = 1,
+            uint StartFrame = 0,
+            BlendMode BlendMode = Alpha,
+            SpriteGeometryMode GeometryMode = ZPlane,
+        },
+    },
+},
+
+</code></pre>
+<p>This code can be copy and pasted into other projects. This works because, unless you manually remove them, you have all the default <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/architecture/resources.md">Resources</a> necessary to create this object. In many cases this won't work with your cogs because the copied object references resources that differ between your destination project and the source project.</p>
+<hr />
+<h1 id="related-materials">Related Materials</h1>
+<h2 id="code-reference">Code Reference</h2>
+<ul>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/transform.md"> Transform  </a></li>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/command_reference.md#createsprite"> CreateSprite </a></li>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/command_reference.md#createcube"> CreateCube </a></li>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/command_reference.md#createtransform"> CreateTransform </a></li>
+</ul>
+<h2 id="manual">Manual</h2>
+<ul>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/graphics/models.md"> Model  </a></li>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/physics/rigidbody.md"> RigidBody  </a> </li>
+</ul>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../objectstore/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../objectstore/" class="btn btn-xs btn-link">
+        Object Store
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../../archetypes/archetype_basics/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../../archetypes/archetype_basics/" class="btn btn-xs btn-link">
+        Archetypes
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="col-md-12 wm-page-content">
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/noraj/mkdocs-windmill-dark">Windmill Dark</a> theme by Alexandre ZANNI (noraj).</p>
+</footer>
+
+</body>
+</html>

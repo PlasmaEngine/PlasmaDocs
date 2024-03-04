@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="author" content="PlasmaDev">
+    <link rel="canonical" href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/Lightning/looping/">
+    <link rel="shortcut icon" href="../../../../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Looping - PlasmaDocs</title>
+    <link href="../../../../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../../../../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../../../../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../../../css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../../../../js/jquery-3.2.1.min.js"></script>
+    <script src="../../../../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../../../../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '../../../..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "Looping", url: "#_top", children: [
+          ]},
+        ];
+
+    </script>
+    <script src="../../../../js/base.js"></script>
+      <script src="../../../../search/main.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../memory_management/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../memory_management/" class="btn btn-xs btn-link">
+        Memory Management
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../keywords/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../keywords/" class="btn btn-xs btn-link">
+        Keywords
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <h1 id="looping">Looping</h1>
+<p>Looping is a technique used to execute code an arbitrary number of times.</p>
+<p># The Loop Keyword
+The <code>loop</code> keyword defines the most basic type of looping structure in Lightning.  This is most useful when processing each element in a container, where the container size may not be known.</p>
+<pre><code class="language-csharp">
+var i = 0;
+var sum = 0;
+loop
+{
+  sum += i;
+  Console.WriteLine(sum);
+  if (i >= 3)
+    return;
+  ++i;
+}
+</code></pre>
+<pre><code class="language-csharp">
+0
+1
+3
+</code></pre>
+<p>The values of <code>sum</code> printed are <code>0</code>, <code>1</code>, and <code>3</code> because <code>sum += 0</code>, <code>sum += 1</code>, and <code>sum += 2</code> are all executed in sequence with a call to <code>Console.WriteLine</code> after each.  Whatever code is in the block following <code>loop</code> will be repeatedly executed until the <code>loop</code> is escaped with <code>return</code>, <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/Lightning/looping.md#navigating-loops">break</a>, or <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/Lightning/looping.md#continue">continue</a>.  <code>return</code> is a directive that leaves the <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/Lightning/functions.md">function</a>, and therefore can be used to exit a loop.</p>
+<p># While and Do While
+While the <code>loop</code> keyword is sufficient in executing code an arbitrary ammount of times, there are other types of loop blocks that make for cleaner code.</p>
+<pre><code class="language-csharp">
+var i = 0;
+var sum = 0;
+while(i < 3)
+{
+  sum += i;
+  Console.WriteLine(sum);
+  ++i;
+}
+</code></pre>
+<pre><code class="language-csharp">
+0
+1
+3
+</code></pre>
+<p>The above snippet will sum together numbers in sequence like in the <code>Loop</code> code snippet, but this time using the <code>while</code> keyword.  <code>while</code> will run when <code>i</code> is <code>0</code>, <code>1</code>, and <code>2</code>, and the sequence of sums will be the same as in the <code>Loop</code> code snippet.</p>
+<pre><code class="language-csharp">
+var i = 0;
+var sum = 0;
+do
+{
+  sum += i;
+  Console.WriteLine(sum);
+  ++i;
+}
+while(i < 3)
+</code></pre>
+<pre><code class="language-csharp">
+0
+1
+3
+</code></pre>
+<p>The above snippet also produces the same result as the <code>While</code> code snippet, but with <code>do while</code> instead of <code>while</code>.  The <code>do while</code> structure is similar to a <code>while</code> loop, but with the looping condition is checked after the loop is run.  One should be mindful of the implications of <code>do while</code>, that whatever is in the code block following <code>do</code> will run at least once.  Still, the <code>do while</code> block is executed when <code>i</code> is <code>0</code>, <code>1</code>, and <code>2</code>.</p>
+<pre><code class="language-csharp">
+var i = 100;
+var sum = 0;
+do
+{
+  sum += i;
+  Console.WriteLine(sum);
+  ++i;
+}
+while(i < 3)
+</code></pre>
+<pre><code class="language-csharp">
+100
+</code></pre>
+<p>Notice how the above code snippet is a modification of <code>Do While 1</code>, showing how choosing the wrong type of loop can result in logical errors. The initial value of <code>i</code> is now <code>100</code>, and therefore the summation range is <code>[100,3]</code>.  In the field of mathematics, <code>[100,3]</code> is an empty interval, and the proper sum would be <code>0</code>.  Since a <code>do while</code> is used here, the result is instead <code>100</code>.  If the above example instead used a <code>while</code> loop, the code block would never execute and the result would be <code>0</code>.</p>
+<p># For loop
+A common use for looping is to iterate over a set, whether it's numbers or elements in a container.  The <code>for</code> loop provides an even shorter syntax than the <code>while</code> loop.</p>
+<pre><code class="language-csharp">
+var myArray = Array[Integer]();
+var sum = 0;
+for (var j = 0; j < 3; ++j)
+{
+  myArray.Add(j);
+}
+Console.WriteLine(myArray);
+
+for(var i = 0; i < 3; ++i)
+{
+  sum += myArray.Get(i);
+  Console.WriteLine(sum);
+}
+</code></pre>
+<pre><code class="language-csharp">
+{0, 1, 2}
+0
+1
+3
+</code></pre>
+<p>Notice how the above code snippet and the <code>While</code> code snippet loops produce the same result: <code>0</code>, <code>1</code>, and <code>3</code>.  First <code>i</code> is <strong>initialized</strong> to <code>0</code>.  Then in a loop, the <code>i &lt; 3</code> <strong>condition</strong> is checked, <code>sum</code> is increased and printed, and <code>i</code> is incremented at the end of the <strong>iteration</strong>.  The <code>for</code> loop follows the format <code>for(&lt;initialization&gt;; &lt;condition&gt;; &lt;iteration&gt;)</code>.  In addition, the above code snippet uses an <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/array_t.md">array</a>. An array is a container with the <em>indexable</em> quality, which means the i-th element can be directly accessed.  This access is done by calling the function <code>myArray.Get</code>.</p>
+<p># For Each loop
+The <code>foreach</code> loop is reserved for iterating over containers, and is shorter than its equivalent <code>for</code> loop.</p>
+<pre><code class="language-csharp">
+var myArray = Array[Integer]();
+var sum = 0;
+for (var i = 0; i < 3; ++i)
+{
+  myArray.Add(i);
+}
+Console.WriteLine(myArray);
+
+foreach (var val in myArray)
+{
+  sum += val;
+  Console.WriteLine(sum);
+}
+</code></pre>
+<pre><code class="language-csharp">
+{0, 1, 2}
+0
+1
+3
+</code></pre>
+
+<p>Any array that is <em>indexable</em> is also //iteratable//.  The Array container in Lightning can be iterated over as shown in <code>foreach (var val in myArray)</code>.  Take note that the index isn't accessable in a <code>foreach</code> loop, and that <code>foreach</code> should only be used when the order that elements are iterated over isn't relevant.</p>
+<p># Navigating Loops
+There are two ways to exit from a loop.  When the loop condition is evaluated to false, the loop will end.  The other way is to use either <code>return</code> or <code>break</code>.  As explained on the function page, <code>return</code> will exit the current function while <code>break</code> will leave the next highest loop.  The following code snippet uses <code>myArray</code> from the <code>For Each</code> code snippet.</p>
+<pre><code class="language-csharp">
+var target : Integer = 1;
+for (var index : Integer = 0; index < myArray.Count; ++index)
+{
+  if(myArray.Get(index) == target)
+  {
+    Console.WriteLine(index);
+    break;
+  }
+}
+Console.WriteLine("Loop Finished");
+</code></pre>
+<pre><code class="language-csharp">
+1
+Loop Finished
+</code></pre>
+<p>The above code snippet looks for the index of the value <code>1</code> in <code>myArray</code>.  The array holds <code>{0, 1, 2}</code> from the <code>For Each</code> code snippet, so the index of the value <code>1</code> is <code>1</code>.  Once the <code>break</code> statement is reached, Lightning will jump directly to the final <code>}</code>.  This is the closing brace of the <code>for</code> loop block.</p>
+<p>## Nested Loops
+Any loop inside another loop is considered nested.  Be aware in these situations that <code>break</code> will exit out of only one loop, while <code>return</code> will leave all of them.</p>
+<pre><code class="language-csharp">
+for (var i = 0; i < 3; ++i)
+{
+  for (var j = 0; j < 3; ++j)
+  {
+    if(j >= i)
+      break;
+
+    Console.WriteLine("(`i`, `j`)");
+  }
+}
+</code></pre>
+<pre><code class="language-csharp">
+(1, 0)
+(2, 0)
+(2, 1)
+</code></pre>
+<p>Notice how the <code>break</code> statement only exits the inner <code>for</code> loop.  The <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/Lightning/strings.md">string</a> passed into <code>Console.WriteLine</code> will evaluate to <code>(1, 0)</code>, <code>(2, 0)</code>, and <code>(2, 1)</code>.  In other words, the result is printed when <code>j &lt; i</code>.</p>
+<p>## Continue
+The <code>continue</code> keyword operates similarly to <code>break</code>.  While <code>break</code> will jump to the end of the loop's scope <strong>and</strong> exit the loop, <code>continue</code> will only jump to the end of the loop's scope.</p>
+<pre><code class="language-csharp">
+for(var i = 0; i < 5; ++i)
+{
+  if(i == 2)
+    continue;
+
+  Console.WriteLine(i);
+}
+</code></pre>
+<pre><code class="language-csharp">
+0
+1
+3
+4
+</code></pre>
+<p>Notice how <code>Console.WriteLine(i)</code> executes for each <code>i</code> in the range <code>[0, 4]</code> with the exception of <code>2</code>.  When <code>i == 2</code>, <code>continue</code> is reached and the next iteration is reached.  Also note that even when using <code>continue</code> in a for loop, the iterative statement <code>++i</code> is still executed.</p>
+<p># Condensed Loops
+In the case that a loops only contains one statement within its scope (simliar to <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/Lightning/conditionals.md#condensed-conditionals"> conditionals </a>) then no <code>{}</code> brackets are needed.</p>
+<pre><code class="language-csharp">
+for(var i = 0; i < 3; ++i)
+  Console.WriteLine(i);
+  Console.WriteLine("-");
+</code></pre>
+<pre><code class="language-csharp">
+0
+1
+2
+-
+</code></pre>
+
+<p>Here you can see that the second instance of <code>Console.WriteLine(i);</code> is only executed once as it falls outside the scope of the for loop.</p>
+<p># Related Material
+ ## Manual
+- <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/Lightning/functions.md">functions</a>
+- <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/Lightning/strings.md">strings</a></p>
+<p>## Code Reference
+- <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/array_t.md">array_t</a> </p>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../memory_management/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../memory_management/" class="btn btn-xs btn-link">
+        Memory Management
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../keywords/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../keywords/" class="btn btn-xs btn-link">
+        Keywords
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="col-md-12 wm-page-content">
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/noraj/mkdocs-windmill-dark">Windmill Dark</a> theme by Alexandre ZANNI (noraj).</p>
+</footer>
+
+</body>
+</html>

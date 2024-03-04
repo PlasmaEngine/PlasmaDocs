@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="author" content="PlasmaDev">
+    <link rel="canonical" href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C%2B%2B/code_reference/class_reference/orientation/">
+    <link rel="shortcut icon" href="../../../../../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Orientation - PlasmaDocs</title>
+    <link href="../../../../../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../../../../../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../../../../../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../../../../css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../../../../../js/jquery-3.2.1.min.js"></script>
+    <script src="../../../../../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../../../../../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '../../../../..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+        ];
+
+    </script>
+    <script src="../../../../../js/base.js"></script>
+      <script src="../../../../../search/main.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../orientationbasisgizmo/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../orientationbasisgizmo/" class="btn btn-xs btn-link">
+        Orientationbasisgizmo
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../operationqueueevent/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../operationqueueevent/" class="btn btn-xs btn-link">
+        Operationqueueevent
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <p><code>Component</code> <code>Gameplay</code></p>
+<p>(NOTE) Defines a new basis for a desired right, up, and forward vector. Provides a bunch of helper functions to change between these spaces and to perform simple look-at behavior.</p>
+<table>
+<thead>
+<tr>
+<th>Methods</th>
+<th>Properties</th>
+<th>Base Classes</th>
+<th>Derived Classes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/orientation.md#computesignedangle-plasma"> ComputeSignedAngle</a></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/orientation.md#absoluteangle-plasma-engin"> AbsoluteAngle</a></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/component.md">component</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/orientation.md#debugdrawbases-void"> DebugDrawBases</a></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/orientation.md#defaultorientationbases"> DefaultOrientationBases</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/orientation.md#getlookatdirectionrotati"> GetLookAtDirectionRotation</a></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/orientation.md#globalup-plasma-engine-doc"> GlobalUp</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/orientation.md#getlookatdirectionwithup"> GetLookAtDirectionWithUpRotation</a></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/orientation.md#localforward-plasma-engine"> LocalForward</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/orientation.md#getlookatpointrotation-z"> GetLookAtPointRotation</a></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/orientation.md#localorientationbasis-ze"> LocalOrientationBasis</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/orientation.md#getlookatpointwithuprota"> GetLookAtPointWithUpRotation</a></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/orientation.md#localright-plasma-engine-d"> LocalRight</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/orientation.md#lookatdirection-void"> LookAtDirection</a></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/orientation.md#localtoorientationrotati"> LocalToOrientationRotation</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/orientation.md#lookatdirectionwithup-vo"> LookAtDirectionWithUp</a></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/orientation.md#localtoworldrotation-zer"> LocalToWorldRotation</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/orientation.md#lookatpoint-void"> LookAtPoint</a></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/orientation.md#localup-plasma-engine-docu"> LocalUp</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/orientation.md#lookatpointwithup-void"> LookAtPointWithUp</a></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/orientation.md#orientationforward-plasma"> OrientationForward</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/orientation.md#orientation-void"> Constructor</a></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/orientation.md#orientationright-plasma-en"> OrientationRight</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/orientation.md#setlocallookatrotation-v"> SetLocalLookAtRotation</a></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/orientation.md#orientationtolocalrotati"> OrientationToLocalRotation</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/orientation.md#setworldlookatrotation-v"> SetWorldLookAtRotation</a></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/orientation.md#orientationtoworldrotati"> OrientationToWorldRotation</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/orientation.md#orientationup-plasma-engin"> OrientationUp</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/orientation.md#worldforward-plasma-engine"> WorldForward</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/orientation.md#worldright-plasma-engine-d"> WorldRight</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/orientation.md#worldtolocalrotation-zer"> WorldToLocalRotation</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/orientation.md#worldtoorientationrotati"> WorldToOrientationRotation</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/orientation.md#worldup-plasma-engine-docu"> WorldUp</a></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>#  Properties</p>
+<hr />
+<p>#  AbsoluteAngle : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.md">real</a></p>
+<p><code>read-only</code></p>
+<blockquote>
+<p>Get the angle of the object about the up vector.
+``` lang=cpp, name=Lightning
+var AbsoluteAngle : Real</p>
+</blockquote>
+<hr />
+<p>#  DefaultOrientationBases : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/enum_reference.md#orientationbases">OrientationBases</a></p>
+<blockquote>
+<p>``` lang=cpp, name=Lightning
+var DefaultOrientationBases : OrientationBases</p>
+</blockquote>
+<hr />
+<p>#  GlobalUp : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real3.md">real3</a></p>
+<blockquote>
+<p>The world-space up vector to use for LookAt operations that don't take an up vector.
+``` lang=cpp, name=Lightning
+var GlobalUp : Real3</p>
+</blockquote>
+<hr />
+<p>#  LocalForward : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real3.md">real3</a></p>
+<p><code>read-only</code></p>
+<blockquote>
+<p>The orientation's forward vector after having been transformed into local space.
+``` lang=cpp, name=Lightning
+var LocalForward : Real3</p>
+</blockquote>
+<hr />
+<p>#  LocalOrientationBasis : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/quaternion.md">quaternion</a></p>
+<blockquote>
+<p>A local-space basis that represents this orientation. If you build a basis from an up of (0, 1, 0), and a forward of (0, 0, -1) then this should result in the identity rotation.
+``` lang=cpp, name=Lightning
+var LocalOrientationBasis : Quaternion</p>
+</blockquote>
+<hr />
+<p>#  LocalRight : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real3.md">real3</a></p>
+<p><code>read-only</code></p>
+<blockquote>
+<p>The orientation's right vector after having been transformed into local space.
+``` lang=cpp, name=Lightning
+var LocalRight : Real3</p>
+</blockquote>
+<hr />
+<p>#  LocalToOrientationRotation : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/quaternion.md">quaternion</a></p>
+<p><code>read-only</code></p>
+<blockquote>
+<p>The rotation that takes an local space vector into orientation space. For example, this transforms LocalRight into OrientationRight.
+``` lang=cpp, name=Lightning
+var LocalToOrientationRotation : Quaternion</p>
+</blockquote>
+<hr />
+<p>#  LocalToWorldRotation : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/quaternion.md">quaternion</a></p>
+<p><code>read-only</code></p>
+<blockquote>
+<p>The rotation that transforms a vector from local space into world space. For example, this transforms LocalRight into WorldRight.
+``` lang=cpp, name=Lightning
+var LocalToWorldRotation : Quaternion</p>
+</blockquote>
+<hr />
+<p>#  LocalUp : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real3.md">real3</a></p>
+<p><code>read-only</code></p>
+<blockquote>
+<p>The orientation's up vector after having been transformed into local space.
+``` lang=cpp, name=Lightning
+var LocalUp : Real3</p>
+</blockquote>
+<hr />
+<p>#  OrientationForward : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real3.md">real3</a></p>
+<p><code>read-only</code></p>
+<blockquote>
+<p>The forward vector in orientation space. This is always the vector (0, 0, -1) but is provided for clarity with transformations.
+``` lang=cpp, name=Lightning
+var OrientationForward : Real3</p>
+</blockquote>
+<hr />
+<p>#  OrientationRight : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real3.md">real3</a></p>
+<p><code>read-only</code></p>
+<blockquote>
+<p>The right vector in orientation space. This is always the vector (1, 0, 0) but is provided for clarity with transformations.
+``` lang=cpp, name=Lightning
+var OrientationRight : Real3</p>
+</blockquote>
+<hr />
+<p>#  OrientationToLocalRotation : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/quaternion.md">quaternion</a></p>
+<p><code>read-only</code></p>
+<blockquote>
+<p>The rotation that takes an orientation space vector into local space. For example, this transforms OrientationRight into LocalRight.
+``` lang=cpp, name=Lightning
+var OrientationToLocalRotation : Quaternion</p>
+</blockquote>
+<hr />
+<p>#  OrientationToWorldRotation : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/quaternion.md">quaternion</a></p>
+<p><code>read-only</code></p>
+<blockquote>
+<p>The rotation that takes an orientation space vector into world space. For example, this transforms OrientationRight into WorldRight.
+``` lang=cpp, name=Lightning
+var OrientationToWorldRotation : Quaternion</p>
+</blockquote>
+<hr />
+<p>#  OrientationUp : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real3.md">real3</a></p>
+<p><code>read-only</code></p>
+<blockquote>
+<p>The up vector in orientation space. This is always the vector (0, 1, 0) but is provided for clarity with transformations.
+``` lang=cpp, name=Lightning
+var OrientationUp : Real3</p>
+</blockquote>
+<hr />
+<p>#  WorldForward : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real3.md">real3</a></p>
+<p><code>read-only</code></p>
+<blockquote>
+<p>The orientation's forward vector after having been transformed into world space.
+``` lang=cpp, name=Lightning
+var WorldForward : Real3</p>
+</blockquote>
+<hr />
+<p>#  WorldRight : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real3.md">real3</a></p>
+<p><code>read-only</code></p>
+<blockquote>
+<p>The orientation's right vector after having been transformed into world space.
+``` lang=cpp, name=Lightning
+var WorldRight : Real3</p>
+</blockquote>
+<hr />
+<p>#  WorldToLocalRotation : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/quaternion.md">quaternion</a></p>
+<p><code>read-only</code></p>
+<blockquote>
+<p>The rotation that transforms a vector from world space into local space. For example, this transforms WorldRight into LocalRight.
+``` lang=cpp, name=Lightning
+var WorldToLocalRotation : Quaternion</p>
+</blockquote>
+<hr />
+<p>#  WorldToOrientationRotation : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/quaternion.md">quaternion</a></p>
+<p><code>read-only</code></p>
+<blockquote>
+<p>The rotation that takes an world space vector into orientation space. For example, this transforms WorldRight into OrientationRight.
+``` lang=cpp, name=Lightning
+var WorldToOrientationRotation : Quaternion</p>
+</blockquote>
+<hr />
+<p>#  WorldUp : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real3.md">real3</a></p>
+<p><code>read-only</code></p>
+<blockquote>
+<p>The orientation's up vector after having been transformed into world space.
+``` lang=cpp, name=Lightning
+var WorldUp : Real3</p>
+</blockquote>
+<hr />
+<p>#  Methods</p>
+<hr />
+<p>#  ComputeSignedAngle : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.md">real</a></p>
+<blockquote>
+<p>Compute the rotation angle between two vectors (in radians)
+|Name|Type|Description|
+|---|---|---|
+|up|<a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real3.md">real3</a>| |
+|forward|<a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real3.md">real3</a>| |
+|newVector|<a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real3.md">real3</a>| |
+<code>lang=cpp, name=Lightning
+function ComputeSignedAngle(up : Real3, forward : Real3, newVector : Real3) : Real</code> </p>
+</blockquote>
+<hr />
+<p>#  DebugDrawBases : Void</p>
+<blockquote>
+<p>Debug draws the current orientation bases in world space.
+|Name|Type|Description|
+|---|---|---|
+<code>lang=cpp, name=Lightning
+function DebugDrawBases()</code> </p>
+</blockquote>
+<hr />
+<p>#  GetLookAtDirectionRotation : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/quaternion.md">quaternion</a></p>
+<blockquote>
+<p>Gets the forward to look in the given direction. Keeps the current world up.
+|Name|Type|Description|
+|---|---|---|
+|lookDir|<a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real3.md">real3</a>| |
+<code>lang=cpp, name=Lightning
+function GetLookAtDirectionRotation(lookDir : Real3) : Quaternion</code> </p>
+</blockquote>
+<hr />
+<p>#  GetLookAtDirectionWithUpRotation : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/quaternion.md">quaternion</a></p>
+<blockquote>
+<p>Same as GetLookAtDirectionRotation but allows the user to specify the up vector.
+|Name|Type|Description|
+|---|---|---|
+|lookDir|<a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real3.md">real3</a>| |
+|up|<a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real3.md">real3</a>| |
+<code>lang=cpp, name=Lightning
+function GetLookAtDirectionWithUpRotation(lookDir : Real3, up : Real3) : Quaternion</code> </p>
+</blockquote>
+<hr />
+<p>#  GetLookAtPointRotation : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/quaternion.md">quaternion</a></p>
+<blockquote>
+<p>Get the rotation so that the forward will look at the given point. Keeps the current world up.
+|Name|Type|Description|
+|---|---|---|
+|lookPoint|<a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real3.md">real3</a>| |
+<code>lang=cpp, name=Lightning
+function GetLookAtPointRotation(lookPoint : Real3) : Quaternion</code> </p>
+</blockquote>
+<hr />
+<p>#  GetLookAtPointWithUpRotation : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/quaternion.md">quaternion</a></p>
+<blockquote>
+<p>Same as GetLookAtPointRotation but allows the user to specify the up vector.
+|Name|Type|Description|
+|---|---|---|
+|lookPoint|<a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real3.md">real3</a>| |
+|up|<a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real3.md">real3</a>| |
+<code>lang=cpp, name=Lightning
+function GetLookAtPointWithUpRotation(lookPoint : Real3, up : Real3) : Quaternion</code> </p>
+</blockquote>
+<hr />
+<p>#  LookAtDirection : Void</p>
+<blockquote>
+<p>Sets the forward to look in the given direction. Keeps the current world up.
+|Name|Type|Description|
+|---|---|---|
+|lookDir|<a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real3.md">real3</a>| |
+<code>lang=cpp, name=Lightning
+function LookAtDirection(lookDir : Real3)</code> </p>
+</blockquote>
+<hr />
+<p>#  LookAtDirectionWithUp : Void</p>
+<blockquote>
+<p>Same as LookAtDirection but allows the user to specify the up vector.
+|Name|Type|Description|
+|---|---|---|
+|lookDir|<a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real3.md">real3</a>| |
+|up|<a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real3.md">real3</a>| |
+<code>lang=cpp, name=Lightning
+function LookAtDirectionWithUp(lookDir : Real3, up : Real3)</code> </p>
+</blockquote>
+<hr />
+<p>#  LookAtPoint : Void</p>
+<blockquote>
+<p>Sets the forward to look at the given point. Keeps the current world up.
+|Name|Type|Description|
+|---|---|---|
+|lookPoint|<a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real3.md">real3</a>| |
+<code>lang=cpp, name=Lightning
+function LookAtPoint(lookPoint : Real3)</code> </p>
+</blockquote>
+<hr />
+<p>#  LookAtPointWithUp : Void</p>
+<blockquote>
+<p>Same as LookAtPoint but allows the user to specify the up vector.
+|Name|Type|Description|
+|---|---|---|
+|lookPoint|<a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real3.md">real3</a>| |
+|up|<a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real3.md">real3</a>| |
+<code>lang=cpp, name=Lightning
+function LookAtPointWithUp(lookPoint : Real3, up : Real3)</code> </p>
+</blockquote>
+<hr />
+<p>#  Orientation : Void</p>
+<p><code>constructor</code></p>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>``` lang=cpp, name=Lightning</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>function Orientation()</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>```</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<hr />
+<p>#  SetLocalLookAtRotation : Void</p>
+<blockquote>
+<p>Set the transform's local rotation such that the orientation's basis vectors will be aligned with the given rotation (assumed to be a look-at rotation constructed from a right, up, and forward)
+|Name|Type|Description|
+|---|---|---|
+|localLookAtRotation|<a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/quaternion.md">quaternion</a>| |
+<code>lang=cpp, name=Lightning
+function SetLocalLookAtRotation(localLookAtRotation : Quaternion)</code> </p>
+</blockquote>
+<hr />
+<p>#  SetWorldLookAtRotation : Void</p>
+<blockquote>
+<p>Set the transform's world rotation such that the orientation's basis vectors will be aligned with the given rotation (assumed to be a look-at rotation constructed from a right, up, and forward)
+|Name|Type|Description|
+|---|---|---|
+|worldLookAtRotation|<a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/quaternion.md">quaternion</a>| |
+<code>lang=cpp, name=Lightning
+function SetWorldLookAtRotation(worldLookAtRotation : Quaternion)</code> </p>
+</blockquote>
+<hr />
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../orientationbasisgizmo/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../orientationbasisgizmo/" class="btn btn-xs btn-link">
+        Orientationbasisgizmo
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../operationqueueevent/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../operationqueueevent/" class="btn btn-xs btn-link">
+        Operationqueueevent
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="col-md-12 wm-page-content">
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/noraj/mkdocs-windmill-dark">Windmill Dark</a> theme by Alexandre ZANNI (noraj).</p>
+</footer>
+
+</body>
+</html>

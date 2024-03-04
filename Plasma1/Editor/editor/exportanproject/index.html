@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="author" content="PlasmaDev">
+    <link rel="canonical" href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/editor/exportanproject/">
+    <link rel="shortcut icon" href="../../../../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Export a Project - PlasmaDocs</title>
+    <link href="../../../../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../../../../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../../../../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../../../css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../../../../js/jquery-3.2.1.min.js"></script>
+    <script src="../../../../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../../../../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '../../../..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "Export a Project", url: "#_top", children: [
+          ]},
+          {title: "Export to a stand alone executable", url: "#export-to-a-stand-alone-executable", children: [
+          ]},
+          {title: "Export for an installer", url: "#export-for-an-installer", children: [
+          ]},
+        ];
+
+    </script>
+    <script src="../../../../js/base.js"></script>
+      <script src="../../../../search/main.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../launcher/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../launcher/" class="btn btn-xs btn-link">
+        Launcher
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../editorui/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../editorui/" class="btn btn-xs btn-link">
+        Editor UI
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <h1 id="export-a-project">Export a Project</h1>
+<p>This page covers how to export your project.</p>
+<h1 id="export-to-a-stand-alone-executable">Export to a stand alone executable</h1>
+<p>For small projects this is the easiest option. It will produce an executable that should run on any windows machine</p>
+<ul>
+<li>Open your project</li>
+<li>Run the <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/editor/editorcommands.md">Command</a> : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/command_reference.md#exportgame">ExportGame</a></li>
+<li>Select a executable file name</li>
+<li>You are done!</li>
+</ul>
+<h1 id="export-for-an-installer">Export for an installer</h1>
+<p>If you project is a very large stand alone, executable may not be the right options since it has to extract the files when it runs.</p>
+<ul>
+<li>Open your project</li>
+<li>Run the <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/editor/editorcommands.md">Command</a> : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/command_reference.md#exportcontent">ExportContent</a></li>
+<li>A folder will be opened will all the files that need to be in the installer</li>
+<li>The <a href="http://www.jrsoftware.org/isdl.php">Inno-Setup </a> file will generate an installer
+<strong>ADD IMAGE</strong></li>
+</ul>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../launcher/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../launcher/" class="btn btn-xs btn-link">
+        Launcher
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../editorui/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../editorui/" class="btn btn-xs btn-link">
+        Editor UI
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="col-md-12 wm-page-content">
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/noraj/mkdocs-windmill-dark">Windmill Dark</a> theme by Alexandre ZANNI (noraj).</p>
+</footer>
+
+</body>
+</html>

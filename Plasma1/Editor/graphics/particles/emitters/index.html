@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="author" content="PlasmaDev">
+    <link rel="canonical" href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/graphics/particles/emitters/">
+    <link rel="shortcut icon" href="../../../../../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Emitters - PlasmaDocs</title>
+    <link href="../../../../../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../../../../../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../../../../../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../../../../css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../../../../../js/jquery-3.2.1.min.js"></script>
+    <script src="../../../../../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../../../../../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '../../../../..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "Emitters", url: "#_top", children: [
+          ]},
+          {title: "Variance", url: "#variance", children: [
+          ]},
+          {title: "Fast Emitters", url: "#fast-emitters", children: [
+          ]},
+          {title: "Related Material", url: "#related-material", children: [
+              {title: "Manual", url: "#manual" },
+              {title: "Code Reference", url: "#code-reference" },
+          ]},
+        ];
+
+    </script>
+    <script src="../../../../../js/base.js"></script>
+      <script src="../../../../../search/main.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../linear_particle_animator/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../linear_particle_animator/" class="btn btn-xs btn-link">
+        Linear Particle Animator
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../../models/model_component/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../../models/model_component/" class="btn btn-xs btn-link">
+        Model Component
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <h1 id="emitters">Emitters</h1>
+<p>Emitters are necessary components for a particle system that define the properties of a particle as it's created.  One of those properties is the spawn position, which is in part defined by the component itself.  The emitter types are <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/boxparticleemitter.md">BoxParticleEmitter</a>, <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/sphericalparticleemitter.md">SphericalParticleEmitter</a>, and <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/meshparticleemitter.md">MeshParticleEmitter</a>, and each one defines a surface or curve that particles emit from.</p>
+<p>NOTE: By default the shape isn't apparent on the Box or Sphere particle emitter.  This is because the EmitterSize  is zeroed out by default.</p>
+<h1 id="variance">Variance</h1>
+<p>Some properties on an emitter have a variance property to match.  Each particle inherits its properties from the emitter by adding a random value from variance to base value.  For example, two common properties for emitters are Size  and SizeVariance .  If Size  were set to <code>1</code> and the SizeVariance  was <code>0.1</code>, the size of each particle would be a random value in the range <code>[0.9,1.1]</code>.  The property StartVelocity  also has the variance counterpart RandomVelocity .  The velocity vector is computed similarly with a variance property, where the X, Y, and Z components of the vector are computed independently.</p>
+<h1 id="fast-emitters">Fast Emitters</h1>
+<p>When an object is moving fast, the fact that its motion is an illusion becomes more apparent.  When the gaps between the small teleportations grow bigger, the illusion is lost.  The illusion of motion is even harder to keep when a particle system is moving since the particles tend to trace the path of the object.  One way to fix this is to use a high EmitRate  and turn on FastMovingEmitter checkBox.  This will emit some of the extra particles between the gaps of the current and previous positions.</p>
+<p><img alt="ParticleSystems_FastMovingEmitter" src="https://raw.githubusercontent.com/PlasmaEngine/PlasmaDocs/master/media/46688.gif" /> <em>Two particle emitters in motion, where the right one is using FastMovingEmitter checkBox</em></p>
+<h1 id="related-material">Related Material</h1>
+<h2 id="manual">Manual</h2>
+<ul>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/architecture/resources/colorgradient.md">Color Gradient</a></li>
+</ul>
+<h2 id="code-reference">Code Reference</h2>
+<ul>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/code_reference/class_reference/spriteparticlesystem.md">SpriteParticleSystem</a></li>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/boxparticleemitter.md">BoxParticleEmitter</a></li>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/sphericalparticleemitter.md">SphericalParticleEmitter</a></li>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/meshparticleemitter.md">MeshParticleEmitter</a></li>
+</ul>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../linear_particle_animator/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../linear_particle_animator/" class="btn btn-xs btn-link">
+        Linear Particle Animator
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../../models/model_component/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../../models/model_component/" class="btn btn-xs btn-link">
+        Model Component
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="col-md-12 wm-page-content">
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/noraj/mkdocs-windmill-dark">Windmill Dark</a> theme by Alexandre ZANNI (noraj).</p>
+</footer>
+
+</body>
+</html>

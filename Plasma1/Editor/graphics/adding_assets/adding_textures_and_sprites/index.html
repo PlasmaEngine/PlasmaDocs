@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="author" content="PlasmaDev">
+    <link rel="canonical" href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/graphics/adding_assets/adding_textures_and_sprites/">
+    <link rel="shortcut icon" href="../../../../../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Importing Sprites - PlasmaDocs</title>
+    <link href="../../../../../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../../../../../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../../../../../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../../../../css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../../../../../js/jquery-3.2.1.min.js"></script>
+    <script src="../../../../../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../../../../../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '../../../../..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "Importing Sprites", url: "#_top", children: [
+          ]},
+          {title: "SpriteSource Setup", url: "#spritesource-setup", children: [
+          ]},
+          {title: "Related Material", url: "#related-material", children: [
+              {title: "Manual", url: "#manual" },
+              {title: "Reference", url: "#reference" },
+          ]},
+        ];
+
+    </script>
+    <script src="../../../../../js/base.js"></script>
+      <script src="../../../../../search/main.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../adding_3d_assets/compression/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../adding_3d_assets/compression/" class="btn btn-xs btn-link">
+        Compression
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../adding_3d_assets/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../adding_3d_assets/" class="btn btn-xs btn-link">
+        Importing 3D Assets & Textures
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <h1 id="importing-sprites">Importing Sprites</h1>
+<p><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/spritesource.md">SpriteSource</a> is the Resource used to create <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/graphics/sprites/sprite.md">Sprites</a>, which represent all 2D graphical assets in Plasma.  Sprites can take the form of a single 2D image or a SpriteSheet displaying all the Sprites needed for an animation in the same file. See <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/editor/editorcommands/resourceadding.md">resourceadding</a> for how to import an image as a SpriteSource.</p>
+<p>NOTE: The only file format that may be imported to create a SpriteSource is <code>.png</code>. Other formats, such as <code>.jpg</code>, are lossy and can result in undesirable artifacts, especially when scaled. If the image only exists as a <code>.jpg</code> and it is absolutely necessary, there are a number of websites that offer free conversion from <code>.jpg</code> (and many other formats) to <code>.png</code>.</p>
+<h1 id="spritesource-setup">SpriteSource Setup</h1>
+<p>To change the values applied to a SpriteSource when an image is imported, double-click the appropriate SpriteSource from the Library window window, which will open the <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/graphics/sprites/spritesourceeditor.md">Sprite Source Editor</a>:</p>
+<p><img alt="SpriteSourceEditor" src="https://raw.githubusercontent.com/PlasmaEngine/PlasmaDocs/master/media/SpriteImportFull.PNG" /> </p>
+<p>There are many different properties that may be modified such as where to set the origin, the type of sampling, and the SpriteFill mode (to change from Fill to <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/graphics/sprites/area.md">Nine Slice</a> for example). If the SpriteSource is a sprite sheet created for <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/graphics/sprites/spritesourceeditor.md#creating-sprite-animatio"> Sprite animation</a>, click on <code>Convert to Animation</code> to open the Sprite Importer window.</p>
+<h1 id="related-material">Related Material</h1>
+<h2 id="manual">Manual</h2>
+<p><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/graphics/sprites/basesprite.md">BaseSprite</a>
+ <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/graphics/sprites/sprite.md">Sprite</a>
+ <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/graphics/sprites/spritesourceeditor.md">Sprite Source Editor</a>
+ <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/graphics/adding_assets/block_compression.md">Block Compression</a></p>
+<h2 id="reference">Reference</h2>
+<p><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/code_reference/class_reference/spritesource.md">SpriteSource</a> 
+ <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/code_reference/class_reference/sprite.md">Sprite</a>  </p>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../adding_3d_assets/compression/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../adding_3d_assets/compression/" class="btn btn-xs btn-link">
+        Compression
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../adding_3d_assets/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../adding_3d_assets/" class="btn btn-xs btn-link">
+        Importing 3D Assets & Textures
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="col-md-12 wm-page-content">
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/noraj/mkdocs-windmill-dark">Windmill Dark</a> theme by Alexandre ZANNI (noraj).</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="author" content="PlasmaDev">
+    <link rel="canonical" href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/audio/soundnode/panningnode/">
+    <link rel="shortcut icon" href="../../../../../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Panning Node - PlasmaDocs</title>
+    <link href="../../../../../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../../../../../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../../../../../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../../../../css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../../../../../js/jquery-3.2.1.min.js"></script>
+    <script src="../../../../../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../../../../../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '../../../../..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "Panning Node", url: "#_top", children: [
+          ]},
+          {title: "Common Uses", url: "#common-uses", children: [
+          ]},
+          {title: "Using the PanningNode", url: "#using-the-panningnode", children: [
+              {title: "SumToMono", url: "#sumtomono" },
+              {title: "Events", url: "#events" },
+              {title: "Example", url: "#example" },
+          ]},
+          {title: "Related Materials", url: "#related-materials", children: [
+              {title: "Manual", url: "#manual" },
+              {title: "Code Reference", url: "#code-reference" },
+          ]},
+        ];
+
+    </script>
+    <script src="../../../../../js/base.js"></script>
+      <script src="../../../../../search/main.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../pitchnode/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../pitchnode/" class="btn btn-xs btn-link">
+        Pitch Node
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../modulationnode/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../modulationnode/" class="btn btn-xs btn-link">
+        Modulation Node
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <h1 id="panning-node">Panning Node</h1>
+<p>The <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/panningnode.md"> PanningNode </a> collects audio data from all of its inputs and applies a volume modification to the left and right channels separately. </p>
+<h1 id="common-uses">Common Uses</h1>
+<ul>
+<li>Moving sounds from left to right and right to left (such as an ambient wind sound)</li>
+<li>Positioning sounds without using a <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/audio/soundnode/soundemitter.md">SoundEmitter </a></li>
+</ul>
+<h1 id="using-the-panningnode">Using the PanningNode</h1>
+<p>PanningNodes will always process audio in two channels regardless of how many channels are used by their inputs or outputs. If the audio input has more than two channels it will be translated into only two before being processed.</p>
+<h2 id="sumtomono">SumToMono</h2>
+<p>If the <code>SumToMono</code> property is set to <code>true</code>, all channels of audio input will be combined before being spread to the left and right channels with the appropriate volume modification. This can be useful if you want the entire sound to be heard as if it is coming from a single position (this is how audio is handled by SoundEmitters). If it is <code>false</code>, the volume modifications will be applied to the existing channels. </p>
+<h2 id="events">Events</h2>
+<p>The <code>AudioInterpolationDone</code> event will be sent when a volume interpolation has finished.</p>
+<h2 id="example">Example</h2>
+<p>The following code block illustrates how to make white noise sound like it's moving back and forth.</p>
+<pre><code class="language-csharp">
+class MovingNoise : LightningComponent
+{
+  // Create and store the PanningNode to change its properties later
+  var Panning : PanningNode = Audio.PanningNode();
+
+  // Create and store the GeneratedWaveNode
+  var Noise : GeneratedWaveNode = Audio.GeneratedWaveNode();
+
+  function Initialize(init : CogInitializer)
+  {
+    // Set the GeneratedWaveNode properties
+    this.Noise.WaveType = SynthWaveType.Noise;
+    this.Noise.Volume = 0.2;
+
+    // Start playing the generated sound wave
+    this.Noise.Play();
+
+    // Reduce the PanningNode's left volume
+    this.Panning.LeftVolume = 0.3;
+
+    // Add the GeneratedWaveNode to the inputs of the PanningNode
+    this.Panning.AddInputNode(this.Noise);
+
+    // Attach the PanningNode to the output node of the SoundSpace
+    this.Space.SoundSpace.SoundNode.AddInputNode(this.Panning);
+
+    // Start panning
+    this.ChangePanning();
+  }
+
+  function ChangePanning()
+  {
+    var time = 3.0;
+
+    // Are we now panning from left to right?
+    if (this.Panning.LeftVolume < this.Panning.RightVolume)
+    {
+      // Interpolate the left volume back to 1.0 and the right volume to 0.2
+      this.Panning.InterpolateVolumes(1.0, 0.2, time);
+    }
+    // If not, we are panning from right to left
+    else
+    {
+      // Interpolate the right volume back to 1.0 and the left volume to 0.2
+      this.Panning.InterpolateVolumes(0.2, 1.0, time);
+    }
+
+    // Delay the next call of this function by the time
+    var sequence = Actions.Sequence(this.Owner.Actions);
+    Actions.Delay(sequence, time);
+    Actions.Call(sequence, this.ChangePanning);
+  }
+}
+</code></pre>
+
+<h1 id="related-materials">Related Materials</h1>
+<h2 id="manual">Manual</h2>
+<ul>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/audio/soundnode/soudnode_overview.md">soudnode_overview</a></li>
+</ul>
+<h2 id="code-reference">Code Reference</h2>
+<ul>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/panningnode.md"> PanningNode </a> </li>
+</ul>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../pitchnode/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../pitchnode/" class="btn btn-xs btn-link">
+        Pitch Node
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../modulationnode/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../modulationnode/" class="btn btn-xs btn-link">
+        Modulation Node
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="col-md-12 wm-page-content">
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/noraj/mkdocs-windmill-dark">Windmill Dark</a> theme by Alexandre ZANNI (noraj).</p>
+</footer>
+
+</body>
+</html>

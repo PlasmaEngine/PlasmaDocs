@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="author" content="PlasmaDev">
+    <link rel="canonical" href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/Lightning/classes/">
+    <link rel="shortcut icon" href="../../../../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Classes - PlasmaDocs</title>
+    <link href="../../../../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../../../../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../../../../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../../../css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../../../../js/jquery-3.2.1.min.js"></script>
+    <script src="../../../../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../../../../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '../../../..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "Classes", url: "#_top", children: [
+          ]},
+          {title: "Class Contents", url: "#class-contents", children: [
+              {title: "Struct Members in Classes", url: "#struct-members-in-classes" },
+              {title: "Static vs Non-Static Members", url: "#static-vs-non-static-members" },
+              {title: "Member Functions", url: "#member-functions" },
+              {title: "Constructors and Destructors", url: "#constructors-and-destructors" },
+          ]},
+          {title: "Related Materials", url: "#related-materials", children: [
+              {title: "Manual", url: "#manual" },
+              {title: "Code Reference", url: "#code-reference" },
+          ]},
+        ];
+
+    </script>
+    <script src="../../../../js/base.js"></script>
+      <script src="../../../../search/main.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../comparison_operators/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../comparison_operators/" class="btn btn-xs btn-link">
+        Comparison Operators
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../casting/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../casting/" class="btn btn-xs btn-link">
+        Casting
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <h1 id="classes">Classes</h1>
+<p>Classes and structs define the type of certain objects in Lightning, and the <code>class</code> keyword can create user-defined data types.  The <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/Lightning/variables_and_data_types.md">Variables</a> and <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/Lightning/functions.md">Functions</a> defined in a class or struct are all stored and referenced from instantiations.  In contrast with how Structs handle <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/Lightning/memory_management.md">Memory Management</a>, classes are copied <code>by-reference</code>.</p>
+<h1 id="class-contents">Class Contents</h1>
+<p>Classes in Lightning must be defined in <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/Lightning/variables_and_data_types.md#global-scope">global scope</a>.  The format for classes and structs are as shown below:</p>
+<pre><code class="language-csharp" name="Simple Classes">
+struct SimpleStruct {}
+class SimpleClass {}
+</code></pre>
+
+<p>Any members that belong to <code>SimpleStruct</code> or <code>SimpleClass</code> will be defined within their curly braces.</p>
+<h2 id="struct-members-in-classes">Struct Members in Classes</h2>
+<p>Because structs are copied <code>by-value</code>, structs cannot have class members.  As shown in the code snippet below, any other permutation of containment is valid.</p>
+<pre><code class="language-csharp" name="Classes and Structs in Classes and Structs">
+struct StructInStruct { var MyStruct : SimpleStruct; }
+struct ClassInStruct { var MyClass : SimpleClass; } // ERROR
+class StructInClass { var MyStruct : SimpleStruct; }
+class ClassInClass { var MyClass : SimpleClass; }
+</code></pre>
+
+<p>The class <code>MyClass</code> is a member of <code>ClassInStruct</code>, which is a struct.  Having a class in a struct will cause Lightning to throw a compile-time exception.</p>
+<h2 id="static-vs-non-static-members">Static vs Non-Static Members</h2>
+<p>Variables and functions inside a class or struct are known as members. Most member variables must be accessed through instantiations of the object.  The one exception are member variables with the <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/Lightning/attributes.md#static">Static</a> <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/Lightning/attributes.md">Attribute</a>.</p>
+<pre><code class="language-csharp" name="Static Members">
+class MyClass
+{
+  // standard variable instantiation and initialization
+  var MyReal : Real = 0;
+
+  // static variable
+  [Static]
+  var MyStaticBoolean : Boolean = false;
+
+  // static function
+  [Static]
+  function MyStaticFunction() {}
+}
+</code></pre>
+
+<p>Accessing static members can be done with <code>MyVariableClass.MyStaticReal</code> or <code>MyVariableClass.MyStaticFunction</code>, while <code>MyVariableClass().MyReal</code> is a way of accessing a non-static member.</p>
+<p>## Member Variable Declaration
+Member variables define the data in a class.  The rules for defining member variables differ from how local variables are defined.</p>
+<pre><code class="language-csharp" name="Member Variables">
+class MyClass
+{
+  // variable instantiation only is allowed
+  var MyDoubleReal : DoubleReal;
+
+  // ERROR: type deduction not allowed on member variables
+  var MyBoolean = false;
+}
+</code></pre>
+
+<p>Notice how <code>MyDoubleReal</code> isn't initialized.  At the class scope, uninitialized member variables will be set to the default values of their types. Also note that member variables must be explicitly typed.  <code>MyBoolean</code> is set to <code>false</code>, but Lightning will still throw a compiler error if the type is omitted.</p>
+<h2 id="member-functions">Member Functions</h2>
+<p>Member functions hold executable code, can take input parameters, and can return data.  Member functions without the <code>[Static]</code> attribute  also have access to the instantiated object that invoked them.</p>
+<pre><code class="language-csharp" name="Member Functions">
+class MyClass
+{
+  var MyReal : Real = 1.2;
+
+  function MyFunc()
+  {
+    var localReal = this.MyReal;
+  }
+
+  [Static]
+  function MyFunc()
+  {
+    var localReal = this.MyReal; // ERROR
+  }
+}
+</code></pre>
+
+<p>Notice how <code>MyReal</code>, a member variable of <code>MyClass</code>, is accessed in <code>MyFunc</code> using the <code>this</code> keyword.  <code>this</code> refers to the instantiated object.  If the function is static, then <code>this</code> cannot be used as there is no instantiation of <code>MyClass</code>.  Also notice how there are two versions of <code>MyFunc</code>, one static and one not.  This is valid because static members must always be accessed through the class with the format <code>&lt;class&gt;.&lt;function&gt;</code>.</p>
+<h2 id="constructors-and-destructors">Constructors and Destructors</h2>
+<p>Structs/Classes can have constructor and destructors, which are special functions with no return type.  Constructors are called when an object is instantiated, and the destructor is called when the object is deleted.</p>
+<pre><code class="language-csharp" name="Default Constructor">
+class ExplicitDefault
+{
+  constructor() {}
+}
+
+class ImplicitDefault {}
+
+class Driver
+{
+  function MyFunction()
+  {
+    ExplicitDefault(); // call default constructor
+    ImplicitDefault(); // call default constructor (implicitly defined)
+  }
+}
+</code></pre>
+
+<p>The class <code>ExplicitDefault</code> has a single constructor that takes no parameters.  This constructors type is known as the //default constructor//.  Notice how the constructor is called by the class name in the statement <code>ExplicitDefault();</code>  Also notice how <code>ImplicitDefault</code> is constructed with the default constructor in the statement <code>ImplicitDefault();</code>.  As long as there are no constructors defined, the default will always be defined by lightning.</p>
+<pre><code class="language-csharp" name="Custom Constructors">
+class ExplicitCustom
+{
+  constructor(r : Real) {}
+}
+
+class ExplicitCustomAndDefault
+{
+  constructor() {}
+  constructor(r : Real) {}
+}
+
+class Driver
+{
+  function MyFunction()
+  {
+    ExplicitCustom(); // ERROR
+    ExplicitCustom(1.0);
+    ExplicitCustomAndDefault();
+    ExplicitCustomAndDefault(1.0);
+  }
+}
+</code></pre>
+
+<p>The class <code>ExplicitCustom</code> defines a single constructor that takes a single <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.md">real</a>.  This means that <code>ExplicitCustom</code> cannot be default constructed, therefore the statement <code>ExplicitCustom();</code> fails to compile.  The default constructor can still be readded by explicitly defining it alongside other constructors, as shown in the class <code>ExplicitCustomAndDefault</code>.</p>
+<p>NOTE: Explcitly defining a constructor is <strong>not required</strong> in Lightning as long as every data member of the class has a default constructor.</p>
+<p>Destructors are called when all handles to an object are destroyed.  The exception is when an object is not a copy by reference type, in which case the destructor isn't called.</p>
+<pre><code class="language-csharp" name="Destructors">
+struct MyStruct
+{
+  var Id : Integer;
+  constructor(id : Integer)
+  {
+    this.Id = id;
+  }
+  destructor()
+  {
+    Console.WriteLine(this.Id);
+  }
+}
+
+class MyClass : MyStruct {}
+
+class Driver2
+{
+  [Static]
+  function MyFunction()
+  {
+    var v1 = MyStruct(1);
+    var v2 = local MyStruct(2);
+    var v3 = new MyStruct(3);
+    var v4 = MyClass(4);
+    var v5 = new MyClass(5);
+  } // end of the scope, all unreferenced objects are destroyed
+}
+</code></pre>
+<pre><code name="Console window">
+3
+4
+5
+</code></pre>
+
+<p>In the example above, <code>MyClass</code> <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/Lightning/inheritance.md">inherits</a> from <code>MyStruct</code>.  <code>MyClass</code> has the same members as <code>MyStruct</code>, and the only difference between the two is that <code>MyClass</code> is a <code>class</code>.  Observe how <code>3</code>, <code>4</code>, and <code>5</code> are printed, which means that the destructor got called on <code>v3</code>, <code>v4</code>, and <code>v5</code>.  All struct destructors were ignored, while all class destructors were called.  The one exception is <code>v3</code>, which is of the type <code>ref MyStruct</code> and has the copy <code>by-reference</code> quality.</p>
+<h1 id="related-materials">Related Materials</h1>
+<h2 id="manual">Manual</h2>
+<ul>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/Lightning/variables_and_data_types.md">Variables</a></li>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/Lightning/functions.md">Functions</a></li>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/Lightning/memory_management.md">memory_management</a></li>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/Lightning/attributes.md">attributes</a></li>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/Lightning/inheritance.md">inheritance</a></li>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/Lightning/attributes.md#static">Static</a></li>
+</ul>
+<h2 id="code-reference">Code Reference</h2>
+<ul>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.md">real</a> </li>
+</ul>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../comparison_operators/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../comparison_operators/" class="btn btn-xs btn-link">
+        Comparison Operators
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../casting/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../casting/" class="btn btn-xs btn-link">
+        Casting
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="col-md-12 wm-page-content">
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/noraj/mkdocs-windmill-dark">Windmill Dark</a> theme by Alexandre ZANNI (noraj).</p>
+</footer>
+
+</body>
+</html>

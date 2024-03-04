@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="author" content="PlasmaDev">
+    <link rel="canonical" href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/architecture/resources/colorgradient/">
+    <link rel="shortcut icon" href="../../../../../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Color Gradiant - PlasmaDocs</title>
+    <link href="../../../../../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../../../../../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../../../../../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../../../../css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../../../../../js/jquery-3.2.1.min.js"></script>
+    <script src="../../../../../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../../../../../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '../../../../..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "Color Gradiant", url: "#_top", children: [
+          ]},
+          {title: "Using ColorGradient", url: "#using-colorgradient", children: [
+              {title: "Creating a ColorGradient", url: "#creating-a-colorgradient" },
+              {title: "Applying the ColorGradient", url: "#applying-the-colorgradient" },
+          ]},
+          {title: "Related Materials", url: "#related-materials", children: [
+              {title: "Manual Pages", url: "#manual-pages" },
+              {title: "Reference Pages", url: "#reference-pages" },
+          ]},
+        ];
+
+    </script>
+    <script src="../../../../../js/base.js"></script>
+      <script src="../../../../../search/main.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../font/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../font/" class="btn btn-xs btn-link">
+        Font
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../../objects/spaces/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../../objects/spaces/" class="btn btn-xs btn-link">
+        Spaces
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <h1 id="color-gradiant">Color Gradiant</h1>
+<p><strong>ColorGradiant</strong> is a <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/architecture/resources.md">resources</a> that allows the user to make a custom color gradient. The gradient may then be sampled from and applied as a color to any object that has a component with a color property.</p>
+<h1 id="using-colorgradient">Using ColorGradient</h1>
+<h2 id="creating-a-colorgradient">Creating a ColorGradient</h2>
+<p>A new ColorGradient may be created through the <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/editor/editorcommands/resourceadding.md">Add a Resource</a> window.
+Once the new ColorGradient has been named and created, an editor window will pop up.
+The editor currently shows a gradient from black to white. The user may add keypoints on the gradient, however, to add in new colors by left-clicking anywhere on the gradient bar. These colors are selected via the common color selection window.
+As the common color selection window is used, any value within it may be changed as well, including the alpha value.</p>
+<h2 id="applying-the-colorgradient">Applying the ColorGradient</h2>
+<p>Sampling from ColorGradient is done through a ColorGradient variable within LightningScript. The value passed into <code>Sample()</code> must be between 0 and 1:</p>
+<pre><code>class GradDemo : LightningComponent
+{
+    // ColorGradient to use
+    [Property]
+    var ColorGrad : ColorGradient = null;
+     function Initialize(init : CogInitializer)
+    {
+        // Set color to the value sampled halfway through the gradient
+        this.Owner.Sprite.VertexColor = this.ColorGrad.Sample(0.5);
+    }
+}
+</code></pre>
+<p>Attaching this code as a component onto a basic sprite (and selecting the ColorGradient made above for the <code>ColorGrad</code> property), the sprite will show a solid color based on the sample point selected.</p>
+<p>One can also use code to interpolate through the ColorGraident, changing the color of the sprite over time.</p>
+<pre><code>class GradDemo : LightningComponent
+{
+    // ColorGradient to use
+    [Property]
+    var ColorGrad : ColorGradient = null;
+    // Value to pass into ColorGradient's Sample() function
+    var Value : Real = 0.0;
+    function Initialize(init : CogInitializer)
+    {
+        // Set color to color found at start of the gradient
+        this.Owner.Sprite.VertexColor = this.ColorGrad.Sample(this.Value);
+        // Call function to interpolate this.Value from 0 - 1
+        this.InterpolateValue();
+        Plasma.Connect(this.Space, Events.LogicUpdate, this.OnLogicUpdate);
+    }
+
+    function OnLogicUpdate(event : UpdateEvent)
+    {
+        // Update Sprite's VertexColor property with current sample from ColorGrad
+        this.Owner.Sprite.VertexColor = this.ColorGrad.Sample(this.Value);
+    }
+
+    function InterpolateValue()
+    {
+        // Action to interpolate this.Value from 0 - 1 over three seconds
+        Action.Property(this.Owner.Actions, @this.Value, 1.0, 3.0, Ease.Linear);
+    }
+}
+</code></pre>
+<p>The above code-block accomplishes the following things:</p>
+<ul>
+<li>Initially, it sets the color of the Sprite to the value sampled at <code>0</code> on the ColorGradient.</li>
+<li>It then calls a function-- <code>InterpolateValue()</code> --that uses an Action to interpolate the <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.md">Real</a> variable Value from 0 - 1 over the course of three seconds.</li>
+<li>Finally, the <code>VertexColor</code> property on the Sprite component is updated every frame by the value sampled from <code>ColorGrad</code> using <code>Value</code></li>
+</ul>
+<h1 id="related-materials">Related Materials</h1>
+<h2 id="manual-pages">Manual Pages</h2>
+<ul>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/architecture/resources.md">resources</a></li>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/editor/editorcommands/resourceadding.md">resourceadding</a></li>
+</ul>
+<h2 id="reference-pages">Reference Pages</h2>
+<ul>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/colorgradient.md">colorgradient</a></li>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/sprite.md">Sprite</a> </li>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/material.md">Material</a> </li>
+</ul>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../font/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../font/" class="btn btn-xs btn-link">
+        Font
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../../objects/spaces/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../../objects/spaces/" class="btn btn-xs btn-link">
+        Spaces
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="col-md-12 wm-page-content">
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/noraj/mkdocs-windmill-dark">Windmill Dark</a> theme by Alexandre ZANNI (noraj).</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="author" content="PlasmaDev">
+    <link rel="canonical" href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/physics/physicssolverconfig/">
+    <link rel="shortcut icon" href="../../../../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Physics Solver Config - PlasmaDocs</title>
+    <link href="../../../../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../../../../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../../../../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../../../css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../../../../js/jquery-3.2.1.min.js"></script>
+    <script src="../../../../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../../../../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '../../../..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "Physics Solver Config", url: "#_top", children: [
+          ]},
+          {title: "Velocity Restitution Threshold: Collision vs. Contact", url: "#velocity-restitution-threshold-collision-vs-contact", children: [
+          ]},
+          {title: "Iteration Count", url: "#iteration-count", children: [
+          ]},
+          {title: "Position Correction Type", url: "#position-correction-type", children: [
+          ]},
+          {title: "Joint/Contact Configurations", url: "#jointcontact-configurations", children: [
+          ]},
+          {title: "Joint Blocks", url: "#joint-blocks", children: [
+          ]},
+          {title: "Related Materials", url: "#related-materials", children: [
+              {title: "Manual", url: "#manual" },
+              {title: "Code Reference", url: "#code-reference" },
+          ]},
+        ];
+
+    </script>
+    <script src="../../../../js/base.js"></script>
+      <script src="../../../../search/main.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../physicsspace/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../physicsspace/" class="btn btn-xs btn-link">
+        Physics Space
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../physicsmaterial/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../physicsmaterial/" class="btn btn-xs btn-link">
+        Physics Material
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <h1 id="physics-solver-config">Physics Solver Config</h1>
+<p>The <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/physicssolverconfig.md">PhysicsSolverConfig</a> resource allows a certain level of customization in how physics solves <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/enum_reference.md#physicssolverpositioncor">PhysicsSolverPositionCorrection</a> types.</p>
+<p>WARNING: If you don't understand the topic of constraints then you probably shouldn't change the properties of this resource.</p>
+<h1 id="velocity-restitution-threshold-collision-vs-contact">Velocity Restitution Threshold: Collision vs. Contact</h1>
+<p>When performing collision resolution, physics has to distinguish between collisions and contacts. In this case, a collision refers to a large impact whereas a contact refers to a near resting contact. These are important to distinguish between when applying restitution; otherwise, resting objects will jitter. The physics solver uses this threshold value to compare against the relative velocity of the objects in contact. If the relative velocity is lower than this threshold then no restitution is applied.</p>
+<h1 id="iteration-count">Iteration Count</h1>
+<p>Physics solvers are typically iterative in how they solve constraints (contacts, joints, etc...). The more iterations used the more stable a scene tends to be, but at the cost of decreased performance. Independent iteration counts are exposed for impulse solving and position solving (if configured to solve positions).</p>
+<h1 id="position-correction-type">Position Correction Type</h1>
+<p>Physics typically solves with discrete time-steps which allows position error to appear in joints. Plasma's physics system provides two methods to fix position error:
+ - <strong>Baumgarte</strong> fixes position error by applying a "penalty force". This typically produces constraints that feel soft and spongy.
+ - <strong>PostStabilization</strong> fixes position error by solving the position constraints directly. This makes stiffer constraints but often at the cost of speed and occasionally stability.</p>
+<p>This property configures the default solving method for all constraints unless overridden as described below.</p>
+<h1 id="jointcontact-configurations">Joint/Contact Configurations</h1>
+<p><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/jointconfigoverride.md">JointConfigOverride</a> component and uses its properties. Note that this component cannot be applied to contacts. Next, the joint will check its space's PhysicsSolverConfig to see if a block for its joint type exists. If this block exists then it'll use the specified values. Finally, any global fallback values will be used such as the position correction type. In the case of properties like slop, each joint type has its own defaults to use when no block exists.</p>
+<h1 id="joint-blocks">Joint Blocks</h1>
+<p>A configuration block can be added for any joint type that determines how the physics system solves that constraint type. This allows changing certain joint types at a global level to solve differently from others.</p>
+<h1 id="related-materials">Related Materials</h1>
+<h2 id="manual">Manual</h2>
+<ul>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/physics/joints.md">joints.md</a></li>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/physics/collisionoverview.md">collisionoverview.md</a></li>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/physics/physicsspace.md">physicsspace.md</a></li>
+</ul>
+<h2 id="code-reference">Code Reference</h2>
+<ul>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/joint.md">Joint</a></li>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/jointconfigoverride.md">JointConfigOverride</a></li>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/constraintconfigblock.md">ConstraintConfigBlock</a></li>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/physicsspace.md">PhysicsSpace</a></li>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/enum_reference.md#physicssolverpositioncor">PhysicsSolverPositionCorrection</a> </li>
+</ul>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../physicsspace/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../physicsspace/" class="btn btn-xs btn-link">
+        Physics Space
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../physicsmaterial/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../physicsmaterial/" class="btn btn-xs btn-link">
+        Physics Material
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="col-md-12 wm-page-content">
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/noraj/mkdocs-windmill-dark">Windmill Dark</a> theme by Alexandre ZANNI (noraj).</p>
+</footer>
+
+</body>
+</html>

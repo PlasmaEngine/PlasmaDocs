@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="author" content="PlasmaDev">
+    <link rel="canonical" href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/editor/texteditor/tab_completion/">
+    <link rel="shortcut icon" href="../../../../../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Tab Completion - PlasmaDocs</title>
+    <link href="../../../../../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../../../../../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../../../../../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../../../../css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../../../../../js/jquery-3.2.1.min.js"></script>
+    <script src="../../../../../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../../../../../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '../../../../..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "Tab Completion", url: "#_top", children: [
+          ]},
+          {title: "Common Uses", url: "#common-uses", children: [
+          ]},
+          {title: "Using Code Completion", url: "#using-code-completion", children: [
+              {title: "Navigation and Activation", url: "#navigation-and-activation" },
+              {title: "Word Completion", url: "#word-completion" },
+              {title: "Script Errors", url: "#script-errors" },
+          ]},
+          {title: "Related Materials", url: "#related-materials", children: [
+              {title: "Manual Pages", url: "#manual-pages" },
+              {title: "Code Reference", url: "#code-reference" },
+              {title: "Tasks", url: "#tasks" },
+          ]},
+        ];
+
+    </script>
+    <script src="../../../../../js/base.js"></script>
+      <script src="../../../../../search/main.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../texteditorconfig/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../texteditorconfig/" class="btn btn-xs btn-link">
+        Texted it or Config
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../../editorcommands/switchingmode2dto3d/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../../editorcommands/switchingmode2dto3d/" class="btn btn-xs btn-link">
+        Switching Mode
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <h1 id="tab-completion">Tab Completion</h1>
+<p>Many code editors offer some form of code completion that suggests token or line options based on the characters that have already been typed on the current line. Plasma offers both code completion and basic word completion.</p>
+<h1 id="common-uses">Common Uses</h1>
+<ul>
+<li>Reduces amount of typing</li>
+<li>Encourages proper code formatting</li>
+<li>Reduces chance for simple typing, spelling, and character case errors</li>
+<li>Reduces the immediate API knowledge needed</li>
+<li>Provides an avenue for code base exploration</li>
+</ul>
+<h1 id="using-code-completion">Using Code Completion</h1>
+<p>While writing code in Plasma, one will often see the code/word completion window pop up. This window will suggest possible ways to complete the token that is currently being typed.</p>
+<p><strong>ADD IMAGE</strong></p>
+<h2 id="navigation-and-activation">Navigation and Activation</h2>
+<p>The code completion window will appear when a <code>.</code> is typed following a valid identifier, if that identifier has any members or functions that can be shown in a code completion window. The code completion list is populated by members and functions of the identifier before the <code>.</code>.</p>
+<p><code>Tab</code> or <code>Enter</code> can be used to complete the current token as the highlighted suggestion.</p>
+<p>If the first suggestion is not the desired member, the suggestion list box can be navigated with the <code>up</code> and <code>down</code> keys and the mouse cursor.</p>
+<p><strong>ADD IMAGE</strong></p>
+<p>(NOTE)<strong>Event Connection Suggestion</strong>: Upon initial inspection of the partial line <code>Plasma.Connect</code>, one may not expect typing the partial token <code>Connect</code> to cause the tab completion menu to display the suggestions <code>Connect</code>, <code>Disconnect</code>, and <code>DisconnectAll</code>. However, upon looking again, it can be seen that all of the suggestions contain <code>Connect</code>, even if they do not start with <code>Connect</code>. ![LoopedDelayedEvents]<strong>ADD IMAGE</strong></p>
+<h2 id="word-completion">Word Completion</h2>
+<p>While the code completion window is open, one may notice it will occasionally have a red border:</p>
+<p><strong>ADD IMAGE</strong></p>
+<p>This indicates that the menu has switched to <strong>word completion</strong> mode. If it is enabled (it can be disabled in the <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/editor/texteditor/texteditorconfig.md"> TextEditorConfig</a>), the word completion window pops up any time an alphabetical character is typed and there isn't already a code or word completion window open. The word completion list is populated by every whole word it can find in the current file. In addition, it also lists all keywords (such as <code>if</code> and <code>foreach</code>), special words (like <code>this</code> and <code>value</code>), and all bound type names (like <code>Transform</code> and <code>Event</code>).</p>
+<h2 id="script-errors">Script Errors</h2>
+<p>Occasionally when using the code editor, the user may find that class types that they defined are not available in code completion options. This usually happens when trying to declare a variable of a type that was just defined and indicates that there is another error somewhere in the project. Since Lightning is a statically compiled language, each file must individually compile in order for the whole project to do so. This allows all contexts within the user's code to be aware of all definitions within the project. However, it means that since code completion depends on a clean project compilation, a single error will prevent code completion options from being correctly generated. In this case, the word completion menu will appear.</p>
+<h1 id="related-materials">Related Materials</h1>
+<h2 id="manual-pages">Manual Pages</h2>
+<ul>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/editor/texteditor/texteditorhotkeys.md">Text Editor Hotkeys</a></li>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/editor/texteditor/texteditorconfig.md">Text Editor Config</a></li>
+</ul>
+<h2 id="code-reference">Code Reference</h2>
+<ul>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++plasma_editor_documentation/code_reference/class_reference/texteditorconfig.md">TextEditorConfig</a> </li>
+</ul>
+<h2 id="tasks">Tasks</h2>
+<ul>
+<li>T442 </li>
+</ul>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../texteditorconfig/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../texteditorconfig/" class="btn btn-xs btn-link">
+        Texted it or Config
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../../editorcommands/switchingmode2dto3d/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../../editorcommands/switchingmode2dto3d/" class="btn btn-xs btn-link">
+        Switching Mode
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="col-md-12 wm-page-content">
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/noraj/mkdocs-windmill-dark">Windmill Dark</a> theme by Alexandre ZANNI (noraj).</p>
+</footer>
+
+</body>
+</html>

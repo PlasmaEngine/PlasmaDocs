@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="author" content="PlasmaDev">
+    <link rel="canonical" href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/audio/soundattenuator/">
+    <link rel="shortcut icon" href="../../../../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Sound Attenuators - PlasmaDocs</title>
+    <link href="../../../../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../../../../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../../../../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../../../css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../../../../js/jquery-3.2.1.min.js"></script>
+    <script src="../../../../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../../../../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '../../../..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "Sound Attenuators", url: "#_top", children: [
+          ]},
+          {title: "Using SoundAttenuators", url: "#using-soundattenuators", children: [
+              {title: "Attenuation", url: "#attenuation" },
+              {title: "Low Pass Filter", url: "#low-pass-filter" },
+          ]},
+          {title: "Related Materials", url: "#related-materials", children: [
+              {title: "Manual", url: "#manual" },
+              {title: "Reference", url: "#reference" },
+          ]},
+        ];
+
+    </script>
+    <script src="../../../../js/base.js"></script>
+      <script src="../../../../search/main.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../soundcue/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../soundcue/" class="btn btn-xs btn-link">
+        Sound Cues
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../sound/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../sound/" class="btn btn-xs btn-link">
+        Sound
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <h1 id="sound-attenuators">Sound Attenuators</h1>
+<p>The <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/soundattenuator.md"> SoundAttenuator </a> resource controls how a sound played through a <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/audio/soundemitter.md">SoundEmitter </a> on an object decreases in volume as the object gets further away from a  <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/audio/soundlistener.md">SoundListener </a>. </p>
+<h1 id="using-soundattenuators">Using SoundAttenuators</h1>
+<p>SoundAttenuators can be added to both <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/audio/soundcue.md">SoundCues </a> and SoundEmitters. If a SoundCue has a SoundAttenuator other than the DefaultNoAttenuation resource attenuator, its settings will be used when the SoundCue is played through any SoundEmitter. Otherwise the settings from the SoundAttenuator on the SoundEmitter will be used. If the SoundEmitter also has DefaultNoAttenuation resource selected, the sound will be heard spatially by SoundListeners (panned to left or right depending on the location of the object), but will not change its volume with distance.</p>
+<h2 id="attenuation">Attenuation</h2>
+<p>The volume of sounds are reduced, or attenuated, according to their distance from a relevant SoundListener, using a specified curve. In the real world, as sounds get further away their volume drops off quickly at first, and then slowly. This logarithmic curve is the default setting for SoundAttenuators, but other types of curves can be chosen for custom behaviors.</p>
+<h2 id="low-pass-filter">Low Pass Filter</h2>
+<p>Another thing that happens in the real world with distance is that high frequencies are attenuated more quickly than low frequencies. This can be imitated by applying a low-pass filter to the audio. The low-pass filter on SoundAttenuators can be turned off and on depending on the desired sound.</p>
+<h1 id="related-materials">Related Materials</h1>
+<h2 id="manual">Manual</h2>
+<ul>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/audio/soundemitter.md">SoundEmitter </a></li>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/audio/soundlistener.md">SoundListener </a></li>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/audio/soundcue.md">SoundCue </a></li>
+</ul>
+<h2 id="reference">Reference</h2>
+<ul>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/soundattenuator.md"> SoundAttenuator </a> </li>
+</ul>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../soundcue/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../soundcue/" class="btn btn-xs btn-link">
+        Sound Cues
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../sound/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../sound/" class="btn btn-xs btn-link">
+        Sound
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="col-md-12 wm-page-content">
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/noraj/mkdocs-windmill-dark">Windmill Dark</a> theme by Alexandre ZANNI (noraj).</p>
+</footer>
+
+</body>
+</html>

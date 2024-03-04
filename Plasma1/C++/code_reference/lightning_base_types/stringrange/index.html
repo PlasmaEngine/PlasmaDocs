@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="author" content="PlasmaDev">
+    <link rel="canonical" href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C%2B%2B/code_reference/lightning_base_types/stringrange/">
+    <link rel="shortcut icon" href="../../../../../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Stringrange - PlasmaDocs</title>
+    <link href="../../../../../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../../../../../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../../../../../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../../../../css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../../../../../js/jquery-3.2.1.min.js"></script>
+    <script src="../../../../../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../../../../../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '../../../../..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+        ];
+
+    </script>
+    <script src="../../../../../js/base.js"></script>
+      <script src="../../../../../search/main.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../stringsplitrange/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../stringsplitrange/" class="btn btn-xs btn-link">
+        Stringsplitrange
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../stringbuilder/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../stringbuilder/" class="btn btn-xs btn-link">
+        Stringbuilder
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <p><code>Core</code></p>
+<table>
+<thead>
+<tr>
+<th>Methods</th>
+<th>Properties</th>
+<th>Base Classes</th>
+<th>Derived Classes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/stringrange.md#compare-plasma-engine-docu"> Compare</a></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/stringrange.md#all-plasma-engine-document"> All</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/stringrange.md#compareto-plasma-engine-do"> CompareTo</a></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/stringrange.md#begin-plasma-engine-docume"> Begin</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/stringrange.md#contains-plasma-engine-doc"> Contains</a></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/stringrange.md#current-plasma-engine-docu"> Current</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/stringrange.md#endswith-plasma-engine-doc"> EndsWith</a></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/stringrange.md#empty-plasma-engine-docume"> Empty</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/stringrange.md#findfirstof-plasma-engine"> FindFirstOf</a></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/stringrange.md#end-plasma-engine-document"> End</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/stringrange.md#findlastof-plasma-engine-d"> FindLastOf</a></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/stringrange.md#isnotempty-plasma-engine-d"> IsNotEmpty</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/stringrange.md#findrangeexclusive-plasma"> FindRangeExclusive</a></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/stringrange.md#originalstring-plasma-engi"> OriginalString</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/stringrange.md#findrangeinclusive-plasma"> FindRangeInclusive</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/stringrange.md#movenext-void"> MoveNext</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/stringrange.md#replace-plasma-engine-docu"> Replace</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/stringrange.md#runeiteratorfrombyteinde"> RuneIteratorFromByteIndex</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/stringrange.md#runeiteratorfromruneinde"> RuneIteratorFromRuneIndex</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/stringrange.md#split-plasma-engine-docume"> Split</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/stringrange.md#startswith-plasma-engine-d"> StartsWith</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/stringrange.md#stringrange-void"> Constructor</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/stringrange.md#substring-plasma-engine-do"> SubString</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/stringrange.md#substringbytes-plasma-engi"> SubStringBytes</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/stringrange.md#tolower-plasma-engine-docu"> ToLower</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/stringrange.md#tostring-plasma-engine-doc"> ToString</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/stringrange.md#toupper-plasma-engine-docu"> ToUpper</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/stringrange.md#trim-plasma-engine-documen"> Trim</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/stringrange.md#trimend-plasma-engine-docu"> TrimEnd</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/stringrange.md#trimstart-plasma-engine-do"> TrimStart</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>#  Properties</p>
+<hr />
+<p>#  All : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/stringrange.md">stringrange</a></p>
+<p><code>read-only</code></p>
+<blockquote>
+<p>``` lang=cpp, name=Lightning
+var All : StringRange</p>
+</blockquote>
+<hr />
+<p>#  Begin : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/runeiterator.md">runeiterator</a></p>
+<p><code>read-only</code></p>
+<blockquote>
+<p>Returns the RuneIterator at the start of this range.
+``` lang=cpp, name=Lightning
+var Begin : RuneIterator</p>
+</blockquote>
+<hr />
+<p>#  Current : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/rune.md">rune</a></p>
+<p><code>read-only</code></p>
+<blockquote>
+<p>``` lang=cpp, name=Lightning
+var Current : Rune</p>
+</blockquote>
+<hr />
+<p>#  Empty : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.md">boolean</a></p>
+<p><code>read-only</code></p>
+<blockquote>
+<p>``` lang=cpp, name=Lightning
+var Empty : Boolean</p>
+</blockquote>
+<hr />
+<p>#  End : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/runeiterator.md">runeiterator</a></p>
+<p><code>read-only</code></p>
+<blockquote>
+<p>Returns the RuneIterator at the end (one past the last Rune) of this range.
+``` lang=cpp, name=Lightning
+var End : RuneIterator</p>
+</blockquote>
+<hr />
+<p>#  IsNotEmpty : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.md">boolean</a></p>
+<p><code>read-only</code></p>
+<blockquote>
+<p>``` lang=cpp, name=Lightning
+var IsNotEmpty : Boolean</p>
+</blockquote>
+<hr />
+<p>#  OriginalString : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/string.md">string</a></p>
+<p><code>read-only</code></p>
+<blockquote>
+<p>Returns the entire string that this range was constructed from.
+``` lang=cpp, name=Lightning
+var OriginalString : String</p>
+</blockquote>
+<hr />
+<p>#  Methods</p>
+<hr />
+<p>#  Compare : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer.md">integer</a></p>
+<p><code>static</code></p>
+<blockquote>
+<p>Compares the two string ranges and returns an integer to denote their relative sort order.
+|Name|Type|Description|
+|---|---|---|
+|left|<a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/stringrange.md">stringrange</a>| |
+|right|<a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/stringrange.md">stringrange</a>| |
+<code>lang=cpp, name=Lightning
+function Compare(left : StringRange, right : StringRange) : Integer</code> </p>
+</blockquote>
+<hr />
+<p>#  CompareTo : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer.md">integer</a></p>
+<blockquote>
+<p>Returns if this string range is equal to the given range.
+|Name|Type|Description|
+|---|---|---|
+|p0|<a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/stringrange.md">stringrange</a>| |
+<code>lang=cpp, name=Lightning
+function CompareTo(p0 : StringRange) : Integer</code> </p>
+</blockquote>
+<hr />
+<p>#  Contains : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.md">boolean</a></p>
+<blockquote>
+<p>Returns if the string Contains the specified substring.
+|Name|Type|Description|
+|---|---|---|
+|p0|<a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/stringrange.md">stringrange</a>| |
+<code>lang=cpp, name=Lightning
+function Contains(p0 : StringRange) : Boolean</code> </p>
+</blockquote>
+<hr />
+<p>#  EndsWith : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.md">boolean</a></p>
+<blockquote>
+<p>Returns if the string ends with the specified substring.
+|Name|Type|Description|
+|---|---|---|
+|p0|<a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/stringrange.md">stringrange</a>| |
+<code>lang=cpp, name=Lightning
+function EndsWith(p0 : StringRange) : Boolean</code> </p>
+</blockquote>
+<hr />
+<p>#  FindFirstOf : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/stringrange.md">stringrange</a></p>
+<blockquote>
+<p>Returns a StringRange that Contains the first occurrence of given StringRange.
+|Name|Type|Description|
+|---|---|---|
+|p0|<a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/stringrange.md">stringrange</a>| |
+<code>lang=cpp, name=Lightning
+function FindFirstOf(p0 : StringRange) : StringRange</code> </p>
+</blockquote>
+<hr />
+<p>#  FindLastOf : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/stringrange.md">stringrange</a></p>
+<blockquote>
+<p>Returns a StringRange that Contains the last occurrence of given StringRange.
+|Name|Type|Description|
+|---|---|---|
+|p0|<a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/stringrange.md">stringrange</a>| |
+<code>lang=cpp, name=Lightning
+function FindLastOf(p0 : StringRange) : StringRange</code> </p>
+</blockquote>
+<hr />
+<p>#  FindRangeExclusive : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/stringrange.md">stringrange</a></p>
+<blockquote>
+<p>Finds the first StringRange that starts with 'startRange' and ends with 'endRange'. This substring excludes 'startRange' and 'endRange'.
+|Name|Type|Description|
+|---|---|---|
+|startRange|<a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/stringrange.md">stringrange</a>| |
+|endRange|<a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/stringrange.md">stringrange</a>| |
+<code>lang=cpp, name=Lightning
+function FindRangeExclusive(startRange : StringRange, endRange : StringRange) : StringRange</code> </p>
+</blockquote>
+<hr />
+<p>#  FindRangeInclusive : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/stringrange.md">stringrange</a></p>
+<blockquote>
+<p>Finds the first StringRange that starts with 'startRange' and ends with 'endRange'. This substring includes 'startRange' and 'endRange'.
+|Name|Type|Description|
+|---|---|---|
+|startRange|<a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/stringrange.md">stringrange</a>| |
+|endRange|<a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/stringrange.md">stringrange</a>| |
+<code>lang=cpp, name=Lightning
+function FindRangeInclusive(startRange : StringRange, endRange : StringRange) : StringRange</code> </p>
+</blockquote>
+<hr />
+<p>#  MoveNext : Void</p>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>``` lang=cpp, name=Lightning</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>function MoveNext()</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>```</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<hr />
+<p>#  Replace : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/string.md">string</a></p>
+<blockquote>
+<p>Returns a new string with all occurances of a substrings replaced with another substring.
+|Name|Type|Description|
+|---|---|---|
+|oldValue|<a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/stringrange.md">stringrange</a>| |
+|newValue|<a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/stringrange.md">stringrange</a>| |
+<code>lang=cpp, name=Lightning
+function Replace(oldValue : StringRange, newValue : StringRange) : String</code> </p>
+</blockquote>
+<hr />
+<p>#  RuneIteratorFromByteIndex : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/runeiterator.md">runeiterator</a></p>
+<blockquote>
+<p>Finds the iterator from a byte index. WARNING: Strings are UTF8 and constructing an iterator from bytes indices can make an iterator in the middle of a rune.
+|Name|Type|Description|
+|---|---|---|
+|byteIndex|<a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer.md">integer</a>| |
+<code>lang=cpp, name=Lightning
+function RuneIteratorFromByteIndex(byteIndex : Integer) : RuneIterator</code> </p>
+</blockquote>
+<hr />
+<p>#  RuneIteratorFromRuneIndex : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/runeiterator.md">runeiterator</a></p>
+<blockquote>
+<p>Finds the iterator from a rune index (the 'character' index). WARNING: this may be slow as finding an iterator from rune index requires a linear search.
+|Name|Type|Description|
+|---|---|---|
+|runeIndex|<a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer.md">integer</a>| |
+<code>lang=cpp, name=Lightning
+function RuneIteratorFromRuneIndex(runeIndex : Integer) : RuneIterator</code> </p>
+</blockquote>
+<hr />
+<p>#  Split : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/stringsplitrange.md">stringsplitrange</a></p>
+<blockquote>
+<p>Splits the string, according to the separator string, into a range of substrings.
+|Name|Type|Description|
+|---|---|---|
+|separator|<a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/stringrange.md">stringrange</a>| |
+<code>lang=cpp, name=Lightning
+function Split(separator : StringRange) : StringSplitRange</code> </p>
+</blockquote>
+<hr />
+<p>#  StartsWith : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.md">boolean</a></p>
+<blockquote>
+<p>Returns if the string ends with the specified substring.
+|Name|Type|Description|
+|---|---|---|
+|p0|<a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/stringrange.md">stringrange</a>| |
+<code>lang=cpp, name=Lightning
+function StartsWith(p0 : StringRange) : Boolean</code> </p>
+</blockquote>
+<hr />
+<p>#  StringRange : Void</p>
+<p><code>constructor</code></p>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>``` lang=cpp, name=Lightning</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>function StringRange()</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>```</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<hr />
+<p>#  SubString : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/stringrange.md">stringrange</a></p>
+<blockquote>
+<p>Constructs a StringRange from the given begin and end iterators.
+|Name|Type|Description|
+|---|---|---|
+|begin|<a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/runeiterator.md">runeiterator</a>| |
+|end|<a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/runeiterator.md">runeiterator</a>| |
+<code>lang=cpp, name=Lightning
+function SubString(begin : RuneIterator, end : RuneIterator) : StringRange</code> </p>
+</blockquote>
+<hr />
+<p>#  SubStringBytes : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/stringrange.md">stringrange</a></p>
+<blockquote>
+<p>Constructs a substring based upon a number of bytes. WARNING: strings are UTF8 so indexing by bytes could produce unexpected results on non-ascii strings.
+|Name|Type|Description|
+|---|---|---|
+|startByteIndex|<a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer.md">integer</a>| |
+|lengthInBytes|<a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer.md">integer</a>| |
+<code>lang=cpp, name=Lightning
+function SubStringBytes(startByteIndex : Integer, lengthInBytes : Integer) : StringRange</code> </p>
+</blockquote>
+<hr />
+<p>#  ToLower : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/string.md">string</a></p>
+<blockquote>
+<p>Returns a copy of the string that has been converted to lowercase.
+|Name|Type|Description|
+|---|---|---|
+<code>lang=cpp, name=Lightning
+function ToLower() : String</code> </p>
+</blockquote>
+<hr />
+<p>#  ToString : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/string.md">string</a></p>
+<blockquote>
+<p>Returns a new string of the current range.
+|Name|Type|Description|
+|---|---|---|
+<code>lang=cpp, name=Lightning
+function ToString() : String</code> </p>
+</blockquote>
+<hr />
+<p>#  ToUpper : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/string.md">string</a></p>
+<blockquote>
+<p>Returns a copy of the string that has been converted to uppercase.
+|Name|Type|Description|
+|---|---|---|
+<code>lang=cpp, name=Lightning
+function ToUpper() : String</code> </p>
+</blockquote>
+<hr />
+<p>#  Trim : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/stringrange.md">stringrange</a></p>
+<blockquote>
+<p>Trims all leading and trailing whitespace.
+|Name|Type|Description|
+|---|---|---|
+<code>lang=cpp, name=Lightning
+function Trim() : StringRange</code> </p>
+</blockquote>
+<hr />
+<p>#  TrimEnd : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/stringrange.md">stringrange</a></p>
+<blockquote>
+<p>Trims all trailing whitespace.
+|Name|Type|Description|
+|---|---|---|
+<code>lang=cpp, name=Lightning
+function TrimEnd() : StringRange</code> </p>
+</blockquote>
+<hr />
+<p>#  TrimStart : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/stringrange.md">stringrange</a></p>
+<blockquote>
+<p>Trims all leading whitespace.
+|Name|Type|Description|
+|---|---|---|
+<code>lang=cpp, name=Lightning
+function TrimStart() : StringRange</code> </p>
+</blockquote>
+<hr />
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../stringsplitrange/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../stringsplitrange/" class="btn btn-xs btn-link">
+        Stringsplitrange
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../stringbuilder/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../stringbuilder/" class="btn btn-xs btn-link">
+        Stringbuilder
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="col-md-12 wm-page-content">
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/noraj/mkdocs-windmill-dark">Windmill Dark</a> theme by Alexandre ZANNI (noraj).</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="author" content="PlasmaDev">
+    <link rel="canonical" href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/Lightning/variables_and_data_types/">
+    <link rel="shortcut icon" href="../../../../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Variables and data types - PlasmaDocs</title>
+    <link href="../../../../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../../../../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../../../../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../../../css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../../../../js/jquery-3.2.1.min.js"></script>
+    <script src="../../../../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../../../../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '../../../..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+        ];
+
+    </script>
+    <script src="../../../../js/base.js"></script>
+      <script src="../../../../search/main.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../../architecture/archetypes/archetype_basics/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../../architecture/archetypes/archetype_basics/" class="btn btn-xs btn-link">
+        Archetypes
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../swizzle/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../swizzle/" class="btn btn-xs btn-link">
+        Swizzle
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <p># Variables
+Variables are used to store data, and are declared using the <code>var</code> keyword.  Each variable in lightning has a name, a type, and a value which must be declared within a class using the following syntax.</p>
+<p><code>var Name : Type = value;</code></p>
+<pre><code class="language-csharp">
+var Greeting : String = "Hello";
+var Sum : Real = 1 + 2;
+var Up : Real3 = Real3(0,1,0);
+</code></pre>
+
+<p><code>var</code> is the keyword used to indicate that the statement on this line declares a variable. <code>Greeting</code> is the <strong>name</strong> of the first variable, an identifier used to reference the <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/string.md">string</a> type value <code>"Hello"</code>. </p>
+<p>Both <code>Greeting</code> and <code>Sum</code> follow the following format: <code>var</code> <code>Name</code> <code>:</code> <code>Type</code> <code>=</code> <code>"Value"``;</code>.</p>
+<p>| Token | Description |
+| <code>var</code> | Keyword used to indicate the statement declares a variable. |
+| <code>Name</code> | Name of the variable. |
+| <code>:</code> | Delimiter indicating the next identifier in the line is the type of the variable being declared. |
+| <code>Type</code> | Type of the variable being declared. |
+| <code>=</code> | Assignment operator used to initialize the variable to a value. |
+| <code>"Value"</code> | Value for the variable to be initialized to. |
+| <code>;</code> | Delimiter indicating the end of the statement. |</p>
+<p>NOTE: Identifier names must be alphanumeric and may include underscores. They cannot start with a number, and no other symbols are allowed. Remember to choose identifier names that don't clash with the <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/Lightning/keywords.md">Keywords</a> or <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types.md">Lightning Base Types</a>.</p>
+<p>Depending on the context, or <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/Lightning/variables_and_data_types.md#scope">Scope</a>, the required syntax for instantiating and initializing a variable can vary.  The codeblock above will only compile if placed at the scope of a class or struct.</p>
+<p>(NOTE)<strong>Literal Types</strong>: Literal values are values explicitly defined by the user in script.  <code>1 + 2</code> is an example of two literal values that evaluate to the non-literal value <code>3</code>.  Below is a table of more literal values and their associated <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types.md">lightning_base_types</a>.</p>
+<table>
+<thead>
+<tr>
+<th>Literal Value(s)</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>1</code>, <code>2</code>, etc.</td>
+<td>Integer</td>
+</tr>
+<tr>
+<td><code>1d</code>, <code>2d</code>, etc.</td>
+<td>DoubleInteger</td>
+</tr>
+<tr>
+<td><code>1.0</code>, <code>2.0</code>, etc.</td>
+<td>Real</td>
+</tr>
+<tr>
+<td><code>1.0d</code>, <code>1.0d</code>, etc.</td>
+<td>DoubleReal</td>
+</tr>
+<tr>
+<td><code>true</code>/<code>false</code></td>
+<td>Boolean</td>
+</tr>
+<tr>
+<td><code>"Hello"</code>, <code>"Goodbye"</code>, etc.</td>
+<td>String</td>
+</tr>
+<tr>
+<td><code>null</code></td>
+<td>Null</td>
+</tr>
+</tbody>
+</table>
+<p># Scope
+A scope is a region in which certain elements of the language, such as variables and functions, are defined.  Any scope can contain multiple nested scopes.  A real-life example of scope could be a building and the rooms inside it.  Whatever is <em>in</em> the scope of a room is also <em>in</em>, but not <em>at</em>, the scope of the building, because the room's scope exists inside the scope of the building. In Lightning, the three most common levels of scope are global, object, and block.</p>
+<p>## Global Scope
+Everything in script exists <em>in</em> the <strong>global scope</strong>; however, not everything is created <em>at</em> the <strong>global scope</strong>. Libraries such as <code>Plasma</code> and <code>Math</code> exist //at// the <strong>global scope</strong> and are therefore accessible from any scope in script.  The <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/plasma.md">plasma</a> and <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/math.md">Math</a> libraries are objects defined at the global scope. <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/Lightning/classes.md">Classes and Structs</a> are the only Lightning constructs that can be defined //at<em> the </em><em>global scope</em>*.</p>
+<pre><code class="language-csharp">
+var R1 : Real; //Error, can not declare variables at the global scope
+
+class MyClass : LightningComponent //We can declare definitions of objects such as classes at the global scope
+{
+}
+</code></pre>
+
+<p>Notice in this example that the attempted instantiation of a variable at the <strong>global scope</strong> will throw an exception.</p>
+<p>## Object Scope
+<a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/Lightning/classes.md">Classes and Structs</a> define their own scope and are one of the few constructs that exist <em>at// the </em><em>Global Scope</em><em>. Variables defined //at</em> the <strong>object scope</strong> are called <strong>member</strong> variables and will exist as long as the object exists.</p>
+<pre><code class="language-csharp">
+class MyClass
+{
+  var Pi : Real = Math.Pi; //compiles
+  var Theta : Real; // compiles
+  var A = 4.0; //compiles
+  var B = -5.0; //does not compile
+  var C = PerspectiveMode.Orthographic; //does not compile
+}
+</code></pre>
+<p>Notice in the example above that <code>Math</code> <em>in// the </em><em>global scope</em><em> is accessed //from</em> the <strong>class scope</strong> while initializing <code>MyClass.Pi</code>.</p>
+<p>### Implicit Initialization
+Notice above that <code>MyClass.Theta</code> is not given an <strong>explicit</strong> initial value. This means that <strong>implicit</strong> initialization will take place, assigning <code>Theta</code> an initial value of the default type value of the type <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.md">real</a>, which in this case is <code>0</code>. Implicit initialization of a variable is only possible when defining a <strong>member</strong> variable. The final restriction for member variables is that they must begin with an upper case letter.</p>
+<p>### Inferred Typing
+In the code block above <code>MyClass.A</code> is not given an explcit type. In this situation the type <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.md">real</a> is <strong>inferred</strong> from the the type of its initialization value <code>4.0</code>. Only literal, type casted, or manually constructed values may be use for inferred typing when initializing a member variable. Statements such as <code>var B = -5.0;</code> will not compile because they contain an expression.</p>
+<p>NOTE: You can not use implicit initialization and inferred typing on the same variable.</p>
+<p>## Block Scope
+<a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/Lightning/functions.md">functions</a>, <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/Lightning/conditionals.md">conditionals</a>, and <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/Lightning/looping.md">loops</a> must have their scopes defined within an <strong>object scope</strong>. Variables defined within a <strong>block scope</strong> only exist until the scope is finished being executed. Variables defined within a block scope are called <strong>local variables</strong>.</p>
+<p>NOTE: Local variables can be implicitly initialized and have their types inferred just as member variables can.</p>
+<p>### The Scope Operator
+In addition to to logical constructs defining scope, Lightning allows the user to define arbitrary scopes using the <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/Lightning/keywords.md">scope</a> keyword.</p>
+<pre><code class="language-csharp">
+class MyClass
+{
+  var M1 : Real = 1.0;
+  function MyFunction()
+  {
+    var r1 = this.M1;
+    scope
+    {
+      var r2 = r1;
+    }
+    var r3 = r1;
+    r3 = r2; //ERROR
+  }
+}
+</code></pre>
+
+<p>In the above example begins with <code>var r1 = this.M1;</code> and then demonstrates the use of the {icon university}[[plasma_engine_documentation/plasma_editor_documentation/plasmama
+nual/Lightning/keywords/|scope]] keyword.</p>
+<p>Inside the inner block scope is the line <code>var r2 = r1;</code>. Because <code>r1</code> is declared in an outer scope it can be used to initialize <code>r2</code>.</p>
+<p>The line <code>var r3 = r1;</code> follows the closing <code>}</code> of the inner block scope. Because <code>r1</code> was declared at the same scope as <code>r3</code>, it can be used as <code>r3</code>'s initialization value. However, the next line, <code>r3 = r2;</code>, will result in an error. <code>r2</code> was declared in the inner block scope. When that scope closes, <code>r2</code> is destroyed. As a result, <code>r2</code> is no longer a valid variable, and so it cannot be used to initialize <code>r3</code>.</p>
+<p>(NOTE)<strong>Data Lifetimes</strong>: It should be noted that when most variables go out of the scope they are declared in they stop existing. This is true for value types such as <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.md">real</a> and <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/Lightning/classes.md">Structs</a>. However, if a reference type such as a constructed <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/Lightning/classes.md">Class</a> instance still has a valid reference being held outside of the instantiation scope it will remain alive in memory.</p>
+<p># Caching Variables
+Caching accessed data into locally scoped variables is a common practice that can improve the efficiency, readability, and flexibility of code. Often users may find themselves needing a value that will be used multiple times throughout the scope it is calculated/accessed in.</p>
+<pre><code class="language-csharp">
+class Intercept : LightningComponent
+{
+  [Dependency] var RigidBody : RigidBody;
+
+  [Property]
+  var PlayerCogPath : CogPath = CogPath();
+
+  [Property]
+  var Velocity : Real = 5.0;
+
+  [Property]
+  var MinDistance : Real = 5.0;
+
+  [Property]
+  var PredictionTime : Real = 1.0;
+
+  function Initialize(init : CogInitializer)
+  {
+    this.Owner.RigidBody.DynamicState = RigidBodyDynamicState.Kinematic;
+    Plasma.Connect(this.Space, Events.LogicUpdate, this.OnLogicUpdate);
+  }
+
+  function OnLogicUpdate(event : UpdateEvent)
+  {
+    var playerCog = this.PlayerCogPath.Cog;
+    var playerPos = playerCog.Transform.Translation;
+    var myPos = this.Owner.Transform.Translation;
+    var distance = Math.Distance(myPos, playerPos);
+
+    if(distance <= this.MinDistance)
+    {
+      var playerVelocity = playerCog.RigidBody.Velocity;
+      var predictedPos = playerPos + (playerVelocity * this.PredictionTime);
+      var myMoveDir = Math.Normalize(predictedPos - myPos);
+      var newPos = myPos + (myMoveDir * this.Velocity * event.Dt);
+      this.Owner.Transform.Translation = newPos;
+    }
+  }
+}
+</code></pre>
+<p>In the above example <code>playerCog</code>, <code>playerPos</code>, and <code>myPos</code> are all examples of caching accessed values to local variables. These pieces of data are needed multiple times in calculations made later in the <code>OnLogicUpdate</code> function. By caching these values, not only does writing and reading the calculations become easier, it reduces the number of member data accesses that are necessary via the <code>.</code> operator.</p>
+<pre><code class="language-csharp">e
+function OnLogicUpdate(event : UpdateEvent)
+{
+  if(Math.Distance(this.Owner.Transform.Translation, this.PlayerCogPath.Cog.Transform.Translation) <= this.MinDistance)
+  {
+    this.Owner.Transform.Translation = this.Owner.Transform.Translation + (Math.Normalize(this.PlayerCogPath.Cog.Transform.Translation + (this.PlayerCogPath.Cog.RigidBody.Velocity * this.PredictionTime) - this.Owner.Transform.Translation) * this.Velocity * event.Dt);
+  }
+}
+</code></pre>
+<p>This example implements the exact same behavior as the previous <code>OnLogicUdpate</code> function, but does not cache any variables locally. As can be seen the line count has been reduced, but these few lines are much harder to interpret and contain many duplicate member access operations. While this may seems like a small issue, it is one that may add up rather quickly over time.</p>
+<p># Related Materials
+ ## Manual
+- <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/Lightning/classes.md">Classes</a>
+- <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/Lightning/functions.md">functions</a>
+- <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/Lightning/keywords.md">Keywords</a>
+- <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/Lightning/keywords.md">Scope</a>
+- <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/Lightning/conditionals.md">Conditionals</a>
+- <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/Lightning/looping.md">Loops</a></p>
+<p>## Code Reference
+- <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types.md">lightning_base_types</a>
+- <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.md">real</a>
+- <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/string.md">string</a>
+- <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/plasma.md">Plasma</a>
+- <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/math.md">Math</a> </p>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../../architecture/archetypes/archetype_basics/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../../architecture/archetypes/archetype_basics/" class="btn btn-xs btn-link">
+        Archetypes
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../swizzle/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../swizzle/" class="btn btn-xs btn-link">
+        Swizzle
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="col-md-12 wm-page-content">
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/noraj/mkdocs-windmill-dark">Windmill Dark</a> theme by Alexandre ZANNI (noraj).</p>
+</footer>
+
+</body>
+</html>

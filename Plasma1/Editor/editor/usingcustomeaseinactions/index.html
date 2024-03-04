@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="author" content="PlasmaDev">
+    <link rel="canonical" href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/editor/usingcustomeaseinactions/">
+    <link rel="shortcut icon" href="../../../../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Using Custom Ease in Actions - PlasmaDocs</title>
+    <link href="../../../../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../../../../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../../../../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../../../css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../../../../js/jquery-3.2.1.min.js"></script>
+    <script src="../../../../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../../../../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '../../../..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "Using Custom Ease in Actions", url: "#_top", children: [
+          ]},
+          {title: "A Closer Look at Easing Functions", url: "#a-closer-look-at-easing-functions", children: [
+          ]},
+          {title: "Standard Easing Classes", url: "#standard-easing-classes", children: [
+              {title: "Quadratic Ease Functions", url: "#quadratic-ease-functions" },
+          ]},
+          {title: "Applying a Custom Ease", url: "#applying-a-custom-ease", children: [
+          ]},
+          {title: "Related Materials", url: "#related-materials", children: [
+              {title: "Manual", url: "#manual" },
+              {title: "Code Reference", url: "#code-reference" },
+          ]},
+        ];
+
+    </script>
+    <script src="../../../../js/base.js"></script>
+      <script src="../../../../search/main.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../editorcommands/command_list_viewer/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../editorcommands/command_list_viewer/" class="btn btn-xs btn-link">
+        Command List Viewer
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../tags/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../tags/" class="btn btn-xs btn-link">
+        Tags
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <h1 id="using-custom-ease-in-actions">Using Custom Ease in Actions</h1>
+<p>While Plasma provides a number of pre-defined Eases (e.g., <code>QuadIn</code>, <code>QuadOut</code>, <code>SinIn</code>, <code>SinOut</code>), these may not cover all situations that may arise. In those cases, a custom ease may be created by adding a <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/architecture/resources/samplecurve.md">samplecurve</a>.</p>
+<h1 id="a-closer-look-at-easing-functions">A Closer Look at Easing Functions</h1>
+<p>Eases are used primarily in what is called "tweening", short for <em>in-betweening</em> (and <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/action.md">Actions</a> are Plasma Engine's form of tweening). Tweening is a procedure for interpolation between two values that can provide animation through the use of mathematical functions without the user having to adjust any frames. Eases are functions that control the rate of acceleration of the change in value. Usually, eases are used to make animations look more natural or "life-like", though the most basic of eases--<code>Linear</code>--is decidedly sterile-looking or robotic, as can be seen in this example of a simple moving platform:</p>
+<p><strong>ADD IMAGE</strong></p>
+<p>The platform moves side to side at a steady, constant rate of motion. In other words, its rate of movement is linear. For the sake of comparison, let's look at another, nicer-looking, more "life-like" ease; specifically, the <code>QuadInOut</code> ease (which uses the quadratic function to derive acceleration):</p>
+<p><strong>ADD IMAGE</strong></p>
+<p>In this case, the acceleration changes throughout the movement from left to right (and vice versa). It start slow, builds up speed, then slows back down once it nears the end. This type of movement is common in everyday life. For example, elevators use a non-linear movement. Imagine if a high-speed elevator in a high-rise building did not change its acceleration, and the elevator comes to a complete stop while at the relatively high speed it moves at as it passes floors: every one in it would go flying to the ceiling. Instead, as the elevator approaches its destination, it slows down so that it comes to a smooth, non-person-launching stop.</p>
+<h1 id="standard-easing-classes">Standard Easing Classes</h1>
+<p>There are five "standard" (and consequently, the most popular) easing types: Linear, Quadratic, Cubic, Quartic, and Quintic. These names refer to the power by which a part of the ease equation is raised. Linear has an exponent of 1, Quadratic is rasied to the 2nd power, and so on. Whether the ease is In, Out, or InOut depends on whether the animation desired starts slow and then speeds up at the end (EaseIn), starts fast and then slows down at the end (EaseOut), or starts out slow, speeds up, but then slows back down at the end (EaseInOut). When the exponent is increased, the essential part of the ease equation (the representing current percentage of completion of the tween) is multiplied by itself. For example, if there was an EaseOut that is moving to 70% of the desired value change, 0.7 would be multiplied with the exponent of the ease. For Quadratic, the exponent is two, so the result would be: 0.7 * 0.7 = .49, instead of 0.7. This means the value would move to 70% of the desired value in 49% of the time it would take linearly, moving quicker at the start and slower at the end. To make this relationship explicit, here's the function usually used for determining ease (though this one will just be a linear tween without any proper easing applied).</p>
+<pre><code class="language-csharp">
+function LinearTween(beginningVal, changeToVal, currentTime, totalTime)
+{
+    return changeToVal * currentTime / totalTime + beginningVal;
+}
+</code></pre>
+
+<p>Here's what each argument of the function stands for:</p>
+<ul>
+<li><code>beginningVal</code> is the beginning value of the property that is being animated</li>
+<li><code>changeToVal</code> is the change between the beginning value and the end value of the property that is being animated</li>
+<li><code>currentTime</code> is the start time of the tween and can be described using any unit (e.g. frames, seconds, etc...) as long as the unit stays the same for <code>totalTime</code> as well.</li>
+<li><code>totalTime</code> is the total amount of time the tween will take</li>
+</ul>
+<p>One thing to note is that the <code>currentTime / totalTime</code> portion of the equation represents the percentage of completion for the tween (if 5 seconds of a 10 second duration has elapsed, it is 50% of the way through). To see this in action, let's look at a simple example. At the start of a level, a platform at position <code>Real3(0,5,0)</code> should move up the y-axis to <code>Real3(0,15,0)</code> over the course of 2 seconds.</p>
+<ul>
+<li><code>beginningVal</code> would be 5 (this is the y-value from <code>Real3(0,5,0)</code>)</li>
+<li><code>changeToVal</code> would be 10 (this is the differnce in the y-value from <code>Real3(0,5,0)</code> to <code>Real3(0,15,0)</code>)</li>
+<li><code>currentTime</code> would be 0 (seconds) as the tween should start when the level starts</li>
+<li><code>totalTime</code> is 2 as the tween should occur over 2 seconds</li>
+<li>Using the equation provided above: 10 * 0 / 2 + 5 = 5, leaving the platform where it started.</li>
+</ul>
+<p>The next case to consider is checking the value <strong>during</strong> the tween itself, say 50% of the way through. This would only change the <code>currentTime</code> value to 1 (2 * 0.5 = 1). Our equation now gives us:</p>
+<p><code>10 * 1 / 2 + 5 = 10</code></p>
+<p>10 is the exact midpoint on the y-axis between the start and end values of 5 and 15, which is exactly the value one would expect given that the equation was changed to provide the value at 50% of the way through the tween. With any change in the percentage of the completion of tween (the <code>currentTime/totalTime</code> portion of the equation), the result will be the value at that particular percentage of time elapsed.</p>
+<p>The portion of this equation that will be affected by the exponent associated with the standard eases is <code>currentTime/totalTime</code>. One could even substitute 0 for <code>beginningVal</code> and 1 for <code>changeToVal</code> so that the result is a <strong>factor</strong>, which could then be multiplied by the difference between the values, while also adding back in the original value, to end up with the same thing as the original equation, like so:</p>
+<pre><code class="language-csharp">
+function EasingFunction(beginningVal, changeToVal, currentTime, totalTime)
+{
+    return changeToVal * currentTime / totalTime + beginningVal;
+}
+function EaseIn(beginningVal, changeToVal, currentTime, totalTime)
+{
+    var easeFactor = this.EasingFunction(0, 1, currentTime, totalTime);
+    this.Owner.PropertyToChange = (endValue - originalVal) * easeFactor + originalVal;
+}
+</code></pre>
+
+<h2 id="quadratic-ease-functions">Quadratic Ease Functions</h2>
+<p>The Quadratic ease function includes a new argument--the exponent by which to multiply the completion percentage:</p>
+<pre><code class="language-csharp">
+function QuadEaseIn(0, 1, currentTime, totalTime, easePower)
+{
+    easePower = 2;
+    return changeToVal * Math.Pow(currentTime / totalTime) + beginningVal;
+}
+</code></pre>
+
+<p>This function can be reduced by removing the value parameters from the function altogether. Doing so will work nearly identically as the equation above in all the standard eases:</p>
+<pre><code class="language-csharp">
+function QuadEaseIn(currentTime, totalTime, easePower)
+{
+    easePower = 2;
+    return Math.Pow(currentTime/totalTime, easePower);
+}
+</code></pre>
+
+<p>For an EaseOut function, which starts fast and then slows down, the same equation is used but is subtracted from 1 so that it comes at the end of the tween:</p>
+<pre><code class="language-csharp">
+function QuadEaseOut(currentTime, totalTime, easePower)
+{
+    easePower = 2;
+    return 1 - Math.Pow(1 - (currentTime/totalTime), easePower);
+}
+</code></pre>
+
+<p>For the EaseInOut function, the previously omitted parameters will need to be incorporated back in:</p>
+<pre><code class="language-csharp">
+function QuadEaseInOut(beginningVal, changeToVal, currentTime, totalTime, easePower)
+{
+    easePower = 2;
+    if((currentTime /= totalTime / 2) < 1)
+    {
+        return changeToVal / 2 * Math.Pow(currentTime/totalTime, easePower) + beginningVal;
+    }
+    else
+    {
+        return -changeToVal / 2 *  (currentTime * (currentTime - 2) - 1) + beginningVal
+    }
+}
+</code></pre>
+
+<p>All of these eases can be visualized on a graph. In Plasma, graphs like this may be plotted on a <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/architecture/resources/samplecurve.md">SampleCurve</a>, allowing their use as the ease parameter in Actions.</p>
+<h1 id="applying-a-custom-ease">Applying a Custom Ease</h1>
+<p>After creating a SampleCurve, it can be directly applied to an Action. The following LightningScript illustrates how to apply a SampleCurve to an Action that translates an object back and forth.</p>
+<pre><code class="language-csharp">
+class EasedMovement : LightningComponent
+{
+  [Dependency] var Transform : Transform;
+
+  [Property] var TargetPos : Real3;
+  [Property] var Time : Real;
+  [Property] var EaseToUse : SampleCurve;
+
+  var Property : Real3;
+
+  var StartPos : Real3;
+
+  function Initialize(init : CogInitializer)
+  {
+    // Call the function to move the object
+    this.Move();
+  }
+
+  function Move()
+  {
+    // Save starting position to move back to 
+    this.StartPos = this.Transform.Translation;
+
+    var seq = Action.Sequence(this.Owner.Actions);
+
+    // Move the object 
+    Action.Property(seq, @this.Transform.Translation, this.TargetPos, this.Time, this.EaseToUse);
+    // Call the function that will move it back
+    Action.Call(seq, this.MoveBack);
+  }
+
+  function MoveBack()
+  {
+    var seq  = Action.Sequence(this.Owner.Actions);
+
+    // Move the object back
+    Action.Property(seq, @this.Transform.Translation, this.StartPos, this.Time, this.EaseToUse);
+    // Call the function to move the object
+    Action.Call(seq, this.Move);
+  }
+}
+</code></pre>
+
+<h1 id="related-materials">Related Materials</h1>
+<h2 id="manual">Manual</h2>
+<ul>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/editor/editorcommands/resourceadding.md">ResourceAdding</a></li>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/architecture/resources/samplecurve.md">samplecurve</a></li>
+</ul>
+<h2 id="code-reference">Code Reference</h2>
+<ul>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/action.md">action</a> </li>
+</ul>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../editorcommands/command_list_viewer/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../editorcommands/command_list_viewer/" class="btn btn-xs btn-link">
+        Command List Viewer
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../tags/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../tags/" class="btn btn-xs btn-link">
+        Tags
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="col-md-12 wm-page-content">
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/noraj/mkdocs-windmill-dark">Windmill Dark</a> theme by Alexandre ZANNI (noraj).</p>
+</footer>
+
+</body>
+</html>

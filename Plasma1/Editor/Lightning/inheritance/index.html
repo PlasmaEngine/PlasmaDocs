@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="author" content="PlasmaDev">
+    <link rel="canonical" href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/Lightning/inheritance/">
+    <link rel="shortcut icon" href="../../../../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Inheritance - PlasmaDocs</title>
+    <link href="../../../../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../../../../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../../../../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../../../css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../../../../js/jquery-3.2.1.min.js"></script>
+    <script src="../../../../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../../../../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '../../../..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "Inheritance", url: "#_top", children: [
+          ]},
+        ];
+
+    </script>
+    <script src="../../../../js/base.js"></script>
+      <script src="../../../../search/main.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../keywords/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../keywords/" class="btn btn-xs btn-link">
+        Keywords
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../hashmap/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../hashmap/" class="btn btn-xs btn-link">
+        HashMap
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <h1 id="inheritance">Inheritance</h1>
+<p>Inheritance allows a <em>child <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/Lightning/classes.md">class</a> to automatically receive all of the data and functionality defined within the base</em> class.</p>
+<pre><code class="language-csharp">
+class Feline
+{
+  constructor() { }
+}
+</code></pre>
+
+<pre><code class="language-csharp">
+// A colon designates an identifier for a base class follows.
+class Lion : Feline
+{
+  // a constructor is not necessary when one is inherited from the base class.  
+}
+</code></pre>
+<pre><code class="language-csharp">
+var cat = new Feline();
+var simba = new Lion(); // Instantiated from the inherited constructor
+</code></pre>
+
+<p>In the above example the variable <code>simba</code> can be instantiated as a <code>Lion</code> using the constructor from <code>Feline</code>.</p>
+<p># The <strong>base</strong> Keyword
+The <strong>base</strong> <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/Lightning/keywords.md">keyword</a> is for use when defining an inherited class; it allows you to call the constructor of the base class being inherited from before running an explicitly defined constructor.</p>
+<pre><code class="language-csharp">
+class Animal
+{
+  var Legs : Integer = 4;
+
+  constructor() { }
+  constructor(legs : Integer)
+  {
+      this.Legs = legs;
+  }
+
+  function ToString() : String
+  {
+    var builder = new StringBuilder();
+    builder.Write("Legs: ");
+    builder.Write(this.Legs);
+    return builder.ToString();
+  }
+}
+</code></pre>
+<p>The class animal defines a <strong>non-default</strong> constructor which takes a number of legs for the animal as a parameter.</p>
+<pre><code class="language-csharp">
+class Human : Animal
+{
+  constructor() : base(2) { }
+}
+</code></pre>
+<p>The class <code>Human</code> which inherits from <code>Animal</code> can use <code>Animal</code>'s constructor by using the <code>base</code> keyword. In this situation either the default or non-default constructor from <code>Animal</code> could be called using based. Which constructor is called is determined by the parameters passed to the <code>()</code> after the<code>base</code> keyword. Because <code>2</code> is passed to the <code>base</code> keyword the <strong>non-default</strong> constructor of <code>Animal</code> is called before any implementation within the defined <strong>default</strong> constructor of <code>Human</code>.</p>
+<pre><code class="language-csharp">
+var animal : Animal = new Animal();
+Console.WriteLine(animal.ToString()); // Legs: 4
+
+var jerry = new Human();
+Console.WriteLine(jerry.ToString());  // Legs: 2
+</code></pre>
+<p>In this runtime example both <code>Animal</code> and <code>Human</code> are instantiated using their default constructor.</p>
+<pre><code class="language-csharp">
+---------------- Begin Game ---------------
+Legs: 4
+Legs: 2
+</code></pre>
+<p>As can be seen in the console output the <code>Human</code> <strong>default</strong> constructor calls the <strong>non-default</strong> constructor of <code>Animal</code> and passes it <code>2</code>.</p>
+<p># Classes &amp; Structs
+Although Lightning currently does not throw an error, erratic and unexpected behavior will result from having a class inherit from a struct and vice versa. <strong>i.e.</strong></p>
+<pre><code class="language-csharp">
+// Mismatching the struct/class between parent and child
+struct MyBaseStruct
+{
+  constructor()
+  {
+  }
+}
+class MyClass : MyBaseStruct
+{
+  constructor() : base()
+  {
+  }
+}
+</code></pre>
+<pre><code class="language-csharp">
+// Leads to issues such as the inability to cast to the base class type. 
+var incompatible: MyClass = new MyClass();
+Console.WriteLine(typeid(incompatible).Name);                 // MyClass
+Console.WriteLine(typeid(incompatible as MyBaseStruct).Name); // This won't compile.
+</code></pre>
+
+<p># The Virtual Keyword</p>
+<p>Virtual is used to give Base classes the ability to determine some functions as being able to be <em>overridden</em> by its derived classes. The new <code>Speak</code> function defined in <code>Animal</code> will serve as an example:</p>
+<pre><code class="language-csharp">
+class Animal
+{
+  var Legs:Integer = 4;
+
+  constructor() { }
+
+  constructor(legs : Integer)
+  {
+    this.Legs = legs;
+  }
+
+  function ToString() : String
+  {
+    var builder = new StringBuilder();
+    builder.Write("Legs: ");
+    builder.Write(this.Legs);
+    return builder.ToString();
+  }
+
+  [Virtual]
+  function Speak() : String
+  {
+    return "...";
+  }
+}
+</code></pre>
+
+<p>By default, animals don't say anything, so a string that says <code>...</code> is returned. It is known that there are animals that do speak, so the <code>[Virtual]</code> attribute is added to the function to let other developers know that if a class is is <strong>derived</strong> from <code>Animal</code>, the functionality of <code>Speak</code> may be overridden.</p>
+<pre><code class="language-csharp">
+class Human : Animal
+{
+  constructor() : base(2) { }
+
+  [Override]
+  function Speak() : String
+  {
+    return "Hello";
+  }
+}
+</code></pre>
+<p>Humans do speak, so changeing the funcitonality of <code>Human.Speak</code> to say something other than <code>...</code> makes perfect sense. The <code>[Override]</code> attribute applied to <code>Speak</code> marks this implementation of the <code>Speak</code> function to replace <code>Animal.Speak</code> which is marked as <code>[Virtual]</code>.</p>
+<p>This can also be extended to other classes like a Cat:</p>
+<pre><code class="language-csharp">
+class Cat : Animal
+{
+  // Cats have 4 legs, so let's update the constructor
+  constructor() : base(4) { }
+
+  [Override]
+  function Speak() : String
+  {
+    return "Meow";
+  }
+}
+</code></pre>
+
+<p>Now, this is great in the fact that we can now do something like the following:</p>
+<pre><code class="language-csharp">
+var animal = Animal();
+Console.WriteLine(animal.Speak());
+
+var human = Human();
+Console.WriteLine(human.Speak());
+
+var cat = Cat();
+Console.WriteLine(cat.Speak());
+</code></pre>
+
+<pre><code class="language-csharp">
+...
+Hello
+Meow
+</code></pre>
+
+<p>The real magic of inheritance comes in the idea that a class of a <strong>derived</strong> class can be stored in a variable that matches the type of the <strong>base</strong> class.</p>
+<pre><code class="language-csharp">
+var humanIsAnAnimal : Animal = Human();
+Console.WriteLine(humanIsAnAnimal.Speak());
+</code></pre>
+
+<p>Even though the variable is of type Animal, the Human version of the function is called:</p>
+<pre><code class="language-csharp">
+Hello
+</code></pre>
+
+<p>This is because whenever a virtual method is called, the run-time type of the object is checked for an <strong>overriding member</strong>. The overriding member in the most derived class will then be called, which might be the original function if the derived class(es) have not overridden it.</p>
+<p>This can be quite useful with an array of Animals.</p>
+<pre><code class="language-csharp">
+var a : Animal = Animal();
+var b : Human = Human();
+var c : Animal = Human();
+var d : Cat = Cat();
+
+var array : Array[Animal] = Array[Animal](){a,b,c,d};
+
+foreach (var animal in array)
+{
+  Console.WriteLine(animal.Speak());
+}
+</code></pre>
+
+<pre><code class="language-csharp">
+...
+Hello
+Hello
+Meow
+</code></pre>
+
+<p># Calling Parent Functions</p>
+<p>It's also possible to call the parent version of a function from a child class. In order to do this, the object must be cast to the base type and then use the non-virtual operator (~&gt;) to call the base version:</p>
+<pre><code class="language-csharp">
+var d : Cat = Cat();
+(d as Animal)~>Speak();
+</code></pre>
+<pre><code class="language-csharp">
+...
+</code></pre>
+
+<p># Related Materials
+ ## Manual
+- <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/Lightning/attributes.md">attributes</a> </p>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../keywords/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../keywords/" class="btn btn-xs btn-link">
+        Keywords
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../hashmap/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../hashmap/" class="btn btn-xs btn-link">
+        HashMap
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="col-md-12 wm-page-content">
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/noraj/mkdocs-windmill-dark">Windmill Dark</a> theme by Alexandre ZANNI (noraj).</p>
+</footer>
+
+</body>
+</html>

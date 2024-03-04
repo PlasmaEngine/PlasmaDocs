@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="author" content="PlasmaDev">
+    <link rel="canonical" href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/editor/editorcommands/rightclicksubmenu/">
+    <link rel="shortcut icon" href="../../../../../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Right CLick Sub Menu - PlasmaDocs</title>
+    <link href="../../../../../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../../../../../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../../../../../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../../../../css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../../../../../js/jquery-3.2.1.min.js"></script>
+    <script src="../../../../../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../../../../../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '../../../../..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "Right CLick Sub Menu", url: "#_top", children: [
+          ]},
+          {title: "Common Uses", url: "#common-uses", children: [
+          ]},
+          {title: "In the Library Window", url: "#in-the-library-window", children: [
+          ]},
+          {title: "Tags", url: "#tags", children: [
+          ]},
+          {title: "Resources", url: "#resources", children: [
+          ]},
+          {title: "In the Objects Window", url: "#in-the-objects-window", children: [
+          ]},
+          {title: "In the Properties Window", url: "#in-the-properties-window", children: [
+          ]},
+          {title: "Inside a LightningScript", url: "#inside-a-lightningscript", children: [
+              {title: "On a Tab in an Editor Window", url: "#on-a-tab-in-an-editor-window" },
+          ]},
+          {title: "Related Materials", url: "#related-materials", children: [
+              {title: "Manual", url: "#manual" },
+          ]},
+        ];
+
+    </script>
+    <script src="../../../../../js/base.js"></script>
+      <script src="../../../../../search/main.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../runthegame/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../runthegame/" class="btn btn-xs btn-link">
+        Run the Game
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../resourceadding/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../resourceadding/" class="btn btn-xs btn-link">
+        Resource Adding
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <h1 id="right-click-sub-menu">Right CLick Sub Menu</h1>
+<p>The Right-Click Submenu is a simple-to-use tool that gives different functionality depending on if it is used in the Library, Object, or Properties Window, or even inside a LightningScript. It can be used to rename Objects, remove Components from them, make duplicates of them, and other actions as well. </p>
+<h1 id="common-uses">Common Uses</h1>
+<ul>
+<li>Edit the Name and Tags of an Object</li>
+<li>Removing a Component from an Object, or Resource from the Project</li>
+<li>Viewing more detailed information on a Component, or Variable in a LightningScript</li>
+</ul>
+<h1 id="in-the-library-window">In the Library Window</h1>
+<p>The Right-Click Submenu will be slightly different in the Library Window depending on if either a Tag or a Resource is right-clicked. </p>
+<h1 id="tags">Tags</h1>
+<p>Right-clicking on a Tag in the Library window will only give a single option, <code>Add Tag to Search</code>. </p>
+<p><strong>ADD IMAGE</strong></p>
+<p>Left-clicking on this option will act the same as if that <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/editor/tags.md">Tag</a> was typed into the Search function, or if the Tag was double left-clicked: the Library Window will show any Resources with the selected Tag. </p>
+<p><strong>ADD IMAGE</strong></p>
+<h1 id="resources">Resources</h1>
+<p>Right-clicking on a Resource will bring up a different list with four options available to all Resources: <code>Edit</code>, <code>Rename</code>, <code>EditTags</code> and <code>Remove</code>, and if the Resource is not a LightningScript, <code>Duplicate</code>. </p>
+<p><strong>ADD IMAGE</strong></p>
+<ul>
+<li><code>Edit</code> will open the selected Resource to have changes made to it. If need be it will open a new editor window, such as if there is a visual aspect to be edited or to edit a text entry. </li>
+<li><code>Rename</code> will highlight the current name of the Resource and allow the user to type in a new one. </li>
+<li><code>EditContentMeta</code> will open the ContentComponents for a Resource (i.e., a Resource's meta data) in the <code>Properties Window</code></li>
+<li><code>EditTags</code> allows custom tags to be added to and removed from the Resource. Note that the default tag that marks what type of Resource the object is cannot be removed.</li>
+<li><code>Remove</code> will remove the Resource from the Project completely. Note that this cannot be undone and the Resource will have to be recreated if it was done in error. </li>
+<li><code>Duplicate</code> will create a copy of the selected Resource. In order to differentiate between the new copies, the names of the copies will be appended with <code>Copy(CopyNumber)</code>. </li>
+</ul>
+<p><strong>ADD IMAGE</strong></p>
+<h1 id="in-the-objects-window">In the Objects Window</h1>
+<p>When an Object in the Objects Window is right-clicked, it gives only two options: <code>Rename</code> and <code>Delete</code>.</p>
+<p><strong>ADD IMAGE</strong></p>
+<ul>
+<li><strong>Rename</strong>: Just like in the Library Window, the <code>Rename</code> option allows the user to change the name of the selected object.</li>
+<li><strong>Delete</strong>: Rather than being removed from the project, the <code>Delete</code> option simply removes the selected Object from the current Level. </li>
+</ul>
+<h1 id="in-the-properties-window">In the Properties Window</h1>
+<p>When a Component is right-clicked in the Properties Window, it is given three options: <code>Remove</code>, <code>View Docs</code>, and <code>Search Online Docs</code>. </p>
+<p><strong>ADD IMAGE</strong></p>
+<ul>
+<li><strong>Remove</strong>: The <code>Remove</code> option will remove the selected Component from the Object. If another Component is dependent on the Component attempting to be removed, the Engine will not allow the removal to take place and will show an error message. </li>
+<li><strong>View Docs</strong>: <code>View Docs</code> will open a new Editor Window that will give a Class Description of the Component, as well as the various Properties and Methods that Component has. </li>
+</ul>
+<p>NOTE: Only Components supplied by the Engine will have documentation, and the documentation is the same that will appear in Lightning's code-completion and the <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++plasma_editor_documentation/code_reference.md">Code Reference</a> Section. As it is generated automatically from meta data, not all components will have docs available for viewing.</p>
+<ul>
+<li><strong>Search Online Docs</strong>: Using <code>Search Online Docs</code> will open a new page in the user's web browser, navigate to "plasma.digipen.edu" and perform a search using the name of the Component as the query. </li>
+</ul>
+<h1 id="inside-a-lightningscript">Inside a LightningScript</h1>
+<p>Right-clicking on any word written in a LightningScript will give the user the <code>Go To Definition</code> option. </p>
+<p><strong>ADD IMAGE</strong></p>
+<h2 id="on-a-tab-in-an-editor-window">On a Tab in an Editor Window</h2>
+<p>When right-clicking on an open tab in the Editor Window, three options are given: <code>Close</code>, <code>Close All But This</code>, and <code>Move to New Window</code>. </p>
+<p><strong>ADD IMAGE</strong></p>
+<ul>
+<li><strong>Close</strong>: This option will close the selected tab in the Editor Window.</li>
+<li><strong>Close All But This</strong>: This will leave the selected tab open, but will close any other tabs in the same window. </li>
+</ul>
+<hr />
+<h1 id="related-materials">Related Materials</h1>
+<h2 id="manual">Manual</h2>
+<ul>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/editor/tags.md">Tags</a></li>
+</ul>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../runthegame/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../runthegame/" class="btn btn-xs btn-link">
+        Run the Game
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../resourceadding/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../resourceadding/" class="btn btn-xs btn-link">
+        Resource Adding
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="col-md-12 wm-page-content">
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/noraj/mkdocs-windmill-dark">Windmill Dark</a> theme by Alexandre ZANNI (noraj).</p>
+</footer>
+
+</body>
+</html>

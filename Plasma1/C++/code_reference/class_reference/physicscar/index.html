@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="author" content="PlasmaDev">
+    <link rel="canonical" href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C%2B%2B/code_reference/class_reference/physicscar/">
+    <link rel="shortcut icon" href="../../../../../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Physicscar - PlasmaDocs</title>
+    <link href="../../../../../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../../../../../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../../../../../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../../../../css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../../../../../js/jquery-3.2.1.min.js"></script>
+    <script src="../../../../../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../../../../../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '../../../../..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+        ];
+
+    </script>
+    <script src="../../../../../js/base.js"></script>
+      <script src="../../../../../search/main.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../physicscarwheel/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../physicscarwheel/" class="btn btn-xs btn-link">
+        Physicscarwheel
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../phygunjointblock/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../phygunjointblock/" class="btn btn-xs btn-link">
+        Phygunjointblock
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <p><code>Component</code> <code>Physics</code></p>
+<p>(NOTE) A controller for a high speed physics based car. The car is controlled with a steer, gas, and brake scalar. The car will raycast wheel positions to try to keep the wheels on the ground and then apply friction and normal forces to propel the car.</p>
+<table>
+<thead>
+<tr>
+<th>Methods</th>
+<th>Properties</th>
+<th>Base Classes</th>
+<th>Derived Classes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/physicscar.md#numberofwheelsincontact"> NumberOfWheelsInContact</a></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/physicscar.md#active-plasma-engine-docum"> Active</a></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/component.md">component</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/physicscar.md#physicscar-void"> Constructor</a></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/physicscar.md#antilockbrakes-plasma-engi"> AntiLockBrakes</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/physicscar.md#brake-plasma-engine-docume"> Brake</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/physicscar.md#debugdraw-plasma-engine-do"> DebugDraw</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/physicscar.md#gas-plasma-engine-document"> Gas</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/physicscar.md#gripscalar-plasma-engine-d"> GripScalar</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/physicscar.md#maxspeed-plasma-engine-doc"> MaxSpeed</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/physicscar.md#maxtorque-plasma-engine-do"> MaxTorque</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/physicscar.md#steer-plasma-engine-docume"> Steer</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/physicscar.md#torquegovernor-plasma-engi"> TorqueGovernor</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/physicscar.md#wheelcogs-plasma-engine-do"> WheelCogs</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/physicscar.md#wheelfrictionfrontrollco"> WheelFrictionFrontRollCoef</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/physicscar.md#wheelfrictionsiderollcoe"> WheelFrictionSideRollCoef</a></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>#  Properties</p>
+<hr />
+<p>#  Active : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.md">boolean</a></p>
+<blockquote>
+<p>Whether or not the car will run any logic at all. If this is false wheels will not work, they will not behave as springs, drive, or anything else.
+``` lang=cpp, name=Lightning
+var Active : Boolean</p>
+</blockquote>
+<hr />
+<p>#  AntiLockBrakes : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.md">boolean</a></p>
+<blockquote>
+<p>Prevents the car from entering dynamic friction when applying brakes. If the brake would start to skid, the brake force is clamped to the max amount that will not slip.
+``` lang=cpp, name=Lightning
+var AntiLockBrakes : Boolean</p>
+</blockquote>
+<hr />
+<p>#  Brake : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.md">real</a></p>
+<blockquote>
+<p>How much the brake is being pressed [0,1] where 1 is full brake.
+``` lang=cpp, name=Lightning
+var Brake : Real</p>
+</blockquote>
+<hr />
+<p>#  DebugDraw : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.md">boolean</a></p>
+<blockquote>
+<p>Whether or not the car should debug draw.
+``` lang=cpp, name=Lightning
+var DebugDraw : Boolean</p>
+</blockquote>
+<hr />
+<p>#  Gas : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.md">real</a></p>
+<blockquote>
+<p>How much the gas is being pressed [-1,1] where -1 is full reverse.
+``` lang=cpp, name=Lightning
+var Gas : Real</p>
+</blockquote>
+<hr />
+<p>#  GripScalar : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.md">real</a></p>
+<blockquote>
+<p>Artificially increases the grip of the car (where 2 is twice the grip). The total grip scalar is computed as CarGripScalar * WheelGripScalar so the total car can be easily tweaked while allowing individual wheel tweaks.
+``` lang=cpp, name=Lightning
+var GripScalar : Real</p>
+</blockquote>
+<hr />
+<p>#  MaxSpeed : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.md">real</a></p>
+<blockquote>
+<p>The desired maximum speed of the car. Similar to a speed governor.
+``` lang=cpp, name=Lightning
+var MaxSpeed : Real</p>
+</blockquote>
+<hr />
+<p>#  MaxTorque : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.md">real</a></p>
+<blockquote>
+<p>The maximum torque the engine can apply to try to reach the max speed.
+``` lang=cpp, name=Lightning
+var MaxTorque : Real</p>
+</blockquote>
+<hr />
+<p>#  Steer : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.md">real</a></p>
+<blockquote>
+<p>How much the wheel is being steered. This is measured in radians about this object's y-axis.
+``` lang=cpp, name=Lightning
+var Steer : Real</p>
+</blockquote>
+<hr />
+<p>#  TorqueGovernor : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.md">boolean</a></p>
+<blockquote>
+<p>Governs the max torque that the engine can apply. This is used to keep the wheels from spinning out (slipping) when too high of a torque is applied. If the tires would slip, the engine will apply the maximum torque for the tires to not slip.
+``` lang=cpp, name=Lightning
+var TorqueGovernor : Boolean</p>
+</blockquote>
+<hr />
+<p>#  WheelCogs : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/carwheelarray.md">carwheelarray</a></p>
+<p><code>read-only</code></p>
+<blockquote>
+<p>Read-only array of wheels belonging to this car.
+``` lang=cpp, name=Lightning
+var WheelCogs : CarWheelArray</p>
+</blockquote>
+<hr />
+<p>#  WheelFrictionFrontRollCoef : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.md">real</a></p>
+<blockquote>
+<p>Coefficient used to apply the forward friction force closer to the car's center of mass. 1 applies the force at the wheel position, 0 applies the force at the point along the contact normal closest to the center of mass.
+``` lang=cpp, name=Lightning
+var WheelFrictionFrontRollCoef : Real</p>
+</blockquote>
+<hr />
+<p>#  WheelFrictionSideRollCoef : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.md">real</a></p>
+<blockquote>
+<p>Coefficient used to apply the side friction force closer to the car's center of mass. 1 applies the force at the wheel position, 0 applies the force at the point along the contact normal closest to the center of mass.
+``` lang=cpp, name=Lightning
+var WheelFrictionSideRollCoef : Real</p>
+</blockquote>
+<hr />
+<p>#  Methods</p>
+<hr />
+<p>#  NumberOfWheelsInContact : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer.md">integer</a></p>
+<blockquote>
+<p>The number of wheels currently in contact with an object.
+|Name|Type|Description|
+|---|---|---|
+<code>lang=cpp, name=Lightning
+function NumberOfWheelsInContact() : Integer</code> </p>
+</blockquote>
+<hr />
+<p>#  PhysicsCar : Void</p>
+<p><code>constructor</code></p>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>``` lang=cpp, name=Lightning</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>function PhysicsCar()</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>```</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<hr />
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../physicscarwheel/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../physicscarwheel/" class="btn btn-xs btn-link">
+        Physicscarwheel
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../phygunjointblock/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../phygunjointblock/" class="btn btn-xs btn-link">
+        Phygunjointblock
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="col-md-12 wm-page-content">
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/noraj/mkdocs-windmill-dark">Windmill Dark</a> theme by Alexandre ZANNI (noraj).</p>
+</footer>
+
+</body>
+</html>

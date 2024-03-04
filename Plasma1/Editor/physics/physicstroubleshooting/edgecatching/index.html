@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="author" content="PlasmaDev">
+    <link rel="canonical" href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/physics/physicstroubleshooting/edgecatching/">
+    <link rel="shortcut icon" href="../../../../../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Edge Catching - PlasmaDocs</title>
+    <link href="../../../../../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../../../../../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../../../../../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../../../../css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../../../../../js/jquery-3.2.1.min.js"></script>
+    <script src="../../../../../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../../../../../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '../../../../..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "Edge Catching", url: "#_top", children: [
+          ]},
+          {title: "Physics Primer: Discrete Collision Detection", url: "#physics-primer-discrete-collision-detection", children: [
+          ]},
+          {title: "Fixing Edge Catching", url: "#fixing-edge-catching", children: [
+          ]},
+          {title: "Related Materials", url: "#related-materials", children: [
+              {title: "Manual", url: "#manual" },
+              {title: "Reference", url: "#reference" },
+          ]},
+        ];
+
+    </script>
+    <script src="../../../../../js/base.js"></script>
+      <script src="../../../../../search/main.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../tunneling/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../tunneling/" class="btn btn-xs btn-link">
+        Tunneling
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../../physicseffectsandregions/windeffect/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../../physicseffectsandregions/windeffect/" class="btn btn-xs btn-link">
+        Wind Effect
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <h1 id="edge-catching">Edge Catching</h1>
+<p>Sometimes a physics object will seem to get stuck on a smooth surface. This is often caused by an issue known as edge-catching. This issue is most common when creating a player.</p>
+<p>In a game, the ground is often piece-wise, i.e. made of a collection of individual pieces. In this example, assume that the ground is a collection of boxes. Now a rotation locked player is implemented with a <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/physics/physicstroubleshooting/colliders/boxcollider.md">BoxCollider</a> to move via simple velocity changes (velocity is the drawn arrow). </p>
+<p><img alt="EdgeCatchingGif" src="https://raw.githubusercontent.com/PlasmaEngine/PlasmaDocs/master/media/46367.gif" /></p>
+<p>Sometimes the player will stop moving even though input is setting a velocity. This behavior is caused by the seams on the ground. For an explanation of why this happens a quick physics primer is necessary.</p>
+<h1 id="physics-primer-discrete-collision-detection">Physics Primer: Discrete Collision Detection</h1>
+<p>Physics engines are often implemented with discrete collision detection. This is easiest to think of as a picture flip-book where physics teleports each object from frame-to-frame. This presents a problem to physics as objects will already be overlapping by the time collision is detected. To fix collisions, physics has to approximate the best direction in which to push the objects apart. The approach taken is to find the minimum translational distance required to push the objects apart.</p>
+<p><img alt="image" src="https://raw.githubusercontent.com/PlasmaEngine/PlasmaDocs/master/media/46368.png" /></p>
+<p>Given the above configuration, all 4 primary directions can be checked for the minimum translational distance.</p>
+<p><img alt="image" src="https://raw.githubusercontent.com/PlasmaEngine/PlasmaDocs/master/media/46370.png" /></p>
+<p>It should be clear that pushing the box up requires less work than the other four directions.</p>
+<p>Sometimes physics incorrectly guesses what the best distance is. This commonly happens when gravity is combined with player input and collision happens at a corner. Even though two boxes are next to each other with no seam between, physics detects collision between each box in isolation.</p>
+<p>A step-by-step illustration is provided:</p>
+<p><img alt="image" src="https://raw.githubusercontent.com/PlasmaEngine/PlasmaDocs/master/media/46372.png" /></p>
+<p>First look at a movable box resting at the seam between two boxes. For this illustration the focus will be on the red box and the blue box on the right.</p>
+<p><img alt="image" src="https://raw.githubusercontent.com/PlasmaEngine/PlasmaDocs/master/media/46374.png" /></p>
+<p>Forces for the frame are applied to the red box.  First, gravity pulls the red box down. Additionally, an input force pushes the red box to the right.</p>
+<p><img alt="image" src="https://raw.githubusercontent.com/PlasmaEngine/PlasmaDocs/master/media/46376.png" /></p>
+<p>After updating position from forces, the physics system will see this scenario. The red box is in contact with both ground surfaces and collision needs to fix the overlap by pushing it out.</p>
+<p><img alt="image" src="https://raw.githubusercontent.com/PlasmaEngine/PlasmaDocs/master/media/46378.png" /></p>
+<p>Each ground surface will independently determine the minimum translational distance. The left box will correctly push up. The right box will unfortunately push to the left since this requires the least movement.</p>
+<p><img alt="image" src="https://raw.githubusercontent.com/PlasmaEngine/PlasmaDocs/master/media/46380.png" /></p>
+<p>Now physics resolves collisions and puts the red box right back where it started. Given the same forces, the red box will repeat this cycle and be stuck on this seam in the ground.</p>
+<h1 id="fixing-edge-catching">Fixing Edge Catching</h1>
+<p>Unfortunately there is no perfect generic solution to the edge catching problem. There are two main approaches to work around the problem:</p>
+<p><strong>Change your collision:</strong> The root issue here is that a seam does exist. One way to fix this is to remove the seam by merging the surface's collision. It's near impossible to remove all seams in a game though, and it is often more practical to change the player's collision shape. Commonly, a player uses a <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/physics/physicstroubleshooting/colliders/capsulecollider.md">CapsuleCollider</a> instead of a <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/physics/physicstroubleshooting/colliders/boxcollider.md">BoxCollider</a> to avoid seams.</p>
+<p><img alt="image" src="https://raw.githubusercontent.com/PlasmaEngine/PlasmaDocs/master/media/46382.png" /></p>
+<p>In the above illustration, the box on the left has a minimum translational distance that will push it to the left. The capsule however, has a minimum translational distance that is up and to the left. This will allow the capsule to move to the right a bit and escape the cycle of edge catching after a few frames. </p>
+<p>While this method mostly fixes edge catching, it tends to produce small bumps when crossing edges. This is because of the portion of the minimum translational distance that still points against the player's velocity.</p>
+<p><strong>Use the SweptController:</strong> Plasma provides a character controller that uses //swept collision//. Swept collision is different than discrete collision because it detects exactly when a collision happens. This prevents a player from ever colliding with an internal edge because it must first collide with the surface.</p>
+<p>There's two issues with the swept controller.
+ - It's more computationally expensive. This isn't an issue for a few number of objects, such as the player, but wouldn't be practical for every object.
+ - It only works with Kinematic objects. Using the swept controller means manually translating the player and not working through velocity and forces. This swept object will no longer react to <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/physics/physicstroubleshooting/physicseffectsandregions.md">PhysicsEffects</a>, collision resolution won't do anything, and Joints won't affect it. For some games this may make the SweptController impractical.</p>
+<h1 id="related-materials">Related Materials</h1>
+<h2 id="manual">Manual</h2>
+<ul>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/physics/physicstroubleshooting.md">physicstroubleshooting.md</a></li>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/physics/physicstroubleshooting/physicsspace.md">physicsspace.md</a></li>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/physics/physicstroubleshooting/colliders.md">colliders.md</a></li>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/physics/physicstroubleshooting/colliders/boxcollider.md">boxcollider.md</a></li>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/physics/physicstroubleshooting/colliders/capsulecollider.md">capsulecollider.md</a></li>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/physics/physicstroubleshooting/physicseffectsandregions.md">physicseffectsandregions.md</a></li>
+</ul>
+<h2 id="reference">Reference</h2>
+<ul>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/physicsspace.md">PhysicsSpace</a></li>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/collider.md">Collider</a></li>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/boxcollider.md">BoxCollider</a></li>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/capsulecollider.md">CapsuleCollider</a></li>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/physicseffect.md">PhysicsEffect</a></li>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/region.md">Region</a> </li>
+</ul>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../tunneling/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../tunneling/" class="btn btn-xs btn-link">
+        Tunneling
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../../physicseffectsandregions/windeffect/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../../physicseffectsandregions/windeffect/" class="btn btn-xs btn-link">
+        Wind Effect
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="col-md-12 wm-page-content">
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/noraj/mkdocs-windmill-dark">Windmill Dark</a> theme by Alexandre ZANNI (noraj).</p>
+</footer>
+
+</body>
+</html>

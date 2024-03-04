@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="author" content="PlasmaDev">
+    <link rel="canonical" href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/physics/collisionoverview/collisiongroupsandtables/">
+    <link rel="shortcut icon" href="../../../../../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Collision Groups and Tables - PlasmaDocs</title>
+    <link href="../../../../../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../../../../../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../../../../../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../../../../css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../../../../../js/jquery-3.2.1.min.js"></script>
+    <script src="../../../../../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../../../../../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '../../../../..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "Collision Groups and Tables", url: "#_top", children: [
+          ]},
+          {title: "CollisionGroup", url: "#collisiongroup", children: [
+          ]},
+          {title: "CollisionTable", url: "#collisiontable", children: [
+              {title: "CollisionFilters", url: "#collisionfilters" },
+          ]},
+          {title: "Troubleshooting", url: "#troubleshooting", children: [
+          ]},
+          {title: "Related Materials", url: "#related-materials", children: [
+              {title: "Manual", url: "#manual" },
+              {title: "Reference", url: "#reference" },
+          ]},
+        ];
+
+    </script>
+    <script src="../../../../../js/base.js"></script>
+      <script src="../../../../../search/main.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../../physicseffectsandregions/buoyancyeffect/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../../physicseffectsandregions/buoyancyeffect/" class="btn btn-xs btn-link">
+        Buoyancy Effect
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../collisionevents/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../collisionevents/" class="btn btn-xs btn-link">
+        Collision Events
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <h1 id="collision-groups-and-tables">Collision Groups and Tables</h1>
+<p><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/collisiongroup.md">CollisionGroups</a> and <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/collisiontable.md"> CollisionTables</a> are intertwined resources in the physics system. A CollisionGroup defines a label for a <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/physics/collisionoverview/colliders.md">colliders.md</a> to be used within a CollisionTable. A CollisionTable defines filters for pairs of CollisionGroups. These filters allow extra control over what collisions can take place. Additionally, filters can be configured to send extra events.</p>
+<h1 id="collisiongroup">CollisionGroup</h1>
+<p>A CollisionGroup defines a group (or label) for a Collider to take part in. This only serves to group certain Colliders together but doesn't change any behavior unless the active CollisionTable is configured to do so.</p>
+<h1 id="collisiontable">CollisionTable</h1>
+<p>A CollisionTable is a resource property set on <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/physics/collisionoverview/physicsspace.md">PhysicsSpace</a> that defines pair-wise CollisionGroup relationships known as CollisionFilters. These filters control if a collision happens and if extra events are sent between group pairings.</p>
+<h2 id="collisionfilters">CollisionFilters</h2>
+<p>A <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/collisionfilter.md">CollisionFilter</a> can be used to control if collisions happen between pairs of CollisionGroups. There are three primary states of a CollisionFilter:
+ - <strong>Resolve:</strong> The default state for a filter. Says that collision resolution should happen as normal.
+ - <strong>SkipResolution:</strong> Collision detection should be run as normal but resolution should not happen. This allows configuring pairs to be ghost collisions while still getting events.
+ - <strong>SkipDetection:</strong> Collision detection should be skipped. Skipping collision detection also implies skipping collision resolution. This option is typically only set for performance reasons. This can also be used to prevent collision events from being sent to make gameplay logic easier.</p>
+<p>Additional information can be configured on a <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/collisionfilter.md">CollisionFilter</a> to send out events through the use of CollisionFilterBlocks.</p>
+<h3 id="collisionfilterblocks">CollisionFilterBlocks</h3>
+<p>A <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/collisionfilterblock.md">CollisionFilterBlock</a> is a sub-component on CollisionFilter used to control what kinds of events are sent out between groups. The current supported block types are:
+ - <strong>CollisionStartBlock:</strong> Sends out the GroupCollisionStarted event when this grouping has a CollisionStarted.
+ - <strong>CollisionPersistedBlock:</strong> Sends out the GroupCollisionPersisted event when this grouping has a CollisionPersisted.
+ - <strong>CollisionEndBlock:</strong> Sends out the GroupCollisionEnded event when this grouping has a CollisionEnded.
+ - <strong>PreSolveBlock:</strong> Sent out before collision is resolved. Allows altering information before a collision has happened.</p>
+<p>All blocks can configure which groups in the filter to send to. The <code>SendEventsTo</code> properties control which objects in the pairing should get the event. The <code>A</code> and <code>B</code> referred to are in the same order as the GroupA  and GroupB  properties of the filter. If a filter has GroupA and GroupB as the same value, then this order is not defined.</p>
+<p>Additionally, filter blocks contain the EventOverride  property that lets the user send out a custom event name instead of the default names. Note that these names do not currently show up in the <code>Events</code> namespace and must be connected to with a string literal.</p>
+<p>The PreSolveBlock is a special block that should be used sparingly. As <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/presolveevent.md">PreSolveEvent</a> before collisions are resolved. This event does not expect any drastic changes to the scene, such as removing components. Any complex behavior other than changing property values may crash the engine.</p>
+<h1 id="troubleshooting">Troubleshooting</h1>
+<p>One of the most common issues when using CollisionGroups and CollisionTables is forgetting to set the correct CollisionTable resource on the <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/physics/collisionoverview/physicsspace.md">PhysicsSpace</a>. Additionally, see <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/physics/collisionoverview/physicstroubleshooting/whyaretheynotcolliding.md">WhyAreTheyNotColliding</a> for other common collision issues.</p>
+<h1 id="related-materials">Related Materials</h1>
+<h2 id="manual">Manual</h2>
+<ul>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/physics/collisionoverview/collisionevents.md">collisionevents.md</a></li>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/physics/collisionoverview/physicsspace.md">physicsspace.md</a></li>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/physics/collisionoverview/colliders.md">colliders.md</a></li>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/physics/collisionoverview/physicstroubleshooting/whyaretheynotcolliding.md">whyaretheynotcolliding.md</a></li>
+</ul>
+<h2 id="reference">Reference</h2>
+<ul>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/collisiongroup.md">CollisionGroup</a></li>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/collisiontable.md">CollisionTable</a></li>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/collisionfilter.md">CollisionFilter</a></li>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/collisionevent.md">CollisionEvent</a></li>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/collisiongroupevent.md">CollisionGroupEvent</a></li>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/presolveevent.md">PreSolveEvent</a></li>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/collisionfilterblock.md">CollisionFilterBlock</a></li>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/collisionstartblock.md">CollisionStartBlock</a></li>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/collisionpersistedblock.md">CollisionPersistedBlock</a></li>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/collisionendblock.md">CollisionEndBlock</a></li>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/presolveblock.md">PreSolveBlock</a> </li>
+</ul>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../../physicseffectsandregions/buoyancyeffect/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../../physicseffectsandregions/buoyancyeffect/" class="btn btn-xs btn-link">
+        Buoyancy Effect
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../collisionevents/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../collisionevents/" class="btn btn-xs btn-link">
+        Collision Events
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="col-md-12 wm-page-content">
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/noraj/mkdocs-windmill-dark">Windmill Dark</a> theme by Alexandre ZANNI (noraj).</p>
+</footer>
+
+</body>
+</html>

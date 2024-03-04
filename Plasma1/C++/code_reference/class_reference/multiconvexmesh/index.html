@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="author" content="PlasmaDev">
+    <link rel="canonical" href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C%2B%2B/code_reference/class_reference/multiconvexmesh/">
+    <link rel="shortcut icon" href="../../../../../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Multiconvexmesh - PlasmaDocs</title>
+    <link href="../../../../../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../../../../../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../../../../../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../../../../css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../../../../../js/jquery-3.2.1.min.js"></script>
+    <script src="../../../../../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../../../../../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '../../../../..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+        ];
+
+    </script>
+    <script src="../../../../../js/base.js"></script>
+      <script src="../../../../../search/main.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../multiconvexmeshcollider/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../multiconvexmeshcollider/" class="btn btn-xs btn-link">
+        Multiconvexmeshcollider
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../mousemanipulation/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../mousemanipulation/" class="btn btn-xs btn-link">
+        Mousemanipulation
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <p><code>Resource</code> <code>Physics</code></p>
+<p>(NOTE) Represents a collection of convex meshes that was decomposed from a mesh.</p>
+<table>
+<thead>
+<tr>
+<th>Methods</th>
+<th>Properties</th>
+<th>Base Classes</th>
+<th>Derived Classes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/multiconvexmesh.md#createruntime-plasma-engin"> CreateRuntime</a></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/multiconvexmesh.md#modified-plasma-engine-doc"> Modified</a></td>
+<td>Resource</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/multiconvexmesh.md#runtimeclone-plasma-engine"> RuntimeClone</a></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/multiconvexmesh.md#submeshes-plasma-engine-do"> SubMeshes</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/multiconvexmesh.md#updateandnotifyifmodifie"> UpdateAndNotifyIfModified</a></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/multiconvexmesh.md#valid-plasma-engine-docume"> Valid</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/multiconvexmesh.md#validate-plasma-engine-doc"> Validate</a></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/multiconvexmesh.md#vertices-plasma-engine-doc"> Vertices</a></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>#  Properties</p>
+<hr />
+<p>#  Modified : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.md">boolean</a></p>
+<p><code>read-only</code></p>
+<blockquote>
+<p>Is the resource currently modified?
+``` lang=cpp, name=Lightning
+var Modified : Boolean</p>
+</blockquote>
+<hr />
+<p>#  SubMeshes : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/multiconvexmeshsubmeshdata.md">multiconvexmeshsubmeshdata</a></p>
+<p><code>read-only</code></p>
+<blockquote>
+<p>A collection of sub-convex meshes.
+``` lang=cpp, name=Lightning
+var SubMeshes : MultiConvexMeshSubMeshData</p>
+</blockquote>
+<hr />
+<p>#  Valid : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.md">boolean</a></p>
+<p><code>read-only</code></p>
+<blockquote>
+<p>Is the resource correctly setup? Typically involves a mis-match in indices and vertices.
+``` lang=cpp, name=Lightning
+var Valid : Boolean</p>
+</blockquote>
+<hr />
+<p>#  Vertices : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/multiconvexmeshvertexdata.md">multiconvexmeshvertexdata</a></p>
+<p><code>read-only</code></p>
+<blockquote>
+<p>The vertex buffer data of this mesh.
+``` lang=cpp, name=Lightning
+var Vertices : MultiConvexMeshVertexData</p>
+</blockquote>
+<hr />
+<p>#  Methods</p>
+<hr />
+<p>#  CreateRuntime : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/multiconvexmesh.md">multiconvexmesh</a></p>
+<p><code>static</code></p>
+<blockquote>
+<p>Creates a MultiConvexMesh for run-time modifications.
+|Name|Type|Description|
+|---|---|---|
+<code>lang=cpp, name=Lightning
+function CreateRuntime() : MultiConvexMesh</code> </p>
+</blockquote>
+<hr />
+<p>#  RuntimeClone : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/multiconvexmesh.md">multiconvexmesh</a></p>
+<blockquote>
+<p>Creates a clone of this mesh for run-time modifications.
+|Name|Type|Description|
+|---|---|---|
+<code>lang=cpp, name=Lightning
+function RuntimeClone() : MultiConvexMesh</code> </p>
+</blockquote>
+<hr />
+<p>#  UpdateAndNotifyIfModified : Void</p>
+<blockquote>
+<p>Rebuild all extra mesh information if it is currently modified. This includes things like the center of mass, volume, aabb, edge info and more.
+|Name|Type|Description|
+|---|---|---|
+<code>lang=cpp, name=Lightning
+function UpdateAndNotifyIfModified()</code> </p>
+</blockquote>
+<hr />
+<p>#  Validate : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.md">boolean</a></p>
+<blockquote>
+<p>Check if the mesh is valid. Optionally throw a script exception if it is invalid.
+|Name|Type|Description|
+|---|---|---|
+|throwExceptionIfInvalid|<a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.md">boolean</a>| |
+<code>lang=cpp, name=Lightning
+function Validate(throwExceptionIfInvalid : Boolean) : Boolean</code> </p>
+</blockquote>
+<hr />
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../multiconvexmeshcollider/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../multiconvexmeshcollider/" class="btn btn-xs btn-link">
+        Multiconvexmeshcollider
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../mousemanipulation/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../mousemanipulation/" class="btn btn-xs btn-link">
+        Mousemanipulation
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="col-md-12 wm-page-content">
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/noraj/mkdocs-windmill-dark">Windmill Dark</a> theme by Alexandre ZANNI (noraj).</p>
+</footer>
+
+</body>
+</html>

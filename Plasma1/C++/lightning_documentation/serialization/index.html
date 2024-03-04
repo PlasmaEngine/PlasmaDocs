@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="author" content="PlasmaDev">
+    <link rel="canonical" href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C%2B%2B/lightning_documentation/serialization/">
+    <link rel="shortcut icon" href="../../../../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Serialization - PlasmaDocs</title>
+    <link href="../../../../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../../../../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../../../../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../../../css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../../../../js/jquery-3.2.1.min.js"></script>
+    <script src="../../../../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../../../../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '../../../..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "Serialization", url: "#_top", children: [
+          ]},
+        ];
+
+    </script>
+    <script src="../../../../js/base.js"></script>
+      <script src="../../../../search/main.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../../plasma_source_documentation/components/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../../plasma_source_documentation/components/" class="btn btn-xs btn-link">
+        Component Example
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../librarybuilder/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../librarybuilder/" class="btn btn-xs btn-link">
+        Library Builder
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <h1 id="serialization">Serialization</h1>
+<p>When binding Lightning it is common to use reflection to serialize members or properties of a class written in Lightning. This guide shows common approaches that we use to serialize data types. Because C++ classes can be bound using Lightning's binding library, you can also technically use this to serialize C++ classes (though most game engines provide this functionality themselves).</p>
+<p>At the end of the day, serialization always comes down to writing out primitives such as integers, floats, strings, and characters, as well as representing larger data structures such as arrays, maps and objects.</p>
+<p>Every Lightning class or struct creates a BoundType which defines all the members (fields, properties, and methods) on that type (binding a C++ type also creates this). A Property is a member that has a get or set function, and a Field is a typical member variable. In Lightning, a Field is implicitly a Property and automatically implements a get and set function. This means we can always just generically use Property instead of having to distinguish from Field and Property, because Field is-a Property.</p>
+<p>If your serialization format reads in names of members, then you can find a data-field or property via:</p>
+<pre><code class="language-csharp">
+void SerializeMember(const String& name, BoundType* type)
+{
+  // This will find an instance member that we can call 'get' or 'set' on
+  Property* member = boundType->FindPropertyOrField(name, FindMemberOptions::None);
+
+  // If we didn't find the member, early out
+  if (member == nullptr)
+  {
+    printf("Unable to find member of name %s on type %s",
+    return;
+  }
+
+  // Because the user can choose to define only 'get' or only 'set', then we must check for null
+  if (member->Get == nullptr || member->Set == nullptr)
+    return;
+
+  // Check if we're deserializing / reading, or if we're writing (this is your variable)
+  if (reading)
+  {
+    // Getters take no parameters, and return a value
+    ExceptionReport report;
+    Call call(member->Get, state);
+    call.Invoke(report);
+
+    if (report.HasThrownExceptions())
+      return;
+
+
+  }
+}
+</code></pre>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../../plasma_source_documentation/components/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../../plasma_source_documentation/components/" class="btn btn-xs btn-link">
+        Component Example
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../librarybuilder/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../librarybuilder/" class="btn btn-xs btn-link">
+        Library Builder
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="col-md-12 wm-page-content">
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/noraj/mkdocs-windmill-dark">Windmill Dark</a> theme by Alexandre ZANNI (noraj).</p>
+</footer>
+
+</body>
+</html>

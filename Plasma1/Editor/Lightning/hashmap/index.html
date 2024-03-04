@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="author" content="PlasmaDev">
+    <link rel="canonical" href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/Lightning/hashmap/">
+    <link rel="shortcut icon" href="../../../../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>HashMap - PlasmaDocs</title>
+    <link href="../../../../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../../../../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../../../../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../../../css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../../../../js/jquery-3.2.1.min.js"></script>
+    <script src="../../../../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../../../../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '../../../..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "HashMap", url: "#_top", children: [
+          ]},
+        ];
+
+    </script>
+    <script src="../../../../js/base.js"></script>
+      <script src="../../../../search/main.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../inheritance/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../inheritance/" class="btn btn-xs btn-link">
+        Inheritance
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../functions/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../functions/" class="btn btn-xs btn-link">
+        Functions
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <h1 id="hashmap">HashMap</h1>
+<p>A HashMap is a templated data structure that can map unique keys of type A to values of type B (where A and B can be the same type).</p>
+<p># Declaration</p>
+<p>NOTE: The types <code>HashMap</code> and <code>KeyValue</code> not currently appear in the <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types.md">lightning_base_types</a> list and does not currently show up in code completion suggestions (T552) during initial declaration.</p>
+<p>HashMap declaration is similiar to the declaration of any templated type in Lightning. When a HashMap is created, by default, it has no elements.</p>
+<pre><code class="language-csharp">
+var namesToObjects = HashMap[String, Cog]();
+var idToCost = HashMap[Integer, Real]();
+var spawnerToEnemyType = HashMap[Cog, Archetype]();
+var enemyType = HashMap[Archetype, Integer]();
+</code></pre>
+
+<p>HashMaps have a variety of uses. One may use them to keep track of objects at runtime by an alternate name, or to keep count of how many of each enemy archetype a spawner has created at runtime. Below are some simple example of HashMap functionality which map unique <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer.md">integer</a> keys to non-unique <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/string.md">string</a> values.</p>
+<p>## Initialization
+It is common for a HashMap to be populated at runtime, but it is also possible to define elements within an initializer list.</p>
+<pre><code class="language-csharp">
+var hash = HashMap[Integer, String]()
+{
+  {1, "one"},
+  {2, "two"},
+  {3, "three"}
+};
+this.PrintHashMap(hash);
+</code></pre>
+<pre><code class="language-csharp">
+HashMap[Integer, String] (20744110) 
+{
+  {2, two}
+  {1, one}
+  {3, three}
+}
+</code></pre>
+
+<p>Notice that the order in which the elements are printed is not the order in which they were added to the HashMap. This is due to HashMaps having no inherent order, unlike <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/array_t.md">Arrays</a>. Instead of the pairs being printed in an indexed order they are printed in an arbitrary order based on the hash of the pair.</p>
+<p>NOTE: The HashMap templated type is currently lacking templated print functionality similiar to <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/Lightning/arrays.md">Arrays</a>. The <code>PrintHashMap</code> function used in this page is implemented below:</p>
+<pre><code class="language-csharp">
+function PrintHashMap(hash : HashMap[Integer, String])
+{
+  Console.WriteLine("`hash` \n{");
+  foreach(var pair in hash.All)
+  {
+    Console.WriteLine("  {`pair.Key`, `pair.Value`}");
+  }
+  Console.WriteLine("}");
+}
+</code></pre>
+
+<p># HashMap Access
+HashMap elements can be accessed for reading or writing in a few different ways which have different primary use cases.</p>
+<p>## The <code>[]</code> Operator
+The <code>[]</code> (pronounced subscript) operator is the primary way to access any <em>value// within a HashMap. When a valid //key</em> is passed to the subscript operator the corresponding value is returned from the HashMap. The <code>[]</code> operator can also be used to assign new values to keys within the HashMap.</p>
+<pre><code class="language-csharp">
+var hash = HashMap[Integer, String]()
+{
+  {1, "one"},
+  {2, "two"}
+};
+hash[3] = "three";
+Console.WriteLine(hash[1]);
+Console.WriteLine(hash[2]);
+Console.WriteLine(hash[3]);
+</code></pre>
+<pre><code class="language-csharp">
+one
+two
+three
+</code></pre>
+
+<p>IMPORTANT: If an invalid key is passed to the <code>[]</code> operator a runtime exception will be thrown: <img alt="image" src="https://media.githubusercontent.com/media/PlasmaEngine/PlasmaDocs/master/doc_files/90723.png" /></p>
+<p>## Get Functions
+Another way to access the <code>KeyValue</code> pairs of a HashMap is to use the <code>get</code> functions.</p>
+<p>### HashMap.Get
+<code>HashMap.Get</code> behaves the same as the <code>[]</code> operator, as it is the function actually called by the <code>[]</code> operator. However, being a function, <code>Get</code> can be referenced by a delegate.</p>
+<pre><code class="language-csharp">
+var hash = HashMap[Integer, String]()
+{
+  {1, "one"},
+  {2, "two"},
+  {3, "three"}
+};
+Console.WriteLine(hash.Get(1));
+Console.WriteLine(hash.Get(2));
+Console.WriteLine(hash.Get(3));
+</code></pre>
+<pre><code class="language-csharp">
+one
+two
+three
+</code></pre>
+
+<p>### HashMap.GetOrDefault
+<code>HashMap.GetOrDefault</code> behaves the same as <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/Lightning/hashmap/.md#hashmap-get">Get</a>, but instead of throwing an exception when passed an invalid key it returns a <em>default// value that is the same type as the //values</em> of the HashMap.</p>
+<pre><code class="language-csharp">
+var hash = HashMap[Integer, String]()
+{
+  {1, "one"},
+  {2, "two"},
+  {3, "three"}
+};
+Console.WriteLine(hash.GetOrDefault(1, "default"));
+Console.WriteLine(hash.GetOrDefault(2, "default"));
+Console.WriteLine(hash.GetOrDefault(3, "default"));
+Console.WriteLine(hash.GetOrDefault(4, "default"));
+Console.WriteLine(hash.GetOrDefault(5));
+</code></pre>
+<pre><code class="language-csharp">
+one
+two
+three
+default
+(null) String
+</code></pre>
+
+<p>### HashMap.GetOrError
+<code>GetOrError</code> has the same functionality as <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/Lightning/hashmap/.md#hashmap-get">Get</a>, the only difference being that it is not called by the <code>[]</code> operator.</p>
+<p># Adding to a HashMap
+There are multiple ways to add <code>KeyValue</code> pairs to HashMaps. <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/Lightning/hashmap/.md#hashmap-add">Add</a>, <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/Lightning/hashmap/.md#hashmap-set">Set</a>, and the <code>[]</code> operator can all be used to add <code>KeyValue</code> pairs to the HashMap.</p>
+<p>## HashMap.Add
+<code>Add</code> takes a <em>key</em> and //value//, adding the pair to the HashMap. If the given key already exists then a runtime exception will be thrown.</p>
+<pre><code class="language-csharp">
+var hash = HashMap[Integer, String]();
+hash.Add(1, "one");
+hash.Add(2, "two");
+hash.Add(3, "three");
+this.PrintHashMap(hash);
+</code></pre>
+<pre><code class="language-csharp">
+HashMap[Integer, String] (20744110) 
+{
+  {2, two}
+  {1, one}
+  {3, three}
+}
+</code></pre>
+
+<p>It should be noted that the <code>Add</code> function is called for each <code>KeyValue</code> pair when a HashMap is populated using an initializer list.</p>
+<p>## HashMap.Set
+<code>Set</code> is very similar to <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/Lightning/hashmap/.md#hashmap-add">Add</a>. <code>Set</code> takes a <em>key// and //value//, adding the pair to the HashMap if the key does not exist. If the key does exist then the //value</em> paired with the given key will be replaced with the //given value//.</p>
+<pre><code class="language-csharp">
+var hash = HashMap[Integer, String]();
+hash.Set(1, "one");
+hash.Set(2, "two");
+hash.Set(2, "three");
+this.PrintHashMap(hash);
+</code></pre>
+<pre><code class="language-csharp">
+HashMap[Integer, String] (20744110) 
+{
+  {2, three}
+  {1, one}
+}
+</code></pre>
+
+<p>### HashMap.SetOrOverwrite
+The relationship of <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/Lightning/hashmap/.md#hashmap-set">Set</a> and <code>SetOrOverwrite</code> is simliar to that of <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/Lightning/hashmap/.md#hashmap-get">Get</a> and <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/Lightning/hashmap/.md#hashmap-getorerror">GetOrError</a> in that they have the same behavior. However, like <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/Lightning/hashmap/.md#hashmap-get">Get</a>, <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/Lightning/hashmap/.md#hashmap-set">Set</a> is called by the <code>[]</code> operator during assignment.</p>
+<pre><code class="language-csharp">
+var hash = HashMap[Integer, String]();
+hash.SetOrOverwrite(1, "one");
+hash.SetOrOverwrite(2, "two");
+hash.SetOrOverwrite(2, "three");
+this.PrintHashMap(hash);
+</code></pre>
+<pre><code class="language-csharp">
+HashMap[Integer, String] (20744110) 
+{
+  {2, three}
+  {1, one}
+}
+</code></pre>
+
+<p>### HashMap.SetOrIgnore
+<code>SetOrIgnore</code> behaves the same as <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/Lightning/hashmap/.md#hashmap-set">Set</a> except if the given <em>key</em> already exists the function returns leaving the HashMap unmodified.</p>
+<pre><code class="language-csharp">
+var hash = HashMap[Integer, String]();
+hash.SetOrIgnore(1, "one");
+hash.SetOrIgnore(2, "two");
+hash.SetOrIgnore(2, "three");
+this.PrintHashMap(hash);
+</code></pre>
+<pre><code class="language-csharp">
+HashMap[Integer, String] (20744110) 
+{
+  {2, two}
+  {1, one}
+}
+</code></pre>
+
+<p>### HashMap.SetOrError
+<code>SetOrError</code> follows a similiar behavior to <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/Lightning/hashmap/.md#hashmap-getorerror">GetOrError</a>. If the key passed to <code>SetOrError</code> already exists in the HashMap then an exception will be thrown.</p>
+<p><img alt="image" src="https://media.githubusercontent.com/media/PlasmaEngine/PlasmaDocs/master/doc_files/90732.png" /></p>
+<p># HashMap Container Operations
+ ## HashMap.Clear
+The <code>Clear</code> function simply removes all <code>KeyValue</code> pairs from the HashMap.</p>
+<pre><code class="language-csharp">
+var hash = HashMap[Integer, String]();
+hash[1] = "one";
+hash[2] = "two";
+hash[3] = "three";
+this.PrintHashMap(hash);
+hash.Clear();
+this.PrintHashMap(hash);
+</code></pre>
+<pre><code class="language-csharp">
+HashMap[Integer, String] (20712538) 
+{
+  {2, two}
+  {1, one}
+  {3, three}
+}
+HashMap[Integer, String] (20712538) 
+{
+}
+</code></pre>
+
+<p>## HashMap.Contains
+<code>Contains</code> takes a parameter matching the <em>key</em> type of the HashMap and returns <code>true</code> if the given key exists in the HashMap.</p>
+<pre><code class="language-csharp">
+var hash = HashMap[Integer, String]();
+hash[1] = "one";
+hash[2] = "two";
+hash[3] = "three";
+this.PrintHashMap(hash);
+Console.WriteLine("This HashMap contains the key 2: `hash.Contains(2)`");
+Console.WriteLine("This HashMap contains the key 4: `hash.Contains(4)`");
+</code></pre>
+<pre><code class="language-csharp">
+HashMap[Integer, String] (20713030) 
+{
+  {2, two}
+  {1, one}
+  {3, three}
+}
+This HashMap contains the key 2: true
+This HashMap contains the key 4: false
+</code></pre>
+
+<p># HashMap Range Functions
+There are a number of HashMap properties providing iterable ranges that are particularly useful for examining each pair in a HashMap.</p>
+<p>## HashMap.All
+Contains an iterable range of all <code>KeyValue</code> pairs in the HashMap.</p>
+<pre><code class="language-csharp">
+function PrintHashMap(hash : HashMap[Integer, String])
+{
+  Console.WriteLine("`hash` \n{");
+  foreach(var pair in hash.All)
+  {
+    Console.WriteLine("  {`pair.Key`, `pair.Value`}");
+  }
+  Console.WriteLine("}");
+}
+</code></pre>
+<p>The <code>PrintHashMap</code> function is an excellent example of how one may use <code>All</code>.</p>
+<p>## HashMap.Keys &amp; HashMap.Values
+<code>Keys</code> and <code>Values</code> return iterable ranges of containing the keys and values in the HashMap correspondingly.</p>
+<p># HashMap.Count
+<code>Count</code> returns the number of pairs in the HashMap.</p>
+<p># Related Materials
+ ## Manual
+- <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/Lightning/arrays.md">Arrays</a>
+ ## Reference
+- <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/array_t.md">Arrays</a>
+- <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer.md">integer</a>
+- <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/string.md">string</a></p>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../inheritance/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../inheritance/" class="btn btn-xs btn-link">
+        Inheritance
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../functions/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../functions/" class="btn btn-xs btn-link">
+        Functions
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="col-md-12 wm-page-content">
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/noraj/mkdocs-windmill-dark">Windmill Dark</a> theme by Alexandre ZANNI (noraj).</p>
+</footer>
+
+</body>
+</html>

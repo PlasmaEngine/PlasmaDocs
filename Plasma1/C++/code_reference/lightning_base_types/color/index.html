@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="author" content="PlasmaDev">
+    <link rel="canonical" href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C%2B%2B/code_reference/lightning_base_types/color/">
+    <link rel="shortcut icon" href="../../../../../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Color - PlasmaDocs</title>
+    <link href="../../../../../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../../../../../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../../../../../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../../../../css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../../../../../js/jquery-3.2.1.min.js"></script>
+    <script src="../../../../../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../../../../../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '../../../../..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+        ];
+
+    </script>
+    <script src="../../../../../js/base.js"></script>
+      <script src="../../../../../search/main.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../colors/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../colors/" class="btn btn-xs btn-link">
+        Colors
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../byte/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../byte/" class="btn btn-xs btn-link">
+        Byte
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <p><code>Core</code></p>
+<table>
+<thead>
+<tr>
+<th>Methods</th>
+<th>Properties</th>
+<th>Base Classes</th>
+<th>Derived Classes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/color.md#frombytes-plasma-engine-do"> FromBytes</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/color.md#fromhexstring-plasma-engin"> FromHexString</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/color.md#fromhsva-plasma-engine-doc"> FromHsva</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/color.md#frominteger-plasma-engine"> FromInteger</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/color.md#tobytes-plasma-engine-docu"> ToBytes</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/color.md#tohexstring-plasma-engine"> ToHexString</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/color.md#tohsva-plasma-engine-docum"> ToHsva</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/color.md#tointeger-plasma-engine-do"> ToInteger</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>#  Properties</p>
+<hr />
+<p>#  Methods</p>
+<hr />
+<p>#  FromBytes : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real4.md">real4</a></p>
+<p><code>static</code></p>
+<blockquote>
+<p>Converts RGB Bytes [0-255] into an RGBA Real4 (alpha defaults to 1.0). Integer is used in place of Byte for convenience.
+|Name|Type|Description|
+|---|---|---|
+|r|<a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer.md">integer</a>| |
+|g|<a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer.md">integer</a>| |
+|b|<a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer.md">integer</a>| |
+<code>lang=cpp, name=Lightning
+function FromBytes(r : Integer, g : Integer, b : Integer) : Real4</code> </p>
+</blockquote>
+<hr />
+<p>#  FromBytes : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real4.md">real4</a></p>
+<p><code>static</code></p>
+<blockquote>
+<p>Converts RGBA Bytes [0-255] into an RGBA Real4. Integer is used in place of Byte for convenience.
+|Name|Type|Description|
+|---|---|---|
+|r|<a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer.md">integer</a>| |
+|g|<a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer.md">integer</a>| |
+|b|<a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer.md">integer</a>| |
+|a|<a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer.md">integer</a>| |
+<code>lang=cpp, name=Lightning
+function FromBytes(r : Integer, g : Integer, b : Integer, a : Integer) : Real4</code> </p>
+</blockquote>
+<hr />
+<p>#  FromBytes : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real4.md">real4</a></p>
+<p><code>static</code></p>
+<blockquote>
+<p>Converts RGBA Bytes [0-255] into an RGBA Real4. Integer is used in place of Byte for convenience.
+|Name|Type|Description|
+|---|---|---|
+|rgba|<a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer4.md">integer4</a>| |
+<code>lang=cpp, name=Lightning
+function FromBytes(rgba : Integer4) : Real4</code> </p>
+</blockquote>
+<hr />
+<p>#  FromHexString : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real4.md">real4</a></p>
+<p><code>static</code></p>
+<blockquote>
+<p>Converts a hex String into an RGBA Real4. Must be a 3, 4, 6, or 8 digit RGB[A] representation with an optional preceding '#' or '0x' (case insensitive). E.g. #f00, #F00F, ff0000, 0x00FF00FF.
+|Name|Type|Description|
+|---|---|---|
+|value|<a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/string.md">string</a>| |
+<code>lang=cpp, name=Lightning
+function FromHexString(value : String) : Real4</code> </p>
+</blockquote>
+<hr />
+<p>#  FromHsva : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real4.md">real4</a></p>
+<p><code>static</code></p>
+<blockquote>
+<p>Converts HSV Reals into an RGBA Real4 (alpha defaults to 1.0). The hue parameter will wrap if is beyond [0-1]. The saturation and value parameters may go beyond [0-1] to represent HDR values.
+|Name|Type|Description|
+|---|---|---|
+|h|<a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.md">real</a>| |
+|s|<a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.md">real</a>| |
+|v|<a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.md">real</a>| |
+<code>lang=cpp, name=Lightning
+function FromHsva(h : Real, s : Real, v : Real) : Real4</code> </p>
+</blockquote>
+<hr />
+<p>#  FromHsva : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real4.md">real4</a></p>
+<p><code>static</code></p>
+<blockquote>
+<p>Converts HSVA Reals into an RGBA Real4. The hue parameter will wrap if is beyond [0-1]. The saturation and value parameters may go beyond [0-1] to represent HDR values.
+|Name|Type|Description|
+|---|---|---|
+|h|<a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.md">real</a>| |
+|s|<a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.md">real</a>| |
+|v|<a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.md">real</a>| |
+|a|<a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.md">real</a>| |
+<code>lang=cpp, name=Lightning
+function FromHsva(h : Real, s : Real, v : Real, a : Real) : Real4</code> </p>
+</blockquote>
+<hr />
+<p>#  FromHsva : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real4.md">real4</a></p>
+<p><code>static</code></p>
+<blockquote>
+<p>Converts an HSVA Real4 into an RGBA Real4. The hue parameter will wrap if is beyond [0-1]. The saturation and value parameters may go beyond [0-1] to represent HDR values.
+|Name|Type|Description|
+|---|---|---|
+|hsva|<a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real4.md">real4</a>| |
+<code>lang=cpp, name=Lightning
+function FromHsva(hsva : Real4) : Real4</code> </p>
+</blockquote>
+<hr />
+<p>#  FromInteger : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real4.md">real4</a></p>
+<p><code>static</code></p>
+<blockquote>
+<p>Converts an RGBA packed Integer into an RGBA Real4. Endianness is handled so that 0x00FF00FF always means full green and full alpha.
+|Name|Type|Description|
+|---|---|---|
+|rgba|<a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer.md">integer</a>| |
+<code>lang=cpp, name=Lightning
+function FromInteger(rgba : Integer) : Real4</code> </p>
+</blockquote>
+<hr />
+<p>#  FromInteger : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real4.md">real4</a></p>
+<p><code>static</code></p>
+<blockquote>
+<p>Converts an RGB packed Integer and an alpha Byte [0-255] into an RGBA Real4. Endianness is handled so that 0x00FF00FF always means full green and full alpha.
+|Name|Type|Description|
+|---|---|---|
+|rgb|<a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer.md">integer</a>| |
+|a|<a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer.md">integer</a>| |
+<code>lang=cpp, name=Lightning
+function FromInteger(rgb : Integer, a : Integer) : Real4</code> </p>
+</blockquote>
+<hr />
+<p>#  FromInteger : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real4.md">real4</a></p>
+<p><code>static</code></p>
+<blockquote>
+<p>Converts an RGB packed Integer and an alpha Real into an RGBA Real4. Endianness is handled so that 0x00FF00FF always means full green and full alpha.
+|Name|Type|Description|
+|---|---|---|
+|rgb|<a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer.md">integer</a>| |
+|a|<a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.md">real</a>| |
+<code>lang=cpp, name=Lightning
+function FromInteger(rgb : Integer, a : Real) : Real4</code> </p>
+</blockquote>
+<hr />
+<p>#  ToBytes : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer4.md">integer4</a></p>
+<p><code>static</code></p>
+<blockquote>
+<p>Converts RGB Reals into an RGBA Integer4 [0-255] (alpha defaults to 255). Integer is used in place of Byte for convenience.
+|Name|Type|Description|
+|---|---|---|
+|r|<a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.md">real</a>| |
+|g|<a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.md">real</a>| |
+|b|<a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.md">real</a>| |
+<code>lang=cpp, name=Lightning
+function ToBytes(r : Real, g : Real, b : Real) : Integer4</code> </p>
+</blockquote>
+<hr />
+<p>#  ToBytes : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer4.md">integer4</a></p>
+<p><code>static</code></p>
+<blockquote>
+<p>Converts RGBA Reals into an RGBA Integer4 [0-255]. Integer is used in place of Byte for convenience.
+|Name|Type|Description|
+|---|---|---|
+|r|<a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.md">real</a>| |
+|g|<a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.md">real</a>| |
+|b|<a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.md">real</a>| |
+|a|<a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.md">real</a>| |
+<code>lang=cpp, name=Lightning
+function ToBytes(r : Real, g : Real, b : Real, a : Real) : Integer4</code> </p>
+</blockquote>
+<hr />
+<p>#  ToBytes : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer4.md">integer4</a></p>
+<p><code>static</code></p>
+<blockquote>
+<p>Converts an RGBA Real4 into an RGBA Integer4 [0-255]. Integer is used in place of Byte for convenience.
+|Name|Type|Description|
+|---|---|---|
+|rgba|<a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real4.md">real4</a>| |
+<code>lang=cpp, name=Lightning
+function ToBytes(rgba : Real4) : Integer4</code> </p>
+</blockquote>
+<hr />
+<p>#  ToHexString : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/string.md">string</a></p>
+<p><code>static</code></p>
+<blockquote>
+<p>Converts RGB Reals into the 8 digit hex format RRGGBBAA (alpha defaults to 1.0 so the end will always be FF).
+|Name|Type|Description|
+|---|---|---|
+|r|<a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.md">real</a>| |
+|g|<a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.md">real</a>| |
+|b|<a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.md">real</a>| |
+<code>lang=cpp, name=Lightning
+function ToHexString(r : Real, g : Real, b : Real) : String</code> </p>
+</blockquote>
+<hr />
+<p>#  ToHexString : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/string.md">string</a></p>
+<p><code>static</code></p>
+<blockquote>
+<p>Converts RGBA Reals into the 8 digit hex format RRGGBBAA.
+|Name|Type|Description|
+|---|---|---|
+|r|<a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.md">real</a>| |
+|g|<a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.md">real</a>| |
+|b|<a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.md">real</a>| |
+|a|<a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.md">real</a>| |
+<code>lang=cpp, name=Lightning
+function ToHexString(r : Real, g : Real, b : Real, a : Real) : String</code> </p>
+</blockquote>
+<hr />
+<p>#  ToHexString : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/string.md">string</a></p>
+<p><code>static</code></p>
+<blockquote>
+<p>Converts an RGBA Real4 into the 8 digit hex format RRGGBBAA.
+|Name|Type|Description|
+|---|---|---|
+|rgba|<a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real4.md">real4</a>| |
+<code>lang=cpp, name=Lightning
+function ToHexString(rgba : Real4) : String</code> </p>
+</blockquote>
+<hr />
+<p>#  ToHsva : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real4.md">real4</a></p>
+<p><code>static</code></p>
+<blockquote>
+<p>Converts RGB Reals into an HSVA Real4 (alpha defaults to 1.0).
+|Name|Type|Description|
+|---|---|---|
+|r|<a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.md">real</a>| |
+|g|<a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.md">real</a>| |
+|b|<a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.md">real</a>| |
+<code>lang=cpp, name=Lightning
+function ToHsva(r : Real, g : Real, b : Real) : Real4</code> </p>
+</blockquote>
+<hr />
+<p>#  ToHsva : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real4.md">real4</a></p>
+<p><code>static</code></p>
+<blockquote>
+<p>Converts RGBA Reals into an HSVA Real4.
+|Name|Type|Description|
+|---|---|---|
+|r|<a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.md">real</a>| |
+|g|<a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.md">real</a>| |
+|b|<a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.md">real</a>| |
+|a|<a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.md">real</a>| |
+<code>lang=cpp, name=Lightning
+function ToHsva(r : Real, g : Real, b : Real, a : Real) : Real4</code> </p>
+</blockquote>
+<hr />
+<p>#  ToHsva : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real4.md">real4</a></p>
+<p><code>static</code></p>
+<blockquote>
+<p>Converts an RGBA Real4 into an HSVA Real4.
+|Name|Type|Description|
+|---|---|---|
+|rgba|<a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real4.md">real4</a>| |
+<code>lang=cpp, name=Lightning
+function ToHsva(rgba : Real4) : Real4</code> </p>
+</blockquote>
+<hr />
+<p>#  ToInteger : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer.md">integer</a></p>
+<p><code>static</code></p>
+<blockquote>
+<p>Converts RGB Reals into an RGBA packed Integer (alpha defaults to 255). Endianness is handled so that 0x00FF00FF always means full green and full alpha.
+|Name|Type|Description|
+|---|---|---|
+|r|<a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.md">real</a>| |
+|g|<a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.md">real</a>| |
+|b|<a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.md">real</a>| |
+<code>lang=cpp, name=Lightning
+function ToInteger(r : Real, g : Real, b : Real) : Integer</code> </p>
+</blockquote>
+<hr />
+<p>#  ToInteger : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer.md">integer</a></p>
+<p><code>static</code></p>
+<blockquote>
+<p>Converts RGBA Reals into an RGBA packed Integer. Endianness is handled so that 0x00FF00FF always means full green and full alpha.
+|Name|Type|Description|
+|---|---|---|
+|r|<a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.md">real</a>| |
+|g|<a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.md">real</a>| |
+|b|<a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.md">real</a>| |
+|a|<a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.md">real</a>| |
+<code>lang=cpp, name=Lightning
+function ToInteger(r : Real, g : Real, b : Real, a : Real) : Integer</code> </p>
+</blockquote>
+<hr />
+<p>#  ToInteger : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer.md">integer</a></p>
+<p><code>static</code></p>
+<blockquote>
+<p>Converts an RGBA Real4 into an RGBA packed Integer. Endianness is handled so that 0x00FF00FF always means full green and full alpha.
+|Name|Type|Description|
+|---|---|---|
+|rgba|<a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real4.md">real4</a>| |
+<code>lang=cpp, name=Lightning
+function ToInteger(rgba : Real4) : Integer</code> </p>
+</blockquote>
+<hr />
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../colors/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../colors/" class="btn btn-xs btn-link">
+        Colors
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../byte/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../byte/" class="btn btn-xs btn-link">
+        Byte
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="col-md-12 wm-page-content">
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/noraj/mkdocs-windmill-dark">Windmill Dark</a> theme by Alexandre ZANNI (noraj).</p>
+</footer>
+
+</body>
+</html>

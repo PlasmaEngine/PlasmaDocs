@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="author" content="PlasmaDev">
+    <link rel="canonical" href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/graphics/materials/textures/">
+    <link rel="shortcut icon" href="../../../../../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Textures - PlasmaDocs</title>
+    <link href="../../../../../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../../../../../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../../../../../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../../../../css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../../../../../js/jquery-3.2.1.min.js"></script>
+    <script src="../../../../../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../../../../../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '../../../../..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "Textures", url: "#_top", children: [
+          ]},
+          {title: "Texture Builder", url: "#texture-builder", children: [
+              {title: "Texture Types", url: "#texture-types" },
+              {title: "Compression", url: "#compression" },
+          ]},
+          {title: "Related Materials", url: "#related-materials", children: [
+              {title: "Manual", url: "#manual" },
+              {title: "Code Reference", url: "#code-reference" },
+          ]},
+        ];
+
+    </script>
+    <script src="../../../../../js/base.js"></script>
+      <script src="../../../../../search/main.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../../models/mesh/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../../models/mesh/" class="btn btn-xs btn-link">
+        mesh
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../shaders/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../shaders/" class="btn btn-xs btn-link">
+        Shaders
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <h1 id="textures">Textures</h1>
+<p><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/texture.md">Textures</a> are a special type of image used to render 3D graphics. It's commonly mapped to <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/graphics/models/mesh.md">meshes</a>, <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/tutorials/graphics/particles.md">particles</a> and surfaces and it controls different aspects of rendering through colors, normals and masks and more.</p>
+<p>Textures are not a final picture of the object; they are inputs that, when combined with lighting and other visual effects, produce a variety of graphical results. One of the most important aspects of textures is the ability to be drawn at different sizes efficiently. This is accomplished through <a href="http://en.wikipedia.org/wiki/Mipmap">Mipmapping </a> and anisotropic filtering.</p>
+<p>For information on importing textures, see <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/graphics/adding_assets/adding_textures_and_sprites.md">adding_textures_and_sprites</a>.</p>
+<p>NOTE: Plasma only supports images up to 4096 x 4096 pixels. If a larger image is imported, Plasma will clamp it down to its maximum size.</p>
+<ul>
+<li>Due to Mipmapping and compression, it is highly recommended to use images with powers of 2 proportions. They DO NOT need to be squares, however.</li>
+<li>Plasma supports the following image types:</li>
+<li><strong>PNGs:</strong> Lossless and compressed. We highly recommend that you use it. </li>
+<li><strong>TGAs:</strong> Lossless and compressed.</li>
+<li><strong>TIFs:</strong> Lossless and compressed.</li>
+<li><strong>PSDs:</strong> Lossless but large in file size.</li>
+<li><strong>JPGs:</strong> Lossy. We do not recommend using it for final assets.</li>
+</ul>
+<h1 id="texture-builder">Texture Builder</h1>
+<p>The Texture Builder is a collection of settings used to convert your image file into a texture that's suitable for the game. They can be accessed by clicking on the texture in the Library Window.</p>
+<h2 id="texture-types">Texture Types</h2>
+<ul>
+<li><strong>Texture 2D:</strong> Standard 2D texture.</li>
+<li><strong>TextureCube:</strong> A cubemap consisting of six faces used for a SkyBox and Reflection. </li>
+</ul>
+<h2 id="compression">Compression</h2>
+<p>By default, Plasma performs an operation called <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/graphics/adding_assets/block_compression.md">block_compression</a> on all textures. While this can reduce image quality it greatly reduces memory usage allowing it to be rendered faster. This setting should not be disable unless color accuracy is extremely important. For more information on this topic we recommend <a href="http://www.reedbeta.com/blog/2012/02/12/understanding-bcn-texture-compression-formats/">this article </a>.</p>
+<h1 id="related-materials">Related Materials</h1>
+<h2 id="manual">Manual</h2>
+<ul>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/graphics/adding_assets/adding_textures_and_sprites.md">adding_textures_and_sprites</a></li>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/graphics/models/mesh.md">mesh</a></li>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/tutorials/graphics/particles.md">particles</a></li>
+</ul>
+<h2 id="code-reference">Code Reference</h2>
+<ul>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/texture.md">texture</a>  </li>
+</ul>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../../models/mesh/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../../models/mesh/" class="btn btn-xs btn-link">
+        mesh
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../shaders/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../shaders/" class="btn btn-xs btn-link">
+        Shaders
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="col-md-12 wm-page-content">
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/noraj/mkdocs-windmill-dark">Windmill Dark</a> theme by Alexandre ZANNI (noraj).</p>
+</footer>
+
+</body>
+</html>

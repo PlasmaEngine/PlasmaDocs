@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="author" content="PlasmaDev">
+    <link rel="canonical" href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/gameplay/input/keyboardinput/">
+    <link rel="shortcut icon" href="../../../../../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Keyboard - PlasmaDocs</title>
+    <link href="../../../../../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../../../../../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../../../../../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../../../../css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../../../../../js/jquery-3.2.1.min.js"></script>
+    <script src="../../../../../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../../../../../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '../../../../..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "Keyboard", url: "#_top", children: [
+          ]},
+          {title: "Polling-Based Input vs. Event-Based Input", url: "#polling-based-input-vs-event-based-input", children: [
+              {title: "Polling-Based Input", url: "#polling-based-input" },
+              {title: "Event-Based Input", url: "#event-based-input" },
+          ]},
+          {title: "Timing", url: "#timing", children: [
+          ]},
+          {title: "What to Use", url: "#what-to-use", children: [
+          ]},
+          {title: "Related Materials", url: "#related-materials", children: [
+              {title: "Manual", url: "#manual" },
+              {title: "Code Reference", url: "#code-reference" },
+          ]},
+        ];
+
+    </script>
+    <script src="../../../../../js/base.js"></script>
+      <script src="../../../../../search/main.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../mouseinput/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../mouseinput/" class="btn btn-xs btn-link">
+        Mouse
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../gamepadinput/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../gamepadinput/" class="btn btn-xs btn-link">
+        Gamepads
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <h1 id="keyboard">Keyboard</h1>
+<p>The keyboard is a common channel of providing user input to a Plasma project. Keyboard controls are quick and easy to set up, but there are a few details that are important to bear in mind.</p>
+<h1 id="polling-based-input-vs-event-based-input">Polling-Based Input vs. Event-Based Input</h1>
+<p>There are two ways of checking keyboard input in the Plasma Engine: by polling the state of the keyboard (typically in an Update function), known as <strong>polling-based</strong> input, and by connecting to keyboard events, known as <strong>event-based</strong> input. Each has its advantages.</p>
+<h2 id="polling-based-input">Polling-Based Input</h2>
+<p>Polling-based input typically occurs in a callback for an Update event such as <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/event_reference.md#logicupdate"> LogicUpdate</a>:</p>
+<pre><code class="language-csharp" name="Update Connection Example">
+function Initialize(init : CogInitializer)
+{
+  Plasma.Connect(this.Space, Events.LogicUpdate, this.OnLogicUpdate);
+}
+</code></pre>
+
+<p>The keyboard may be polled using a handful of functions on <code>Plasma.Keyboard</code>.</p>
+<h3 id="keyisdown">KeyIsDown</h3>
+<p>The <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/keyboard.md#keyisdown-plasma-engine-do"> KeyIsDown</a> function returns whether the given keyboard key is down on the current frame. It is often used for movement and other actions that are performed over the course of many consecutive frames:</p>
+<pre><code class="language-csharp" name="KeyIsDown Example">
+if (Plasma.Keyboard.KeyIsDown(Keys.Up))
+{
+  this.MoveForward();
+}
+</code></pre>
+
+<h3 id="keyisup">KeyIsUp</h3>
+<p>The <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/keyboard.md#keyisup-plasma-engine-docu"> KeyIsUp</a> function returns whether the given keyboard key is <em>not</em> down on the current frame. It is sometimes used in combination with <strong>KeyIsDown</strong> in movement code:</p>
+<pre><code class="language-csharp" name="KeyIsUp Example">
+if (Plasma.Keyboard.KeyIsDown(Keys.Right) && Plasma.Keyboard.KeyIsUp(Keys.Left))
+{
+  this.TurnCounterClockwise();
+}
+
+if (Plasma.Keyboard.KeyIsDown(Keys.Left) && Plasma.Keyboard.KeyIsUp(Keys.Right))
+{
+  this.TurnClockwise();
+}
+</code></pre>
+
+<h3 id="keyispressed">KeyIsPressed</h3>
+<p>The <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/keyboard.md#keyispressed-plasma-engine"> KeyIsPressed</a> function returns whether the given keyboard key is down on the current frame <em>and</em> was up on the previous frame. It is often used for discrete actions, like activating character abilities and interacting with menus:</p>
+<pre><code class="language-csharp" name="KeyIsPressed Example">
+if (Plasma.Keyboard.KeyIsPressed(Keys.Space))
+{
+  this.Jump();
+}
+</code></pre>
+
+<h3 id="keyisreleased">KeyIsReleased</h3>
+<p>The <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/keyboard.md#keyisreleased-plasma-engin"> KeyIsReleased</a> function returns whether the given keyboard key is up on the current frame, but was down on the previous frame. It is often used to end actions or processes that were started by the same key in a KeyIsPressed check:</p>
+<pre><code class="language-csharp" name="KeyIsReleased Example">
+if (Plasma.Keyboard.KeyIsReleased(Keys.Space))
+{
+  this.EndJump();
+}
+</code></pre>
+
+<p>Such queries are usually performed in a function that is called every frame, once per frame, such as an Update function; polling for input in this way is also called <strong>frame-based input</strong>. However, the keyboard can be polled at any time. For instance, one might check whether a certain key is held in a <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/event_reference.md#collisionstarted"> CollisionStarted</a> callback, to determine whether some special action should occur:</p>
+<pre><code class="language-csharp" name="Collision Polling Example">
+function OnCollisionStarted(event : CollisionEvent)
+{
+  if (Plasma.Keyboard.KeyIsDown(Keys.Z))
+    this.AttemptDealDamage(event.OtherObject);
+}
+</code></pre>
+
+<p>NOTE: Beware that the LogicUpdate event is not dispatched on a paused TimeSpace. If input polling is performed in a LogicUpdate callback, it won't happen while the game is paused. This may result in a scenario where LogicUpdate is used to pause the game, and then it becomes impossible to unpause. For this reason, it is usually best to pause the game using event-based input, or by polling the keyboard via another event, such as <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/event_reference.md#frameupdate"> FrameUpdate</a>, or in the LogicUpdate of another Space.</p>
+<h2 id="event-based-input">Event-Based Input</h2>
+<p>The keyboard dispatches a set of handy events that can be used for keyboard input:</p>
+<pre><code class="language-csharp" name="Keyboard Connection Example">
+function Initialize(init : CogInitializer)
+{
+  Plasma.Connect(Plasma.Keyboard, Events.KeyDown, this.OnKeyDown);
+  Plasma.Connect(Plasma.Keyboard, Events.KeyUp, this.OnKeyUp);
+  Plasma.Connect(Plasma.Keyboard, Events.KeyRepeated, this.OnKeyRepeated);
+}
+</code></pre>
+
+<p>The <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/keyboardevent.md"> KeyboardEvent</a> object that gets sent with these events specifies which key triggered the event, along with other relevant information, such as whether any of various modifier keys was held when the event was dispatched, etc.</p>
+<h3 id="keydown">KeyDown</h3>
+<p>When any key on the keyboard is pressed, the <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/event_reference.md#keydown"> KeyDown</a> event is dispatched that frame:</p>
+<pre><code class="language-csharp" name="KeyDown Example">
+function OnKeyDown(event : KeyboardEvent)
+{
+  if (event.Key == Keys.R && event.CtrlPressed)
+    this.RestartLevel();
+}
+</code></pre>
+
+<h3 id="keyup">KeyUp</h3>
+<p>When any key on the keyboard is released, the <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/event_reference.md#keyup"> KeyUp</a> event is dispatched that frame:</p>
+<pre><code class="language-csharp" name="KeyUpExample">
+function OnKeyUp(event : KeyboardEvent)
+{
+  if (event.Key == Keys.Shift)
+    this.EndChargingWeapon();
+}
+</code></pre>
+
+<h3 id="keyrepeated">KeyRepeated</h3>
+<p>When any key on the keyboard is held long enough for the operating system to send its "repeated" event, the <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/event_reference.md#keyrepeated"> KeyRepeated</a> event begins being dispatched. The delays before this begins and between dispatches are determined by the operating system:</p>
+<pre><code class="language-csharp" name="KeyRepeated Example">
+function OnKeyRepeated(event : KeyboardEvent)
+{
+  if (event.Key == Keys.Back)
+    this.Backspace();
+}
+</code></pre>
+
+<h1 id="timing">Timing</h1>
+<p>Every frame, all keyboard events are dispatched at the beginning of the frame before any update events are dispatched. If it is desired that any code that is called from an Update function be run before the effects of some keypress are considered, then either polling-based input should be used instead of event-based input, or the keypress should be cached, and the cached data should be used later.</p>
+<h1 id="what-to-use">What to Use</h1>
+<p>First and foremost, in many cases, there will be no noticeable performance difference between using polling-based input and using event-based input. For example, when creating a simple prototype or adding a quick debugging feature, it is often best to use whichever method is easiest for the developer implementing it.</p>
+<p>However, when performance does become an issue, or when scalability is a concern, knowing which input method to use is important. To decide whether to use polling-based or event-based input, begin by answering these guideline questions:</p>
+<p><strong>Is this component already connected to an update event?</strong>
+- <strong>Yes</strong>: polling may be better
+- <strong>No</strong>: consider events</p>
+<p>Some of the performance impact in frame-based input comes from the act of polling, but some of it comes from the mere fact of being connected to an update event. If a component's update event connection overhead is already considered acceptable, then the added overhead of input polling may not be a problem.</p>
+<p><strong>How many instances of this component are likely to be alive at once?</strong>
+- <strong>A lot</strong>: events may be better
+- <strong>Not many</strong>: consider polling</p>
+<p>Performance can suffer noticeably if a large number of objects are simultaneously connected to update events, especially if they're running complex logic. If there will be more than about a few hundred instances of a component all running at once, it may be wise to consider using event-based input instead of frame-based input. Of course, this number will vary greatly with factors such as the complexity of the logic being run and the capabilities of the user's computer.</p>
+<p><strong>How much time is likely to elapse between relevant inputs?</strong>
+- <strong>A long time</strong>: events may be better
+- <strong>Not long</strong>: consider polling</p>
+<p>Update events are generally dispatched every frame. Keyboard events, on the other hand, are only dispatched when the keyboard is used. For this reason, event-based input has the potential to be more efficient than frame-based input, especially when checking for an input that is expected to occur only rarely or sporadically.</p>
+<p><strong>How hard will it be to do this logic using events?</strong>
+- <strong>Very hard</strong>: polling may be better
+- <strong>Not very hard</strong>: consider events</p>
+<p>Some input tasks don't lend themselves to being done with event-based input. For example, it can be awkward to make keyboard events, which are dispatched only on keyboard state changes, work with character movement code, which generally should apply its changes every frame.</p>
+<h1 id="related-materials">Related Materials</h1>
+<h2 id="manual">Manual</h2>
+<ul>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/scripting/eventsandconnections.md"> Events &amp; Connections</a></li>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/architecture/components.md"> Components</a></li>
+</ul>
+<h2 id="code-reference">Code Reference</h2>
+<ul>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/keyboard.md"> Keyboard</a></li>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/keyboardevent.md"> KeyboardEvent</a> </li>
+</ul>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../mouseinput/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../mouseinput/" class="btn btn-xs btn-link">
+        Mouse
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../gamepadinput/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../gamepadinput/" class="btn btn-xs btn-link">
+        Gamepads
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="col-md-12 wm-page-content">
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/noraj/mkdocs-windmill-dark">Windmill Dark</a> theme by Alexandre ZANNI (noraj).</p>
+</footer>
+
+</body>
+</html>

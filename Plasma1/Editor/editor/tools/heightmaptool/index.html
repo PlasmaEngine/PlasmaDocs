@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="author" content="PlasmaDev">
+    <link rel="canonical" href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/editor/tools/heightmaptool/">
+    <link rel="shortcut icon" href="../../../../../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Height Map Tool - PlasmaDocs</title>
+    <link href="../../../../../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../../../../../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../../../../../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../../../../css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../../../../../js/jquery-3.2.1.min.js"></script>
+    <script src="../../../../../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../../../../../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '../../../../..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "Height Map Tool", url: "#_top", children: [
+          ]},
+          {title: "Using the HeightMapTool", url: "#using-the-heightmaptool", children: [
+              {title: "CreateDestroy", url: "#createdestroy" },
+              {title: "RaiseLower", url: "#raiselower" },
+              {title: "SmoothSharpen", url: "#smoothsharpen" },
+              {title: "WeightPainter", url: "#weightpainter" },
+          ]},
+          {title: "Related Materials", url: "#related-materials", children: [
+              {title: "Manual", url: "#manual" },
+              {title: "Code Reference", url: "#code-reference" },
+          ]},
+        ];
+
+    </script>
+    <script src="../../../../../js/base.js"></script>
+      <script src="../../../../../search/main.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../multiconvexmesheditor/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../multiconvexmesheditor/" class="btn btn-xs btn-link">
+        Multi Convex Mesh Editor
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../../texteditor/texteditorhotkeys/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../../texteditor/texteditorhotkeys/" class="btn btn-xs btn-link">
+        Texted it or Hot Keys
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <h1 id="height-map-tool">Height Map Tool</h1>
+<p>The HeightMapTool is a tool used to create a <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++plasma_editor_documentation/code_reference/class_reference/heightmap.md">HeightMap</a> object and manipulate patches created on it. It has five sub-tools the user can use to create and destroy, raise and lower, smooth and sharpen, flatten, and paint patches on a HeightMap object.</p>
+<h1 id="using-the-heightmaptool">Using the HeightMapTool</h1>
+<p>There are two ways to access the HeightMapTool:</p>
+<ul>
+<li>Select <code>HeightMapTool</code> from SelectTool drop-down menu in the <code>Tools Window</code></li>
+<li>Or, press <code>7</code>, the hotkey for bringing up the HeightMapTool</li>
+</ul>
+<p>When the HeightMapTool is opened and there is no previous HeightMap object, a message will appear on the screen informing the user that there is no HeightMap object, as can be seen here:</p>
+<p><strong>ADD IMAGE</strong></p>
+<p>To make a new HeightMap object, simply click anywhere on the text that has appeared on the Level window. An object named <code>HeightMap</code> should now appear in the Objects Window.</p>
+<p>Now that there is a HeightMap object, the user may start adding patches to it by using the CreateDestroy sub-tool found in CreateTool drop-down menu within HeightMapTool. Patches are the segments of the HeightMap that can be altered through the HeightMapTool.</p>
+<h2 id="createdestroy">CreateDestroy</h2>
+<p>The CreateDestroy sub-tool is used to create and destroy patches that make up the height map. The size of the patch is created is dictated by the UnitsPerPatch  property of the HeightMap object. See the [[ for more information on this important property.</p>
+<p>There are four properties in the CreateDestroyTool window that define certain parameters of the patches created:</p>
+<ul>
+<li>
+<p>BaseHeight  - A real that defines the height at which the map will be created</p>
+</li>
+<li>
+<p>UsePerlinNoise checkBox - A boolean that when sets to true allows the user to create patches with different levels of noise, defined by PerlinFrequency  and PerlinAmplitude .</p>
+</li>
+<li>
+<p>PerlinFrequency  - A Real that defines the frequency of "bumps" to be added to the patch (e.g., a higher number makes for a bumpier patch)</p>
+</li>
+<li>
+<p>PerlinAmplitude  - A Real that defines the height of the "bumps" created (e.g., a higher number makes for higher bumps)</p>
+</li>
+</ul>
+<p>To create a new patch, simply click wherever in the Level Window where the patch should be placed. To destroy a patch, <code>Shift + Click</code> on the patch to be destroyed.</p>
+<p><strong>ADD IMAGE</strong></p>
+<p>Settings are changed on a per-patch basis and do not affect previously placed patches (notice the PerlinFrequency  and PerlinAmplitude  have been modified:</p>
+<p><strong>ADD IMAGE</strong></p>
+<h2 id="raiselower">RaiseLower</h2>
+<p>The RaiseLower sub-tool is used to increase and decrease points on the height map patches. There are four properties in the RaiseLowerTool window that define the range and strength of the area to be raised or lowered:</p>
+<ul>
+<li>
+<p>Radius  - A Real that defines the size of the area (in the shape of a circle) to be raised or lowered according to the value set in the property <code>Strength</code>.</p>
+</li>
+<li>
+<p>FeatherRadius  - A Real that defines a circle outside the one created by the Radius property, where the value of the property <code>Strength</code> linearly interpolates down from 100% (where it meets the inner circle) to 0% (at its own outer limit).</p>
+</li>
+<li>
+<p>Strength  - A Real that defines the strength by which a part of the height map (see Radius and FeatherRadius) is raised or lowered.</p>
+</li>
+<li>
+<p>{"nav icon=check-square-o, name=Relative} - This property is not currently functional.</p>
+</li>
+</ul>
+<p>To raise an area on a patch of the height map, simply left-click on the area to be raised. One can either make multiple clicks or keep the left-mouse button held while moving the mouse around to continue to raise parts of the patch. To lower an area on a patch, hold Shift while clicking.</p>
+<p><strong>ADD IMAGE</strong></p>
+<p>NOTE:
+ A number of sub-tools in the HeightMapTool have both Radius  and FeatherRadius . These two properties work together with Strength  to determine the values by which the height map is being changed. While the descriptions of these properties in the property lists of the sub-tools is accurate, a diagram is provided to make clear how the value changes from the circle defined by Radius  and the circle defined by FeatherRadius :
+<strong>ADD IMAGE</strong></p>
+<h2 id="smoothsharpen">SmoothSharpen</h2>
+<p>The SmoothSharpen sub-tool is used to either smooth or sharpen bumps on the height map. There are seven properties in the SmoothSharpenTool window that define the range, strength, and sampling used to smooth and sharpen the map:</p>
+<ul>
+<li>
+<p>Radius  - A real that defines the size of the area (in the shape of a circle) to be smoothed or sharpened according to the value set in the property Strength .</p>
+</li>
+<li>
+<p>FeatherRadius  - A real that defines the area outside the area defined by <code>Radius</code>, where the value of the property <code>Strength</code> linearly interpolates down from 100% (where it meets the inner circle) to 0% (at its own outer limit).</p>
+</li>
+<li>
+<p>Strength  - A Real that defines the strength by which a part of the height map (see Radius and FeatherRadius) is smoothed or sharpened.</p>
+</li>
+</ul>
+<p>(IMPORTANT)<strong>Deprecated Properties</strong> While the following properties will affect the behavior of the SmoothSharpen tool, it is highly recommended that the user leaves them at their default values as they will be removed in a later build.
+ UniformSamples , RandomSamples , RandomSampleDistance , and
+ AutoDetermineSamples </p>
+<p>To smooth an area on the height map, simply left-click on the area to be smoothed. One can either make multiple clicks or keep the left-mouse button held while moving the mouse around to continue smoothing parts of the patch. To sharpen an area on a patch, hold <code>Shift</code> while clicking (or holding the left-mouse button). </p>
+<p>The following screenshot shows two patches; the one on the left has been smoothed, while the one on the right has been sharpened:</p>
+<p><strong>ADD IMAGE</strong></p>
+<p>## Flatten
+The flatten sub-tool is used to to flatten an area of a patch to a certain height. By default, this height will be sampled on the first mouse-click when using the sub-tool. This allows the user to pick an area on the height map with the desired height and then flatten the surroundings to match that height. To flatten based on a specific height instead of a sample, set SampleOnMouseDown checkBox to <code>false</code>. The properties of the Flatten tool are as follows:</p>
+<ul>
+<li>
+<p>Radius  - A real that defines the size of the area (in the shape of a circle) to be flattened according to a sample or the value set in the property Height .</p>
+</li>
+<li>
+<p>FeatherRadius  - A real that defines the area outside the area defined by Radius , where the value of the property Height  linearly interpolates down from 100% (where it meets the inner circle) to 0% (at its own outer limit).</p>
+</li>
+<li>
+<p>Height  - A real that defines the specific height to which one wishes to flatten a given part of the height map (set this value if not sampling from the mouse-click).</p>
+</li>
+<li>
+<p>SampleOnMouseDown checkBox - A boolean that when checked, samples the height to which the map will be flattened. If unchecked, specify the height in Height .</p>
+</li>
+</ul>
+<p>(IMPORTANT)<strong>Deprecated Properties</strong>
+ SlopeNormal , SampleNormal </p>
+<p>To flatten an area on the height map, one must first decide whether to sample a height from a surrounding point on the height map or to set the value directly in Height . Once a method has been chosen, simply left-click (or hold the left-mouse button) on the area to be flattened.</p>
+<p><strong>ADD IMAGE</strong> <em>A flattened "valley" amidst raised peaks on a height map</em></p>
+<h2 id="weightpainter">WeightPainter</h2>
+<p>The WeightPainter sub-tool is used to paint textures onto a height map. In order to use the WeightPainter sub-tool, one must first make a  <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/graphics/materials.md">Material</a>  that has the  <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++plasma_editor_documentation/code_reference/class_reference/heightmaptextureweights.md">HeightMapTextureWeights</a>  material block on it, as seen here:</p>
+<p><strong>ADD IMAGE</strong></p>
+<p>Both the <code>HeightMapTextureWeights</code> material block and the WeightPainter sub-tool support four separate textures. The user must load each texture into the <code>HeightMapTextureWeights</code> material block.</p>
+<p><strong>ADD IMAGE</strong></p>
+<p>Once this new <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/graphics/materials.md">Material</a> has been applied to the <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++plasma_editor_documentation/code_reference/class_reference/heightmap.md">HeightMap</a> object, one may use the WeightPainter sub-tool to select each texture separately and paint the height map with it. TextureChannel enum on the WeightPainter sub-tool gives the user access to each of the four <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/graphics/adding_assets/adding_textures_and_sprites.md">Textures</a>. The following screenshots show a height map--the one created in the Material has been applied to the HeightMap object, one may use the WeightPainter sub-tool to select each texture separately and paint the height map with it. The following screenshot shows a height map, the one created above, painted with varying texture weights. The <em>road</em> is 100% of <code>Texture3</code> and <code>Texture4</code>, while the rest is all <code>Texture1</code> with splotches of the other textures painted with a low strength.</p>
+<p><strong>ADD IMAGE</strong></p>
+<p><em>All four weighted textures used with varying weights.</em></p>
+<h1 id="related-materials">Related Materials</h1>
+<h2 id="manual">Manual</h2>
+<ul>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/physics/collision/heightmapcollider.md">HeightMap Collider</a></li>
+</ul>
+<h2 id="code-reference">Code Reference</h2>
+<ul>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++plasma_editor_documentation/code_reference/class_reference/heightmap.md">HeightMap</a> </li>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++plasma_editor_documentation/code_reference/lightning_base_types/integer.md">Integer</a> </li>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++plasma_editor_documentation/code_reference/lightning_base_types/real.md">Real</a> </li>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++plasma_editor_documentation/code_reference/lightning_base_types/boolean.md">Boolean</a> </li>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++plasma_editor_documentation/code_reference/lightning_base_types/real3.md">Real3</a> </li>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++plasma_editor_documentation/code_reference/class_reference/material.md">Material</a> </li>
+</ul>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../multiconvexmesheditor/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../multiconvexmesheditor/" class="btn btn-xs btn-link">
+        Multi Convex Mesh Editor
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../../texteditor/texteditorhotkeys/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../../texteditor/texteditorhotkeys/" class="btn btn-xs btn-link">
+        Texted it or Hot Keys
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="col-md-12 wm-page-content">
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/noraj/mkdocs-windmill-dark">Windmill Dark</a> theme by Alexandre ZANNI (noraj).</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="author" content="PlasmaDev">
+    <link rel="canonical" href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/editor/texteditor/texteditorhotkeys/">
+    <link rel="shortcut icon" href="../../../../../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Texted it or Hot Keys - PlasmaDocs</title>
+    <link href="../../../../../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../../../../../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../../../../../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../../../../css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../../../../../js/jquery-3.2.1.min.js"></script>
+    <script src="../../../../../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../../../../../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '../../../../..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "Texted it or Hot Keys", url: "#_top", children: [
+          ]},
+          {title: "The Cursor", url: "#the-cursor", children: [
+              {title: "Moving The Cursor By Character", url: "#moving-the-cursor-by-character" },
+              {title: "Moving The Cursor By Token \u0026amp; Whitespace", url: "#moving-the-cursor-by-token-whitespace" },
+              {title: "Moving the File", url: "#moving-the-file" },
+              {title: "Multi-Cursors", url: "#multi-cursors" },
+              {title: "Column Cursors", url: "#column-cursors" },
+          ]},
+          {title: "Selection", url: "#selection", children: [
+              {title: "Row \u0026amp; Token Selection", url: "#row-token-selection" },
+              {title: "Token \u0026amp; Line Selection", url: "#token-line-selection" },
+              {title: "Column Selection", url: "#column-selection" },
+              {title: "Selecting the Entire File", url: "#selecting-the-entire-file" },
+          ]},
+          {title: "Row Operations", url: "#row-operations", children: [
+              {title: "Commenting", url: "#commenting" },
+              {title: "Duplication", url: "#duplication" },
+              {title: "Cutting", url: "#cutting" },
+              {title: "Swapping", url: "#swapping" },
+          ]},
+          {title: "Clipboard Operations", url: "#clipboard-operations", children: [
+              {title: "Undo \u0026amp; Redo", url: "#undo-redo" },
+          ]},
+          {title: "Search Operations", url: "#search-operations", children: [
+              {title: "Find Mode", url: "#find-mode" },
+              {title: "Replace Mode", url: "#replace-mode" },
+              {title: "Go to Definition", url: "#go-to-definition" },
+          ]},
+          {title: "Window Operations", url: "#window-operations", children: [
+          ]},
+          {title: "Hotkey Reference", url: "#hotkey-reference", children: [
+              {title: "Keyboard Sequences", url: "#keyboard-sequences" },
+          ]},
+          {title: "Related Materials", url: "#related-materials", children: [
+              {title: "Manual Pages", url: "#manual-pages" },
+              {title: "Code Reference", url: "#code-reference" },
+          ]},
+        ];
+
+    </script>
+    <script src="../../../../../js/base.js"></script>
+      <script src="../../../../../search/main.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../../tools/heightmaptool/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../../tools/heightmaptool/" class="btn btn-xs btn-link">
+        Height Map Tool
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../texteditorconfig/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../texteditorconfig/" class="btn btn-xs btn-link">
+        Texted it or Config
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <h1 id="texted-it-or-hot-keys">Texted it or Hot Keys</h1>
+<p>While Plasma implements many features found in other common code editors, it also has many additional features users may find useful in their workflow.</p>
+<h1 id="the-cursor">The Cursor</h1>
+<p>The Cursor serves to indicate the location in a text file or script where new text will be entered. By default the cursor is set to insertion mode like most text editors. In insertion mode the cursor highlights the space between two characters. Pressing a character key will insert the character at the location of the cursor.</p>
+<p><strong>ADD IMAGE</strong></p>
+<h2 id="moving-the-cursor-by-character">Moving The Cursor By Character</h2>
+<p>The cursor can be moved left, right, up, and down between characters using the arrow keys. You can also move the cursor by clicking on any space between two characters to move the cursor to that location.</p>
+<ul>
+<li><code>Left</code>, <code>Right</code>, <code>Up</code>, and <code>Down</code></li>
+</ul>
+<p><strong>ADD IMAGE</strong></p>
+<ul>
+<li><code>Left-Click</code></li>
+</ul>
+<p><strong>ADD IMAGE</strong></p>
+<h2 id="moving-the-cursor-by-token-whitespace">Moving The Cursor By Token &amp; Whitespace</h2>
+<p>Often in a text file a single character will not have much meaning in the context of the whole file. So at times it make sense to navigate code at the conceptual level one is thinking about it. By using <code>Control</code> and an arrow key we can moving the cursor by token jumping over characters which belong to the previous or next token or whitespace sequence.</p>
+<ul>
+<li><code>Control + Left</code></li>
+<li><code>Control + Right</code></li>
+</ul>
+<p><strong>ADD IMAGE</strong></p>
+<h2 id="moving-the-file">Moving the File</h2>
+<p>Continuing the trend of minimizing unnecessary mouse use while typing in the text editor the hotkeys <code>Control + Up</code> &amp; <code>Control + Down</code> can be used to scroll the file view up and down.</p>
+<ul>
+<li><code>Control + Up</code></li>
+<li><code>Control + Down</code></li>
+</ul>
+<p><strong>ADD IMAGE</strong></p>
+<h2 id="multi-cursors">Multi-Cursors</h2>
+<p>The Plasma text editor has the capability of placing multiple cursors in the file from which one is currently editing. Holding <code>Control</code> while clicking in the text file will result in the placement of additional cursors instead of moving the original cursor.</p>
+<p><strong>ADD IMAGE</strong></p>
+<p>Each of these cursors can be expanded uniformly into a selection using the various methods of selection outlined below. Keep in mind that each keystroke will be applied to each cursor and/or selection. This is particularly useful when there are multiple identical constructs that need to be identically modified. </p>
+<h2 id="column-cursors">Column Cursors</h2>
+<p>Another form of cursor is the vertically extended column cursor. A column cursor can be created from a standard cursor by holding <code>Alt + Shift</code> and pressing <code>Up + Down</code>.</p>
+<ul>
+<li><code>Alt + Shift + Up</code></li>
+<li><code>Alt + Shift + Down</code></li>
+</ul>
+<p><strong>ADD IMAGE</strong></p>
+<h1 id="selection">Selection</h1>
+<p>Cursors can be extended into selections, allowing the user to modify entire sections of text.</p>
+<h2 id="row-token-selection">Row &amp; Token Selection</h2>
+<p>To use row selection using the only the keyboard, <code>Shift</code> should be held while performing standard cursor commands. </p>
+<p>By holding <code>Shift + Left</code> characters are selected along the row. If <code>Shift + Right</code> is held the selection cursor box will continue expanding to the right until it wraps around with the text to the next row.</p>
+<p><strong>ADD IMAGE</strong></p>
+<p>To select entire rows with each keystroke use <code>Shift + Up</code>, or <code>Shift + Down</code> can also be used.</p>
+<p><strong>ADD IMAGE</strong></p>
+<p>This is the same behavior one would get if one were to <code>Click + Drag</code> in the text file. </p>
+<p><strong>ADD IMAGE</strong></p>
+<p><code>Shift</code> can also be held while clicking to extend the current cursor or selection.</p>
+<p><strong>ADD IMAGE</strong></p>
+<h3 id="row-selection-by-token-and-whitespace">Row Selection by Token and WhiteSpace</h3>
+<p>Row selection can be done by token just as you can move the cursor with <code>Control + Left</code> and <code>Control + right</code>.</p>
+<ul>
+<li><code>Control + Shift + Left</code></li>
+<li><code>Control + Shift + Right</code></li>
+</ul>
+<p><img alt="ControlShiftSelect" src="https://media.githubusercontent.com/media/PlasmaEngine/ZeroFiles/master/doc_files/47373.gif" /></p>
+<h2 id="token-line-selection">Token &amp; Line Selection</h2>
+<p>One can also select any given token by double clicking it, an entire line can be selected by triple clicking it.</p>
+<p><strong>ADD IMAGE</strong></p>
+<p>Once a token is selected to can add the next instance of that token to appear in the file to the selection by pressing <code>Control + D</code>.</p>
+<h2 id="column-selection">Column Selection</h2>
+<p>NOTE: Column selection is also sometimes called rectangle selection.</p>
+<p>Column selections can be created in various ways with and without a preexisting column cursor.</p>
+<h3 id="creating-a-column-selection-from-a-standard-cursor">Creating a Column Selection From a Standard Cursor</h3>
+<p>By holding <code>Alt + Shift</code> and then pressing <code>Left-Click</code> you can create a column selection that covers all character between the cursor and the point clicked.</p>
+<p><strong>ADD IMAGE</strong></p>
+<h3 id="expanding-a-column-cursor-into-a-selection">Expanding a Column Cursor Into a Selection</h3>
+<p><code>Alt + Shift</code> and <code>Left</code> <code>Right</code> <code>Up</code> <code>Down</code> can be used to expand an existing column cursor into a column selection.</p>
+<p><strong>ADD IMAGE</strong></p>
+<h2 id="selecting-the-entire-file">Selecting the Entire File</h2>
+<p>To select all text in the focused file use the <code>Control + A</code> hotkey.</p>
+<p><strong>ADD IMAGE</strong></p>
+<h1 id="row-operations">Row Operations</h1>
+<p>Some hotkeys perform a basic operation on the row that the cursor is currently on.</p>
+<h2 id="commenting">Commenting</h2>
+<p>To quickly comment in and out all lines on which cursors/selections exist use the <code>Control + K</code> hotkey.</p>
+<p><strong>ADD IMAGE</strong></p>
+<h2 id="duplication">Duplication</h2>
+<p>Use the <code>Control + Shift + D</code> hotkey to duplicate each line with a cursor on it.</p>
+<p><strong>ADD IMAGE</strong></p>
+<h2 id="cutting">Cutting</h2>
+<p>Use the <code>Control + L</code> hotkey to quickly cut the current line from the file.</p>
+<p><strong>ADD IMAGE</strong></p>
+<h2 id="swapping">Swapping</h2>
+<p>Use the <code>Control + T</code> hotkey to quickly swap each line with a cursor on it with the line above it with out moving the cursor.</p>
+<p><strong>ADD IMAGE</strong></p>
+<p>The hotkeys <code>Control + Shift + Up</code> or <code>Control + Shift + Down</code> to swap each line with a cursor on it with the line above or below it.</p>
+<p><strong>ADD IMAGE</strong></p>
+<p>This command also shifts the cursor to the newline. This allows the line to be continuously shifted up or down by repeating the hotkey sequence.</p>
+<h1 id="clipboard-operations">Clipboard Operations</h1>
+<p>The Plasma Editor supports the standard clipboard operations of copy, cut, and paste. To copy selected text to the clipboard use the <code>Control + C</code> hotkey. To copy selected text to the clipboard and remove it from the file use the <code>Control + X</code> hotkey. To paste the text from the clipboard to the location of each cursor in a file use the <code>Control + V</code> hotkey. All three operations are shown in the gif below.</p>
+<p><strong>ADD IMAGE</strong></p>
+<h2 id="undo-redo">Undo &amp; Redo</h2>
+<p>To undo a previous operation use the <code>Control + Z</code> hotkey. To redo a previous operation use the <code>Control + Y</code> hotkey. </p>
+<p><strong>ADD IMAGE</strong></p>
+<h1 id="search-operations">Search Operations</h1>
+<p>The search tool is useful for finding instances of specific text through out individual files or an entire project.</p>
+<h2 id="find-mode">Find Mode</h2>
+<p>To quickly access the search window in find mode use the <code>Control + F</code> hotkey.</p>
+<p><strong>ADD IMAGE</strong></p>
+<p>If there is an active selection in the current text file, it will be pasted in as the search argument upon opening the window. Notice that because the search window is in find mode it will find locations of the given text but not modify them.</p>
+<h2 id="replace-mode">Replace Mode</h2>
+<p>To quickly access the search window in replace mode use the <code>Control + H</code> hotkey.</p>
+<p><strong>ADD IMAGE</strong></p>
+<p>If there is an active selection in the current text file, it will be pasted in as the search argument upon opening the window. Notice that because the search window is in replace mode it will find locations of the given text and replace them with whatever string is in the replace field of the search window.</p>
+<h2 id="go-to-definition">Go to Definition</h2>
+<p>One of the most common patterns while programming is to reference the definition of a particular type being used. This can be done in Plasma via a shortcut.</p>
+<p><strong>ADD IMAGE</strong></p>
+<p>When the user right clicks in a text file <code>GoToDefintion</code> is listed as an option in the context. If the context menu option is chosen, then the definition of the type currently highlighted by or containing the cursor will be displayed in the file that contains it. This functionality can also be activated by pressing <code>F12</code> while the text editor cursor is highlighting or sitting within a valid type.</p>
+<h1 id="window-operations">Window Operations</h1>
+<p>Some hotkeys used in the text editor will not actually affect the text file or cursor. By using the <code>Ctrl + Tab</code> and <code>Ctrl + Shift + Tab</code> hotkey sequences the tabs in the main docked window can be cycled through to the right and left, respectively.
+- <code>Control + Tab</code>
+- <code>Control + Shift + Tab</code></p>
+<p><strong>ADD IMAGE</strong></p>
+<h1 id="hotkey-reference">Hotkey Reference</h1>
+<p>The tables below are meant for both quick reference via the name column as well as more detailed information in the description column.</p>
+<h2 id="keyboard-sequences">Keyboard Sequences</h2>
+<table>
+<thead>
+<tr>
+<th>Keyboard Command</th>
+<th>Brief</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Left</code></td>
+<td>Move cursor left by character</td>
+</tr>
+<tr>
+<td><code>Right</code></td>
+<td>Move cursor right by character</td>
+</tr>
+<tr>
+<td><code>Up</code></td>
+<td>Move cursor up one row</td>
+</tr>
+<tr>
+<td><code>Down</code></td>
+<td>Move cursor down one row</td>
+</tr>
+<tr>
+<td><code>Control + Left</code></td>
+<td>Move cursor left by symbol</td>
+</tr>
+<tr>
+<td><code>Control + Right</code></td>
+<td>Move cursor right by one symbol</td>
+</tr>
+<tr>
+<td><code>Control + Up</code></td>
+<td>Scroll file up</td>
+</tr>
+<tr>
+<td><code>Control + Down</code></td>
+<td>Scroll file down</td>
+</tr>
+<tr>
+<td><code>Control + F</code></td>
+<td>Open the search window in find mode</td>
+</tr>
+<tr>
+<td><code>Control + H</code></td>
+<td>Open the search window in replace mode</td>
+</tr>
+<tr>
+<td><code>F12</code></td>
+<td>Go to Definition of the highlighted type.</td>
+</tr>
+<tr>
+<td><code>Control + A</code></td>
+<td>Select all text in the file</td>
+</tr>
+<tr>
+<td><code>Control + T</code></td>
+<td>Swap line with the row above without the cursor</td>
+</tr>
+<tr>
+<td><code>Control + K</code></td>
+<td>Comment/Uncomment current line</td>
+</tr>
+<tr>
+<td><code>Control + L</code></td>
+<td>Cut current line</td>
+</tr>
+<tr>
+<td><code>Control + S</code></td>
+<td>Save project</td>
+</tr>
+<tr>
+<td><code>Control + Z</code></td>
+<td>Undo last action</td>
+</tr>
+<tr>
+<td><code>Control + Z</code></td>
+<td>Redo last action</td>
+</tr>
+<tr>
+<td><code>Control + X</code></td>
+<td>Cut current selection</td>
+</tr>
+<tr>
+<td><code>Control + C</code></td>
+<td>Copy current selection</td>
+</tr>
+<tr>
+<td><code>Control + V</code></td>
+<td>Paste from the clipboard</td>
+</tr>
+<tr>
+<td><code>Control + =</code></td>
+<td>Increase font size</td>
+</tr>
+<tr>
+<td><code>Control + -</code></td>
+<td>Decrease font size</td>
+</tr>
+<tr>
+<td><code>Control + Tab</code></td>
+<td>Cycle to the next tab in the window</td>
+</tr>
+<tr>
+<td><code>Control + Shift + Tab</code></td>
+<td>Cycle to the previous tab in the window</td>
+</tr>
+<tr>
+<td><code>Control + Shift + D</code></td>
+<td>Duplicate the line the cursor is on</td>
+</tr>
+<tr>
+<td><code>Control + Shift + Up</code></td>
+<td>Swap line with row above with the cursor</td>
+</tr>
+<tr>
+<td><code>Control + Shift + Down</code></td>
+<td>Swap line with row below with the cursor</td>
+</tr>
+<tr>
+<td><code>Control + Shift + Left</code></td>
+<td>Row selection/deselection left by symbol</td>
+</tr>
+<tr>
+<td><code>Control + Shift + Right</code></td>
+<td>Row selection/deselection right by symbol</td>
+</tr>
+<tr>
+<td><code>Shift + Left</code></td>
+<td>Row selection/deselection to the left by character</td>
+</tr>
+<tr>
+<td><code>Shift + Right</code></td>
+<td>Row selection/deselection to the right by character</td>
+</tr>
+<tr>
+<td><code>Shift + Up</code></td>
+<td>Row selection/deselection up by character</td>
+</tr>
+<tr>
+<td><code>Shift + Down</code></td>
+<td>Row selection/deselection down by character</td>
+</tr>
+<tr>
+<td><code>Alt + Shift + Left</code></td>
+<td>Column selection/deselection left by character</td>
+</tr>
+<tr>
+<td><code>Alt + Shift + Right</code></td>
+<td>Column selection/deselection right by character</td>
+</tr>
+<tr>
+<td><code>Alt + Shift + Up</code></td>
+<td>Column selection/deselection up by row</td>
+</tr>
+<tr>
+<td><code>Alt + Shift + Down</code></td>
+<td>Column selection/deselection down by row</td>
+</tr>
+</tbody>
+</table>
+<h3 id="mouse-actions">Mouse Actions</h3>
+<table>
+<thead>
+<tr>
+<th>Mouse Command</th>
+<th>Brief</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Left-Click</code></td>
+<td>Move cursor</td>
+</tr>
+<tr>
+<td><code>Left-Click</code> x2</td>
+<td>Select token</td>
+</tr>
+<tr>
+<td><code>Left-Click</code> x3</td>
+<td>Select entire line</td>
+</tr>
+<tr>
+<td><code>Left-Click + Drag</code></td>
+<td>Row selection</td>
+</tr>
+<tr>
+<td><code>Control + Left-Click</code></td>
+<td>Create additional cursor</td>
+</tr>
+<tr>
+<td><code>Shift + Left-Click</code></td>
+<td>Row selection</td>
+</tr>
+<tr>
+<td><code>Alt + Shift + Left-Click</code></td>
+<td>Column selection</td>
+</tr>
+</tbody>
+</table>
+<h1 id="related-materials">Related Materials</h1>
+<h2 id="manual-pages">Manual Pages</h2>
+<ul>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/editor/texteditor/codecompletion.md">Code Completion</a></li>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/editor/texteditor/texteditorconfig.md">Text Editor Config</a></li>
+</ul>
+<h2 id="code-reference">Code Reference</h2>
+<ul>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++plasma_editor_documentation/code_reference/class_reference/texteditorconfig.md">TextEditorConfig</a> </li>
+</ul>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../../tools/heightmaptool/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../../tools/heightmaptool/" class="btn btn-xs btn-link">
+        Height Map Tool
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../texteditorconfig/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../texteditorconfig/" class="btn btn-xs btn-link">
+        Texted it or Config
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="col-md-12 wm-page-content">
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/noraj/mkdocs-windmill-dark">Windmill Dark</a> theme by Alexandre ZANNI (noraj).</p>
+</footer>
+
+</body>
+</html>

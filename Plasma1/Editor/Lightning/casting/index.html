@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="author" content="PlasmaDev">
+    <link rel="canonical" href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/Lightning/casting/">
+    <link rel="shortcut icon" href="../../../../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Casting - PlasmaDocs</title>
+    <link href="../../../../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../../../../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../../../../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../../../css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../../../../js/jquery-3.2.1.min.js"></script>
+    <script src="../../../../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../../../../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '../../../..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "Casting", url: "#_top", children: [
+          ]},
+          {title: "Implicit and Explicit", url: "#implicit-and-explicit", children: [
+          ]},
+          {title: "Casting Between Numeric and Boolean Types", url: "#casting-between-numeric-and-boolean-types", children: [
+              {title: "Truncation", url: "#truncation" },
+          ]},
+          {title: "Upcasting and Downcasting", url: "#upcasting-and-downcasting", children: [
+          ]},
+          {title: "Null Casts", url: "#null-casts", children: [
+          ]},
+          {title: "Same Casts", url: "#same-casts", children: [
+          ]},
+          {title: "Related Materials", url: "#related-materials", children: [
+              {title: "Manual", url: "#manual" },
+              {title: "Code Reference", url: "#code-reference" },
+          ]},
+        ];
+
+    </script>
+    <script src="../../../../js/base.js"></script>
+      <script src="../../../../search/main.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../classes/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../classes/" class="btn btn-xs btn-link">
+        Classes
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../boolean_operators/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../boolean_operators/" class="btn btn-xs btn-link">
+        Boolean Operators
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <h1 id="casting">Casting</h1>
+<p>Fundamentally, casting is converting from one type to another.  As demonstrated in the code snippet below, a <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/Lightning/functions.md">Function</a> that takes a grade and returns pass/fail can be thought of as a conversion from a <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.md">real</a> to a <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.md">boolean</a>.</p>
+<pre><code class="language-csharp" name="Conversion Function">
+function IsPassing(grade : Real) : Boolean
+{
+  if(grade >= 70)
+    return true;
+  else
+    return false;
+}
+</code></pre>
+
+<p>The logic of that particular conversion is defined as a function and intended for a specific situation, but <em>cast operations</em> are more general-case and defined by Lightning.</p>
+<h1 id="implicit-and-explicit">Implicit and Explicit</h1>
+<p>There are two types of casting, implicit and explicit.  Implicit casting occurs during the assignment of a variable of one type, with a value of a <em>different</em> type.  Implicit casting is a mechanism that Lightning uses when a <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/Lightning/variables_and_data_types.md">Variable</a> of one type is set to data of another type.  Explicit casting is a mechanic used by the user with the <code>as</code> keyword.  Any cast that can happen implicitly can be done explicitly.</p>
+<p>WARNING: Even with explicit casting, there are still <em>cast operations</em> that are invalid and will trigger compile-time exceptions.</p>
+<pre><code class="language-csharp" name="Casting Implicitly and Explicitly">
+var myReal : Real = 1.0;
+var myDoubleReal : DoubleReal = myReal; // implicit casting
+var myInteger : Integer = myReal as Integer; // explicit casting
+</code></pre>
+<p>In the example above, <code>myDoubleReal</code> is being set to <code>myReal</code>, which invokes an implicit cast from <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.md">real</a> to <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/doublereal.md">doublereal</a>.  When <code>myReal as Integer</code> is evaluated, explicit casting is invoked to convert a <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.md">real</a> to an <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer.md">integer</a>.  The format for explicit casting is <code>&lt;value&gt; as &lt;new type&gt;</code>.</p>
+<p>NOTE: Explicit casting should only be used when one is aware of all of the nuances of the cast.</p>
+<h1 id="casting-between-numeric-and-boolean-types">Casting Between Numeric and Boolean Types</h1>
+<p>The following base data types are considerered Numeric and Boolean:
+| <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer.md">integer</a> |
+| <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/doubleinteger.md">doubleinteger</a> |
+| <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.md">real</a> |
+| <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/doublereal.md">doublereal</a> |
+| <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.md">boolean</a> |</p>
+<p>All <em>cast operations</em> using only these types are valid, meaning either explicit or implicit.  The code snippit below demonstates implicit casting between numeric types.</p>
+<pre><code class="language-csharp" name="Implicit Numeric Casts">
+var myInteger : Integer = 1;
+
+var myDoubleInteger : DoubleInteger = myInteger;
+var myReal : Real = myInteger;
+var myDoubleReal1 : DoubleReal = myInteger;
+
+var myDoubleReal2 : DoubleReal = myDoubleInteger;
+var myDoubleReal3 : DoubleReal = myReal;
+</code></pre>
+
+<p>Notice that implicit casting is allowed when converting to a numeric set, from a smaller data size to a larger one.  The value of <code>myInteger</code> can be implicitly casted to a <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/doubleinteger.md">doubleinteger</a>, which holds twice the number of bits as an <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer.md">integer</a>.  The value of <code>myInteger</code> can also be implicitly casted to a <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.md">real</a>.  Real values can hold whole numbers and a decimal portion, whereas integers can only be whole numbers.</p>
+<p>(NOTE)<strong>From a Mathematics Perspective</strong> The integer set is a subset of the real set.  For more information on mathematical sets, visit the <a href="https://en.wikipedia.org/wiki/Set_(mathematics)">Wikipedia Set (Mathematics)</a> page.</p>
+<h2 id="truncation">Truncation</h2>
+<p>When a real value is converted to an integer value explicitly, the value will be truncated.  This means the decimal part of the real value will be lost, and without rounding.</p>
+<pre><code class="language-csharp" name="Implicit Numeric Casts">
+Console.WriteLine(1.1 as Integer);
+Console.WriteLine(2.99 as Integer);
+Console.WriteLine(-3.99 as Integer);
+</code></pre>
+<pre><code name="Console Window">
+1
+2
+-3
+</code></pre>
+
+<h1 id="upcasting-and-downcasting">Upcasting and Downcasting</h1>
+<p>When casting between classes related through <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/Lightning/inheritance.md">inheritance</a>, one class must be a base class of the other.</p>
+<pre><code class="language-csharp" name="Classes with Inheritance">
+class A {}
+class B : A {}
+class C : B {}
+</code></pre>
+
+<p>The code snippet below uses the <code>Classes with Inheritance</code> snippet.</p>
+<pre><code class="language-csharp" name="Upcasting and Downcasting">
+var a : A = A();
+var b : B = B();
+var c : C = C();
+
+// implicit
+var ba : A = b;
+var ca : A = c;
+var cb : B = c;
+
+// explicit
+var ab : B = a as B;
+var ac : C = a as C;
+var bc : C = b as C;
+</code></pre>
+
+<p>Notice how all the implicit casts involve converting from a derived class to a base class.  This is known as <strong>upcasting</strong>.  <strong>Downcasting</strong> involves taking a base class and casting it to a derived class, which must be done explicitly.  <strong>Downcasting</strong> is also a type of dynamic casting, which is validated at runtime.  Observe that the objects <code>a</code>, <code>b</code>, and <code>c</code> are all references being casted, and not values.  If a base class reference is downcasted to a derived class reference and the value referenced is of the base class type, then the cast failed at runtime.  A <em>failed dynamic cast</em> will result in the value <code>null</code>.  The code snippet below uses the <code>Classes with Inheritance</code> snippet.</p>
+<pre><code class="language-csharp" name="Dynamic Casting">
+var a_ref_b : A = B(); // upcast invoked implicitly
+var b_ref_a : B = A() as B; // downcast invoked explicitly
+var b_ref_b : B = a_ref_b as B; // downcast invoked explicitly
+Console.WriteLine(a_ref_b == null);
+Console.WriteLine(b_ref_a == null);
+Console.WriteLine(b_ref_b == null);
+</code></pre>
+<pre><code name="Console Window">
+false
+true
+false
+</code></pre>
+
+<p><code>a_ref_b</code> is a reference of type <code>A</code> to a value of type <code>B</code>, which uses an implicit <strong>upcast</strong>.  <code>b_ref_a</code> is a reference of type <code>B</code> to a value of type <code>A</code>, which uses an explicit <strong>downcast</strong>.  Notice how <code>b_ref_a</code> has the value <code>null</code> at runtime, the result of a //failed dynamic cast//.  On the other hand, <code>a_ref_b</code> is successfully cast since it has a value of type <code>B</code>.</p>
+<h1 id="null-casts">Null Casts</h1>
+<p>The value <code>null</code> can be cast to any reference type implicitly.  The code snippet below uses the <code>Classes with Inheritance</code> snippet.</p>
+<pre><code class="language-csharp" name="Null Casting">
+var a1 : A = null; // implicit cast
+var a2 : A = null as A; // explicit cast (unnecessary)
+</code></pre>
+
+<p>NOTE: Interpreting <code>null</code> as an invalid state for object references is a common pattern in programming.</p>
+<p># Any Casts
+Any type can be cast implicitly to an <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/any.md">any</a>, and an <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/any.md">any</a> value can be implicitly cast to any type.  The <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/any.md">any</a> type is used as a generic reference to any instantiated class or struct.</p>
+<pre><code class="language-csharp" name="Any Casting">
+var integerOne : any = 1;
+var myInteger : Integer = integerOne; // any cast
+var myReal : Real = integerOne; // runtime exception
+</code></pre>
+
+<p>Notice how the attempt to cast <code>integerOne</code>, which is an <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/any.md">any</a>, to a <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.md">real</a> results in a runtime exception.  An <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/any.md">any</a> must first be cast to the type of the value it holds, even before other implicit conversions.</p>
+<h1 id="same-casts">Same Casts</h1>
+<p>Same casts are casts that convert a value of one type to the same type.  All same casts can be done implicitly and are unnecessary.</p>
+<pre><code class="language-csharp" name="Same Casting">
+var myReal : Real = 1.0; // implicit same cast
+var myInteger : Integer = 1 as Integer; // explicit same cast
+</code></pre>
+
+<h1 id="related-materials">Related Materials</h1>
+<h2 id="manual">Manual</h2>
+<ul>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/Lightning/functions.md">Function</a></li>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/Lightning/variables_and_data_types.md">Variable</a></li>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/Lightning/inheritance.md">inheritance</a></li>
+</ul>
+<h2 id="code-reference">Code Reference</h2>
+<ul>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer.md">integer</a></li>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/doubleinteger.md">doubleinteger</a></li>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.md">real</a></li>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/doublereal.md">doublereal</a></li>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.md">boolean</a></li>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/any.md">any</a> </li>
+</ul>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../classes/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../classes/" class="btn btn-xs btn-link">
+        Classes
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../boolean_operators/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../boolean_operators/" class="btn btn-xs btn-link">
+        Boolean Operators
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="col-md-12 wm-page-content">
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/noraj/mkdocs-windmill-dark">Windmill Dark</a> theme by Alexandre ZANNI (noraj).</p>
+</footer>
+
+</body>
+</html>

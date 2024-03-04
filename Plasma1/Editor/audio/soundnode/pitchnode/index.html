@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="author" content="PlasmaDev">
+    <link rel="canonical" href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/audio/soundnode/pitchnode/">
+    <link rel="shortcut icon" href="../../../../../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Pitch Node - PlasmaDocs</title>
+    <link href="../../../../../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../../../../../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../../../../../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../../../../css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../../../../../js/jquery-3.2.1.min.js"></script>
+    <script src="../../../../../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../../../../../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '../../../../..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "Pitch Node", url: "#_top", children: [
+          ]},
+          {title: "Common Uses", url: "#common-uses", children: [
+          ]},
+          {title: "Using the PitchNode", url: "#using-the-pitchnode", children: [
+              {title: "Pitch and Semitones", url: "#pitch-and-semitones" },
+              {title: "Events", url: "#events" },
+          ]},
+          {title: "Related Materials", url: "#related-materials", children: [
+              {title: "Manual", url: "#manual" },
+              {title: "Code Reference", url: "#code-reference" },
+          ]},
+        ];
+
+    </script>
+    <script src="../../../../../js/base.js"></script>
+      <script src="../../../../../search/main.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../recordingnode/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../recordingnode/" class="btn btn-xs btn-link">
+        Recording Node
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../panningnode/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../panningnode/" class="btn btn-xs btn-link">
+        Panning Node
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <h1 id="pitch-node">Pitch Node</h1>
+<p>The <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/pitchnode.md"> PitchNode </a> collects audio data from all of its inputs and applies a pitch modification to the samples before passing them off to its output nodes.</p>
+<h1 id="common-uses">Common Uses</h1>
+<ul>
+<li>Controlling the pitch of several sounds at once</li>
+</ul>
+<h1 id="using-the-pitchnode">Using the PitchNode</h1>
+<p>WARNING: When using PitchNodes, if a generating node has multiple output connections the user must make sure all of them are at the same pitch. If SoundNodes request data from the generating node at different pitch settings there will be an error and the nodes will be disconnected.</p>
+<h2 id="pitch-and-semitones">Pitch and Semitones</h2>
+<p>PitchNodes have two linked properties for setting their pitch change: changing one will also change the value of the other. Raising the pitch also speeds up the sound, while lowering the pitch slows it down. Large pitch changes will likely affect the quality of the sound.</p>
+<p>The <code>Pitch</code> property is a floating point value where <code>0.0</code> does not affect the pitch, <code>1.0</code> raises the pitch by an octave (doubles the pitch), <code>2.0</code> raises it by two octaves, <code>-1.0</code> lowers it by an octave, etc. The Semitones property uses semitone (or half-step) values to set the pitch. There are twelve semitones in an octave, so a value of <code>12</code> would double the pitch while <code>-12</code> would halve it.</p>
+<p>The pitch can be interpolated over time using either floating point or semitone values with the <code>InterpolatePitch</code> and <code>InterpolateSemitones</code> methods. In both methods, the first value is the pitch to interpolate to, and the second is the length of time (in seconds) for the interpolation. Using these methods ensures that the pitch change is applied smoothly by the audio engine.</p>
+<h2 id="events">Events</h2>
+<p>The <code>AudioInterpolationDone</code> event will be sent when a pitch interpolation has finished.</p>
+<h1 id="related-materials">Related Materials</h1>
+<h2 id="manual">Manual</h2>
+<ul>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/audio/soundnode/soudnode_overview.md">soudnode_overview</a></li>
+</ul>
+<h2 id="code-reference">Code Reference</h2>
+<ul>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/pitchnode.md"> PitchNode </a> </li>
+</ul>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../recordingnode/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../recordingnode/" class="btn btn-xs btn-link">
+        Recording Node
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../panningnode/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../panningnode/" class="btn btn-xs btn-link">
+        Panning Node
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="col-md-12 wm-page-content">
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/noraj/mkdocs-windmill-dark">Windmill Dark</a> theme by Alexandre ZANNI (noraj).</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="author" content="PlasmaDev">
+    <link rel="canonical" href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C%2B%2B/plasma_source_documentation/custom_event_names/">
+    <link rel="shortcut icon" href="../../../../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Custom Event Names - PlasmaDocs</title>
+    <link href="../../../../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../../../../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../../../../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../../../css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../../../../js/jquery-3.2.1.min.js"></script>
+    <script src="../../../../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../../../../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '../../../..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "Custom Event Names", url: "#_top", children: [
+              {title: "Custom Event Types", url: "#custom-event-types" },
+              {title: "Sending / Receiving Events", url: "#sending-receiving-events" },
+              {title: "Event Dispatcher/Receiver", url: "#event-dispatcherreceiver" },
+          ]},
+        ];
+
+    </script>
+    <script src="../../../../js/base.js"></script>
+      <script src="../../../../search/main.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../editor/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../editor/" class="btn btn-xs btn-link">
+        Editor
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../components/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../components/" class="btn btn-xs btn-link">
+        Component Example
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <h1 id="custom-event-names">Custom Event Names</h1>
+<p>We start by making a externed string in our header file:</p>
+<pre><code class="language-csharp">
+namespace Plasma
+{
+  namespace Events
+  {
+    DeclareEvent(FlagCaptured);
+  }
+}
+</code></pre>
+<p>And within the cpp file we must define the string:</p>
+<pre><code class="language-csharp">
+namespace Plasma
+{
+  namespace Events
+  {
+    DefineEvent(FlagCaptured);
+  }
+}
+</code></pre>
+
+<p>By placing the event within the <code>Events</code> namespace, we can conveniently access any events name via <code>Events::FlagCaptured</code>.</p>
+<h2 id="custom-event-types">Custom Event Types</h2>
+<p>To create an event type that we can send (<em>this is not required</em>) we can make a new class that inherits from <code>Event</code>:</p>
+<pre><code class="language-csharp">
+class FlagEvent : public Event
+{
+public:
+  PlasmaDeclareType(FlagEvent);
+  static void InitializeMeta(MetaType* meta);
+  // Any data you wish to put here
+};
+</code></pre>
+<p>Notice that this class uses the <code>PlasmaDeclareType</code> macro. This means that it is important that we use the counterpart <code>PlasmaDefineType</code> within the cpp, and that we must absolutely be sure to call <code>BindBase</code> on Event as well as <code>InitializeMetaOfType(FlagEvent)</code> elsewhere in the initialization portion of our code. See <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++plasma_source_documentation/meta_binding.md">meta_binding</a> for more details.</p>
+<pre><code class="language-csharp">
+PlasmaDefineType(FlagEvent);
+
+void FlagEvent::InitializeMeta(MetaType* meta)
+{
+  BindBase(Event);
+  // Any members we want bound to script
+}
+</code></pre>
+
+<h2 id="sending-receiving-events">Sending / Receiving Events</h2>
+<p>Sending an event is generally:</p>
+<pre><code class="language-csharp">
+FlagEvent toSend;
+  target->GetDispatcher()->Dispatch(Events::FlagCaptured, &toSend);
+</code></pre>
+
+<p>The <code>target</code> in this case is whoever we want to send the event on.</p>
+<p>In some places we have helper functions like <code>DispatchEvent</code> to make this more convenient (such as on component):</p>
+<pre><code class="language-csharp">
+FlagEvent toSend;
+DispatchEvent(Events::FlagCaptured, &toSend);
+</code></pre>
+<p>When making an event <em>connection</em> so we can receive an event you may use:</p>
+<pre><code class="language-csharp">
+Plasma::Connect(target, Events::FlagCaptured, this, &self_type::OnFlagCaptured);
+</code></pre>
+
+<p>The <code>target</code> in this case is an object that is going to have that event sent to it. We pass in <code>this</code> because we want to listen for the event. The type <code>self_type</code> is automatically declared on our class by <code>PlasmaDeclareType</code>. The <code>&amp;self_type::OnFlagCaptured</code> is C++ syntax for getting a member function pointer.</p>
+<p>Technically <code>Plasma::Connect</code> can connect any two objects (it doesn't even have to be yourself), however since your own object is most common, we have a macro to simplify this:</p>
+<pre><code class="language-csharp">
+ConnectThisTo(target, Events::FlagCaptured, OnFlagCaptured);
+</code></pre>
+
+<h2 id="event-dispatcherreceiver">Event Dispatcher/Receiver</h2>
+<p>In order to send events we must have an <code>EventDispatcher</code>, and in order to receive events we must have an <code>EventReceiver</code>. To make life simple, most classes can just inherit from <code>EventObject</code> which contains both of these and has all the basic functions on it. Note that <code>Cog</code> itself is actually an <code>EventObject</code> as are many other classes in the engine.</p>
+<p>WARNING: <code>Component</code> is not an <code>EventObject</code>, however it redirects its <code>EventDispatcher</code> and <code>EventReceiver</code> to the owning <code>Cog</code>. This means that if you send an event to a particular component it actually just sends to the entire <code>Cog</code>. Similarly, if you listen for an event on a component, you are actually listening to the event on the entire <code>Cog</code>.</p>
+<p>All events in Plasma are sent and received by string names. We are able to keep this calls very efficient because we implemented our own <code>String</code> class with the following features:</p>
+<ul>
+<li>Strings are immutable and cannot be changed after they are created</li>
+<li>We pre-compute the hash and string length of every string we create</li>
+<li>Strings are reference counted (passing by value does not require allocation)</li>
+<li>Our HashMap is specifically optimized to make String lookup efficient</li>
+</ul>
+<p>Many event systems will pass multiple arguments and invoke functions directly:</p>
+<pre><code class="language-csharp">
+void MyCallback(float frameTime, int frameNumber, World* world);
+</code></pre>
+
+<p>We chose not to do this pattern because it breaks user's code easily if we need to add/remove/change the parameters in any ways. To mitigate this we chose to use a base class <code>Event</code> for the event data. All events sent must publicly inherit from <code>Event</code>. Note that you are not required to create a new derived class in order to send an event.</p>
+<p>Events are automatically disconnected if either the sender or receiver is destructed.</p>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../editor/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../editor/" class="btn btn-xs btn-link">
+        Editor
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../components/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../components/" class="btn btn-xs btn-link">
+        Component Example
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="col-md-12 wm-page-content">
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/noraj/mkdocs-windmill-dark">Windmill Dark</a> theme by Alexandre ZANNI (noraj).</p>
+</footer>
+
+</body>
+</html>

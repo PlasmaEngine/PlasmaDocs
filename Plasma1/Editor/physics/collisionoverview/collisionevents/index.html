@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="author" content="PlasmaDev">
+    <link rel="canonical" href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/physics/collisionoverview/collisionevents/">
+    <link rel="shortcut icon" href="../../../../../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Collision Events - PlasmaDocs</title>
+    <link href="../../../../../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../../../../../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../../../../../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../../../../css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../../../../../js/jquery-3.2.1.min.js"></script>
+    <script src="../../../../../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../../../../../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '../../../../..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "Collision Events", url: "#_top", children: [
+          ]},
+          {title: "Collision Event Types", url: "#collision-event-types", children: [
+          ]},
+          {title: "CollisionEvents Order", url: "#collisionevents-order", children: [
+          ]},
+          {title: "Properties", url: "#properties", children: [
+              {title: "Object vs. OtherObject", url: "#object-vs-otherobject" },
+              {title: "ContactPoints", url: "#contactpoints" },
+          ]},
+          {title: "Related Materials", url: "#related-materials", children: [
+              {title: "Manual", url: "#manual" },
+              {title: "Reference", url: "#reference" },
+          ]},
+        ];
+
+    </script>
+    <script src="../../../../../js/base.js"></script>
+      <script src="../../../../../search/main.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../collisiongroupsandtables/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../collisiongroupsandtables/" class="btn btn-xs btn-link">
+        Collision Groups and Tables
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../../colliders/spherecollider/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../../colliders/spherecollider/" class="btn btn-xs btn-link">
+        Sphere Collider
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <h1 id="collision-events">Collision Events</h1>
+<p><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/collisionevent.md"> CollisionEvents</a> are the primary way that physics sends collision information to users. Three main event types are sent out for collisions: starting, persisting, and ending.</p>
+<p>Collision events are often used in gameplay, such as applying damage if an impact was large enough. Sometimes it is necessary to alter information about the two objects involved in a collision, such as their velocity. Other common examples include creating audio effects or graphics effects in response to a collision, such as a scraping sound and sparks of a sliding metal object.</p>
+<h1 id="collision-event-types">Collision Event Types</h1>
+<p>There are three primary collision events sent out. These events are typically sent to both objects involved and to the <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/physics/collisionoverview/physicsspace.md">PhysicsSpace</a>. If you're having trouble receiving events then see <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/physics/collisionoverview/physicstroubleshooting/whyaretheynotcolliding.md">WhyAreTheyNotColliding</a>.</p>
+<ul>
+<li><strong>CollisionStarted</strong> is sent out on the first frame two objects come into contact.</li>
+<li><strong>CollisionPersisted</strong> is sent every frame two objects are in contact. This event is not sent on the first frame of collision.</li>
+<li><strong>CollisionEnded</strong> is sent the frame that contact is broken. At this point the two objects are no longer in contact. This event is also sent if an object is destroyed.</li>
+</ul>
+<h1 id="collisionevents-order">CollisionEvents Order</h1>
+<p>The physics system will send out all CollisionEvents after resolving all collisions in the space. This means that some of the information in the event is //old//. This is most obvious when inspecting an object's position and velocity as both will reflect the post-collision resolution information. This is necessary to give final collision information like the final applied impulse. If pre-collision resolution information is desired, see <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/presolveevent.md">PreSolveEvent</a> of <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/physics/collisionoverview/collisiongroupsandtables.md">CollisionTables</a>.</p>
+<h1 id="properties">Properties</h1>
+<p>There's a few properties worth discussing in detail on CollisionEvents.</p>
+<h2 id="object-vs-otherobject">Object vs. OtherObject</h2>
+<p>A collision event is sent with one object as the focus; that is to say that most information will have a primary object and a secondary object. This is necessary to know what direction other properties, such as the collision normal, face. If the event is received from the physics space then this ordering is not defined.</p>
+<h2 id="contactpoints">ContactPoints</h2>
+<p>A CollisionEvent exposes a range of contact points. For physics to solve a collision, several points of contact may be necessary. Often in game logic, one contact point is sufficient; for convenience, the FirstPoint  property is exposed. <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/contactpoint.md"> ContactPoints</a> expose information about what happened in a collision:</p>
+<p><strong>Local and World Points:</strong> Contact points expose both a local and world space point on each object.</p>
+<p><strong>Contact Normal:</strong> The normal of a collision describes the primary direction that collision is resolved in. ContactPoint exposes WorldNormalTowardsOther  which is the normal from the WorldPoint on <em>this// object towards the //other// object. This can be useful for pushing the //other// object away from //this//. To get the world normal towards //this</em> object just negate this property.</p>
+<p><strong>Impulses:</strong> The physics system solves collisions with impulses, i.e. an instantaneous force. To properly solve a collision there are three values: the normal impulse and two friction impulses. </p>
+<p>The normal impulse is the scalar impulse value that is applied in the direction of the contact normal to resolve the collision. This can be used to measure the strength of an impact between the two objects. Keep in mind that an impulse contains the inverse mass sum of the two objects involved.</p>
+<p>The two friction impulses are applied in tangential directions to the normal impulse to slow down an object. ContactPoint exposes FrictionImpulse , which is the total friction magnitude that was applied. Additionally, ComplexImpulse  is exposed, which contains the normal, friction1, and friction2 values in the x, y, and z components of the vector respectively.</p>
+<h1 id="related-materials">Related Materials</h1>
+<h2 id="manual">Manual</h2>
+<ul>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/physics/collisionoverview/physicstroubleshooting/whyaretheynotcolliding.md">whyaretheynotcolliding.md</a></li>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/physics/collisionoverview/physicsspace.md">physicsspace.md</a></li>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/physics/collisionoverview/collisiongroupsandtables.md">collisiongroupsandtables.md</a></li>
+</ul>
+<h2 id="reference">Reference</h2>
+<ul>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/collisionevent.md">CollisionEvent</a></li>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/contactpoint.md">ContactPoint</a></li>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/presolveevent.md">PreSolveEvent</a></li>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/physicsspace.md">PhysicsSpace</a> </li>
+</ul>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../collisiongroupsandtables/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../collisiongroupsandtables/" class="btn btn-xs btn-link">
+        Collision Groups and Tables
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../../colliders/spherecollider/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../../colliders/spherecollider/" class="btn btn-xs btn-link">
+        Sphere Collider
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="col-md-12 wm-page-content">
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/noraj/mkdocs-windmill-dark">Windmill Dark</a> theme by Alexandre ZANNI (noraj).</p>
+</footer>
+
+</body>
+</html>

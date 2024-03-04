@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="author" content="PlasmaDev">
+    <link rel="canonical" href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/editor/cogpathsmanual/">
+    <link rel="shortcut icon" href="../../../../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>CogPaths Manual - PlasmaDocs</title>
+    <link href="../../../../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../../../../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../../../../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../../../css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../../../../js/jquery-3.2.1.min.js"></script>
+    <script src="../../../../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../../../../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '../../../..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "CogPaths Manual", url: "#_top", children: [
+          ]},
+          {title: "The CogPath Property", url: "#the-cogpath-property", children: [
+          ]},
+          {title: "In-Editor Properties of CogPath", url: "#in-editor-properties-of-cogpath", children: [
+              {title: "Related Materials", url: "#related-materials" },
+              {title: "Manual", url: "#manual" },
+              {title: "Reference", url: "#reference" },
+          ]},
+        ];
+
+    </script>
+    <script src="../../../../js/base.js"></script>
+      <script src="../../../../search/main.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../customizeexportedgame/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../customizeexportedgame/" class="btn btn-xs btn-link">
+        Customize Exported Game
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../addremovecomponent/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../addremovecomponent/" class="btn btn-xs btn-link">
+        Add and Remove Components
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <h1 id="cogpaths-manual">CogPaths Manual</h1>
+<p>CogPaths provide a good way to get a reference to any <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/architecture/cogs.md">Cog</a> anywhere within a game session. It points directly to the object as identified in the editor (or through a written file path) instead of wasting valuable computation time searching for it in code.  As such, it is usually best to instantiate any CogPath variables before run-time</p>
+<h1 id="the-cogpath-property">The CogPath Property</h1>
+<p>To use a CogPath cogPath property in a component, a <code>CogPath</code> variable with the <code>[Property]</code> attribute is necessary:</p>
+<pre><code class="language-csharp">
+[Property] var ObjectCogPath : CogPath = CogPath();
+</code></pre>
+<p>When viewed in the Properties window, a CogPath property will appear:</p>
+<p><strong>ADD IMAGE</strong></p>
+<p>Selecting the object the CogPath refers to may be done in one of three ways: from the Level Editor window, the Objects window, or by typing it in directly
+- To select from the Level Editor:
+- Hold Left-Click over the Orange reticle icon and Drag over to the object in the Level Editor window:</p>
+<p><strong>ADD IMAGE</strong></p>
+<ul>
+<li>To select from the Objects window:</li>
+<li>Hold Left-Click over the Orange reticle icon and Drag over the object name in the Objects window:</li>
+</ul>
+<p><strong>ADD IMAGE</strong></p>
+<ul>
+<li>To select by typing the name in directly:</li>
+<li>The syntax is very similar to a file system hierarchy. The space that the object is in acts as the "Drive Name" (<code>this.Space:/</code>), which allows a CogPath to reference a Cog in a different Space than the one the object with the component exists in. If the object is in the space that the component is in, you do not need to type in the space (i.e. just <code>:/</code>):</li>
+</ul>
+<p><strong>ADD IMAGE</strong></p>
+<p>To access the Cog that the CogPath points to, simply use the dot operator after the name of the CogPath variable:</p>
+<pre><code class="language-csharp">
+var myObject = this.ObjectCogPath.Cog;
+</code></pre>
+
+<h1 id="in-editor-properties-of-cogpath">In-Editor Properties of CogPath</h1>
+<p>Once an object has been selected, a number of different options become available. These may be accessed in the Properties window by clicking on the arrow icon next to the orange reticle, like so:</p>
+<p><strong>ADD IMAGE</strong></p>
+<table>
+<thead>
+<tr>
+<th>Editor Property</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>DirectCog drop-down menu</td>
+<td>If the current cog is null, and it is accessed through <code>CogPath.Cog</code>, it will try to resolve the path. DirectCog never tries to resolve the path. It's a pointer to the object</td>
+</tr>
+<tr>
+<td>ErrorOnResolveToNull checkBox</td>
+<td>Is an exception thrown if a Cog is accessed when it's invalid or not found?</td>
+</tr>
+<tr>
+<td>ErrorOnPathCantCompute checkBox</td>
+<td>Throw an exception/notification if the path to an object cannot be computed?</td>
+</tr>
+<tr>
+<td>ErrorOnDirectLinkFail checkBox</td>
+<td>Throw an exception/notification if a direct link to the object cannot be resolved?</td>
+</tr>
+<tr>
+<td>UpdateCogOnPathChange checkBox</td>
+<td>When cog path is set, should object be resolved? (this also detects parse errors)</td>
+</tr>
+<tr>
+<td>UpdateCogOnInitialize checkBox</td>
+<td>Whether the cog path attempts to resolve an object when the object is fully initialized</td>
+</tr>
+<tr>
+<td>UpdatePathOnCogChange checkBox</td>
+<td>When the cog is set, should the path to the object be recomputed?</td>
+</tr>
+<tr>
+<td><code>CogRelative</code> (Path Preference)</td>
+<td>First attempt to represent the path as a relative path. This is only valid if the objects are on the same hierarchy (such as <code>..</code> for parent, <code>../OtherObject</code> for a sibling, or <code>Child1/Child2</code> for children)</td>
+</tr>
+<tr>
+<td><code>SpaceRelative</code> (Path Preference)</td>
+<td>Assumes the objects are not on the same hierarchy, but exist within the same space. This means all paths begin with <code>:/</code>, which means look within the same space.</td>
+</tr>
+<tr>
+<td><code>Absolute</code> (Path Preference)</td>
+<td>Always require a named space (such as Hud or Main) and then a full path to the object such as <code>Hud:/HealthText</code>. Note that Absolute can only be used in the editor with the orange reticle target picker if the space is given a name.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="related-materials">Related Materials</h2>
+<h2 id="manual">Manual</h2>
+<ul>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/architecture/cogs/gameobjectsconcept.md">Game Objects (Cogs)</a></li>
+</ul>
+<h2 id="reference">Reference</h2>
+<ul>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/cogpath.md">cogpath</a></li>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/cog.md">cog</a></li>
+</ul>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../customizeexportedgame/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../customizeexportedgame/" class="btn btn-xs btn-link">
+        Customize Exported Game
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../addremovecomponent/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../addremovecomponent/" class="btn btn-xs btn-link">
+        Add and Remove Components
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="col-md-12 wm-page-content">
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/noraj/mkdocs-windmill-dark">Windmill Dark</a> theme by Alexandre ZANNI (noraj).</p>
+</footer>
+
+</body>
+</html>

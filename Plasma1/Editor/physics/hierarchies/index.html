@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="author" content="PlasmaDev">
+    <link rel="canonical" href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/physics/hierarchies/">
+    <link rel="shortcut icon" href="../../../../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Hierarchies - PlasmaDocs</title>
+    <link href="../../../../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../../../../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../../../../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../../../css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../../../../js/jquery-3.2.1.min.js"></script>
+    <script src="../../../../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../../../../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '../../../..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "Hierarchies", url: "#_top", children: [
+              {title: "Basic understanding", url: "#basic-understanding" },
+          ]},
+          {title: "Advanced Hierarchies: Nested RigidBodies", url: "#advanced-hierarchies-nested-rigidbodies", children: [
+              {title: "Dynamic RigidBodies", url: "#dynamic-rigidbodies" },
+              {title: "Static RigidBodies", url: "#static-rigidbodies" },
+              {title: "Kinematic RigidBodies", url: "#kinematic-rigidbodies" },
+          ]},
+          {title: "Non-Uniform Scale", url: "#non-uniform-scale", children: [
+          ]},
+          {title: "Massless Children", url: "#massless-children", children: [
+          ]},
+          {title: "Troubleshooting", url: "#troubleshooting", children: [
+          ]},
+          {title: "Related Materials", url: "#related-materials", children: [
+              {title: "Manual", url: "#manual" },
+              {title: "Reference", url: "#reference" },
+          ]},
+        ];
+
+    </script>
+    <script src="../../../../js/base.js"></script>
+      <script src="../../../../search/main.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../joints/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../joints/" class="btn btn-xs btn-link">
+        Joints
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../../graphics/particles/sprite_particle_system/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../../graphics/particles/sprite_particle_system/" class="btn btn-xs btn-link">
+        Sprite Particle System
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <h1 id="hierarchies">Hierarchies</h1>
+<p><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/hierarchy.md">Hierarchies</a> allows physics to building complicated objects from simpler pieces</p>
+<h2 id="basic-understanding">Basic understanding</h2>
+<p>To understand the basics of hierarchies, it's first important to conceptually understand what a <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/physics/rigidbody.md">RigidBody</a> and {icon university}[[../Colliders | Collider's]] role is. A Collider defines a shape and contains certain physical attributes such as density, volume, friction, etc... A RigidBody gives an object inertia (e.g. mass, velocity, etc...). This gives a few meanings to objects in a hierarchy. If an object doesn't have a Collider, then it doesn't have volume or density, which means it can't contribute to the mass of a RigidBody. If an object doesn't have a RigidBody, then it may have collision properties, but it cannot be moved by physics interaction.</p>
+<p>This gives four simple objects configurations:
+ - No RigidBody no Collider: Physics doesn't do anything.
+ - Collider only: Physics detects collision and resolves collision, but this object cannot be moved by physics.
+ - RigidBody only: The object is treated as a point-mass that cannot be collided with. Mass is assumed to be 1 for forces.
+ - Both: A regular object that computes mass from the Collider and will be affected by forces, collisions, etc...</p>
+<p>The next easiest tree to look at is one with only Colliders. As each Collider only represents another collision volume, this tree would logically be the same as independent objects in the scene, ignoring how the transform data is computed. Physics will not move these objects, other objects can collide as normal, and each Collider defines its own materials for resolution.</p>
+<p>The first interesting example is an object with a RigidBody at the root and Collider children.</p>
+<p><img alt="image" src="https://raw.githubusercontent.com/PlasmaEngine/PlasmaDocs/master/media/46360.png" /></p>
+<p>In this hierarchy, the root has a RigidBody and Collider which implies that the root has velocity and mass. The children just have Colliders which imply that they have collision and could contribute to mass. As a root in the hierarchy typically moves children with it, physics chooses to "attach" the child Colliders to the RigidBody, i.e. the entire hierarchy acts as one RigidBody with multiple collision shapes. Each Collider still retains the properties of its material, such as friction and restitution. If one Collider has a larger mass (from the density and volume) then the root RigidBody's total mass properties will reflect this.</p>
+<h1 id="advanced-hierarchies-nested-rigidbodies">Advanced Hierarchies: Nested RigidBodies</h1>
+<p>From here a larger nested tree can be built with the same basic structure to make a more complicated object. The tree can even have Cogs in the middle without a Collider. The real question is how do nested RigidBodies affect physics? This ends up depending on the <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/enum_reference.md#rigidbodydynamicstate">DynamicState</a> of the RigidBody.</p>
+<h3 id="dynamic-rigidbodies">Dynamic RigidBodies</h3>
+<p>When a RigidBody is marked as being <code>Dynamic</code>, it signifies that it should be an independent entity that is free to move and resolve as normal. This means that any dynamic RigidBody in the middle of a hierarchy behaves as if its sub-tree was a completely independent object. By keeping the objects in the hierarchy, logical organization is preserved while still allowing free movement. Archetypes can be made from a larger collection of individual objects (e.g. cars and their tires). Additionally, a RigidBody can be quickly toggled to another DynamicState enum.</p>
+<h3 id="static-rigidbodies">Static RigidBodies</h3>
+<p>If a RigidBody is marked as <code>Static</code> then it behaves as if there's no RigidBody in that sub-tree. This is particularly useful if a sub-tree starts static but then switches to dynamic at a later point in time.</p>
+<h3 id="kinematic-rigidbodies">Kinematic RigidBodies</h3>
+<p>If a RigidBody is marked as <code>Kinematic</code> then it behaves like a <code>Static</code> body in the tree with one main exception: kinematic implies that an object can apply forces to other objects but cannot receive forces. In this case a kinematic sub-tree can push other objects but will not receive forces back. This can be useful to define a sub-portion of tree for a player to push objects without being pushed back.</p>
+<h1 id="non-uniform-scale">Non-Uniform Scale</h1>
+<p>One common problem with building hierarchies is when a parent object is non-uniformly scaled. This introduces what is known as a skew. Skews are currently not supported by the physics system and will be stripped out of any transformation. Typically all root objects should be configured with uniform scales.</p>
+<h1 id="massless-children">Massless Children</h1>
+<p>A common scenario when building complicated hierarchies is wanting to add a collision volume for game logic reasons without affecting the overall mass properties of the hierarchy. To do this, the physics systems supports a special configuration on the <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/physics/physicsmaterial.md">PhysicsMaterial</a>. If a material's density is set to 0 (this has to be manually typed) then the object doesn't contribute to a RigidBody's total mass.</p>
+<h1 id="troubleshooting">Troubleshooting</h1>
+<p>When building a larger hierarchy, each Collider is still treated as a distinct object for collision detection. This means that it's possible for another object to get sandwiched between two flush Colliders (e.g. a table and its legs). Currently no solution is available to prevent this behavior. </p>
+<h1 id="related-materials">Related Materials</h1>
+<h2 id="manual">Manual</h2>
+<ul>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/physics/rigidbody.md">rigidbody.md</a></li>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/physics/colliders.md">colliders.md</a></li>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/physics/physicsmaterial.md">physicsmaterial.md</a></li>
+</ul>
+<h2 id="reference">Reference</h2>
+<ul>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/hierarchy.md">Hierarchy</a></li>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/rigidbody.md">RigidBody</a></li>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/collider.md">Collider</a></li>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/physicsmaterial.md">PhysicsMaterial</a></li>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/enum_reference.md#rigidbodydynamicstate">RigidBodyDynamicState</a></li>
+</ul>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../joints/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../joints/" class="btn btn-xs btn-link">
+        Joints
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../../graphics/particles/sprite_particle_system/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../../graphics/particles/sprite_particle_system/" class="btn btn-xs btn-link">
+        Sprite Particle System
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="col-md-12 wm-page-content">
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/noraj/mkdocs-windmill-dark">Windmill Dark</a> theme by Alexandre ZANNI (noraj).</p>
+</footer>
+
+</body>
+</html>

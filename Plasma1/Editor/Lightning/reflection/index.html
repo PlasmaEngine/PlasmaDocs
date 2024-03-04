@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="author" content="PlasmaDev">
+    <link rel="canonical" href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/Lightning/reflection/">
+    <link rel="shortcut icon" href="../../../../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Reflection - PlasmaDocs</title>
+    <link href="../../../../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../../../../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../../../../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../../../css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../../../../js/jquery-3.2.1.min.js"></script>
+    <script src="../../../../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../../../../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '../../../..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "Reflection", url: "#_top", children: [
+          ]},
+        ];
+
+    </script>
+    <script src="../../../../js/base.js"></script>
+      <script src="../../../../search/main.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../strings/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../strings/" class="btn btn-xs btn-link">
+        Strings
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../property_delegates/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../property_delegates/" class="btn btn-xs btn-link">
+        Property Delegate
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <h1 id="reflection">Reflection</h1>
+<p>Reflection describes an objects ability to "reflect" on itself, generally this means to understand it's type and relationships to other types. Although Lightning does not boast a robust reflection library it does have a basic typeid for by-value types and <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/Lightning/property_delegates.md">property_delegates</a>:</p>
+<p># typeid</p>
+<pre><code class="language-csharp">
+  var i = 0;
+  var di = 0d;
+  var real = 0.0;
+  var double = 0.0d;
+  var word = "";
+  var refType = null;
+  var boolTrue = true;
+  var boolFalse = false;
+  var prop = new Property[Real]();        
+
+  Console.Write("integer, 0 is of type: ");
+  Console.WriteLine(typeid(i).Name);               // integer, 0 is of type: Integer
+  Console.Write("doubleinteger, 0d is of type: ");
+  Console.WriteLine(typeid(di).Name);              // doubleinteger, 0d is of type: DoubleInteger
+  Console.Write("real, 0.0 is of type: ");
+  Console.WriteLine(typeid(real).Name);            // real, 0.0 is of type: Real
+  Console.Write("doublereal, 0.0d is of type: ");
+  Console.WriteLine(typeid(double).Name);          // doublereal, 0.0d is of type: DoubleReal
+  Console.Write("string, \"\" is of type: ");
+  Console.WriteLine(typeid(word).Name);            // string, "" is of type: String
+  Console.Write("null, null is of type: ");
+  Console.WriteLine(typeid(refType).Name);         // refTypeHandle, null is of type: Null
+  Console.Write("boolean, true is of type: ");
+  Console.WriteLine(typeid(boolTrue).Name);        // boolean, true is of type: Boolean
+  Console.Write("boolean, false is of type: ");
+  Console.WriteLine(typeid(boolFalse).Name);       // boolean, false is of type: Boolean   
+  Console.Write("Real property delegate is of type: "); 
+  Console.WriteLine(typeid(prop).Name);            // Real property delegate is of type: Property[Real]
+</code></pre>
+
+<pre><code class="language-csharp">
+  ---------------- Begin Game ---------------
+  integer, 0 is of type: Integer
+  doubleinteger, 0d is of type: DoubleInteger
+  real, 0.0 is of type: Real
+  doublereal, 0.0d is of type: DoubleReal
+  string, "" is of type: String
+  null, null is of type: Null
+  boolean, true is of type: Boolean
+  boolean, false is of type: Boolean
+  Real property delegate is of type: Property[Real]
+</code></pre>
+<hr />
+<p># String Interpolation</p>
+<p>Those types that are <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/Lightning/memory_management.md">memory_management</a> or <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/Lightning/delegates.md">delegates</a> types can be inspected with <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/Lightning/lightning_base_types/string.md">string</a> Interpolation:</p>
+<pre><code class="language-csharp">
+class Utility
+{
+  constructor()
+  {
+  }
+  [Static]
+  function HelloWorld()
+  {
+    Console.WriteLine("Hello World");
+  }
+
+  function Add(a: Integer, b: Integer): Integer
+  {
+    return a+b;
+  }
+}
+
+class Driver 
+{
+  function TypeidForRefAndDelegates()
+  {
+    var del = Utility.HelloWorld;
+    var temp = new Utility();
+    var del2 = temp.Add;
+    var vectorRef = new Real3(0.0, 1.0, 2.0);
+
+    Console.Write("delegate(), Utility.HelloWorld can be string interpolated to read: "); 
+    Console.WriteLine("`del`");
+
+    Console.Write("delegate(a:Integer, b:Integer):Integer, Utility.Add");
+    Console.Write(" can be string interpolated to read: ");
+    Console.WriteLine("`del2`");
+
+
+    Console.Write("ref Real3, (0.0, 1.0, 2.0) is of type: ");
+    Console.WriteLine("`vectorRef`");
+  }
+}
+</code></pre>
+
+<pre><code class="language-csharp">
+---------------- Begin Game ---------------
+delegate(), Utility.HelloWorld can be string interpolated to read: Utility.HelloWorld()
+delegate(a:Integer, b:Integer):Integer, Utility.Add can be string interpolated to read: 
+Utility.Add(a : Integer, b : Integer) : Integer
+ref Real3, (0.0, 1.0, 2.0) is of type: ref Real3
+</code></pre>
+<hr />
+<p># Console.DumpValue</p>
+<p>Useful in understanding the current state of a Lightning object, Console.DumpValue prints out the names of the variables and their type, if a <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/Lightning/classes.md">class</a>, or their value if a basic, built-in data type.</p>
+<pre><code class="language-csharp">
+class TopLevel
+{
+  var MyVariable: MidLevel = null;
+  constructor()
+  {
+  }
+}
+
+class MidLevel
+{
+  var MyVariable: BottomLevel = BottomLevel(false);
+  constructor()
+  {
+  }
+}
+
+struct BottomLevel
+{
+  var IsBottom: Boolean = true;
+  var UpAxis: Real3 = Real3(0.0, 1.0, 0.0);
+  constructor(param: Boolean)
+  {
+    this.IsBottom = param;
+  }
+}
+
+class ReflectionDriver
+{
+  [Static]
+  function Dumping()
+  {
+    var top = TopLevel();
+    var mid = MidLevel();
+    var bot = BottomLevel(true);
+
+    Console.DumpValue(top);
+    Console.DumpValue(mid, 8); // The second parameter indicates the depth of recursion cut-off
+    Console.DumpValue(bot);
+
+  }
+}
+</code></pre>
+
+<pre><code class="language-csharp">
+---------------- Begin Game ---------------
+TopLevel
+  MyVariable: (null) MidLevel
+MidLevel
+  MyVariable: BottomLevel
+    IsBottom: False
+    UpAxis: (0, 1, 0)
+      X: 0
+      Y: 1
+      Z: 0
+BottomLevel
+  IsBottom: True
+  UpAxis: (0, 1, 0)
+</code></pre>
+
+<p><em>Notice how the MidLevel dumps more information than the BottomLevel with comparable information, due to the second parameter.</em></p>
+<p># Related Materials
+ ## Manual</p>
+<ul>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/Lightning/property_delegates.md">property_delegates</a></li>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/Lightning/memory_management.md">memory_management</a></li>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/Lightning/delegates.md">delegates</a></li>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/Lightning/lightning_base_types/string.md">string</a></li>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/Lightning/classes.md">classes</a></li>
+</ul>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../strings/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../strings/" class="btn btn-xs btn-link">
+        Strings
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../property_delegates/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../property_delegates/" class="btn btn-xs btn-link">
+        Property Delegate
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="col-md-12 wm-page-content">
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/noraj/mkdocs-windmill-dark">Windmill Dark</a> theme by Alexandre ZANNI (noraj).</p>
+</footer>
+
+</body>
+</html>

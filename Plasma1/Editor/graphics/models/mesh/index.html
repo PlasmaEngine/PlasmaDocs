@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="author" content="PlasmaDev">
+    <link rel="canonical" href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/graphics/models/mesh/">
+    <link rel="shortcut icon" href="../../../../../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>mesh - PlasmaDocs</title>
+    <link href="../../../../../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../../../../../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../../../../../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../../../../css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../../../../../js/jquery-3.2.1.min.js"></script>
+    <script src="../../../../../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../../../../../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '../../../../..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "mesh", url: "#_top", children: [
+          ]},
+          {title: "ContentComponents for a Sample Mesh", url: "#contentcomponents-for-a-sample-mesh", children: [
+          ]},
+          {title: "MeshBuilder", url: "#meshbuilder", children: [
+          ]},
+          {title: "AnimationBuilder and AnimationClips", url: "#animationbuilder-and-animationclips", children: [
+          ]},
+          {title: "TextureContent and GeneratedArchetype", url: "#texturecontent-and-generatedarchetype", children: [
+          ]},
+          {title: "Related Materials", url: "#related-materials", children: [
+              {title: "Manual", url: "#manual" },
+              {title: "Reference", url: "#reference" },
+          ]},
+        ];
+
+    </script>
+    <script src="../../../../../js/base.js"></script>
+      <script src="../../../../../search/main.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../model_component/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../model_component/" class="btn btn-xs btn-link">
+        Model Component
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../../materials/textures/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../../materials/textures/" class="btn btn-xs btn-link">
+        Textures
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <h1 id="mesh">mesh</h1>
+<p>Imported meshes may be used to apply to a <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/graphics/models/model_component.md">Model</a> or <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/graphics/models/model_component.md#skinned-model">SkinnedModel</a> component as well as to create a <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/physicsmesh.md">PhysicsMesh</a> for that object. This page focuses solely on using a mesh for a Model and SkinnedModel. Clicking on a particular mesh in the Library window will open up the ContentComponents of that mesh in the Properties window:</p>
+<h1 id="contentcomponents-for-a-sample-mesh">ContentComponents for a Sample Mesh</h1>
+<p>The properties in the ContentComponents are the same as those found in the <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/graphics/adding_assets/adding_scene_assets.md#group-import-options">Group Import Options</a>, along with a few additional properties. One can fix incorrect values set during import as well as add or remove automatic resource generation (e.g. importing textures and animations from the same .fbx that included the base mesh).</p>
+<p>WARNING: All meshes imported from a single .fbx or other scene asset file will have the same values in the properties of the ContentComponents. It is therefore recommended to only import one object per scene asset file.</p>
+<h1 id="meshbuilder">MeshBuilder</h1>
+<p>The MeshBuilder ContentComponent includes those properties specifically related to an imported mesh (instead of other resources imported in the same file that are associated with the mesh such as animations and textures).</p>
+<h1 id="animationbuilder-and-animationclips">AnimationBuilder and AnimationClips</h1>
+<p>The AnimationBuilder ContentComponent defines clips of animation that have been imported. If importing a single animation, the AnimationClip will be automatically generated and there is nothing more to do. If using a workflow where all animations for a certain mesh are included in the same timeline or track in an asset file, different AnimationClips will need to added for each separate animation, defined by their start and end frames. If using such a workflow, the artist should provide the user with the frame specifications for each distinct animation.</p>
+<p>Every AnimationClip can be named, have its start and end frames defined, and its looping mode set (<code>Default</code>, <code>Once</code>, or <code>Looping</code>). Once an AnimationClip is added it is treated like an Animation Resource in Plasma and can be accessed in LightningScript like any other Animation.</p>
+<h1 id="texturecontent-and-generatedarchetype">TextureContent and GeneratedArchetype</h1>
+<p>These components have no properties and are there only if <code>ImportTextures</code> and <code>GenerateArchetype</code> are set to true in the Group Import Options window when importing an asset. If a scene asset file has textures in it, but <code>ImportTextures</code> was set to false when imported, adding the TextureContent component and reloading the mesh will add the textures to the project Library. If no archetype was created on import, adding GenerateArchetype and reloading will create an archetype in the project Library.</p>
+<h1 id="related-materials">Related Materials</h1>
+<h2 id="manual">Manual</h2>
+<ul>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/graphics/models/model_component.md">model_component</a></li>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/graphics/adding_assets/adding_scene_assets.md">adding_scene_assets</a></li>
+</ul>
+<h2 id="reference">Reference</h2>
+<ul>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/model.md">model</a></li>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/skinnedmodel.md">skinnedmodel</a></li>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/physicsmesh.md">PhysicsMesh</a> </li>
+</ul>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../model_component/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../model_component/" class="btn btn-xs btn-link">
+        Model Component
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../../materials/textures/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../../materials/textures/" class="btn btn-xs btn-link">
+        Textures
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="col-md-12 wm-page-content">
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/noraj/mkdocs-windmill-dark">Windmill Dark</a> theme by Alexandre ZANNI (noraj).</p>
+</footer>
+
+</body>
+</html>

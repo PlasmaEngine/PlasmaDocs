@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="author" content="PlasmaDev">
+    <link rel="canonical" href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C%2B%2B/plasma_source_documentation/editor/">
+    <link rel="shortcut icon" href="../../../../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Editor - PlasmaDocs</title>
+    <link href="../../../../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../../../../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../../../../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../../../css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../../../../js/jquery-3.2.1.min.js"></script>
+    <script src="../../../../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../../../../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '../../../..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "Editor", url: "#_top", children: [
+              {title: "Project loading", url: "#project-loading" },
+              {title: "Commands", url: "#commands" },
+              {title: "Commands from Data", url: "#commands-from-data" },
+              {title: "Cog Commands", url: "#cog-commands" },
+              {title: "Command Context", url: "#command-context" },
+              {title: "Command \u0027Active\u0027 state", url: "#command-active-state" },
+          ]},
+          {title: "Gizmos", url: "#gizmos", children: [
+              {title: "Basic Gizmos", url: "#basic-gizmos" },
+          ]},
+          {title: "Tools", url: "#tools", children: [
+              {title: "Events", url: "#events" },
+          ]},
+          {title: "Operations", url: "#operations", children: [
+              {title: "Custom Tools", url: "#custom-tools" },
+          ]},
+          {title: "Viewports", url: "#viewports", children: [
+              {title: "EditorViewport", url: "#editorviewport" },
+              {title: "GameViewport", url: "#gameviewport" },
+          ]},
+          {title: "Notifications", url: "#notifications", children: [
+          ]},
+          {title: "Windows", url: "#windows", children: [
+              {title: "Text Editor", url: "#text-editor" },
+              {title: "Main Property Grid", url: "#main-property-grid" },
+              {title: "Resource Library", url: "#resource-library" },
+              {title: "Object View", url: "#object-view" },
+              {title: "Console", url: "#console" },
+              {title: "Tools Window", url: "#tools-window" },
+              {title: "Resource Editors", url: "#resource-editors" },
+          ]},
+          {title: "Downloads", url: "#downloads", children: [
+          ]},
+          {title: "Automation", url: "#automation", children: [
+          ]},
+          {title: "Animator", url: "#animator", children: [
+              {title: "Rich Animation", url: "#rich-animation" },
+              {title: "Animation Editor", url: "#animation-editor" },
+              {title: "Controls", url: "#controls" },
+              {title: "Track View", url: "#track-view" },
+              {title: "Scrubber", url: "#scrubber" },
+              {title: "Graph", url: "#graph" },
+              {title: "Dope Sheet", url: "#dope-sheet" },
+              {title: "Controls", url: "#controls_1" },
+          ]},
+        ];
+
+    </script>
+    <script src="../../../../js/base.js"></script>
+      <script src="../../../../search/main.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../engine/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../engine/" class="btn btn-xs btn-link">
+        Engine
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../custom_event_names/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../custom_event_names/" class="btn btn-xs btn-link">
+        Custom Event Names
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <h1 id="editor">Editor</h1>
+<p>The editor is created once and manages:</p>
+<ul>
+<li>All windows and docking (done through the base MultiDock class)</li>
+<li>The current level(s) being edited</li>
+<li>All running game sessions</li>
+<li>Selection</li>
+<li>Operation queue (undo/redo)</li>
+<li>Commands</li>
+<li>Tools</li>
+</ul>
+<h2 id="project-loading">Project loading</h2>
+<p>Why we restart editor when loading projects (meta flush)</p>
+<h2 id="commands">Commands</h2>
+<ul>
+<li>Requires documentation</li>
+</ul>
+<h2 id="commands-from-data">Commands from Data</h2>
+<p>Commands are loaded from the Data\Commands.data file in the Plasma repository. These commands are then bound in C++ to specific functions on the editor.</p>
+<h2 id="cog-commands">Cog Commands</h2>
+<p>CogCommands are just Cogs that are marked as a command object, and when the command is invoked, the 'ExecuteEvent' event will be sent on the cog. This allows for users to create custom commands without learning a new system. They use what they're used to and just respond to a different event. The command Cogs are all created in a single Space (named "CommandSpace") that lives under the editors game session.</p>
+<p>There are two ways a CogCommand can be created:</p>
+<ul>
+<li>A Component with the [Command] attribute with the attribute parameter 'autoCommand' set to true.</li>
+<li>An Archetype with tag "Command".</li>
+</ul>
+<h2 id="command-context">Command Context</h2>
+<p>This gives commands more information about the circumstances they were invoked in, such as which viewport has focus when the command is invoked.</p>
+<h2 id="command-active-state">Command 'Active' state</h2>
+<p>Used for Tools and toggle-able commands. Example: Tools have Commands that enable them, so when the tool is selected, that command is now considered 'Active' until another tool is selected. This allows the IconButton in the Ui to display that the tool is active.</p>
+<h1 id="gizmos">Gizmos</h1>
+<ul>
+<li>Requires documentation</li>
+</ul>
+<h2 id="basic-gizmos">Basic Gizmos</h2>
+<ul>
+<li>Requires documentation</li>
+</ul>
+<h1 id="tools">Tools</h1>
+<ul>
+<li>Requires documentation</li>
+</ul>
+<h2 id="events">Events</h2>
+<p>Connect to this.Owner for all events. They will all be sent directly to the tool when the tool is selected.</p>
+<ul>
+<li>Events.ToolActivate   - Sent when the tool has been selected</li>
+<li>Events.ToolDeactivate - Sent when the tool has been de-selected</li>
+<li>
+<p>Events.ToolDraw       - Sent every frame to debug draw</p>
+</li>
+<li>
+<p>Events::MouseDown</p>
+</li>
+<li>Events::MouseMove</li>
+<li>Events::MouseUpdate</li>
+<li>Events::LeftMouseDown</li>
+<li>Events::LeftMouseUp</li>
+<li>Events::DoubleClick</li>
+<li>Events::RightMouseDown</li>
+<li>Events::RightMouseUp</li>
+<li>Events::MiddleMouseDown</li>
+<li>
+<p>Events::MouseScroll</p>
+</li>
+<li>
+<p>Events::KeyDown</p>
+</li>
+<li>Events::KeyUp</li>
+</ul>
+<h1 id="operations">Operations</h1>
+<ul>
+<li>Requires documentation</li>
+</ul>
+<h2 id="custom-tools">Custom Tools</h2>
+<ul>
+<li>Requires documentation</li>
+</ul>
+<h1 id="viewports">Viewports</h1>
+<ul>
+<li>Requires documentation</li>
+</ul>
+<h2 id="editorviewport">EditorViewport</h2>
+<ul>
+<li>Requires documentation</li>
+</ul>
+<h2 id="gameviewport">GameViewport</h2>
+<ul>
+<li>Requires documentation</li>
+</ul>
+<h1 id="notifications">Notifications</h1>
+<ul>
+<li>Requires documentation</li>
+</ul>
+<h1 id="windows">Windows</h1>
+<h2 id="text-editor">Text Editor</h2>
+<ul>
+<li>Requires documentation</li>
+</ul>
+<h2 id="main-property-grid">Main Property Grid</h2>
+<ul>
+<li>Requires documentation</li>
+</ul>
+<h2 id="resource-library">Resource Library</h2>
+<ul>
+<li>Requires documentation</li>
+</ul>
+<h2 id="object-view">Object View</h2>
+<ul>
+<li>Requires documentation</li>
+</ul>
+<h2 id="console">Console</h2>
+<ul>
+<li>Requires documentation</li>
+</ul>
+<h2 id="tools-window">Tools Window</h2>
+<ul>
+<li>Requires documentation</li>
+</ul>
+<h2 id="resource-editors">Resource Editors</h2>
+<ul>
+<li>Requires documentation</li>
+</ul>
+<h1 id="downloads">Downloads</h1>
+<ul>
+<li>Requires documentation</li>
+</ul>
+<h1 id="automation">Automation</h1>
+<ul>
+<li>Stress Test</li>
+<li>Coming soon</li>
+</ul>
+<h1 id="animator">Animator</h1>
+<ul>
+<li>Requires documentation</li>
+</ul>
+<h2 id="rich-animation">Rich Animation</h2>
+<ul>
+<li>Requires documentation</li>
+<li>Fbx -&gt; RichAnimation issues   </li>
+</ul>
+<h2 id="animation-editor">Animation Editor</h2>
+<ul>
+<li>AnimationEditorData</li>
+</ul>
+<h2 id="controls">Controls</h2>
+<ul>
+<li>Requires documentation</li>
+</ul>
+<h2 id="track-view">Track View</h2>
+<ul>
+<li>Requires documentation</li>
+</ul>
+<h2 id="scrubber">Scrubber</h2>
+<ul>
+<li>Requires documentation</li>
+</ul>
+<h2 id="graph">Graph</h2>
+<ul>
+<li>Requires documentation</li>
+</ul>
+<h2 id="dope-sheet">Dope Sheet</h2>
+<ul>
+<li>Requires documentation</li>
+</ul>
+<h2 id="controls_1">Controls</h2>
+<ul>
+<li>Requires documentation</li>
+</ul>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../engine/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../engine/" class="btn btn-xs btn-link">
+        Engine
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../custom_event_names/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../custom_event_names/" class="btn btn-xs btn-link">
+        Custom Event Names
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="col-md-12 wm-page-content">
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/noraj/mkdocs-windmill-dark">Windmill Dark</a> theme by Alexandre ZANNI (noraj).</p>
+</footer>
+
+</body>
+</html>

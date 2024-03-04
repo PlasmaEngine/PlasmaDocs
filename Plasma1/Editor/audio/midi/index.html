@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="author" content="PlasmaDev">
+    <link rel="canonical" href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/audio/midi/">
+    <link rel="shortcut icon" href="../../../../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>MIDI - PlasmaDocs</title>
+    <link href="../../../../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../../../../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../../../../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../../../css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../../../../js/jquery-3.2.1.min.js"></script>
+    <script src="../../../../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../../../../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '../../../..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "MIDI", url: "#_top", children: [
+          ]},
+          {title: "Common Uses", url: "#common-uses", children: [
+          ]},
+          {title: "Using the MIDI Events", url: "#using-the-midi-events", children: [
+          ]},
+          {title: "Related Materials", url: "#related-materials", children: [
+              {title: "Manual", url: "#manual" },
+              {title: "Reference", url: "#reference" },
+          ]},
+        ];
+
+    </script>
+    <script src="../../../../js/base.js"></script>
+      <script src="../../../../search/main.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../simplesound/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../simplesound/" class="btn btn-xs btn-link">
+        Simple Sound
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../audiosettings/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../audiosettings/" class="btn btn-xs btn-link">
+        Audio Settings
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <h1 id="midi">MIDI</h1>
+<p>If a MIDI device is connected when the Plasma Engine starts up it will listen for messages from that device and send corresponding <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/midievent.md"> MidiEvents </a>. It does not keep track of device changes, so if a MIDI keyboard is plugged in after the editor or the game is running it won't respond to that device.</p>
+<h1 id="common-uses">Common Uses</h1>
+<ul>
+<li>Using a synthesizer created with the <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/audio/soundnode/additivesynthnode.md">AdditiveSynthNode </a></li>
+<li>Alternate game input and control </li>
+</ul>
+<h1 id="using-the-midi-events">Using the MIDI Events</h1>
+<p>Each <code>MidiEvent</code> has three properties, though not all of them apply to every event. See the table below for the property meanings on each type of event.
+- The <code>Channel</code> property is the MIDI channel received from the device.
+- The <code>MIDINumber</code> property is the MIDI note number associated with the message. This value will be 0 on event types where it is not applicable.
+- The <code>Value</code> property contains the value, if any, that was associated with the MIDI message. Most of these values will be integers from 0 to 127 and will need to be translated before they are used. This value will be 0 on event types where it is not applicable.</p>
+<p>The following events will be sent whenever a corresponding MIDI message is received from the connected device:</p>
+<ul>
+<li>MIDINoteOn: sent whenever a note should start playing, i.e. when a key is pressed on a keyboard. </li>
+<li>MIDINoteOff: sent when a note should stop playing, i.e. when a key is released on a keyboard. (Some MIDI devices will send a NoteOn message with a volume of 0 instead of a NoteOff message.)</li>
+<li>MIDIVolume: sent when an overall volume control is changed on the MIDI device. </li>
+<li>MIDIPitchWheel: sent when the pitch control is changed on the MIDI device.</li>
+<li>MIDIModWheel: sent when the modulation control is changed on the MIDI device.</li>
+<li>MIDIOtherControl: sent for all other control change messages received from the MIDI device.</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Event Type</th>
+<th>Channel</th>
+<th>MIDINumber</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>MIDINoteOn</td>
+<td>Channel#</td>
+<td>Note#</td>
+<td>Volume of the note in the range 0 - 127. Should be translated to 0.0 - 1.0.</td>
+</tr>
+<tr>
+<td>MIDINoteOff</td>
+<td>Channel#</td>
+<td>Note#</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td>MIDIVolume</td>
+<td>Channel#</td>
+<td>N/A</td>
+<td>Volume set by the device in the range 0 - 127. Should be translated to 0.0 - 1.0.</td>
+</tr>
+<tr>
+<td>MIDIPitchWheel</td>
+<td>Channel#</td>
+<td>N/A</td>
+<td>Pitch set by the device in the range -1.0 - 1.0.</td>
+</tr>
+<tr>
+<td>MIDIModWheel</td>
+<td>Channel#</td>
+<td>N/A</td>
+<td>Modulation value in the range 0 - 127.</td>
+</tr>
+<tr>
+<td>MIDIOtherControl</td>
+<td>Channel#</td>
+<td>Control#</td>
+<td>Control value in the range 0 - 127.</td>
+</tr>
+</tbody>
+</table>
+<h1 id="related-materials">Related Materials</h1>
+<h2 id="manual">Manual</h2>
+<ul>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/audio/soundnode/additivesynthnode.md">AdditiveSynthNode </a></li>
+</ul>
+<h2 id="reference">Reference</h2>
+<ul>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/midievent.md"> MIDIEvent </a> </li>
+</ul>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../simplesound/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../simplesound/" class="btn btn-xs btn-link">
+        Simple Sound
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../audiosettings/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../audiosettings/" class="btn btn-xs btn-link">
+        Audio Settings
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="col-md-12 wm-page-content">
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/noraj/mkdocs-windmill-dark">Windmill Dark</a> theme by Alexandre ZANNI (noraj).</p>
+</footer>
+
+</body>
+</html>

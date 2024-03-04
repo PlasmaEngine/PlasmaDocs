@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="author" content="PlasmaDev">
+    <link rel="canonical" href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/audio/soundinstance/">
+    <link rel="shortcut icon" href="../../../../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Sound Instances - PlasmaDocs</title>
+    <link href="../../../../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../../../../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../../../../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../../../css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../../../../js/jquery-3.2.1.min.js"></script>
+    <script src="../../../../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../../../../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '../../../..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "Sound Instances", url: "#_top", children: [
+          ]},
+          {title: "Using SoundInstances", url: "#using-soundinstances", children: [
+              {title: "Controlling Playback", url: "#controlling-playback" },
+              {title: "Controlling Volume and Pitch", url: "#controlling-volume-and-pitch" },
+              {title: "Looping", url: "#looping" },
+              {title: "Events", url: "#events" },
+              {title: "Music Events", url: "#music-events" },
+          ]},
+          {title: "Related Materials", url: "#related-materials", children: [
+              {title: "Manual", url: "#manual" },
+              {title: "Reference", url: "#reference" },
+          ]},
+        ];
+
+    </script>
+    <script src="../../../../js/base.js"></script>
+      <script src="../../../../search/main.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../soundlistener/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../soundlistener/" class="btn btn-xs btn-link">
+        Sound Listeners
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../soundemitter/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../soundemitter/" class="btn btn-xs btn-link">
+        Soundemitter
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <h1 id="sound-instances">Sound Instances</h1>
+<p><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/soundinstance.md"> SoundInstances </a> are created at runtime whenever a <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/audio/soundcue.md">SoundCue</a> is played. Their properties are initially set by the SoundCue, but the user can then manipulate the SoundInstance's properties without affecting the SoundCue or any other SoundInstances created by it. </p>
+<h1 id="using-soundinstances">Using SoundInstances</h1>
+<p>A SoundInstance is returned by the <code>PlayCue</code>and <code>PlayCuePaused</code> methods on <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/audio/soundemitter.md">SoundEmitters </a> and <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/audio/soundspace.md">SoundSpaces </a>, the <code>Play</code> method on <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/audio/simplesound.md">SimpleSounds </a>, and the <code>PlayCueOnNode</code> method on SoundCues. If a <code>PlayCuePaused</code> method is used, the SoundInstance must have its Paused checkBox property set to <code>False</code> before it will begin playing.</p>
+<p>SoundInstance objects are reference counted: they will stay alive as long as a variable is stored with the SoundInstance assigned to it, so the SoundInstance can still be accessed even after it finishes playing. If the user does not store a variable, the SoundInstance will continue playing audio, but cannot be accessed in LightningScripts.</p>
+<h2 id="controlling-playback">Controlling Playback</h2>
+<p>When a SoundInstance is paused it stops playing all audio, then can be resumed and will continue playing where it left off, with no change to its settings or behavior. SoundInstances have a single Boolean property, Paused checkBox, which controls whether they are playing or paused. If Paused checkBox is set to <code>true</code> when the SoundInstance is already paused, or set to <code>false</code> when it is not paused, nothing will happen.</p>
+<p>When a SoundInstance is stopped using the <code>Stop</code> method it immediately stops playing audio and cannot be restarted.</p>
+<p>The  Time  property tells the user the current playback position of a SoundInstance, in seconds, from the beginning of the audio file used for the sound. It also allows the user to tell the SoundInstance to jump to a different position. Note that when reading the  Time  property, the time given will not be precisely accurate. It will never be ahead of the exact position, but, due to the multi-threaded nature of the audio system, it may be very slightly behind.</p>
+<h2 id="controlling-volume-and-pitch">Controlling Volume and Pitch</h2>
+<p>The Volume  and Decibels  properties set the volume adjustment that is applied to the SoundInstance. Volume  uses floating point values, while  Decibels  uses the logarithmic decibel scale commonly used in audio. These properties are linked, so changing one will also change the value of the other.</p>
+<p>The  Pitch  and  Semitones  properties set the pitch adjustment that is applied to the SoundInstance. This adjustment affects both the pitch and speed of the sound: higher-pitched sounds will play faster, while lower-pitched sounds play slower. Large pitch changes will likely affect the quality of the sound.  Pitch  uses floating point values, while the  Semitones  uses semitones, or half-steps. These properties are also linked.</p>
+<p>The <code>InterpolateVolume</code>, <code>InterpolateDecibels</code>, <code>InterpolatePitch</code>, and <code>InterpolateSemitones</code> methods can be used at runtime to smoothly change the SoundInstance's volume or pitch over time. Using these interpolation methods is preferable to using Actions to set the properties: changing a property every frame with an Action can result in audible jumps in volume or pitch, while the interpolation method causes the volume change to be handled smoothly by the audio engine.</p>
+<p>Note that these volume changes will be combined with any other volume modifications applied by objects such as <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/audio/soundtag.md">SoundTags </a>, SoundEmitters, and SoundSpaces. If a SoundInstance's  Volume  is set to <code>0.5</code> and it is played on a SoundEmitter which also has a  Volume  of <code>0.5</code>, this effectively sets the SoundInstance's  Volume  to <code>0.25</code>. If it's  Semitones  is set to <code>12</code> and it is played on a SoundEmitter with a  Semitones  value of <code>-6</code>, this effectively raises the SoundInstance's pitch by half an octave.</p>
+<h2 id="looping">Looping</h2>
+<p>A SoundInstance's  Looping checkBox property is initially set by the corresponding property on the SoundCue. When this property is <code>true</code>, the SoundInstance will repeat indefinitely, using the  LoopStartTime  and  LoopEndTime  properties on the <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/audio/soundcue.md#soundentry">SoundEntry</a> that the SoundCue used to create the SoundInstance. If a SoundInstance is looping and the property is changed to <code>false</code> as it is playing it will continue playing to its  EndTime  and then stop.</p>
+<p>The following code block shows you how to make a SoundInstance finish naturally after it has looped three times, using the <code>SoundLooped</code> event.</p>
+<pre><code class="language-csharp">
+// A property to be set to the SoundCue desired
+[Property] var MySoundCue : SoundCue;
+
+// A variable that will later be set to an instance of MySoundCue
+var MySoundInstance : SoundInstance;
+// A variable that will count how many times MySoundInstance has looped
+var Counter : Integer = 0;
+
+function Initialize(init : CogInitializer)
+{
+    // Create a SoundInstance by playing MySoundCue on the object's SoundSpace
+    this.MySoundInstance = this.Space.SoundSpace.PlayCue(this.MySoundCue);
+    // Connect to the SoundLooped event that will be sent by MySoundInstance
+    Plasma.Connect(this.MySoundInstance, Events.SoundLooped, this.OnSoundLoop);
+}
+
+function OnSoundLoop(event : SoundInstanceEvent)
+{
+    // Increase the counter
+    ++this.Counter;
+
+    if (this.Counter == 3)
+    {
+        // Tell the SoundInstance to stop looping, play until it reaches its end, and stop
+        this.MySoundInstance.Looping = false;
+    }
+}
+</code></pre>
+
+<h2 id="events">Events</h2>
+<p>The following <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/soundinstanceevent.md"> SoundInstanceEvents </a> will be sent out by all SoundInstance objects:</p>
+<ul>
+<li><code>SoundLooped</code> is sent by looping SoundInstances each time they reach their LoopEndTime  and jump back to their LoopStartTime .</li>
+<li><code>SoundStopped</code> is sent when a SoundInstance has completely finished playing audio.</li>
+<li><code>AudioInterpolationDone</code> will be sent whenever a volume or pitch interpolation has finished.</li>
+</ul>
+<h2 id="music-events">Music Events</h2>
+<p>If the music options were set on the SoundCue before the SoundInstance was created (all three of the  BeatsPerMinute ,  TimeSigBeats , and  TimeSigValue  properties must be set) then the SoundInstance will also send the following SoundInstanceEvents:</p>
+<ul>
+<li><code>MusicBeat</code> is sent on every beat of the music (the beat value set in the time signature).</li>
+<li><code>MusicBar</code> is sent at the beginning of every measure.</li>
+<li><code>MusicEighthNote</code> is sent for every eighth note beat of the music. (If the music's time signature is 4/4, you will receive eight <code>MusicEighthNote</code> events during every measure.) </li>
+<li><code>MusicQuarterNote</code> is sent for every quarter note beat of the music. (If the music's time signature is 4/4, you will receive four <code>MusicQuarterNote</code> events during every measure.)</li>
+<li><code>MusicHalfNote</code> is sent for every half note beat of the music. (If the music's time signature is 4/4, you will receive two <code>MusicHalfNote</code> events during every measure.)</li>
+<li><code>MusicWholeNote</code> is sent for every whole note beat of the music. (If the music's time signature is 4/4, you will receive one <code>MusicWholeNote</code> event for every measure.)</li>
+</ul>
+<p>If the  CustomEventTime checkBox property is set, the SoundInstance will also send the <code>MusicCustomTime</code> event when it reaches that many seconds from the beginning of the audio file.</p>
+<h1 id="related-materials">Related Materials</h1>
+<h2 id="manual">Manual</h2>
+<ul>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/audio/soundcue.md">SoundCue </a></li>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/audio/soundemitter.md">SoundEmitter </a></li>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/audio/soundspace.md">SoundSpace </a></li>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/audio/simplesound.md">SimpleSound </a></li>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/audio/soundtag.md">SoundTag </a></li>
+</ul>
+<h2 id="reference">Reference</h2>
+<ul>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/soundinstance.md"> SoundInstance </a></li>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/soundinstanceevent.md"> SoundInstanceEvents </a>  </li>
+</ul>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../soundlistener/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../soundlistener/" class="btn btn-xs btn-link">
+        Sound Listeners
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../soundemitter/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../soundemitter/" class="btn btn-xs btn-link">
+        Soundemitter
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="col-md-12 wm-page-content">
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/noraj/mkdocs-windmill-dark">Windmill Dark</a> theme by Alexandre ZANNI (noraj).</p>
+</footer>
+
+</body>
+</html>

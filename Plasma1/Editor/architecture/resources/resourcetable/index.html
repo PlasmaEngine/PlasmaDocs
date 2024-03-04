@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="author" content="PlasmaDev">
+    <link rel="canonical" href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/architecture/resources/resourcetable/">
+    <link rel="shortcut icon" href="../../../../../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Resource Table - PlasmaDocs</title>
+    <link href="../../../../../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../../../../../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../../../../../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../../../../css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../../../../../js/jquery-3.2.1.min.js"></script>
+    <script src="../../../../../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../../../../../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '../../../../..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "Resource Table", url: "#_top", children: [
+              {title: "Array Interface", url: "#array-interface" },
+              {title: "HashMap Interface", url: "#hashmap-interface" },
+          ]},
+        ];
+
+    </script>
+    <script src="../../../../../js/base.js"></script>
+      <script src="../../../../../search/main.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../../../audio/audio_error/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../../../audio/audio_error/" class="btn btn-xs btn-link">
+        Audio Error
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../level/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../level/" class="btn btn-xs btn-link">
+        Level
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <h1 id="resource-table">Resource Table</h1>
+<p><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/resourcetable.md">ResourceTable</a> is a resource that stores a collection of entries of a certain resource type for sampling during run-time. Sampling can be performed through three different interfaces: array, hashmap, and a <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master.md#weightedtable-interface"> weighted table</a>.</p>
+<p><img alt="ResourceTable1" src="https://raw.githubusercontent.com/PlasmaEngine/PlasmaDocs/master/media/ResourceTable.png" /></p>
+<p>ResourceTables store a homogeneous collection of entries. Pictured above is a table of <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/architecture/archetypes.md"> Archetypes </a>. This can be switched to any other resource type or to strings.</p>
+<p>ResourceTable entries are composed of three items:
+ - <strong>Name</strong>: A name used for hashmap queries. This is sometimes used as a display name for the entry. Note: This name does not have to Value. 
+ - <strong>Value</strong>: The actual resource/string of the entry.
+ - <strong>Weight</strong>: The weight to use when randomly sampling the table. See the <a href="https://github.com/PlasmaEngine/PlasmaDocs/blob/master.md#weightedtable-interface"> WeightedTable Interface</a> section below for details.</p>
+<p>All sampling functions for a ResourceTable return a <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/resourcetableentry.md">ResourceTableEntry</a>. In addition to the above listed properties, the stored resource can also be looked up via the <code>Resource</code> property. Note: This must be casted to the correct resource type.</p>
+<h2 id="array-interface">Array Interface</h2>
+<p>ResourceTables can be accessed as an array at run-time. This is useful for a list of objects where order is important (e.g. generating UI). Given below is a simple example of using the array interface to spawn archetypes:</p>
+<pre><code class="language-csharp">
+  // Spawn each archtype one below another
+  for(var i = 0; i < this.Table.Count; ++i)
+  {
+    var entry = this.Table[i];
+    // The table can only return Resources. We have to cast to Archetype
+    var archetype = entry.Resource as Archetype;
+    // Arbitrary spawn position
+    var pos = Real3(0, i * -10, 0);
+    this.Space.CreateAtPosition(archetype, pos);
+  }
+</code></pre>
+
+<h2 id="hashmap-interface">HashMap Interface</h2>
+<p>ResourceTable can also be used as a hashmap where the entry's name is the key.</p>
+<p><img alt="ResourceTable4" src="https://raw.githubusercontent.com/PlasmaEngine/PlasmaDocs/master/media/HashMap.png" /></p>
+<p>One such example is mapping button names to a resource. Pictured above is a table of Levels. A menu in a game could use the <code>Name</code> properties to populate the text on buttons. When a button is clicked, the easiest way to get the Level to load is to use the HashMap interface to look up the entry by name.</p>
+<pre><code class="language-csharp">
+  function GetLevelByName(name : String) : Level
+  {
+    var entry = this.Table.GetOrNull(name);
+    if(entry == null)
+      throw new Exception("Level '`name`' didn't exist");
+    return entry.Resource as Level;
+  }
+</code></pre>
+
+<p>#  WeightedTable Interface</p>
+<p>The more interesting use of a ResourceTable is as a weighted probability table. A weighted probability table is used to sample items with a non-uniform distribution which can be thought of as rolling loaded dice.</p>
+<p>The weighted table view should be used to more easily edit and visualize the weights. This can be done by pressing the "Swap View" button in the UI.</p>
+<p><img alt="ResourceTable2" src="https://raw.githubusercontent.com/PlasmaEngine/PlasmaDocs/master/media/WeightedTable.png" /></p>
+<p>##  Weight vs. Probability
+Each entry in a table has a weight used to determine how likely it is to be randomly sampled. The weight is not to be confused with the actual probability of rolling an item though. An entry's probability is computed as its weight divided by the sum of all the weights in the table. In the above picture the "Can" has a weight of 0.66. The total weights in the table sum to 2.18. This means the "Can" has a probability of 0.66 / 2.18 = 0.30275 or approximately 31%.</p>
+<p>##  Sampling the Table
+ResourceTable can be sampled at run-time through the <code>Sample</code> function:</p>
+<pre><code class="language-csharp">
+  function SpawnDropAt(pos : Real3)
+  {
+    // Sampling the weighted table requires two random numbers in the range of [0, 1)
+    var entry = this.Table.Sample(this.RandomContext.Real(), this.RandomContext.Real());
+    var archetype = entry.Resource as Archetype;
+    this.Space.CreateAtPosition(archetype, pos);
+  }
+</code></pre>
+
+<p>One of the most common uses of the weighted table is for a drop table. In the above example the table is randomly sampled to Spawn an Archetype at a given position. Note that the sample function requires two random numbers in the range of 0 to 1.</p>
+<p>Additionally, ResourceTable exposes the <code>SampleIndex</code> function which returns the index into the table instead of the entry itself.</p>
+<hr />
+<p>#  Related Materials
+ ##  Reference
+ <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/resourcetable.md">ResourceTable</a>
+ <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/resourcetableentry.md">ResourceTableEntry</a>
+ <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/archetype.md">Archetype</a>
+ <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/randomcontext.md">RandomContext</a> </p>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../../../audio/audio_error/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../../../audio/audio_error/" class="btn btn-xs btn-link">
+        Audio Error
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../level/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../level/" class="btn btn-xs btn-link">
+        Level
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="col-md-12 wm-page-content">
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/noraj/mkdocs-windmill-dark">Windmill Dark</a> theme by Alexandre ZANNI (noraj).</p>
+</footer>
+
+</body>
+</html>

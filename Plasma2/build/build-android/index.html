@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="author" content="PlasmaDev">
+    <link rel="canonical" href="https://plasmaengine.github.io/PlasmaDocs/Plasma2/build/build-android/">
+    <link rel="shortcut icon" href="../../../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Android Builds - PlasmaDocs</title>
+    <link href="../../../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../../../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../../../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../../css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../../../js/jquery-3.2.1.min.js"></script>
+    <script src="../../../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../../../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '../../..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "Android Builds", url: "#_top", children: [
+              {title: "Prerequisites", url: "#prerequisites" },
+              {title: "Visual Studio Open Folder", url: "#visual-studio-open-folder" },
+              {title: "Setting up an Emulator", url: "#setting-up-an-emulator" },
+              {title: "Debugging Code", url: "#debugging-code" },
+              {title: "Troubleshooting Debugging / Command Line Debugging", url: "#troubleshooting-debugging-command-line-debugging" },
+              {title: "See Plasma Engine log output", url: "#see-plasma-engine-log-output" },
+              {title: "See Also", url: "#see-also" },
+          ]},
+        ];
+
+    </script>
+    <script src="../../../js/base.js"></script>
+      <script src="../../../search/main.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../build-linux/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../build-linux/" class="btn btn-xs btn-link">
+        Linux Builds
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../../assets/import-assets/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../../assets/import-assets/" class="btn btn-xs btn-link">
+        Asset Import
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <h1 id="android-builds">Android Builds</h1>
+<h2 id="prerequisites">Prerequisites</h2>
+<p>You need the following to build for Android:</p>
+<ul>
+<li>Android SDK Platform 6.0 (Marshmallow) API-Level 23</li>
+<li>Android NDK 21 or higher</li>
+<li>Android SDK Tools</li>
+<li>Android SDK Platform-Tools</li>
+<li>Java (JRE)</li>
+<li><a href="https://ninja-build.org">Ninja</a></li>
+<li>Android Emulator (optional)</li>
+<li>Visual Studio 2019</li>
+</ul>
+<p><a href="https://ninja-build.org/">Ninja</a> is a build generator used by CMake and needs to be added to the <code>PATH</code> environment variable.\
+The easiest way to install the Android components is to download <a href="https://developer.android.com/studio">Android Studio</a> and then to select these from the <strong>SDK Manager</strong>.
+Once installed, the following environment variables need to be set:
+Change the version to reflect the one you are using.</p>
+<ul>
+<li><strong>ANDROID_NDK_HOME</strong> needs to point to your installed version, by default this is: <code>C:\Users\[USERNAME]\AppData\Local\Android\Sdk\ndk\[VERSION]</code></li>
+<li><strong>ANDROID_HOME</strong> needs to point to your installed version, by default this is: <code>C:\Users\[USERNAME]\AppData\Local\Android\Sdk</code></li>
+<li><strong>JAVA_HOME</strong> needs to point to a java runtime. Android Studio has its own version so there is no need to download it separately: <code>C:\Program Files\Android\Android Studio\jre</code></li>
+</ul>
+<h2 id="visual-studio-open-folder">Visual Studio Open Folder</h2>
+<p>While you can manually run CMake to use the ninja generator, a more convenient solution is to use Visual Studio's open folder functionality. Go to <code>File&gt;Open&gt;Folder...</code> and select the root of the repository. The CMake settings used by this feature are stored inside the <code>CMakeSettings.json</code> file in the root folder (<code>CppProperties.json</code> contains additional information for VS). Note that if a different API level is used, the <strong>ANDROID_PLATFORM</strong> parameter in the <code>CMakeSettings.json</code> has to be changed for all configurations.</p>
+<p>If all environment variables were set correctly VS should automatically configure CMake. Once done, a drop down appears in the VS toolbar, allowing you to select the configuration, e.g. <code>Android-x86-Debug</code>. Once changed, VS will start to configure CMake again for the new configuration.</p>
+<p>Next, select a build target, e.g. <code>libFoundationTest.so</code> which are the foundation unit tests. Note that you can only select applications, not all libraries here.</p>
+<h2 id="setting-up-an-emulator">Setting up an Emulator</h2>
+<p>Open Android Studio, go to <code>Configure&gt;AVD Manager</code> and select <code>Create Virtual Device</code>. Download the <strong>Pixel 2 x86</strong> image (or any other compatible one). Next, select <strong>Pie (API 28)</strong> (29 is broken as of writing). In <code>Advanced Settings</code> go to <code>Emulated Performance</code> and select <strong>Cold boot</strong> as the other options tend to hang and the only option then is to reset the image to factory defaults.</p>
+<h2 id="debugging-code">Debugging Code</h2>
+<p>Before debugging it should be ensured that you have a emulator setup or a device connected. There should only be one device or emulator. Otherwise debugging is going to fail because it's unknown which target to use.</p>
+<pre><code class="language-cmd">$ adb devices
+List of devices attached
+ce11171b5298cc120c      device
+</code></pre>
+<p>If adb is not available in the command line <code>%ANDROID_HOME%\platform-tools</code> needs to be added to the <code>PATH</code> environment variable.</p>
+<p>To debug &amp; deploy select one of the launch targets which are prefixed with '&gt;'. These have been configured in the <code>launch.vs.json</code> file for debugging. By hitting the "start debugging" button in visual studio, as usual, the app will be installed on the connected device / emulator, started and the debugger will be attached. The app can then be debugged by using the Visual Studio UI the same way as for an windows based C++ project.</p>
+<h2 id="troubleshooting-debugging-command-line-debugging">Troubleshooting Debugging / Command Line Debugging</h2>
+<p>If debugging doesn't work or debugging from the command line is preferred, the command line debugger can be started. It gives detailed output.</p>
+<p>The debugging script is located in <code>Utilities\DbgAndroid.ps1</code></p>
+<p>The following parameters are present:</p>
+<table>
+<thead>
+<tr>
+<th>parameter</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>PrintCmds</td>
+<td>Prints all commands that are run. Useful for debugging issues.</td>
+</tr>
+<tr>
+<td>packageName</td>
+<td>The name of the android package. For example "com.plengine.FoundationTest". All Plasma Engine package names start with "com.plengine.". If the package name is not known the .apk file can be opened with a zip tool. Then inspect the AndroidManifest.xml.</td>
+</tr>
+<tr>
+<td>originalSoDir</td>
+<td>The location where the shared object (.so) that contains all the binary code is located: Output\Lib\AndroidNinjaClang(Debug|RelWithDebInfo|Release)(arm32|arm64|x86|x64)</td>
+</tr>
+<tr>
+<td>arch</td>
+<td>The architecture of the app you want to debug usually "arm","arm64","x86" or "x86_64"</td>
+</tr>
+<tr>
+<td>apk</td>
+<td>The apk to install on the device before starting debugging. This parameter is optional. If not given no apk will be installed and it is assumed that the apk was already installed on the device</td>
+</tr>
+</tbody>
+</table>
+<p>For example command line debugging the FoundationTest:</p>
+<pre><code class="language-cmd">Utilities\DbgAndroid.ps1 -packageName &quot;com.plengine.FoundationTest&quot; -arch arm -apk &quot;Output\Lib\AndroidNinjaClangDebugArm32\FoundationTest.apk&quot; -originalSoDir &quot;Output\Lib\AndroidNinjaClangDebugArm32&quot;
+</code></pre>
+<h2 id="see-plasma-engine-log-output">See Plasma Engine log output</h2>
+<p>To see the Plasma Engine log output the following logcat filter can be used.</p>
+<pre><code class="language-cmd">adb logcat PlasmaEngine:D *:S
+</code></pre>
+<h2 id="see-also">See Also</h2>
+<ul>
+<li><a href="building-pl.md">Building PlasmaEngine</a></li>
+</ul>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../build-linux/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../build-linux/" class="btn btn-xs btn-link">
+        Linux Builds
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../../assets/import-assets/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../../assets/import-assets/" class="btn btn-xs btn-link">
+        Asset Import
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="col-md-12 wm-page-content">
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/noraj/mkdocs-windmill-dark">Windmill Dark</a> theme by Alexandre ZANNI (noraj).</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="author" content="PlasmaDev">
+    <link rel="canonical" href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/audio/soundnode/generatedwavenode/">
+    <link rel="shortcut icon" href="../../../../../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Generated Wave Node - PlasmaDocs</title>
+    <link href="../../../../../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../../../../../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../../../../../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../../../../css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../../../../../js/jquery-3.2.1.min.js"></script>
+    <script src="../../../../../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../../../../../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '../../../../..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "Generated Wave Node", url: "#_top", children: [
+          ]},
+          {title: "Common Uses", url: "#common-uses", children: [
+          ]},
+          {title: "Using the GeneratedWaveNode", url: "#using-the-generatedwavenode", children: [
+          ]},
+          {title: "Related Materials", url: "#related-materials", children: [
+              {title: "Manual", url: "#manual" },
+              {title: "Code Reference", url: "#code-reference" },
+          ]},
+        ];
+
+    </script>
+    <script src="../../../../../js/base.js"></script>
+      <script src="../../../../../search/main.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../highpassnode/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../highpassnode/" class="btn btn-xs btn-link">
+        High Pass Node
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../flangernode/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../flangernode/" class="btn btn-xs btn-link">
+        Flanger Node
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <h1 id="generated-wave-node">Generated Wave Node</h1>
+<p>The <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/generatedwavenode.md"> GeneratedWaveNode</a> will generate audio using a specified wave type and frequency. Since it is a generating node, it will ignore any input connections.</p>
+<h1 id="common-uses">Common Uses</h1>
+<ul>
+<li>Creating synthesized sound effects</li>
+<li>Combining white noise with audio filters to generate wind or other sound effects</li>
+</ul>
+<h1 id="using-the-generatedwavenode">Using the GeneratedWaveNode</h1>
+<p>GeneratedWaveNodes create audio using either a sine wave, square wave, saw wave, triangle wave, or white noise. The <code>WaveFrequency</code> property controls the pitch of the audio, and can be smoothly changed over time using the <code>InterpolateWaveFrequency</code> method. Like other objects, its volume can be controlled using either the <code>Volume</code> or the <code>Decibels</code> property, and interpolated with the <code>InterpolateVolume</code> and <code>InterpolateDecibels</code> methods.</p>
+<p>The following code block illustrates how to use a GeneratedWaveNode to make a simple alarm-siren noise.</p>
+<pre><code class="language-csharp">
+class SimpleSiren : LightningComponent
+{
+  // Make sure this object has a SoundEmitter component
+  [Dependency] var Emitter : SoundEmitter;
+
+  // Store the GeneratedWaveNode so its properties can be edited later
+  var WaveNode : GeneratedWaveNode = Audio.GeneratedWaveNode();
+
+  // Keep track of whether we are interpolating up or down
+  var GoingUp : Boolean = true;
+
+  function Initialize(init : CogInitializer)
+  {
+    // Attach the GeneratedWaveNode to the SoundEmitter
+    this.Emitter.InputNode.AddInputNode(this.WaveNode);
+
+    // Set the node's starting properties
+    this.WaveNode.WaveFrequency = 200.0;
+    this.WaveNode.WaveType = SynthWaveType.SawWave;
+    this.WaveNode.Volume = 0.2;
+
+    // Start playing the generated wave
+    this.WaveNode.Play();
+
+    // Start interpolating the frequency
+    this.ChangeFrequency();
+  }
+
+  function ChangeFrequency()
+  {
+    // Check if we should interpolate the frequency up or down
+    if (this.GoingUp == true)
+    {
+      // Interpolate the wave's frequency to 700Hz over 1 second
+      this.WaveNode.InterpolateWaveFrequency(700.0, 1.0);
+
+      // Reset the variable to go down next time
+      this.GoingUp = false;
+    }
+    else
+    {
+      // Interpolate the wave's frequency to 500Hz over 1 second
+      this.WaveNode.InterpolateWaveFrequency(500.0, 1.0);
+
+      // Reset the variable to go up next time
+      this.GoingUp = true;
+    }
+
+    // Call this function again in 1.1 seconds
+    var sequence = Actions.Sequence(this.Owner.Actions);
+    Actions.Delay(sequence, 1.1);
+    Actions.Call(sequence, this.ChangeFrequency);
+  }
+}
+</code></pre>
+
+<h1 id="related-materials">Related Materials</h1>
+<h2 id="manual">Manual</h2>
+<ul>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/audio/soundnode/soudnode_overview.md">soudnode_overview</a></li>
+</ul>
+<h2 id="code-reference">Code Reference</h2>
+<ul>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/generatedwavenode.md"> GeneratedWaveNode </a> </li>
+</ul>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../highpassnode/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../highpassnode/" class="btn btn-xs btn-link">
+        High Pass Node
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../flangernode/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../flangernode/" class="btn btn-xs btn-link">
+        Flanger Node
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="col-md-12 wm-page-content">
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/noraj/mkdocs-windmill-dark">Windmill Dark</a> theme by Alexandre ZANNI (noraj).</p>
+</footer>
+
+</body>
+</html>

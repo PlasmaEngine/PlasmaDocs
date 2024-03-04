@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="author" content="PlasmaDev">
+    <link rel="canonical" href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C%2B%2B/code_reference/class_reference/customconstraintinfo/">
+    <link rel="shortcut icon" href="../../../../../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Customconstraintinfo - PlasmaDocs</title>
+    <link href="../../../../../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../../../../../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../../../../../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../../../../css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../../../../../js/jquery-3.2.1.min.js"></script>
+    <script src="../../../../../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../../../../../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '../../../../..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+        ];
+
+    </script>
+    <script src="../../../../../js/base.js"></script>
+      <script src="../../../../../search/main.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../customjoint/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../customjoint/" class="btn btn-xs btn-link">
+        Customjoint
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../customcollisioneventtracker/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../customcollisioneventtracker/" class="btn btn-xs btn-link">
+        Customcollisioneventtracker
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <p><code>Physics</code></p>
+<p>(NOTE) Information to represent a constraint to be solved. The main information that needs to be set here is the Jacobian and error. A constraint will enforce that the relative velocities along the Jacobian are equal to plasma (ignoring error correction or motors).</p>
+<table>
+<thead>
+<tr>
+<th>Methods</th>
+<th>Properties</th>
+<th>Base Classes</th>
+<th>Derived Classes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/customconstraintinfo.md#computemotor-void"> ComputeMotor</a></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/customconstraintinfo.md#active-plasma-engine-docum"> Active</a></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/referencecountedeventobject.md">referencecountedeventobject</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/customconstraintinfo.md#computespring-void"> ComputeSpring</a></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/customconstraintinfo.md#angular0-plasma-engine-doc"> Angular0</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/customconstraintinfo.md#detachfromowner-void"> DetachFromOwner</a></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/customconstraintinfo.md#angular1-plasma-engine-doc"> Angular1</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/customconstraintinfo.md#isowned-plasma-engine-docu"> IsOwned</a></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/customconstraintinfo.md#baumgarte-plasma-engine-do"> Baumgarte</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/customconstraintinfo.md#seterrorandbias-void"> SetErrorAndBias</a></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/customconstraintinfo.md#bias-plasma-engine-documen"> Bias</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/customconstraintinfo.md#setjacobian-void"> SetJacobian</a></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/customconstraintinfo.md#effectivemass-plasma-engin"> EffectiveMass</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/customconstraintinfo.md#error-plasma-engine-docume"> Error</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/customconstraintinfo.md#gamma-plasma-engine-docume"> Gamma</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/customconstraintinfo.md#impulse-plasma-engine-docu"> Impulse</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/customconstraintinfo.md#linear0-plasma-engine-docu"> Linear0</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/customconstraintinfo.md#linear1-plasma-engine-docu"> Linear1</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/customconstraintinfo.md#maximpulse-plasma-engine-d"> MaxImpulse</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/customconstraintinfo.md#minimpulse-plasma-engine-d"> MinImpulse</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/customconstraintinfo.md#owner-plasma-engine-docume"> Owner</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/customconstraintinfo.md#solveposition-plasma-engin"> SolvePosition</a></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>#  Properties</p>
+<hr />
+<p>#  Active : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.md">boolean</a></p>
+<blockquote>
+<p>Is this constraint currently active?
+``` lang=cpp, name=Lightning
+var Active : Boolean</p>
+</blockquote>
+<hr />
+<p>#  Angular0 : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real3.md">real3</a></p>
+<blockquote>
+<p>Angular portion of objectA's Jacobian.
+``` lang=cpp, name=Lightning
+var Angular0 : Real3</p>
+</blockquote>
+<hr />
+<p>#  Angular1 : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real3.md">real3</a></p>
+<blockquote>
+<p>Angular portion of objectB's Jacobian.
+``` lang=cpp, name=Lightning
+var Angular1 : Real3</p>
+</blockquote>
+<hr />
+<p>#  Baumgarte : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.md">real</a></p>
+<blockquote>
+<p>The baumgarte term used to correct error. This should typically be set in initialization (per constraint) and then left alone. Default value is 5.
+``` lang=cpp, name=Lightning
+var Baumgarte : Real</p>
+</blockquote>
+<hr />
+<p>#  Bias : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.md">real</a></p>
+<blockquote>
+<p>The bias is used to apply energy into the system. Typically, bias is combined with Error and Baumgarte to fix error. Bias is also used for motors and springs to drive the constraint.
+``` lang=cpp, name=Lightning
+var Bias : Real</p>
+</blockquote>
+<hr />
+<p>#  EffectiveMass : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.md">real</a></p>
+<blockquote>
+<p>The effective mass of the constraint. This is typically set by calling SetJacobian.
+``` lang=cpp, name=Lightning
+var EffectiveMass : Real</p>
+</blockquote>
+<hr />
+<p>#  Error : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.md">real</a></p>
+<blockquote>
+<p>The error of the constraint. This should typically be set via the SetError function.
+``` lang=cpp, name=Lightning
+var Error : Real</p>
+</blockquote>
+<hr />
+<p>#  Gamma : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.md">real</a></p>
+<blockquote>
+<p>Gamma is used to soften constraints. This should typically never be manually set. Instead, it is set when configuring the constraint to act like a spring.
+``` lang=cpp, name=Lightning
+var Gamma : Real</p>
+</blockquote>
+<hr />
+<p>#  Impulse : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.md">real</a></p>
+<blockquote>
+<p>The total accumulated impulse of this constraint. If you want to not use warm-starting then clear this value every frame.
+``` lang=cpp, name=Lightning
+var Impulse : Real</p>
+</blockquote>
+<hr />
+<p>#  Linear0 : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real3.md">real3</a></p>
+<blockquote>
+<p>Linear portion of objectA's Jacobian.
+``` lang=cpp, name=Lightning
+var Linear0 : Real3</p>
+</blockquote>
+<hr />
+<p>#  Linear1 : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real3.md">real3</a></p>
+<blockquote>
+<p>Linear portion of objectB's Jacobian.
+``` lang=cpp, name=Lightning
+var Linear1 : Real3</p>
+</blockquote>
+<hr />
+<p>#  MaxImpulse : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.md">real</a></p>
+<blockquote>
+<p>The max impulse magnitude allowed for the constraint.
+``` lang=cpp, name=Lightning
+var MaxImpulse : Real</p>
+</blockquote>
+<hr />
+<p>#  MinImpulse : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.md">real</a></p>
+<blockquote>
+<p>The min impulse magnitude allowed for the constraint.
+``` lang=cpp, name=Lightning
+var MinImpulse : Real</p>
+</blockquote>
+<hr />
+<p>#  Owner : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/customjoint.md">customjoint</a></p>
+<p><code>read-only</code></p>
+<blockquote>
+<p>What joint currently owns this constraint.
+``` lang=cpp, name=Lightning
+var Owner : CustomJoint</p>
+</blockquote>
+<hr />
+<p>#  SolvePosition : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.md">boolean</a></p>
+<blockquote>
+<p>Should this constraint solve position directly or use baumgarte correction? Toggling SolvePosition should be done before setting any other values (ideally in initialization). Setting a constraint to be a motor or a spring will turn off position correction as an error bias must be used to solve those scenarios.
+``` lang=cpp, name=Lightning
+var SolvePosition : Boolean</p>
+</blockquote>
+<hr />
+<p>#  Methods</p>
+<hr />
+<p>#  ComputeMotor : Void</p>
+<blockquote>
+<p>Sets this constraint as a motor (i.e. a constraint that drives movement along the Jacobian direction at a certain speed). The motor has a min and max impulse value that can be solved (typically -value, +value). If you set this as a motor, you should do so last. Motors should typically be their own constraint unlike springs.
+|Name|Type|Description|
+|---|---|---|
+|targetSpeed|<a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.md">real</a>| |
+|minImpulse|<a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.md">real</a>| |
+|maxImpulse|<a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.md">real</a>| |
+<code>lang=cpp, name=Lightning
+function ComputeMotor(targetSpeed : Real, minImpulse : Real, maxImpulse : Real)</code> </p>
+</blockquote>
+<hr />
+<p>#  ComputeSpring : Void</p>
+<blockquote>
+<p>Given the currently set mass and error, fix the constraint to be soft (i.e. solve the constraint like a spring). The spring fixes the constraint using the given frequency (oscillations per second) and damping ratio (0 is no damping, 1 is critical damping).
+|Name|Type|Description|
+|---|---|---|
+|frequencyHz|<a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.md">real</a>| |
+|dampRatio|<a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.md">real</a>| |
+<code>lang=cpp, name=Lightning
+function ComputeSpring(frequencyHz : Real, dampRatio : Real)</code> </p>
+</blockquote>
+<hr />
+<p>#  DetachFromOwner : Void</p>
+<blockquote>
+<p>Remove this constraint from whatever joint owns it. This is equivalent to "this.Owner.RemoveConstraint(this)".
+|Name|Type|Description|
+|---|---|---|
+<code>lang=cpp, name=Lightning
+function DetachFromOwner()</code> </p>
+</blockquote>
+<hr />
+<p>#  IsOwned : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.md">boolean</a></p>
+<blockquote>
+<p>Is this constraint currently owned by a joint? (Equivalent to "this.Owner != null").
+|Name|Type|Description|
+|---|---|---|
+<code>lang=cpp, name=Lightning
+function IsOwned() : Boolean</code> </p>
+</blockquote>
+<hr />
+<p>#  SetErrorAndBias : Void</p>
+<blockquote>
+<p>Set the position error of the constraint. This also sets the bias of the constraint (used to actually correct the error). If you want to set this constraint as a motor you should not call this function (or call it first). If you want to set this as a spring then make sure you call this first.
+|Name|Type|Description|
+|---|---|---|
+|error|<a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.md">real</a>| |
+<code>lang=cpp, name=Lightning
+function SetErrorAndBias(error : Real)</code> </p>
+</blockquote>
+<hr />
+<p>#  SetJacobian : Void</p>
+<blockquote>
+<p>Set the Jacobian of this constraint (and the effective mass).
+|Name|Type|Description|
+|---|---|---|
+|linear0|<a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real3.md">real3</a>| |
+|angular0|<a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real3.md">real3</a>| |
+|linear1|<a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real3.md">real3</a>| |
+|angular1|<a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real3.md">real3</a>| |
+<code>lang=cpp, name=Lightning
+function SetJacobian(linear0 : Real3, angular0 : Real3, linear1 : Real3, angular1 : Real3)</code> </p>
+</blockquote>
+<hr />
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../customjoint/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../customjoint/" class="btn btn-xs btn-link">
+        Customjoint
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../customcollisioneventtracker/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../customcollisioneventtracker/" class="btn btn-xs btn-link">
+        Customcollisioneventtracker
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="col-md-12 wm-page-content">
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/noraj/mkdocs-windmill-dark">Windmill Dark</a> theme by Alexandre ZANNI (noraj).</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="author" content="PlasmaDev">
+    <link rel="canonical" href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/Lightning/boolean_operators/">
+    <link rel="shortcut icon" href="../../../../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Boolean Operators - PlasmaDocs</title>
+    <link href="../../../../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../../../../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../../../../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../../../css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../../../../js/jquery-3.2.1.min.js"></script>
+    <script src="../../../../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../../../../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '../../../..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "Boolean Operators", url: "#_top", children: [
+          ]},
+          {title: "The Negation Operator !", url: "#the-negation-operator", children: [
+          ]},
+          {title: "Comparison Operators", url: "#comparison-operators", children: [
+              {title: "Equality ==", url: "#equality" },
+              {title: "Inequality !=", url: "#inequality" },
+              {title: "Less Than \u0026amp; Greater Than \u0026lt; \u0026amp; \u0026gt;", url: "#less-than-greater-than" },
+              {title: "Less Than or Equal \u0026amp; Greater Than or Equal (\u0026lt;= \u0026amp; \u0026gt;=)", url: "#less-than-or-equal-greater-than-or-equal" },
+          ]},
+          {title: "Logical Operators", url: "#logical-operators", children: [
+          ]},
+          {title: "and \u0026amp;\u0026amp;", url: "#and", children: [
+          ]},
+          {title: "or ||", url: "#or", children: [
+          ]},
+          {title: "Related Materials", url: "#related-materials", children: [
+              {title: "Manual", url: "#manual" },
+              {title: "Code Reference", url: "#code-reference" },
+          ]},
+        ];
+
+    </script>
+    <script src="../../../../js/base.js"></script>
+      <script src="../../../../search/main.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../casting/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../casting/" class="btn btn-xs btn-link">
+        Casting
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../attributes/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../attributes/" class="btn btn-xs btn-link">
+        Attributes
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <h1 id="boolean-operators">Boolean Operators</h1>
+<p>NOTE: It is highly suggested you read <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/Lightning/conditionals.md">conditionals</a> before this page, as the concepts of conditionals are used through out to demonstrate Boolean Operators.</p>
+<p>The <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.md">boolean</a> type has special operators that work with it.</p>
+<h1 id="the-negation-operator">The Negation Operator <code>!</code></h1>
+<p>The <code>!</code> operator, called the negation operator, is typically the simplest of the boolean operators as it changes the value of its operand to <code>true</code> if it was <code>false</code>, and changes the value to <code>false</code> if it was <code>true</code>.</p>
+<pre><code class="language-csharp" name="The ! Operator">
+var a = true;
+Console.WriteLine("a starts as `a`");
+a = !a;
+Console.WriteLine("a is negated and is now `a`");
+a = !a;
+Console.WriteLine("a is negated again and is now `a` again");
+</code></pre>
+<pre><code name="Console Output">
+a starts as true
+a is negated and is now false
+a is negated again and is now true again
+</code></pre>
+
+<h1 id="comparison-operators">Comparison Operators</h1>
+<p>All comparison operators take a left side and right side operand and evaluate to a boolean value.</p>
+<h2 id="equality">Equality <code>==</code></h2>
+<p>Often certain code should only run under specific conditions. The <code>==</code> operator, called the Equality operator, determines if the value of two operands are equalivalent and returns <code>true</code> or <code>false</code>.</p>
+<pre><code class="language-csharp" name="Equality Operator">
+var a = true;
+var b = true;
+var c = false;
+
+Console.WriteLine("a is equal to b: `a == b`");
+Console.WriteLine("a is equal to c: `a == c`");
+Console.WriteLine("b is equal to c: `b == c`");
+Console.WriteLine("a, b, and c are equal: `a == b == c`");
+</code></pre>
+<pre><code name="Console Output">
+a is equal to b: true
+a is equal to c: false
+b is equal to c: false
+a, b, and c are equal: false
+</code></pre>
+
+<p>While the Equality operator is not exclusively used with booleans it does always result in a boolean value.</p>
+<p>|Equality | | <code>==</code> |
+| <strong>Left Operand</strong> | <strong>Right Operand</strong> | <strong>Result</strong> |
+| <code>true</code> | <code>true</code> | <code>true</code> |
+| <code>true</code> | <code>false</code> | <code>false</code> |
+| <code>false</code> | <code>true</code> | <code>false</code> |
+| <code>false</code> | <code>false</code> | <code>true</code> |</p>
+<h2 id="inequality">Inequality <code>!=</code></h2>
+<p>The <code>!=</code> operator, called the inequality operator, is the logical inverse of the equality operator return <code>true</code> if the operands are not the equal and <code>false</code> if they are.</p>
+<pre><code class="language-csharp" name="Inequality Operator">
+
+var a = true;
+var b = true;
+var c = false;
+
+Console.WriteLine("a is not equal to b: `a != b`");
+Console.WriteLine("a is not equal to c: `a != c`");
+Console.WriteLine("b is not equal to c: `b != c`");
+Console.WriteLine("a, b, and c are not equal: `a != b != c`");
+</code></pre>
+<pre><code name="Console Output">
+a is not equal to b: false
+a is not equal to c: true
+b is not equal to c: true
+a, b, and c are not equal: false
+</code></pre>
+
+<p>Notice that <code>a != b != c</code> results in false. This is because <code>==</code> and <code>!=</code> are evaluated left to right. So first <code>a != b</code> returns <code>false</code> as both variables have a value of <code>true</code>. Because <code>a != b</code> evaluates to <code>false</code> and <code>c</code> has a value of <code>false</code> <code>a != b != c</code> is reduced to <code>false != c</code>. The reduced form evaluates to <code>false</code> since both operands have a value of <code>false</code>.</p>
+<p>|Inequality | | <code>!=</code> |
+| <strong>Left Operand</strong> | <strong>Right Operand</strong> | <strong>Result</strong> |
+| <code>true</code> | <code>true</code> | <code>false</code> |
+| <code>true</code> | <code>false</code> | <code>true</code> |
+| <code>false</code> | <code>true</code> | <code>false</code> |
+| <code>false</code> | <code>false</code> | <code>false</code> |</p>
+<h2 id="less-than-greater-than">Less Than &amp; Greater Than <code>&lt;</code> &amp; <code>&gt;</code></h2>
+<p>The <code>&lt;</code> and <code>&gt;</code> operators, called the less or greater then operators respectively, evaluate if one operand has a smaller/larger value than the other.</p>
+<pre><code class="language-csharp" name="Less/Greater Than">
+var i = 0;
+var j = 1;
+var k = 0;
+
+Console.WriteLine("i is less than j: `i < j`");
+Console.WriteLine("i is less than k: `i < k`");
+Console.WriteLine("j is less than k: `j < k`");
+Console.WriteLine("i is greater than j: `i > j`");
+Console.WriteLine("i is greater than k: `i > k`");
+Console.WriteLine("j is greater than k: `j > k`");
+</code></pre>
+<pre><code name="Console Output">
+i is less than j: true
+i is less than k: false
+j is less than k: false
+i is greater than j: false
+i is greater than k: false
+j is greater than k: true
+</code></pre>
+
+<p>Notice that <code>i</code> is not less or greater than <code>k</code> as <code>0</code> is not less or greater than <code>0</code>.</p>
+<h2 id="less-than-or-equal-greater-than-or-equal">Less Than or Equal &amp; Greater Than or Equal (<code>&lt;=</code> &amp; <code>&gt;=</code>)</h2>
+<p>The <code>&lt;=</code> and <code>&gt;=</code>, called the <code>less than or equal to</code> and <code>greater than or equal to</code> operators, determine if the value of the left operand is lesser than, greater than, or equal to the right operand.</p>
+<pre><code class="language-csharp" name="Less/Greater Than">
+var i = 0;
+var j = 1;
+var k = 0;
+
+Console.WriteLine("i is less or equal to than j: `i <= j`");
+Console.WriteLine("i is less or equal to than k: `i <= k`");
+Console.WriteLine("j is less or equal to than k: `j <= k`");
+Console.WriteLine("i is greater than or equal to j: `i >= j`");
+Console.WriteLine("i is greater than or equal to k: `i >= k`");
+Console.WriteLine("j is greater than or equal to k: `j >= k`");
+</code></pre>
+<pre><code name="Console Output">
+i is less than or equal to j: true
+i is less than or equal to k: true
+j is less than or equal to k: false
+i is greater than or equal to j: false
+i is greater than or equal to k: true
+j is greater than or equal to k: true
+</code></pre>
+
+<h1 id="logical-operators">Logical Operators</h1>
+<p>Logical operators take a left and a right side areguement, both of which must evaluate to boolean values, and evaluates them returning another boolean value.</p>
+<h1 id="and">and <code>&amp;&amp;</code></h1>
+<p>The <code>&amp;&amp;</code> operator, called the <code>and</code> operator, takes two boolean values and evaluates them, returning true only if both operands evaluate to true. This can be very useful as often one may find that a condition in script may depend on two seperate factors.</p>
+<pre><code class="language-csharp" name="Nested if">
+var i = true;
+var j = false;
+
+if(i)
+{
+  if(j)
+  {
+    Console.WriteLine("Both i and j are true");
+  }
+  else
+  {
+    Console.WriteLine("Inner Else: Either i or j is false");
+  }
+}
+else
+{
+  Console.WriteLine("Outer Else: Either i or j is false");
+}
+</code></pre>
+<pre><code name="Console Output">
+Inner Else: Either i or j is false
+</code></pre>
+
+<p>This can be simplified using the <code>&amp;&amp;</code> operator to evaluate both <code>i</code> and <code>j</code> within the same <code>if</code> statement.</p>
+<pre><code class="language-csharp" name="&&">
+var i = true;
+var j = false;
+
+if(i && j)
+{
+  Console.WriteLine("Both i and j are true");
+}
+else
+{
+  Console.WriteLine("Either i or j is false");
+}
+</code></pre>
+<pre><code name="Console Output">
+Either i or j is false
+</code></pre>
+
+<p>The nested <code>if</code> version of the above code does allow information about whether it is <code>i</code> or <code>j</code> which is <code>false</code> to be gathered, but in many cases the <em>which</em> doesn't matter, just that one of them is <code>false</code> is enough.</p>
+<p>|And | | <code>&amp;&amp;</code> |
+| <strong>Left Operand</strong> | <strong>Right Operand</strong> | <strong>Result</strong> |
+| <code>true</code> | <code>true</code> | <code>true</code> |
+| <code>true</code> | <code>false</code> | <code>false</code> |
+| <code>false</code> | <code>true</code> | <code>false</code> |
+| <code>false</code> | <code>false</code> | <code>false</code> |</p>
+<p>(NOTE)<strong>Short Circuiting the Right Side Operand</strong>: Since logical <code>and</code> is an operator which is resolved left to right is can always be assumed that the left operand will be evaluated to either <code>true</code> or <code>false</code> before the righthand operand is evaluated at all. This is important as if the first operand does not evaluate to <code>true</code> the operator will immeidiately evaluate to <code>false</code> <em>short circuiting</em> the right side an causing it to not resolve and evaluate the expression of the right side operand at all. A good usage example is when checking object validity before accessing members such as components.</p>
+<h1 id="or">or <code>||</code></h1>
+<p>The <code>||</code> operator, called the <code>or</code> operator, takes two boolean values and evaluates them, returning true if either operands evaluates to true.</p>
+<pre><code class="language-csharp" name="||">
+var i = true;
+var j = false;
+
+if(i || j)
+{
+  Console.WriteLine("Either i or j is true");
+}
+else
+{
+  Console.WriteLine("Neither i or j is true");
+}
+</code></pre>
+<pre><code name="Console Output">
+Either i or j is true
+</code></pre>
+
+<p>|And | | <code>||</code> |
+| <strong>Left Operand</strong> | <strong>Right Operand</strong> | <strong>Result</strong> |
+| <code>true</code> | <code>true</code> | <code>true</code> |
+| <code>true</code> | <code>false</code> | <code>true</code> |
+| <code>false</code> | <code>true</code> | <code>true</code> |
+| <code>false</code> | <code>false</code> | <code>false</code> |</p>
+<h1 id="related-materials">Related Materials</h1>
+<h2 id="manual">Manual</h2>
+<ul>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/Lightning/conditionals.md">conditionals</a></li>
+</ul>
+<h2 id="code-reference">Code Reference</h2>
+<ul>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.md">boolean</a> </li>
+</ul>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../casting/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../casting/" class="btn btn-xs btn-link">
+        Casting
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../attributes/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../attributes/" class="btn btn-xs btn-link">
+        Attributes
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="col-md-12 wm-page-content">
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/noraj/mkdocs-windmill-dark">Windmill Dark</a> theme by Alexandre ZANNI (noraj).</p>
+</footer>
+
+</body>
+</html>

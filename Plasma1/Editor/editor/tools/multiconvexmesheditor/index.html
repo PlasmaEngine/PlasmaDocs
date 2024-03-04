@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="author" content="PlasmaDev">
+    <link rel="canonical" href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/editor/tools/multiconvexmesheditor/">
+    <link rel="shortcut icon" href="../../../../../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Multi Convex Mesh Editor - PlasmaDocs</title>
+    <link href="../../../../../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../../../../../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../../../../../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../../../../css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../../../../../js/jquery-3.2.1.min.js"></script>
+    <script src="../../../../../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../../../../../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '../../../../..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "Multi Convex Mesh Editor", url: "#_top", children: [
+          ]},
+          {title: "Using the MultiConvexMesh Editor", url: "#using-the-multiconvexmesh-editor", children: [
+          ]},
+          {title: "In-Editor Properties and Methods", url: "#in-editor-properties-and-methods", children: [
+              {title: "Properties and Methods to the Left of the Editor View", url: "#properties-and-methods-to-the-left-of-the-editor-view" },
+              {title: "Properties and Methods Above the Editor View", url: "#properties-and-methods-above-the-editor-view" },
+          ]},
+          {title: "Using the MultiConvexMesh Editor", url: "#using-the-multiconvexmesh-editor_1", children: [
+              {title: "Adding a MultiConvexMesh Resource", url: "#adding-a-multiconvexmesh-resource" },
+              {title: "Editing the MultiConvexMesh Resource", url: "#editing-the-multiconvexmesh-resource" },
+          ]},
+          {title: "Related Materials", url: "#related-materials", children: [
+              {title: "Manual", url: "#manual" },
+              {title: "Reference", url: "#reference" },
+          ]},
+        ];
+
+    </script>
+    <script src="../../../../../js/base.js"></script>
+      <script src="../../../../../search/main.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../../../gameplay/handlingquitmessage/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../../../gameplay/handlingquitmessage/" class="btn btn-xs btn-link">
+        Quit Messages
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../heightmaptool/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../heightmaptool/" class="btn btn-xs btn-link">
+        Height Map Tool
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <h1 id="multi-convex-mesh-editor">Multi Convex Mesh Editor</h1>
+<p>The MultiConvexMesh Editor is a tool that allows the user to create a MultiConvexMesh Resource to use as the <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/mesh.md">Mesh</a> in a <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/physics/collision/multiconvexmeshcollider.md">MultiConvexMeshCollilder</a>. The Editor provides a number of different methods for creating the Mesh allowing the user a great of customizability.</p>
+<h1 id="using-the-multiconvexmesh-editor">Using the MultiConvexMesh Editor</h1>
+<p>The following section will be split up into two main sections: the In-Editor properties and methods of the MultiConvexMesh Editor and creating a MultiConvexMesh using the Editor.</p>
+<h1 id="in-editor-properties-and-methods">In-Editor Properties and Methods</h1>
+<h2 id="properties-and-methods-to-the-left-of-the-editor-view">Properties and Methods to the Left of the Editor View</h2>
+<ul>
+<li>
+<p>MeshThickness  - Determines the length the Mesh is extended in the z-axis.</p>
+</li>
+<li>
+<p>SpriteSource drop-down menu - Sets the base SpriteSource that the Mesh is being created for. It is used for reference and Auto-Computing.</p>
+</li>
+<li>
+<p>ClearColor  - The color of the Editor window's background.</p>
+</li>
+<li>
+<p>OuterContourColor  - The color of the outer edges (the contour line) of the current shape of the MultiConvexMesh being created.</p>
+</li>
+<li>
+<p>DrawMode enum - Sets the DrawMode for the MultiConvexMesh currently being created. Options include:</p>
+</li>
+<li><code>None</code> - Removes all internal coloring</li>
+<li><code>Edges</code> - Only shows the internal edges of the polygons of the MultiConvexMesh</li>
+<li>
+<p><code>Filled</code> - Shows the combined area of the polygons of the MultiConvexMesh</p>
+</li>
+<li>
+<p>AutoComputeMode enum - Sets the mode for auto-computing the MultiConvexMesh. Options include:</p>
+</li>
+<li><code>Alpha</code> - Uses alpha values of the SpriteSource to compute where the vertices for the MultiConvexMesh should be.</li>
+<li>
+<p><code>Intensity</code> - Uses the color intensity values (derived from a comparison of RGB values) of the SpriteSource to compute where the vertices for the MultiConvexMesh should be.</p>
+</li>
+<li>
+<p>SurfaceLevelThreshold  - Sets the value that defines how much the Alpha/Intensity affects the Auto-Compute process. Value ranges from <code>0.0</code> - <code>1.0</code>.</p>
+</li>
+<li>
+<p>AutoComputeMethod enum - Sets the method for auto-computing the MultiConvexMesh. Options include:</p>
+</li>
+<li><code>Pixels</code> - Uses pixel position to the perform the auto-computing process.</li>
+<li>
+<p><code>MarchingSquares</code> - Uses the Marching Squares algorithm to perform the auto-computing process.</p>
+</li>
+<li>
+<p>SimplificationThreshold  - Determines how close any vertex can be from another</p>
+</li>
+<li>
+<p><code>AutoCompute()</code> - Computes the calculations to generate a MultiConvexMesh based on the parameters defined above.</p>
+</li>
+</ul>
+<h2 id="properties-and-methods-above-the-editor-view">Properties and Methods Above the Editor View</h2>
+<ul>
+<li>
+<p>X  - Sets the X position of the currently selected vertex.</p>
+</li>
+<li>
+<p>Y  - Sets the Y position of the currently selected vertex.</p>
+</li>
+</ul>
+<p><strong>ADD IMAGE</strong></p>
+<ul>
+<li>
+<p>This property toggles the grid and determines the size of each grid square</p>
+</li>
+<li>
+<p><code>SetGridSizeToPixels()</code></p>
+</li>
+<li>
+<p>This method sets the grid size to be the same as the pixels of the current SpriteSource</p>
+</li>
+<li>
+<p><code>Snapping</code></p>
+</li>
+<li>This property defines whether or not a selected vertex will snap to the closest grid vertex. Options include:</li>
+<li>None - The selected vertex will not snap to a grid vertex</li>
+<li>IfClose - The selected vertex will only snap to a grid vertex if it is close enough to that the grid vertex</li>
+<li>Always - The selected vertex will always snap to the closest grid vertex</li>
+</ul>
+<h1 id="using-the-multiconvexmesh-editor_1">Using the MultiConvexMesh Editor</h1>
+<h2 id="adding-a-multiconvexmesh-resource">Adding a MultiConvexMesh Resource</h2>
+<p>To add a new MultiConvexMesh Resource, use the <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/editor/editorcommands/resourceadding.md">Add Resource</a> window.</p>
+<p>When the Resource is created, the MultiConvexMesh Editor window will automatically open, like so:</p>
+<p><strong>ADD IMAGE</strong></p>
+<h2 id="editing-the-multiconvexmesh-resource">Editing the MultiConvexMesh Resource</h2>
+<p>The first thing one needs when making a new MultiConvexMesh is select a SpriteSource to use as the base onto which the Mesh is created. Once a SpriteSource is selected the grid size will often need to be adjusted and <code>AutoCompute</code> can be run.</p>
+<p><strong>ADD IMAGE</strong></p>
+<p>As can be seen, the entire sprite is covered, but there is extra space covered by the mesh. Because this sprite has no transparent parts all pixels are above the alpha threshhold of <code>0.5</code>. If the AutoComputeMode enum option is set to <code>Intensity</code> instead the SurfaceLevelThreshold  option now has an affect on the <code>AutoCompute</code> process.</p>
+<p><strong>ADD IMAGE</strong></p>
+<p>Notice the warning popping up in the bottom right which says <code>Invalid Mesh</code>. This is means that no <em>convex</em> mesh could be constructed at the current SurfaceThreshold . </p>
+<p><strong>ADD IMAGE</strong></p>
+<p>As the value of SurfaceThreshold  is lowered, and <code>Intensity</code> is selected as the AutoComputeMode enum, other parts of the SpriteSource that have a lower average color value will be included, as seen above. However, notice the new mesh generated fits better then before. If we need it to fit even closer <code>name=Simplification Threshold, icon=pencil-square-o</code> can be lowered to generate a higher definition mesh.</p>
+<p><strong>ADD IMAGE</strong></p>
+<h1 id="related-materials">Related Materials</h1>
+<h2 id="manual">Manual</h2>
+<ul>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/physics/collision/multiconvexmeshcollider.md">MultiConvexMeshCollilder</a></li>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/editor/editorcommands/resourceadding.md">Add Resource</a></li>
+</ul>
+<h2 id="reference">Reference</h2>
+<ul>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/multiconvexmesh.md">MultiConvexMesh</a></li>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/mesh.md">Mesh</a> </li>
+</ul>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../../../gameplay/handlingquitmessage/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../../../gameplay/handlingquitmessage/" class="btn btn-xs btn-link">
+        Quit Messages
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../heightmaptool/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../heightmaptool/" class="btn btn-xs btn-link">
+        Height Map Tool
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="col-md-12 wm-page-content">
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/noraj/mkdocs-windmill-dark">Windmill Dark</a> theme by Alexandre ZANNI (noraj).</p>
+</footer>
+
+</body>
+</html>

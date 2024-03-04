@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="author" content="PlasmaDev">
+    <link rel="canonical" href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/Lightning/comparison_operators/">
+    <link rel="shortcut icon" href="../../../../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Comparison Operators - PlasmaDocs</title>
+    <link href="../../../../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../../../../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../../../../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../../../css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../../../../js/jquery-3.2.1.min.js"></script>
+    <script src="../../../../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../../../../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '../../../..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "Comparison Operators", url: "#_top", children: [
+          ]},
+          {title: "== \u0026amp; != Operators", url: "#operators", children: [
+          ]},
+          {title: "Object Comparison", url: "#object-comparison", children: [
+              {title: "Object Comparison by Value", url: "#object-comparison-by-value" },
+              {title: "Object Comparison by Reference", url: "#object-comparison-by-reference" },
+          ]},
+          {title: "Floating-Point Comparison", url: "#floating-point-comparison", children: [
+          ]},
+          {title: "\u0026gt; \u0026amp; \u0026lt; Operators", url: "#operators_1", children: [
+          ]},
+          {title: "\u0026gt;= \u0026amp; \u0026lt;= Operators", url: "#operators_2", children: [
+          ]},
+          {title: "Related Materials", url: "#related-materials", children: [
+          ]},
+          {title: "Manual", url: "#manual", children: [
+          ]},
+        ];
+
+    </script>
+    <script src="../../../../js/base.js"></script>
+      <script src="../../../../search/main.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../conditionals/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../conditionals/" class="btn btn-xs btn-link">
+        Conditionals
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../classes/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../classes/" class="btn btn-xs btn-link">
+        Classes
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <h1 id="comparison-operators">Comparison Operators</h1>
+<p>Comparison operators take two operands and evaluate to a boolean value which describes a relationship between the given values. Comparison operators are frequently used with <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/Lightning/conditionals.md">conditionals</a>.</p>
+<h1 id="operators"><code>==</code> &amp; <code>!=</code> Operators</h1>
+<p>The <code>==</code> (equality) operator compares two operands and returns <code>true</code> if they are the same and <code>false</code> if they are not. The <code>!=</code> (inequality) operator performs the inverse operation, returning <code>false</code> if they are the same and <code>true</code> if they are not.</p>
+<p>| Left Operand | Operator | Right Operand | Result |
+| <code>true</code> | <code>==</code> | <code>true</code> | <code>true</code> |
+| <code>true</code> | <code>==</code> | <code>false</code> | <code>false</code> |
+| <code>true</code> | <code>!=</code> | <code>true</code> | <code>false</code> |
+| <code>true</code> | <code>!=</code> | <code>false</code> | <code>true</code> |</p>
+<p>The equality operator is very useful when trying to identify unknown data, or verifying existing data.</p>
+<pre><code class="language-csharp" name="== Operator Identifying Data">
+if(unknownObject == this.TargetObject)
+{
+  Console.WriteLine("Found Target");
+}
+</code></pre>
+
+<pre><code class="language-csharp" name="== Operator Verifying Data">
+if(this.Owner.Player.TeamId == hitObject.Player.TeamId)
+  Console.WriteLine("Friendly Fire!");
+</code></pre>
+
+<p>Keep in mind that the values of the operands must be exactly equal. When comparing decimal values, the differences may be very small but still exist, i.e. <code>3.14159 == 3.141591</code> will evaluate to <code>false</code>. Similarly <code>2.236068 == 2.23607</code> will evaluate to <code>false</code>, as the values differ by <code>0.0000002</code>. It is common to use an <em>epsilon</em> value (i.e. <code>0.0000001</code>) when comparing values that are more precise then the comparison needs to be.</p>
+<p>The <code>!=</code> operator is commonly used to verify data exists before attempting to use it.</p>
+<pre><code class="language-csharp" name="!= Operator Verifying Data">
+if(unknownObject != null)
+{
+  Console.WriteLine(`unkownObject` is valid);
+  if(unknownObject.Transform != null)
+    Console.WriteLine(unkownObject.Transform.Translation);
+  else
+    Console.WriteLine("`unkownObject` does not have a Tranform component");
+}
+</code></pre>
+
+<h1 id="object-comparison">Object Comparison</h1>
+<p>As seen in the first code block, object comparison is fairly common. However, there are a few details to be aware of when comparing objects by value vs. by reference.</p>
+<p>NOTE: To read about the details about by-value and by-reference objects, <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/Lightning/constructbyvaluevsbyref.md"> read the manual page</a>.</p>
+<h2 id="object-comparison-by-value">Object Comparison by Value</h2>
+<p>Take the following struct as a by-value example:</p>
+<pre><code class="language-csharp" name="ValueObj">
+struct ValueObj
+{
+  var ValueOne : Boolean;
+  var ValueTwo : Integer;
+  var ValueThree : Boolean;
+}
+</code></pre>
+
+<p>In Lightning, structs are value types, so when they're compared using the <code>==</code> or <code>!=</code> operators, the value(s) within the type are what is compared. This means that the <code>==</code> and <code>!=</code> operators <strong>cannot</strong> be used with references to structs to determine if the operands are the same struct instance.</p>
+<pre><code class="language-csharp" name="Comparing Objects - ValueObj">
+var a = ValueObj();
+var b = a;
+var c = ValueObj();
+Console.WriteLine("a & b are equal: `a == b`");
+
+b.ValueOne = true;
+Console.WriteLine("a & b are equal: `a == b`");
+
+Console.WriteLine("a & c are equal: `a == c`");
+Console.WriteLine("b & c are equal: `b == c`");
+</code></pre>
+<pre><code name="Console Output">
+a & b are equal: true
+a & b are equal: false
+a & c are equal: true
+b & c are equal: false
+</code></pre>
+
+<p>In this case, the <code>ValueObj</code> instances are constructed and compared by value. So despite <code>b</code> being a copy of <code>a</code>, when <code>b.ValueOne</code> is set to false, the value of <code>a.ValueOne</code> does not change, and the values of the two objects are no longer equal. Furthermore, it can be seen that even when <code>ValueObj</code> instance <code>c</code>, a new value type instance, is constructed, the <code>ValueObj</code> is only copied and compared by value.</p>
+<h2 id="object-comparison-by-reference">Object Comparison by Reference</h2>
+<p>Take the following class as a by-reference example:</p>
+<pre><code class="language-csharp" name="ReferenceObj">
+class ReferenceObj
+{
+  var ValueOne : Boolean;
+  var ValueTwo : Integer;
+  var ValueThree : Boolean;
+}
+</code></pre>
+
+<p>In Lightning, classes are reference types, so when they're compared using the <code>==</code> or <code>!=</code> operators, what are actually compared are the addresses of the objects in memory. This means that the <code>==</code> and <code>!=</code> operators <strong>cannot</strong> be used with class references to determine if the operands contain the same values; instead, they reveal whether the two objects are the same class instance.</p>
+<pre><code class="language-csharp" name="Comparing Objects - ReferenceObj">
+var a = ReferenceObj();
+var b = a;
+var c = ReferenceObj();
+Console.WriteLine("a & b are equal: `a == b`");
+
+b.ValueOne = false;
+Console.WriteLine("a & b are equal: `a == b`");
+
+Console.WriteLine("a & c are equal: `a == c`");
+Console.WriteLine("b & c are equal: `b == c`");
+</code></pre>
+<pre><code name="Console Output">
+a & b are equal: true
+a & b are equal: true
+a & c are equal: false
+b & c are equal: false
+</code></pre>
+
+<p>In this case, the <code>ReferenceObj</code> instances are constructed and compared by reference, so <code>b</code> is actually a copy of the reference <code>a</code> to the constructed <code>ReferenceObj</code>. This means that when <code>b.ValueOne</code> is set to <code>true</code>, the <code>ReferenceObj</code> instance that <code>a</code> references is modified, as <code>a</code> and <code>b</code> are in fact referencing the same <code>ReferenceObj</code> instance.  Furthermore, looking at <code>c</code>, one can see that when a new reference type instance is constructed, it is only copied and compared by reference, so even when two instances contain the same value(s), they will not be considered equal.</p>
+<h1 id="floating-point-comparison">Floating-Point Comparison</h1>
+<p>Due to floating-point error, it is best to avoid comparing two extremely precise or large values of floating-point types (such as <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.md"> Real</a>) with the <code>==</code> and <code>!=</code> operators. Consider:</p>
+<pre><code class="language-csharp" name="Floating-Point Comparison, Example 1">
+Console.WriteLine(2000000000.0 == 2000000042.0);
+</code></pre>
+<pre><code name="Console Output">
+true
+</code></pre>
+
+<p>This is not a quirk of the engine, it's a quirk of modern computing. Instead of using these operators, it is best to use a function like <code>Math.ApproximatelyEqual</code> (which can then be negated using the <code>!</code> operator to check for inequality) for floating-point types. For example, instead of something like this:</p>
+<pre><code class="language-csharp" name="Floating-Point Comparison, Example 2 (problematic)">
+if (this.Transform.WorldTranslation.Y == this.JumpHeight)
+{
+  //
+}
+</code></pre>
+<p>... try something like this:</p>
+<pre><code class="language-csharp" name="Floating-Point Comparison, Example 2 (fixed)">
+if (Math.ApproximatelyEqual(this.Transform.WorldTranslation.Y, this.JumpHeight, 0.01))
+{
+  //
+}
+</code></pre>
+
+<h1 id="operators_1"><code>&gt;</code> &amp; <code>&lt;</code> Operators</h1>
+<p>The <code>&gt;</code> (greater than) operator returns true if the left operand is <em>greater than// the right operand. The <code>&lt;</code> (less than) operator returns true if the left operand is //less than</em> the right operand.</p>
+<p>| Left Operand | Operator | Right Operand | Result |
+| <code>0</code> | <code>&gt;</code> | <code>1</code> | <code>false</code> |
+| <code>1</code> | <code>&gt;</code> | <code>1</code> | <code>false</code> |
+| <code>2</code> | <code>&gt;</code> | <code>1</code> | <code>true</code> |
+| <code>0</code> | <code>&lt;</code> | <code>1</code> | <code>true</code> |
+| <code>1</code> | <code>&lt;</code> | <code>1</code> | <code>false</code> |
+| <code>2</code> | <code>&lt;</code> | <code>1</code> | <code>false</code> |</p>
+<p><code>&lt;</code> is often used to compare simulation values to detemine if a threshold has failed to be reached.</p>
+<pre><code class="language-csharp" name="< Operator Checking Threshold">
+if(height < 5)
+  Console.WriteLine("You must be at least 5ft tall to ride this attraction");
+</code></pre>
+
+<p><code>&gt;</code> is often used to compare simulation values to detemine if a threshold has been exceeded.</p>
+<pre><code class="language-csharp" name="> Operator Checking Threshold">
+if(cost > 10)
+  Console.WriteLine("That restaurant is not within my dinner budget");
+</code></pre>
+
+<h1 id="operators_2"><code>&gt;=</code> &amp; <code>&lt;=</code> Operators</h1>
+<p>The <code>&gt;=</code> (greater than or equal to) operator returns true if the left operand is <em>greater than </em><em>or</em><em> equal to// the right operand. The <code>&lt;=</code> (less than or equal to) operator returns true if the left operand is //less than </em><em>or</em><em> equal to</em> the right operand.</p>
+<p>| Left Operand | Operator | Right Operand | Result |
+| <code>0</code> | <code>&gt;=</code> | <code>1</code> | <code>false</code> |
+| <code>1</code> | <code>&gt;=</code> | <code>1</code> | <code>true</code> |
+| <code>2</code> | <code>&gt;=</code> | <code>1</code> | <code>true</code> |
+| <code>0</code> | <code>&lt;=</code> | <code>1</code> | <code>true</code> |
+| <code>1</code> | <code>&lt;=</code> | <code>1</code> | <code>true</code> |
+| <code>2</code> | <code>&lt;=</code> | <code>1</code> | <code>false</code> |</p>
+<p><code>&lt;=</code> is often used to compare simulation values to detemine if a threshold has failed to be exceeded.</p>
+<pre><code class="language-csharp" name="< Operator Checking Threshold">
+if(cost <= 10)
+  Console.WriteLine("That restaurant is within my dinner budget");
+</code></pre>
+
+<p><code>&gt;</code> is often used to compare simulation values to detemine if a threshold has been exceeded.</p>
+<pre><code class="language-csharp" name="> Operator Checking Threshold">
+if(height >= 5)
+  Console.WriteLine("You are at least 5ft tall, you may ride this attraction");
+</code></pre>
+
+<h1 id="related-materials">Related Materials</h1>
+<h1 id="manual">Manual</h1>
+<ul>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/Lightning/operators_precedence_chart.md">operators_precedence_chart</a></li>
+</ul>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../conditionals/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../conditionals/" class="btn btn-xs btn-link">
+        Conditionals
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../classes/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../classes/" class="btn btn-xs btn-link">
+        Classes
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="col-md-12 wm-page-content">
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/noraj/mkdocs-windmill-dark">Windmill Dark</a> theme by Alexandre ZANNI (noraj).</p>
+</footer>
+
+</body>
+</html>

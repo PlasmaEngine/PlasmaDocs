@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="author" content="PlasmaDev">
+    <link rel="canonical" href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/audio/soundemitter/">
+    <link rel="shortcut icon" href="../../../../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Soundemitter - PlasmaDocs</title>
+    <link href="../../../../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../../../../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../../../../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../../../css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../../../../js/jquery-3.2.1.min.js"></script>
+    <script src="../../../../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../../../../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '../../../..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+        ];
+
+    </script>
+    <script src="../../../../js/base.js"></script>
+      <script src="../../../../search/main.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../soundinstance/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../soundinstance/" class="btn btn-xs btn-link">
+        Sound Instances
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../soundcue/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../soundcue/" class="btn btn-xs btn-link">
+        Sound Cues
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <p>The <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/soundemitter.md"> SoundEmitter </a> component handles the 3D positioning of sounds in a level. For instance, if the SoundEmitter's object is to the left of a <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/audio/soundlistener.md">SoundListener </a>, it will reduce the amount of sound going to the right speaker, so that the player hears the sound to their left. </p>
+<p># Using SoundEmitters</p>
+<p>## Volume and Pitch Settings</p>
+<p>The Volume  and Decibels  properties set the volume adjustment that is applied to any <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/audio/soundinstance.md">SoundInstances</a> played through the SoundEmitter. The Volume  property uses floating point values, while the Decibels  property uses the logarithmic decibel scale commonly used in audio. These properties are linked, so changing one will also change the value of the other. </p>
+<p>The Pitch  and Semitones  properties set the pitch adjustment that is applied to SoundInstances. This adjustment affects both the pitch and speed of the sound: higher-pitched sounds will play faster, while lower-pitched sounds play slower. Large pitch changes will likely affect the quality of the sound. The Pitch  property uses floating point values, while the Semitones  property uses semitones, or half-steps. These properties are also linked.</p>
+<p>The <code>InterpolateVolume</code>, <code>InterpolateDecibels</code>, <code>InterpolatePitch</code>, and <code>InterpolateSemitones</code> methods can be used at runtime to smoothly change the SoundEmitter's volume or pitch over time. Using these interpolation methods is preferable to using Actions to set the properties: changing a property every frame with an Action can result in audible jumps in volume or pitch, while the interpolation method causes the volume change to be handled smoothly by the audio engine.</p>
+<p>Note that these volume and pitch changes will be combined with any other volume modifications applied by objects such as <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/audio/soundtag.md">SoundTags</a>, <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/audio/soundcue.md">SoundCues</a>, and <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/audio/soundspace.md">SoundSpaces</a>. If a SoundCue's volume is set to <code>0.5</code> and it is played on a SoundEmitter which also has a volume of <code>0.5</code>, this effectively sets the resulting SoundInstance's volume to <code>0.25</code>. If a SoundInstance's Semitones is set to <code>12</code> and it is played on a SoundEmitter with a Semitones value of <code>-6</code>, this effectively raises the SoundInstance's pitch by 6 semitones or half an octave. </p>
+<p>## Directional SoundEmitters</p>
+<p>When the Directional checkBox property is checked the audio output of the SoundEmitter will be limited by the EmitAngle  so that sound in front of the object will be louder than sound behind it. Within the EmitAngle   the sound will be at full volume. Outside the angle, the volume will interpolate using a logarithmic curve until it reaches the RearVolume  value directly behind the object. This is useful for sounds on objects such as loudspeakers or objects with a wall behind them that the sound shouldn't be heard through.</p>
+<p>## Attenuation</p>
+<p>If a <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/audio/soundattenuator.md">SoundAttenuator</a> resource other than DefaultNoAttenuation resource is selected, its settings will be used for any SoundCues played through the SoundEmitter that have DefaultNoAttenuation resource selected on their Attenuator resource property. </p>
+<p>## SoundNodes</p>
+<p>Unlike other objects, SoundEmitters are a collection of multiple <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/audio/soundnode.md">SoundNodes </a>. This allows them to have settings for volume and pitch as well as handling spatialization. Because of this, instead of one SoundNode property, SoundEmitters have two separate properties for the first and last SoundNodes in their chain. </p>
+<p>The <code>InputNode</code> property should be used for attaching other SoundNodes to the input of the SoundEmitter, while the <code>OutputNode</code> should be used for attaching to its output. Users cannot insert other SoundNodes before or after the <code>InputNode</code>, and cannot insert SoundNodes before the <code>OutputNode</code>. Neither of these nodes can be replaced or removed from the graph.</p>
+<p>##  Lightning Events</p>
+<ul>
+<li>The <code>SoundInstancePlayed</code> <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/soundinstanceevent.md"> SoundInstanceEvent  </a> will be sent when a SoundCue is played using either the <code>PlayCue</code> or <code>PlayCuePaused</code> methods. </li>
+<li>The <code>AudioInterpolationDone</code> <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/soundevent.md"> SoundEvent  </a> is sent whenever a volume or pitch interpolation has finished.</li>
+</ul>
+<hr />
+<p># Related Materials</p>
+<p>## Manual</p>
+<ul>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/audio/soundlistener.md">SoundListener </a></li>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/audio/soundinstance.md">SoundInstance </a></li>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/audio/soundtag.md">SoundTag </a></li>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/audio/soundcue.md">SoundCue </a></li>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/audio/soundspace.md">SoundSpace </a></li>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/audio/soundattenuator.md">SoundAttenuator </a></li>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/audio/soundnode.md">SoundNode </a></li>
+</ul>
+<p>## Reference</p>
+<ul>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/soundemitter.md"> SoundEmitter </a></li>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/soundinstanceevent.md"> SoundInstanceEvent  </a> </li>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/soundevent.md"> SoundEvent  </a>  </li>
+</ul>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../soundinstance/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../soundinstance/" class="btn btn-xs btn-link">
+        Sound Instances
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../soundcue/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../soundcue/" class="btn btn-xs btn-link">
+        Sound Cues
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="col-md-12 wm-page-content">
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/noraj/mkdocs-windmill-dark">Windmill Dark</a> theme by Alexandre ZANNI (noraj).</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="author" content="PlasmaDev">
+    <link rel="canonical" href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/Lightning/functions/">
+    <link rel="shortcut icon" href="../../../../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Functions - PlasmaDocs</title>
+    <link href="../../../../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../../../../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../../../../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../../../css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../../../../js/jquery-3.2.1.min.js"></script>
+    <script src="../../../../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../../../../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '../../../..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "Functions", url: "#_top", children: [
+          ]},
+        ];
+
+    </script>
+    <script src="../../../../js/base.js"></script>
+      <script src="../../../../search/main.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../hashmap/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../hashmap/" class="btn btn-xs btn-link">
+        HashMap
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../flags/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../flags/" class="btn btn-xs btn-link">
+        Flags
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <h1 id="functions">Functions</h1>
+<p>A function is a named block of code (with its own <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/Lightning/variables_and_data_types.md#scope">scope</a> that performs a task. Ideally, one function should perform just one task. A function may return a value of a specific <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/Lightning/variables_and_data_types.md">type</a> based on the operation performed in the function or it may return nothing at all. Functions can also take in values of a specific type, which are called parameters, that are used and/or changed by the operation of the function.</p>
+<p>Functions are declared using the <strong>function</strong> keyword:</p>
+<pre><code class="language-csharp">
+// Note:
+// -function keyword is used
+// -function name is capitalized
+// -function name is followed by ()
+// -when present parameters go in between ()
+//  -parameter names must start with a lowercase character
+//  -parameters must have their type specified
+// -when a return type is present a colon ':' follows the ')' & the returned type follows the ':'
+function MyFunctionName(param1: MyParamType1, param2: MyParamType2) : MyReturnType
+{// Scope of the function in wrapped in {}
+  // function operations within this scope.
+
+  // return keyword used to pass back return value specified.
+  return MyReturnType(param1 + param2);
+}
+</code></pre>
+
+<p># Function Rules</p>
+<p>There are a number of important rules that functions in Lightning must follow. If these rules are not followed, an error will be thrown, as can be seen in the examples below. </p>
+<p>## No Global Functions
+Lightning <strong>does not support</strong> global functions. They must be contained within the scope of either a <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/Lightning/classes.md">class</a> or <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/Lightning/structs.md">struct</a>. Thus, the above would actually be encased like this:</p>
+<pre><code class="language-csharp">
+class MyClassName
+{
+    function MyFunctionName(param1: MyParamType1, param2: MyParamType2) : MyReturnType
+    {
+        // Perform function operations here.
+        return MyReturnType(param1 + param2);
+    }
+}
+</code></pre>
+
+<p>or this:</p>
+<pre><code class="language-csharp">
+struct MyStructName
+{
+  function MyFunctionName(param1: MyParamType1, param2: MyParamType2) : MyReturnType
+  {
+    // Perform function operations here.
+    return MyReturnType(param1 + param2);
+  }
+}
+</code></pre>
+<p>Otherwise you may see an error like this</p>
+<pre><code class="language-csharp">
+Parsing could not be completed (we ran into something we didn't understand). The token we hit was 'function' with token type 'Function'.
+</code></pre>
+
+<p># The Static Keyword
+Static functions can be implemented using the <code>[Static]</code> attribute. Operations performed by functions which are static should be independent of independent of any particular data of the class. This is important as static functions can also be called with out access to an instance of the class by referencing the function through the non-instantied type:</p>
+<pre><code class="language-csharp">
+class MyClass
+{
+  [Static] // Marking it static allows you to reference the function without creating an instance.
+  function ClassName():String
+  {
+    return "MyClass";
+  }
+}
+</code></pre>
+<p>If we were to test it:</p>
+<pre><code class="language-csharp">
+Console.WriteLine(MyClass.ClassName());
+</code></pre>
+<p>the result would be</p>
+<pre><code class="language-csharp">
+MyClass
+</code></pre>
+<p>NOTE: Unlike other languages static functions <strong>cannot</strong> be called from an instance, <strong>only</strong> from the class name.</p>
+<p># Function Naming</p>
+<p>The first letter of a function name MUST be capitalized. While the rest of the name may remain un-capitalized, function names are traditionally written using <a href="https://en.wikipedia.org/wiki/Camel_case">upper camel case</a> (e.g. <code>MyFunctionName</code> instead of <code>Myfunctionname</code>).</p>
+<pre><code class="language-csharp">
+// Lowercase function name will cause a compiler error.
+function myFunctionName() // This won't work..
+{
+  // Perform function operations here.
+}
+</code></pre>
+
+<pre><code class="language-csharp">
+Function declaration is missing a name. Upper-camel case names are required here (use 'MyFunctionName' instead of 'myFunctionName').
+</code></pre>
+
+<p># Parameter and Variable Naming</p>
+<p>Parameters and locally-scoped (to the function scope in this case) MUST start with a lowercase character. While the rest of the name may remain un-capitalized, parameter and local variables are traditionally written using lower camel case (e.g. <code>myParamName</code> instead of <code>myparamname</code>).</p>
+<pre><code class="language-csharp">
+// Capitalized parameter identifiers will cause a compiler error.
+function MyFunctionName(Param1: MyParamType) // This won't work.
+{
+  // Capitalized locally-scoped variables will also cause a compiler error.
+  var Count: Integer = 10; // This won't work.
+}
+</code></pre>
+
+<pre><code class="language-csharp">
+Function declaration 'MyFunctionName' has an invalid argument list. We found 'UpperIdentifier' but we expected to find ')'.
+</code></pre>
+<p>In this error, <code>UpperIdentifier</code> refers to the uppercase letter 'P' used in <code>Param1</code>. As this is unacceptable for a parameter name, the error states that it expects to find the closing parenthesis instead.</p>
+<p># Return Types</p>
+<p>Return types are appended to the function signature <strong>after</strong> the argument list separated by the <code>:</code> operator. When this is left off the return type is assumed to be Void. You can use the <strong>return</strong> keyword to return a value from the function; however, if the function signature has a Void return type, the return statement must be omitted.</p>
+<pre><code class="language-csharp">
+// Leaving off the return value, assumes nothing is returned.
+function MyFunctionName()
+{
+  // 8 will NOT be returned since the signature does not specify a 
+  // return type (a compiler error will occur)
+  return 8;
+}
+</code></pre>
+
+<pre><code class="language-csharp">
+The return statement was not expected to return a '[ErrorType]' value, since the function does not declare it (no ':' at the end).
+</code></pre>
+
+<p># Related Materials
+ ## Manual
+- <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/Lightning/attributes.md">attributes</a>
+- <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/Lightning/classes.md">classes</a>
+- <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/Lightning/variables_and_data_types.md">variables_and_data_types</a>
+- <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/Lightning/classes.md">classes</a>
+- <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/Lightning/structs.md">structs</a></p>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../hashmap/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../hashmap/" class="btn btn-xs btn-link">
+        HashMap
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../flags/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../flags/" class="btn btn-xs btn-link">
+        Flags
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="col-md-12 wm-page-content">
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/noraj/mkdocs-windmill-dark">Windmill Dark</a> theme by Alexandre ZANNI (noraj).</p>
+</footer>
+
+</body>
+</html>

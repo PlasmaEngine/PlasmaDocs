@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="author" content="PlasmaDev">
+    <link rel="canonical" href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C%2B%2B/code_reference/class_reference/rendergroup/">
+    <link rel="shortcut icon" href="../../../../../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Rendergroup - PlasmaDocs</title>
+    <link href="../../../../../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../../../../../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../../../../../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../../../../css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../../../../../js/jquery-3.2.1.min.js"></script>
+    <script src="../../../../../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../../../../../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '../../../../..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+        ];
+
+    </script>
+    <script src="../../../../../js/base.js"></script>
+      <script src="../../../../../search/main.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../rendergrouphierarchies/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../rendergrouphierarchies/" class="btn btn-xs btn-link">
+        Rendergrouphierarchies
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../removedentry/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../removedentry/" class="btn btn-xs btn-link">
+        Removedentry
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <p><code>Resource</code> <code>Graphics</code></p>
+<p>(NOTE) How Materials are categorized, determines which graphicals are drawn in a render pass.</p>
+<table>
+<thead>
+<tr>
+<th>Methods</th>
+<th>Properties</th>
+<th>Base Classes</th>
+<th>Derived Classes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/rendergroup.md#issubrendergroup-plasma-en"> IsSubRenderGroup</a></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/rendergroup.md#childrendergroups-plasma-e"> ChildRenderGroups</a></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/dataresource.md">dataresource</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/rendergroup.md#issubrendergroupof-plasma"> IsSubRenderGroupOf</a></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/rendergroup.md#graphicalsortmethod-plasma"> GraphicalSortMethod</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/rendergroup.md#materials-plasma-engine-do"> Materials</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/rendergroup.md#parentrendergroup-plasma-e"> ParentRenderGroup</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/rendergroup.md#referencedbylist-plasma-en"> ReferencedByList</a></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>#  Properties</p>
+<hr />
+<p>#  ChildRenderGroups : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/childrendergrouplist.md">childrendergrouplist</a></p>
+<p><code>read-only</code></p>
+<blockquote>
+<p>For assigning child RenderGroups, making this a parent group of everything in the list.
+``` lang=cpp, name=Lightning
+var ChildRenderGroups : ChildRenderGroupList</p>
+</blockquote>
+<hr />
+<p>#  GraphicalSortMethod : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/enum_reference.md#graphicalsortmethod">GraphicalSortMethod</a></p>
+<blockquote>
+<p>Determines the order that graphicals will be drawn when processed as this RenderGroup.
+``` lang=cpp, name=Lightning
+var GraphicalSortMethod : GraphicalSortMethod</p>
+</blockquote>
+<hr />
+<p>#  Materials : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/materiallist.md">materiallist</a></p>
+<p><code>read-only</code></p>
+<blockquote>
+<p>``` lang=cpp, name=Lightning
+var Materials : MaterialList</p>
+</blockquote>
+<hr />
+<p>#  ParentRenderGroup : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/rendergroup.md">rendergroup</a></p>
+<blockquote>
+<p>RenderGroup that this is a sub group of. Also a sub group of all of its parents.
+``` lang=cpp, name=Lightning
+var ParentRenderGroup : RenderGroup</p>
+</blockquote>
+<hr />
+<p>#  ReferencedByList : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/materiallist.md">materiallist</a></p>
+<p><code>read-only</code></p>
+<blockquote>
+<p>``` lang=cpp, name=Lightning
+var ReferencedByList : MaterialList</p>
+</blockquote>
+<hr />
+<p>#  Methods</p>
+<hr />
+<p>#  IsSubRenderGroup : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.md">boolean</a></p>
+<blockquote>
+<p>Returns whether or not the given RenderGroup is a sub group of this.
+|Name|Type|Description|
+|---|---|---|
+|renderGroup|<a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/rendergroup.md">rendergroup</a>| |
+<code>lang=cpp, name=Lightning
+function IsSubRenderGroup(renderGroup : RenderGroup) : Boolean</code> </p>
+</blockquote>
+<hr />
+<p>#  IsSubRenderGroupOf : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.md">boolean</a></p>
+<blockquote>
+<p>Returns whether or not this is a sub group of the given RenderGroup.
+|Name|Type|Description|
+|---|---|---|
+|renderGroup|<a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/rendergroup.md">rendergroup</a>| |
+<code>lang=cpp, name=Lightning
+function IsSubRenderGroupOf(renderGroup : RenderGroup) : Boolean</code> </p>
+</blockquote>
+<hr />
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../rendergrouphierarchies/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../rendergrouphierarchies/" class="btn btn-xs btn-link">
+        Rendergrouphierarchies
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../removedentry/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../removedentry/" class="btn btn-xs btn-link">
+        Removedentry
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="col-md-12 wm-page-content">
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/noraj/mkdocs-windmill-dark">Windmill Dark</a> theme by Alexandre ZANNI (noraj).</p>
+</footer>
+
+</body>
+</html>

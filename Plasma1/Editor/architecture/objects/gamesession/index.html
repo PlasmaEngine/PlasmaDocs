@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="author" content="PlasmaDev">
+    <link rel="canonical" href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/architecture/objects/gamesession/">
+    <link rel="shortcut icon" href="../../../../../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Game Session - PlasmaDocs</title>
+    <link href="../../../../../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../../../../../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../../../../../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../../../../css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../../../../../js/jquery-3.2.1.min.js"></script>
+    <script src="../../../../../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../../../../../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '../../../../..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "Game Session", url: "#_top", children: [
+          ]},
+          {title: "Common Uses", url: "#common-uses", children: [
+          ]},
+          {title: "Using the GameSession", url: "#using-the-gamesession", children: [
+              {title: "Events of GameSession", url: "#events-of-gamesession" },
+          ]},
+          {title: "Related Materials", url: "#related-materials", children: [
+              {title: "Manual", url: "#manual" },
+              {title: "Reference", url: "#reference" },
+          ]},
+        ];
+
+    </script>
+    <script src="../../../../../js/base.js"></script>
+      <script src="../../../../../search/main.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../levelsettings/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../levelsettings/" class="btn btn-xs btn-link">
+        Level Settings
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../../cogs/objectstore/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../../cogs/objectstore/" class="btn btn-xs btn-link">
+        Object Store
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <h1 id="game-session">Game Session</h1>
+<p><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/gamesession.md">GameSession</a> manages the running of the game, both upon pressing the play button and dealing with the exported version. It is an object that represents one instance of the game. Being an object, it is possible to create more than one game session per executable.</p>
+<h1 id="common-uses">Common Uses</h1>
+<ul>
+<li>Setting the starting <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/architecture/resources/level.md">level</a> </li>
+<li>Redirecting the use of <code>Esc</code> key in game </li>
+</ul>
+<h1 id="using-the-gamesession">Using the GameSession</h1>
+<p>The GameSession object may be accessed from the scripts that are running via any <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/architecture/cogs/gameobjectsconcept.md"> Cog</a>:</p>
+<pre><code>    // Within a script, those ``this`` variables referring to a Cog can get the GameSession
+    // Note: Even though they are not Cogs, all Components (to include derived LightningComponents)
+    // are equipped with a getter to GameSession
+    var myGame = this.GameSession;
+    // Here is an example of pulling it from a dynamically created cog.
+    var cube = this.Space.Create(Archetype.Cube);
+    var alsoMyGame = cube.GameSession;   
+</code></pre>
+<p>In Lightning, a GameSession object cannot be created using the a normal constructor. In order to create a GameSession one must use a function bound from C++:</p>
+<pre><code>    // Here, a C++ function bound to Lightning is used to create a GameSession
+    var myGame = Plasma.Engine.CreateGameSession();
+</code></pre>
+<p>IMPORTANT:
+  This is primarily intended for having a project to launch a dedicated server; therefore, calling this puts the game in the background while still using resources. <strong>It must be managed by the user</strong>: this includes destroying the game, ensuring resources do not leak, and checking references of objects belonging to other GameSessions before using them to avoid exceptions or other corruption of data.</p>
+<p>Being that all Plasma Projects run a game, it can be edited within the editor. The hotkey <code>Shift + g</code> accesses the Game Archetype that is used to spawn the game. By default it comes with the <code>DefaultGameSetup</code> component, which can be used to set the starting level or load a custom space archetype. From here one can also add custom-made components, just like any other object.</p>
+<h2 id="events-of-gamesession">Events of GameSession</h2>
+<p>The user connects to these events when dispatched on the GameSession], e.g.:</p>
+<p><code>Plasma.Connect(this.GameSession, Events.GameLoad, this.OnGameLoad);</code></p>
+<table>
+<thead>
+<tr>
+<th>Event Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>GameSetup</td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/gameevent.md">gameevent</a></td>
+<td>This event fires after the creation of the GameSession. Only GameSession will be to respond to this event due to the timing of the dispatch during normal circumstances.</td>
+</tr>
+<tr>
+<td>GameLoad</td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/gameevent.md">gameevent</a></td>
+<td>This event fires after the creation of the Space Archetype. Only GameSession and spaces will be able to respond to this event due to the timing of the dispatch in normal circumstances.</td>
+</tr>
+<tr>
+<td>GameStarted</td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/gameevent.md">gameevent</a></td>
+<td>This event fires after the starting level is fully loaded. All cogs present at the start of level are able respond to this event. Dynamically created objects may or may not respond depending on when they were created. (e.g. those created during initialize of those objects loaded with the level will still receive this event, but those created in response to the <code>LogicUpdate</code> event will not.</td>
+</tr>
+<tr>
+<td>GameFocusIn</td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/gameevent.md">gameevent</a></td>
+<td>This event fires once the game window has regained focus (having been out of focus.) This event is not sent when testing in the editor. In order to test this logic, run the game using the <code>ExportAndPlayGame</code> command.</td>
+</tr>
+<tr>
+<td>GameFocusOut</td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/gameevent.md">gameevent</a></td>
+<td>This event fires after the game window has lost focus, for instance when clicking on another application. This event is not sent when testing in the editor. In order to test this logic, run the game using the <code>ExportAndPlayGame</code> command.</td>
+</tr>
+<tr>
+<td>GameRequestQuit</td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/gameevent.md">gameevent</a></td>
+<td>This event fires after the pressing the <code>Esc</code> key. This allows a script to hook the key in order to override this behavior. See <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/gameplay/handlingquitmessage.md">HandlingQuitMessage</a> for more on this.</td>
+</tr>
+</tbody>
+</table>
+<h1 id="related-materials">Related Materials</h1>
+<h2 id="manual">Manual</h2>
+<ul>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/gameplay/handlingquitmessage.md">HandlingQuitMessage</a></li>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/architecture/resources/level.md">level</a> </li>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/architecture/cogs/gameobjectsconcept.md"> Cog</a></li>
+</ul>
+<h2 id="reference">Reference</h2>
+<ul>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/gamesession.md">GameSession</a></li>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/gameevent.md">gameevent</a></li>
+</ul>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../levelsettings/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../levelsettings/" class="btn btn-xs btn-link">
+        Level Settings
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../../cogs/objectstore/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../../cogs/objectstore/" class="btn btn-xs btn-link">
+        Object Store
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="col-md-12 wm-page-content">
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/noraj/mkdocs-windmill-dark">Windmill Dark</a> theme by Alexandre ZANNI (noraj).</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="author" content="PlasmaDev">
+    <link rel="canonical" href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C%2B%2B/code_reference/class_reference/mesh/">
+    <link rel="shortcut icon" href="../../../../../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Mesh - PlasmaDocs</title>
+    <link href="../../../../../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../../../../../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../../../../../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../../../../css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../../../../../js/jquery-3.2.1.min.js"></script>
+    <script src="../../../../../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../../../../../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '../../../../..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+        ];
+
+    </script>
+    <script src="../../../../../js/base.js"></script>
+      <script src="../../../../../search/main.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../meshbuilder/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../meshbuilder/" class="btn btn-xs btn-link">
+        Meshbuilder
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../menubaritem/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../menubaritem/" class="btn btn-xs btn-link">
+        Menubaritem
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <p><code>Resource</code> <code>Graphics</code></p>
+<p>(NOTE) Data that represents a mesh in the way that is intended to be used by graphics hardware.</p>
+<table>
+<thead>
+<tr>
+<th>Methods</th>
+<th>Properties</th>
+<th>Base Classes</th>
+<th>Derived Classes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/mesh.md#createruntime-plasma-engin"> CreateRuntime</a></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/mesh.md#indices-plasma-engine-docu"> Indices</a></td>
+<td>Resource</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/mesh.md#runtimeclone-plasma-engine"> RuntimeClone</a></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/mesh.md#primitivetype-plasma-engin"> PrimitiveType</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/mesh.md#upload-void"> Upload</a></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/mesh.md#vertices-plasma-engine-doc"> Vertices</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/mesh.md#uploadnoraycastinfo-void"> UploadNoRayCastInfo</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/mesh.md#uploadnoraycastinfooraab"> UploadNoRayCastInfoOrAabb</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>#  Properties</p>
+<hr />
+<p>#  Indices : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/indexbuffer.md">indexbuffer</a></p>
+<p><code>read-only</code></p>
+<blockquote>
+<p>Indices used to define non-sequential primitive construction from vertices, such as shared vertices.
+``` lang=cpp, name=Lightning
+var Indices : IndexBuffer</p>
+</blockquote>
+<hr />
+<p>#  PrimitiveType : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/enum_reference.md#primitivetype">PrimitiveType</a></p>
+<blockquote>
+<p>The type of primitives to be made with the vertex data.
+``` lang=cpp, name=Lightning
+var PrimitiveType : PrimitiveType</p>
+</blockquote>
+<hr />
+<p>#  Vertices : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/vertexbuffer.md">vertexbuffer</a></p>
+<p><code>read-only</code></p>
+<blockquote>
+<p>Vertex data and attribute semantics for defining data that can be uploaded to the gpu.
+``` lang=cpp, name=Lightning
+var Vertices : VertexBuffer</p>
+</blockquote>
+<hr />
+<p>#  Methods</p>
+<hr />
+<p>#  CreateRuntime : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/mesh.md">mesh</a></p>
+<p><code>static</code></p>
+<blockquote>
+<p>Makes an anonymous Mesh resource that can be defined by script and uploaded to the gpu.
+|Name|Type|Description|
+|---|---|---|
+<code>lang=cpp, name=Lightning
+function CreateRuntime() : Mesh</code> </p>
+</blockquote>
+<hr />
+<p>#  RuntimeClone : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/mesh.md">mesh</a></p>
+<blockquote>
+<p>Creates a clone of this Mesh. As a clone is expected to be modified, an upload function must be called before this mesh can be used.
+|Name|Type|Description|
+|---|---|---|
+<code>lang=cpp, name=Lightning
+function RuntimeClone() : Mesh</code> </p>
+</blockquote>
+<hr />
+<p>#  Upload : Void</p>
+<blockquote>
+<p>Upload vertex buffer and index buffer data to the gpu. This will also build the aabb and information needed for raycasting.
+|Name|Type|Description|
+|---|---|---|
+<code>lang=cpp, name=Lightning
+function Upload()</code> </p>
+</blockquote>
+<hr />
+<p>#  UploadNoRayCastInfo : Void</p>
+<blockquote>
+<p>Same as Upload except raycasting information will not be built. This avoids a possible spike when a custom mesh will never need to be raycasted against.
+|Name|Type|Description|
+|---|---|---|
+<code>lang=cpp, name=Lightning
+function UploadNoRayCastInfo()</code> </p>
+</blockquote>
+<hr />
+<p>#  UploadNoRayCastInfoOrAabb : Void</p>
+<blockquote>
+<p>Same as Upload except raycasting information and the aabb will not be built. This should be used when the user is manually setting an aabb or frustum culling is disabled.
+|Name|Type|Description|
+|---|---|---|
+<code>lang=cpp, name=Lightning
+function UploadNoRayCastInfoOrAabb()</code> </p>
+</blockquote>
+<hr />
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../meshbuilder/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../meshbuilder/" class="btn btn-xs btn-link">
+        Meshbuilder
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../menubaritem/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../menubaritem/" class="btn btn-xs btn-link">
+        Menubaritem
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="col-md-12 wm-page-content">
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/noraj/mkdocs-windmill-dark">Windmill Dark</a> theme by Alexandre ZANNI (noraj).</p>
+</footer>
+
+</body>
+</html>

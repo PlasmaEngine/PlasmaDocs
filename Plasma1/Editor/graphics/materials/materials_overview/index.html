@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="author" content="PlasmaDev">
+    <link rel="canonical" href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/graphics/materials/materials_overview/">
+    <link rel="shortcut icon" href="../../../../../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Materials - PlasmaDocs</title>
+    <link href="../../../../../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../../../../../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../../../../../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../../../../css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../../../../../js/jquery-3.2.1.min.js"></script>
+    <script src="../../../../../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../../../../../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '../../../../..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "Materials", url: "#_top", children: [
+          ]},
+          {title: "Material Templates", url: "#material-templates", children: [
+          ]},
+          {title: "Related Materials", url: "#related-materials", children: [
+              {title: "Manual", url: "#manual" },
+              {title: "Code Reference", url: "#code-reference" },
+          ]},
+        ];
+
+    </script>
+    <script src="../../../../../js/base.js"></script>
+      <script src="../../../../../search/main.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../metallic/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../metallic/" class="btn btn-xs btn-link">
+        Metallic
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../albedo/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../albedo/" class="btn btn-xs btn-link">
+        Albedo
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <h1 id="materials">Materials</h1>
+<p><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/material.md">Materials</a>, and the parameters found in them, define the shader for drawing objects for any purpose, using any renderer. Their overarching, generalized purpose is to house shader code (pixel, vertex, and geometry) using individual LightningFragments. These LightningFragments added to a Material as MaterialBlocks. These <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/graphics/materials/shaders.md"> shader fragments </a> define how the surface of the object on which it is placed will react to its environment.  <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/graphics/physically_based_rendering.md">PBR</a>, which is provided for the user as the default <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/graphics/renderer/deferred_renderer.md#deferred-renderer">DeferredRenderer</a>, is just one instance of how Materials may be used to render objects. To add a new Material, see <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/editor/editorcommands/resourceadding.md">Adding a Resource</a>.</p>
+<h1 id="material-templates">Material Templates</h1>
+<p>When creating a new material, there are six templates from which to choose:</p>
+<table>
+<thead>
+<tr>
+<th>Template</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>PlasmaMaterial</code></td>
+<td>PBR-based material defined by TextureMaps</td>
+</tr>
+<tr>
+<td><code>OpaqueFlat</code></td>
+<td>PBR-based material defined by uniform values</td>
+</tr>
+<tr>
+<td><code>EmptyMaterial</code></td>
+<td>Free of any default MaterialBlocks or references to <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/graphics/rendergroups.md">RenderGroups</a></td>
+</tr>
+<tr>
+<td><code>AdditiveSprite</code></td>
+<td>Used for sprites that require additive blending</td>
+</tr>
+<tr>
+<td><code>AlphaCut</code></td>
+<td>Used for graphicals that should be alpha cut</td>
+</tr>
+<tr>
+<td><code>AlphaSprite</code></td>
+<td>Used for sprites that require alpha blending</td>
+</tr>
+</tbody>
+</table>
+<p>Each of these templates has MaterialBlocks and references to RenderGroups pre-added. The PlasmaMaterial, for example, has <code>AlbedoMap</code>, <code>NormalMap</code>, <code>RoughnessMap</code>, <code>MetallicMap</code>, and <code>SpecularValue</code> MaterialBlocks and references <code>Opaque</code>, and <code>ShadowCasters</code> RenderGroups.</p>
+<p><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/graphics/materials/albedo.md"> Albedo </a>, <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/graphics/materials/normal_map.md"> Normal </a>, <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/graphics/materials/metallic.md"> Metallic </a>, <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/graphics/materials/roughness.md"> Roughness </a>, and Specular are the parameters that define how light interacts with the material. Each of these parameters may be defined by a texture map or by a value, with the exception of the Normal parameter which may only be defined by a map.</p>
+<h1 id="related-materials">Related Materials</h1>
+<h2 id="manual">Manual</h2>
+<ul>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/graphics/rendergroups.md">rendergroups</a></li>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/graphics/models/model_component.md">model_component</a></li>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/graphics/materials.md">materials</a></li>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/graphics/materials/albedo.md"> Albedo </a></li>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/graphics/materials/normal_map.md"> Normal </a></li>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/graphics/materials/metallic.md"> Metallic </a></li>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/graphics/materials/roughness.md"> Roughness </a></li>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/graphics/materials/shaders.md">shaders</a></li>
+</ul>
+<h2 id="code-reference">Code Reference</h2>
+<ul>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/rendergroup.md">rendergroup</a> </li>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/model.md">model</a></li>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/material.md">material</a> </li>
+</ul>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../metallic/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../metallic/" class="btn btn-xs btn-link">
+        Metallic
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../albedo/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../albedo/" class="btn btn-xs btn-link">
+        Albedo
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="col-md-12 wm-page-content">
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/noraj/mkdocs-windmill-dark">Windmill Dark</a> theme by Alexandre ZANNI (noraj).</p>
+</footer>
+
+</body>
+</html>

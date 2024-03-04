@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="author" content="PlasmaDev">
+    <link rel="canonical" href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C%2B%2B/code_reference/class_reference/space/">
+    <link rel="shortcut icon" href="../../../../../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Space - PlasmaDocs</title>
+    <link href="../../../../../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../../../../../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../../../../../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../../../../css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../../../../../js/jquery-3.2.1.min.js"></script>
+    <script src="../../../../../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../../../../../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '../../../../..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+        ];
+
+    </script>
+    <script src="../../../../../js/base.js"></script>
+      <script src="../../../../../search/main.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../spacemapvaluerange/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../spacemapvaluerange/" class="btn btn-xs btn-link">
+        Spacemapvaluerange
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../soundtags/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../soundtags/" class="btn btn-xs btn-link">
+        Soundtags
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <p><code>Engine</code></p>
+<p>(NOTE) A space is a near boundless, three-dimensional extent in which objects and events occur and have relative position, direction, and time. Essentially a world of objects that exist together. Used to divide objects between UI, World, Editor, and others. The two most Common spaces are the 'World' for the game world and the 'Ui' for the HUD and menus.</p>
+<table>
+<thead>
+<tr>
+<th>Methods</th>
+<th>Properties</th>
+<th>Base Classes</th>
+<th>Derived Classes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/space.md#addobjectsfromlevel-plasma"> AddObjectsFromLevel</a></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/space.md#allobjects-plasma-engine-d"> AllObjects</a></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/cog.md">cog</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/space.md#create-plasma-engine-docum"> Create</a></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/space.md#allrootobjects-plasma-engi"> AllRootObjects</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/space.md#createatposition-plasma-en"> CreateAtPosition</a></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/space.md#currentlevel-plasma-engine"> CurrentLevel</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/space.md#createlink-plasma-engine-d"> CreateLink</a></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/space.md#iseditormode-plasma-engine"> IsEditorMode</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/space.md#destroyall-void"> DestroyAll</a></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/space.md#objectcount-plasma-engine"> ObjectCount</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/space.md#destroyallfromlevel-void"> DestroyAllFromLevel</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/space.md#findallobjectsbyname-zer"> FindAllObjectsByName</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/space.md#findfirstobjectbyname-ze"> FindFirstObjectByName</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/space.md#findfirstrootobjectbynam"> FindFirstRootObjectByName</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/space.md#findlastobjectbyname-zer"> FindLastObjectByName</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/space.md#findlastrootobjectbyname"> FindLastRootObjectByName</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/space.md#findobjectbyname-plasma-en"> FindObjectByName</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/space.md#getmodified-plasma-engine"> GetModified</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/space.md#loadlevel-void"> LoadLevel</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/space.md#markmodified-void"> MarkModified</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/space.md#marknotmodified-void"> MarkNotModified</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/space.md#reloadlevel-void"> ReloadLevel</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/space.md#space-void"> Constructor</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>#  Properties</p>
+<hr />
+<p>#  AllObjects : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/spacerange.md">spacerange</a></p>
+<p><code>read-only</code></p>
+<blockquote>
+<p>``` lang=cpp, name=Lightning
+var AllObjects : SpaceRange</p>
+</blockquote>
+<hr />
+<p>#  AllRootObjects : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/hierarchylistrange.md">hierarchylistrange</a></p>
+<p><code>read-only</code></p>
+<blockquote>
+<p>``` lang=cpp, name=Lightning
+var AllRootObjects : HierarchyListRange</p>
+</blockquote>
+<hr />
+<p>#  CurrentLevel : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/level.md">level</a></p>
+<p><code>read-only</code></p>
+<blockquote>
+<p>Last level loaded.
+``` lang=cpp, name=Lightning
+var CurrentLevel : Level</p>
+</blockquote>
+<hr />
+<p>#  IsEditorMode : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.md">boolean</a></p>
+<p><code>read-only</code></p>
+<blockquote>
+<p>``` lang=cpp, name=Lightning
+var IsEditorMode : Boolean</p>
+</blockquote>
+<hr />
+<p>#  ObjectCount : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer.md">integer</a></p>
+<p><code>read-only</code></p>
+<blockquote>
+<p>Number of objects in the space.
+``` lang=cpp, name=Lightning
+var ObjectCount : Integer</p>
+</blockquote>
+<hr />
+<p>#  Methods</p>
+<hr />
+<p>#  AddObjectsFromLevel : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/level.md">level</a></p>
+<blockquote>
+<p>Add all objects from a level.
+|Name|Type|Description|
+|---|---|---|
+|levelName|<a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/level.md">level</a>| |
+<code>lang=cpp, name=Lightning
+function AddObjectsFromLevel(levelName : Level) : Level</code> </p>
+</blockquote>
+<hr />
+<p>#  Create : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/cog.md">cog</a></p>
+<blockquote>
+<p>Create an object in the space.
+|Name|Type|Description|
+|---|---|---|
+|archetype|<a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/archetype.md">archetype</a>| |
+<code>lang=cpp, name=Lightning
+function Create(archetype : Archetype) : Cog</code> </p>
+</blockquote>
+<hr />
+<p>#  CreateAtPosition : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/cog.md">cog</a></p>
+<blockquote>
+<p>Create a object at a position in the space.
+|Name|Type|Description|
+|---|---|---|
+|archetype|<a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/archetype.md">archetype</a>| |
+|position|<a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real3.md">real3</a>| |
+<code>lang=cpp, name=Lightning
+function CreateAtPosition(archetype : Archetype, position : Real3) : Cog</code> </p>
+</blockquote>
+<hr />
+<p>#  CreateLink : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/cog.md">cog</a></p>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>archetype</td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/archetype.md">archetype</a></td>
+<td></td>
+</tr>
+<tr>
+<td>objectA</td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/cog.md">cog</a></td>
+<td></td>
+</tr>
+<tr>
+<td>objectB</td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/cog.md">cog</a></td>
+<td></td>
+</tr>
+<tr>
+<td>``` lang=cpp, name=Lightning</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>function CreateLink(archetype : Archetype, objectA : Cog, objectB : Cog) : Cog</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>```</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<hr />
+<p>#  DestroyAll : Void</p>
+<blockquote>
+<p>Destroy all objects in space.
+|Name|Type|Description|
+|---|---|---|
+<code>lang=cpp, name=Lightning
+function DestroyAll()</code> </p>
+</blockquote>
+<hr />
+<p>#  DestroyAllFromLevel : Void</p>
+<blockquote>
+<p>Destroy all objects created from level.
+|Name|Type|Description|
+|---|---|---|
+<code>lang=cpp, name=Lightning
+function DestroyAllFromLevel()</code> </p>
+</blockquote>
+<hr />
+<p>#  FindAllObjectsByName : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/cognamerange.md">cognamerange</a></p>
+<blockquote>
+<p>Find an object in the space with a given name.
+|Name|Type|Description|
+|---|---|---|
+|name|<a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/string.md">string</a>| |
+<code>lang=cpp, name=Lightning
+function FindAllObjectsByName(name : String) : CogNameRange</code> </p>
+</blockquote>
+<hr />
+<p>#  FindFirstObjectByName : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/cog.md">cog</a></p>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>name</td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/string.md">string</a></td>
+<td></td>
+</tr>
+<tr>
+<td>``` lang=cpp, name=Lightning</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>function FindFirstObjectByName(name : String) : Cog</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>```</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<hr />
+<p>#  FindFirstRootObjectByName : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/cog.md">cog</a></p>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>name</td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/string.md">string</a></td>
+<td></td>
+</tr>
+<tr>
+<td>``` lang=cpp, name=Lightning</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>function FindFirstRootObjectByName(name : String) : Cog</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>```</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<hr />
+<p>#  FindLastObjectByName : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/cog.md">cog</a></p>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>name</td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/string.md">string</a></td>
+<td></td>
+</tr>
+<tr>
+<td>``` lang=cpp, name=Lightning</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>function FindLastObjectByName(name : String) : Cog</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>```</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<hr />
+<p>#  FindLastRootObjectByName : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/cog.md">cog</a></p>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>name</td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/string.md">string</a></td>
+<td></td>
+</tr>
+<tr>
+<td>``` lang=cpp, name=Lightning</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>function FindLastRootObjectByName(name : String) : Cog</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>```</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<hr />
+<p>#  FindObjectByName : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/cog.md">cog</a></p>
+<blockquote>
+<p>Find an object in the space with a given name.
+|Name|Type|Description|
+|---|---|---|
+|name|<a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/string.md">string</a>| |
+<code>lang=cpp, name=Lightning
+function FindObjectByName(name : String) : Cog</code> </p>
+</blockquote>
+<hr />
+<p>#  GetModified : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.md">boolean</a></p>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>``` lang=cpp, name=Lightning</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>function GetModified() : Boolean</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>```</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<hr />
+<p>#  LoadLevel : Void</p>
+<blockquote>
+<p>Load new level replace the current level.
+|Name|Type|Description|
+|---|---|---|
+|level|<a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/level.md">level</a>| |
+<code>lang=cpp, name=Lightning
+function LoadLevel(level : Level)</code> </p>
+</blockquote>
+<hr />
+<p>#  MarkModified : Void</p>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>``` lang=cpp, name=Lightning</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>function MarkModified()</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>```</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<hr />
+<p>#  MarkNotModified : Void</p>
+<blockquote>
+<p>Clears all modifications on this Cog. Does not clear LocalModificationOverride properties.
+|Name|Type|Description|
+|---|---|---|
+<code>lang=cpp, name=Lightning
+function MarkNotModified()</code> </p>
+</blockquote>
+<hr />
+<p>#  ReloadLevel : Void</p>
+<blockquote>
+<p>Reload the current level.
+|Name|Type|Description|
+|---|---|---|
+<code>lang=cpp, name=Lightning
+function ReloadLevel()</code> </p>
+</blockquote>
+<hr />
+<p>#  Space : Void</p>
+<p><code>constructor</code></p>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>``` lang=cpp, name=Lightning</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>function Space()</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>```</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<hr />
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../spacemapvaluerange/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../spacemapvaluerange/" class="btn btn-xs btn-link">
+        Spacemapvaluerange
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../soundtags/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../soundtags/" class="btn btn-xs btn-link">
+        Soundtags
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="col-md-12 wm-page-content">
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/noraj/mkdocs-windmill-dark">Windmill Dark</a> theme by Alexandre ZANNI (noraj).</p>
+</footer>
+
+</body>
+</html>

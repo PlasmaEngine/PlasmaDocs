@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="author" content="PlasmaDev">
+    <link rel="canonical" href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/graphics/materials/roughness/">
+    <link rel="shortcut icon" href="../../../../../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Roughness - PlasmaDocs</title>
+    <link href="../../../../../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../../../../../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../../../../../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../../../../css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../../../../../js/jquery-3.2.1.min.js"></script>
+    <script src="../../../../../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../../../../../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '../../../../..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "Roughness", url: "#_top", children: [
+          ]},
+          {title: "The Roughness Fragment", url: "#the-roughness-fragment", children: [
+              {title: "Roughness Value", url: "#roughness-value" },
+              {title: "Roughness Map", url: "#roughness-map" },
+          ]},
+          {title: "Related Materials", url: "#related-materials", children: [
+              {title: "Manual", url: "#manual" },
+          ]},
+        ];
+
+    </script>
+    <script src="../../../../../js/base.js"></script>
+      <script src="../../../../../search/main.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../shaders/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../shaders/" class="btn btn-xs btn-link">
+        Shaders
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../normal_map/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../normal_map/" class="btn btn-xs btn-link">
+        Normal maps
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <h1 id="roughness">Roughness</h1>
+<p>Roughness quite simply defines how rough--or conversely, how smooth--a particular material is. The greater the roughness of a surface, the greater the diffusion of light that hit that surface. Roughness can be defined either by value, which is uniformly applied across the surface of a <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/graphics/materials/materials_overview.md">Material</a>, or by texture map, which defines the roughness value for each discrete part of the Material.</p>
+<p>Roughness as defined in the <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/graphics/renderer/deferred_renderer.md">deferred renderer</a> follow microfacet theory, in which surface irregularities on the Material cause reflected light to "blur". The higher the Roughness value, the greater the blurring effect will be. For a quick look at how increasing roughness corresponds to increased blur, the following screenshot shows spheres with constant albedo and metallic , but an increasing value of roughness from 0 to 1:</p>
+<p><img alt="CopperSpheres" src="https://media.githubusercontent.com/media/PlasmaEngine/PlasmaDocs/master/doc_files/47877.png" /></p>
+<p>Especially through the first five or six spheres, as the roughness goes up, the reflection gets progressively more pronounced until individual objects reflected from the skybox are no longer visible.</p>
+<h1 id="the-roughness-fragment">The Roughness Fragment</h1>
+<p>Roughness may be set using a value or a texture map. If a value is used it is applied uniformly across the surface of the Material. If a texture map is used, the Roughness value may be set to different values ranging from 0 to 1 across the surface of the Material. </p>
+<h2 id="roughness-value">Roughness Value</h2>
+<p>When the RoughnessValue fragment is applied, the roughness value specified will be applied uniformly across the surface of the Material. To add a RoughnessValue fragment, click on the the <code>Add LightningFragment</code> button in the Material Properties window and select <code>RoughnessValue</code>, as seen below:</p>
+<p><img alt="AddValue" src="https://media.githubusercontent.com/media/PlasmaEngine/PlasmaDocs/master/doc_files/47860.gif" /></p>
+<h2 id="roughness-map">Roughness Map</h2>
+<p>When the RoughnessMap fragment is applied, different roughness values are applied to discrete sections of the Material, as dictated by the texture map. To add a RoughnessMap MaterialBlock, click on the <code>Add MaterialBlock</code> button in the Material Properties window and select <code>RoughnessMap</code>, as seen below:</p>
+<p><img alt="AddMap" src="https://media.githubusercontent.com/media/PlasmaEngine/PlasmaDocs/master/doc_files/47858.gif" /></p>
+<p>RoughnessMaps may be broken down into two broad categories: tileable roughness maps, which can be used on any model, and model-specific roughness maps, which are intended to be used with a specific model or set of models.</p>
+<h1 id="related-materials">Related Materials</h1>
+<h2 id="manual">Manual</h2>
+<ul>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/graphics/materials/materials_overview.md">Material</a></li>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/graphics/renderer/deferred_renderer.md">deferred_renderer</a></li>
+</ul>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../shaders/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../shaders/" class="btn btn-xs btn-link">
+        Shaders
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../normal_map/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../normal_map/" class="btn btn-xs btn-link">
+        Normal maps
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="col-md-12 wm-page-content">
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/noraj/mkdocs-windmill-dark">Windmill Dark</a> theme by Alexandre ZANNI (noraj).</p>
+</footer>
+
+</body>
+</html>

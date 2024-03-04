@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="author" content="PlasmaDev">
+    <link rel="canonical" href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/graphics/camerasviewportsrenderers/">
+    <link rel="shortcut icon" href="../../../../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Camera Viewport - PlasmaDocs</title>
+    <link href="../../../../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../../../../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../../../../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../../../css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../../../../js/jquery-3.2.1.min.js"></script>
+    <script src="../../../../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../../../../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '../../../..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "Camera Viewport", url: "#_top", children: [
+          ]},
+          {title: "CameraViewport", url: "#cameraviewport", children: [
+              {title: "Viewport Placement", url: "#viewport-placement" },
+              {title: "Camera", url: "#camera" },
+              {title: "Related Materials", url: "#related-materials" },
+          ]},
+        ];
+
+    </script>
+    <script src="../../../../js/base.js"></script>
+      <script src="../../../../search/main.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../graphical/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../graphical/" class="btn btn-xs btn-link">
+        Graphical
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../../gameplay/input/mouseinput/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../../gameplay/input/mouseinput/" class="btn btn-xs btn-link">
+        Mouse
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <h1 id="camera-viewport">Camera Viewport</h1>
+<p>A <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/cameraviewport.md">cameraviewport</a> draws to an on-screen or off-screen texture. Whether it is visible to in the editor or game depends on whether RenderToViewport checkBox is set to <code>true</code>.  It references both a <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/camera.md">camera</a> component and a <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/graphics/renderer/deferred_renderer.md">Renderer</a> component from their respective cogs to render that scene from the perspective of the camera.  As long as there are single instances of these components, it doesn't matter what cog they're on.  If a game has a HUD, two renderers may be necessary and therefore two seperate renderer cogs.  If a game supports splitscreen, both the <code>CameraViewport</code> and <code>Camera</code> should be duplicated onto another cog. A single CameraViewport can be used to reference multiple Camera objects at different times. A Camera, however, cannot generally be referenced by multiple CameraViewports. For example, if a script sets a CameraViewport's Camera reference to a Camera that is already being referenced by a CameraViewport, the one in the script will "steal" the reference, removing it from the CameraViewport that originally had it.</p>
+<p>By default the Camera and CameraViewport components are on the object called "GameCamera" where the DeferredRenderer is found on the Renderer object. This is useful for game scripting as a reference to the camera can be obtained through <code>CameraViewport.Camera</code> in order to change it.</p>
+<h1 id="cameraviewport">CameraViewport</h1>
+<p><img alt="image" src="https://media.githubusercontent.com/media/PlasmaEngine/PlasmaDocs/master/doc_files/46327.png" /> <em>CameraViewport Component</em></p>
+<p>(NOTE)<strong>Where does the CameraViewport render to?</strong>
+The camera can draw onto both the editor window and the game session window.  By default, the <code>EditorCamera</code> has RenderInEditor checkBox set to <code>true</code> and RenderInGame checkBox set to <code>false</code>. As long as RenderToViewport checkBox is also set to <code>true</code>, it will render in the editor window and not the game session window.</p>
+<h2 id="viewport-placement">Viewport Placement</h2>
+<p>The position and scale of each viewport is controlled with NormalizedSize , NormalizedOffset , ResolutionOrAspect , and <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/enum_reference.md#viewportscaling">ViewportScaling</a>.  When placing viewports, the dimentions of the game session window are in the normalized range <code>[0,1]</code> on both the x and y axes.  <code>(0,0)</code> is then the top left corner and <code>(1,1)</code> is the bottom right corner.  Below is an example of a camera viewport taking up the whole screen:</p>
+<p><img alt="CameraViewport" src="https://media.githubusercontent.com/media/PlasmaEngine/PlasmaDocs/master/doc_files/47642.png" /> <em>Default Single CameraViewport</em></p>
+<h3 id="viewport-scaling">Viewport Scaling</h3>
+<p>ViewportScaling drop-down menu sets the method of fitting the viewport to the region defined by the viewport placement.  Below is a brief description of what each mode does.</p>
+<table>
+<thead>
+<tr>
+<th>Viewport Fitting Method</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Fill</code></td>
+<td>The viewport fills the entire window size</td>
+</tr>
+<tr>
+<td><code>LetterBox</code></td>
+<td>Viewport aspect ratio is always preserved and gaps are filled in with margins.</td>
+</tr>
+<tr>
+<td><code>Exact</code></td>
+<td>The viewport is not scaled</td>
+</tr>
+<tr>
+<td><code>LargestMultiple</code></td>
+<td>The viewport is the largest multiple of the resolution that fits in the window</td>
+</tr>
+</tbody>
+</table>
+<h3 id="render-order">Render Order</h3>
+<p>Render order sets the value by which the CameraViewport should be rendered relative to other CameraViewports (such as the one on a <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/graphics/lighting/direct_lighting/directional_light.md">directional_light</a>), where the viewport with the lowest value is rendered first and the one with the highest value is rendered last.</p>
+<h4 id="viewport-layering">Viewport Layering</h4>
+<p>The viewports exist in 2D, so there's no Z-axis to sort our viewports on.  Instead, viewports are layered in the order they're drawn.  The draw order is determined first by the integer value RenderOrder , where a high value is drawn later.  If two viewports are on the same layer, the viewport with the cog earlier in the Objects window window draws first.</p>
+<p>When a mouse event is sent to the window, it's forwarded to the topmost viewport containing the cursor.  If ForwardViewportEvents checkBox is on, the cursor will then be sent to viewports on underlying layers.  For example, a first person shooter might have a hud map on a separate viewport, but the mouse tracking should work even when the mouse is over the hud.  Mouse events should be sent through the hud viewport, and therefore its CameraViewport should have ForwardViewportEvents checkBox on.</p>
+<h2 id="camera">Camera</h2>
+<p>The cog considered to be the <code>Camera</code> is whatever the <code>CameraViewport</code> references with CameraPath cogPath.  The <code>Camera</code> cog should also have a <code>Camera</code> component, or else the viewport wont be rendered.</p>
+<p><img alt="Camera" src="https://media.githubusercontent.com/media/PlasmaEngine/PlasmaDocs/master/doc_files/47645.png" /> <em>Camera Component</em></p>
+<h3 id="perspective-vs-orthographic">Perspective vs. Orthographic</h3>
+<p>Changing the shape of the view frustum has a significant impact on how objects are viewed in the world.  Usually in a 2D setting, <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/enum_reference.md#perspectivemode">PerspectiveMode</a> is set to <code>Orthographic</code> while with 3D applications PerspectiveMode drop-down menu is set to <code>Perspective</code>.  Objects in a <code>Perspective</code> view and the distances between them will appear smaller as they move away from the camera.  2D games often work with the assumption that everything is approximately the same distance from the camera, and so objects that move away from an <code>Orthographic</code> camera will appear the same.</p>
+<p><img alt="image" src="https://media.githubusercontent.com/media/PlasmaEngine/PlasmaDocs/master/doc_files/46825.png" /> <em><code>Perspective</code> camera(left) vs. <code>Orthographic</code> camera(right)</em></p>
+<p>(NOTE)<strong>Parallaxing</strong> Even if the camera has an orthographic perspective, the illusion of depth is still possible.  Instead of just one universal depth, the new assumption is that there are a set number of layers for an object, often refered to as foregrounds and backgrounds.  For an example, try the <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/tutorials/graphics/parallaxbackground.md">Parallaxing Background</a> tutorial.</p>
+<p>NOTE: The method of controlling the viewport size changes with different viewing frustums.  When PerspectiveMode drop-down menu is set to <code>Perspective</code>, the FieldOfView  parameter represents the vertical angle that the frustum makes from the camera eye outward.  When PerspectiveMode drop-down menu is set to <code>Orthographic</code>, the Size  parameter represents the height that the camera sees in world space.</p>
+<h2 id="related-materials">Related Materials</h2>
+<h3 id="manual">Manual</h3>
+<ul>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/Editor/graphics/renderer.md">Renderer</a></li>
+</ul>
+<h3 id="reference">Reference</h3>
+<ul>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/cameraviewport.md">cameraviewport</a></li>
+<li><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/camera.md">camera</a>  </li>
+</ul>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../graphical/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../graphical/" class="btn btn-xs btn-link">
+        Graphical
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../../gameplay/input/mouseinput/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../../gameplay/input/mouseinput/" class="btn btn-xs btn-link">
+        Mouse
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="col-md-12 wm-page-content">
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/noraj/mkdocs-windmill-dark">Windmill Dark</a> theme by Alexandre ZANNI (noraj).</p>
+</footer>
+
+</body>
+</html>

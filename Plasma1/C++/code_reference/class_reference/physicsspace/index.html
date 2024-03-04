@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="author" content="PlasmaDev">
+    <link rel="canonical" href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C%2B%2B/code_reference/class_reference/physicsspace/">
+    <link rel="shortcut icon" href="../../../../../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Physicsspace - PlasmaDocs</title>
+    <link href="../../../../../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../../../../../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../../../../../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../../../../css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../../../../../js/jquery-3.2.1.min.js"></script>
+    <script src="../../../../../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../../../../../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '../../../../..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+        ];
+
+    </script>
+    <script src="../../../../../js/base.js"></script>
+      <script src="../../../../../search/main.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../pitchnode/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../pitchnode/" class="btn btn-xs btn-link">
+        Pitchnode
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../physicssolverconfig/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../physicssolverconfig/" class="btn btn-xs btn-link">
+        Physicssolverconfig
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <p><code>Component</code> <code>Physics</code></p>
+<p>(NOTE) The PhysicsSpace is an "instance" of a world. This world manages and stores all of the other physical components of this world. PhysicSpaces act independently of each other.</p>
+<table>
+<thead>
+<tr>
+<th>Methods</th>
+<th>Properties</th>
+<th>Base Classes</th>
+<th>Derived Classes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/physicsspace.md#addhierarchypairfilter-v"> AddHierarchyPairFilter</a></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/physicsspace.md#allowsleep-plasma-engine-d"> AllowSleep</a></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/component.md">component</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/physicsspace.md#addpairfilter-void"> AddPairFilter</a></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/physicsspace.md#collisiontable-plasma-engi"> CollisionTable</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/physicsspace.md#castaabb-plasma-engine-doc"> CastAabb</a></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/physicsspace.md#deterministic-plasma-engin"> Deterministic</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/physicsspace.md#castcollider-plasma-engine"> CastCollider</a></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/physicsspace.md#dynamicbroadphasetype-ze"> DynamicBroadphaseType</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/physicsspace.md#castfrustum-plasma-engine"> CastFrustum</a></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/physicsspace.md#mode2d-plasma-engine-docum"> Mode2D</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/physicsspace.md#castray-plasma-engine-docu"> CastRay</a></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/physicsspace.md#physicssolverconfig-plasma"> PhysicsSolverConfig</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/physicsspace.md#castrayfirst-plasma-engine"> CastRayFirst</a></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/physicsspace.md#staticbroadphasetype-zer"> StaticBroadphaseType</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/physicsspace.md#castsegment-plasma-engine"> CastSegment</a></td>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/physicsspace.md#substepcount-plasma-engine"> SubStepCount</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/physicsspace.md#castsphere-plasma-engine-d"> CastSphere</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/physicsspace.md#createjoint-plasma-engine"> CreateJoint</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/physicsspace.md#dispatchwithinaabb-void"> DispatchWithinAabb</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/physicsspace.md#dispatchwithinsphere-voi"> DispatchWithinSphere</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/physicsspace.md#flushphysicsqueue-void"> FlushPhysicsQueue</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/physicsspace.md#physicsspace-void"> Constructor</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/physicsspace.md#removehierarchypairfilte"> RemoveHierarchyPairFilter</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/physicsspace.md#removepairfilter-void"> RemovePairFilter</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/physicsspace.md#sweepcollider-plasma-engin"> SweepCollider</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/physicsspace.md#whyaretheynotcolliding-z"> WhyAreTheyNotColliding</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>#  Properties</p>
+<hr />
+<p>#  AllowSleep : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.md">boolean</a></p>
+<blockquote>
+<p>Determines if anything in the space is allowed to fall sleep.
+``` lang=cpp, name=Lightning
+var AllowSleep : Boolean</p>
+</blockquote>
+<hr />
+<p>#  CollisionTable : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/collisiontable.md">collisiontable</a></p>
+<blockquote>
+<p>The collision table resource used to filter collisions in this space.
+``` lang=cpp, name=Lightning
+var CollisionTable : CollisionTable</p>
+</blockquote>
+<hr />
+<p>#  Deterministic : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.md">boolean</a></p>
+<blockquote>
+<p>Performs extra work to help enforce determinism in the simulation.
+``` lang=cpp, name=Lightning
+var Deterministic : Boolean</p>
+</blockquote>
+<hr />
+<p>#  DynamicBroadphaseType : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/string.md">string</a></p>
+<blockquote>
+<p>What kind of broadphase is used for dynamic objects (those with RigidBodies).
+``` lang=cpp, name=Lightning
+var DynamicBroadphaseType : String</p>
+</blockquote>
+<hr />
+<p>#  Mode2D : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/boolean.md">boolean</a></p>
+<blockquote>
+<p>The default 2D mode for this space. If a RigidBody is set to InheritFromSpace then it will use this value.
+``` lang=cpp, name=Lightning
+var Mode2D : Boolean</p>
+</blockquote>
+<hr />
+<p>#  PhysicsSolverConfig : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/physicssolverconfig.md">physicssolverconfig</a></p>
+<blockquote>
+<p>The resource that controls how physics solves things. Mostly related to how collision is resolved.
+``` lang=cpp, name=Lightning
+var PhysicsSolverConfig : PhysicsSolverConfig</p>
+</blockquote>
+<hr />
+<p>#  StaticBroadphaseType : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/string.md">string</a></p>
+<blockquote>
+<p>What kind of broadphase is used for static objects (those without RigidBodies).
+``` lang=cpp, name=Lightning
+var StaticBroadphaseType : String</p>
+</blockquote>
+<hr />
+<p>#  SubStepCount : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer.md">integer</a></p>
+<blockquote>
+<p>The number of iterations the physics space will take every frame. Used to achieve higher accuracy and increase visual results.
+``` lang=cpp, name=Lightning
+var SubStepCount : Integer</p>
+</blockquote>
+<hr />
+<p>#  Methods</p>
+<hr />
+<p>#  AddHierarchyPairFilter : Void</p>
+<blockquote>
+<p>Adds a filter to ignore collision between both hierarchies passed in. See AddPairFilter for more info.
+|Name|Type|Description|
+|---|---|---|
+|cog1|<a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/cog.md">cog</a>| |
+|cog2|<a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/cog.md">cog</a>| |
+<code>lang=cpp, name=Lightning
+function AddHierarchyPairFilter(cog1 : Cog, cog2 : Cog)</code> </p>
+</blockquote>
+<hr />
+<p>#  AddPairFilter : Void</p>
+<blockquote>
+<p>Filters two cogs to not resolve collisions with each other. This is a runtime only feature and will not be saved.
+|Name|Type|Description|
+|---|---|---|
+|cog1|<a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/cog.md">cog</a>| |
+|cog2|<a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/cog.md">cog</a>| |
+<code>lang=cpp, name=Lightning
+function AddPairFilter(cog1 : Cog, cog2 : Cog)</code> </p>
+</blockquote>
+<hr />
+<p>#  CastAabb : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/castresultsrange.md">castresultsrange</a></p>
+<blockquote>
+<p>Finds all colliders in the space that an Aabb hits using the given filter. This returns up to maxCount number of objects.
+|Name|Type|Description|
+|---|---|---|
+|aabb|<a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/aabb.md">aabb</a>| |
+|maxCount|<a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer.md">integer</a>| |
+|filter|<a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/castfilter.md">castfilter</a>| |
+<code>lang=cpp, name=Lightning
+function CastAabb(aabb : Aabb, maxCount : Integer, filter : CastFilter) : CastResultsRange</code> </p>
+</blockquote>
+<hr />
+<p>#  CastCollider : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/castresultsrange.md">castresultsrange</a></p>
+<blockquote>
+<p>Finds all colliders in the space that another collider hits using the given filter. The test collider's position can be offset to test at a different location. This returns up to maxCount number of objects.
+|Name|Type|Description|
+|---|---|---|
+|offset|<a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real3.md">real3</a>| |
+|testCollider|<a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/collider.md">collider</a>| |
+|filter|<a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/castfilter.md">castfilter</a>| |
+<code>lang=cpp, name=Lightning
+function CastCollider(offset : Real3, testCollider : Collider, filter : CastFilter) : CastResultsRange</code> </p>
+</blockquote>
+<hr />
+<p>#  CastFrustum : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/castresultsrange.md">castresultsrange</a></p>
+<blockquote>
+<p>Finds all colliders in the space that a Frustum hits using the given filter. This returns up to maxCount number of objects.
+|Name|Type|Description|
+|---|---|---|
+|frustum|<a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/frustum.md">frustum</a>| |
+|maxCount|<a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer.md">integer</a>| |
+|filter|<a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/castfilter.md">castfilter</a>| |
+<code>lang=cpp, name=Lightning
+function CastFrustum(frustum : Frustum, maxCount : Integer, filter : CastFilter) : CastResultsRange</code> </p>
+</blockquote>
+<hr />
+<p>#  CastRay : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/castresultsrange.md">castresultsrange</a></p>
+<blockquote>
+<p>Finds all colliders in the space that a ray hits. This returns up to maxCount number of objects. A default CastFilter will be used.
+|Name|Type|Description|
+|---|---|---|
+|worldRay|<a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/ray.md">ray</a>| |
+|maxCount|<a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer.md">integer</a>| |
+<code>lang=cpp, name=Lightning
+function CastRay(worldRay : Ray, maxCount : Integer) : CastResultsRange</code> </p>
+</blockquote>
+<hr />
+<p>#  CastRay : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/castresultsrange.md">castresultsrange</a></p>
+<blockquote>
+<p>Finds all colliders in the space that a ray hits using the given filter. This returns up to maxCount number of objects.
+|Name|Type|Description|
+|---|---|---|
+|worldRay|<a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/ray.md">ray</a>| |
+|maxCount|<a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer.md">integer</a>| |
+|filter|<a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/castfilter.md">castfilter</a>| |
+<code>lang=cpp, name=Lightning
+function CastRay(worldRay : Ray, maxCount : Integer, filter : CastFilter) : CastResultsRange</code> </p>
+</blockquote>
+<hr />
+<p>#  CastRayFirst : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/castresult.md">castresult</a></p>
+<blockquote>
+<p>Finds the first collider that a ray hits. A default CastFilter will be used.
+|Name|Type|Description|
+|---|---|---|
+|worldRay|<a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/ray.md">ray</a>| |
+<code>lang=cpp, name=Lightning
+function CastRayFirst(worldRay : Ray) : CastResult</code> </p>
+</blockquote>
+<hr />
+<p>#  CastRayFirst : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/castresult.md">castresult</a></p>
+<blockquote>
+<p>Finds the first collider that a ray hits using the given filter.
+|Name|Type|Description|
+|---|---|---|
+|worldRay|<a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/ray.md">ray</a>| |
+|filter|<a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/castfilter.md">castfilter</a>| |
+<code>lang=cpp, name=Lightning
+function CastRayFirst(worldRay : Ray, filter : CastFilter) : CastResult</code> </p>
+</blockquote>
+<hr />
+<p>#  CastSegment : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/castresultsrange.md">castresultsrange</a></p>
+<blockquote>
+<p>Finds all colliders in the space that a line segment hits. This returns up to maxCount number of objects. A default CastFilter will be used.
+|Name|Type|Description|
+|---|---|---|
+|segment|<a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/segment.md">segment</a>| |
+|maxCount|<a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer.md">integer</a>| |
+<code>lang=cpp, name=Lightning
+function CastSegment(segment : Segment, maxCount : Integer) : CastResultsRange</code> </p>
+</blockquote>
+<hr />
+<p>#  CastSegment : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/castresultsrange.md">castresultsrange</a></p>
+<blockquote>
+<p>Finds all colliders in the space that a line segment hits using the given filter. This returns up to maxCount number of objects.
+|Name|Type|Description|
+|---|---|---|
+|segment|<a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/segment.md">segment</a>| |
+|maxCount|<a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer.md">integer</a>| |
+|filter|<a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/castfilter.md">castfilter</a>| |
+<code>lang=cpp, name=Lightning
+function CastSegment(segment : Segment, maxCount : Integer, filter : CastFilter) : CastResultsRange</code> </p>
+</blockquote>
+<hr />
+<p>#  CastSphere : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/castresultsrange.md">castresultsrange</a></p>
+<blockquote>
+<p>Finds all colliders in the space that a Sphere hits using the given filter. This returns up to maxCount number of objects.
+|Name|Type|Description|
+|---|---|---|
+|sphere|<a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/sphere.md">sphere</a>| |
+|maxCount|<a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/integer.md">integer</a>| |
+|filter|<a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/castfilter.md">castfilter</a>| |
+<code>lang=cpp, name=Lightning
+function CastSphere(sphere : Sphere, maxCount : Integer, filter : CastFilter) : CastResultsRange</code> </p>
+</blockquote>
+<hr />
+<p>#  CreateJoint : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/cog.md">cog</a></p>
+<blockquote>
+<p>Creates a joint by name (e.g. StickJoint) between two cogs. The world points of the joint are both set to worldPoint.
+|Name|Type|Description|
+|---|---|---|
+|cog0|<a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/cog.md">cog</a>| |
+|cog1|<a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/cog.md">cog</a>| |
+|jointName|<a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/string.md">string</a>| |
+|worldPoint|<a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real3.md">real3</a>| |
+<code>lang=cpp, name=Lightning
+function CreateJoint(cog0 : Cog, cog1 : Cog, jointName : String, worldPoint : Real3) : Cog</code> </p>
+</blockquote>
+<hr />
+<p>#  DispatchWithinAabb : Void</p>
+<blockquote>
+<p>Dispatches an event to all objects within the given aabb using the provided cast filter.
+|Name|Type|Description|
+|---|---|---|
+|aabb|<a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/aabb.md">aabb</a>| |
+|filter|<a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/castfilter.md">castfilter</a>| |
+|eventName|<a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/string.md">string</a>| |
+|toSend|<a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/event.md">event</a>| |
+<code>lang=cpp, name=Lightning
+function DispatchWithinAabb(aabb : Aabb, filter : CastFilter, eventName : String, toSend : Event)</code> </p>
+</blockquote>
+<hr />
+<p>#  DispatchWithinAabb : Void</p>
+<blockquote>
+<p>Dispatches an event to all objects within the given aabb. Uses the default cast filter.
+|Name|Type|Description|
+|---|---|---|
+|aabb|<a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/aabb.md">aabb</a>| |
+|eventName|<a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/string.md">string</a>| |
+|toSend|<a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/event.md">event</a>| |
+<code>lang=cpp, name=Lightning
+function DispatchWithinAabb(aabb : Aabb, eventName : String, toSend : Event)</code> </p>
+</blockquote>
+<hr />
+<p>#  DispatchWithinSphere : Void</p>
+<blockquote>
+<p>Dispatches an event to all objects within the given sphere using the provided cast filter.
+|Name|Type|Description|
+|---|---|---|
+|sphere|<a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/sphere.md">sphere</a>| |
+|filter|<a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/castfilter.md">castfilter</a>| |
+|eventName|<a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/string.md">string</a>| |
+|toSend|<a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/event.md">event</a>| |
+<code>lang=cpp, name=Lightning
+function DispatchWithinSphere(sphere : Sphere, filter : CastFilter, eventName : String, toSend : Event)</code> </p>
+</blockquote>
+<hr />
+<p>#  DispatchWithinSphere : Void</p>
+<blockquote>
+<p>Dispatches an event to all objects within the given sphere. Uses the default cast filter.
+|Name|Type|Description|
+|---|---|---|
+|sphere|<a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/sphere.md">sphere</a>| |
+|eventName|<a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/string.md">string</a>| |
+|toSend|<a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/event.md">event</a>| |
+<code>lang=cpp, name=Lightning
+function DispatchWithinSphere(sphere : Sphere, eventName : String, toSend : Event)</code> </p>
+</blockquote>
+<hr />
+<p>#  FlushPhysicsQueue : Void</p>
+<blockquote>
+<p>Forces all queued computations in physics to be updated now. Should only be used for debugging.
+|Name|Type|Description|
+|---|---|---|
+<code>lang=cpp, name=Lightning
+function FlushPhysicsQueue()</code> </p>
+</blockquote>
+<hr />
+<p>#  PhysicsSpace : Void</p>
+<p><code>constructor</code></p>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>``` lang=cpp, name=Lightning</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>function PhysicsSpace()</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>```</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<hr />
+<p>#  RemoveHierarchyPairFilter : Void</p>
+<blockquote>
+<p>Removes the filters between both hierarchies. See RemovePairFilter for more info.
+|Name|Type|Description|
+|---|---|---|
+|cog1|<a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/cog.md">cog</a>| |
+|cog2|<a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/cog.md">cog</a>| |
+<code>lang=cpp, name=Lightning
+function RemoveHierarchyPairFilter(cog1 : Cog, cog2 : Cog)</code> </p>
+</blockquote>
+<hr />
+<p>#  RemovePairFilter : Void</p>
+<blockquote>
+<p>Removes the filter between two cogs allowing collisions to be computed as normal.
+|Name|Type|Description|
+|---|---|---|
+|cog1|<a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/cog.md">cog</a>| |
+|cog2|<a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/cog.md">cog</a>| |
+<code>lang=cpp, name=Lightning
+function RemovePairFilter(cog1 : Cog, cog2 : Cog)</code> </p>
+</blockquote>
+<hr />
+<p>#  SweepCollider : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/sweepresultrange.md">sweepresultrange</a></p>
+<blockquote>
+<p>Performs a swept cast with a collider's shape and a given velocity. Returns a range of all objects the collider could've hit within 'dt' time.
+|Name|Type|Description|
+|---|---|---|
+|collider|<a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/collider.md">collider</a>| |
+|velocity|<a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real3.md">real3</a>| |
+|dt|<a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/real.md">real</a>| |
+|filter|<a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/castfilter.md">castfilter</a>| |
+<code>lang=cpp, name=Lightning
+function SweepCollider(collider : Collider, velocity : Real3, dt : Real, filter : CastFilter) : SweepResultRange</code> </p>
+</blockquote>
+<hr />
+<p>#  WhyAreTheyNotColliding : <a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/lightning_base_types/string.md">string</a></p>
+<blockquote>
+<p>Returns a debug string stating why physics does or doesn't think these two objects should be colliding.
+|Name|Type|Description|
+|---|---|---|
+|cog1|<a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/cog.md">cog</a>| |
+|cog2|<a href="https://plasmaengine.github.io/PlasmaDocs/Plasma1/C++/code_reference/class_reference/cog.md">cog</a>| |
+<code>lang=cpp, name=Lightning
+function WhyAreTheyNotColliding(cog1 : Cog, cog2 : Cog) : String</code> </p>
+</blockquote>
+<hr />
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../pitchnode/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../pitchnode/" class="btn btn-xs btn-link">
+        Pitchnode
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../physicssolverconfig/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../physicssolverconfig/" class="btn btn-xs btn-link">
+        Physicssolverconfig
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="col-md-12 wm-page-content">
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/noraj/mkdocs-windmill-dark">Windmill Dark</a> theme by Alexandre ZANNI (noraj).</p>
+</footer>
+
+</body>
+</html>
