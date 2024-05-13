@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="author" content="PlasmaDev">
+    <link rel="canonical" href="https://plasmaengine.github.io/PlasmaDocs/effects/post-processing/post-processing-component/">
+    <link rel="shortcut icon" href="../../../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Post-Processing Component - PlasmaDocs</title>
+    <link href="../../../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../../../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../../../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../../css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../../../js/jquery-3.2.1.min.js"></script>
+    <script src="../../../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../../../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '../../..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "Post-Processing Component", url: "#_top", children: [
+              {title: "Component Properties", url: "#component-properties" },
+              {title: "Example", url: "#example" },
+              {title: "Constant Overrides", url: "#constant-overrides" },
+              {title: "See Also", url: "#see-also" },
+          ]},
+        ];
+
+    </script>
+    <script src="../../../js/base.js"></script>
+      <script src="../../../search/main.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../volume-components/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../volume-components/" class="btn btn-xs btn-link">
+        Volume Components
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../../particle-effects/particle-renderers/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../../particle-effects/particle-renderers/" class="btn btn-xs btn-link">
+        Particle Renderers
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <h1 id="post-processing-component">Post-Processing Component</h1>
+<p>The post processing component is used to dynamically modify settings of the <a href="../../../graphics/render-pipeline-overview/">render pipeline (TODO)</a>.</p>
+<p>The component relies on <a href="../volume-components/">volume components</a> to define where in a level which values shall be used. The following image shows a scene without custom post processing values:</p>
+<p><img alt="PP off" src="../media/post-processing-off.png" /></p>
+<p>With post processing, the area can be made to look very different:</p>
+<p><img alt="PP on" src="../media/post-processing-on.png" /></p>
+<p>The level uses a volume component to specify that this area should have a different athmosphere and thus use different values for post processing.</p>
+<p>To enable custom post processing, attach the post processing component to the same object where the main <a href="../../../graphics/camera-component/">camera component</a> is attached to. This would typically be inside a player prefab. If, however, the post processing component is attached to an object with a camera component that is configured for <a href="../../../graphics/render-to-texture/render-to-texture/">render to texture (TODO)</a>, it will only affect that.</p>
+<p>It is also possible to place this component simply anywhere in a level. In this case it is always active and affects the currently active camera. This can be very useful during testing, since it also affects the editor camera and thus you can test values and volume placement just by moving the editor camera around, without even simulating the scene.</p>
+<h2 id="component-properties">Component Properties</h2>
+<ul>
+<li><code>Volume Type</code>: A <a href="../../../runtime/world/spatial-system/">spatial category</a> that is used as a filter to determine which <a href="../volume-components/">volume components</a> to use for looking up values.</li>
+<li><code>Mappings</code>: An array of mappings from that configure which values in a <a href="../../../graphics/render-pipeline-overview/">render pipeline (TODO)</a> to modify. See the images below for an example.<ul>
+<li><code>Render Pass</code>: The <em>name</em> of the render pass in the pipeline to change.</li>
+<li><code>Property</code>: The name of the <em>property</em> to change.</li>
+<li><code>Volume Value</code>: The name of the value to use from the <a href="../volume-components/">volume</a>.</li>
+<li><code>Default Value</code>: The value to use for <code>Property</code> if the camera is currently in no volume.</li>
+<li><code>Interpolation Duration</code>: The property is interpolated towards the target value over this time. A duration of <code>0</code> means the value changes immediately, anything larger means the change happens more smoothly.</li>
+</ul>
+</li>
+</ul>
+<h2 id="example">Example</h2>
+<p>In this example, the post processing component is used to alter the <em>Mood Color</em>:</p>
+<p><img alt="Component properties" src="../media/post-process-component.png" /></p>
+<p>The image below shows the <em>Tonemapping</em> render pass from the game's <a href="../../../graphics/render-pipeline-overview/">render pipeline (TODO)</a>. On the right are it's properties that get modified.</p>
+<p><img alt="Render Pass" src="../media/colorGrading-pass.png" /></p>
+<p>Be aware that once post processing component is used, the values for these properties on the render pipeline have no effect anymore, since they are always being overwritten anyway.</p>
+<h2 id="constant-overrides">Constant Overrides</h2>
+<p>If you leave the <code>Volume Value</code> property for a mapping empty, the component overrides the render pipeline with the default value, but never reads a value from a volume. This can be used to just set a value to a different value in a level. This way you can also use this component just to have different values per level. In this case the component should not exist on the player object, but just be added to each level.</p>
+<h2 id="see-also">See Also</h2>
+<ul>
+<li><a href="../volume-components/">Volume Components</a></li>
+<li><a href="../../../graphics/lighting/lighting-overview/">Lighting</a></li>
+<li><a href="../../fog/">Fog</a></li>
+</ul>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../volume-components/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../volume-components/" class="btn btn-xs btn-link">
+        Volume Components
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../../particle-effects/particle-renderers/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../../particle-effects/particle-renderers/" class="btn btn-xs btn-link">
+        Particle Renderers
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="col-md-12 wm-page-content">
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/noraj/mkdocs-windmill-dark">Windmill Dark</a> theme by Alexandre ZANNI (noraj).</p>
+</footer>
+
+</body>
+</html>

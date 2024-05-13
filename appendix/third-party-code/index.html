@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="author" content="PlasmaDev">
+    <link rel="canonical" href="https://plasmaengine.github.io/PlasmaDocs/appendix/third-party-code/">
+    <link rel="shortcut icon" href="../../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>ThirdParty Code and Data - PlasmaDocs</title>
+    <link href="../../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../../js/jquery-3.2.1.min.js"></script>
+    <script src="../../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '../..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "ThirdParty Code and Data", url: "#_top", children: [
+              {title: "Assimp", url: "#assimp" },
+              {title: "cc0Textures", url: "#cc0textures" },
+              {title: "cgbookcase", url: "#cgbookcase" },
+              {title: "Dear Imgui", url: "#dear-imgui" },
+              {title: "DirectXTex", url: "#directxtex" },
+              {title: "Duktape", url: "#duktape" },
+              {title: "Enet", url: "#enet" },
+              {title: "FleetOps", url: "#fleetops" },
+              {title: "FMOD 2.x", url: "#fmod-2x" },
+              {title: "FreeSound", url: "#freesound" },
+              {title: "jc_voronoi", url: "#jc_voronoi" },
+              {title: "Jolt Physics", url: "#jolt-physics" },
+              {title: "Kenney.nl", url: "#kenneynl" },
+              {title: "Lua", url: "#lua" },
+              {title: "Mikktspace", url: "#mikktspace" },
+              {title: "Ozz", url: "#ozz" },
+              {title: "Qt 5", url: "#qt-5" },
+              {title: "Qt Advanced Docking System", url: "#qt-advanced-docking-system" },
+              {title: "Recast", url: "#recast" },
+              {title: "RenderDoc", url: "#renderdoc" },
+              {title: "RmlUi", url: "#rmlui" },
+              {title: "SFML", url: "#sfml" },
+              {title: "Silk Icons", url: "#silk-icons" },
+              {title: "Sonniss", url: "#sonniss" },
+              {title: "stb", url: "#stb" },
+              {title: "UTF8-CPP", url: "#utf8-cpp" },
+              {title: "V-HACD", url: "#v-hacd" },
+              {title: "xxHash", url: "#xxhash" },
+              {title: "zLib", url: "#zlib" },
+              {title: "zstd", url: "#zstd" },
+          ]},
+        ];
+
+    </script>
+    <script src="../../js/base.js"></script>
+      <script src="../../search/main.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../../assets/asset-browser/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../../assets/asset-browser/" class="btn btn-xs btn-link">
+        Asset Browser - NEEDS UPDATE
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../string-usage/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../string-usage/" class="btn btn-xs btn-link">
+        String Usage Guidelines
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <h1 id="thirdparty-code-and-data">ThirdParty Code and Data</h1>
+<p>This page lists which third party code and data is used by Plasma.</p>
+<blockquote>
+<p><strong>Important:</strong></p>
+<p>Before you distribute any project, please check the licensing conditions for all used components. The list below tries to be exhaustive and up-to-date for components directly used by Plasma, but this is only provided for your convenience and we give no guarantee for correctness. It is still your responsibility to make absolutely certain that your project doesn't violate any licensing conditions from third-party components used directly or indirectly in your project.</p>
+</blockquote>
+<h2 id="assimp">Assimp</h2>
+<p>Link: <a href="http://www.assimp.org">http://www.assimp.org</a></p>
+<p>Compile switch: None (hard dependency for the asset processing)</p>
+<p>Open Asset Import Library, a portable Open Source library to import various well-known 3D model formats in a uniform manner.</p>
+<h2 id="cc0textures">cc0Textures</h2>
+<p>Link: <a href="https://cc0textures.com">https://cc0textures.com</a></p>
+<p>CC0 Textures offers a library containing hundreds of detailed PBR materials with displacement-, normal- and roughness maps for photorealistic rendering. All assets are available for free and without any restrictions.</p>
+<h2 id="cgbookcase">cgbookcase</h2>
+<p>Link: <a href="https://cgbookcase.com">https://cgbookcase.com</a></p>
+<p>cgbookcase provides hundreds of high quality, PBR textures. All textures on cgbookcase.com are licensed as CC0.</p>
+<h2 id="dear-imgui">Dear Imgui</h2>
+<p>Link: <a href="https://github.com/ocornut/imgui">https://github.com/ocornut/imgui</a></p>
+<p>Compile switch: <strong>PLASMA_3RDPARTY_IMGUI_SUPPORT</strong></p>
+<p>A nice library for easily creating ingame GUIs.</p>
+<h2 id="directxtex">DirectXTex</h2>
+<p>Link: <a href="https://github.com/Microsoft/DirectXTex">https://github.com/Microsoft/DirectXTex</a></p>
+<p>Compile switch: Currently none</p>
+<p>Used by plImage and the plTexConv tool for GPU-enabled block compression.</p>
+<h2 id="duktape">Duktape</h2>
+<p>Link: <a href="https://duktape.org">https://duktape.org</a></p>
+<p>Compile switch: <strong>PLASMA_3RDPARTY_DUKTAPE_SUPPORT</strong></p>
+<p>Duktape is an embeddable Javascript engine, with a focus on portability and compact footprint.
+It can be used directly or through plDuktapeWrapper. Non-essential for the engine, but scripting functionality (using <a href="https://www.typescriptlang.org/">TypeScript</a>) is built on top of it.</p>
+<h2 id="enet">Enet</h2>
+<p>Link: <a href="http://enet.bespin.org">http://enet.bespin.org</a></p>
+<p>Compile switch: <strong>PLASMA_3RDPARTY_ENET_SUPPORT</strong></p>
+<p>An efficient and easy to use networking library, built on top of the UDP protocol. It is used by plTelemetry to interact with the plInspector, and it is also used to implement the file serving functionality.</p>
+<h2 id="fleetops">FleetOps</h2>
+<p>Link: <a href="https://www.fleetops.net">https://www.fleetops.net</a></p>
+<p>Some assets were kindly provided with permission to use and redistribute, by the awesome team behind the FleetOps project. Thanks so much guys!</p>
+<h2 id="fmod-2x">FMOD 2.x</h2>
+<p>Link: <a href="https://www.fmod.com">https://www.fmod.com</a></p>
+<p>Compile switch: <strong>PLASMA_BUILD_FMOD</strong></p>
+<p>Plasma has an <a href="../sound/fmod-overview.md">integration for the FMOD sound system</a>.</p>
+<blockquote>
+<p><strong>Important:</strong></p>
+<p>FMOD is a commercial product and you may need to buy a license to use it in your project.</p>
+</blockquote>
+<h2 id="freesound">FreeSound</h2>
+<p>Link: <a href="https://freesound.org/">https://freesound.org</a></p>
+<p>Freesound is a collaborative database of Creative Commons Licensed sounds.</p>
+<h2 id="jc_voronoi">jc_voronoi</h2>
+<p>Link: <a href="https://github.com/JCash/voronoi/blob/dev/src/jc_voronoi.h">https://github.com/JCash/voronoi/blob/dev/src/jc_voronoi.h</a></p>
+<p>Compile switch: None</p>
+<p>A fast single file 2D voronoi diagram generator. Used by plBreakableSheetComponent.</p>
+<h2 id="jolt-physics">Jolt Physics</h2>
+<p>Link: <a href="https://github.com/jrouwe/JoltPhysics">https://github.com/jrouwe/JoltPhysics</a></p>
+<p>Compile switch: <strong>PLASMA_3RDPARTY_JOLT_SUPPORT</strong></p>
+<p>Jolt Physics is a free and open source physics engine. It is used to provide collision detection, physics simulation, character controllers and other interactions.</p>
+<h2 id="kenneynl">Kenney.nl</h2>
+<p>Link: <a href="https://kenney.nl/">kenney.nl</a></p>
+<p>Kenney provides thousands of textures, 3D models and sound effects under a generous public domain license. Some of them are used in our sample projects.</p>
+<h2 id="lua">Lua</h2>
+<p>Link: <a href="http://www.lua.org">(http://www.lua.org</a></p>
+<p>Compile switch: <strong>PLASMA_3RDPARTY_LUA_SUPPORT</strong></p>
+<p>The Lua scripting language. Can be used directly or through plLuaWrapper for easier access to common functionality. Non-essential for Plasma, only the ingame console interpreter would stop working without it.</p>
+<h2 id="mikktspace">Mikktspace</h2>
+<p>Link: <a href="http://mmikkelsen3d.blogspot.ie">http://mmikkelsen3d.blogspot.ie</a></p>
+<p>Compile switch: None (hard dependency for the asset processing)</p>
+<p>Tangent space generation code by Morten S. Mikkelsen. See <a href="https://wiki.blender.org/index.php/Dev:Shading/Tangent_Space_Normal_Maps">https://wiki.blender.org/index.php/Dev:Shading/Tangent_Space_Normal_Maps</a> for more information. It is used by plGeometry.</p>
+<h2 id="ozz">Ozz</h2>
+<p>Link: <a href="http://guillaumeblanc.github.io/ozz-animation">http://guillaumeblanc.github.io/ozz-animation</a></p>
+<p>Compile switch: None</p>
+<p>Used as the basis for skeletal animations. Both during asset import (to build an optimized skeleton structure) and at runtime for animation playback.</p>
+<h2 id="qt-5">Qt 5</h2>
+<p>Link: <a href="https://www.qt.io">https://www.qt.io</a></p>
+<p>Compile switch: <strong>PLASMA_ENABLE_QT_SUPPORT</strong></p>
+<p>Used for all desktop GUI code in the editor and tools.</p>
+<blockquote>
+<p><strong>Important:</strong></p>
+<p>Depending on how you use Qt, you may need to acquire (buy) a license for it. See <a href="https://www.qt.io/terms-conditions/">https://www.qt.io/terms-conditions/</a>.</p>
+</blockquote>
+<h2 id="qt-advanced-docking-system">Qt Advanced Docking System</h2>
+<p>Link <a href="https://github.com/githubuser0xFFFF/Qt-Advanced-Docking-System">https://github.com/githubuser0xFFFF/Qt-Advanced-Docking-System</a></p>
+<p>Compile switch <strong>PLASMA_3RDPARTY_ADS_SUPPORT</strong></p>
+<p>A docking system for Qt similiar to the one in visual studio. Used by the editor and inspector applications.</p>
+<h2 id="recast">Recast</h2>
+<p>Compile switch: <strong>PLASMA_3RDPARTY_RECAST_SUPPORT</strong></p>
+<p>Link: <a href="https://github.com/recastnavigation/recastnavigation">https://github.com/recastnavigation/recastnavigation</a></p>
+<p>A library to generate navigation meshes from arbitrary 3D geometry.</p>
+<h2 id="renderdoc">RenderDoc</h2>
+<p>Link: <a href="https://renderdoc.org">https://renderdoc.org</a></p>
+<p>Compile switch: <strong>PLASMA_3RDPARTY_RENDERDOC_SUPPORT</strong></p>
+<p>RenderDoc is a free MIT licensed stand-alone graphics debugger. The plRenderDocPlugin enables full control over taking RenderDoc snapshots from within the engine.</p>
+<h2 id="rmlui">RmlUi</h2>
+<p>Link: <a href="https://mikke89.github.io/RmlUiDoc/">https://mikke89.github.io/RmlUiDoc/</a></p>
+<p>RmlUi is the C++ user interface package based on the HTML and CSS standards, designed as a complete solution for any project's interface needs. It is a fork of the libRocket project, introducing new features, bug fixes, and performance improvements.</p>
+<h2 id="sfml">SFML</h2>
+<p>Link: <a href="http://www.sfml-dev.org">http://www.sfml-dev.org</a></p>
+<p>Compile switch: <strong>currently none (TODO)</strong></p>
+<p>This library provides a simple and portable interface for window creation, input handling and more. Used by plWindow and plStandardInputDevice on non-Windows platforms (Mac, Linux).</p>
+<h2 id="silk-icons">Silk Icons</h2>
+<p>Link: <a href="http://www.famfamfam.com/lab/icons/silk">http://www.famfamfam.com/lab/icons/silk</a></p>
+<p>Icons from this set are used by the tools.</p>
+<h2 id="sonniss">Sonniss</h2>
+<p>Link: <a href="https://sonniss.com">https://sonniss.com</a></p>
+<p>Sonniss is a premium distribution platform for high-quality sound effects libraries. Sounds distributed from Sonnis are taken from the GameAudioGDC bundles. See <code>Data\Content\Sound\FmodProject\Assets\Sonnis\Licensing.pdf</code> for details.</p>
+<h2 id="stb">stb</h2>
+<p>Link: <a href="https://github.com/nothings/stb">https://github.com/nothings/stb</a></p>
+<p>Compile switch: None</p>
+<p>Public domain licensed code by Sean Barrett. Used by plImage to read and write some of the supported formats like PNG and JPEG.</p>
+<h2 id="utf8-cpp">UTF8-CPP</h2>
+<p>Link: <a href="https://github.com/nemtrif/utfcpp">https://github.com/nemtrif/utfcpp</a></p>
+<p>Compile switch: None</p>
+<p>A library that provides Unicode related functionality. Integrated directly into plFoundation.</p>
+<h2 id="v-hacd">V-HACD</h2>
+<p>Link: <a href="https://github.com/kmammou/v-hacd">https://github.com/kmammou/v-hacd</a></p>
+<p>Compile switch: <strong>PLASMA_3RDPARTY_VHACD_SUPPORT</strong></p>
+<p>The "Volumetric Hierarchical Approximate Convex Decomposition" library is used to decompose a concave triangle mesh into multiple convex pieces. This allows you to generate complex <a href="../physics/jolt/collision-shapes/jolt-collision-meshes.md">collision meshes</a> which can be used as the shapes of <a href="../physics/jolt/actors/jolt-dynamic-actor-component.md">dynamic actors</a>.</p>
+<h2 id="xxhash">xxHash</h2>
+<p>Link: <a href="https://github.com/Cyan4973/xxHash">https://github.com/Cyan4973/xxHash</a></p>
+<p>Compile switch: None</p>
+<p>A very fast hash algorithm. Integrated directly into plFoundation.</p>
+<h2 id="zlib">zLib</h2>
+<p>Link: <a href="http://www.zlib.net">http://www.zlib.net</a></p>
+<p>Compile switch: <strong>PLASMA_3RDPARTY_ZLIB_SUPPORT</strong></p>
+<p>Provides algorithms for zip compression and decompression. It is used by plCompressedStreamReaderZlib and plCompressedStreamWriterZlib in plFoundation.</p>
+<h2 id="zstd">zstd</h2>
+<p>Link: <a href="https://facebook.github.io/zstd">https://facebook.github.io/zstd</a></p>
+<p>Compile switch: <strong>PLASMA_3RDPARTY_ZSTD_SUPPORT</strong></p>
+<p>A very fast lossless compression library. It is used by plCompressedStreamReaderZstd and plCompressedStreamWriterZstd and also by plArchive.</p>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../../assets/asset-browser/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../../assets/asset-browser/" class="btn btn-xs btn-link">
+        Asset Browser - NEEDS UPDATE
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../string-usage/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../string-usage/" class="btn btn-xs btn-link">
+        String Usage Guidelines
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="col-md-12 wm-page-content">
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/noraj/mkdocs-windmill-dark">Windmill Dark</a> theme by Alexandre ZANNI (noraj).</p>
+</footer>
+
+</body>
+</html>

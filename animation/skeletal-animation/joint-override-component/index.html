@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="author" content="PlasmaDev">
+    <link rel="canonical" href="https://plasmaengine.github.io/PlasmaDocs/animation/skeletal-animation/joint-override-component/">
+    <link rel="shortcut icon" href="../../../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Joint Override Component - PlasmaDocs</title>
+    <link href="../../../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../../../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../../../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../../css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../../../js/jquery-3.2.1.min.js"></script>
+    <script src="../../../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../../../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '../../..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "Joint Override Component", url: "#_top", children: [
+              {title: "Component Properties", url: "#component-properties" },
+              {title: "See Also", url: "#see-also" },
+          ]},
+        ];
+
+    </script>
+    <script src="../../../js/base.js"></script>
+      <script src="../../../search/main.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../root-motion/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../root-motion/" class="btn btn-xs btn-link">
+        Root Motion
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../joint-attachment-component/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../joint-attachment-component/" class="btn btn-xs btn-link">
+        Joint Attachment Component
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <h1 id="joint-override-component">Joint Override Component</h1>
+<p>The <em>joint override component</em> enables you to take control over the <em>local</em> transform of a specific bone. Any transform for that bone that comes from an animation is discarded and replaced with the local transform of the object on which this component is attached.</p>
+<p>This component can be very useful if you have an object that is typically driven by animations, but a specific bone is meant to be controlled procedurally through game code. An example would be a turret which has a shoot animation for recoil etc, but you want to control the direction into which the barrel points from game code.</p>
+<p>The joint override component works in the reverse way that the <a href="../joint-attachment-component/">joint attachment component</a> works. Every time an animation pose becomes available, this component will overwrite the transform of the selected bone with its own local transform. Thus you can control the bone transform simply by moving and rotating the game object on which the joint override component is attached.</p>
+<h2 id="component-properties">Component Properties</h2>
+<ul>
+<li>
+<p><code>JointName</code>: The <em>name</em> of the joint/bone whose transform you want to take control over. You can look up the bone names in the respective <a href="../skeleton-asset/">skeleton asset</a>.</p>
+</li>
+<li>
+<p><code>OverridePosition</code>, <code>OverrideRotation</code>, <code>OverrideScale</code>: Whether the component shall override the bone <em>position</em>, <em>rotation</em> and/or <em>scale</em>.</p>
+</li>
+</ul>
+<h2 id="see-also">See Also</h2>
+<ul>
+<li><a href="../skeletal-animation-overview/">Skeletal Animations</a></li>
+<li><a href="../joint-attachment-component/">Joint Attachment Component</a></li>
+</ul>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../root-motion/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../root-motion/" class="btn btn-xs btn-link">
+        Root Motion
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../joint-attachment-component/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../joint-attachment-component/" class="btn btn-xs btn-link">
+        Joint Attachment Component
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="col-md-12 wm-page-content">
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/noraj/mkdocs-windmill-dark">Windmill Dark</a> theme by Alexandre ZANNI (noraj).</p>
+</footer>
+
+</body>
+</html>

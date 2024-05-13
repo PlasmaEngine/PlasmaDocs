@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="author" content="PlasmaDev">
+    <link rel="canonical" href="https://plasmaengine.github.io/PlasmaDocs/effects/cloth-sheet-component/">
+    <link rel="shortcut icon" href="../../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Cloth Sheet Component - PlasmaDocs</title>
+    <link href="../../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../../js/jquery-3.2.1.min.js"></script>
+    <script src="../../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '../..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "Cloth Sheet Component", url: "#_top", children: [
+              {title: "Component Properties", url: "#component-properties" },
+              {title: "See Also", url: "#see-also" },
+          ]},
+        ];
+
+    </script>
+    <script src="../../js/base.js"></script>
+      <script src="../../search/main.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../decals/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../decals/" class="btn btn-xs btn-link">
+        Decals
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../beam-component/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../beam-component/" class="btn btn-xs btn-link">
+        Beam Component
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <h1 id="cloth-sheet-component">Cloth Sheet Component</h1>
+<p>The <em>cloth sheet component</em> simulates a square patch of cloth as it hangs and swings in the wind. It is meant for decorative purposes such as flags.</p>
+<p>Cloth sheets are affected by <a href="../wind/">wind</a> and movement of the owner object. They do not interact with physics objects and they don't collide with scene geometry.</p>
+<h2 id="component-properties">Component Properties</h2>
+<ul>
+<li>
+<p><code>Size</code>: The physical size of the cloth sheet in the world.</p>
+</li>
+<li>
+<p><code>Slack</code>: How much slack the cloth has along the X and Y axis. A value of zero means it is hung perfectly straight between its anchors. Positive values make it sag downwards.</p>
+</li>
+<li>
+<p><code>Segments</code>: How detailed to simulate the cloth. Use as low values as possible, the simulation quickly becomes prohibitively expensive with higher tesselations.</p>
+</li>
+<li>
+<p><code>Damping</code>: How quickly the cloth loses energy while swinging. Higher values make it come to rest more quickly, low values make it swing for a longer time. Once it comes to rest, it takes significantly less processing power.</p>
+</li>
+<li>
+<p><code>WindInfluence</code>: How strongly <a href="../wind/">wind</a> should make the cloth swing.</p>
+</li>
+<li>
+<p><code>Flags</code>: These define at which corners and edges the sheet of cloth is attached to the world.</p>
+</li>
+<li>
+<p><code>Material</code>: The <a href="../materials/materials-overview.md">material</a> used for rendering the cloth. Make sure to set it to <em>two-sided</em> for cloth that can be seen from both sides.</p>
+</li>
+<li>
+<p><code>Color</code>: An additional tint-color for rendering.</p>
+</li>
+</ul>
+<h2 id="see-also">See Also</h2>
+<ul>
+<li><a href="../fake-rope-component/">Fake Rope Component</a></li>
+<li><a href="../wind/">Wind</a></li>
+</ul>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../decals/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../decals/" class="btn btn-xs btn-link">
+        Decals
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../beam-component/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../beam-component/" class="btn btn-xs btn-link">
+        Beam Component
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="col-md-12 wm-page-content">
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/noraj/mkdocs-windmill-dark">Windmill Dark</a> theme by Alexandre ZANNI (noraj).</p>
+</footer>
+
+</body>
+</html>

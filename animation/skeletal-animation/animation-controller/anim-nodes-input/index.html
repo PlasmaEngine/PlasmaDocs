@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="author" content="PlasmaDev">
+    <link rel="canonical" href="https://plasmaengine.github.io/PlasmaDocs/animation/skeletal-animation/animation-controller/anim-nodes-input/">
+    <link rel="shortcut icon" href="../../../../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Input Nodes - PlasmaDocs</title>
+    <link href="../../../../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../../../../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../../../../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../../../css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../../../../js/jquery-3.2.1.min.js"></script>
+    <script src="../../../../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../../../../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '../../../..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "Input Nodes", url: "#_top", children: [
+              {title: "XBox Controller Input Node", url: "#xbox-controller-input-node" },
+              {title: "See Also", url: "#see-also" },
+          ]},
+        ];
+
+    </script>
+    <script src="../../../../js/base.js"></script>
+      <script src="../../../../search/main.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../anim-nodes-logic-math/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../anim-nodes-logic-math/" class="btn btn-xs btn-link">
+        Logic and Math Nodes
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../anim-nodes-events/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../anim-nodes-events/" class="btn btn-xs btn-link">
+        Event Nodes
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <h1 id="input-nodes">Input Nodes</h1>
+<p>Input nodes expose the state of input devices to the animation controller. Input nodes are mainly provided for convenience during prototyping, as they may circumvent key mappings and general game state (e.g. whether the player is even allowed to move a character at all, at the moment).</p>
+<p>For a proper game, it is better to use an <a href="../../../input/input-component.md">input component</a> to forward input state to <a href="../../../../custom-code/custom-code-overview/">custom code</a> and then decide their which animation shall get played. Then you can forward that state to the animation controller, through a <a href="../../../Miscellaneous/blackboards.md">blackboard</a>. The animation controller itself would retrieve what it shall do through the <a href="../anim-nodes-blackboard/">blackboard nodes</a>.</p>
+<h2 id="xbox-controller-input-node">XBox Controller Input Node</h2>
+<p>![[Controller.png]]</p>
+<p>This node reads the raw state of the connected XBox controller 1. It then outputs the button states as trigger or number pins, depending on whether the respective button or stick provides an analog signal.</p>
+<p>This node completely ignores any kind of button mapping. It is purely meant for prototyping scenarios, where it can be very convenient.</p>
+<h3 id="output-pins">Output Pins</h3>
+<ul>
+<li>This node has one output pin for every button and stick direction. If you need to turn an analog signal into a trigger value, use the <a href="../anim-nodes-logic-math/">Compare Number node</a>.</li>
+</ul>
+<h2 id="see-also">See Also</h2>
+<ul>
+<li><a href="../animation-controller-overview/">Animation Controller</a></li>
+<li><a href="../../skeletal-animation-overview/">Skeletal Animations</a></li>
+</ul>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../anim-nodes-logic-math/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../anim-nodes-logic-math/" class="btn btn-xs btn-link">
+        Logic and Math Nodes
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../anim-nodes-events/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../anim-nodes-events/" class="btn btn-xs btn-link">
+        Event Nodes
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="col-md-12 wm-page-content">
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/noraj/mkdocs-windmill-dark">Windmill Dark</a> theme by Alexandre ZANNI (noraj).</p>
+</footer>
+
+</body>
+</html>

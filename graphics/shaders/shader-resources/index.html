@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="author" content="PlasmaDev">
+    <link rel="canonical" href="https://plasmaengine.github.io/PlasmaDocs/graphics/shaders/shader-resources/">
+    <link rel="shortcut icon" href="../../../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Shaders Resources - PlasmaDocs</title>
+    <link href="../../../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../../../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../../../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../../css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../../../js/jquery-3.2.1.min.js"></script>
+    <script src="../../../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../../../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '../../..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "Shaders Resources", url: "#_top", children: [
+              {title: "Resource Binding", url: "#resource-binding" },
+              {title: "Constant Buffers", url: "#constant-buffers" },
+              {title: "Push Constants", url: "#push-constants" },
+              {title: "Samplers", url: "#samplers" },
+              {title: "Textures", url: "#textures" },
+              {title: "Buffers", url: "#buffers" },
+              {title: "Append / Consume Buffers", url: "#append-consume-buffers" },
+              {title: "See Also", url: "#see-also" },
+          ]},
+        ];
+
+    </script>
+    <script src="../../../js/base.js"></script>
+      <script src="../../../search/main.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../shader-templates/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../shader-templates/" class="btn btn-xs btn-link">
+        Shader Templates
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../shader-render-state/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../shader-render-state/" class="btn btn-xs btn-link">
+        Shader Render State
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <h1 id="shaders-resources">Shaders Resources</h1>
+<p>Shader resources are things like textures, samplers constant buffers etc. that need to be separately bound in the renderer for the shader to function. Each resource must be bound to a set and slot. Depending on the <a href="../shaders-overview/#platforms">platform</a> used, the requirements for this binding can be very different. E.g. in Vulkan slot assignments must be unique within a set across all stages while in DX11 most slots only need to be unique within a stage. Not following these rules will result in a runtime error. Manually assigning slots is an option but is very tedious. To make this easier, the shader system can automate this process provided some constraints are met how resourced are declared.</p>
+<ol>
+<li>Currently, Plasma does not support arrays of resources like <code>Texture2D Diffuse[3]</code> in its shaders.</li>
+<li>Resources must have unique names across all shader stages. The same resource name can be used in multiple stages as long as the resource it maps to is exactly the same.</li>
+</ol>
+<h2 id="resource-binding">Resource Binding</h2>
+<p>The shader system only supports the DX11 / DX12 <a href="https://learn.microsoft.com/windows/win32/direct3d12/resource-binding-in-hlsl">register syntax</a> for resource binding. Both the set and slot can be bound. If no set is given, it is implicitly set 0. Here is a list of a few examples of how to bind resources properly:</p>
+<pre><code class="language-cpp">Texture2D Diffuse : register(t3, space1); // DX12 syntax, slot 3, set 1
+SamplerState MySampler : register(s4); // DX11 syntax slot 4, set 0 (default)
+ByteAddressBuffer MyBuffer BIND_RESOURCE(SLOT_AUTO, SET_RENDER_PASS); // Slot Auto, set 1
+ByteAddressBuffer MyBuffer2 BIND_SET(SET_RENDER_PASS); // Slot Auto, set 1
+
+CONSTANT_BUFFER(plTestPositions, 1) // Slot 1, set 0 (default)
+{
+  ...
+};
+
+CONSTANT_BUFFER2(plTestPositions, SLOT_AUTO, SET_MATERIAL) // Slot Auto, set 2
+{
+  ...
+};
+</code></pre>
+<p>The HLSL <code>register</code> syntax is a bit impractical, so the macros <code>BIND_RESOURCE(Slot, Set)</code> and <code>BIND_SET(Set)</code> were introduced. These will generate invalid HLSL code which the shader compiler will eventually parse, organize and patch to do the correct thing on each platform. In most cases, you should only be concerned about deciding in which set a resource should reside in. Either use the macro <code>SLOT_AUTO</code> when setting a slot or just use the <code>BIND_SET</code> macro which omits the slot entirely. While you can set any integer for the set, some platforms like Vulkan have a limit on how many sets can be managed at the same time with a minimum of four. Plasma defines macros for these four sets: <code>SET_FRAME</code>, <code>SET_RENDER_PASS</code>, <code>SET_MATERIAL</code> and <code>SET_DRAW_CALL</code>. Resources should ideally be bound to these sets according to their update frequency.</p>
+<h2 id="constant-buffers">Constant Buffers</h2>
+<p>Constant buffers map to <code>plGALShaderResourceType::ConstantBuffer</code> in C++.
+To facilitate C++ interop, constant buffers should be placed into a separate header file that looks like this:</p>
+<pre><code class="language-cpp">#pragma once
+#include &lt;Shaders/Common/ConstantBufferMacros.h&gt;
+CONSTANT_BUFFER(plTestPositions, 3)
+{
+  FLOAT4(Vertex0);
+  FLOAT4(Vertex1);
+  FLOAT4(Vertex2);
+};
+</code></pre>
+<p>By using the macros defined in <strong>ConstantBufferMacros.h</strong> like <code>CONSTANT_BUFFER</code> and the data types like <code>FLOAT4</code>, the file can be included in both shader and C++ code. This makes it easy to create an instance of the constant buffer as a C++ struct in code to update it. Care must be taken to ensure that the constant buffer has the same layout in C++ and HLSL though:
+1. Make sure that the size of your struct is a multiple of 16 bytes. Fill out any missing bytes with dummy <code>FLOAT1</code> entries.
+2. A <code>FLOAT3</code> can't be followed by another <code>FLOAT3</code>. It should be followed by a <code>FLOAT1</code> first or some other types of the same byte counts to ensure the next <code>FLOAT3</code> starts at a 16 byte boundary. This is necessary as the layout rules are different between HLSL and C++.</p>
+<h2 id="push-constants">Push Constants</h2>
+<p>Push constants map to <code>plGALShaderResourceType::PushConstants</code> in C++. Push constants allow for fast updates of a small set of bytes. Usually at least 128 bytes. You can check <code>plGALDeviceCapabilities::m_uiMaxPushConstantsSize</code> for the max push constant buffer size. On platforms that don't support push constants like DX11, this is emulated via a constant buffer. Only one push constants block is supported across all shader stages of a shader. Like with constant buffers, special macros have to be used and the declaration should be put into a separate header so it can be included in both shader and C++ code:</p>
+<pre><code class="language-cpp">// Header:
+#pragma once
+#include &lt;Shaders/Common/ConstantBufferMacros.h&gt;
+
+BEGIN_PUSH_CONSTANTS(plTestData)
+{
+  FLOAT4(VertexColor);
+  FLOAT4(Vertex0);
+  FLOAT4(Vertex1);
+  FLOAT4(Vertex2);
+}
+END_PUSH_CONSTANTS(plTestData)
+
+// Shader:
+float4 main(VS_OUT a) : SV_Target
+{
+  return GET_PUSH_CONSTANT(plTestData, VertexColor);
+}
+
+// C++:
+plTestData constants;
+constants.VertexColor = ...;
+pContext-&gt;SetPushConstants(&quot;plTestData&quot;, constants);
+</code></pre>
+<p>The <code>BEGIN_PUSH_CONSTANTS</code> and <code>END_PUSH_CONSTANTS</code> macros define the struct. Unlike with constant buffers, you can't simply access the values inside a shader by just the name of the variable, e.g. <code>VertexColor</code>. This is because depending on the platform, a different syntax needs to be used to access the content. To make the same shader compile on all platforms, you need to use the <code>GET_PUSH_CONSTANT(Name, Constant)</code> macro to access a member of the push constant buffer.</p>
+<h2 id="samplers">Samplers</h2>
+<p>Samplers map to <code>plGALShaderResourceType::Sampler</code> or <code>plGALShaderResourceType::TextureAndSampler</code> in C++. Two types of samplers are supported: <code>SamplerState</code> and <code>SamplerComparisonState</code>. The naming of the samplers is important, as it can be used to optimize your workflow. Plasma has a concept of immutable Samplers, these samplers are automatically bound so you can use them in the shader without needing to define them in C++. Immutable samplers are registered in code via <code>plGALImmutableSamplers::RegisterImmutableSampler</code>. Currently, these samplers are registered: <code>LinearSampler</code>, <code>LinearClampSampler</code>, <code>PointSampler</code> and <code>PointClampSampler</code>.
+Plasma does not allow for two different resources to have the same name, the only exception is textures and samplers which can have the same name by calling the sampler <em>NAME_AutoSampler</em>. The compiler will rename the sampler to <em>NAME</em> and on platforms that support combined image samplers both will be combined into a single resource of type <code>plGALShaderResourceType::TextureAndSampler</code>. The benefit of this approach is that when binding a texture resource to a material for example, the texture resource can define both the texture as well as the sampler state, binding both to the same name.</p>
+<pre><code class="language-cpp">SamplerState DiffuseSampler;
+SamplerComparisonState ShadowSampler;
+// Auto sampler combines with texture of the same name: 
+Texture2D BaseTexture;
+SamplerState BaseTexture_AutoSampler;
+</code></pre>
+<h2 id="textures">Textures</h2>
+<p>Textures map to <code>plGALShaderResourceType::Texture</code> or <code>plGALShaderResourceType::TextureAndSampler</code> in C++ (see samplers above). Plasma supports all HLSL texture types except for 1D textures. You can work around this by creating 1xN 2DTextures.</p>
+<pre><code class="language-cpp">Texture1D texture1D; // 1D textures currently not supported.
+Texture1DArray texture1DArray; // 1D textures currently not supported.
+Texture2D texture2D;
+Texture2DArray texture2DArray;
+Texture2DMS&lt;float4&gt; texture2DMS;
+Texture2DMSArray&lt;float4&gt; texture2DMSArray;
+Texture3D texture3D;
+TextureCube textureCube;
+TextureCubeArray textureCubeArray;
+</code></pre>
+<p>Read-write variants are also supported and map to <code>plGALShaderResourceType::TextureRW</code> in C++.</p>
+<pre><code class="language-cpp">RWTexture1D&lt;float&gt; rwTexture1D; // 1D textures currently not supported.
+RWTexture1DArray&lt;float2&gt; rwTexture1DArray; // 1D textures currently not supported.
+RWTexture2D&lt;float3&gt; rwTexture2D;
+RWTexture2DArray&lt;float4&gt; rwTexture2DArray;
+RWTexture3D&lt;uint&gt; rwTexture3D;
+</code></pre>
+<h2 id="buffers">Buffers</h2>
+<p>There are three types of buffers supported by Plasma:
+1. HLSL's <code>Buffer&lt;T&gt;</code> type is very similar to a 1D texture. A buffer of the same type T needs to be bound to the resource. Maps to <code>plGALShaderResourceType::TexelBuffer</code> in C++.
+2. <code>StructuredBuffer&lt;T&gt;</code> should follow the same rules as for constant buffers: Put the declaration in a separate header file to allow access to it from C++ and ensure each struct is 16 bytes aligned. Maps to <code>plGALShaderResourceType::StructuredBuffer</code> in C++.
+3. <code>ByteAddressBuffer</code> in just an array of bytes. A raw buffer needs to be bound to the resource. With HLSL 5.1, you can cast any offset of the buffer into a struct. Maps to <code>plGALShaderResourceType::StructuredBuffer</code> in C++.</p>
+<pre><code class="language-cpp">// Header:
+#pragma once
+#include &lt;Shaders/Common/ConstantBufferMacros.h&gt;
+
+struct PL_SHADER_STRUCT PerInstanceData
+{
+  TRANSFORM(ObjectToWorld);
+};
+
+// Shader:
+Buffer&lt;uint&gt; buffer;
+StructuredBuffer&lt;PerInstanceData&gt; structuredBuffer;
+ByteAddressBuffer byteAddressBuffer;
+</code></pre>
+<p>Read-write variants of these buffers are also supported and map to <code>plGALShaderResourceType::TexelBufferRW</code> and <code>plGALShaderResourceType::StructuredBufferRW</code> respectively.</p>
+<pre><code class="language-cpp">RWBuffer&lt;uint&gt; rwBuffer;
+RWStructuredBuffer&lt;plPerInstanceData&gt; rwStructuredBuffer;
+RWByteAddressBuffer rwByteAddressBuffer;
+</code></pre>
+<h2 id="append-consume-buffers">Append / Consume Buffers</h2>
+<p>TODO: Future work: Append / consume buffers can be defined in shaders and are correctly reflected, but Plasma does not support binding resources to them right now.</p>
+<pre><code class="language-cpp">// Header:
+#pragma once
+#include &lt;Shaders/Common/ConstantBufferMacros.h&gt;
+
+struct PL_SHADER_STRUCT plAppendData
+{
+  FLOAT2(Value);
+};
+
+// Shader:
+AppendStructuredBuffer&lt;plAppendData&gt; appendStructuredBuffer;
+ConsumeStructuredBuffer&lt;plAppendData&gt; consumeStructuredBuffer;
+</code></pre>
+<h2 id="see-also">See Also</h2>
+<ul>
+<li><a href="../shaders-overview/">Shaders</a></li>
+<li><a href="../../../tools/shadercompiler/">ShaderCompiler</a></li>
+</ul>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../shader-templates/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../shader-templates/" class="btn btn-xs btn-link">
+        Shader Templates
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../shader-render-state/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../shader-render-state/" class="btn btn-xs btn-link">
+        Shader Render State
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="col-md-12 wm-page-content">
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/noraj/mkdocs-windmill-dark">Windmill Dark</a> theme by Alexandre ZANNI (noraj).</p>
+</footer>
+
+</body>
+</html>

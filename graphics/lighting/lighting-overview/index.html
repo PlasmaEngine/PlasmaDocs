@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="author" content="PlasmaDev">
+    <link rel="canonical" href="https://plasmaengine.github.io/PlasmaDocs/graphics/lighting/lighting-overview/">
+    <link rel="shortcut icon" href="../../../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Lighting - PlasmaDocs</title>
+    <link href="../../../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../../../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../../../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../../css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../../../js/jquery-3.2.1.min.js"></script>
+    <script src="../../../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../../../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '../../..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "Lighting", url: "#_top", children: [
+              {title: "Physically Based Rendering", url: "#physically-based-rendering" },
+              {title: "Static vs. Dynamic Lighting", url: "#static-vs-dynamic-lighting" },
+              {title: "Shadows", url: "#shadows" },
+              {title: "Light Component Types", url: "#light-component-types" },
+              {title: "See Also", url: "#see-also" },
+          ]},
+        ];
+
+    </script>
+    <script src="../../../js/base.js"></script>
+      <script src="../../../search/main.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../point-light-component/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../point-light-component/" class="btn btn-xs btn-link">
+        Point light component
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../dynamic-shadows/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../dynamic-shadows/" class="btn btn-xs btn-link">
+        Dynamic Shadows
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <h1 id="lighting">Lighting</h1>
+<p>Lighting is the most important aspect of making a scene look good.</p>
+<h2 id="physically-based-rendering">Physically Based Rendering</h2>
+<p>There are many formulas for computing lighting on surfaces. The defacto industry standard, which is also used in Plasma Engine, is <strong>P</strong>hysically <strong>B</strong>ased <strong>R</strong>endering (PBR) which describes a surface in terms of <em>color</em>, the surface normals, its <em>roughness</em>, whether it is a <em>metal</em>. Using this data, very convincing lighting can be computed.</p>
+<p>Therefore the standard type of <a href="../../materials/materials-overview.md">material</a> requires you to provide such textures. Optionally an <em>occlusion texture</em> can pronounce the lighting for small crevices.</p>
+<h2 id="static-vs-dynamic-lighting">Static vs. Dynamic Lighting</h2>
+<p>Many games differentiate between <em>static</em> or <em>baked</em> lighting, and <em>dynamic</em> lighting. Static lighting is precomputed and typically stored in <em>lightmaps</em> (dedicated textures) and other data structures. Dynamic lighting does not require any preprocessing or extra data. Baked lighting typically has the advantage that it can look much better because it can simulate light bounces and thus illuminate areas that are not directly lit.</p>
+<p>Currently Plasma Engine <strong>only supports dynamic lighting</strong>. That means every light source that you add to the scene can be moved around and change its color or brightness. It also means that every light source has a performance cost. The renderer uses a clustered forward rendering approach which can handle a relatively large amount of light sources efficiently. The most important rule is to reduce the number of <em>overlapping</em> light sources. The editor <a href="../../../editor/editor-views/#render-modes">render modes</a> allow you to look for hotspots.</p>
+<h2 id="shadows">Shadows</h2>
+<p>Dynamic lights have the disadvantage that they don't provide shadows by default. Instead, casting shadows is a separate process, which costs a lot of performance for every light source involved. Therefore, each light source requires you to decide whether it should cast shadows or not. You can use many small fill lights, as long as they don't cast shadows, but you should keep the number of shadow casting lights as low as possible, and each light should only cover an area as small as possible.</p>
+<p>For more details see the chapter about <a href="../dynamic-shadows/">dynamic shadows</a>.</p>
+<h2 id="light-component-types">Light Component Types</h2>
+<p>There are different component types to provide different types of lighting:</p>
+<ul>
+<li><a href="../ambient-light-component/">Ambient Light Component</a>: For lighting up a scene in general.</li>
+<li><a href="../directional-light-component/">Directional Light Component</a>: For sun/moon light.</li>
+<li><a href="../point-light-component/">Point Light Component</a>: For light bulbs and overall fill lights.</li>
+<li><a href="../spot-light-component/">Spot Light Component</a>: For flashlights and directed lighting.</li>
+<li><a href="../sky-light-component/">Sky Light Component</a>: For dynamic light contribution from the sky.</li>
+<li><a href="../reflection-probe-components/">Reflection Probe Components</a>: For localized reflection probes.</li>
+</ul>
+<h2 id="see-also">See Also</h2>
+<ul>
+<li><a href="../../materials/materials-overview.md">Materials</a></li>
+<li><a href="../dynamic-shadows/">Dynamic Shadows</a></li>
+<li><a href="../../../editor/editor-views/#render-modes">Render Modes</a></li>
+</ul>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../point-light-component/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../point-light-component/" class="btn btn-xs btn-link">
+        Point light component
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../dynamic-shadows/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../dynamic-shadows/" class="btn btn-xs btn-link">
+        Dynamic Shadows
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="col-md-12 wm-page-content">
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/noraj/mkdocs-windmill-dark">Windmill Dark</a> theme by Alexandre ZANNI (noraj).</p>
+</footer>
+
+</body>
+</html>

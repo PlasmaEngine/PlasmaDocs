@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="author" content="PlasmaDev">
+    <link rel="canonical" href="https://plasmaengine.github.io/PlasmaDocs/terrain/procedural/procgen-volume-image-component/">
+    <link rel="shortcut icon" href="../../../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Procedural Volume Image Component - PlasmaDocs</title>
+    <link href="../../../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../../../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../../../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../../css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../../../js/jquery-3.2.1.min.js"></script>
+    <script src="../../../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../../../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '../../..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "Procedural Volume Image Component", url: "#_top", children: [
+              {title: "Component Properties", url: "#component-properties" },
+              {title: "See Also", url: "#see-also" },
+          ]},
+        ];
+
+    </script>
+    <script src="../../../js/base.js"></script>
+      <script src="../../../search/main.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../procgen-volume-sphere-component/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../procgen-volume-sphere-component/" class="btn btn-xs btn-link">
+        Procedural Volume Sphere Component
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../procgen-volume-box-component/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../procgen-volume-box-component/" class="btn btn-xs btn-link">
+        Procedural Volume Box Component
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <h1 id="procedural-volume-image-component">Procedural Volume Image Component</h1>
+<p>The <em>procedural volume image component</em> defines a box shaped volume in which the rules of <a href="../procgen-graph-asset/">ProcGen graphs</a> are modified. Not every graph has to make use of this information, and what the exact effect is, is up to the ProcGen graph.</p>
+<p>For more details see the chapter on <a href="../procgen-graph-modifiers/">ProcGen graph modifier nodes</a>.</p>
+<p>In contrast to the <a href="../procgen-volume-box-component/">procedural volume box component</a>, this component additionally samples an <a href="../../Miscellaneous/imagedata-asset.md">ImageData asset</a>, such that it can provide fine grained information for every location within the box. This can be utilized to, for example, use a mask of the terrain that defines where roads are, where which type of plant shall grow and so on, to describe precisely how the procedural placement shall look like.</p>
+<p>The image below shows an image volume used to only place the vegetation on the darker terrain patches.</p>
+<p><img alt="Image modifier volume" src="../media/procgen-image.jpg" /></p>
+<h2 id="component-properties">Component Properties</h2>
+<ul>
+<li><code>Value</code>: A single number value. This is combined with the <em>InputValue</em> from the <a href="../procgen-graph-modifiers/">modifier node</a> in the graph, using the <code>BlendMode</code> formula.</li>
+<li><code>SortOrder</code>: If multiple modifier volumes overlap, the <code>SortOrder</code> can be used to control in which order the volumes are evaluated.</li>
+<li><code>BlendMode</code>: How to combine <code>Value</code> with the <em>InputValue</em> from the <a href="../procgen-graph-modifiers/">modifier node</a> in the graph. The <em>Set</em> mode just sets the result to <code>Value</code> and ignores the other operand.</li>
+<li><code>Extents</code>: The size of the box volume in which the modifier is active.</li>
+<li><code>FadeOutStart</code>: The influence of the volume can fade out towards its edges, for smooth transitions. This value controls for every axis, at what distance from the center point the fade out starts. So if this is set to zero, the fade out starts immediately at the middle (towards the closest edge), whereas if it is set to one, there will be no fade out, at all, and rather the influence of the volume stops abruptly at its border.</li>
+<li><code>Image</code>: The <a href="../../Miscellaneous/imagedata-asset.md">ImageData asset</a> that is used as the reference data.</li>
+</ul>
+<h2 id="see-also">See Also</h2>
+<ul>
+<li><a href="../procedural-object-placement/">Procedural Object Placement</a></li>
+<li><a href="../procgen-graph-modifiers/">ProcGen Graph Modifier Nodes</a></li>
+</ul>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../procgen-volume-sphere-component/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../procgen-volume-sphere-component/" class="btn btn-xs btn-link">
+        Procedural Volume Sphere Component
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../procgen-volume-box-component/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../procgen-volume-box-component/" class="btn btn-xs btn-link">
+        Procedural Volume Box Component
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="col-md-12 wm-page-content">
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/noraj/mkdocs-windmill-dark">Windmill Dark</a> theme by Alexandre ZANNI (noraj).</p>
+</footer>
+
+</body>
+</html>

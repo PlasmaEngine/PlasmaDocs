@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="author" content="PlasmaDev">
+    <link rel="canonical" href="https://plasmaengine.github.io/PlasmaDocs/animation/skeletal-animation/animation-controller/anim-nodes-sequence/">
+    <link rel="shortcut icon" href="../../../../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Play Clip Sequence Node - PlasmaDocs</title>
+    <link href="../../../../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../../../../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../../../../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../../../css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../../../../js/jquery-3.2.1.min.js"></script>
+    <script src="../../../../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../../../../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '../../../..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "Play Clip Sequence Node", url: "#_top", children: [
+              {title: "Properties", url: "#properties" },
+              {title: "Input Pins", url: "#input-pins" },
+              {title: "Output Pins", url: "#output-pins" },
+              {title: "See Also", url: "#see-also" },
+          ]},
+        ];
+
+    </script>
+    <script src="../../../../js/base.js"></script>
+      <script src="../../../../search/main.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../animation-controller-asset/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../animation-controller-asset/" class="btn btn-xs btn-link">
+        Animation Controller Asset
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../anim-nodes-playclip/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../anim-nodes-playclip/" class="btn btn-xs btn-link">
+        Play Single Clip Nodes
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <h1 id="play-clip-sequence-node">Play Clip Sequence Node</h1>
+<p>The <em>play clip sequence node</em> is similar to the <a href="../anim-nodes-playclip/">play single clip node</a>, however, instead of playing just a single clip (looped), the sequence node plays at least three clips in a row. One to enter an animation state, one (looped) animation while it stays active, and one to exit the animation state.</p>
+<p>Such sequences are common for actions such as jumping or climbing a ladder. The start clip transitions the character from a start state, such as idle or walking into the new state, such as <em>jumping</em>. The middle clip is then played as long as the jumping state needs to continue, and once the character hits the ground again, the end clip is played to transition back.</p>
+<h2 id="properties">Properties</h2>
+<p>See <a href="../anim-nodes-playclip/#common-properties">common properties</a>.</p>
+<ul>
+<li>
+<p><code>StartClip</code>: The <a href="../../animation-clip-asset/">animation clip</a> to start with. This clip should end on a keyframe from where the <code>MiddleClips</code> can continue seemlessly.</p>
+</li>
+<li>
+<p><code>MiddleClips</code>: One or multiple animation clips to play after the <code>StartClip</code>. Typically these will get looped as long as the node is <code>Active</code>. If more than one clip is set, which one to play can be selected using the <code>MiddleClipIndex</code> pin. Otherwise a random one will be selected on every iteration.</p>
+</li>
+<li>
+<p><code>EndClip</code>: The clip to play after the middle clips are finished. If the node is <em>looped</em> this will only happen once the <code>Active</code> pin is not triggered anymore.</p>
+</li>
+</ul>
+<h2 id="input-pins">Input Pins</h2>
+<p>See <a href="../anim-nodes-playclip/#common-input-pins">common input pins</a>.</p>
+<ul>
+<li><code>MiddleClipIndex</code>: This pin can be used to select which of the <code>MiddleClips</code> to play next. In the video above this is used to select whether the gun should get fired or not.</li>
+</ul>
+<h2 id="output-pins">Output Pins</h2>
+<p>See <a href="../anim-nodes-playclip/#common-output-pins">common output pins</a>.</p>
+<ul>
+<li>
+<p><code>OnNextClip</code>: This pin will get triggered every time a clip finishes and the next middle or end clip starts. This can be used to know for example when the start phase has finished.</p>
+</li>
+<li>
+<p><code>PlayingClipIndex</code>: This pin outputs the index of the currently playing clip. This value is <code>0 to N-1</code> for any of the <code>N</code> middle clips. It will be <code>-1</code> when the start clip is playing and <code>-2</code> when the end clip is playing.</p>
+</li>
+</ul>
+<h2 id="see-also">See Also</h2>
+<ul>
+<li><a href="../animation-controller-overview/">Animation Controller</a></li>
+<li><a href="../../skeletal-animation-overview/">Skeletal Animations</a></li>
+</ul>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../animation-controller-asset/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../animation-controller-asset/" class="btn btn-xs btn-link">
+        Animation Controller Asset
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../anim-nodes-playclip/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../anim-nodes-playclip/" class="btn btn-xs btn-link">
+        Play Single Clip Nodes
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="col-md-12 wm-page-content">
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/noraj/mkdocs-windmill-dark">Windmill Dark</a> theme by Alexandre ZANNI (noraj).</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="author" content="PlasmaDev">
+    <link rel="canonical" href="https://plasmaengine.github.io/PlasmaDocs/runtime/world/spatial-system/">
+    <link rel="shortcut icon" href="../../../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Spatial System - PlasmaDocs</title>
+    <link href="../../../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../../../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../../../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../../css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../../../js/jquery-3.2.1.min.js"></script>
+    <script src="../../../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../../../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '../../..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "Spatial System", url: "#_top", children: [
+              {title: "Spatial System Setup", url: "#spatial-system-setup" },
+              {title: "Accessing the Spatial System", url: "#accessing-the-spatial-system" },
+              {title: "Spatial Data Categories", url: "#spatial-data-categories" },
+              {title: "Exposing Game Objects to the Spatial System", url: "#exposing-game-objects-to-the-spatial-system" },
+              {title: "Querying the Spatial System", url: "#querying-the-spatial-system" },
+              {title: "Spatial System vs. Physics Engines", url: "#spatial-system-vs-physics-engines" },
+              {title: "Spatial System vs. Tags", url: "#spatial-system-vs-tags" },
+              {title: "See Also", url: "#see-also" },
+          ]},
+        ];
+
+    </script>
+    <script src="../../../js/base.js"></script>
+      <script src="../../../search/main.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../world-messaging/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../world-messaging/" class="btn btn-xs btn-link">
+        Messaging
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../object-lifetime/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../object-lifetime/" class="btn btn-xs btn-link">
+        Object Lifetime
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <h1 id="spatial-system">Spatial System</h1>
+<p>Every <a href="../worlds/">world</a> has a <em>spatial system</em>. Spatial systems are responsible for sorting <a href="../game-objects/">game objects</a> by their position and size. They are utilized to efficiently find all objects within a volume, such as a box, a sphere or a view frustum. This is mainly used by the renderer to do frustum culling, but is also available to all other code. Obviously the spatial system needs to keep track of moving objects and update its index accordingly.</p>
+<h2 id="spatial-system-setup">Spatial System Setup</h2>
+<p><code>plSpatialSystem</code> is the base class for all spatial systems. During the construction of an <code>plWorld</code>, a custom implementation can be provided through the <code>plWorldDesc</code>. By default <code>plSpatialSystem_RegularGrid</code> is used, which is optimized to handle arbitrary situations with good performance.</p>
+<p>Implementing a custom spatial system can make sense when you have a highly specialized use case. For example, if you have a strictly tile-based 2D game, where you know that all sprites are below a fixed size, and you always have a dense grid without holes, you can write a spatial system that takes advantage of this knowledge and therefore outperforms the default implementation.</p>
+<p>However, unless you determine that the spatial system is a clear performance bottleneck, and you have domain specific knowledge that could be a big advantage to speed things up, there is no reason to consider writing your own.</p>
+<p>Since there is exactly one spatial system per world, it usually means that the choice of a system is made for a type of game. In theory, though, one could use different systems for different types of levels, as well.</p>
+<h2 id="accessing-the-spatial-system">Accessing the Spatial System</h2>
+<p>In C++ code you get access to the world's spatial system through <code>plWorld::GetSpatialSystem()</code>.</p>
+<p>When using other languages bindings the spatial system may not be exposed directly. For example, when using <a href="../../../custom-code/typescript/typescript-overview/">TypeScript</a>, the most useful functions are exposed directly through <code>pl.World</code>, for example <code>pl.World.FindObjectsInBox()</code> and <code>pl.World.FindObjectsInSphere()</code>.</p>
+<h2 id="spatial-data-categories">Spatial Data Categories</h2>
+<p>Every piece of spatial data is associated with a <em>category</em>. For example, rendering data is either in the category "RenderStatic" or "RenderDynamic". This is mainly used to separate spatial information into distinct groups, so that during a spatial query, data that is irrelevant can be filtered out quickly.</p>
+<p>For efficiency reasons, categories are represented with bitmasks internally, which is why there can only be up to 32 categories. You should assume that the core engine uses at least 5 categories already.</p>
+<h3 id="configuring-spatial-data-categories">Configuring Spatial Data Categories</h3>
+<p>In C++ code you register a spatial data category through <code>plSpatialData::RegisterCategory()</code>. This will return a category object which can be used for spatial queries later:</p>
+<!-- BEGIN-DOCS-CODE-SNIPPET: spatial-category-registration -->
+
+<pre><code class="language-cpp">plSpatialData::Category RtsSelectableComponent::s_SelectableCategory = plSpatialData::RegisterCategory(&quot;Selectable&quot;, plSpatialData::Flags::None);
+</code></pre>
+<!-- END-DOCS-CODE-SNIPPET -->
+
+<p>When using the editor, there are components, such as the <a href="../../../gameplay/marker-component/">marker component</a>, which allow you to select a category from a predefined list. This list is project specific. When you click on such a dropdown box, the last entry allows you to open an editor to configure the available categories</p>
+<h3 id="the-invalid-category">The Invalid Category</h3>
+<p>Some components 'add' their bounds to a <code>plMsgUpdateLocalBounds</code> using <code>plInvalidSpatialDataCategory</code>. This means that they want to specify their bounds, but do <em>not</em> want to add anything to the spatial system. This is useful for components that do have a perceived size, such as physics shapes, which should be visible when selecting these objects in the editor, but where there is no benefit of inserting this into the spatial system.</p>
+<h2 id="exposing-game-objects-to-the-spatial-system">Exposing Game Objects to the Spatial System</h2>
+<p>The spatial system only knows about <a href="../game-objects/">game objects</a>, it does not differentiate by components. However, which game objects are inserted into it and under which categories, is handled by components.</p>
+<p>The world sends the <a href="../world-messaging/">message</a> <code>plMsgUpdateLocalBounds</code> to all components when it determines that an update is necessary. This can also be triggered manually by calling <code>plGameObject::UpdateLocalBounds()</code> when spatial data, such as which category to use, has been modified.</p>
+<p>Components can handle this message and add spatial information to it. For 3D objects one would use something like the bounding sphere of a mesh, but it is also possible to use more abstract spatial data. </p>
+<!-- BEGIN-DOCS-CODE-SNIPPET: spatial-bounds-update -->
+
+<pre><code class="language-cpp">void RtsSelectableComponent::OnUpdateLocalBounds(plMsgUpdateLocalBounds&amp; msg)
+{
+  plBoundingBoxSphere bounds;
+  bounds.m_fSphereRadius = m_fSelectionRadius;
+  bounds.m_vCenter.SetZero();
+  bounds.m_vBoxHalfExtends.Set(m_fSelectionRadius);
+
+  msg.AddBounds(bounds, s_SelectableCategory);
+}
+</code></pre>
+<!-- END-DOCS-CODE-SNIPPET -->
+
+<p>Don't forget to register the message handler in the <a href="../../reflection-system/">reflection block</a>:</p>
+<!-- BEGIN-DOCS-CODE-SNIPPET: spatial-bounds-handler -->
+
+<pre><code class="language-cpp">PLASMA_BEGIN_MESSAGEHANDLERS
+{
+  PLASMA_MESSAGE_HANDLER(plMsgUpdateLocalBounds, OnUpdateLocalBounds)
+}
+PLASMA_END_MESSAGEHANDLERS;
+</code></pre>
+<!-- END-DOCS-CODE-SNIPPET -->
+
+<h2 id="querying-the-spatial-system">Querying the Spatial System</h2>
+<p>Once you have spatial data inserted into the system, you can use it to efficiently query for objects within a volume.</p>
+<p>When calling functions such as <code>plSpatialSystem::FindObjectsInSphere()</code> you have to provide a <em>bitmask</em> of categories. That's because you can request to get objects from multiple categories at the same time. You can get this bitmask by calling <code>plSpatialData::Category::GetBitmask()</code> on a category object.</p>
+<!-- BEGIN-DOCS-CODE-SNIPPET: spatial-query -->
+
+<pre><code class="language-cpp">void RtsGameState::InspectObjectsInArea(const plVec2&amp; position, float radius, plSpatialSystem::QueryCallback callback) const
+{
+  plBoundingSphere sphere(position.GetAsVec3(0), radius);
+  plSpatialSystem::QueryParams queryParams;
+  queryParams.m_uiCategoryBitmask = RtsSelectableComponent::s_SelectableCategory.GetBitmask();
+  m_pMainWorld-&gt;GetSpatialSystem()-&gt;FindObjectsInSphere(sphere, queryParams, callback);
+}
+</code></pre>
+<!-- END-DOCS-CODE-SNIPPET -->
+
+<p>In other language bindings you may instead need to pass in a list of all the desired categories by name.</p>
+<h2 id="spatial-system-vs-physics-engines">Spatial System vs. Physics Engines</h2>
+<p>Both the spatial system, as well as <a href="../../physics/jolt/jolt-overview.md">physics engines</a> allow you to do spatial queries. There are cases where a problem can be solved using either system, but generally they are meant to complement each other.</p>
+<p>If you want to query for things that already need to have a physical representation, and therefore will be handled by the physics engine anyway, it is best to leverage the physics engine to query for such objects. For example a shockwave effect that is supposed to push objects away, only makes sense to be applied to physically simulated objects. Therefore, querying which objects are close-by, to figure out what objects to apply the effect to, should be done through the physics engine, and there is no reason to even have information about these objects in the spatial system.</p>
+<p>On the other hand, things like the <code>RtsSelectableComponent</code> (see above) could be achieved by setting up fake <a href="../../physics/jolt/actors/jolt-actors.md">physics actors</a> so that they can be found with physics queries. The performance cost for doing so would be unnecessary high though, as the physics engine would perform additional maintenance that is ultimately not needed, and it may waste precious resources such as <a href="../../physics/jolt/collision-shapes/jolt-collision-layers.md">collision layers</a>. Here, using the spatial system makes much more sense.</p>
+<blockquote>
+<p><strong>Note:</strong></p>
+<p>If you require doing <em>raycasts</em> or <em>queries against meshes</em>, you will need to use the physics engine, as the spatial system only works with very basic shapes.</p>
+</blockquote>
+<h2 id="spatial-system-vs-tags">Spatial System vs. Tags</h2>
+<p>The spatial data categories are very similar to <a href="../../projects/tags.md">tags</a>. The difference is, that tags are set up on <a href="../game-objects/">game objects</a> and they don't have any spatial quality. A game object can have many tags, but not be registered spatially and therefore cannot be found through spatial queries. On the other hand, because of this, tags have nearly no performance overhead, whereas spatial data must be updated whenever an object moves.</p>
+<p>Ultimately, both systems can be used to solve many of the same problems. When you need to be able to inspect an area and find all objects of a certain kind, you should use spatial data, for example through a <a href="../../../gameplay/marker-component/">marker component</a>. If, however, you need to semtantically label objects, but do not require to find them spatially, prefer tags to not waste performance.</p>
+<h2 id="see-also">See Also</h2>
+<ul>
+<li><a href="../../../gameplay/marker-component/">Marker Component</a></li>
+<li><a href="../world-overview/">The World / Scenegraph System</a></li>
+</ul>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../world-messaging/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../world-messaging/" class="btn btn-xs btn-link">
+        Messaging
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../object-lifetime/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../object-lifetime/" class="btn btn-xs btn-link">
+        Object Lifetime
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="col-md-12 wm-page-content">
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/noraj/mkdocs-windmill-dark">Windmill Dark</a> theme by Alexandre ZANNI (noraj).</p>
+</footer>
+
+</body>
+</html>

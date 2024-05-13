@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="author" content="PlasmaDev">
+    <link rel="canonical" href="https://plasmaengine.github.io/PlasmaDocs/appendix/string-formatting/">
+    <link rel="shortcut icon" href="../../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>String Formatting - PlasmaDocs</title>
+    <link href="../../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../../js/jquery-3.2.1.min.js"></script>
+    <script src="../../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '../..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "String Formatting", url: "#_top", children: [
+              {title: "Using plFormatString as an Argument", url: "#using-plformatstring-as-an-argument" },
+              {title: "Using plFormatString", url: "#using-plformatstring" },
+              {title: "See Also", url: "#see-also" },
+          ]},
+        ];
+
+    </script>
+    <script src="../../js/base.js"></script>
+      <script src="../../search/main.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../string-usage/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../string-usage/" class="btn btn-xs btn-link">
+        String Usage Guidelines
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../library-structure/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../library-structure/" class="btn btn-xs btn-link">
+        Library Structure
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <h1 id="string-formatting">String Formatting</h1>
+<p>For formatting strings there are a couple of different options:</p>
+<ul>
+<li><code>plConversionUtils</code> provides various <code>ToString</code> functions. These are useful for generic cases, where only individual variables need to be converted to a string representation and no control over the exact formatting is needed. <code>plConversionUtils</code> also provides functions to parse strings for numbers.</li>
+<li><code>plStringUtils::snprintf</code> is a custom implementation of the infamous C <code>printf</code> function, with better security against buffer overruns and consistent behavior across platforms. It is available, but should generally be avoided, as it cannot provide any type safety.</li>
+<li><code>plFormatString</code> is the preferred way to do string formatting. It is easy to use, fully type safe, extensible with custom formatters and optimized for performance by doing only very few allocation and delaying the formatting until it is needed, which enables functions to not pay the price for formatting an incoming string, if the function doesn't actually use the result.</li>
+</ul>
+<h2 id="using-plformatstring-as-an-argument">Using plFormatString as an Argument</h2>
+<p><code>plFormatString</code> is a class that can be easily used as a function parameter to accept formatted strings:</p>
+<pre><code class="language-cpp">void Print(const plFormatString&amp; text);
+</code></pre>
+<p>A function that takes just an <code>plFormatString</code> has to be called with the <code>plFmt</code> wrapper:</p>
+<pre><code class="language-cpp">Print(plFmt(&quot;Hello {}&quot;, &quot;World&quot;));
+</code></pre>
+<p>The <code>plFmt</code> function is a variadic template, that can take up to 10 arguments and wraps them all up into an <code>plFormatString</code> object.</p>
+<p>If you want your <code>Print</code> function to be a little bit more convenient, and not require the use of <code>plFmt</code>, you can add an overload that provides the variadic template functionality directly.</p>
+<pre><code class="language-cpp">template &lt;typename... ARGS&gt;
+void Print(const char* szFormat, ARGS&amp;&amp;... args)
+{
+    Print(plFormatStringImpl&lt;ARGS...&gt;(szFormat, std::forward&lt;ARGS&gt;(args)...));
+}
+</code></pre>
+<p>Now <code>Print</code> can be called like this:</p>
+<pre><code class="language-cpp">Print(&quot;Hello {}&quot;, &quot;World&quot;);
+</code></pre>
+<p>Inside <code>Print</code>, all you need to do to get the formatted string is to call <code>plFormatString::GetText()</code>:</p>
+<pre><code class="language-cpp">void Print(const plFormatString&amp; text)
+{
+    plStringBuilder tmp;
+    const char* szResult = text.GetText(tmp);
+
+    // do something with szResult, do not use tmp, as it is not guaranteed to hold the result (meaning, it may not have been needed)
+}
+</code></pre>
+<h2 id="using-plformatstring">Using plFormatString</h2>
+<p>Once a function takes an <code>plFormatString</code> (see above), you can use <code>{}</code> notation to indicate where an argument shall be inserted.</p>
+<h3 id="positional-arguments">Positional Arguments</h3>
+<p>If a formatting string contains <code>{}</code>, every instance will use the <em>next</em> argument, as given to the function. You can also use <code>{n}</code> with n being <code>0</code> to <code>9</code> to insert the n-th argument. This allows you to skip, rearrange, or repeat arguments:</p>
+<pre><code class="language-cpp">Print(&quot;Arg1: {1}, Arg2: {2}, Arg1: {1}&quot;, &quot;zero&quot;, &quot;one&quot;, &quot;two&quot;);
+</code></pre>
+<h3 id="formatting-options">Formatting Options</h3>
+<p>Most types that can be formatted, can be passed in directly:</p>
+<pre><code class="language-cpp">Print(&quot;int value is {}&quot;, 23);
+</code></pre>
+<p>However, often you may want to specify exactly how to display the value. To do so, you need to wrap the incoming argument in an option struct. Each option struct can have arbitrary parameters to configure how it works.</p>
+<pre><code class="language-cpp">Print(&quot;HEX: 0x{}&quot;, plArgU(value, 8, true, 16, true));
+</code></pre>
+<p><code>plArgU</code> is an option struct for unsigned int values. Here we specify that the output should have a fixed <em>width</em> of 8 characters, should pad the output with zeros if necessary, use base 16 (hex) and upper case letters.</p>
+<p>There are many such option structs available, each with their own parameters. By convention, all formatting option structs are named <code>plArgXYZ</code>.</p>
+<h3 id="available-option-structs">Available Option Structs</h3>
+<p>This is a not necessarily complete list of available option structs:</p>
+<ul>
+<li><code>plArgC</code> - for single characters</li>
+<li><code>plArgF</code> - for floating point values</li>
+<li><code>plArgI</code> - for int values</li>
+<li><code>plArgU</code> - for unsigned int values</li>
+<li><code>plArgP</code> - for pointers</li>
+<li><code>plArgErrorCode</code> - for Windows error codes</li>
+<li><code>plArgDateTime</code> - for plDateTime</li>
+<li><code>plArgHumanReadable</code> - for shortening numbers with suffixes (such as <code>K</code> (kilo) and <code>M</code> (mega))</li>
+<li><code>plArgFileSize</code> - for shortening file sizes and use suffixes (such as <code>KB</code> and <code>MB</code>)</li>
+</ul>
+<h3 id="custom-argument-formatters">Custom Argument Formatters</h3>
+<p>You can easily write your own formatter. The formatting work is done by a free function called <code>BuildString</code>, overloaded for the type that it shall format. If you search for <code>BuildString</code> functions, you will find many overloads, each handling a different type. Please look at those functions to see how to write your own formatter.</p>
+<p>For it to work, all that is necessary, is that your code is <code>#include</code>'d when it is used in a format string. If you try to use a type (such as <code>MyType</code>) in a format string and your custom formatter is not known (<code>#include</code>'d) in that cpp file, you will get a compile time error with a <em>very long</em> message telling you that no overload of of <code>BuildString</code> is available to handle this type.</p>
+<p>The <code>plArgXYZ</code> structs are just used to wrap a type and store additional options. This is not required, for <code>BuildString</code> to work, but it does allow you to wrap the same type multiple times to select different formatters. For example, unsigned int is wrapped by <code>plArgU</code> for regular int formatting options, by <code>plArgFileSize</code> to print a value with <code>B</code>, <code>KB</code>, <code>MB</code> or <code>GB</code> suffixes and by <code>plArgErrorCode</code> to interpret it as a Windows error code and translate it to a readable string. If you have a custom type <code>MyType</code> and you do not need any formatting options, you can write a <code>BuildString</code> overload, that takes a <code>MyType</code> directly.</p>
+<h2 id="see-also">See Also</h2>
+<ul>
+<li><a href="../string-usage/">String Usage Guidelines</a></li>
+</ul>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../string-usage/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../string-usage/" class="btn btn-xs btn-link">
+        String Usage Guidelines
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../library-structure/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../library-structure/" class="btn btn-xs btn-link">
+        Library Structure
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="col-md-12 wm-page-content">
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/noraj/mkdocs-windmill-dark">Windmill Dark</a> theme by Alexandre ZANNI (noraj).</p>
+</footer>
+
+</body>
+</html>

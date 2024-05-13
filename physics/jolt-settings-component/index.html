@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="author" content="PlasmaDev">
+    <link rel="canonical" href="https://plasmaengine.github.io/PlasmaDocs/physics/jolt-settings-component/">
+    <link rel="shortcut icon" href="../../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Jolt Physics Settings Component - PlasmaDocs</title>
+    <link href="../../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../../js/jquery-3.2.1.min.js"></script>
+    <script src="../../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '../..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "Jolt Physics Settings Component", url: "#_top", children: [
+              {title: "Component Properties", url: "#component-properties" },
+              {title: "See Also", url: "#see-also" },
+          ]},
+        ];
+
+    </script>
+    <script src="../../js/base.js"></script>
+      <script src="../../search/main.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../actors/jolt-actors/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../actors/jolt-actors/" class="btn btn-xs btn-link">
+        Jolt Actors
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../jolt-overview/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../jolt-overview/" class="btn btn-xs btn-link">
+        Jolt Physics Integration
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <h1 id="jolt-physics-settings-component">Jolt Physics Settings Component</h1>
+<p>The <em>Jolt physics settings component</em> is used to configure general Jolt simulation options. You can only have one such component in a scene, it is an error to have two or more. If no such component is present, all Jolt settings use default values.</p>
+<h2 id="component-properties">Component Properties</h2>
+<ul>
+<li>
+<p><code>ObjectGravity</code>: The gravity that is applied to all <a href="../actors/jolt-dynamic-actor-component/">dynamic actors</a>. This property sets both the direction and strength of the gravity.</p>
+</li>
+<li>
+<p><code>CharacterGravity</code>: A separate gravity value that is used for <a href="../special/jolt-character-controller/">characters controllers</a>. In many games the gravity for characters is higher than what's used for regular objects.</p>
+</li>
+<li>
+<p><code>SteppingMode</code>: The stepping mode determines with what time steps Jolt is updated. This is most relevant when your game doesn't run at a fixed framerate:</p>
+</li>
+<li>
+<p><code>Variable</code>: Jolt will be stepped every frame with the time delta from the previous frame. This mode will forward any frame rate variations to Jolt unfiltered, which means the time step can vary drastically. This mode has the least overhead, but can also result in an unstable simulation when the framerate varies too much. If your game doesn't use dynamic actors much and you mainly use it for raycasts, character movement and overlap queries, this can be entirely sufficient.</p>
+</li>
+<li>
+<p><code>Fixed</code>: In this mode Jolt is always stepped with the time delta for the <code>FixedFrameRate</code>. If too little time has passed between frames, the Jolt update is skipped entirely, once the delta has been reached, Jolt is stepped. If the time between two frames is very long, up to <code>MaxSubSteps</code> are done to update Jolt. This mode is the most reliable, producing the most stable and deterministic results, since a variable framerate doesn't introduce any variation in how Jolt is updated.</p>
+<p>This mode is most suitable when your game runs at a locked framerate.</p>
+<p>This mode can be problematic, if you do have a variable framerate, especially when a frame can take a very long time. In that case the physics simulation will do up to <code>MaxSubSteps</code> simulation steps to catch up with the passed time. If that is not sufficient, the Jolt update will continue catching up during the next frame. As a result, the speed at which simulated objects move may appear erratic until the simulation has fully caught up with the passed time.</p>
+</li>
+<li>
+<p><code>SemiFixed</code>: This mode is a compromise between <code>Variable</code> and <code>Fixed</code>. It prefers to use fixed time steps, to achieve good simulation stability. At high framerates it will do shorter update steps, but may also skip the Jolt update until enough time has passed. At low framerates, it will do up to <code>MaxSubSteps</code> per frame, but it will use those to always fully catch up with the time that passed between the frames.</p>
+</li>
+<li>
+<p><code>FixedFrameRate</code>: The framerate to use for the 'fixed' timesteps. A higher framerate means the simulation will be more stable, but also cost more update steps and therefore performance.</p>
+</li>
+<li>
+<p><code>MaxSubSteps</code>: The maximum number of simulation steps to do between two frames. This is to introduce an upper bound on the performance cost of the Jolt update during one frame.</p>
+</li>
+<li>
+<p><code>MaxBodies</code>: For performance reasons, Jolt pre-allocates certain resources once at startup. Therefore you can't have more active bodies than this. The default value should be sufficient for the vast majority of use cases, but if necessary, you can increase the value here.</p>
+</li>
+</ul>
+<h2 id="see-also">See Also</h2>
+<ul>
+<li><a href="../jolt-overview/">Jolt Integration</a></li>
+</ul>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../actors/jolt-actors/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../actors/jolt-actors/" class="btn btn-xs btn-link">
+        Jolt Actors
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../jolt-overview/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../jolt-overview/" class="btn btn-xs btn-link">
+        Jolt Physics Integration
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="col-md-12 wm-page-content">
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/noraj/mkdocs-windmill-dark">Windmill Dark</a> theme by Alexandre ZANNI (noraj).</p>
+</footer>
+
+</body>
+</html>

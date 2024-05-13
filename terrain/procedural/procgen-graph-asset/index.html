@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="author" content="PlasmaDev">
+    <link rel="canonical" href="https://plasmaengine.github.io/PlasmaDocs/terrain/procedural/procgen-graph-asset/">
+    <link rel="shortcut icon" href="../../../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>ProcGen Graph Asset - PlasmaDocs</title>
+    <link href="../../../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../../../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../../../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../../css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../../../js/jquery-3.2.1.min.js"></script>
+    <script src="../../../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../../../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '../../..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "ProcGen Graph Asset", url: "#_top", children: [
+              {title: "Editing the ProcGen Graph", url: "#editing-the-procgen-graph" },
+              {title: "Graph Output", url: "#graph-output" },
+              {title: "Using a ProcGen Graph", url: "#using-a-procgen-graph" },
+              {title: "Live Editing", url: "#live-editing" },
+              {title: "Debug Mode", url: "#debug-mode" },
+              {title: "Building Complex Rules", url: "#building-complex-rules" },
+              {title: "See Also", url: "#see-also" },
+          ]},
+        ];
+
+    </script>
+    <script src="../../../js/base.js"></script>
+      <script src="../../../search/main.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../procgen-graph-inputs/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../procgen-graph-inputs/" class="btn btn-xs btn-link">
+        ProcGen Graph Input Nodes
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../procedural-object-placement/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../procedural-object-placement/" class="btn btn-xs btn-link">
+        Procedural Object Placement
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <h1 id="procgen-graph-asset">ProcGen Graph Asset</h1>
+<p>The <em>ProcGen Graph Asset</em> is used to configure the rules for <a href="../procedural-object-placement/">procedural object placement</a>. In this graph structure you define which objects should be placed under which conditions.</p>
+<h2 id="editing-the-procgen-graph">Editing the ProcGen Graph</h2>
+<p>The main area of this document is used to place and connect nodes in a graph. Use the context menu to add nodes. Drag and drop pins from left to right to connect outputs to inputs. Pins usually represent single number values, such as a density value or a single channel of a color (e.g. 'red'). By connecting a pin on the right side of a node (output) to a pin on the left side of a node (input), the output value is forwarded into the other node and affects how that node operates.</p>
+<p>Nodes that only have pins on their right side, are pure <em>input nodes</em>, they only provide data for other nodes to consume. Nodes that only have pins on their left side, are <em>output nodes</em>. They consume various input values and then create some kind of result, for example they decide whether to place an object at a certain location.</p>
+<p>When you select a node, the <em>property grid</em> shows additional configuration options. The image below shows a graph with three <em>input nodes</em> and three <em>output nodes</em>. Each input node is connected to one output node and thus affects how that output node places objects.</p>
+<h3 id="interactions">Interactions</h3>
+<ul>
+<li>Right-click and drag in the view, to move it around.</li>
+<li>Mouse-wheel to zoom.</li>
+<li>Left-click to select nodes.</li>
+<li>Left-click and drag to select multiple nodes.</li>
+<li>Ctrl + left-click to add or remove a node from the selection.</li>
+<li>Right-click on a node, pin or connection for a context-menu in which you can delete the object.</li>
+<li>Click on an empty spot to open a context menu from which to create new nodes.</li>
+<li>Left-click and drag any pin to connect it to another pin. The UI will indicate which pins can be connected.</li>
+</ul>
+<h2 id="graph-output">Graph Output</h2>
+<p>What exact output the procedural rules generate depends on which <em>output nodes</em> are present in the graph. Currently these types of output are available:</p>
+<ol>
+<li><a href="../procgen-graph-output-placement/">ProcGen Graph Placement Output</a></li>
+<li><a href="../procgen-graph-output-vertexcolor/">ProcGen Graph Vertex Color Output (TODO)</a></li>
+</ol>
+<blockquote>
+<p><strong>Tip:</strong></p>
+<p>To learn the system, it is best to start with the <a href="../procgen-graph-output-placement/">placement output</a> node and ignore the rest. The simplest possible graph only contains a single such node and nothing else.</p>
+</blockquote>
+<h2 id="using-a-procgen-graph">Using a ProcGen Graph</h2>
+<p>The ProcGen graph asset doesn't have any kind of pre-visualization. To see what effect a rule has, you need a scene in which the necessary setup is available.</p>
+<p>The scene should contain some geometry with <a href="../../physics/jolt/collision-shapes/jolt-collision-meshes.md">collision meshes</a>, such that raycasts can hit the geometry. <a href="../../scenes/greyboxing.md">Greyboxing</a> and <a href="../../heightfield-component/">heightfield components</a> work just fine for that.</p>
+<p>You also need a component that applies the ProcGen graph. Depending on the <em>output nodes</em> used in the graph this would be one of these:</p>
+<ol>
+<li><a href="../procgen-placement-component/">Procedural Placement Component</a></li>
+<li><a href="../procgen-vertex-color-component/">Procedural Vertex Color Component (TODO)</a></li>
+</ol>
+<p>Make sure the ProcGen graph asset is <a href="../../../assets/assets-overview/">transformed</a>. Then <a href="../../../editor/run-scene/">press play to simulate it</a>. If everything is set up right, you should see objects getting placed around the camera, within the specified volume.</p>
+<h2 id="live-editing">Live Editing</h2>
+<p>When you edit a ProcGen graph asset, most changes trigger a live update in any running scene. That means you can switch back and forth between the asset and a test scene, and see changes update right away.</p>
+<p>However, this is limited to certain types of changes. Changes to referenced assets (such as <a href="../../../animation/common/color-gradients/">color gradients</a> or <a href="../../prefabs/prefabs-overview.md">prefabs</a>) won't update the already placed objects.</p>
+<p>If such a change was done, you need to stop simulating a scene, and <a href="../../../editor/run-scene/">run it again</a>.</p>
+<h2 id="debug-mode">Debug Mode</h2>
+<p>It can be difficult to get an idea for the values that a rule graph produces. To visualize the values, you can right-click any pin and enable the <em>Debug</em> flag. This disables all placement output and instead switches to a mode where for every location only a sphere is rendered, and the shade of the sphere represents the value of the pin on which the debug flag is enabled. Black for <code>0</code> and white for <code>1</code>.</p>
+<p><img alt="Debug pin" src="../media/procgen-debug-pin.png" /></p>
+<p>When you then switch to a scene and run the simulation, you will see this pattern:</p>
+<p><img alt="Debug mode" src="../media/procgen-debug.jpg" /></p>
+<h2 id="building-complex-rules">Building Complex Rules</h2>
+<p>Once you've figured out the basics, you can build more complex rules.</p>
+<ol>
+<li>Use the <a href="../procgen-graph-inputs/">ProcGen graph input nodes (TODO)</a> to receive more information about a location, such as its slope or height.</li>
+<li>Pass the data through <a href="../procgen-graph-math/">ProcGen graph math nodes</a> to adjust it as necessary.</li>
+<li>Use <a href="../procgen-graph-modifiers/">ProcGen graph modifier nodes</a> to make it possible to configure the rules locally.</li>
+</ol>
+<h2 id="see-also">See Also</h2>
+<ul>
+<li><a href="../procgen-placement-component/">Procedural Placement Component</a></li>
+<li><a href="../procgen-graph-output-placement/">ProcGen Graph Placement Output</a></li>
+<li><a href="../procgen-vertex-color-component/">Procedural Vertex Color Component (TODO)</a></li>
+<li><a href="../procgen-graph-output-vertexcolor/">ProcGen Graph Vertex Color Output (TODO)</a></li>
+<li><a href="../procgen-volume-box-component/">Procedural Volume Box Component</a></li>
+<li><a href="../procgen-volume-image-component/">Procedural Volume Image Component</a></li>
+</ul>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../procgen-graph-inputs/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../procgen-graph-inputs/" class="btn btn-xs btn-link">
+        ProcGen Graph Input Nodes
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../procedural-object-placement/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../procedural-object-placement/" class="btn btn-xs btn-link">
+        Procedural Object Placement
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="col-md-12 wm-page-content">
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/noraj/mkdocs-windmill-dark">Windmill Dark</a> theme by Alexandre ZANNI (noraj).</p>
+</footer>
+
+</body>
+</html>

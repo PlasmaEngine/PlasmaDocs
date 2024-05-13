@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="author" content="PlasmaDev">
+    <link rel="canonical" href="https://plasmaengine.github.io/PlasmaDocs/effects/simple-wind-component/">
+    <link rel="shortcut icon" href="../../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Simple Wind Component - PlasmaDocs</title>
+    <link href="../../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../../js/jquery-3.2.1.min.js"></script>
+    <script src="../../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '../..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "Simple Wind Component", url: "#_top", children: [
+              {title: "Component Properties", url: "#component-properties" },
+              {title: "See Also", url: "#see-also" },
+          ]},
+        ];
+
+    </script>
+    <script src="../../js/base.js"></script>
+      <script src="../../search/main.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../sky/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../sky/" class="btn btn-xs btn-link">
+        Sky
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../rope-render-component/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../rope-render-component/" class="btn btn-xs btn-link">
+        Rope Render Component
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <h1 id="simple-wind-component">Simple Wind Component</h1>
+<p>The <em>simple wind component</em> implements a very basic <a href="../wind/">wind system</a>. By placing a component of this type in a scene, the <em>simple wind <a href="../../runtime/world/world-modules/">world module</a></em> is created. Things that can react to wind are then able to retrieve a wind value at any location. The simple wind system provides one global wind value, which changes randomly.</p>
+<p>Additionally, it supports <a href="../wind-volume-components/">wind volume components</a>. If any such shape is in a scene, its contribution is added to the global wind value, for objects that are inside such a volume.</p>
+<h2 id="component-properties">Component Properties</h2>
+<ul>
+<li>
+<p><code>MinWindStrength</code>, <code>MaxWindStrength</code>: The minimum and maximum strength with which the wind shall blow. A random value in between will be chosen every couple of seconds. To make it easier to get different things working well with each other, the wind values are hard-coded. They are inspired by the <a href="https://en.wikipedia.org/wiki/Beaufort_scale">Beaufort scale</a>. Most things that can react to wind (for example <a href="../particle-effects/particle-effects-overview/">particle effects</a> or <a href="../fake-rope-component/">ropes</a>) also have a <em>wind influence</em> parameter for tweaking how strongly they react to wind. The Beaufort scale enables you to get an idea what reaction to expect, e.g. you know how an effect should look under a light breple or under storm conditions, and can then tweak the wind influence value accordingly.</p>
+</li>
+<li>
+<p><code>MaxDeviation</code>: How much the wind direction may deviate from the local x-axis. Set this to the maximum value, if the wind is allowed to come from anywhere.</p>
+</li>
+</ul>
+<h2 id="see-also">See Also</h2>
+<ul>
+<li><a href="../wind/">Wind</a></li>
+<li><a href="../wind-volume-components/">Wind Volume Components</a></li>
+</ul>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../sky/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../sky/" class="btn btn-xs btn-link">
+        Sky
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../rope-render-component/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../rope-render-component/" class="btn btn-xs btn-link">
+        Rope Render Component
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="col-md-12 wm-page-content">
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/noraj/mkdocs-windmill-dark">Windmill Dark</a> theme by Alexandre ZANNI (noraj).</p>
+</footer>
+
+</body>
+</html>

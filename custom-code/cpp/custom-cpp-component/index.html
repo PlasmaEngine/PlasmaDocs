@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="author" content="PlasmaDev">
+    <link rel="canonical" href="https://plasmaengine.github.io/PlasmaDocs/custom-code/cpp/custom-cpp-component/">
+    <link rel="shortcut icon" href="../../../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Custom Components with C++ - PlasmaDocs</title>
+    <link href="../../../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../../../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../../../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../../css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../../../js/jquery-3.2.1.min.js"></script>
+    <script src="../../../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../../../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '../../..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "Custom Components with C++", url: "#_top", children: [
+              {title: "Component Manager Declaration", url: "#component-manager-declaration" },
+              {title: "Component Class Declaration", url: "#component-class-declaration" },
+              {title: "Reflection Block", url: "#reflection-block" },
+              {title: "Initialization and Update", url: "#initialization-and-update" },
+              {title: "Serialization", url: "#serialization" },
+              {title: "Conclusion", url: "#conclusion" },
+              {title: "See Also", url: "#see-also" },
+          ]},
+        ];
+
+    </script>
+    <script src="../../../js/base.js"></script>
+      <script src="../../../search/main.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../engine-plugins/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../engine-plugins/" class="btn btn-xs btn-link">
+        Engine Plugins
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../cpp-project-generation/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../cpp-project-generation/" class="btn btn-xs btn-link">
+        C++ Project Generation
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <h1 id="custom-components-with-c">Custom Components with C++</h1>
+<p>To write a custom C++ component, the first thing you need is a custom <a href="../engine-plugins/">engine plugin</a>. Once you have that, and have it enabled in your <a href="../../projects/project-settings.md">project settings</a>, any custom component that you define in that plugin will show up in the editor and can be attached to <a href="../../../runtime/world/game-objects/">game objects</a>.</p>
+<p>The <a href="../../../samples/sample-game-plugin.md">Sample Game Plugin</a> shows all the pieces that you need, including multiple components to get inspiration from. This article describes the steps to create a simple custom component.</p>
+<p>Before you continue, please read the <a href="../../../runtime/world/components/">components chapter</a>, as it already covers most things that you need to know.</p>
+<h2 id="component-manager-declaration">Component Manager Declaration</h2>
+<p>For every type of C++ component there is a corresponding <a href="../../../runtime/world/component-managers/">component manager</a>. The component manager is responsible for allocating and deallocating components and for updating them. Each component manager is tied to a single <a href="../../../runtime/world/worlds/">world</a>, so if you have multiple worlds, each world will hold its own instance of each component manager.</p>
+<p>A component manager is a <a href="../../../runtime/world/world-modules/">world module</a>, so it can register functions to be called during specific <a href="../../../runtime/world/world-modules/#update-phases">update phases</a> of the world.</p>
+<p>For the vast majority of components we only need a component manager that calls <code>Update()</code> on our component type once a frame. We can declare such a simple manager like this in the header file for our component:</p>
+<!-- BEGIN-DOCS-CODE-SNIPPET: customcomp-manager -->
+
+<pre><code class="language-cpp">using DemoComponentManager = plComponentManagerSimple&lt;class DemoComponent, plComponentUpdateType::WhenSimulating&gt;;
+</code></pre>
+<!-- END-DOCS-CODE-SNIPPET -->
+
+<h2 id="component-class-declaration">Component Class Declaration</h2>
+<p>Next, we declare our component class. All components must derive (at least indirectly) from <code>plComponent</code>. Also vital is to insert the <code>PLASMA_DECLARE_COMPONENT_TYPE</code> macro, where you pass in the own component class name, the base class, and the component manager class.</p>
+<!-- BEGIN-DOCS-CODE-SNIPPET: customcomp-class -->
+
+<pre><code class="language-cpp">class DemoComponent : public plComponent
+{
+  PLASMA_DECLARE_COMPONENT_TYPE(DemoComponent, plComponent, DemoComponentManager);
+
+  //////////////////////////////////////////////////////////////////////////
+  // plComponent
+
+public:
+  virtual void SerializeComponent(plWorldWriter&amp; stream) const override;
+  virtual void DeserializeComponent(plWorldReader&amp; stream) override;
+
+protected:
+  virtual void OnSimulationStarted() override;
+
+  //////////////////////////////////////////////////////////////////////////
+  // DemoComponent
+
+public:
+  DemoComponent();
+  ~DemoComponent();
+
+private:
+  void Update();
+
+  float m_fAmplitude = 1.0f;             // [ property ]
+  plAngle m_Speed = plAngle::Degree(90); // [ property ]
+};
+</code></pre>
+<!-- END-DOCS-CODE-SNIPPET -->
+
+<p>Here we override a couple of functions from <code>plComponent</code>. For the binary serialization we must implement <code>plComponent::SerializeComponent()</code>. As long as you test your component only inside the editor, you don't yet need to implement these functions, as the editor stores reflected properties automatically. However, once you want to export your scene, these functions are used, and if you forgot to properly serialize something, the exported scene will not work correctly.</p>
+<p>Note that our sample component has a (non-virtual) function called <code>Update()</code>. This is necessary because we use the <code>plComponentManagerSimple</code> here, which expects to find such a function. If you write your own component manager, you can do this differently.</p>
+<h2 id="reflection-block">Reflection Block</h2>
+<p>In our cpp file we need to insert a <a href="../../../runtime/reflection-system/">reflection</a> block for our component type. This tells the engine all the details about our component, for instance which properties it has.</p>
+<!-- BEGIN-DOCS-CODE-SNIPPET: customcomp-reflection -->
+
+<pre><code class="language-cpp">// clang-format off
+PLASMA_BEGIN_COMPONENT_TYPE(DemoComponent, 3 /* version */, plComponentMode::Dynamic)
+{
+  PLASMA_BEGIN_PROPERTIES
+  {
+    PLASMA_MEMBER_PROPERTY(&quot;Amplitude&quot;, m_fAmplitude)-&gt;AddAttributes(new plDefaultValueAttribute(1), new plClampValueAttribute(0, 10)),
+    PLASMA_MEMBER_PROPERTY(&quot;Speed&quot;, m_Speed)-&gt;AddAttributes(new plDefaultValueAttribute(plAngle::Degree(90))),
+  }
+  PLASMA_END_PROPERTIES;
+
+  PLASMA_BEGIN_ATTRIBUTES
+  {
+    new plCategoryAttribute(&quot;SampleGamePlugin&quot;),
+  }
+  PLASMA_END_ATTRIBUTES;
+}
+PLASMA_END_COMPONENT_TYPE
+// clang-format on
+</code></pre>
+<!-- END-DOCS-CODE-SNIPPET -->
+
+<p>This information is used in various ways. The editor uses it for the UI. Attributes on each property allow you to configure what default values the editor should use, and whether it should clamp the range for values, etc. Bindings to other languages also use this information to generate the necessary code. Everything that is not mentioned in this block, is internal to the C++ code and hidden from the tools.</p>
+<h2 id="initialization-and-update">Initialization and Update</h2>
+<p>Next up, we implement our basic component code:</p>
+<!-- BEGIN-DOCS-CODE-SNIPPET: customcomp-basics -->
+
+<pre><code class="language-cpp">DemoComponent::DemoComponent() = default;
+DemoComponent::~DemoComponent() = default;
+
+void DemoComponent::OnSimulationStarted()
+{
+  SUPER::OnSimulationStarted();
+
+  // this component doesn't need to anything for initialization
+}
+
+void DemoComponent::Update()
+{
+  const plTime curTime = GetWorld()-&gt;GetClock().GetAccumulatedTime();
+  const plAngle curAngle = curTime.AsFloatInSeconds() * m_Speed;
+  const float curHeight = plMath::Sin(curAngle) * m_fAmplitude;
+
+  GetOwner()-&gt;SetLocalPosition(plVec3(0, 0, curHeight));
+}
+
+</code></pre>
+<!-- END-DOCS-CODE-SNIPPET -->
+
+<p>Components rarely need to do much in their constructor and destructor. Most setup should be done in <code>plComponent::OnSimulationStarted()</code>. For components that should already have functionality in the editor, while the simulation is not yet running, you should do your setup in <code>plComponent::OnActivated()</code> instead. There is no <code>OnSimulationStopped()</code>, as this would always be the same as <code>plComponent::OnDeactivated()</code>.</p>
+<p>As you can see, this component modifies the position of its owner object during its update. This is why we had to use <code>plComponentMode::Dynamic</code> in the reflection block, to tell the engine that objects with this component attached may change their position.</p>
+<h2 id="serialization">Serialization</h2>
+<p>Finally, to make our component also work in exported scenes, we need to implement serialization:</p>
+<!-- BEGIN-DOCS-CODE-SNIPPET: component-serialize -->
+
+<pre><code class="language-cpp">void DemoComponent::SerializeComponent(plWorldWriter&amp; stream) const
+{
+  SUPER::SerializeComponent(stream);
+
+  auto&amp; s = stream.GetStream();
+
+  s &lt;&lt; m_fAmplitude;
+  s &lt;&lt; m_Speed;
+}
+</code></pre>
+<!-- END-DOCS-CODE-SNIPPET -->
+
+<p>This writes out the data in the latest format. If you change the format, you should increase the version number of your component in the reflection block at the very top.</p>
+<p>Obviously, at runtime we also need to deserialize our component. This is where we implement backwards compatibility for older exported scenes:</p>
+<!-- BEGIN-DOCS-CODE-SNIPPET: component-deserialize -->
+
+<pre><code class="language-cpp">void DemoComponent::DeserializeComponent(plWorldReader&amp; stream)
+{
+  SUPER::DeserializeComponent(stream);
+  const plUInt32 uiVersion = stream.GetComponentTypeVersion(GetStaticRTTI());
+
+  auto&amp; s = stream.GetStream();
+
+  s &gt;&gt; m_fAmplitude;
+
+  if (uiVersion &lt;= 2)
+  {
+    // up to version 2 the angle was stored as a float in degree
+    // convert this to plAngle
+    float fDegree;
+    s &gt;&gt; fDegree;
+    m_Speed = plAngle::Degree(fDegree);
+  }
+  else
+  {
+    s &gt;&gt; m_Speed;
+  }
+}
+</code></pre>
+<!-- END-DOCS-CODE-SNIPPET -->
+
+<h2 id="conclusion">Conclusion</h2>
+<p>Adding a custom component in C++ is not hard. Use the <a href="../../../samples/sample-game-plugin.md">Sample Game Plugin</a> as a playground to get started. Of course with C++ you have the typical restriction that you can't hot reload code, you have to close the editor, compile your plugin and reopen the editor. <a href="../cpp-code-reload/">Hot Reloading C++ Game Plugins in the Editor</a> describes a mechanism that can basically do all that for you with a single button press, though.</p>
+<p>Armed with these basics, you should have a look at existing components to see how to solve specific issues.</p>
+<h2 id="see-also">See Also</h2>
+<ul>
+<li><a href="../../../runtime/world/components/">Components</a></li>
+<li><a href="../../custom-code-overview/">Custom Code</a></li>
+<li><a href="../../../samples/sample-game-plugin.md">Sample Game Plugin</a></li>
+<li><a href="../cpp-code-reload/">Hot Reloading C++ Game Plugins in the Editor</a></li>
+</ul>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../engine-plugins/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../engine-plugins/" class="btn btn-xs btn-link">
+        Engine Plugins
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../cpp-project-generation/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../cpp-project-generation/" class="btn btn-xs btn-link">
+        C++ Project Generation
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="col-md-12 wm-page-content">
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/noraj/mkdocs-windmill-dark">Windmill Dark</a> theme by Alexandre ZANNI (noraj).</p>
+</footer>
+
+</body>
+</html>

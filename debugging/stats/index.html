@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="author" content="PlasmaDev">
+    <link rel="canonical" href="https://plasmaengine.github.io/PlasmaDocs/debugging/stats/">
+    <link rel="shortcut icon" href="../../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Stats - PlasmaDocs</title>
+    <link href="../../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../../js/jquery-3.2.1.min.js"></script>
+    <script src="../../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '../..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "Stats", url: "#_top", children: [
+              {title: "C++ Interface", url: "#c-interface" },
+              {title: "Use Cases", url: "#use-cases" },
+              {title: "plInspector", url: "#plinspector" },
+              {title: "See Also", url: "#see-also" },
+          ]},
+        ];
+
+    </script>
+    <script src="../../js/base.js"></script>
+      <script src="../../search/main.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../components/debug-text-component/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../components/debug-text-component/" class="btn btn-xs btn-link">
+        Debug Text Component
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../renderdoc/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../renderdoc/" class="btn btn-xs btn-link">
+        RenderDoc Integration
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <h1 id="stats">Stats</h1>
+<p>Stats are a feature for development and debugging. They are arbitrary key/value pairs that your application can set and update frequently, typically once per frame.</p>
+<p>Stats can be seen and plotted as a graph in <a href="../../tools/inspector/">plInspector</a>.</p>
+<h2 id="c-interface">C++ Interface</h2>
+<p>The stats system is available through <code>plStats</code>. This class allows you to add, modify and remove stats. The plInspector plugin will listen to all changes and send the updated values over the network to plInspector for visualization.</p>
+<p>You can make plInspector put your stats into a tree structure by using slashes in the stat name.</p>
+<h2 id="use-cases">Use Cases</h2>
+<p>Common use cases for stats are to output:</p>
+<ul>
+<li>Number of things of interest (render polygons, active NPCs, ...)</li>
+<li>Time spent doing X (script execution, AI updates, ...)</li>
+<li>Network status (bandwidth usage, ...)</li>
+</ul>
+<p>Stats are very useful to give an insight into data that is otherwise hidden. They are particularly useful when the way a value behaves is of interest. That means when a value fluctuates and thus may be responsible for inconsistent performance or sudden spikes. When such a value is plotted as a graph in plInspector and put side-by-side with the frame time, it can become easier to find correlations.</p>
+<h2 id="plinspector">plInspector</h2>
+<p>Stats appear in a tree structure. You can mark certain stats as 'favorites' using the checkmarks. Using the context menu, you can assign a stat to one of ten graphs, where its value will be plotted over time. Make sure to adjust the graph's min and max value range.</p>
+<h2 id="see-also">See Also</h2>
+<ul>
+<li><a href="../../tools/inspector/">plInspector</a></li>
+</ul>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../components/debug-text-component/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../components/debug-text-component/" class="btn btn-xs btn-link">
+        Debug Text Component
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../renderdoc/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../renderdoc/" class="btn btn-xs btn-link">
+        RenderDoc Integration
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="col-md-12 wm-page-content">
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/noraj/mkdocs-windmill-dark">Windmill Dark</a> theme by Alexandre ZANNI (noraj).</p>
+</footer>
+
+</body>
+</html>

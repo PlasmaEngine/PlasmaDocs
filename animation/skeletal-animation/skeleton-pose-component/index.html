@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="author" content="PlasmaDev">
+    <link rel="canonical" href="https://plasmaengine.github.io/PlasmaDocs/animation/skeletal-animation/skeleton-pose-component/">
+    <link rel="shortcut icon" href="../../../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Skeleton Pose Component - PlasmaDocs</title>
+    <link href="../../../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../../../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../../../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../../css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../../../js/jquery-3.2.1.min.js"></script>
+    <script src="../../../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../../../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '../../..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "Skeleton Pose Component", url: "#_top", children: [
+              {title: "Component Properties", url: "#component-properties" },
+              {title: "Using Ragdolls for Posing", url: "#using-ragdolls-for-posing" },
+              {title: "See Also", url: "#see-also" },
+          ]},
+        ];
+
+    </script>
+    <script src="../../../js/base.js"></script>
+      <script src="../../../search/main.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../animation-controller/anim-nodes-blackboard/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../animation-controller/anim-nodes-blackboard/" class="btn btn-xs btn-link">
+        Blackboard Nodes
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../skeleton-component/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../skeleton-component/" class="btn btn-xs btn-link">
+        Skeleton Component
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <h1 id="skeleton-pose-component">Skeleton Pose Component</h1>
+<p>The <em>skeleton pose component</em> allows you to assign a custom, static pose to an animated mesh. This can be used for decorative purposes, for instance to place an animated mesh in different poses in your scenes, but it can also be used as a start pose for a mesh that is further animated, for example through <a href="../../physics/jolt/ragdolls/jolt-ragdoll-component.md">ragdoll physics (TODO)</a>.</p>
+<h2 id="component-properties">Component Properties</h2>
+<ul>
+<li>
+<p><code>Skeleton</code>: The <a href="../skeleton-asset/">skeleton</a> for posing.</p>
+</li>
+<li>
+<p><code>Mode</code>: Selects the source for the custom pose.</p>
+</li>
+<li>
+<p><code>Bones</code>: The array of bones and their current values. Through the UI you can modify bone rotations or reset them to their default by clicking the 'x' button. However, it is more convenient to edit the bones in the 3D viewport. Click the blue property to enable the bone manipulator, then click on one of the joints to select it for editing, as seen in the image above.</p>
+</li>
+</ul>
+<h2 id="using-ragdolls-for-posing">Using Ragdolls for Posing</h2>
+<p>When a pose component and a <a href="../../physics/jolt/ragdolls/jolt-ragdoll-component.md">ragdoll component (TODO)</a> are both present on an animated mesh, the pose component can be used to define the starting pose of the ragdoll (make sure to configure the ragdoll to <em>wait for a pose</em> before it starts simulating).</p>
+<p>Additionally, when you <a href="../../../editor/run-scene/">simulate a scene</a> in editor, you can <a href="../../../editor/run-scene/#keep-simulation-changes">save the result of a ragdoll simulation</a> in a pose component:</p>
+<p>Place your ragdoll, make sure a pose component is attached, simulate the scene and then, while the simulation is still running, make sure your ragdoll is selected and press <code>K</code> (or <em>Scene &gt; Utilities &gt; Keep Simulation Changes</em>). Once you stop the simulation, the pose component gets updated to mimic the pose that the ragdoll was in.</p>
+<p>You can then adjust individual limbs and repeat the process with a new starting pose for the ragdoll, until you are happy with the result. You can also remove the ragdoll component afterwards.</p>
+<h2 id="see-also">See Also</h2>
+<ul>
+<li><a href="../skeletal-animation-overview/">Skeletal Animations</a></li>
+<li><a href="../animated-mesh-component/">Animated Mesh Component</a></li>
+<li><a href="../../physics/jolt/ragdolls/jolt-ragdoll-component.md">Ragdoll Component (TODO)</a></li>
+</ul>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../animation-controller/anim-nodes-blackboard/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../animation-controller/anim-nodes-blackboard/" class="btn btn-xs btn-link">
+        Blackboard Nodes
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../skeleton-component/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../skeleton-component/" class="btn btn-xs btn-link">
+        Skeleton Component
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="col-md-12 wm-page-content">
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/noraj/mkdocs-windmill-dark">Windmill Dark</a> theme by Alexandre ZANNI (noraj).</p>
+</footer>
+
+</body>
+</html>

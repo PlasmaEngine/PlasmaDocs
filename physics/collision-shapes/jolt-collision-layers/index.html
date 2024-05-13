@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="author" content="PlasmaDev">
+    <link rel="canonical" href="https://plasmaengine.github.io/PlasmaDocs/physics/collision-shapes/jolt-collision-layers/">
+    <link rel="shortcut icon" href="../../../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Jolt Collision Layers - PlasmaDocs</title>
+    <link href="../../../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../../../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../../../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../../css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../../../js/jquery-3.2.1.min.js"></script>
+    <script src="../../../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../../../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '../../..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "Jolt Collision Layers", url: "#_top", children: [
+              {title: "Collision Layer Matrix", url: "#collision-layer-matrix" },
+              {title: "Physics Actors and Shapes", url: "#physics-actors-and-shapes" },
+              {title: "Raycasts and Shape Queries", url: "#raycasts-and-shape-queries" },
+              {title: "See Also", url: "#see-also" },
+          ]},
+        ];
+
+    </script>
+    <script src="../../../js/base.js"></script>
+      <script src="../../../search/main.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../jolt-collision-meshes/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../jolt-collision-meshes/" class="btn btn-xs btn-link">
+        Jolt Collision Meshes
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../jolt-capsule-shape-component/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../jolt-capsule-shape-component/" class="btn btn-xs btn-link">
+        Jolt Capsule Shape Component
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <h1 id="jolt-collision-layers">Jolt Collision Layers</h1>
+<p><em>Collision layers</em> are a concept used by physics engines to decide which objects should collide with which other objects. For instance, a box thrown into a scene should obviously collide with the scene geometry. There may, however, be things that it should not collide with. For example, you may have triggers that should only be triggered by the player or NPCs, but not by other objects. Collision layers can be used to solve this problem.</p>
+<h2 id="collision-layer-matrix">Collision Layer Matrix</h2>
+<p>Collision layers are evaluated by the physics engine and are therefore the fastest method to reject collisions. Filtering out objects that entered a trigger could be done on a higher level, but having the physics engine filter them out early is best for performance.</p>
+<p>Due to this, there is a limit of 32 available collision layers. If you require more, you need to rethink your setup and maybe use other methods to handle certain cases.</p>
+<p>Each layer can be set to collide or not collide with each other layer. Consequently, the available combinations form a matrix of 32x32 entries. Each entry is either enabled or disabled. The matrix is mirrored along the diagonal. If layer <code>A</code> is set to collide with layer <code>B</code>, then of course layer <code>B</code> has to be set to collide with layer <code>A</code>.</p>
+<p>For convenience, in the editor you can give a name to each layer. The name is irrelevant at runtime, though.</p>
+<p>Under <em>Project &gt; Plugin Settings &gt; Jolt Project Settings...</em> you can configure the Jolt collision layers, as seen above.</p>
+<h2 id="physics-actors-and-shapes">Physics Actors and Shapes</h2>
+<p>The collision layer is specified on each actor. All the shapes of a physics actor are in the same collision layer. When two shapes overlap, the physics engine will check their collision layers. If the pair of layers is configured to collide, the two shapes will interact. Otherwise they will pass right through each other.</p>
+<h2 id="raycasts-and-shape-queries">Raycasts and Shape Queries</h2>
+<p>When doing a raycast or other shape query, you also need to provide a collision layer to determine with which physics shapes the ray should collide. Therefore you often need additional collision layers to implement common operations. For example, you may need a layer to handle 'visibility checks'. Those rays should pass through transparent objects, as glass windows should not block the AI from seeing the player. On the other hand, if you want to 'interact' with the scene, you need a different collision layer, one that would not pass through transparent objects but maybe ignore other types of objects. Combinations can quickly add up and therefore you must consider very carefully what filtering must be done by the physics engine already, and what additional filtering could be done in your own code.</p>
+<p>However, in raycasts and shape queries you can additionally provide other options, for instance to ignore all dynamic or character objects. Therefore, not all filtering functionality has to be exclusively achieved through collision layers.</p>
+<h2 id="see-also">See Also</h2>
+<ul>
+<li><a href="../../jolt-overview/">Jolt Integration</a></li>
+<li><a href="../jolt-collision-meshes/">Jolt Collision Meshes</a></li>
+</ul>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../jolt-collision-meshes/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../jolt-collision-meshes/" class="btn btn-xs btn-link">
+        Jolt Collision Meshes
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../jolt-capsule-shape-component/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../jolt-capsule-shape-component/" class="btn btn-xs btn-link">
+        Jolt Capsule Shape Component
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="col-md-12 wm-page-content">
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/noraj/mkdocs-windmill-dark">Windmill Dark</a> theme by Alexandre ZANNI (noraj).</p>
+</footer>
+
+</body>
+</html>

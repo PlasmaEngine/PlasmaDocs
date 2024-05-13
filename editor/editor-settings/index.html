@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="author" content="PlasmaDev">
+    <link rel="canonical" href="https://plasmaengine.github.io/PlasmaDocs/editor/editor-settings/">
+    <link rel="shortcut icon" href="../../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Editor Settings - PlasmaDocs</title>
+    <link href="../../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../../js/jquery-3.2.1.min.js"></script>
+    <script src="../../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '../..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "Editor Settings", url: "#_top", children: [
+              {title: "Preferences", url: "#preferences" },
+              {title: "Shortcuts", url: "#shortcuts" },
+              {title: "See Also", url: "#see-also" },
+          ]},
+        ];
+
+    </script>
+    <script src="../../js/base.js"></script>
+      <script src="../../search/main.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../editor-template-documents/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../editor-template-documents/" class="btn btn-xs btn-link">
+        Template Documents
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../editor-plugins/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../editor-plugins/" class="btn btn-xs btn-link">
+        Editor Plugins
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <h1 id="editor-settings">Editor Settings</h1>
+<p>Editor settings are user specific and independent of projects. They are stored in a OS user folder and thus are not checked into source control.</p>
+<h2 id="preferences">Preferences</h2>
+<p>Preferences are user specific editor settings. Preferences may affect the entire editor application, only a certain <a href="../projects/projects-overview.md">project</a>, or even just a single <a href="../editor-documents/">document</a>.</p>
+<p><img alt="Preferences" src="../media/editor-preferences.png" /></p>
+<p>The list on the left lists all the available preferences. Items prefixed with <code>Application:</code> affect the general editor, no matter which project is open. Items prefixed with <code>Project:</code> are specific to the currently open project and can be configured differently for other projects. Per-document preferences only show up while a document is open.</p>
+<h3 id="application-general">Application: General</h3>
+<ul>
+<li>
+<p><strong>RestoreProjectOnStartup:</strong> If enabled, the editor will load the project that was open the last time.</p>
+</li>
+<li>
+<p><strong>ShowSpashscreen:</strong> Disable this to not have a splashscreen show up every time the editor starts.</p>
+</li>
+<li>
+<p><strong>BackgroundAssetProcessing:</strong> If set, background <a href="../../assets/assets-overview/">assets processing</a> will be activated by default, when you open a project.</p>
+</li>
+<li>
+<p><strong>FieldOfView:</strong> The FOV of the generic editor camera.</p>
+</li>
+<li>
+<p><strong>GizmoScale:</strong> Allows you to change the size of the editor gizmos.</p>
+</li>
+<li>
+<p><strong>ShowInDevelopmentFeatures:</strong> Some features (mainly <a href="../../runtime/world/components/">components</a>) are hidden by default from menus. That's because those features are not considered ready to be used productively. If you do want to try them out regardless, check this option for them to show up.</p>
+</li>
+<li>
+<p><strong>UsePrecompiledTools:</strong> If enabled, the editor will prefer to use the tools under <code>Data\Tools\Precompiled</code>, rather than the ones from its own binary directory. The precompiled tools are built with maximum optimizations and are therefore typically faster, however, they only get updated infrequently and may not have all the latest features and bugfixes.</p>
+</li>
+<li>
+<p><strong>ExpandSceneTreeOnSelection:</strong> If enabled, selecting an object in a scene will automatically expand the corresponding item in the scene tree view. If disabled, the scene tree will not change on selection from the viewport, and jumping to the selected tree item has to be done manually using <code>CTRL+T</code>.</p>
+</li>
+<li>
+<p><strong>ClearEditorLogsOnPlay:</strong> If enabled, the engine log gets cleared every time you <a href="../run-scene/">run a scene</a>.</p>
+</li>
+<li>
+<p><strong>Engine View Light Settings:</strong> Many <a href="../../assets/assets-overview/">assets</a> have 3D previews that require lighting. These are the lighting settings to use.</p>
+</li>
+</ul>
+<h2 id="shortcuts">Shortcuts</h2>
+<p><em>Editor &gt; Editor Settings &gt; Shortcuts...</em> opens a dialog to configure the shortcuts.</p>
+<p><img alt="Preferences" src="../media/editor-shortcuts.png" /></p>
+<h2 id="see-also">See Also</h2>
+<ul>
+<li><a href="../projects/project-settings.md">Project Settings</a></li>
+</ul>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../editor-template-documents/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../editor-template-documents/" class="btn btn-xs btn-link">
+        Template Documents
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../editor-plugins/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../editor-plugins/" class="btn btn-xs btn-link">
+        Editor Plugins
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="col-md-12 wm-page-content">
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/noraj/mkdocs-windmill-dark">Windmill Dark</a> theme by Alexandre ZANNI (noraj).</p>
+</footer>
+
+</body>
+</html>

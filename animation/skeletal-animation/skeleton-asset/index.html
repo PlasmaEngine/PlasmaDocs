@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="author" content="PlasmaDev">
+    <link rel="canonical" href="https://plasmaengine.github.io/PlasmaDocs/animation/skeletal-animation/skeleton-asset/">
+    <link rel="shortcut icon" href="../../../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Skeleton Asset - PlasmaDocs</title>
+    <link href="../../../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../../../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../../../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../../css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../../../js/jquery-3.2.1.min.js"></script>
+    <script src="../../../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../../../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '../../..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "Skeleton Asset", url: "#_top", children: [
+              {title: "Asset Properties", url: "#asset-properties" },
+              {title: "See Also", url: "#see-also" },
+          ]},
+        ];
+
+    </script>
+    <script src="../../../js/base.js"></script>
+      <script src="../../../search/main.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../skeleton-component/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../skeleton-component/" class="btn btn-xs btn-link">
+        Skeleton Component
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../skeletal-animation-overview/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../skeletal-animation-overview/" class="btn btn-xs btn-link">
+        Skeletal Animations
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <h1 id="skeleton-asset">Skeleton Asset</h1>
+<p>The main function of the <em>Skeleton asset</em> is to store information about the bone hierarchy in an <a href="../animated-mesh-asset/">animated mesh</a>. Here you adjust the overall scale and rotation of imported animated meshes.</p>
+<p><img alt="Skeleton Asset" src="../../media/skeleton-asset.jpg" /></p>
+<p>In the future the skeleton asset will also be used to define physics shapes for bones for collision detection and ragdolls. This is currently not yet implemented, though.</p>
+<h2 id="asset-properties">Asset Properties</h2>
+<ul>
+<li>
+<p><code>File</code>: The file from which to import the skeleton information. This is typically the same file as in the <a href="../animated-mesh-asset/">animated mesh asset</a>.</p>
+</li>
+<li>
+<p><code>RightDir</code>, <code>UpDir</code>, <code>FlipForwardDir</code>: These properties are the same as on the <a href="../../../graphics/meshes/mesh-asset/#asset-properties">mesh asset</a>. Depending on how the mesh was exported, you may need to adjust these to have the skeleton (and every mesh that uses this skeleton) stand upright and look into the correct direction.</p>
+</li>
+</ul>
+<p>In Blender it is common to model meshes such that they face the user when the front view is active (<code>Numpad 1</code>):</p>
+<p><img alt="Typical orientation in Blender" src="../../media/blender-orientation.png" /></p>
+<p>With such an orientation the <em>right</em> side of the model points into the <em>-X</em> direction. The <em>+Z</em> axis corresponds to the <em>up</em> direction and the model looks into the <em>+Y</em> direction. When you export such a model to GLTF/GLB, you can keep this convention (<em>Y up</em> disabled in the export settings) or you can export it in the more common convention of using +Y as the <em>up</em> axis (<em>Y up</em> enabled). Both conventions can be mapped to PLASMA's preferred convention like so:</p>
+<p>For GLB files exported from Blender with <em>Y up</em> use:
+  * <code>RightDir</code> = <code>Negative X</code>
+  * <code>UpDir</code> = <code>Positive Y</code>
+  * <code>FlipForward</code> = <code>off</code></p>
+<p>For GLB files exported from Blender with <em>Z up</em> use:
+  * <code>RightDir</code> = <code>Negative X</code>
+  * <code>UpDir</code> = <code>Positive Z</code>
+  * <code>FlipForward</code> = <code>off</code></p>
+<p>Note that inPlasmathe convention is that models look along the <strong>+X</strong> axis. Every component (such as AI) assumes that moving along the +X axis will move the mesh <em>forward</em>, moving along +Y moves it to the <em>right</em> and moving along +Z moves it <em>upwards</em>. It is therefore best to import all meshes this way right away.</p>
+<ul>
+<li>
+<p><code>UniformScale</code>: The overall size of the skeleton. Use this if you need to adjust from centimeters to meters.</p>
+</li>
+<li>
+<p><code>BoneDirection</code>: This setting only affects the visualization of the skeleton. It has no effect on the actual mesh skinning. It is used to tell the visualizer which cardinal direction the bones should point into. You only need to change this setting, if the skeleton visualization looks all wrong (all lines point into weird directions). You need to <em>transform</em> the asset to apply the change. Just try all options until it looks right.</p>
+</li>
+</ul>
+<h2 id="see-also">See Also</h2>
+<ul>
+<li><a href="../skeletal-animation-overview/">Skeletal Animations</a></li>
+<li><a href="../animated-mesh-asset/">Animated Mesh Asset</a></li>
+<li><a href="../skeleton-component/">Skeleton Component</a></li>
+</ul>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../skeleton-component/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../skeleton-component/" class="btn btn-xs btn-link">
+        Skeleton Component
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../skeletal-animation-overview/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../skeletal-animation-overview/" class="btn btn-xs btn-link">
+        Skeletal Animations
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="col-md-12 wm-page-content">
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/noraj/mkdocs-windmill-dark">Windmill Dark</a> theme by Alexandre ZANNI (noraj).</p>
+</footer>
+
+</body>
+</html>

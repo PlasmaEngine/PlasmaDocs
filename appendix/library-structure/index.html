@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="author" content="PlasmaDev">
+    <link rel="canonical" href="https://plasmaengine.github.io/PlasmaDocs/appendix/library-structure/">
+    <link rel="shortcut icon" href="../../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Library Structure - PlasmaDocs</title>
+    <link href="../../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../../js/jquery-3.2.1.min.js"></script>
+    <script src="../../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '../..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "Library Structure", url: "#_top", children: [
+              {title: "Library Overview: Foundation", url: "#library-overview-foundation" },
+              {title: "Library Overview: Core", url: "#library-overview-core" },
+              {title: "Library Overview: GameEngine", url: "#library-overview-gameengine" },
+              {title: "Library Overview: Texture", url: "#library-overview-texture" },
+              {title: "Library Overview: Utilities", url: "#library-overview-utilities" },
+              {title: "See Also", url: "#see-also" },
+          ]},
+        ];
+
+    </script>
+    <script src="../../js/base.js"></script>
+      <script src="../../search/main.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../string-formatting/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../string-formatting/" class="btn btn-xs btn-link">
+        String Formatting
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../container-usage/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../container-usage/" class="btn btn-xs btn-link">
+        Container Usage Guidelines
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <h1 id="library-structure">Library Structure</h1>
+<p>This document gives an overview of the functionality that Plasma Engine provides and how the most important libraries are structured.</p>
+<p>Plasma Engine is divided into multiple libraries that provide different functionality.</p>
+<p>The most basic and also largest library is <strong>Foundation</strong>. It contains all the basic functionality on which the rest of the engine is built. <strong>Foundation</strong> is meant to be application agnostic. All its features can be used in any kind of application. Most of the platform abstractions are implemented here.</p>
+<p>Foundation itself only depends on various third-party libraries.</p>
+<p>The <strong>Core</strong> library is built on top of Foundation. This library contains engine specific features, such as the Game Object system. <strong>Core</strong> is where most of the actual engine infrastructure is implemented.</p>
+<p><strong>System</strong> is the library that is supposed to contain all the high-level platform specific code that might be difficult to abstract. Currently this mostly contains window creation code.</p>
+<p>The <strong>TestFramework</strong> library implements code to manage our unit-tests. You can ignore this entirely.</p>
+<p><strong>GameEngine</strong> builds on top of all the other libraries, including the rendering code. It contains the most high-level code for a game engine, such as AI and Animation, <a href="../../runtime/application/application/">plGameApplication (TODO)</a> and <a href="../../runtime/application/game-state/">plGameState</a>, which are the basis for any game application built with Plasma, the prefab system, the visual scripting and much more.</p>
+<p>In general the most interesting libraries to look at are <strong>Foundation</strong>, <strong>Core</strong> and <strong>GameEngine</strong>.</p>
+<h2 id="library-overview-foundation">Library Overview: Foundation</h2>
+<p>The Foundation library contains all the 'low-level' code that is used throughout the engine.</p>
+<p>In <strong>Foundation\Containers</strong> you will find different types of container classes. These are heavily influenced by the STL, so a lot might look familiar. The most interesting class one should have a look at is <code>plHybridArray</code>.</p>
+<p>In <strong>Foundation\Strings</strong> you will find all the string classes and utilities. Plasma Engine works with Utf-8 strings everywhere, which makes some things a bit more complicated, but these string classes make it pretty easy. There are utility classes to work with raw C strings and higher-level string classes to create and store strings efficiently.</p>
+<p>In <strong>Foundation\Math</strong> you will find lots of math classes, e.g. classes to do vector arithmetic (<code>plVec3</code>, <code>plMat4</code>, <code>plQuat</code>, <code>plPlane</code>, etc.), classes to work with colors (<code>plColor</code>, <code>plColorGammaUB</code>, <code>plColorLinear16f</code>), classes to work with bounding volumes (<code>plBoundingBox</code>, <code>plBoundingSphere</code>) and do culling (<code>plFrustum</code>), utility functions for intersection tests (<code>plIntersectionUtils</code>) and a class to work with angles efficiently (<code>plAngle</code>). There is even an implementation for a fixed point type (<code>plFixedPoint</code>).</p>
+<p>In <strong>Foundation\Time</strong> you will find <code>plTime</code>, which handles simple time values. Using <code>plTime::Now()</code> you can access the current application time. To handle game time (e.g. for slow-motion, etc.) use <code>plClock</code>. For profiling or timing <code>plStopwatch</code> is available. And finally for system-independent timestamps, which might be useful when working with file modification times, <code>plTimestamp</code> and <code>plDateTime</code> are provided.</p>
+<p>In <strong>Foundation\Threading</strong> you will find functionality that is useful for threading. <code>plAtomicInteger</code> provides lock-free integer values. <code>plLock</code> and <code>plMutex</code> implement the standard mechanisms for working with critical sections. <code>plThread</code> is a platform independent implementation for threads and <code>plThreadSignal</code> allows to send signals to other threads. <code>plThreadUtils</code> provides some of the low-level threading functions, such as <code>plThreadUtils::Sleep()</code>.
+However, before you go ahead and create your own threads, you should have a look at <code>plTaskSystem</code>, which is a thread-pool implementation that efficiently distributes tasks across multiple worker threads. It supports dependencies across tasks, different priorities, waiting/blocking for unfinished tasks, task canceling and load-balancing when tasks run over multiple frames. There should be only very few situations where a task is not good enough and a custom thread is necessary.</p>
+<p>In <strong>Foundation\Logging</strong> you will find <code>plLog</code>, the central class to output log information. There are various ways logging information can be output. <code>plLogWriter::HTML</code> allows to write the data to an HTML file, <code>plLogWriter::Console</code> and <code>plLogWriter::VisualStudio</code> output the data to different console windows. Additionally the <a href="../../tools/inspector/">plInspector</a> tool will display all logged data as well. The logging system is extremely useful to get an insight into what your application is doing and what might be going wrong, so we suggest setting this up early and using it to log most of what your application is doing.</p>
+<p>In <strong>Foundation\Algorithm</strong> you will find some useful algorithms, mostly for sorting, searching and hashing.</p>
+<p>In <strong>Foundation\Basics</strong> you can find a lot of platform specific code, most of which might not be very interesting. You will also find <code>PLASMA_ASSERT</code> which you should be using frequently.</p>
+<p>In <strong>Foundation\Basics\Types</strong> you will find some fundamental types that are used frequently in Plasma. <code>plDelegate</code> is often used for callbacks. <code>plEnum</code> is used for type-safe enum types and <code>plBitflags</code> is used for type-safe and easy to use bitflags. <code>plArrayPtr</code> is a 'fat pointer' that stores the start and length of an array. Finally <code>plVariant</code> is a type that can store different types of data (float, int, string, vector, etc.) and knows which type it has stored. It can do conversions between related types and is often used in message passing.</p>
+<p>In <strong>Foundation\CodeUtils</strong> you can find utilities to work with code or text, such as <code>plTokenizer</code>. You will also find a full implementation of a C preprocessor (<code>plPreprocessor</code>).</p>
+<p>In <strong>Foundation\Communication</strong> you can find functionality to communicate with other code. <code>plEvent</code> is a frequently used class to raise events and thus inform other code of changes. <code>plMessage</code> is used for message passing, which is quite often used with the game object system (which you will find in the <strong>Core</strong> library). <code>plTelemetry</code> is a system to broadcast information from the running application to other applications, usually tools for introspection, such as <a href="../../tools/inspector/">plInspector</a>.</p>
+<p>In <strong>Foundation\Configuration</strong> you will find tools to configure the application. <code>plStartup</code> is a system to (de-)initialize different subsystems in your code in the right order. <code>plPlugin</code> is used when you want to extend your application using plugin DLLs dynamically at runtime. <code>plStartup</code> helps with this as well.
+<code>plCVar</code> is a 'configuration variable' that allows to easily change the state of the running application. Its state can be stored on disk and it can be modified either through an <code>plConsole</code> or remotely through plInspector. This allows to have lots of 'debug modes' that can be enabled on demand without recompilation or complicated integration into the input handling.</p>
+<p>In <strong>Foundation\Utilities</strong> you will find some utility functionality, such as <code>plCommandLineUtils</code> for command-line argument parsing, <code>plConversionUtils</code> for string / number conversions and <code>plStats</code> for broadcasting the state of some internal code, which is useful for debugging game code.</p>
+<p>In <strong>Foundation\IO</strong> you will find lots of functionality for reading and writing data.</p>
+<p><code>plStreamReader</code> and <code>plStreamWriter</code> are the interfaces for all IO operations. Derived from these classes you will find <code>plMemoryStreamReader</code> / <code>plMemoryStreamWriter</code> for working with data in-memory. <code>plCompressedStreamReaderZstd</code> and <code>plCompressedStreamWriterZstd</code> allow to zip and unzip data and <code>plChunkStreamWriter</code> / <code>plChunkStreamReader</code> implement a 'chunked' format that can be used for building file formats that another application may not fully understand.</p>
+<p><code>plOSFile</code> is the low-level file abstraction, in most cases you should not need to work with this. Instead prefer <a href="../../runtime/filesystem/">plFileSystem</a> which adds functionality for virtual file systems through mount points. For example a compressed file or a remote folder may be mounted as a read-only directory. <code>plFileSystem</code> is the central class to manage file accesses, but to actually read or write a file, use <code>plFileReader</code> and <code>plFileWriter</code>, which also implement the <code>plStream*</code> interface.</p>
+<p>To store data in a structured way, <code>plJSONWriter</code> and <code>plOpenDdlWriter</code> are provided. For convenient retrieval <code>plJSONReader</code> and <code>plOpenDdlReader</code> are available. For less convenient but more flexible and efficient JSON/<a href="http://openddl.org/">OpenDDL</a> reading you can also use <code>plJSONParser</code> or <code>plOpenDdlParser</code>.</p>
+<p>In <strong>Foundation\Reflection</strong> you will find the reflection system of Plasma Engine. This is used by the game objects and some other high-level code for object type identification and properties. This may be used for scripting, for setting up objects from configuration files and for editors. Most notable classes are <code>plRTTI</code> and <code>plReflectedClass</code>.</p>
+<h2 id="library-overview-core">Library Overview: Core</h2>
+<p>In <strong>Core</strong> you will find the core engine infrastructure.</p>
+<p>In <strong>Core\Application</strong> you can find code to more easily set up your application loop in a platform independent way.</p>
+<p>In <strong>Core\Graphics</strong> you will find code commonly needed for doing graphics, such as <code>plCamera</code> for camera controls and <code>plGeometry</code> to create geometric objects.</p>
+<p>In <strong>Core\Input</strong> you will find <code>plInputManager</code> which can be used for retrieving input from various different devices, e.g. mouse, keyboard, gamepad or virtual thumbstick. The system is easily extensible to include custom devices.</p>
+<p>In <strong>Core\ResourceManager</strong> you will find the static class <code>plResourceManager</code> which is the central class for resource loading (e.g. textures, shaders, etc.). For implementing custom resource types you need to derive from <code>plResource</code> and for customizing the loading procedure you may need to implement a custom <code>plResourceTypeLoader</code>. All resources are referenced through <code>plResourceHandle</code> types, which implement reference counting.</p>
+<p>In <strong>Core\Scripting</strong> you can find <code>plLuaWrapper</code> that allows to easily work with Lua scripts.</p>
+<p>In <strong>Core\World</strong> you will find the game object system. <code>plGameObject</code> is the class to use to manage entities, <code>plComponent</code> is the base component class that allows to implement and attach components to your entities. All entities belong to an instance of <code>plWorld</code>, which represents your scene graph.</p>
+<h2 id="library-overview-gameengine">Library Overview: GameEngine</h2>
+<p>In <strong>GameEngine</strong> you will find all the high-level code needed in a game engine.</p>
+<p><strong>GameEngine\Console</strong> contains code for a Quake-like in-game console that can be used for changing the game configuration (through <code>plCVar</code> or custom functions) and to see the <code>plLog</code> output.</p>
+<p><strong>GameEngine\GameApplication</strong> contains <a href="../../runtime/application/application/">plGameApplication (TODO)</a>, which extends <code>plApplication</code> with higher-level, more game specific functionality. This is one of the most important high-level classes to look at and extend when writing your own, stand-alone game application (assuming you can't do so with <code>plGameState</code> alone).</p>
+<p>In <strong>GameEngine\GameState</strong> you find <a href="../../runtime/application/game-state/">plGameState</a>, which is the most important class to extend when writing your own game code, especially if you want to be able to run your code within the editor.</p>
+<p><strong>GameEngine\Interfaces</strong> contains various interface definitions for instance for basic interactions with physics and audio engines.</p>
+<p><strong>GameEngine\Prefabs</strong> contains the code to work with prefabs.</p>
+<h2 id="library-overview-texture">Library Overview: Texture</h2>
+<p>In <strong>Texture</strong> you will find various things related to working with images and textures.</p>
+<p>In <strong>Texture\Image</strong> you will find <code>plImage</code> which can be used to read, write and convert images from various formats.</p>
+<h2 id="library-overview-utilities">Library Overview: Utilities</h2>
+<p>In <strong>Utilities</strong> you will find various different things that may be useful, but are not used by the general engine runtime. They may be used by some tool or by a sample game, though.</p>
+<p><strong>Utilities\DataStructures</strong> contains data structures that are too engine specific. Here you will find things such as octree and quadtree implementations (<code>plDynamicOctree</code>).</p>
+<p><strong>Utilities\GridAlgorithms</strong> contains functionality to rasterize circles and lines into grids. This can be extremely useful for 2D top down games, like strategy games, to do line-of-sight computations and such.</p>
+<p><strong>Utilities\PathFinding</strong> contains functionality to do path searches on graphs and simple nav-mesh generation for 2D grids.</p>
+<h2 id="see-also">See Also</h2>
+<ul>
+<li><a href="../../samples/samples-overview.md">Samples</a></li>
+</ul>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../string-formatting/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../string-formatting/" class="btn btn-xs btn-link">
+        String Formatting
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../container-usage/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../container-usage/" class="btn btn-xs btn-link">
+        Container Usage Guidelines
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="col-md-12 wm-page-content">
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/noraj/mkdocs-windmill-dark">Windmill Dark</a> theme by Alexandre ZANNI (noraj).</p>
+</footer>
+
+</body>
+</html>

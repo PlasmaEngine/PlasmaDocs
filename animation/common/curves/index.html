@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="author" content="PlasmaDev">
+    <link rel="canonical" href="https://plasmaengine.github.io/PlasmaDocs/animation/common/curves/">
+    <link rel="shortcut icon" href="../../../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Curves - PlasmaDocs</title>
+    <link href="../../../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../../../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../../../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../../css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../../../js/jquery-3.2.1.min.js"></script>
+    <script src="../../../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../../../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '../../..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "Curves", url: "#_top", children: [
+              {title: "Curve Editor", url: "#curve-editor" },
+              {title: "See Also", url: "#see-also" },
+          ]},
+        ];
+
+    </script>
+    <script src="../../../js/base.js"></script>
+      <script src="../../../search/main.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../../property-animation/color-animation-component/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../../property-animation/color-animation-component/" class="btn btn-xs btn-link">
+        Color Animation Component
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../color-gradients/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../color-gradients/" class="btn btn-xs btn-link">
+        Color Gradients
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <h1 id="curves">Curves</h1>
+<p><em>Curves</em> are used to animate properties. They are typically set up once and shared across many assets, such as <a href="../../../effects/particle-effects/particle-effects-overview/">particle effects</a>. Modifying a curve will affect all resources that use it. Therefore it is advisable to create common curves early during development.</p>
+<p>The curve can be sampled along the X-axis. This is frequently used to sample a value over time, but other parameters may be used for the lookup as well. If a curve is supposed to be used in a looping fashion, the first and last control point have to be set up to match.</p>
+<h2 id="curve-editor">Curve Editor</h2>
+<p><img alt="Curve Editor" src="../../media/curve-editor.png" /></p>
+<p>To add a control point, <strong>double click</strong> where you want to insert one.</p>
+<h3 id="view">View</h3>
+<ul>
+<li><em>Right click and drag</em> to pan the view.</li>
+<li>Use the <em>mouse wheel</em> to zoom in and out.</li>
+<li>Hold <code>Shift</code> or <code>Ctrl</code> to zoom the view only along the X axis or the Y axis.</li>
+<li>Press <code>Ctrl + F</code> or select <em>Frame</em> from the context menu to frame the view either on the selected control points, or the entire curve, when no point is selected.</li>
+</ul>
+<h3 id="selection">Selection</h3>
+<ul>
+<li><em>Left click</em> a point to select it.</li>
+<li>Press <code>ESC</code> to clear any selection.</li>
+<li><em>Drag a rectangle</em> to select multiple points.</li>
+<li>Holding <code>Shift</code> always <em>adds</em> points to the selection.</li>
+<li>Holding <code>Alt</code> always <em>removes</em> points from the selection.</li>
+<li>Holding <code>Ctrl</code> <em>toggles</em> the selection of a control point.</li>
+<li>Distinguishing between <em>add</em> and <em>remove</em> is particularly useful when changing the selection by dragging a rectangle.</li>
+</ul>
+<p><img alt="Curve Editor Selection" src="../../media/curve-editor-selection.png" /></p>
+<ul>
+<li>Left click and drag selected points to move them around.</li>
+<li>Press <code>Shift</code> <em>after you started dragging</em>, to limit modifications to either left/right or up/down. The axis along which you moved the control points the most, before you pressed <code>Shift</code>, determines which axis gets limited.</li>
+<li>Drag the handles at the edges of the selection rect, to scale the selected points.</li>
+</ul>
+<h3 id="tangents">Tangents</h3>
+<p>Every control point has two tangents to determine the slope of the curve coming from the left into the point and going out to the right of the point. Each tangent can use one of four modes. Some modes are fully automatic, some allow you to edit the tangents. To not clutter the UI, tangents that can be edited are only shown for selected control points. To change the mode, select a control point, open the context menu and choose from <em>Left/Right/Both Tangents &gt; ...</em>.</p>
+<ul>
+<li><strong>Auto:</strong> The default mode. Automatically configures the tangents to create a smooth curve.</li>
+<li><strong>Bplier:</strong> Gives you full control over the tangents. Both slope and length of the tangents will affect the curve.</li>
+<li><strong>Fixed Length:</strong> Although you can change both slope and length of the tangents, only the slope affects the curve. This is often easier to use than <em>Bplier</em>.</li>
+<li><strong>Linear:</strong> This mode deactivates any curvature. Allows you to make hard corners.</li>
+</ul>
+<h4 id="link-break-tangents">Link / Break Tangents</h4>
+<p>By default adjusting one tangent at a control point, mirrors the change over to the other tangent. That's because the two tangents are <em>linked</em>. If you want the tangents to be independent of each other, you can <em>break</em> the link between the tangents. Use the context menu to do so.</p>
+<h3 id="looping-curves">Looping Curves</h3>
+<p>The rightmost control point determines the overall length of the curve. As you can see, the editor repeats the display of the curve at that point, overlayed with a grey pattern. This enables you to see how the curve would look when used in a looping fashion.</p>
+<p>To make a curve loop nicely, open the context menu and select <em>Curve &gt; Loop: Adjust First/Last Point</em>. This will modify either the first or the last control point in the curve to match up with the respective other point. Make sure that the two control points use the same <em>tangent mode</em>. You may need to switch to <em>Bplier</em> or <em>Fixed Length</em> tangents to make the curvature match perfectly.</p>
+<h3 id="curve-presets">Curve Presets</h3>
+<p>In the context menu under <em>Presets</em> you will find a number of presets for commonly used curves. You can also save the current curve as a <strong>preset</strong>. You can save presets anywhere, but as long as you save it under the path <em>Editor/Presets/Curves</em> (in any <a href="../../projects/data-directories.md">data directory</a>), it will automatically show up in the context menu. You can also use sub-folders to organize presets, as folders will introduce sub-menus.</p>
+<h2 id="see-also">See Also</h2>
+<ul>
+<li><a href="../color-gradients/">Color Gradients</a></li>
+<li><a href="../../property-animation/property-animation-overview/">Property Animation (TODO)</a></li>
+</ul>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../../property-animation/color-animation-component/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../../property-animation/color-animation-component/" class="btn btn-xs btn-link">
+        Color Animation Component
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../color-gradients/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../color-gradients/" class="btn btn-xs btn-link">
+        Color Gradients
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="col-md-12 wm-page-content">
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/noraj/mkdocs-windmill-dark">Windmill Dark</a> theme by Alexandre ZANNI (noraj).</p>
+</footer>
+
+</body>
+</html>

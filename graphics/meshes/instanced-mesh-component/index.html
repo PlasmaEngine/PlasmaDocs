@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="author" content="PlasmaDev">
+    <link rel="canonical" href="https://plasmaengine.github.io/PlasmaDocs/graphics/meshes/instanced-mesh-component/">
+    <link rel="shortcut icon" href="../../../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Instanced Mesh Component - PlasmaDocs</title>
+    <link href="../../../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../../../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../../../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../../css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../../../js/jquery-3.2.1.min.js"></script>
+    <script src="../../../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../../../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '../../..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "Instanced Mesh Component", url: "#_top", children: [
+              {title: "Editing Instances", url: "#editing-instances" },
+              {title: "When and How to Use the Instanced Mesh Component", url: "#when-and-how-to-use-the-instanced-mesh-component" },
+              {title: "Component Properties", url: "#component-properties" },
+              {title: "See Also", url: "#see-also" },
+          ]},
+        ];
+
+    </script>
+    <script src="../../../js/base.js"></script>
+      <script src="../../../search/main.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../mesh-asset/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../mesh-asset/" class="btn btn-xs btn-link">
+        Mesh Asset
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../custom-mesh-component/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../custom-mesh-component/" class="btn btn-xs btn-link">
+        Custom Mesh Component
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <h1 id="instanced-mesh-component">Instanced Mesh Component</h1>
+<p>The <em>instanced mesh component</em> is used to place multiple instances of the same mesh in a scene, with only a single <a href="../../../runtime/world/game-objects/">game object</a>.</p>
+<p><img alt="Instanced Meshes" src="../media/instanced-meshes.jpg" /></p>
+<p>This component is meant for rare special cases where you want to render many mesh instances, but remove the performance overhead of having a dedicated game object for each one.</p>
+<blockquote>
+<p><strong>Important:</strong></p>
+<p>Using the instanced mesh component does not mean, that only this enables the use of <em>instancing</em> on the GPU. The renderer already uses instancing, even for regular <a href="../mesh-component/">mesh components</a>. So you don't need to fear that using non-instanced mesh components would be inefficient for rendering.</p>
+</blockquote>
+<h2 id="editing-instances">Editing Instances</h2>
+<p>The instanced mesh component has an array of items which hold the transform and color for each mesh instance:</p>
+<p><img alt="Instanced Mesh Properties" src="../media/instanced-mesh-component.png" /></p>
+<p>You add instances by extending the array. Click the blue properties of an entry, to make a gizmo appear with which you can transform that instance (see image at the top).</p>
+<p>This workflow is currently not particularly enjoyable. You can't select individual instances through the viewport and you can't use the <a href="../../scenes/gizmos.md">standard gizmos</a> to edit an instance.</p>
+<h2 id="when-and-how-to-use-the-instanced-mesh-component">When and How to Use the Instanced Mesh Component</h2>
+<p>This component is not meant to be used manually. For everything that you edit by hand, the regular <a href="../mesh-component/">mesh component</a> is efficient enough and much more convenient to use.</p>
+<p>This component has been created to be used by runtime code that procedurally places meshes and may create hundreds or thousands of instances of the same mesh. In such a situation it does make a performance difference, whether the engine has to handle a single game object with a single instanced mesh component, or thousands of game objects with equally many regular mesh components.</p>
+<p>Consequently, if you write custom code that places meshes procedurally, you may utilize this component. Be aware though that the instanced mesh component acts as a single object in regards to frustum culling, meaning either <em>all</em> instances are visible or <em>none</em>, but nothing in between. So you should group instances by proximity and use multiple instanced mesh components, if the instances span a large area.</p>
+<h2 id="component-properties">Component Properties</h2>
+<ul>
+<li><code>Mesh</code>: The <a href="../mesh-asset/">mesh asset</a> to render.</li>
+<li><code>MainColor</code>: This color will be combined with the color of each individual mesh instance.</li>
+<li><code>Materials</code>: An array of <a href="../../materials/materials-overview.md">materials</a> to override the default material. Works the same way as for <a href="../mesh-component/">regular mesh components</a>.</li>
+<li><code>InstanceData</code>: An array of instances. Each instance has its own transform and color. Click the blue transform properties to activate a <a href="../../scenes/gizmos.md#manipulators">manipulator</a> for that instance.</li>
+</ul>
+<h2 id="see-also">See Also</h2>
+<ul>
+<li><a href="../meshes-overview/">Meshes</a></li>
+</ul>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../mesh-asset/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../mesh-asset/" class="btn btn-xs btn-link">
+        Mesh Asset
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../custom-mesh-component/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../custom-mesh-component/" class="btn btn-xs btn-link">
+        Custom Mesh Component
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="col-md-12 wm-page-content">
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/noraj/mkdocs-windmill-dark">Windmill Dark</a> theme by Alexandre ZANNI (noraj).</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="author" content="PlasmaDev">
+    <link rel="canonical" href="https://plasmaengine.github.io/PlasmaDocs/assets/assets-overview/">
+    <link rel="shortcut icon" href="../../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Assets - PlasmaDocs</title>
+    <link href="../../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../../js/jquery-3.2.1.min.js"></script>
+    <script src="../../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '../..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "Assets", url: "#_top", children: [
+              {title: "Types of Assets", url: "#types-of-assets" },
+              {title: "Creating Assets", url: "#creating-assets" },
+              {title: "Asset GUID", url: "#asset-guid" },
+              {title: "Asset Browser", url: "#asset-browser" },
+              {title: "Asset Transform", url: "#asset-transform" },
+              {title: "Asset Errors", url: "#asset-errors" },
+              {title: "Asset Profiles", url: "#asset-profiles" },
+              {title: "Assets and Resources", url: "#assets-and-resources" },
+              {title: "See Also", url: "#see-also" },
+          ]},
+        ];
+
+    </script>
+    <script src="../../js/base.js"></script>
+      <script src="../../search/main.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../import-assets/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../import-assets/" class="btn btn-xs btn-link">
+        Asset Import
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../asset-profiles/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../asset-profiles/" class="btn btn-xs btn-link">
+        Asset Profiles
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <h1 id="assets">Assets</h1>
+<p><em>Assets</em> are the most common type of <a href="../../editor/editor-documents/">documents</a> in the editor. Assets represent data that usually comes from some source file (like an image or a model) and must be processed into an optimized format for the engine to use at runtime.</p>
+<p>This processing step is called <strong>asset transformation</strong>. A good example are <a href="../../graphics/textures-overview/">textures</a>. Textures come in many different source formats, such as TGA, JPG, PNG, and so on. Texture data in these formats is not suited to be loaded directly by the engine. Instead, it must be encoded and compressed in formats that GPUs can decode efficiently. This step can be very time consuming and should therefore be done up front. Additionally, textures should contain mipmaps and may need to be downscaled for different platforms. Exactly how a texture should be transformed is something that you may want to have full control over, so you need some way to configure this.</p>
+<p>Therefore, instead of loading a texture directly into the engine, you need to create a texture asset in the editor. This document will reference one or multiple source files and allow you to configure the asset transform. When the asset gets <em>transformed</em> it will output an optimized file that the engine can then load and use efficiently.</p>
+<h2 id="types-of-assets">Types of Assets</h2>
+<p>One can distinguish between two types of assets: Assets that mostly exist to transform existing data from a source format into an optimized format, and assets that represent entirely new data, authored in the editor.</p>
+<p>Examples for the former are <a href="../../graphics/textures-overview/">textures</a>, <a href="../../graphics/meshes/mesh-asset/">meshes</a>, <a href="../physics/jolt/collision-shapes/jolt-collision-meshes.md">collision meshes</a>, <a href="../sound/sound-overview.md">sounds</a> and so on. Their purpose is to ensure that the engine does not need to handle all sorts of source formats, but only optimized runtime formats. Instead, the editor and other tools will deal with the source formats, and allow the user to configure this conversion step.</p>
+<p>Examples for the latter are <a href="../scenes/scene-editing.md">scenes</a>, <a href="../prefabs/prefabs-overview.md">prefabs</a>, <a href="../materials/materials-overview.md">materials</a>, <a href="../../animation/property-animation/property-animation-overview/">property animations (TODO)</a>, <a href="../../animation/common/curves/">curves</a> and so on. Their data does not come from some other file on disk, but is instead built entirely in the editor. However, they still need to be <em>transformed</em> to provide the engine with an optimized format.</p>
+<h2 id="creating-assets">Creating Assets</h2>
+<p>The straight forward way to create an asset document is through the menu <em>Editor &gt; Create Document...</em>. This gives you a blank asset and you can (and must) fill out all properties manually.</p>
+<p>For common types of assets there is a more convenient way to quickly fill out the common properties. See the <a href="../import-assets/">asset import</a> documentation for details.</p>
+<h2 id="asset-guid">Asset GUID</h2>
+<p>The editor references assets not by file path, but by <strong>GUID</strong> (<strong>G</strong>lobally <strong>U</strong>nique <strong>ID</strong>entifier). Each asset is assigned a GUID upon creation and the GUID never changes. That means an asset document can be renamed and moved to a different location on disk, and the editor will continue to find it. Similarly, the engine runtime will also locate the transformed asset files through the asset GUID (the <a href="../../runtime/filesystem/">file system</a> takes care of translating a GUID to an actual path). This makes reorganizing the file structure easy and resilient to errors.</p>
+<p>For the rare case that you need to know the actual GUID of an asset, you can right click any asset document and select <em>Copy Asset GUID</em>.</p>
+<p>The only caveat is, that you should never duplicate an asset by actually copy and pasting an asset file, as this would result in two assets with the same GUID. The editor will try to detect and fix such cases, but it may not work out the way you planned. Instead use the <em>File &gt; Save as...</em> functionality to create a copy of an asset with a different name. This will assign a new asset GUID to the new asset document.</p>
+<h2 id="asset-browser">Asset Browser</h2>
+<p>All assets are listed in the <a href="../asset-browser/">asset browser</a>.</p>
+<h2 id="asset-transform">Asset Transform</h2>
+<p>Asset documents must be <strong>transformed</strong> to produce the actual runtime data that the engine uses. In an open asset document you can either press <code>CTRL+E</code> or click the green arrow button in the toolbar to export (transform) the asset.</p>
+<p>To transform all assets in a project, open the <a href="../asset-browser/">asset browser</a> and click the <strong>Transform All</strong> button there.</p>
+<p>Optionally, you can also enable <a href="../asset-browser/#background-processing-and-transform-state">background asset processing</a>.</p>
+<h2 id="asset-errors">Asset Errors</h2>
+<p>An asset can be in an error state. The most common reason for this is, that it references files or other assets that don't exist (anymore). In this case the asset cannot be transformed correctly and will therefore not produce any new output.</p>
+<p>All erroneous assets are listed in the <a href="../asset-curator/">asset curator</a>. The curator panel will also show error log output for those assets. A common problem is, when you moved an asset document to a new location, you may also need to adjust the path to input files, such as the source texture or model data. Another problem are deleted assets, or missing assets because of a different <a href="../projects/data-directories.md">data directory</a> setup.</p>
+<h2 id="asset-profiles">Asset Profiles</h2>
+<p>Assets can produce different, platform specific output, depending on which platform they are being transformed for. That means a texture may, for example, generate a runtime file that contains full resolution 4K textures for PC, but only limited 1K resolution textures for mobile devices. Such platform specific options can be configured through <a href="../asset-profiles/">asset profiles (TODO)</a>. For some types of assets, such platform specific settings may also be handled externally, for example <a href="../sound/fmod-overview.md">FMOD</a> already deals with platform specific audio encoding on its own.</p>
+<h2 id="assets-and-resources">Assets and Resources</h2>
+<p>The term <em>asset</em> mostly refers to the editor side and the <a href="../../editor/editor-documents/">editor documents</a>. When an asset gets transformed, it generates the data representation for the runtime side. Inside the engine this data will be read into a <em>resource</em> by the <a href="../../runtime/resource-management/">resource manager (TODO)</a>.</p>
+<p>Assets and resources are conceptually two different things. Assets always live on the editor side, resources always on the runtime side. Their code is strictly separate. Resources can be loaded from files or procedurally generated at runtime. The files that they load can come from anywhere and there is no requirement that those files are created through assets. However, assets are the most common and most convenient way to generate the runtime data. You could replace the entire asset management system with a custom system, though. The editor may be the most convenient way to transform assets from source format to runtime format for most scenarios, but if you have a special use case, you could built a completely custom asset processing pipeline and ignore the editor entirely, there is no 'secret sauce' in the editor that is required to make the runtime work.</p>
+<p>Consequently, when the documentation mentions 'assets', it always refers the data and behavior in the editor, and when it mentions 'resources' it always refers to data that is used by the runtime side (the renderer, the physics engine, the game logic, etc). When you work with the editor, the two code paths are even separated into different processes: <code>Editor.exe</code> and <code>EditorEngineProcess.exe</code></p>
+<h2 id="see-also">See Also</h2>
+<ul>
+<li><a href="../../editor/editor-documents/">Editor Documents</a></li>
+<li><a href="../asset-browser/">Asset Browser</a></li>
+<li><a href="../asset-curator/">Asset Curator</a></li>
+<li><a href="../asset-profiles/">Asset Profiles (TODO)</a></li>
+<li><a href="../import-assets/">Asset Import</a></li>
+</ul>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../import-assets/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../import-assets/" class="btn btn-xs btn-link">
+        Asset Import
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../asset-profiles/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../asset-profiles/" class="btn btn-xs btn-link">
+        Asset Profiles
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="col-md-12 wm-page-content">
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/noraj/mkdocs-windmill-dark">Windmill Dark</a> theme by Alexandre ZANNI (noraj).</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="author" content="PlasmaDev">
+    <link rel="canonical" href="https://plasmaengine.github.io/PlasmaDocs/debugging/debug-rendering/">
+    <link rel="shortcut icon" href="../../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Debug Rendering - PlasmaDocs</title>
+    <link href="../../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../../js/jquery-3.2.1.min.js"></script>
+    <script src="../../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '../..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "Debug Rendering", url: "#_top", children: [
+              {title: "Usage", url: "#usage" },
+              {title: "Example", url: "#example" },
+              {title: "Performance Considerations", url: "#performance-considerations" },
+              {title: "See Also", url: "#see-also" },
+          ]},
+        ];
+
+    </script>
+    <script src="../../js/base.js"></script>
+      <script src="../../search/main.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../logging/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../logging/" class="btn btn-xs btn-link">
+        Logging
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../debug-cpp/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../debug-cpp/" class="btn btn-xs btn-link">
+        Debugging C++ Code
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <h1 id="debug-rendering">Debug Rendering</h1>
+<p>The rendering in Plasma is optimized to handle large and complex data efficiently. However, to achieve this you must implement certain patterns, and to get started a non-trivial amount of code is involved. To visualize simple things, the <code>plDebugRenderer</code> is provided. This class allows you to quickly add debug visualizations to your game, with just a few lines of code.</p>
+<p>This interface is also (partially) available through <a href="../../custom-code/typescript/typescript-overview/">TypeScript</a>.</p>
+<p><img alt="Debug rendering" src="../media/debug-rendering.jpg" /></p>
+<h2 id="usage">Usage</h2>
+<p>The <code>plDebugRenderer</code> class has a number of static functions that you can call from any thread and at any time. The debug renderer gathers all requests and renders them at a specific point in the frame. Afterwards all requests are cleared and you must resubmit the same calls in the next frame, if you want it to appear again.</p>
+<h3 id="render-context">Render Context</h3>
+<p>Every function in <code>plDebugRenderer</code> takes an <code>plDebugRendererContext</code> as its first parameter. This specifies where the debug geometry should be rendered. You can either pass in an <code>plViewHandle</code> or an <code>plWorld</code> here. If you pass in a view handle, the geometry will only be rendered in the corresponding <code>plView</code>, meaning you can have the debug geometry only appear in a specific render target. If you pass in an <code>plWorld</code>, the geometry appears in all views that render that world.</p>
+<p>It is more common to bind debug geometry to an entire <code>plWorld</code>, such that it appears in any view. The <a href="../../custom-code/typescript/typescript-overview/">TypeScript</a> binding omits the <code>plDebugRendererContext</code> parameter and always binds it to the world.</p>
+<h3 id="debug-geometry-types">Debug Geometry Types</h3>
+<p>The debug renderer allows you to render arbitrary lines and triangles. For convenience it also provides functions to render a number of common shapes:</p>
+<ul>
+<li>3D lines</li>
+<li>2D lines (screenspace)</li>
+<li>Boxes (wireframe)</li>
+<li>Boxes (solid)</li>
+<li>Spheres (wireframe)</li>
+<li>Capsules (wireframe)</li>
+<li>Frustums (wireframe)</li>
+<li>3D triangles (solid)</li>
+<li>3D triangles (textured)</li>
+<li>2D rectangles (solid, screenspace)</li>
+<li>2D rectangles (textured, screenspace)</li>
+<li>2D text (screenspace)</li>
+<li>2D info text (screenspace, automatically placed non-overlapping)</li>
+<li>3D text (3D location, fixed size and always facing the camera)</li>
+</ul>
+<h3 id="shading">Shading</h3>
+<p>The debug renderer always uses a fullbright shading model. No lighting is ever applied to debug geometry. In fact, most geometry simply has a color, and only some functions allow you to choose a texture.</p>
+<h2 id="example">Example</h2>
+<p>A full example for how to use the debug renderer is given in the <a href="../../samples/sample-game-plugin.md">Sample Game Plugin</a>. Here, the <code>DebugRenderComponent</code> shows how to utilize the debug renderer.</p>
+<p>The following code snippet is sufficient to render a wireframe sphere at the location of the component:</p>
+<!-- BEGIN-DOCS-CODE-SNIPPET: debugrender-sphere -->
+
+<pre><code class="language-cpp">plBoundingSphere sphere;
+sphere.SetElements(plVec3::ZeroVector(), m_fSize);
+plDebugRenderer::DrawLineSphere(GetWorld(), sphere, m_Color, ownerTransform);
+</code></pre>
+<!-- END-DOCS-CODE-SNIPPET -->
+
+<p>This has to be called in every frame in which it should appear. Therefore this has been added to the <code>DebugRenderComponent::Update()</code> function.</p>
+<h2 id="performance-considerations">Performance Considerations</h2>
+<p>The debug renderer is meant for quickly visualizing data. If the data potentially changes every frame anyway (like visualizing AI raycasts), its performance will be on par with what a 'proper' solution could do. However, if you want to place things in a scene that may stay for a longer duration, it's usually much better to instead build a game object, attach a <a href="../../graphics/meshes/mesh-component/">mesh component</a> and just render a proper asset. This enables culling, static object optimizations, and gives you the option to choose <a href="../materials/materials-overview.md">materials</a>.</p>
+<h2 id="see-also">See Also</h2>
+<ul>
+<li><a href="../debug-cpp/">Debugging C++ Code</a></li>
+<li><a href="../../graphics/shaders/shader-debugging/">Shader Debugging</a></li>
+<li><a href="../physics/jolt/jolt-debug-visualizations.md">Jolt Debug Visualizations</a></li>
+<li><a href="../../custom-code/typescript/typescript-overview/">Custom Code with TypeScript</a></li>
+</ul>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../logging/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../logging/" class="btn btn-xs btn-link">
+        Logging
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../debug-cpp/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../debug-cpp/" class="btn btn-xs btn-link">
+        Debugging C++ Code
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="col-md-12 wm-page-content">
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/noraj/mkdocs-windmill-dark">Windmill Dark</a> theme by Alexandre ZANNI (noraj).</p>
+</footer>
+
+</body>
+</html>

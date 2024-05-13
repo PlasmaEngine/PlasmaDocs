@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="author" content="PlasmaDev">
+    <link rel="canonical" href="https://plasmaengine.github.io/PlasmaDocs/graphics/textures-overview/">
+    <link rel="shortcut icon" href="../../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Textures - PlasmaDocs</title>
+    <link href="../../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../../js/jquery-3.2.1.min.js"></script>
+    <script src="../../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '../..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "Textures", url: "#_top", children: [
+              {title: "2D Texture Asset", url: "#2d-texture-asset" },
+              {title: "Cubemap Texture Asset", url: "#cubemap-texture-asset" },
+              {title: "Render Target Asset", url: "#render-target-asset" },
+              {title: "See Also", url: "#see-also" },
+          ]},
+        ];
+
+    </script>
+    <script src="../../js/base.js"></script>
+      <script src="../../search/main.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../lighting/ambient-light-component/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../lighting/ambient-light-component/" class="btn btn-xs btn-link">
+        Ambient Light Component
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../sprite-component/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../sprite-component/" class="btn btn-xs btn-link">
+        Sprite Component
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <h1 id="textures">Textures</h1>
+<p>Textures come in multiple forms. Most common are 2D textures loaded from file. 2D textures can also be created as render targets for <a href="../render-to-texture/render-to-texture/">render-to-texture (TODO)</a>. For <a href="../../effects/sky/">sky boxes</a> or special effects you can also set up cubemap textures.</p>
+<p>When the source texture comes from a file, you can create a texture <a href="../../assets/assets-overview/">asset</a> for that file by <a href="../../assets/import-assets/">importing</a> it. Otherwise you need to create the respective asset <a href="../../editor/editor-documents/">document</a> manually, for example for render targets.</p>
+<p>Textures are most often referenced by <a href="../materials/materials-overview.md">materials</a>. Texture assets only specify how source files are imported and combined, they don't define rendering behavior. Therefore most components don't use textures directly, but rather use materials, which configure the overall rendering, unless the component in question already sets up the rendering itself, such as the <a href="../../effects/sky/#skybox-component">SkyBox component</a>.</p>
+<p><img alt="Texture Asset" src="../media/texture-asset.png" /></p>
+<p>All texture assets show a <strong>3D preview</strong>. Here you can move the camera around to observe how the texture looks. Using the <strong>Mipmap slider</strong> in the toolbar, you can inspect individual mipmaps. With the <strong>channel selection dropdown</strong> next to the slider you can choose which channels to show. In the bottom left of the viewport, some <strong>stats</strong> are displayed, for instance what compression format is used.</p>
+<p>On the right-hand side you see the property grid where you choose the <strong>texture settings</strong>. Since transforming a texture can take quite some time, these assets are not automatically updated when you change their properties or even save the asset. Instead, <strong>transform the asset manually</strong> either by clicking the transform button in the toolbar or with <code>Ctrl + E</code>.</p>
+<h2 id="2d-texture-asset">2D Texture Asset</h2>
+<p>The following properties are available:</p>
+<p><strong>Usage:</strong> Tells the texture converter what type of data the texture represents. This affects what <a href="../../appendix/color-spaces/">color space (TODO)</a> will be used, ie. whether the format uses <em>sRGB</em> or <em>Linear</em> encoding. If your color texture ends up using the incorrect color space (e.g. <em>Linear</em> when it should be <em>sRGB</em>) you will typically notice that the texture appears too bright and washed out.</p>
+<ul>
+<li><strong>Auto:</strong> In this mode the converter will guess the <em>usage</em>, utilizing file name heuristics, the source file format and sometimes even the content. If your file names use suffixes like <code>_D</code>, <code>_Normal</code>, etc. this can work pretty well.</li>
+<li><strong>Color:</strong> Use this for textures that represent color. For example diffuse textures, skyboxes and emissive color textures.</li>
+<li><strong>Linear:</strong> Use this for textures that represent 'data' that is not directly a color. For example <em>roughness</em>, <em>metallic</em>, <em>ao</em> and <em>specular</em> maps.</li>
+<li><strong>HDR:</strong> For textures that contain <em>high dynamic range</em> data. Since HDR data requires special file formats, <em>Auto</em> mode can detect this reliably.</li>
+<li><strong>Normal Map:</strong> For textures that represent normal maps.</li>
+<li><strong>Normal Map (Inverted):</strong> For normal maps that use a different convention for the direction vectors.</li>
+<li><strong>Bump Map:</strong> For greyscale textures that represent height values, which should be converted to a normal map.</li>
+</ul>
+<p><strong>Mipmaps:</strong> This property allows you to choose whether the texture should have <em>mipmaps</em> and what algorithm to use for generating them. Unless you have a very special use case, mipmaps should always be enabled. The <em>Kaiser</em> filter usually gives slightly better results than the <em>Linear</em> filter.</p>
+<p><strong>PreserveAlphaCoverage, AlphaThreshold:</strong> When you want to use a texture for vegetation, where the alpha channel is used to define transparent areas, then using this feature can improve how the vegetation looks when it is far away. The smaller a mipmap becomes, the more it represents the <em>average</em> color of the original texture. The same is true for the alpha channel. The problem then is, that if a vegetation texture is mostly transparent, the lower mipmaps will become more and more transparent. In practice that means the further you are away from a plant, the more transparent it becomes. For example all the leaves in a tree may disappear. If, on the other hand, the texture is mostly opaque, the lower mipmaps would become more and more opaque, so tree would appear much thicker when far away. <em>PreserveAlphaCoverage</em> can improve this, by making sure that the percentage of pixels with a value below and above <em>AlphaThreshold</em> stays the same throughout all mip levels. Thus, if the leaves of a tree are 70% transparent in the original texture, even when viewed from far away about 70% of its pixels will be transparent and not more. For this to work, the <em>AlphaThreshold</em> that will be used by the shader to discard pixels has to be known exactly and may not differ when the texture is used later. Computing the alpha coverage takes more time. Unless you are trying to solve the problem described above, keep this option disabled.</p>
+<p><strong>Compression:</strong> Specifies how strong the texture should be compressed. Depending on <em>Usage</em> and whether an alpha channel is present, this determines which exact file format will be used (printed in the lower left corner of the viewport). Note that for some combinations there may be no difference between <em>medium</em> and <em>strong</em> compression. Don't choose <em>Uncompressed</em> unless you actually notice compression artifacts. Texture compression saves significant amount of memory (usually a 4:1 compression, sometimes even 8:1) and has no performance overhead during rendering. The only downside is, that it takes longer to transform compressed texture assets.</p>
+<p><strong>DilateColor:</strong> For textures with an alpha mask. Will <em>dilate</em> (smear) the color channel outwards everywhere where the alpha channel is zero. Useful for example for vegetation textures, where the alpha channel defines a cutout mask. If the color channel does not contain some average color in the transparent areas, but something different, usually black, this unwanted color will <em>bleed</em> into the opaque areas in the lower mipmaps. As a result, masked objects appear to have a black edge. To fix this, either author your source textures to have a representative color in the transparent areas, or enable this option to automatically generate it. Note that this option makes texture transform slower.</p>
+<p>The image below shows the difference of a texture that is completely black in the transparent areas, versus the same texture, using color dilation. Notice how there is a black edge around the plant in the left image.</p>
+<p><img alt="Color Dilation" src="../media/texture-dilation.jpg" /></p>
+<p><strong>Flip Horizontal:</strong> For textures that are stored upside down.</p>
+<p><strong>HdrExposureBias:</strong> For textures that have the <em>HDR Usage</em>. Allows you to scale the brightness.</p>
+<p><strong>Filtering:</strong> Specifies with which <em>filter method</em> the texture is sampled during rendering. If you select one of the <em>Fixed</em> modes, it will be filtered exactly with that mode. Mostly useful, if you want to use <em>Nearest</em> filtering, for artistic reasons. Using one of the other modes (<em>Low Quality</em> / <em>Default Quality</em> / <em>High Quality</em>) the texture will use a filtering mode that is decided at runtime. For example, if the <em>default</em> sampling mode is set to <em>Anisotropic 2x</em>, then <em>High Quality</em> will result in <em>Anisotropic 4x</em> (one mode higher) and <em>Low Quality</em> will be result in <em>Trilinear</em> sampling (one mode lower). <em>Lowest</em> and <em>Highest</em> will use two modes lower/higher, though <em>Nearest</em> filtering will never be used.</p>
+<p><strong>AddressMode:</strong> Specifies whether a texture will be repeated when the texture coordinates used to sample the texture are outside the <code>[0; 1]</code> range. The 3D preview shows the effect of this property after you transform the asset.</p>
+<p><strong>Channel Mapping:</strong> This option allows you to choose which channels the texture will have, and from which files to take the data for each channel. <code>RGB(A) - Single Input</code> is the most common choice, but you can also combine multiple textures, e.g. take the color from one input file and the alpha channel from another.</p>
+<p><strong>Input N:</strong> Depending on the chosen <em>channel mapping</em> you need to specify one to four input textures.</p>
+<h2 id="cubemap-texture-asset">Cubemap Texture Asset</h2>
+<p>Cubemap assets have a subset of the properties that 2D textures have. Their behavior is identical, except for <strong>Channel Mapping</strong>, which allows you to build a cubemap either from one or from six input files.</p>
+<h2 id="render-target-asset">Render Target Asset</h2>
+<p>Render targets can be used like regular 2D textures. That means materials can reference them and display their content. However, they are filled by rendering to them at runtime, for example by using a camera to render the scene from a certain viewpoint. Have a look at the <a href="../render-to-texture/render-to-texture/">render to texture (TODO)</a> article for details.</p>
+<p>Apart from some properties shared with 2D texture assets, render targets have these unique properties:</p>
+<p><strong>Format:</strong> Determines whether the texture can store HDR data (10 bit or 16 bit) and whether the texture represents colors (sRGB) or linear data.</p>
+<p><strong>Resolution:</strong> The dimensions of the texture. If set to <code>CVar RT Resolution N</code> the resolution will be read from the <a href="../../debugging/cvars/">CVar</a> <code>r_RenderTargetResolutionN</code>. This can be used to adjust the resolution dynamically.</p>
+<p><strong>CVarResScale:</strong> If the resolution is read from a CVar, this allows to scale it. For instance to create a <em>half resolution</em> render target.</p>
+<h2 id="see-also">See Also</h2>
+<ul>
+<li><a href="../materials/materials-overview.md">Materials</a></li>
+<li><a href="../render-to-texture/render-to-texture/">Render to Texture (TODO)</a></li>
+<li><a href="../../effects/sky/">Sky</a></li>
+<li><a href="../../appendix/color-spaces/">Color Spaces (TODO)</a></li>
+</ul>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../lighting/ambient-light-component/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../lighting/ambient-light-component/" class="btn btn-xs btn-link">
+        Ambient Light Component
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../sprite-component/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../sprite-component/" class="btn btn-xs btn-link">
+        Sprite Component
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="col-md-12 wm-page-content">
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/noraj/mkdocs-windmill-dark">Windmill Dark</a> theme by Alexandre ZANNI (noraj).</p>
+</footer>
+
+</body>
+</html>

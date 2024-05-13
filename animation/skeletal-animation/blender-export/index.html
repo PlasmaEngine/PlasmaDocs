@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="author" content="PlasmaDev">
+    <link rel="canonical" href="https://plasmaengine.github.io/PlasmaDocs/animation/skeletal-animation/blender-export/">
+    <link rel="shortcut icon" href="../../../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Authoring and Exporting Animations with Blender - PlasmaDocs</title>
+    <link href="../../../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../../../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../../../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../../css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../../../js/jquery-3.2.1.min.js"></script>
+    <script src="../../../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../../../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '../../..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "Authoring and Exporting Animations with Blender", url: "#_top", children: [
+              {title: "Exporting Animated Meshes", url: "#exporting-animated-meshes" },
+              {title: "Importing Meshes into Plamsa", url: "#importing-meshes-into-plamsa" },
+              {title: "Authoring Meshes", url: "#authoring-meshes" },
+              {title: "Authoring Animations", url: "#authoring-animations" },
+              {title: "See Also", url: "#see-also" },
+          ]},
+        ];
+
+    </script>
+    <script src="../../../js/base.js"></script>
+      <script src="../../../search/main.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../joint-attachment-component/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../joint-attachment-component/" class="btn btn-xs btn-link">
+        Joint Attachment Component
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../animation-events/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../animation-events/" class="btn btn-xs btn-link">
+        Animation Events
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <h1 id="authoring-and-exporting-animations-with-blender">Authoring and Exporting Animations with Blender</h1>
+<p>This page contains various pieces of information that are good to know when one uses Blender to build and export animated meshes. It is assumed that you know Blender well enough to create animated meshes.</p>
+<h2 id="exporting-animated-meshes">Exporting Animated Meshes</h2>
+<ul>
+<li>To get animated meshes out of Blender and into Plasma Engine, export the animated mesh to a binary GLTF file (<code>.glb</code>).</li>
+<li>You can enable <code>+Y up</code> or not. In both cases you need to adjust the transformation on the <a href="../skeleton-asset/">skeleton asset</a>.</li>
+<li>Make sure that the GLTF export contains <em>Animations</em> and <em>Skinning</em> information.</li>
+<li>Don't disable animation sampling on export.</li>
+<li>Be aware that GLTF uses 1000 frames per second for all exported animation clips. Blender, by default, uses 24 frames per second. If you want to only use a sub-range of an animation in Plasma, you will need to re-calculate the frame indices accordingly. You can set Blender to use 25 or 50 frames per second to make this calculation easier.</li>
+<li>Enable <code>Export Deformation Bones Only</code> to strip IK pole targets and other unnecessary bones from the file.</li>
+</ul>
+<p><img alt="GLB export settings" src="../../media/glb-export.png" /></p>
+<h2 id="importing-meshes-into-plamsa">Importing Meshes into Plamsa</h2>
+<p>When importing a mesh, Plasma remaps the model space to its own convention. You may need to change the mapping, to get the desired result. For static meshes, this is configure on the <a href="../../../graphics/meshes/mesh-asset/">mesh asset</a>. For animated models, the mapping is chosen on the root node of the corresponding <a href="../skeleton-asset/">skeleton asset</a>.</p>
+<p>Plasma uses the following convention:</p>
+<ul>
+<li><code>+X</code> is the <strong>forward axis</strong></li>
+<li><code>+Y</code> is the <strong>right axis</strong></li>
+<li><code>+Z</code> is the <strong>up axis</strong></li>
+</ul>
+<p>By default all code uses <code>+X</code> as its main direction. For example AI nodes move characters <em>forwards</em> along the <code>+X</code> axis, spot lights and cameras "look" into the <code>+X</code> direction and so on.</p>
+<p>In Blender it is common to have a character look along the <code>-Y</code> axis so that it faces the user when pressing <code>Numpad 1</code>. This also means that the right side of the character will be along the <code>-X</code> axis.</p>
+<p>If you export such a mesh to a GLB and enable <strong>Y UP</strong> convention, you need to configure the mapping this way:</p>
+<ul>
+<li>Set <code>Right Dir</code> to <strong>Negative X</strong></li>
+<li>Set <code>Up Dir</code> to <strong>Positive Y</strong></li>
+<li>Set <code>FlipForwardDir</code> to <strong>off</strong></li>
+</ul>
+<h2 id="authoring-meshes">Authoring Meshes</h2>
+<ol>
+<li>Make sure all triangles face into the same direction. Use Blender's <code>Face Orientation</code> viewport option to see whether there are flipped triangles. If there are flipped triangles, they will show up incorrectly in Plasma.
+    <img alt="Face Orientation" src="../../media/blender-face-orientation.png" /></li>
+</ol>
+<h2 id="authoring-animations">Authoring Animations</h2>
+<ul>
+<li>
+<p>Plasma only supports skeletal animations via skinned meshes. That means every vertex in the mesh needs to have a bone assigned via vertex weights. Blender can move entire objects through bone animations, but if they are only parented to a bone, and don't use vertex skinning (vertex weights),Plasma will not show those objects as animated. Use the <em>Vertex Group Weights</em> visualization in Blender to inspect which vertices are set up properly and which aren't.</p>
+<p><img alt="Vertex Weights" src="../../media/blender-vertex-weights.png" /></p>
+</li>
+<li>
+<p>Plasma does not support scaling of bones. All bones must have scaling values of 1. If you have an object scaled in <em>object mode</em> and attached to a bone, the scaling will be represented by the bone, so even if your animation keyframes do not use scaling, the exported animation track  does. To fix this, select your scaled object and use <em>Mesh &gt; Apply &gt; Scaling</em> to bake the object scaling into the vertex positions and get rid of the scaling in the bone transforms.</p>
+</li>
+<li>
+<p>Plasma uses a maximum of 4 bones per vertex. By default Blender's GLTF export already restricts vertex weights to 4 bones, though there is an option to allow more influences. This won't have a positive effect in Plasma though.</p>
+</li>
+<li>
+<p>Be aware that Blender exports ALL keyframes of an animation. The preview window of an animation has no effect on the exported animation data.</p>
+</li>
+<li>
+<p>Blender always sets the first keyframe of all animations to index <code>1</code> and that is also how the data is exported. Plasma expects the first keyframe to be at index <code>0</code>, though. So set the animation range in Blender to start at index <code>0</code> and put the first keyframe there.</p>
+</li>
+<li>
+<p>Use the <em>Action Editor</em> in Blender to create and manage multiple animations in a single file. Be sure to set the <em>Fake User</em> flag on all of them to not lose any work.</p>
+</li>
+<li>
+<p>Now it gets weird: If you add multiple animations in Blender, usually 4 to 6 of them will be exported in the GLTF file. Once you add more animations, seemingly random ones won't be exported. This is because Blender thinks those animations are <em>unused</em> and won't export such unreferenced animations. The fix is to <strong>fake reference every animation</strong> in Blenders NLA editor. The way to do this, is to push the <em>Stash</em> button in the action editor on every animation.
+<img alt="Stash action" src="../../media/blender-action-stash.png" /><br>
+You will then see this reference show up in the scene outline/hierarchy window.
+<img alt="Stashed actions" src="../../media/blender-nla-stashes.png" /><br>
+<strong>Don't rename the stashed item!</strong> Every animation should be stashed only once, and if you keep the auto-generated name, Blender won't create another stash reference, if you push the stash button multiple times on the same animation. If you rename the item, that won't work anymore.</p>
+</li>
+<li>
+<p>To delete an animation that has been stashed (and thus referenced by the NLA editor), remove the <em>Fake User</em> flag and also open the NLA editor and delete any reference to the animation by pointing with the mouse on a track and pressing <code>X</code> or <code>Del</code>.<br>
+<img alt="NLA editor" src="../../media/blender-nla-editor.png" /><br>
+Once no reference exists anymore, Blender removes the animation when you save and close the program.</p>
+</li>
+</ul>
+<h3 id="animation-cycles">Animation Cycles</h3>
+<ul>
+<li>To create an animation that can be repeated, such as walk cycles, the first and the last keyframe must be identical.</li>
+<li>Furthermore, Blender will typically use cubic interpolation between the keyframes. For the first and last keyframe this will result in an interpolation that slows down and speeds up and is therefore not smooth. The simplest solution is to set these (or all) keyframes to use <em>linear interpolation</em> instead.</li>
+<li>Another option is to insert duplicated dummy keyframes before the first and after the last keyframe, to force the desired interpolation, but then you need to configure the animation clip in Plasma to only use the proper sub-range of keyframes, which can be tricky to figure out.</li>
+</ul>
+<h3 id="rigging-meshes">Rigging Meshes</h3>
+<p>There are many good tutorials how to rig meshes. However, here are some additional tips, some that are specific to using animated meshes in game engines.</p>
+<ul>
+<li>
+<p>Make sure your mesh is rigged perfectly before you start animating. Even small adjustments to the rig later may require you to redo all your animations.</p>
+</li>
+<li>
+<p>Make sure that all bones are connected correctly to each other. For example, hand and foot bones MUST be connected to their respective arm and leg bones. You must not have any disconnected bones that would be connected in a real skeleton. Some tutorials suggest to disconnect hand and foot bones and use a <em>copy transform constraint</em> instead, when setting up IK in Blender. This is a really bad practice. It will appear to work at first, but once you use partial animation blending (for example to play an animation only on the upper or lower body), it won't work, because the disconnected bones are not part of the correct hierarchy. Similarly, setting up rag dolls for physics requires the bone hierarchy to be correct. Other engines have the same requirement.<br>
+<img alt="Armature Structure" src="../../media/blender-rig-structure.png" /><br></p>
+</li>
+<li>
+<p>If you want to add IK to your Blender rig, duplicate the desired bone (for instance the hand bone), then disconnect that bone from the hierarchy (making it a root bone), disable <code>Deformation</code> on that bone, and then use that as the IK target bone. Since <code>Deformation</code> is disabled, this bone won't be exported to GLTF either, which is what you want. It will only be a control bone.<br>
+<img alt="IK constraint" src="../../media/blender-ik-constraint.png" /><br></p>
+</li>
+<li>
+<p>If you want your actual hand bone to fully follow your IK target bone, add a <code>Copy Rotation Constraint</code> to it to have it follow both position and rotation animations that you add to the IK target bone.<br>
+<img alt="Copy rotation constraint" src="../../media/blender-ik-copy-constraint.png" /><br></p>
+</li>
+<li>
+<p>You may also want to <em>hide</em> the original hand bone, such that you don't accidentally pick and animate it, when instead you want to animate the IK target bone (which will most of the time be in the exact same location).</p>
+</li>
+<li>
+<p>Be aware though, that once a bone is hidden, it is quite a pain to make any modifications to it, because Blender won't allow you to select it anymore, not even from the outliner tree view. Instead you must <em>unhide the bone first</em>. Either unhide everything (using <code>ALT+H</code>) or unhide only the desired bone through its context menu in the outliner pane.</p>
+</li>
+<li>
+<p>For IK bones, make sure your pole targets really work correctly. Most tutorials mention that you need to use a rotation offset of +90, -90 or 180 degree, but I have also observed the need for 45 degrees (and consequently 135 degrees) etc. The best way to check is to toggle between <em>Edit Mode</em> and <em>Pose Mode</em> (with the rest pose active) and check that bones with IK don't have extreme twist in pose mode. The bones should only slightly move to fulfill their IK configuration, but if for example arm bones twist by a large amount, then your pole target configuration isn't correct.</p>
+</li>
+<li>
+<p>If you seem to not get the pole target configuration correct, first make sure the target joint has a slight bend (for instance an elbow shouldn't be fully straight). Then remove the IK constraint on the bone entirely and set it up from scratch. Blender seems to have internal state that can't be fixed differently.</p>
+</li>
+</ul>
+<h2 id="see-also">See Also</h2>
+<ul>
+<li><a href="../skeletal-animation-overview/">Skeletal Animations</a></li>
+</ul>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../joint-attachment-component/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../joint-attachment-component/" class="btn btn-xs btn-link">
+        Joint Attachment Component
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../animation-events/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../animation-events/" class="btn btn-xs btn-link">
+        Animation Events
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="col-md-12 wm-page-content">
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/noraj/mkdocs-windmill-dark">Windmill Dark</a> theme by Alexandre ZANNI (noraj).</p>
+</footer>
+
+</body>
+</html>

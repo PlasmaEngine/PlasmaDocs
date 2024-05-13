@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="author" content="PlasmaDev">
+    <link rel="canonical" href="https://plasmaengine.github.io/PlasmaDocs/editor/run-scene/">
+    <link rel="shortcut icon" href="../../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Running a Scene - PlasmaDocs</title>
+    <link href="../../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../../js/jquery-3.2.1.min.js"></script>
+    <script src="../../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '../..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "Running a Scene", url: "#_top", children: [
+              {title: "Simulate Mode", url: "#simulate-mode" },
+              {title: "Play the Game Mode", url: "#play-the-game-mode" },
+              {title: "Export and Run", url: "#export-and-run" },
+              {title: "See Also", url: "#see-also" },
+          ]},
+        ];
+
+    </script>
+    <script src="../../js/base.js"></script>
+      <script src="../../search/main.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../../effects/beam-component/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../../effects/beam-component/" class="btn btn-xs btn-link">
+        Beam Component
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../editor-views/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../editor-views/" class="btn btn-xs btn-link">
+        Editing Views
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <h1 id="running-a-scene">Running a Scene</h1>
+<p>When you have a scene open in the editor, there are multiple ways how you can test it.</p>
+<p>![[toolbar-simulate-buttons.png]]</p>
+<h2 id="simulate-mode">Simulate Mode</h2>
+<p>The <em>Simulate Mode</em> is activated with the <em>Play</em> button in the toolbar or by pressing the <code>F5</code> key. It is deactivated with the <em>Stop</em> button or by pressing <code>Shift+F5</code>.</p>
+<p>This enables the simulation of all game objects inside the editor. You can still select objects, modify their properties and move and rotate most of them. However, since at that point the simulation actively modifies the state of objects, some things will not work. For example, physically simulated objects and other objects that actively modify their position may not react to transform changes as expected. Similarly, modifying properties may not have an effect, if the components in question don't reevaluate those properties during simulation.</p>
+<p>Some objects will also be spawned by the simulation, and therefore are unknown to the editor side. Those objects cannot be picked or modified.</p>
+<p>In general, modifying the scene during simulation will work for some objects, and won't work for others. The only way to find out, is to try it. Once the simulation is stopped, though, all modifications will be applied as expected, to the reset scene.</p>
+<h3 id="keep-simulation-changes">Keep Simulation Changes</h3>
+<p>The <em>simulate mode</em> is useful to quickly check how some object behaves. It can also be used to simulate physical objects (e.g. boxes falling down) and then save that simulated transform to the scene.</p>
+<p>While the simulation is active, select the objects that you are interested in and press <code>K</code> (or <em>Scene &gt; Utilities &gt; Keep Simulation Changes</em>). Once you stop the simulation, an undoable action is executed that moves the selected objects to the recorded location.</p>
+<p>You can record multiple <em>keep changes</em> actions during one simulation.</p>
+<h2 id="play-the-game-mode">Play the Game Mode</h2>
+<p>The <em>Play-the-Game Mode</em> (PTG) is activated with the <em>Controller</em> button in the toolbar or by pressing <code>CTRL+F5</code>. It is deactivated with the <em>Stop</em> button in the editor toolbar, by pressing <code>ESC</code> while the PTG window has focus.</p>
+<p>This enables the simulation, similar to the <em>Simulate Mode</em>. However, it additionally activates the <a href="../../runtime/application/game-state/">Game State</a>. Therefore this mode spawns a separate window and also routes all <a href="../input/input-overview.md">input</a> to the running game. If the scene contains a <a href="../../gameplay/player-start-point/">Player Start Point component</a> the game state may spawn the referenced prefab and thus enable you to properly play the game.</p>
+<p>You can <code>Alt+Tab</code> out of the PTG window, back to the editor, and modify the scene the same way as in the simulate mode, with the same restrictions.</p>
+<p>This mode is useful to quickly run the game with full input. Note that, because it is running from the editor process, its framerate is limited. For maximum performance you need to <a href="#export-and-run">Export and Run</a> the scene.</p>
+<h3 id="play-from-here">Play From Here</h3>
+<p>If the scene contains a <a href="../../gameplay/player-start-point/">Player Start Point component</a>, then you can right click in the scene and select <em>Play From Here</em>. This starts <em>Play-the-Game</em> and spawns the player prefab at the desired position. This makes it quick and easy to try out a feature in the scene, without having to move the player start position.</p>
+<h2 id="export-and-run">Export and Run</h2>
+<p>Another way to test the scene is to export it to a binary format and run it in the <a href="../../tools/player/">plPlayer</a>. You do so using <em>Scene &gt; Export and Run...</em> or by pressing <code>CTRL+E</code>.</p>
+<p><img alt="Export and Run" src="../media/export-and-run.png" /></p>
+<p>If you keep <code>Transform all Assets</code> checked, all <a href="../../assets/assets-overview/">assets</a> in the project will be <em>transformed</em> first, making sure they are up-to-date. You can uncheck this, to speed up the process, if you know that all assets that you require are up-to-date already.</p>
+<p><code>Update Thumbnail</code> will use the <a href="../../graphics/camera-component/">scene camera</a> with the <em>Thumbnail</em> usage hint, to create a scene thumbnail.</p>
+<p>Both <em>Simulate Mode</em> and <em>Play-the-Game Mode</em> run inside the editor process. Compared to a game running in a stand-alone process this has two drawbacks:</p>
+<ol>
+<li>The editor process limits the maximum framerate, and has some performance overhead of its own, so this is not useful for performance testing.</li>
+<li>All component properties are initialized from the values as the editor has saved them. This is not the (optimized) binary serialization that is used for a final game. Since the binary serialization code has to be written manually, it can happen that properties that are exposed in the editor and work fine there, have been forgotten to be included in the binary serialization and therefore have no effect in the final game. Therefore, always make sure to test <a href="../../runtime/world/components/">custom components</a> properly with exported scenes.</li>
+</ol>
+<blockquote>
+<p><strong>Important:</strong></p>
+<p>If a scene is composed of multiple <a href="../scenes/scene-layers.md">scene layers</a>, only the objects from the currently <em>loaded</em> layers are exported.</p>
+</blockquote>
+<h3 id="custom-player-executable">Custom Player Executable</h3>
+<p>In the <em>export and run</em> dialog you can add a custom executable to run instead of the default <a href="../../tools/player/">plPlayer</a> application. Use this, if you have a custom game application. The command line used is the same as for plPlayer as shown in the dialog.</p>
+<h2 id="see-also">See Also</h2>
+<ul>
+<li><a href="../../tools/player/">plPlayer</a></li>
+<li><a href="../../runtime/application/game-state/">Game States</a></li>
+<li><a href="../../gameplay/player-start-point/">Player Start Point</a></li>
+</ul>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../../effects/beam-component/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../../effects/beam-component/" class="btn btn-xs btn-link">
+        Beam Component
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../editor-views/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../editor-views/" class="btn btn-xs btn-link">
+        Editing Views
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="col-md-12 wm-page-content">
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/noraj/mkdocs-windmill-dark">Windmill Dark</a> theme by Alexandre ZANNI (noraj).</p>
+</footer>
+
+</body>
+</html>

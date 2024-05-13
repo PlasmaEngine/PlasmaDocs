@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="author" content="PlasmaDev">
+    <link rel="canonical" href="https://plasmaengine.github.io/PlasmaDocs/graphics/lighting/spot-light-component/">
+    <link rel="shortcut icon" href="../../../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Spot Light Component - PlasmaDocs</title>
+    <link href="../../../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../../../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../../../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../../css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../../../js/jquery-3.2.1.min.js"></script>
+    <script src="../../../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../../../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '../../..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "Spot Light Component", url: "#_top", children: [
+              {title: "Component Properties", url: "#component-properties" },
+              {title: "See Also", url: "#see-also" },
+          ]},
+        ];
+
+    </script>
+    <script src="../../../js/base.js"></script>
+      <script src="../../../search/main.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../../meshes/custom-mesh-component/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../../meshes/custom-mesh-component/" class="btn btn-xs btn-link">
+        Custom Mesh Component
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../sky-light-component/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../sky-light-component/" class="btn btn-xs btn-link">
+        Skylight Component
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <h1 id="spot-light-component">Spot Light Component</h1>
+<p>The <em>spot light component</em> adds a dynamic light source that illuminates the scene within a cone. The cone's inner angle determines the area that is illuminated equally bright. Between the inner angle and outer angle the light will fade to black. Spot lights should be preferred over <a href="../point-light-component/">point lights</a> when this can prevent the need for <a href="../dynamic-shadows/">dynamic shadows</a>. For example, a light mounted to a ceiling should illuminate the area below it, but not shine through the ceiling and illuminate objects above. A spot light with a large cone can achieve this.</p>
+<p><img alt="Spot Light" src="../media/spot-light.jpg" /></p>
+<p>Each light source costs performance. Try to reduce the number of light sources that illuminate the same area. Use the <a href="../../../editor/editor-views/#light-count">light count render mode</a> to find hotspots.</p>
+<p>Note that unless a light source casts <a href="../dynamic-shadows/">dynamic shadows</a>, it's light will shine through walls. Casting shadows is very costly, though. When it is possible to avoid casting shadows, for example by using multiple smaller lights instead, the performance should always be better.</p>
+<h2 id="component-properties">Component Properties</h2>
+<p>See <a href="../dynamic-shadows/#shadow-component-properties">this page</a> for shadow related component properties.</p>
+<ul>
+<li>
+<p><code>LightColor, Intensity</code>: The color and brightness of the light.</p>
+</li>
+<li>
+<p><code>Range</code>: The distance over which the light source affects geometry. By default this is set to <code>Auto</code>, meaning the necessary range will be computed from the light's brightness. For full control, the range can be set manually. The light will always attenuate to zero within the given range, so by specifying a small range you can create a small, yet very bright light.</p>
+</li>
+<li>
+<p><code>InnerSpotAngle</code>: The inner angle of the spot light's cone. Within this angle the spot light will not attenuate (except by distance) and stay equally bright.</p>
+</li>
+<li>
+<p><code>OuterSpotAngle</code>: The spot light will attenuate between the inner angle and the outer angle to zero. If the outer angler is very close to the inner angle, the spot light will have a very sharp cut off. If the outer angle is considerably larger than the inner angle, the spot light will smoothly fade to black at the edges.</p>
+</li>
+</ul>
+<h2 id="see-also">See Also</h2>
+<ul>
+<li><a href="../lighting-overview/">Lighting</a></li>
+<li><a href="../point-light-component/">Point Light Component</a></li>
+</ul>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../../meshes/custom-mesh-component/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../../meshes/custom-mesh-component/" class="btn btn-xs btn-link">
+        Custom Mesh Component
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../sky-light-component/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../sky-light-component/" class="btn btn-xs btn-link">
+        Skylight Component
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="col-md-12 wm-page-content">
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/noraj/mkdocs-windmill-dark">Windmill Dark</a> theme by Alexandre ZANNI (noraj).</p>
+</footer>
+
+</body>
+</html>

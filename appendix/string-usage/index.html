@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="author" content="PlasmaDev">
+    <link rel="canonical" href="https://plasmaengine.github.io/PlasmaDocs/appendix/string-usage/">
+    <link rel="shortcut icon" href="../../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>String Usage Guidelines - PlasmaDocs</title>
+    <link href="../../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../../js/jquery-3.2.1.min.js"></script>
+    <script src="../../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '../..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "String Usage Guidelines", url: "#_top", children: [
+              {title: "How to access C strings", url: "#how-to-access-c-strings" },
+              {title: "How to create and modify strings", url: "#how-to-create-and-modify-strings" },
+              {title: "How to store strings", url: "#how-to-store-strings" },
+              {title: "How to convert strings between Utf8, Utf16, Utf32 and wchar_t", url: "#how-to-convert-strings-between-utf8-utf16-utf32-and-wchar_t" },
+              {title: "See Also", url: "#see-also" },
+          ]},
+        ];
+
+    </script>
+    <script src="../../js/base.js"></script>
+      <script src="../../search/main.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../third-party-code/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../third-party-code/" class="btn btn-xs btn-link">
+        ThirdParty Code and Data
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../string-formatting/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../string-formatting/" class="btn btn-xs btn-link">
+        String Formatting
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <h1 id="string-usage-guidelines">String Usage Guidelines</h1>
+<p>All strings in the Plasma Engine are Utf8 encoded. As such they are accessible as simple <code>const char*</code> arrays.
+However, one has to be very careful to distinguish between the "Element Count" (the number of bytes in the string) and the "Character Count".
+Utf8 is a variable length encoding, which means that all ASCII characters (the first 127 characters in the ANSI set) are encoded with one byte.
+Everything else can take between two and four bytes per character.
+Therefore it is very dangerous to apply an algorithm to every byte in a string, as it might actually need to be aware of the individual characters.</p>
+<p>Therefore all the string classes provide lots of high-level functionality for modifying the strings, which take care of these things internally.
+On the other hand, direct access to the char array is not granted, to ensure the encoding does not get corrupted.</p>
+<p>The following classes provide functionality to work on <code>char*</code> arrays:</p>
+<ul>
+<li><code>plUnicodeUtils</code></li>
+<li><code>plStringUtils</code></li>
+<li><code>plPathUtils</code></li>
+</ul>
+<p>These generally implement 'read-only' functionality. The actual string classes provide the same functions, but with more comfortable interfaces.
+Note that many of these functions take an 'end' pointer. This can generally be ignored, if you are working on zero terminated strings.
+It can however also be used to work on non zero-terminated sub-strings.</p>
+<h2 id="how-to-access-c-strings">How to access C strings</h2>
+<p>Working on Utf8 strings is difficult, as you usually want to work on a per-character basis, which does not have a 1:1 mapping to bytes, when the data is Utf8 encoded.
+To make this possible, use <code>plStringIterator</code>.</p>
+<p><code>plStringIterator</code> provides an interface on top of a char array, that allows to iterate forwards and backwards through a string on a per-character basis.
+You can access the current character and get it in Utf32 encoding. This can easily be compared with standard C++ char-constants like 'a', 'b', '\', '\n', '\0' etc.</p>
+<p>If you want to work on a per-character basis on a char that might be Utf8 encoded, you should always wrap it inside an <code>plStringIterator</code> and then use the iterator instead of accessing the array directly. Note that it only provides read-access though, as you cannot modify a Utf8 string in place in all circumstances.</p>
+<p>Additionally there is <code>plStringView</code>, which allows to only work on sub-strings of other strings, which can be used to implement parsing functions very efficiently.</p>
+<h2 id="how-to-create-and-modify-strings">How to create and modify strings</h2>
+<p>When you need to modify or build strings, use <code>plStringBuilder</code>.</p>
+<p><code>plStringBuilder</code> provides a large set of functions to easily modify strings. It includes a set of dedicated 'path functions' for working with paths (to prevent duplicate slashes, extract certain information etc.).</p>
+<p><code>plStringBuilder</code> uses an internal cache of 128 bytes, which is allocated on the stack. That means working with local <code>plStringBuilders</code> is very efficient, as usually no memory allocations are required, unless you build very long strings.</p>
+<p>That in turn means, that you should never use <code>plStringBuilders</code> for storage, as they will waste a lot of memory. <code>plStringBuilders</code> should nearly always be local variables with a short life span.</p>
+<h2 id="how-to-store-strings">How to store strings</h2>
+<p>For storing strings, use <code>plString</code>.
+<code>plString</code> is a typedef for <code>plHybridString&lt;32&gt;</code>. That means it has an internal cache for storing up to 32 bytes without the need for memory allocations. That usually covers more than 90% of all strings, which means that memory allocations are rare, but the amount of wasted memory is also relatively low.</p>
+<p><code>plString</code> does not provide functions to modify the string (other than completely replacing it), use <code>plStringBuilder</code> in such cases.</p>
+<p>If you know that you are storing strings of certain lengths, e.g. filename extensions, you can use other predefined <code>plString</code>s, such as <code>plString8</code> or <code>plString48</code> to tune the internal cache size to be more fitting.</p>
+<h2 id="how-to-convert-strings-between-utf8-utf16-utf32-and-wchar_t">How to convert strings between Utf8, Utf16, Utf32 and wchar_t</h2>
+<p>Plasma Engine provides a few classes to enable converting to and from all the Utf encodings and <code>wchar_t</code> encoding (which is simply Utf16 one some platforms and Utf32 on others).</p>
+<p>The following classes take strings encoded in any encoding and convert them into their target encoding:</p>
+<ul>
+<li><code>plStringWChar</code></li>
+<li><code>plStringUtf8</code></li>
+<li><code>plStringUtf16</code></li>
+<li><code>plStringUtf32</code></li>
+</ul>
+<p>Ie. an instance of <code>plStringWChar</code> will always encode a string to (the platform specific) <code>wchar_t</code> encoding and instances of <code>plStringUtf8</code> will convert strings to Utf8 encoding, etc.</p>
+<p>Use it like this:</p>
+<pre><code class="language-cpp">plStringUtf8 MyUtf8 = L&quot;My wchar_t string&quot;; // The 'L' makes it a 'wide-string', ie. a wchar_t array
+printf(&quot;Output Utf8: %s&quot;, MyUtf8.GetData());
+</code></pre>
+<p>or for interacting with win32 functions:</p>
+<pre><code class="language-cpp">plStringWChar FileNameW = MyUtf8FileName.GetData();
+DeleteFileW(FileNameW.GetData());
+</code></pre>
+<p>This allows to quickly and easily convert back and forth between the different encodings.
+Just make sure that you convert your data to Utf8 when you store something inside the Engine, and to the platform-specific encoding (typically <code>wchar_t</code>) when interacting with OS functions (unless they support Utf8 as well).</p>
+<h2 id="see-also">See Also</h2>
+<ul>
+<li><a href="../container-usage/">Container Usage Guidelines</a></li>
+<li><a href="../string-formatting/">String Formatting</a></li>
+</ul>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../third-party-code/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../third-party-code/" class="btn btn-xs btn-link">
+        ThirdParty Code and Data
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../string-formatting/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../string-formatting/" class="btn btn-xs btn-link">
+        String Formatting
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="col-md-12 wm-page-content">
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/noraj/mkdocs-windmill-dark">Windmill Dark</a> theme by Alexandre ZANNI (noraj).</p>
+</footer>
+
+</body>
+</html>

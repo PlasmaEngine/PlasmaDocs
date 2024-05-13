@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="author" content="PlasmaDev">
+    <link rel="canonical" href="https://plasmaengine.github.io/PlasmaDocs/editor/editor-bg-operations/">
+    <link rel="shortcut icon" href="../../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Editor Background Operations - PlasmaDocs</title>
+    <link href="../../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../../js/jquery-3.2.1.min.js"></script>
+    <script src="../../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '../..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "Editor Background Operations", url: "#_top", children: [
+              {title: "Sharing Generated Data", url: "#sharing-generated-data" },
+              {title: "See Also", url: "#see-also" },
+          ]},
+        ];
+
+    </script>
+    <script src="../../js/base.js"></script>
+      <script src="../../search/main.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../editor-documents/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../editor-documents/" class="btn btn-xs btn-link">
+        Editor Documents
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../dashboard/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../dashboard/" class="btn btn-xs btn-link">
+        Dashboard
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <h1 id="editor-background-operations">Editor Background Operations</h1>
+<p>Most data that takes time to be generated or converted, comes from <a href="../../assets/assets-overview/">assets</a>. However, there is also scene specific data, which does not qualify as an asset. However, generating it can take very long and therefore should only be triggered on demand.</p>
+<p>Examples include precomputed lighting or navmeshes. For complex scenes these processes can take very long. Also, if they become out of date, this is usually not a big problem immediately, which means updating the data can be delayed until it is really necessary.</p>
+<p>Certain components expose <em>background operations</em>. Once you place such a component in a level, its background operation will show up in the <em>Background Operations</em> panel. You can find this under <code>Panels &gt; Background Operations</code>:</p>
+<p><img alt="Background operations panel" src="../media/background-op.png" /></p>
+<p>This panel lists all background operations for all documents. Click <em>Start</em> to make one run in the background. Double click a row to jump directly to the corresponding component.</p>
+<p><strong>Important:</strong> Background operations are currently never run automatically, it is your responsibility to decide when to execute them.</p>
+<h2 id="sharing-generated-data">Sharing Generated Data</h2>
+<p>The generated data is written to the project's <em>AssetCache/Generated</em> sub-folder. There it is typically ignored by git and thus won't show up for source control check-in. Therefore, either every user has to regenerate the data locally themselves, or you need to force add the desired files to git. Be aware that this type of data typically changes every time and a different storage solution, for example a shared folder on a network drive, may be a better solution. Currently there is no built-in option to change the location where this data is stored, so you would need to use Windows file junctions to redirect the folder or individual files to a different location.</p>
+<h2 id="see-also">See Also</h2>
+<ul>
+<li><a href="../../assets/assets-overview/">Assets</a></li>
+</ul>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../editor-documents/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../editor-documents/" class="btn btn-xs btn-link">
+        Editor Documents
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../dashboard/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../dashboard/" class="btn btn-xs btn-link">
+        Dashboard
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="col-md-12 wm-page-content">
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/noraj/mkdocs-windmill-dark">Windmill Dark</a> theme by Alexandre ZANNI (noraj).</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="author" content="PlasmaDev">
+    <link rel="canonical" href="https://plasmaengine.github.io/PlasmaDocs/ai/AiPlugin/runtime-navmesh/">
+    <link rel="shortcut icon" href="../../../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Runtime Navmesh - PlasmaDocs</title>
+    <link href="../../../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../../../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../../../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../../css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../../../js/jquery-3.2.1.min.js"></script>
+    <script src="../../../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../../../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '../../..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "Runtime Navmesh", url: "#_top", children: [
+              {title: "Input Data", url: "#input-data" },
+              {title: "Navigation Configuration", url: "#navigation-configuration" },
+              {title: "Navmesh Visualization", url: "#navmesh-visualization" },
+          ]},
+          {title: "See Also", url: "#see-also", children: [
+          ]},
+        ];
+
+    </script>
+    <script src="../../../js/base.js"></script>
+      <script src="../../../search/main.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../../../animation/common/color-gradients/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../../../animation/common/color-gradients/" class="btn btn-xs btn-link">
+        Color Gradients
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../navmesh-path-test-component/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../navmesh-path-test-component/" class="btn btn-xs btn-link">
+        Navmesh Path Test Component
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <h1 id="runtime-navmesh">Runtime Navmesh</h1>
+<p>The <a href="../ai-plugin-overview/">AiPlugin</a> adds functionality to generate navmeshes on-demand at runtime. This is a very convenient workflow, as the navmesh incorporates level changes every time you restart the simulation.</p>
+<p><img alt="Navmesh" src="../media/ai-navmesh.jpg" /></p>
+<h2 id="input-data">Input Data</h2>
+<p>The runtime navmesh generation uses the <a href="../../physics/jolt/collision-shapes/jolt-collision-meshes.md">collision geometry</a> and its <a href="../../materials/surfaces.md">surfaces</a> as the input data from which to build the navmesh. The data is queried <em>on-demand</em> in an area around where <em>path searches</em> are done. To see the resulting navmesh, enable the <a href="#navmesh-visualization">navmesh visualization</a>.</p>
+<h2 id="navigation-configuration">Navigation Configuration</h2>
+<p>In a scene document select <em>Project &gt; Plugin Settings &gt; Ai Project Settings</em> to open the configuration dialog.</p>
+<p><img alt="Navmesh config" src="../media/navmesh-config.png" /></p>
+<h3 id="ground-types">Ground Types</h3>
+<p>The <em>Ground Types</em> tab is used to define the types of walkable (or non-walkable) ground that appear in your game. There is a maximum of 32 ground types. In this dialog you can edit their names (double click or <code>F2</code> on an entry) and select whether an entry should generally be in use (checkmark).
+Entries that are not checked, will not show up in other places as selectable.</p>
+<p>The <code>&lt;None&gt;</code> and <code>&lt;Default&gt;</code> ground types always exist and cannot be removed or renamed.</p>
+<p>Which <em>ground type</em> a physical surface represents, is specified in the <a href="../../materials/surfaces.md#ai-properties">surfaces</a>. If a surface uses the <code>&lt;None&gt;</code> ground type, it will not be part of the navmesh, at all, meaning the navmesh will have a hole there. For surfaces that are generally not walkable, by no character, this is preferable over using a dedicated ground type that is then ignored by a <em>path search type</em>.</p>
+<h3 id="navmesh-types">Navmesh Types</h3>
+<p>The <em>Navmesh</em> tab is used to configure how a navmesh is generated. Most games only need a single navmesh type, but if you have agents of very different height or radius, you may need additional ones.</p>
+<p>Enable the <a href="#navmesh-visualization">navmesh visualization</a> and utilize the the <a href="../navmesh-path-test-component/">navmesh path test component</a> to test how these options affect the result.</p>
+<h4 id="navmesh-properties">Navmesh Properties</h4>
+<ul>
+<li>
+<p><code>Collision Layer</code>: The <a href="../../physics/jolt/collision-shapes/jolt-collision-layers.md">collision layer</a> to use for finding geometry from which to generate the navmesh. This is mainly used to filter out high detail geometry, to speed up navmesh generation. It can also be used to ignore ground types that are generally not traversable (such as water).</p>
+</li>
+<li>
+<p><code>Cell Size (XY):</code> How detailed the navmesh generation shall be. This has to be less than the desired character radius, and the agent radius should be a whole multiple of this value. For example if your cell size is <code>0.2</code>, the effective agent radius can only be <code>0.2</code>, <code>0.4</code>, <code>0.6</code> and so on.</p>
+</li>
+<li>
+<p><code>Cell Height (Z):</code> The detail along the up axis with which to generate the navmesh. This mainly affects how well <em>steps</em> are detected and dealt with. Similar to the <em>agent radius</em>, the <em>agent step height</em> should be a multiple of the cell height.</p>
+</li>
+<li>
+<p><code>Agent Radius:</code> How wide the characters are that walk over this type of navmesh. This affects how narrow passages can be, and how far away agents stay from walls. The agent radius should be a multiple of the <em>cell size</em>. Don't use multiple navmeshes only because characters shall have a slightly different radius. Use the same radius for all agents that are more or less the same size. Only use a separate navmesh type, for characters that are extremely different in size and should be forced to take different paths throughout narrow terrain.</p>
+</li>
+<li>
+<p><code>Agent Height:</code> Similar to <em>agent radius</em>, this defines how tall a character may be. Should be a multiple of <em>cell height</em>. The same caveats as for <em>agent radius</em> apply.</p>
+</li>
+<li>
+<p><code>Agent Step Height:</code> The maximum height of obstacles (such as stair steps) that an agent is allowed to step up. Should be a multiple of <em>cell height</em>.</p>
+</li>
+<li>
+<p><code>Agent Walkable Slope:</code> The maximum slope of triangles that are considered for navmesh generation. Triangles steeper than this will be discarded as non-walkable.</p>
+</li>
+</ul>
+<h3 id="path-search-types">Path Search Types</h3>
+<p>Each navmesh defines <em>where</em> an agent can walk, and which <em>ground types</em> are in which area. <em>Path search types</em> are used to configure how fast an agent can traverse each ground type and thus which areas the agent would prefer or avoid. Additionally a path search type can be used to prevent an agent from walking on certain ground types, at all.</p>
+<p>In this tab you can add different path search types, and for each one, you can configure the <em>cost</em> of traversing a ground type and whether it is allowed to be traversed at all.
+The higher the cost, the more an agent will try to avoid it and use a different route if possible. Traversal costs can't be zero or negative.</p>
+<p>Use the the <a href="../navmesh-path-test-component/">navmesh path test component</a> to see how these options affect path finding.</p>
+<h2 id="navmesh-visualization">Navmesh Visualization</h2>
+<p>To be able to see the navmesh, use the <a href="../../../debugging/cvars/">CVar</a> <code>Ai.Navmesh.Visualize</code>. There can be multiple different navmeshes for different character heights etc. This CVar enables visualization for <em>one of them</em> by index. So set it to <code>0</code> to see the first navmesh, <code>1</code> if you have a second one and so on.</p>
+<blockquote>
+<p><strong>Important:</strong></p>
+<p>No navmesh will be generated, as long as no path searches are done.</p>
+</blockquote>
+<h1 id="see-also">See Also</h1>
+<ul>
+<li><a href="../ai-plugin-overview/">AiPlugin Overview</a></li>
+<li><a href="../navmesh-path-test-component/">Navmesh Path Test Component</a></li>
+</ul>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../../../animation/common/color-gradients/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../../../animation/common/color-gradients/" class="btn btn-xs btn-link">
+        Color Gradients
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../navmesh-path-test-component/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../navmesh-path-test-component/" class="btn btn-xs btn-link">
+        Navmesh Path Test Component
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="col-md-12 wm-page-content">
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/noraj/mkdocs-windmill-dark">Windmill Dark</a> theme by Alexandre ZANNI (noraj).</p>
+</footer>
+
+</body>
+</html>

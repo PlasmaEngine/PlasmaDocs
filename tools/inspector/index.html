@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="author" content="PlasmaDev">
+    <link rel="canonical" href="https://plasmaengine.github.io/PlasmaDocs/tools/inspector/">
+    <link rel="shortcut icon" href="../../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>plInspector - PlasmaDocs</title>
+    <link href="../../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../../js/jquery-3.2.1.min.js"></script>
+    <script src="../../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '../..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "plInspector", url: "#_top", children: [
+              {title: "Setting up your game to support plInspector", url: "#setting-up-your-game-to-support-plinspector" },
+              {title: "Connecting to a Process", url: "#connecting-to-a-process" },
+              {title: "How to get the best out of plInspector", url: "#how-to-get-the-best-out-of-plinspector" },
+              {title: "See Also", url: "#see-also" },
+          ]},
+        ];
+
+    </script>
+    <script src="../../js/base.js"></script>
+      <script src="../../search/main.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../minidumptool/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../minidumptool/" class="btn btn-xs btn-link">
+        MiniDump Tool
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../headercheck/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../headercheck/" class="btn btn-xs btn-link">
+        HeaderCheck Tool
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <h1 id="plinspector">plInspector</h1>
+<p>plInspector is a tool to monitor some internal state of an application. It helps observing how the application operates, which resources it accesses and why it might behave as it does.</p>
+<p>The current version allows to monitor the following data:</p>
+<ul>
+<li><strong>Log</strong>: The Log panel displays all the log messages. It allows to filter by severity and search by keywords.</li>
+<li><strong>Memory Usage</strong>: The Memory panel displays the number of allocations, the amount of memory in use (per allocator) and a time-line how memory usage changes.</li>
+<li><strong>Input</strong>: Shows which physical buttons are available and what their state is. Also displays the virtual input actions, by which keys they get triggered and what their current state is.</li>
+<li><strong>Subsystems</strong>: Displays information about all the available subsystems in the engine.</li>
+<li><strong>Plugins</strong>: Shows which plugins are loaded and which other plugins they depend on.</li>
+<li><strong>Global Events</strong>: Shows which global events are registered and how often they occur.</li>
+<li><strong>File Operations</strong>: This panel shows which files get accessed by the engine, whether they occur on the main thread, how much data is read or written per operation, how much time that takes (and thus why an application might be blocking or stuttering). Allows to sort and filter by different criteria to get a better grasp at what and how data is accessed.</li>
+<li><strong>CVars</strong>: This panel displays all CVars that are available. You can not only see their current values, but also modify them, such that you can change the behavior of the application without restarting it. This allows to quickly change parameters of things that you are trying out, such that you can see the effects immediately.</li>
+<li><strong>Console</strong>: The CVar panel also displays a console window, where you can type commands the same way as in the <a href="../../debugging/console/">in-game console</a>. Pressing <code>TAB</code> auto-completes input, arrow up/down searches the history, and so on. This can be used to modify CVar state, but also to execute <a href="../../debugging/console/#console-functions">console functions</a>.</li>
+<li><strong>Stats</strong>: Using plStats a game can display the status of certain internals. This allows to make it easy to inspect what a game object is doing or what state some component is in. So instead of printing this debug information on screen inside the game, you can watch it with plInspector. Additionally plInspector allows to mark stats as 'favorites' which means you can output hundreds of stats in your game, but easily only display the subset that you are currently interested in inside plInspector. Additionally, it is now possible to display the history of a stat variable in a separate panel as a graph. This makes it easy to observe how some stats behave over time (such as frame time, frames-per-second, etc.).</li>
+<li><strong>Time</strong>: Displays all plClock instances that are active. Shows the raw time step and the filtered time step, which allows to see hiccups and general performance characteristics of the application.</li>
+<li><strong>Reflection</strong>: Shows all reflected types and their class hierarchy. Also shows which properties each reflected type provides.</li>
+<li><strong>Data Transfer</strong>: This panel allows to pull data from an application. What data can be pulled is determined by what the application provides. For example an application might provide the G-Buffer as a set of images to be pulled. See plDataTransfer for further details.</li>
+<li><strong>Resources</strong>: This panel shows all loaded resources. You can filter by type and name and you can sort the resources by various criteria.</li>
+</ul>
+<h2 id="setting-up-your-game-to-support-plinspector">Setting up your game to support plInspector</h2>
+<blockquote>
+<p><strong>Note:</strong> None of this setup is required when you use <code>plGameApplication</code> as your application base class, or even better, your game only implements an <code>plGameState</code> and is run directly through <code>plPlayer</code>.</p>
+</blockquote>
+<p>The inspection functionality is implemented in the <code>plInspectorPlugin</code> plugin, so you need to have that compiled.</p>
+<p>In your application you can then either simply always link against that plugin to activate the functionality, or you can load it dynamically at runtime.
+Additionally the <code>plInspectorPlugin</code> uses <code>plTelemetry</code> to phone home, so you need to have that activated.</p>
+<pre><code class="language-cpp">// Activate plTelemetry such that the inspector plugin can use the network connection.
+plTelemetry::CreateServer();
+
+// Load the inspector plugin
+// The plugin contains automatic configuration code (through the plStartup system),
+// so it will configure itself properly when the engine is initialized by calling plStartup::StartupCore().
+// When you are using plApplication, this is done automatically.
+plPlugin::LoadPlugin(&quot;plInspectorPlugin&quot;);
+</code></pre>
+<p>You should insert this code somewhere in the engine initialization. When you are using <code>plApplication</code>, put this into the <code>AfterEngineInit</code> function.
+Additionally you need to make sure that <code>plTelemetry</code> is updated once per frame, to ensure that all changes are sent to plInspector regularly:</p>
+<pre><code class="language-cpp">// Call this once per frame to make sure all changes are transmitted
+plTelemetry::PerFrameUpdate();
+</code></pre>
+<p>And that's it! The rest is done automatically.</p>
+<h2 id="connecting-to-a-process">Connecting to a Process</h2>
+<ol>
+<li>If you run a custom app or plPlayer on the same machine, plInspector should manage to automatically connect.</li>
+<li>If you are running your app on a different machine, you need the respective IP address.</li>
+<li>For <a href="../player/">plPlayer</a> and custom apps, the <strong>default port is 1040</strong>.</li>
+<li>For <em>EditorEngineProcess.exe</em>, the <strong>default port is 1050</strong>. So if you want to connect with plInspector to the editor, you need to provide this port instead. </li>
+</ol>
+<h2 id="how-to-get-the-best-out-of-plinspector">How to get the best out of plInspector</h2>
+<p>Some tips, what to do to benefit from the inspection functionality:</p>
+<ul>
+<li>Use the <a href="../../debugging/logging/">logging system</a> <code>plLog</code> to output what your application is doing, and which errors it encounters. Use <code>PLASMA_LOG_BLOCK</code> to group logging information.</li>
+<li>Use the <code>plStats</code> system to write out information about what is going on in your application. The more information that you track, the easier you can figure out what is going wrong.</li>
+<li>Use <a href="../../debugging/cvars/">CVars</a> to allow configuration of your code at runtime. It is easy to add CVars and thus you should use them whenever you are working on something new, to be able to tweak its behavior quickly. Once you are finished with something you should strip all unnecessary CVars again, but often it makes sense to still keep some configuration options for later.</li>
+<li>When you are developing larger subsystems that you might want to know the memory consumption of, use a custom allocator for all allocations in that subsystem, then you can track its memory behavior better.</li>
+</ul>
+<h2 id="see-also">See Also</h2>
+<ul>
+<li><a href="../../debugging/cvars/">CVars</a></li>
+<li><a href="../../debugging/logging/">Logging</a></li>
+<li><a href="../../debugging/stats/">Stats</a></li>
+</ul>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../minidumptool/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../minidumptool/" class="btn btn-xs btn-link">
+        MiniDump Tool
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../headercheck/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../headercheck/" class="btn btn-xs btn-link">
+        HeaderCheck Tool
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="col-md-12 wm-page-content">
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/noraj/mkdocs-windmill-dark">Windmill Dark</a> theme by Alexandre ZANNI (noraj).</p>
+</footer>
+
+</body>
+</html>

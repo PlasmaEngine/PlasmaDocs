@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="author" content="PlasmaDev">
+    <link rel="canonical" href="https://plasmaengine.github.io/PlasmaDocs/custom-code/visual-script/visual-script-overview/">
+    <link rel="shortcut icon" href="../../../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Custom Code with Visual Scripts - PlasmaDocs</title>
+    <link href="../../../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../../../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../../../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../../css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../../../js/jquery-3.2.1.min.js"></script>
+    <script src="../../../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../../../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '../../..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "Custom Code with Visual Scripts", url: "#_top", children: [
+              {title: "Visual Script Use Cases", url: "#visual-script-use-cases" },
+              {title: "Performance Considerations", url: "#performance-considerations" },
+              {title: "See Also", url: "#see-also" },
+          ]},
+        ];
+
+    </script>
+    <script src="../../../js/base.js"></script>
+      <script src="../../../search/main.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../../../debugging/console/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../../../debugging/console/" class="btn btn-xs btn-link">
+        Console
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../visual-script-class-asset/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../visual-script-class-asset/" class="btn btn-xs btn-link">
+        Visual Script Class Asset
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <h1 id="custom-code-with-visual-scripts">Custom Code with Visual Scripts</h1>
+<p>The engine supports visual scripting as a way to execute custom logic without writing code. Visual scripting aims to be quick and easy to use, while providing a subset of the engine's features that is most useful for the intended use cases.</p>
+<p><img alt="Visual Script" src="../media/vs-state.png" /></p>
+<h2 id="visual-script-use-cases">Visual Script Use Cases</h2>
+<p>Visual scripting is meant for <strong>small scripts</strong> that deal with simple tasks. Often they act as glue code between other systems. For example to wait for an event from one component and then instruct another component to do something. Such logic would be overly cumbersome to set up in C++, and the performance difference is negligible.</p>
+<p>Visual script code may also be used to quickly prototype behavior to get an idea how something might work. However, dealing with edge-cases and errors typically involves a lot of complex code, and once the stage is reached where a feature should be fully fledged out and polished, it might be better to migrate to C++.</p>
+<p>In general, visual scripting is <strong>no substitue for C++</strong>. It only provides a subset of the features. A lot of functionality is deliberately left inaccessible, such as working with <a href="../../../runtime/resource-management/">resources (TODO)</a> or <a href="../../../runtime/application/game-state/">game states</a>. If you need to access them, you definitely should <a href="../../cpp/cpp-overview/">use C++</a>.</p>
+<h3 id="custom-components">Custom Components</h3>
+<p>The <a href="../visual-script-class-asset/">Visual Script Class Asset</a> allows you to write custom <a href="../../../runtime/world/components/">components</a> to interface with other components within the same object hierarchy.</p>
+<h3 id="custom-state-machine-states">Custom State Machine States</h3>
+<p>The <a href="../visual-script-class-asset/">Visual Script Class Asset</a> may also be used to write custom <a href="../game-logic/state-machine-asset.md#state-types">state machine states</a>. In this case the script code is executed by a state machine whenever the state is active.</p>
+<h2 id="performance-considerations">Performance Considerations</h2>
+<p>Most visual script code actually calls existing C++ functions. A custom virtual machine ministrates those calls. The execution is relatively fast and shouldn't be a concern for the intended use cases. It is more likely that you run into the limitations of <em>editing the script</em>, than performance bottlenecks.</p>
+<h2 id="see-also">See Also</h2>
+<ul>
+<li><a href="../../custom-code-overview/">Custom Code</a></li>
+<li><a href="../visual-script-class-asset/">Visual Script Class Asset</a>em, you definitely should use C++.</li>
+</ul>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../../../debugging/console/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../../../debugging/console/" class="btn btn-xs btn-link">
+        Console
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../visual-script-class-asset/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../visual-script-class-asset/" class="btn btn-xs btn-link">
+        Visual Script Class Asset
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="col-md-12 wm-page-content">
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/noraj/mkdocs-windmill-dark">Windmill Dark</a> theme by Alexandre ZANNI (noraj).</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="author" content="PlasmaDev">
+    <link rel="canonical" href="https://plasmaengine.github.io/PlasmaDocs/graphics/lighting/reflection-probe-components/">
+    <link rel="shortcut icon" href="../../../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Reflection Probe Components - PlasmaDocs</title>
+    <link href="../../../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../../../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../../../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../../css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../../../js/jquery-3.2.1.min.js"></script>
+    <script src="../../../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../../../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '../../..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "Reflection Probe Components", url: "#_top", children: [
+              {title: "Scene Setup", url: "#scene-setup" },
+              {title: "Component Properties", url: "#component-properties" },
+              {title: "Best Practices", url: "#best-practices" },
+              {title: "See Also", url: "#see-also" },
+          ]},
+        ];
+
+    </script>
+    <script src="../../../js/base.js"></script>
+      <script src="../../../search/main.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../sky-light-component/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../sky-light-component/" class="btn btn-xs btn-link">
+        Skylight Component
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../point-light-component/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../point-light-component/" class="btn btn-xs btn-link">
+        Point light component
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <h1 id="reflection-probe-components">Reflection Probe Components</h1>
+<p>The two reflection probe components, <em>box reflection probe component</em> and <em>sphere reflection probe component</em> allow for localized reflections to be added to a scene. The probe makes a 360 degree screenshot of the scene to capture the overall lighting at this location into a cubemap which can be sampled at runtime to generate reflections.</p>
+<h2 id="scene-setup">Scene Setup</h2>
+<p>Sphere reflection probes project the captured cubemap to infinity, i.e. no parallax effect is observed when moving. Box reflection probes on the other hand project the cubemap to their extents, allowing for parallax correction of the reflection when moving in the scene.
+Probes take the parent game object's scale into account. Thus, sphere probes can actually be ellipsoids if scaled non-uniformly. The image below shows the difference between a box (to the left) and a sphere reflection probe (to the right). While the reflection in the metal ball both look convincing, the reflection on the floor is clearly off for the sphere reflection probe.</p>
+<p><img alt="Box vs sphere reflection probe" src="../media/reflection-probes.jpg" /></p>
+<p>By default, each probe captures everything in its radius. In many cases it makes sense to <a href="../../projects/tags.md">tag</a> the <code>ExcludeTags</code> with <code>SkyLight</code> though so that the resulting cubemap is transparent where no geometry was rendered. This allows for the cubemaps to be dynamically composited at runtime. The benefits of this is that the skylight can change dynamically and won't be baked into the probe and it allows for parallax between e.g. a box probe and the sky light fallback reflection.</p>
+<p>The captured reflection is only visible in the probe's influence volume. For sphere probes this is limited by their radius and for box probes by their extents.</p>
+<p>At runtime, all probes are sorted by their volume and the smallest probe is sampled first. If the reflection is transparent in the cubemap, then next bigger cubemap that influences the geometry is sampled next. This continues until we hit an opaque pixel in a cubemap or if the fallback reflection of the <a href="../sky-light-component/">sky light component</a> is reached.</p>
+<p>The probe's <code>ReflectionProbeMode</code> by default is set to <code>static</code>, in which case the captured cubemap reflection is only updated once at the start or whenever the settings change. Alternatively it can be set to <code>dynamic</code>, in which case the probe is updated continuously.</p>
+<h2 id="component-properties">Component Properties</h2>
+<p>Sphere reflection component:</p>
+<ul>
+<li><code>Radius</code>: The influence range of the probe. The reflection is only visible on geometry intersecting this radius.</li>
+<li><code>Falloff</code>: Percentage of the radius that is smoothly blended into other probes.</li>
+<li><code>SphereProjection</code>: Enables paralax correction to project the reflection onto the shape of the sphere.</li>
+</ul>
+<p>Box reflection component:</p>
+<ul>
+<li><code>Extents</code>: The extents of the box projection. The cubemap will be projected to this box.</li>
+<li><code>InfluenceScale</code>, <code>InfluenceShift</code>: The influence volume can be smaller than the projected volume (extents) of the probe. This can be useful if you have e.g. a long corridor that you want to place multiple probes in. Each will have the same projection but a different part of the projection volume will be set as the influence volume centred around a probe capture offset.</li>
+<li><code>PositiveFalloff</code>, <code>NegativeFalloff</code>: Percentage of the influence volume in each direction that is smoothly blended into other probes. The falloff is defined for each face of the box.</li>
+<li><code>BoxProjection</code>: Enables paralax correction to project the reflection onto the shape of the box.</li>
+</ul>
+<p>Common properties for both sphere and box reflection probes that describe how the probe is captured:</p>
+<ul>
+<li><code>ReflectionProbeMode</code>: <code>Dynamic</code> makes the skylight update continuously. <code>Static</code> will only update once at the start.</li>
+<li><code>IncludeTags</code>, <code>ExcludeTags</code>: These <a href="../../projects/tags.md">tags</a> define which objects in the scene are used to capture the scene. This is the same mechanism as used in the <a href="../../camera-component/">camera component</a>. By default, the <code>SkyLight</code> tag is excluded to allow for dynamic composition with the <a href="../sky-light-component/">sky light component</a>.</li>
+<li><code>NearPlane</code>, <code>FarPlane</code>: Camera settings used when the lighting is captured from the scene. If <code>NearPlane</code> is set to <code>Auto</code>, a value is computed automatically from the <code>FarPlane</code>.</li>
+<li><code>CaptureOffset</code>: The capture offset allows for the capture position of the probe to be decoupled from the game object position.</li>
+<li><code>ShowDebugInfo</code>: If enabled, a sphere with a preview of the probe cubemap is rendered at the position of the capture offset. Use this to check whether all desired objects contribute to the probe. Above the sphere will be a stack of other spheres that showcase the reflection with increased roughness.</li>
+</ul>
+<h2 id="best-practices">Best Practices</h2>
+<h3 id="dont-try-to-create-mirrors-with-reflection-probes">Don't try to create mirrors with reflection probes</h3>
+<p>Avoid mirrors or other perfectly reflective surfaces. Reflection probes are approximate and should not be used to emulate mirrors and other perfect reflectors.</p>
+<p>Even when using projection, the illusion of a perfect mirror immediately brakes down once objects are in the box-shaped room as the objects will be splatted to the boxs extents</p>
+<h3 id="ensure-box-projections-have-roughly-the-same-length-on-each-side">Ensure box projections have roughly the same length on each side</h3>
+<p>If a box projection has very different dimensions on each axis you will run into stretching artifacts at the long ends of the box </p>
+<p>Instead of just one box probe, use multiple boxes to span long corridors to prevent this.
+To do this, take the existing box that spans the entire area and do the following:
+1. Change it's Influence scale to e.g. 0.4 on the long axis, X in this case.
+2. Duplicate the object at the same positions.
+3. Set the duplicate's influence shift of the X-axis to 1.
+4. Duplicate the object in-place again.
+5. Set the new duplicate's influence shift of the X-axis to -1.</p>
+<h3 id="dont-align-box-probes-perfectly-with-walls">Don't align box probes perfectly with walls</h3>
+<p>When using <code>BoxProjection</code>, it is best to not try to align a box's extent perfectly with a room. Projections are intended to anchor reflections, not as a mirror substitute.</p>
+<p>In the following image you can see some of the pitfalls when trying to do so:
+While the floor reflection now fits perfectly, there is no reflection on the wall mirror. This is because there is a door to another room and to avoid hard interpolation discontinuties between reflection probes, the falloff in that direction needs to be set. As the falloff moves inwards the mirror on the wall basically gets no contribution of the room's probe anymore.
+On the left wall this problem can be avoided by setting the falloff to zero but that is generally not an option in most cases.</p>
+<p><img alt="Box reflection probe placement 1" src="../media/reflection-box-placement1.jpg" /></p>
+<p>Instead, increase the extents and set a falloff in each direction to fade into the neighboring reflection probes.</p>
+<p><img alt="Box reflection probe placement 2" src="../media/reflection-box-placement2.jpg" /></p>
+<p>Once the floor material is replaced with a more reasonable one that is not a perfect mirror the missalignment will no longer be aparent while still providing the desired parallax effect to the reflections.</p>
+<h2 id="see-also">See Also</h2>
+<ul>
+<li><a href="../lighting-overview/">Lighting</a></li>
+<li><a href="../ambient-light-component/">Ambient Light Component</a></li>
+<li><a href="../sky-light-component/">Sky Light Component</a></li>
+</ul>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../sky-light-component/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../sky-light-component/" class="btn btn-xs btn-link">
+        Skylight Component
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../point-light-component/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../point-light-component/" class="btn btn-xs btn-link">
+        Point light component
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="col-md-12 wm-page-content">
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/noraj/mkdocs-windmill-dark">Windmill Dark</a> theme by Alexandre ZANNI (noraj).</p>
+</footer>
+
+</body>
+</html>

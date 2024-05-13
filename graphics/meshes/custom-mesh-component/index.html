@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="author" content="PlasmaDev">
+    <link rel="canonical" href="https://plasmaengine.github.io/PlasmaDocs/graphics/meshes/custom-mesh-component/">
+    <link rel="shortcut icon" href="../../../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Custom Mesh Component - PlasmaDocs</title>
+    <link href="../../../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../../../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../../../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../../css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../../../js/jquery-3.2.1.min.js"></script>
+    <script src="../../../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../../../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '../../..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "Custom Mesh Component", url: "#_top", children: [
+              {title: "Mesh Buffer Resource", url: "#mesh-buffer-resource" },
+              {title: "Instancing", url: "#instancing" },
+              {title: "Materials", url: "#materials" },
+              {title: "Vertex Colors", url: "#vertex-colors" },
+              {title: "See Also", url: "#see-also" },
+          ]},
+        ];
+
+    </script>
+    <script src="../../../js/base.js"></script>
+      <script src="../../../search/main.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../instanced-mesh-component/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../instanced-mesh-component/" class="btn btn-xs btn-link">
+        Instanced Mesh Component
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../../lighting/spot-light-component/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../../lighting/spot-light-component/" class="btn btn-xs btn-link">
+        Spot Light Component
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <h1 id="custom-mesh-component">Custom Mesh Component</h1>
+<p>The <code>plCustomMeshComponent</code> can be used in place of a <a href="../mesh-component/">mesh component</a>, but rather than loading a <a href="../mesh-asset/">mesh asset</a>, the mesh geometry is provided through (C++) code dynamically at runtime.</p>
+<p>This component is useful when you need to build geometry dynamically, for example to create visualizers that show what a player can do at a specific point in your game world. These things may not be possible to build up from fixed pieces, and therefore need custom geometry.</p>
+<h2 id="mesh-buffer-resource">Mesh Buffer Resource</h2>
+<p>Each custom mesh component references a <code>plDynamicMeshBufferResource</code>. Either its very own one, or a shared resource. At runtime, you would modify the geometry in that resource, and the <code>plCustomMeshComponent</code> takes care of rendering it.</p>
+<h2 id="instancing">Instancing</h2>
+<p>If you want to render multiple instances of the same geometry, create multiple <code>plCustomMeshComponent</code>s and set all of them to reference the same mesh buffer resource.</p>
+<h2 id="materials">Materials</h2>
+<p>Each component only uses a single <a href="../../materials/materials-overview.md">material</a> for rendering, but if you want to use multiple materials to render different pieces of the geometry, you can use multiple custom mesh components, and have each one render a different part of the geometry by giving it a limited <em>primitive range</em>.</p>
+<h2 id="vertex-colors">Vertex Colors</h2>
+<p>Custom mesh components use <em>vertex colors</em>, meaning every vertex stores its own color information. This is different to typical mesh data in Plasma, where per-vertex colors are usually not used. If you do not require vertex colors, this is fine and you can use any default <a href="../../materials/materials-overview.md">material</a> (and thus shader). The extra information will simply be ignored.</p>
+<p>However, if you do need the vertex color information, for instance to precisely control transparency, then you also need to set a material, which uses a <a href="../../shaders/shaders-overview/">shader (TODO)</a> that actually reads the vertex color value and uses it in the way that you desire. You may need to write a custom shader for that.</p>
+<h2 id="see-also">See Also</h2>
+<ul>
+<li><a href="../meshes-overview/">Meshes</a></li>
+<li><a href="../../shaders/shaders-overview/">Shaders</a></li>
+</ul>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../instanced-mesh-component/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../instanced-mesh-component/" class="btn btn-xs btn-link">
+        Instanced Mesh Component
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../../lighting/spot-light-component/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../../lighting/spot-light-component/" class="btn btn-xs btn-link">
+        Spot Light Component
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="col-md-12 wm-page-content">
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/noraj/mkdocs-windmill-dark">Windmill Dark</a> theme by Alexandre ZANNI (noraj).</p>
+</footer>
+
+</body>
+</html>

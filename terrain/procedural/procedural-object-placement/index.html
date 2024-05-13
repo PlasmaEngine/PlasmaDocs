@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="author" content="PlasmaDev">
+    <link rel="canonical" href="https://plasmaengine.github.io/PlasmaDocs/terrain/procedural/procedural-object-placement/">
+    <link rel="shortcut icon" href="../../../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Procedural Object Placement - PlasmaDocs</title>
+    <link href="../../../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../../../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../../../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../../css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../../../js/jquery-3.2.1.min.js"></script>
+    <script src="../../../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../../../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '../../..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "Procedural Object Placement", url: "#_top", children: [
+              {title: "Technical Overview", url: "#technical-overview" },
+              {title: "See Also", url: "#see-also" },
+          ]},
+        ];
+
+    </script>
+    <script src="../../../js/base.js"></script>
+      <script src="../../../search/main.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../procgen-graph-asset/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../procgen-graph-asset/" class="btn btn-xs btn-link">
+        ProcGen Graph Asset
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../../terrain-overview/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../../terrain-overview/" class="btn btn-xs btn-link">
+        Terrain and Vegetation
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <h1 id="procedural-object-placement">Procedural Object Placement</h1>
+<p><img alt="Procedural Vegetation Placement" src="../media/procgen-beaty-shot.jpg" /></p>
+<p>Creating large terrain with convincing vegetation is a lot of work. Since nature generally follows certain rules, such as on which type of terrain which plant can grow, how densely they are packed and so on, it makes sense to rather build and apply such rules to automatically place objects, than attempting to place vegetation by hand.</p>
+<p>Plasma comes with a <em>procedural generation</em> feature. This is designed specifically for decorating terrain with vegetation, but can also be used in other scenarios.</p>
+<p>The system is heavily inspired by the procedural vegetation system in <em>Horizon Zero Dawn</em>. See this GDC talk (<a href="https://www.youtube.com/watch?v=ToCozpl1sYY">video</a>, <a href="https://www.gdcvault.com/play/1024700/GPU-Based-Run-Time-Procedural">slides</a>) for reference.</p>
+<h2 id="technical-overview">Technical Overview</h2>
+<p>The procedural generation system is active in a scene once a <a href="../procgen-placement-component/">procedural placement component</a> is added to it. The component defines in which area a certain rule is used to place objects. The rules are set up through <a href="../procgen-graph-asset/">ProcGen graph assets</a>. The rules specify which objects to place under which conditions and with what kind of variation.</p>
+<p>Additional components can be placed to affect the object placement in select areas, such as for clearing an area or increasing the density of a certain type of plant.</p>
+<p>The procedural placement system only places objects during scene simulation, so without pressing <em>play</em> in the editor, you won't see any placement.</p>
+<p>The system uses the position of the main <a href="../../../graphics/camera-component/">camera</a> to determine where to place objects. Object placement is distributed across frames, to prevent stutter. A grid around the camera is used to determine in which area objects have been placed already. When the camera moves, new cells will be populated, and cells that are too far away are cleared again. This way the system makes sure that there is a relatively constant performance impact.</p>
+<p>Consequently, procedurally placed objects can't have state that needs to be persistent. Each object can have state, for example you could make it place trees that can be burned down, but it must be fine for your game, that the tree will reappear, if the player gets far away and returns.</p>
+<p>Object placement is deterministic. As long as the placement rules and the conditions (terrain, materials, etc) don't change, the same object will be placed at the same position every single time.</p>
+<h2 id="see-also">See Also</h2>
+<ul>
+<li><a href="../procgen-graph-asset/">ProcGen Graph Asset</a></li>
+<li><a href="../procgen-placement-component/">Procedural Placement Component</a></li>
+</ul>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../procgen-graph-asset/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../procgen-graph-asset/" class="btn btn-xs btn-link">
+        ProcGen Graph Asset
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../../terrain-overview/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../../terrain-overview/" class="btn btn-xs btn-link">
+        Terrain and Vegetation
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="col-md-12 wm-page-content">
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/noraj/mkdocs-windmill-dark">Windmill Dark</a> theme by Alexandre ZANNI (noraj).</p>
+</footer>
+
+</body>
+</html>

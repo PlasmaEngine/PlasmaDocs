@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="author" content="PlasmaDev">
+    <link rel="canonical" href="https://plasmaengine.github.io/PlasmaDocs/custom-code/game_logic/state-machine-asset/">
+    <link rel="shortcut icon" href="../../../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>State Machine Asset - PlasmaDocs</title>
+    <link href="../../../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../../../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../../../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../../css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../../../js/jquery-3.2.1.min.js"></script>
+    <script src="../../../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../../../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '../../..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "State Machine Asset", url: "#_top", children: [
+              {title: "State Machine Concept", url: "#state-machine-concept" },
+              {title: "Configuring State Machines", url: "#configuring-state-machines" },
+              {title: "State Types", url: "#state-types" },
+              {title: "Transition Types", url: "#transition-types" },
+              {title: "Executing State Machines", url: "#executing-state-machines" },
+              {title: "See Also", url: "#see-also" },
+          ]},
+        ];
+
+    </script>
+    <script src="../../../js/base.js"></script>
+      <script src="../../../search/main.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../state-machine-component/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../state-machine-component/" class="btn btn-xs btn-link">
+        State Machine Component
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../forward-events-to-game-state-component/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../forward-events-to-game-state-component/" class="btn btn-xs btn-link">
+        Forward Events To Game State Component
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <h1 id="state-machine-asset">State Machine Asset</h1>
+<p>A <em>state machine asset</em> is used to create a <a href="https://en.wikipedia.org/wiki/Finite-state_machine">state machine</a> that is commonly used to keep track of an entity's state. State machines are very useful to give objects functionality. For example a door might have the states <em>closed</em>, <em>opening</em>, <em>open</em> and <em>closing</em> and in each state it has to do certain things (apply a rotation) and allow or disallow interaction.</p>
+<p>State machines are also often used for AI (creatures or NPCs), to give them behavior. Since many AI types are rather simple, this is a viable option. For more complex AI logic, state machines quickly become too limited.</p>
+<p><img alt="State Machine" src="../media/state-machine.png" /></p>
+<h2 id="state-machine-concept">State Machine Concept</h2>
+<p>At any time exactly one <em>state</em> is <strong>active</strong> in a state machine. The active state determines what actions an entity will do and what other states it can <em>transition</em> into. For example in the image above you can see that this state machine can only transition from the <em>Idle</em> state into the <em>Alert</em> state (and back), but it can't directly transition into the <em>Attacking</em> state.</p>
+<p>What an entity does, when a certain state is active, is usually up to <a href="../../custom-code-overview/">other code</a>. On the state node in the state machine asset you select what <em>type of state</em> this is. Different state types can be implemented in C++ or <a href="../../visual-script/visual-script-overview/">visual scripts</a>.</p>
+<p>State machines are updated regularly and during every update they may <em>transition</em> into another state. Possible transitions are represented by arrows between states. Just as with states, there are also different <em>types of transitions</em>. As with states, custom transition types can be implemented with C++ or <a href="../../visual-script/visual-script-overview/">visual scripts</a>.</p>
+<p>During the state machine update, each transition on the active state is queried, whether its condition is met. If so, the transition is taken, and the state that it points to becomes the new active state. What it means that a transition's condition is met, is up to the transition type's implementation. For example the <em>blackboard transition</em> inspects values from a nearby <a href="../../Miscellaneous/blackboards.md">blackboard</a>, allowing you to set up logical rules. Another type of transition may simply wait for a second and then allow to transition further, acting as a timer.</p>
+<p>In many state machines there are states that can be reached from pretty much every other state. For example the <em>Dead</em> state in the image above is simply reached whenever the health of a creature reaches zero, no matter which state it currently is in. In a pure state machine, one would add transitions from every node to that final state. However, since this is cumbersome, Plasma also allows to set up transitions that can transition from any active state to their target state. In the state machine asset, such transitions are represented as an
+<strong>Any State</strong> (taking the place of <em>any other state</em>) from which they are drawn to the target state.</p>
+<h2 id="configuring-state-machines">Configuring State Machines</h2>
+<p>Right click into the window and choose <strong>New State</strong> or <strong>New Any State</strong> to add a node. To add a transition between states, click the <strong>+</strong> on a node and drag it to another state.</p>
+<p>Select state nodes in the main window to see their <em>properties</em>. Here you can give the state a name and <strong>select the state type</strong>. Most state types have custom properties that also need to be configured here.</p>
+<p>Select transition arrows to see their <em>properties</em>. Here you can <strong>select the transition type</strong>. Typically you also then need to configure the transition's properties.</p>
+<p>If you don't select a state type, a state simply does nothing. If you have a transition without a transition type, the transition will be taken immediately. This can be used to simply chain states. For example the <em>start state</em> is always active, even while the editor is not simulating. It is sometimes undesireable to have this state do anything. Therefore, a second state can be used as the "real" start state, and a transition without a type can be added between the two. This transition is only going to be taken once the scene is being simulated.</p>
+<h3 id="default-initial-state">Default Initial State</h3>
+<p>Right click on a state and select <strong>Set as Initial State</strong> to make a state the <em>default initial state</em>. That means, when this state machine is used in a <a href="../state-machine-component/">state machine component</a> or as a <a href="#nested-state-machine">nested state machine</a>, and no <em>initial state</em> is selected by the user, this state is used.</p>
+<h2 id="state-types">State Types</h2>
+<p>You have to select a <em>state type</em> for every node in your state machine.</p>
+<h3 id="send-message-state">Send Message State</h3>
+<p>When the <em>Send Message State</em> gets activated (transitioned into) or deactivated (transitioned out of), it sends the <code>plMsgStateMachineStateChanged</code> <a href="../../../runtime/world/world-messaging/">event message</a> to the <a href="../../../runtime/world/game-objects/">game object</a> on which the executing <a href="../state-machine-component/">state machine component</a> is attached. Thus other components, such as <a href="../../typescript/typescript-overview/">TypeScript components</a> can listen for this message and react accordingly.</p>
+<p>The message can be sent with a delay. Also, if this state type is configured to send neither a message on enter, nor on exit, it effectively does nothing and can be used for states that don't require further action.</p>
+<p>You can also turn on logging on enter or exit, for better debugging.</p>
+<h3 id="nested-state-machine">Nested State Machine</h3>
+<p>A <em>Nested State Machine</em> state references another state machine. When the state is entered, it starts executing an instance of that state machine. Messages sent from the nested state machine will be delivered to the same owner game object. As long as the surrounding state stays active, the nested state machine gets updated. Once the surrounding state is exited, execution of the nested state machine is suspended. You can choose whether it gets reset to the initial state, or stay in the last active state. This way, once the nested state machine gets activated again later, it may either start from the beginning, or resume where it left off.</p>
+<p>Nested state machines can be very useful to reuse state machines and to make editing easier. Also the fact that a state machine can be suspended and resumed at its last active state allows for more complex behavior.</p>
+<p>If no <em>initial state</em> is specified, the <a href="#default-initial-state">default initial state</a> is used.</p>
+<h3 id="compound-state">Compound State</h3>
+<p>A <em>Compound State</em> has no functionality by itself, rather it holds an array of other state types. All events (state entered/left) are forwarded to all sub-states equally. Thus it can be used to trigger multiple reactions at the same time.</p>
+<h3 id="script-state">Script State</h3>
+<p>The <em>Script State</em> runs a <a href="../../visual-script/visual-script-overview/">visual scripts</a>. It executes the <code>OnEnter</code>, <code>OnExit</code> and <code>Update</code> event handlers for state machine states.</p>
+<h3 id="switch-object-state">Switch Object State</h3>
+<p>This state sets the <em>enabled flag</em> on a game object and disables all other objects in the same group.</p>
+<p>This state allows to easily switch the representation of a game object.
+For instance you may have two objects states: <em>normal</em> and <em>burning</em>.
+You can basically just build two objects, one in the normal state, and one with all the effects needed for the fire.
+Then you group both objects under a shared parent (e.g. with name 'visuals'), give both of them a name ('normal', 'burning') and disable one of them.</p>
+<p>When the state machine transitions from the <em>normal</em> state to the <em>burning</em> state, you can then use this type of state
+to say that from the 'visuals' group you want to activate the 'burning' object and deactivate all other objects in the same group.</p>
+<p>Because the state activates one object and deactivates all others, you can have many different visuals and switch between them.
+You can also only activate an object and keep the rest in the group as they are (e.g. to enable more and more effects).
+If you only give a group path, but no object name, you can also use it to just disable all objects in a group.
+If multiple objects in the same group have the same name, they will all get activated simultaneously.</p>
+<p>Make sure that essential other objects (like the physics representation or other scripts) are located on other objects, that don't get deactivated.</p>
+<h4 id="state-properties">State Properties</h4>
+<ul>
+<li><code>PathToGroup</code>: A list of object names, separated with slashes, that forms a relative path starting at the game object on which the state machine component is located, to a game object which acts as a <em>group</em> and contains multiple sub-objects.</li>
+<li><code>ObjectToEnable</code>: The name of the sub-object in the <em>group</em> that should get <em>enabled</em>.</li>
+<li><code>DeactivateOthers</code>: If true, all other objects within the <em>group</em> get disabled. Otherwise they stay as they are.</li>
+</ul>
+<h2 id="transition-types">Transition Types</h2>
+<p>You have to select a <em>transition type</em> for every transition in your state machine.</p>
+<h3 id="blackboard-conditions">Blackboard Conditions</h3>
+<p><em>Blackboard conditions</em> query the <a href="../../Miscellaneous/blackboards.md">blackboard</a>. You can configure the transition condition to be fulfilled either when at least one or all the specified blackboard entries have the desired values.</p>
+<h3 id="timeout-transition">Timeout Transition</h3>
+<p>This transition is fulfilled after a certain amount of time has passed. This can be used to automatically transition to the next state after a fixed amount of time. Together with a <em>compound transition</em> it can also be used to prevent transitioning before a minimum of time has passed.</p>
+<h3 id="compound-transition">Compound Transition</h3>
+<p>The <em>Compound Transition</em> allows you to create complex logical conditions. It holds an array of other transition types. You can select whether either at least one of them, or all of these conditions need to be met, for the compound transition to be fulfilled.</p>
+<p>For example, you can add a blackboard condition and a timeout transition. If you set the compound transition to <code>AND</code>, both of these must be true, meaning the transition can only be taken after the blackboard values are correct and the minimum time has passed. If, however, you set it to <code>OR</code>, the transition is taken once either the timeout or the blackboard state is fulfilled.</p>
+<p>Note that you can use nested compound transitions to create even more complex logical conditions.</p>
+<h3 id="transition-event-transition">Transition Event Transition</h3>
+<p>This type of transition is taken when a <em>transition event</em> with the expected name has been raised. Transition events can be raised from <a href="../../visual-script/visual-script-overview/">visual scripts</a> or C++ through the <a href="../state-machine-component/">state machine component</a>. This allows script code to report back, that a certain condition was met, and that the state machine may leave its current state.</p>
+<h2 id="executing-state-machines">Executing State Machines</h2>
+<p>In theory state machines could be used in many contexts. In <a href="../../cpp/cpp-overview/">custom C++ code</a> you are free to instantiate state machines directly via <code>plStateMachineResource</code>.</p>
+<p>In a scene, you can instantiate a state machine through the <a href="../state-machine-component/">state machine component</a>.</p>
+<h2 id="see-also">See Also</h2>
+<ul>
+<li><a href="../state-machine-component/">State Machine Component</a></li>
+<li><a href="../../custom-code-overview/">Custom Code</a></li>
+</ul>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../state-machine-component/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../state-machine-component/" class="btn btn-xs btn-link">
+        State Machine Component
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../forward-events-to-game-state-component/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../forward-events-to-game-state-component/" class="btn btn-xs btn-link">
+        Forward Events To Game State Component
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="col-md-12 wm-page-content">
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/noraj/mkdocs-windmill-dark">Windmill Dark</a> theme by Alexandre ZANNI (noraj).</p>
+</footer>
+
+</body>
+</html>

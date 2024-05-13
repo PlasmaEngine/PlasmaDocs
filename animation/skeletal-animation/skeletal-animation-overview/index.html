@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="author" content="PlasmaDev">
+    <link rel="canonical" href="https://plasmaengine.github.io/PlasmaDocs/animation/skeletal-animation/skeletal-animation-overview/">
+    <link rel="shortcut icon" href="../../../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Skeletal Animations - PlasmaDocs</title>
+    <link href="../../../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../../../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../../../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../../css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../../../js/jquery-3.2.1.min.js"></script>
+    <script src="../../../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../../../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '../../..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "Skeletal Animations", url: "#_top", children: [
+              {title: "The Animation System Pieces", url: "#the-animation-system-pieces" },
+              {title: "How to Import Animation Data", url: "#how-to-import-animation-data" },
+              {title: "Animation Utility Components", url: "#animation-utility-components" },
+              {title: "See Also", url: "#see-also" },
+          ]},
+        ];
+
+    </script>
+    <script src="../../../js/base.js"></script>
+      <script src="../../../search/main.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../skeleton-asset/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../skeleton-asset/" class="btn btn-xs btn-link">
+        Skeleton Asset
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../simple-animation-component/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../simple-animation-component/" class="btn btn-xs btn-link">
+        Simple Animation Component
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <h1 id="skeletal-animations">Skeletal Animations</h1>
+<p>Skeletal animations are used to animated meshes. This is typically used for game characters and robots, but is equally useful for other complex moving objects.</p>
+<p>Describing how skeletal animation works in general is out of scope for the Plasma documentation, but there are a vast amount of resources about this topic online. It is assumed here, that you are familiar with the concepts and know the basics about modelling, rigging and animating a mesh with a tool such as <a href="https://www.blender.org">Blender</a>.</p>
+<p>The rest of this document gives a high-level overview, how to get started with getting animated meshes into Plasma. For more in-depth descriptions of each feature, please consult the respective documentation pages.</p>
+<h2 id="the-animation-system-pieces">The Animation System Pieces</h2>
+<p>The following elements are involved to make an animated mesh:</p>
+<h3 id="animated-mesh-asset">Animated Mesh Asset</h3>
+<p>The <a href="../animated-mesh-asset/">animated mesh</a> asset represents the mesh of the animated object. This is a special version of the <a href="../../../graphics/meshes/mesh-asset/">mesh asset</a>. It works mostly the same way, except that it adds the necessary skinning information. Consequently, only these kinds of meshes can be used for skeletal animation. An animated mesh asset requires you to specify a default <a href="../skeleton-asset/">skeleton asset</a>, otherwise it won't even transform the data.</p>
+<h3 id="skeleton-asset">Skeleton Asset</h3>
+<p>The <a href="../skeleton-asset/">skeleton asset</a> stores the bone hierarchy of the animated object. This is also where you configure the overall scaling and which direction should be the forward, right and up vector of the imported model. The skeleton asset is also where you would set up physics collision shapes.</p>
+<h3 id="animation-clip-asset">Animation Clip Asset</h3>
+<p>The <a href="../animation-clip-asset/">animation clip asset</a> represents <strong>a single animation</strong>, such as a walk or a jump animation. You may have multiple animations stored in a single <code>.fbx</code> or <code>.glb</code> file, but you need to create one animation clip asset for each animation that you want to import into Plasma. Just reference the same source file each time. The animation clip asset has a property <code>UseAnimationClip</code> through which you can choose which animation to extract from the source file. Currently you have to <strong>type</strong> the name of the animation. The <em>Available Clips</em> list just below it shows you which animations have been found in the file.</p>
+<p>Additionally, in case all animations are in one large clip, you can use the <code>FirstFrame</code> and <code>NumFrames</code> properties to extract only a subset of the animation. This allows you to import the same source file many times, each time extracting only a specific range as a single clip.</p>
+<p>The <a href="../root-motion/">root motion</a> properties are meant for enabling an animation clip to move an animated character (ie. the actual <a href="../../physics/jolt/special/jolt-character-controller.md">character controller</a> that sits on top of the animated mesh).</p>
+<p>The <em>event track</em> property allows you to add <a href="../animation-events/">markers</a> to the clip, that indicate what happens at what time in the clip. This can be used to indicate when a foot touches the ground, or at what point in the animation a weapon fires. Using this information, the game logic could react by, for example, spawning an effect.</p>
+<p>Animation events are sent as <a href="../../../runtime/world/world-messaging/#event-messages">event messages</a> and therefore can only be captured by <em>event handler components</em> such as <a href="../../../custom-code/visual-script/visual-script-overview/">visual scripts</a> or <a href="../../../custom-code/typescript/typescript-overview/">TypeScript components</a>.</p>
+<h3 id="simple-animation-playback">Simple Animation Playback</h3>
+<p>Once you have an animated mesh asset, a skeleton asset and an animation clip asset all set up, you can create an animated object in a scene by attaching an <a href="../animated-mesh-component/">animated mesh component</a> and a <a href="../simple-animation-component/">simple animation component</a> to a game object like so:</p>
+<h3 id="advanced-animation-playback">Advanced Animation Playback</h3>
+<p>To create a playable character, you need multiple animations for all the actions that the character should be able to do. A big part revolves around <em>locomotion</em>, ie making the character walk around. Here it is not sufficient anymore to just play one animation, you will need to have multiple animations and blend them together in a convincing way.</p>
+<p>This is where the <a href="../animation-controller/animation-controller-overview/">animation controller</a> comes into play. This asset allows you to define how animations should be combined to make a character move fluidly and react to various inputs.</p>
+<p>Once you have basic animation playback working, getting familiar with animation controllers is the next step to make the most out of your animated characters.</p>
+<h2 id="how-to-import-animation-data">How to Import Animation Data</h2>
+<p>To import an animated object, you need to set up multiple assets (the mesh, the skeleton, the animation clips). The easiest way is to drag drop it into the asset broweser or press <strong>CTRL+I</strong> to open the <a href="../../../assets/import-assets/">asset import dialog</a>. Select your <code>.fbx</code> or <code>.glb</code> file and choose to import it as multiple asset types like so:</p>
+<p><img alt="Animation import" src="../../media/anim-import.png" /></p>
+<p>This will create all three necessary assets. You can repeat this process, if you want to import multiple animation clips (select <em>No Import</em> for the other asset types then). You'll need to change the filename for each additional animation clip asset.</p>
+<h2 id="animation-utility-components">Animation Utility Components</h2>
+<p>The following components are currently available:</p>
+<h3 id="joint-attachment-component">Joint Attachment Component</h3>
+<p>If you put a child object under an object with an animated mesh component, and attach a <a href="../joint-attachment-component/">joint attachment component</a>, the animation system will take control over that object's position. With the <strong>JointName</strong> property you specify a bone that you are interested in (see the <a href="../skeleton-asset/">skeleton asset</a>, if you need to know what bones are available). Every game tick, the animation system will then move that game object to the position of the animated bone. This allows you to have game objects move in sync with the animation. This can be used to put an object into the hand of a creature, or to have an effect follow the animation.</p>
+<p>In the sample scene this is used to place an object at the (animated) front of the turret's barrel, such that the projectile will be spawned at the proper position.</p>
+<h3 id="joint-override-component">Joint Override Component</h3>
+<p>The <a href="../joint-override-component/">joint override component</a> is the opposite to the <em>joint attachment component</em>. It works similar in that it has to be attached to a child object of an animated mesh and you have to type in the name of a bone. However, it will then <em>override</em> the specified <strong>bone's local transform</strong> with its <strong>own local transform</strong>. The idea here is, that game code can use this game object as a controller to steer the animated object. So for example your turret might be one complex animated object, with many bones but somewhere in the bone hierarchy there is one bone that controls the turrets aim (up/down or left/right or both). You want cool animations to "unfold" the turret when it is built and all sorts of other animations that are only possible with proper skeletal animation, but once the game runs you also want to procedurally control where the turret is aiming. Using this component you can take control of certain bones and drive their animation yourself.</p>
+<p>In the sample scene there are two objects for each turret that override two bones: one for left/right rotation and one for pointing up/down. You can manually modify these values from the property grid, while the editor is in play mode, to control the turrets aim. Note how the recoil animation continues to play properly relative to the turret's main direction.</p>
+<h2 id="see-also">See Also</h2>
+<ul>
+<li><a href="../animated-mesh-asset/">Animated Mesh Asset</a></li>
+<li><a href="../skeleton-asset/">Skeleton Asset</a></li>
+<li><a href="../animation-clip-asset/">Animation Clip Asset</a></li>
+<li><a href="../animation-controller/animation-controller-overview/">Animation Controller</a></li>
+</ul>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../skeleton-asset/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../skeleton-asset/" class="btn btn-xs btn-link">
+        Skeleton Asset
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../simple-animation-component/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../simple-animation-component/" class="btn btn-xs btn-link">
+        Simple Animation Component
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="col-md-12 wm-page-content">
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/noraj/mkdocs-windmill-dark">Windmill Dark</a> theme by Alexandre ZANNI (noraj).</p>
+</footer>
+
+</body>
+</html>

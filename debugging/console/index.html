@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="author" content="PlasmaDev">
+    <link rel="canonical" href="https://plasmaengine.github.io/PlasmaDocs/debugging/console/">
+    <link rel="shortcut icon" href="../../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Console - PlasmaDocs</title>
+    <link href="../../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../../js/jquery-3.2.1.min.js"></script>
+    <script src="../../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '../..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "Console", url: "#_top", children: [
+              {title: "Key bindings", url: "#key-bindings" },
+              {title: "Modify CVars", url: "#modify-cvars" },
+              {title: "Binding Keys", url: "#binding-keys" },
+              {title: "Search", url: "#search" },
+              {title: "Console Functions", url: "#console-functions" },
+              {title: "See Also", url: "#see-also" },
+          ]},
+        ];
+
+    </script>
+    <script src="../../js/base.js"></script>
+      <script src="../../search/main.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../cvars/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../cvars/" class="btn btn-xs btn-link">
+        CVars
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../../custom-code/visual-script/visual-script-overview/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../../custom-code/visual-script/visual-script-overview/" class="btn btn-xs btn-link">
+        Custom Code with Visual Scripts
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <h1 id="console">Console</h1>
+<p>The in-game console is a utility for inspecting the <a href="../logging/">log</a>, modifying <a href="../cvars/">CVars</a> and calling <a href="#console-functions">console functions</a>.</p>
+<h2 id="key-bindings">Key bindings</h2>
+<p>The default key binding for the console is:</p>
+<ul>
+<li><strong>F1</strong> - Opens/closes the console.</li>
+<li><strong>Up / Down</strong> - Select a previously entered command from the history.</li>
+<li><strong>F2</strong> and <strong>F3</strong> - Repeat last and second-to-last commands. This works even when the console is currently closed.</li>
+<li><strong>ESC</strong> - Clears the input line.</li>
+<li><strong>Page Up / Page Down</strong> - Scrolls the log output up / down.</li>
+<li><strong>TAB</strong> - Auto-completes the current input. Also displays all available input options in the output. Ie. lists the names of CVars and console functions and prints their descriptions.</li>
+<li><strong>Enter</strong> - Executes the typed command. If the typed text is only the name of a CVar without an assignment, this will simply print the current value and the description of the CVar.</li>
+</ul>
+<h2 id="modify-cvars">Modify CVars</h2>
+<p>You can modify CVars by typing:</p>
+<pre><code class="language-cmd">CVarName = value
+</code></pre>
+<p>See the <a href="../cvars/">CVars</a> chapter for details.</p>
+<h2 id="binding-keys">Binding Keys</h2>
+<p>To bind commands to certain keys you can call:</p>
+<pre><code class="language-cmd">bind f App.ShowFPS=
+</code></pre>
+<p>This would bind the command 'App.ShowFPS=' (which toggles the display of the FPS counter) to the f-key. You can only bind commands to printable characters (a-z, 0-9) and the casing matters. So you can also bind another command to SHIFT+f by using <code>bind F ...</code>.</p>
+<p>To unbind a key call:</p>
+<pre><code class="language-cmd">unbind f
+</code></pre>
+<h2 id="search">Search</h2>
+<p>You can filter the output of the console (the log messages) to only strings that contain some string by typing a <strong>*</strong> at the beginning:</p>
+<pre><code class="language-cmd">*some text
+</code></pre>
+<p>Now the output window will only show strings that contain 'some text'.</p>
+<h2 id="console-functions">Console Functions</h2>
+<p>Console functions are an easy way to expose C++ utility functions through the console. The class <code>plConsoleFunction</code> is used to wrap any function (static or method function) in a delegate and enable the console to call it. Of course, since the user can only input certain types of variables in the console, the argument types that you can use are very limited: strings, numbers (int / float) and boolean.</p>
+<p>This code snippet shows how to declare a console function in a class, for example inside a custom <a href="../../runtime/application/game-state/">game state</a>.</p>
+<!-- BEGIN-DOCS-CODE-SNIPPET: confunc-decl -->
+
+<pre><code class="language-cpp">void ConFunc_Print(plString sText);
+plConsoleFunction&lt;void(plString)&gt; m_ConFunc_Print;
+</code></pre>
+<!-- END-DOCS-CODE-SNIPPET -->
+
+<p>In the implementation the binding has to be completed. You need to provide a name under which to expose the function, a description (this should include the parameter list) and the actual function to forward the call to. For member functions this has to be an <code>plDelegate</code> to also bind to the class instance (<code>this</code>).</p>
+<!-- BEGIN-DOCS-CODE-SNIPPET: confunc-impl -->
+
+<pre><code class="language-cpp">SampleGameState::SampleGameState()
+  : m_ConFunc_Print(&quot;Print&quot;, &quot;(string arg1): Prints 'arg1' to the log&quot;, plMakeDelegate(&amp;SampleGameState::ConFunc_Print, this))
+{
+}
+
+void SampleGameState::ConFunc_Print(plString sText)
+{
+  plLog::Info(&quot;Text: '{}'&quot;, sText);
+}
+</code></pre>
+<!-- END-DOCS-CODE-SNIPPET -->
+
+<p>When you now open the console (F1) in-game and press TAB, the 'Print' function will be among the listed functions. You can then execute it:</p>
+<pre><code class="language-cmd">Print(&quot;Hello Console&quot;)
+</code></pre>
+<p>If you need to call a certain function repeatedly, you can <a href="#binding-keys">bind the call to a key</a> or use F2 and F3 to repeat it, as long as it is the last or second-to-last command in your history.</p>
+<h3 id="typescript">TypeScript</h3>
+<p>You can also register custom console functions through the <a href="../../custom-code/typescript/ts-api/#pldebug">TypeScript API</a>.</p>
+<h2 id="see-also">See Also</h2>
+<ul>
+<li><a href="../cvars/">CVars</a></li>
+<li><a href="../logging/">Logging</a></li>
+</ul>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../cvars/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../cvars/" class="btn btn-xs btn-link">
+        CVars
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../../custom-code/visual-script/visual-script-overview/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../../custom-code/visual-script/visual-script-overview/" class="btn btn-xs btn-link">
+        Custom Code with Visual Scripts
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="col-md-12 wm-page-content">
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/noraj/mkdocs-windmill-dark">Windmill Dark</a> theme by Alexandre ZANNI (noraj).</p>
+</footer>
+
+</body>
+</html>

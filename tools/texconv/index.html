@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="author" content="PlasmaDev">
+    <link rel="canonical" href="https://plasmaengine.github.io/PlasmaDocs/tools/texconv/">
+    <link rel="shortcut icon" href="../../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>plTexConv - PlasmaDocs</title>
+    <link href="../../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../../js/jquery-3.2.1.min.js"></script>
+    <script src="../../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '../..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "plTexConv", url: "#_top", children: [
+              {title: "Command-line Help", url: "#command-line-help" },
+              {title: "General Usage", url: "#general-usage" },
+              {title: "Multiple Input Files", url: "#multiple-input-files" },
+              {title: "Channel Mappings", url: "#channel-mappings" },
+              {title: "Common Options", url: "#common-options" },
+              {title: "Examples", url: "#examples" },
+              {title: "See Also", url: "#see-also" },
+          ]},
+        ];
+
+    </script>
+    <script src="../../js/base.js"></script>
+      <script src="../../search/main.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../../ui/imgui/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../../ui/imgui/" class="btn btn-xs btn-link">
+        ImGui
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../staticlinkutil/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../staticlinkutil/" class="btn btn-xs btn-link">
+        StaticLinkUtil
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <h1 id="pltexconv">plTexConv</h1>
+<p>TexConv is a command-line tool to process textures from typical input formats like PNG, TGA, JPEG and DDS into optimized formats for runtime consumption.
+The most common scenario is to convert a single input file <code>A.xxx</code> into an optimized format <code>B.yyy</code>. However, the tool has many additional options for advanced uses.</p>
+<h2 id="command-line-help">Command-line Help</h2>
+<p>Run TexConv.exe with the <code>--help</code> parameter to list all available options. Additionally, TexConv prints the used options when it is executed, to help understand what it is doing. Consult this output for details.</p>
+<h2 id="general-usage">General Usage</h2>
+<p>TexConv always produces <strong>exactly one output</strong> file. It may use <strong>multiple input</strong> files to assemble the output from. For the assembly, it also needs a <strong>channel mapping</strong>, which tells it which channel (<em>Red, Green, Blue</em> or <em>Alpha</em>) to take from which input file and move it into which channel of the output image.</p>
+<p>The most straight forward command line is this:</p>
+<pre><code class="language-cmd">TexConv.exe -out D:/result.dds -in0 D:/img.jpg -rgba in0
+</code></pre>
+<ul>
+<li><code>-out</code> specifies the output file and format</li>
+<li><code>-in0</code> specifies the first input image</li>
+<li><code>-rgba</code> tells it that the output image should use all four channels and that they should be taken 1:1 from the input image</li>
+</ul>
+<h2 id="multiple-input-files">Multiple Input Files</h2>
+<p>To assemble the output from multiple input files, specify each input file using the <code>-in</code> option with an increasing number:</p>
+<pre><code class="language-cmd">-in0 D:/img0.jpg -in1 D:/img1.jpg -in2 D:/img2.jpg ...
+</code></pre>
+<p>When assembling a cubemap from 2D textures, one can also use <code>-right</code>, <code>-left</code>, <code>-top</code>, <code>-bottom</code>, <code>-front</code>, <code>-back</code> or <code>-px</code>, <code>-nx</code>, <code>-py</code>, <code>-ny</code>, <code>-pz</code>, <code>-nz</code>.</p>
+<p>To map these inputs to the output file, a proper channel mapping is needed.</p>
+<h2 id="channel-mappings">Channel Mappings</h2>
+<p>The channel-mapping options specify from which input to fill the given output channels. You can specify the input for each channel individually like this:</p>
+<pre><code class="language-cmd">-r in0.b -g in0.g -b in0.r -a in1.r
+</code></pre>
+<p>Here the RGB channels of the output would be filled using the first input image, but red and blue will get swapped. The alpha channel of the output would be filled with the values from the red channel of the second input image.</p>
+<p>Specifying the mapping for each channel separately gives the greatest flexibility. For convenience the same can be written using "swizzling" operators:</p>
+<pre><code class="language-cmd">-rgb in0.bgr -a in1.r
+</code></pre>
+<h3 id="output-channels">Output Channels</h3>
+<p>The following channel-mapping options are available:</p>
+<ul>
+<li><code>-r</code>, <code>-g</code>, <code>-b</code>, <code>-a</code> : These specify single channel assignments.</li>
+<li><code>-rg</code> : Specify the red and green channel assignments.</li>
+<li><code>-rgb</code> : Specify the red, green and blue channel assignments.</li>
+<li><code>-rgba</code> : Specifies all four channel assignments.</li>
+</ul>
+<p>Mentioning only the R, RG or RGB channel, instructs TexConv to create an output file with only 1, 2 or 3 channels respectively.</p>
+<h3 id="input-swizzling">Input Swizzling</h3>
+<p>When stating which input texture should fill which output channel, one can swizzle the input:</p>
+<ul>
+<li><code>-rgba in0</code> is equivalent to <code>-rgba in0.rgba</code></li>
+<li><code>-rgba in0.bgra</code> will swizzle the input channels</li>
+<li><code>-rgb in0.rrr</code> will duplicate the red channel into all channels</li>
+</ul>
+<p>One may also fill channels with either black or white:</p>
+<ul>
+<li><code>-rgb in0 -a white</code> will create a 4 channel output texture but set alpha to fully opaque</li>
+<li><code>-rg black -b white</code> will create an entirely blue texture</li>
+</ul>
+<h2 id="common-options">Common Options</h2>
+<p>The most interesting options are listed below. More options are listed by <code>TexConv --help</code>.</p>
+<h3 id="output-type">Output Type</h3>
+<ul>
+<li><code>-type 2D</code> : The output will be a regular 2D image.</li>
+<li><code>-type Cubemap</code> : The output will be a cubemap image. Only supported for DDS output files. When this is specified, one can assemble the cubemap from 6 regular 2D input images.</li>
+</ul>
+<h3 id="image-compression">Image Compression</h3>
+<ul>
+<li><code>-compression none</code> : The output image will be uncompressed.</li>
+<li><code>-compression medium</code> : If supported, the output image will use compression without sacrificing too much quality.</li>
+<li><code>-compression high</code> : If supported, the output image will use compression and sacrifice quality in favor of a smaller file.</li>
+</ul>
+<h3 id="mipmaps">Mipmaps</h3>
+<p>By default, TexConv generates mipmaps when the output format supports it.</p>
+<ul>
+<li><code>-mipmaps none</code> : Mipmaps will not be generated.</li>
+<li><code>-mipmaps Linear</code> : If supported, mipmaps will be generated using a box filter.</li>
+</ul>
+<h3 id="usage-srgb-gamma-correction">Usage (sRGB / Gamma Correction)</h3>
+<p>The <code>-usage</code> option specifies the purpose of the output and thus tells TexConv whether to apply gamma correction to the input and output files. The usage only affects the RGB channels. The alpha channel is always considered to contain 'linear' values. If usage is not specified, the 'auto' mode will try to detect the usage from the format and file-name of the first input image. For instance, single and dual channel output formats are always linear. Check the output to see what decision TexConv made.</p>
+<ul>
+<li>
+<p><code>-usage Linear</code> : The output image contains values that do not represent colors. This is typically the case for metallic and roughness textures, as well as all kinds of masks.</p>
+</li>
+<li>
+<p><code>-usage Color</code> : The output image represents color, such as diffuse/albedo maps. The sRGB flag will be set in the output DDS header.</p>
+</li>
+<li>
+<p><code>-usage HDR</code> : The output file should use more than 8 bits per pixel for encoding. Consequently all values are stored in linear space. For HDR textures it does not matter whether the data represents color or other data.</p>
+</li>
+<li>
+<p><code>-usage NormalMap</code> : The output image represents a tangent-space normal map. Values will be normalized and mipmap computation will be optimized slightly.</p>
+</li>
+<li>
+<p><code>-usage NormalMap_Inverted</code> : The output is a tangent-space normal map with Y pointing in the opposite direction than the input.</p>
+</li>
+</ul>
+<h3 id="image-rescaling">Image Rescaling</h3>
+<ul>
+<li><code>-minRes 64</code> : Specifies the minimum resolution of the output. If the input image is smaller, it will get upscaled.</li>
+<li><code>-maxRes 1024</code> : Specifies the maximum resolution of the output. If the input image is larger, it will get downscaled.</li>
+<li><code>-downscale 1</code> : If this is larger than 0, the input images will be halved in resolution N times. Use this to apply an overall quality reduction.</li>
+</ul>
+<h2 id="examples">Examples</h2>
+<h3 id="convert-a-color-texture">Convert a Color Texture</h3>
+<pre><code class="language-cmd">TexConv.exe -out D:/diffuse.dds -in0 D:/diffuse.jpg -rgba in0 -usage color
+</code></pre>
+<h3 id="convert-a-normal-map">Convert a Normal Map</h3>
+<pre><code class="language-cmd">TexConv.exe -out D:/normalmap.dds -in0 D:/normalmap.png -rgb in0 -usage normalmap
+</code></pre>
+<h3 id="create-an-hdr-cubemap">Create an HDR Cubemap</h3>
+<pre><code class="language-cmd">TexConv.exe -out &quot;D:/skybox.dds&quot; -in0 &quot;D:/skymap.hdr&quot; -rgba in0 -type cubemap -usage hdr
+</code></pre>
+<p>A great source for HDR cubemaps is <a href="https://hdrihaven.com/hdris/">hdrihaven.com</a>.</p>
+<h3 id="bake-multiple-images-into-one">Bake Multiple Images into One</h3>
+<pre><code class="language-cmd">TexConv.exe -out &quot;D:/Baked.dds&quot; -in0 &quot;D:/metal.tga&quot; -in1 &quot;D:/roughness.png&quot; -in2 &quot;D:/DiffuseAlpha.dds&quot; -r in1.r -g in0.r -b black -a in2.a -usage linear
+</code></pre>
+<h3 id="extract-a-single-channel">Extract a Single Channel</h3>
+<pre><code class="language-cmd">TexConv.exe -out D:/alpha-mask-only.dds -in0 D:/DiffuseAlpha.dds -r in0.a
+</code></pre>
+<h2 id="see-also">See Also</h2>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../../ui/imgui/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../../ui/imgui/" class="btn btn-xs btn-link">
+        ImGui
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../staticlinkutil/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../staticlinkutil/" class="btn btn-xs btn-link">
+        StaticLinkUtil
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="col-md-12 wm-page-content">
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/noraj/mkdocs-windmill-dark">Windmill Dark</a> theme by Alexandre ZANNI (noraj).</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="author" content="PlasmaDev">
+    <link rel="canonical" href="https://plasmaengine.github.io/PlasmaDocs/effects/rope-render-component/">
+    <link rel="shortcut icon" href="../../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Rope Render Component - PlasmaDocs</title>
+    <link href="../../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../../js/jquery-3.2.1.min.js"></script>
+    <script src="../../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '../..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "Rope Render Component", url: "#_top", children: [
+              {title: "Component Properties", url: "#component-properties" },
+              {title: "See Also", url: "#see-also" },
+          ]},
+        ];
+
+    </script>
+    <script src="../../js/base.js"></script>
+      <script src="../../search/main.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../simple-wind-component/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../simple-wind-component/" class="btn btn-xs btn-link">
+        Simple Wind Component
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../fog/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../fog/" class="btn btn-xs btn-link">
+        Fog
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <h1 id="rope-render-component">Rope Render Component</h1>
+<p>The <em>rope render component</em> is used to render a rope or cable.</p>
+<p>![[fake-rope-config.jpg]]
+The rope simulation is done by other components, such as the <a href="../physics/jolt/special/jolt-rope-component.md">rope component</a> or the <a href="../fake-rope-component/">fake rope component</a>. The rope render component has to be attached to the same object as the simulation component.</p>
+<h2 id="component-properties">Component Properties</h2>
+<ul>
+<li><code>Material</code>: The <a href="../materials/materials-overview.md">material</a> to use for rendering.</li>
+<li><code>Color</code>: The object color. This is typically multiplied into the diffuse part of the material, but the shader may use the color in different ways, as well.</li>
+<li><code>Thickness</code>: The thickness of the rope mesh.</li>
+<li><code>Detail</code>: How many polygons the rope mesh uses to appear round. More detail costs more rendering performance. Note that this has no effect on how many segments the rope is made up of, that is a property of the simulation component.</li>
+<li><code>Subdivide</code>: Whether the rope mesh should have an extra segment subdivision to make it look smoother at strong bends. This doubles the amount of triangles in the mesh. Enable this for ropes that still should look as good as possible even under strong curvature. </li>
+<li><code>UScale</code>: The texture is always wrapped exactly once around the rope. Howver, along the rope's length, this option defines how often it will be repeated.</li>
+</ul>
+<h2 id="see-also">See Also</h2>
+<ul>
+<li><a href="../physics/jolt/special/jolt-rope-component.md">Jolt Rope Component</a></li>
+<li><a href="../fake-rope-component/">Fake Rope Component</a></li>
+</ul>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../simple-wind-component/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../simple-wind-component/" class="btn btn-xs btn-link">
+        Simple Wind Component
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../fog/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../fog/" class="btn btn-xs btn-link">
+        Fog
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="col-md-12 wm-page-content">
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/noraj/mkdocs-windmill-dark">Windmill Dark</a> theme by Alexandre ZANNI (noraj).</p>
+</footer>
+
+</body>
+</html>

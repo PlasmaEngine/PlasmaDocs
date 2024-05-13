@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="author" content="PlasmaDev">
+    <link rel="canonical" href="https://plasmaengine.github.io/PlasmaDocs/animation/skeletal-animation/joint-attachment-component/">
+    <link rel="shortcut icon" href="../../../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Joint Attachment Component - PlasmaDocs</title>
+    <link href="../../../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../../../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../../../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../../css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../../../js/jquery-3.2.1.min.js"></script>
+    <script src="../../../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../../../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '../../..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "Joint Attachment Component", url: "#_top", children: [
+              {title: "Component Properties", url: "#component-properties" },
+              {title: "How To Use", url: "#how-to-use" },
+              {title: "See Also", url: "#see-also" },
+          ]},
+        ];
+
+    </script>
+    <script src="../../../js/base.js"></script>
+      <script src="../../../search/main.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../joint-override-component/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../joint-override-component/" class="btn btn-xs btn-link">
+        Joint Override Component
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../blender-export/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../blender-export/" class="btn btn-xs btn-link">
+        Authoring and Exporting Animations with Blender
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <h1 id="joint-attachment-component">Joint Attachment Component</h1>
+<p>The <em>joint attachment component</em> is used to expose the animated position of a bone, such that you can attach objects there.</p>
+<h2 id="component-properties">Component Properties</h2>
+<ul>
+<li>
+<p><code>JointName</code>: The <em>name</em> of the joint/bone of which you want to use the position as an attachment point. You can look up the bone names in the respective <a href="../skeleton-asset/">skeleton asset</a>.</p>
+</li>
+<li>
+<p><code>PositionOffset</code>, <code>RotationOffset</code>: Additional local position and rotation offsets added to the bone location. The same could be achieved by adding another child <a href="../../../runtime/world/game-objects/">game object</a> with an offset, but using these properties is more efficient.</p>
+</li>
+</ul>
+<h2 id="how-to-use">How To Use</h2>
+<p>Whenever an <a href="../animated-mesh-component/">animated mesh</a> receives a new pose, it passes that pose on to all interested components that are attached to the same object or any child object. The joint attachment component listens to this message and positions its owner game object at the relative position of the selected bone.</p>
+<p>To attach an object to a certain bone, follow these steps:</p>
+<ul>
+<li>Create an empty <a href="../../../runtime/world/game-objects/">game object</a> as a <strong>child</strong> of the animated mesh.</li>
+<li>Add a <em>joint attachment component</em> to it.</li>
+<li>Set its <em>JointName</em> property to the desired bone name. You can look up the bone name on the <a href="../skeleton-asset/">skeleton asset</a> that is used by the <a href="../animated-mesh-asset/">animated mesh asset</a> on the <a href="../animated-mesh-component/">animated mesh component</a>.</li>
+<li>
+<p>Add the desired object or component to the joint attachment object.</p>
+</li>
+<li>
+<p>The local transform of the attachment object will be overwritten by the component when it receives an animation pose. Thus setting any values here doesn't have any useful effect during simulation. To see where your attachment ends up, you need to <a href="../../../editor/run-scene/">simulate the scene</a> and an animation has to actively play on the animated mesh.</p>
+</li>
+<li>While the scene is simulating, you can use the <em>position and rotation offset</em> properties to tweak the exact location of the joint attachment.</li>
+</ul>
+<blockquote>
+<p><strong>Note:</strong></p>
+<p>The position and rotation offset properties are useful for minor tweaks. The same can also be achieved with another child object. However, it can be difficult to position an attachment perfectly and it might turn out that the attachment position needs tweaking depending on the animation as well. In such cases it is better to add a dedicated bone to the skeleton instead, such that you have full control over the attachment in your modeling tool.</p>
+</blockquote>
+<h2 id="see-also">See Also</h2>
+<ul>
+<li><a href="../skeletal-animation-overview/">Skeletal Animations</a></li>
+<li><a href="../joint-override-component/">Joint Override Component</a></li>
+</ul>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../joint-override-component/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../joint-override-component/" class="btn btn-xs btn-link">
+        Joint Override Component
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../blender-export/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../blender-export/" class="btn btn-xs btn-link">
+        Authoring and Exporting Animations with Blender
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="col-md-12 wm-page-content">
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/noraj/mkdocs-windmill-dark">Windmill Dark</a> theme by Alexandre ZANNI (noraj).</p>
+</footer>
+
+</body>
+</html>

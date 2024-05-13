@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="author" content="PlasmaDev">
+    <link rel="canonical" href="https://plasmaengine.github.io/PlasmaDocs/runtime/world/worlds/">
+    <link rel="shortcut icon" href="../../../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Worlds - PlasmaDocs</title>
+    <link href="../../../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../../../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../../../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../../css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../../../js/jquery-3.2.1.min.js"></script>
+    <script src="../../../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../../../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '../../..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "Worlds", url: "#_top", children: [
+              {title: "Game Objects", url: "#game-objects" },
+              {title: "Components", url: "#components" },
+              {title: "World Modules", url: "#world-modules" },
+              {title: "Simulation State", url: "#simulation-state" },
+              {title: "Read / Write Access Control", url: "#read-write-access-control" },
+              {title: "World Update", url: "#world-update" },
+              {title: "See Also", url: "#see-also" },
+          ]},
+        ];
+
+    </script>
+    <script src="../../../js/base.js"></script>
+      <script src="../../../search/main.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../../../terrain/heightfield-component/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../../../terrain/heightfield-component/" class="btn btn-xs btn-link">
+        Heightfield Component
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../world-overview/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../world-overview/" class="btn btn-xs btn-link">
+        The World / Scenegraph System
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <h1 id="worlds">Worlds</h1>
+<p>For an introduction what a world is and how it fits into the overall picture, see <a href="../world-overview/">The World / Scenegraph System</a>.</p>
+<p>This documentation focuses on the C++ <code>plWorld</code> class. The functionality exposed through other mechanisms, such as <a href="../../../custom-code/typescript/typescript-overview/">TypeScript</a>, may be more limited in scope, but ultimately maps to the C++ implementation.</p>
+<h2 id="game-objects">Game Objects</h2>
+<p>Game objects are allocated, destroyed and accessed through the world. For these details, see the chapter about <a href="../game-objects/">game objects</a>.</p>
+<h2 id="components">Components</h2>
+<p>Components are not directly managed by a world. Instead, worlds manage <a href="../world-modules/">world modules</a> and <a href="../component-managers/">component managers</a>, which in turn manage components. For details, see the chapter about <a href="../components/">components</a>.</p>
+<h2 id="world-modules">World Modules</h2>
+<p>World modules are bigger systems that manage aspects like <a href="../../../effects/particle-effects/particle-effects-overview/">particle effects</a>, the <a href="../../physics/jolt/jolt-overview.md">Jolt integration</a>, <a href="../../../effects/wind/">wind</a> and so on. <a href="../component-managers/">Component managers</a> are a special type of world modules that take care of updating the various component types.</p>
+<h2 id="simulation-state">Simulation State</h2>
+<p>Each world has its own simulation state, to not affect other worlds.</p>
+<h3 id="simulation-enabled">Simulation Enabled</h3>
+<p>Every world can be actively simulated, or paused. <code>plWorld::SetWorldSimulationEnabled()</code> is used to toggle this.</p>
+<h3 id="clock">Clock</h3>
+<p>Each world has its own <code>plClock</code> which can be retrieved through <code>plWorld::GetClock()</code>. The clock is used to speed up or slow down the simulation or to set a fixed update rate. The clock keeps track of the 'game time', so when a component needs to know the current time, it should query this from the world's clock.</p>
+<h3 id="random-number-generator">Random Number Generator</h3>
+<p>When a component needs a random number, it should query this from the world via <code>plWorld::GetRandomNumberGenerator()</code>. Components or better, <a href="../component-managers/">component managers</a> can of course also have their own random number generator, for example when they need multi-threaded access to it, or when they want to control the seed value for determinism. The <a href="../../../effects/particle-effects/particle-effects-overview/">particle systems</a>, for example, do this to achieve deterministic results.</p>
+<h3 id="coordinate-system">Coordinate System</h3>
+<p>The default coordinate system in Plasma is:</p>
+<ul>
+<li><code>+X</code> is 'forwards'</li>
+<li><code>+Y</code> is 'right`</li>
+<li><code>+Z</code> is 'up'</li>
+</ul>
+<p>That makes it a left-handed coordinate system. You can query these axis in the space of a <a href="../game-objects/">game object</a>, if you need to.</p>
+<p>The coordinate system can be changed through <code>plWorld::SetCoordinateSystemProvider()</code>. The <code>plCoordinateSystemProvider</code> can potentially return a different coordinate system at different locations, so you could implement a provider that changes the coordinate system to follow a sphere.</p>
+<blockquote>
+<p><strong>Warning:</strong></p>
+<p>Although components are supposed to not hard-code assumptions about which axis is 'forward', etc, using a non-default coordinate system is not well tested. Using a dynamic coordinate system even less so.</p>
+</blockquote>
+<h2 id="read-write-access-control">Read / Write Access Control</h2>
+<p>Some aspects of the world are updated in a multi-threaded fashion. For instance, rendering generally happens in parallel to other updates. To prevent you from accessing the world in a problematic way, you need to <em>lock</em> the world for reading or writing when you work with it.</p>
+<p>From within a component update function you don't need to worry, you always have write access to the world while components are being updated. However, if for example you want to load a level or otherwise set it up procedurally at launch, you need to lock it for write access:</p>
+<pre><code class="language-cpp">PLASMA_LOCK(pWorld-&gt;GetWriteMarker());
+pWorld-&gt;CreateObject(...)
+</code></pre>
+<p>In developer builds the world will check that you have properly locked it when you try to do certain operations. Therefore, the best way to know where to add such locks, is simply to run your code without a lock and see whether the engine asserts. If so, you can just traverse your callstack to find a reasonable place to insert the lock.</p>
+<h2 id="world-update">World Update</h2>
+<p>To step your world, call <code>plWorld::Update()</code>. The time delta that will be applied depends on whether the <a href="#simulation-enabled">world simulation is enabled</a> and how your <a href="#clock">world clock</a> is configured.</p>
+<h2 id="see-also">See Also</h2>
+<ul>
+<li><a href="../game-objects/">Game Objects</a></li>
+<li><a href="../components/">Components</a></li>
+<li><a href="../world-modules/">World Modules</a></li>
+<li><a href="../object-lifetime/">Object Lifetime</a></li>
+<li><a href="../world-messaging/">Messaging</a></li>
+</ul>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../../../terrain/heightfield-component/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../../../terrain/heightfield-component/" class="btn btn-xs btn-link">
+        Heightfield Component
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../world-overview/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../world-overview/" class="btn btn-xs btn-link">
+        The World / Scenegraph System
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="col-md-12 wm-page-content">
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/noraj/mkdocs-windmill-dark">Windmill Dark</a> theme by Alexandre ZANNI (noraj).</p>
+</footer>
+
+</body>
+</html>

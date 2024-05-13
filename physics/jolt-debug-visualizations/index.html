@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="author" content="PlasmaDev">
+    <link rel="canonical" href="https://plasmaengine.github.io/PlasmaDocs/physics/jolt-debug-visualizations/">
+    <link rel="shortcut icon" href="../../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Jolt Debug Visualizations - PlasmaDocs</title>
+    <link href="../../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../../js/jquery-3.2.1.min.js"></script>
+    <script src="../../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '../..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "Jolt Debug Visualizations", url: "#_top", children: [
+              {title: "Visualize Jolt Geometry", url: "#visualize-jolt-geometry" },
+              {title: "Debug Draw Constraints", url: "#debug-draw-constraints" },
+              {title: "See Also", url: "#see-also" },
+          ]},
+        ];
+
+    </script>
+    <script src="../../js/base.js"></script>
+      <script src="../../search/main.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../jolt-overview/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../jolt-overview/" class="btn btn-xs btn-link">
+        Jolt Physics Integration
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../../graphics/shaders/shaders-overview/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../../graphics/shaders/shaders-overview/" class="btn btn-xs btn-link">
+        Shaders
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <h1 id="jolt-debug-visualizations">Jolt Debug Visualizations</h1>
+<p>To debug physics issues it can be very valuable to visualize certain aspects of the Jolt simulation.
+Debug visualizations are enabled through <a href="../../debugging/cvars.md">CVars</a>.</p>
+<p><img alt="Jolt Geometry" src="../media/jolt-debug-geo-terrain.jpg" /></p>
+<h2 id="visualize-jolt-geometry">Visualize Jolt Geometry</h2>
+<p>These <a href="../../debugging/cvars.md">CVars</a> enable rendering of the Jolt collision geometry:</p>
+<ul>
+<li><code>Jolt.Visualize.Geometry</code>: Enables visualization of physics collision geometry.</li>
+<li><code>Jolt.Visualize.Exclusive</code>: Disables rendering of regular geometry.</li>
+<li><code>Jolt.Visualize.Distance</code>: Configures the distance up to which Jolt geomtry gets extracted from objects.</li>
+</ul>
+<p>The collision geometry is rendered using these color codes:</p>
+<ul>
+<li><em>light blue</em> = <a href="../actors/jolt-static-actor-component/">static geometry</a></li>
+<li><em>dark blue</em> = <a href="../actors/jolt-dynamic-actor-component/">kinematic</a></li>
+<li><em>yellow</em> = <a href="../actors/jolt-dynamic-actor-component/">dynamic bodies</a></li>
+<li><em>green</em> = <a href="../actors/jolt-queryshape-actor-component/">query shapes</a> (or <a href="../ragdolls/jolt-hitbox-component/">hitboxes</a>)</li>
+<li><em>pink</em> = <a href="../ragdolls/jolt-ragdoll-component/">ragdolls</a> and ropes<a href="../special/jolt-rope-component/">Jolt Rope Component</a></li>
+<li><em>red</em> = soft bodies</li>
+<li><em>transparent</em> = <a href="../actors/jolt-trigger-component/">triggers</a></li>
+</ul>
+<p><img alt="Color coding" src="../media/jolt-debug-geo-types.jpg" /></p>
+<h2 id="debug-draw-constraints">Debug Draw Constraints</h2>
+<p>The <em>debug draw</em> CVars enable wireframe overlays which are mainly useful to debug issues with constraints. This visualization has a high performance impact and thus should only be used in very small test scenes.</p>
+<p>These debug draw <a href="../../debugging/cvars.md">CVars</a> are available:</p>
+<ul>
+<li><code>Jolt.DebugDraw.Bodies</code>: Enables visualization of physics bodies.</li>
+<li><code>Jolt.DebugDraw.Constraints</code>: Enables basic visualization of <a href="../constraints/jolt-constraints/">constraints</a>.</li>
+<li><code>Jolt.DebugDraw.ConstraintFrames</code>: Enables more detailed visualization of constraints.</li>
+<li><code>Jolt.DebugDraw.ConstraintLimits</code>: Enables visualization of constraint limits.</li>
+</ul>
+<p><img alt="Jolt Debug Visualization" src="../media/jolt-debug-vis.jpg" /></p>
+<h2 id="see-also">See Also</h2>
+<ul>
+<li><a href="../jolt-overview/">Jolt Integration</a></li>
+<li><a href="../jolt-settings-component/">Jolt Physics Settings Component</a></li>
+</ul>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../jolt-overview/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../jolt-overview/" class="btn btn-xs btn-link">
+        Jolt Physics Integration
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../../graphics/shaders/shaders-overview/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../../graphics/shaders/shaders-overview/" class="btn btn-xs btn-link">
+        Shaders
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="col-md-12 wm-page-content">
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/noraj/mkdocs-windmill-dark">Windmill Dark</a> theme by Alexandre ZANNI (noraj).</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="author" content="PlasmaDev">
+    <link rel="canonical" href="https://plasmaengine.github.io/PlasmaDocs/effects/post-processing/volume-components/">
+    <link rel="shortcut icon" href="../../../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Volume Components - PlasmaDocs</title>
+    <link href="../../../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../../../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../../../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../../css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../../../js/jquery-3.2.1.min.js"></script>
+    <script src="../../../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../../../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '../../..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "Volume Components", url: "#_top", children: [
+              {title: "Component Properties", url: "#component-properties" },
+              {title: "See Also", url: "#see-also" },
+          ]},
+        ];
+
+    </script>
+    <script src="../../../js/base.js"></script>
+      <script src="../../../search/main.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../../../gameplay/area-damage-component/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../../../gameplay/area-damage-component/" class="btn btn-xs btn-link">
+        Area Damage Component
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../post-processing-component/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../post-processing-component/" class="btn btn-xs btn-link">
+        Post-Processing Component
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <h1 id="volume-components">Volume Components</h1>
+<p>Volume components are used to define custom environmental conditions in areas of a level.</p>
+<p>By itself, volume components have no functionality and no noticeable effect. They only specify an area and what values to use there. Values are usually specified by referencing a <a href="../../Miscellaneous/blackboard-template-asset.md">blackboard template asset</a>. Other systems may use this information to implement behavior.</p>
+<p>One such system is the <a href="../post-processing-component/">post-processing component</a> which uses these volumes to modify parameters of the rendering pipeline, for example to have different color grading per area.</p>
+<p>A custom system could for example also use these volumes to determine whether the player is inside water.</p>
+<p>There are multiple volume components for different shapes:</p>
+<ul>
+<li><code>plVolumeBoxComponent</code></li>
+<li><code>plVolumeSphereComponent</code></li>
+</ul>
+<p>They only add options to define their shape, such as extents or radius, but do not differ in functionality.</p>
+<h2 id="component-properties">Component Properties</h2>
+<p>All volume components share these properties:</p>
+<ul>
+<li>
+<p><code>Type</code>: A <a href="../../../runtime/world/spatial-system/">spatial category</a> used for separating volumes that represent different things. This way one volume may be used to configure graphics settings, while other volumes may affect gameplay relevant functionality, and they don't accidentally interfere with each other, since the respective systems only get to see the volumes that are meant to affect them.</p>
+</li>
+<li>
+<p><code>SortOrder</code>: In case two volumes overlap, the one with a higher sort order value has precedence.</p>
+</li>
+<li>
+<p><code>Template</code>: A reference to a <a href="../../Miscellaneous/blackboard-template-asset.md">blackboard template asset</a> to define the key/value pairs. It is usually more convenient to use a blackboard template as a preset for values, than to specify them directly on the volume component.</p>
+</li>
+<li>
+<p><code>Values</code>: Individually added key/value pairs. Prefer to use a <code>Template</code>, but If the same key is also added here, it overrides the value from the template.</p>
+</li>
+<li>
+<p><code>Falloff</code>: Volumes may have a <em>soft edge</em>, meaning that the boundary of the volume is not considered to be aprubt. This is used to smoothly fade values from one value to the one inside the volume. For example if a volume represents a foggy area, where the whole color grading is supposed to change, the colors are not supposed to change exactly the moment that the camera enters the volume, but rather the colors should become stronger the farther the camera is inside the volume. The <em>falloff</em> value is a value between <code>0</code> and <code>1</code> that configures how smooth the edge of the volume is. At <code>0</code> the edge is hard and change happens immediately. This is useful for example for water, where you are either inside or outside, but not in between. Any value above <code>0</code> is meant for smoother transitions. Be aware that additional to this, some systems may also transition to new values over time. To test the falloff value, it is best to deactivate any time delay.</p>
+</li>
+</ul>
+<h2 id="see-also">See Also</h2>
+<ul>
+<li><a href="../post-processing-component/">Post-Processing Component</a></li>
+</ul>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../../../gameplay/area-damage-component/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../../../gameplay/area-damage-component/" class="btn btn-xs btn-link">
+        Area Damage Component
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../post-processing-component/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../post-processing-component/" class="btn btn-xs btn-link">
+        Post-Processing Component
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="col-md-12 wm-page-content">
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/noraj/mkdocs-windmill-dark">Windmill Dark</a> theme by Alexandre ZANNI (noraj).</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="author" content="PlasmaDev">
+    <link rel="canonical" href="https://plasmaengine.github.io/PlasmaDocs/build/cmake-config/">
+    <link rel="shortcut icon" href="../../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>CMake Setup - PlasmaDocs</title>
+    <link href="../../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../../js/jquery-3.2.1.min.js"></script>
+    <script src="../../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '../..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "CMake Setup", url: "#_top", children: [
+              {title: "Adding a Custom Project", url: "#adding-a-custom-project" },
+              {title: "External Projects", url: "#external-projects" },
+              {title: "Build Filter", url: "#build-filter" },
+              {title: "Advanced CMake Options", url: "#advanced-cmake-options" },
+              {title: "See Also", url: "#see-also" },
+          ]},
+        ];
+
+    </script>
+    <script src="../../js/base.js"></script>
+      <script src="../../search/main.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../sdk-root/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../sdk-root/" class="btn btn-xs btn-link">
+        SDK Root Folder
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../clang-on-windows/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../clang-on-windows/" class="btn btn-xs btn-link">
+        Building with Clang on Windows
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <h1 id="cmake-setup">CMake Setup</h1>
+<p>To generate a solution, run the CMake GUI. Specify <em>Where is the source code</em> and <em>Where to build the binaries</em>, then run <strong>Configure</strong>. As a generator, pick <em>Visual Studio 2022 x64</em> (or one of the other <a href="../supported-platforms/">supported platforms</a>).</p>
+<ul>
+<li>
+<p><strong>PLASMA_ENABLE_QT_SUPPORT</strong> Disable this setting, if you want to compile Plasma without Qt. This will remove all editor code and several tools from the final solution. The default is <em>on</em>. When possible the Plasma CMake scripts will automatically download Qt libraries and set everything up for you. On configurations for which we do not support fully automatic setup, you need to install Qt manually and then set set <strong>PLASMA_QT_DIR</strong> to its installation folder.</p>
+</li>
+<li>
+<p><strong>PLASMA_BUILD_FMOD</strong> Enable this, if you want to <a href="../sound/fmod-overview.md">FMOD sound</a> support in your build. One Windows and Linux the default is <em>on</em>.</p>
+</li>
+<li>
+<p><strong>PLASMA_BUILD_PHYSX</strong> Enable this, if you want to add <a href="../physics/physx/physx-overview.md">NVIDIA PhysX</a> support to your build. Once enabled, the next run of "Configure" will automatically download PhysX binaries (Windows only) and set the <strong>PLASMA_PHYSX_SDK</strong> variable accordingly. The default is <em>off</em>. Note that PhysX support has been superseded by the <a href="../physics/jolt/jolt-overview.md">Jolt Physics integration</a>.</p>
+</li>
+<li>
+<p><strong>PLASMA_BUILD_RMLUI</strong> Enable this, if you want to add support for <a href="https://github.com/mikke89/RmlUi">RmlUi</a> to your build. The default is <em>on</em>.</p>
+</li>
+</ul>
+<p>Once you have configured everything, run <strong>Generate</strong> and then <strong>Open Project</strong>.</p>
+<h2 id="adding-a-custom-project">Adding a Custom Project</h2>
+<p>The easiest way to get started with a custom project, is to use the <a href="../../custom-code/cpp/cpp-project-generation/">C++ project generation</a>.</p>
+<p>Another method is to copy an existing sample, such as the <a href="../../samples/sample-game-plugin.md">Sample Game Plugin</a>. For starters, just create it in the same location, within the Plasma source tree. If you want to move it into your own repository, you can then reference its location as an <em>external project</em> (see below).</p>
+<h2 id="external-projects">External Projects</h2>
+<p>The options <strong>PLASMA_EXTERNAL_PROJECT_1-3</strong> allow you to specify folders outside the Plasma repository, which will be integrated into the solution. This is the most practical way to store your own code in a separate repository, yet have it all compiled in the same solution. This makes building, linking and debugging code as convenient as if it was stored inside the Plasma file structure.</p>
+<h2 id="build-filter">Build Filter</h2>
+<p>The option <strong>PLASMA_BUILD_FILTER</strong> allows you to strip down the code that is included in the solution. This is mainly meant for use cases where Plasma is <a href="../submodule/">integrated as a submodule</a> and you only need parts of its functionality.</p>
+<h2 id="advanced-cmake-options">Advanced CMake Options</h2>
+<p>Checking <em>Advanced</em> in the CMake GUI will show additional options to configure the Plasma build. These are mostly used to remove specific 3rd party code (and all dependent features). This is particularly helpful, if you want to buildPlasmaon a platform on which one of the dependencies may not compile.</p>
+<h2 id="see-also">See Also</h2>
+<ul>
+<li><a href="../supported-platforms/">Supported Platforms</a></li>
+<li><a href="../../custom-code/cpp/cpp-project-generation/">C++ Project Generation</a></li>
+<li><a href="../submodule/">PlasmaEngine as a Submodule</a></li>
+</ul>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../sdk-root/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../sdk-root/" class="btn btn-xs btn-link">
+        SDK Root Folder
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../clang-on-windows/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../clang-on-windows/" class="btn btn-xs btn-link">
+        Building with Clang on Windows
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="col-md-12 wm-page-content">
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/noraj/mkdocs-windmill-dark">Windmill Dark</a> theme by Alexandre ZANNI (noraj).</p>
+</footer>
+
+</body>
+</html>

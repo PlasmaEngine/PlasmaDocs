@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="author" content="PlasmaDev">
+    <link rel="canonical" href="https://plasmaengine.github.io/PlasmaDocs/custom-code/cpp/cpp-code-reload/">
+    <link rel="shortcut icon" href="../../../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Hot Reloading C++ Game Plugins in the Editor - PlasmaDocs</title>
+    <link href="../../../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../../../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../../../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../../css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../../../js/jquery-3.2.1.min.js"></script>
+    <script src="../../../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../../../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '../../..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "Hot Reloading C++ Game Plugins in the Editor", url: "#_top", children: [
+              {title: "How to Enable Plugin Hot Reloading", url: "#how-to-enable-plugin-hot-reloading" },
+              {title: "Terminate and Restart the Engine", url: "#terminate-and-restart-the-engine" },
+              {title: "Restrictions", url: "#restrictions" },
+              {title: "See Also", url: "#see-also" },
+          ]},
+        ];
+
+    </script>
+    <script src="../../../js/base.js"></script>
+      <script src="../../../search/main.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../cpp-overview/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../cpp-overview/" class="btn btn-xs btn-link">
+        Custom Code with C++
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../../custom-code-overview/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../../custom-code-overview/" class="btn btn-xs btn-link">
+        Custom Code
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <h1 id="hot-reloading-c-game-plugins-in-the-editor">Hot Reloading C++ Game Plugins in the Editor</h1>
+<p>When writing game code in C++, the most annoying aspect are the iteration times. Due to how C++ works, it is nearly impossible to swap out code and replace it with a newer version. Some engines try to do this, but there are always limitations, and the effort to get this working and keep it from breaking is quite big.</p>
+<p>Plasma Engine is no different here, reloading code at runtime is not possible. However, the editor is split into two processes: The actual <em>editor process</em> which displays the UI, and manages the scene state, and the <em>engine process</em> which does the scene rendering and executes the actual game code. This separation makes the editor more resilient to crashes. </p>
+<p>To recover from the crash you can click the viewport. When you click the button, the editor launches a new engine process, synchronizes the latest scene state over and continues as if nothing happened.</p>
+<p>That of course means, that when the new engine process launches, it also loads the latest state of all plugins. So if any of the plugins was modified, we would now see these modifications. So by simply nuking and restarting the entire engine process, we can get some form of C++ code hot reloading.</p>
+<p>Unfortunately, you can't compile a plugin while a process is using it, because the process prevents other applications from writing the DLL. We can solve this problem, by making a copy of our game plugin DLL, and loading that instead. That means that the original DLL is not actually used, and our IDE can modify it further.</p>
+<p>This trick works quite well if we only do it for plugins that are loaded fully dynamic, meaning that no other plugin tries to link against it. If that were the case, both the original plugin, as well as the copied plugin would get loaded, which is not good. Therefore only select game plugins may use this copy mechanic, which is why you need to set this up manually.</p>
+<h2 id="how-to-enable-plugin-hot-reloading">How to Enable Plugin Hot Reloading</h2>
+<p>In the <a href="../../projects/plugin-selection.md">plugin selection</a> dialog, select your custom plugin and check <strong>Enable Reload</strong>.</p>
+<blockquote>
+<p><strong>Note:</strong></p>
+<p>If you used the <a href="../cpp-project-generation/">C++ Project Generation</a> feature to create your project, the reference to your C++ plugin is automatically set up this way.</p>
+</blockquote>
+<p>Now you can modify the code of your plugin and compile it, while the editor is open. Of course, you can't do that while being attached with a debugger.</p>
+<p>When a plugin is marked as <code>Enable Reload</code>, and it gets modified, the editor already <strong>automatically restarts the engine process</strong>, once no scene is being simulated.</p>
+<h2 id="terminate-and-restart-the-engine">Terminate and Restart the Engine</h2>
+<p>You can always manually restart the engine process through <em>Tools &gt; Reload Engine</em> or the hotkey <code>Ctrl+Shift+F4</code>.</p>
+<h2 id="restrictions">Restrictions</h2>
+<p>The <code>Enable Reload</code> option should only be used for select game plugins. Enabling this feature can have unintended side-effects.</p>
+<ul>
+<li>If any code links against a plugin, that plugin cannot be loaded as a copy. Therefore, if you want to put shared code into a separate library that other users of your plugins link against, you can't load that shared library as a copy.</li>
+<li>You can't compile code while debugging a process. To compile your code, you first have to detach your debugger. In Visual Studio that can be done via <code>Debug &gt; Detach All</code>.</li>
+<li>Consequently, if you want to continue debugging after you restarted the engine process, you need to manually re-attach your debugger to <em>EditorEngineProcess.exe</em>. In Visual Studio this is done via <code>Debug &gt; Attach to Process...</code> or even better <code>Debug &gt; Reattach to Process</code> (<code>SHIFT+ALT+P</code>) when you want to repeat the same thing a second time.</li>
+</ul>
+<h2 id="see-also">See Also</h2>
+<ul>
+<li><a href="../../../debugging/debug-cpp/">Debugging C++ Code</a></li>
+<li><a href="../engine-plugins/">Engine Plugins</a></li>
+<li><a href="../cpp-project-generation/">C++ Project Generation</a></li>
+</ul>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../cpp-overview/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../cpp-overview/" class="btn btn-xs btn-link">
+        Custom Code with C++
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../../custom-code-overview/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../../custom-code-overview/" class="btn btn-xs btn-link">
+        Custom Code
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="col-md-12 wm-page-content">
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/noraj/mkdocs-windmill-dark">Windmill Dark</a> theme by Alexandre ZANNI (noraj).</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="author" content="PlasmaDev">
+    <link rel="canonical" href="https://plasmaengine.github.io/PlasmaDocs/animation/skeletal-animation/animation-controller/anim-nodes-playclip/">
+    <link rel="shortcut icon" href="../../../../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Play Single Clip Nodes - PlasmaDocs</title>
+    <link href="../../../../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../../../../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../../../../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../../../css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../../../../js/jquery-3.2.1.min.js"></script>
+    <script src="../../../../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../../../../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '../../../..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "Play Single Clip Nodes", url: "#_top", children: [
+              {title: "Common Properties", url: "#common-properties" },
+              {title: "Properties", url: "#properties" },
+              {title: "Common Input Pins", url: "#common-input-pins" },
+              {title: "Input Pins", url: "#input-pins" },
+              {title: "Common Output Pins", url: "#common-output-pins" },
+              {title: "See Also", url: "#see-also" },
+          ]},
+        ];
+
+    </script>
+    <script src="../../../../js/base.js"></script>
+      <script src="../../../../search/main.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../anim-nodes-sequence/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../anim-nodes-sequence/" class="btn btn-xs btn-link">
+        Play Clip Sequence Node
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../anim-nodes-output/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../anim-nodes-output/" class="btn btn-xs btn-link">
+        Output Nodes
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <h1 id="play-single-clip-nodes">Play Single Clip Nodes</h1>
+<p>Animation controller graphs provide multiple node types that are used for sampling animation clips. The <em>play single clip node</em> is the most basic one. This node samples an animation clip and outputs the respective animation pose. It is thus used for typical playback of a single animation either once or in a loop. For added variety you may reference multiple animation clips, in which case the node will randomly pick one of them for playback.</p>
+<p>![[skeletal-anim.gif]]</p>
+<h2 id="common-properties">Common Properties</h2>
+<p>All animation controller nodes that sample animation clips share these properties:</p>
+<ul>
+<li>
+<p><code>Loop</code>: If enabled the node will loop playback while its <code>Active</code> pin is triggered. Which clip exactly gets looped depends on the node. The <em>play single clip node</em> for example just loops playback in general, but randomly picks a different clip in every iteration. The <a href="../anim-nodes-sequence/">play clip sequence node</a> on the other hand will loop its middle clip instead.</p>
+</li>
+<li>
+<p><code>ApplyRootMotion</code>: If enabled, the node will compute the <a href="../../root-motion/">root motion</a> from the sampled clips and forward this to the <a href="../animation-controller-component/">animation controller component</a>, which may apply this to the game object's position.</p>
+</li>
+<li>
+<p><code>PlaybackSpeed</code>: Adjusts the speed with which the animations are sampled.</p>
+</li>
+<li>
+<p><code>FadeIn</code>, <code>FadeOut</code>: The time (in seconds) that it should take to fade an animation in and out. If this is set to <code>0</code>, the animation will immediately switch on or off when the node gets (de-)activated. If the time is non-zero, the animation will gradually fade in or out over this duration. These values are very important to cross-fade from one animation to another. For example, if a character is playing an <em>idle</em> animation and then should transition to <em>walk</em>, the walk animation should have a short <em>fade in</em> duration and the idle animation should have a <em>fade out</em> duration. The shorter of the two durations determines how long the two animations are being cross-faded to transition smoothly from one state to the other.</p>
+</li>
+</ul>
+<p>Additionally, if the fade in and out values are longer than the animation itself, the animation will be forced to play back for that amount of time, typically by extending the use of the last keyframe. This can be very useful if you use an animation that only contains a static pose, for example a pose for aiming. With a <code>FadeIn</code> of 200ms this single pose will be held for 200ms but gradually faded in. That leads to a character slowly raising their hand, instead of immediately having the hand raised. The same is true for the <code>FadeOut</code> property, which again can be used to slowly lower the hand by fading out the aim pose over a longer duration.</p>
+<ul>
+<li><code>ImmediateFadeIn</code>, <code>ImmediateFadeOut</code>: The playback starts when the <code>Active</code> pin is triggered. If <code>ImmediateFadeOut</code> is off, the clip will be played back to its very end before it is allowed to fade out. If <code>ImmediateFadeOut</code> is on, however, the animation will be faded out right away when the <code>Active</code> pin stops being triggered. If <code>ImmediateFadeIn</code> is off, once a node starts fading out, it will continue fading out until it is fully off, no matter what the <code>Active</code> pin state is. If <code>ImmediateFadeIn</code> is on, a node that has started fading out may immediately fade in again if the <code>Active</code> pin gets triggered again.</li>
+</ul>
+<p>These values determine how responsive animation playback is in regards to input changes. Immediately fading in and out can drastically reduce delay between input and a visual reaction, but may also only work well with certain animations.</p>
+<h2 id="properties">Properties</h2>
+<ul>
+<li><code>Clips</code>: One or multiple <a href="../../animation-clip-asset/">animation clips</a> to play. If more than one is added, the node will pick one at random in every loop iteration.</li>
+</ul>
+<h2 id="common-input-pins">Common Input Pins</h2>
+<p>Many animation controller nodes have some or all of these input pins:</p>
+<ul>
+<li>
+<p><code>Active</code>: This pin determines whether the node samples its animation clips <em>at all</em>. Once it gets triggered in a frame, the node starts to sample its animation clips, fades them in etc. If <code>Loop</code> is enabled, the playback will repeat as long as the <code>Active</code> pin is triggered. Once the pin is not triggered anymore, the node will start to fade out its animations. Either right away (<code>ImmediateFadeOut</code> on) or when it reaches the end of the currently playing clip (<code>ImmediateFadeOut</code> off).</p>
+</li>
+<li>
+<p><code>Weights</code>: If this pin is connected to a <a href="../anim-nodes-bone-weights/">bone weight node</a>, then the sampled animation clip is only applied to that part of the character. This is used to limit playback of an animation to selected body parts.</p>
+</li>
+<li>
+<p><code>Speed</code>: This pin adjusts the overall playback speed.</p>
+</li>
+</ul>
+<h2 id="input-pins">Input Pins</h2>
+<ul>
+<li><code>ClipIndex</code>: If the node has multiple <code>Clips</code> set, exactly which one will be played back can be controlled through this pin. With <code>ClipIndex</code> set to <code>0</code> the first clip is used exclusively, with <code>ClipIndex</code> set to <code>1</code> only the second clip is used, and so on. If <code>ClipIndex</code> is not connected or set to a negative value, a random clip is used.</li>
+</ul>
+<h2 id="common-output-pins">Common Output Pins</h2>
+<p>Many animation controller nodes have some or all of these output pins:</p>
+<ul>
+<li>
+<p><code>LocalPose</code>: The final pose from the sampled animation clips is output through this pin. This has to be passed to a <a href="../anim-nodes-combine-poses/">combine poses node</a> or a <a href="../anim-nodes-modelspace/">local to model pose node</a>.</p>
+</li>
+<li>
+<p><code>OnFadeOut</code>: This pin gets triggered for a single frame once the node changes its internal state to fade out the animation (affected by <code>ImmediateFadeOut</code> and <code>FadeOut</code>). This is typically a good time to start fading in another animation to take over. This pin is guaranteed to get triggered, even if the <code>FadeOut</code> time is zero.</p>
+</li>
+</ul>
+<h2 id="see-also">See Also</h2>
+<ul>
+<li><a href="../animation-controller-overview/">Animation Controller</a></li>
+<li><a href="../../skeletal-animation-overview/">Skeletal Animations</a></li>
+<li><a href="../anim-nodes-bone-weights/">Bone Weight Nodes</a></li>
+<li><a href="../anim-nodes-sequence/">Play Clip Sequence Node</a></li>
+<li><a href="../anim-nodes-mix2d/">Mix Clips 2D Node</a></li>
+</ul>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../anim-nodes-sequence/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../anim-nodes-sequence/" class="btn btn-xs btn-link">
+        Play Clip Sequence Node
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../anim-nodes-output/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../anim-nodes-output/" class="btn btn-xs btn-link">
+        Output Nodes
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="col-md-12 wm-page-content">
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/noraj/mkdocs-windmill-dark">Windmill Dark</a> theme by Alexandre ZANNI (noraj).</p>
+</footer>
+
+</body>
+</html>

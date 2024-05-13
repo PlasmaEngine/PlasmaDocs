@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="author" content="PlasmaDev">
+    <link rel="canonical" href="https://plasmaengine.github.io/PlasmaDocs/graphics/shaders/shader-permutation-variables/">
+    <link rel="shortcut icon" href="../../../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Shader Permutation Variables - PlasmaDocs</title>
+    <link href="../../../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../../../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../../../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../../css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../../../js/jquery-3.2.1.min.js"></script>
+    <script src="../../../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../../../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '../../..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "Shader Permutation Variables", url: "#_top", children: [
+              {title: "The Shader Permutations Section", url: "#the-shader-permutations-section" },
+              {title: "plPermVar Files", url: "#plpermvar-files" },
+              {title: "bool Permutation variables", url: "#bool-permutation-variables" },
+              {title: "enum Permutation Variables", url: "#enum-permutation-variables" },
+              {title: "Exposing Permutations to materials", url: "#exposing-permutations-to-materials" },
+              {title: "See Also", url: "#see-also" },
+          ]},
+        ];
+
+    </script>
+    <script src="../../../js/base.js"></script>
+      <script src="../../../search/main.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../shader-render-state/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../shader-render-state/" class="btn btn-xs btn-link">
+        Shader Render State
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../shader-debugging/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../shader-debugging/" class="btn btn-xs btn-link">
+        Shader Debugging
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <h1 id="shader-permutation-variables">Shader Permutation Variables</h1>
+<p>Permutation variables are global variables set either through C++ code or exposed through materials. The value of a permutation variable at the time of a drawcall affects which permutation of a shader is used for rendering.</p>
+<p>Permutation variables allow to create different variants of the same shader, without creating different shader files. Since their state is global, they decouple the decision which shader to use from the code that actually has this information at hand.</p>
+<p>For instance, materials support different rendering modes. By default they use proper lighting, but for debugging purposes we might want to override this and always output unlit diffuse color (or normals, UV coordinates, etc). The information which shader to use to render a certain object is stored either in a material or directly set through code. Without permutation variables we would either need to use an entirely different shader to get our debug output, which would mean that everything would need to support this functionality, or the shader would need to decide the final output mode dynamically, adding a large performance hit for a feature that is not used in the final game.</p>
+<p>Permutation variables solve this problem by creating different variants of the shader, and letting the engine pick the correct one depending on the current values.</p>
+<p>In shader code, permutation variables are exposed as <code>#define</code>'d preprocessor variables and therefore can be evaluated like any other preprocessor directive.</p>
+<h2 id="the-shader-permutations-section">The Shader Permutations Section</h2>
+<p>Each shader is made up of several <a href="../shaders-overview/#shader-sections">sections</a>:</p>
+<pre><code class="language-cpp">[PLATFORMS]
+
+ALL
+DEBUG
+
+[PERMUTATIONS]
+
+ALPHATEST
+WIREFRAME
+
+[MATERIALPARAMETER]
+
+Permutation ALPHATEST;
+
+[RENDERSTATE]
+
+#if WIREFRAME == 1
+    WireFrame = true
+#endif
+
+[VERTEXSHADER]
+
+VS_OUT main(VS_IN Input)
+{
+  ...
+}
+
+[PIXELSHADER]
+
+...
+</code></pre>
+<p>In the <strong>[PERMUTATIONS]</strong> section the shader author has to list all permutation variables that are going to be evaluated inside the shader code. If a variable is used without being mentioned in this section, your shader might compile and work, but the result will always be the same.</p>
+<h2 id="plpermvar-files">plPermVar Files</h2>
+<p>Every permutation variable must be defined in a file that has the exact name of the permutation variable and the <code>.plPermVar</code> extension.</p>
+<p>All plPermVar files must reside in a specific subfolder in any data directory. By default the subfolder is <strong>"Shaders/PermutationVars"</strong>.</p>
+<h2 id="bool-permutation-variables">bool Permutation variables</h2>
+<p>The definition of a boolean permutation variable in its plPermVar file simply looks like this:</p>
+<pre><code class="language-cpp">bool TWO_SIDED;
+</code></pre>
+<p>A boolean permutation variable is permuted over the values <strong>TRUE</strong> and <strong>FALSE</strong>. In a shader it would be evaluate like this:</p>
+<pre><code class="language-cpp">#if defined(PIXEL_SHADER) &amp;&amp; TWO_SIDED == TRUE
+    uint FrontFace : SV_IsFrontFace;
+#endif
+</code></pre>
+<p>In C++ code the variable is set like this:</p>
+<pre><code class="language-cpp">plRenderContext::SetShaderPermutationVariable(&quot;TWO_SIDED&quot;, &quot;TRUE&quot;);
+</code></pre>
+<h2 id="enum-permutation-variables">enum Permutation Variables</h2>
+<p>Enum permutation variables allow you to use more than two permutation values and they can have more descriptive names.</p>
+<p>The definition of an enum variable in its plPermVar file looks like this:</p>
+<pre><code class="language-cpp">enum BLEND_MODE
+{
+    OPAQUE,
+    MASKED,
+    TRANSPARENT,
+    ADDITIVE,
+    MODULATE
+};
+</code></pre>
+<p><strong>Note:</strong> When evaluating an enum variable in a shader, the value must be prefixed with the name of the variable and an underscore:</p>
+<pre><code class="language-cpp">#if BLEND_MODE == BLEND_MODE_MASKED
+    return opacity - MaskThreshold;
+#else
+    return opacity;
+#endif
+</code></pre>
+<p>As you can see, the name used for comparison is <strong>BLEND_MODE_MASKED</strong> although in the definition it was named <strong>MASKED</strong>. In C++ code we use the actual name though:</p>
+<pre><code class="language-cpp">plRenderContext::SetShaderPermutationVariable(&quot;BLEND_MODE&quot;, &quot;MASKED&quot;);
+</code></pre>
+<h2 id="exposing-permutations-to-materials">Exposing Permutations to materials</h2>
+<p>By default permutation variables do not show up in materials and therefore cannot be manually specified by artists. If you want a variable to show up, simply list it in the <strong>[MATERIALPARAMETER]</strong> section:</p>
+<pre><code class="language-cpp">[MATERIALPARAMETER]
+
+Permutation ALPHATEST;
+
+</code></pre>
+<p>The type (<code>bool</code> or <code>enum</code>) and the available values are automatically read from the plPermVar file that defines the variable and will show up in the material properties accordingly.</p>
+<h2 id="see-also">See Also</h2>
+<ul>
+<li><a href="../shaders-overview/">Shaders</a></li>
+<li><a href="../shader-templates/">Shader Templates</a></li>
+<li><a href="../shader-debugging/">Shader Debugging</a></li>
+<li><a href="../shader-render-state/">The Shader Render State Section</a></li>
+</ul>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../shader-render-state/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../shader-render-state/" class="btn btn-xs btn-link">
+        Shader Render State
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../shader-debugging/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../shader-debugging/" class="btn btn-xs btn-link">
+        Shader Debugging
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="col-md-12 wm-page-content">
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/noraj/mkdocs-windmill-dark">Windmill Dark</a> theme by Alexandre ZANNI (noraj).</p>
+</footer>
+
+</body>
+</html>

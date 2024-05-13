@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="author" content="PlasmaDev">
+    <link rel="canonical" href="https://plasmaengine.github.io/PlasmaDocs/build/build-windows/">
+    <link rel="shortcut icon" href="../../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Windows Builds - PlasmaDocs</title>
+    <link href="../../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../../js/jquery-3.2.1.min.js"></script>
+    <script src="../../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '../..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "Windows Builds", url: "#_top", children: [
+              {title: "Prerequisites", url: "#prerequisites" },
+              {title: "Generate the Solution", url: "#generate-the-solution" },
+              {title: "Building the Code", url: "#building-the-code" },
+              {title: "See Also", url: "#see-also" },
+          ]},
+        ];
+
+    </script>
+    <script src="../../js/base.js"></script>
+      <script src="../../search/main.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../building-plasma/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../building-plasma/" class="btn btn-xs btn-link">
+        Building Plasma Engine
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../build-uwp/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../build-uwp/" class="btn btn-xs btn-link">
+        UWP Builds
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <h1 id="windows-builds">Windows Builds</h1>
+<p>This page describes how to build Plasma for desktop Windows. For UWP builds, see <a href="../build-uwp/">this page</a>.</p>
+<h2 id="prerequisites">Prerequisites</h2>
+<p>This software has to be installed manually.</p>
+<h3 id="microsoft-visual-studio">Microsoft Visual Studio</h3>
+<p><a href="https://visualstudio.microsoft.com/downloads">Visual Studio</a> is the only supported IDE on Windows. It is sufficient to install the free <em>Community</em> edition.</p>
+<p>These versions are currently supported:</p>
+<ul>
+<li>Visual Studio 2019 64 Bit</li>
+<li>Visual Studio 2022 64 Bit</li>
+</ul>
+<p>These <em>workloads</em> have to be installed:</p>
+<ul>
+<li><em>Desktop Development with C++</em></li>
+<li><em>Game Development with C++</em></li>
+<li><em>.Net Desktop Development</em></li>
+</ul>
+<h3 id="cmake-optional">CMake (optional)</h3>
+<p><a href="https://cmake.org/">CMake</a> is used as the build system. On Windows you only need to install CMake if you want to use the CMake GUI to choose custom <a href="../cmake-config/">CMake configurations</a>. If you only use the provided <code>GenerateXYZ.bat</code> scripts, those will use a <code>cmake.exe</code> that comes with the Plasma repository.</p>
+<h2 id="generate-the-solution">Generate the Solution</h2>
+<h3 id="using-the-generate-scripts">Using the Generate Scripts</h3>
+<p>In the root folder of the Plasma repository you will find a couple of <code>.bat</code> files, such as:</p>
+<ul>
+<li><code>GenerateWin64vs2019.bat</code></li>
+<li><code>GenerateWin64vs2022.bat</code></li>
+</ul>
+<p>Run one of them to generate a Visual Studio solution for your preferred compiler. If these scripts fail, you most likely don't have all the <a href="#prerequisites">prerequisites</a> installed. They also sometimes fail, if Visual Studio recently installed an update and you haven't rebooted your PC since. Usually when this script fails it is due to common issues with CMake or the MSVC installation. Read the error messages carefully and search the internet, you'll usually find a solution quickly.</p>
+<p>Once the script finished successfully, there will be a <strong>Workspace</strong> folder in the Plasma root folder. You fill find a <code>Plasma_***.sln</code> file in the respective folder for the Visual Studio version that you chose.</p>
+<h3 id="manually-running-cmake">Manually Running CMake</h3>
+<p>This step requires that you install <a href="#cmake-optional">CMake</a> yourself.</p>
+<p>Run the CMake GUI and <a href="../cmake-config/">configure the build options</a>.</p>
+<h2 id="building-the-code">Building the Code</h2>
+<p>Open the generated solution with Visual Studio and build everything.</p>
+<h2 id="see-also">See Also</h2>
+<ul>
+<li><a href="building-pl.md">Building PlasmaEngine</a></li>
+<li><a href="../clang-on-windows/">Building with Clang on Windows</a></li>
+</ul>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../building-plasma/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../building-plasma/" class="btn btn-xs btn-link">
+        Building Plasma Engine
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../build-uwp/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../build-uwp/" class="btn btn-xs btn-link">
+        UWP Builds
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="col-md-12 wm-page-content">
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/noraj/mkdocs-windmill-dark">Windmill Dark</a> theme by Alexandre ZANNI (noraj).</p>
+</footer>
+
+</body>
+</html>

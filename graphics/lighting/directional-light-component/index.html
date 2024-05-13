@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="author" content="PlasmaDev">
+    <link rel="canonical" href="https://plasmaengine.github.io/PlasmaDocs/graphics/lighting/directional-light-component/">
+    <link rel="shortcut icon" href="../../../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Directional Light Component - PlasmaDocs</title>
+    <link href="../../../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../../../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../../../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../../css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../../../js/jquery-3.2.1.min.js"></script>
+    <script src="../../../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../../../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '../../..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "Directional Light Component", url: "#_top", children: [
+              {title: "Component Properties", url: "#component-properties" },
+              {title: "See Also", url: "#see-also" },
+          ]},
+        ];
+
+    </script>
+    <script src="../../../js/base.js"></script>
+      <script src="../../../search/main.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../dynamic-shadows/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../dynamic-shadows/" class="btn btn-xs btn-link">
+        Dynamic Shadows
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../ambient-light-component/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../ambient-light-component/" class="btn btn-xs btn-link">
+        Ambient Light Component
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <h1 id="directional-light-component">Directional Light Component</h1>
+<p>The <em>directional light component</em> adds a light source that illuminates the entire scene from one direction. This is typically used for sun light. Since directional light affects everything, it isn't possible to cast shadows everywhere. Instead, shadows are restricted to a region around the camera and objects that are too far away from the camera, won't cast shadows.</p>
+<p><img alt="Directional Light" src="../media/directional-light.jpg" /></p>
+<p>You can use multiple directional light sources, for example if you want directional <a href="../ambient-light-component/">ambient light</a>, however, for performance reasons only one directional light should cast shadows.</p>
+<h2 id="component-properties">Component Properties</h2>
+<p>See <a href="../dynamic-shadows/#shadow-component-properties">this page</a> for shadow related component properties.</p>
+<ul>
+<li>
+<p><code>LightColor, Intensity</code>: The color and brightness of the light.</p>
+</li>
+<li>
+<p><code>NumCascades</code>: How many shadow cascades to use. The more cascades are used, the crisper shadows close to the camera become. However, each cascade costs additional performance.</p>
+</li>
+<li>
+<p><code>MinShadowRange</code>: How far from the camera the light should cast shadows. A low value means that only objects a short distance away will cast shadows, and objects farther away won't.</p>
+</li>
+<li>
+<p><code>FadeOutStart</code>: At what fraction of the shadow range it should start to fade out. For instance, if the <code>MinShadowRange</code> is set to 10 meters, and <code>FadeOutStart</code> is set to 0.8, then the shadows will start to fade out at a distance of 8 meters.</p>
+</li>
+<li>
+<p><code>SplitModeWeight</code>: TODO</p>
+</li>
+<li>
+<p><code>NearPlaneOffset</code>: TODO</p>
+</li>
+</ul>
+<h2 id="see-also">See Also</h2>
+<ul>
+<li><a href="../lighting-overview/">Lighting</a></li>
+<li><a href="../dynamic-shadows/">Dynamic Shadows</a></li>
+</ul>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../dynamic-shadows/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../dynamic-shadows/" class="btn btn-xs btn-link">
+        Dynamic Shadows
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../ambient-light-component/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../ambient-light-component/" class="btn btn-xs btn-link">
+        Ambient Light Component
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="col-md-12 wm-page-content">
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/noraj/mkdocs-windmill-dark">Windmill Dark</a> theme by Alexandre ZANNI (noraj).</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="author" content="PlasmaDev">
+    <link rel="canonical" href="https://plasmaengine.github.io/PlasmaDocs/runtime/world/component-managers/">
+    <link rel="shortcut icon" href="../../../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Component Managers - PlasmaDocs</title>
+    <link href="../../../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../../../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../../../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../../css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../../../js/jquery-3.2.1.min.js"></script>
+    <script src="../../../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../../../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '../../..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "Component Managers", url: "#_top", children: [
+              {title: "Simple Component Managers", url: "#simple-component-managers" },
+              {title: "Non-Simple Component Managers", url: "#non-simple-component-managers" },
+              {title: "Component Storage", url: "#component-storage" },
+              {title: "See Also", url: "#see-also" },
+          ]},
+        ];
+
+    </script>
+    <script src="../../../js/base.js"></script>
+      <script src="../../../search/main.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../components/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../components/" class="btn btn-xs btn-link">
+        Components
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../../configuration/startup/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../../configuration/startup/" class="btn btn-xs btn-link">
+        Startup System
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <h1 id="component-managers">Component Managers</h1>
+<p>A component manager is a <a href="../world-modules/">world module</a> whose purpose it is to create, store and update <a href="../components/">components</a> of a single type. For every component type, there is exactly one component manager to handle that type.</p>
+<h2 id="simple-component-managers">Simple Component Managers</h2>
+<p>There are two types of simple component managers:</p>
+<ol>
+<li>Ones that don't update their components, at all.</li>
+<li>Ones that call a simple <code>Update()</code> function once per frame on their components.</li>
+</ol>
+<h3 id="no-update-component-manager">No Update Component Manager</h3>
+<p>A component manager that doesn't update its components is declared like this:</p>
+<!-- BEGIN-DOCS-CODE-SNIPPET: component-manager-trivial -->
+
+<pre><code class="language-cpp">using SendMsgComponentManager = plComponentManager&lt;class SendMsgComponent, plBlockStorageType::Compact&gt;;
+</code></pre>
+<!-- END-DOCS-CODE-SNIPPET -->
+
+<p>We can simply instantiate the <code>plComponentManager</code> template and not override anything. Therefore this component manager doesn't have any update function and so the component type that it manages is never updated. That doesn't mean that the component type in question can't do things periodically. In fact the <code>SendMsgComponent</code> does update its state regularly, but it triggers its own update through <a href="../world-messaging/">messaging</a>, which is more efficient for components that only need to wake up every once in a while.</p>
+<h3 id="simple-update-component-manager">Simple Update Component Manager</h3>
+<p>Many component types need to be updated every frame, but it is sufficient if the component manager just calls a simple <code>Update()</code> function. Creating a component manager for this scenario looks like this:</p>
+<!-- BEGIN-DOCS-CODE-SNIPPET: component-manager-simple -->
+
+<pre><code class="language-cpp">using DisplayMsgComponentManager = plComponentManagerSimple&lt;class DisplayMsgComponent, plComponentUpdateType::WhenSimulating, plBlockStorageType::FreeList&gt;;
+</code></pre>
+<!-- END-DOCS-CODE-SNIPPET -->
+
+<p>That is literally all. The template <code>plComponentManagerSimple</code> will take care of the required update function setup. All you need to do then, is to add a (non-virtual) <code>Update()</code> function to the component type, which the component manager will call for all active components each frame.</p>
+<p>The <code>plComponentUpdateType</code> option determines whether the component manager will call the <code>Update()</code> function only while the world simulation is running (during a game) or also when it is not running, meaning when editing a scene. For things that should show up even while looking at a paused scene in the editor, you need to use <code>plComponentUpdateType::Always</code>.</p>
+<h2 id="non-simple-component-managers">Non-Simple Component Managers</h2>
+<p>The vast majority of component managers are very simple, but they can also be much more complex. This is mostly the case when the manager needs to synchronize state between components and other systems. Another reason to write a more complex component manager is efficiency. If the manager can track which components need updating and which ones can be ignored, it can skip the update for many components. Or it can update only a number of components each frame to amortize costs.</p>
+<p>To write a more complex component manager you basically just register your own update functions and then do whatever needs to be done there. See the chapter about <a href="../world-modules/">world modules</a> for how to do that.</p>
+<blockquote>
+<p><strong>Note:</strong></p>
+<p>When you write your own update function, don't forget to skip <em>inactive</em> components. Otherwise deactivating a component or object hierarchy has no effect on your component type. See <code>plComponentManagerSimple::SimpleUpdate()</code> for an example.</p>
+</blockquote>
+<h2 id="component-storage">Component Storage</h2>
+<p>Both component managers above were configured with a <code>plBlockStorageType</code> option. This determines what happens when a component gets deleted from the world.</p>
+<p>If the component manager is set to <code>plBlockStorageType::FreeList</code>, the unused memory block will be put into a free-list and reused when a new component is allocated. In the mean time, the component manager needs to skip these unused memory blocks, every time it iterates over all components. For components that have very short lifespans or are frequently created and destroyed, this can be more efficient. The main reason to use this, though, is for components that can't be relocated in memory. If a component would crash when it is copied to a different memory location, then using the free-list option prevents this.</p>
+<p>If the component manager is set to <code>plBlockStorageType::Compact</code>, then an unused memory block will be filled right away by relocating the last valid component to that freed up slot. This prevents memory fragmentation, which wastes performance when iterating over large arrays of components, of which many elements are unused. For components which are mostly long lived, this option gives better performance.</p>
+<p>If in doubt, both options are fine. The <code>plComponentManagerSimple</code> defaults to <code>plBlockStorageType::FreeList</code> as this mode has fewer restrictions.</p>
+<h2 id="see-also">See Also</h2>
+<ul>
+<li><a href="../world-modules/">World Modules</a></li>
+<li><a href="../components/">Components</a></li>
+</ul>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../components/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../components/" class="btn btn-xs btn-link">
+        Components
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../../configuration/startup/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../../configuration/startup/" class="btn btn-xs btn-link">
+        Startup System
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="col-md-12 wm-page-content">
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/noraj/mkdocs-windmill-dark">Windmill Dark</a> theme by Alexandre ZANNI (noraj).</p>
+</footer>
+
+</body>
+</html>

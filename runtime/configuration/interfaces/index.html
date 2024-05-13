@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="author" content="PlasmaDev">
+    <link rel="canonical" href="https://plasmaengine.github.io/PlasmaDocs/runtime/configuration/interfaces/">
+    <link rel="shortcut icon" href="../../../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Singleton Interfaces - PlasmaDocs</title>
+    <link href="../../../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../../../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../../../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../../css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../../../js/jquery-3.2.1.min.js"></script>
+    <script src="../../../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../../../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '../../..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "Singleton Interfaces", url: "#_top", children: [
+              {title: "Implementing Singletons", url: "#implementing-singletons" },
+              {title: "Instantiating Singletons", url: "#instantiating-singletons" },
+              {title: "Accessing Singletons", url: "#accessing-singletons" },
+              {title: "See Also", url: "#see-also" },
+          ]},
+        ];
+
+    </script>
+    <script src="../../../js/base.js"></script>
+      <script src="../../../search/main.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../startup/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../startup/" class="btn btn-xs btn-link">
+        Startup System
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../actor-system/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../actor-system/" class="btn btn-xs btn-link">
+        Actor System
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <h1 id="singleton-interfaces">Singleton Interfaces</h1>
+<p><em>Singletons</em> are classes of which there should only be a single instance throughout the lifetime of the process. Although Plasma uses the <em>singleton pattern</em> quite extensively for built-in classes, such as <code>plTaskSystem</code> and <code>plResourceManager</code>, those classes don't use dedicated singleton infrastructure. Instead, they only expose static functions, and there is no need for any instance.</p>
+<p>Accessing such singletons is trivial, as you can always call their functions directly. However, there is another type of singleton, which does require special handling.</p>
+<p>There are cases where you want to define an <em>interface</em> to make certain functionality available, but you may have different implementations. Only one implementation should ever be active, though. Concrete examples are the integrations of third party libraries. For example there is an <code>plFrameCaptureInterface</code>. This class defines an interface through which <code>plGameApplicationBase</code> can do a capture of the rendered frame, which can be used for debugging graphics issues. However, <em>how</em> such a frame capture could be taken, depends on the platform, the installed tools, the used graphics API and so on. This functionality may be available or not and the exact implementation that is needed can differ drastically.</p>
+<p>Therefore, we want to be able to dynamically load the necessary implementation and make it available through the abstract interface. For the <code>plFrameCaptureInterface</code> we have an implementation by our <a href="../../../debugging/renderdoc/">RenderDoc integration</a>. In the future we might have a second implementation for PIX or some other platform specific tool.</p>
+<p>Using the singleton infrastructure, we can simply load an <a href="../../../custom-code/cpp/engine-plugins/">engine plugin</a> that contains an implementation, and from that plugin register our implementation for that interface. Other code can then query for an instance of this interface and, if available, use it without knowing anything about the implementation, and without the need to link against that library.</p>
+<h2 id="implementing-singletons">Implementing Singletons</h2>
+<p>This section shows all the pieces needed for a singleton. </p>
+<h3 id="interface-base-class">Interface Base Class</h3>
+<p>First, you need to have a virtual base class that declares the actual interface.</p>
+<!-- BEGIN-DOCS-CODE-SNIPPET: singleton-interface -->
+
+<pre><code class="language-cpp">/// \brief Pure virtual interface for demonstrating the singleton work flow
+///
+/// This declaration would typically be in a shared location, that all code can #include
+class PrintInterface
+{
+public:
+  virtual ~PrintInterface() = default;
+
+  virtual void Print(const plFormatString&amp; text) = 0;
+};
+</code></pre>
+<!-- END-DOCS-CODE-SNIPPET -->
+
+<p>This is the class through which other code will later access the functionality, so it must be in a shared location.</p>
+<h3 id="interface-implementation">Interface Implementation</h3>
+<p>Next, you need one or more <em>implementations</em> of your interface. You can, of course, have zero implementations, if all you want to provide is the option for future extensibility, and your code should generally be able to handle the fact that no implementation is currently loaded.</p>
+<!-- BEGIN-DOCS-CODE-SNIPPET: singleton-impl-declaration -->
+
+<pre><code class="language-cpp">/// \brief Implementation of the PrintInterface, just forwards the text to plLog::Info()
+///
+/// This would typically be in a different plugin than the interface and would be allocated by that plugin on startup.
+class PrintImplementation : public PrintInterface
+{
+  PLASMA_DECLARE_SINGLETON_OF_INTERFACE(PrintImplementation, PrintInterface);
+
+public:
+  PrintImplementation();
+
+  virtual void Print(const plFormatString&amp; text) override;
+
+private:
+  // needed for the startup system to be able to call the private function below
+  PLASMA_MAKE_SUBSYSTEM_STARTUP_FRIEND(SampleGamePluginStartupGroup, SampleGamePluginMainStartup);
+
+  void OnCoreSystemsStartup()
+  {
+    /* we could do something important here */
+  }
+};
+</code></pre>
+<!-- END-DOCS-CODE-SNIPPET -->
+
+<p>Note the <code>PLASMA_DECLARE_SINGLETON_OF_INTERFACE</code> macro. This adds one part of the required functionality. For one, this class adds a function to query the one and only instance of your class (<code>GetSingleton()</code>). Also, it prevents you from creating two instances of this class, as that would violate the singleton contract.</p>
+<p>Finally, you need to add this to you cpp file:</p>
+<!-- BEGIN-DOCS-CODE-SNIPPET: singleton-impl-definition -->
+
+<pre><code class="language-cpp">PLASMA_IMPLEMENT_SINGLETON(PrintImplementation);
+
+PrintImplementation::PrintImplementation()
+  : m_SingletonRegistrar(this) // needed for automatic registration
+{
+}
+</code></pre>
+<!-- END-DOCS-CODE-SNIPPET -->
+
+<p>The macro again inserts vital code for your singleton to work. The constructor also has to follow the pattern shown above.</p>
+<p>You can now implement the desired behavior for the overridden functions.</p>
+<h2 id="instantiating-singletons">Instantiating Singletons</h2>
+<p>The Plasma singleton infrastructure does not automatically create an instance of singleton classes. It is up to you whether, when and how you create your instance. The most common way to do this, is to leverage the <a href="../startup/">startup system</a> to hook into the engine startup process at the right time.</p>
+<p>For details, read that chapter, but here is what you would typically do. At startup you instantiate your singleton implementation:</p>
+<!-- BEGIN-DOCS-CODE-SNIPPET: singleton-allocate -->
+
+<pre><code class="language-cpp">ON_CORESYSTEMS_STARTUP
+{
+  // allocate an implementation of PrintInterface
+  s_PrintInterface = PLASMA_DEFAULT_NEW(PrintImplementation);
+
+  s_PrintInterface-&gt;OnCoreSystemsStartup();
+  s_PrintInterface-&gt;Print(&quot;Called ON_CORESYSTEMS_STARTUP&quot;);
+}
+</code></pre>
+<!-- END-DOCS-CODE-SNIPPET -->
+
+<p>And at shutdown you make sure to clean it up again:</p>
+<!-- BEGIN-DOCS-CODE-SNIPPET: singleton-deallocate -->
+
+<pre><code class="language-cpp">ON_CORESYSTEMS_SHUTDOWN
+{
+  s_PrintInterface-&gt;Print(&quot;Called ON_CORESYSTEMS_SHUTDOWN&quot;);
+
+  // clean up the s_PrintInterface, otherwise we would get asserts about memory leaks at shutdown
+  s_PrintInterface.Clear();
+}
+</code></pre>
+<!-- END-DOCS-CODE-SNIPPET -->
+
+<h2 id="accessing-singletons">Accessing Singletons</h2>
+<p>There are two ways that you can access your singleton instance. In a piece of code that knows for certain that it will only run in conjunction with a specific singleton implementation, you can access it directly:</p>
+<!-- BEGIN-DOCS-CODE-SNIPPET: singleton-query-instance -->
+
+<pre><code class="language-cpp">PrintImplementation::GetSingleton()-&gt;Print(&quot;Called ON_HIGHLEVELSYSTEMS_SHUTDOWN&quot;);
+</code></pre>
+<!-- END-DOCS-CODE-SNIPPET -->
+
+<p>This is the most efficient way. However, use cases for this should be relatively rare. The more common situation is, when you want to get the implementation for an interface. To do so, you need to go through <code>plSingletonRegistry</code>:</p>
+<!-- BEGIN-DOCS-CODE-SNIPPET: singleton-query-interface -->
+
+<pre><code class="language-cpp">plSingletonRegistry::GetSingletonInstance&lt;PrintInterface&gt;()-&gt;Print(&quot;Called ON_HIGHLEVELSYSTEMS_STARTUP&quot;);
+</code></pre>
+<!-- END-DOCS-CODE-SNIPPET -->
+
+<p>Here we don't need to know anything about the implementation and therefore have no link dependency on the library that provides it. This is how most code would access a singleton implementation. Be aware that this requires a more expensive lookup, so locally cache the result, if you want to do multiple function calls on it.</p>
+<h2 id="see-also">See Also</h2>
+<ul>
+<li><a href="../startup/">Startup System</a></li>
+<li><a href="../../../custom-code/cpp/engine-plugins/">Engine Plugins</a></li>
+</ul>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../startup/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../startup/" class="btn btn-xs btn-link">
+        Startup System
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../actor-system/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../actor-system/" class="btn btn-xs btn-link">
+        Actor System
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="col-md-12 wm-page-content">
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/noraj/mkdocs-windmill-dark">Windmill Dark</a> theme by Alexandre ZANNI (noraj).</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="author" content="PlasmaDev">
+    <link rel="canonical" href="https://plasmaengine.github.io/PlasmaDocs/graphics/shaders/shaders-overview/">
+    <link rel="shortcut icon" href="../../../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Shaders - PlasmaDocs</title>
+    <link href="../../../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../../../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../../../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../../css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../../../js/jquery-3.2.1.min.js"></script>
+    <script src="../../../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../../../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '../../..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "Shaders", url: "#_top", children: [
+              {title: "Shader Sections", url: "#shader-sections" },
+          ]},
+          {title: "if WIREFRAME == 1", url: "#if-wireframe-1", children: [
+          ]},
+          {title: "endif", url: "#endif", children: [
+              {title: "SHADER", url: "#shader" },
+              {title: "*SHADER stages", url: "#shader-stages" },
+              {title: "TEMPLATE_VARS", url: "#template_vars" },
+              {title: "See Also", url: "#see-also" },
+          ]},
+        ];
+
+    </script>
+    <script src="../../../js/base.js"></script>
+      <script src="../../../search/main.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../../../physics/jolt-debug-visualizations/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../../../physics/jolt-debug-visualizations/" class="btn btn-xs btn-link">
+        Jolt Debug Visualizations
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../shader-templates/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../shader-templates/" class="btn btn-xs btn-link">
+        Shader Templates
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <h1 id="shaders">Shaders</h1>
+<p>Shaders are files with the <code>.plShader</code> extension. These files not only provide the HLSL code for each shader stage used, but also the complete render state used when drawing with this shader. Several permutations of the same shader can exist. Permutations can inpact the render state or affect the HLSL source code. Thus, one shader file can produce several outputs.</p>
+<h2 id="shader-sections">Shader Sections</h2>
+<p>Each shader is made up of several <strong>sections</strong>. Not all sections need to be defined as most have a default state. Here is a very simple shader:</p>
+<pre><code class="language-cpp">[PLATFORMS]
+ALL
+
+[PERMUTATIONS]
+
+[RENDERSTATE]
+
+[SHADER]
+
+cbuffer PerObject : register(b1)
+{
+  float4x4 mvp : packoffset(c0);
+};
+
+struct VS_IN
+{
+  float3 pos : POSITION;
+  float2 texcoord0 : TEXCOORD0;
+};
+
+struct VS_OUT
+{
+  float4 pos : SV_Position;
+  float2 texcoord0 : TEXCOORD0;
+};
+
+typedef VS_OUT PS_IN;
+
+[VERTEXSHADER]
+VS_OUT main(VS_IN Input)
+{
+  VS_OUT RetVal;
+  RetVal.pos = mul(mvp, float4(Input.pos, 1.0));
+  RetVal.texcoord0 = Input.texcoord0;
+  return RetVal;
+}
+
+[PIXELSHADER]
+Texture2D DiffuseTexture;
+SamplerState PointClampSampler;
+
+float4 main(PS_IN Input) : SV_Target
+{
+  return DiffuseTexture.Sample(PointClampSampler, Input.texcoord0);
+}
+</code></pre>
+<p>The following sections are supported:</p>
+<h3 id="platforms">PLATFORMS</h3>
+<p>The <code>PLATFORMS</code> section lists the shader platforms that are supported by this shader and for which the shader should be compiled. Currently, these values are supported:
+* <code>ALL</code>: The shader is supported on all platforms.
+* <code>DEBUG</code>: If set, the shader is not optimized and contains debug information to allow stepping through it in tools like RenderDoc.
+* <code>VULKAN</code>: The shader will be compiled as SPIRV code for the Vulkan renderer.
+* <code>DX11_SM40_93</code>: DX9 feature set. Used by the DX11 renderer when using downlevel hardware support.
+* <code>DX11_SM40</code>: DX10 feature set. Used by the DX11 renderer when using downlevel hardware support.
+* <code>DX11_SM41</code>: DX10.1 feature set. Used by the DX11 renderer when using downlevel hardware support.
+* <code>DX11_SM50</code>: DX11 feature set. Default platform used by the DX11 renderer.</p>
+<pre><code class="language-cpp">[PLATFORMS]
+ALL
+DEBUG
+</code></pre>
+<h3 id="permutations">PERMUTATIONS</h3>
+<p>The <code>PERMUTATIONS</code> section defines permutation variables which allow for modofication of the shader code. Each variable is exposed as a preprocessor variable, allowing for various sections of the shader to be modifed via preprocessor blocks. </p>
+<p>The values of these permutation variables are defined by the engine / material and the entire system is explained in detail in the dedicated <a href="../shader-permutation-variables/">shader permutation variables</a> page.</p>
+<pre><code class="language-cpp">[PERMUTATIONS]
+ALPHATEST
+CAMERA_MODE = CAMERA_MODE_PERSPECTIVE
+</code></pre>
+<h3 id="materialparameter-materialconfig">MATERIALPARAMETER, MATERIALCONFIG</h3>
+<p>If the shader is used as a material shader, two more sections are used:
+* <code>MATERIALPARAMETER</code>: Used to define which permutation variables should be allowed to be changed on a material in the editor. This is explained in detail in <a href="../shader-permutation-variables/#exposing-permutations-to-materials">exposing permutation variables to materials</a>.
+* <code>MATERIALCONFIG</code>: This section controls when a material is rendered during a frame. This is done by this line: <code>RenderDataCategory = LitOpaque</code>. You can use the preprocessor to change the value depending on some permutation variable, if neccessary. The valid values for <code>RenderDataCategory</code> are defined in code via <code>plRenderData::RegisterCategory</code>. Commonly used values are <code>LitOpaque</code> for opaque materials, <code>LitMasked</code> for alpha-tested materials and <code>LitTransparent</code> for alpha blended materials.</p>
+<pre><code class="language-cpp">[MATERIALCONFIG]
+#if (BLEND_MODE == BLEND_MODE_OPAQUE)
+    RenderDataCategory = LitOpaque
+#elif (BLEND_MODE == BLEND_MODE_MASKED)
+    RenderDataCategory = LitMasked
+#else
+    RenderDataCategory = LitTransparent
+#endif
+</code></pre>
+<h3 id="renderstate">RENDERSTATE</h3>
+<p>Each shader defines the complete state of the renderer. This includes, but is not limited to blendind, rasterizer, depth stencil etc. You can use permutations variables and preprcessor macros to change the render state of shader permutations.
+This is explained in more detail on the <a href="../shader-render-state/">shader render state</a> page.</p>
+<p>[RENDERSTATE]</p>
+<h1 id="if-wireframe-1">if WIREFRAME == 1</h1>
+<p>WireFrame = true</p>
+<h1 id="endif">endif</h1>
+<h3 id="shader">SHADER</h3>
+<p>The <code>SHADER</code> section contains code that is shared among all shader stages. The content is simply prepended to all used stages before compiling.</p>
+<h3 id="shader-stages">*SHADER stages</h3>
+<p>Each shader stage has its own section. The following stages are supported: <code>VERTEXSHADER</code>, <code>HULLSHADER</code>, <code>DOMAINSHADER</code>, <code>GEOMETRYSHADER</code>, <code>PIXELSHADER</code> and <code>COMPUTESHADER</code>. Even if you define a shader section, you can use the preprocessor to remove its content via permutation variables, allowing you to remove stages from certain permutations.</p>
+<p>The entry point into each stage must be called <code>main</code>. The shader code supports preprocessor macros that are defined by <a href="../shader-permutation-variables/">permutation variables</a> as well as include directives.
+Beyond that, any HLSL code is fine as long as it compiles on the <a href="#platforms">platforms</a> the shader defines. However, when defining resources, special care must be taken to ensure no conflicting resource mappings are created between the stages. Please refer to the <a href="./shaders-resources.md">shader resource</a> page for further details and on how to facilitate interop with the C++ code.</p>
+<h3 id="template_vars">TEMPLATE_VARS</h3>
+<p>This section is only used when <a href="../shader-templates/#adding-a-shader-template">creating a shader template</a>.</p>
+<h2 id="see-also">See Also</h2>
+<ul>
+<li><a href="../shader-render-state/">Shader Render State</a></li>
+<li><a href="../shader-permutation-variables/">Shader Permutation Variables</a></li>
+<li><a href="../shader-resources/">Shader Resources</a></li>
+<li><a href="../shader-templates/">Shader Templates</a></li>
+<li><a href="../../../tools/shadercompiler/">ShaderCompiler</a></li>
+<li><a href="../../render-pipeline-overview/">Render Pipeline (TODO)</a></li>
+</ul>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../../../physics/jolt-debug-visualizations/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../../../physics/jolt-debug-visualizations/" class="btn btn-xs btn-link">
+        Jolt Debug Visualizations
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../shader-templates/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../shader-templates/" class="btn btn-xs btn-link">
+        Shader Templates
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="col-md-12 wm-page-content">
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/noraj/mkdocs-windmill-dark">Windmill Dark</a> theme by Alexandre ZANNI (noraj).</p>
+</footer>
+
+</body>
+</html>

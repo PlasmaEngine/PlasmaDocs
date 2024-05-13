@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="author" content="PlasmaDev">
+    <link rel="canonical" href="https://plasmaengine.github.io/PlasmaDocs/physics/constraints/jolt-constraints/">
+    <link rel="shortcut icon" href="../../../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Jolt Constraints - PlasmaDocs</title>
+    <link href="../../../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../../../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../../../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../../css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../../../js/jquery-3.2.1.min.js"></script>
+    <script src="../../../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../../../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '../../..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "Jolt Constraints", url: "#_top", children: [
+              {title: "Joining Actors", url: "#joining-actors" },
+              {title: "Constraint Position", url: "#constraint-position" },
+              {title: "Using the ChildActorAnchor Property", url: "#using-the-childactoranchor-property" },
+              {title: "Shared Constraint Component Properties", url: "#shared-constraint-component-properties" },
+              {title: "Constraint Types", url: "#constraint-types" },
+              {title: "Constraint Stability", url: "#constraint-stability" },
+              {title: "See Also", url: "#see-also" },
+          ]},
+        ];
+
+    </script>
+    <script src="../../../js/base.js"></script>
+      <script src="../../../search/main.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../jolt-distance-constraint-component/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../jolt-distance-constraint-component/" class="btn btn-xs btn-link">
+        Jolt Distance Constraint Component
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../jolt-cone-constraint-component/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../jolt-cone-constraint-component/" class="btn btn-xs btn-link">
+        Jolt Cone Constraint Component
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <h1 id="jolt-constraints">Jolt Constraints</h1>
+<p>A <em>Jolt constraint</em> is a component that links <a href="../../actors/jolt-actors/">Jolt actors</a> to constrain their movement. Constraints are often also called <em>joints</em>. There are multiple types of constraints that each constrain the actors in different ways.</p>
+<p>Constraints can be used for simple things like door hinges, up to complex configurations like rag dolls.</p>
+<h2 id="joining-actors">Joining Actors</h2>
+<p>Constraints can be used to link:</p>
+<ul>
+<li>Two <a href="../../actors/jolt-dynamic-actor-component/">dynamic actors</a>. This will create a more complex dynamic object that can still freely move throughout the scene, but has multiple parts that can wiggle around.</li>
+<li>One <a href="../../actors/jolt-static-actor-component/">static actor</a> with one <a href="../../actors/jolt-dynamic-actor-component/">dynamic actor</a>. In this case the dynamic actor is now constrained in its movement relative to the static actor. Since the static actor never moves, the dynamic actor's freedom is severely limited.</li>
+<li>One <a href="../../actors/jolt-dynamic-actor-component/">dynamic actor</a> with no second actor. This just affixes the dynamic actor with 'the world'. This is effectively the same as joining it with another static actor.</li>
+<li>One <a href="../../actors/jolt-dynamic-actor-component/">dynamic actor</a> with one <a href="../../actors/jolt-dynamic-actor-component/#kinematic-vs-simulated">kinematic actor</a>. If the kinematic actor moves, the dynamic actor is forced to follow according to the constraint between them. The dynamic actor does not affect the kinematic actor in any way. This setup is common to have full control over the movement of one part (the kinematic actor) and still get physically plausible behavior from another part.</li>
+</ul>
+<p>There are two ways that a constraint component can link actors.</p>
+<h3 id="using-object-references">Using Object References</h3>
+<p>You can use the <a href="../../../scenes/object-references.md">object references</a> on the joint component to specify both the <em>parent actor</em> and the <em>child actor</em>:</p>
+<p>With this method, the <a href="../../../runtime/world/game-objects.md">game objects</a> for the actors and the joint don't need to have a specific hierarchy, they can be placed just next to each other. This also allows to create <em>loops</em> of linked actors. On the other hand, you always need to know exactly which actors shall be linked.</p>
+<blockquote>
+<p><strong>Note:</strong></p>
+<p>The <code>Child Actor</code> of a joint always has to be specified this way.</p>
+</blockquote>
+<h3 id="using-the-object-hierarchy">Using the Object Hierarchy</h3>
+<p>To determine which <code>Parent Actor</code> to link the joint to, you can utilize the object hierarchy. If no parent actor is specified as an object reference, the joint will automatically traverse its object hierarchy upwards and search for the closest object with a static or dynamic actor. If it finds one, the joint will link to that object as the parent actor.</p>
+<p>If it does not find any such actor on a parent node, the joint will attach to 'the world', meaning it will be fixed to its current world position.</p>
+<p>This method can be useful especially when you want to put the joint into a <a href="../../../prefabs/prefabs-overview.md">prefab</a>. For example, if you have a prefab for a chandelier that can swing around, you can set up the joint to only reference the actor that represents the chandelier, but the prefab does not contain an actor for the anchor point. If this prefab is placed into a scene, the rule that a joint <em>without</em> a parent actor just gets linked to the world, means that you can easily place these prefabs in a scene, and they will swing around the location where they have been instantiated.</p>
+<p>However, if your scene contains for example a moveable room, you can also place it there and make sure to attach the chandelier prefab as a child node of the moveable room actor. That means, the joint of the chandelier will now link the chandelier actor with the moveable room actor, and thus whenever the room moves, the chandelier will be physically dragged along as well.</p>
+<blockquote>
+<p><strong>Important:</strong></p>
+<p>This method of linking actors only works properly, if the parent actor is either <strong>static</strong> or <strong>kinematic</strong>. It doesn't work for simulated dynamic actors, as the transform update introduces jitter.</p>
+</blockquote>
+<h2 id="constraint-position">Constraint Position</h2>
+<p>The position and rotation of a constraint specifies the pivot point. For <a href="../jolt-hinge-constraint-component/">hinge constraints</a>, <a href="../jolt-point-constraint-component/">point constraints</a>, <a href="../jolt-cone-constraint-component/">cone constraints</a> and <a href="../jolt-swing-twist-constraint-component/">swing-twist constraints</a> the position of the joint determines around which point the linked actors rotate. For <a href="../jolt-fixed-constraint-component/">fixed constraints</a> the position still affects how strong forces may become due to lever effects.</p>
+<p>For <a href="../jolt-distance-constraint-component/">distance constraints</a> the joint position determines from where the distance is computed. Only for <a href="../jolt-slider-constraint-component/">slider constraints</a> is the position of the joint less relevant, though for computational stability, it should still be somewhere in between the linked actors.</p>
+<h2 id="using-the-childactoranchor-property">Using the ChildActorAnchor Property</h2>
+<p>Using the <code>ChildActorAnchor</code> property is entirely optional and often not needed. Basically this option is used to reference any object, and tell the constraint that the position and orientation of that object should be the anchor point where the constraint acts upon the child actor. For most constraint types this is rarely needed. If you link two actors with a hinge constraint, the position of the constraint already defines where between the actors the hinge will be.</p>
+<p>However, this setup always assumes that the two actors should start out in the 'default configuration' of the constraint. For example, for a hinge constraint with a stiff spring, the default configuration is when it is fully relaxed, meaning you could not put them into a start configuration where the constraint is already under tension.</p>
+<p>Similarly, for a distance constraint, the child actor would always need to start out such that the constraint position is exactly at the position of the actor, where it should link to the actor. This can be problematic especially when the distance constraint uses a <em>minimum distance</em>, as the constraint would immediately push away the actor, potentially with high speed.</p>
+<p>Using a dedicated object to specify the anchor point, both situations can be fixed. The anchor point specifies the position at which the constraint affects the child actor. For most constraint types the rotation of the anchor point is important as well. If the anchor's transform is identical to the constraint's transform, it is redundant and could be left out. However, if it is different from the constraint's transform, this difference tells the constraint how much its start state deviates from the 'default configuration'. For example for a hinge constraint the position of the anchor should always be identical to the constraint's position, otherwise the child actor will jerk towards the hinge constraint at startup. However, the rotation may deviate from the constraint's rotation, which specifies how much the constraint is already rotated at startup.</p>
+<h2 id="shared-constraint-component-properties">Shared Constraint Component Properties</h2>
+<p>These properties are shared among all joint types:</p>
+<ul>
+<li><code>PairCollision</code>: If disabled, joined actors will not collide with each other. This can be preferable, because then the joined actors may overlap.</li>
+<li><code>ParentActor</code>, <code>ChildActor</code>: References to objects with <a href="../../actors/jolt-actors/">actor components</a> to link with this constraint. See <a href="#joining-actors">joining actors</a> above.</li>
+<li><code>ChildActorAnchor</code>: An optional reference to an object that tells the constraint where it should attach to the child actor. See <a href="#using-the-childactoranchor-property">using the ChildActorAnchor property</a> above.</li>
+<li><code>BreakForce</code>, <code>BreakTorque</code>: If either of these values is larger than zero, the constraint is <em>breakable</em>. That means if during the physics simulation the force or torque acting upon the constraint exceeds this threshold, the constraint will be deleted and the bodies won't be joined any longer. When this happens, <code>plMsgPhysicsJointBroke</code> will be sent as an <a href="../../../runtime/world/world-messaging.md">event message</a>.</li>
+</ul>
+<h2 id="constraint-types">Constraint Types</h2>
+<p>These types of constraints are currently available:</p>
+<ul>
+<li><a href="../jolt-hinge-constraint-component/">Jolt Hinge Constraint Component</a></li>
+<li><a href="../jolt-point-constraint-component/">Jolt Point Constraint Component</a></li>
+<li><a href="../jolt-fixed-constraint-component/">Jolt Fixed Constraint Component</a></li>
+<li><a href="../jolt-slider-constraint-component/">Jolt Slider Constraint Component</a></li>
+<li><a href="../jolt-distance-constraint-component/">Jolt Distance Constraint Component</a></li>
+<li><a href="../jolt-cone-constraint-component/">Jolt Cone Constraint Component</a></li>
+<li><a href="../jolt-swing-twist-constraint-component/">Jolt Swing-Twist Constraint Component</a></li>
+</ul>
+<h2 id="constraint-stability">Constraint Stability</h2>
+<p>Joining multiple actors in a chain can quickly result in really bad simulation results. Have a look at <a href="../../actors/jolt-dynamic-actor-component/#simulation-stability">dynamic actor simulation stability</a> for ways to improve this. When working with constraints the following aspects help a lot:</p>
+<ul>
+<li>Make sure that the involved actors are not too light. For smaller objects the automatically computed mass is often too low for the constraint to be stable.</li>
+<li>Drastically increase linear and especially angular damping on the actors (<code>0.1</code> to <code>0.8</code>).</li>
+<li>Don't create very long chains, try to achieve the desired result with as few constraints as possible.</li>
+<li>Don't use constraint limits (hinge constraint, swing-twist constraint), they can add significant instability.</li>
+</ul>
+<h2 id="see-also">See Also</h2>
+<ul>
+<li><a href="../../actors/jolt-actors/">Jolt Actors</a></li>
+</ul>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../jolt-distance-constraint-component/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../jolt-distance-constraint-component/" class="btn btn-xs btn-link">
+        Jolt Distance Constraint Component
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../jolt-cone-constraint-component/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../jolt-cone-constraint-component/" class="btn btn-xs btn-link">
+        Jolt Cone Constraint Component
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="col-md-12 wm-page-content">
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/noraj/mkdocs-windmill-dark">Windmill Dark</a> theme by Alexandre ZANNI (noraj).</p>
+</footer>
+
+</body>
+</html>

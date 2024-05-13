@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="author" content="PlasmaDev">
+    <link rel="canonical" href="https://plasmaengine.github.io/PlasmaDocs/build/sdk-root/">
+    <link rel="shortcut icon" href="../../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>SDK Root Folder - PlasmaDocs</title>
+    <link href="../../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../../js/jquery-3.2.1.min.js"></script>
+    <script src="../../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '../..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "SDK Root Folder", url: "#_top", children: [
+              {title: "Default Strategy for Locating SDK Root", url: "#default-strategy-for-locating-sdk-root" },
+              {title: "Redirecting to SDK Root", url: "#redirecting-to-sdk-root" },
+              {title: "Custom SDK Root", url: "#custom-sdk-root" },
+              {title: "When to Redirect At All", url: "#when-to-redirect-at-all" },
+              {title: "See Also", url: "#see-also" },
+          ]},
+        ];
+
+    </script>
+    <script src="../../js/base.js"></script>
+      <script src="../../search/main.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../submodule/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../submodule/" class="btn btn-xs btn-link">
+        Plasma Engine as a Submodule
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../cmake-config/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../cmake-config/" class="btn btn-xs btn-link">
+        CMake Setup
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <h1 id="sdk-root-folder">SDK Root Folder</h1>
+<p>When the engine launches, one of the first things it usually does, is to detect the exact path of the <em>SDK root folder</em>. This folder is a so called <em>special directory</em> and is mostly used when mounting <a href="../projects/data-directories.md">data directories</a>.</p>
+<p><em>Special directories</em> are referenced with a "&gt;" at the beginning, and are only allowed in few places, such as when adding data directories. For example, the 'base' data directory is mounted like this:</p>
+<pre><code class="language-cpp">plFileSystem::AddDataDirectory(&quot;&gt;sdk/Data/Base&quot;);
+</code></pre>
+<p>This adds the folder <em>"Data/Base"</em> that is located inside the folder where the SDK (Plasma Engine) is stored.</p>
+<h2 id="default-strategy-for-locating-sdk-root">Default Strategy for Locating SDK Root</h2>
+<p>The default strategy by which the engine detects the SDK root folder, is to start at the location of the application binary, and walk the file structure up, until it finds a folder, which contains the sub-folders "Data/Base".</p>
+<p>So for instance, if the running application is located in <code>C:/PlasmaEngine/Bin/MyGame.exe</code>, the search will start in <code>C:/PlasmaEngine/Bin</code>, where no such folder is found. Then it will continue in <code>C:/PlasmaEngine</code>. That folder does have the sub-structure <code>C:/PlasmaEngine/Data/Base</code>, so the SDK root is determined to be <code>C:/PlasmaEngine</code>.</p>
+<p>This strategy works, as long as the application binary is located somewhere inside the Plasma Engine SDK.</p>
+<h2 id="redirecting-to-sdk-root">Redirecting to SDK Root</h2>
+<p>If you use a different file structure, the default strategy won't work. This is commonly the case when integrating <a href="../submodule/">Plasma Engine as a Submodule</a>. For example your file structure may look like this:</p>
+<pre><code class="language-cmd">C:/MyRepo
+C:/MyRepo/PlasmaEngine-module/ ...
+C:/MyRepo/Bin/MyGame.exe
+C:/MyRepo/OtherData/ ...
+</code></pre>
+<p>Here Plasma Engine is integrated into another repository. The 'Bin' folder is top level, just as the 'Plasma Engine-module' folder.</p>
+<p>To enable such a pattern, you can place a 'redirection file', which points to the SDK root folder. The file has to be called <strong>plSdkRoot.txt</strong> and it must be located somewhere along the path that the default strategy searches. In this case it would be put into <code>C:/MyRepo/plSdkRoot.txt</code> and it would contain the string <code>PlasmaEngine-module</code>. This way, when the engine searches for the folder that contains 'Data/Base', it will reach <code>C:/MyRepo</code>, see the <code>plSdkRoot.txt</code> file, read its content, append the relative path inside to its current path (<code>C:/MyRepo/PlasmaEngine-module</code>) and find <code>C:/MyRepo/PlasmaEngine-module/Data/Base</code>, which means it determines <code>C:/MyRepo/PlasmaEngine-module</code> to be the SDK root folder.</p>
+<p>Using a redirection file is the least invasive method and it works for all Plasma applications, e.g. the editor, samples and tools.</p>
+<h2 id="custom-sdk-root">Custom SDK Root</h2>
+<p>You can fully control where the SDK root should be and how it is found, if you write your own <a href="../../runtime/application/application/">application (TODO)</a>. During early startup you can simply set the path of the SDK root folder with <code>plFileSystem::SetSdkRootDirectory()</code>.</p>
+<p>This can be preferable when you use a very different structure.</p>
+<p>Note that this method will only work for applications that you control. Tools such as <a href="../../tools/inspector/">plInspector</a> or the editor expect to find the SDK root through the default search strategy (or through a redirection file).</p>
+<h2 id="when-to-redirect-at-all">When to Redirect At All</h2>
+<p>The SDK root folder doesn't need to point to the folder where Plasma Engine is stored. This is only necessary, when you really need the data that is stored in <code>Data/Base</code>. If you only use a fraction of Plasma, for example only the Foundation library, or not the editor and rendering code, then you can also use a very different folder as your root (for example <code>C:/MyRepo</code> in the example above). In such cases your application would almost certainly specify its <a href="#custom-sdk-root">custom SDK root</a> in its startup code directly.</p>
+<h2 id="see-also">See Also</h2>
+<ul>
+<li><a href="../submodule/">Plasma Engine as a Submodule</a></li>
+<li><a href="../cmake-config/">CMake Setup</a></li>
+<li><a href="building-pl.md">Building Plasma Engine</a></li>
+</ul>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../submodule/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../submodule/" class="btn btn-xs btn-link">
+        Plasma Engine as a Submodule
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../cmake-config/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../cmake-config/" class="btn btn-xs btn-link">
+        CMake Setup
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="col-md-12 wm-page-content">
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/noraj/mkdocs-windmill-dark">Windmill Dark</a> theme by Alexandre ZANNI (noraj).</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="author" content="PlasmaDev">
+    <link rel="canonical" href="https://plasmaengine.github.io/PlasmaDocs/ai/AiPlugin/navmesh-path-test-component/">
+    <link rel="shortcut icon" href="../../../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Navmesh Path Test Component - PlasmaDocs</title>
+    <link href="../../../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../../../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../../../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../../css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../../../js/jquery-3.2.1.min.js"></script>
+    <script src="../../../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../../../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '../../..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "Navmesh Path Test Component", url: "#_top", children: [
+              {title: "Component Properties", url: "#component-properties" },
+              {title: "See Also", url: "#see-also" },
+          ]},
+        ];
+
+    </script>
+    <script src="../../../js/base.js"></script>
+      <script src="../../../search/main.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../runtime-navmesh/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../runtime-navmesh/" class="btn btn-xs btn-link">
+        Runtime Navmesh
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../ai-plugin-overview/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../ai-plugin-overview/" class="btn btn-xs btn-link">
+        AiPlugin Overview
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <h1 id="navmesh-path-test-component">Navmesh Path Test Component</h1>
+<p>This component is for testing the <a href="../runtime-navmesh/">runtime navmesh</a>.</p>
+<p>Place an object with this component in your scene, then specify another object as the <code>PathEnd</code>.
+Make sure you have a <a href="../runtime-navmesh/#navmesh-types">navmesh config</a> and a <a href="../runtime-navmesh/#path-search-types">path search config</a> set up and chosen for this component to use.</p>
+<p>Path searches are only possible while <a href="../../../editor/run-scene/">simulating a scene</a>, so press the <em>play</em> button to test it.</p>
+<p>Now the plugin will automatically generate the navmesh and display the found path. If it doesn't show anything, check the <em>Visualize</em> options. <code>VisualizePathState</code> can help figuring out what went wrong. For instance the start and end points might not be in a location where the navmesh is reachable, at all, or they might be too high above the ground.</p>
+<p>Also use the <a href="../runtime-navmesh/#navmesh-visualization">navmesh visualization</a> functionality to make sure any mesh was generated successfully, at all.</p>
+<h2 id="component-properties">Component Properties</h2>
+<ul>
+<li><code>VisualizePathCorridor</code>: If enabled, the polygons that form the <em>corridor</em> of the path search result are visualized.</li>
+<li><code>VisualizePathLine</code>: If enabled, the shortest line through the corridor is visualized.</li>
+<li>
+<p><code>VisualizePathState</code>: If enabled, the current state of the path search is printed as text at the location of this object.</p>
+</li>
+<li>
+<p><code>PathEnd</code>: A <a href="../../scenes/object-references.md">references</a> to another object that acts as the path's destination.</p>
+</li>
+<li><code>NavmeshConfig</code>: Which <a href="../runtime-navmesh/#navmesh-types">navmesh type</a> to do the search on.</li>
+<li><code>PathSearchConfig</code>: Which <a href="../runtime-navmesh/#path-search-types">path search type</a> to use for the path search.</li>
+</ul>
+<h2 id="see-also">See Also</h2>
+<ul>
+<li><a href="../runtime-navmesh/">Runtime Navmesh</a></li>
+<li><a href="../ai-plugin-overview/">AiPlugin Overview</a></li>
+</ul>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../runtime-navmesh/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../runtime-navmesh/" class="btn btn-xs btn-link">
+        Runtime Navmesh
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../ai-plugin-overview/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../ai-plugin-overview/" class="btn btn-xs btn-link">
+        AiPlugin Overview
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="col-md-12 wm-page-content">
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/noraj/mkdocs-windmill-dark">Windmill Dark</a> theme by Alexandre ZANNI (noraj).</p>
+</footer>
+
+</body>
+</html>

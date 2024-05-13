@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="author" content="PlasmaDev">
+    <link rel="canonical" href="https://plasmaengine.github.io/PlasmaDocs/tools/archivetool/">
+    <link rel="shortcut icon" href="../../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>ArchiveTool - PlasmaDocs</title>
+    <link href="../../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../../js/jquery-3.2.1.min.js"></script>
+    <script src="../../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '../..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "ArchiveTool", url: "#_top", children: [
+              {title: "plArchive Format", url: "#plarchive-format" },
+              {title: "Usage", url: "#usage" },
+              {title: "Examples", url: "#examples" },
+              {title: "See Also", url: "#see-also" },
+          ]},
+        ];
+
+    </script>
+    <script src="../../js/base.js"></script>
+      <script src="../../search/main.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../fileserve/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../fileserve/" class="btn btn-xs btn-link">
+        FileServe
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../../terrain/procedural/procgen-volume-sphere-component/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../../terrain/procedural/procgen-volume-sphere-component/" class="btn btn-xs btn-link">
+        Procedural Volume Sphere Component
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <h1 id="archivetool">ArchiveTool</h1>
+<p>The ArchiveTool is used to create or extract <code>.plArchive</code> files. Archives are similar to zip files, they contain all the files in a folder, using compression. plArchive files can be mounted at runtime as <a href="../projects/data-directories.md">data directories</a>.</p>
+<h2 id="plarchive-format">plArchive Format</h2>
+<p>The internal structure of plArchives is optimized to make mounting as a data directory extremely efficient. The files are memory mapped and file lookups are faster than for regular folders. Each file in the archive may use compression or not, depending on whether it would make sense for the particular file. Different compression algorithms are possible, though the main compression used is <a href="../../appendix/third-party-code/#zstd">zstd</a> which yields good compression and is extremely fast to decode.</p>
+<h2 id="usage">Usage</h2>
+<p>The ArchiveTool is a command line tool.</p>
+<h3 id="default-usage">Default Usage</h3>
+<p>The most convenient way to use it, is to pass a single path as the only argument:</p>
+<pre><code class="language-cmd">ArchiveTool.exe C:/my/data
+</code></pre>
+<p>When the path points to a folder, it will compress the folder and store the plArchive file next to it. In the example above: <code>C:/my/data.plArchive</code></p>
+<pre><code class="language-cmd">ArchiveTool.exe C:/your/data.plArchive
+</code></pre>
+<p>When the path points to an existing archive, the tool will extract the data to a folder next to the file. In the example above: <code>C:/your/data</code></p>
+<h3 id="all-options">All Options</h3>
+<p>The following options allow you to be more specific:</p>
+<ul>
+<li><strong>-pack</strong> <code>"path/to/folder"</code> <code>"path/to/another/folder"</code> ...</li>
+<li><strong>-unpack</strong> <code>"path/to/file.plArchive"</code> <code>"another/file.plArchive"</code></li>
+<li><strong>-out</strong> <code>"path/to/file/or/folder"</code></li>
+</ul>
+<p><strong>-pack</strong> and <strong>-unpack</strong> can take multiple inputs to either aggregate multiple folders into one archive (pack) or to unpack multiple archives at the same time.</p>
+<p><strong>-out</strong> specifies the target to pack or unpack things to. For packing mode it has to be a file. The file will be overwritten, if it already exists.
+For unpacking the target should be a folder (may or may not exist) into which the archives get extracted.</p>
+<p>If no <em>-out</em> is specified, it is determined to be where the input file is located.</p>
+<p>If neither <em>-pack</em> nor <em>-unpack</em> is specified, the mode is detected automatically from the list of inputs:</p>
+<ul>
+<li>If all inputs are folders, mode is going to be 'pack'.</li>
+<li>If all inputs are files, mode is going to be 'unpack'.</li>
+</ul>
+<h2 id="examples">Examples</h2>
+<p>Pack all data in "C:\Stuff" into "C:\Stuff.plArchive":</p>
+<pre><code class="language-cmd">ArchiveTool.exe &quot;C:\Stuff&quot;
+</code></pre>
+<p>Pack all data in "C:\Stuff" into "C:\MyStuff.plArchive":</p>
+<pre><code class="language-cmd">ArchiveTool.exe &quot;C:\Stuff&quot; -out &quot;C:\MyStuff.plArchive&quot;
+</code></pre>
+<p>Unpack all data from the archive into "C:\Stuff"</p>
+<pre><code class="language-cmd">ArchiveTool.exe &quot;C:\Stuff.plArchive&quot;
+</code></pre>
+<p>Unpack all data from the archive into "C:\MyStuff"</p>
+<pre><code class="language-cmd">ArchiveTool.exe &quot;C:\Stuff.plArchive&quot; -out &quot;C:\MyStuff&quot;
+</code></pre>
+<h2 id="see-also">See Also</h2>
+<ul>
+<li><a href="../projects/data-directories.md">Data Directories</a></li>
+<li><a href="../../runtime/filesystem/">FileSystem</a></li>
+</ul>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../fileserve/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../fileserve/" class="btn btn-xs btn-link">
+        FileServe
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../../terrain/procedural/procgen-volume-sphere-component/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../../terrain/procedural/procgen-volume-sphere-component/" class="btn btn-xs btn-link">
+        Procedural Volume Sphere Component
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="col-md-12 wm-page-content">
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/noraj/mkdocs-windmill-dark">Windmill Dark</a> theme by Alexandre ZANNI (noraj).</p>
+</footer>
+
+</body>
+</html>

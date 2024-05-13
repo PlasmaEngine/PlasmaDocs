@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="author" content="PlasmaDev">
+    <link rel="canonical" href="https://plasmaengine.github.io/PlasmaDocs/animation/skeletal-animation/animation-controller/anim-nodes-logic-math/">
+    <link rel="shortcut icon" href="../../../../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Logic and Math Nodes - PlasmaDocs</title>
+    <link href="../../../../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../../../../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../../../../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../../../css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../../../../js/jquery-3.2.1.min.js"></script>
+    <script src="../../../../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../../../../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '../../../..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "Logic and Math Nodes", url: "#_top", children: [
+              {title: "Logic AND Node", url: "#logic-and-node" },
+              {title: "Logic OR Node", url: "#logic-or-node" },
+              {title: "Logic NOT Node", url: "#logic-not-node" },
+              {title: "Compare Value Node", url: "#compare-value-node" },
+              {title: "Math Expression Node", url: "#math-expression-node" },
+              {title: "See Also", url: "#see-also" },
+          ]},
+        ];
+
+    </script>
+    <script src="../../../../js/base.js"></script>
+      <script src="../../../../search/main.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../anim-nodes-mix1d/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../anim-nodes-mix1d/" class="btn btn-xs btn-link">
+        Mix Clips 1D Node
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../anim-nodes-input/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../anim-nodes-input/" class="btn btn-xs btn-link">
+        Input Nodes
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <h1 id="logic-and-math-nodes">Logic and Math Nodes</h1>
+<p>The animation controller provides a couple of nodes to evaluate basic arithmatic and logic. This is meant for very simple use cases and for quick prototyping. Often animation logic requires much more complex rules than what would be feasible to express in the animation controller graph. Instead use <a href="../../../../custom-code/custom-code-overview/">custom code</a> to decide which animation should run under which circumstances, and pass the result to the animation controller via a <a href="../../../Miscellaneous/blackboards.md">blackboard</a>. The animation controller can then simply read the state for each animation using the <a href="../anim-nodes-blackboard/">blackboard nodes</a>.</p>
+<h2 id="logic-and-node">Logic AND Node</h2>
+<p>This node sets its output pin to <em>triggered</em> when <strong>all</strong> incoming connections on the input pin are triggered at the same time. Note that even though there is only a single input pin, it can be connected to multiple sources.</p>
+<h3 id="properties">Properties</h3>
+<ul>
+<li><strong>NegateResult</strong>: If set, the output value will be negated. This effectively turns it into a <code>NAND</code> logic node.</li>
+</ul>
+<h2 id="logic-or-node">Logic OR Node</h2>
+<p>This node sets its output pin to <em>triggered</em> when <strong>any</strong> incoming connections on the input pin are triggered. Note that even though there is only a single input pin, it can be connected to multiple sources.</p>
+<h3 id="properties_1">Properties</h3>
+<ul>
+<li><strong>NegateResult</strong>: If set, the output value will be negated. This effectively turns it into a <code>NOR</code> logic node.</li>
+</ul>
+<h2 id="logic-not-node">Logic NOT Node</h2>
+<p>This node sets its output pin to <em>triggered</em> when the input pin is not triggered and vice versa.</p>
+<p>As with the other nodes, you can connect multiple sources to this input pin. In this case, if any of those connections is triggered, the entire input pin is considered to be in the triggered state, and the output will be the opposite.</p>
+<h2 id="compare-value-node">Compare Value Node</h2>
+<p>This node can be used to check whether a number value compares in a certain way against a reference value. For example whether some input value is larger than 0.5. If this is the case, the output pin will be triggered.</p>
+<h3 id="properties_2">Properties</h3>
+<ul>
+<li><strong>ReferenceValue</strong>: The reference value to compare the incoming value against.</li>
+<li><strong>Comparison</strong>: The mathematical operation with which to compare the two values.</li>
+</ul>
+<h3 id="input-pins">Input Pins</h3>
+<ul>
+<li><strong>Number</strong>: The number to compare against the reference value.</li>
+</ul>
+<h3 id="output-pins">Output Pins</h3>
+<ul>
+<li><strong>Active</strong>: The output pin is triggered whenever the comparison is successful.</li>
+</ul>
+<h2 id="math-expression-node">Math Expression Node</h2>
+<p>The math expression node takes up to four different numbers as its input, plugs them into a user provided expression and outputs the result.</p>
+<p>The expression must be syntactically correct, otherwise the node prints an error to the <a href="../../../../debugging/logging/">log</a>.</p>
+<h3 id="properties_3">Properties</h3>
+<p><strong>Expression</strong>: The expression can use the following:</p>
+<ul>
+<li>Numbers in floating point format (e.g. <code>1</code>, <code>2.3</code>, <code>-78</code>)</li>
+<li><code>+</code>, <code>-</code>, <code>*</code>, <code>/</code>, <code>%</code> (modulo)</li>
+<li>Parenthesis <code>(</code> and <code>)</code> to specify precedence</li>
+<li>The variables <code>a</code>, <code>b</code>, <code>c</code> and <code>d</code> representing the input pin values</li>
+<li>The functions <code>abs</code> and <code>sqrt</code></li>
+</ul>
+<p><strong>Examples:</strong></p>
+<ul>
+<li><code>a * 0.5 - b</code></li>
+<li><code>abs(a) + abs(b)</code></li>
+<li><code>(a + 1) % 2</code></li>
+</ul>
+<h3 id="input-pins_1">Input Pins</h3>
+<ul>
+<li><strong>a</strong>, <strong>b</strong>, <strong>c</strong> and <strong>d</strong>: Input values to the mathematical expression. Unconnected pins are treated as having the value zero.</li>
+</ul>
+<h3 id="output-pins_1">Output Pins</h3>
+<ul>
+<li><strong>Result</strong>: Outputs the result of the evaluated expression.</li>
+</ul>
+<h2 id="see-also">See Also</h2>
+<ul>
+<li><a href="../animation-controller-overview/">Animation Controller</a></li>
+<li><a href="../../skeletal-animation-overview/">Skeletal Animations</a></li>
+</ul>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../anim-nodes-mix1d/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../anim-nodes-mix1d/" class="btn btn-xs btn-link">
+        Mix Clips 1D Node
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../anim-nodes-input/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../anim-nodes-input/" class="btn btn-xs btn-link">
+        Input Nodes
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="col-md-12 wm-page-content">
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/noraj/mkdocs-windmill-dark">Windmill Dark</a> theme by Alexandre ZANNI (noraj).</p>
+</footer>
+
+</body>
+</html>

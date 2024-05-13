@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="author" content="PlasmaDev">
+    <link rel="canonical" href="https://plasmaengine.github.io/PlasmaDocs/physics/actors/jolt-trigger-component/">
+    <link rel="shortcut icon" href="../../../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Jolt Trigger Component - PlasmaDocs</title>
+    <link href="../../../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../../../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../../../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../../css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../../../js/jquery-3.2.1.min.js"></script>
+    <script src="../../../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../../../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '../../..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "Jolt Trigger Component", url: "#_top", children: [
+              {title: "Component Properties", url: "#component-properties" },
+              {title: "See Also", url: "#see-also" },
+          ]},
+        ];
+
+    </script>
+    <script src="../../../js/base.js"></script>
+      <script src="../../../search/main.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../../collision-shapes/jolt-box-shape-component/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../../collision-shapes/jolt-box-shape-component/" class="btn btn-xs btn-link">
+        Jolt Box Shape Component
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../jolt-static-actor-component/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../jolt-static-actor-component/" class="btn btn-xs btn-link">
+        Jolt Static Actor Component
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <h1 id="jolt-trigger-component">Jolt Trigger Component</h1>
+<p>The <em>Jolt trigger component</em> is a special kind of <a href="../jolt-actors/">actor</a> that determines whether other actors overlap with its volume. If so, it sends a trigger <a href="../../../runtime/world/world-messaging.md">event message</a>. Other components or script code can react to this message to implement their game logic.</p>
+<p>Triggers are often used to open and close doors, to check whether a character walked over a pickup item and to detect when the player reached some location.</p>
+<video src="media/trigger.webm" width="600" height="600" autoplay loop></video>
+
+<p>A trigger is set up the same way as a <a href="../jolt-static-actor-component/">static actor</a> or a <a href="../jolt-dynamic-actor-component/">dynamic actor</a>, by attaching <a href="../../collision-shapes/jolt-shapes/">collision shapes</a> to it. Which other physics objects activate the trigger is determined through the <a href="../../collision-shapes/jolt-collision-layers/">collision layers</a> on the attached shapes.</p>
+<p>Since triggers are not simulated like rigid bodies, they don't require much configuration.</p>
+<p>Triggers can be moved around at runtime and they will fire, when an object enters a trigger because the trigger moved into the object.</p>
+<p>When a trigger fires, it sends the event message <code>plMsgTriggerTriggered</code>. The message states which other object was involved, and whether it entered or left the trigger volume. It will also pass along the <code>TriggerMessage</code> string. This can be used to identify which (kind of) trigger was just triggered.</p>
+<blockquote>
+<p><strong>Note:</strong></p>
+<p>Physics triggers only detect overlaps with other physics objects. For such scenarios they are an efficient solution. If, however, you need to query overlaps with other kinds of objects, you should take a look at the <a href="../../../runtime/world/spatial-system.md">spatial system</a>.</p>
+</blockquote>
+<p>To achieve more complex trigger behavior, for instance to only activate something after a delay, you can utilize the <a href="../../../custom-code/game-logic/trigger-delay-modifier-component.md">trigger delay modifier component</a>.</p>
+<h2 id="component-properties">Component Properties</h2>
+<ul>
+<li><code>CollisionLayer</code>: The <a href="../../collision-shapes/jolt-collision-layers/">collision layer</a> to use.</li>
+<li><code>TriggerMessage</code>: The string that should be sent along with the <code>plMsgTriggerTriggered</code>.</li>
+</ul>
+<h2 id="see-also">See Also</h2>
+<ul>
+<li><a href="../../../custom-code/game-logic/trigger-delay-modifier-component.md">Trigger Delay Modifier Component</a></li>
+<li><a href="../jolt-actors/">Jolt Actors</a></li>
+<li><a href="../../collision-shapes/jolt-shapes/">Jolt Shapes</a></li>
+<li><a href="../../../runtime/world/spatial-system.md">Spatial System</a></li>
+<li><a href="../../../gameplay/marker-component.md">Marker Component</a></li>
+</ul>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../../collision-shapes/jolt-box-shape-component/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../../collision-shapes/jolt-box-shape-component/" class="btn btn-xs btn-link">
+        Jolt Box Shape Component
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../jolt-static-actor-component/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../jolt-static-actor-component/" class="btn btn-xs btn-link">
+        Jolt Static Actor Component
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="col-md-12 wm-page-content">
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/noraj/mkdocs-windmill-dark">Windmill Dark</a> theme by Alexandre ZANNI (noraj).</p>
+</footer>
+
+</body>
+</html>

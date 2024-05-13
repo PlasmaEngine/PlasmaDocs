@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="author" content="PlasmaDev">
+    <link rel="canonical" href="https://plasmaengine.github.io/PlasmaDocs/physics/constraints/jolt-slider-constraint-component/">
+    <link rel="shortcut icon" href="../../../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Jolt Slider Constraint Component - PlasmaDocs</title>
+    <link href="../../../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../../../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../../../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../../css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../../../js/jquery-3.2.1.min.js"></script>
+    <script src="../../../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../../../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '../../..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "Jolt Slider Constraint Component", url: "#_top", children: [
+              {title: "Component Properties", url: "#component-properties" },
+              {title: "See Also", url: "#see-also" },
+          ]},
+        ];
+
+    </script>
+    <script src="../../../js/base.js"></script>
+      <script src="../../../search/main.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../jolt-swing-twist-constraint-component/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../jolt-swing-twist-constraint-component/" class="btn btn-xs btn-link">
+        Jolt Swing-Twist Constraint Component
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../jolt-point-constraint-component/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../jolt-point-constraint-component/" class="btn btn-xs btn-link">
+        Jolt Point Constraint Component
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <h1 id="jolt-slider-constraint-component">Jolt Slider Constraint Component</h1>
+<p>The <em>Jolt slider constraint component</em> is a <a href="../jolt-constraints/">constraint</a> that links two actors such that they can only slide along one axis relative to each other.</p>
+<video src="media/prismatic-joint.webm" width="600" height="600" autoplay loop></video>
+
+<p>Optionally, how for the joined actors can slide can be limited.</p>
+<h2 id="component-properties">Component Properties</h2>
+<ul>
+<li>
+<p><a href="../jolt-constraints/#shared-constraint-component-properties">Shared Constraint Component Properties</a></p>
+</li>
+<li>
+<p><code>LimitMode</code>: Specifies whether the distance of sliding is limited.</p>
+</li>
+<li><code>NoLimit</code>: The actors can slide unlimited far. Since they will still collide with other objects, there may be no need to limit the slide distance through the joint.</li>
+<li><code>HardLimit</code>: When the actors reach the end of the joint range, they will be stopped.</li>
+<li><code>LowerLimit</code>, <code>UpperLimit</code>: How far the actor can deviate from the start position in either direction.</li>
+<li><code>Friction</code>: How easy it is to slide along the constraint. Higher values make the joint stiffer.</li>
+<li><code>DriveMode</code>: Specifies whether the constraint will apply a force to push the actors.</li>
+<li><code>NoDrive</code>: The slider will not push the actors.</li>
+<li><code>ReachVelocity</code>: The constraint will try to push at a speed of <code>DriveTargetValue</code>.</li>
+<li><code>ReachPosition</code>: The constraint will try to push towards the relative position <code>DriveTargetValue</code>.</li>
+<li><code>DriveStrength</code>: The maximum force the constraint can apply to try to reach its target.</li>
+</ul>
+<h2 id="see-also">See Also</h2>
+<ul>
+<li><a href="../jolt-constraints/">Jolt Constraints</a></li>
+<li><a href="../../actors/jolt-actors/">Jolt Actors</a></li>
+<li><a href="../../collision-shapes/jolt-shapes/">Jolt Shapes</a></li>
+</ul>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../jolt-swing-twist-constraint-component/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../jolt-swing-twist-constraint-component/" class="btn btn-xs btn-link">
+        Jolt Swing-Twist Constraint Component
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../jolt-point-constraint-component/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../jolt-point-constraint-component/" class="btn btn-xs btn-link">
+        Jolt Point Constraint Component
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="col-md-12 wm-page-content">
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/noraj/mkdocs-windmill-dark">Windmill Dark</a> theme by Alexandre ZANNI (noraj).</p>
+</footer>
+
+</body>
+</html>

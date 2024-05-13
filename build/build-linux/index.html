@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="author" content="PlasmaDev">
+    <link rel="canonical" href="https://plasmaengine.github.io/PlasmaDocs/build/build-linux/">
+    <link rel="shortcut icon" href="../../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Building for Linux - PlasmaDocs</title>
+    <link href="../../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../../js/jquery-3.2.1.min.js"></script>
+    <script src="../../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '../..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "Building for Linux", url: "#_top", children: [
+              {title: "Supported Compilers / Make Systems", url: "#supported-compilers-make-systems" },
+              {title: "Automatic Setup", url: "#automatic-setup" },
+              {title: "Manual Setup", url: "#manual-setup" },
+              {title: "Using Qt Creator", url: "#using-qt-creator" },
+              {title: "See Also", url: "#see-also" },
+          ]},
+        ];
+
+    </script>
+    <script src="../../js/base.js"></script>
+      <script src="../../search/main.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../build-macos/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../build-macos/" class="btn btn-xs btn-link">
+        MacOS Builds
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../build-android/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../build-android/" class="btn btn-xs btn-link">
+        Building for Android
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <h1 id="building-for-linux">Building for Linux</h1>
+<p>Linux support for plEngine is currently in development and still to be considered experimental and incomplete. You can try it, but don't expect to be able to work productively with it.</p>
+<p>For rendering the new Vulkan backend is used, which itself is also very much in development yet.</p>
+<p>We welcome help finding and fixing issues.</p>
+<h2 id="supported-compilers-make-systems">Supported Compilers / Make Systems</h2>
+<p>The plEngine CMake scripts support the following compilers when building for Linux:</p>
+<ul>
+<li>GCC</li>
+<li>Clang</li>
+</ul>
+<p>C++17 support is required, so make sure that your respective compiler supports it.</p>
+<p>These generators are currently supported for Linux:</p>
+<ul>
+<li>Unix Makefiles</li>
+<li>Ninja</li>
+</ul>
+<h2 id="automatic-setup">Automatic Setup</h2>
+<p>The <code>RunCMake.sh</code> script in the root folder of plEngine can be used to automatically install all required packages and run CMake, so that you can start building right away.</p>
+<p>This script currently supports these distributions:</p>
+<ul>
+<li>Ubuntu 22</li>
+<li>Linux Mint 21</li>
+</ul>
+<p>We welcome contributions to add support for more distributions.</p>
+<blockquote>
+<p>:warning: If the scripts prints a warning about Qt 6.3.0 or newer not being present in your package manager, you will have to install Qt 6.3.0 or newer manually. See <a href="#installing-qt-6-manually">Installing Qt 6 Manually</a></p>
+</blockquote>
+<h3 id="gcc">GCC</h3>
+<p>When running the script the first time, execute:</p>
+<p><code>./RunCMake.sh --setup</code></p>
+<p>This will install all required packages for your distribution and then generate the make files required to build the <code>Dev</code> version of plEngine.</p>
+<p>To build the <code>Dev</code> build, execute:</p>
+<p><code>ninja -C build-Dev</code></p>
+<p>This build command is also given by <code>RunCMake.sh</code> as the final output.</p>
+<p>If you change any CMake files or add new source files it is sufficient to run:</p>
+<p><code>./RunCMake.sh</code></p>
+<p>This only invokes CMake, without checking for missing packages.</p>
+<p>To build a different <a href="building-pl.md#build-types">build type</a> then <code>Dev</code>, pass the additional <code>--build-type</code> argument:</p>
+<p><code>./RunCMake.sh --build-type Debug</code></p>
+<h3 id="clang">Clang</h3>
+<p>If you would like to use Clang instead of GCC, simply add <code>--clang</code> to all invocations of <code>RunCMake.sh</code>:</p>
+<pre><code class="language-bash">./RunCMake.sh --setup --clang
+./RunCMake.sh --clang
+./RunCMake.sh --build-type Debug --clang
+</code></pre>
+<h3 id="installing-qt-6-manually">Installing Qt 6 Manually</h3>
+<p>Some distributions provide quite outdated versions of Qt 6 and the plEngine Editor requires at least Qt 6.3.0 due to a bug that exists in previous versions of Qt and prevents the 3D viewport in the Editor from working correctly.</p>
+<p>You have the following options:</p>
+<ol>
+<li>Install through <a href="https://github.com/miurahr/aqtinstall">aqtinstall</a></li>
+<li>Install Qt 6 through the <a href="https://doc.qt.io/qt-6/get-and-install-qt.html#using-qt-online-installer">official installer</a></li>
+<li><a href="https://doc.qt.io/qt-6/linux-building.html">Build from source</a></li>
+</ol>
+<p>Once you have obtained a recent version of Qt, you have two options so that the plEngine cmake scripts find it:</p>
+<p>1) Add the install location permantently to your <code>PATH</code> environment variable
+2) Specify the install location when calling <code>RunCMake.sh</code> like this:</p>
+<p>```bash</p>
+<blockquote>
+<p>PATH=/path/to/qt6/install:$PATH ./RunCMake.sh
+   ```</p>
+</blockquote>
+<h2 id="manual-setup">Manual Setup</h2>
+<p>If you want to setup things manually or your distribution is not supported by the <code>RunCMake.sh</code> script, you will most likely need all of the following packages:</p>
+<ul>
+<li>C++17 compliant compiler (GCC or Clang)</li>
+<li>CMake 3.20 or newer</li>
+<li>uuid-dev</li>
+<li>Qt6 (version 6.3 or newer)</li>
+<li>ninja or gnu-make</li>
+<li>libxrandr</li>
+<li>libxinerama</li>
+<li>libxcursor</li>
+<li>libxi</li>
+<li>libfreetype</li>
+<li>libtinfo5</li>
+</ul>
+<p>Then invoke CMake with the following arguments:</p>
+<table>
+<thead>
+<tr>
+<th>Option</th>
+<th>Explanation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>-B build</code></td>
+<td>Path to the build directory.</td>
+</tr>
+<tr>
+<td><code>-S .</code></td>
+<td>Path to the plEngine root.</td>
+</tr>
+<tr>
+<td><code>-G Ninja</code></td>
+<td>Choose to generate Ninja makefiles. Optional, if not provided gnu-make will be used.</td>
+</tr>
+<tr>
+<td><code>-DCMAKE_CXX_COMPILER=g++-12</code></td>
+<td>Specify the C++ compiler to use. Optional, if not provided the system default will be used.</td>
+</tr>
+<tr>
+<td><code>-DCMAKE_C_COMPILER=gcc-12</code></td>
+<td>Specify the C compiler to use. Optional, if not provided the system default will be used.</td>
+</tr>
+<tr>
+<td><code>-Dpl_EXPERIMENTAL_EDITOR_ON_LINUX=ON</code></td>
+<td>Build the plEngine editor on Linux. This is currently experimental and might have significant bugs.</td>
+</tr>
+<tr>
+<td><code>-Dpl_BUILD_EXPERIMENTAL_VULKAN=ON</code></td>
+<td>Build the Vulkan renderer. This is currently experimental and might have significant bugs.</td>
+</tr>
+<tr>
+<td><code>-DCMAKE_BUILD_TYPE=Dev</code></td>
+<td>Specify the <a href="building-pl.md#build-types">build type</a> to use.</td>
+</tr>
+<tr>
+<td><code>-DCMAKE_EXPORT_COMPILE_COMMANDS=ON</code></td>
+<td>Generate a <code>compile_commands.json</code> file to be used for code completion in editors like Visual Studio Code.</td>
+</tr>
+<tr>
+<td><code>-Dpl_QT_DIR=/path/to/qt6</code></td>
+<td>Manually specify the path cmake should look for Qt 6 in.</td>
+</tr>
+<tr>
+<td><code>-Dpl_ENABLE_FOLDER_UNITY_FILES=OFF</code></td>
+<td>Disable unity builds. This increases compile times but might help certain editors to provide better code completion.</td>
+</tr>
+</tbody>
+</table>
+<p>Example usage:</p>
+<pre><code class="language-bash">mkdir build
+cmake -B build -S . -G Ninja -DCMAKE_CXX_COMPILER=g++-12 -DCMAKE_C_COMPILER=gcc-12 -Dpl_EXPERIMENTAL_EDITOR_ON_LINUX=ON -Dpl_BUILD_EXPERIMENTAL_VULKAN=ON -DCMAKE_BUILD_TYPE=Dev -DCMAKE_EXPORT_COMPILE_COMMANDS=ON
+</code></pre>
+<h2 id="using-qt-creator">Using Qt Creator</h2>
+<p>The root of the repository can also be opened in Qt Creator, which will generally do a good job at finding the Qt location on its own.</p>
+<!-- TODO: should add something about building and setting the precompiled binaries.
+See https://github.com/plEngine/plEngine/pull/1152
+ -->
+
+<h2 id="see-also">See Also</h2>
+<ul>
+<li><a href="building-pl.md">Building plEngine</a></li>
+</ul>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../build-macos/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../build-macos/" class="btn btn-xs btn-link">
+        MacOS Builds
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../build-android/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../build-android/" class="btn btn-xs btn-link">
+        Building for Android
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="col-md-12 wm-page-content">
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/noraj/mkdocs-windmill-dark">Windmill Dark</a> theme by Alexandre ZANNI (noraj).</p>
+</footer>
+
+</body>
+</html>

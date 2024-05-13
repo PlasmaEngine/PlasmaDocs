@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="author" content="PlasmaDev">
+    <link rel="canonical" href="https://plasmaengine.github.io/PlasmaDocs/graphics/lighting/dynamic-shadows/">
+    <link rel="shortcut icon" href="../../../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Dynamic Shadows - PlasmaDocs</title>
+    <link href="../../../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../../../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../../../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../../css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../../../js/jquery-3.2.1.min.js"></script>
+    <script src="../../../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../../../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '../../..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "Dynamic Shadows", url: "#_top", children: [
+              {title: "Performance", url: "#performance" },
+              {title: "Shadow Quality", url: "#shadow-quality" },
+              {title: "Shadow Component Properties", url: "#shadow-component-properties" },
+              {title: "See Also", url: "#see-also" },
+          ]},
+        ];
+
+    </script>
+    <script src="../../../js/base.js"></script>
+      <script src="../../../search/main.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../lighting-overview/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../lighting-overview/" class="btn btn-xs btn-link">
+        Lighting
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../directional-light-component/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../directional-light-component/" class="btn btn-xs btn-link">
+        Directional Light Component
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <h1 id="dynamic-shadows">Dynamic Shadows</h1>
+<p>Light sources, such as <a href="../point-light-component/">point lights</a>, <a href="../spot-light-component/">spot lights</a> and <a href="../directional-light-component/">directional lights</a> may cast dynamic shadows.</p>
+<p>![[point-light.jpg]]</p>
+<p>Whether an object casts a shadow depends on whether it has the <a href="../../projects/tags.md">tag</a> <code>CastShadow</code> set.</p>
+<h2 id="performance">Performance</h2>
+<p>Shadows are implemented using <em>shadow maps</em>. That means every light source that shall cast a shadow, has to first render the current scene depth to a texture. This is a very costly operation, which is why you should keep the number of shadow casting light sources as low as possible.</p>
+<p>This also is more expensive, the more complex the shadow casting geometry is. Therefore consider switching shadows off for complex geometry and for small objects that don't contribute much anyway. For large complex geometry, you can also use low resolution proxy geometry for casting shadows, though you have to be careful with self-shadowing artifacts if the geometry is very different.</p>
+<p>Use your knowledge about the scene to switch shadow casting lights off when they are not needed. For example, if you need a light inside a room to cast dramatic shadows, but the room entrance is only visible from a corridor, use a <a href="../../physics/jolt/actors/jolt-trigger-component.md">trigger</a> to only switch the light on when the player can actually see the light.</p>
+<p>Prefer to use spot lights over point lights, if that makes it possible to get away without shadows in the first place.</p>
+<p>All shadow casting light sources share a single shadow texture atlas. Every frame the engine determines the on-screen size of each light source and then allocates some area of the texture atlas to each light source. That means lights that are farther away will use a lower resolution shadow map than close up lights.</p>
+<h2 id="shadow-quality">Shadow Quality</h2>
+<p>Shadow maps are prone to artifacts called <em>shadow acne</em>. Either light leaks through objects where there should be shadows, or shadows leak through objects where there should be light. This happens due to precision issues, especially when a shadow is cast nearly perpendicular to a surface. The <code>SlopeBias</code> and <code>ConstantBias</code> properties (see below) allow to tweak the shadows to reduce this issue in specific places, but there is no solution that will always work.</p>
+<h2 id="shadow-component-properties">Shadow Component Properties</h2>
+<p>Dynamic light sources such as <a href="../directional-light-component/">directional lights</a>, <a href="../point-light-component/">point lights</a> and <a href="../spot-light-component/">spot lights</a> can cast dynamic shadows. These components all have properties to tweak the shadows for quality. The following properties are common to these component types:</p>
+<ul>
+<li><code>CastShadows</code>: If enabled, the light will cast dynamic shadows.</li>
+</ul>
+<blockquote>
+<p><strong>Important:</strong>
+Casting shadows costs a lot of performance. Make sure to only have a small number of lights with shadows active at any one time, otherwise your game may perform poorly.</p>
+</blockquote>
+<ul>
+<li><code>PenumbraSize</code>: This value specifies how soft the edge of shadows is supposed to be. The image below shows a penumbra size of <code>0</code> on the left and <code>0.5</code> on the right:</li>
+</ul>
+<p><img alt="Penumbra Size" src="../media/penumbra.jpg" /></p>
+<ul>
+<li><code>SlopeBias, ConstantBias</code>: TODO</li>
+</ul>
+<h2 id="see-also">See Also</h2>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../lighting-overview/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../lighting-overview/" class="btn btn-xs btn-link">
+        Lighting
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../directional-light-component/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../directional-light-component/" class="btn btn-xs btn-link">
+        Directional Light Component
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="col-md-12 wm-page-content">
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/noraj/mkdocs-windmill-dark">Windmill Dark</a> theme by Alexandre ZANNI (noraj).</p>
+</footer>
+
+</body>
+</html>

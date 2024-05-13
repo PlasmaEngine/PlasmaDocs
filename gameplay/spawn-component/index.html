@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="author" content="PlasmaDev">
+    <link rel="canonical" href="https://plasmaengine.github.io/PlasmaDocs/gameplay/spawn-component/">
+    <link rel="shortcut icon" href="../../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Spawn Component - PlasmaDocs</title>
+    <link href="../../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../../js/jquery-3.2.1.min.js"></script>
+    <script src="../../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '../..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "Spawn Component", url: "#_top", children: [
+              {title: "Properties", url: "#properties" },
+              {title: "Details", url: "#details" },
+              {title: "See Also", url: "#see-also" },
+          ]},
+        ];
+
+    </script>
+    <script src="../../js/base.js"></script>
+      <script src="../../search/main.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../timed-death-component/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../timed-death-component/" class="btn btn-xs btn-link">
+        Timed Death Component
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../raycast-placement-component/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../raycast-placement-component/" class="btn btn-xs btn-link">
+        Raycast Placement Component
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <h1 id="spawn-component">Spawn Component</h1>
+<p>The <em>SpawnComponent</em> is frequently used to spawn instances of <a href="../prefabs/prefabs-overview.md">prefabs</a> at runtime. The component references a prefab. It can then either spawn this prefab continuously in intervals, or at will by triggering the spawn command from (script) code.</p>
+<h2 id="properties">Properties</h2>
+<p><code>Prefab:</code> The <a href="../prefabs/prefabs-overview.md">prefab</a> that will be spawned by this component.</p>
+<p><code>AttachAsChild:</code> If true, the spawned object will be attached to the owner of the SpawnComponent. In most cases this should be disabled.</p>
+<p><code>SpawnAtStart:</code> If true, the SpawnComponent will spawn the prefab immediately when it gets activated.</p>
+<p><code>SpawnContinuously:</code> If true, the component will continue to spawn more and more prefab instances. This can only be stopped either through custom (script) code or by deleting the spawn component.</p>
+<p><code>MinDelay, DelayRange:</code> The minimum time that has to pass before the component will spawn another instance, plus some random delay. This not only applies to the <em>SpawnContinuously</em> case, but also to cases where the spawn may be triggered from code. Meaning, this can be used to limit how often an action is allowed. For example, a gun can use a SpawnComponent to launch projectiles, and the gun code can simply trigger the SpawnComponent every time the user clicks. However, due to the <em>MinDelay</em>, the gun will only fire every once in a while, without having to write that logic in the gun code.</p>
+<p><code>Deviation:</code> When a new prefab instance is created, it will be positioned at the location of the SpawnComponent. The <em>Deviation</em> allows you to add a random rotation away from the X axis. In Plasma most components use the +X axis as their main axis of operation. For instance, projectiles fly along +X, spot lights point into +X direction, etc. Therefore the SpawnComponent tilts the new instances away from the +X axis and all prefabs should be authored to work with this accordingly.</p>
+<h2 id="details">Details</h2>
+<p>See the <a href="../api-docs.md">API Docs</a> for <code>plSpawnComponent</code> for the component's interface.</p>
+<h2 id="see-also">See Also</h2>
+<ul>
+<li><a href="../prefabs/prefabs-overview.md">Prefabs</a></li>
+</ul>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../timed-death-component/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../timed-death-component/" class="btn btn-xs btn-link">
+        Timed Death Component
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../raycast-placement-component/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../raycast-placement-component/" class="btn btn-xs btn-link">
+        Raycast Placement Component
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="col-md-12 wm-page-content">
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/noraj/mkdocs-windmill-dark">Windmill Dark</a> theme by Alexandre ZANNI (noraj).</p>
+</footer>
+
+</body>
+</html>

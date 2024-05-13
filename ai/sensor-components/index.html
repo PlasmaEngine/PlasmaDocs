@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="author" content="PlasmaDev">
+    <link rel="canonical" href="https://plasmaengine.github.io/PlasmaDocs/ai/sensor-components/">
+    <link rel="shortcut icon" href="../../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Sensor Components - PlasmaDocs</title>
+    <link href="../../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../../js/jquery-3.2.1.min.js"></script>
+    <script src="../../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '../..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "Sensor Components", url: "#_top", children: [
+              {title: "State Reporting", url: "#state-reporting" },
+              {title: "Performance Considerations", url: "#performance-considerations" },
+              {title: "Component Properties", url: "#component-properties" },
+              {title: "See Also", url: "#see-also" },
+          ]},
+        ];
+
+    </script>
+    <script src="../../js/base.js"></script>
+      <script src="../../search/main.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../AiPlugin/ai-plugin-overview/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../AiPlugin/ai-plugin-overview/" class="btn btn-xs btn-link">
+        AiPlugin Overview
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../../Shipping/project-export/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../../Shipping/project-export/" class="btn btn-xs btn-link">
+        Project Export
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <h1 id="sensor-components">Sensor Components</h1>
+<p><em>Sensor components</em> are used to detect objects in a certain area and inform other game code about them. Contrary to <a href="../physics/jolt/actors/jolt-trigger-component.md">triggers</a>, they use the <a href="../../runtime/world/spatial-system/">spatial system</a>, so they work even without a physics engine. However, the sensor component can utilize additional physics raycasts, to determine whether something inside the volume is also visible and not occluded by walls.</p>
+<p>Sensor components are meant for AI use cases, such as determining line of sight, hearing noises or even smelling odors.</p>
+<p><img alt="Sensor components" src="../media/sensor-components.jpg" /></p>
+<p>Generally the sensors query the <a href="../../runtime/world/spatial-system/">spatial system</a> to detect certain objects. Use the <a href="../../gameplay/marker-component/">marker component</a> to make something detectable. For example, to make a creature able to smell the player, regularly drop markers at the player's current location, that vanish after a while, so that the creature can detect and follow these markers.</p>
+<h2 id="state-reporting">State Reporting</h2>
+<p>Sensors keep track of the objects that entered their volume. During every update they determine whether objects are still inside the volume or whether their visibility changed (line-of-sight occluded).</p>
+<p>If anything changes, a sensor <a href="../../runtime/world/world-messaging/">sends the message</a> <code>plMsgSensorDetectedObjectsChanged</code>, which contains the full array of currently detected objects.</p>
+<h2 id="performance-considerations">Performance Considerations</h2>
+<p>Sensor components poll the world in regular intervals and thus incur a performance cost. The <code>UpdateRate</code> determines how often this polling happens. Internally updates from many sensors are automatically distributed evenly across frames, to prevent performance spikes at regular intervals.</p>
+<p>Still, it is best to reduce the update rate as much as possible. For example in a game with large levels, you should check how close the player is to an NPC and dynamically adjust the update rate. At a large distance, the sensor can be set to update only every second, or you could even deactivate the sensor entirely. Similarly, you can use the 'alterness' state of an NPC to increase or decrease the sensor update rate.</p>
+<p>Finally, you should decide whether doing a visibility check is always necessary. The sensor would do this check for every possible target at every update. However, for a lot of game logic, once something has attracted attention, further visibility checks are not necessary. In such a case, it can be more efficient to do visibility raycasts only while a creature is not yet alert.</p>
+<h2 id="component-properties">Component Properties</h2>
+<h3 id="shared-component-properties">Shared Component Properties</h3>
+<ul>
+<li><code>UpdateRate</code>: How often the sensor component should query the world for changes. The higher the update rate, the more responsive it will be, and the less likely that short events are missed. However, higher update rates also require more processing time.</li>
+<li><code>SpatialCategory</code>: The <a href="../../runtime/world/spatial-system/">spatial category</a> of objects that should trigger the sensor component.</li>
+<li><code>TestVisibility</code>: If enabled, the sensor will cast additional rays using the physics engine, to determine whether the target is occluded by walls or clearly visible.</li>
+<li><code>CollisionLayer</code>: The <a href="../physics/jolt/collision-shapes/jolt-collision-layers.md">collision layer</a> to use for the visibility raycast.</li>
+<li><code>ShowDebugInfo</code>: If enabled, additional debug geometry is rendered to visualize the sensor volume and state.</li>
+<li><code>Color</code>: This color is used for the debug visualization. Can be used to easily distinguish what type of sensor this is.</li>
+</ul>
+<h3 id="sphere-sensor-component">Sphere Sensor Component</h3>
+<ul>
+<li><code>Radius</code>: The size of the sensor sphere.</li>
+</ul>
+<h3 id="cylinder-sensor-component">Cylinder Sensor Component</h3>
+<ul>
+<li><code>Radius</code>, <code>Height</code>: The dimensions of the sensor cylinder.</li>
+</ul>
+<h3 id="cone-sensor-component">Cone Sensor Component</h3>
+<ul>
+<li><code>NearDistance</code>, <code>FarDistance</code>, <code>Angle</code>: These all define the cone volume. Note that the cone not only has an angle and a length (<em>FarDistance</em>) but also a <em>NearDistance</em>. Enable <code>ShowDebugInfo</code> to see the exact cone shape. The near distance allows to ignore things that are up close, or to have that range covered by another sensor shape.</li>
+</ul>
+<h2 id="see-also">See Also</h2>
+<ul>
+<li><a href="../../gameplay/marker-component/">Marker Component</a></li>
+<li><a href="state-machine-component.md">State Machine Component</a></li>
+<li><a href="../../custom-code/custom-code-overview/">Custom Code</a></li>
+<li><a href="../Miscellaneous/blackboards.md">Blackboards</a></li>
+</ul>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../AiPlugin/ai-plugin-overview/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../AiPlugin/ai-plugin-overview/" class="btn btn-xs btn-link">
+        AiPlugin Overview
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../../Shipping/project-export/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../../Shipping/project-export/" class="btn btn-xs btn-link">
+        Project Export
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="col-md-12 wm-page-content">
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/noraj/mkdocs-windmill-dark">Windmill Dark</a> theme by Alexandre ZANNI (noraj).</p>
+</footer>
+
+</body>
+</html>

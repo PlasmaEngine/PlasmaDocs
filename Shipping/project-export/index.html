@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="author" content="PlasmaDev">
+    <link rel="canonical" href="https://plasmaengine.github.io/PlasmaDocs/Shipping/project-export/">
+    <link rel="shortcut icon" href="../../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Project Export - PlasmaDocs</title>
+    <link href="../../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../../js/jquery-3.2.1.min.js"></script>
+    <script src="../../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '../..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "Project Export", url: "#_top", children: [
+              {title: "Export Project Dialog", url: "#export-project-dialog" },
+              {title: "Configuring Project Export", url: "#configuring-project-export" },
+              {title: "Limitations", url: "#limitations" },
+              {title: "See Also", url: "#see-also" },
+          ]},
+        ];
+
+    </script>
+    <script src="../../js/base.js"></script>
+      <script src="../../search/main.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../../ai/sensor-components/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../../ai/sensor-components/" class="btn btn-xs btn-link">
+        Sensor Components
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../.." class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../.." class="btn btn-xs btn-link">
+        Home
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <h1 id="project-export">Project Export</h1>
+<p><em>Project Export</em> is the step to create a package that contains all the files needed to play your game, excluding the files that are only needed for development.</p>
+<p>The <a href="../projects/data-directories.md">data directories</a> of your project contain a lot of files that are only needed during development. Additionally, they are usually stored in various locations, for example the <em>Base</em> directory, which is needed by all games, is located in the SDK folder, whereas your project files probably are located somewhere entirely different. Finally, you also need various <em>binaries</em> (<em>EXE</em> and <em>DLL</em> on Windows) to launch your game, which are again located somewhere different.</p>
+<p>The project export feature consolidates all these files into a single directory, so that it is easy to distribute.</p>
+<h2 id="export-project-dialog">Export Project Dialog</h2>
+<p>To get started with generating a self-contained package of your game, use the <em>project export dialog</em> that you find in the editor under <em>Editor &gt; Export Project...</em>.</p>
+<p>Select an output folder and click <strong>Export Project</strong>.</p>
+<p>Once the export is finished, it will automatically open the folder where the files have been copied to. The export also generates one <code>.bat</code> file for every scene in your project. These scripts launch the respective scene with <a href="../../tools/player/">plPlayer</a>.</p>
+<h2 id="configuring-project-export">Configuring Project Export</h2>
+<p>When you export your project for the first time, these files are added to your project directory:</p>
+<ol>
+<li><code>ProjectBinaries.plExportFilter</code></li>
+<li><code>ProjectData.plExportFilter</code></li>
+</ol>
+<p>The first file is used to determine which <em>binaries</em> should get included in the package.
+The second file is used to determine which <em>data files</em> should get included.</p>
+<p>By default these files <code>#include</code> predefined export filters:</p>
+<ol>
+<li><code>Data\Base\CommonData.plExportFilter</code></li>
+<li><code>Data\Base\CommonBinaries.plExportFilter</code></li>
+</ol>
+<p>These files set up the rules for typical use-cases. You can extend them in your project config files, or you can remove the <code>#include</code> and fully define your own rules.</p>
+<p>The plExportFilter files contain two sections: <strong>[EXCLUDE]</strong> and <strong>[INCLUDE]</strong>. Without any filter, all files are included in the output package.</p>
+<p>To exclude certain files or file types, a pattern has to be added to the <strong>[EXCLUDE]</strong> section. However, sometimes you want to exclude all files of a certain type (e.g. <em>exe</em>) but include a single one regardless (for example your game.exe). In this case, add it to the <strong>[INCLUDE]</strong> section, to override the exclusion filter.</p>
+<p>Each line in the file represents one file path pattern:</p>
+<ul>
+<li>If it starts with a <code>*</code>, it matches paths that end with this pattern.</li>
+<li>If it ends with a <code>*</code>, it matches paths that start with this pattern.</li>
+<li>If it starts and ends with a <code>*</code>, it matches paths that contain this pattern.</li>
+<li>At any other location, <code>*</code> is not allowed.</li>
+<li>All paths are considered to be relative to their respective data directory.</li>
+</ul>
+<blockquote>
+<p><strong>Note:</strong></p>
+<p>For inspiration how to use these path patterns, see the files <code>Data\Base\CommonData.plExportFilter</code> and <code>Data\Base\CommonBinaries.plExportFilter</code>.</p>
+</blockquote>
+<h2 id="limitations">Limitations</h2>
+<ul>
+<li>At this time it is not analyzed which plugin DLLs are actually needed, instead all DLLs are included. Edit your <code>ProjectBinaries.plExportFilter</code> to control this.</li>
+<li>Currently the export step always creates <code>.bat</code> files to load each scene with plPlayer. There is no way to automatically set up something different.</li>
+<li>You currently can't automatically execute custom logic (C++ code, or a script) to finalize the package.</li>
+</ul>
+<h2 id="see-also">See Also</h2>
+<ul>
+<li><a href="../performance/profiling.md">Profiling</a></li>
+<li><a href="../../build/supported-platforms/">Supported Platforms</a></li>
+<li><a href="../../tools/player/">plPlayer</a></li>
+</ul>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../../ai/sensor-components/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../../ai/sensor-components/" class="btn btn-xs btn-link">
+        Sensor Components
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../.." class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../.." class="btn btn-xs btn-link">
+        Home
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="col-md-12 wm-page-content">
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/noraj/mkdocs-windmill-dark">Windmill Dark</a> theme by Alexandre ZANNI (noraj).</p>
+</footer>
+
+</body>
+</html>

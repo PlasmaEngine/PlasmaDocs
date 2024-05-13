@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="author" content="PlasmaDev">
+    <link rel="canonical" href="https://plasmaengine.github.io/PlasmaDocs/editor/editor-views/">
+    <link rel="shortcut icon" href="../../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Editing Views - PlasmaDocs</title>
+    <link href="../../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../../js/jquery-3.2.1.min.js"></script>
+    <script src="../../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '../..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "Editing Views", url: "#_top", children: [
+              {title: "Render Modes", url: "#render-modes" },
+              {title: "See Also", url: "#see-also" },
+          ]},
+        ];
+
+    </script>
+    <script src="../../js/base.js"></script>
+      <script src="../../search/main.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../run-scene/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../run-scene/" class="btn btn-xs btn-link">
+        Running a Scene
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../editor-template-documents/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../editor-template-documents/" class="btn btn-xs btn-link">
+        Template Documents
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <h1 id="editing-views">Editing Views</h1>
+<p>Most documents come with at least one 3D view. The scene documents allow you to switch between single-view and quad-view mode, using the <em>Toggle Views</em> button in each view toolbar.</p>
+<p><img alt="Quad View" src="../media/quad-view.jpg" /></p>
+<p>Using the <em>Perspective</em> menu in the toolbar (the <em>eye</em> icon) you can switch each view to either orthographic or perspective mode.</p>
+<p><a href="../scenes/editor-camera.md">Camera controls</a> and <a href="../scenes/gizmos.md">editing gizmos</a> act differently in orthographic and perspective mode.</p>
+<h2 id="render-modes">Render Modes</h2>
+<p>Render modes are used to visualize different aspects of the scene. They can be useful for debugging rendering issues, see potential performance hotspots, or easier edit a dark scene.</p>
+<p>Most 3D viewports allow you to switch the rendering mode through a drop down menu.</p>
+<h3 id="default">Default</h3>
+<p>This mode renders the scene as it would appear in the final game.</p>
+<p><img alt="Render Mode" src="../media/render-mode-default.jpg" /></p>
+<h3 id="wireframe">Wireframe</h3>
+<p>In this mode the scene is rendered only as wireframe. Either monochrome or colored.</p>
+<p><img alt="Render Mode" src="../media/render-mode-wireframe-color.jpg" /></p>
+<!-- ![Render Mode](media/render-mode-wireframe-mono.jpg) -->
+
+<h3 id="diffuse-lit-only">Diffuse Lit Only</h3>
+<p>This mode visualizes only the diffuse lighting contributions.</p>
+<p><img alt="Render Mode" src="../media/render-mode-lit.jpg" /></p>
+<h3 id="specular-lit-only">Specular Lit Only</h3>
+<p>This mode visualizes only the specular lighting contributions, including reflections.</p>
+<p><img alt="Render Mode" src="../media/render-mode-specular-lit.jpg" /></p>
+<h3 id="decal-count">Decal Count</h3>
+<p>Visualizes how many decals affect each pixel. Yellow and red areas indicate high decal overdraw and will affect performance negatively.</p>
+<p><img alt="Render Mode" src="../media/render-mode-decals.jpg" /></p>
+<h3 id="light-count">Light Count</h3>
+<p>Visualizes how many lights affect each pixel. Yellow and red areas have many contributing lights and will affect performance negatively.</p>
+<p><img alt="Render Mode" src="../media/render-mode-lights.jpg" /></p>
+<h3 id="static-vs-dynamic">Static vs Dynamic</h3>
+<p>This mode visualizes which objects in the scene are <code>static</code> (green) and which ones are <code>dynamic</code> (red). Dynamic objects have a per-frame performance cost, even if they don't move. This mode allows you to find objects that are unnecessarily set to be dynamic.</p>
+<p><img alt="Render Mode" src="../media/render-mode-static-dynamic.jpg" /></p>
+<h3 id="texture-coordinates">Texture Coordinates</h3>
+<p>There are two modes to visualize the UV0 and UV1 texture coordinates.</p>
+<p><img alt="Render Mode" src="../media/render-mode-uv0.jpg" /></p>
+<h3 id="normals-and-tangents">Normals and Tangents</h3>
+<p>There are multiple modes to visualize normals and tangents, per-vertex and per-pixel.</p>
+<p><img alt="Render Mode" src="../media/render-mode-pixelnormal.jpg" /></p>
+<!-- ![Render Mode](media/render-mode-vertexnormal.jpg) -->
+<!-- ![Render Mode](media/render-mode-vertextangent.jpg) -->
+
+<h3 id="diffuse-color">Diffuse Color</h3>
+<p>This mode only shows the diffuse color. It can be very handy for editing a scene that is otherwise very dark.</p>
+<p><img alt="Render Mode" src="../media/render-mode-color.jpg" /></p>
+<h3 id="diffuse-color-range-check">Diffuse Color Range Check</h3>
+<p>In <code>Physically Based Rendering</code> (PBR) the diffuse color values should never be too dark or too bright, as both will not give the best possible results. This mode visualizes which areas may have non-optimal diffuse colors.</p>
+<p><img alt="Render Mode" src="../media/render-mode-colorcheck.jpg" /></p>
+<h3 id="emissive-color">Emissive Color</h3>
+<p>This mode visualizes which objects use emissive colors.</p>
+<p><img alt="Render Mode" src="../media/render-mode-emissive.jpg" /></p>
+<h3 id="specular-color">Specular Color</h3>
+<p>Visualizes the specular color.</p>
+<p><img alt="Render Mode" src="../media/render-mode-specular.jpg" /></p>
+<h3 id="ambient-occlusion">Ambient Occlusion</h3>
+<p>This mode shows ambient occlusion values. These come both from dedicated AO maps, as well as screen space ambient occlusion (SSAO).</p>
+<p><img alt="Render Mode" src="../media/render-mode-ao.jpg" /></p>
+<h3 id="depth">Depth</h3>
+<p>Visualizes the depth of all objects. Note that depending on the near and far plane settings and the camera distance to the closest object, this mode may appear nearly entirely black or white. For this screenshot the far plane had to be adjusted.</p>
+<p><img alt="Render Mode" src="../media/render-mode-depth.jpg" /></p>
+<h3 id="roughness">Roughness</h3>
+<p>Visualizes the roughness of objects.</p>
+<p><img alt="Render Mode" src="../media/render-mode-roughness.jpg" /></p>
+<h2 id="see-also">See Also</h2>
+<ul>
+<li><a href="../scenes/editor-camera.md">Editor Camera</a></li>
+<li><a href="../scenes/scene-editing.md">Scene Editing</a></li>
+</ul>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../run-scene/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../run-scene/" class="btn btn-xs btn-link">
+        Running a Scene
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../editor-template-documents/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../editor-template-documents/" class="btn btn-xs btn-link">
+        Template Documents
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="col-md-12 wm-page-content">
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/noraj/mkdocs-windmill-dark">Windmill Dark</a> theme by Alexandre ZANNI (noraj).</p>
+</footer>
+
+</body>
+</html>
