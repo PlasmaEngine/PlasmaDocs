@@ -1,4 +1,0 @@
-terrain-overview.md
-heightfield-component.md
-kraut-overview.md
-procedural|Procedural Generation

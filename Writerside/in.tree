@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE instance-profile
+        SYSTEM "https://resources.jetbrains.com/writerside/1.0/product-profile.dtd">
+
+<instance-profile id="in"
+                 name="2.0"
+                 start-page="index.md">
+
+    <toc-element topic="index.md"/>
+    <toc-element topic="Getting-Started.md"/>
+    <toc-element topic="Samples.md"/>
+    <toc-element topic="Documentation.md">
+        <toc-element topic="AI.md">
+            <toc-element topic="AI-Plugin.md">
+                <toc-element topic="navmesh-path-test-component.md"/>
+                <toc-element topic="runtime-navmesh.md"/>
+            </toc-element>
+            <toc-element topic="sensor-components.md"/>
+        </toc-element>
+        <toc-element topic="Animation.md">
+            <toc-element topic="Skeletal-Animation.md">
+                <toc-element topic="Animation-Controller.md">
+                    <toc-element topic="animation-controller-component.md"/>
+                    <toc-element topic="animation-controller-asset.md"/>
+                    <toc-element topic="anim-nodes-sequence.md"/>
+                    <toc-element topic="anim-nodes-playclip.md"/>
+                    <toc-element topic="anim-nodes-output.md"/>
+                    <toc-element topic="anim-nodes-modelspace.md"/>
+                    <toc-element topic="anim-nodes-mix2d.md"/>
+                    <toc-element topic="anim-nodes-mix1d.md"/>
+                    <toc-element topic="anim-nodes-logic-math.md"/>
+                    <toc-element topic="anim-nodes-input.md"/>
+                    <toc-element topic="anim-nodes-events.md"/>
+                    <toc-element topic="anim-nodes-debug.md"/>
+                    <toc-element topic="anim-nodes-combine-poses.md"/>
+                    <toc-element topic="anim-nodes-bone-weights.md"/>
+                    <toc-element topic="anim-nodes-blackboard.md"/>
+                </toc-element>
+                <toc-element topic="skeleton-pose-component.md"/>
+                <toc-element topic="skeleton-component.md"/>
+                <toc-element topic="skeleton-asset.md"/>
+                <toc-element topic="simple-animation-component.md"/>
+                <toc-element topic="root-motion.md"/>
+                <toc-element topic="joint-override-component.md"/>
+                <toc-element topic="joint-attachment-component.md"/>
+                <toc-element topic="blender-export.md"/>
+                <toc-element topic="animation-events.md"/>
+                <toc-element topic="animation-clip-asset.md"/>
+                <toc-element topic="animated-mesh-component.md"/>
+                <toc-element topic="animated-mesh-asset.md"/>
+            </toc-element>
+            <toc-element topic="Property-Animation.md">
+                <toc-element topic="slider-component.md"/>
+                <toc-element topic="rotor-component.md"/>
+                <toc-element topic="property-animation-component.md"/>
+                <toc-element topic="property-animation-asset.md"/>
+                <toc-element topic="move-to-component.md"/>
+                <toc-element topic="color-animation-component.md"/>
+            </toc-element>
+            <toc-element topic="Common.md">
+                <toc-element topic="curves.md"/>
+                <toc-element topic="color-gradients.md"/>
+            </toc-element>
+        </toc-element>
+        <toc-element topic="Appendix.md">
+            <toc-element topic="third-party-code.md"/>
+            <toc-element topic="string-usage.md"/>
+            <toc-element topic="string-formatting.md"/>
+            <toc-element topic="library-structure.md"/>
+            <toc-element topic="container-usage.md"/>
+            <toc-element topic="color-spaces.md"/>
+        </toc-element>
+        <toc-element topic="Assets.md">
+            <toc-element topic="import-assets.md"/>
+            <toc-element topic="assets-overview.md"/>
+            <toc-element topic="asset-profiles.md"/>
+            <toc-element topic="asset-curator.md"/>
+            <toc-element topic="asset-browser.md"/>
+        </toc-element>
+        <toc-element topic="Build.md">
+            <toc-element topic="build-linux.md"/>
+            <toc-element topic="build-android.md"/>
+            <toc-element topic="build-windows.md"/>
+            <toc-element topic="build-uwp.md"/>
+            <toc-element topic="build-macos.md"/>
+            <toc-element topic="clang-on-windows.md"/>
+            <toc-element topic="supported-platforms.md"/>
+            <toc-element topic="sdk-root.md"/>
+            <toc-element topic="cmake-config.md"/>
+            <toc-element topic="submodule.md"/>
+        </toc-element>
+        <toc-element topic="Code.md">
+            <toc-element topic="Cpp.md">
+                <toc-element topic="engine-plugins.md"/>
+                <toc-element topic="custom-cpp-component.md"/>
+                <toc-element topic="cpp-project-generation.md"/>
+                <toc-element topic="cpp-code-reload.md"/>
+            </toc-element>
+            <toc-element topic="Game-Logic.md">
+                <toc-element topic="forward-events-to-game-state-component.md"/>
+                <toc-element topic="state-machine-asset.md"/>
+                <toc-element topic="state-machine-component.md"/>
+                <toc-element topic="trigger-delay-modifier-component.md"/>
+            </toc-element>
+            <toc-element topic="TypeScript.md">
+                <toc-element topic="ts-messaging.md"/>
+                <toc-element topic="ts-component.md"/>
+                <toc-element topic="ts-asset.md"/>
+                <toc-element topic="ts-api.md"/>
+                <toc-element topic="custom-ts-components.md"/>
+            </toc-element>
+            <toc-element topic="Visual-Script.md">
+                <toc-element topic="visual-script-class-asset.md"/>
+                <toc-element topic="script-component.md"/>
+            </toc-element>
+        </toc-element>
+        <toc-element topic="Debugging.md">
+            <toc-element topic="Components.md">
+                <toc-element topic="draw-line-component.md"/>
+                <toc-element topic="debug-text-component.md"/>
+            </toc-element>
+            <toc-element topic="console.md"/>
+            <toc-element topic="cvars.md"/>
+            <toc-element topic="debug-cpp.md"/>
+            <toc-element topic="debug-rendering.md"/>
+            <toc-element topic="logging.md"/>
+            <toc-element topic="renderdoc.md"/>
+            <toc-element topic="stats.md"/>
+        </toc-element>
+        <toc-element topic="Editor.md">
+            <toc-element topic="run-scene.md"/>
+            <toc-element topic="editor-views.md"/>
+            <toc-element topic="editor-template-documents.md"/>
+            <toc-element topic="editor-settings.md"/>
+            <toc-element topic="editor-plugins.md"/>
+            <toc-element topic="editor-documents.md"/>
+            <toc-element topic="editor-bg-operations.md"/>
+            <toc-element topic="dashboard.md"/>
+        </toc-element>
+        <toc-element topic="Effects.md">
+            <toc-element topic="Particle-Effects.md">
+                <toc-element topic="particle-renderers.md"/>
+                <toc-element topic="particle-initializers.md"/>
+                <toc-element topic="particle-emitters.md"/>
+                <toc-element topic="particle-effect-component.md"/>
+                <toc-element topic="particle-behaviors.md"/>
+                <toc-element topic="how-particle-effects-work.md"/>
+            </toc-element>
+            <toc-element topic="Post-Processing.md">
+                <toc-element topic="volume-components.md"/>
+                <toc-element topic="post-processing-component.md"/>
+            </toc-element>
+            <toc-element topic="wind-volume-components.md"/>
+            <toc-element topic="wind.md"/>
+            <toc-element topic="sky.md"/>
+            <toc-element topic="simple-wind-component.md"/>
+            <toc-element topic="rope-render-component.md"/>
+            <toc-element topic="fog.md"/>
+            <toc-element topic="fake-rope-component.md"/>
+            <toc-element topic="decals.md"/>
+            <toc-element topic="cloth-sheet-component.md"/>
+            <toc-element topic="beam-component.md"/>
+        </toc-element>
+        <toc-element topic="Gameplay.md">
+            <toc-element topic="timed-death-component.md"/>
+            <toc-element topic="spawn-component.md"/>
+            <toc-element topic="raycast-placement-component.md"/>
+            <toc-element topic="projectile-component.md"/>
+            <toc-element topic="player-start-point.md"/>
+            <toc-element topic="marker-component.md"/>
+            <toc-element topic="headbone-component.md"/>
+            <toc-element topic="grabbable-item-component.md"/>
+            <toc-element topic="area-damage-component.md"/>
+        </toc-element>
+        <toc-element topic="Graphics.md">
+            <toc-element topic="Lighting.md">
+                <toc-element topic="ambient-light-component.md"/>
+                <toc-element topic="directional-light-component.md"/>
+                <toc-element topic="reflection-probe-components.md"/>
+                <toc-element topic="point-light-component.md"/>
+                <toc-element topic="dynamic-shadows.md"/>
+                <toc-element topic="sky-light-component.md"/>
+                <toc-element topic="spot-light-component.md"/>
+            </toc-element>
+            <toc-element topic="Meshes.md">
+                <toc-element topic="custom-mesh-component.md"/>
+                <toc-element topic="instanced-mesh-component.md"/>
+                <toc-element topic="mesh-asset.md"/>
+                <toc-element topic="mesh-component.md"/>
+            </toc-element>
+            <toc-element topic="Render-To-Texture.md">
+                <toc-element topic="render-target-activator-component.md"/>
+                <toc-element topic="render-to-texture.md"/>
+            </toc-element>
+            <toc-element topic="Shaders.md">
+                <toc-element topic="shader-templates.md"/>
+                <toc-element topic="shader-resources.md"/>
+                <toc-element topic="shader-render-state.md"/>
+                <toc-element topic="shader-permutation-variables.md"/>
+                <toc-element topic="shader-debugging.md"/>
+            </toc-element>
+            <toc-element topic="textures-overview.md"/>
+            <toc-element topic="sprite-component.md"/>
+            <toc-element topic="render-pipeline-overview.md"/>
+            <toc-element topic="occluder-component.md"/>
+            <toc-element topic="lod-component.md"/>
+            <toc-element topic="camera-component.md"/>
+            <toc-element topic="always-visible-component.md"/>
+        </toc-element>
+        <toc-element topic="Input.md">
+            <toc-element topic="input-component.md"/>
+            <toc-element topic="input-config.md"/>
+        </toc-element>
+        <toc-element topic="Physics.md">
+            <toc-element topic="Actors.md">
+                <toc-element topic="jolt-trigger-component.md"/>
+                <toc-element topic="jolt-queryshape-actor-component.md"/>
+                <toc-element topic="jolt-static-actor-component.md"/>
+                <toc-element topic="jolt-dynamic-actor-component.md"/>
+                <toc-element topic="jolt-actors.md"/>
+            </toc-element>
+            <toc-element topic="Collision-Shape.md">
+                <toc-element topic="jolt-box-shape-component.md"/>
+                <toc-element topic="jolt-capsule-shape-component.md"/>
+                <toc-element topic="jolt-collision-layers.md"/>
+                <toc-element topic="jolt-collision-meshes.md"/>
+                <toc-element topic="jolt-convex-shape-component.md"/>
+                <toc-element topic="jolt-cylinder-shape-component.md"/>
+                <toc-element topic="jolt-shapes.md"/>
+                <toc-element topic="jolt-sphere-shape-component.md"/>
+            </toc-element>
+            <toc-element topic="Constraints.md">
+                <toc-element topic="jolt-cone-constraint-component.md"/>
+                <toc-element topic="jolt-constraints.md"/>
+                <toc-element topic="jolt-distance-constraint-component.md"/>
+                <toc-element topic="jolt-fixed-constraint-component.md"/>
+                <toc-element topic="jolt-hinge-constraint-component.md"/>
+                <toc-element topic="jolt-point-constraint-component.md"/>
+                <toc-element topic="jolt-slider-constraint-component.md"/>
+                <toc-element topic="jolt-swing-twist-constraint-component.md"/>
+            </toc-element>
+            <toc-element topic="Ragdoll.md">
+                <toc-element topic="jolt-ragdoll-component.md"/>
+                <toc-element topic="jolt-hitbox-component.md"/>
+            </toc-element>
+            <toc-element topic="Special.md">
+                <toc-element topic="jolt-character-controller.md"/>
+                <toc-element topic="jolt-cloth-sheet-component.md"/>
+                <toc-element topic="jolt-grab-object-component.md"/>
+                <toc-element topic="jolt-rope-component.md"/>
+            </toc-element>
+            <toc-element topic="jolt-debug-visualizations.md"/>
+            <toc-element topic="jolt-settings-component.md"/>
+            <toc-element topic="jolt-overview.md"/>
+        </toc-element>
+        <toc-element topic="Runtime.md">
+            <toc-element topic="Application.md">
+                <toc-element topic="application.md"/>
+                <toc-element topic="common-application-features.md"/>
+                <toc-element topic="game-state.md"/>
+            </toc-element>
+            <toc-element topic="Configuration.md">
+                <toc-element topic="actor-system.md"/>
+                <toc-element topic="interfaces.md"/>
+                <toc-element topic="startup.md"/>
+            </toc-element>
+            <toc-element topic="World.md">
+                <toc-element topic="worlds.md"/>
+                <toc-element topic="world-overview.md"/>
+                <toc-element topic="world-modules.md"/>
+                <toc-element topic="world-messaging.md"/>
+                <toc-element topic="spatial-system.md"/>
+                <toc-element topic="object-lifetime.md"/>
+                <toc-element topic="game-objects.md"/>
+                <toc-element topic="components.md"/>
+                <toc-element topic="component-managers.md"/>
+            </toc-element>
+            <toc-element topic="resource-management.md"/>
+            <toc-element topic="reflection-system.md"/>
+            <toc-element topic="filesystem.md"/>
+        </toc-element>
+        <toc-element topic="Shipping.md">
+            <toc-element topic="project-export.md"/>
+        </toc-element>
+        <toc-element topic="Terrain.md">
+            <toc-element topic="Procedural.md">
+                <toc-element topic="procgen-volume-sphere-component.md"/>
+                <toc-element topic="procgen-volume-image-component.md"/>
+                <toc-element topic="procgen-volume-box-component.md"/>
+                <toc-element topic="procgen-vertex-color-component.md"/>
+                <toc-element topic="procgen-placement-component.md"/>
+                <toc-element topic="procgen-graph-output-vertexcolor.md"/>
+                <toc-element topic="procgen-graph-output-placement.md"/>
+                <toc-element topic="procgen-graph-modifiers.md"/>
+                <toc-element topic="procgen-graph-math.md"/>
+                <toc-element topic="procgen-graph-inputs.md"/>
+                <toc-element topic="procgen-graph-asset.md"/>
+                <toc-element topic="procedural-object-placement.md"/>
+            </toc-element>
+            <toc-element topic="heightfield-component.md"/>
+            <toc-element topic="terrain-overview.md"/>
+        </toc-element>
+        <toc-element topic="Tools.md">
+            <toc-element topic="texconv.md"/>
+            <toc-element topic="staticlinkutil.md"/>
+            <toc-element topic="shadercompiler.md"/>
+            <toc-element topic="player.md"/>
+            <toc-element topic="minidumptool.md"/>
+            <toc-element topic="inspector.md"/>
+            <toc-element topic="headercheck.md"/>
+            <toc-element topic="fileserve.md"/>
+            <toc-element topic="archivetool.md"/>
+        </toc-element>
+        <toc-element topic="UI.md">
+            <toc-element topic="ui.md"/>
+            <toc-element topic="rmlui-canvas2d-component.md"/>
+            <toc-element topic="rmlui.md"/>
+            <toc-element topic="imgui.md"/>
+        </toc-element>
+    </toc-element>
+</instance-profile>

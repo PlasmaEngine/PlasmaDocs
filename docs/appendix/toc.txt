@@ -1,7 +1,0 @@
-coding-guidelines.md
-library-structure.md
-container-usage.md
-string-usage.md
-string-formatting.md
-color-spaces.md
-third-party-code.md

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<buildprofiles xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/build-profiles.xsd"
+               xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+    <build-profile instance="in">
+        <variables>
+            <noindex-content>true</noindex-content>
+            <algolia-id>IAMI7ZOM2R</algolia-id>
+            <algolia-index>dev_plasma</algolia-index>
+            <algolia-api-key>191ae4d2551908ea31d1396033f6481f</algolia-api-key>
+            <primary-color>emerald</primary-color>
+            <custom-favicons>logo-Small.png</custom-favicons>
+            <header-logo>MixlogoBig.png</header-logo>
+        </variables>
+    </build-profile>
+
+</buildprofiles>
