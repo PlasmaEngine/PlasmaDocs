@@ -1,14 +1,14 @@
 # Materials
 
-*Materials* are used to define the visual properties of rendered objects. Materials specify what [shader](../graphics/shaders/shaders-overview.md) to use to render an object and they allow you to configure that shader. Most commonly you select which [textures](../graphics/textures-overview.md) to use. The most common use case for materials is through [meshes](../graphics/meshes/meshes-overview.md). Each sub-mesh can have its own material.
+*Materials* are used to define the visual properties of rendered objects. Materials specify what [shader](Shaders.md) to use to render an object and they allow you to configure that shader. Most commonly you select which [textures](textures-overview.md) to use. The most common use case for materials is through [meshes](Meshes.md). Each sub-mesh can have its own material.
 
 ![Material editor](media/material-editor.jpg)
 
-The image above shows the material asset editor. Material assets are often automatically created when you [import a mesh asset](../assets/import-assets.md). For example importing an `FBX` or `OBJ` file will not only create a mesh asset, but can additionally create the necessary material and texture assets for you. Unfortunately, this process is not always perfect, so you should always review which assets were created and how.
+The image above shows the material asset editor. Material assets are often automatically created when you [import a mesh asset](import-assets.md). For example importing an `FBX` or `OBJ` file will not only create a mesh asset, but can additionally create the necessary material and texture assets for you. Unfortunately, this process is not always perfect, so you should always review which assets were created and how.
 
 ## Physical Properties
 
-Although materials are mainly used to configure the rendering, they can optionally reference a [surface](surfaces.md), which is used to define physical properties (e.g. friction) and gameplay relevant interactions. Whether the referenced surface is actually used depends on where the material is applied. For instance, on a [greyboxing component](../scenes/greyboxing.md) the material sets up both the graphics and the physics properties, on a [mesh component](../graphics/meshes/mesh-component.md) it only sets up the rendering and you would need to additionally select a surface for the corresponding [collision mesh](../physics/jolt/collision-shapes/jolt-collision-meshes.md).
+Although materials are mainly used to configure the rendering, they can optionally reference a [surface](surfaces.md), which is used to define physical properties (e.g. friction) and gameplay relevant interactions. Whether the referenced surface is actually used depends on where the material is applied. For instance, on a [greyboxing component](greyboxing.md) the material sets up both the graphics and the physics properties, on a [mesh component](Meshes.md) it only sets up the rendering and you would need to additionally select a surface for the corresponding [collision mesh](jolt-collision-meshes.md).
 
 ## Selecting a Shader
 
@@ -16,13 +16,13 @@ Through the `ShaderMode` property there are three ways a material can select whi
 
 * **From Base Material:** This is the most convenient and most commonly used method. In this mode, you need to select a `BaseMaterial`, which is just another material. All the properties of that base material are copied over to your material, including the shader selection. You can then override each property as you like. This makes it easy to set up a few common base materials and then "derive" all other materials from this common base.
 
-* **From File:** In this mode the material actually references a proper shader file. This allows you to select a custom [shader](../graphics/shaders/shaders-overview.md). By default, Plasma doesn't have many different shader files, as all important variations are provided by the same shader file. However, if you do decide to write a custom one, this is the way to select it for your material. The engine parses the shader file for configurable properties and displays those as UI elements in the material editor. So things like which texture you can select and what other lighting properties the material will have, are all defined by the selected shader.
+* **From File:** In this mode the material actually references a proper shader file. This allows you to select a custom [shader](Shaders.md). By default, Plasma doesn't have many different shader files, as all important variations are provided by the same shader file. However, if you do decide to write a custom one, this is the way to select it for your material. The engine parses the shader file for configurable properties and displays those as UI elements in the material editor. So things like which texture you can select and what other lighting properties the material will have, are all defined by the selected shader.
 
-  You can easily create a custom shader from a [shader template](../graphics/shaders/shader-templates.md).
+  You can easily create a custom shader from a [shader template](shader-templates.md).
 
 * **Visual Shader:** In this mode the material editor will show an additional editing area beneath the 3D view, where you can create your own shader through a visual graph system. This enables you to create custom shader effects like animated textures. There is a dedicated chapter about [visual shaders (TODO)](visual-shaders.md) that explains how to do so.
 
-If you change the selected shader, you need to *transform* (`Ctrl+E`) the material [asset](../assets/assets-overview.md) for the change to take full effect.
+If you change the selected shader, you need to *transform* (`Ctrl+E`) the material [asset](assets-overview.md) for the change to take full effect.
 
 ## Shader Properties
 
@@ -74,12 +74,12 @@ For testing transparent materials it may be useful to create an object in a scen
 
 ## Material Preview
 
-The 3D viewport of the material editor allows you to switch the [render mode](../editor/editor-views.md#render-modes) to inspect only specific aspects of the material.
+The 3D viewport of the material editor allows you to switch the [render mode](editor-views.md#render-modes) to inspect only specific aspects of the material.
 
 Using the *eye dropdown menu* you can also select different meshes for previewing the material on.
 
 ## See Also
 
 * [Visual Shaders (TODO)](visual-shaders.md)
-* [Textures](../graphics/textures-overview.md)
-* [Meshes](../graphics/meshes/meshes-overview.md)
+* [Textures](textures-overview.md)
+* [Meshes](Meshes.md)

@@ -4,9 +4,9 @@
 
 Visual Shaders are fully functional, but currently undocumented.
 
-An alternative to using visual shaders is to write a custom shader based off of a [shader template](../graphics/shaders/shader-templates.md).
+An alternative to using visual shaders is to write a custom shader based off of a [shader template](shader-templates.md).
 
 ## See Also
 
-* [Shaders](../graphics/shaders/shaders-overview.md)
-* [Shader Templates](../graphics/shaders/shader-templates.md)
+* [Shaders](Shaders.md)
+* [Shader Templates](shader-templates.md)

@@ -14,7 +14,7 @@ An alternative to custom data is the [config file resource](config-file-resource
 
 *Custom data* types are fully defined in C++ code.
 
-To create a new custom data type, derive from the `plCustomData` base class and add reflection capabilities. Then add all the properties that you need. Additionally we need to declare a dedicated [resource (TODO)](../runtime/resource-management.md) for your data type.
+To create a new custom data type, derive from the `plCustomData` base class and add reflection capabilities. Then add all the properties that you need. Additionally we need to declare a dedicated [resource (TODO)](resource-management.md) for your data type.
 
 The code snippet below shows what should be added to a *header file (.h)*:
 
@@ -34,7 +34,7 @@ PL_DECLARE_CUSTOM_DATA_RESOURCE(SampleCustomData);
 ```
 <!-- END-DOCS-CODE-SNIPPET -->
 
-Now in a corresponding *source file (.cpp)* add the [reflection block](../runtime/reflection-system.md) that enables the engine to know about the properties. Additionally we use a macro to finish the definition of our resource type.
+Now in a corresponding *source file (.cpp)* add the [reflection block](reflection-system.md) that enables the engine to know about the properties. Additionally we use a macro to finish the definition of our resource type.
 
 <!-- BEGIN-DOCS-CODE-SNIPPET: customdata-impl -->
 ```cpp
@@ -72,7 +72,7 @@ When you add your custom data type, the editor displays all the properties that 
 
 ![Edit Custom Data](media/custom-data-asset-edit.png)
 
-If a property doesn't show up, at all, make sure it is added to the reflection block in the source file. If it should show a different default value, limit the value to a certain range or show a different UI, you can add *attributes* to the reflected properties. For details look at the [reflection system](../runtime/reflection-system.md) documentation and have a look at what other components do.
+If a property doesn't show up, at all, make sure it is added to the reflection block in the source file. If it should show a different default value, limit the value to a certain range or show a different UI, you can add *attributes* to the reflected properties. For details look at the [reflection system](reflection-system.md) documentation and have a look at what other components do.
 
 ## Using Custom Data Types in C++ Code
 
