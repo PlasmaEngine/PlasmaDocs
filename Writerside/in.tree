@@ -220,7 +220,21 @@
             <toc-element topic="surfaces.md"/>
             <toc-element topic="visual-shaders.md"/>
         </toc-element>
-        <toc-element topic="Miscellaneous.md"/>
+        <toc-element topic="Miscellaneous.md">
+            <toc-element topic="local-blackboard-component.md"/>
+            <toc-element topic="imagedata-asset.md"/>
+            <toc-element topic="global-blackboard-component.md"/>
+            <toc-element topic="custom-data.md"/>
+            <toc-element topic="config-file-resource.md"/>
+            <toc-element topic="blackboards.md"/>
+            <toc-element topic="blackboard-template-asset.md"/>
+        </toc-element>
+        <toc-element topic="Performance.md">
+            <toc-element topic="profiling.md"/>
+            <toc-element topic="occlusion-culling.md"/>
+            <toc-element topic="collection-component.md"/>
+            <toc-element topic="asset-collections.md"/>
+        </toc-element>
         <toc-element topic="Physics.md">
             <toc-element topic="Actors.md">
                 <toc-element topic="jolt-trigger-component.md"/>
@@ -328,11 +342,4 @@
             <toc-element topic="imgui.md"/>
         </toc-element>
     </toc-element>
-    <toc-element topic="blackboard-template-asset.md"/>
-    <toc-element topic="blackboards.md"/>
-    <toc-element topic="config-file-resource.md"/>
-    <toc-element topic="custom-data.md"/>
-    <toc-element topic="global-blackboard-component.md"/>
-    <toc-element topic="imagedata-asset.md"/>
-    <toc-element topic="local-blackboard-component.md"/>
 </instance-profile>
