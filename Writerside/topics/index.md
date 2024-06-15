@@ -18,13 +18,13 @@ As a quick start we have provided some useful topics based on different discipli
 
 - [Custom Code Overview](Code.md)
 
-[//]: # (- [File System]&#40;runtime/filesystem.md&#41;)
+- [File System](filesystem.md)
 
-[//]: # ()
-[//]: # (- [Reflection]&#40;runtime/reflection-system.md&#41;)
 
-[//]: # ()
-[//]: # (- [Resource Management]&#40;runtime/resource-management.md&#41;)
+- [Reflection](reflection-system.md)
+
+
+- [Resource Management](resource-management.md)
 
 
 ### Useful For Animators
@@ -60,6 +60,6 @@ As a quick start we have provided some useful topics based on different discipli
 
 - [Occluder Component](occluder-component.md)
 
-[//]: # (- [Terrain]&#40;terrain/terrain-overview.md&#41;)
+- [Terrain](terrain-overview.md)
 
 If you have any feedback or recommendations then please feel free to create a ticket/PR on the github or reach out via discord
