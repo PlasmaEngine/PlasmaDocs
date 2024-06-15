@@ -6,7 +6,7 @@ The [AiPlugin](AI-Plugin.md) adds functionality to generate navmeshes on-demand 
 
 ## Input Data
 
-The runtime navmesh generation uses the [collision geometry](../../physics/jolt/collision-shapes/jolt-collision-meshes.md) and its [surfaces](../../materials/surfaces.md) as the input data from which to build the navmesh. The data is queried *on-demand* in an area around where *path searches* are done. To see the resulting navmesh, enable the [navmesh visualization](#navmesh-visualization).
+The runtime navmesh generation uses the [collision geometry](jolt-collision-meshes.md) and its [surfaces](surfaces.md) as the input data from which to build the navmesh. The data is queried *on-demand* in an area around where *path searches* are done. To see the resulting navmesh, enable the [navmesh visualization](#navmesh-visualization).
 
 ## Navigation Configuration
 
@@ -21,7 +21,7 @@ Entries that are not checked, will not show up in other places as selectable.
 
 The `<None>` and `<Default>` ground types always exist and cannot be removed or renamed.
 
-Which *ground type* a physical surface represents, is specified in the [surfaces](../../materials/surfaces.md#ai-properties). If a surface uses the `<None>` ground type, it will not be part of the navmesh, at all, meaning the navmesh will have a hole there. For surfaces that are generally not walkable, by no character, this is preferable over using a dedicated ground type that is then ignored by a *path search type*.
+Which *ground type* a physical surface represents, is specified in the [surfaces](surfaces.md#ai-properties). If a surface uses the `<None>` ground type, it will not be part of the navmesh, at all, meaning the navmesh will have a hole there. For surfaces that are generally not walkable, by no character, this is preferable over using a dedicated ground type that is then ignored by a *path search type*.
 
 ### Navmesh Types
 
@@ -31,7 +31,7 @@ Enable the [navmesh visualization](#navmesh-visualization) and utilize the the [
 
 #### Navmesh Properties
 
-* `Collision Layer`: The [collision layer](../../physics/jolt/collision-shapes/jolt-collision-layers.md) to use for finding geometry from which to generate the navmesh. This is mainly used to filter out high detail geometry, to speed up navmesh generation. It can also be used to ignore ground types that are generally not traversable (such as water).
+* `Collision Layer`: The [collision layer](jolt-collision-layers.md) to use for finding geometry from which to generate the navmesh. This is mainly used to filter out high detail geometry, to speed up navmesh generation. It can also be used to ignore ground types that are generally not traversable (such as water).
 
 * `Cell Size (XY):` How detailed the navmesh generation shall be. This has to be less than the desired character radius, and the agent radius should be a whole multiple of this value. For example if your cell size is `0.2`, the effective agent radius can only be `0.2`, `0.4`, `0.6` and so on.
 
@@ -56,7 +56,7 @@ Use the the [navmesh path test component](navmesh-path-test-component.md) to see
 
 ## Navmesh Visualization
 
-To be able to see the navmesh, use the [CVar](../../debugging/cvars.md) `Ai.Navmesh.Visualize`. There can be multiple different navmeshes for different character heights etc. This CVar enables visualization for *one of them* by index. So set it to `0` to see the first navmesh, `1` if you have a second one and so on.
+To be able to see the navmesh, use the [CVar](cvars.md) `Ai.Navmesh.Visualize`. There can be multiple different navmeshes for different character heights etc. This CVar enables visualization for *one of them* by index. So set it to `0` to see the first navmesh, `1` if you have a second one and so on.
 
 > **Important:**
 >
