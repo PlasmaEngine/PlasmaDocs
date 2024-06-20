@@ -29,14 +29,14 @@ The file `SampleGamePluginDLL.h` only contains `#define`s for DLL import/export 
 <!-- BEGIN-DOCS-CODE-SNIPPET: dll-export-defines -->
 ```cpp
 // Configure the DLL Import/Export Define
-#if PLASMA_ENABLED(PLASMA_COMPILE_ENGINE_AS_DLL)
+#if PL_ENABLED(PL_COMPILE_ENGINE_AS_DLL)
 #  ifdef BUILDSYSTEM_BUILDING_SAMPLEGAMEPLUGIN_LIB
-#    define PLASMA_SAMPLEGAMEPLUGIN_DLL __declspec(dllexport)
+#    define PL_SAMPLEGAMEPLUGIN_DLL __declspec(dllexport)
 #  else
-#    define PLASMA_SAMPLEGAMEPLUGIN_DLL __declspec(dllimport)
+#    define PL_SAMPLEGAMEPLUGIN_DLL __declspec(dllimport)
 #  endif
 #else
-#  define PLASMA_SAMPLEGAMEPLUGIN_DLL
+#  define PL_SAMPLEGAMEPLUGIN_DLL
 #endif
 ```
 <!-- END-DOCS-CODE-SNIPPET -->
@@ -49,12 +49,12 @@ Plasma provides additional hooks for initialization when a plugin gets loaded or
 
 <!-- BEGIN-DOCS-CODE-SNIPPET: plugin-setup -->
 ```cpp
-PLASMA_PLUGIN_ON_LOADED()
+PL_PLUGIN_ON_LOADED()
 {
   // you could do something here, though this is rare
 }
 
-PLASMA_PLUGIN_ON_UNLOADED()
+PL_PLUGIN_ON_UNLOADED()
 {
   // you could do something here, though this is rare
 }

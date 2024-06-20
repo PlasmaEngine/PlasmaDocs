@@ -28,7 +28,7 @@ Next, we declare our component class. All components must derive (at least indir
 ```cpp
 class DemoComponent : public plComponent
 {
-  PLASMA_DECLARE_COMPONENT_TYPE(DemoComponent, plComponent, DemoComponentManager);
+  PL_DECLARE_COMPONENT_TYPE(DemoComponent, plComponent, DemoComponentManager);
 
   //////////////////////////////////////////////////////////////////////////
   // plComponent
@@ -67,22 +67,22 @@ In our cpp file we need to insert a [reflection](../../runtime/reflection-system
 <!-- BEGIN-DOCS-CODE-SNIPPET: customcomp-reflection -->
 ```cpp
 // clang-format off
-PLASMA_BEGIN_COMPONENT_TYPE(DemoComponent, 3 /* version */, plComponentMode::Dynamic)
+PL_BEGIN_COMPONENT_TYPE(DemoComponent, 3 /* version */, plComponentMode::Dynamic)
 {
   PLASMA_BEGIN_PROPERTIES
   {
-    PLASMA_MEMBER_PROPERTY("Amplitude", m_fAmplitude)->AddAttributes(new plDefaultValueAttribute(1), new plClampValueAttribute(0, 10)),
-    PLASMA_MEMBER_PROPERTY("Speed", m_Speed)->AddAttributes(new plDefaultValueAttribute(plAngle::Degree(90))),
+    PL_MEMBER_PROPERTY("Amplitude", m_fAmplitude)->AddAttributes(new plDefaultValueAttribute(1), new plClampValueAttribute(0, 10)),
+    PL_MEMBER_PROPERTY("Speed", m_Speed)->AddAttributes(new plDefaultValueAttribute(plAngle::Degree(90))),
   }
-  PLASMA_END_PROPERTIES;
+  PL_END_PROPERTIES;
 
-  PLASMA_BEGIN_ATTRIBUTES
+  PL_BEGIN_ATTRIBUTES
   {
     new plCategoryAttribute("SampleGamePlugin"),
   }
-  PLASMA_END_ATTRIBUTES;
+  PL_END_ATTRIBUTES;
 }
-PLASMA_END_COMPONENT_TYPE
+PL_END_COMPONENT_TYPE
 // clang-format on
 ```
 <!-- END-DOCS-CODE-SNIPPET -->
