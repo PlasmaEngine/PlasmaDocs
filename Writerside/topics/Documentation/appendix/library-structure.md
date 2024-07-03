@@ -37,7 +37,7 @@ In **Foundation\\Logging** you will find `plLog`, the central class to output lo
 
 In **Foundation\\Algorithm** you will find some useful algorithms, mostly for sorting, searching and hashing.
 
-In **Foundation\\Basics** you can find a lot of platform specific code, most of which might not be very interesting. You will also find `PLASMA_ASSERT` which you should be using frequently.
+In **Foundation\\Basics** you can find a lot of platform specific code, most of which might not be very interesting. You will also find `PL_ASSERT` which you should be using frequently.
 
 In **Foundation\\Basics\\Types** you will find some fundamental types that are used frequently in Plasma. `plDelegate` is often used for callbacks. `plEnum` is used for type-safe enum types and `plBitflags` is used for type-safe and easy to use bitflags. `plArrayPtr` is a 'fat pointer' that stores the start and length of an array. Finally `plVariant` is a type that can store different types of data (float, int, string, vector, etc.) and knows which type it has stored. It can do conversions between related types and is often used in message passing.
 

@@ -55,7 +55,7 @@ If your scope makes rendering calls for which you want to record the GPU timings
 
 > **Important:**
 >
-> Many profiling scopes end up taking only very little time. Inspecting those is rarely useful, but each recorded entry takes up valuable space in the ring buffer of the profiling system. Therefore the profiling system automatically discards information about scopes that fall below some threshold. That means your custom scope may not show up in the output. If you do want to see even very short scopes, you can adjust the threshold either through `ezProfilingSystem::SetDiscardThreshold()` or through the [CVar](../debugging/cvars.md) `g_ProfilingDiscardThresholdMs`.
+> Many profiling scopes end up taking only very little time. Inspecting those is rarely useful, but each recorded entry takes up valuable space in the ring buffer of the profiling system. Therefore the profiling system automatically discards information about scopes that fall below some threshold. That means your custom scope may not show up in the output. If you do want to see even very short scopes, you can adjust the threshold either through `plProfilingSystem::SetDiscardThreshold()` or through the [CVar](../debugging/cvars.md) `g_ProfilingDiscardThresholdMs`.
 
 ## See Also
 

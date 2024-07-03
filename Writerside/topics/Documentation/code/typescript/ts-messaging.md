@@ -43,7 +43,7 @@ You declare a custom message in TypeScript by extending `pl.Message`:
 ```typescript
 export class MsgShowText extends pl.Message {
 
-    PLASMA_DECLARE_MESSAGE_TYPE;
+    PL_DECLARE_MESSAGE_TYPE;
     
     text: string;
 }
@@ -51,7 +51,7 @@ export class MsgShowText extends pl.Message {
 
 > **Important:**
 >
-> It is vital to insert `PLASMA_DECLARE_MESSAGE_TYPE;` into the body of the message to make it work.
+> It is vital to insert `PL_DECLARE_MESSAGE_TYPE;` into the body of the message to make it work.
 
 If you need to send a message from one component and handle it in other component types, you should put the message declaration into a separate `.ts` file and `import` that file from both component files. See [Importing Files (`require`)](ts-api.md#importing-files-require) for details.
 

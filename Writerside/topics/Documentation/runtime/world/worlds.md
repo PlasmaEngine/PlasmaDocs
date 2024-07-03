@@ -55,7 +55,7 @@ Some aspects of the world are updated in a multi-threaded fashion. For instance,
 From within a component update function you don't need to worry, you always have write access to the world while components are being updated. However, if for example you want to load a level or otherwise set it up procedurally at launch, you need to lock it for write access:
 
 ```cpp
-PLASMA_LOCK(pWorld->GetWriteMarker());
+PL_LOCK(pWorld->GetWriteMarker());
 pWorld->CreateObject(...)
 ```
 

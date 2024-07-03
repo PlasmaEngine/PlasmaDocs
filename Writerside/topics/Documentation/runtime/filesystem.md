@@ -81,9 +81,9 @@ Please be aware that `plOSFile` always requires platform specific absolute paths
 
 Apart from `plOSFile`, there are a few classes that implement additional file system operations that are only thin abstractions over the operating system.
 
-**plFileSystemIterator** is a class that allows to iterate over all files and folders in some directory. In a game this should rarely be necessary, but in tools this can be very useful. Unfortunately it is not guaranteed that this feature can be implemented on all platforms, and each platform might have different features regarding wild-card usage and so on. Therefore this class is only available when the preprocessor define `PLASMA_SUPPORTS_FILE_ITERATORS` is defined as `PLASMA_ON`.
+**plFileSystemIterator** is a class that allows to iterate over all files and folders in some directory. In a game this should rarely be necessary, but in tools this can be very useful. Unfortunately it is not guaranteed that this feature can be implemented on all platforms, and each platform might have different features regarding wild-card usage and so on. Therefore this class is only available when the preprocessor define `PL_SUPPORTS_FILE_ITERATORS` is defined as `PL_ON`.
 
-**plFileStats** is a struct that provides information about a file or folder. One way to retrieve file stats is through `plOSFile::GetFileStats()`. Again, this feature cannot be implemented on all platforms, so it is only available when `PLASMA_SUPPORTS_FILE_STATS` is defined as `PLASMA_ON`.
+**plFileStats** is a struct that provides information about a file or folder. One way to retrieve file stats is through `plOSFile::GetFileStats()`. Again, this feature cannot be implemented on all platforms, so it is only available when `PL_SUPPORTS_FILE_STATS` is defined as `PL_ON`.
 
 ## High Level File System
 
@@ -141,7 +141,7 @@ Now you can read and write files in that folder like this:
 
 ```cpp
 plFileWriter FileOut;
-if (FileOut.Open("SubFolder/Test.txt") == PLASMA_SUCCESS)
+if (FileOut.Open("SubFolder/Test.txt") == PL_SUCCESS)
 {
     // "SubFolder" will be created automatically, if it does not exist yet
 
@@ -150,13 +150,13 @@ if (FileOut.Open("SubFolder/Test.txt") == PLASMA_SUCCESS)
 }
 
 plFileReader FileIn;
-if (FileIn.Open("SubFolder/Test.txt") == PLASMA_SUCCESS)
+if (FileIn.Open("SubFolder/Test.txt") == PL_SUCCESS)
 {
     plString s;
     FileIn >> s;
     FileIn.Close(); // will also be called automatically when FileIn goes out of scope
 
-    PLASMA_ASSERT_DEV(s == "This is a string", "The read string is incorrect: '%s'", s.GetData());
+    PL_ASSERT_DEV(s == "This is a string", "The read string is incorrect: '%s'", s.GetData());
 }
 ```
 

@@ -14,7 +14,7 @@ A message has to be derived from `plMessage` and contain a helper macro that imp
 ```cpp
 struct plMsgSetText : public plMessage
 {
-  PLASMA_DECLARE_MESSAGE_TYPE(plMsgSetText, plMessage);
+  PL_DECLARE_MESSAGE_TYPE(plMsgSetText, plMessage);
 
   plString m_sText;
 };
@@ -25,9 +25,9 @@ In some cpp file you then also need to implement the message and set up basic [r
 
 <!-- BEGIN-DOCS-CODE-SNIPPET: message-impl -->
 ```cpp
-PLASMA_IMPLEMENT_MESSAGE_TYPE(plMsgSetText);
-PLASMA_BEGIN_DYNAMIC_REFLECTED_TYPE(plMsgSetText, 1, plRTTIDefaultAllocator<plMsgSetText>)
-PLASMA_END_DYNAMIC_REFLECTED_TYPE;
+PL_IMPLEMENT_MESSAGE_TYPE(plMsgSetText);
+PL_BEGIN_DYNAMIC_REFLECTED_TYPE(plMsgSetText, 1, plRTTIDefaultAllocator<plMsgSetText>)
+PL_END_DYNAMIC_REFLECTED_TYPE;
 ```
 <!-- END-DOCS-CODE-SNIPPET -->
 
@@ -59,12 +59,12 @@ Finally, you also need to register these functions as message handlers, in the c
 
 <!-- BEGIN-DOCS-CODE-SNIPPET: message-handler-block -->
 ```cpp
-PLASMA_BEGIN_MESSAGEHANDLERS
+PL_BEGIN_MESSAGEHANDLERS
 {
-  PLASMA_MESSAGE_HANDLER(plMsgSetText, OnSetText),
-  PLASMA_MESSAGE_HANDLER(plMsgSetColor, OnSetColor)
+  PL_MESSAGE_HANDLER(plMsgSetText, OnSetText),
+  PL_MESSAGE_HANDLER(plMsgSetColor, OnSetColor)
 }
-PLASMA_END_MESSAGEHANDLERS;
+PL_END_MESSAGEHANDLERS;
 ```
 <!-- END-DOCS-CODE-SNIPPET -->
 

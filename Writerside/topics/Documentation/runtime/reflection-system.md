@@ -20,36 +20,36 @@ const plRTTI* pRtti2 = plGetStaticRTTI<plDynamicTestClass>();
 const plRTTI* pRtti3 = plRTTI::FindTypeByName("plDynamicTestClass");
 ```
 
-Declaring a dynamic class involves deriving from `plReflectedClass`, adding the `PLASMA_ADD_DYNAMIC_REFLECTION(SELF, BASE_TYPE)` macro into the class body and adding a `PLASMA_BEGIN_DYNAMIC_REFLECTED_TYPE(Type, Version, AllocatorType)` block into a compilation unit.
+Declaring a dynamic class involves deriving from `plReflectedClass`, adding the `PL_ADD_DYNAMIC_REFLECTION(SELF, BASE_TYPE)` macro into the class body and adding a `PL_BEGIN_DYNAMIC_REFLECTED_TYPE(Type, Version, AllocatorType)` block into a compilation unit.
 
 ```cpp
 //Header
 class plDynamicTestClass : public plReflectedClass
 {
-  PLASMA_ADD_DYNAMIC_REFLECTION(plDynamicTestClass, plReflectedClass);
+  PL_ADD_DYNAMIC_REFLECTION(plDynamicTestClass, plReflectedClass);
 };
 ```
 
 ```cpp
 //Cpp
-PLASMA_BEGIN_DYNAMIC_REFLECTED_TYPE(plDynamicTestClass, 1, plRTTIDefaultAllocator<plDynamicTestClass>)
-PLASMA_END_DYNAMIC_REFLECTED_TYPE
+PL_BEGIN_DYNAMIC_REFLECTED_TYPE(plDynamicTestClass, 1, plRTTIDefaultAllocator<plDynamicTestClass>)
+PL_END_DYNAMIC_REFLECTED_TYPE
 ```
 
-Declaring a static class is very similar to declaring a dynamic class. However, you need to declare the type outside the class via `PLASMA_DECLARE_REFLECTABLE_TYPE(Linkage, TYPE)` and use `PLASMA_BEGIN_STATIC_REFLECTED_TYPE(Type, BaseType, Version, AllocatorType)` in a compilation unit. If a class has no base class, use the dummy class `plNoBase` instead.
+Declaring a static class is very similar to declaring a dynamic class. However, you need to declare the type outside the class via `PL_DECLARE_REFLECTABLE_TYPE(Linkage, TYPE)` and use `PL_BEGIN_STATIC_REFLECTED_TYPE(Type, BaseType, Version, AllocatorType)` in a compilation unit. If a class has no base class, use the dummy class `plNoBase` instead.
 
 ```cpp
 // Header
 class plStaticTestClass
 {
 };
-PLASMA_DECLARE_REFLECTABLE_TYPE(PLASMA_NO_LINKAGE, plStaticTestClass);
+PL_DECLARE_REFLECTABLE_TYPE(PL_NO_LINKAGE, plStaticTestClass);
 ```
 
 ```cpp
 // Cpp
-PLASMA_BEGIN_STATIC_REFLECTED_TYPE(plStaticTestClass, plNoBase, 1, plRTTIDefaultAllocator<plStaticTestClass>);
-PLASMA_END_STATIC_REFLECTED_TYPE
+PL_BEGIN_STATIC_REFLECTED_TYPE(plStaticTestClass, plNoBase, 1, plRTTIDefaultAllocator<plStaticTestClass>);
+PL_END_STATIC_REFLECTED_TYPE
 ```
 
 ### Structs
@@ -58,7 +58,7 @@ Structs are identical to static reflected classes so you can use the exact same 
 
 ### Enums
 
-Enums are limited to structured enums, i.e. those used by the `plEnum` class. Declaration is similar to static classes, but you use `PLASMA_BEGIN_STATIC_REFLECTED_ENUM(Type, Version)` instead in the compilation unit code.
+Enums are limited to structured enums, i.e. those used by the `plEnum` class. Declaration is similar to static classes, but you use `PL_BEGIN_STATIC_REFLECTED_ENUM(Type, Version)` instead in the compilation unit code.
 
 ```cpp
 // Header
@@ -73,22 +73,22 @@ struct plExampleEnum
     Default = Value1     // Default initialization value (required)
     };
 };
-PLASMA_DECLARE_REFLECTABLE_TYPE(PLASMA_NO_LINKAGE, plExampleEnum);
+PL_DECLARE_REFLECTABLE_TYPE(PL_NO_LINKAGE, plExampleEnum);
 ```
 
 ```cpp
 // Cpp
-PLASMA_BEGIN_STATIC_REFLECTED_ENUM(plExampleEnum, 1)
-  PLASMA_ENUM_CONSTANTS(plExampleEnum::Value1, plExampleEnum::Value2)
-  PLASMA_ENUM_CONSTANT(plExampleEnum::Value3),
-PLASMA_END_STATIC_REFLECTED_ENUM
+PL_BEGIN_STATIC_REFLECTED_ENUM(plExampleEnum, 1)
+  PL_ENUM_CONSTANTS(plExampleEnum::Value1, plExampleEnum::Value2)
+  PL_ENUM_CONSTANT(plExampleEnum::Value3),
+PL_END_STATIC_REFLECTED_ENUM
 ```
 
-The enum constants can either be declared via `PLASMA_ENUM_CONSTANTS()` or `PLASMA_ENUM_CONSTANT(Value)` inside the begin / end block of the enum declaration. An enum type can be identified by its base type which is always the dummy `plEnumBase`.
+The enum constants can either be declared via `PL_ENUM_CONSTANTS()` or `PL_ENUM_CONSTANT(Value)` inside the begin / end block of the enum declaration. An enum type can be identified by its base type which is always the dummy `plEnumBase`.
 
 ### Bitflags
 
-Bitflags are limited to structured bitflags, i.e. those used by the `plBitflags` class. Declaration is similar to static classes, but you use `PLASMA_BEGIN_STATIC_REFLECTED_BITFLAGS(Type, Version)` instead in the compilation unit code.
+Bitflags are limited to structured bitflags, i.e. those used by the `plBitflags` class. Declaration is similar to static classes, but you use `PL_BEGIN_STATIC_REFLECTED_BITFLAGS(Type, Version)` instead in the compilation unit code.
 
 ```cpp
 // Header
@@ -97,9 +97,9 @@ struct plExampleBitflags
     typedef plUInt64 StorageType;
     enum Enum : plUInt64
     {
-    Value1 = PLASMA_BIT(0),  // normal value
-    Value2 = PLASMA_BIT(31), // normal value
-    Value3 = PLASMA_BIT(63), // normal value
+    Value1 = PL_BIT(0),  // normal value
+    Value2 = PL_BIT(31), // normal value
+    Value3 = PL_BIT(63), // normal value
     Default = Value1     // Default initialization value (required)
     };
 
@@ -112,50 +112,50 @@ struct plExampleBitflags
     StorageType Value3 : 1;
     };
 };
-PLASMA_DECLARE_REFLECTABLE_TYPE(PLASMA_NO_LINKAGE, plExampleBitflags);
+PL_DECLARE_REFLECTABLE_TYPE(PL_NO_LINKAGE, plExampleBitflags);
 ```
 
 ```cpp
 // Cpp
-PLASMA_BEGIN_STATIC_REFLECTED_BITFLAGS(plExampleBitflags, 1)
-  PLASMA_BITFLAGS_CONSTANTS(plExampleBitflags::Value1, plExampleBitflags::Value2)
-  PLASMA_BITFLAGS_CONSTANT(plExampleBitflags::Value3),
-PLASMA_END_STATIC_REFLECTED_BITFLAGS();
+PL_BEGIN_STATIC_REFLECTED_BITFLAGS(plExampleBitflags, 1)
+  PL_BITFLAGS_CONSTANTS(plExampleBitflags::Value1, plExampleBitflags::Value2)
+  PL_BITFLAGS_CONSTANT(plExampleBitflags::Value3),
+PL_END_STATIC_REFLECTED_BITFLAGS();
 ```
 
-The bitflags constants can either be declared via `PLASMA_BITFLAGS_CONSTANTS()` or `PLASMA_BITFLAGS_CONSTANT(Value)` inside the begin / end block of the bitflags declaration. A bitflags type can be identified by its base type which is always the dummy `plBitflagsBase`.
+The bitflags constants can either be declared via `PL_BITFLAGS_CONSTANTS()` or `PL_BITFLAGS_CONSTANT(Value)` inside the begin / end block of the bitflags declaration. A bitflags type can be identified by its base type which is always the dummy `plBitflagsBase`.
   
 ## Properties
 
 Properties are the most important information in a type as they define the data inside it. The properties of a type can be accessed via `plRTTI::GetProperties()`. There are different categories of properties, each deriving from `plAbstractProperty`. The type of property can be determined by calling `plAbstractProperty::GetCategory()`.
-Properties are added via the property macros inside the `PLASMA_BEGIN_PROPERTIES()` / `PLASMA_END_PROPERTIES()` block of the type declaration like this:
+Properties are added via the property macros inside the `PL_BEGIN_PROPERTIES()` / `PL_END_PROPERTIES()` block of the type declaration like this:
 
 ```cpp
-PLASMA_BEGIN_STATIC_REFLECTED_TYPE(plStaticTestClass, plNoBase, 1, plRTTIDefaultAllocator<plStaticTestClass>)
+PL_BEGIN_STATIC_REFLECTED_TYPE(plStaticTestClass, plNoBase, 1, plRTTIDefaultAllocator<plStaticTestClass>)
 {
-    PLASMA_BEGIN_PROPERTIES
+    PL_BEGIN_PROPERTIES
     {
-        PLASMA_CONSTANT_PROPERTY("Constant", 5),
-        PLASMA_MEMBER_PROPERTY("Member", m_fFloat),
-        PLASMA_ACCESSOR_PROPERTY("MemberAccessor", GetInt, SetInt),
-        PLASMA_ARRAY_MEMBER_PROPERTY("Array", m_Deque),
-        PLASMA_ARRAY_ACCESSOR_PROPERTY("ArrayAccessor", GetCount, GetValue, SetValue, Insert, Remove),
-        PLASMA_SET_MEMBER_PROPERTY("Set", m_SetMember),
-        PLASMA_SET_ACCESSOR_PROPERTY("SetAccessor", GetSet, SetInsert, SetRemove),
+        PL_CONSTANT_PROPERTY("Constant", 5),
+        PL_MEMBER_PROPERTY("Member", m_fFloat),
+        PL_ACCESSOR_PROPERTY("MemberAccessor", GetInt, SetInt),
+        PL_ARRAY_MEMBER_PROPERTY("Array", m_Deque),
+        PL_ARRAY_ACCESSOR_PROPERTY("ArrayAccessor", GetCount, GetValue, SetValue, Insert, Remove),
+        PL_SET_MEMBER_PROPERTY("Set", m_SetMember),
+        PL_SET_ACCESSOR_PROPERTY("SetAccessor", GetSet, SetInsert, SetRemove),
     }
-    PLASMA_END_PROPERTIES
+    PL_END_PROPERTIES
 }
-PLASMA_END_STATIC_REFLECTED_TYPE();
+PL_END_STATIC_REFLECTED_TYPE();
 ```
 
 ### Constants
 
-Constants are declared via `PLASMA_CONSTANT_PROPERTY(PropertyName, Value)`. The value is stored within the property so no instance of the class is necessary to access it. To access the constant, cast the property to `plAbstractConstantProperty` and call `plAbstractConstantProperty::GetPropertyType()` to determine the constant type. Then either cast to `plTypedConstantProperty` of the matching type, or if the type is not known to you at compile time, use `plAbstractConstantProperty::GetPropertyPointer()` to access its data.
+Constants are declared via `PL_CONSTANT_PROPERTY(PropertyName, Value)`. The value is stored within the property so no instance of the class is necessary to access it. To access the constant, cast the property to `plAbstractConstantProperty` and call `plAbstractConstantProperty::GetPropertyType()` to determine the constant type. Then either cast to `plTypedConstantProperty` of the matching type, or if the type is not known to you at compile time, use `plAbstractConstantProperty::GetPropertyPointer()` to access its data.
 
 ### Members
 
 There are two types of member properties, direct member properties and accessor properties. The first has direct access to the memory location of the property in the class while the later uses functions to get and set the property's value.
-Direct member properties are declared via `PLASMA_MEMBER_PROPERTY(PropertyName, MemberName)` while accessor properties are declared via `PLASMA_ACCESSOR_PROPERTY(PropertyName, Getter, Setter)`. The getter and setter functions must have the following signature:
+Direct member properties are declared via `PL_MEMBER_PROPERTY(PropertyName, MemberName)` while accessor properties are declared via `PL_ACCESSOR_PROPERTY(PropertyName, Getter, Setter)`. The getter and setter functions must have the following signature:
 
 ```cpp
 Type GetterFunc() const;
@@ -165,17 +165,17 @@ void SetterFunc(Type value);
 Type can be decorated with const and reference but must be consistent between get and set function. The available macros are the following:
 
 ```cpp
-PLASMA_MEMBER_PROPERTY("Member", m_fFloat1),
-PLASMA_MEMBER_PROPERTY_READ_ONLY("MemberRO", m_vProperty3),
-PLASMA_ACCESSOR_PROPERTY("MemberAccessor", GetInt, SetInt),
-PLASMA_ACCESSOR_PROPERTY_READ_ONLY("MemberAccessorRO", GetInt),
+PL_MEMBER_PROPERTY("Member", m_fFloat1),
+PL_MEMBER_PROPERTY_READ_ONLY("MemberRO", m_vProperty3),
+PL_ACCESSOR_PROPERTY("MemberAccessor", GetInt, SetInt),
+PL_ACCESSOR_PROPERTY_READ_ONLY("MemberAccessorRO", GetInt),
 ```
 
 To access an instance's member variable value, cast the property to `plAbstractMemberProperty` and call `plAbstractMemberProperty::GetPropertyType()` to determine the member type. Then either cast to `plTypedMemberProperty` of the matching type, or if the type is not known to you at compile time, use `plAbstractMemberProperty::GetPropertyPointer()` or `plAbstractMemberProperty::GetValuePtr()` and `plAbstractMemberProperty::SetValuePtr()` to access its data. The first solution will only return a valid pointer if the property is a direct member property.
 
 ### Arrays
 
-Array properties are very similar to member properties, they just handle arrays instead of single values. Direct array properties are declared via `PLASMA_ARRAY_MEMBER_PROPERTY(PropertyName, MemberName)` while accessor array properties are declared via `PLASMA_ARRAY_ACCESSOR_PROPERTY(PropertyName, GetCount, Getter, Setter, Insert, Remove)`. The accessor interface functions must have the following signature:
+Array properties are very similar to member properties, they just handle arrays instead of single values. Direct array properties are declared via `PL_ARRAY_MEMBER_PROPERTY(PropertyName, MemberName)` while accessor array properties are declared via `PL_ARRAY_ACCESSOR_PROPERTY(PropertyName, GetCount, Getter, Setter, Insert, Remove)`. The accessor interface functions must have the following signature:
 
 ```cpp
 plUInt32 GetCount() const;
@@ -188,18 +188,18 @@ void Remove(plUInt32 uiIndex);
 The available macros are the following:
 
 ```cpp
-PLASMA_ARRAY_ACCESSOR_PROPERTY("ArrayAccessor", GetCount, GetValue, SetValue, Insert, Remove),
-PLASMA_ARRAY_ACCESSOR_PROPERTY_READ_ONLY("ArrayAccessorRO", GetCount, GetValue),
-PLASMA_ARRAY_MEMBER_PROPERTY("Hybrid", m_Hybrid),
-PLASMA_ARRAY_MEMBER_PROPERTY("Dynamic", m_Dynamic),
-PLASMA_ARRAY_MEMBER_PROPERTY_READ_ONLY("Deque", m_Deque),
+PL_ARRAY_ACCESSOR_PROPERTY("ArrayAccessor", GetCount, GetValue, SetValue, Insert, Remove),
+PL_ARRAY_ACCESSOR_PROPERTY_READ_ONLY("ArrayAccessorRO", GetCount, GetValue),
+PL_ARRAY_MEMBER_PROPERTY("Hybrid", m_Hybrid),
+PL_ARRAY_MEMBER_PROPERTY("Dynamic", m_Dynamic),
+PL_ARRAY_MEMBER_PROPERTY_READ_ONLY("Deque", m_Deque),
 ```
 
 To access an instance's array, cast the property to `plAbstractArrayProperty` and call `plAbstractArrayProperty::GetElementType()` to determine the element type. From here you can use the various functions inside `plAbstractArrayProperty` to manipulate an instance's array.
 
 ### Sets
 
-Set properties are very similar to member properties, they just handle sets instead of single values. Direct set properties are declared via `PLASMA_SET_MEMBER_PROPERTY(PropertyName, MemberName)` while accessor set properties are declared via `PLASMA_SET_ACCESSOR_PROPERTY(PropertyName, GetValues, Insert, Remove)`. The accessor interface functions must have the following signature:
+Set properties are very similar to member properties, they just handle sets instead of single values. Direct set properties are declared via `PL_SET_MEMBER_PROPERTY(PropertyName, MemberName)` while accessor set properties are declared via `PL_SET_ACCESSOR_PROPERTY(PropertyName, GetValues, Insert, Remove)`. The accessor interface functions must have the following signature:
 
 ```cpp
 void Insert(Type value);
@@ -210,10 +210,10 @@ Container<Type> GetValues() const;
 The available macros are the following:  
 
 ```cpp
-PLASMA_SET_ACCESSOR_PROPERTY("SetAccessor", GetValues, Insert, Remove),
-PLASMA_SET_ACCESSOR_PROPERTY_READ_ONLY("SetAccessorRO", GetValues),
-PLASMA_SET_MEMBER_PROPERTY("Set", m_SetMember),
-PLASMA_SET_MEMBER_PROPERTY_READ_ONLY("SetRO", m_SetMember),
+PL_SET_ACCESSOR_PROPERTY("SetAccessor", GetValues, Insert, Remove),
+PL_SET_ACCESSOR_PROPERTY_READ_ONLY("SetAccessorRO", GetValues),
+PL_SET_MEMBER_PROPERTY("Set", m_SetMember),
+PL_SET_MEMBER_PROPERTY_READ_ONLY("SetRO", m_SetMember),
 ```
 
 To access an instance's set, cast the property to `plAbstractSetProperty` and call `plAbstractSetProperty::GetElementType()` to determine the element type. From here you can use the various functions inside `plAbstractSetProperty` to manipulate an instance's set.
@@ -226,7 +226,7 @@ For types, `plRTTI::GetTypeFlags()` lets you access its `plTypeFlags::Enum` flag
 Properties can have flags as well, `plAbstractMemberProperty::GetFlags()`, `plAbstractArrayProperty::GetFlags()` and `plAbstractSetProperty::GetFlags()` let you access the `plPropertyFlags::Enum` flags of the handled property type. The only difference here is that besides automatically deduced flags there are also user-defined flags that can be added during declaration of the property by using `plAbstractMemberProperty::AddFlags` and the variants on the other property categories:
 
 ```cpp
-PLASMA_ACCESSOR_PROPERTY("ArraysPtr", GetArrays, SetArrays)->AddFlags(plPropertyFlags::PointerOwner),
+PL_ACCESSOR_PROPERTY("ArraysPtr", GetArrays, SetArrays)->AddFlags(plPropertyFlags::PointerOwner),
 ```
 
 ## Limitations

@@ -66,11 +66,11 @@ Don't forget to register the message handler in the [reflection block](../reflec
 
 <!-- BEGIN-DOCS-CODE-SNIPPET: spatial-bounds-handler -->
 ```cpp
-PLASMA_BEGIN_MESSAGEHANDLERS
+PL_BEGIN_MESSAGEHANDLERS
 {
-  PLASMA_MESSAGE_HANDLER(plMsgUpdateLocalBounds, OnUpdateLocalBounds)
+  PL_MESSAGE_HANDLER(plMsgUpdateLocalBounds, OnUpdateLocalBounds)
 }
-PLASMA_END_MESSAGEHANDLERS;
+PL_END_MESSAGEHANDLERS;
 ```
 <!-- END-DOCS-CODE-SNIPPET -->
 

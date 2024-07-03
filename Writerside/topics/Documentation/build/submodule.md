@@ -20,7 +20,7 @@ Next, add the Plasma Engine folder in your root `CMakeLists.txt`:
 
 ```cmake
 # Set the build filter, if you only want to integrate parts of Plasma into your build.
-# set(PLASMA_BUILD_FILTER "FoundationOnly")
+# set(PL_BUILD_FILTER "FoundationOnly")
 
 add_subdirectory(PlasmaEngine)
 ```
@@ -33,7 +33,7 @@ include("PlasmaEngine/Code/BuildSystem/CMake/plUtilsSubmodule.cmake")
 
 pl_detect_languages()
 
-project("MyProject" LANGUAGES ${PLASMA_LANGUAGES})
+project("MyProject" LANGUAGES ${PL_LANGUAGES})
 ```
 
 > **Important:**

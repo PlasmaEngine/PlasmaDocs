@@ -30,7 +30,7 @@ In practice, to use the startup system, you need to add a block of code to some 
 <!-- BEGIN-DOCS-CODE-SNIPPET: startup-block -->
 ```cpp
 // clang-format off
-PLASMA_BEGIN_SUBSYSTEM_DECLARATION(SampleGamePluginStartupGroup, SampleGamePluginMainStartup)
+PL_BEGIN_SUBSYSTEM_DECLARATION(SampleGamePluginStartupGroup, SampleGamePluginMainStartup)
 
   // list all the subsystems that we want to be initialized first
   BEGIN_SUBSYSTEM_DEPENDENCIES
@@ -41,7 +41,7 @@ PLASMA_BEGIN_SUBSYSTEM_DECLARATION(SampleGamePluginStartupGroup, SampleGamePlugi
   ON_CORESYSTEMS_STARTUP
   {
     // allocate an implementation of PrintInterface
-    s_PrintInterface = PLASMA_DEFAULT_NEW(PrintImplementation);
+    s_PrintInterface = PL_DEFAULT_NEW(PrintImplementation);
 
     s_PrintInterface->OnCoreSystemsStartup();
     s_PrintInterface->Print("Called ON_CORESYSTEMS_STARTUP");
@@ -67,7 +67,7 @@ PLASMA_BEGIN_SUBSYSTEM_DECLARATION(SampleGamePluginStartupGroup, SampleGamePlugi
     PrintImplementation::GetSingleton()->Print("Called ON_HIGHLEVELSYSTEMS_SHUTDOWN");
   }
 
-PLASMA_END_SUBSYSTEM_DECLARATION;
+PL_END_SUBSYSTEM_DECLARATION;
 ```
 <!-- END-DOCS-CODE-SNIPPET -->
 

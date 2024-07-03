@@ -28,8 +28,8 @@ The clang frontend for the Visual Studio Compiler is no longer in development. U
 1. In the field **Optional toolset to use (argument to -T)** type **v140_clang_c2**
 1. Finish the dialog and run 'Configure'.
 1. Check the **Advanced** checkbox to show additional options.
-1. **Disable PLASMA_USE_PCH**, as the Clang build will not work with precompiled headers.
-1. You may also want to **disable PLASMA_ENABLE_FOLDER_UNITY_FILES** as that makes it easier to see from which file a compilation error originated.
+1. **Disable PL_USE_PCH**, as the Clang build will not work with precompiled headers.
+1. You may also want to **disable PL_ENABLE_FOLDER_UNITY_FILES** as that makes it easier to see from which file a compilation error originated.
 1. Finish the [CMake configuration](cmake-config.md), open the solution in Visual Studio and start compiling.
 
 ## See Also

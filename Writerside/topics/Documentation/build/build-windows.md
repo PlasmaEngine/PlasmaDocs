@@ -36,7 +36,7 @@ In the root folder of the Plasma repository you will find a couple of `.bat` fil
 
 Run one of them to generate a Visual Studio solution for your preferred compiler. If these scripts fail, you most likely don't have all the [prerequisites](#prerequisites) installed. They also sometimes fail, if Visual Studio recently installed an update and you haven't rebooted your PC since. Usually when this script fails it is due to common issues with CMake or the MSVC installation. Read the error messages carefully and search the internet, you'll usually find a solution quickly.
 
-Once the script finished successfully, there will be a **Workspace** folder in the Plasma root folder. You fill find a `Plasma_***.sln` file in the respective folder for the Visual Studio version that you chose.
+Once the script finished successfully, there will be a **Workspace** folder in the Plasma root folder. You fill find a `PL_***.sln` file in the respective folder for the Visual Studio version that you chose.
 
 ### Manually Running CMake
 

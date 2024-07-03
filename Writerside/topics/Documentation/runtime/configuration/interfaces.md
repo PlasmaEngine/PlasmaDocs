@@ -46,7 +46,7 @@ Next, you need one or more *implementations* of your interface. You can, of cour
 /// This would typically be in a different plugin than the interface and would be allocated by that plugin on startup.
 class PrintImplementation : public PrintInterface
 {
-  PLASMA_DECLARE_SINGLETON_OF_INTERFACE(PrintImplementation, PrintInterface);
+  PL_DECLARE_SINGLETON_OF_INTERFACE(PrintImplementation, PrintInterface);
 
 public:
   PrintImplementation();
@@ -55,7 +55,7 @@ public:
 
 private:
   // needed for the startup system to be able to call the private function below
-  PLASMA_MAKE_SUBSYSTEM_STARTUP_FRIEND(SampleGamePluginStartupGroup, SampleGamePluginMainStartup);
+  PL_MAKE_SUBSYSTEM_STARTUP_FRIEND(SampleGamePluginStartupGroup, SampleGamePluginMainStartup);
 
   void OnCoreSystemsStartup()
   {
@@ -65,13 +65,13 @@ private:
 ```
 <!-- END-DOCS-CODE-SNIPPET -->
 
-Note the `PLASMA_DECLARE_SINGLETON_OF_INTERFACE` macro. This adds one part of the required functionality. For one, this class adds a function to query the one and only instance of your class (`GetSingleton()`). Also, it prevents you from creating two instances of this class, as that would violate the singleton contract.
+Note the `PL_DECLARE_SINGLETON_OF_INTERFACE` macro. This adds one part of the required functionality. For one, this class adds a function to query the one and only instance of your class (`GetSingleton()`). Also, it prevents you from creating two instances of this class, as that would violate the singleton contract.
 
 Finally, you need to add this to you cpp file:
 
 <!-- BEGIN-DOCS-CODE-SNIPPET: singleton-impl-definition -->
 ```cpp
-PLASMA_IMPLEMENT_SINGLETON(PrintImplementation);
+PL_IMPLEMENT_SINGLETON(PrintImplementation);
 
 PrintImplementation::PrintImplementation()
   : m_SingletonRegistrar(this) // needed for automatic registration
@@ -95,7 +95,7 @@ For details, read that chapter, but here is what you would typically do. At star
 ON_CORESYSTEMS_STARTUP
 {
   // allocate an implementation of PrintInterface
-  s_PrintInterface = PLASMA_DEFAULT_NEW(PrintImplementation);
+  s_PrintInterface = PL_DEFAULT_NEW(PrintImplementation);
 
   s_PrintInterface->OnCoreSystemsStartup();
   s_PrintInterface->Print("Called ON_CORESYSTEMS_STARTUP");

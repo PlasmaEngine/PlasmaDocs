@@ -7,13 +7,13 @@ The code in Plasma Engine differentiates between two types of header files:
 * **Public Header Files**: Public header files are header files that can be included by third party. These header files should not leak any implementation details like platform headers. A third party is any library or executable outside of the currently compiled library / executable. For example when plFoundation is compiled, everything else is considered a third party.
 * **Internal Header Files**: Internal header files may include platform headers and leak implementation detail, but can only be used within a subcomponent of Plasma Engine (for example only inside plFoundation). Using them from outside of the component will cause a compiler error.
 
-To mark up a header file as a internal header file, first include the component's internal.h file and then use the component specific macro. The component's internal header file is called `ComponentInternal.h` and the macro is called `PLASMA_COMPONENT_INTERNAL_HEADER`.
+To mark up a header file as a internal header file, first include the component's internal.h file and then use the component specific macro. The component's internal header file is called `ComponentInternal.h` and the macro is called `PL_COMPONENT_INTERNAL_HEADER`.
 
 The following example shows how to mark a header file as internal for plFoundation:
 
 ```cpp
 #include <Foundation/FoundationInternal.h>
-PLASMA_FOUNDATION_INTERNAL_HEADER
+PL_FOUNDATION_INTERNAL_HEADER
 ```
 
 ## The Header Checker Tool
@@ -248,7 +248,7 @@ struct plTexture2D::Impl
 };
 
 plTexture2D::plTexture2D()
-: m_pImpl(PLASMA_DEFAULT_NEW(Impl))
+: m_pImpl(PL_DEFAULT_NEW(Impl))
 {
 
 }
@@ -318,7 +318,7 @@ plTexture2D::~plTexture2D() {}
 
 plUniquePtr<plTexture2D> plTexture2D::Make()
 {
-    return plUniquePtr<plTexture2D>(PLASMA_DEFAULT_NEW(plTexture2DImpl));
+    return plUniquePtr<plTexture2D>(PL_DEFAULT_NEW(plTexture2DImpl));
 }
 
 plTexture2D::Bind()
@@ -353,13 +353,13 @@ public:
     void Bind();
 
 private:
-#if PLASMA_ENABLED(PLASMA_PLATFORM_32BIT)
-    struct PLASMA_ALIGN(Impl, 4)
+#if PL_ENABLED(PL_PLATFORM_32BIT)
+    struct PL_ALIGN(Impl, 4)
     {
         plUInt8 m_Data[4];
     };
 #else
-    struct PLASMA_ALIGN(Impl, 8)
+    struct PL_ALIGN(Impl, 8)
     {
         plUInt8 m_Data[8];
     };

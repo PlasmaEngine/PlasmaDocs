@@ -15,7 +15,7 @@ On the other hand, ImGui is not meant to be styled. Changing the appearance of I
 #ifdef BUILDSYSTEM_ENABLE_IMGUI_SUPPORT
   if (plImgui::GetSingleton() == nullptr)
   {
-    PLASMA_DEFAULT_NEW(plImgui);
+    PL_DEFAULT_NEW(plImgui);
   }
 #endif
 ```
@@ -29,7 +29,7 @@ This can be done for example in `OnActivation()` of a custom [game state](../run
   if (plImgui::GetSingleton() != nullptr)
   {
     plImgui* pImgui = plImgui::GetSingleton();
-    PLASMA_DEFAULT_DELETE(pImgui);
+    PL_DEFAULT_DELETE(pImgui);
   }
 #endif
 ```

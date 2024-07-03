@@ -30,7 +30,7 @@ cgbookcase provides hundreds of high quality, PBR textures. All textures on cgbo
 
 Link: [https://github.com/ocornut/imgui](https://github.com/ocornut/imgui)
 
-Compile switch: **PLASMA_3RDPARTY_IMGUI_SUPPORT**
+Compile switch: **PL_3RDPARTY_IMGUI_SUPPORT**
 
 A nice library for easily creating ingame GUIs.
 
@@ -46,7 +46,7 @@ Used by plImage and the plTexConv tool for GPU-enabled block compression.
 
 Link: [https://duktape.org](https://duktape.org)
 
-Compile switch: **PLASMA_3RDPARTY_DUKTAPE_SUPPORT**
+Compile switch: **PL_3RDPARTY_DUKTAPE_SUPPORT**
 
 Duktape is an embeddable Javascript engine, with a focus on portability and compact footprint.
 It can be used directly or through plDuktapeWrapper. Non-essential for the engine, but scripting functionality (using [TypeScript](https://www.typescriptlang.org/)) is built on top of it.
@@ -55,7 +55,7 @@ It can be used directly or through plDuktapeWrapper. Non-essential for the engin
 
 Link: [http://enet.bespin.org](http://enet.bespin.org)
 
-Compile switch: **PLASMA_3RDPARTY_ENET_SUPPORT**
+Compile switch: **PL_3RDPARTY_ENET_SUPPORT**
 
 An efficient and easy to use networking library, built on top of the UDP protocol. It is used by plTelemetry to interact with the plInspector, and it is also used to implement the file serving functionality.
 
@@ -69,7 +69,7 @@ Some assets were kindly provided with permission to use and redistribute, by the
 
 Link: [https://www.fmod.com](https://www.fmod.com)
 
-Compile switch: **PLASMA_BUILD_FMOD**
+Compile switch: **PL_BUILD_FMOD**
 
 Plasma has an [integration for the FMOD sound system](../sound/fmod-overview.md).
 
@@ -95,7 +95,7 @@ A fast single file 2D voronoi diagram generator. Used by plBreakableSheetCompone
 
 Link: [https://github.com/jrouwe/JoltPhysics](https://github.com/jrouwe/JoltPhysics)
 
-Compile switch: **PLASMA_3RDPARTY_JOLT_SUPPORT**
+Compile switch: **PL_3RDPARTY_JOLT_SUPPORT**
 
 Jolt Physics is a free and open source physics engine. It is used to provide collision detection, physics simulation, character controllers and other interactions.
 
@@ -109,7 +109,7 @@ Kenney provides thousands of textures, 3D models and sound effects under a gener
 
 Link: [(http://www.lua.org](http://www.lua.org)
 
-Compile switch: **PLASMA_3RDPARTY_LUA_SUPPORT**
+Compile switch: **PL_3RDPARTY_LUA_SUPPORT**
 
 The Lua scripting language. Can be used directly or through plLuaWrapper for easier access to common functionality. Non-essential for Plasma, only the ingame console interpreter would stop working without it.
 
@@ -133,7 +133,7 @@ Used as the basis for skeletal animations. Both during asset import (to build an
 
 Link: [https://www.qt.io](https://www.qt.io)
 
-Compile switch: **PLASMA_ENABLE_QT_SUPPORT**
+Compile switch: **PL_ENABLE_QT_SUPPORT**
 
 Used for all desktop GUI code in the editor and tools.
 
@@ -145,13 +145,13 @@ Used for all desktop GUI code in the editor and tools.
 
 Link [https://github.com/githubuser0xFFFF/Qt-Advanced-Docking-System](https://github.com/githubuser0xFFFF/Qt-Advanced-Docking-System)
 
-Compile switch **PLASMA_3RDPARTY_ADS_SUPPORT**
+Compile switch **PL_3RDPARTY_ADS_SUPPORT**
 
 A docking system for Qt similiar to the one in visual studio. Used by the editor and inspector applications.
 
 ## Recast
 
-Compile switch: **PLASMA_3RDPARTY_RECAST_SUPPORT**
+Compile switch: **PL_3RDPARTY_RECAST_SUPPORT**
 
 Link: [https://github.com/recastnavigation/recastnavigation](https://github.com/recastnavigation/recastnavigation)
 
@@ -161,7 +161,7 @@ A library to generate navigation meshes from arbitrary 3D geometry.
 
 Link: [https://renderdoc.org](https://renderdoc.org)
 
-Compile switch: **PLASMA_3RDPARTY_RENDERDOC_SUPPORT**
+Compile switch: **PL_3RDPARTY_RENDERDOC_SUPPORT**
   
 RenderDoc is a free MIT licensed stand-alone graphics debugger. The plRenderDocPlugin enables full control over taking RenderDoc snapshots from within the engine.
 
@@ -211,7 +211,7 @@ A library that provides Unicode related functionality. Integrated directly into 
 
 Link: [https://github.com/kmammou/v-hacd](https://github.com/kmammou/v-hacd)
 
-Compile switch: **PLASMA_3RDPARTY_VHACD_SUPPORT**
+Compile switch: **PL_3RDPARTY_VHACD_SUPPORT**
 
 The "Volumetric Hierarchical Approximate Convex Decomposition" library is used to decompose a concave triangle mesh into multiple convex pieces. This allows you to generate complex [collision meshes](../physics/jolt/collision-shapes/jolt-collision-meshes.md) which can be used as the shapes of [dynamic actors](../physics/jolt/actors/jolt-dynamic-actor-component.md).
 
@@ -227,7 +227,7 @@ A very fast hash algorithm. Integrated directly into plFoundation.
 
 Link: [http://www.zlib.net](http://www.zlib.net)
 
-Compile switch: **PLASMA_3RDPARTY_ZLIB_SUPPORT**
+Compile switch: **PL_3RDPARTY_ZLIB_SUPPORT**
 
 Provides algorithms for zip compression and decompression. It is used by plCompressedStreamReaderZlib and plCompressedStreamWriterZlib in plFoundation.
 
@@ -235,6 +235,6 @@ Provides algorithms for zip compression and decompression. It is used by plCompr
 
 Link: [https://facebook.github.io/zstd](https://facebook.github.io/zstd)
 
-Compile switch: **PLASMA_3RDPARTY_ZSTD_SUPPORT**
+Compile switch: **PL_3RDPARTY_ZSTD_SUPPORT**
 
 A very fast lossless compression library. It is used by plCompressedStreamReaderZstd and plCompressedStreamWriterZstd and also by plArchive.

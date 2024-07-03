@@ -67,36 +67,36 @@ All component types must use [reflection](../reflection-system.md). Only reflect
 
 <!-- BEGIN-DOCS-CODE-SNIPPET: component-reflection-block -->
 ```cpp
-PLASMA_BEGIN_COMPONENT_TYPE(DebugRenderComponent, 2, plComponentMode::Static)
+PL_BEGIN_COMPONENT_TYPE(DebugRenderComponent, 2, plComponentMode::Static)
 {
-  PLASMA_BEGIN_PROPERTIES
+  PL_BEGIN_PROPERTIES
   {
-    PLASMA_MEMBER_PROPERTY("Size", m_fSize)->AddAttributes(new plDefaultValueAttribute(1), new plClampValueAttribute(0, 10)),
-    PLASMA_MEMBER_PROPERTY("Color", m_Color)->AddAttributes(new plDefaultValueAttribute(plColor::White)),
-    PLASMA_ACCESSOR_PROPERTY("Texture", GetTextureFile, SetTextureFile)->AddAttributes(new plAssetBrowserAttribute("Texture 2D")),
-    PLASMA_BITFLAGS_MEMBER_PROPERTY("Render", DebugRenderComponentMask, m_RenderTypes)->AddAttributes(new plDefaultValueAttribute(DebugRenderComponentMask::Box)),
+    PL_MEMBER_PROPERTY("Size", m_fSize)->AddAttributes(new plDefaultValueAttribute(1), new plClampValueAttribute(0, 10)),
+    PL_MEMBER_PROPERTY("Color", m_Color)->AddAttributes(new plDefaultValueAttribute(plColor::White)),
+    PL_ACCESSOR_PROPERTY("Texture", GetTextureFile, SetTextureFile)->AddAttributes(new plAssetBrowserAttribute("Texture 2D")),
+    PL_BITFLAGS_MEMBER_PROPERTY("Render", DebugRenderComponentMask, m_RenderTypes)->AddAttributes(new plDefaultValueAttribute(DebugRenderComponentMask::Box)),
   }
-  PLASMA_END_PROPERTIES;
+  PL_END_PROPERTIES;
 
-  PLASMA_BEGIN_ATTRIBUTES
+  PL_BEGIN_ATTRIBUTES
   {
     new plCategoryAttribute("SampleGamePlugin"), // Component menu group
   }
-  PLASMA_END_ATTRIBUTES;
+  PL_END_ATTRIBUTES;
 
-  PLASMA_BEGIN_MESSAGEHANDLERS
+  PL_BEGIN_MESSAGEHANDLERS
   {
-    PLASMA_MESSAGE_HANDLER(plMsgSetColor, OnSetColor)
+    PL_MESSAGE_HANDLER(plMsgSetColor, OnSetColor)
   }
-  PLASMA_END_MESSAGEHANDLERS;
+  PL_END_MESSAGEHANDLERS;
 
-  PLASMA_BEGIN_FUNCTIONS
+  PL_BEGIN_FUNCTIONS
   {
-    PLASMA_SCRIPT_FUNCTION_PROPERTY(SetRandomColor)
+    PL_SCRIPT_FUNCTION_PROPERTY(SetRandomColor)
   }
-  PLASMA_END_FUNCTIONS;
+  PL_END_FUNCTIONS;
 }
-PLASMA_END_COMPONENT_TYPE
+PL_END_COMPONENT_TYPE
 ```
 <!-- END-DOCS-CODE-SNIPPET -->
 
@@ -150,7 +150,7 @@ In the component reflection block you have to specify whether a component is 'dy
 
 <!-- BEGIN-DOCS-CODE-SNIPPET: component-reflection -->
 ```cpp
-PLASMA_BEGIN_COMPONENT_TYPE(DemoComponent, 3 /* version */, plComponentMode::Dynamic)
+PL_BEGIN_COMPONENT_TYPE(DemoComponent, 3 /* version */, plComponentMode::Dynamic)
 ```
 <!-- END-DOCS-CODE-SNIPPET -->
 
@@ -188,7 +188,7 @@ When you deserialize a component, you need to handle **versioning**. Every compo
 
 <!-- BEGIN-DOCS-CODE-SNIPPET: component-reflection -->
 ```cpp
-PLASMA_BEGIN_COMPONENT_TYPE(DemoComponent, 3 /* version */, plComponentMode::Dynamic)
+PL_BEGIN_COMPONENT_TYPE(DemoComponent, 3 /* version */, plComponentMode::Dynamic)
 ```
 <!-- END-DOCS-CODE-SNIPPET -->
 

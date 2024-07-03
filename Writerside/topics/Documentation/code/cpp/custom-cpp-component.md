@@ -22,7 +22,7 @@ using DemoComponentManager = plComponentManagerSimple<class DemoComponent, plCom
 
 ## Component Class Declaration
 
-Next, we declare our component class. All components must derive (at least indirectly) from `plComponent`. Also vital is to insert the `PLASMA_DECLARE_COMPONENT_TYPE` macro, where you pass in the own component class name, the base class, and the component manager class.
+Next, we declare our component class. All components must derive (at least indirectly) from `plComponent`. Also vital is to insert the `PL_DECLARE_COMPONENT_TYPE` macro, where you pass in the own component class name, the base class, and the component manager class.
 
 <!-- BEGIN-DOCS-CODE-SNIPPET: customcomp-class -->
 ```cpp
@@ -69,7 +69,7 @@ In our cpp file we need to insert a [reflection](../../runtime/reflection-system
 // clang-format off
 PL_BEGIN_COMPONENT_TYPE(DemoComponent, 3 /* version */, plComponentMode::Dynamic)
 {
-  PLASMA_BEGIN_PROPERTIES
+  PL_BEGIN_PROPERTIES
   {
     PL_MEMBER_PROPERTY("Amplitude", m_fAmplitude)->AddAttributes(new plDefaultValueAttribute(1), new plClampValueAttribute(0, 10)),
     PL_MEMBER_PROPERTY("Speed", m_Speed)->AddAttributes(new plDefaultValueAttribute(plAngle::Degree(90))),

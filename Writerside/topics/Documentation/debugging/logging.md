@@ -13,7 +13,7 @@ The log is accessible through the `plLog` class. There are multiple functions to
 * `plLog::SeriousWarning` - for problems that should be fixed but won't crash the system just now
 * `plLog::Error` - for errors
 
-Log messages can be *grouped* using the `PLASMA_LOG_BLOCK` macro.
+Log messages can be *grouped* using the `PL_LOG_BLOCK` macro.
 
 ### TypeScript
 
