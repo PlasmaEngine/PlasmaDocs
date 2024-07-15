@@ -7,7 +7,8 @@
                  start-page="index.md">
 
     <toc-element topic="index.md"/>
-    <toc-element topic="Getting-Started.md"/>
+    <toc-element toc-title="API-Docs" accepts-web-file-names="annotated.htm" target-for-accept-web-file-names="https://plasmaengine.github.io/API-Docs/annotated.htm"/>
+    <toc-element topic="Getting-Started.md" accepts-web-file-names="API-Docs/index.htm"/>
     <toc-element topic="Samples.md">
         <toc-element topic="testing-chambers.md"/>
         <toc-element topic="shader-explorer.md"/>
