@@ -304,6 +304,17 @@
             <toc-element topic="reflection-system.md"/>
             <toc-element topic="filesystem.md"/>
         </toc-element>
+        <toc-element topic="Scenes.md">
+            <toc-element topic="selection.md"/>
+            <toc-element topic="scene-layers.md"/>
+            <toc-element topic="scene-editing.md"/>
+            <toc-element topic="object-references.md"/>
+            <toc-element topic="greyboxing.md"/>
+            <toc-element topic="gizmos.md"/>
+            <toc-element topic="exposed-parameters.md"/>
+            <toc-element topic="editor-camera.md"/>
+            <toc-element topic="advanced-object-transform.md"/>
+        </toc-element>
         <toc-element topic="Shipping.md">
             <toc-element topic="project-export.md"/>
         </toc-element>
