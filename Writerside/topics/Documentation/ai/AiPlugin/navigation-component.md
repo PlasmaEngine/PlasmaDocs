@@ -22,7 +22,7 @@ This component demonstrates how navigation for an NPC can be implemented. It is 
 * `Reached Distance`: The distance at which the destination is considered to be reached.
 * `Collision Layer`: The physics collision layer for determining what ground one can stand on.
 * `Fall Height`: If there is more distance below the character than this, it is considered to be falling.
-* `Debug Flags`: What aspects of the navi`gation to visualize.
+* `Debug Flags`: What aspects of the navigation to visualize.
 
 ## See Also
 
