@@ -1,18 +1,18 @@
 # Sensor Components
 
-*Sensor components* are used to detect objects in a certain area and inform other game code about them. Contrary to [triggers](../physics/jolt/actors/jolt-trigger-component.md), they use the [spatial system](../runtime/world/spatial-system.md), so they work even without a physics engine. However, the sensor component can utilize additional physics raycasts, to determine whether something inside the volume is also visible and not occluded by walls.
+*Sensor components* are used to detect objects in a certain area and inform other game code about them. Contrary to [triggers](jolt-trigger-component.md), they use the [spatial system](spatial-system.md), so they work even without a physics engine. However, the sensor component can utilize additional physics raycasts, to determine whether something inside the volume is also visible and not occluded by walls.
 
  Sensor components are meant for AI use cases, such as determining line of sight, hearing noises or even smelling odors.
 
 ![Sensor components](media/sensor-components.jpg)
 
-Generally the sensors query the [spatial system](../runtime/world/spatial-system.md) to detect certain objects. Use the [marker component](../gameplay/marker-component.md) to make something detectable. For example, to make a creature able to smell the player, regularly drop markers at the player's current location, that vanish after a while, so that the creature can detect and follow these markers.
+Generally the sensors query the [spatial system](spatial-system.md) to detect certain objects. Use the [marker component](marker-component.md) to make something detectable. For example, to make a creature able to smell the player, regularly drop markers at the player's current location, that vanish after a while, so that the creature can detect and follow these markers.
 
 ## State Reporting
 
 Sensors keep track of the objects that entered their volume. During every update they determine whether objects are still inside the volume or whether their visibility changed (line-of-sight occluded).
 
-If anything changes, a sensor [sends the message](../runtime/world/world-messaging.md) `plMsgSensorDetectedObjectsChanged`, which contains the full array of currently detected objects.
+If anything changes, a sensor [sends the message](world-messaging.md) `plMsgSensorDetectedObjectsChanged`, which contains the full array of currently detected objects.
 
 ## Performance Considerations
 
@@ -27,9 +27,11 @@ Finally, you should decide whether doing a visibility check is always necessary.
 ### Shared Component Properties
 
 * `UpdateRate`: How often the sensor component should query the world for changes. The higher the update rate, the more responsive it will be, and the less likely that short events are missed. However, higher update rates also require more processing time.
-* `SpatialCategory`: The [spatial category](../runtime/world/spatial-system.md) of objects that should trigger the sensor component.
+* `SpatialCategory`: The [spatial category](spatial-system.md) of objects that should trigger the sensor component.
+* `IncludeTags`: If not empty, only objects with these tags are considered.
+* `ExcludeTags`: If not empty, objects with these tags are ignored.
 * `TestVisibility`: If enabled, the sensor will cast additional rays using the physics engine, to determine whether the target is occluded by walls or clearly visible.
-* `CollisionLayer`: The [collision layer](../physics/jolt/collision-shapes/jolt-collision-layers.md) to use for the visibility raycast.
+* `CollisionLayer`: The [collision layer](jolt-collision-layers.md) to use for the visibility raycast.
 * `ShowDebugInfo`: If enabled, additional debug geometry is rendered to visualize the sensor volume and state.
 * `Color`: This color is used for the debug visualization. Can be used to easily distinguish what type of sensor this is.
 
@@ -47,7 +49,7 @@ Finally, you should decide whether doing a visibility check is always necessary.
 
 ## See Also
 
-* [Marker Component](../gameplay/marker-component.md)
+* [Marker Component](marker-component.md)
 * [State Machine Component](state-machine-component.md)
-* [Custom Code](../custom-code/custom-code-overview.md)
-* [Blackboards](../Miscellaneous/blackboards.md)
+* [Custom Code](Code.md)
+* [Blackboards](blackboards.md)

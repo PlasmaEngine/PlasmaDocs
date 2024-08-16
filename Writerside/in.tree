@@ -181,6 +181,7 @@
             <toc-element topic="Lighting.md">
                 <toc-element topic="ambient-light-component.md"/>
                 <toc-element topic="directional-light-component.md"/>
+                <toc-element topic="fill-light-component.md"/>
                 <toc-element topic="reflection-probe-components.md"/>
                 <toc-element topic="point-light-component.md"/>
                 <toc-element topic="dynamic-shadows.md"/>
