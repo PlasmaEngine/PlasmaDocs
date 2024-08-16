@@ -17,6 +17,8 @@
     <toc-element topic="Documentation.md">
         <toc-element topic="AI.md">
             <toc-element topic="AI-Plugin.md">
+                <toc-element topic="navigation-component.md"/>
+                <toc-element topic="navmesh-obstacle-component.md"/>
                 <toc-element topic="navmesh-path-test-component.md"/>
                 <toc-element topic="runtime-navmesh.md"/>
             </toc-element>
