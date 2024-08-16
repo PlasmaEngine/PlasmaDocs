@@ -24,7 +24,7 @@ All modifiers can be combined.
 
 ### Gizmos in Orthographic Views
 
-When the *Translate*, *Rotate* or *Scale* gizmo is active, holding `LMB` and moving the mouse will modify objects. The perspective of the selected [view](../editor/editor-views.md) (top-down, front, right) determines along which axis the object will be translated or rotated (always in global space). *Scale* will always be uniform.
+When the *Translate*, *Rotate* or *Scale* gizmo is active, holding `LMB` and moving the mouse will modify objects. The perspective of the selected [view](editor-views.md) (top-down, front, right) determines along which axis the object will be translated or rotated (always in global space). *Scale* will always be uniform.
 
 > **Note:**
 >
@@ -36,7 +36,7 @@ Press `End` or the respective icon from the toolbar to open the snap settings:
 
 ![Snap Settings](media/snap-settings.png)
 
-These affect not only the gizmos, but also the positioning of [assets](../assets/assets-overview.md) dragged from the [asset browser](../assets/asset-browser.md) into the scene.
+These affect not only the gizmos, but also the positioning of [assets](assets-overview.md) dragged from the [asset browser](asset-browser.md) into the scene.
 
 ## Grid
 
@@ -54,7 +54,7 @@ Manipulators are component and property specific gizmos. Properties of a compone
 
 ### Manipulators in Orthographic Views
 
-Most manipulators will not be available in orthographic [views](../editor/editor-views.md).
+Most manipulators will not be available in orthographic [views](editor-views.md).
 
 ## Visualizers
 

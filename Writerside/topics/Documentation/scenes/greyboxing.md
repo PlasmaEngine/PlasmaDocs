@@ -34,19 +34,19 @@ By default you will draw the next shape starting at the picked position under yo
 
 ## Materials
 
-You can change the material of a greybox shape either through its properties, or by dragging and dropping a material from the [asset browser](../assets/asset-browser.md) onto the shape. Additionally, if you have a material selected in the [asset browser](../assets/asset-browser.md) while creating a new shape, it will automatically get that material assigned.
+You can change the material of a greybox shape either through its properties, or by dragging and dropping a material from the [asset browser](asset-browser.md) onto the shape. Additionally, if you have a material selected in the [asset browser](asset-browser.md) while creating a new shape, it will automatically get that material assigned.
 
 ## Static Collision
 
-As long as a greyboxing object has the `GenerateCollision` property set, it will automatically get a [collision mesh](../physics/jolt/collision-shapes/jolt-collision-meshes.md) with the default [collision layer](../physics/jolt/collision-shapes/jolt-collision-layers.md) (`0`). It's assigned [material](../materials/materials-overview.md) determines which [surface](../materials/surfaces.md) is used for physical interactions.
+As long as a greyboxing object has the `GenerateCollision` property set, it will automatically get a [collision mesh](jolt-collision-meshes.md) with the default [collision layer](jolt-collision-layers.md) (`0`). It's assigned [material](materials-overview.md) determines which [surface](surfaces.md) is used for physical interactions.
 
 ## Dynamic Collision
 
-The greyboxing shape is not meant to be used for dynamic collisions. That means, if you attach a dynamic [Jolt](../physics/jolt/jolt-overview.md) actor, it will not get the necessary physical setup to behave correctly. Instead, its collision mesh will simply be disabled entirely. You can therefore use greybox shapes for dynamic objects, but you need to add the required physics shapes yourself.
+The greyboxing shape is not meant to be used for dynamic collisions. That means, if you attach a dynamic [Jolt](jolt-overview.md) actor, it will not get the necessary physical setup to behave correctly. Instead, its collision mesh will simply be disabled entirely. You can therefore use greybox shapes for dynamic objects, but you need to add the required physics shapes yourself.
 
 ## Occlusion
 
-Greyboxing geometry can act as occluders for [occlusion culling](../performance/occlusion-culling.md). By default this is enabled for all greyboxing geometry, but it should be disabled for small objects and objects that are unlikely to occlude much. Also consider disabling it for more detailed geometry. If you need an invisible occluder, use an [occluder component](../graphics/occluder-component.md) instead.
+Greyboxing geometry can act as occluders for [occlusion culling](occlusion-culling.md). By default this is enabled for all greyboxing geometry, but it should be disabled for small objects and objects that are unlikely to occlude much. Also consider disabling it for more detailed geometry. If you need an invisible occluder, use an [occluder component](occluder-component.md) instead.
 
 ## See Also
 

@@ -4,7 +4,7 @@ A *mesh asset* represents a mesh that can be used for rendering. In the most com
 
 ![Mesh Asset](media/mesh-asset.jpg)
 
-The left hand side of the [asset document](../../assets/assets-overview.md) shows a 3D preview of the mesh. The viewport allows to switch the [render mode](../../editor/editor-views.md#render-modes) to inspect the mesh normals, UV coordinates and so on.
+The left hand side of the [asset document](assets-overview.md) shows a 3D preview of the mesh. The viewport allows to switch the [render mode](editor-views.md#render-modes) to inspect the mesh normals, UV coordinates and so on.
 
 On the right hand side the asset properties specify how to import or generate the mesh data.
 
@@ -24,13 +24,20 @@ On the right hand side the asset properties specify how to import or generate th
 
 * `NormalPrecision`, `TexCoordPrecision`: These options allow you to choose how precise normals and UV coordinates are represented. Leave these at the default, unless you notice precision issues. Higher precision means the mesh takes up more RAM on the GPU and is slightly slower to render.
 
-* `ImportMaterials`: If enabled, the mesh import automatically generates [material assets](../../materials/materials-overview.md) for the materials that the mesh file specifies. It also tries to populate those materials with sensible values and if possible also creates [texture assets](../textures-overview.md). Unfortunately this rarely works perfectly, and typically requires you to fix the generated assets afterwards.
+* `VertexColorConversion`: How to convert the vertex colors during import:
+  * `None`: The color values are taken as-is.
+  * `Linear To sRGB`: The values are considered to be in linear space, and converted to Gamma space.
+  * `sRGB To Linear`: The values are considered to be in Gamme space, and converted to linear space.
+
+  Which value to use depends on what the vertex color represents. Blender treats all vertex colors as sRGB but the behavior differs depending on which file format you export to. E.g. for FBX the colors are passed through as is but for GLTF the colors are converted to linear. It now depends on what the shader wants to do with the vertex colors: If used as a color multiplier, treating them as sRGB and converting to linear is correct, so the FBX file would be wrong when imported into Plasma. If used as blend weights or other custom data, the sRGB to linear that GLTF does is wrong.
+
+* `ImportMaterials`: If enabled, the mesh import automatically generates [material assets](materials-overview.md) for the materials that the mesh file specifies. It also tries to populate those materials with sensible values and if possible also creates [texture assets](textures-overview.md). Unfortunately this rarely works perfectly, and typically requires you to fix the generated assets afterwards.
 
   > **Note:**
   >
   > Materials are only generated when the mesh has no materials set yet. After the initial creation of these other assets, you usually need to **transform the mesh a second time** to make them properly show up.
 
-* `Materials`: The list of [materials](../../materials/materials-overview.md) to use. The mesh may have multiple *sub-meshes*, and each sub-mesh uses a different material slot. [Mesh components](mesh-component.md) can override which material is used for which slot.
+* `Materials`: The list of [materials](materials-overview.md) to use. The mesh may have multiple *sub-meshes*, and each sub-mesh uses a different material slot. [Mesh components](mesh-component.md) can override which material is used for which slot.
 
 ### Procedural Mesh Generation
 
@@ -40,8 +47,7 @@ Be aware that some *detail* values seemingly have no effect. For instance, for c
 
 ## See Also
 
-
 * [Meshes](Meshes.md)
-* [Materials](../../materials/materials-overview.md)
-* [Assets](../../assets/assets-overview.md)
-* [Asset Import](../../assets/import-assets.md)
+* [Materials](materials-overview.md)
+* [Assets](assets-overview.md)
+* [Asset Import](import-assets.md)

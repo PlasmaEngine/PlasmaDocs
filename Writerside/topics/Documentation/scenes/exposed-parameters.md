@@ -1,6 +1,6 @@
 # Exposed Parameters
 
-Some [asset types](../assets/assets-overview.md) support so called *exposed parameters*. That means that an asset, such as a [particle effect](../effects/particle-effects/particle-effects-overview.md), a [prefab](../prefabs/prefabs-overview.md) or a [script](../custom-code/typescript/typescript-overview.md) may provide parameters, that can be set through a corresponding component, such that each instance of the asset acts differently.
+Some [asset types](assets-overview.md) support so called *exposed parameters*. That means that an asset, such as a [particle effect](Particle-Effects.md), a [prefab](prefabs-overview.md) or a [script](TypeScript.md) may provide parameters, that can be set through a corresponding component, such that each instance of the asset acts differently.
 
 As an example, particle effects may expose a parameter that allows you to adjust their color. Now every time you add that particle effect to a scene, you can select the color for that particular instance, through the particle effect component. Similarly, scripts can expose parameters, which allow you to configure the starting conditions of the script.
 
@@ -8,7 +8,7 @@ Using exposed parameters to make an asset more versatile is usually less work an
 
 ## Exposed Prefab Parameters
 
-In [prefabs](../prefabs/prefabs-overview.md) you can expose most types of properties of any component. When a prefab has any exposed parameters, they show up in the prefab reference component like this:
+In [prefabs](prefabs-overview.md) you can expose most types of properties of any component. When a prefab has any exposed parameters, they show up in the prefab reference component like this:
 
 ![Prefab Parameters](media/exposed-parameters.png)
 
@@ -38,6 +38,6 @@ If a prefab contains an object that requires an [object reference](object-refere
 
 
 * [Object References](object-references.md)
-* [Particle Effect Component](../effects/particle-effects/particle-effect-component.md)
-* [TypeScript Component](../custom-code/typescript/ts-component.md)
-* [Prefabs](../prefabs/prefabs-overview.md)
+* [Particle Effect Component](particle-effect-component.md)
+* [TypeScript Component](ts-component.md)
+* [Prefabs](prefabs-overview.md)

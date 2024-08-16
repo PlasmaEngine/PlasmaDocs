@@ -53,7 +53,7 @@ Operations such as moving an object from one layer to another, are effectively t
 
 ## Exporting Scenes with Layers
 
-When [exporting a scene](../editor/run-scene.md#export-and-run) all data is exported into a single file. Currently there is no runtime concept of layers (although this may be added later, since this can be useful for streaming large worlds).
+When [exporting a scene](run-scene.md#export-and-run) all data is exported into a single file. Currently there is no runtime concept of layers (although this may be added later, since this can be useful for streaming large worlds).
 
 However, only the objects from *loaded layers* are put into the exported scene file. *Unloaded layers* don't contribute to the result. This can be utilized to export only a part of a scene to speed up loading times during testing.
 
@@ -63,7 +63,7 @@ Since every layer is a separate file, each one also has its own modified flag (t
 
 ## Object References across Layers
 
-Creating [object references](object-references.md) across scene layers is not possible (and also not planned to ever be allowed). Objects that should reference each other must either be in the same scene layer, or one of them has to be a [prefab](../prefabs/prefabs-overview.md) and [expose the reference property](exposed-parameters.md) in a useful way.
+Creating [object references](object-references.md) across scene layers is not possible (and also not planned to ever be allowed). Objects that should reference each other must either be in the same scene layer, or one of them has to be a [prefab](prefabs-overview.md) and [expose the reference property](exposed-parameters.md) in a useful way.
 
 ## Multi-User Editing with Layers
 
@@ -84,9 +84,9 @@ Of course all of these methods can also be mixed and matched as makes most sense
 
 ## Miscellaneous Tips
 
-Some objects are more important during editing than others. For example the objects that configure the overall level [lighting](../graphics/lighting/ambient-light-component.md), [skybox](../effects/sky.md), [player start position](../gameplay/player-start-point.md), [physics settings](../physics/jolt/jolt-settings-component.md), [cameras](../graphics/camera-component.md) and so on. It is very useful to put all of these objects into a dedicated layer, because that makes finding them much easier.
+Some objects are more important during editing than others. For example the objects that configure the overall level [lighting](ambient-light-component.md), [skybox](sky.md), [player start position](player-start-point.md), [physics settings](jolt-settings-component.md), [cameras](camera-component.md) and so on. It is very useful to put all of these objects into a dedicated layer, because that makes finding them much easier.
 
 ## See Also
 
 * [Scene Editing](scene-editing.md)
-* [Editor Documents](../editor/editor-documents.md)
+* [Editor Documents](editor-documents.md)

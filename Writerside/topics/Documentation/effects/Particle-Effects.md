@@ -1,8 +1,8 @@
 # Particle Effects
 
-Particle effects are used to create the visual part of things like explosions, smoke, fire, water splashes and much more. They are randomized to have slight variations every time. To create a full effect, like an explosion, with [sound](../../sound/sound-overview.md) and physical properties such as pushing nearby objects away or damaging objects and creatures, a particle effect is typically put into a [prefab](../../prefabs/prefabs-overview.md), which contains additional components for sound and game play logic (e.g. through [scripts](../../custom-code/typescript/typescript-overview.md)).
+Particle effects are used to create the visual part of things like explosions, smoke, fire, water splashes and much more. They are randomized to have slight variations every time. To create a full effect, like an explosion, with [sound](sound-overview.md) and physical properties such as pushing nearby objects away or damaging objects and creatures, a particle effect is typically put into a [prefab](prefabs-overview.md), which contains additional components for sound and game play logic (e.g. through [scripts](TypeScript.md)).
 
-To create a new particle effect, use *Editor > Create Document* and select *Particle Effect* as the file type. Or alternatively, right-click on any asset in the [asset browser](../../assets/asset-browser.md) and select *New > Particle Effect*.
+To create a new particle effect, use *Editor > Create Document* and select *Particle Effect* as the file type. Or alternatively, right-click on any asset in the [asset browser](asset-browser.md) and select *New > Particle Effect*.
 
 ## Particle Editor UI
 
@@ -22,7 +22,7 @@ When you add a new particle system with the green '+' button, you get a new syst
 
 ### Effect
 
-The **Effect** panel lists options for the overall effect, independent of the individual particle systems. Adjusting these options is typically only necessary once an effect is working well and you need to tweak its performance or allow users to adjust details through [exposed parameters](../../scenes/exposed-parameters.md).
+The **Effect** panel lists options for the overall effect, independent of the individual particle systems. Adjusting these options is typically only necessary once an effect is working well and you need to tweak its performance or allow users to adjust details through [exposed parameters](exposed-parameters.md).
 
 ### Emitter, Initializers, Behaviors and Renderers
 
@@ -80,7 +80,7 @@ For details about all available renderer types, see [Particle Renderers](particl
 
 ## Effect Parameters
 
-*Effect parameters* are an advanced feature that allows you to make certain parts of an effect configurable from the outside. You add effect parameters in the *Effect tab*. At the moment only *number parameters* and *color parameters* are supported. All parameters that you add there will appear as [exposed parameters](../../scenes/exposed-parameters.md) on [particle effect components](particle-effect-component.md).
+*Effect parameters* are an advanced feature that allows you to make certain parts of an effect configurable from the outside. You add effect parameters in the *Effect tab*. At the moment only *number parameters* and *color parameters* are supported. All parameters that you add there will appear as [exposed parameters](exposed-parameters.md) on [particle effect components](particle-effect-component.md).
 
 Effect parameters can only affect select features. For example the [quad renderer](particle-renderers.md#quad-renderer) has a `TintColorParam` property. If you type in the name of a *color parameter* there, the quad renderer will look up the value of the color parameter during every update, and use that to modulate the final color of the rendered particle.
 
@@ -175,6 +175,12 @@ However, there are also effects which do not need to be updated, at all, when in
 And there are even effects that can be discarded entirely, when out of view. Bullet impact effects, for example, may be so small and have such a short life span, that there is no value in updating them at all, unless they are visible to begin with.
 
 Which update method to use can be chosen from the *Effect tab* using the **WhenInvisible** property.
+
+### Wind Influence
+
+Particles may be pushed by [wind](wind.md). Place [wind volumes](wind-volume-components.md) to define the local wind strength and direction.
+
+On the *effect* you can configure the number of *wind samples* that should be taken to evaluate how the particles are affected. Use as few samples as necessary, potentially even just 1. Only use more samples for large effects where a single sample would look unnatural.
 
 ## See Also
 

@@ -1,14 +1,14 @@
 # Scene Editing
 
-A scene or level is a [document](../editor/editor-documents.md) like all assets. To edit a scene there are multiple tools available. This page gives a broad overview what tools there are and in what order to try them out.
+A scene or level is a [document](editor-documents.md) like all assets. To edit a scene there are multiple tools available. This page gives a broad overview what tools there are and in what order to try them out.
 
 ## Basics
 
 ### Open a Project and Scene
 
-You can start editing an existing project and scene, or you can create your own. See the article about [projects](../projects/projects-overview.md) for how to do so. We suggest to start by looking at the [Testing Chambers](../../samples/testing-chambers.md) project, even if you then use an empty scene, as there are some useful prefabs in that project.
+You can start editing an existing project and scene, or you can create your own. See the article about [projects](projects-overview.md) for how to do so. We suggest to start by looking at the [Testing Chambers](testing-chambers.md) project, even if you then use an empty scene, as there are some useful prefabs in that project.
 
-If you don't have a scene open yet, the easiest way is to set the *Filter* in the [asset browser](../assets/asset-browser.md) to **Scene** and then double click one of the scenes that belong to that project.
+If you don't have a scene open yet, the easiest way is to set the *Filter* in the [asset browser](asset-browser.md) to **Scene** and then double click one of the scenes that belong to that project.
 
 ### First Steps
 
@@ -20,7 +20,7 @@ With one or multiple objects selected, you can try out the [editing gizmos](gizm
 
 ### Add Objects
 
-The easiest way to add objects to a scene is to *drag and drop* existing items from the [asset browser](../assets/asset-browser.md) into the scene. You would mostly do this for [meshes](../graphics/meshes/mesh-asset.md) and [prefabs](../prefabs/prefabs-overview.md), but it works for many asset types. If you want to get your own assets into the editor, you should read up on how to [import assets](../assets/import-assets.md).
+The easiest way to add objects to a scene is to *drag and drop* existing items from the [asset browser](asset-browser.md) into the scene. You would mostly do this for [meshes](mesh-asset.md) and [prefabs](prefabs-overview.md), but it works for many asset types. If you want to get your own assets into the editor, you should read up on how to [import assets](import-assets.md).
 
 ### Create Objects
 
@@ -50,7 +50,7 @@ To get some geometry into your scene, you can use the [greyboxing](greyboxing.md
 
 ### Play
 
-You can now try to [run your scene](../editor/run-scene.md). If you use the [Testing Chambers](../../samples/testing-chambers.md) sample project, and you created an empty scene, make sure to add a [Player Start Point](../gameplay/player-start-point.md) and make it reference the `Player` prefab. This way when you use *Play-the-Game* mode, you get a first person shooter game play experience.
+You can now try to [run your scene](run-scene.md). If you use the [Testing Chambers](testing-chambers.md) sample project, and you created an empty scene, make sure to add a [Player Start Point](player-start-point.md) and make it reference the `Player` prefab. This way when you use *Play-the-Game* mode, you get a first person shooter game play experience.
 
 ## Advanced
 
@@ -58,15 +58,15 @@ Now that you know the basics, you can explore some of the more advanced function
 
 ### Views
 
-Apart from the single 3D perspective view, there are also orthographic views and different types of render modes. [This article](../editor/editor-views.md) describes all the details.
+Apart from the single 3D perspective view, there are also orthographic views and different types of render modes. [This article](editor-views.md) describes all the details.
 
 ### Materials
 
-Materials are what is used to give objects a texture. There is much more to this and the [chapter about materials](../materials/materials-overview.md) lists all the details, but for the time being you can get away with just the most simple material setup. For instance, when you [import](../assets/import-assets.md) a [mesh](../graphics/meshes/meshes-overview.md), it may add materials automatically for you. Usually you just need to make sure that the paths to the referenced [textures](../graphics/textures-overview.md) are correct.
+Materials are what is used to give objects a texture. There is much more to this and the [chapter about materials](materials-overview.md) lists all the details, but for the time being you can get away with just the most simple material setup. For instance, when you [import](import-assets.md) a [mesh](Meshes.md), it may add materials automatically for you. Usually you just need to make sure that the paths to the referenced [textures](textures-overview.md) are correct.
 
 ### Physics
 
-The fun really starts once you get to play around with physics. Read up on the [Jolt Physics integration](../physics/jolt/jolt-overview.md) for this. For a basic setup you always need at least an [actor component](../physics/jolt/actors/jolt-actors.md) ([static](../physics/jolt/actors/jolt-static-actor-component.md) for scene geometry, [dynamic](../physics/jolt/actors/jolt-dynamic-actor-component.md) for stuff that should fall down) and a [shape component](../physics/jolt/collision-shapes/jolt-shapes.md) to give the object a physical shape.
+The fun really starts once you get to play around with physics. Read up on the [Jolt Physics integration](jolt-overview.md) for this. For a basic setup you always need at least an [actor component](jolt-actors.md) ([static](jolt-static-actor-component.md) for scene geometry, [dynamic](jolt-dynamic-actor-component.md) for stuff that should fall down) and a [shape component](jolt-shapes.md) to give the object a physical shape.
 
 ### Advanced Editing
 
@@ -79,13 +79,13 @@ Once your scene starts to become bigger, you may want to use [scene layers](scen
 
 ## Next Steps
 
-Now that you are familiar with how to create, edit and test a basic scene, there are many other things to explore. [Decals](../effects/decals.md) and [particle effects](../effects/particle-effects/particle-effects-overview.md) can make your scene more interesting. Proper [sounds](../sound/sound-overview.md) add a lot of atmosphere. And finally, by writing [custom code](../custom-code/custom-code-overview.md), either in C++ or through scripting, you will bring your own game idea to life.
+Now that you are familiar with how to create, edit and test a basic scene, there are many other things to explore. [Decals](decals.md) and [particle effects](Particle-Effects.md) can make your scene more interesting. Proper [sounds](sound-overview.md) add a lot of atmosphere. And finally, by writing [custom code](Code.md), either in C++ or through scripting, you will bring your own game idea to life.
 
 ## See Also
 
 
-* [Asset Browser](../assets/asset-browser.md)
+* [Asset Browser](asset-browser.md)
 * [Editor Camera](editor-camera.md)
 * [Editing Gizmos](gizmos.md)
 * [Greyboxing](greyboxing.md)
-* [Running a Scene](../editor/run-scene.md)
+* [Running a Scene](run-scene.md)

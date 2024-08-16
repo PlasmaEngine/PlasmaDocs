@@ -29,7 +29,7 @@ In the following `LMB` refers to the *left mouse button*, `RMB` to the *right mo
   * Pressing `F` once will only *pan* the camera towards the selected objects
   * Pressing `F` a second time will additionally zoom in on them
 
-* `SHIFT + F`: Same as `F` but frames the object in all [views](../editor/editor-views.md) simultaneously
+* `SHIFT + F`: Same as `F` but frames the object in all [views](editor-views.md) simultaneously
   * This can also be triggered by double-clicking an item in the *Scenegraph*
 
 * `ALT + LMB`: Orbit around the last *framed* object
@@ -56,9 +56,9 @@ To temporarily focus on certain objects, it is possible to make objects invisibl
 * `CTRL + H`: Show all hidden objects
 * `SHIFT + H`: Hide all objects that are not selected
 
-Note that 'hide unselected' may hide lighting nodes, which can turn your level very dark. You can either activate [ambient lighting](../graphics/lighting/lighting-overview.md) in your scene, or switch the [render mode](../editor/editor-views.md#render-modes) to 'Diffuse Color', if necessary.
+Note that 'hide unselected' may hide lighting nodes, which can turn your level very dark. You can either activate [ambient lighting](Lighting.md) in your scene, or switch the [render mode](editor-views.md#render-modes) to 'Diffuse Color', if necessary.
 
-The hidden state of objects is not saved in the scene. Also [Play-the-Game](../editor/run-scene.md) mode and [plPlayer](../tools/player.md) always show all objects. Similarly, the hidden state only excludes objects from rendering, not from simulation.
+The hidden state of objects is not saved in the scene. Also [Play-the-Game](run-scene.md) mode and [plPlayer](player.md) always show all objects. Similarly, the hidden state only excludes objects from rendering, not from simulation.
 
 ## Favorite Cameras
 
@@ -80,10 +80,10 @@ The level camera actions can also be found in the menu *Scene > Favorite Cameras
 
 ## Field of View
 
-The editor camera uses a fixed *field of view* (FOV). The FOV can be changed in the [preferences](../editor/editor-settings.md#preferences).
+The editor camera uses a fixed *field of view* (FOV). The FOV can be changed in the [preferences](editor-settings.md#preferences).
 
 ## See Also
 
 
-* [Editor Settings](../editor/editor-settings.md)
-* [Editing Views](../editor/editor-views.md)
+* [Editor Settings](editor-settings.md)
+* [Editing Views](editor-views.md)

@@ -2,7 +2,7 @@
 
 Some components are supposed to work with other objects, but those objects are not in their hierarchy as a parent or child node, but may instead be any arbitrary object that the user wants to select. Such use cases are supported through *object references*, meaning that a component can have properties that store a reference to another object (within the same scene or prefab document).
 
-A very basic example is the [DrawLineToObject component](../debugging/components/draw-line-component.md), which literally just draws a line between itself and a referenced object.
+A very basic example is the [DrawLineToObject component](draw-line-component.md), which literally just draws a line between itself and a referenced object.
 
 ## Object Reference UI
 
@@ -22,9 +22,9 @@ Be aware that you can right click any node in the tree view or in the viewport a
 
 ## Object References in Custom Components
 
-When you create a [custom component](../custom-code/cpp/custom-cpp-component.md) you may want to have an object reference property. The easiest way to achieve this, is to get inspiration from existing code, such as `plLineToComponent`.
+When you create a [custom component](custom-cpp-component.md) you may want to have an object reference property. The easiest way to achieve this, is to get inspiration from existing code, such as `plLineToComponent`.
 
-Object references are a 'non-trivial' (complicated) feature. They need to be remapped within instances of [prefabs](../prefabs/prefabs-overview.md), they work differently in the editor and the runtime, and it is possible to use them as [exposed parameters](exposed-parameters.md). Consequently, you have to stick to a certain pattern to make them work.
+Object references are a 'non-trivial' (complicated) feature. They need to be remapped within instances of [prefabs](prefabs-overview.md), they work differently in the editor and the runtime, and it is possible to use them as [exposed parameters](exposed-parameters.md). Consequently, you have to stick to a certain pattern to make them work.
 
 Expose them as a string property and use custom functions as accessors. Also decorate them with `plGameObjectReferenceAttribute`:
 
