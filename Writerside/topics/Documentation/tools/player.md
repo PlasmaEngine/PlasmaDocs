@@ -6,7 +6,7 @@ The plPlayer is a stand-alone application that can run any Plasma Engine game th
 
 The Player takes these command line arguments:
 
-```cmd
+```bash
 Player.exe -project "ProjectPath" -scene "ScenePath" [-wnd "optional/path/to/Window.ddl"] [-profile "OptionalAssetProfileName"]
 ```
 

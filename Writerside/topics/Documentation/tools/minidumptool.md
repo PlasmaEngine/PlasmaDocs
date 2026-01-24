@@ -6,7 +6,7 @@ The MiniDumpTool writes a mini-dump (memory, call-stacks) of an application. The
 
 The tool takes exactly two arguments:
 
-```cmd
+```bash
 MiniDumpTool -PID 1234 -f "C:/crashdumps/justnow.dmp"
 ```
 

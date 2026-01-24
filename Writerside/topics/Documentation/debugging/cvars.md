@@ -31,7 +31,7 @@ In-game a convenient way to modify CVars is the [console](console.md).
 * Type the beginning of a CVar name and press **TAB** to list CVars with just that prefix name.
 * Type `CVarName = value` to modify the CVar's value.
 
-  ```cmd
+  ```bash
   cvar_bool = true
   cvar_bool =
   cvar_int = 3
@@ -42,7 +42,7 @@ In-game a convenient way to modify CVars is the [console](console.md).
 
   You can also do basic arithmetic like so:
 
-  ```cmd
+  ```bash
   cvar_bool = not cvar_bool
   cvar_int = cvar_int + 1
   ```
@@ -55,13 +55,13 @@ CVars can also be accessed through the [TypeScript API](ts-api.md).
 
 CVars can be set through command line arguments using this syntax:
 
-```cmd
+```bash
 MyGame.exe -CvarName Value
 ```
 
 For example:
 
-```cmd
+```bash
 MyGame.exe -Game.DebugDisplay true -fmod_MasterVolume 0.1
 ```
 
@@ -82,7 +82,7 @@ You can subscribe to events for either all CVars or specific ones, to be informe
 You create a CVar simply by instantiating it as a global variable somewhere in a cpp file:
 
 <!-- BEGIN-DOCS-CODE-SNIPPET: cvar-1 -->
-```cpp
+```bash
 #include <Foundation/Configuration/CVar.h>
 
 plCVarBool cvar_DebugDisplay("Game.DebugDisplay", false, plCVarFlags::Default, "Whether the game should display debug geometry.");
@@ -92,7 +92,7 @@ plCVarBool cvar_DebugDisplay("Game.DebugDisplay", false, plCVarFlags::Default, "
 Then you can just treat it like a regular variable to read or write its value:
 
 <!-- BEGIN-DOCS-CODE-SNIPPET: cvar-2 -->
-```cpp
+```bash
 if (cvar_DebugDisplay)
 {
   plDebugRenderer::DrawLineSphere(m_pMainWorld, plBoundingSphere(plVec3::ZeroVector(), 1.0f), plColor::Orange);

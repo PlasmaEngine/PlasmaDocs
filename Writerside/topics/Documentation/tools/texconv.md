@@ -13,7 +13,7 @@ TexConv always produces **exactly one output** file. It may use **multiple input
 
 The most straight forward command line is this:
 
-```cmd
+```bash
 TexConv.exe -out D:/result.dds -in0 D:/img.jpg -rgba in0
 ```
 
@@ -25,7 +25,7 @@ TexConv.exe -out D:/result.dds -in0 D:/img.jpg -rgba in0
 
 To assemble the output from multiple input files, specify each input file using the `-in` option with an increasing number:
 
-```cmd
+```bash
 -in0 D:/img0.jpg -in1 D:/img1.jpg -in2 D:/img2.jpg ...
 ```
 
@@ -37,7 +37,7 @@ To map these inputs to the output file, a proper channel mapping is needed.
 
 The channel-mapping options specify from which input to fill the given output channels. You can specify the input for each channel individually like this:
 
-```cmd
+```bash
 -r in0.b -g in0.g -b in0.r -a in1.r
 ```
 
@@ -45,7 +45,7 @@ Here the RGB channels of the output would be filled using the first input image,
 
 Specifying the mapping for each channel separately gives the greatest flexibility. For convenience the same can be written using "swizzling" operators:
 
-```cmd
+```bash
 -rgb in0.bgr -a in1.r
 ```
 
@@ -119,19 +119,19 @@ The `-usage` option specifies the purpose of the output and thus tells TexConv w
 
 ### Convert a Color Texture
 
-```cmd
+```bash
 TexConv.exe -out D:/diffuse.dds -in0 D:/diffuse.jpg -rgba in0 -usage color
 ```
 
 ### Convert a Normal Map
 
-```cmd
+```bash
 TexConv.exe -out D:/normalmap.dds -in0 D:/normalmap.png -rgb in0 -usage normalmap
 ```
 
 ### Create an HDR Cubemap
 
-```cmd
+```bash
 TexConv.exe -out "D:/skybox.dds" -in0 "D:/skymap.hdr" -rgba in0 -type cubemap -usage hdr
 ```
 
@@ -139,13 +139,13 @@ A great source for HDR cubemaps is [hdrihaven.com](https://hdrihaven.com/hdris/)
 
 ### Bake Multiple Images into One
 
-```cmd
+```bash
 TexConv.exe -out "D:/Baked.dds" -in0 "D:/metal.tga" -in1 "D:/roughness.png" -in2 "D:/DiffuseAlpha.dds" -r in1.r -g in0.r -b black -a in2.a -usage linear
 ```
 
 ### Extract a Single Channel
 
-```cmd
+```bash
 TexConv.exe -out D:/alpha-mask-only.dds -in0 D:/DiffuseAlpha.dds -r in0.a
 ```
 

@@ -10,7 +10,7 @@ By precompiling all necessary permutations, it is possible to prevent this delay
 
 For the full list of available command line options, run
 
-```cmd
+```bash
 ShaderCompiler.exe -help
 ```
 
@@ -24,7 +24,7 @@ ShaderCompiler.exe -help
 
 ## Example
 
-```cmd
+```bash
 ShaderCompiler.exe -project "C:\pl\Data\Base" -platform DX11_SM50 -shader "Shaders\Debug" -perm TOPOLOGY=TOPOLOGY_LINES CAMERA_MODE=CAMERA_MODE_PERSPECTIVE
 ```
 

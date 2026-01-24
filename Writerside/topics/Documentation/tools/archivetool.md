@@ -14,13 +14,13 @@ The ArchiveTool is a command line tool.
 
 The most convenient way to use it, is to pass a single path as the only argument:
 
-```cmd
+```bash
 ArchiveTool.exe C:/my/data
 ```
 
 When the path points to a folder, it will compress the folder and store the plArchive file next to it. In the example above: `C:/my/data.plArchive`
 
-```cmd
+```bash
 ArchiveTool.exe C:/your/data.plArchive
 ```
 
@@ -50,25 +50,25 @@ If neither *-pack* nor *-unpack* is specified, the mode is detected automaticall
 
 Pack all data in "C:\Stuff" into "C:\Stuff.plArchive":
 
-```cmd
+```bash
 ArchiveTool.exe "C:\Stuff"
 ```
   
 Pack all data in "C:\Stuff" into "C:\MyStuff.plArchive":
 
-```cmd
+```bash
 ArchiveTool.exe "C:\Stuff" -out "C:\MyStuff.plArchive"
 ```
   
 Unpack all data from the archive into "C:\Stuff"
 
-```cmd
+```bash
 ArchiveTool.exe "C:\Stuff.plArchive"
 ```
   
 Unpack all data from the archive into "C:\MyStuff"
 
-```cmd
+```bash
 ArchiveTool.exe "C:\Stuff.plArchive" -out "C:\MyStuff"
 ```
 

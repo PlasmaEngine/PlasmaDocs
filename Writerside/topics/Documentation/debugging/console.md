@@ -18,7 +18,7 @@ The default key binding for the console is:
 
 You can modify CVars by typing:
 
-```cmd
+```bash
 CVarName = value
 ```
 
@@ -28,7 +28,7 @@ See the [CVars](cvars.md) chapter for details.
 
 To bind commands to certain keys you can call:
 
-```cmd
+```bash
 bind f App.ShowFPS=
 ```
 
@@ -36,7 +36,7 @@ This would bind the command 'App.ShowFPS=' (which toggles the display of the FPS
 
 To unbind a key call:
 
-```cmd
+```bash
 unbind f
 ```
 
@@ -44,7 +44,7 @@ unbind f
 
 You can filter the output of the console (the log messages) to only strings that contain some string by typing a **\*** at the beginning:
 
-```cmd
+```bash
 *some text
 ```
 
@@ -81,7 +81,7 @@ void SampleGameState::ConFunc_Print(plString sText)
 
 When you now open the console (F1) in-game and press TAB, the 'Print' function will be among the listed functions. You can then execute it:
 
-```cmd
+```bash
 Print("Hello Console")
 ```
 

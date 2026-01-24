@@ -24,7 +24,7 @@ though the code actually never really calls those functions, but it is enough to
 
 Call this tool with the path to the root folder of some library as the sole command line argument:
 
-```cmd
+```bash
 StaticLinkUtil.exe "C:\PlasmaEngine\Code\Engine\Foundation"
 ```
 
