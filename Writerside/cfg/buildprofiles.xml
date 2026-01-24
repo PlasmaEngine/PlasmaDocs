@@ -5,9 +5,9 @@
     <build-profile instance="in">
         <variables>
             <noindex-content>true</noindex-content>
-            <algolia-id>IAMI7ZOM2R</algolia-id>
-            <algolia-index>dev_plasma</algolia-index>
-            <algolia-api-key>191ae4d2551908ea31d1396033f6481f</algolia-api-key>
+            <algolia-id>0O4HEBY31X</algolia-id>
+            <algolia-index>PlasmaSearch</algolia-index>
+            <algolia-api-key>49051124568990f302ec5cde8557c81d</algolia-api-key>
             <primary-color>emerald</primary-color>
             <custom-favicons>logo-Small.png</custom-favicons>
             <header-logo>MixlogoBig.png</header-logo>
