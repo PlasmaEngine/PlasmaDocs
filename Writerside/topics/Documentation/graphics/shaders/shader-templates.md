@@ -6,7 +6,7 @@ A shader template is simply a functioning shader file that you can edit. Shaders
 
 ## Creating a New Shader from a Template
 
-Open a [material asset](../../materials/materials-overview.md) that should use a custom shader. As it's `ShaderMode` select *From File*. Now click the browse (`...`) button next to the `Shader` property, to open the context menu:
+Open a [material asset](materials-overview.md) that should use a custom shader. As it's `ShaderMode` select *From File*. Now click the browse (`...`) button next to the `Shader` property, to open the context menu:
 
 ![Menu to create a shader template](media/create-shader-template.png)
 
@@ -16,9 +16,9 @@ From this menu select **Create Shader From Template...**. The following dialog i
 
 Select the output file name and which template to create the shader from. When you select a template, the area below shows additional options. These simply select what code from the template should be included in your new file and is purely for convenience to get started more easily. You can add and remove any feature manually afterwards as needed.
 
-Once you click `OK` the shader file is created, applied to the material and opened in a text editor for you to start editing. When you make structural changes (exposed parameters, permutation variables used and such) you need to [transform](../../assets/assets-overview.md#asset-transform) the material for the changes to properly show up.
+Once you click `OK` the shader file is created, applied to the material and opened in a text editor for you to start editing. When you make structural changes (exposed parameters, permutation variables used and such) you need to [transform](assets-overview.md#asset-transform) the material for the changes to properly show up.
 
-As long as you only modify the HLSL code, you can also just press `F4` to [reload resources](../../runtime/application/common-application-features.md#reload-resources) at any time. If there are any errors, they are shown in the [log](../../debugging/logging.md).
+As long as you only modify the HLSL code, you can also just press `F4` to [reload resources](common-application-features.md#reload-resources) at any time. If there are any errors, they are shown in the [log](logging.md).
 
 ## Adding a Shader Template
 
@@ -29,4 +29,4 @@ The final shader code is built by running a C preprocessor over the file, but in
 ## See Also
 
 * [Shaders](Shaders.md)
-* [ShaderCompiler](../../tools/shadercompiler.md)
+* [ShaderCompiler](shadercompiler.md)

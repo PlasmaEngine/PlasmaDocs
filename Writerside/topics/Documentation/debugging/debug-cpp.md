@@ -2,7 +2,7 @@
 
 ## Visual Studio Debug Visualizers
 
-To ease debugging the C++ code, we provide a `natvis` file, located at *Code/Engine/Foundation/PlasmaEngine.natvis*. The file adds improved inspection for Plasma specific code, such as the [container](../appendix/container-usage.md) and [string](../appendix/string-usage.md) classes.
+To ease debugging the C++ code, we provide a `natvis` file, located at *Code/Engine/Foundation/PlasmaEngine.natvis*. The file adds improved inspection for Plasma specific code, such as the [container](container-usage.md) and [string](string-usage.md) classes.
 
 This file is already referenced by our CMake scripts in the `Foundation` library and therefore works out of the box.
 
@@ -20,11 +20,11 @@ After installing the extension go to *Debug > Other Debug Targets > Child Proces
 
 ## Hot Reloading C++ Game Code
 
-You can't reload any C++ code at runtime. You can, however, reload the entire engine process in the editor. See [this chapter](../custom-code/cpp/cpp-code-reload.md) for details.
+You can't reload any C++ code at runtime. You can, however, reload the entire engine process in the editor. See [this chapter](cpp-code-reload.md) for details.
 
 ## See Also
 
 * [Debug Rendering](debug-rendering.md)
-* [Jolt Debug Visualizations](../physics/jolt/jolt-debug-visualizations.md)
-* [Shader Debugging](../graphics/shaders/shader-debugging.md)
-* [Hot Reloading C++ Game Plugins in the Editor](../custom-code/cpp/cpp-code-reload.md)
+* [Jolt Debug Visualizations](jolt-debug-visualizations.md)
+* [Shader Debugging](shader-debugging.md)
+* [Hot Reloading C++ Game Plugins in the Editor](cpp-code-reload.md)

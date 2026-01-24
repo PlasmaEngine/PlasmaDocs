@@ -12,7 +12,7 @@ The following elements are involved to make an animated mesh:
 
 ### Animated Mesh Asset
 
-The [animated mesh](animated-mesh-asset.md) asset represents the mesh of the animated object. This is a special version of the [mesh asset](../../graphics/meshes/mesh-asset.md). It works mostly the same way, except that it adds the necessary skinning information. Consequently, only these kinds of meshes can be used for skeletal animation. An animated mesh asset requires you to specify a default [skeleton asset](skeleton-asset.md), otherwise it won't even transform the data.
+The [animated mesh](animated-mesh-asset.md) asset represents the mesh of the animated object. This is a special version of the [mesh asset](mesh-asset.md). It works mostly the same way, except that it adds the necessary skinning information. Consequently, only these kinds of meshes can be used for skeletal animation. An animated mesh asset requires you to specify a default [skeleton asset](skeleton-asset.md), otherwise it won't even transform the data.
 
 ### Skeleton Asset
 
@@ -24,11 +24,11 @@ The [animation clip asset](animation-clip-asset.md) represents **a single animat
 
 Additionally, in case all animations are in one large clip, you can use the `FirstFrame` and `NumFrames` properties to extract only a subset of the animation. This allows you to import the same source file many times, each time extracting only a specific range as a single clip.
 
-The [root motion](root-motion.md) properties are meant for enabling an animation clip to move an animated character (ie. the actual [character controller](../../physics/jolt/special/jolt-character-controller.md) that sits on top of the animated mesh).
+The [root motion](root-motion.md) properties are meant for enabling an animation clip to move an animated character (ie. the actual [character controller](jolt-character-controller.md) that sits on top of the animated mesh).
 
 The *event track* property allows you to add [markers](animation-events.md) to the clip, that indicate what happens at what time in the clip. This can be used to indicate when a foot touches the ground, or at what point in the animation a weapon fires. Using this information, the game logic could react by, for example, spawning an effect.
 
-Animation events are sent as [event messages](../../runtime/world/world-messaging.md#event-messages) and therefore can only be captured by *event handler components* such as [visual scripts](../../custom-code/visual-script/visual-script-overview.md) or [TypeScript components](../../custom-code/typescript/typescript-overview.md).
+Animation events are sent as [event messages](world-messaging.md#event-messages) and therefore can only be captured by *event handler components* such as [visual scripts](Visual-Script.md) or [TypeScript components](TypeScript.md).
 
 ### Simple Animation Playback
 
@@ -38,13 +38,13 @@ Once you have an animated mesh asset, a skeleton asset and an animation clip ass
 
 To create a playable character, you need multiple animations for all the actions that the character should be able to do. A big part revolves around *locomotion*, ie making the character walk around. Here it is not sufficient anymore to just play one animation, you will need to have multiple animations and blend them together in a convincing way.
 
-This is where the [animation controller](animation-controller/animation-controller-overview.md) comes into play. This asset allows you to define how animations should be combined to make a character move fluidly and react to various inputs.
+This is where the [animation controller](Animation-Controller.md) comes into play. This asset allows you to define how animations should be combined to make a character move fluidly and react to various inputs.
 
 Once you have basic animation playback working, getting familiar with animation controllers is the next step to make the most out of your animated characters.
 
 ## How to Import Animation Data
 
-To import an animated object, you need to set up multiple assets (the mesh, the skeleton, the animation clips). The easiest way is to drag drop it into the asset broweser or press **CTRL+I** to open the [asset import dialog](../../assets/import-assets.md). Select your `.fbx` or `.glb` file and choose to import it as multiple asset types like so:
+To import an animated object, you need to set up multiple assets (the mesh, the skeleton, the animation clips). The easiest way is to drag drop it into the asset broweser or press **CTRL+I** to open the [asset import dialog](import-assets.md). Select your `.fbx` or `.glb` file and choose to import it as multiple asset types like so:
 
 ![anim-import.png](media/anim-import.png)
 
@@ -71,4 +71,4 @@ In the sample scene there are two objects for each turret that override two bone
 * [Animated Mesh Asset](animated-mesh-asset.md)
 * [Skeleton Asset](skeleton-asset.md)
 * [Animation Clip Asset](animation-clip-asset.md)
-* [Animation Controller](animation-controller/animation-controller-overview.md)
+* [Animation Controller](Animation-Controller.md)

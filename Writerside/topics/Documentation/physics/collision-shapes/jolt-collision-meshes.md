@@ -1,24 +1,24 @@
 # Jolt Collision Meshes
 
-Collision meshes are special [meshes](../../../graphics/meshes/meshes-overview.md) that are used by the physics engine to compute physical interactions. Their internal representation is optimized to speed up this task. Additionally, physics engines generally distinguish between two types of meshes: *convex* meshes and *concave* meshes. While concave meshes can represent any arbitrary geometric shape, they can only be used for static [physics actors](../actors/jolt-actors.md), which limits them to be used for the static level geometry. Convex meshes are often an oversimplification of the original mesh. However, they can be used for all physical interactions.
+Collision meshes are special [meshes](meshes-overview.md) that are used by the physics engine to compute physical interactions. Their internal representation is optimized to speed up this task. Additionally, physics engines generally distinguish between two types of meshes: *convex* meshes and *concave* meshes. While concave meshes can represent any arbitrary geometric shape, they can only be used for static [physics actors](jolt-actors.md), which limits them to be used for the static level geometry. Convex meshes are often an oversimplification of the original mesh. However, they can be used for all physical interactions.
 
 ## Concave Collision Meshes
 
-To create a concave collision mesh, use the asset type *Jolt Triangle Collision Mesh* when [importing an asset](../../../assets/import-assets.md).
+To create a concave collision mesh, use the asset type *Jolt Triangle Collision Mesh* when [importing an asset](import-assets.md).
 
 ![Concave Collision Mesh](../media/jolt-colmesh-concave.jpg)
 
-The image above shows a mesh imported as a concave collision mesh. As you can see it represents every detail faithfully. Due to this complexity, the model can only be used for static [physics actors](../actors/jolt-actors.md), meaning you can place it in a level, scale and rotate it, but you may not move it dynamically during the game and it cannot be used to simulate a rigid body. The complexity of a mesh has direct impact on the performance of the game. Especially small details may result in large computational costs when dynamic objects collide with those detailed areas. If you want to optimize performance, you should author dedicated collision meshes with reduced complexity, instead of using the render mesh directly.
+The image above shows a mesh imported as a concave collision mesh. As you can see it represents every detail faithfully. Due to this complexity, the model can only be used for static [physics actors](jolt-actors.md), meaning you can place it in a level, scale and rotate it, but you may not move it dynamically during the game and it cannot be used to simulate a rigid body. The complexity of a mesh has direct impact on the performance of the game. Especially small details may result in large computational costs when dynamic objects collide with those detailed areas. If you want to optimize performance, you should author dedicated collision meshes with reduced complexity, instead of using the render mesh directly.
 
-Concave collision meshes are set directly on the [static physics actor](../actors/jolt-actors.md) component and have no dedicated [physics shape](jolt-shapes.md) component.
+Concave collision meshes are set directly on the [static physics actor](jolt-actors.md) component and have no dedicated [physics shape](jolt-shapes.md) component.
 
-Triangle meshes can use a different [surface](../../../materials/surfaces.md) for each submesh.
+Triangle meshes can use a different [surface](surfaces.md) for each submesh.
 
 ## Convex Collision Meshes
 
-The simulation of [dynamic actors](../actors/jolt-dynamic-actor-component.md) is only possible with convex shapes. To create a convex collision mesh, use the asset type *Jolt Convex Collision Mesh* when [importing an asset](../../../assets/import-assets.md). To attach a convex mesh to an actor, use the [convex mesh shape component](jolt-convex-shape-component.md).
+The simulation of [dynamic actors](jolt-dynamic-actor-component.md) is only possible with convex shapes. To create a convex collision mesh, use the asset type *Jolt Convex Collision Mesh* when [importing an asset](import-assets.md). To attach a convex mesh to an actor, use the [convex mesh shape component](jolt-convex-shape-component.md).
 
-Convex meshes may only use a single [surface](../../../materials/surfaces.md), even if the mesh is made up of multiple convex pieces.
+Convex meshes may only use a single [surface](surfaces.md), even if the mesh is made up of multiple convex pieces.
 
 There are multiple modes how to create the convex collision mesh:
 
@@ -40,13 +40,13 @@ This mode allows you to dictate into how many pieces to split the mesh. The more
 
 ## Visualizing Collision Meshes
 
-Sometimes you want to visualize the collision mesh of an object within a scene. One way is to use the [Jolt debug visualizations](../jolt-debug-visualizations.md). However, for some use cases you can also just attach a *Collision Mesh Visualizer* component. This renders the collision mesh into your scene the same way as in the images above.
+Sometimes you want to visualize the collision mesh of an object within a scene. One way is to use the [Jolt debug visualizations](jolt-debug-visualizations.md). However, for some use cases you can also just attach a *Collision Mesh Visualizer* component. This renders the collision mesh into your scene the same way as in the images above.
 
 ## See Also
 
-* [Jolt Physics Integration](../jolt-overview.md)
+* [Jolt Physics Integration](jolt-overview.md)
 * [Jolt Physics Shapes](jolt-shapes.md)
-* [Jolt Physics Actors](../actors/jolt-actors.md)
+* [Jolt Physics Actors](jolt-actors.md)
 * [Jolt Collision Layers](jolt-collision-layers.md)
-* [Jolt Debug Visualizations](../jolt-debug-visualizations.md)
-* [Surfaces](../../../materials/surfaces.md)
+* [Jolt Debug Visualizations](jolt-debug-visualizations.md)
+* [Surfaces](surfaces.md)

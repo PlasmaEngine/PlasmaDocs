@@ -1,10 +1,10 @@
 # Spawn Component
 
-The *SpawnComponent* is frequently used to spawn instances of [prefabs](../prefabs/prefabs-overview.md) at runtime. The component references a prefab. It can then either spawn this prefab continuously in intervals, or at will by triggering the spawn command from (script) code.
+The *SpawnComponent* is frequently used to spawn instances of [prefabs](prefabs-overview.md) at runtime. The component references a prefab. It can then either spawn this prefab continuously in intervals, or at will by triggering the spawn command from (script) code.
 
 ## Properties
 
-`Prefab:` The [prefab](../prefabs/prefabs-overview.md) that will be spawned by this component.
+`Prefab:` The [prefab](prefabs-overview.md) that will be spawned by this component.
 
 `AttachAsChild:` If true, the spawned object will be attached to the owner of the SpawnComponent. In most cases this should be disabled.
 
@@ -18,8 +18,8 @@ The *SpawnComponent* is frequently used to spawn instances of [prefabs](../prefa
 
 ## Details
 
-See the [API Docs](../api-docs.md) for `plSpawnComponent` for the component's interface.
+See the [API Docs](api-docs.md) for `plSpawnComponent` for the component's interface.
 
 ## See Also
 
-* [Prefabs](../prefabs/prefabs-overview.md)
+* [Prefabs](prefabs-overview.md)

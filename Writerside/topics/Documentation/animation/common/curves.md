@@ -54,7 +54,7 @@ To make a curve loop nicely, open the context menu and select *Curve > Loop: Adj
 
 ### Curve Presets
 
-In the context menu under *Presets* you will find a number of presets for commonly used curves. You can also save the current curve as a **preset**. You can save presets anywhere, but as long as you save it under the path *Editor/Presets/Curves* (in any [data directory](../../projects/data-directories.md)), it will automatically show up in the context menu. You can also use sub-folders to organize presets, as folders will introduce sub-menus.
+In the context menu under *Presets* you will find a number of presets for commonly used curves. You can also save the current curve as a **preset**. You can save presets anywhere, but as long as you save it under the path *Editor/Presets/Curves* (in any [data directory](data-directories.md)), it will automatically show up in the context menu. You can also use sub-folders to organize presets, as folders will introduce sub-menus.
 
 ## See Also
 

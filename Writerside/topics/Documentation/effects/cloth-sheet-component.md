@@ -18,7 +18,7 @@ Cloth sheets are affected by [wind](wind.md) and movement of the owner object. T
 
 * `Flags`: These define at which corners and edges the sheet of cloth is attached to the world.
 
-* `Material`: The [material](../materials/materials-overview.md) used for rendering the cloth. Make sure to set it to *two-sided* for cloth that can be seen from both sides.
+* `Material`: The [material](materials-overview.md) used for rendering the cloth. Make sure to set it to *two-sided* for cloth that can be seen from both sides.
 
 * `Color`: An additional tint-color for rendering.
 

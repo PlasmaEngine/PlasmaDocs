@@ -2,7 +2,7 @@
 
 Stats are a feature for development and debugging. They are arbitrary key/value pairs that your application can set and update frequently, typically once per frame.
 
-Stats can be seen and plotted as a graph in [plInspector](../tools/inspector.md).
+Stats can be seen and plotted as a graph in [plInspector](inspector.md).
 
 ## C++ Interface
 
@@ -27,4 +27,4 @@ Stats appear in a tree structure. You can mark certain stats as 'favorites' usin
 ## See Also
 
 
-* [plInspector](../tools/inspector.md)
+* [plInspector](inspector.md)

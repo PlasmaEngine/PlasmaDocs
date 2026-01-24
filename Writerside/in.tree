@@ -85,16 +85,8 @@
             <toc-element topic="asset-browser.md"/>
         </toc-element>
         <toc-element topic="Build.md">
-            <toc-element topic="build-linux.md"/>
-            <toc-element topic="build-android.md"/>
-            <toc-element topic="build-windows.md"/>
-            <toc-element topic="build-uwp.md"/>
-            <toc-element topic="build-macos.md"/>
-            <toc-element topic="clang-on-windows.md"/>
-            <toc-element topic="supported-platforms.md"/>
-            <toc-element topic="sdk-root.md"/>
-            <toc-element topic="cmake-config.md"/>
-            <toc-element topic="submodule.md"/>
+            <toc-element topic="Building-Plasma.md"/>
+            <toc-element topic="Building-For-Windows.md"/>
         </toc-element>
         <toc-element topic="Code.md">
             <toc-element topic="Cpp.md">
@@ -160,6 +152,7 @@
             <toc-element topic="wind-volume-components.md"/>
             <toc-element topic="wind.md"/>
             <toc-element topic="sky.md"/>
+            <toc-element topic="snow.md"/>
             <toc-element topic="simple-wind-component.md"/>
             <toc-element topic="rope-render-component.md"/>
             <toc-element topic="fog.md"/>
@@ -209,7 +202,10 @@
             </toc-element>
             <toc-element topic="textures-overview.md"/>
             <toc-element topic="sprite-component.md"/>
-            <toc-element topic="render-pipeline-overview.md"/>
+            <toc-element topic="render-pipeline-overview.md">
+                <toc-element topic="render-pipeline-extractors.md"/>
+                <toc-element topic="render-pipeline-passes.md"/>
+            </toc-element>
             <toc-element topic="occluder-component.md"/>
             <toc-element topic="lod-component.md"/>
             <toc-element topic="camera-component.md"/>

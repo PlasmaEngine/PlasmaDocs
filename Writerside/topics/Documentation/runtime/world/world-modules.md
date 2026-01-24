@@ -16,17 +16,17 @@ Consequently, if no code path ever calls `plWorld::GetOrCreateModule()`, the res
 
 Only few systems require a world module, without having some component type that would request its instantiation. For example, there is no need to instantiate a physics world module, if the scene doesn't contain any physics component.
 
-If you do need a system that is always running, consider putting it into a [game state](../application/game-state.md). And if you determine it really does need to be a world module, a custom game state may be the right place to do the initial call to `plWorld::GetOrCreateModule()` to instantiate the system.
+If you do need a system that is always running, consider putting it into a [game state](game-state.md). And if you determine it really does need to be a world module, a custom game state may be the right place to do the initial call to `plWorld::GetOrCreateModule()` to instantiate the system.
 
 The more common approach, though, is to have a custom component type, which ensures to set up a world module. You would then put a single component of this type into each world. This also allows you to have properties on the component, with which you can configure the world module.
 
 ### Example: Wind World Module
 
-Code can query for the `plWindWorldModuleInterface` using `plWorld::GetWorldModule<plWindWorldModuleInterface>()`. If a world module that implements this interface exists, the function will return a valid pointer. Things like [particle effects](../../effects/particle-effects/particle-effects-overview.md) can then ask the system for a wind value at their location, to apply wind to particles.
+Code can query for the `plWindWorldModuleInterface` using `plWorld::GetWorldModule<plWindWorldModuleInterface>()`. If a world module that implements this interface exists, the function will return a valid pointer. Things like [particle effects](Particle-Effects.md) can then ask the system for a wind value at their location, to apply wind to particles.
 
-[Wind](../../effects/wind.md) can be implemented in different ways. From full 3D fluid simulations with turbulence, over simpler models, down to entirely basic models with just a randomly changing wind vector. What implementation you want may depend on your scene. Therefore, you choose the wind module by adding a corresponding component to the level. Out of the box you can have either no wind, or very simple wind. By adding an `plSimpleWindComponent` to a scene, that component will make sure a wind module of type `plSimpleWindWorldModule` is instantiated. Through the component's properties you can configure how the wind behaves.
+[Wind](wind.md) can be implemented in different ways. From full 3D fluid simulations with turbulence, over simpler models, down to entirely basic models with just a randomly changing wind vector. What implementation you want may depend on your scene. Therefore, you choose the wind module by adding a corresponding component to the level. Out of the box you can have either no wind, or very simple wind. By adding an `plSimpleWindComponent` to a scene, that component will make sure a wind module of type `plSimpleWindWorldModule` is instantiated. Through the component's properties you can configure how the wind behaves.
 
-If you want different wind behavior, you can add your own implementation of `plWindWorldModuleInterface` through a [plugin](../../custom-code/cpp/engine-plugins.md). You would then add your own wind component, which instantiates and configures your custom wind module.
+If you want different wind behavior, you can add your own implementation of `plWindWorldModuleInterface` through a [plugin](engine-plugins.md). You would then add your own wind component, which instantiates and configures your custom wind module.
 
 ## Update Functions
 

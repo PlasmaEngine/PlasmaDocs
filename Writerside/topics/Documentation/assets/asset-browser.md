@@ -1,6 +1,6 @@
 # Asset Browser
 
-The *asset browser* is used for selecting and opening asset [documents](../editor/editor-documents.md). Assets can be filtered by type and path or searched for by name.
+The *asset browser* is used for selecting and opening asset [documents](editor-documents.md). Assets can be filtered by type and path or searched for by name.
 
 ![Asset Browser](media/asset-browser.png)
 
@@ -26,7 +26,7 @@ Below the search field, all available asset types are listed with checkboxes. Cl
 
 ## Filter by Folder
 
-On the bottom left the asset browser displays all [data directories](../projects/data-directories.md). When you select a folder in this tree view, the asset browser will only display assets located below that folder.
+On the bottom left the asset browser displays all [data directories](data-directories.md). When you select a folder in this tree view, the asset browser will only display assets located below that folder.
 
 ### Filter to this Path
 
@@ -34,7 +34,7 @@ You can right-click on any asset and select **Filter to this Path** to set the f
 
 ## Create Asset Documents
 
-You can create new asset [documents](../editor/editor-documents.md) by right clicking a folder on the bottom left, or an asset on the right and selecting *New > Asset Type*. The advantage over creating a document via *Editor > Create Document...* is that the create file dialog opens directly in the location of the selected asset or folder, which makes it easier to create a new asset next to an existing asset.
+You can create new asset [documents](editor-documents.md) by right clicking a folder on the bottom left, or an asset on the right and selecting *New > Asset Type*. The advantage over creating a document via *Editor > Create Document...* is that the create file dialog opens directly in the location of the selected asset or folder, which makes it easier to create a new asset next to an existing asset.
 
 ## Display Assets in Recently Used Order
 
@@ -72,11 +72,11 @@ The play/pause button is for switching **background processing** on and off. If 
 
 ## Drag and Drop
 
-You can drag assets from the asset browser into other documents, such as [scenes](../scenes/scene-editing.md). For mesh and prefab assets this will instantiate the asset (ie. create a new node that references the asset). For [materials](../materials/materials-overview.md) this may assign the material to the object that you drag it onto. Not all asset types support drag and drop. Also dragging an asset into the 3D viewport can have a different effect than dragging it into the scene tree.
+You can drag assets from the asset browser into other documents, such as [scenes](scene-editing.md). For mesh and prefab assets this will instantiate the asset (ie. create a new node that references the asset). For [materials](materials-overview.md) this may assign the material to the object that you drag it onto. Not all asset types support drag and drop. Also dragging an asset into the 3D viewport can have a different effect than dragging it into the scene tree.
 
 ## See Also
 
 
 * [Asset Curator](asset-curator.md)
-* [Editor Documents](../editor/editor-documents.md)
+* [Editor Documents](editor-documents.md)
 * [Asset Import](import-assets.md)

@@ -15,7 +15,7 @@ If it extends `pl.TickedTypescriptComponent`, the member function `Tick()` is ex
 
 Often game components need to do regular checks and update their own state. Use the *ticked* base class when this is necessary. Choose a tick interval that is as long as possible to reduce their performance cost. You can also dynamically change the tick rate, to e.g. do more updates when the player is close, than when they are far away.
 
-Whenever possible, though, prefer to use the non-ticked base class and have no regular update, at all. Such components rely on other machnisms, such as [triggers](../../physics/jolt/actors/jolt-trigger-component.md) to detect when they need to react, and they can use delayed messages (sent by others or by themselves) to trigger follow up work.
+Whenever possible, though, prefer to use the non-ticked base class and have no regular update, at all. Such components rely on other machnisms, such as [triggers](jolt-trigger-component.md) to detect when they need to react, and they can use delayed messages (sent by others or by themselves) to trigger follow up work.
 
 ### Tick Function
 
@@ -39,7 +39,7 @@ The template code contains examples for these functions:
 1. `OnDeactivated()`
 1. `OnSimulationStarted()`
 
-These functions are called in the same way as for C++ components. See [Component Activation](../../runtime/world/components.md#component-activation) for details.
+These functions are called in the same way as for C++ components. See [Component Activation](components.md#component-activation) for details.
 
 ## Message Handlers
 
@@ -49,7 +49,7 @@ To handle messages, message handler functions must be registered first. This is 
 
 ## Auto Generated Code
 
-The editor may insert auto generated code into the `.ts` file. This is needed for example for variables that are supposed to show up as [exposed parameters](../../scenes/exposed-parameters.md). Special code comments are used to tag the are where the editor can insert the generated code:
+The editor may insert auto generated code into the `.ts` file. This is needed for example for variables that are supposed to show up as [exposed parameters](exposed-parameters.md). Special code comments are used to tag the are where the editor can insert the generated code:
 
 ```typescript
 /* BEGIN AUTO-GENERATED: VARIABLES */
@@ -72,4 +72,4 @@ For an overview what functionality is available through TypeScript, check out th
 * [TypeScript Asset](ts-asset.md)
 * [Messaging in TypeScript Code](ts-messaging.md)
 * [TypeScript API](ts-api.md)
-* [Custom Code with TypeScript](typescript-overview.md)
+* [Custom Code with TypeScript](TypeScript.md)

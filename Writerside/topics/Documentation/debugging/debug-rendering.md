@@ -14,7 +14,7 @@ The `plDebugRenderer` class has a number of static functions that you can call f
 
 Every function in `plDebugRenderer` takes an `plDebugRendererContext` as its first parameter. This specifies where the debug geometry should be rendered. You can either pass in an `plViewHandle` or an `plWorld` here. If you pass in a view handle, the geometry will only be rendered in the corresponding `plView`, meaning you can have the debug geometry only appear in a specific render target. If you pass in an `plWorld`, the geometry appears in all views that render that world.
 
-It is more common to bind debug geometry to an entire `plWorld`, such that it appears in any view. The [TypeScript](../custom-code/typescript/typescript-overview.md) binding omits the `plDebugRendererContext` parameter and always binds it to the world.
+It is more common to bind debug geometry to an entire `plWorld`, such that it appears in any view. The [TypeScript](TypeScript.md) binding omits the `plDebugRendererContext` parameter and always binds it to the world.
 
 ### Debug Geometry Types
 
@@ -41,7 +41,7 @@ The debug renderer always uses a fullbright shading model. No lighting is ever a
 
 ## Example
 
-A full example for how to use the debug renderer is given in the [Sample Game Plugin](../../samples/sample-game-plugin.md). Here, the `DebugRenderComponent` shows how to utilize the debug renderer.
+A full example for how to use the debug renderer is given in the [Sample Game Plugin](sample-game-plugin.md). Here, the `DebugRenderComponent` shows how to utilize the debug renderer.
 
 The following code snippet is sufficient to render a wireframe sphere at the location of the component:
 
@@ -57,11 +57,11 @@ This has to be called in every frame in which it should appear. Therefore this h
 
 ## Performance Considerations
 
-The debug renderer is meant for quickly visualizing data. If the data potentially changes every frame anyway (like visualizing AI raycasts), its performance will be on par with what a 'proper' solution could do. However, if you want to place things in a scene that may stay for a longer duration, it's usually much better to instead build a game object, attach a [mesh component](../graphics/meshes/mesh-component.md) and just render a proper asset. This enables culling, static object optimizations, and gives you the option to choose [materials](../materials/materials-overview.md).
+The debug renderer is meant for quickly visualizing data. If the data potentially changes every frame anyway (like visualizing AI raycasts), its performance will be on par with what a 'proper' solution could do. However, if you want to place things in a scene that may stay for a longer duration, it's usually much better to instead build a game object, attach a [mesh component](mesh-component.md) and just render a proper asset. This enables culling, static object optimizations, and gives you the option to choose [materials](../materials/materials-overview.md).
 
 ## See Also
 
 * [Debugging C++ Code](debug-cpp.md)
-* [Shader Debugging](../graphics/shaders/shader-debugging.md)
-* [Jolt Debug Visualizations](../physics/jolt/jolt-debug-visualizations.md)
-* [Custom Code with TypeScript](../custom-code/typescript/typescript-overview.md)
+* [Shader Debugging](shader-debugging.md)
+* [Jolt Debug Visualizations](jolt-debug-visualizations.md)
+* [Custom Code with TypeScript](TypeScript.md)

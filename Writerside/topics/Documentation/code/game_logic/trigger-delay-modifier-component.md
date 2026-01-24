@@ -14,5 +14,5 @@ The sent `plMsgTriggerTriggered` does not contain a reference to the *triggering
 
 ## See Also
 
-* [Jolt Trigger Component](../../physics/jolt/actors/jolt-trigger-component.md)
-* [Messaging](../../runtime/world/world-messaging.md)
+* [Jolt Trigger Component](jolt-trigger-component.md)
+* [Messaging](world-messaging.md)

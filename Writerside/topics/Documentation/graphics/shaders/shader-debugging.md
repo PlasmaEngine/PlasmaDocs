@@ -35,4 +35,4 @@ VS_OUT main(VS_IN Input)
 
 * [Shaders](Shaders.md)
 * [Shader Templates](shader-templates.md)
-* [ShaderCompiler](../../tools/shadercompiler.md)
+* [ShaderCompiler](shadercompiler.md)

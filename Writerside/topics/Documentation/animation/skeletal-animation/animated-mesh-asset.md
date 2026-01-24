@@ -1,10 +1,10 @@
 # Animated Mesh Asset
 
-The animated mesh asset is very similar to the [mesh asset](../../graphics/meshes/mesh-asset.md). However, it adds the necessary data to a mesh such that it can be used for [skeletal animation](Skeletal-Animation.md).
+The animated mesh asset is very similar to the [mesh asset](mesh-asset.md). However, it adds the necessary data to a mesh such that it can be used for [skeletal animation](Skeletal-Animation.md).
 
 ![Animated Mesh Asset](../media/animated-mesh-asset.jpg)
 
-Animated meshes are placed in a scene with a dedicated [animated mesh component](animated-mesh-component.md). Which animations are played on it can be controlled with a [simple animation component](simple-animation-component.md) or an [animation controller component](animation-controller/animation-controller-component.md).
+Animated meshes are placed in a scene with a dedicated [animated mesh component](animated-mesh-component.md). Which animations are played on it can be controlled with a [simple animation component](simple-animation-component.md) or an [animation controller component](animation-controller-component.md).
 
 ## Asset Properties
 
@@ -12,13 +12,13 @@ Animated meshes are placed in a scene with a dedicated [animated mesh component]
 
 * `DefaultSkeleton`: The [skeleton asset](skeleton-asset.md) that is used to skin the animated mesh by default.
 
-* `RecalculateNormals`, `RecalculateTangents`: See the [mesh asset properties](../../graphics/meshes/mesh-asset.md#asset-properties).
+* `RecalculateNormals`, `RecalculateTangents`: See the [mesh asset properties](mesh-asset.md#asset-properties).
 
-* `NormalPrecision`, `TexCoordPrecision`: See the [mesh asset properties](../../graphics/meshes/mesh-asset.md#asset-properties).
+* `NormalPrecision`, `TexCoordPrecision`: See the [mesh asset properties](mesh-asset.md#asset-properties).
 
-* `ImportMaterials`: See the [mesh asset properties](../../graphics/meshes/mesh-asset.md#asset-properties).
+* `ImportMaterials`: See the [mesh asset properties](mesh-asset.md#asset-properties).
 
-* `Materials`: See the [mesh asset properties](../../graphics/meshes/mesh-asset.md#asset-properties).
+* `Materials`: See the [mesh asset properties](mesh-asset.md#asset-properties).
 
 ## See Also
 

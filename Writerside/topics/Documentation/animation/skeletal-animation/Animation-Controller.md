@@ -1,14 +1,14 @@
 # Animation Controller
 
-Animating characters is a complex task. Even simple creatures typically already need tens of different [animation clips](../animation-clip-asset.md) for locomotion and basic actions. However, having the animation clips is not enough, they also need to be played on the [animated mesh](../animated-mesh-asset.md) in such a way that animations blend over nicely and play perfectly in sequence. Additionally you may need to apply an animation only to a certain part of the body. Animations should fade in and out smoothly as they are activated and deactivated, and certain clips need to be synchronized to achieve the desired effect.
+Animating characters is a complex task. Even simple creatures typically already need tens of different [animation clips](animation-clip-asset.md) for locomotion and basic actions. However, having the animation clips is not enough, they also need to be played on the [animated mesh](animated-mesh-asset.md) in such a way that animations blend over nicely and play perfectly in sequence. Additionally you may need to apply an animation only to a certain part of the body. Animations should fade in and out smoothly as they are activated and deactivated, and certain clips need to be synchronized to achieve the desired effect.
 
-An *animation controller* is used to configure how each animation clip of a character should behave when it is actively played on the mesh. Animation controllers are the basis for complex animation playback. They also provide some very basic functionality for logic and math, such that one can build simple state machines. For more complex decisions which animations should play when, use [custom code](../../../custom-code/custom-code-overview.md).
+An *animation controller* is used to configure how each animation clip of a character should behave when it is actively played on the mesh. Animation controllers are the basis for complex animation playback. They also provide some very basic functionality for logic and math, such that one can build simple state machines. For more complex decisions which animations should play when, use [custom code](Code.md).
 
 ## Creating and Using Animation Controllers
 
-Animation controllers are configured through the [animation controller asset type](animation-controller-asset.md). To apply the output pose of an animation controller to an [animated mesh](../animated-mesh-component.md), add an [animation controller component](animation-controller-component.md) to the same [game object](../../../runtime/world/game-objects.md). The controller will send the output pose to the mesh every frame, but only while the scene is [simulated](../../../editor/run-scene.md).
+Animation controllers are configured through the [animation controller asset type](animation-controller-asset.md). To apply the output pose of an animation controller to an [animated mesh](animated-mesh-component.md), add an [animation controller component](animation-controller-component.md) to the same [game object](game-objects.md). The controller will send the output pose to the mesh every frame, but only while the scene is [simulated](run-scene.md).
 
-To control what an animation controller will output, you typically also need a [blackboard](../../../Miscellaneous/blackboards.md). The blackboard is used to store state. Scripts or other [custom code](../../../custom-code/custom-code-overview.md) decide which animations should be played and write that state to the blackboard. The animation controller in turn reads state from the blackboard and then activates the desired animation clip playback. The controller can also write back state to the blackboard, for example to communicate back that an animation clip has finished playing.
+To control what an animation controller will output, you typically also need a [blackboard](blackboards.md). The blackboard is used to store state. Scripts or other [custom code](Code.md) decide which animations should be played and write that state to the blackboard. The animation controller in turn reads state from the blackboard and then activates the desired animation clip playback. The controller can also write back state to the blackboard, for example to communicate back that an animation clip has finished playing.
 
 ## Animation Controller Concept
 
@@ -36,13 +36,13 @@ The animation controller uses a graph based workflow to let you visually configu
 
 The system is intelligent enough to optimize away operations that don't affect the output.
 
-You typically control which animations are played when through a [blackboard](../../../Miscellaneous/blackboards.md). For quick prototyping you can also use the [input nodes](anim-nodes-input.md) to get certain input data directly into the graph.
+You typically control which animations are played when through a [blackboard](blackboards.md). For quick prototyping you can also use the [input nodes](anim-nodes-input.md) to get certain input data directly into the graph.
 
-Simple animation state machines can be built directly in the animation controller graph using the [logic and math nodes](anim-nodes-logic-math.md) as well as the [blackboard nodes](anim-nodes-blackboard.md). For more complex logic you should use [custom code](../../../custom-code/custom-code-overview.md).
+Simple animation state machines can be built directly in the animation controller graph using the [logic and math nodes](anim-nodes-logic-math.md) as well as the [blackboard nodes](anim-nodes-blackboard.md). For more complex logic you should use [custom code](Code.md).
 
 ## See Also
 
-* [Skeletal Animations](../Skeletal-Animation.md)
+* [Skeletal Animations](Skeletal-Animation.md)
 * [Animation Controller Asset](animation-controller-asset.md)
 * [Animation Controller Component](animation-controller-component.md)
-* [Animated Mesh Component](../animated-mesh-component.md)
+* [Animated Mesh Component](animated-mesh-component.md)

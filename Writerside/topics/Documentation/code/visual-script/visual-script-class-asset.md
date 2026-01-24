@@ -1,6 +1,6 @@
 # Visual Script Class Asset
 
-The *Visual Script Class* asset enables you to define custom logic for [components](../../runtime/world/components.md) and [state machines](../game-logic/state-machine-asset.md) using a visual programming language. Its intended use is to bridge the gap between what other components provide. For example a [trigger component](../../physics/jolt/actors/jolt-trigger-component.md) provides an event when something enters an area, and a [spawn component](../../gameplay/spawn-component.md) can spawn a [prefab](../../prefabs/prefabs-overview.md), however, to have a creature spawn in a room when the player enters it, you need something that connects the two. Visual scripts are a great way to accomplish this.
+The *Visual Script Class* asset enables you to define custom logic for [components](components.md) and [state machines](state-machine-asset.md) using a visual programming language. Its intended use is to bridge the gap between what other components provide. For example a [trigger component](jolt-trigger-component.md) provides an event when something enters an area, and a [spawn component](spawn-component.md) can spawn a [prefab](prefabs-overview.md), however, to have a creature spawn in a room when the player enters it, you need something that connects the two. Visual scripts are a great way to accomplish this.
 
 ## Visual Script Editor
 
@@ -24,13 +24,13 @@ These scripts are used in conjunction with the [script component](script-compone
 
 ### Base Class: State Machine State
 
-When *StateMachineState* is selected as the base class, the script acts like a custom state for a [state machine](../game-logic/state-machine-asset.md). In this case, different functions are available, such as `StateMachineState::GetScriptOwner()`.
+When *StateMachineState* is selected as the base class, the script acts like a custom state for a [state machine](state-machine-asset.md). In this case, different functions are available, such as `StateMachineState::GetScriptOwner()`.
 
-These scripts are used in state machines through the [script state](../game-logic/state-machine-asset.md#script-state).
+These scripts are used in state machines through the [script state](state-machine-asset.md#script-state).
 
 ## Visual Script Variables
 
-Through the general script properties you can add *variables* to your script. These may just be internal variables to keep track of state, but when the `Expose` flag is enabled, they become [exposed parameters](../../scenes/exposed-parameters.md). These variables will show up where the script is used (for example on [script components](script-component.md)) and allow you to pass in different starting values.
+Through the general script properties you can add *variables* to your script. These may just be internal variables to keep track of state, but when the `Expose` flag is enabled, they become [exposed parameters](exposed-parameters.md). These variables will show up where the script is used (for example on [script components](script-component.md)) and allow you to pass in different starting values.
 
 ## Editing Visual Scripts
 
@@ -116,11 +116,11 @@ The following broad categories of nodes exist:
 
 ### Event Handlers
 
-Event handlers are nodes that get executed when a certain [message](../../runtime/world/world-messaging.md) is sent to any of the objects that this script is responsible for. All event handlers are *entry points* into the script and most scripts will only execute as a reaction to an event.
+Event handlers are nodes that get executed when a certain [message](world-messaging.md) is sent to any of the objects that this script is responsible for. All event handlers are *entry points* into the script and most scripts will only execute as a reaction to an event.
 
 ### Blackboards
 
-All the nodes for working with [blackboards](../../Miscellaneous/blackboards.md).
+All the nodes for working with [blackboards](blackboards.md).
 
 ### Clock
 
@@ -128,7 +128,7 @@ There are two clocks, the *global clock* and the *world clock*. The global one a
 
 ### Component
 
-Here you find all functionality shared by all [components](../../runtime/world/components.md) such as:
+Here you find all functionality shared by all [components](components.md) such as:
 
 * `GetOwner`: Returns the components owner game object.
 * `GetWorld`: Returns the world that the component belongs to.
@@ -141,7 +141,7 @@ Here you find all functionality to work with coroutines, see [the coroutines sec
 
 ### Debug
 
-These nodes are for [debug rendering](../../debugging/debug-rendering.md).
+These nodes are for [debug rendering](debug-rendering.md).
 
 ### Enums
 
@@ -149,11 +149,11 @@ These nodes are for working with enum values. There are two node types for each 
 
 ### Game Object
 
-[Game objects](../../runtime/world/game-objects.md) nodes are for reading and writing object transforms, finding and accessing child objects and components.
+[Game objects](game-objects.md) nodes are for reading and writing object transforms, finding and accessing child objects and components.
 
 ### Log
 
-Nodes for [logging](../../debugging/logging.md).
+Nodes for [logging](logging.md).
 
 ### Logic
 
@@ -170,7 +170,7 @@ All sorts of mathematical operations for working with number types.
 
 ### Messages
 
-While event handlers react to messages, the script can also *send messages* to other objects. Messages can be sent directly to a component, or to a game object, in which case they may be broadcast to all components on that object, or even to the whole sub-tree of objects and components. If the `Send Mode` is set to *Event*, however, they are delivered not downwards in the hierarchy, but *upwards* along the parent chain of the target object, to the closest component that handles this type of message. See [this chapter](../../runtime/world/world-messaging.md#event-messages) for details.
+While event handlers react to messages, the script can also *send messages* to other objects. Messages can be sent directly to a component, or to a game object, in which case they may be broadcast to all components on that object, or even to the whole sub-tree of objects and components. If the `Send Mode` is set to *Event*, however, they are delivered not downwards in the hierarchy, but *upwards* along the parent chain of the target object, to the closest component that handles this type of message. See [this chapter](world-messaging.md#event-messages) for details.
 
 ### Property
 
@@ -178,7 +178,7 @@ For reading and writing component properties.
 
 ### StateMachineInstance and StateMachineState
 
-For interacting with [state machines](../game-logic/state-machine-asset.md). This is mainly necessary when the script itself is used as a *StateMachineState*. Be aware that the *state machine instance* in which the script is run, is passed into the script through the `OnEnter`, `OnExit` and `Update` nodes.
+For interacting with [state machines](state-machine-asset.md). This is mainly necessary when the script itself is used as a *StateMachineState*. Be aware that the *state machine instance* in which the script is run, is passed into the script through the `OnEnter`, `OnExit` and `Update` nodes.
 
 ### String
 
@@ -194,13 +194,13 @@ These nodes are for converting variables from one type to another. Especially im
 
 ### Variable Nodes
 
-These nodes operate on [visual script variables](#visual-script-variables). The variables have to be declared on the script first. Use these to keep track of state within the script and also to read state that was passed in through [exposed parameters](../../scenes/exposed-parameters.md).
+These nodes operate on [visual script variables](#visual-script-variables). The variables have to be declared on the script first. Use these to keep track of state within the script and also to read state that was passed in through [exposed parameters](exposed-parameters.md).
 
 ### World
 
-These nodes provide access to the [world](../../runtime/world/worlds.md), which is used for managing objects.
+These nodes provide access to the [world](worlds.md), which is used for managing objects.
 
 ## See Also
 
-* [Custom Code with Visual Scripts](visual-script-overview.md)
+* [Custom Code with Visual Scripts](Visual-Script.md)
 * [Script Component](script-component.md)

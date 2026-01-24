@@ -71,7 +71,7 @@ Link: [https://www.fmod.com](https://www.fmod.com)
 
 Compile switch: **PL_BUILD_FMOD**
 
-Plasma has an [integration for the FMOD sound system](../sound/fmod-overview.md).
+Plasma has an [integration for the FMOD sound system](fmod-overview.md).
 
 > **Important:**
 >
@@ -213,7 +213,7 @@ Link: [https://github.com/kmammou/v-hacd](https://github.com/kmammou/v-hacd)
 
 Compile switch: **PL_3RDPARTY_VHACD_SUPPORT**
 
-The "Volumetric Hierarchical Approximate Convex Decomposition" library is used to decompose a concave triangle mesh into multiple convex pieces. This allows you to generate complex [collision meshes](../physics/jolt/collision-shapes/jolt-collision-meshes.md) which can be used as the shapes of [dynamic actors](../physics/jolt/actors/jolt-dynamic-actor-component.md).
+The "Volumetric Hierarchical Approximate Convex Decomposition" library is used to decompose a concave triangle mesh into multiple convex pieces. This allows you to generate complex [collision meshes](jolt-collision-meshes.md) which can be used as the shapes of [dynamic actors](jolt-dynamic-actor-component.md).
 
 ## xxHash
 

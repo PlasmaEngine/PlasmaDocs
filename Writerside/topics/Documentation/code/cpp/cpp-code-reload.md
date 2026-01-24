@@ -14,7 +14,7 @@ This trick works quite well if we only do it for plugins that are loaded fully d
 
 ## How to Enable Plugin Hot Reloading
 
-In the [plugin selection](../../projects/plugin-selection.md) dialog, select your custom plugin and check **Enable Reload**.
+In the [plugin selection](plugin-selection.md) dialog, select your custom plugin and check **Enable Reload**.
 
 > **Note:**
 >
@@ -38,6 +38,6 @@ The `Enable Reload` option should only be used for select game plugins. Enabling
 
 ## See Also
 
-* [Debugging C++ Code](../../debugging/debug-cpp.md)
+* [Debugging C++ Code](debug-cpp.md)
 * [Engine Plugins](engine-plugins.md)
 * [C++ Project Generation](cpp-project-generation.md)

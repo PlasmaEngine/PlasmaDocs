@@ -1,6 +1,6 @@
 # Timed Death Component
 
-The *timed death component* is used to automatically delete the object that it is attached to, after a timeout. Additionally, it may spawn a [prefab](../prefabs/prefabs-overview.md) when its timeout has been reached.
+The *timed death component* is used to automatically delete the object that it is attached to, after a timeout. Additionally, it may spawn a [prefab](prefabs-overview.md) when its timeout has been reached.
 
 ## Component Properties
 

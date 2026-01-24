@@ -1,6 +1,6 @@
 # Jolt Box Shape Component
 
-The *Jolt box shape component* adds a box as a [shape](jolt-shapes.md) to the [Jolt actor](../actors/jolt-actors.md) that is attached to the closest parent node.
+The *Jolt box shape component* adds a box as a [shape](jolt-shapes.md) to the [Jolt actor](jolt-actors.md) that is attached to the closest parent node.
 
 ![Box Shape](media/jolt-box-shape.jpg)
 
@@ -15,4 +15,4 @@ Boxes are relatively efficient for the physics engine to handle. Prefer them ove
 ## See Also
 
 * [Jolt Shapes](jolt-shapes.md)
-* [Jolt Actors](../actors/jolt-actors.md)
+* [Jolt Actors](jolt-actors.md)

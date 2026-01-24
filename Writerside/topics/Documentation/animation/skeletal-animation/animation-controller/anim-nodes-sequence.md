@@ -8,7 +8,7 @@ Such sequences are common for actions such as jumping or climbing a ladder. The 
 
 See [common properties](anim-nodes-playclip.md#common-properties).
 
-* `StartClip`: The [animation clip](../animation-clip-asset.md) to start with. This clip should end on a keyframe from where the `MiddleClips` can continue seemlessly.
+* `StartClip`: The [animation clip](animation-clip-asset.md) to start with. This clip should end on a keyframe from where the `MiddleClips` can continue seemlessly.
 
 * `MiddleClips`: One or multiple animation clips to play after the `StartClip`. Typically these will get looped as long as the node is `Active`. If more than one clip is set, which one to play can be selected using the `MiddleClipIndex` pin. Otherwise a random one will be selected on every iteration.
 

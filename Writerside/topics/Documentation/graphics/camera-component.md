@@ -1,6 +1,6 @@
 # Camera Component
 
-The *camera component* is used to tell the renderer from which position and with which settings to render the scene. Apart from the component that acts as the *main camera*, there can be additional cameras in active use for [render to texture (TODO)](render-to-texture/render-to-texture.md) effects. Additionally, camera components can be used in the editor as 'bookmarks' to be able to quickly jump to specific positions in a level.
+The *camera component* is used to tell the renderer from which position and with which settings to render the scene. Apart from the component that acts as the *main camera*, there can be additional cameras in active use for [render to texture (TODO)](render-to-texture.md) effects. Additionally, camera components can be used in the editor as 'bookmarks' to be able to quickly jump to specific positions in a level.
 
 ![Camera](media/camera-component.jpg)
 
@@ -8,7 +8,7 @@ When an object with a camera component is selected, the editor shows a preview o
 
 ## Main Camera
 
-The camera settings that are used for rendering the scene are fully under control of the [game state](../runtime/application/game-state.md). Every frame it decides where to place the main camera and with which settings. At this point, no camera component is involved, your game may control the main camera without having any camera component in the scene.
+The camera settings that are used for rendering the scene are fully under control of the [game state](game-state.md). Every frame it decides where to place the main camera and with which settings. At this point, no camera component is involved, your game may control the main camera without having any camera component in the scene.
 
 However, the *default behavior* of the game state (see `plFallbackGameState`), is to check the scene for a camera component that has its `UsageHint` set to `Main View`. Unless you write a custom game state and override this behavior, the game state will simply copy all the camera settings from the first camera component that it can find with this usage hint.
 
@@ -26,20 +26,20 @@ A scene can contain any number of camera components. Unless they are referenced 
 
 ### Camera Bookmarks
 
-Camera components can be placed as 'bookmarks', such that people working on a scene can quickly move the editor camera to areas of interest. [This chapter](../scenes/editor-camera.md#level-cameras) describes how to do so.
+Camera components can be placed as 'bookmarks', such that people working on a scene can quickly move the editor camera to areas of interest. [This chapter](editor-camera.md#level-cameras) describes how to do so.
 
 ## Include/Exclude Tags
 
 By default a camera renders all objects in the scene. Sometimes it can be desirable, though, for a camera to render only specific objects, or to ignore those. For example you may have descriptive labels attached to some objects, which the player can display on demand.
 
-Using the inclusion and exclusion [tags](../projects/tags.md) on the camera, you can control which objects are going to be considered for rendering from this camera view.
+Using the inclusion and exclusion [tags](tags.md) on the camera, you can control which objects are going to be considered for rendering from this camera view.
 
 * If *any* inclusion tag is set, **only objects with any of these tags** are rendered.
 * If an exclusion tag is set, **no object with any of these tags** is rendered.
 
 > **Important:**
 >
-> Don't forget that [tags](../projects/tags.md) **are not inherited**. You can't hide an object by setting a tag on its parent node.
+> Don't forget that [tags](tags.md) **are not inherited**. You can't hide an object by setting a tag on its parent node.
 
 So for the example with the object labels above, you would assign a 'label' tag to those objects and on your camera you would set 'label' as an exclusion tag. This way those objects are not rendered. When the player wants to see the labels, you would simply remove the exclusion tag from the camera, to make them appear.
 
@@ -51,25 +51,25 @@ So for the example with the object labels above, you would assign a 'label' tag 
 
 Camera components can be used to render their view to a texture, which can then be referenced by a [material](Materials.md) and displayed on any [mesh](Meshes.md).
 
-To enable this mode, the `UsageHint` has to be set to `Render to Texture`. You also need to select a `CameraRenderPipeline`. The render pipeline defines how the scene is rendered and which rendering effects are applied. You need to configure which [render pipelines (TODO)](render-pipeline-overview.md) are available to the cameras in the [asset profiles (TODO)](../assets/asset-profiles.md).
+To enable this mode, the `UsageHint` has to be set to `Render to Texture`. You also need to select a `CameraRenderPipeline`. The render pipeline defines how the scene is rendered and which rendering effects are applied. You need to configure which [render pipelines (TODO)](render-pipeline-overview.md) are available to the cameras in the [asset profiles (TODO)](asset-profiles.md).
 
 The `RenderTargetOffset` and `RenderTargetSize` allow you to render only to a part of the texture.
 
-Note that rendering to a texture involves additional steps. See the chapter about [render-to-texture (TODO)](render-to-texture/render-to-texture.md) for full instructions.
+Note that rendering to a texture involves additional steps. See the chapter about [render-to-texture (TODO)](render-to-texture.md) for full instructions.
 
 ## Component Properties
 
-* `EditorShortcut`: Used to configure [level cameras](../scenes/editor-camera.md#level-cameras).
+* `EditorShortcut`: Used to configure [level cameras](editor-camera.md#level-cameras).
 
-* `UsageHint`: A hint what the camera is supposed to be used for. Systems like the [game state](../runtime/application/game-state.md) may use this information to use or ignore this component.
+* `UsageHint`: A hint what the camera is supposed to be used for. Systems like the [game state](game-state.md) may use this information to use or ignore this component.
 
 * `Mode`, `FOV`, `Dimensions`: Configure whether this is a *perspective* or an *orthographic* view and how the other options are applied. Field-of-view (FOV) is used for perspective modes, dimensions are used for orthographic modes.
 
 * `NearPlane`, `FarPlane`: The distances for the near and far plane. For best performance keep the far plane distance as low as possible. To prevent *z-fighting* make sure that the near plane is not too close and the far plane is not too far out.
 
-* `IncludeTags`, `ExcludeTags`: See [Include/Exclude Tags](#includeexclude-tags) above.
+* `IncludeTags`, `ExcludeTags`: See [Include/Exclude Tags](camera-component.md#include-exclude-tags) above.
 
-* `CameraRenderPipeline`: Allows you to select a specific [render pipeline (TODO)](render-pipeline-overview.md) that shall be used to render the output from this camera. Available render pipelines are set up in the [asset profiles (TODO)](../assets/asset-profiles.md).
+* `CameraRenderPipeline`: Allows you to select a specific [render pipeline (TODO)](render-pipeline-overview.md) that shall be used to render the output from this camera. Available render pipelines are set up in the [asset profiles (TODO)](asset-profiles.md).
 
 * `RenderTarget`, `RenderTargetOffset`, `RenderTargetSize`: Only available when `UsageHint` is set to `Render to Texture`.
 
@@ -78,8 +78,8 @@ Note that rendering to a texture involves additional steps. See the chapter abou
 ## See Also
 
 
-* [Editor Camera](../scenes/editor-camera.md)
-* [Render to Texture (TODO)](render-to-texture/render-to-texture.md)
+* [Editor Camera](editor-camera.md)
+* [Render to Texture (TODO)](render-to-texture.md)
 * [Render Pipeline (TODO)](render-pipeline-overview.md)
-* [Asset Profiles (TODO)](../assets/asset-profiles.md)
-* [Tags](../projects/tags.md)
+* [Asset Profiles (TODO)](asset-profiles.md)
+* [Tags](tags.md)

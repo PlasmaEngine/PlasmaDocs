@@ -2,7 +2,7 @@
 
 For an introduction what a world is and how it fits into the overall picture, see [The World / Scenegraph System](world-overview.md).
 
-This documentation focuses on the C++ `plWorld` class. The functionality exposed through other mechanisms, such as [TypeScript](../../custom-code/typescript/typescript-overview.md), may be more limited in scope, but ultimately maps to the C++ implementation.
+This documentation focuses on the C++ `plWorld` class. The functionality exposed through other mechanisms, such as [TypeScript](TypeScript.md), may be more limited in scope, but ultimately maps to the C++ implementation.
 
 ## Game Objects
 
@@ -14,7 +14,7 @@ Components are not directly managed by a world. Instead, worlds manage [world mo
 
 ## World Modules
 
-World modules are bigger systems that manage aspects like [particle effects](../../effects/particle-effects/particle-effects-overview.md), the [Jolt integration](../../physics/jolt/jolt-overview.md), [wind](../../effects/wind.md) and so on. [Component managers](component-managers.md) are a special type of world modules that take care of updating the various component types.
+World modules are bigger systems that manage aspects like [particle effects](Particle-Effects.md), the [Jolt integration](jolt-overview.md), [wind](wind.md) and so on. [Component managers](component-managers.md) are a special type of world modules that take care of updating the various component types.
 
 ## Simulation State
 
@@ -30,7 +30,7 @@ Each world has its own `plClock` which can be retrieved through `plWorld::GetClo
 
 ### Random Number Generator
 
-When a component needs a random number, it should query this from the world via `plWorld::GetRandomNumberGenerator()`. Components or better, [component managers](component-managers.md) can of course also have their own random number generator, for example when they need multi-threaded access to it, or when they want to control the seed value for determinism. The [particle systems](../../effects/particle-effects/particle-effects-overview.md), for example, do this to achieve deterministic results.
+When a component needs a random number, it should query this from the world via `plWorld::GetRandomNumberGenerator()`. Components or better, [component managers](component-managers.md) can of course also have their own random number generator, for example when they need multi-threaded access to it, or when they want to control the seed value for determinism. The [particle systems](Particle-Effects.md), for example, do this to achieve deterministic results.
 
 ### Coordinate System
 

@@ -1,6 +1,6 @@
 # Skeleton Pose Component
 
-The *skeleton pose component* allows you to assign a custom, static pose to an animated mesh. This can be used for decorative purposes, for instance to place an animated mesh in different poses in your scenes, but it can also be used as a start pose for a mesh that is further animated, for example through [ragdoll physics (TODO)](../../physics/jolt/ragdolls/jolt-ragdoll-component.md).
+The *skeleton pose component* allows you to assign a custom, static pose to an animated mesh. This can be used for decorative purposes, for instance to place an animated mesh in different poses in your scenes, but it can also be used as a start pose for a mesh that is further animated, for example through [ragdoll physics (TODO)](jolt-ragdoll-component.md).
 
 ## Component Properties
 
@@ -12,9 +12,9 @@ The *skeleton pose component* allows you to assign a custom, static pose to an a
 
 ## Using Ragdolls for Posing
 
-When a pose component and a [ragdoll component (TODO)](../../physics/jolt/ragdolls/jolt-ragdoll-component.md) are both present on an animated mesh, the pose component can be used to define the starting pose of the ragdoll (make sure to configure the ragdoll to *wait for a pose* before it starts simulating).
+When a pose component and a [ragdoll component (TODO)](jolt-ragdoll-component.md) are both present on an animated mesh, the pose component can be used to define the starting pose of the ragdoll (make sure to configure the ragdoll to *wait for a pose* before it starts simulating).
 
-Additionally, when you [simulate a scene](../../editor/run-scene.md) in editor, you can [save the result of a ragdoll simulation](../../editor/run-scene.md#keep-simulation-changes) in a pose component:
+Additionally, when you [simulate a scene](run-scene.md) in editor, you can [save the result of a ragdoll simulation](run-scene.md#keep-simulation-changes) in a pose component:
 
 Place your ragdoll, make sure a pose component is attached, simulate the scene and then, while the simulation is still running, make sure your ragdoll is selected and press `K` (or *Scene > Utilities > Keep Simulation Changes*). Once you stop the simulation, the pose component gets updated to mimic the pose that the ragdoll was in.
 
@@ -24,4 +24,4 @@ You can then adjust individual limbs and repeat the process with a new starting 
 
 * [Skeletal Animations](Skeletal-Animation.md)
 * [Animated Mesh Component](animated-mesh-component.md)
-* [Ragdoll Component (TODO)](../../physics/jolt/ragdolls/jolt-ragdoll-component.md)
+* [Ragdoll Component (TODO)](jolt-ragdoll-component.md)

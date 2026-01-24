@@ -1,6 +1,6 @@
 # Sprite Component
 
-The *sprite component* is used to render a textured quad that always faces the camera and whose on-screen size never exceeds a defined limit. Sprites are mainly used to place 3D icons or markers in the world. For example all the [shape icons](../scenes/selection.md#shape-icons) in the editor are sprites. However, they can also be used for simple effects, for instance to represent small projectiles.
+The *sprite component* is used to render a textured quad that always faces the camera and whose on-screen size never exceeds a defined limit. Sprites are mainly used to place 3D icons or markers in the world. For example all the [shape icons](selection.md#shape-icons) in the editor are sprites. However, they can also be used for simple effects, for instance to represent small projectiles.
 
 ![Sprite](media/sprite.jpg)
 

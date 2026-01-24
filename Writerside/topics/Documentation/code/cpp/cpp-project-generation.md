@@ -2,14 +2,14 @@
 
 There are multiple ways to get custom C++ code into Plasma. The best way is to create an [engine plugin](engine-plugins.md), because this way the code can be executed directly inside the editor. Additionally such a plugins can be [hot reloaded](cpp-code-reload.md) to some degree.
 
-Plasma uses CMake for its build infrastructure. See [this chapter](cpp-overview.md#build-setup) about different ways to integrate your own project into the Plasma build.
+Plasma uses CMake for its build infrastructure. See [this chapter](Cpp.md#build-setup) about different ways to integrate your own project into the Plasma build.
 
 The most convenient way, however, is to let the editor create a stand-alone project for you. This way you get a CMake based project that only contains your code, but has all the necessary references set up to link against Plasma and output its DLLs to the right folder.
 
 > **Note:**
 >
-> One downside with this approach is that your solution does **not** contain the Plasma engine sources. That makes it less convenient to search for existing functionality, look up code [API docs](../../api-docs.md) and stepping through Plasma code while debugging.
-However, if you want that, you can include the generated plugin as an [external project](../../build/cmake-config.md#external-projects) into the Plasma engine solution.
+> One downside with this approach is that your solution does **not** contain the Plasma engine sources. That makes it less convenient to search for existing functionality, look up code [API docs](api-docs.md) and stepping through Plasma code while debugging.
+However, if you want that, you can include the generated plugin as an [external project](cmake-config.md#external-projects) into the Plasma engine solution.
 
 ## How to Generate a New Solution
 
@@ -29,7 +29,7 @@ However, if you want that, you can include the generated plugin as an [external 
 
 > **Note:**
 >
-> After compiling your new plugin for the very first time, you have to close the [editor project](../../projects/projects-overview.md) and reopen it, for it to load the information properly. Due to automatic [hot reloading](cpp-code-reload.md) this shouldn't be necessary later anymore, but it can still be necessary, for example when you add a new component type to your C++ code.
+> After compiling your new plugin for the very first time, you have to close the [editor project](projects-overview.md) and reopen it, for it to load the information properly. Due to automatic [hot reloading](cpp-code-reload.md) this shouldn't be necessary later anymore, but it can still be necessary, for example when you add a new component type to your C++ code.
 
 ## Opening an Existing Solution
 
@@ -44,7 +44,7 @@ If you have added or removed source files on disk, you need to regenerate the so
 
 ## See Also
 
-* [Custom Code with C++](cpp-overview.md)
+* [Custom Code with C++](Code.md)
 * [Hot Reloading C++ Game Plugins in the Editor](cpp-code-reload.md)
 * [Engine Plugins](engine-plugins.md)
-* [Sample Game Plugin](../../../samples/sample-game-plugin.md)
+* [Sample Game Plugin](sample-game-plugin.md)

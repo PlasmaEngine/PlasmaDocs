@@ -6,13 +6,13 @@ Lighting is the most important aspect of making a scene look good.
 
 There are many formulas for computing lighting on surfaces. The defacto industry standard, which is also used in Plasma Engine, is **P**hysically **B**ased **R**endering (PBR) which describes a surface in terms of *color*, the surface normals, its *roughness*, whether it is a *metal*. Using this data, very convincing lighting can be computed.
 
-Therefore the standard type of [material](../../materials/materials-overview.md) requires you to provide such textures. Optionally an *occlusion texture* can pronounce the lighting for small crevices.
+Therefore the standard type of [material](materials-overview.md) requires you to provide such textures. Optionally an *occlusion texture* can pronounce the lighting for small crevices.
 
 ## Static vs. Dynamic Lighting
 
 Many games differentiate between *static* or *baked* lighting, and *dynamic* lighting. Static lighting is precomputed and typically stored in *lightmaps* (dedicated textures) and other data structures. Dynamic lighting does not require any preprocessing or extra data. Baked lighting typically has the advantage that it can look much better because it can simulate light bounces and thus illuminate areas that are not directly lit.
 
-Currently Plasma Engine **only supports dynamic lighting**. That means every light source that you add to the scene can be moved around and change its color or brightness. It also means that every light source has a performance cost. The renderer uses a clustered forward rendering approach which can handle a relatively large amount of light sources efficiently. The most important rule is to reduce the number of *overlapping* light sources. The editor [render modes](../../editor/editor-views.md#render-modes) allow you to look for hotspots.
+Currently Plasma Engine **only supports dynamic lighting**. That means every light source that you add to the scene can be moved around and change its color or brightness. It also means that every light source has a performance cost. The renderer uses a clustered forward rendering approach which can handle a relatively large amount of light sources efficiently. The most important rule is to reduce the number of *overlapping* light sources. The editor [render modes](editor-views.md#render-modes) allow you to look for hotspots.
 
 ## Shadows
 
@@ -34,6 +34,6 @@ There are different component types to provide different types of lighting:
 ## See Also
 
 
-* [Materials](../../materials/materials-overview.md)
+* [Materials](materials-overview.md)
 * [Dynamic Shadows](dynamic-shadows.md)
-* [Render Modes](../../editor/editor-views.md#render-modes)
+* [Render Modes](editor-views.md#render-modes)

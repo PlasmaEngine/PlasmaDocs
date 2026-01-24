@@ -6,7 +6,7 @@ These animation controller nodes can be used to find problems.
 
 ![Log.png](media/Log.png)
 
-The *log node* simply prints a *dev* string to the [log](../../../debugging/logging.md) whenever it gets activated.
+The *log node* simply prints a *dev* string to the [log](logging.md) whenever it gets activated.
 
 ### Properties
 
@@ -14,7 +14,7 @@ The *log node* simply prints a *dev* string to the [log](../../../debugging/logg
 
 ### Input Pins
 
-* `Active`: Every frame in which this pin is triggered, the node will log `Text` as a *Dev* message to the [log](../../../debugging/logging.md).
+* `Active`: Every frame in which this pin is triggered, the node will log `Text` as a *Dev* message to the [log](logging.md).
 
 * `Input0` to `Input3`: These pins allow you to pass in values that can be printed to the log.
 

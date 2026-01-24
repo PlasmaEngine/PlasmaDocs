@@ -1,6 +1,6 @@
 # Editor Background Operations
 
-Most data that takes time to be generated or converted, comes from [assets](../assets/assets-overview.md). However, there is also scene specific data, which does not qualify as an asset. However, generating it can take very long and therefore should only be triggered on demand.
+Most data that takes time to be generated or converted, comes from [assets](assets-overview.md). However, there is also scene specific data, which does not qualify as an asset. However, generating it can take very long and therefore should only be triggered on demand.
 
 Examples include precomputed lighting or navmeshes. For complex scenes these processes can take very long. Also, if they become out of date, this is usually not a big problem immediately, which means updating the data can be delayed until it is really necessary.
 
@@ -19,4 +19,4 @@ The generated data is written to the project's *AssetCache/Generated* sub-folder
 ## See Also
 
 
-* [Assets](../assets/assets-overview.md)
+* [Assets](assets-overview.md)

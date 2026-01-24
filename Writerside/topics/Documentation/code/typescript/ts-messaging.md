@@ -1,6 +1,6 @@
 # Messaging in TypeScript
 
-TypeScript components can both send and receive messages. The way messages can be sent, posted and received, and how messages are routed is identical to the behavior on the C++ side. Please read the chapter about [messaging](../../runtime/world/world-messaging.md) to familiarize yourself with the general concepts.
+TypeScript components can both send and receive messages. The way messages can be sent, posted and received, and how messages are routed is identical to the behavior on the C++ side. Please read the chapter about [messaging](world-messaging.md) to familiarize yourself with the general concepts.
 
 The main difference in TypeScript is, that messages that have been declared in C++ can be sent and received in TypeScript, but messages that have been declared in TypeScript can only be sent and received by TypeScript code.
 

@@ -6,9 +6,9 @@ Accessing such singletons is trivial, as you can always call their functions dir
 
 There are cases where you want to define an *interface* to make certain functionality available, but you may have different implementations. Only one implementation should ever be active, though. Concrete examples are the integrations of third party libraries. For example there is an `plFrameCaptureInterface`. This class defines an interface through which `plGameApplicationBase` can do a capture of the rendered frame, which can be used for debugging graphics issues. However, *how* such a frame capture could be taken, depends on the platform, the installed tools, the used graphics API and so on. This functionality may be available or not and the exact implementation that is needed can differ drastically.
 
-Therefore, we want to be able to dynamically load the necessary implementation and make it available through the abstract interface. For the `plFrameCaptureInterface` we have an implementation by our [RenderDoc integration](../../debugging/renderdoc.md). In the future we might have a second implementation for PIX or some other platform specific tool.
+Therefore, we want to be able to dynamically load the necessary implementation and make it available through the abstract interface. For the `plFrameCaptureInterface` we have an implementation by our [RenderDoc integration](renderdoc.md). In the future we might have a second implementation for PIX or some other platform specific tool.
 
-Using the singleton infrastructure, we can simply load an [engine plugin](../../custom-code/cpp/engine-plugins.md) that contains an implementation, and from that plugin register our implementation for that interface. Other code can then query for an instance of this interface and, if available, use it without knowing anything about the implementation, and without the need to link against that library.
+Using the singleton infrastructure, we can simply load an [engine plugin](engine-plugins.md) that contains an implementation, and from that plugin register our implementation for that interface. Other code can then query for an instance of this interface and, if available, use it without knowing anything about the implementation, and without the need to link against that library.
 
 ## Implementing Singletons
 
@@ -140,4 +140,4 @@ Here we don't need to know anything about the implementation and therefore have 
 ## See Also
 
 * [Startup System](startup.md)
-* [Engine Plugins](../../custom-code/cpp/engine-plugins.md)
+* [Engine Plugins](engine-plugins.md)

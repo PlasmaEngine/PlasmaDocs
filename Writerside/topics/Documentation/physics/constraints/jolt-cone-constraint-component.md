@@ -15,6 +15,6 @@ If additionally the maximum twist around the rotational axis shall be constraine
 ## See Also
 
 * [Jolt Constraints](jolt-constraints.md)
-* [Jolt Actors](../actors/jolt-actors.md)
+* [Jolt Actors](jolt-actors.md)
 * [Jolt Point Constraint Component](jolt-point-constraint-component.md)
 * [Jolt Swing-Twist Constraint Component](jolt-swing-twist-constraint-component.md)

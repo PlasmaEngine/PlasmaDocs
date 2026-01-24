@@ -1,10 +1,10 @@
 # Textures
 
-Textures come in multiple forms. Most common are 2D textures loaded from file. 2D textures can also be created as render targets for [render-to-texture (TODO)](render-to-texture/render-to-texture.md). For [sky boxes](../effects/sky.md) or special effects you can also set up cubemap textures.
+Textures come in multiple forms. Most common are 2D textures loaded from file. 2D textures can also be created as render targets for [render-to-texture (TODO)](render-to-texture.md). For [sky boxes](sky.md) or special effects you can also set up cubemap textures.
 
-When the source texture comes from a file, you can create a texture [asset](../assets/assets-overview.md) for that file by [importing](../assets/import-assets.md) it. Otherwise you need to create the respective asset [document](../editor/editor-documents.md) manually, for example for render targets.
+When the source texture comes from a file, you can create a texture [asset](assets-overview.md) for that file by [importing](import-assets.md) it. Otherwise you need to create the respective asset [document](editor-documents.md) manually, for example for render targets.
 
-Textures are most often referenced by [materials](../materials/materials-overview.md). Texture assets only specify how source files are imported and combined, they don't define rendering behavior. Therefore most components don't use textures directly, but rather use materials, which configure the overall rendering, unless the component in question already sets up the rendering itself, such as the [SkyBox component](../effects/sky.md#skybox-component).
+Textures are most often referenced by [materials](materials-overview.md). Texture assets only specify how source files are imported and combined, they don't define rendering behavior. Therefore most components don't use textures directly, but rather use materials, which configure the overall rendering, unless the component in question already sets up the rendering itself, such as the [SkyBox component](sky.md#skybox-component).
 
 ![Texture Asset](media/texture-asset.png)
 
@@ -16,7 +16,7 @@ On the right-hand side you see the property grid where you choose the **texture 
 
 The following properties are available:
 
-**Usage:** Tells the texture converter what type of data the texture represents. This affects what [color space (TODO)](../appendix/color-spaces.md) will be used, ie. whether the format uses *sRGB* or *Linear* encoding. If your color texture ends up using the incorrect color space (e.g. *Linear* when it should be *sRGB*) you will typically notice that the texture appears too bright and washed out.
+**Usage:** Tells the texture converter what type of data the texture represents. This affects what [color space (TODO)](color-spaces.md) will be used, ie. whether the format uses *sRGB* or *Linear* encoding. If your color texture ends up using the incorrect color space (e.g. *Linear* when it should be *sRGB*) you will typically notice that the texture appears too bright and washed out.
 
 * **Auto:** In this mode the converter will guess the *usage*, utilizing file name heuristics, the source file format and sometimes even the content. If your file names use suffixes like `_D`, `_Normal`, etc. this can work pretty well.
 * **Color:** Use this for textures that represent color. For example diffuse textures, skyboxes and emissive color textures.
@@ -56,20 +56,20 @@ Cubemap assets have a subset of the properties that 2D textures have. Their beha
 
 ## Render Target Asset
 
-Render targets can be used like regular 2D textures. That means materials can reference them and display their content. However, they are filled by rendering to them at runtime, for example by using a camera to render the scene from a certain viewpoint. Have a look at the [render to texture (TODO)](render-to-texture/render-to-texture.md) article for details.
+Render targets can be used like regular 2D textures. That means materials can reference them and display their content. However, they are filled by rendering to them at runtime, for example by using a camera to render the scene from a certain viewpoint. Have a look at the [render to texture (TODO)](render-to-texture.md) article for details.
 
 Apart from some properties shared with 2D texture assets, render targets have these unique properties:
 
 **Format:** Determines whether the texture can store HDR data (10 bit or 16 bit) and whether the texture represents colors (sRGB) or linear data.
 
-**Resolution:** The dimensions of the texture. If set to `CVar RT Resolution N` the resolution will be read from the [CVar](../debugging/cvars.md) `r_RenderTargetResolutionN`. This can be used to adjust the resolution dynamically.
+**Resolution:** The dimensions of the texture. If set to `CVar RT Resolution N` the resolution will be read from the [CVar](cvars.md) `r_RenderTargetResolutionN`. This can be used to adjust the resolution dynamically.
 
 **CVarResScale:** If the resolution is read from a CVar, this allows to scale it. For instance to create a *half resolution* render target.
 
 ## See Also
 
 
-* [Materials](../materials/materials-overview.md)
-* [Render to Texture (TODO)](render-to-texture/render-to-texture.md)
-* [Sky](../effects/sky.md)
-* [Color Spaces (TODO)](../appendix/color-spaces.md)
+* [Materials](materials-overview.md)
+* [Render to Texture (TODO)](render-to-texture.md)
+* [Sky](sky.md)
+* [Color Spaces (TODO)](color-spaces.md)

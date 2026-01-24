@@ -2,7 +2,7 @@
 
 For an introduction what a message is and how it fits into the overall picture, see [The World / Scenegraph System](world-overview.md).
 
-This documentation focuses on the C++ `plMessage` class. The functionality exposed through other mechanisms, such as [TypeScript](../../custom-code/typescript/typescript-overview.md), may be more limited in scope, but ultimately maps to the C++ implementation.
+This documentation focuses on the C++ `plMessage` class. The functionality exposed through other mechanisms, such as [TypeScript](TypeScript.md), may be more limited in scope, but ultimately maps to the C++ implementation.
 
 Messages can be sent from any code. They can only be received by [components](components.md), though, as the messaging system is implemented by `plWorld`.
 
@@ -21,7 +21,7 @@ struct plMsgSetText : public plMessage
 ```
 <!-- END-DOCS-CODE-SNIPPET -->
 
-In some cpp file you then also need to implement the message and set up basic [reflection information](../reflection-system.md):
+In some cpp file you then also need to implement the message and set up basic [reflection information](reflection-system.md):
 
 <!-- BEGIN-DOCS-CODE-SNIPPET: message-impl -->
 ```cpp
@@ -35,7 +35,7 @@ This is all that is needed to send and receive the message in C++ code.
 
 > **Note:**
 >
-> The code above does not add reflection for each message member, as that is not necessary to make this message work. However, if you want to send and receive this message from non-C++ code, for example from [TypeScript](../../custom-code/typescript/typescript-overview.md), then reflecting the members is necessary for the language binding to work. Be aware though, that language bindings may not support all types of reflected members and would ignore those.
+> The code above does not add reflection for each message member, as that is not necessary to make this message work. However, if you want to send and receive this message from non-C++ code, for example from [TypeScript](TypeScript.md), then reflecting the members is necessary for the language binding to work. Be aware though, that language bindings may not support all types of reflected members and would ignore those.
 
 ## Message Handlers
 
@@ -103,7 +103,7 @@ Event messages are a special type of message with a different kind of semantic. 
 
 *Event messages* on the other hand, are used to 'inform' an object hierarchy that *something happened*. An example would be `plMsgDamage` which is used to inform an object that it received damage. For these kind of messages you only want *one* component to handle it. This will often be a very high-level component like a custom component representing the player or an NPC.
 
-These types of components are typically attached to the very top of a [prefab](../../prefabs/prefabs-overview.md) structure and they are supposed to manage the overall game logic for this object. Therefore the *message routing* for event messages follows a different pattern: when you call `plGameObject::SendEventMessage()` on a node, the message is delivered to the closest **parent node** that has a component of type `plEventMessageHandlerComponent`.
+These types of components are typically attached to the very top of a [prefab](prefabs-overview.md) structure and they are supposed to manage the overall game logic for this object. Therefore the *message routing* for event messages follows a different pattern: when you call `plGameObject::SendEventMessage()` on a node, the message is delivered to the closest **parent node** that has a component of type `plEventMessageHandlerComponent`.
 
 The `plEventMessageHandlerComponent` interface is only implemented by very few component types. Out of the box, only by `plTypeScriptComponent` and `plVisualScriptComponent`, meaning only components used to provide scripting functionality are currently capable of handling event messages. However, if you were to write your own NPC class, that is supposed to implement actual game logic (and not just path finding), then it makes sense to make it an `plEventMessageHandlerComponent`.
 
@@ -141,4 +141,4 @@ For regular messages you don't need to implement any serialization, as they are 
 
 
 * [The World / Scenegraph System](world-overview.md)
-* [Sample Game Plugin](../../../samples/sample-game-plugin.md)
+* [Sample Game Plugin](sample-game-plugin.md)

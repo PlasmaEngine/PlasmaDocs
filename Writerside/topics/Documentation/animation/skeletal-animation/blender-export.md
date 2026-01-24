@@ -15,7 +15,7 @@ This page contains various pieces of information that are good to know when one 
 
 ## Importing Meshes into Plamsa
 
-When importing a mesh, Plasma remaps the model space to its own convention. You may need to change the mapping, to get the desired result. For static meshes, this is configure on the [mesh asset](../../graphics/meshes/mesh-asset.md). For animated models, the mapping is chosen on the root node of the corresponding [skeleton asset](skeleton-asset.md).
+When importing a mesh, Plasma remaps the model space to its own convention. You may need to change the mapping, to get the desired result. For static meshes, this is configure on the [mesh asset](mesh-asset.md). For animated models, the mapping is chosen on the root node of the corresponding [skeleton asset](skeleton-asset.md).
 
 Plasma uses the following convention:
 

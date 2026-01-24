@@ -6,19 +6,19 @@ The *HeightfieldComponent* can be used for simple, heightmap based terrain, as w
 
 ![Rubble](media/heightfield-rubble.jpg)
 
-The heightfield component uses an [ImageData asset](../Miscellaneous/imagedata-asset.md) to get the height information. Consequently, the heightmap image has to be imported as such an asset type.
+The heightfield component uses an [ImageData asset](imagedata-asset.md) to get the height information. Consequently, the heightmap image has to be imported as such an asset type.
 
 ## Collision Mesh
 
-When the [tag](../projects/tags.md) `AutoColMesh` is set on the owner game object, the component adds its mesh to the scene [collision mesh](../physics/jolt/collision-shapes/jolt-collision-meshes.md), just like the [greyboxing components](../scenes/greyboxing.md). This is only supported for [static game objects](../runtime/world/game-objects.md#static-vs-dynamic-objects) though.
+When the [tag](tags.md) `AutoColMesh` is set on the owner game object, the component adds its mesh to the scene [collision mesh](jolt-collision-meshes.md), just like the [greyboxing components](greyboxing.md). This is only supported for [static game objects](game-objects.md#static-vs-dynamic-objects) though.
 
-Currently all triangles in the collision mesh will all use the same [surface](../materials/surfaces.md), the one set on the main material.
+Currently all triangles in the collision mesh will all use the same [surface](surfaces.md), the one set on the main material.
 
 ## Properties
 
-`HeightfieldImage:` The [ImageData asset](../Miscellaneous/imagedata-asset.md) that contains the terrain height information.
+`HeightfieldImage:` The [ImageData asset](imagedata-asset.md) that contains the terrain height information.
 
-`Material:` The single [material](../materials/materials-overview.md) used for the entire mesh. If you need multiple layers (grass, dirt, rock, etc) you can write a custom [visual shader (TODO)](../materials/visual-shaders.md) that uses a mask texture to fetch and blend the various layers as desired. 
+`Material:` The single [material](materials-overview.md) used for the entire mesh. If you need multiple layers (grass, dirt, rock, etc) you can write a custom [visual shader (TODO)](../materials/visual-shaders.md) that uses a mask texture to fetch and blend the various layers as desired. 
 
 `HalfExtents:` The size of the terrain in X and Y direction.
 
@@ -32,7 +32,7 @@ Currently all triangles in the collision mesh will all use the same [surface](..
 
 ## Performance Considerations
 
-1. Consider to **deactivate casting shadows** by removing the `CastShadow` [tag](../projects/tags.md) on the owner game object. It is rare that terrain has such prominent features, that they would be cast visible shadows. However, densely tesselated terrain meshes add a high cost to the shadow map update.
+1. Consider to **deactivate casting shadows** by removing the `CastShadow` [tag](tags.md) on the owner game object. It is rare that terrain has such prominent features, that they would be cast visible shadows. However, densely tesselated terrain meshes add a high cost to the shadow map update.
 
 1. Deactivate the collision mesh generation, if the terrain (or pile of rubble) is purely visual.
 

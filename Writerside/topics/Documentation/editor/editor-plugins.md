@@ -6,5 +6,5 @@ Editor plugins are fully functional, but currently undocumented.
 
 ## See Also
 
-* [Engine Plugins](../custom-code/cpp/engine-plugins.md)
+* [Engine Plugins](engine-plugins.md)
 

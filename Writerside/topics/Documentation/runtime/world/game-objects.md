@@ -2,7 +2,7 @@
 
 For an introduction what a game object is and how it fits into the overall picture, see [The World / Scenegraph System](world-overview.md).
 
-This documentation focuses on the C++ `plGameObject` class. The functionality exposed through other mechanisms, such as [TypeScript](../../custom-code/typescript/typescript-overview.md), may be more limited in scope, but ultimately maps to the C++ implementation.
+This documentation focuses on the C++ `plGameObject` class. The functionality exposed through other mechanisms, such as [TypeScript](TypeScript.md), may be more limited in scope, but ultimately maps to the C++ implementation.
 
 ## Creating Game Objects
 
@@ -24,7 +24,7 @@ The global transform is computed from the local transform and the global transfo
 
 ## Static vs. Dynamic Objects
 
-*Static* game objects are objects that are considered to never move. *Dynamic* objects, however, can move around the scene arbitrarily. Internally the engine separates these two types of objects into different memory regions. The object transform for dynamic objects is updated *every frame*. That means from a performance perspective it makes no difference whether a dynamic object was moved in a frame or not. The transforms for static objects, however, are only updated when it is needed (after creation). If you try to move a static object, you will see warnings in the [log](../../debugging/logging.md) in development builds, and the object will not move.
+*Static* game objects are objects that are considered to never move. *Dynamic* objects, however, can move around the scene arbitrarily. Internally the engine separates these two types of objects into different memory regions. The object transform for dynamic objects is updated *every frame*. That means from a performance perspective it makes no difference whether a dynamic object was moved in a frame or not. The transforms for static objects, however, are only updated when it is needed (after creation). If you try to move a static object, you will see warnings in the [log](logging.md) in development builds, and the object will not move.
 
 When you build a scene in the editor, you generally don't need to worry about this. Each [component type](components.md) is flagged to either be *dynamic* (meaning it may modify its owner's position) or static. From the attached components, the editor will automatically detect whether a game object must be created as static or dynamic.
 
@@ -48,11 +48,11 @@ When deleting a game object, it typically stays alive till the end of the frame,
 
 The chapter about [object lifetime](object-lifetime.md) explains this in more detail.
 
-Components can also [reference objects](../../scenes/object-references.md) from their properties. These references are also based on handles.
+Components can also [reference objects](object-references.md) from their properties. These references are also based on handles.
 
 ## Tags
 
-Game objects can have [tags](../../projects/tags.md). These are used to control things like whether the object will cast shadows. However, they are mostly at your disposal to tag objects with game play relevant information.
+Game objects can have [tags](tags.md). These are used to control things like whether the object will cast shadows. However, they are mostly at your disposal to tag objects with game play relevant information.
 
 ## Iterating over Game Objects
 
@@ -68,7 +68,7 @@ There are multiple ways to find specific objects, or objects relative to some pa
 
 ### Global Keys
 
-You can assign a game object a *global key*. This is a string that should be unique across all objects within the world. That includes all game objects from all [prefab](../../prefabs/prefabs-overview.md) instances, so you must be very careful with this. If the same global key is used twice, one of them will be ignored.
+You can assign a game object a *global key*. This is a string that should be unique across all objects within the world. That includes all game objects from all [prefab](prefabs-overview.md) instances, so you must be very careful with this. If the same global key is used twice, one of them will be ignored.
 
 You can query for a game object by global key using `plWorld::TryGetObjectWithGlobalKey()`.
 
@@ -103,9 +103,9 @@ See the chapter about [messaging](world-messaging.md) for details.
 
 All game objects store a 16 bit *team ID*. This value can be used to identify which team or faction an object belongs to. The team ID has no functionality by itself, you can use it or ignore it.
 
-The one feature that the team ID has, is that it is automatically propagated for you when components create objects or instantiate [prefabs](../../prefabs/prefabs-overview.md). This way, when a player with team ID `3` shoots, the bullet prefab that gets instantiated by the [spawn component](../../gameplay/spawn-component.md) will automatically be assigned team ID `3` as well. Thus when that bullet hits another player, your code can easily attribute a kill to a team, or filter out friendly fire.
+The one feature that the team ID has, is that it is automatically propagated for you when components create objects or instantiate [prefabs](prefabs-overview.md). This way, when a player with team ID `3` shoots, the bullet prefab that gets instantiated by the [spawn component](spawn-component.md) will automatically be assigned team ID `3` as well. Thus when that bullet hits another player, your code can easily attribute a kill to a team, or filter out friendly fire.
 
-Although it would be possible to implement something similar entirely with custom components, only by having this in the basic game object, is it possible to trace this information even through built in components, meaning you don't need to reimplement basic functionality like the spawn component or the [projectile component](../../gameplay/projectile-component.md).
+Although it would be possible to implement something similar entirely with custom components, only by having this in the basic game object, is it possible to trace this information even through built in components, meaning you don't need to reimplement basic functionality like the spawn component or the [projectile component](projectile-component.md).
 
 ## See Also
 

@@ -6,7 +6,7 @@ Most documents come with at least one 3D view. The scene documents allow you to 
 
 Using the *Perspective* menu in the toolbar (the *eye* icon) you can switch each view to either orthographic or perspective mode.
 
-[Camera controls](../scenes/editor-camera.md) and [editing gizmos](../scenes/gizmos.md) act differently in orthographic and perspective mode.
+[Camera controls](editor-camera.md) and [editing gizmos](gizmos.md) act differently in orthographic and perspective mode.
 
 ## Render Modes
 
@@ -117,5 +117,5 @@ Visualizes the roughness of objects.
 ## See Also
 
 
-* [Editor Camera](../scenes/editor-camera.md)
-* [Scene Editing](../scenes/scene-editing.md)
+* [Editor Camera](editor-camera.md)
+* [Scene Editing](scene-editing.md)

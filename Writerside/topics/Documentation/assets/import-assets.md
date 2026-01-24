@@ -1,6 +1,6 @@
 # Asset Import
 
-All [assets](assets-overview.md) are represented by [documents](../editor/editor-documents.md). That means to get a texture into the engine, you need a [texture document](../graphics/textures-overview.md) which describes which source files (png, jpg, etc) are used to create the texture and how they shall be imported. This is where you configure such things as, whether to use compression, whether an alpha channel should be present and so on.
+All [assets](assets-overview.md) are represented by [documents](editor-documents.md). That means to get a texture into the engine, you need a [texture document](textures-overview.md) which describes which source files (png, jpg, etc) are used to create the texture and how they shall be imported. This is where you configure such things as, whether to use compression, whether an alpha channel should be present and so on.
 
 Other asset types of course have other options for importing.
 
@@ -14,7 +14,7 @@ This method always works for all asset types and for some types it is the only w
 
 ## Create Documents Automatically
 
-For asset types that are mostly defined by a single source file (e.g. [textures](../graphics/textures-overview.md) and [meshes](../graphics/meshes/mesh-asset.md)), the editor often provides an importing method that automates most of the trivial setup.
+For asset types that are mostly defined by a single source file (e.g. [textures](textures-overview.md) and [meshes](mesh-asset.md)), the editor often provides an importing method that automates most of the trivial setup.
 
 Select **Editor > Import Assets...** or press **CTRL+I** to open a file browse dialog. Navigate to the file(s) that you want to import and select them. If you want to know which asset types are currently supported for automatic import, you can open the dropdown with the allowed file extensions here. Dragging and dropping an asset will skip the browser dialog.
 

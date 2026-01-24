@@ -21,7 +21,7 @@ On the other hand, ImGui is not meant to be styled. Changing the appearance of I
 ```
 <!-- END-DOCS-CODE-SNIPPET -->
 
-This can be done for example in `OnActivation()` of a custom [game state](../runtime/application/game-state.md). Similarly, you should delete the `plImgui` instance at shutdown:
+This can be done for example in `OnActivation()` of a custom [game state](game-state.md). Similarly, you should delete the `plImgui` instance at shutdown:
 
 <!-- BEGIN-DOCS-CODE-SNIPPET: imgui-dealloc -->
 ```cpp

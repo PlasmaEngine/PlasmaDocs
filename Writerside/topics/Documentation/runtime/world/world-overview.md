@@ -12,9 +12,9 @@ The main classes involved are `plWorld`, `plGameObject`, `plComponent` and `plWo
 
 Each `plWorld` represents the entire state of a scene. Worlds hold all [game objects](game-objects.md) and all [world modules](world-modules.md), which in turn hold all [components](components.md).
 
-Each world has its own simulation state, such as a clock and a random number generator. Through the world modules, worlds also hold their own state for other simulation aspects, such as [physics](../../physics/jolt/jolt-overview.md).
+Each world has its own simulation state, such as a clock and a random number generator. Through the world modules, worlds also hold their own state for other simulation aspects, such as [physics](jolt-overview.md).
 
-You can have multiple worlds in parallel and they will be completely separated. This is for example the case when you have multiple [documents](../../editor/editor-documents.md) open in the editor.
+You can have multiple worlds in parallel and they will be completely separated. This is for example the case when you have multiple [documents](editor-documents.md) open in the editor.
 
 Worlds are described in more detail in [this chapter](worlds.md).
 
@@ -48,15 +48,15 @@ See the [object lifetime chapter](object-lifetime.md) for details.
 
 ## Custom Components
 
-A large part of writing your own game, is to write your own components. If you need maximum control and performance, you need to write your [components in C++](../../custom-code/cpp/custom-cpp-component.md).
+A large part of writing your own game, is to write your own components. If you need maximum control and performance, you need to write your [components in C++](custom-cpp-component.md).
 
-You can also write components in [TypeScript](../../custom-code/typescript/typescript-overview.md). Their functionality is very similar but a bit more limited. It is possible to use both and communicate between Typescript and C++ components using [messages](world-messaging.md).
+You can also write components in [TypeScript](TypeScript.md). Their functionality is very similar but a bit more limited. It is possible to use both and communicate between Typescript and C++ components using [messages](world-messaging.md).
 
 ## Messaging
 
 When a component gets updated, it can access other components and call functions on them. Of course that requires that the other component type is known at compile time. In practice, that is often not the case.
 
-Take the [projectile component](../../gameplay/projectile-component.md) as an example. Whenever a projectile hits something, it should apply damage to the hit object. However, what it hit was just the physical representation of an object (e.g. a [physics actor](../../physics/jolt/actors/jolt-actors.md)). The physics object doesn't have a concept of 'receiving damage' and therefore calling some 'OnDamage' function on the physics component makes no sense.
+Take the [projectile component](projectile-component.md) as an example. Whenever a projectile hits something, it should apply damage to the hit object. However, what it hit was just the physical representation of an object (e.g. a [physics actor](jolt-actors.md)). The physics object doesn't have a concept of 'receiving damage' and therefore calling some 'OnDamage' function on the physics component makes no sense.
 
 Instead, on the object that has the physics component, there may be another component which knows how it would react to damage, so we want to send the information there. That component may be a custom component, though, which the projectile component knows nothing about, so there is no way to call a function on that.
 
@@ -83,4 +83,4 @@ See [this chapter](spatial-system.md) for details.
 * [World Modules](world-modules.md)
 * [Component Managers](component-managers.md)
 * [Messaging](world-messaging.md)
-* [Custom Code](../../custom-code/custom-code-overview.md)
+* [Custom Code](Code.md)

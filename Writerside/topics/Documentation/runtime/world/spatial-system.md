@@ -16,7 +16,7 @@ Since there is exactly one spatial system per world, it usually means that the c
 
 In C++ code you get access to the world's spatial system through `plWorld::GetSpatialSystem()`.
 
-When using other languages bindings the spatial system may not be exposed directly. For example, when using [TypeScript](../../custom-code/typescript/typescript-overview.md), the most useful functions are exposed directly through `pl.World`, for example `pl.World.FindObjectsInBox()` and `pl.World.FindObjectsInSphere()`.
+When using other languages bindings the spatial system may not be exposed directly. For example, when using [TypeScript](TypeScript.md), the most useful functions are exposed directly through `pl.World`, for example `pl.World.FindObjectsInBox()` and `pl.World.FindObjectsInSphere()`.
 
 ## Spatial Data Categories
 
@@ -34,7 +34,7 @@ plSpatialData::Category RtsSelectableComponent::s_SelectableCategory = plSpatial
 ```
 <!-- END-DOCS-CODE-SNIPPET -->
 
-When using the editor, there are components, such as the [marker component](../../gameplay/marker-component.md), which allow you to select a category from a predefined list. This list is project specific. When you click on such a dropdown box, the last entry allows you to open an editor to configure the available categories
+When using the editor, there are components, such as the [marker component](marker-component.md), which allow you to select a category from a predefined list. This list is project specific. When you click on such a dropdown box, the last entry allows you to open an editor to configure the available categories
 
 ### The Invalid Category
 
@@ -62,7 +62,7 @@ void RtsSelectableComponent::OnUpdateLocalBounds(plMsgUpdateLocalBounds& msg)
 ```
 <!-- END-DOCS-CODE-SNIPPET -->
 
-Don't forget to register the message handler in the [reflection block](../reflection-system.md):
+Don't forget to register the message handler in the [reflection block](reflection-system.md):
 
 <!-- BEGIN-DOCS-CODE-SNIPPET: spatial-bounds-handler -->
 ```cpp
@@ -96,11 +96,11 @@ In other language bindings you may instead need to pass in a list of all the des
 
 ## Spatial System vs. Physics Engines
 
-Both the spatial system, as well as [physics engines](../../physics/jolt/jolt-overview.md) allow you to do spatial queries. There are cases where a problem can be solved using either system, but generally they are meant to complement each other.
+Both the spatial system, as well as [physics engines](jolt-overview.md) allow you to do spatial queries. There are cases where a problem can be solved using either system, but generally they are meant to complement each other.
 
 If you want to query for things that already need to have a physical representation, and therefore will be handled by the physics engine anyway, it is best to leverage the physics engine to query for such objects. For example a shockwave effect that is supposed to push objects away, only makes sense to be applied to physically simulated objects. Therefore, querying which objects are close-by, to figure out what objects to apply the effect to, should be done through the physics engine, and there is no reason to even have information about these objects in the spatial system.
 
-On the other hand, things like the `RtsSelectableComponent` (see above) could be achieved by setting up fake [physics actors](../../physics/jolt/actors/jolt-actors.md) so that they can be found with physics queries. The performance cost for doing so would be unnecessary high though, as the physics engine would perform additional maintenance that is ultimately not needed, and it may waste precious resources such as [collision layers](../../physics/jolt/collision-shapes/jolt-collision-layers.md). Here, using the spatial system makes much more sense.
+On the other hand, things like the `RtsSelectableComponent` (see above) could be achieved by setting up fake [physics actors](jolt-actors.md) so that they can be found with physics queries. The performance cost for doing so would be unnecessary high though, as the physics engine would perform additional maintenance that is ultimately not needed, and it may waste precious resources such as [collision layers](../../physics/jolt/collision-shapes/jolt-collision-layers.md). Here, using the spatial system makes much more sense.
 
 > **Note:**
 >
@@ -108,11 +108,11 @@ On the other hand, things like the `RtsSelectableComponent` (see above) could be
 
 ## Spatial System vs. Tags
 
-The spatial data categories are very similar to [tags](../../projects/tags.md). The difference is, that tags are set up on [game objects](game-objects.md) and they don't have any spatial quality. A game object can have many tags, but not be registered spatially and therefore cannot be found through spatial queries. On the other hand, because of this, tags have nearly no performance overhead, whereas spatial data must be updated whenever an object moves.
+The spatial data categories are very similar to [tags](tags.md). The difference is, that tags are set up on [game objects](game-objects.md) and they don't have any spatial quality. A game object can have many tags, but not be registered spatially and therefore cannot be found through spatial queries. On the other hand, because of this, tags have nearly no performance overhead, whereas spatial data must be updated whenever an object moves.
 
-Ultimately, both systems can be used to solve many of the same problems. When you need to be able to inspect an area and find all objects of a certain kind, you should use spatial data, for example through a [marker component](../../gameplay/marker-component.md). If, however, you need to semtantically label objects, but do not require to find them spatially, prefer tags to not waste performance.
+Ultimately, both systems can be used to solve many of the same problems. When you need to be able to inspect an area and find all objects of a certain kind, you should use spatial data, for example through a [marker component](marker-component.md). If, however, you need to semtantically label objects, but do not require to find them spatially, prefer tags to not waste performance.
 
 ## See Also
 
-* [Marker Component](../../gameplay/marker-component.md)
+* [Marker Component](marker-component.md)
 * [The World / Scenegraph System](world-overview.md)

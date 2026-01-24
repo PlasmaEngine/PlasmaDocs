@@ -26,5 +26,5 @@ However, in raycasts and shape queries you can additionally provide other option
 
 ## See Also
 
-* [Jolt Integration](../jolt-overview.md)
+* [Jolt Integration](jolt-overview.md)
 * [Jolt Collision Meshes](jolt-collision-meshes.md)

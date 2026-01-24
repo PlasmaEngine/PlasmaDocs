@@ -12,7 +12,7 @@ The *color animation component* allows you to apply an animated [color gradient]
 
 ## Component Properties
 
-* `Gradient`: The [color gradient](../common/color-gradients.md) to use. The gradient will be sampled from left to right over `Duration` seconds. Each time the sampled color is put into an `plMsgSetColor` and that [message is sent](../../runtime/world/world-messaging.md) to all other components that are attached to the same object.
+* `Gradient`: The [color gradient](color-gradients.md) to use. The gradient will be sampled from left to right over `Duration` seconds. Each time the sampled color is put into an `plMsgSetColor` and that [message is sent](world-messaging.md) to all other components that are attached to the same object.
 * `Duration`: The duration that the color gradient should last before it is being repeated.
 * `SetColorMode`: The mode with which to modify the color of the affect object. Although the color can be blended into the target object's color, for many components this quickly results in a fully black or fully white result, as the modifications accumulate with each change.
 * `AnimationMode`: How to continue sampling the color gradient, once the end has been reached.
@@ -22,5 +22,5 @@ The *color animation component* allows you to apply an animated [color gradient]
 ## See Also
 
 
-* [Property Animation (TODO)](property-animation-overview.md)
-* [Color Gradients](../common/color-gradients.md)
+* [Property Animation (TODO)](Property-Animation.md)
+* [Color Gradients](color-gradients.md)

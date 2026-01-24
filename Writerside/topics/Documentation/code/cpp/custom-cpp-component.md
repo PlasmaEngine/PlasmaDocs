@@ -1,16 +1,16 @@
 # Components with C++
 
-To write a custom C++ component, the first thing you need is a custom [engine plugin](engine-plugins.md). Once you have that, and have it enabled in your [project settings](../../projects/project-settings.md), any custom component that you define in that plugin will show up in the editor and can be attached to [game objects](../../runtime/world/game-objects.md).
+To write a custom C++ component, the first thing you need is a custom [engine plugin](engine-plugins.md). Once you have that, and have it enabled in your [project settings](project-settings.md), any custom component that you define in that plugin will show up in the editor and can be attached to [game objects](game-objects.md).
 
-The [Sample Game Plugin](../../../samples/sample-game-plugin.md) shows all the pieces that you need, including multiple components to get inspiration from. This article describes the steps to create a simple custom component.
+The [Sample Game Plugin](sample-game-plugin.md) shows all the pieces that you need, including multiple components to get inspiration from. This article describes the steps to create a simple custom component.
 
-Before you continue, please read the [components chapter](../../runtime/world/components.md), as it already covers most things that you need to know.
+Before you continue, please read the [components chapter](components.md), as it already covers most things that you need to know.
 
 ## Component Manager Declaration
 
-For every type of C++ component there is a corresponding [component manager](../../runtime/world/component-managers.md). The component manager is responsible for allocating and deallocating components and for updating them. Each component manager is tied to a single [world](../../runtime/world/worlds.md), so if you have multiple worlds, each world will hold its own instance of each component manager.
+For every type of C++ component there is a corresponding [component manager](component-managers.md). The component manager is responsible for allocating and deallocating components and for updating them. Each component manager is tied to a single [world](worlds.md), so if you have multiple worlds, each world will hold its own instance of each component manager.
 
-A component manager is a [world module](../../runtime/world/world-modules.md), so it can register functions to be called during specific [update phases](../../runtime/world/world-modules.md#update-phases) of the world.
+A component manager is a [world module](world-modules.md), so it can register functions to be called during specific [update phases](world-modules.md#update-phases) of the world.
 
 For the vast majority of components we only need a component manager that calls `Update()` on our component type once a frame. We can declare such a simple manager like this in the header file for our component:
 
@@ -62,7 +62,7 @@ Note that our sample component has a (non-virtual) function called `Update()`. T
 
 ## Reflection Block
 
-In our cpp file we need to insert a [reflection](../../runtime/reflection-system.md) block for our component type. This tells the engine all the details about our component, for instance which properties it has.
+In our cpp file we need to insert a [reflection](reflection-system.md) block for our component type. This tells the engine all the details about our component, for instance which properties it has.
 
 <!-- BEGIN-DOCS-CODE-SNIPPET: customcomp-reflection -->
 ```cpp
@@ -172,13 +172,13 @@ void DemoComponent::DeserializeComponent(plWorldReader& stream)
 
 ## Conclusion
 
-Adding a custom component in C++ is not hard. Use the [Sample Game Plugin](../../../samples/sample-game-plugin.md) as a playground to get started. Of course with C++ you have the typical restriction that you can't hot reload code, you have to close the editor, compile your plugin and reopen the editor. [Hot Reloading C++ Game Plugins in the Editor](cpp-code-reload.md) describes a mechanism that can basically do all that for you with a single button press, though.
+Adding a custom component in C++ is not hard. Use the [Sample Game Plugin](sample-game-plugin.md) as a playground to get started. Of course with C++ you have the typical restriction that you can't hot reload code, you have to close the editor, compile your plugin and reopen the editor. [Hot Reloading C++ Game Plugins in the Editor](cpp-code-reload.md) describes a mechanism that can basically do all that for you with a single button press, though.
 
 Armed with these basics, you should have a look at existing components to see how to solve specific issues.
 
 ## See Also
 
-* [Components](../../runtime/world/components.md)
-* [Custom Code](../custom-code-overview.md)
-* [Sample Game Plugin](../../../samples/sample-game-plugin.md)
+* [Components](components.md)
+* [Custom Code](Code.md)
+* [Sample Game Plugin](sample-game-plugin.md)
 * [Hot Reloading C++ Game Plugins in the Editor](cpp-code-reload.md)

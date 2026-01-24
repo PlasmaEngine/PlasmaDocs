@@ -17,11 +17,11 @@ CVars are exposed in multiple ways.
 
 ### plEditor
 
-In [Plasma Editor](../../getting-started/editor-overview.md) you can open *Panels > CVars* to show a panel that allows you to modify CVars. Be aware that some CVars only have an effect when simulating the scene, and some even only when using Play-the-Game mode. The latter mostly happens when the effect of a CVar is implemented by a [Game State](../runtime/application/game-state.md).
+In [Plasma Editor](Editor.md) you can open *Panels > CVars* to show a panel that allows you to modify CVars. Be aware that some CVars only have an effect when simulating the scene, and some even only when using Play-the-Game mode. The latter mostly happens when the effect of a CVar is implemented by a [Game State](game-state.md).
 
 ### plInspector
 
-[plInspector](../tools/inspector.md) allows you to modify CVars of the connected process using the same UI as the editor.
+[Inspector](inspector.md) allows you to modify CVars of the connected process using the same UI as the editor.
 
 ### In-Game Console
 
@@ -49,7 +49,7 @@ In-game a convenient way to modify CVars is the [console](console.md).
 
 ### TypeScript
 
-CVars can also be accessed through the [TypeScript API](../custom-code/typescript/ts-api.md#pldebug).
+CVars can also be accessed through the [TypeScript API](ts-api.md).
 
 ## Command Line
 
@@ -104,4 +104,4 @@ if (cvar_DebugDisplay)
 
 
 * [Console](console.md)
-* [plInspector](../tools/inspector.md)
+* [Inspector](inspector.md)

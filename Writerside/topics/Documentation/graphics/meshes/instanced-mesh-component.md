@@ -1,6 +1,6 @@
 # Instanced Mesh Component
 
-The *instanced mesh component* is used to place multiple instances of the same mesh in a scene, with only a single [game object](../../runtime/world/game-objects.md).
+The *instanced mesh component* is used to place multiple instances of the same mesh in a scene, with only a single [game object](game-objects.md).
 
 ![Instanced Meshes](media/instanced-meshes.jpg)
 
@@ -18,7 +18,7 @@ The instanced mesh component has an array of items which hold the transform and 
 
 You add instances by extending the array. Click the blue properties of an entry, to make a gizmo appear with which you can transform that instance (see image at the top).
 
-This workflow is currently not particularly enjoyable. You can't select individual instances through the viewport and you can't use the [standard gizmos](../../scenes/gizmos.md) to edit an instance.
+This workflow is currently not particularly enjoyable. You can't select individual instances through the viewport and you can't use the [standard gizmos](gizmos.md) to edit an instance.
 
 ## When and How to Use the Instanced Mesh Component
 
@@ -32,8 +32,8 @@ Consequently, if you write custom code that places meshes procedurally, you may 
 
 * `Mesh`: The [mesh asset](mesh-asset.md) to render.
 * `MainColor`: This color will be combined with the color of each individual mesh instance.
-* `Materials`: An array of [materials](../../materials/materials-overview.md) to override the default material. Works the same way as for [regular mesh components](mesh-component.md).
-* `InstanceData`: An array of instances. Each instance has its own transform and color. Click the blue transform properties to activate a [manipulator](../../scenes/gizmos.md#manipulators) for that instance.
+* `Materials`: An array of [materials](materials-overview.md) to override the default material. Works the same way as for [regular mesh components](mesh-component.md).
+* `InstanceData`: An array of instances. Each instance has its own transform and color. Click the blue transform properties to activate a [manipulator](gizmos.md#manipulators) for that instance.
 
 ## See Also
 

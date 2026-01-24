@@ -1,10 +1,10 @@
 # Game States
 
-Most game code is implemented by writing custom [components](../world/components.md). However, components always work in the context of an object, be it a single [game object](../world/game-objects.md) or an entire [prefab](../../prefabs/prefabs-overview.md). The most that a single component can be responsible for, is to do high level logic for a level, by acting as a [global message handler](../world/world-messaging.md#global-event-message-handlers).
+Most game code is implemented by writing custom [components](components.md). However, components always work in the context of an object, be it a single [game object](game-objects.md) or an entire [prefab](prefabs-overview.md). The most that a single component can be responsible for, is to do high level logic for a level, by acting as a [global message handler](world-messaging.md#global-event-message-handlers).
 
 However, for a full game you need a layer of control that is outside the world, where you can do logic like what level to load, what to do when the player dies or reaches their goal, how to display a main menu for the game settings and level selection, and so on. Most of these things would be possible with world components alone, but it would be cumbersome. Especially switching from one level to another is difficult, if some of your overall game logic has to be transitioned as well.
 
-*Game States* are this extra layer. A game state sits between the [application (TODO)](application.md) layer and the [world](../world/worlds.md).
+*Game States* are this extra layer. A game state sits between the [application (TODO)](application.md) layer and the [world](worlds.md).
 
 ![Code Hierarchy](media/code-hierarchy.png)
 
@@ -26,7 +26,7 @@ The typical things that a game state controls are:
 * Providing a main menu
 * Saving and restoring global state (progression, high-scores, etc)
 
-For example when you have a [player start point component](../../gameplay/player-start-point.md) in a scene, the component itself doesn't do anything, it just holds some data. Instead, when you enter play-the-game mode, the active game state *can* (but is not required to) use the information from these components to spawn a player prefab.
+For example when you have a [player start point component](player-start-point.md) in a scene, the component itself doesn't do anything, it just holds some data. Instead, when you enter play-the-game mode, the active game state *can* (but is not required to) use the information from these components to spawn a player prefab.
 
 Similarly, most scenes have a camera component whose usage hint is set to 'Main Camera' (this may be part of the player prefab). This camera defines what part of the scene will be shown on screen. At least that's how it appears. In reality it is the game state that controls the camera for the main render target. It's simply a feature of the `plFallbackGameState`, that it searches the world for an appropriate camera component and applies that to the main camera. If it doesn't find any such camera component, it provides simple WASD fly-camera controls. You can even cycle through the different camera components in a scene using `Page Up` and `Page Down`.
 
@@ -36,11 +36,11 @@ As you can see, by implementing a custom game state, you can gain control over m
 
 It is the responsibility of the `plGameApplication` to instantiate a game state. By default this is done right at application startup, but if you write your own [application (TODO)](application.md) you could handle this differently. For example the editor only instantiates the game state for play-the-game mode.
 
-The application knows what game states are available through the [reflection information](../reflection-system.md). When a game state is needed, all available ones are instantiated and 'asked' (via `plGameStateBase::DeterminePriority()`) whether it is the right one to handle the situation. The game state that is the best fit will be kept and gets control.
+The application knows what game states are available through the [reflection information](reflection-system.md). When a game state is needed, all available ones are instantiated and 'asked' (via `plGameStateBase::DeterminePriority()`) whether it is the right one to handle the situation. The game state that is the best fit will be kept and gets control.
 
 The idea is, that there are typically only few game states available anyway. Usually you have the built-in `plFallbackGameState` and then you have one other game state implementation from your custom game plugin. The latter one will take precedence. You could have multiple game states, for example when you have multiple game plugins loaded simultaneously, but then they would need to somehow figure out which one should get activated (e.g. through command line arguments).
 
 ## See Also
 
-* [Custom Code](../../custom-code/custom-code-overview.md)
+* [Custom Code](Code.md)
 * [Application (TODO)](application.md)

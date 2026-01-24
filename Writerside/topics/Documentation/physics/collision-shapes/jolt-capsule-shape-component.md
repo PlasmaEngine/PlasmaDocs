@@ -1,6 +1,6 @@
 # Jolt Capsule Shape Component
 
-The *Jolt capsule shape component* adds a capsule as a [shape](jolt-shapes.md) to the [Jolt actor](../actors/jolt-actors.md) that is attached to the closest parent node.
+The *Jolt capsule shape component* adds a capsule as a [shape](jolt-shapes.md) to the [Jolt actor](jolt-actors.md) that is attached to the closest parent node.
 
 ![Capsule Shape](media/jolt-capsule-shape.jpg)
 
@@ -16,4 +16,4 @@ Capsules are relatively efficient for the physics engine to handle. Prefer them 
 ## See Also
 
 * [Jolt Shapes](jolt-shapes.md)
-* [Jolt Actors](../actors/jolt-actors.md)
+* [Jolt Actors](jolt-actors.md)

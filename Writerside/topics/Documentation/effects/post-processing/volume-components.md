@@ -2,7 +2,7 @@
 
 Volume components are used to define custom environmental conditions in areas of a level.
 
-By itself, volume components have no functionality and no noticeable effect. They only specify an area and what values to use there. Values are usually specified by referencing a [blackboard template asset](../../Miscellaneous/blackboard-template-asset.md). Other systems may use this information to implement behavior.
+By itself, volume components have no functionality and no noticeable effect. They only specify an area and what values to use there. Values are usually specified by referencing a [blackboard template asset](blackboard-template-asset.md). Other systems may use this information to implement behavior.
 
 One such system is the [post-processing component](post-processing-component.md) which uses these volumes to modify parameters of the rendering pipeline, for example to have different color grading per area.
 
@@ -19,11 +19,11 @@ They only add options to define their shape, such as extents or radius, but do n
 
 All volume components share these properties:
 
-* `Type`: A [spatial category](../../runtime/world/spatial-system.md) used for separating volumes that represent different things. This way one volume may be used to configure graphics settings, while other volumes may affect gameplay relevant functionality, and they don't accidentally interfere with each other, since the respective systems only get to see the volumes that are meant to affect them.
+* `Type`: A [spatial category](spatial-system.md) used for separating volumes that represent different things. This way one volume may be used to configure graphics settings, while other volumes may affect gameplay relevant functionality, and they don't accidentally interfere with each other, since the respective systems only get to see the volumes that are meant to affect them.
 
 * `SortOrder`: In case two volumes overlap, the one with a higher sort order value has precedence.
 
-* `Template`: A reference to a [blackboard template asset](../../Miscellaneous/blackboard-template-asset.md) to define the key/value pairs. It is usually more convenient to use a blackboard template as a preset for values, than to specify them directly on the volume component.
+* `Template`: A reference to a [blackboard template asset](blackboard-template-asset.md) to define the key/value pairs. It is usually more convenient to use a blackboard template as a preset for values, than to specify them directly on the volume component.
 
 * `Values`: Individually added key/value pairs. Prefer to use a `Template`, but If the same key is also added here, it overrides the value from the template.
 

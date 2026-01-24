@@ -10,7 +10,7 @@ All animation controller nodes that sample animation clips share these propertie
 
 * `Loop`: If enabled the node will loop playback while its `Active` pin is triggered. Which clip exactly gets looped depends on the node. The *play single clip node* for example just loops playback in general, but randomly picks a different clip in every iteration. The [play clip sequence node](anim-nodes-sequence.md) on the other hand will loop its middle clip instead.
 
-* `ApplyRootMotion`: If enabled, the node will compute the [root motion](../root-motion.md) from the sampled clips and forward this to the [animation controller component](animation-controller-component.md), which may apply this to the game object's position.
+* `ApplyRootMotion`: If enabled, the node will compute the [root motion](root-motion.md) from the sampled clips and forward this to the [animation controller component](animation-controller-component.md), which may apply this to the game object's position.
 
 * `PlaybackSpeed`: Adjusts the speed with which the animations are sampled.
 
@@ -24,7 +24,7 @@ All animation controller nodes that sample animation clips share these propertie
 
 ## Properties
 
-* `Clips`: One or multiple [animation clips](../animation-clip-asset.md) to play. If more than one is added, the node will pick one at random in every loop iteration.
+* `Clips`: One or multiple [animation clips](animation-clip-asset.md) to play. If more than one is added, the node will pick one at random in every loop iteration.
 
 ## Common Input Pins
 

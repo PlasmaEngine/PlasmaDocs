@@ -2,7 +2,7 @@
 
 The *simple animation component* is used to play a single [animation clip](animation-clip-asset.md) on an [animated mesh](animated-mesh-component.md).
 
-The component has to be attached on a [game object](../../runtime/world/game-objects.md) that also has an [animated mesh component](animated-mesh-component.md). The selected animation clip has to be compatible with the mesh's [skeleton](skeleton-asset.md).
+The component has to be attached on a [game object](game-objects.md) that also has an [animated mesh component](animated-mesh-component.md). The selected animation clip has to be compatible with the mesh's [skeleton](skeleton-asset.md).
 
 For more complex scenarios use an [animation controller](Animation-Controller.md) instead.
 
@@ -22,7 +22,7 @@ For more complex scenarios use an [animation controller](Animation-Controller.md
 
 ## Events
 
-The component will broadcast the event `plMsgGenericEvent` every time it encounters an [animation event](animation-events.md) in the animation clip. [Custom code](../../custom-code/custom-code-overview.md) can listen for these events and trigger relevant game mechanics.
+The component will broadcast the event `plMsgGenericEvent` every time it encounters an [animation event](animation-events.md) in the animation clip. [Custom code](Code.md) can listen for these events and trigger relevant game mechanics.
 
 ## See Also
 

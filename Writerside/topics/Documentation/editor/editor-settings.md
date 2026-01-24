@@ -4,7 +4,7 @@ Editor settings are user specific and independent of projects. They are stored i
 
 ## Preferences
 
-Preferences are user specific editor settings. Preferences may affect the entire editor application, only a certain [project](../projects/projects-overview.md), or even just a single [document](editor-documents.md).
+Preferences are user specific editor settings. Preferences may affect the entire editor application, only a certain [project](projects-overview.md), or even just a single [document](editor-documents.md).
 
 ![Preferences](media/editor-preferences.png)
 
@@ -16,13 +16,13 @@ The list on the left lists all the available preferences. Items prefixed with `A
 
 * **ShowSpashscreen:** Disable this to not have a splashscreen show up every time the editor starts.
 
-* **BackgroundAssetProcessing:** If set, background [assets processing](../assets/assets-overview.md) will be activated by default, when you open a project.
+* **BackgroundAssetProcessing:** If set, background [assets processing](assets-overview.md) will be activated by default, when you open a project.
 
 * **FieldOfView:** The FOV of the generic editor camera.
 
 * **GizmoScale:** Allows you to change the size of the editor gizmos.
 
-* **ShowInDevelopmentFeatures:** Some features (mainly [components](../runtime/world/components.md)) are hidden by default from menus. That's because those features are not considered ready to be used productively. If you do want to try them out regardless, check this option for them to show up.
+* **ShowInDevelopmentFeatures:** Some features (mainly [components](components.md)) are hidden by default from menus. That's because those features are not considered ready to be used productively. If you do want to try them out regardless, check this option for them to show up.
 
 * **UsePrecompiledTools:** If enabled, the editor will prefer to use the tools under `Data\Tools\Precompiled`, rather than the ones from its own binary directory. The precompiled tools are built with maximum optimizations and are therefore typically faster, however, they only get updated infrequently and may not have all the latest features and bugfixes.
 
@@ -30,7 +30,7 @@ The list on the left lists all the available preferences. Items prefixed with `A
 
 * **ClearEditorLogsOnPlay:** If enabled, the engine log gets cleared every time you [run a scene](run-scene.md).
 
-* **Engine View Light Settings:** Many [assets](../assets/assets-overview.md) have 3D previews that require lighting. These are the lighting settings to use.
+* **Engine View Light Settings:** Many [assets](assets-overview.md) have 3D previews that require lighting. These are the lighting settings to use.
 
 ## Shortcuts
 
@@ -40,4 +40,4 @@ The list on the left lists all the available preferences. Items prefixed with `A
 
 ## See Also
 
-* [Project Settings](../projects/project-settings.md)
+* [Project Settings](project-settings.md)

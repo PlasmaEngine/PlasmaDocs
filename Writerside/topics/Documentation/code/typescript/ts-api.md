@@ -20,7 +20,7 @@ import Plasma= require("TypeScript/pl")
 
 This imports all *exported* declarations from the file *TypeScript/pl.ts* into an object called *pl* in this file. Thus typing `pl.` grants access to all the exported classes, namespaces and functions from that file.
 
-The path given to `require` must be relative to a [data directory](../../projects/data-directories.md). For example, the file above is located in the *Plugins* data directory.
+The path given to `require` must be relative to a [data directory](data-directories.md). For example, the file above is located in the *Plugins* data directory.
 
 > **Note:**
 >
@@ -52,13 +52,13 @@ Unfortunately, there does not seem to be a way to re-export *all* declarations a
 
 `pl.Component` is the base class for all component types, including the C++ components. Your custom components must extend either `pl.TypescriptComponent` or `pl.TickedTypescriptComponent`.
 
-The functionality exposed through `pl.Component` is mostly identical to all other [components](../../runtime/world/components.md).
+The functionality exposed through `pl.Component` is mostly identical to all other [components](components.md).
 
 If you hold a reference to a component for more than a frame, it is vital to use `pl.Component.IsValid()` to check whether the component is still alive, before accessing it. If `IsValid()` returns true, the component can be accessed safely for the rest of the frame.
 
 ### pl.GameObject
 
-`pl.GameObject` exposes the [game object](../../runtime/world/game-objects.md) functionality to TypeScript mostly 1:1. Through this you modify object positions, delete or move child nodes, access attached components and send messages.
+`pl.GameObject` exposes the [game object](game-objects.md) functionality to TypeScript mostly 1:1. Through this you modify object positions, delete or move child nodes, access attached components and send messages.
 
 You can't extend game objects.
 
@@ -66,7 +66,7 @@ If you hold a reference to a game object for more than a frame, it is vital to u
 
 ### pl.World
 
-`pl.World` exposes the [world](../../runtime/world/worlds.md) functionality. However, the functionality provided is only a limited subset. Some functionality is simply not needed in the TypeScript binding, and some is exposed differently.
+`pl.World` exposes the [world](worlds.md) functionality. However, the functionality provided is only a limited subset. Some functionality is simply not needed in the TypeScript binding, and some is exposed differently.
 
 Since all TypeScript code is executed in the context of one specific world, you can't access a different world from TypeScript code. Therefore, there is no need to *get* the world that you operate in (as is common in C++). Therefore `pl.World` is only a namespace, not a class, and all functionality is always accessible.
 
@@ -85,23 +85,23 @@ TypeScript already provides mathematical functions through the `Math` namespace.
 * `pl.Quat`: A quaternion class to handle rotations.
 * `pl.Transform`: A transform stores a position (`pl.Vec3`), a rotation (`pl.Quat`) and a scale factor (`pl.Vec3`). It is mainly used to represent object transformations, and is more convenient than using 4x4 matrices.
 * `pl.Angle`: Provides utility functions to work with angles. Mostly to convert between radians and degree.
-* `pl.Color`: A utility class to work with colors. All colors are treated as HDR colors in linear space, though conversions to and from Gamma space are provided. See [color spaces (TODO)](../../appendix/color-spaces.md) for details.
+* `pl.Color`: A utility class to work with colors. All colors are treated as HDR colors in linear space, though conversions to and from Gamma space are provided. See [color spaces (TODO)](color-spaces.md) for details.
 
 ## Debugging
 
 ### pl.Log
 
-The `pl.Log` namespace contains functions for writing messages to the [log](../../debugging/logging.md). This is a useful tool for debugging.
+The `pl.Log` namespace contains functions for writing messages to the [log](logging.md). This is a useful tool for debugging.
 
 ### pl.Debug
 
-The `pl.Debug` namespace contains various functionality. There are functions for debug rendering, ie. to insert shapes into the rendered output, which can be helpful in visualizing many aspects. `pl.Debug` also provides access to [CVars](../../debugging/cvars.md) and [console functions](../../debugging/console.md#console-functions).
+The `pl.Debug` namespace contains various functionality. There are functions for debug rendering, ie. to insert shapes into the rendered output, which can be helpful in visualizing many aspects. `pl.Debug` also provides access to [CVars](cvars.md) and [console functions](console.md#console-functions).
 
 ## Utilities
 
 ### pl.Clock
 
-The `pl.Clock` namespace has functions to access the [world's](../../runtime/world/worlds.md) clock. The clock represents the game time, meaning it advances at its own pace, which can be adjusted dynamically. When you need to know how much time has passed since the last frame (not the last `Tick()`), use `pl.Clock.GetTimeDiff()`. Use `pl.Clock.GetAccumulatedTime()` it you need to measure longer durations.
+The `pl.Clock` namespace has functions to access the [world's](worlds.md) clock. The clock represents the game time, meaning it advances at its own pace, which can be adjusted dynamically. When you need to know how much time has passed since the last frame (not the last `Tick()`), use `pl.Clock.GetTimeDiff()`. Use `pl.Clock.GetAccumulatedTime()` it you need to measure longer durations.
 
 ### pl.Time
 

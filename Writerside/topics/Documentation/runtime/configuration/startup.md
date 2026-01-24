@@ -1,6 +1,6 @@
 # Startup System
 
-Initializing an engine and shutting it properly down again, is a surprisingly difficult task. There are many steps involved, some of which have hard requirements on their ordering. Also, some functionality can only be initialized when at least a window, and potentially even a graphics API is available, which is not the case for command line tools. Once [plugins](../../custom-code/cpp/engine-plugins.md) are added to the mix, which can be loaded and unloaded at any time, it becomes impossible to manually set up this process.
+Initializing an engine and shutting it properly down again, is a surprisingly difficult task. There are many steps involved, some of which have hard requirements on their ordering. Also, some functionality can only be initialized when at least a window, and potentially even a graphics API is available, which is not the case for command line tools. Once [plugins](engine-plugins.md) are added to the mix, which can be loaded and unloaded at any time, it becomes impossible to manually set up this process.
 
 Therefore, Plasma uses a dedicated *startup system*, to handle this complexity automatically for you.
 
@@ -15,7 +15,7 @@ All of this is then (automatically) given to the startup system, and when it com
 A lot of code can be initialized easily in all applications. However, some code strictly requires a window or graphics API to work with and could never be initialized successfully in a command line application.
 
 Therefore, the startup system splits the engine initialization into two phases: **core systems startup** (phase 1) and **high level systems startup** (phase 2).
-For command line applications, we would only ever run phase 1. In a proper game, we would first run phase 1, then create our window and rendering API and finally run phase 2. This way, when we don't need things like a renderer or the [input system](../../input/input-overview.md), we simply exclude all high level systems from being initialized.
+For command line applications, we would only ever run phase 1. In a proper game, we would first run phase 1, then create our window and rendering API and finally run phase 2. This way, when we don't need things like a renderer or the [input system](Input.md), we simply exclude all high level systems from being initialized.
 
 ### Dependencies
 
@@ -75,7 +75,7 @@ Here we give our subsystem the name `SampleGamePluginMainStartup` and we put it 
 
 Now when the application starts running, at some point it will run all the `ON_CORESYSTEMS_STARTUP` code blocks (in a sorted order). Here, we use that hook to set up our [singleton](interfaces.md). Later, the game will execute the `ON_HIGHLEVELSYSTEMS_STARTUP` block, and at shutdown it will first execute `ON_HIGHLEVELSYSTEMS_SHUTDOWN` and finally `ON_CORESYSTEMS_SHUTDOWN` shortly before the application closes.
 
-Command line applications would not execute the high level startup code blocks. Also, when a [plugin](../../custom-code/cpp/engine-plugins.md) is loaded or unloaded, the system ensures to call all the right startup and shutdown functions for subsystems from those plugins.
+Command line applications would not execute the high level startup code blocks. Also, when a [plugin](engine-plugins.md) is loaded or unloaded, the system ensures to call all the right startup and shutdown functions for subsystems from those plugins.
 
 ## How to know about dependencies
 
@@ -83,11 +83,11 @@ A practical problem you may be wondering about, is how you would know the names 
 
 In practice, this is rarely a problem. Most subsystems only depend on the `Foundation` or the `Core` group of subsystems. If you have any other dependencies, you are typically quite aware of them, and know where in the code they are set up and thus, where you can look up their names.
 
-However, you can also use [plInspector](../../tools/inspector.md) to discover all the available subsystems, their names, and see what other subsystems they depend on
+However, you can also use [Inspector](inspector.md) to discover all the available subsystems, their names, and see what other subsystems they depend on
 
 ## See Also
 
 
-* [plInspector](../../tools/inspector.md)
+* [Inspector](inspector.md)
 * [Singleton Interfaces](interfaces.md)
-* [Sample Game Plugin](../../../samples/sample-game-plugin.md)
+* [Sample Game Plugin](sample-game-plugin.md)

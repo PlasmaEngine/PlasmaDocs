@@ -1,8 +1,8 @@
-# Components
+# Components Overview
 
 For an introduction what a component is and how it fits into the overall picture, see [The World / Scenegraph System](world-overview.md).
 
-This documentation focuses on the C++ `plComponent` class. The functionality exposed through other mechanisms, such as [TypeScript](../../custom-code/typescript/typescript-overview.md), may be more limited in scope, but ultimately maps to the C++ implementation.
+This documentation focuses on the C++ `plComponent` class. The functionality exposed through other mechanisms, such as [TypeScript](TypeScript.md), may be more limited in scope, but ultimately maps to the C++ implementation.
 
 Components are the fundamental building blocks with which to make the engine do things. Components act as glue between systems like the renderer and the user. They expose the available functionality to the editor and they control when and how each system is used. This document describes how components work.
 
@@ -63,7 +63,7 @@ You can also access all components on a game object using `plGameObject::GetComp
 
 ## Component Reflection Block
 
-All component types must use [reflection](../reflection-system.md). Only reflected members show up as properties in the editor. An example block looks like this:
+All component types must use [reflection](reflection-system.md). Only reflected members show up as properties in the editor. An example block looks like this:
 
 <!-- BEGIN-DOCS-CODE-SNIPPET: component-reflection-block -->
 ```cpp
@@ -106,7 +106,7 @@ The *attributes* section can additionally specify type specific properties. For 
 
 The *message handler* section is important to enable [messaging](world-messaging.md).
 
-The *functions* section is used to expose certain member functions to the reflection system, such that script bindings, such as [TypeScript](../../custom-code/typescript/typescript-overview.md) can call these functions.
+The *functions* section is used to expose certain member functions to the reflection system, such that script bindings, such as [TypeScript](TypeScript.md) can call these functions.
 
 <!-- TODO: at some point 'we' must document all the available options *sigh* -->
 
@@ -122,13 +122,13 @@ There are three important states for components:
 
 You can hook into changes to these states by overriding `plComponent::Initialize()` / `plComponent::Deinitialize()`, `plComponent::OnActivated()` / `plComponent::OnDeactivated()` and `plComponent::OnSimulationStarted()`.
 
-The most important function to override is `plComponent::OnSimulationStarted()`. This is almost always the function where you want to set up your component. It is called when the component is fully initialized, active and the world is actively simulating (the game is running). In the editor, it is only called after you start [running a scene](../../editor/run-scene.md), not while you are editing. Since most game code should not do anything while the scene is being edited, you typically don't need to set up anything before this time.
+The most important function to override is `plComponent::OnSimulationStarted()`. This is almost always the function where you want to set up your component. It is called when the component is fully initialized, active and the world is actively simulating (the game is running). In the editor, it is only called after you start [running a scene](run-scene.md), not while you are editing. Since most game code should not do anything while the scene is being edited, you typically don't need to set up anything before this time.
 
 Components can be 'active' or 'inactive'. This can be used to switch them on and off at will. The [active flag on game objects](game-objects.md#active-flag) affects this, but components can also be deactivated individually with `plComponent::SetActiveFlag()`. When a component is not active, its component manager will typically not update it anymore. If you want to properly support switching components on and off at any time, you often need to be careful to restore state properly. `plComponent::OnActivated()` and `plComponent::OnDeactivated()` will be called every time a component's active state changes. Additionally, if the world is being simulated, `plComponent::OnSimulationStarted()` will also be called after each call to `plComponent::OnActivated()`.
 
 It should be extremely rare that you need to override `plComponent::Initialize()` or `plComponent::Deinitialize()`.
 
-For all the details on the activation functions, refer to the [API Docs](../../api-docs.md).
+For all the details on the activation functions, refer to the [API Docs](api-docs.md).
 
 > **Caution:**
 >
@@ -162,7 +162,7 @@ See [Static vs. Dynamic Objects](game-objects.md#static-vs-dynamic-objects).
 
 When editing a scene or prefab, the editor will serialize components purely based on reflection information. That means only the properties that are marked up through reflection and are therefore visible to the user are serialized. This format is robust to change (and allows for patches), but is not efficient.
 
-For the runtime format, that a shipping game should use, scenes are *exported*. This is a binary serialization format and every component has full control over what data it writes and how it encodes the data. When you [run a scene](../../editor/run-scene.md) in [plPlayer](../../tools/player.md) the editor will serialize the scene to the binary format, and the player will deserialize it. If a component doesn't properly serialize all its data, the results can range from misconfigured components to crashes during loading.
+For the runtime format, that a shipping game should use, scenes are *exported*. This is a binary serialization format and every component has full control over what data it writes and how it encodes the data. When you [run a scene](run-scene.md) in [Player](player.md) the editor will serialize the scene to the binary format, and the player will deserialize it. If a component doesn't properly serialize all its data, the results can range from misconfigured components to crashes during loading.
 
 To implement proper serialization, you need to override `plComponent::SerializeComponent()` and `plComponent::DeserializeComponent()`.
 
@@ -225,12 +225,12 @@ void DemoComponent::DeserializeComponent(plWorldReader& stream)
 
 You can extend the engine with custom components:
 
-* [Custom Components with C++](../../custom-code/cpp/custom-cpp-component.md)
-* [Custom Components with TypeScript](../../custom-code/typescript/custom-ts-components.md)
+* [Custom Components with C++](custom-cpp-component.md)
+* [Custom Components with TypeScript](custom-ts-components.md)
 
 ## See Also
 
 
-* [Custom Code](../../custom-code/custom-code-overview.md)
+* [Custom Code](Code.md)
 * [The World / Scenegraph System](world-overview.md)
 * [Game Objects](game-objects.md)

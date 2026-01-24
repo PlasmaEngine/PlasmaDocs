@@ -6,7 +6,7 @@ The *joint attachment component* is used to expose the animated position of a bo
 
 * `JointName`: The *name* of the joint/bone of which you want to use the position as an attachment point. You can look up the bone names in the respective [skeleton asset](skeleton-asset.md).
 
-* `PositionOffset`, `RotationOffset`: Additional local position and rotation offsets added to the bone location. The same could be achieved by adding another child [game object](../../runtime/world/game-objects.md) with an offset, but using these properties is more efficient.
+* `PositionOffset`, `RotationOffset`: Additional local position and rotation offsets added to the bone location. The same could be achieved by adding another child [game object](game-objects.md) with an offset, but using these properties is more efficient.
 
 ## How To Use
 
@@ -19,7 +19,7 @@ To attach an object to a certain bone, follow these steps:
 - Set its *JointName* property to the desired bone name. You can look up the bone name on the [skeleton asset](skeleton-asset.md) that is used by the [animated mesh asset](animated-mesh-asset.md) on the [animated mesh component](animated-mesh-component.md).
 - Add the desired object or component to the joint attachment object.
 
-- The local transform of the attachment object will be overwritten by the component when it receives an animation pose. Thus setting any values here doesn't have any useful effect during simulation. To see where your attachment ends up, you need to [simulate the scene](../../editor/run-scene.md) and an animation has to actively play on the animated mesh.
+- The local transform of the attachment object will be overwritten by the component when it receives an animation pose. Thus setting any values here doesn't have any useful effect during simulation. To see where your attachment ends up, you need to [simulate the scene](run-scene.md) and an animation has to actively play on the animated mesh.
 - While the scene is simulating, you can use the *position and rotation offset* properties to tweak the exact location of the joint attachment.
 
 > **Note:**

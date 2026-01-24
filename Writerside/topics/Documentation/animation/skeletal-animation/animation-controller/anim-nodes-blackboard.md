@@ -1,9 +1,9 @@
 # Blackboard Nodes
 
-The animation controller provides nodes to read and write values from and to a [blackboard](../../../Miscellaneous/blackboards.md). For this, the [game object](../../../runtime/world/game-objects.md) on which the [animation controller component](animation-controller-component.md) is attached, also needs to hold a blackboard component.
+The animation controller provides nodes to read and write values from and to a [blackboard](blackboards.md). For this, the [game object](game-objects.md) on which the [animation controller component](animation-controller-component.md) is attached, also needs to hold a blackboard component.
 
 > **Note:**
-> If no blackboad is available, these nodes will output a warning to the [log](../../../debugging/logging.md). If a blackboard is available, but the desired entry is not (yet) in the blackboard, they may add the entry or assume a default value of zero.
+> If no blackboad is available, these nodes will output a warning to the [log](logging.md). If a blackboard is available, but the desired entry is not (yet) in the blackboard, they may add the entry or assume a default value of zero.
 
 ## Set Blackboard Value Node
 
@@ -11,7 +11,7 @@ The animation controller provides nodes to read and write values from and to a [
 
 When activated or deactivated, this node writes a given value to the blackboard.
 
-### Properties
+### Backboard Set Properties
 
 * **BlackboardEntry**: The name of the blackboard entry (variable) to write to.
 
@@ -33,7 +33,7 @@ When activated or deactivated, this node writes a given value to the blackboard.
 
 This node constantly monitors a blackboard value and compares it to a reference value. Whenever the comparison yields `true`, the `Active` output pin is enabled, otherwise disabled.
 
-### Properties
+### Backboard Check Properties
 
 * **BlackboardEntry**: The name of the blackboard entry (variable) to monitor.
 
@@ -41,7 +41,7 @@ This node constantly monitors a blackboard value and compares it to a reference 
 
 * **Comparison**: The way the two values get compared.
 
-### Output Pins
+### Backboard Check Output Pins
 
 * **Active**: This output pin will be triggered whenever the comparison was successful.
 
@@ -51,11 +51,11 @@ This node constantly monitors a blackboard value and compares it to a reference 
 
 This node outputs the value of a specific blackboard entry. The number value can then be forwarded to other nodes.
 
-### Properties
+### Blackboard Get Properties
 
 * **BlackboardEntry**: The name of the blackboard entry (variable) to read.
 
-### Output Pins
+### Blackboard Get Output Pins
 
 * **Number**: The value of the blackboard entry. If the entry doesn't exist, the pin outputs zero.
 

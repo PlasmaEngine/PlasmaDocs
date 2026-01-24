@@ -1,10 +1,10 @@
 # ArchiveTool
 
-The ArchiveTool is used to create or extract `.plArchive` files. Archives are similar to zip files, they contain all the files in a folder, using compression. plArchive files can be mounted at runtime as [data directories](../projects/data-directories.md).
+The ArchiveTool is used to create or extract `.plArchive` files. Archives are similar to zip files, they contain all the files in a folder, using compression. plArchive files can be mounted at runtime as [data directories](data-directories.md).
 
 ## plArchive Format
 
-The internal structure of plArchives is optimized to make mounting as a data directory extremely efficient. The files are memory mapped and file lookups are faster than for regular folders. Each file in the archive may use compression or not, depending on whether it would make sense for the particular file. Different compression algorithms are possible, though the main compression used is [zstd](../appendix/third-party-code.md#zstd) which yields good compression and is extremely fast to decode.
+The internal structure of plArchives is optimized to make mounting as a data directory extremely efficient. The files are memory mapped and file lookups are faster than for regular folders. Each file in the archive may use compression or not, depending on whether it would make sense for the particular file. Different compression algorithms are possible, though the main compression used is [zstd](third-party-code.md#zstd) which yields good compression and is extremely fast to decode.
 
 ## Usage
 
@@ -75,5 +75,5 @@ ArchiveTool.exe "C:\Stuff.plArchive" -out "C:\MyStuff"
 ## See Also
 
 
-* [Data Directories](../projects/data-directories.md)
-* [FileSystem](../runtime/filesystem.md)
+* [Data Directories](data-directories.md)
+* [FileSystem](filesystem.md)

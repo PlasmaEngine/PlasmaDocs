@@ -8,7 +8,7 @@ The *animation controller asset* is used to configure complex animations. See th
 
 Animation controllers are set up as graph structures. Nodes represent actions. Data flows from left to right. Nodes have **input pins** and **output pins** which represent different kinds of data, such as trigger states (*on/off*), number values, animation poses and bone weights.
 
-The goal of an animation controller is to sample a number of [animation clips](../animation-clip-asset.md), combine them together, and generate a final pose which can then be applied to an [animated mesh](../animated-mesh-component.md).
+The goal of an animation controller is to sample a number of [animation clips](animation-clip-asset.md), combine them together, and generate a final pose which can then be applied to an [animated mesh](animated-mesh-component.md).
 
 ### Creating Nodes
 
@@ -28,14 +28,14 @@ Nodes may additionally have *properties*. These are displayed in the property pa
 
 ## Using Animation Controller Assets
 
-Once an animation controller asset is set up, it can be applied to an [animated mesh](../animated-mesh-component.md) by adding an [animation controller component](animation-controller-component.md) to the same game object. The component will evaluate the graph in every update, and send the final animation pose to the animated mesh.
+Once an animation controller asset is set up, it can be applied to an [animated mesh](animated-mesh-component.md) by adding an [animation controller component](animation-controller-component.md) to the same game object. The component will evaluate the graph in every update, and send the final animation pose to the animated mesh.
 
-To control what the animation controller does, you may also need a [blackboard](../../../Miscellaneous/blackboards.md) for storing state, and potentially a script component to decide when which animation should be active.
+To control what the animation controller does, you may also need a [blackboard](blackboards.md) for storing state, and potentially a script component to decide when which animation should be active.
 
 ## See Also
 
 
 * [Skeletal Animations](Skeletal-Animation.md)
 * [Animation Controller Component](animation-controller-component.md)
-* [Blackboards](../../../Miscellaneous/blackboards.md)
-* [Simple Animation Component](../simple-animation-component.md)
+* [Blackboards](blackboards.md)
+* [Simple Animation Component](simple-animation-component.md)
